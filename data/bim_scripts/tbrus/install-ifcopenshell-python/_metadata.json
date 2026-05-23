@@ -1,0 +1,18 @@
+{
+  "owner": "tbrus",
+  "repo": "install-ifcopenshell-python",
+  "full_name": "tbrus/install-ifcopenshell-python",
+  "description": "Install ifcopenshell for python",
+  "stars": 6,
+  "language": "Python",
+  "url": "https://github.com/tbrus/install-ifcopenshell-python",
+  "topics": [],
+  "collected_at": "2026-05-23T21:49:41.649946",
+  "files_collected": [
+    "CHANGELOG.md",
+    "README.md",
+    "install_ifcopenshell_python/__init__.py",
+    "install_ifcopenshell_python/__main__.py",
+    "install_ifcopenshell_python/_version.py"
+  ]
+}

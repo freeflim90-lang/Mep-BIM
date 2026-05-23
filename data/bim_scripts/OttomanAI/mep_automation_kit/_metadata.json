@@ -1,0 +1,19 @@
+{
+  "owner": "OttomanAI",
+  "repo": "mep_automation_kit",
+  "full_name": "OttomanAI/mep_automation_kit",
+  "description": "MEP BIM automation toolkit for Revit — Dynamo scripts and Python tools for pipe/conduit placement, Civil 3D drainage transfer, and coordinate transformation workflows.",
+  "stars": 0,
+  "language": "Python",
+  "url": "https://github.com/OttomanAI/mep_automation_kit",
+  "topics": [],
+  "collected_at": "2026-05-23T21:40:05.636035",
+  "files_collected": [
+    "README.md",
+    "drainage_processor/02_Dynamo_Scripts/01_Manholes/manholes.dyn",
+    "drainage_processor/02_Dynamo_Scripts/02_Pipes/pipes.dyn",
+    "drainage_processor/02_Dynamo_Scripts/populate_drainage_settings.py",
+    "drainage_processor/build_configs.py",
+    "drainage_processor/landxml_to_revit_csv.py"
+  ]
+}

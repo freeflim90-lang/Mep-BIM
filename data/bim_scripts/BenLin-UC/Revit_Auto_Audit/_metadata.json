@@ -1,0 +1,29 @@
+{
+  "owner": "BenLin-UC",
+  "repo": "Revit_Auto_Audit",
+  "full_name": "BenLin-UC/Revit_Auto_Audit",
+  "description": "This is a Revit Audit Script repository written by Python, deploying in PyRevit environment. Used for Preformance.",
+  "stars": 0,
+  "language": "Python",
+  "url": "https://github.com/BenLin-UC/Revit_Auto_Audit",
+  "topics": [],
+  "collected_at": "2026-05-23T21:45:00.490001",
+  "files_collected": [
+    "AutoAudit.pushbutton/README.md",
+    "AutoAudit.pushbutton/auto_audit_script.py",
+    "AutoAudit.pushbutton/lib/__init__.py",
+    "AutoAudit.pushbutton/lib/basic.py",
+    "AutoAudit.pushbutton/lib/ui.py",
+    "AutoAudit.pushbutton/lib/warning.py",
+    "DocumentAudit.pushbutton/README.md",
+    "DocumentAudit.pushbutton/document_audit_script.py",
+    "ParametersExport.pushbutton/README.md",
+    "ParametersExport.pushbutton/lib/__init__.py",
+    "ParametersExport.pushbutton/lib/core_processing.py",
+    "ParametersExport.pushbutton/lib/logger.py",
+    "ParametersExport.pushbutton/lib/ui.py",
+    "ParametersExport.pushbutton/lib/warning.py",
+    "ParametersExport.pushbutton/parameters_export_script.py",
+    "README.md"
+  ]
+}

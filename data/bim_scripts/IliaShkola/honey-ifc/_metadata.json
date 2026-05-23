@@ -1,0 +1,42 @@
+{
+  "owner": "IliaShkola",
+  "repo": "honey-ifc",
+  "full_name": "IliaShkola/honey-ifc",
+  "description": "Stylish desktop app for exploring and exporting IFC data — fast, fun, and frustration-free. ",
+  "stars": 8,
+  "language": "Python",
+  "url": "https://github.com/IliaShkola/honey-ifc",
+  "topics": [
+    "bim",
+    "excel",
+    "export",
+    "ifc",
+    "ifcopenshell",
+    "open-source",
+    "python",
+    "xlsx"
+  ],
+  "collected_at": "2026-05-23T21:49:17.291696",
+  "files_collected": [
+    ".github/ISSUE_TEMPLATE/bug_report.md",
+    "README.md",
+    "app.py",
+    "config_manager.py",
+    "honeyThemes.py",
+    "widgets/__init__.py",
+    "widgets/__version__.py",
+    "widgets/_appInfo.py",
+    "widgets/_appname.py",
+    "widgets/_fileBrowser.py",
+    "widgets/_footer.py",
+    "widgets/_ifcCategories.py",
+    "widgets/_ifcInfo.py",
+    "widgets/_ifcParams.py",
+    "widgets/_ifcPsets.py",
+    "widgets/_ifcStatus.py",
+    "widgets/_logbox.py",
+    "widgets/_statusBar.py",
+    "widgets/_systemInfo.py",
+    "widgets/_themeModal.py"
+  ]
+}

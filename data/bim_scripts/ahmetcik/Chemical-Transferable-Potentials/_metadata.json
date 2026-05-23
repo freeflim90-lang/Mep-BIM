@@ -1,0 +1,21 @@
+{
+  "owner": "ahmetcik",
+  "repo": "Chemical-Transferable-Potentials",
+  "full_name": "ahmetcik/Chemical-Transferable-Potentials",
+  "description": "A python module for building Chemical-tranferabel machine-learning potentials (CTPs). CTPs are models for atomistic simulations. The compound dependent parameters of 2b+3b potentials are described by some  neural network. The models approximate the Born-Oppenheimer potential-energy suraface using density-functional-theory calculations as training data.  The 2b+3b descriptor and potential module can be accesed also independently of the CTP approach. Publication is in preparation.",
+  "stars": 3,
+  "language": "Python",
+  "url": "https://github.com/ahmetcik/Chemical-Transferable-Potentials",
+  "topics": [],
+  "collected_at": "2026-05-23T21:55:48.271991",
+  "files_collected": [
+    "README.md",
+    "ctnn.py",
+    "ctp.py",
+    "descriptor.py",
+    "normalizer.py",
+    "ortho_basis.py",
+    "potential.py",
+    "regressor.py"
+  ]
+}

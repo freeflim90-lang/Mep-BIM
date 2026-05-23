@@ -1,0 +1,20 @@
+{
+  "owner": "Chrisvandr",
+  "repo": "parametric-simulation-energyplus",
+  "full_name": "Chrisvandr/parametric-simulation-energyplus",
+  "description": "Parametric building performance simulation using Python for EnergyPlus",
+  "stars": 18,
+  "language": "Python",
+  "url": "https://github.com/Chrisvandr/parametric-simulation-energyplus",
+  "topics": [],
+  "collected_at": "2026-05-23T21:55:28.927158",
+  "files_collected": [
+    "README.md",
+    "scripts/__init__.py",
+    "scripts/compare_timeseries_datasets.py",
+    "scripts/create_idfs.py",
+    "scripts/read_measurements.py",
+    "scripts/read_predictions.py",
+    "scripts/sensitivity_analysis.py"
+  ]
+}

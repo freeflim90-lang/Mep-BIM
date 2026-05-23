@@ -1,0 +1,26 @@
+{
+  "owner": "agnes-schroeder-bim",
+  "repo": "ifc-ids-prevalidator",
+  "full_name": "agnes-schroeder-bim/ifc-ids-prevalidator",
+  "description": "Lightweight IFC/IDS pre-validator — STEP-Parser,  Applicability/Requirements logic, PASS/FAIL, CSV export",
+  "stars": 0,
+  "language": "Python",
+  "url": "https://github.com/agnes-schroeder-bim/ifc-ids-prevalidator",
+  "topics": [
+    "architecture",
+    "bim",
+    "data-quality",
+    "ids",
+    "ifc",
+    "ifc-validation",
+    "openbim",
+    "python",
+    "qa-qc",
+    "validation"
+  ],
+  "collected_at": "2026-05-23T21:40:39.302353",
+  "files_collected": [
+    "README.md",
+    "ids_prevalidator.py"
+  ]
+}

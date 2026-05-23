@@ -1,0 +1,26 @@
+{
+  "owner": "kuvbur",
+  "repo": "pyIfcLayer",
+  "full_name": "kuvbur/pyIfcLayer",
+  "description": "Python script for IFC",
+  "stars": 1,
+  "language": "Python",
+  "url": "https://github.com/kuvbur/pyIfcLayer",
+  "topics": [
+    "archicad-python",
+    "ifc",
+    "ifcopenshell"
+  ],
+  "collected_at": "2026-05-23T21:50:54.816384",
+  "files_collected": [
+    ".vscode/launch.json",
+    "README.md",
+    "allplan_ifc.py",
+    "geonics.py",
+    "ifc_delim.py",
+    "pyArchIFC2NavisIFC.py",
+    "pyifclayer.py",
+    "renga_ifc_compat.py",
+    "stories.py"
+  ]
+}

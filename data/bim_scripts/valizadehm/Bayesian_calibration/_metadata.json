@@ -1,0 +1,23 @@
+{
+  "owner": "valizadehm",
+  "repo": "Bayesian_calibration",
+  "full_name": "valizadehm/Bayesian_calibration",
+  "description": "Development a Python script for calibration of Building Energy Simulation using energyPlus",
+  "stars": 0,
+  "language": "Jupyter Notebook",
+  "url": "https://github.com/valizadehm/Bayesian_calibration",
+  "topics": [],
+  "collected_at": "2026-05-23T21:56:47.515034",
+  "files_collected": [
+    "README.md",
+    "src/CalibrationPyMC.ipynb",
+    "src/DataSimulation.py",
+    "src/EppyUtility.py",
+    "src/ExtractDataEPW.py",
+    "src/Metamodel_GP.ipynb",
+    "src/Predictions.py",
+    "src/eppy_utility.py",
+    "src/main.py",
+    "src/sensivity_analysis.py"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "owner": "Vasile-Corjan",
+  "repo": "Applepy",
+  "full_name": "Vasile-Corjan/Applepy",
+  "description": "pyRevit scripts ",
+  "stars": 0,
+  "language": "Python",
+  "url": "https://github.com/Vasile-Corjan/Applepy",
+  "topics": [
+    "aec",
+    "automation",
+    "pyrevit",
+    "python",
+    "revit",
+    "revit-api"
+  ],
+  "collected_at": "2026-05-23T21:44:40.110177",
+  "files_collected": [
+    "Applepy/Applepy.extension/hooks/doc-closing.py",
+    "Applepy/Applepy.extension/hooks/doc-opened.py",
+    "README.md"
+  ]
+}

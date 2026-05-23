@@ -1,0 +1,16 @@
+{
+  // pyRevit scripts run inside IronPython (a .NET CLR runtime).
+  // Pylance/Pyright uses the system CPython interpreter and cannot resolve
+  // CLR assemblies such as System.Windows, System.Windows.Controls, clr, etc.
+  // The settings below suppress those false-positive import errors without
+  // disabling all type checking.
+  "reportMissingModuleSource": "none",
+  "reportMissingImports": "none",
+  "reportUndefinedVariable": "warning",
+  "typeCheckingMode": "basic",
+  "pythonVersion": "2.7",
+  "exclude": [
+    "**/__pycache__",
+    "**/.git"
+  ]
+}

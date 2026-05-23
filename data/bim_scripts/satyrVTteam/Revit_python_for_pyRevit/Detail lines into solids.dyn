@@ -1,0 +1,581 @@
+{
+  "Uuid": "e452377f-58cd-4bf6-ad4d-4e7e4f46275a",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "Detail lines into solids",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Curve.SweepAsSolid@Autodesk.DesignScript.Geometry.Curve,bool",
+      "Id": "4900af7fe13742fbb81b11b757be7577",
+      "Inputs": [
+        {
+          "Id": "78a72846478042c6869a9626d9845a39",
+          "Name": "curve",
+          "Description": "Autodesk.DesignScript.Geometry.Curve",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f4f9742044d541e6b9c09a465a594b5c",
+          "Name": "path",
+          "Description": "The path that represent the sweep path\n\nCurve",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "b2998e59d2094b58b9c059d08155bb77",
+          "Name": "cutEndOff",
+          "Description": "Cut the end of the sweep and make it normal to the path\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "cd8bb23e7a07426d8243ec733bbe9a25",
+          "Name": "Solid",
+          "Description": "A solid that sweeps this closed Curve along the path Curve",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Sweeps this closed Curve along the path Curve, creating a Solid\n\nCurve.SweepAsSolid (path: Curve, cutEndOff: bool = false): Solid"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Curve.StartPoint",
+      "Id": "45e0997d91b84196a51e44a48fa95584",
+      "Inputs": [
+        {
+          "Id": "31bfe03b782447db8117fb507ba2cbb3",
+          "Name": "curve",
+          "Description": "Autodesk.DesignScript.Geometry.Curve",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "d0ce450990cd4a6fa553a6df2f261c10",
+          "Name": "Point",
+          "Description": "Point",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get the start Point along the Curve\n\nCurve.StartPoint: Point"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "10;",
+      "Id": "0cf663f71ea44cb387aea11aaf37cdd2",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "b382e277c6e045a2bc0d5bdf8c5f0ee0",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Revit.Elements.DetailCurve.Curve",
+      "Id": "c7b36b0c01a9491ea978d4301911e17e",
+      "Inputs": [
+        {
+          "Id": "9b450d23edbf4f1e9cd8933fb2672938",
+          "Name": "detailCurve",
+          "Description": "Revit.Elements.DetailCurve",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "065a158156fd409a95cbe8934b778773",
+          "Name": "Curve",
+          "Description": "Curve",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get Geometry Curve\n\nDetailCurve.Curve: Curve"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Revit.Elements.ImportInstance.ByGeometry@Autodesk.DesignScript.Geometry.Geometry",
+      "Id": "2583d0bfbdba4d21bb074103884f854d",
+      "Inputs": [
+        {
+          "Id": "44c193879f034b44a87312c88486bb63",
+          "Name": "geometry",
+          "Description": "A single piece of geometry\n\nGeometry",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "10b5cf4fd3ad430d9311bbe7f95400ab",
+          "Name": "ImportInstance",
+          "Description": "ImportInstance",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Import a collection of Geometry (Solid, Curve, Surface, etc) into Revit as an ImportInstance.\n\nImportInstance.ByGeometry (geometry: Geometry): ImportInstance"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Circle.ByCenterPointRadiusNormal@Autodesk.DesignScript.Geometry.Point,double,Autodesk.DesignScript.Geometry.Vector",
+      "Id": "b65e579e7c8f4e33a0c7757f3c960236",
+      "Inputs": [
+        {
+          "Id": "d90a489a22ec4b53892cf0b96cca3a99",
+          "Name": "centerPoint",
+          "Description": "Center point of circle\n\nPoint\nDefault value : Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 0)",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "72cc2568aa894c7fbac57bd45832421f",
+          "Name": "radius",
+          "Description": "Radius\n\ndouble\nDefault value : 1",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "e4cdc59b43634725ad22207433daf154",
+          "Name": "normal",
+          "Description": "Normal direction vector\n\nVector\nDefault value : Autodesk.DesignScript.Geometry.Vector.ByCoordinates(0, 0, 1)",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "9f1115aca6004177bcea6fbc711f9e76",
+          "Name": "Circle",
+          "Description": "Circle created with center point radius and normal",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Creates a Circle with specified center Point, radius, and normal direction.\n\nCircle.ByCenterPointRadiusNormal (centerPoint: Point = Autodesk.DesignScript.Geometry.Point.ByCoordinates(0, 0, 0), radius: double = 1, normal: Vector = Autodesk.DesignScript.Geometry.Vector.ByCoordinates(0, 0, 1)): Circle"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Vector.ByTwoPoints@Autodesk.DesignScript.Geometry.Point,Autodesk.DesignScript.Geometry.Point",
+      "Id": "88726a43af384357ad9eb65e6c3edb1f",
+      "Inputs": [
+        {
+          "Id": "8939fa6540944c72a871661a71aa5c9f",
+          "Name": "start",
+          "Description": "Point",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "6eb61fd30d6548bd8e846f932dd5b3e5",
+          "Name": "end",
+          "Description": "Point",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "9bb91ed494de4f07b92c6bb3975ff88d",
+          "Name": "Vector",
+          "Description": "Vector",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Form a Vector by two end points. The result is a vector from the start to the end point.\n\nVector.ByTwoPoints (start: Point, end: Point): Vector"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Curve.EndPoint",
+      "Id": "66cc088a7c1a4321862d3f838f8e33d7",
+      "Inputs": [
+        {
+          "Id": "61c20a2b8356441fad74afaaed71bc05",
+          "Name": "curve",
+          "Description": "Autodesk.DesignScript.Geometry.Curve",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "462e9f91bece43dfbf53d7a0e75626fb",
+          "Name": "Point",
+          "Description": "Point",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get the end Point along the Curve\n\nCurve.EndPoint: Point"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.DesignScript.Geometry.Solid.ByUnion@Autodesk.DesignScript.Geometry.Solid[]",
+      "Id": "27b76353831144fab7892aad7e6fb9fe",
+      "Inputs": [
+        {
+          "Id": "18563882f96345f894bdc8f610812e6b",
+          "Name": "solids",
+          "Description": "A collection of solids\n\nSolid[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "9826df3b26024e368eb2ba59b5010d58",
+          "Name": "Solid",
+          "Description": "Solid",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Union a collection of solids into one solid\n\nSolid.ByUnion (solids: Solid[]): Solid"
+    },
+    {
+      "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
+      "NodeType": "PythonScriptNode",
+      "Code": "import clr\r\n\r\nclr.AddReference('RevitAPI')\r\nimport Autodesk\r\nfrom Autodesk.Revit.DB import *\r\n\r\nclr.AddReference('RevitServices')\r\nimport RevitServices\r\nfrom RevitServices.Persistence import DocumentManager\r\n\r\ndoc = DocumentManager.Instance.CurrentDBDocument\r\nuiapp = DocumentManager.Instance.CurrentUIApplication\r\napp = uiapp.Application\r\nuidoc = uiapp.ActiveUIDocument\r\n\r\nclr.AddReference('RevitNodes')\r\nimport Revit\r\nclr.ImportExtensions(Revit.Elements)\r\n\r\nueWrapper = None\r\nwrappers = clr.GetClrType(Revit.Elements.ElementWrapper).GetMethods()\r\nfor w in wrappers:\r\n\tif w.ToString().startswith(\"Revit.Elements.UnknownElement\"):\r\n\t\tueWrapper = w\r\n\t\tbreak\r\n\t\t\r\nout = []\r\nselectElemId = uidoc.Selection.GetElementIds()\r\nselectElem = [doc.GetElement(xId) for xId in selectElemId]\r\n\r\nfor i in selectElem:\r\n\ttry:\r\n\t\tcheck = Revit.Elements.ElementWrapper.Wrap(i, True)\r\n\texcept: check = None\r\n\r\n\tif check is None:\r\n\t\tout.append(ueWrapper.Invoke(None, (i, False)))\r\n\telse:\r\n\t\tout.append(i) \r\n\r\nOUT = out",
+      "Engine": "CPython3",
+      "EngineName": "CPython3",
+      "VariableInputPorts": true,
+      "Id": "9b04c270d9db4fa7b5a6c75730c029f9",
+      "Inputs": [
+        {
+          "Id": "cd42b7fb9496439187195f2be1ee0009",
+          "Name": "IN[0]",
+          "Description": "Input #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "61184c8d97a0471a967d35633189bae7",
+          "Name": "OUT",
+          "Description": "Result of the python script",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Runs an embedded Python script."
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "cd8bb23e7a07426d8243ec733bbe9a25",
+      "End": "18563882f96345f894bdc8f610812e6b",
+      "Id": "6c1947333ecf44fe99f58cd4d6bb1f2d",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "d0ce450990cd4a6fa553a6df2f261c10",
+      "End": "d90a489a22ec4b53892cf0b96cca3a99",
+      "Id": "00d674d570f14217a4251ff0d34d2604",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "d0ce450990cd4a6fa553a6df2f261c10",
+      "End": "8939fa6540944c72a871661a71aa5c9f",
+      "Id": "a6e8f74e482741659a1b9f2e0ba7aa31",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "b382e277c6e045a2bc0d5bdf8c5f0ee0",
+      "End": "72cc2568aa894c7fbac57bd45832421f",
+      "Id": "df9086cb2ffb40d2813717261007cc49",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "065a158156fd409a95cbe8934b778773",
+      "End": "31bfe03b782447db8117fb507ba2cbb3",
+      "Id": "fc89bd4fc07441deac09ecd2e21c522e",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "065a158156fd409a95cbe8934b778773",
+      "End": "f4f9742044d541e6b9c09a465a594b5c",
+      "Id": "8fe51135eafb408cb1e0a29f103d09f4",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "065a158156fd409a95cbe8934b778773",
+      "End": "61c20a2b8356441fad74afaaed71bc05",
+      "Id": "cb9757a1ddce4d46acf9736dde21b23c",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "9f1115aca6004177bcea6fbc711f9e76",
+      "End": "78a72846478042c6869a9626d9845a39",
+      "Id": "5f8226d1b364487691771eb560eaf6ac",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "9bb91ed494de4f07b92c6bb3975ff88d",
+      "End": "e4cdc59b43634725ad22207433daf154",
+      "Id": "c7334a96cc0e43f8b935bffc910ff5df",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "462e9f91bece43dfbf53d7a0e75626fb",
+      "End": "6eb61fd30d6548bd8e846f932dd5b3e5",
+      "Id": "a67baa82b810429ebb115e0c31dac615",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "9826df3b26024e368eb2ba59b5010d58",
+      "End": "44c193879f034b44a87312c88486bb63",
+      "Id": "1df43855e80c44a09f3baf849d21e139",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "61184c8d97a0471a967d35633189bae7",
+      "End": "9b450d23edbf4f1e9cd8933fb2672938",
+      "Id": "177a6f71ab4145139e88f9cf184e3cd5",
+      "IsHidden": "False"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [],
+  "Thumbnail": "",
+  "GraphDocumentationURL": null,
+  "ExtensionWorkspaceData": [
+    {
+      "ExtensionGuid": "28992e1d-abb9-417f-8b1b-05e053bee670",
+      "Name": "Properties",
+      "Version": "2.17",
+      "Data": {}
+    }
+  ],
+  "Author": "",
+  "Linting": {
+    "activeLinter": "None",
+    "activeLinterId": "7b75fb44-43fd-4631-a878-29f4d5d8399a",
+    "warningCount": 0,
+    "errorCount": 0
+  },
+  "Bindings": [
+    {
+      "NodeId": "2583d0bf-bdba-4d21-bb07-4103884f854d",
+      "Binding": {
+        "ByGeometry_InClassDecl-1_InFunctionScope-1_Instance0_2583d0bf-bdba-4d21-bb07-4103884f854d": "PFNPQVAtRU5WOkVudmVsb3BlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOlNPQVAtRU5DPSJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy9zb2FwL2VuY29kaW5nLyIgeG1sbnM6U09BUC1FTlY9Imh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3NvYXAvZW52ZWxvcGUvIiB4bWxuczpjbHI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vc29hcC9lbmNvZGluZy9jbHIvMS4wIiBTT0FQLUVOVjplbmNvZGluZ1N0eWxlPSJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy9zb2FwL2VuY29kaW5nLyI+DQo8U09BUC1FTlY6Qm9keT4NCjxhMTpDYWxsU2l0ZV94MDAyQl9UcmFjZVNlcmlhbGlzZXJIZWxwZXIgaWQ9InJlZi0xIiB4bWxuczphMT0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS9jbHIvbnNhc3NlbS9Qcm90b0NvcmUvUHJvdG9Db3JlJTJDJTIwVmVyc2lvbiUzRDIuMTcuMC4zNDcyJTJDJTIwQ3VsdHVyZSUzRG5ldXRyYWwlMkMlMjBQdWJsaWNLZXlUb2tlbiUzRG51bGwiPg0KPE51bWJlck9mRWxlbWVudHM+MTwvTnVtYmVyT2ZFbGVtZW50cz4NCjxCYXNlLTBfSGFzRGF0YT50cnVlPC9CYXNlLTBfSGFzRGF0YT4NCjxCYXNlLTBfRGF0YSBpZD0icmVmLTMiPlBGTlBRVkF0UlU1V09rVnVkbVZzYjNCbElIaHRiRzV6T25oemFUMGlhSFIwY0RvdkwzZDNkeTUzTXk1dmNtY3ZNakF3TVM5WVRVeFRZMmhsYldFdGFXNXpkR0Z1WTJVaUlIaHRiRzV6T25oelpEMGlhSFIwY0RvdkwzZDNkeTUzTXk1dmNtY3ZNakF3TVM5WVRVeFRZMmhsYldFaUlIaHRiRzV6T2xOUFFWQXRSVTVEUFNKb2RIUndPaTh2YzJOb1pXMWhjeTU0Yld4emIyRndMbTl5Wnk5emIyRndMMlZ1WTI5a2FXNW5MeUlnZUcxc2JuTTZVMDlCVUMxRlRsWTlJbWgwZEhBNkx5OXpZMmhsYldGekxuaHRiSE52WVhBdWIzSm5MM052WVhBdlpXNTJaV3h2Y0dVdklpQjRiV3h1Y3pwamJISTlJbWgwZEhBNkx5OXpZMmhsYldGekxtMXBZM0p2YzI5bWRDNWpiMjB2YzI5aGNDOWxibU52WkdsdVp5OWpiSEl2TVM0d0lpQlRUMEZRTFVWT1ZqcGxibU52WkdsdVoxTjBlV3hsUFNKb2RIUndPaTh2YzJOb1pXMWhjeTU0Yld4emIyRndMbTl5Wnk5emIyRndMMlZ1WTI5a2FXNW5MeUkrRFFvOFUwOUJVQzFGVGxZNlFtOWtlVDROQ2p4aE1UcFRaWEpwWVd4cGVtRmliR1ZKWkNCcFpEMGljbVZtTFRFaUlIaHRiRzV6T21FeFBTSm9kSFJ3T2k4dmMyTm9aVzFoY3k1dGFXTnliM052Wm5RdVkyOXRMMk5zY2k5dWMyRnpjMlZ0TDFKbGRtbDBVMlZ5ZG1salpYTXVVR1Z5YzJsemRHVnVZMlV2VW1WMmFYUlRaWEoyYVdObGN5VXlReVV5TUZabGNuTnBiMjRsTTBReUxqRTNMakF1TnpRd05DVXlReVV5TUVOMWJIUjFjbVVsTTBSdVpYVjBjbUZzSlRKREpUSXdVSFZpYkdsalMyVjVWRzlyWlc0bE0wUnVkV3hzSWo0TkNqeHpkSEpwYm1kSlJDQnBaRDBpY21WbUxUTWlQalF3WVdKa1lqUm1MVGszWkRJdE5EVmpNaTA1WXpFeExUQXhZMkZtTURJMFpqbGhNaTB3TURCak1EVmpPVHd2YzNSeWFXNW5TVVErRFFvOGFXNTBTVVErTnpnM09URXpQQzlwYm5SSlJENE5Dand2WVRFNlUyVnlhV0ZzYVhwaFlteGxTV1ErRFFvOEwxTlBRVkF0UlU1V09rSnZaSGsrRFFvOEwxTlBRVkF0UlU1V09rVnVkbVZzYjNCbFBnMEs8L0Jhc2UtMF9EYXRhPg0KPEJhc2UtMF9IYXNOZXN0ZWREYXRhPmZhbHNlPC9CYXNlLTBfSGFzTmVzdGVkRGF0YT4NCjwvYTE6Q2FsbFNpdGVfeDAwMkJfVHJhY2VTZXJpYWxpc2VySGVscGVyPg0KPC9TT0FQLUVOVjpCb2R5Pg0KPC9TT0FQLUVOVjpFbnZlbG9wZT4NCg=="
+      }
+    }
+  ],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.17.0.3472",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "_Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "ConnectorPins": [],
+    "NodeViews": [
+      {
+        "Name": "Curve.SweepAsSolid",
+        "ShowGeometry": true,
+        "Id": "4900af7fe13742fbb81b11b757be7577",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 753.0,
+        "Y": 395.0
+      },
+      {
+        "Name": "Curve.StartPoint",
+        "ShowGeometry": true,
+        "Id": "45e0997d91b84196a51e44a48fa95584",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -305.59684150825234,
+        "Y": 433.97691280631943
+      },
+      {
+        "Name": "Code Block",
+        "ShowGeometry": true,
+        "Id": "0cf663f71ea44cb387aea11aaf37cdd2",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 20.071539377943282,
+        "Y": 666.98313253110166
+      },
+      {
+        "Name": "DetailCurve.Curve",
+        "ShowGeometry": true,
+        "Id": "c7b36b0c01a9491ea978d4301911e17e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -186.20207992630071,
+        "Y": 197.48375452736872
+      },
+      {
+        "Name": "ImportInstance.ByGeometry",
+        "ShowGeometry": true,
+        "Id": "2583d0bfbdba4d21bb074103884f854d",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1271.7189874106034,
+        "Y": 366.87023403978816
+      },
+      {
+        "Name": "Circle.ByCenterPointRadiusNormal",
+        "ShowGeometry": true,
+        "Id": "b65e579e7c8f4e33a0c7757f3c960236",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 305.16772288682864,
+        "Y": 545.89935497326337
+      },
+      {
+        "Name": "Vector.ByTwoPoints",
+        "ShowGeometry": true,
+        "Id": "88726a43af384357ad9eb65e6c3edb1f",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -46.922288251324289,
+        "Y": 839.37810718630476
+      },
+      {
+        "Name": "Curve.EndPoint",
+        "ShowGeometry": true,
+        "Id": "66cc088a7c1a4321862d3f838f8e33d7",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -291.19387751358067,
+        "Y": 918.40715077115237
+      },
+      {
+        "Name": "Solid.ByUnion",
+        "ShowGeometry": true,
+        "Id": "27b76353831144fab7892aad7e6fb9fe",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1022.1251376964325,
+        "Y": 381.00965439418871
+      },
+      {
+        "Name": "Selected elements",
+        "ShowGeometry": true,
+        "Id": "9b04c270d9db4fa7b5a6c75730c029f9",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -463.61587126101597,
+        "Y": 185.43113757678205
+      }
+    ],
+    "Annotations": [],
+    "X": 242.16767140372482,
+    "Y": 22.858530068374989,
+    "Zoom": 0.35391796841474144
+  }
+}

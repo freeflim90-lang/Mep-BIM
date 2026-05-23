@@ -1,0 +1,6 @@
+{
+    "simulation_name": "test1",
+    "asset_geojson_path": "upload/demo_data/test.geojson",
+    "metadata_csv_path": "upload/demo_data/test.csv",
+    "num_cores": 1
+}

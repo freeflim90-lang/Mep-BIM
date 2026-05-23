@@ -1,0 +1,28 @@
+{
+  "owner": "R-Rijnbeek",
+  "repo": "IFCManipulations",
+  "full_name": "R-Rijnbeek/IFCManipulations",
+  "description": "Repository with the basic IFC manipulations for IFC files. And a IFC file viewer with pyQt5.",
+  "stars": 3,
+  "language": "Python",
+  "url": "https://github.com/R-Rijnbeek/IFCManipulations",
+  "topics": [
+    "ifc",
+    "ifcopenshell",
+    "occ",
+    "pyqt5",
+    "python",
+    "pythonocc-core"
+  ],
+  "collected_at": "2026-05-23T21:50:44.506431",
+  "files_collected": [
+    ".vscode/launch.json",
+    ".vscode/settings.json",
+    "README.md",
+    "TEST/IFC_API_TEST.py",
+    "TEST/IFC_VIEW_PROCESS.py",
+    "TEST/OCC_API_TEST.py",
+    "TEST/test_ifcManipulations.py",
+    "ifcManipulation/__init__.py"
+  ]
+}

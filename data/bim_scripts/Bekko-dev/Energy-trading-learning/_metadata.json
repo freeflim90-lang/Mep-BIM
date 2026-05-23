@@ -1,0 +1,14 @@
+{
+  "owner": "Bekko-dev",
+  "repo": "Energy-trading-learning",
+  "full_name": "Bekko-dev/Energy-trading-learning",
+  "description": "Weekly analysis of European power markets (EPEX, RTE) using Python. Merit order simulation, spot price analysis, and energy risk concepts — building toward a Risk Analyst role in energy trading.",
+  "stars": 0,
+  "language": null,
+  "url": "https://github.com/Bekko-dev/Energy-trading-learning",
+  "topics": [],
+  "collected_at": "2026-05-23T21:57:40.632375",
+  "files_collected": [
+    "README.md"
+  ]
+}

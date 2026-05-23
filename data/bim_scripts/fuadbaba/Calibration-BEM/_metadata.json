@@ -1,0 +1,14 @@
+{
+  "owner": "fuadbaba",
+  "repo": "Calibration-BEM",
+  "full_name": "fuadbaba/Calibration-BEM",
+  "description": "Codes of RVX, RVI and Python to calibrate building simulation model based on indoor hourly temperature or energy meters data using a developed methodology illustrated in this journal paper https://doi.org/10.1016/j.buildenv.2021.108518 ",
+  "stars": 0,
+  "language": null,
+  "url": "https://github.com/fuadbaba/Calibration-BEM",
+  "topics": [],
+  "collected_at": "2026-05-23T21:57:45.117148",
+  "files_collected": [
+    "README.md"
+  ]
+}

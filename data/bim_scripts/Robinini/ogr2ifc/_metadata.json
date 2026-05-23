@@ -1,0 +1,16 @@
+{
+  "owner": "Robinini",
+  "repo": "ogr2ifc",
+  "full_name": "Robinini/ogr2ifc",
+  "description": "GIS to BIM conversion using GDAL/OGR and IfcOpenShell-python",
+  "stars": 4,
+  "language": "Python",
+  "url": "https://github.com/Robinini/ogr2ifc",
+  "topics": [],
+  "collected_at": "2026-05-23T21:50:36.718491",
+  "files_collected": [
+    "docs/README.md",
+    "example_write.py",
+    "ogr2ifc.py"
+  ]
+}

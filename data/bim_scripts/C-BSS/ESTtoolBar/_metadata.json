@@ -1,0 +1,14 @@
+{
+  "owner": "C-BSS",
+  "repo": "ESTtoolBar",
+  "full_name": "C-BSS/ESTtoolBar",
+  "description": "Conjunto de scripts creados en python y Dynamo para la disciplina de Estructuras (EST). Ordenados mediante pyRevit, para uso en Revit 2022 en adelante",
+  "stars": 0,
+  "language": "Python",
+  "url": "https://github.com/C-BSS/ESTtoolBar",
+  "topics": [],
+  "collected_at": "2026-05-23T21:45:04.770400",
+  "files_collected": [
+    "README.md"
+  ]
+}

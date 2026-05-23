@@ -1,0 +1,21 @@
+{
+  "owner": "johannesmichael",
+  "repo": "ifc-python",
+  "full_name": "johannesmichael/ifc-python",
+  "description": "Scripts and tools for analyzing ifc with ifcopenshell and python-occ",
+  "stars": 15,
+  "language": "Python",
+  "url": "https://github.com/johannesmichael/ifc-python",
+  "topics": [],
+  "collected_at": "2026-05-23T21:48:02.065743",
+  "files_collected": [
+    "IFC_Analyze.py",
+    "README.md",
+    "ifc2Excel.py",
+    "ifcopenshell_basics.py",
+    "modules/ifc_pset_utils.py",
+    "modules/ifc_pset_utils_w_psetname.py",
+    "modules/old/psets.py",
+    "round_ifc_numbers.py"
+  ]
+}

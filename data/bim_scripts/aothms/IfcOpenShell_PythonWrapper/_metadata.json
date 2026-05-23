@@ -1,0 +1,30 @@
+{
+  "owner": "aothms",
+  "repo": "IfcOpenShell_PythonWrapper",
+  "full_name": "aothms/IfcOpenShell_PythonWrapper",
+  "description": "An out of date development branch of IfcOpenShell",
+  "stars": 16,
+  "language": "C++",
+  "url": "https://github.com/aothms/IfcOpenShell_PythonWrapper",
+  "topics": [],
+  "collected_at": "2026-05-23T21:47:57.829672",
+  "files_collected": [
+    "README.md",
+    "src/ifcblender/io_import_scene_ifc/__init__.py",
+    "src/ifcexpressparser/bootstrap.py",
+    "src/ifcexpressparser/documentation.py",
+    "src/ifcexpressparser/enum_header.py",
+    "src/ifcexpressparser/header.py",
+    "src/ifcexpressparser/implementation.py",
+    "src/ifcexpressparser/latebound_header.py",
+    "src/ifcexpressparser/latebound_implementation.py",
+    "src/ifcexpressparser/mapping.py",
+    "src/ifcexpressparser/nodes.py",
+    "src/ifcexpressparser/schema.py",
+    "src/ifcexpressparser/templates.py",
+    "src/ifcopenshell-python/ifcopenshell/__init__.py",
+    "src/ifcopenshell-python/ifcopenshell/guid.py",
+    "test/bpy.py",
+    "test/run.py"
+  ]
+}

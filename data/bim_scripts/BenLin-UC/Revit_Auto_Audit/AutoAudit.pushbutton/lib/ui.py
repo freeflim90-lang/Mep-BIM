@@ -1,0 +1,351 @@
+# -*- coding: utf-8 -*-
+
+import clr
+clr.AddReference("System.Windows.Forms")
+clr.AddReference("System.Drawing")
+
+from System.Windows.Forms import (Application, Form, FolderBrowserDialog, Label, Button, TextBox, DialogResult,
+                                  FormBorderStyle, FormStartPosition, TableLayoutPanel, FlowLayoutPanel, 
+                                  Padding, CheckBox, GroupBox, ComboBox, ComboBoxStyle, AutoSizeMode, DockStyle, 
+                                  ScrollBars, FlowDirection)
+from System.Drawing import Point, Size, Color, Font
+from __init__ import logger
+
+
+class ExtendedAuditForm(Form):
+    def __init__(self):
+        """Initialize the extended form components."""
+        self.initialize_components()
+
+    def initialize_components(self):
+        """Set up the UI components for the extended form."""
+        self.Text = "AutoAudit - Extended"
+        self.ClientSize = Size(420, 720)  # Increased width from 400 to 420
+        self.FormBorderStyle = FormBorderStyle.FixedDialog
+        self.MaximizeBox = False
+        self.MinimizeBox = False
+        self.StartPosition = FormStartPosition.CenterScreen
+        self.BackColor = Color.LightGray
+
+        # Main layout panel
+        main_layout = TableLayoutPanel()
+        main_layout.RowCount = 6
+        main_layout.ColumnCount = 1
+        main_layout.AutoSize = True
+        main_layout.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        main_layout.Dock = DockStyle.Fill
+
+        # Output folder section
+        folder_group = self.create_folder_section()
+        main_layout.Controls.Add(folder_group, 0, 0)
+
+        # Basic audit section
+        basic_group = self.create_basic_audit_section()
+        main_layout.Controls.Add(basic_group, 0, 1)
+
+        # Workset audit section
+        workset_group = self.create_workset_section()
+        main_layout.Controls.Add(workset_group, 0, 2)
+
+        # View audit section
+        view_group = self.create_view_section()
+        main_layout.Controls.Add(view_group, 0, 3)
+
+        # Buttons section
+        button_panel = self.create_button_section()
+        main_layout.Controls.Add(button_panel, 0, 4)
+
+        self.Controls.Add(main_layout)
+        self.update_submit_button_state()
+
+    def create_folder_section(self):
+        """Create the output folder selection section."""
+        group = GroupBox()
+        group.Text = "Output Settings"
+        group.AutoSize = True
+        group.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        group.Padding = Padding(5)  # Add padding
+
+        layout = TableLayoutPanel()
+        layout.RowCount = 2
+        layout.ColumnCount = 2
+        layout.AutoSize = True
+
+        browse_button = Button()
+        browse_button.Text = 'Browse Folder'
+        browse_button.Size = Size(100, 22)
+        browse_button.Click += self.browse_folder_button_click
+        layout.Controls.Add(browse_button, 0, 0)
+
+        self.folder_path_label = Label()
+        self.folder_path_label.AutoSize = True
+        self.folder_path_label.Text = "No folder selected"
+        layout.Controls.Add(self.folder_path_label, 0, 1)
+
+        group.Controls.Add(layout)
+        return group
+
+    def create_basic_audit_section(self):
+        """Create the basic audit settings section."""
+        group = GroupBox()
+        group.Text = "Basic Audit (Warnings & Model Health)"
+        group.AutoSize = True
+        group.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        group.Padding = Padding(10)  # Add padding
+
+        layout = TableLayoutPanel()
+        layout.RowCount = 5
+        layout.ColumnCount = 2
+        layout.AutoSize = True
+
+        # FIXED: Add AutoSize and span checkbox across both columns
+        self.enable_basic_checkbox = CheckBox()
+        self.enable_basic_checkbox.Text = "Enable Basic Audit"
+        self.enable_basic_checkbox.AutoSize = True  # KEY FIX
+        self.enable_basic_checkbox.Checked = True
+        self.enable_basic_checkbox.CheckedChanged += self.checkbox_changed
+        layout.Controls.Add(self.enable_basic_checkbox, 0, 0)
+        layout.SetColumnSpan(self.enable_basic_checkbox, 2)  # KEY FIX: Span both columns
+
+        warning_label = Label()
+        warning_label.Text = "Warning File:"
+        warning_label.AutoSize = True
+        layout.Controls.Add(warning_label, 0, 1)
+
+        self.warning_input = TextBox()
+        self.warning_input.Text = "warning_info.csv"
+        self.warning_input.Size = Size(220, 20)  # Increased from 200
+        self.warning_input.TextChanged += self.input_text_changed
+        layout.Controls.Add(self.warning_input, 1, 1)
+
+        audit_label = Label()
+        audit_label.Text = "Audit File:"
+        audit_label.AutoSize = True
+        layout.Controls.Add(audit_label, 0, 2)
+
+        self.audit_input = TextBox()
+        self.audit_input.Text = "audit_info.csv"
+        self.audit_input.Size = Size(220, 20)  # Increased from 200
+        self.audit_input.TextChanged += self.input_text_changed
+        layout.Controls.Add(self.audit_input, 1, 2)
+
+        group.Controls.Add(layout)
+        return group
+
+    def create_workset_section(self):
+        """Create the workset audit settings section."""
+        group = GroupBox()
+        group.Text = "Workset Audit"
+        group.AutoSize = True
+        group.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        group.Padding = Padding(10)  # Add padding
+
+        layout = TableLayoutPanel()
+        layout.RowCount = 4
+        layout.ColumnCount = 2
+        layout.AutoSize = True
+
+        # FIXED: Add AutoSize and span checkbox across both columns
+        self.enable_workset_checkbox = CheckBox()
+        self.enable_workset_checkbox.Text = "Enable Workset Audit"
+        self.enable_workset_checkbox.AutoSize = True  # KEY FIX
+        self.enable_workset_checkbox.Checked = False
+        self.enable_workset_checkbox.CheckedChanged += self.checkbox_changed
+        layout.Controls.Add(self.enable_workset_checkbox, 0, 0)
+        layout.SetColumnSpan(self.enable_workset_checkbox, 2)  # KEY FIX: Span both columns
+
+        workset_file_label = Label()
+        workset_file_label.Text = "Workset File:"
+        workset_file_label.AutoSize = True
+        layout.Controls.Add(workset_file_label, 0, 1)
+
+        self.workset_file_input = TextBox()
+        self.workset_file_input.Text = "workset_info.csv"
+        self.workset_file_input.Size = Size(220, 20)  # Increased from 200
+        self.workset_file_input.TextChanged += self.input_text_changed
+        layout.Controls.Add(self.workset_file_input, 1, 1)
+
+        view_keyword_label = Label()
+        view_keyword_label.Text = "3D View:"
+        view_keyword_label.AutoSize = True
+        layout.Controls.Add(view_keyword_label, 0, 2)
+
+        self.view_keyword_input = TextBox()
+        self.view_keyword_input.Text = "Revizto"
+        self.view_keyword_input.Size = Size(220, 20)  # Increased from 200
+        self.view_keyword_input.TextChanged += self.input_text_changed
+        layout.Controls.Add(self.view_keyword_input, 1, 2)
+
+        group.Controls.Add(layout)
+        return group
+
+    def create_view_section(self):
+        """Create the view audit settings section."""
+        group = GroupBox()
+        group.Text = "View Audit"
+        group.AutoSize = True
+        group.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        group.Padding = Padding(10)  # Add padding
+
+        layout = TableLayoutPanel()
+        layout.RowCount = 5
+        layout.ColumnCount = 2
+        layout.AutoSize = True
+
+        # FIXED: Add AutoSize and span checkbox across both columns
+        self.enable_view_checkbox = CheckBox()
+        self.enable_view_checkbox.Text = "Enable View Audit"
+        self.enable_view_checkbox.AutoSize = True  # KEY FIX
+        self.enable_view_checkbox.Checked = False
+        self.enable_view_checkbox.CheckedChanged += self.checkbox_changed
+        layout.Controls.Add(self.enable_view_checkbox, 0, 0)
+        layout.SetColumnSpan(self.enable_view_checkbox, 2)  # KEY FIX: Span both columns
+
+        view_file_label = Label()
+        view_file_label.Text = "View File:"
+        view_file_label.AutoSize = True
+        layout.Controls.Add(view_file_label, 0, 1)
+
+        self.view_file_input = TextBox()
+        self.view_file_input.Text = "view_compliance.csv"
+        self.view_file_input.Size = Size(220, 20)  # Increased from 200
+        self.view_file_input.TextChanged += self.input_text_changed
+        layout.Controls.Add(self.view_file_input, 1, 1)
+
+        view_types_label = Label()
+        view_types_label.Text = "View Types:"
+        view_types_label.AutoSize = True
+        layout.Controls.Add(view_types_label, 0, 2)
+
+        self.view_types_combo = ComboBox()
+        self.view_types_combo.DropDownStyle = ComboBoxStyle.DropDownList
+        # Add items individually to avoid Array conversion issues
+        view_type_options = ["All Views", "3D Views Only", "Plan Views Only", "Section Views Only", "Custom Selection"]
+        for option in view_type_options:
+            self.view_types_combo.Items.Add(option)
+        self.view_types_combo.SelectedIndex = 0
+        self.view_types_combo.Size = Size(220, 20)  # Increased from 200
+        layout.Controls.Add(self.view_types_combo, 1, 2)
+
+        patterns_label = Label()
+        patterns_label.Text = "View Patterns:"
+        patterns_label.AutoSize = True
+        layout.Controls.Add(patterns_label, 0, 3)
+
+        self.view_patterns_input = TextBox()
+        self.view_patterns_input.Text = "discipline:STR,ARC,MEP,ELE; not:temp; not:test; not:copy"
+        self.view_patterns_input.Size = Size(220, 60)  # Increased width from 200
+        self.view_patterns_input.Multiline = True
+        self.view_patterns_input.ScrollBars = ScrollBars.Vertical
+        self.view_patterns_input.TextChanged += self.input_text_changed
+        layout.Controls.Add(self.view_patterns_input, 1, 3)
+
+        help_label = Label()
+        help_label.Text = "Pattern Help:\n• Discipline: 'discipline:STR,ARC,MEP' matches '_STR_', '_ARC_', '_MEP_'\n• Simple text: 'Linked View' matches views containing that text\n• Exclusions: 'not:temp' excludes views with 'temp'\n• Regex: 'regex:^Linked View_\\w{3}_' for advanced patterns\n• Separate multiple patterns with semicolons"
+        help_label.Size = Size(400, 70)  # Adjusted width from 380 to 400
+        help_label.Font = Font("Arial", 7)
+        layout.Controls.Add(help_label, 0, 4)
+        layout.SetColumnSpan(help_label, 2)
+
+        group.Controls.Add(layout)
+        return group
+
+    def create_button_section(self):
+        """Create the submit and cancel button section."""
+        panel = FlowLayoutPanel()
+        panel.FlowDirection = FlowDirection.RightToLeft
+        panel.AutoSize = True
+        panel.AutoSizeMode = AutoSizeMode.GrowAndShrink
+        panel.Padding = Padding(10)
+
+        cancel_button = Button()
+        cancel_button.Text = "Cancel"
+        cancel_button.DialogResult = DialogResult.Cancel
+        cancel_button.Size = Size(100, 30)
+        panel.Controls.Add(cancel_button)
+
+        self.submit_button = Button()
+        self.submit_button.Text = "Run Audit"
+        self.submit_button.DialogResult = DialogResult.OK
+        self.submit_button.Size = Size(100, 30)
+        panel.Controls.Add(self.submit_button)
+
+        return panel
+
+    def browse_folder_button_click(self, sender, args):
+        """Handle folder browse button click."""
+        dialog = FolderBrowserDialog()
+        dialog.Description = "Select output folder"
+        if dialog.ShowDialog() == DialogResult.OK:
+            self.folder_path = dialog.SelectedPath
+            self.folder_path_label.Text = self.folder_path
+            self.update_submit_button_state()
+
+    def checkbox_changed(self, sender, args):
+        """Handle checkbox state changes."""
+        self.update_submit_button_state()
+
+    def input_text_changed(self, sender, args):
+        """Handle text input changes."""
+        self.update_submit_button_state()
+
+    def update_submit_button_state(self):
+        """Enable or disable the submit button based on form completion."""
+        folder_selected = hasattr(self, 'folder_path') and self.folder_path
+        
+        # Check if at least one audit type is enabled
+        at_least_one_enabled = (
+            self.enable_basic_checkbox.Checked or
+            self.enable_workset_checkbox.Checked or
+            self.enable_view_checkbox.Checked
+        )
+
+        # Check if all enabled audit types have non-empty file names
+        all_inputs_valid = True
+        if self.enable_basic_checkbox.Checked:
+            if not self.warning_input.Text.strip() or not self.audit_input.Text.strip():
+                all_inputs_valid = False
+        if self.enable_workset_checkbox.Checked:
+            if not self.workset_file_input.Text.strip() or not self.view_keyword_input.Text.strip():
+                all_inputs_valid = False
+        if self.enable_view_checkbox.Checked:
+            if not self.view_file_input.Text.strip() or not self.view_patterns_input.Text.strip():
+                all_inputs_valid = False
+
+        self.submit_button.Enabled = folder_selected and at_least_one_enabled and all_inputs_valid
+
+    def get_user_inputs(self):
+        """Get all user inputs from the form."""
+        return {
+            'output_dir': self.folder_path if hasattr(self, 'folder_path') else None,
+            'enable_basic': self.enable_basic_checkbox.Checked,
+            'warning_file_name': self.warning_input.Text.strip(),
+            'audit_file_name': self.audit_input.Text.strip(),
+            'enable_workset': self.enable_workset_checkbox.Checked,
+            'workset_file_name': self.workset_file_input.Text.strip(),
+            'view_keyword': self.view_keyword_input.Text.strip(),
+            'enable_view': self.enable_view_checkbox.Checked,
+            'view_file_name': self.view_file_input.Text.strip(),
+            'view_types': self.view_types_combo.SelectedItem,
+            'view_patterns': self.view_patterns_input.Text.strip()
+        }
+
+
+def show_ui():
+    """Display the extended audit form and return user inputs."""
+    try:
+        form = ExtendedAuditForm()
+        
+        if form.ShowDialog() == DialogResult.OK:
+            return form.get_user_inputs()
+        else:
+            return None
+            
+    except Exception as e:
+        # Log error if logger is available
+        try:
+            from __init__ import logger
+            logger.error("Error showing UI: {}".format(str(e)))
+        except:
+            pass
+        return None

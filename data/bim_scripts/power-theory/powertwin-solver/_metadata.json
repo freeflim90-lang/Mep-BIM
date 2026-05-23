@@ -1,0 +1,30 @@
+{
+  "owner": "power-theory",
+  "repo": "powertwin-solver",
+  "full_name": "power-theory/powertwin-solver",
+  "description": "PowerTwin Solver is a containerized Python application that ingests GeoJSON and metadata files to run, monitor, and recover parallel URBANopt building-energy simulations via web and CLI.",
+  "stars": 3,
+  "language": "Python",
+  "url": "https://github.com/power-theory/powertwin-solver",
+  "topics": [],
+  "collected_at": "2026-05-23T21:55:45.109468",
+  "files_collected": [
+    "README.md",
+    "mss/app.py",
+    "mss/modules/commands/__init__.py",
+    "mss/modules/commands/get_status.py",
+    "mss/modules/commands/handle_request.py",
+    "mss/modules/download_gitlab_files.py",
+    "mss/modules/utils/format_json_as_table.py",
+    "solver/app/__init__.py",
+    "solver/app/cli.py",
+    "solver/app/direct_runner.py",
+    "solver/app/modules/__init__.py",
+    "solver/app/routes.py",
+    "solver/app/setup.py",
+    "solver/app/views.py",
+    "solver/run.py",
+    "solver/upload/reporting_frequency_map.json",
+    "solver/upload/simulation.json"
+  ]
+}

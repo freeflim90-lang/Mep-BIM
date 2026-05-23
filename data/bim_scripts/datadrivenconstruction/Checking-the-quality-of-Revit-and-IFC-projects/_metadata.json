@@ -1,0 +1,35 @@
+{
+  "owner": "datadrivenconstruction",
+  "repo": "Checking-the-quality-of-Revit-and-IFC-projects",
+  "full_name": "datadrivenconstruction/Checking-the-quality-of-Revit-and-IFC-projects",
+  "description": "Checking the quality of Revit and IFC projects",
+  "stars": 14,
+  "language": "Python",
+  "url": "https://github.com/datadrivenconstruction/Checking-the-quality-of-Revit-and-IFC-projects",
+  "topics": [
+    "3d",
+    "bau",
+    "check",
+    "construction",
+    "ifc",
+    "jupyter-notebook",
+    "models",
+    "openbim",
+    "parameters",
+    "projects",
+    "python",
+    "python3",
+    "revit"
+  ],
+  "collected_at": "2026-05-23T21:40:22.525381",
+  "files_collected": [
+    "Checking-the-quality-of-revit-and-ifc-projects.ipynb",
+    "Files for building an EXE application with UI/datadrivenconstruction/__init__.py",
+    "Files for building an EXE application with UI/datadrivenconstruction/capture.py",
+    "Files for building an EXE application with UI/datadrivenconstruction/converter.py",
+    "Files for building an EXE application with UI/datadrivenconstruction/report.py",
+    "Files for building an EXE application with UI/main.py",
+    "ImgCapture.py",
+    "README.md"
+  ]
+}

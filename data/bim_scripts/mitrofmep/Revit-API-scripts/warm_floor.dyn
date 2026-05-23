@@ -1,0 +1,479 @@
+{
+  "Uuid": "7e9dad5a-7cb7-4d70-808e-09de12419ad2",
+  "IsCustomNode": false,
+  "Description": null,
+  "Name": "Warm_floor_2.2",
+  "ElementResolver": {
+    "ResolutionMap": {
+      "Point": {
+        "Key": "Autodesk.DesignScript.Geometry.Point",
+        "Value": "ProtoGeometry.dll"
+      }
+    }
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 1000.0,
+      "MinimumValue": 0.0,
+      "StepValue": 1.0,
+      "InputValue": 300.0,
+      "Id": "b414edc66bb547349c33ea24fd7f01d2",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "034259f881fe4aa6b943182121af765d",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Р РµРіСѓР»СЏС‚РѕСЂ, СЃРѕР·РґР°СЋС‰РёР№ С‡РёСЃР»РѕРІС‹Рµ Р·РЅР°С‡РµРЅРёСЏ."
+    },
+    {
+      "ConcreteType": "Dynamo.Nodes.DSModelElementSelection, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "InstanceId": [
+        "03003a6b-a314-4f29-9e1d-ae17c4b1cf36-003ed944"
+      ],
+      "Id": "c08c0166a79749d9bb02fe11c7439c91",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "5239e02de94a45db8fec67c3410bfcd6",
+          "Name": "Element",
+          "Description": "Р’С‹Р±СЂР°РЅРЅС‹Рµ СЌР»РµРјРµРЅС‚С‹.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
+      "NodeType": "BooleanInputNode",
+      "InputValue": false,
+      "Id": "7fe8fe48eab143f6b9880aa2fc680fd3",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "197d0f9b9dbd45e29cb6bf2bc4e95187",
+          "Name": "",
+          "Description": "Boolean",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Р’С‹Р±РѕСЂ РјРµР¶РґСѓ Р·РЅР°С‡РµРЅРёСЏРјРё true Рё false."
+    },
+    {
+      "ConcreteType": "Dynamo.Nodes.DSModelElementSelection, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "InstanceId": [
+        "03003a6b-a314-4f29-9e1d-ae17c4b1cf36-003ed946"
+      ],
+      "Id": "c811cd6d720e4a72bade5bd5e05efaeb",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "8df78762b4bb4243ac9c0aeb73e6d535",
+          "Name": "Element",
+          "Description": "Р’С‹Р±СЂР°РЅРЅС‹Рµ СЌР»РµРјРµРЅС‚С‹.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "780eeaff00724c5b9016bd9457dc7ee7",
+      "Inputs": [
+        {
+          "Id": "5041019142cc41f290b14e2e3605c29c",
+          "Name": "",
+          "Description": "РЈР·РµР» РґР»СЏ РѕС†РµРЅРєРё.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "de4dd71b4dc243beafef69a779807be4",
+          "Name": "",
+          "Description": "РџСЂРѕСЃРјРѕС‚СЂ СЃРѕРґРµСЂР¶РёРјРѕРіРѕ.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Р’РёР·СѓР°Р»РёР·Р°С†РёСЏ РІС…РѕРґРЅРѕРіРѕ СЌР»РµРјРµРЅС‚Р° СѓР·Р»Р°."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleSlider, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "MaximumValue": 1000.0,
+      "MinimumValue": 100.0,
+      "StepValue": 0.001,
+      "InputValue": 200.0,
+      "Id": "cc2ab6417e8d49eba7612aefbdc7c687",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "383bf0417a9546dcab49697e14ec94f9",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Р РµРіСѓР»СЏС‚РѕСЂ, СЃРѕР·РґР°СЋС‰РёР№ С‡РёСЃР»РѕРІС‹Рµ Р·РЅР°С‡РµРЅРёСЏ."
+    },
+    {
+      
+  "Connectors": [
+    {
+      "Start": "034259f881fe4aa6b943182121af765d",
+      "End": "d54cfacd0d694f0f8a7ccd9b7ebfe402",
+      "Id": "3f759d6c48154eb58bbdcb6cf89dc379"
+    },
+    {
+      "Start": "5239e02de94a45db8fec67c3410bfcd6",
+      "End": "6e0b84eb0ce847ce8d5a2a9cb6e86fa9",
+      "Id": "b1ed0eccead24e7a8e732a44d74bc85d"
+    },
+    {
+      "Start": "197d0f9b9dbd45e29cb6bf2bc4e95187",
+      "End": "fe0ef10366504767abf82669e382ff4c",
+      "Id": "0155cd21d63b4c4a970b538561380a4c"
+    },
+    {
+      "Start": "8df78762b4bb4243ac9c0aeb73e6d535",
+      "End": "f6c6c174bef54a57925ef159336941f1",
+      "Id": "7a00275b0b354130acfdc588b65550ad"
+    },
+    {
+      "Start": "383bf0417a9546dcab49697e14ec94f9",
+      "End": "2246729499ee425ba8e5ea5c67981a45",
+      "Id": "fe6a8fecd36b4ee2a4e3119015c8b7b7"
+    },
+    {
+      "Start": "d45ed7ce63594f1e80d326bf60f63172",
+      "End": "e5e11f3fae2c48a7802ed45fffc057ab",
+      "Id": "efb1091c8dee4741b2695470b62ecef2"
+    },
+    {
+      "Start": "fb0608cce86241579956f3275e184a1b",
+      "End": "787186e58a594ec39973ace0f8d0db85",
+      "Id": "17fe1ffc7dd24cedb2ee22f706235bfd"
+    },
+    {
+      "Start": "4c70c0e87c464afc9ac587a1d50ed452",
+      "End": "5041019142cc41f290b14e2e3605c29c",
+      "Id": "deb3ff083d1a456c9dca7ba57ffa3377"
+    }
+  ],
+  "Dependencies": [],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 10000.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.0.2.6826",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Р¤РѕРЅРѕРІС‹Р№ РїСЂРѕСЃРјРѕС‚СЂ",
+      "EyeX": 18759.046998733069,
+      "EyeY": 3677.6319718358559,
+      "EyeZ": -82863.207921882975,
+      "LookX": -42.077659586480877,
+      "LookY": -3021.5395008563614,
+      "LookZ": -380.4874081233138,
+      "UpX": -0.10354976029541743,
+      "UpY": 0.33545156975013929,
+      "UpZ": -0.93634912906164325
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Р Р°СЃСЃС‚РѕСЏРЅРёРµ: РњРёР»Р»РёРјРµС‚СЂС‹",
+        "Id": "b414edc66bb547349c33ea24fd7f01d2",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1696.0310688661236,
+        "Y": 566.67152243346891
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Р’РЅРµС€РЅРёР№ РєРѕРЅС‚СѓСЂ",
+        "Id": "c08c0166a79749d9bb02fe11c7439c91",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1694.9626938842482,
+        "Y": 194.78093579649493
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "РџРѕ С‡Р°СЃРѕРІРѕР№ / РџСЂРѕС‚РёРІ",
+        "Id": "7fe8fe48eab143f6b9880aa2fc680fd3",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1710.679746295154,
+        "Y": 866.0407066945836
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Р’РЅСѓС‚СЂРµРЅРЅРёР№ РєРѕРЅС‚СѓСЂ",
+        "Id": "c811cd6d720e4a72bade5bd5e05efaeb",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1695.7622909628972,
+        "Y": 380.73347990754252
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "РћС‚С‡РµС‚",
+        "Id": "780eeaff00724c5b9016bd9457dc7ee7",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2782.5458837813094,
+        "Y": 371.08111462478291
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "РљСЂРѕРјРєР°: РњРёР»Р»РёРјРµС‚СЂС‹",
+        "Id": "cc2ab6417e8d49eba7612aefbdc7c687",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1697.2604293401946,
+        "Y": 701.57926518630575
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "РўРµСЃС‚РёСЂРѕРІР°С‚СЊ / РЎРѕР·РґР°С‚СЊ",
+        "Id": "99ffaefc4e5c485d91c5062fda059ab2",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1691.7574676412548,
+        "Y": -114.34647368044912
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Select Model Element",
+        "Id": "2ffe469ad5c34fe1b5ad7aab0955f9f7",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1692.1300592896164,
+        "Y": 9.9067355875257022
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Python Script",
+        "Id": "76ec961b3b44496fbebf324aa60352ff",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2481.2688419695692,
+        "Y": 401.75832204940639
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "1cd2983ff2bb4dbb8bd7770a376062d5",
+        "Title": "РџР РћР§РРўРђР™РўР• РџР•Р Р•Р” Р—РђРџРЈРЎРљРћРњ\r\n\r\nв—Џ РќРђР—Р’РђРќРР•: РЎРѕР·РґР°РЅРёРµ С‚РµРїР»С‹С… РїРѕР»РѕРІ\r\n\r\nв—Џ РћРџРРЎРђРќРР•: РЎРєСЂРёРїС‚ СЃРѕР·РґР°РµС‚ С‚РµРїР»С‹Рµ РїРѕР»С‹ РїРѕ РІС‹Р±СЂР°РЅРЅРѕР№ РѕР±Р»Р°СЃС‚Рё Р·Р°Р»РёРІРєРё Рё РґРІСѓРј С‚СЂСѓР±Р°Рј. РЎРєСЂРёРїС‚ Р·Р°РїРѕР»РЅСЏРµС‚ РїСЂРѕСЃС‚СЂР°РЅСЃС‚РІРѕ РєРѕРЅС‚СѓСЂР° РїРѕ СЃРїРёСЂР°Р»Рё. РЎС‚Р°СЂС‚ Рё РєРѕРЅРµС† Р·Р°РєСЂСѓС‡РёРІР°РЅРёСЏ СЃРїРёСЂР°Р»Рё РѕРїСЂРµРґРµР»СЏРµС‚СЃСЏ РїРѕР»РѕР¶РµРЅРёРµРј С‚СЂСѓР±.  РўРёРї СЃРёСЃС‚РµРјС‹ Рё С‚РёРї С‚СЂСѓР± РІ СЃРїРёСЂР°Р»Рё С‚Р°РєР¶Рµ РѕРїСЂРµРґРµР»СЏРµС‚СЃСЏ СЃРІРѕР№СЃС‚РІР°РјРё С‚СЂСѓР±.\r\n\r\nв—Џ РџРћР РЇР”РћРљ Р’Р«РџРћР›РќР•РќРРЇ: \r\n1. РЈСЃС‚Р°РЅРѕРІРёС‚Рµ СЂРµР¶РёРј СЂР°Р±РѕС‚С‹, РІ РєРѕС‚РѕСЂРѕРј РІС‹ С…РѕС‚РёС‚Рµ СЃРѕР·РґР°РІР°С‚СЊ С‚СЂСѓР±С‹.\r\n2. Р’С‹Р±РµСЂРёС‚Рµ РѕР±Р»Р°СЃС‚СЊ, РєРѕС‚РѕСЂСѓСЋ РІС‹ С…РѕС‚РёС‚Рµ Р·Р°РїРѕР»РЅРёС‚СЊ.\r\n3. Р’С‹Р±РµСЂРёС‚Рµ РґРІРµ С‚СЂСѓР±С‹, РѕРїСЂРµРґРµР»СЏСЋС‰РёРµ РЅР°СЂСѓР¶РЅС‹Р№ Рё РІРЅСѓС‚СЂРµРЅРЅРёР№ РєРѕРЅС‚СѓСЂ.\r\n4. РЈСЃС‚Р°РЅРѕРІРёС‚Рµ РѕС„С„СЃРµС‚ РјРµР¶РґСѓ СЃРѕСЃРµРґРЅРёРјРё С‚СЂСѓР±Р°РјРё\r\n5. РЈСЃС‚Р°РЅРѕРІРёС‚Рµ С€РёСЂРёРЅСѓ РєСЂРѕРјРєРё РїСЂРё РѕСЃС‚СЂС‹С… СѓРіР»Р°С…\r\n6. Р—Р°РїСѓСЃС‚РёС‚Рµ СЃРєСЂРёРїС‚. \r\n7. РџРѕСЃР»Рµ РѕС‚СЂР°Р±РѕС‚РєРё СЃРєСЂРёРїС‚Р° РїСЂРѕС‡РёС‚Р°Р№С‚Рµ, С‡С‚Рѕ РЅР°РїРёСЃР°РЅРѕ РІ РѕС‚С‡РµС‚Рµ. Р’ СЃР»СѓС‡Р°РµС‚ РїРѕР·РЅРёРєС€РµРіРѕ РїСЂРµРґСѓРїСЂРµР¶РґРµРЅРёСЏ, РёСЃРїСЂР°РІСЊС‚Рµ СЌС‚Рѕ РїСЂРµРґСѓРїСЂРµР¶РґРµРЅРёРµ Рё РїРµСЂРµР·Р°РїСѓСЃС‚РёС‚Рµ СЃРєСЂРёРїС‚.\r\n8. Р”Р»СЏ РїРµСЂРµР·СѓРїСѓСЃРєР° СЃРєСЂРёРїС‚Р° РїРµСЂРµРєР»СЋС‡РёС‚Рµ Р·РЅР°С‡РµРЅРёРµ true/false РЅР° РЅРѕРґРµ \"РџРµСЂРµР·Р°РїСѓСЃРє\" Рё Р·Р°РЅРѕРІРѕ Р·Р°РїСѓСЃС‚РёС‚Рµ СЃРєСЂРёРїС‚. \r\n\r\n\r\nв—Џ РљРћРњРњР•РќРўРђР РР:\r\n\r\n\r\nв—Џ Р—РђРљРђР—Р§РРљ:  \r\nв—Џ Р РђР—Р”Р•Р›Р«: РћР’\r\nв—Џ РЎРћР¤Рў:  Revit 2019.2\r\nв—Џ DYNAMO: Dynamo 2.0.3",
+        "Nodes": [
+          "666fad08985847ceb9c8aa80e8e34246"
+        ],
+        "Left": 1011.2973021656318,
+        "Top": -306.6881963279435,
+        "Width": 526.4,
+        "Height": 601.6,
+        "FontSize": 14.0,
+        "InitialTop": 207.3118036720565,
+        "InitialHeight": 140.0,
+        "TextblockHeight": 504.0,
+        "Background": "#FFB5B5B5"
+      },
+      {
+        "Id": "62d41561373d47178af0e3f4057b70d9",
+        "Title": "Р Р°СЃСЃС‚РѕСЏРЅРёРµ РјРµР¶РґСѓ РїР°СЂР°Р»Р»РµР»СЊРЅС‹РјРё С‚СЂСѓР±Р°РјРё",
+        "Nodes": [
+          "b414edc66bb547349c33ea24fd7f01d2"
+        ],
+        "Left": 1686.0310688661236,
+        "Top": 536.67152243346891,
+        "Width": 319.2,
+        "Height": 97.8,
+        "FontSize": 14.0,
+        "InitialTop": 566.67152243346891,
+        "InitialHeight": 145.0,
+        "TextblockHeight": 20.0,
+        "Background": "#FF71C6A8"
+      },
+      {
+        "Id": "c74f62d709884c3bb28f8904f1524a4d",
+        "Title": "Р’С‹Р±РµСЂРёС‚Рµ С‚СЂСѓР±Сѓ, РєРѕС‚РѕСЂР°СЏ РґР°СЃС‚ СЃС‚Р°СЂС‚ РІРЅРµС€РЅРµРјСѓ РєРѕРЅС‚СѓСЂСѓ",
+        "Nodes": [
+          "c08c0166a79749d9bb02fe11c7439c91"
+        ],
+        "Left": 1684.9626938842482,
+        "Top": 151.18093579649494,
+        "Width": 195.2,
+        "Height": 163.39999999999998,
+        "FontSize": 14.0,
+        "InitialTop": 194.78093579649493,
+        "InitialHeight": 145.0,
+        "TextblockHeight": 33.6,
+        "Background": "#FF71C6A8"
+      },
+      {
+        "Id": "adcd7a4567e249169b83a4b17ff8329f",
+        "Title": "Р’С‹Р±РµСЂРёС‚Рµ С‚СЂСѓР±Сѓ, РєРѕС‚РѕСЂР°СЏ РґР°СЃС‚ СЃС‚Р°СЂС‚ РІРЅСѓС‚СЂРµРЅРЅРµРјСѓ РєРѕРЅС‚СѓСЂСѓ",
+        "Nodes": [
+          "c811cd6d720e4a72bade5bd5e05efaeb"
+        ],
+        "Left": 1685.7622909628972,
+        "Top": 337.13347990754249,
+        "Width": 195.2,
+        "Height": 163.40000000000003,
+        "FontSize": 14.0,
+        "InitialTop": 380.73347990754252,
+        "InitialHeight": 145.0,
+        "TextblockHeight": 33.6,
+        "Background": "#FF71C6A8"
+      },
+      {
+        "Id": "7a69bde54a894af491e127667d30a43e",
+        "Title": "РќР°РїСЂР°РІР»РµРЅРёРµ Р·Р°РєСЂСѓС‡РёРІР°РЅРёСЏ СЃРїРёСЂР°Р»Рё",
+        "Nodes": [
+          "7fe8fe48eab143f6b9880aa2fc680fd3"
+        ],
+        "Left": 1700.679746295154,
+        "Top": 822.44070669458358,
+        "Width": 166.4,
+        "Height": 111.40000000000002,
+        "FontSize": 14.0,
+        "InitialTop": 866.0407066945836,
+        "InitialHeight": 145.0,
+        "TextblockHeight": 33.6,
+        "Background": "#FF71C6A8"
+      },
+      {
+        "Id": "34420df8d2984182b490773bff6e2528",
+        "Title": "Р’ СЂРµР¶РёРјРµ С‚РµСЃС‚РёСЂРѕРІР°РЅРёСЏ СЃРѕР·РґР°РЅРЅС‹Рµ С‚СЂСѓР±С‹ Р±СѓРґСѓС‚ СѓРґР°Р»СЏС‚СЊСЃСЏ РїСЂРё РїРµСЂРµР·Р°РїСѓСЃРєРµ СЃРєСЂРёРїС‚Р° ",
+        "Nodes": [
+          "99ffaefc4e5c485d91c5062fda059ab2"
+        ],
+        "Left": 1681.7574676412548,
+        "Top": -191.54647368044914,
+        "Width": 177.6,
+        "Height": 145.0,
+        "FontSize": 14.0,
+        "InitialTop": -114.34647368044912,
+        "InitialHeight": 145.0,
+        "TextblockHeight": 67.2,
+        "Background": "#FFFFB8D8"
+      },
+      {
+        "Id": "a0d954d6ed264800950eb8af48c29043",
+        "Title": "РЁСЂРёРЅР° РєСЂРѕРјРєРё РїСЂРё РѕСЃС‚СЂС‹С… СѓРіР»Р°С…",
+        "Nodes": [
+          "cc2ab6417e8d49eba7612aefbdc7c687"
+        ],
+        "Left": 1687.2604293401946,
+        "Top": 671.57926518630575,
+        "Width": 319.2,
+        "Height": 97.8,
+        "FontSize": 14.0,
+        "InitialTop": 701.57926518630575,
+        "InitialHeight": 145.0,
+        "TextblockHeight": 20.0,
+        "Background": "#FF71C6A8"
+      },
+      {
+        "Id": "b50bdad345ad4f6b8afcefe3407aa8c3",
+        "Title": "Р’С‹Р±РµСЂРёС‚Рµ РѕР±Р»Р°СЃС‚СЊ Р·Р°Р»РёРІРєРё",
+        "Nodes": [
+          "2ffe469ad5c34fe1b5ad7aab0955f9f7"
+        ],
+        "Left": 1682.1300592896164,
+        "Top": -20.093264412474298,
+        "Width": 195.2,
+        "Height": 149.8,
+        "FontSize": 14.0,
+        "InitialTop": 9.9067355875257022,
+        "InitialHeight": 145.0,
+        "TextblockHeight": 20.0,
+        "Background": "#FF71C6A8"
+      },
+      {
+        "Id": "b8b6522f36bb42d891472be874cdce20",
+        "Title": "",
+        "Nodes": [
+          "780eeaff00724c5b9016bd9457dc7ee7"
+        ],
+        "Left": 2772.5458837813094,
+        "Top": 341.08111462478291,
+        "Width": 296.8,
+        "Height": 406.6,
+        "FontSize": 14.0,
+        "InitialTop": 371.08111462478291,
+        "InitialHeight": 145.0,
+        "TextblockHeight": 20.0,
+        "Background": "#FF48B9FF"
+      },
+      {
+        "Id": "666fad08985847ceb9c8aa80e8e34246",
+        "Title": "Р Р°Р·СЂР°Р±РѕС‚С‡РёРє:                                                                                                                              \r\nР’СЃРµРІРѕР»РѕРґ Р§СѓРіСЂРµРµРІ\r\nvschugr@gmail.com\r\n+7-921-582-91-00                                                               ",
+        "Nodes": [],
+        "Left": 1021.2973021656318,
+        "Top": 207.3118036720565,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": -423.27022358257659,
+    "Y": 25.870283924998489,
+    "Zoom": 0.27940777062911648
+  }
+}

@@ -1,7 +1,29 @@
-*.suo 
-*.user 
-bin/ 
-obj/ 
-*.dll 
-*.addin 
-packages/ 
+# C# / Revit Addin
+*.suo
+*.user
+bin/
+obj/
+*.dll
+*.addin
+packages/
+
+# Python
+.env
+__pycache__/
+*.pyc
+*.pyo
+
+# 로그 및 DB
+logs/*.log
+logs/
+lua_governance.db
+
+# OS
+.DS_Store
+node_modules/
+
+# BIM 바이너리
+*.rvt
+*.rfa
+*.nwd
+*.nwc

@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Walls: Name not defined",
+    "category": "OST_Walls",
+    "parameter": "Type Name",
+    "condition": "is_empty",
+    "color": [255, 0, 0],
+    "description": "IDM Basic: all elements must have a name"
+  },
+  {
+    "name": "Walls: Classification missing",
+    "category": "OST_Walls",
+    "parameter": "Assembly Code",
+    "condition": "is_empty",
+    "color": [255, 80, 80],
+    "description": "IDM Basic: classification code required (Uniformat/OmniClass/NL-SfB)"
+  },
+  {
+    "name": "Walls: Material not assigned",
+    "category": "OST_Walls",
+    "parameter": "Structural Material",
+    "condition": "is_empty",
+    "color": [255, 165, 0],
+    "description": "IDM Basic: material must be defined for quantity takeoff"
+  },
+  {
+    "name": "Doors: Fire Rating missing",
+    "category": "OST_Doors",
+    "parameter": "Fire Rating",
+    "condition": "is_empty",
+    "color": [255, 0, 0],
+    "description": "IDM Basic: fire rating is a common BEP deliverable for doors"
+  },
+  {
+    "name": "Rooms: Name not defined",
+    "category": "OST_Rooms",
+    "parameter": "Name",
+    "condition": "is_empty",
+    "color": [255, 0, 0],
+    "description": "IDM Basic: rooms must have a name for space validation"
+  },
+  {
+    "name": "Rooms: Number not defined",
+    "category": "OST_Rooms",
+    "parameter": "Number",
+    "condition": "is_empty",
+    "color": [255, 165, 0],
+    "description": "IDM Basic: room number required (COBie, FM handover)"
+  },
+  {
+    "name": "Columns: Mark empty",
+    "category": "OST_StructuralColumns",
+    "parameter": "Mark",
+    "condition": "is_empty",
+    "color": [255, 0, 0],
+    "description": "Element identification: Mark required for coordination and schedules"
+  },
+  {
+    "name": "Beams: Mark empty",
+    "category": "OST_StructuralFraming",
+    "parameter": "Mark",
+    "condition": "is_empty",
+    "color": [255, 0, 0],
+    "description": "Element identification: Mark required for coordination and schedules"
+  },
+  {
+    "name": "Floors: Classification missing",
+    "category": "OST_Floors",
+    "parameter": "Assembly Code",
+    "condition": "is_empty",
+    "color": [255, 80, 80],
+    "description": "IDM Basic: classification code required"
+  },
+  {
+    "name": "Windows: Fire Rating missing",
+    "category": "OST_Windows",
+    "parameter": "Fire Rating",
+    "condition": "is_empty",
+    "color": [255, 165, 0],
+    "description": "Fire safety: windows in rated walls need fire rating"
+  }
+]

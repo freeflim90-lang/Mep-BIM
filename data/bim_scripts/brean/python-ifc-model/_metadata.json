@@ -1,0 +1,41 @@
+{
+  "owner": "brean",
+  "repo": "python-ifc-model",
+  "full_name": "brean/python-ifc-model",
+  "description": "helper classes to load and store data from IFC into a smaller JSON for easier access across different platforms",
+  "stars": 29,
+  "language": "Python",
+  "url": "https://github.com/brean/python-ifc-model",
+  "topics": [
+    "bim",
+    "ifc",
+    "ifcopenshell"
+  ],
+  "collected_at": "2026-05-23T21:46:26.388523",
+  "files_collected": [
+    "README.md",
+    "TODO.md",
+    "ifc_model/__init__.py",
+    "ifc_model/building.py",
+    "ifc_model/geometry/arbitrary_closed_profile_def.py",
+    "ifc_model/geometry/arbitrary_profile_def_with_voids.py",
+    "ifc_model/geometry/circle_profile_def.py",
+    "ifc_model/geometry/extrude_area_solid.py",
+    "ifc_model/geometry/face.py",
+    "ifc_model/geometry/faceted_brep.py",
+    "ifc_model/geometry/i_shape_profile_def.py",
+    "ifc_model/geometry/point.py",
+    "ifc_model/geometry/rectangle_profile_def.py",
+    "ifc_model/geometry/representation.py",
+    "ifc_model/geometry/representation_item.py",
+    "ifc_model/geometry/segment.py",
+    "ifc_model/product.py",
+    "ifc_model/project.py",
+    "ifc_model/relations.py",
+    "ifc_model/representation.py",
+    "ifc_model/site.py",
+    "ifc_model/space.py",
+    "ifc_model/storey.py",
+    "setup.py"
+  ]
+}

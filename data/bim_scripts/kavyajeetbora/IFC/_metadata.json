@@ -1,0 +1,16 @@
+{
+  "owner": "kavyajeetbora",
+  "repo": "IFC",
+  "full_name": "kavyajeetbora/IFC",
+  "description": "Introduction of IFC and ifcopenshell-python",
+  "stars": 0,
+  "language": "Jupyter Notebook",
+  "url": "https://github.com/kavyajeetbora/IFC",
+  "topics": [],
+  "collected_at": "2026-05-23T21:51:13.316709",
+  "files_collected": [
+    "extractIFCFile.py",
+    "ifcopenshell_basics.ipynb",
+    "readme.md"
+  ]
+}

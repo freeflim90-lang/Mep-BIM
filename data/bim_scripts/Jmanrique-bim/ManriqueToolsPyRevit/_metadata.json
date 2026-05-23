@@ -1,0 +1,17 @@
+{
+  "owner": "Jmanrique-bim",
+  "repo": "ManriqueToolsPyRevit",
+  "full_name": "Jmanrique-bim/ManriqueToolsPyRevit",
+  "description": "A set of BIM utilities built with C# and PyRevit to streamline and automate Revit workflows. This repository features scripts and add-ins for Autodesk software, helping you enhance model management and data-driven tasks with ease.",
+  "stars": 1,
+  "language": "Python",
+  "url": "https://github.com/Jmanrique-bim/ManriqueToolsPyRevit",
+  "topics": [
+    "pyrevit",
+    "python"
+  ],
+  "collected_at": "2026-05-23T21:44:36.906976",
+  "files_collected": [
+    "README.md"
+  ]
+}

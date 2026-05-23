@@ -1,0 +1,17 @@
+{
+  "owner": "Kennystruct",
+  "repo": "Clash-Detection-Matrix-Automation",
+  "full_name": "Kennystruct/Clash-Detection-Matrix-Automation",
+  "description": "Automating Clash Detection through a workflow from Revit through Dynamo to Navisworks using Python scripting as BIG Data Analysis tool",
+  "stars": 16,
+  "language": "Python",
+  "url": "https://github.com/Kennystruct/Clash-Detection-Matrix-Automation",
+  "topics": [],
+  "collected_at": "2026-05-23T21:42:30.396746",
+  "files_collected": [
+    "Dynamo Script/Get Model Elements Data (Excel export).dyn",
+    "Python Scripts/Clash_Test_XML_Navisworks.py",
+    "Python Scripts/Create_Clash_Matrix_from_Model_Data.py",
+    "README.md"
+  ]
+}

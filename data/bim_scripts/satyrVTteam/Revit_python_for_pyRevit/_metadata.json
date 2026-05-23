@@ -1,0 +1,15 @@
+{
+  "owner": "satyrVTteam",
+  "repo": "Revit_python_for_pyRevit",
+  "full_name": "satyrVTteam/Revit_python_for_pyRevit",
+  "description": "Most used scripts from Revit_python ported to pyRevit and Revit 2024",
+  "stars": 0,
+  "language": null,
+  "url": "https://github.com/satyrVTteam/Revit_python_for_pyRevit",
+  "topics": [],
+  "collected_at": "2026-05-23T21:44:48.896165",
+  "files_collected": [
+    "Detail lines into solids.dyn",
+    "README.md"
+  ]
+}

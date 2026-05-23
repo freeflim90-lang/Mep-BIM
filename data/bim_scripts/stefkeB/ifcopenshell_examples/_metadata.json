@@ -1,0 +1,35 @@
+{
+  "owner": "stefkeB",
+  "repo": "ifcopenshell_examples",
+  "full_name": "stefkeB/ifcopenshell_examples",
+  "description": "Series of smaller examples, using IfcOpenShell as a general-purpose IFC library. Focus is on Python and C++ examples.",
+  "stars": 46,
+  "language": "Python",
+  "url": "https://github.com/stefkeB/ifcopenshell_examples",
+  "topics": [
+    "ifcopenshell",
+    "python",
+    "series"
+  ],
+  "collected_at": "2026-05-23T21:46:14.368042",
+  "files_collected": [
+    "3D/README.md",
+    "3D/qt3d_minimal.py",
+    "Console/IFCOSPrintHierarchy.py",
+    "Console/README.md",
+    "Console/geometry_minimal.py",
+    "Console/minimal.py",
+    "GUI/README.md",
+    "GUI/ifc_schemaviewer.py",
+    "GUI/ifc_treeviewer.py",
+    "GUI/ifc_treeviewer2.py",
+    "README.md",
+    "Viewer/IFCCustomDelegate.py",
+    "Viewer/IFCListingWidget.py",
+    "Viewer/IFCPropertyWidget.py",
+    "Viewer/IFCQt3DView.py",
+    "Viewer/IFCTreeWidget.py",
+    "Viewer/QIFCViewer.py",
+    "Viewer/README.md"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "owner": "pedramnojedehi",
+  "repo": "eppy-energyplus-workshop",
+  "full_name": "pedramnojedehi/eppy-energyplus-workshop",
+  "description": "This repository was made for the workshop titled \"Automating Building Energy Simulations with Python: Eppy and EnergyPlus API\"",
+  "stars": 5,
+  "language": "Jupyter Notebook",
+  "url": "https://github.com/pedramnojedehi/eppy-energyplus-workshop",
+  "topics": [],
+  "collected_at": "2026-05-23T21:55:33.388660",
+  "files_collected": [
+    "README.md",
+    "Scripts/eppy_workshop_Exercise.ipynb",
+    "Scripts/eppy_workshop_clean_notebook.ipynb",
+    "Scripts/eppy_workshop_main_notebook.ipynb"
+  ]
+}

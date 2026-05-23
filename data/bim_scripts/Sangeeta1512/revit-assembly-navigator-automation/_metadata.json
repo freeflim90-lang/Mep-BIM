@@ -1,0 +1,27 @@
+{
+  "owner": "Sangeeta1512",
+  "repo": "revit-assembly-navigator-automation",
+  "full_name": "Sangeeta1512/revit-assembly-navigator-automation",
+  "description": "Revit automation tool built with PyRevit and C# using Autodesk Revit API for fast assembly selection and BIM workflow optimization",
+  "stars": 0,
+  "language": "Python",
+  "url": "https://github.com/Sangeeta1512/revit-assembly-navigator-automation",
+  "topics": [
+    "aec",
+    "autodesk-revit-2025",
+    "bim",
+    "bim-automation",
+    "csharp",
+    "pyrevit",
+    "python",
+    "revit",
+    "revit-addins",
+    "revit-api",
+    "revit-plugins"
+  ],
+  "collected_at": "2026-05-23T21:54:20.795043",
+  "files_collected": [
+    "README.md",
+    "Workshop.extension/BIM Tools.panel/Assembly Navigator.pushbutton/script.py"
+  ]
+}

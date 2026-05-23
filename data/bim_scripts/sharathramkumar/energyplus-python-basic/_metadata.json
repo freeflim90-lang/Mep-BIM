@@ -1,0 +1,15 @@
+{
+  "owner": "sharathramkumar",
+  "repo": "energyplus-python-basic",
+  "full_name": "sharathramkumar/energyplus-python-basic",
+  "description": "In this notebook, we demonstrate how EnergyPlus can be used as a library within Python, so that a running simulation can be controlled by a Python script  Pre-requisites:  1. EnergyPlus v22.2 (any version >9.6 should work, must have Python API) 2. An idf file describing the building",
+  "stars": 2,
+  "language": "Jupyter Notebook",
+  "url": "https://github.com/sharathramkumar/energyplus-python-basic",
+  "topics": [],
+  "collected_at": "2026-05-23T21:56:01.005540",
+  "files_collected": [
+    "Demonstration.ipynb",
+    "README.md"
+  ]
+}

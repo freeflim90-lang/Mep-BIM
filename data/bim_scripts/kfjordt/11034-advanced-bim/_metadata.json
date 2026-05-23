@@ -1,0 +1,34 @@
+{
+  "owner": "kfjordt",
+  "repo": "11034-advanced-bim",
+  "full_name": "kfjordt/11034-advanced-bim",
+  "description": "DTU course taken during the fall semester of 2022.",
+  "stars": 7,
+  "language": "Python",
+  "url": "https://github.com/kfjordt/11034-advanced-bim",
+  "topics": [
+    "bim",
+    "ifcopenshell",
+    "openbim",
+    "python"
+  ],
+  "collected_at": "2026-05-23T21:49:28.869726",
+  "files_collected": [
+    "Assignment 1/extract_data.py",
+    "Assignment 1/main.py",
+    "Assignment 2/assignment1.py",
+    "Assignment 2/change.md",
+    "Assignment 2/main.py",
+    "Assignment 3/README.md",
+    "Assignment 4/README.md",
+    "Assignment 4/main.py",
+    "Assignment 4/package-lock.json",
+    "Assignment 4/package.json",
+    "Assignment 4/python_modules/classes_and_constants.py",
+    "Assignment 4/python_modules/ifc_utils.py",
+    "Assignment 4/python_modules/speckle_utils.py",
+    "Assignment 4/python_modules/svg_utils.py",
+    "Assignment 5/Group01_Assignment5.md",
+    "README.md"
+  ]
+}

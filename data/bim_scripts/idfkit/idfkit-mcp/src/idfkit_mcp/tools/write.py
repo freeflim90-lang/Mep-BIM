@@ -1,0 +1,344 @@
+"""Model creation and editing tools."""
+
+from __future__ import annotations
+
+import json
+import logging
+import warnings
+from collections.abc import Iterator
+from contextlib import contextmanager
+from typing import Annotated, Any, Literal
+
+from fastmcp.exceptions import ToolError
+from fastmcp.tools import tool
+from mcp.types import ToolAnnotations
+from pydantic import Field
+
+from idfkit_mcp.models import (
+    BatchAddResult,
+    ClearSessionResult,
+    NewModelResult,
+    RemoveObjectResult,
+    RemoveObjectsResult,
+    RenameObjectResult,
+    SaveModelResult,
+)
+from idfkit_mcp.serializers import serialize_object
+from idfkit_mcp.state import get_state
+
+logger = logging.getLogger(__name__)
+
+_MUTATE = ToolAnnotations(readOnlyHint=False, destructiveHint=False, idempotentHint=False, openWorldHint=False)
+_DESTRUCTIVE = ToolAnnotations(readOnlyHint=False, destructiveHint=True, idempotentHint=False, openWorldHint=False)
+_SAVE = ToolAnnotations(readOnlyHint=False, destructiveHint=False, idempotentHint=True, openWorldHint=False)
+
+
+@contextmanager
+def _capture_deprecations() -> Iterator[list[str]]:
+    """Yield a list that, on block exit, holds DeprecationWarning messages emitted inside.
+
+    Lets callers surface idfkit deprecations (e.g. flat-extensible keys like
+    ``vertex_x_coordinate_2``) on the tool response instead of dropping them
+    on the server's stderr where the agent never sees them.
+    """
+    messages: list[str] = []
+    with warnings.catch_warnings(record=True) as caught:
+        warnings.simplefilter("always", DeprecationWarning)
+        yield messages
+    messages.extend(str(w.message) for w in caught if issubclass(w.category, DeprecationWarning))
+
+
+@tool(annotations=_MUTATE)
+def new_model(
+    version: Annotated[str | None, Field(description='EnergyPlus version as "X.Y.Z" (default: latest).')] = None,
+) -> NewModelResult:
+    """Create an empty model."""
+    from idfkit import LATEST_VERSION, new_document, version_string
+
+    ver = LATEST_VERSION
+    if version is not None:
+        parts = version.split(".")
+        ver = (int(parts[0]), int(parts[1]), int(parts[2]))
+
+    doc = new_document(version=ver, strict=True)
+    state = get_state()
+    state.document = doc
+    state.schema = doc.schema
+    state.file_path = None
+    state.simulation_result = None
+
+    logger.info("Created new model (version=%s)", version_string(ver))
+    return NewModelResult(status="created", version=version_string(ver))
+
+
+@tool(annotations=_MUTATE, output_schema=None)
+def add_object(
+    object_type: Annotated[str, Field(description='EnergyPlus object type (e.g. "Zone", "Material").')],
+    name: Annotated[str, Field(description="Object name (empty for unnamed types).")] = "",
+    fields: Annotated[dict[str, Any] | None, Field(description="Field values as {field_name: value}.")] = None,
+) -> dict[str, Any]:
+    """Add one object. Use batch_add_objects for multiple."""
+    state = get_state()
+    doc = state.require_model()
+    kwargs = fields or {}
+    with _capture_deprecations() as deprecations:
+        obj = doc.add(object_type, name, **kwargs)
+    logger.info("Added %s %r", object_type, name)
+    logger.debug("add_object fields: %s", kwargs)
+    result = serialize_object(obj)
+    if deprecations:
+        result["warnings"] = deprecations
+    return result
+
+
+@tool(annotations=_MUTATE)
+def batch_add_objects(
+    objects: Annotated[list[dict[str, Any]], Field(description="List of dicts with keys: object_type, name, fields.")],
+) -> BatchAddResult:
+    """Add multiple objects in one call. Continues on errors."""
+    state = get_state()
+    doc = state.require_model()
+
+    results: list[dict[str, object]] = []
+    success_count = 0
+    error_count = 0
+
+    for i, spec in enumerate(objects):
+        try:
+            obj_type = spec.get("object_type")
+            if not obj_type:
+                results.append({"index": i, "error": "Missing 'object_type'"})
+                error_count += 1
+                continue
+
+            obj_name: str = spec.get("name", "")
+            obj_fields: dict[str, Any] = spec.get("fields") or {}
+            with _capture_deprecations() as deprecations:
+                obj = doc.add(obj_type, obj_name, **obj_fields)
+            entry: dict[str, object] = {"index": i, **serialize_object(obj, brief=True)}
+            if deprecations:
+                entry["warnings"] = deprecations
+            results.append(entry)
+            success_count += 1
+        except Exception as e:
+            results.append({"index": i, "error": str(e)})
+            error_count += 1
+
+    logger.info("Batch add: %d total, %d success, %d errors", len(objects), success_count, error_count)
+    if error_count:
+        logger.warning("batch_add_objects: %d/%d objects failed", error_count, len(objects))
+    return BatchAddResult(total=len(objects), success=success_count, errors=error_count, results=results)
+
+
+@tool(annotations=_MUTATE, output_schema=None)
+def update_object(
+    object_type: Annotated[str, Field(description="EnergyPlus object type.")],
+    name: Annotated[str, Field(description="Object name.")],
+    fields: Annotated[dict[str, Any], Field(description="Fields to update as {field_name: value}.")],
+) -> dict[str, Any]:
+    """Update fields on an existing object."""
+    state = get_state()
+    doc = state.require_model()
+    obj = doc.get_collection(object_type).get(name)
+    if obj is None:
+        raise ToolError(f"Object '{name}' of type '{object_type}' not found.")
+
+    with _capture_deprecations() as deprecations:
+        for field_name, value in fields.items():
+            setattr(obj, field_name, value)
+
+    logger.info("Updated %s %r (%d fields)", object_type, name, len(fields))
+    logger.debug("update_object fields: %s", fields)
+    result = serialize_object(obj)
+    if deprecations:
+        result["warnings"] = deprecations
+    return result
+
+
+@tool(annotations=_DESTRUCTIVE)
+def remove_object(
+    object_type: Annotated[str, Field(description="EnergyPlus object type.")],
+    name: Annotated[str, Field(description="Object name.")],
+    force: Annotated[bool, Field(description="Remove even if referenced by other objects.")] = False,
+) -> RemoveObjectResult:
+    """Delete an object. Blocked if referenced unless force=True."""
+    state = get_state()
+    doc = state.require_model()
+    obj = doc.get_collection(object_type).get(name)
+    if obj is None:
+        raise ToolError(f"Object '{name}' of type '{object_type}' not found.")
+
+    if not force:
+        ref_name = obj.name or name
+        referencing = doc.get_referencing(ref_name)
+        if referencing:
+            refs = [{"object_type": r.obj_type, "name": r.name} for r in referencing]
+            raise ToolError(
+                f"Object is referenced by other objects. Use force=True to remove anyway.\n{json.dumps(refs)}"
+            )
+
+    doc.removeidfobject(obj)
+    logger.info("Removed %s %r", object_type, obj.name)
+    return RemoveObjectResult(status="removed", object_type=object_type, name=obj.name)
+
+
+@tool(annotations=_DESTRUCTIVE)
+def remove_objects(
+    object_type: Annotated[str, Field(description="EnergyPlus object type.")],
+    force: Annotated[
+        bool,
+        Field(description="Remove even if some entries are referenced by other objects."),
+    ] = False,
+) -> RemoveObjectsResult:
+    """Delete every object of the given type. No-op when none exist.
+
+    Intended for types where individual entries have no canonical addressable
+    identity (``Output:Variable``, ``Output:Meter``, …): those parse with
+    ``_name=""`` to support duplicates, so ``remove_object`` cannot reach them
+    individually. Use this when the calling tool owns the entire collection
+    and wants replace-all semantics (e.g. an output-picker UI).
+
+    Blocked when any entry is referenced by other objects unless ``force=True``.
+    """
+    state = get_state()
+    doc = state.require_model()
+
+    if object_type not in doc:
+        return RemoveObjectsResult(status="removed", object_type=object_type, removed=0)
+
+    collection = doc.get_collection(object_type)
+    items = list(collection)
+    if not items:
+        return RemoveObjectsResult(status="removed", object_type=object_type, removed=0)
+
+    if not force:
+        blockers: list[dict[str, str]] = []
+        for obj in items:
+            if not obj.name:
+                continue
+            referencing = doc.get_referencing(obj.name)
+            for r in referencing:
+                blockers.append({"object_type": r.obj_type, "name": r.name})
+        if blockers:
+            raise ToolError(
+                "Some objects are referenced by other objects. "
+                f"Use force=True to remove anyway.\n{json.dumps(blockers)}"
+            )
+
+    for obj in items:
+        doc.removeidfobject(obj)
+
+    logger.info("Removed all %s (%d objects)", object_type, len(items))
+    return RemoveObjectsResult(status="removed", object_type=object_type, removed=len(items))
+
+
+@tool(annotations=_MUTATE)
+def rename_object(
+    object_type: Annotated[str, Field(description="EnergyPlus object type.")],
+    old_name: Annotated[str, Field(description="Current object name.")],
+    new_name: Annotated[str, Field(description="New object name.")],
+) -> RenameObjectResult:
+    """Rename and auto-update all references."""
+    state = get_state()
+    doc = state.require_model()
+
+    referencing_before = doc.get_referencing(old_name)
+    ref_count = len(referencing_before)
+
+    doc.rename(object_type, old_name, new_name)
+    logger.info("Renamed %s %r -> %r (%d references updated)", object_type, old_name, new_name, ref_count)
+
+    return RenameObjectResult(
+        status="renamed",
+        object_type=object_type,
+        old_name=old_name,
+        new_name=new_name,
+        references_updated=ref_count,
+    )
+
+
+@tool(annotations=_MUTATE, output_schema=None)
+def duplicate_object(
+    object_type: Annotated[str, Field(description="EnergyPlus object type.")],
+    name: Annotated[str, Field(description="Source object name.")],
+    new_name: Annotated[str, Field(description="Name for the duplicate.")],
+) -> dict[str, Any]:
+    """Copy an object with a new name."""
+    state = get_state()
+    doc = state.require_model()
+    source = doc.get_collection(object_type).get(name)
+    if source is None:
+        raise ToolError(f"Object '{name}' of type '{object_type}' not found.")
+
+    obj = doc.copyidfobject(source, new_name=new_name)
+    logger.info("Duplicated %s %r as %r", object_type, name, new_name)
+    return serialize_object(obj)
+
+
+@tool(annotations=_SAVE)
+def save_model(
+    file_path: Annotated[str | None, Field(description="Output path (default: original load path).")] = None,
+    output_format: Annotated[Literal["idf", "epjson"], Field(description="Output format.")] = "idf",
+    overwrite: Annotated[bool, Field(description="Overwrite existing output.")] = False,
+) -> SaveModelResult:
+    """Write model to disk as IDF or epJSON.
+
+    When *file_path* is omitted the model is re-saved to its original load
+    path.  An explicit *file_path* must resolve within an allowed output
+    directory (``IDFKIT_MCP_OUTPUT_DIRS``, defaults to CWD) and will not
+    overwrite an existing file unless *overwrite* is ``True``.
+    """
+    from pathlib import Path
+
+    from idfkit import write_epjson, write_idf
+
+    from idfkit_mcp.tools._path_validation import validate_output_path
+
+    state = get_state()
+    doc = state.require_model()
+
+    # When an explicit path is given, validate it stays within CWD.
+    # Re-saving to the original load path (file_path=None) is always allowed.
+    explicit_path = file_path is not None
+    if explicit_path:
+        path = validate_output_path(Path(file_path), label="Save path")
+    elif state.file_path is not None:
+        path = state.file_path
+    else:
+        raise ToolError("No file path specified and no original path available.")
+
+    if explicit_path and path.exists() and not overwrite:
+        raise ToolError(f"File already exists: '{path}'. Set overwrite=True to replace it.")
+
+    if output_format == "epjson":
+        write_epjson(doc, path)
+    else:
+        write_idf(doc, path)
+
+    state.file_path = path
+    state.save_session()
+    logger.info("Saved model to %s (format=%s)", path, output_format)
+    return SaveModelResult(status="saved", file_path=str(path), format=output_format)
+
+
+@tool(annotations=_DESTRUCTIVE)
+def clear_session() -> ClearSessionResult:
+    """Reset model and simulation state so you can start fresh.
+
+    Unloads the current model, schema, simulation results, migration report,
+    and weather file. Uploaded files are kept so the user can re-load them
+    without re-uploading.
+
+    WARNING: Only call this when the user explicitly asks to start over.
+    Do NOT call this to recover from tool errors — those errors are
+    recoverable by retrying the failed tool or calling load_model again.
+    """
+    state = get_state()
+    state.clear_session()
+    return ClearSessionResult(status="cleared")
+
+
+# ---------------------------------------------------------------------------
+# Tool registry - tools returning dynamic EnergyPlus objects stay
+# unstructured; all others get ``structured_output=True``.
+# ---------------------------------------------------------------------------

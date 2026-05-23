@@ -1,0 +1,34 @@
+{
+  "owner": "lfontanella",
+  "repo": "iot-streaming-workflows",
+  "full_name": "lfontanella/iot-streaming-workflows",
+  "description": "IoT data-stream visualization workflows using Arduino, MQTT, Python, Blender/Bonsai and IFC-based building models.",
+  "stars": 0,
+  "language": "Python",
+  "url": "https://github.com/lfontanella/iot-streaming-workflows",
+  "topics": [
+    "bim",
+    "hbim",
+    "ifc",
+    "ifcopenshell",
+    "iot",
+    "open-source",
+    "openbim"
+  ],
+  "collected_at": "2026-05-23T21:40:56.276401",
+  "files_collected": [
+    "01_Arduino IDE prototypes/README.md",
+    "01_Arduino IDE prototypes/TempHumidity/sketch.json",
+    "02_Proprietary streaming/README.md",
+    "03_Open source streaming/README.md",
+    "03_Open source streaming/python/blender_mqtt_ifc_visualizer.py",
+    "03_Open source streaming/python/mqtt_pmv_calculator.py",
+    "04_Database driven visualization/README.md",
+    "04_Database driven visualization/config/settings.example.json",
+    "04_Database driven visualization/python/01_get_data_from_sql_template.py",
+    "04_Database driven visualization/python/02_sqlite_to_blender_visualization_template.py",
+    "05_Case study HBIM - Gallerie Accademia Venezia/README.md",
+    "05_Case study HBIM - Gallerie Accademia Venezia/python/hbim_conservation_threshold_alerts_template.py",
+    "README.md"
+  ]
+}

@@ -1,0 +1,82 @@
+# Setup & Configuration
+
+## Enable Debug Logging
+
+When troubleshooting any issue, start by enabling debug output:
+
+```bash
+IDFKIT_MCP_LOG_LEVEL=DEBUG idfkit-mcp
+```
+
+This reveals per-tool CALL/OK traces with timing, idfkit core library details
+(parsing, schema loading, validation), and query parameters — making it much
+easier to pinpoint failures.
+
+## Server Does Not Start
+
+### Symptom
+
+Client reports command not found for `idfkit-mcp`.
+
+### Fix
+
+- Install package in the runtime environment.
+- Or switch to `uvx --from idfkit-mcp idfkit-mcp`.
+
+## MCP Client Cannot Connect
+
+### Checks
+
+1. Confirm JSON config is valid (no comments).
+2. Confirm command runs in terminal:
+   ```bash
+   uvx --from idfkit-mcp idfkit-mcp
+   ```
+3. Restart client after config changes.
+
+## `EnergyPlus not found`
+
+### Cause
+
+Simulation tool cannot resolve EnergyPlus installation.
+
+### Fix
+
+1. Install EnergyPlus.
+2. Set `ENERGYPLUS_DIR`.
+3. Verify `energyplus` is on `PATH`.
+
+## `No model loaded`
+
+### Cause
+
+Read/write/validation/simulation tool called before loading or creating a model.
+
+### Fix
+
+Call one of:
+
+- `load_model(file_path=...)`
+- `new_model()`
+
+## `OpenStudio SDK not available`
+
+### Cause
+
+`convert_osm_to_idf` was called in an environment without OpenStudio Python bindings.
+
+### Fix
+
+1. Reinstall `idfkit-mcp` in the active environment so required dependencies are present.
+2. Or use the Docker image where dependencies are preinstalled.
+
+## Schema Version Errors
+
+### Symptom
+
+`Version must be in 'X.Y.Z' format` or schema not found.
+
+### Fix
+
+- Use strict semantic format, e.g. `24.1.0`.
+- Use a supported version provided by installed `idfkit`.

@@ -1,0 +1,15 @@
+{
+  "owner": "polala234",
+  "repo": "Revit-door-auto-numbering-",
+  "full_name": "polala234/Revit-door-auto-numbering-",
+  "description": "Skrypt automatyzujący numerację drzwi w Autodesk Revit (pyRevit, Python, Revit API). Grupowanie drzwi wg pomieszczeń oraz eksport logu zmian do CSV.",
+  "stars": 0,
+  "language": "Python",
+  "url": "https://github.com/polala234/Revit-door-auto-numbering-",
+  "topics": [],
+  "collected_at": "2026-05-23T21:54:17.815757",
+  "files_collected": [
+    "README.md",
+    "door_numbering.py"
+  ]
+}

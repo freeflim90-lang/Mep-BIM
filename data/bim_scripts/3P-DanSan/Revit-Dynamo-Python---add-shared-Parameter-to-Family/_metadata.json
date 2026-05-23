@@ -1,0 +1,15 @@
+{
+  "owner": "3P-DanSan",
+  "repo": "Revit-Dynamo-Python---add-shared-Parameter-to-Family",
+  "full_name": "3P-DanSan/Revit-Dynamo-Python---add-shared-Parameter-to-Family",
+  "description": "I used following packages to build a Dynamo file that adds new shared parameters to chosen *.rfa files in a directory.",
+  "stars": 0,
+  "language": null,
+  "url": "https://github.com/3P-DanSan/Revit-Dynamo-Python---add-shared-Parameter-to-Family",
+  "topics": [],
+  "collected_at": "2026-05-23T21:54:28.020990",
+  "files_collected": [
+    "AddSharedParameterToFamilyFile.dyn",
+    "README.md"
+  ]
+}

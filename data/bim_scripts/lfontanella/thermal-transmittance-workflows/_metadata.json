@@ -1,0 +1,29 @@
+{
+  "owner": "lfontanella",
+  "repo": "thermal-transmittance-workflows",
+  "full_name": "lfontanella/thermal-transmittance-workflows",
+  "description": "Proprietary and open-source workflows for thermal transmittance checks and regulatory requirement analysis in BIM/openBIM contexts.",
+  "stars": 0,
+  "language": "Python",
+  "url": "https://github.com/lfontanella/thermal-transmittance-workflows",
+  "topics": [
+    "bim",
+    "dynamo",
+    "ids",
+    "ifc",
+    "json",
+    "openbim",
+    "python",
+    "thermal-analysis"
+  ],
+  "collected_at": "2026-05-23T21:40:45.174426",
+  "files_collected": [
+    "01_Proprietary workflow/README.md",
+    "01_Proprietary workflow/dynamo/ThermalTransmittanceLimits.json",
+    "01_Proprietary workflow/dynamo/WallThermalTransmittance.dyn",
+    "02_Open source workflow/README.md",
+    "02_Open source workflow/json/ThermalTransmittanceLimits.json",
+    "02_Open source workflow/python/wall_thermal_transmittance_check.py",
+    "README.md"
+  ]
+}

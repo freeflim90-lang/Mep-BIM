@@ -1,0 +1,37 @@
+{
+  "owner": "R-Rijnbeek",
+  "repo": "IFC_WebViewer",
+  "full_name": "R-Rijnbeek/IFC_WebViewer",
+  "description": "A webViewer application that visualize IFC content of a file on web browser. Tested with IFC IFC2X3",
+  "stars": 7,
+  "language": "Python",
+  "url": "https://github.com/R-Rijnbeek/IFC_WebViewer",
+  "topics": [
+    "bim",
+    "bim-applications",
+    "docker",
+    "flask",
+    "flask-application",
+    "ifc",
+    "ifc2x3",
+    "ifcopenshell",
+    "python",
+    "threejs",
+    "web-visualization",
+    "webgl",
+    "webpage"
+  ],
+  "collected_at": "2026-05-23T21:49:38.212536",
+  "files_collected": [
+    "README.md",
+    "app/__init__.py",
+    "app/public/__init__.py",
+    "app/public/routes.py",
+    "app/shared.py",
+    "app/utils/__init__.py",
+    "app/utils/bulk/__init__.py",
+    "app/utils/decorators/__init__.py",
+    "app/utils/logger/__init__.py",
+    "entrypoint.py"
+  ]
+}

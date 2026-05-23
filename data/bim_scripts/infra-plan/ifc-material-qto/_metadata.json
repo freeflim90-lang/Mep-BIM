@@ -1,0 +1,30 @@
+{
+  "owner": "infra-plan",
+  "repo": "ifc-material-qto",
+  "full_name": "infra-plan/ifc-material-qto",
+  "description": "Extract and summarize material quantities from IFC files for LCA, cost estimation, and building analysis. Supports multiple files, geometry fallback, and per-material volume aggregation.",
+  "stars": 4,
+  "language": "Python",
+  "url": "https://github.com/infra-plan/ifc-material-qto",
+  "topics": [
+    "bim",
+    "building-information-modeling",
+    "construction",
+    "construction-data",
+    "ifc",
+    "ifcopenshell",
+    "material-volumes",
+    "python",
+    "python-cli",
+    "qto",
+    "quantity-takeoff"
+  ],
+  "collected_at": "2026-05-23T21:50:39.402820",
+  "files_collected": [
+    "README.md",
+    "ifc_material_qto/__init__.py",
+    "ifc_material_qto/cli.py",
+    "ifc_material_qto/processing.py",
+    "ifc_material_qto/quantities.py"
+  ]
+}

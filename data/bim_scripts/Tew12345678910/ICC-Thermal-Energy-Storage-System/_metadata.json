@@ -1,0 +1,17 @@
+{
+  "owner": "Tew12345678910",
+  "repo": "ICC-Thermal-Energy-Storage-System",
+  "full_name": "Tew12345678910/ICC-Thermal-Energy-Storage-System",
+  "description": "Python simulation for calculating heat energy transfer in Hong Kong's ICC building with Thermal Energy Storage (TES) system integration for greener HVAC solutions. Includes year-long energy analysis and sustainability metrics.",
+  "stars": 0,
+  "language": "Python",
+  "url": "https://github.com/Tew12345678910/ICC-Thermal-Energy-Storage-System",
+  "topics": [],
+  "collected_at": "2026-05-23T21:57:43.676622",
+  "files_collected": [
+    "README.md",
+    "demo_simulation.py",
+    "main_simulation.py",
+    "year_simulation.py"
+  ]
+}

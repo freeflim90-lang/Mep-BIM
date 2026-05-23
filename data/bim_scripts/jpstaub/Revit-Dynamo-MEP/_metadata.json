@@ -1,0 +1,23 @@
+{
+  "owner": "jpstaub",
+  "repo": "Revit-Dynamo-MEP",
+  "full_name": "jpstaub/Revit-Dynamo-MEP",
+  "description": "Dynamo programs to improve the automation of MEP engineering in Autodesk Revit.",
+  "stars": 10,
+  "language": "HTML",
+  "url": "https://github.com/jpstaub/Revit-Dynamo-MEP",
+  "topics": [],
+  "collected_at": "2026-05-23T21:41:09.298646",
+  "files_collected": [
+    "AutomatedBuildingEnergyModel/01_CreateWallsWithExteriorOutline.dyn",
+    "AutomatedBuildingEnergyModel/02_CreateFloorWithExteriorOutline.dyn",
+    "AutomatedBuildingEnergyModel/03_CreateRoofWithExteriorOutline.dyn",
+    "AutomatedBuildingEnergyModel/04_CreateMassesWithSpaces.dyn",
+    "AutomatedDaylightModel/01_CreateDaylightZonesWithSpaces.dyn",
+    "AutomatedDaylightModel/02_CreateDaylightZonesWithZones.dyn",
+    "AutomatedDaylightModel/imageProcessing.py",
+    "README.md",
+    "TRACE700/SetSpaceParameterListViaCsvFile_TRACE.dyn",
+    "TRACE700/TRACE Room Checksums Full Processor.py"
+  ]
+}

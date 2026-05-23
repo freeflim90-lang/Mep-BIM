@@ -1,0 +1,17 @@
+{
+  "owner": "bayoBpas",
+  "repo": "bpasAutomationInstalls",
+  "full_name": "bayoBpas/bpasAutomationInstalls",
+  "description": "This repository contains python scripts for the installation of dynamo packages, the configuration of the dynamo player and the installation of the bpas Revit tab. ",
+  "stars": 0,
+  "language": "Python",
+  "url": "https://github.com/bayoBpas/bpasAutomationInstalls",
+  "topics": [],
+  "collected_at": "2026-05-23T21:54:23.946674",
+  "files_collected": [
+    "BPAS pyRevit Extension and Settings Update.py",
+    "Dynamo Package Installation Script.py",
+    "Dynamo Player Settings File Installation.py",
+    "README.md"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "owner": "ASSET-Lab",
+  "repo": "BuildingEnergy",
+  "full_name": "ASSET-Lab/BuildingEnergy",
+  "description": "Python implementation of building energy modeling with ResStock building database and EnergyPlus simulation.",
+  "stars": 2,
+  "language": "Python",
+  "url": "https://github.com/ASSET-Lab/BuildingEnergy",
+  "topics": [],
+  "collected_at": "2026-05-23T21:55:53.170850",
+  "files_collected": [
+    "README.md",
+    "cluster/eprun_s.py",
+    "local/README.md",
+    "local/eprun_s.py"
+  ]
+}

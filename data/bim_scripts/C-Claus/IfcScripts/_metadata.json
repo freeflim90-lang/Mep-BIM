@@ -1,0 +1,25 @@
+{
+  "owner": "C-Claus",
+  "repo": "IfcScripts",
+  "full_name": "C-Claus/IfcScripts",
+  "description": "Python scripts using IfcOpenShell",
+  "stars": 4,
+  "language": "Python",
+  "url": "https://github.com/C-Claus/IfcScripts",
+  "topics": [],
+  "collected_at": "2026-05-23T21:50:34.269994",
+  "files_collected": [
+    "Ifc Meetstaat Generator.py",
+    "README.md",
+    "add_property_data.py",
+    "create_quantity_views.py",
+    "create_wall_area_views.py",
+    "data_parser.py",
+    "get_idm_data_from_ifc.py",
+    "ifc2excel.py",
+    "ifc_to_excel/gui.py",
+    "ifc_to_excel/ifc2excel.py",
+    "propertyset.py",
+    "revit_to_excel.py"
+  ]
+}

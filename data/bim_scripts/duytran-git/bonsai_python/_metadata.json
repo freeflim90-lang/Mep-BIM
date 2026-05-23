@@ -1,0 +1,15 @@
+{
+  "owner": "duytran-git",
+  "repo": "bonsai_python",
+  "full_name": "duytran-git/bonsai_python",
+  "description": "An exercise using Python scripting with IfcOpenShell in Bonsai/Blender.",
+  "stars": 1,
+  "language": "Python",
+  "url": "https://github.com/duytran-git/bonsai_python",
+  "topics": [],
+  "collected_at": "2026-05-23T21:50:50.956177",
+  "files_collected": [
+    "README.md",
+    "bonsai_python.py"
+  ]
+}

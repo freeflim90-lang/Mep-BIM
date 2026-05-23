@@ -1,0 +1,30 @@
+{
+  "owner": "aecoder-br",
+  "repo": "dynamo-chatgpt",
+  "full_name": "aecoder-br/dynamo-chatgpt",
+  "description": "Custom Node developed to facilitate the use of the ChatGPT API for chat completion within Dynamo",
+  "stars": 9,
+  "language": "Python",
+  "url": "https://github.com/aecoder-br/dynamo-chatgpt",
+  "topics": [
+    "autodesk",
+    "autodesk-revit",
+    "chatgpt",
+    "chatgpt-api",
+    "dynamo",
+    "dynamobim",
+    "ironpython",
+    "openai",
+    "openai-api",
+    "openai-chatgpt",
+    "python",
+    "revit",
+    "revit-addins"
+  ],
+  "collected_at": "2026-05-23T21:52:00.859257",
+  "files_collected": [
+    "README.md",
+    "script/sample_dynamo_chatgpt.dyn",
+    "source/dynamo_chatgpt.py"
+  ]
+}

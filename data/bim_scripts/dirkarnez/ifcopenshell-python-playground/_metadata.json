@@ -1,0 +1,17 @@
+{
+  "owner": "dirkarnez",
+  "repo": "ifcopenshell-python-playground",
+  "full_name": "dirkarnez/ifcopenshell-python-playground",
+  "description": null,
+  "stars": 0,
+  "language": "Python",
+  "url": "https://github.com/dirkarnez/ifcopenshell-python-playground",
+  "topics": [],
+  "collected_at": "2026-05-23T21:51:30.725526",
+  "files_collected": [
+    ".vscode/extensions.json",
+    ".vscode/settings.json",
+    "README.md",
+    "main.py"
+  ]
+}

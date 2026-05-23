@@ -1,0 +1,15 @@
+{
+  "owner": "duytran-git",
+  "repo": "ifcOpenShell-python",
+  "full_name": "duytran-git/ifcOpenShell-python",
+  "description": "An exercise of IfcOpenShell",
+  "stars": 0,
+  "language": "Python",
+  "url": "https://github.com/duytran-git/ifcOpenShell-python",
+  "topics": [],
+  "collected_at": "2026-05-23T21:51:10.409662",
+  "files_collected": [
+    "README.md",
+    "get_walls_have_windows.py"
+  ]
+}

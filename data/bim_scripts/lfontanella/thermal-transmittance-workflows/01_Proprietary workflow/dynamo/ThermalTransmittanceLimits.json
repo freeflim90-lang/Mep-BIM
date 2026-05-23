@@ -1,0 +1,177 @@
+{
+  "TypeOfOperation": {
+    "NewBuilding": {
+      "BuildingEnvelope": {
+        "UValues - Admitted": {
+          "Climate Zone A": {
+            "Wall": 0.43,
+            "Roof": 0.35,
+            "Floor": 0.44,
+            "Window": 3
+          },
+          "Climate Zone B": {
+            "Wall": 0.43,
+            "Roof": 0.35,
+            "Floor": 0.44,
+            "Window": 3
+          },
+          "Climate Zone C": {
+            "Wall": 0.34,
+            "Roof": 0.33,
+            "Floor": 0.38,
+            "Window": 2.2
+          },
+          "Climate Zone D": {
+            "Wall": 0.29,
+            "Roof": 0.26,
+            "Floor": 0.29,
+            "Window": 1.8
+          },
+          "Climate Zone E": {
+            "Wall": 0.26,
+            "Roof": 0.22,
+            "Floor": 0.26,
+            "Window": 1.4
+          },
+          "Climate Zone F": {
+            "Wall": 0.24,
+            "Roof": 0.2,
+            "Floor": 0.24,
+            "Window": 1.1
+          }
+        }
+      },
+      "Hvac": {
+        "boiler": {
+          "minimunEff": 0.85
+        }
+      }
+    },
+    "BuildingEnlargement": {
+      "BuildingEnvelope": {
+        "UValues - Admitted": {
+          "Climate Zone A": {
+            "Wall": 0.43,
+            "Roof": 0.35,
+            "Floor": 0.44,
+            "Window": 3
+          },
+          "Climate Zone B": {
+            "Wall": 0.43,
+            "Roof": 0.35,
+            "Floor": 0.44,
+            "Window": 3
+          },
+          "Climate Zone C": {
+            "Wall": 0.34,
+            "Roof": 0.33,
+            "Floor": 0.38,
+            "Window": 2.2
+          },
+          "Climate Zone D": {
+            "Wall": 0.29,
+            "Roof": 0.26,
+            "Floor": 0.29,
+            "Window": 1.8
+          },
+          "Climate Zone E": {
+            "Wall": 0.26,
+            "Roof": 0.22,
+            "Floor": 0.26,
+            "Window": 1.4
+          },
+          "Climate Zone F": {
+            "Wall": 0.24,
+            "Roof": 0.2,
+            "Floor": 0.24,
+            "Window": 1.1
+          }
+        }
+      }
+    },
+    "BuildingRenovation": {
+      "BuildingEnvelope": {
+        "UValues - Admitted": {
+          "Climate Zone A": {
+            "Wall": 0.43,
+            "Roof": 0.35,
+            "Floor": 0.44,
+            "Window": 3
+          },
+          "Climate Zone B": {
+            "Wall": 0.43,
+            "Roof": 0.35,
+            "Floor": 0.44,
+            "Window": 3
+          },
+          "Climate Zone C": {
+            "Wall": 0.34,
+            "Roof": 0.33,
+            "Floor": 0.38,
+            "Window": 2.2
+          },
+          "Climate Zone D": {
+            "Wall": 0.29,
+            "Roof": 0.26,
+            "Floor": 0.29,
+            "Window": 1.8
+          },
+          "Climate Zone E": {
+            "Wall": 0.26,
+            "Roof": 0.22,
+            "Floor": 0.26,
+            "Window": 1.4
+          },
+          "Climate Zone F": {
+            "Wall": 0.24,
+            "Roof": 0.2,
+            "Floor": 0.24,
+            "Window": 1.1
+          }
+        }
+      }
+    },
+    "BuildingEnergyRenovation": {
+      "BuildingEnvelope": {
+        "UValues - Admitted": {
+          "Climate Zone A": {
+            "Wall": 0.43,
+            "Roof": 0.35,
+            "Floor": 0.44,
+            "Window": 3
+          },
+          "Climate Zone B": {
+            "Wall": 0.43,
+            "Roof": 0.35,
+            "Floor": 0.44,
+            "Window": 3
+          },
+          "Climate Zone C": {
+            "Wall": 0.34,
+            "Roof": 0.33,
+            "Floor": 0.38,
+            "Window": 2.2
+          },
+          "Climate Zone D": {
+            "Wall": 0.29,
+            "Roof": 0.26,
+            "Floor": 0.29,
+            "Window": 1.8
+          },
+          "Climate Zone E": {
+            "Wall": 0.26,
+            "Roof": 0.22,
+            "Floor": 0.26,
+            "Window": 1.4
+          },
+          "Climate Zone F": {
+            "Wall": 0.24,
+            "Roof": 0.2,
+            "Floor": 0.24,
+            "Window": 1.1
+          }
+        }
+      }
+    }
+  }
+}

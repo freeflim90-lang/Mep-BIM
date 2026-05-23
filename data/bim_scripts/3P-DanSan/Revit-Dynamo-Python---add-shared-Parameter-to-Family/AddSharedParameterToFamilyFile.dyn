@@ -1,0 +1,129 @@
+<Workspace Version="1.2.2.373" X="1334.31683134988" Y="435.900360550518" zoom="0.987651449075942" Name="Home" Description="" RunType="Manual" RunPeriod="1000" HasRunWithoutCrash="False">
+  <NamespaceResolutionMap />
+  <Elements>
+    <CoreNodeModels.Watch guid="3fab677c-39fe-4c82-9440-5accef5cde02" type="CoreNodeModels.Watch" nickname="Watch" x="938.934532412524" y="221.189198392613" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <CoreNodeModels.Input.Directory guid="a9beeaad-bb67-4363-9ccc-5fb16c6ed780" type="CoreNodeModels.Input.Directory" nickname="Directory Path" x="-1343.44627807826" y="100.281065150105" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>C:\Users\daniel.welter\Desktop\FamiliesTest</System.String>
+      <HintPath>C:\Users\daniel.welter\Desktop\FamiliesTest</HintPath>
+    </CoreNodeModels.Input.Directory>
+    <CoreNodeModels.Watch guid="89f8bf56-5d38-4fef-a59c-656a36213935" type="CoreNodeModels.Watch" nickname="Watch" x="-1059.03709470188" y="99.14315670827" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="f5df6a7a-891a-4f63-ad54-d7e42bf00107" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="DanEDU.Directory.ContentsAll" x="-712.784663703647" y="86.2523323313274" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="true">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="True" />
+      <PortInfo index="2" default="True" />
+      <ID value="ce281c12-a5b0-48f8-a3f9-76eddc41d0c6" />
+      <Name value="DanEDU.Directory.ContentsAll" />
+      <Description value="Get the files in a directory or a directory and its subdirectories (use bool value for deepsearch). Does not include hidden or readonly files (and thereby system files). Use string for extension type or * for all filetypes!" />
+      <Inputs>
+        <Input value="directory" />
+        <Input value="searchString" />
+        <Input value="deepSearch" />
+      </Inputs>
+      <Outputs>
+        <Output value="fileName" />
+        <Output value="filePath" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
+    <CoreNodeModels.Input.StringInput guid="c53bc10c-9aea-4288-9b2c-7c0eae6aa902" type="CoreNodeModels.Input.StringInput" nickname="String" x="-849.006982960179" y="173.8986354159" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>*.rfa</System.String>
+      <System.String value="*.rfa" />
+    </CoreNodeModels.Input.StringInput>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="56f1ef21-d02f-4598-931e-0b2ff0081251" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Application.OpenDocumentFile" x="-427.151626773118" y="102.308174674887" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\AppData\Roaming\Dynamo\Dynamo%20Revit\1.2\packages\Rhythm\bin\Rhythm.dll" function="RevitElements.Application.OpenDocumentFile@string">
+      <PortInfo index="0" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="4e2dee59-7f1d-46f1-877a-fd780a4210ba" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="-139.858705159744" y="164.737463588287" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="//SharedParameterNames to be added&#xA;//{&#xA;&quot;3P_Anmerkung&quot;;&#xA;//&quot;3P_Bauteil&quot;,&#xA;//&quot;3P_Bauteilkategorie&quot;,&#xA;//&quot;3P_BKP&quot;,&#xA;//&quot;3P_eBKP-H&quot;,&#xA;//&quot;3P_Hersteller&quot;,&#xA;//&quot;3P_Material&quot;,&#xA;//&quot;3P_NPK&quot;,&#xA;//&quot;3P_Typ&quot;&#xA;//};&#xA;//SharedParameterFileGroupName&#xA;&quot;10:	3-Plan-Parameter&quot;;&#xA;//RFAGroupName or BuiltInParameterGroupName&#xA;&quot;PG_TEXT&quot;;&#xA;//ExemplarParameter Ja/Nein&#xA;false;" ShouldFocus="false" />
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="4d3f2eae-aa96-49cc-8ccd-77ff41bcfae3" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="DanEDU.FamilyDocument.AddSharedParameter" x="596.828425744021" y="121.701258988165" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="true">
+      <PortInfo index="0" default="True" />
+      <PortInfo index="1" default="False" />
+      <PortInfo index="2" default="False" />
+      <PortInfo index="3" default="False" />
+      <PortInfo index="4" default="False" />
+      <ID value="ad7d8df4-37c3-4a7d-ae5e-96fbcb44febb" />
+      <Name value="DanEDU.FamilyDocument.AddSharedParameter" />
+      <Description value="Add shared parameter by name inside a family document. Please note that a default shared parameter file must be set in Revit" />
+      <Inputs>
+        <Input value="familyDocument" />
+        <Input value="parameterName" />
+        <Input value="groupName" />
+        <Input value="group" />
+        <Input value="instance" />
+      </Inputs>
+      <Outputs>
+        <Output value="document" />
+        <Output value="log" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="5d039cc7-5133-4c80-977a-1c19b5102cee" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Application.CloseDocument" x="1418.5100862644" y="109.762073407351" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\AppData\Roaming\Dynamo\Dynamo%20Revit\1.2\packages\Rhythm\bin\Rhythm.dll" function="RevitElements.Application.CloseDocument@var,bool">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <CoreNodeModels.Watch guid="894c1fad-2c16-4e5e-94e9-1f094adb1772" type="CoreNodeModels.Watch" nickname="Watch" x="1649.31531405247" y="247.443250628016" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <CoreNodeModels.Watch guid="035bd969-3dd8-49c6-94d9-ad5c7162ae7d" type="CoreNodeModels.Watch" nickname="Watch" x="256.08231207452" y="67.988126906223" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <CoreNodeModels.Watch guid="59c10245-b292-4a7f-a4da-57cbc8c19cf4" type="CoreNodeModels.Watch" nickname="Watch" x="1117.25689032901" y="142.833062889644" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <CoreNodeModels.Input.BoolSelector guid="0e07020f-c8e7-4a58-9c98-3fd22a5dc637" type="CoreNodeModels.Input.BoolSelector" nickname="Boolean" x="-920.556325871093" y="240.225640790801" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.Boolean>True</System.Boolean>
+    </CoreNodeModels.Input.BoolSelector>
+    <CoreNodeModels.Input.BoolSelector guid="bd673961-9731-406a-9434-0558d38f40cb" type="CoreNodeModels.Input.BoolSelector" nickname="Boolean" x="1246.15660013546" y="249.477106305079" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.Boolean>True</System.Boolean>
+    </CoreNodeModels.Input.BoolSelector>
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="a9beeaad-bb67-4363-9ccc-5fb16c6ed780" start_index="0" end="89f8bf56-5d38-4fef-a59c-656a36213935" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="89f8bf56-5d38-4fef-a59c-656a36213935" start_index="0" end="f5df6a7a-891a-4f63-ad54-d7e42bf00107" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="f5df6a7a-891a-4f63-ad54-d7e42bf00107" start_index="1" end="56f1ef21-d02f-4598-931e-0b2ff0081251" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="c53bc10c-9aea-4288-9b2c-7c0eae6aa902" start_index="0" end="f5df6a7a-891a-4f63-ad54-d7e42bf00107" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="56f1ef21-d02f-4598-931e-0b2ff0081251" start_index="0" end="035bd969-3dd8-49c6-94d9-ad5c7162ae7d" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="4e2dee59-7f1d-46f1-877a-fd780a4210ba" start_index="0" end="4d3f2eae-aa96-49cc-8ccd-77ff41bcfae3" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="4e2dee59-7f1d-46f1-877a-fd780a4210ba" start_index="1" end="4d3f2eae-aa96-49cc-8ccd-77ff41bcfae3" end_index="2" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="4e2dee59-7f1d-46f1-877a-fd780a4210ba" start_index="2" end="4d3f2eae-aa96-49cc-8ccd-77ff41bcfae3" end_index="3" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="4e2dee59-7f1d-46f1-877a-fd780a4210ba" start_index="3" end="4d3f2eae-aa96-49cc-8ccd-77ff41bcfae3" end_index="4" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="4d3f2eae-aa96-49cc-8ccd-77ff41bcfae3" start_index="0" end="59c10245-b292-4a7f-a4da-57cbc8c19cf4" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="4d3f2eae-aa96-49cc-8ccd-77ff41bcfae3" start_index="1" end="3fab677c-39fe-4c82-9440-5accef5cde02" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="5d039cc7-5133-4c80-977a-1c19b5102cee" start_index="0" end="894c1fad-2c16-4e5e-94e9-1f094adb1772" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="035bd969-3dd8-49c6-94d9-ad5c7162ae7d" start_index="0" end="4d3f2eae-aa96-49cc-8ccd-77ff41bcfae3" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="59c10245-b292-4a7f-a4da-57cbc8c19cf4" start_index="0" end="5d039cc7-5133-4c80-977a-1c19b5102cee" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="0e07020f-c8e7-4a58-9c98-3fd22a5dc637" start_index="0" end="f5df6a7a-891a-4f63-ad54-d7e42bf00107" end_index="2" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="bd673961-9731-406a-9434-0558d38f40cb" start_index="0" end="5d039cc7-5133-4c80-977a-1c19b5102cee" end_index="1" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="c8e7a8d2-f2c0-480c-b630-b5e322512ef6" annotationText="Close Revit Family File" left="1107.25689032901" top="79.762073407351" width="634.05842372346" height="261.681177220665" fontSize="14" InitialTop="109.762073407351" InitialHeight="261.681177220665" TextblockHeight="20" backgrouund="#FFC1D676">
+      <Models ModelGuid="5d039cc7-5133-4c80-977a-1c19b5102cee" />
+      <Models ModelGuid="894c1fad-2c16-4e5e-94e9-1f094adb1772" />
+      <Models ModelGuid="bd673961-9731-406a-9434-0558d38f40cb" />
+      <Models ModelGuid="59c10245-b292-4a7f-a4da-57cbc8c19cf4" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="60a309a4-adf6-42e0-8a72-771098744694" annotationText="Add one or more Shared Parameter to the input Family files given" left="-149.858705159744" top="37.988126906223" width="1180.79323757227" height="509.749336682064" fontSize="14" InitialTop="67.988126906223" InitialHeight="509.749336682064" TextblockHeight="20" backgrouund="#FFC1D676">
+      <Models ModelGuid="3fab677c-39fe-4c82-9440-5accef5cde02" />
+      <Models ModelGuid="4e2dee59-7f1d-46f1-877a-fd780a4210ba" />
+      <Models ModelGuid="4d3f2eae-aa96-49cc-8ccd-77ff41bcfae3" />
+      <Models ModelGuid="035bd969-3dd8-49c6-94d9-ad5c7162ae7d" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="ede165c3-96aa-44f7-b232-71da9b467344" annotationText="Choose the directory with the Revit Family files" left="-1353.44627807826" top="69.14315670827" width="386.409183376384" height="123.137908441835" fontSize="14" InitialTop="99.14315670827" InitialHeight="124.898354330062" TextblockHeight="20" backgrouund="#FFC1D676">
+      <Models ModelGuid="a9beeaad-bb67-4363-9ccc-5fb16c6ed780" />
+      <Models ModelGuid="89f8bf56-5d38-4fef-a59c-656a36213935" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="d0ea2dc1-e6c3-4910-8f2e-f6b767a8280a" annotationText="Open all input files" left="-437.151626773118" top="72.3081746748869" width="241" height="123" fontSize="14" InitialTop="102.308174674887" InitialHeight="123" TextblockHeight="20" backgrouund="#FFC1D676">
+      <Models ModelGuid="56f1ef21-d02f-4598-931e-0b2ff0081251" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="feaf9843-4961-475e-80a2-25ac8da67c0e" annotationText="Select all Family files in the given directory" left="-930.556325871093" top="56.2523323313274" width="468.771662167446" height="251.973308459474" fontSize="14" InitialTop="86.2523323313274" InitialHeight="251.973308459474" TextblockHeight="20" backgrouund="#FFC1D676">
+      <Models ModelGuid="f5df6a7a-891a-4f63-ad54-d7e42bf00107" />
+      <Models ModelGuid="c53bc10c-9aea-4288-9b2c-7c0eae6aa902" />
+      <Models ModelGuid="0e07020f-c8e7-4a58-9c98-3fd22a5dc637" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+  </Annotations>
+  <Presets />
+  <Cameras>
+    <Camera Name="Hintergrundvorschau" eyeX="-17" eyeY="24" eyeZ="50" lookX="12" lookY="-13" lookZ="-58" upX="0" upY="1" upZ="0" />
+  </Cameras>
+</Workspace>

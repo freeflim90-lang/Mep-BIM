@@ -1,0 +1,32 @@
+{
+  "owner": "opensourceBIM",
+  "repo": "python-mvdxml",
+  "full_name": "opensourceBIM/python-mvdxml",
+  "description": "A mvdXML checker and w3c SPARQL converter, as an IfcOpenShell submodule or stand-alone.",
+  "stars": 34,
+  "language": "Python",
+  "url": "https://github.com/opensourceBIM/python-mvdxml",
+  "topics": [
+    "bot",
+    "buildingsmart",
+    "ifc",
+    "ifcowl",
+    "industryfoundationclasses",
+    "linkedbuildingdata",
+    "linkeddata",
+    "mvd",
+    "mvdxml",
+    "owl",
+    "python",
+    "semanticweb"
+  ],
+  "collected_at": "2026-05-23T21:46:17.825370",
+  "files_collected": [
+    "README.md",
+    "__init__.py",
+    "__main__.py",
+    "mvd.py",
+    "mvdxml_expression.py",
+    "sparql.py"
+  ]
+}

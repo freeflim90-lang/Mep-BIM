@@ -1,0 +1,1834 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/OxfordRSE/OpenBES-py/releases/download/v0.3.1/OpenBES.schema.json",
+  "title": "OpenBES Specification Schema",
+  "$version": "0.3.12",
+  "description": "JSON Schema for the Open Building Energy Simulation specification.",
+  "type": "object",
+  "definitions": {
+    "ENERGY_SOURCES": {
+      "type": "string",
+      "description": "Energy sources.",
+      "enum": [
+        "Electricity",
+        "Diesel",
+        "LPG",
+        "Natural gas",
+        "Biomass",
+        "Pellets"
+      ]
+    },
+    "COOLING_SYSTEM_TYPES": {
+      "type": "string",
+      "description": "Cooling system type enum (placeholder).",
+      "enum": [
+        "Heat pump"
+      ]
+    },
+    "HEATING_SYSTEM_TYPES": {
+      "type": "string",
+      "description": "Heating system type.",
+      "enum": [
+        "Electric heating (radiators)",
+        "Electric boiler",
+        "Conventional boiler",
+        "Low temperature boiler",
+        "Condensing boiler",
+        "Biomass boiler",
+        "Heat pump"
+      ]
+    },
+    "METEOROLOGICAL_FILE": {
+      "type": "string",
+      "enum": [
+        "openbes://USA_Denver_725650TYCST.epw",
+        "openbes://UK_Oxford_GBR_ENG_RAF.Benson.036580_TMYx.2007-2021.epw",
+        "openbes://GBR_ENG_London-Heathrow.Intl.AP.037720_TMYx.2011-2025.epw",
+        "openbes://ESP_AN_Sevilla.AP.083910_TMYx.2011-2025.epw",
+        "openbes://ESP_MD_Madrid-Barajas-Suarez.AP.082210_TMYx.2011-2025.epw"
+      ],
+      "description": "Meteorological file."
+    },
+    "TERRAIN_CLASS": {
+      "type": "string",
+      "description": "Terrain class (placeholder).",
+      "enum": [
+        "Open terrain",
+        "Country",
+        "Urban"
+      ]
+    },
+    "SUPPORTED_COUNTRIES": {
+      "type": "string",
+      "description": "Country in which the building is. [Used for lookup tables concerning e.g. CO2eq/kwH. Will eventually deprecate in favour of EPW file country.]",
+      "enum": [
+        "Spain",
+        "USA",
+        "France",
+        "UK",
+        "Other"
+      ]
+    },
+    "FECCoefficientsRow": {
+      "type": "object",
+      "description": "Primary energy and CO2 coefficients for a single energy source.",
+      "properties": {
+        "PEC_per_kWh_FEC": {
+          "type": "number",
+          "description": "Total primary energy factor (kWh primary / kWh final)."
+        },
+        "PECnr_per_kWh_FEC": {
+          "type": "number",
+          "description": "Non-renewable primary energy factor (kWh primary / kWh final)."
+        },
+        "kgCO2_per_kWh_FEC": {
+          "type": "number",
+          "description": "CO2-equivalent emission factor (kg CO2 eq / kWh final)."
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "CustomFECCoefficients": {
+      "type": "object",
+      "description": "Custom per-energy-source primary energy and CO2 coefficients. Any omitted values default to the 'Other' country values from the built-in lookup table.",
+      "properties": {
+        "Electricity": {
+          "$ref": "#/definitions/FECCoefficientsRow",
+          "description": "Final Energy Consumption coefficients for electricity.",
+          "default": {
+            "PEC_per_kWh_FEC": 1.5,
+            "PECnr_per_kWh_FEC": 1.15,
+            "kgCO2_per_kWh_FEC": 0.1
+          }
+        },
+        "Diesel": {
+          "$ref": "#/definitions/FECCoefficientsRow",
+          "description": "Final Energy Consumption coefficients for diesel.",
+          "default": {
+            "PEC_per_kWh_FEC": 1.273,
+            "PECnr_per_kWh_FEC": 1.268,
+            "kgCO2_per_kWh_FEC": 0.311
+          }
+        },
+        "LPG": {
+          "$ref": "#/definitions/FECCoefficientsRow",
+          "description": "Final Energy Consumption coefficients for LPG.",
+          "default": {
+            "PEC_per_kWh_FEC": 1.168,
+            "PECnr_per_kWh_FEC": 1.166,
+            "kgCO2_per_kWh_FEC": 0.254
+          }
+        },
+        "Natural gas": {
+          "$ref": "#/definitions/FECCoefficientsRow",
+          "description": "Final Energy Consumption coefficients for natural gas.",
+          "default": {
+            "PEC_per_kWh_FEC": 1.161,
+            "PECnr_per_kWh_FEC": 1.159,
+            "kgCO2_per_kWh_FEC": 0.239
+          }
+        },
+        "Biomass": {
+          "$ref": "#/definitions/FECCoefficientsRow",
+          "description": "Final Energy Consumption coefficients for biomass.",
+          "default": {
+            "PEC_per_kWh_FEC": 1.037,
+            "PECnr_per_kWh_FEC": 0.034,
+            "kgCO2_per_kWh_FEC": 0.018
+          }
+        },
+        "Pellets": {
+          "$ref": "#/definitions/FECCoefficientsRow",
+          "description": "Final Energy Consumption coefficients for pellets.",
+          "default": {
+            "PEC_per_kWh_FEC": 1.542,
+            "PECnr_per_kWh_FEC": 0.082,
+            "kgCO2_per_kWh_FEC": 0.044
+          }
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "FECCoefficients": {
+      "oneOf": [
+        {
+          "$ref": "#/definitions/SUPPORTED_COUNTRIES"
+        },
+        {
+          "$ref": "#/definitions/CustomFECCoefficients"
+        }
+      ],
+      "description": "FEC (Final Energy Consumption) coefficients source: either a preset country name for built-in lookup-table values, or a custom object specifying per-energy-source coefficients (any omitted values fall back to the 'Other' country defaults)."
+    },
+    "Building": {
+      "type": "object",
+      "description": "Building level information.",
+      "properties": {
+        "area": {
+          "type": "string",
+          "description": "Street/region the building is in."
+        },
+        "height": {
+          "type": "number",
+          "description": "Height of the building in m."
+        },
+        "length": {
+          "type": "number",
+          "description": "Length of the building in m."
+        },
+        "width": {
+          "type": "number",
+          "description": "Width of the building in m."
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the building"
+        },
+        "type": {
+          "type": "string",
+          "description": "Type of building (e.g. Office, School)."
+        },
+        "floor_count": {
+          "type": "integer",
+          "description": "Number of floors in the building.",
+          "default": 1
+        },
+        "floor_to_ceiling_height": {
+          "type": "number",
+          "description": "Floor to ceiling height in m.",
+          "$comment": "Mapped without building_ prefix",
+          "default": 2.7
+        },
+        "slab_thickness": {
+          "type": "number",
+          "description": "Slab thickness in m.",
+          "$comment": "Mapped without building_ prefix",
+          "default": 0.2
+        },
+        "orientation_angle": {
+          "type": "number",
+          "description": "Orientation angle of the building in degrees clockwise from North=0.",
+          "$comment": "Mapped without building_ prefix",
+          "default": 0.0
+        },
+        "roof_angle": {
+          "type": "number",
+          "description": "Roof angle in degrees from horizontal.",
+          "$comment": "Mapped without building_ prefix",
+          "default": 0.0
+        },
+        "solar_external_shading_summer": {
+          "type": "number",
+          "description": "External solar shading factor for summer (Summer = air temp > 22C).",
+          "$comment": "Mapped without building_ prefix",
+          "default": 0.0,
+          "maximum": 1.0,
+          "minimum": 0.0
+        },
+        "solar_external_shading_winter": {
+          "type": "number",
+          "description": "External solar shading factor for winter (Winter = air temp <= 22C).",
+          "$comment": "Mapped without building_ prefix",
+          "default": 0.0,
+          "maximum": 1.0,
+          "minimum": 0.0
+        },
+        "terrain_class": {
+          "$ref": "#/definitions/TERRAIN_CLASS",
+          "description": "Terrain class around the building.",
+          "$comment": "Mapped without building_ prefix"
+        },
+        "thermal_bridge_facade_ground": {
+          "type": "boolean",
+          "description": "Whether to model the thermal bridge factor for facade to ground junctions.",
+          "$comment": "Mapped without building_ prefix"
+        },
+        "thermal_bridge_facade_intermediate": {
+          "type": "boolean",
+          "description": "Whether to model the thermal bridge factor for facade to intermediate floor junctions.",
+          "$comment": "Mapped without building_ prefix"
+        },
+        "thermal_bridge_facade_roof": {
+          "type": "boolean",
+          "description": "Whether to model the thermal bridge factor for facade to roof junctions.",
+          "$comment": "Mapped without building_ prefix"
+        },
+        "thermal_bridge_shading": {
+          "type": "boolean",
+          "description": "Whether to model the thermal bridge factor for shading devices.",
+          "$comment": "Mapped without building_ prefix"
+        },
+        "thermal_bridge_window": {
+          "type": "boolean",
+          "description": "Whether to model the thermal bridge factor for windows.",
+          "$comment": "Mapped without building_ prefix"
+        },
+        "uvalue_facade": {
+          "type": "number",
+          "description": "U-value of the facade in W/m2K.",
+          "$comment": "Mapped without building_ prefix",
+          "default": 0.0
+        },
+        "uvalue_roof": {
+          "type": "number",
+          "description": "U-value of the roof in W/m2K.",
+          "$comment": "Mapped without building_ prefix",
+          "default": 0.0
+        },
+        "uvalue_window": {
+          "type": "number",
+          "description": "U-value of the windows in W/m2K.",
+          "$comment": "Mapped without building_ prefix",
+          "default": 0.0
+        },
+        "uvalue_floor": {
+          "type": "number",
+          "description": "U-value of the floor in W/m2K.",
+          "$comment": "Mapped without building_ prefix",
+          "default": 0.0
+        },
+        "window_frame_factor": {
+          "type": "number",
+          "description": "Window frame factor (fraction).",
+          "$comment": "Mapped without building_ prefix",
+          "default": 0.0,
+          "maximum": 1.0,
+          "minimum": 0.0
+        },
+        "window_gvalue": {
+          "type": "number",
+          "description": "Window g-value (fraction).",
+          "$comment": "Mapped without building_ prefix",
+          "default": 0.0
+        },
+        "window_height": {
+          "type": "number",
+          "description": "Window height in m.",
+          "$comment": "Mapped without building_ prefix",
+          "default": 0.0
+        },
+        "window_length": {
+          "type": "number",
+          "description": "Window length in m.",
+          "$comment": "Mapped without building_ prefix",
+          "default": 0.0
+        },
+        "window_counts": {
+          "type": "object",
+          "properties": {
+            "front": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              },
+              "description": "Array of window counts per floor on the front side of the building."
+            },
+            "back": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              },
+              "description": "Array of window counts per floor on the back side of the building."
+            },
+            "left": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              },
+              "description": "Array of window counts per floor on the left side of the building."
+            },
+            "right": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              },
+              "description": "Array of window counts per floor on the right side of the building."
+            }
+          },
+          "description": "A map of building side to array of window counts per floor.",
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "length",
+        "width"
+      ],
+      "additionalProperties": false
+    },
+    "Duration": {
+      "type": "object",
+      "properties": {
+        "start": {
+          "type": "integer",
+          "description": "Start hour (1-24)."
+        },
+        "end": {
+          "type": "integer",
+          "description": "End hour (1-24)."
+        }
+      },
+      "required": [
+        "start",
+        "end"
+      ],
+      "additionalProperties": false,
+      "description": "Duration object representing a time period within a day. Systems come on at the beginning of their Start hour and switch off at the end of their End hour."
+    },
+    "Zone": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Zone name"
+        },
+        "areas": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "description": "Zone area for each floor in m2"
+        },
+        "conditioned": {
+          "type": "boolean",
+          "description": "Whether this zone uses HVAC.",
+          "default": true
+        },
+        "active_hours": {
+          "$ref": "#/definitions/Duration",
+          "description": "Times the zone is occupied each day.",
+          "$comment": "Mapped to e.g. occupancy_open_office + occupancy_close_office"
+        }
+      },
+      "required": [
+        "name",
+        "areas"
+      ],
+      "additionalProperties": false
+    },
+    "ZoneSimultaneity": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "number"
+      },
+      "description": "A map of Zone name - Simultaneity factor where Zone name is a previously declared Zone."
+    },
+    "OccupationSchedule": {
+      "type": "object",
+      "properties": {
+        "January": {
+          "type": "boolean",
+          "default": false
+        },
+        "February": {
+          "type": "boolean",
+          "default": false
+        },
+        "March": {
+          "type": "boolean",
+          "default": false
+        },
+        "April": {
+          "type": "boolean",
+          "default": false
+        },
+        "May": {
+          "type": "boolean",
+          "default": false
+        },
+        "June": {
+          "type": "boolean",
+          "default": false
+        },
+        "July": {
+          "type": "boolean",
+          "default": false
+        },
+        "August": {
+          "type": "boolean",
+          "default": false
+        },
+        "September": {
+          "type": "boolean",
+          "default": false
+        },
+        "October": {
+          "type": "boolean",
+          "default": false
+        },
+        "November": {
+          "type": "boolean",
+          "default": false
+        },
+        "December": {
+          "type": "boolean",
+          "default": false
+        },
+        "Monday": {
+          "type": "boolean",
+          "default": false
+        },
+        "Tuesday": {
+          "type": "boolean",
+          "default": false
+        },
+        "Wednesday": {
+          "type": "boolean",
+          "default": false
+        },
+        "Thursday": {
+          "type": "boolean",
+          "default": false
+        },
+        "Friday": {
+          "type": "boolean",
+          "default": false
+        },
+        "Saturday": {
+          "type": "boolean",
+          "default": false
+        },
+        "Sunday": {
+          "type": "boolean",
+          "default": false
+        }
+      },
+      "additionalProperties": false,
+      "description": "Whether the building is occupied during given months and days."
+    },
+    "Range": {
+      "type": "object",
+      "properties": {
+        "min": {
+          "type": "number",
+          "description": "Minimum value of the range."
+        },
+        "max": {
+          "type": "number",
+          "description": "Maximum value of the range."
+        }
+      },
+      "required": [
+        "min",
+        "max"
+      ],
+      "additionalProperties": false,
+      "description": "A numeric range with minimum and maximum values."
+    },
+    "Consumption": {
+      "type": "object",
+      "properties": {
+        "January": {
+          "type": "number",
+          "default": 0.0
+        },
+        "February": {
+          "type": "number",
+          "default": 0.0
+        },
+        "March": {
+          "type": "number",
+          "default": 0.0
+        },
+        "April": {
+          "type": "number",
+          "default": 0.0
+        },
+        "May": {
+          "type": "number",
+          "default": 0.0
+        },
+        "June": {
+          "type": "number",
+          "default": 0.0
+        },
+        "July": {
+          "type": "number",
+          "default": 0.0
+        },
+        "August": {
+          "type": "number",
+          "default": 0.0
+        },
+        "September": {
+          "type": "number",
+          "default": 0.0
+        },
+        "October": {
+          "type": "number",
+          "default": 0.0
+        },
+        "November": {
+          "type": "number",
+          "default": 0.0
+        },
+        "December": {
+          "type": "number",
+          "default": 0.0
+        }
+      },
+      "additionalProperties": false,
+      "description": "Consumption of a resource by with a monthly breakdown."
+    },
+    "HeatingSystem": {
+      "type": "object",
+      "description": "A heating system instance.",
+      "properties": {
+        "type": {
+          "$ref": "#/definitions/HEATING_SYSTEM_TYPES"
+        },
+        "energy_source": {
+          "$ref": "#/definitions/ENERGY_SOURCES",
+          "description": "Energy source for this heating system."
+        },
+        "efficiency_cop": {
+          "type": "number",
+          "description": "COP or efficiency (if applicable)."
+        },
+        "min_demand": {
+          "type": "number",
+          "description": "Minimum demand threshold.",
+          "default": 0.0
+        },
+        "nominal_capacity": {
+          "type": "number",
+          "description": "Nominal capacity."
+        },
+        "count": {
+          "type": "integer",
+          "description": "Number of identical units.",
+          "default": 1
+        },
+        "active_hours": {
+          "$ref": "#/definitions/Duration",
+          "description": "Times the system is on each day."
+        },
+        "simultaneity": {
+          "$ref": "#/definitions/ZoneSimultaneity"
+        }
+      },
+      "required": [
+        "energy_source",
+        "efficiency_cop",
+        "active_hours",
+        "nominal_capacity"
+      ],
+      "additionalProperties": false
+    },
+    "CoolingSystem": {
+      "type": "object",
+      "description": "A cooling system instance.",
+      "properties": {
+        "type": {
+          "$ref": "#/definitions/COOLING_SYSTEM_TYPES"
+        },
+        "energy_source": {
+          "$ref": "#/definitions/ENERGY_SOURCES"
+        },
+        "efficiency_ratio": {
+          "type": "number",
+          "description": "EER/COP or energy efficiency ratio."
+        },
+        "min_demand": {
+          "type": "number",
+          "description": "Minimum demand."
+        },
+        "nominal_capacity": {
+          "type": "number",
+          "description": "Nominal capacity."
+        },
+        "sensible_nominal_capacity": {
+          "type": "number",
+          "description": "Sensible capacity."
+        },
+        "count": {
+          "type": "integer",
+          "description": "Number of identical units.",
+          "default": 1
+        },
+        "active_hours": {
+          "$ref": "#/definitions/Duration",
+          "description": "Times the system is on each day."
+        },
+        "simultaneity": {
+          "$ref": "#/definitions/ZoneSimultaneity"
+        }
+      },
+      "required": [
+        "energy_source",
+        "efficiency_ratio",
+        "active_hours",
+        "nominal_capacity",
+        "sensible_nominal_capacity"
+      ],
+      "additionalProperties": false
+    },
+    "VentilationSystem": {
+      "type": "object",
+      "description": "A ventilation system instance.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Optional type code."
+        },
+        "energy_source": {
+          "$ref": "#/definitions/ENERGY_SOURCES"
+        },
+        "airflow": {
+          "type": "number",
+          "description": "Airflow (m3/h)."
+        },
+        "heat_recovery_efficiency": {
+          "type": "number",
+          "description": "Heat recovery efficiency."
+        },
+        "rated_input_power": {
+          "type": "number",
+          "description": "Rated input power (kW)."
+        },
+        "ventilated_area": {
+          "type": "number",
+          "description": "Proportion of area ventilated (m2).",
+          "default": 1.0
+        },
+        "active_hours": {
+          "$ref": "#/definitions/Duration",
+          "description": "Times the system is on each day.",
+          "default": {
+            "start": 1,
+            "end": 24
+          }
+        }
+      },
+      "required": [
+        "energy_source",
+        "airflow"
+      ],
+      "additionalProperties": false
+    },
+    "LightingSystem": {
+      "type": "object",
+      "description": "A lighting system for a particular zone (replaces lighting_system_*_zN scattered fields).",
+      "properties": {
+        "tech": {
+          "$ref": "#/definitions/LightingSystemTech"
+        },
+        "ballast": {
+          "type": "string",
+          "enum": [
+            "Electronic ballast",
+            "Ferromagnetic ballast"
+          ],
+          "description": "Ballast type."
+        },
+        "lamp_number": {
+          "type": "integer",
+          "description": "Number of lamps."
+        },
+        "lamp_power": {
+          "type": "number",
+          "description": "Lamp power (W)."
+        },
+        "luminary_number": {
+          "type": "integer",
+          "description": "Number of luminaires."
+        },
+        "name": {
+          "type": "string",
+          "description": "Optional human label for the system."
+        },
+        "active_hours": {
+          "$ref": "#/definitions/Duration",
+          "description": "Times the lighting is on each day.",
+          "$comment": "Reduced to simply the number of hours/day the lights are on."
+        },
+        "count": {
+          "type": "integer",
+          "description": "Count of similar lighting systems aggregated together.",
+          "default": 1
+        },
+        "simultaneity_factor": {
+          "type": "number",
+          "description": "Simultaneity factor (fraction)."
+        }
+      },
+      "required": [
+        "tech",
+        "lamp_number",
+        "lamp_power",
+        "luminary_number",
+        "active_hours",
+        "simultaneity_factor"
+      ],
+      "additionalProperties": false
+    },
+    "LightingSystemTech": {
+      "type": "string",
+      "enum": [
+        "Tubular fluorescent T8",
+        "Tubular fluorescent T5",
+        "Compact fluorescent",
+        "Incandescent",
+        "Halogen",
+        "Mercury vapor",
+        "Sodium vapour",
+        "Metal halide",
+        "Induction",
+        "LED"
+      ],
+      "description": "Lighting technology type."
+    },
+    "HotWaterSystem": {
+      "type": "object",
+      "description": "A hot water system instance.",
+      "properties": {
+        "demand": {
+          "$ref": "#/definitions/Consumption",
+          "description": "Hot water demand (litres)."
+        },
+        "reference_temperature": {
+          "type": "number",
+          "description": "Reference temperature (°C)."
+        },
+        "supply_temperature": {
+          "type": "number",
+          "description": "Supply temperature (°C)."
+        },
+        "energy_source": {
+          "$ref": "#/definitions/ENERGY_SOURCES",
+          "description": "Energy source for this hot water system."
+        },
+        "efficiency_cop": {
+          "type": "number",
+          "description": "Efficiency of the hot water system."
+        },
+        "nominal_capacity": {
+          "type": "number",
+          "description": "Nominal capacity of the hot water system."
+        },
+        "type": {
+          "type": "string",
+          "description": "Label for the hot water system."
+        }
+      },
+      "required": [
+        "demand",
+        "reference_temperature",
+        "supply_temperature",
+        "energy_source",
+        "efficiency_cop",
+        "nominal_capacity"
+      ],
+      "additionalProperties": false
+    },
+    "Courtyard": {
+      "type": "object",
+      "description": "Courtyard geometry / count object. Replaces flat courtyard_length, courtyard_width, courtyard_number fields.",
+      "properties": {
+        "length": {
+          "type": "number",
+          "description": "Courtyard length (m)."
+        },
+        "width": {
+          "type": "number",
+          "description": "Courtyard width (m)."
+        },
+        "count": {
+          "type": "integer",
+          "description": "How many courtyards of this geometry exist.",
+          "default": 1
+        }
+      },
+      "required": [
+        "length",
+        "width"
+      ],
+      "additionalProperties": false
+    },
+    "OpenCourtyard": {
+      "type": "object",
+      "description": "Courtyard geometry / count object. Replaces flat courtyard_length, courtyard_width, courtyard_number fields.",
+      "properties": {
+        "depth": {
+          "type": "number",
+          "description": "Courtyard depth (m)."
+        },
+        "count": {
+          "type": "integer",
+          "description": "How many courtyards of this geometry exist.",
+          "default": 1
+        }
+      },
+      "required": [
+        "depth"
+      ],
+      "additionalProperties": false
+    },
+    "OpenCourtyardMap": {
+      "type": "object",
+      "properties": {
+        "front": {
+          "$ref": "#/definitions/OpenCourtyard"
+        },
+        "back": {
+          "$ref": "#/definitions/OpenCourtyard"
+        },
+        "left": {
+          "$ref": "#/definitions/OpenCourtyard"
+        },
+        "right": {
+          "$ref": "#/definitions/OpenCourtyard"
+        }
+      },
+      "description": "The open courtyards on each side of the building.",
+      "additionalProperties": false
+    },
+    "HeatCapacity": {
+      "oneOf": [
+        {
+          "$ref": "#/definitions/PresetHeatCapacity"
+        },
+        {
+          "$ref": "#/definitions/CustomHeatCapacity"
+        }
+      ],
+      "description": "Heat capacity of the building, either as a preset class or custom Am/Cm values."
+    },
+    "PresetHeatCapacity": {
+      "type": "string",
+      "description": "Preset heat capacity classes.",
+      "enum": [
+        "Very light",
+        "Light",
+        "Medium",
+        "Heavy",
+        "Very heavy"
+      ]
+    },
+    "CustomHeatCapacity": {
+      "type": "object",
+      "description": "Custom heat capacity properties.",
+      "$comment": "Determined via lookup in Excel, or via special-case calculation from advanced_heat_capacity_am and air_heat_capacity * heat_capacity_joule. These underlying values are not guaranteed to be recoverable from Am and Cm alone.",
+      "properties": {
+        "Am": {
+          "type": "number",
+          "description": "Mass factor"
+        },
+        "Cm": {
+          "type": "number",
+          "description": "Areal heat capacity (J/m2K)"
+        }
+      },
+      "required": [
+        "Am",
+        "Cm"
+      ],
+      "additionalProperties": false
+    },
+    "OpenBESParameters": {
+      "type": "object",
+      "description": "Parameters of the simulation. These do not normally need to be adjusted, and many refer to physical constants.",
+      "additionalProperties": false,
+      "properties": {
+        "include_appliances": {
+          "type": "boolean",
+          "description": "Model appliance consumption.",
+          "default": true
+        },
+        "cooling_load_factor": {
+          "type": "number",
+          "description": "Multiplier applied to cooling loads.",
+          "default": 1.0
+        },
+        "density_of_air": {
+          "type": "number",
+          "description": "Air density (kg/m3).",
+          "default": 1.211
+        },
+        "facade_absorption_coefficient": {
+          "type": "number",
+          "description": "Facade solar absorption coefficient.",
+          "default": 0.6
+        },
+        "facade_correction_factor": {
+          "type": "number",
+          "description": "Facade correction factor.",
+          "default": 1.0
+        },
+        "facade_emissivity": {
+          "type": "number",
+          "description": "Facade emissivity value.",
+          "default": 0.9
+        },
+        "floor_correction_factor": {
+          "type": "number",
+          "description": "Floor correction factor.",
+          "default": 1.0
+        },
+        "heat_capacity_correction_factor": {
+          "type": "number",
+          "description": "Heat capacity correction factor.",
+          "default": 1.0
+        },
+        "heat_capacity_joule": {
+          "type": "number",
+          "description": "Heat capacity of air in J/kgK."
+        },
+        "heating_load_factor": {
+          "type": "number",
+          "description": "Multiplier applied to heating loads.",
+          "default": 1.0
+        },
+        "infiltration_correction_factor": {
+          "type": "number",
+          "description": "Correction factor for infiltration.",
+          "default": 1.0
+        },
+        "leakage_air_flow_dependent": {
+          "type": "number",
+          "description": "Leakage air flow rate dependent on other factors (m3/s).",
+          "default": 0.0001
+        },
+        "include_lighting": {
+          "type": "boolean",
+          "description": "Whether lighting is modelled.",
+          "default": true
+        },
+        "nia_gba_ratio": {
+          "type": "number",
+          "description": "Net internal area / gross building area fraction.",
+          "default": 0.95
+        },
+        "include_occupancy": {
+          "type": "boolean",
+          "description": "Whether occupancy schedules are modelled.",
+          "default": true
+        },
+        "output_csv_precision": {
+          "type": "integer",
+          "description": "Number of decimal places in CSV output.",
+          "default": 2
+        },
+        "pressure_of_air": {
+          "type": "number",
+          "description": "Air pressure. [UNUSED]"
+        },
+        "roof_absorption_coefficient": {
+          "type": "number",
+          "description": "Roof solar absorption coefficient.",
+          "default": 0.8
+        },
+        "roof_correction_factor": {
+          "type": "number",
+          "description": "Roof correction factor.",
+          "default": 1.0
+        },
+        "roof_emissivity": {
+          "type": "number",
+          "description": "Roof emissivity.",
+          "default": 0.9
+        },
+        "shading_correction_factor": {
+          "type": "number",
+          "description": "Shading correction factor.",
+          "default": 1.0
+        },
+        "specific_heat_of_air": {
+          "type": "number",
+          "description": "Specific heat of air.",
+          "default": 1.015
+        },
+        "view_factor_to_sky_facade": {
+          "type": "number",
+          "description": "View factor to sky from facade.",
+          "default": 0.5
+        },
+        "view_factor_to_sky_roof": {
+          "type": "number",
+          "description": "View factor to sky from roof.",
+          "default": 1.0
+        },
+        "window_correction_factor": {
+          "type": "number",
+          "description": "Window correction factor.",
+          "default": 1.0
+        },
+        "window_angular_correction_factors": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "default": 0.0
+          },
+          "maxLength": 5,
+          "minLength": 5,
+          "description": "Angular correction factors for windows.",
+          "default": [
+            1.0,
+            -0.189,
+            0.644,
+            -0.596,
+            0.0
+          ]
+        }
+      }
+    },
+    "OpenBESSpecification": {
+      "type": "object",
+      "properties": {
+        "parameters": {
+          "$ref": "#/definitions/OpenBESParameters",
+          "description": "Collapsed parameters object. Use this to hold heating/cooling/ventilation/lighting/courtyards arrays."
+        },
+        "elevation": {
+          "type": "number",
+          "description": "Elevation above sea level (m)."
+        },
+        "building": {
+          "$ref": "#/definitions/Building",
+          "description": "Building general information."
+        },
+        "zones": {
+          "type": "array",
+          "description": "Zones in the building.",
+          "items": {
+            "$ref": "#/definitions/Zone"
+          }
+        },
+        "occupation_schedule": {
+          "$ref": "#/definitions/OccupationSchedule",
+          "description": "Occupation schedule for the building."
+        },
+        "heating_systems": {
+          "type": "array",
+          "description": "Heating systems in the building.",
+          "items": {
+            "$ref": "#/definitions/HeatingSystem"
+          }
+        },
+        "cooling_systems": {
+          "type": "array",
+          "description": "Cooling systems in the building.",
+          "items": {
+            "$ref": "#/definitions/CoolingSystem"
+          }
+        },
+        "ventilation_systems": {
+          "type": "array",
+          "description": "Ventilation systems in the building.",
+          "items": {
+            "$ref": "#/definitions/VentilationSystem"
+          }
+        },
+        "lighting_systems": {
+          "type": "array",
+          "description": "Lighting systems in the building.",
+          "items": {
+            "$ref": "#/definitions/LightingSystem"
+          }
+        },
+        "hot_water_systems": {
+          "type": "array",
+          "description": "Hot water systems in the building.",
+          "items": {
+            "$ref": "#/definitions/HotWaterSystem"
+          }
+        },
+        "courtyards": {
+          "type": "array",
+          "description": "Courtyards in the building.",
+          "items": {
+            "$ref": "#/definitions/Courtyard"
+          }
+        },
+        "open_courtyards": {
+          "$ref": "#/definitions/OpenCourtyardMap",
+          "description": "Open courtyards on each side of the building."
+        },
+        "appliances_load": {
+          "type": "number",
+          "description": "Load from appliances (W/m2).",
+          "default": 0.0
+        },
+        "biomass_consumption": {
+          "$ref": "#/definitions/Consumption",
+          "description": "Amount of biomass consumed by the building. [UNUSED]"
+        },
+        "biomass_pellets_consumption": {
+          "$ref": "#/definitions/Consumption",
+          "description": "Amount of biomass pellets consumed by the building. [UNUSED]"
+        },
+        "building_standby_electricity_consumption": {
+          "$ref": "#/definitions/Consumption",
+          "description": "Electrical standby load for the building."
+        },
+        "diesel_consumption": {
+          "$ref": "#/definitions/Consumption",
+          "description": "Amount of diesel consumed by the building. [UNUSED]"
+        },
+        "electricity_consumption": {
+          "$ref": "#/definitions/Consumption",
+          "description": "Amount of electricity consumed by the building. [UNUSED]",
+          "$comment": "In the TOML spec, this appears as both monthly breakdown and an annual value. The JSON always translates this to monthly values, and, if given, the monthly values in the TOML take precedence."
+        },
+        "other_electricity_consumption": {
+          "$ref": "#/definitions/Consumption",
+          "description": "Amount of other electricity consumed by the building. [UNUSED]"
+        },
+        "energy_generated": {
+          "$ref": "#/definitions/Consumption",
+          "description": "Amount of energy generated by the building. [UNUSED]"
+        },
+        "energy_used": {
+          "$ref": "#/definitions/Consumption",
+          "description": "Amount of energy used by the building. [UNUSED]"
+        },
+        "other_gas_consumption": {
+          "$ref": "#/definitions/Consumption",
+          "description": "Amount of other gas consumed by the building. [UNUSED]"
+        },
+        "LPG_consumption": {
+          "$ref": "#/definitions/Consumption",
+          "description": "Amount of LPG consumed by the building. [UNUSED]"
+        },
+        "natural_gas_consumption": {
+          "$ref": "#/definitions/Consumption",
+          "description": "Amount of natural gas consumed by the building. [UNUSED]",
+          "$comment": "In the TOML spec, this appears as both monthly breakdown and an annual value. The JSON always translates this to monthly values, and, if given, the monthly values in the TOML take precedence."
+        },
+        "fec_coefficients": {
+          "$ref": "#/definitions/FECCoefficients",
+          "description": "FEC coefficient source: a preset country name (e.g. 'Spain', 'UK') or a custom object with per-energy-source overrides. Omitted values default to the 'Other' country row."
+        },
+        "heat_capacity": {
+          "$ref": "#/definitions/HeatCapacity",
+          "description": "Heat capacity properties of the building."
+        },
+        "holiday": {
+          "type": "boolean",
+          "description": "Whether the building is open on public holidays."
+        },
+        "leakage_air_flow": {
+          "type": "number",
+          "description": "Leakage air flow rate (m3/s)."
+        },
+        "leakage_air_flow_independent": {
+          "type": "number",
+          "description": "Leakage air flow rate independent of other factors (m3/s).",
+          "default": 0.0
+        },
+        "lighting_control": {
+          "type": "string",
+          "enum": [
+            "Manual",
+            "Automatic"
+          ],
+          "description": "Type of lighting control system.",
+          "default": "Automatic"
+        },
+        "lighting_active_hours": {
+          "$ref": "#/definitions/Duration",
+          "description": "Daily active hours for lighting."
+        },
+        "lighting_simultaneity_factor": {
+          "type": "number",
+          "description": "Simultaneity factor for lighting.",
+          "default": 0.2
+        },
+        "max_building_occupation": {
+          "type": "integer",
+          "description": "Maximum occupancy of the building in number of people."
+        },
+        "meteorological_file_path": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/METEOROLOGICAL_FILE"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "description": "Meteorological filename or identifier."
+        },
+        "natural_ventilation_night": {
+          "type": "number",
+          "description": "Night-time natural ventilation rate."
+        },
+        "setpoint_temperature_day": {
+          "$ref": "#/definitions/Range",
+          "description": "Daytime temperature setpoint range.",
+          "default": {
+            "min": 20.0,
+            "max": 20.0
+          }
+        },
+        "setpoint_temperature_night": {
+          "$ref": "#/definitions/Range",
+          "description": "Night-time temperature setpoint range.",
+          "default": {
+            "min": 20.0,
+            "max": 20.0
+          }
+        },
+        "typical_occupation": {
+          "type": "integer",
+          "description": "Typical occupancy of the building in number of people."
+        }
+      },
+      "additionalProperties": false
+    },
+    "SpaceThermalDemandResult": {
+      "type": "object",
+      "description": "Heating or cooling demand and load statistics.",
+      "properties": {
+        "demand_total": {
+          "type": "number",
+          "description": "Annual energy required for heating/cooling in kWh."
+        },
+        "demand_scaled": {
+          "type": "number",
+          "description": "Annual energy required for heating/cooling in kWh/m2."
+        },
+        "demand_on_all_year": {
+          "type": "number",
+          "description": "Annual energy demanded in kWh/m2 if the system is on all year round."
+        },
+        "demand_peak": {
+          "$ref": "#/definitions/HourPeak"
+        },
+        "load_csv": {
+          "type": "string",
+          "description": "Load in kWh/m2 by calendar month."
+        },
+        "load_duration_csv": {
+          "type": "string",
+          "description": "Load in kW by annual percentile."
+        }
+      },
+      "additionalProperties": false
+    },
+    "VentilationSystemResult": {
+      "type": "object",
+      "description": "Characteristics of a ventilation system simulation.",
+      "properties": {
+        "energy_demand": {
+          "type": "number",
+          "description": "Energy demanded in kWh/m2"
+        },
+        "peak_load": {
+          "type": "number",
+          "description": "Maximum hourly energy required in kW."
+        },
+        "sfp": {
+          "type": "number",
+          "description": "Specific fan power in kW/m3/s."
+        },
+        "mechanical_ventilation_rate": {
+          "type": "number",
+          "description": "Mechanical ventilation rate in m3/h per m2. Recommended: 3 m3/h m2."
+        },
+        "ventilation_rate": {
+          "type": "number",
+          "description": "Ventilation rate in l/s m2. Reference: 0.83l/s m2 or 12.5l/s per person."
+        },
+        "ach": {
+          "type": "number",
+          "description": "Air changes per hour."
+        }
+      },
+      "additionalProperties": false
+    },
+    "ThermalSystemResult": {
+      "type": "object",
+      "description": "Characteristics of a heating or cooling system simulation.",
+      "properties": {
+        "conditioned_area": {
+          "type": "number",
+          "description": "Conditioned equivalent area in m2 (conditioned area adjusted for simultaneity)."
+        },
+        "energy_demand": {
+          "type": "number",
+          "description": "Energy demanded in kWh/m2 when specific zonal occupancy is simulated."
+        },
+        "system_usage": {
+          "type": "number",
+          "description": "Energy demand divided by conditioned area (no simultaneity adjustment) in kWh/m2"
+        },
+        "peak_load": {
+          "$ref": "#/definitions/HourPeak"
+        },
+        "peak_capacity": {
+          "type": "number",
+          "description": "Maximum hourly energy consumed in kW."
+        },
+        "peak_ratio": {
+          "type": "number",
+          "description": "Sensible peak capacity for cooling systems. For heating systems, peak capacity/load at 99.6th percentile."
+        }
+      },
+      "additionalProperties": false
+    },
+    "ModelValidation": {
+      "type": "object",
+      "description": "Model validation information for electricity or natural gas usage when comparing simulated monthly values to user-supplied monthly values.",
+      "properties": {
+        "energy_use_csv": {
+          "type": "string",
+          "description": "Energy used for each calendar month in kWh. Compare to user-supplied values in `OpenBESSpecification.*_consumption`."
+        },
+        "nmbe": {
+          "type": "number",
+          "description": "Normalised mean bias error."
+        },
+        "cv_rmse": {
+          "type": "number",
+          "description": "Coefficient of variation of the root mean square deviation."
+        },
+        "r2": {
+          "type": "number",
+          "description": "R-squared model fit."
+        }
+      },
+      "additionalProperties": false
+    },
+    "DayPeak": {
+      "type": "object",
+      "description": "A statistic with the month, and day at which it occurred.",
+      "properties": {
+        "value": {
+          "type": "number",
+          "description": "The statistic in question."
+        },
+        "month": {
+          "type": "string",
+          "enum": [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+          ]
+        },
+        "day": {
+          "type": "number",
+          "description": "Day of the month."
+        }
+      },
+      "additionalProperties": false
+    },
+    "HourPeak": {
+      "type": "object",
+      "description": "A statistic with the month, day, and hour at which it occurred.",
+      "properties": {
+        "value": {
+          "type": "number",
+          "description": "The statistic in question."
+        },
+        "month": {
+          "type": "string",
+          "enum": [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+          ]
+        },
+        "day": {
+          "type": "number",
+          "description": "Day of the month."
+        },
+        "hour": {
+          "type": "number",
+          "description": "Hour of the day."
+        }
+      },
+      "additionalProperties": false
+    },
+    "LocationSimulationOutput": {
+      "type": "object",
+      "description": "Outputs produced by the location simulation using EPW-derived data.",
+      "properties": {
+        "elevation": {
+          "type": "number",
+          "description": "Elevation above sea level (m)."
+        },
+        "latitude": {
+          "type": "number",
+          "description": "Latitude as read from the weather file."
+        },
+        "longitude": {
+          "type": "number",
+          "description": "Longitude as read from the weather file."
+        },
+        "city": {
+          "type": "string",
+          "description": "City as read from the weather file."
+        },
+        "country": {
+          "type": "string",
+          "description": "Country as read from the weather file."
+        },
+        "state_province": {
+          "type": "string",
+          "description": "State/province as read from the weather file."
+        },
+        "solstice_ghr_csv": {
+          "type": "string",
+          "description": "Global Horizontal Radiation (Wh/m2) for the longest and shortest days of the year (21 Dec, 21 Jun)."
+        },
+        "max_outdoor_temperature": {
+          "$ref": "#/definitions/HourPeak"
+        },
+        "min_outdoor_temperature": {
+          "$ref": "#/definitions/HourPeak"
+        },
+        "mean_outdoor_temperature": {
+          "type": "number",
+          "description": "Mean outdoor temperature over the year."
+        },
+        "max_outdoor_day_temperature": {
+          "$ref": "#/definitions/DayPeak",
+          "description": "Hottest day of the year where the temperature is the mean of the hottest hour plus and coldest hour."
+        },
+        "min_outdoor_day_temperature": {
+          "$ref": "#/definitions/DayPeak",
+          "description": "Coldest day of the year where the temperature is the mean of the hottest hour plus and coldest hour."
+        },
+        "mean_outdoor_day_temperature": {
+          "type": "number",
+          "description": "Mean daily temperature given by the mean of the hottest hour plus and coldest hour."
+        },
+        "temperature_quantiles_csv": {
+          "type": "string",
+          "description": "Outdoor air temperature percentiles from temperature data."
+        },
+        "degree_days_csv": {
+          "type": "string",
+          "description": "Heating/cooling degree days by month."
+        },
+        "annual_incident_solar_radiation_csv": {
+          "type": "string",
+          "description": "Annual incident solar radiation in kWh/m2 for each 1/8th compass point."
+        }
+      },
+      "additionalProperties": false
+    },
+    "GeometrySimulationOutput": {
+      "type": "object",
+      "description": "Outputs produced by geometry calculations.",
+      "properties": {
+        "gross_building_area": {
+          "type": "number",
+          "description": "Total building area in m2."
+        },
+        "conditioned_floor_area": {
+          "type": "number",
+          "description": "Floor area subject to HVAC systems. Used as the divisor in most /m2 statistics."
+        },
+        "indoor_air_volume": {
+          "type": "number",
+          "description": "Volume of air in the building's conditioned areas in m3."
+        },
+        "indoor_air_heat_capacity": {
+          "type": "number",
+          "description": "Indoor air heat capacity in kJ/K"
+        },
+        "building_envelope_csv": {
+          "type": "string",
+          "description": "Building area by floor and category in m2, and window-to-wall ratio (unitless)."
+        },
+        "building_geometry_orientation_csv": {
+          "type": "string",
+          "description": "Building facade, window, and roof area in m2 by category and orientation."
+        }
+      },
+      "additionalProperties": false
+    },
+    "ThermalSimulationOutput": {
+      "type": "object",
+      "description": "Outputs produced by the thermal simulation.",
+      "properties": {
+        "external_internal_temperature_csv": {
+          "type": "string",
+          "description": "Internal (HVAC) and external temperatures for each hour of the year."
+        },
+        "max_indoor_temperature": {
+          "$ref": "#/definitions/HourPeak"
+        },
+        "min_indoor_temperature": {
+          "$ref": "#/definitions/HourPeak"
+        },
+        "mean_indoor_temperature": {
+          "type": "number",
+          "description": "Mean indoor temperature over the year."
+        },
+        "discomfort_hours_percent": {
+          "type": "number",
+          "description": "The number of hours when the building is occupied and it would be outside 18-26C if HVAC were not operating."
+        },
+        "discomfort_hours_percent_summer": {
+          "type": "number",
+          "description": "The number of hours when the building is occupied and it would be outside 18-26C if HVAC were not operating during June, July, and August."
+        },
+        "heat_exchange_breakdown_csv": {
+          "type": "string",
+          "description": "The heat loss/gain in kWh/m2 for each month, broken down by transmission category."
+        },
+        "space_thermal_demand_csv": {
+          "type": "string",
+          "description": "The heating and cooling energy requirement in kWh/m2 for each month of the year based on heat, mass balance, and occupancy."
+        },
+        "infiltration_ach": {
+          "type": "number",
+          "description": "Air changes/hour from air infiltration."
+        },
+        "natural_ach": {
+          "type": "number",
+          "description": "Air changes/hour from natural ventilation."
+        },
+        "heating_demand": {
+          "$ref": "#/definitions/SpaceThermalDemandResult"
+        },
+        "cooling_demand": {
+          "$ref": "#/definitions/SpaceThermalDemandResult"
+        },
+        "running_average_outside_temp_csv": {
+          "type": "string",
+          "description": "The 7-day weighted running mean of the outside temperature for each hour of the year. The first 6 days copy the value from day 7."
+        },
+        "overheating_limits_csv": {
+          "type": "string",
+          "description": "Category I, II, and III overheating limits in \u00b0C at different outdoor temperatures."
+        },
+        "solar_heat_gains_csv": {
+          "type": "string",
+          "description": "Solar heat gains in kWh by orientation and category. For kWh/m2 divide by relevant `building_facade_csv` area."
+        },
+        "window_transmissivity_coefficient_csv": {
+          "type": "string",
+          "description": "Annual transmissivity coefficient of windows by orientation."
+        }
+      },
+      "additionalProperties": false
+    },
+    "VentilationSimulationOutput": {
+      "type": "object",
+      "description": "Outputs produced by ventilation system simulations.",
+      "properties": {
+        "ventilation_systems": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/VentilationSystemResult"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "HeatingSimulationOutput": {
+      "type": "object",
+      "description": "Outputs produced by heating system simulations.",
+      "properties": {
+        "heating_systems": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ThermalSystemResult"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "CoolingSimulationOutput": {
+      "type": "object",
+      "description": "Outputs produced by cooling system simulations.",
+      "properties": {
+        "cooling_systems": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ThermalSystemResult"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "LightingSimulationOutput": {
+      "type": "object",
+      "description": "Outputs produced by lighting simulations.",
+      "properties": {
+        "lighting_demand": {
+          "type": "number",
+          "description": "Energy demand for lighting in kWh/m2."
+        },
+        "lighting_peak_load": {
+          "type": "number",
+          "description": "Peak lighting load in kW."
+        },
+        "lighting_load_ratio": {
+          "type": "number",
+          "description": "Lighting energy required in W/m2."
+        }
+      },
+      "additionalProperties": false
+    },
+    "HotWaterSimulationOutput": {
+      "type": "object",
+      "description": "Outputs produced by hot water simulations.",
+      "properties": {
+        "hot_water_demand": {
+          "type": "number",
+          "description": "Energy demand for water heating in kWh/m2."
+        }
+      },
+      "additionalProperties": false
+    },
+    "BuildingEnergySimulationOutput": {
+      "type": "object",
+      "description": "Outputs that require combining multiple simulation domains.",
+      "properties": {
+        "other_energy_use_electricity": {
+          "type": "number",
+          "description": "Miscellaneous electricity use in kWh/m2."
+        },
+        "other_energy_use_gas": {
+          "type": "number",
+          "description": "Miscellaneous natural gas usage in kWh/m2."
+        },
+        "on_site_electricity_generated": {
+          "type": "number",
+          "description": "Renewable electricity generated on site in kWh/m2."
+        },
+        "on_site_electricity_used": {
+          "type": "number",
+          "description": "Renewable electricity generated and consumed on site in kWh/m2."
+        },
+        "on_site_electricity_fraction": {
+          "type": "number",
+          "description": "Renewable energy consumption / Final energy consumption"
+        },
+        "all_renewable_fraction": {
+          "type": "number",
+          "description": "Fraction of final energy consumption drawn from renewable energy sources including both on- and off-site renewable energy sources."
+        },
+        "final_energy_consumption": {
+          "type": "number",
+          "description": "Final energy consumption in kWh/m2."
+        },
+        "primary_energy_consumption": {
+          "type": "number",
+          "description": "Primary energy consumption in kWh/m2."
+        },
+        "non_renewable_primary_energy_consumption": {
+          "type": "number",
+          "description": "Non-renewable primary energy consumption in kWh/m2."
+        },
+        "co2_equivalent_emissions": {
+          "type": "number",
+          "description": "CO2 equivalent emissions in kg CO2 eq/m2."
+        },
+        "final_energy_consumption_csv": {
+          "type": "string",
+          "description": "Final energy consumption in kWh broken down by System (row) and energy source (columns: System, Electricity, Diesel, LPG, Natural gas, Biomass, Pellets). Summing all energy source columns for a row recovers the total for that system. Divide by `conditioned_floor_area` for kWh/m2."
+        },
+        "electricity_validation": {
+          "$ref": "#/definitions/ModelValidation"
+        },
+        "gas_validation": {
+          "$ref": "#/definitions/ModelValidation"
+        }
+      },
+      "additionalProperties": false
+    },
+    "OpenBESOutput": {
+      "type": "object",
+      "description": "Aggregate simulation outputs split by owning simulation. Outputs that are not possible to generate are omitted from their simulation section.",
+      "properties": {
+        "location_simulation_output": {
+          "$ref": "#/definitions/LocationSimulationOutput"
+        },
+        "geometry_simulation_output": {
+          "$ref": "#/definitions/GeometrySimulationOutput"
+        },
+        "thermal_simulation_output": {
+          "$ref": "#/definitions/ThermalSimulationOutput"
+        },
+        "ventilation_simulation_output": {
+          "$ref": "#/definitions/VentilationSimulationOutput"
+        },
+        "heating_simulation_output": {
+          "$ref": "#/definitions/HeatingSimulationOutput"
+        },
+        "cooling_simulation_output": {
+          "$ref": "#/definitions/CoolingSimulationOutput"
+        },
+        "lighting_simulation_output": {
+          "$ref": "#/definitions/LightingSimulationOutput"
+        },
+        "hot_water_simulation_output": {
+          "$ref": "#/definitions/HotWaterSimulationOutput"
+        },
+        "building_energy_simulation_output": {
+          "$ref": "#/definitions/BuildingEnergySimulationOutput"
+        }
+      },
+      "additionalProperties": false
+    },
+    "OpenBESMetaData": {
+      "type": "object",
+      "description": "Metadata about the simulation run.",
+      "properties": {
+        "version": {
+          "type": "string",
+          "description": "Version of Open BES used."
+        },
+        "timestamp": {
+          "type": "string",
+          "description": "Timestamp of when the simulation was run."
+        },
+        "EPW_file_checksum": {
+          "type": "string",
+          "description": "MD5 Checksum of the EPW file used in the simulation."
+        }
+      },
+      "required": [
+        "version"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "properties": {
+    "inputs": {
+      "$ref": "#/definitions/OpenBESSpecification"
+    },
+    "outputs": {
+      "$ref": "#/definitions/OpenBESOutput"
+    },
+    "log": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Log output from the simulation run."
+    },
+    "meta": {
+      "$ref": "#/definitions/OpenBESMetaData"
+    }
+  },
+  "required": [
+    "inputs"
+  ],
+  "additionalProperties": false
+}

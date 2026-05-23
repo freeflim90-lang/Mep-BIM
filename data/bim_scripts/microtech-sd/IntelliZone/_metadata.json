@@ -1,0 +1,17 @@
+{
+  "owner": "microtech-sd",
+  "repo": "IntelliZone",
+  "full_name": "microtech-sd/IntelliZone",
+  "description": "This repository contains code, datasets, and simulations for IntelliZone™, a framework integrating Revit, Autodesk CFD, and Python for energy, entropy, and exergy analysis. It features a Streamlit-based digital twin, optimizing HVAC performance per ASHRAE standards and LEED principles for sustainable, high-efficiency buildings.",
+  "stars": 2,
+  "language": "Python",
+  "url": "https://github.com/microtech-sd/IntelliZone",
+  "topics": [],
+  "collected_at": "2026-05-23T21:56:02.984762",
+  "files_collected": [
+    "ComfortCalc.py",
+    "README.md",
+    "eee.py",
+    "pinn-hvac.py"
+  ]
+}

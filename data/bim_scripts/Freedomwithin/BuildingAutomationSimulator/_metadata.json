@@ -1,0 +1,16 @@
+{
+  "owner": "Freedomwithin",
+  "repo": "BuildingAutomationSimulator",
+  "full_name": "Freedomwithin/BuildingAutomationSimulator",
+  "description": "BEMS dashboard simulation using Python/Flask. Generates building data (temp, humidity, energy), calculates degree days & EUI, and visualizes with an interactive Chart.js dashboard.",
+  "stars": 0,
+  "language": "Python",
+  "url": "https://github.com/Freedomwithin/BuildingAutomationSimulator",
+  "topics": [],
+  "collected_at": "2026-05-23T21:56:40.760483",
+  "files_collected": [
+    "README.md",
+    "app.py",
+    "data_simulator.py"
+  ]
+}

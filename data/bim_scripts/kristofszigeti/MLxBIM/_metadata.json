@@ -1,0 +1,26 @@
+{
+  "owner": "kristofszigeti",
+  "repo": "MLxBIM",
+  "full_name": "kristofszigeti/MLxBIM",
+  "description": "Machine Learning integration with BIM data",
+  "stars": 1,
+  "language": "Python",
+  "url": "https://github.com/kristofszigeti/MLxBIM",
+  "topics": [
+    "data-analysis",
+    "data-visualization",
+    "ifc",
+    "ifcopenshell",
+    "machine-learning",
+    "ml",
+    "python",
+    "streamlit",
+    "tekla-structures"
+  ],
+  "collected_at": "2026-05-23T21:51:09.044900",
+  "files_collected": [
+    "src/pipeline.py",
+    "src/ui_streamlit.py",
+    "src/visualization.py"
+  ]
+}

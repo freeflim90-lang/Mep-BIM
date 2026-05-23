@@ -1,0 +1,22 @@
+{
+  "owner": "simon-un",
+  "repo": "ifc-processing",
+  "full_name": "simon-un/ifc-processing",
+  "description": "Repository containing examples and scripts to process ifc files using python (IfcOpenShell package)",
+  "stars": 1,
+  "language": "Python",
+  "url": "https://github.com/simon-un/ifc-processing",
+  "topics": [],
+  "collected_at": "2026-05-23T21:50:49.630443",
+  "files_collected": [
+    ".vscode/settings.json",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "README.md",
+    "files/5_Floors_RectangularBeams.json",
+    "src/ifc2scr.py",
+    "src/main.py",
+    "src/model2json.py",
+    "src/playaround.py"
+  ]
+}

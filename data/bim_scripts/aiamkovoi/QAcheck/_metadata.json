@@ -1,0 +1,31 @@
+{
+  "owner": "aiamkovoi",
+  "repo": "QAcheck",
+  "full_name": "aiamkovoi/QAcheck",
+  "description": "Automated rule-based QA and data validation for Revit models via pyRevit. Features JSON-driven checks and parameter-based auto-coloring.",
+  "stars": 0,
+  "language": "Python",
+  "url": "https://github.com/aiamkovoi/QAcheck",
+  "topics": [
+    "bim",
+    "bimcollab",
+    "ifc",
+    "openbim",
+    "pyrevit",
+    "python",
+    "qa",
+    "revit",
+    "revit-api",
+    "smart-views"
+  ],
+  "collected_at": "2026-05-23T21:41:01.024764",
+  "files_collected": [
+    "QA.tab/QA.panel/AutoColor.pushbutton/script.py",
+    "QA.tab/QA.panel/ClearChecks.pushbutton/script.py",
+    "QA.tab/QA.panel/RunChecks.pushbutton/engine.py",
+    "QA.tab/QA.panel/RunChecks.pushbutton/overrides.py",
+    "QA.tab/QA.panel/RunChecks.pushbutton/rules.json",
+    "QA.tab/QA.panel/RunChecks.pushbutton/script.py",
+    "README.md"
+  ]
+}

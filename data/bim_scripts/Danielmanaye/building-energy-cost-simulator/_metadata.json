@@ -1,0 +1,14 @@
+{
+  "owner": "Danielmanaye",
+  "repo": "building-energy-cost-simulator",
+  "full_name": "Danielmanaye/building-energy-cost-simulator",
+  "description": "a python-based simulation that models weekly energy consumption and cost in a smart building using both renewable and grid energy. Energy usage is controlled by occupancy schedules to optimize cost and efficiency.",
+  "stars": 0,
+  "language": "Jupyter Notebook",
+  "url": "https://github.com/Danielmanaye/building-energy-cost-simulator",
+  "topics": [],
+  "collected_at": "2026-05-23T21:56:38.701229",
+  "files_collected": [
+    "project.ipynb.ipynb"
+  ]
+}

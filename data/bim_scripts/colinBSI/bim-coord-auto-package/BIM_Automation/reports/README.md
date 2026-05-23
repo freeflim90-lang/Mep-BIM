@@ -1,0 +1,1 @@
+Weekly report generator — outputs CSV, Excel, and PDF.

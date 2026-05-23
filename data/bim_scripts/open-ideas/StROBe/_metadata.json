@@ -1,0 +1,27 @@
+{
+  "owner": "open-ideas",
+  "repo": "StROBe",
+  "full_name": "open-ideas/StROBe",
+  "description": "Python module for stochastic residential occupancy behavior for both building and district energy simulations.",
+  "stars": 44,
+  "language": "Python",
+  "url": "https://github.com/open-ideas/StROBe",
+  "topics": [],
+  "collected_at": "2026-05-23T21:54:41.593951",
+  "files_collected": [
+    "Corpus/__calibrate__.py",
+    "Corpus/__init__.py",
+    "Corpus/__test__.py",
+    "Corpus/data.py",
+    "Corpus/feeder.py",
+    "Corpus/residential.py",
+    "Corpus/simulation.py",
+    "Corpus/stats.py",
+    "Data/Appliances.py",
+    "Data/Clusters.py",
+    "Data/Households.py",
+    "Data/__init__.py",
+    "README.md",
+    "example.py"
+  ]
+}

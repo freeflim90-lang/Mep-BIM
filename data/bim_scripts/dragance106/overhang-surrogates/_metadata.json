@@ -1,0 +1,25 @@
+{
+  "owner": "dragance106",
+  "repo": "overhang-surrogates",
+  "full_name": "dragance106/overhang-surrogates",
+  "description": "Python package for iterative sampling, surrogate model training and 3D visualization of building energy simulation results",
+  "stars": 0,
+  "language": "Python",
+  "url": "https://github.com/dragance106/overhang-surrogates",
+  "topics": [],
+  "collected_at": "2026-05-23T21:57:28.283407",
+  "files_collected": [
+    "LICENSE.md",
+    "README.md",
+    "add_columns.py",
+    "create_office_cell.py",
+    "mipt.py",
+    "overhang_surrogates.py",
+    "simulate_office_cell.py",
+    "train_ann.py",
+    "train_xgb.py",
+    "train_xgb_special.py",
+    "visualise_model_quality.py",
+    "visualise_sim_data.py"
+  ]
+}

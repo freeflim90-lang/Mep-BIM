@@ -1,0 +1,24 @@
+{
+  "owner": "engpaulocosta-bim",
+  "repo": "orzio-plugins-public",
+  "full_name": "engpaulocosta-bim/orzio-plugins-public",
+  "description": "Advanced pyRevit automation tools for BIM workflows, enabling efficient MEP modeling, coordination, and data extraction using Python and Revit API.",
+  "stars": 1,
+  "language": "Python",
+  "url": "https://github.com/engpaulocosta-bim/orzio-plugins-public",
+  "topics": [],
+  "collected_at": "2026-05-23T21:40:15.361545",
+  "files_collected": [
+    "README.md",
+    "pyrightconfig.json",
+    "revit_automation.extension/lib/Snippets/__init__.py",
+    "revit_automation.extension/lib/Snippets/_geometry_operations.py",
+    "revit_automation.extension/lib/Snippets/_selection.py",
+    "revit_automation.extension/lib/Snippets/_transaction.py",
+    "revit_automation.extension/lib/Snippets/_vectors.py",
+    "revit_automation.extension/lib/Snippets/_walls.py",
+    "revit_automation.extension/lib/__init__.py",
+    "revit_automation.extension/lib/ui_components.py",
+    "revit_automation.extension/lib/ui_theme.py"
+  ]
+}

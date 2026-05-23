@@ -1,0 +1,22 @@
+{
+  "owner": "SpencerMAQ",
+  "repo": "pyRevitSpencer",
+  "full_name": "SpencerMAQ/pyRevitSpencer",
+  "description": "Collection of my python scripts for revit",
+  "stars": 0,
+  "language": "Python",
+  "url": "https://github.com/SpencerMAQ/pyRevitSpencer",
+  "topics": [
+    "ironpython",
+    "pyrevit",
+    "revit",
+    "revitapi"
+  ],
+  "collected_at": "2026-05-23T21:44:43.591200",
+  "files_collected": [
+    "README.md",
+    "corelibrary.lib/sample.py",
+    "extensions.json",
+    "spencerCore.extension/extensions.json"
+  ]
+}
