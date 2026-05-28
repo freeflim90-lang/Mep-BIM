@@ -1,0 +1,96 @@
+{
+  "completed": [
+    "BIMLIZE-QWEN-001",
+    "BIMLIZE-QWEN-002",
+    "BIMLIZE-QWEN-003",
+    "BIMLIZE-QWEN-004",
+    "BIMLIZE-QWEN-005",
+    "BIMLIZE-QWEN-006",
+    "BIMLIZE-QWEN-007",
+    "NAV-001"
+  ],
+  "in_progress": null,
+  "last_report": {
+    "task_id": "NAV-001",
+    "title": "제품 문제 정의 및 MVP/Pro 범위 초안",
+    "ok": true,
+    "reason": "",
+    "note": "obsidian_vaults/model_quality_auditor/06_Qwen_Drafts/NAV-001-2026-05-28 제품 문제 정의 및 MVP Pro 범위 초안.md",
+    "next_task": "NAV-002",
+    "timestamp": "2026-05-28T17:20:49"
+  },
+  "runs": [
+    {
+      "task_id": "BIMLIZE-QWEN-001",
+      "title": "BIMlize 기능 내재화 백엔드 원칙 및 기능 레지스트리 초안",
+      "ok": true,
+      "reason": "",
+      "note": "obsidian_vaults/model_quality_auditor/06_Qwen_Drafts/BIMLIZE-QWEN-001-2026-05-21 BIMlize 기능 내재화 백엔드 원칙 및 기능 레지스트리 초안.md",
+      "next_task": "BIMLIZE-QWEN-002",
+      "timestamp": "2026-05-21T12:52:52"
+    },
+    {
+      "task_id": "BIMLIZE-QWEN-002",
+      "title": "Settings Profile Manager 백엔드 초안",
+      "ok": true,
+      "reason": "",
+      "note": "obsidian_vaults/model_quality_auditor/06_Qwen_Drafts/BIMLIZE-QWEN-002-2026-05-21 Settings Profile Manager 백엔드 초안.md",
+      "next_task": "BIMLIZE-QWEN-003",
+      "timestamp": "2026-05-21T12:56:06"
+    },
+    {
+      "task_id": "BIMLIZE-QWEN-003",
+      "title": "View Template Copier dry-run 계약 초안",
+      "ok": true,
+      "reason": "",
+      "note": "obsidian_vaults/model_quality_auditor/06_Qwen_Drafts/BIMLIZE-QWEN-003-2026-05-24 View Template Copier dry-run 계약 초안.md",
+      "next_task": "BIMLIZE-QWEN-004",
+      "timestamp": "2026-05-24T19:09:36"
+    },
+    {
+      "task_id": "BIMLIZE-QWEN-004",
+      "title": "Type Batch Definer mapping 계약 초안",
+      "ok": true,
+      "reason": "",
+      "note": "obsidian_vaults/model_quality_auditor/06_Qwen_Drafts/BIMLIZE-QWEN-004-2026-05-24 Type Batch Definer mapping 계약 초안.md",
+      "next_task": "BIMLIZE-QWEN-005",
+      "timestamp": "2026-05-24T19:10:32"
+    },
+    {
+      "task_id": "BIMLIZE-QWEN-005",
+      "title": "Tag/Text Aligner geometry preview 초안",
+      "ok": true,
+      "reason": "",
+      "note": "obsidian_vaults/model_quality_auditor/06_Qwen_Drafts/BIMLIZE-QWEN-005-2026-05-24 Tag Text Aligner geometry preview 초안.md",
+      "next_task": "BIMLIZE-QWEN-006",
+      "timestamp": "2026-05-24T19:11:07"
+    },
+    {
+      "task_id": "BIMLIZE-QWEN-006",
+      "title": "Project Cleanup Lite audit report 초안",
+      "ok": true,
+      "reason": "",
+      "note": "obsidian_vaults/model_quality_auditor/06_Qwen_Drafts/BIMLIZE-QWEN-006-2026-05-24 Project Cleanup Lite audit report 초안.md",
+      "next_task": "BIMLIZE-QWEN-007",
+      "timestamp": "2026-05-24T19:11:55"
+    },
+    {
+      "task_id": "BIMLIZE-QWEN-007",
+      "title": "Schedule Excel Export 계약 초안",
+      "ok": true,
+      "reason": "",
+      "note": "obsidian_vaults/model_quality_auditor/06_Qwen_Drafts/BIMLIZE-QWEN-007-2026-05-24 Schedule Excel Export 계약 초안.md",
+      "next_task": null,
+      "timestamp": "2026-05-24T19:12:37"
+    },
+    {
+      "task_id": "NAV-001",
+      "title": "제품 문제 정의 및 MVP/Pro 범위 초안",
+      "ok": true,
+      "reason": "",
+      "note": "obsidian_vaults/model_quality_auditor/06_Qwen_Drafts/NAV-001-2026-05-28 제품 문제 정의 및 MVP Pro 범위 초안.md",
+      "next_task": "NAV-002",
+      "timestamp": "2026-05-28T17:20:49"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "product": "Navisworks 간섭 결과 책임자 배정 보드",
+  "selected_item": "Navisworks 간섭 결과 책임자 배정 보드 MVP 상품화 후보",
+  "source_documents": [
+    "docs/internal_organization_documents/23_IDEA_TO_PRODUCT_DEVELOPMENT_PIPELINE.md",
+    "data/knowledge_base/아이디어발굴.md",
+    "data/knowledge_base/전략기획.md",
+    "data/knowledge_base/프로그램개발.md",
+    "data/knowledge_base/제품패키징.md"
+  ],
+  "tasks": [
+    {
+      "id": "NAV-001",
+      "title": "제품 문제 정의 및 MVP/Pro 범위 초안",
+      "deliverable": "대상 사용자, 반복 고통, MVP 포함/제외 범위, Pro 확장 후보, Store 포지션",
+      "scope": "아이디어발굴과 전략기획의 선정 근거를 개발 가능한 요구사항으로 전환한다.",
+      "output_path_hint": "docs/product_ideation/requirements_brief.md"
+    },
+    {
+      "id": "NAV-002",
+      "title": "도메인 모델 및 설정 스키마 초안",
+      "deliverable": "입력 데이터, 설정 프로필, 검증 규칙, 결과 DTO, 저장 위치",
+      "scope": "Revit API 없이 검증 가능한 순수 백엔드 계약을 먼저 정의한다.",
+      "output_path_hint": "backend/product_candidates/domain_contract.py"
+    },
+    {
+      "id": "NAV-003",
+      "title": "Dry-run 및 리포트 계약 초안",
+      "deliverable": "모델 변경 전 미리보기, skip/warn/error 정책, 고객용 요약 리포트 구조",
+      "scope": "실제 모델 변경은 Revit API 게이트 이후로 분리한다.",
+      "output_path_hint": "backend/product_candidates/dry_run_report.py"
+    },
+    {
+      "id": "NAV-004",
+      "title": "테스트 케이스 및 실패 오답노트 템플릿 초안",
+      "deliverable": "정상/경계/오류 케이스, Obsidian 오류 지식 기록 템플릿",
+      "scope": "개발 과정의 수정 지식을 재사용 가능한 오답노트로 축적한다.",
+      "output_path_hint": "obsidian_vaults/model_quality_auditor/04_Errors_and_Fixes/"
+    },
+    {
+      "id": "NAV-005",
+      "title": "Revit API 게이트 및 Store 패키징 계약 초안",
+      "deliverable": "API 의존 지점, 실제 Revit 검증 항목, Autodesk Store 제출 문서 체크리스트",
+      "scope": "실기 테스트 전 확정 금지 항목과 패키징 선행 문서를 분리한다.",
+      "output_path_hint": "docs/revenue_products/store_packaging_contract.md"
+    }
+  ]
+}
