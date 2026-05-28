@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.luabimlab.hourly-ax-signal-monitor</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>/Users/choejeong-yeon/LUA BIM LABS/scripts/hourly_ax_signal_monitor.sh</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/choejeong-yeon/LUA BIM LABS</string>
+
+  <key>StartInterval</key>
+  <integer>3600</integer>
+
+  <key>StandardOutPath</key>
+  <string>/Users/choejeong-yeon/LUA BIM LABS/logs/hourly_ax_signal_monitor.launchd.out.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/Users/choejeong-yeon/LUA BIM LABS/logs/hourly_ax_signal_monitor.launchd.err.log</string>
+
+  <key>RunAtLoad</key>
+  <true/>
+</dict>
+</plist>

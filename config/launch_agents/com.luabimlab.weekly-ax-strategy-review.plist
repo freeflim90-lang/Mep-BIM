@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.luabimlab.weekly-ax-strategy-review</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>/Users/choejeong-yeon/LUA BIM LABS/scripts/weekly_ax_strategy_review.sh</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/choejeong-yeon/LUA BIM LABS</string>
+
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Weekday</key>
+    <integer>1</integer>
+    <key>Hour</key>
+    <integer>7</integer>
+    <key>Minute</key>
+    <integer>30</integer>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>/Users/choejeong-yeon/LUA BIM LABS/logs/weekly_ax_strategy_review.launchd.out.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/Users/choejeong-yeon/LUA BIM LABS/logs/weekly_ax_strategy_review.launchd.err.log</string>
+
+  <key>RunAtLoad</key>
+  <false/>
+</dict>
+</plist>
