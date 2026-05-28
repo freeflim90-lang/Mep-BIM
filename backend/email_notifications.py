@@ -7,7 +7,7 @@ from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_CODE_DEV_RECIPIENT = "jycomapany90@naver.com"
+DEFAULT_CODE_DEV_RECIPIENT = "jycompany90@naver.com"
 
 
 def load_local_env() -> None:
