@@ -12,6 +12,13 @@ PYTHON="$PROJECT_DIR/.dev-venv/bin/python"
 
 mkdir -p "$LOG_DIR" "$REPORT_DIR"
 
+# 오늘 이미 실행 완료했으면 스킵 (LaunchAgent 다중 실행 방지)
+DONE_MARKER="$LOG_DIR/.daily_knowledge_update_done_${TODAY}"
+if [[ -f "$DONE_MARKER" ]]; then
+  echo "[$NOW] 오늘 이미 완료됨 — 스킵" >> "$LOG_FILE"
+  exit 0
+fi
+
 {
   echo "==== $NOW daily knowledge update start ===="
   cd "$PROJECT_DIR"
@@ -111,9 +118,20 @@ EOF
   "$PYTHON" -m py_compile scripts/daily_industry_briefing.py scripts/daily_knowledge_curation.py
   "$PYTHON" scripts/daily_industry_briefing.py
   "$PYTHON" scripts/daily_knowledge_curation.py --days 2 --date "$TODAY"
+
+  # KB 파일 자동 성장 (오늘 업데이트 안 된 파일만 처리)
+  echo "==== $(date '+%H:%M:%S') KB auto-enrich start ===="
+  "$PYTHON" scripts/auto_enrich_knowledge_base.py
+  echo "==== $(date '+%H:%M:%S') KB auto-enrich done ===="
+
   "$PYTHON" scripts/mqa_obsidian_tools.py graph
   "$PYTHON" scripts/build_global_obsidian_map.py
 
   echo "report=$REPORT_FILE"
   echo "==== $(date '+%Y-%m-%d %H:%M:%S') daily knowledge update done ===="
 } >> "$LOG_FILE" 2>&1
+
+# 완료 마커 생성 (오늘 중복 실행 방지)
+touch "$DONE_MARKER"
+# 이전 날짜 마커 정리 (7일 이상 된 것)
+find "$LOG_DIR" -name ".daily_knowledge_update_done_*" -mtime +7 -delete 2>/dev/null || true

@@ -48,3 +48,12 @@ SearchSet은 조건 기반 자동 선택 세트. SelectionSource → ConditionSo
 저장: document.SelectionSets.InsertCopy(savedItem) 후 NWF 저장으로 유지.
 공종별 자동 SearchSet: 카테고리(Category)와 속성(Property) 조합으로 MEP 계통 자동 분류.
 Add-in 실행 시 기존 SearchSet 중복 방지를 위해 이름 기준 중복 검사 후 덮어쓰기 옵션 제공.
+
+
+## Navisworks Add-in 최신 동향 및 활용 팁 (2026-05-28)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-05-28
+- Tags: navisworks,addin,clash-detection,update
+
+- Autodesk Navisworks 2025에서는 간섭 검토 자동화 기능이 추가되었습니다. 이 기능을 활용하면 작업자가 프로젝트에서 자동으로 간섭 문제를 식별하고 해결할 수 있습니다.
+- 보고서 커스터마이징 기능도 강화되어, 사용자는 필요한 정보만 포함시킬 수 있어 보고서 생성이 더 효율적으로 이루어질 것입니다. API 활용 방법을 통해 개발자들은 이 기능을 더욱 확장하여 개인화된 솔루션을 제공할 수 있습니다.
+- API를 활용한 Add-in 개발에서 중요한 점은 Navisworks의 데이터 구조와 API 문서를 잘 이해하는 것이 필요합니다. 이를 바탕으로 사용자의 요구에 맞는 추가 기능을 개발할 수 있습니다.

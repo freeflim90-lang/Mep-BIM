@@ -9,6 +9,7 @@ packages/
 
 # Python
 .env
+.dev-venv/
 __pycache__/
 *.pyc
 *.pyo
@@ -17,6 +18,10 @@ __pycache__/
 logs/*.log
 logs/
 lua_governance.db
+
+# Secrets / credentials
+service_account.json
+scripts/outbound_sales/data/service_account.json
 
 # OS
 .DS_Store

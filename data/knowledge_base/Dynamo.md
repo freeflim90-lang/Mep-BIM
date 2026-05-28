@@ -269,3 +269,12 @@ collector = (
 
 답변 템플릿:
 “카테고리 객체 목록만 필요하면 `Categories`와 `All Elements of Category`로 충분합니다. Revit 화면에서 실제 선택까지 바꾸려면 Python 노드에서 `FilteredElementCollector`로 요소를 수집하고 `uidoc.Selection.SetElementIds()`를 호출하면 됩니다. 여러 카테고리는 리스트로 받아 합친 뒤 중복 ElementId를 제거하세요.”
+
+
+## Dynamo 최신 기능 및 BIM 자동화 팁 (2026-05-28)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-05-28
+- Tags: dynamo,automation,revit,update
+
+- Autodesk Dynamo 2025에서는 MEP 배관/덕트 자동 배치 기능을 통해 BIM 실무자가 효율적으로 작업할 수 있습니다.
+- 일람표 자동화 기능으로 설계 정보를 빠르게 정리하고 관리할 수 있으며, 이는 시간 절약과 오류 감소에 큰 도움이 됩니다.
+- 물량산출 스크립트 예시로는 배관/덕트의 길이와 부재를 자동으로 계산하여 BIM 모델링 과정을 자동화할 수 있습니다.
