@@ -7,6 +7,7 @@ from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_CODE_DEV_RECIPIENT = "jycomapany90@naver.com"
 
 
 def load_local_env() -> None:
@@ -38,7 +39,7 @@ def gmail_settings() -> dict[str, str]:
     recipient = (
         os.environ.get("CODE_DEV_GMAIL_TO")
         or os.environ.get("GMAIL_TO")
-        or sender
+        or DEFAULT_CODE_DEV_RECIPIENT
     )
     return {
         "enabled": os.environ.get("CODE_DEV_GMAIL_ENABLED", "true").lower(),

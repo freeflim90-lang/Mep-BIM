@@ -4,7 +4,7 @@
 Required .env values for actual sending:
 - GMAIL_ADDRESS or CODE_DEV_GMAIL_FROM
 - GMAIL_APP_PASSWORD or CODE_DEV_GMAIL_APP_PASSWORD
-- GMAIL_TO or CODE_DEV_GMAIL_TO
+- GMAIL_TO or CODE_DEV_GMAIL_TO (default: jycomapany90@naver.com)
 
 Without credentials, the script writes a local log and exits successfully so
 development workflows are not blocked.
