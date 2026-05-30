@@ -45,7 +45,7 @@ if git rev-parse --verify origin/main >/dev/null 2>&1; then
 fi
 
 # GitHub에서 최신 내용 가져오기
-git pull origin main --rebase 2>> "$LOG_FILE"
+git pull origin main --rebase --autostash 2>> "$LOG_FILE"
 if [ $? -eq 0 ]; then
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] pull 성공" >> "$LOG_FILE"
 else
