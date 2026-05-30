@@ -9,6 +9,7 @@ TODAY="$(date '+%Y-%m-%d')"
 NOW="$(date '+%Y-%m-%d %H:%M:%S')"
 REPORT_FILE="$REPORT_DIR/${TODAY}_DAILY_KNOWLEDGE_UPDATE.md"
 PYTHON="$PROJECT_DIR/.dev-venv/bin/python"
+RUNNING_MARKER="$LOG_DIR/.daily_knowledge_update_running"
 
 mkdir -p "$LOG_DIR" "$REPORT_DIR"
 
@@ -18,6 +19,9 @@ if [[ -f "$DONE_MARKER" ]]; then
   echo "[$NOW] 오늘 이미 완료됨 — 스킵" >> "$LOG_FILE"
   exit 0
 fi
+
+touch "$RUNNING_MARKER"
+trap 'rm -f "$RUNNING_MARKER"' EXIT
 
 {
   echo "==== $NOW daily knowledge update start ===="

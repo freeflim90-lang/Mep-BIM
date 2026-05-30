@@ -123,3 +123,134 @@ launchctl print gui/$(id -u)/com.luabimlab.daily-knowledge-update
 - 오류 오답노트의 원인, 수정, 검증, 재발 방지 필수화
 - 고립 문서 탐지 및 MOC 연결
 - 외부 공개용 vault 또는 패키지 별도 분리
+
+
+## DevOps·Obsidian 인프라 최신 동향 (2026-05-28)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-05-28
+- Tags: devops,obsidian,infrastructure,update
+
+- Obsidian 플러그인 활용: Obsidian의 자동화 기능을 향상시키는 데 도움이 되는 몇 가지 플러그인이 있습니다. 'Taskpaper'와 'Checklist' 플러그인은 작업 목록을 관리하고, 'Obsidian Render'와 같은 플러그인은 Markdown 문서를 HTML로 자동 변환하여 품질 관리를 용이하게 합니다.
+
+- CI/CD 자동화: GitOps 접근 방식을 도입하여 지속적 통합과 배포를 자동화할 수 있습니다. 'GitLab', 'GitHub Actions', 'Jenkins'와 같은 플랫폼은 코드 변경 사항이 발생할 때마다 자동으로 빌드, 테스트, 배포하는 프로세스를 설정할 수 있습니다.
+
+- 지식베이스 품질 관리: 'Obsidian Editor'의 'Tags' 기능을 활용하여 관련 정보를 쉽게 찾을 수 있도록 문서를 분류하고 태깅합니다. 또한, 'Version Control'을 통해 지속적으로 문서 업데이트와 버전 관리를 수행하여 지식베이스의 품질을 유지할 수 있습니다.
+
+## 인프라 DevOps Obsidian Claude Code 심화 업데이트 (2026-05-28)
+- Source: claude-code-enhanced 2026-05-28
+- Tags: DevOps,Obsidian,CI-CD,automation,knowledge-management,2025
+
+- Obsidian + Git 동기화 자동화(2025): Obsidian Git 플러그인 v2.x를 활용하여 macOS LaunchAgent로 매일 오전 3시 자동 커밋·푸시를 실행한다. 볼트 루트에 `.obsidian/` 폴더를 `.gitignore`에 포함하되, `plugins/` 내 핵심 플러그인 설정은 버전 관리 대상으로 유지한다.
+- GitHub Actions 기반 KB 품질 검증: Markdown 파일 커밋 시 자동으로 ① 링크 유효성 검증(`markdown-link-check`), ② 맞춤법 검사(cspell), ③ 태그 누락 감지 Python 스크립트를 실행한다. 검증 실패 시 PR 머지를 차단하여 지식베이스 품질 기준을 유지한다.
+- Revit Add-in CI/CD 파이프라인 구성: GitHub Actions에서 `windows-latest` Runner를 사용하며, MSBuild 17.x + .NET 8 SDK를 설치 후 멀티버전 빌드를 수행한다. 빌드 아티팩트는 GitHub Releases에 자동 업로드하고, Autodesk App Store 제출용 ZIP을 생성하는 PowerShell 스크립트를 파이프라인에 통합한다.
+- 인프라 모니터링 대시보드: macOS Mini 서버(Mac mini M2)에서 실행 중인 LaunchAgent 작업들의 성공/실패 이력을 Python 3.12 + SQLite로 수집하고, Streamlit 1.x 웹 대시보드로 실시간 시각화한다. 오전 9시 일일 상태 요약을 Slack 채널로 자동 발송한다.
+- Obsidian Dataview 플러그인 활용: KB 파일의 YAML 프론트매터(tags, source, date)를 Dataview 쿼리로 집계하여 "최근 30일 미업데이트 파일 목록", "태그별 문서 현황", "관련 파일 네트워크"를 자동 생성한다. 이를 통해 지식 공백(Knowledge Gap) 영역을 시각적으로 파악한다.
+- 관련: [[파이프라인_오케스트레이터]] · [[지식업데이트]] · [[빌드검증]]
+
+
+## DevOps·Obsidian 인프라 마스터급 경험 지식 (2026-05-29)
+- Source: claude-code-enhanced 2026-05-29
+- Tags: DevOps, LaunchAgent, Obsidian, 파이프라인장애, 모니터링, 자동화실패패턴
+
+### 인프라 자동화 실패 패턴 5가지
+
+**1. LaunchAgent 좀비 프로세스**
+- 원인: Python 스크립트 예외 → 프로세스 종료 안 됨 → 다음 실행 시 중복 실행
+- 증상: 텔레그램 알림 2중 발송, 엑셀 파일 잠금 오류
+- 해결: `launchctl` keepAlive 설정 제거, 스크립트 내 PID 파일 기반 중복 실행 방지
+
+```bash
+# PID 파일 기반 중복 실행 방지
+PID_FILE="/tmp/bim_pipeline.pid"
+if [ -f "$PID_FILE" ] && kill -0 $(cat "$PID_FILE") 2>/dev/null; then
+    echo "이미 실행 중"; exit 1
+fi
+echo $$ > "$PID_FILE"
+trap "rm -f $PID_FILE" EXIT
+```
+
+**2. macOS 업데이트 후 LaunchAgent 경로 변경**
+- 원인: Python 버전 업데이트 → `/usr/local/bin/python3` → `/opt/homebrew/bin/python3` 변경
+- 해결: `.plist`에 절대 경로 대신 `which python3` 결과를 환경변수로 주입; Homebrew shim 경로 `/opt/homebrew/bin` 사용
+
+**3. Obsidian 플러그인 충돌 → Dataview 쿼리 깨짐**
+- 원인: Obsidian 업데이트 후 Dataview 플러그인 구 버전 충돌
+- 해결: 플러그인 버전 고정 (`.obsidian/plugins/` 내 `manifest.json` 버전 잠금)
+
+**4. SQLite DB 잠금 오류**
+- 원인: 여러 LaunchAgent가 동시에 SQLite 쓰기 시도
+- 해결: WAL 모드 활성화 (`PRAGMA journal_mode=WAL`) + 재시도 로직 추가
+
+**5. 텔레그램 봇 Rate Limit 초과**
+- 원인: 다수 알림 동시 발송 (30개+ 오류 메시지)
+- 텔레그램 제한: 초당 30메시지, 그룹 20메시지/분
+- 해결: 알림 배치 처리 + 지수 백오프 재시도
+
+```python
+import time, httpx
+
+def send_telegram(msg: str, retries=3):
+    url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
+    for attempt in range(retries):
+        resp = httpx.post(url, json={"chat_id": CHAT_ID, "text": msg})
+        if resp.status_code == 429:
+            wait = resp.json().get("parameters", {}).get("retry_after", 5)
+            time.sleep(wait)
+        else:
+            break
+```
+
+### LUA BIM LABS 인프라 표준 구성
+
+| 구성 요소 | 역할 | 상태 확인 |
+|---------|------|---------|
+| macOS LaunchAgent | 스케줄 작업 실행 | `launchctl list | grep lua` |
+| Python 3.12 | 파이프라인 언어 | `python3 --version` |
+| SQLite | 작업 이력 저장 | `sqlite3 /var/db/lua_pipeline.db .tables` |
+| Obsidian Vault | KB 관리 UI | 앱 직접 확인 |
+| Telegram Bot | 알림 채널 | 테스트 메시지 발송 |
+| GitHub Actions | CI/CD | 워크플로우 상태 페이지 |
+
+### 인프라 헬스체크 스크립트 (일일 08:00 실행)
+
+```python
+import subprocess, sqlite3, httpx
+
+def health_check():
+    issues = []
+    # LaunchAgent 상태
+    result = subprocess.run(["launchctl", "list"], capture_output=True, text=True)
+    if "lua.pipeline" not in result.stdout:
+        issues.append("LaunchAgent 비활성화")
+    # DB 접근
+    try:
+        conn = sqlite3.connect("/var/db/lua_pipeline.db")
+        conn.execute("SELECT 1")
+    except Exception as e:
+        issues.append(f"DB 오류: {e}")
+    # 최근 24시간 실패 건수
+    # ... 추가 체크 ...
+    return issues
+
+if issues := health_check():
+    send_telegram("⚠ 인프라 이상: " + ", ".join(issues))
+```
+
+
+## DevOps·Obsidian 인프라 최신 동향 (2026-05-29)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-05-29
+- Tags: devops,obsidian,infrastructure,update
+
+- 최신 자동화 팁 중 하나는 Obsidian 플러그인을 활용하여 노트 관리를 자동화하는 것입니다. 이를 통해 지식베이스의 유지보수와 업데이트가 용이해집니다.
+- CI/CD 흐름에Obsidian을 통합하여, 개발자들이 코드 변경 사항을 빠르고 정확하게 반영할 수 있도록 합니다. 이는 프로젝트의 생산성을 높이고 오류를 줄입니다.
+- 지식베이스의 품질 관리를 위해 PARA 메소드를 적용합니다. P – Projects(프로젝트)와 A – Areas(영역)을 명확하게 정의하여, 지속적인 유지보수를 보장합니다.
+- AI 기반 도구들을 활용하여 노트 관리와 CI/CD 흐름을 자동화할 수 있습니다. 예를 들어, Notion과 같은 플랫폼은 검색 및 자동화 작업을 통해 업무 효율성을 높일 수 있습니다.
+- 지식베이스의 정확성과 관련성이 높아지도록 Logseq와 같은 비선형 노트 앱을 활용하여, 다양한 사용자들이 체계적으로 정보를 관리하고 공유할 수 있도록 합니다.
+
+
+## DevOps·Obsidian 인프라 최신 동향 (2026-05-30)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-05-30
+- Tags: devops,obsidian,infrastructure,update
+
+- Obsidian 플러그인 활용: 최신 동향에서는 AI 기반의 Tavily와 같은 플러그인을 사용하여 지식 인프라의 효율성을 높일 수 있다. 이 플러그인은 자동화된 노트 관리와 검색을 통해 시간을 절약하고, 정보 접근성을 향상시킨다.
+- CI/CD 자동화: 2025년에는 DevOps 프로세스에서 AI 기반 도구가 널리 채택되어 CI/CD 파이프라인의 자동화를 통해 배포 시간을 최대 70% 단축할 수 있다. 이를Obsidian과 연동하여 지식베이스의 유지보수와 업데이트를 자동화할 수 있다.
+- 지식베이스 품질 관리: PARA 방법론을 적용하면 프로젝트, 영역, 자료에 대한 명확한 관리를 통해 지식베이스의 품질을 보장할 수 있다. 이를Obsidian의 노트 구조와 연동하여 지속적인 품질 관리가 가능하다.

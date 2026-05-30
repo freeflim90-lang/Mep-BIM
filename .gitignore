@@ -17,11 +17,16 @@ __pycache__/
 # 로그 및 DB
 logs/*.log
 logs/
+*.db
 lua_governance.db
 
 # Secrets / credentials
 service_account.json
 scripts/outbound_sales/data/service_account.json
+scripts/outbound_sales/data/*.db
+scripts/outbound_sales/.venv/
+config/blogger/client_secret.json
+config/blogger/token.json
 
 # OS
 .DS_Store

@@ -311,3 +311,49 @@ BIM 데이터 품질 지표 (KPI):
 - 국제 BIM 표준 ISO 19650와 IFC4, IDS가 최신 동향을 이끌고 있으며, 특히 한국에서는 BuildingSMART Korea BIM 지침의 업데이트에 따라 IDS 적용 실무가 활발히 진행되고 있다.
 - IDS는 IFC 모델에서 정보 요구사항을 정의하는 표준으로, 2025년 버전은 아직 검토 중이다.
 - openBIM은 buildingSMART가 주도하며, Revit→IFC 내보내기는 BIM 데이터의 개방성과 상호운용성을 높이는 중요한 기술로 자리 잡고 있다. 최신 기준에 따르면 Revit에서 IFC4 형식으로 파일을 내보내는 것이 권장된다.
+
+## BIM 지침서 Claude Code 심화 업데이트 (2026-05-28)
+- Source: claude-code-enhanced 2026-05-28
+- Tags: openBIM, ISO19650, IFC4, IDS, buildingSMART, 국제표준
+
+ISO 19650(BIM 정보 관리 국제표준) 시리즈는 Part 1(개념), Part 2(납품 단계), Part 3(운영 단계), Part 5(보안)로 구성되며, 한국은 2022년 KS X ISO 19650-1/2를 국가표준으로 채택하였다. IFC(Industry Foundation Classes) 4.3 버전은 토목 인프라까지 확장되어 교량·도로·철도 BIM에도 적용된다.
+- IDS(Information Delivery Specification): ISO 21597과 연계하여 BIM 모델의 정보 요구사항을 XML 기반으로 정의한다. 발주처가 IDS 파일을 제공하면 수행사는 buildingSMART IDS Tool로 IFC 모델의 준수 여부를 자동 검증할 수 있다.
+- openBIM 워크플로: Revit → IFC4 내보내기 시 「Open BIM Object Parametrics」플러그인 또는 Revit 기본 내보내기(IFC 4 Design Transfer View) 사용을 권장한다. 내보내기 전 Project Information의 필수 파라미터(ProjectName, SiteAddress, BuildingType) 입력을 체크리스트로 관리한다.
+- CDE(Common Data Environment) 운영: ISO 19650-2의 4가지 상태(WIP→Shared→Published→Archived)를 ACC(Autodesk Construction Cloud) 또는 BIMcollab Zoom에서 폴더 구조로 구현한다.
+- buildingSMART Korea는 2024년 「한국형 IFC 적용 가이드」를 발표하였으며, MEP 시스템 분류를 위해 OmniClass Table 23(Products)과 UniFormat을 병행 사용하도록 권고한다.
+- 관련: [[설계_지침서]] · [[시공_지침서]] · [[BIM_시방서]] · [[BEP_수행계획서]]
+
+## ISO 19650 실무 적용 마스터급 경험 지식 (2026-05-28)
+- Source: claude-code-enhanced 2026-05-28
+- Tags: ISO19650, CDE, 공유파라미터, 납품포맷, 실패패턴, 사전예방
+
+ISO 19650-2 실무 적용에서 가장 많이 실패하는 3가지 패턴과 사전 예방 체크포인트를 정리한다.
+
+**실패 패턴 1 — CDE 폴더 구조 공종별 합의 실패**: 프로젝트 시작 전 "ACC에 폴더 만들면 된다"는 안일한 접근이 가장 흔한 실패 원인이다. 건축사는 WIP 폴더를 설계안 버전으로 쓰고, MEP 시공사는 같은 폴더를 시공 모델 작업 공간으로 쓰면서 Shared 폴더 내 파일 기준이 공종마다 달라진다. 사전 예방: 착수 BIM 킥오프 회의에서 "WIP→Shared→Published" 상태 전환 기준을 공종별로 문서화하고 BEP에 명시. 체크포인트: BEP Section 6(협업 플랫폼) 작성 시 각 폴더 상태에서 어떤 행위가 허용/금지되는지 표로 서명 합의.
+
+**실패 패턴 2 — 공유 파라미터 GUID 프로젝트 간 불일치**: 동일 파라미터명(예: `BIM_장비번호`)이라도 프로젝트마다 다른 SharedParameter.txt 파일에서 생성되면 GUID가 달라 IFC PSet 매핑, Solibri 검증, FM 시스템 연동이 모두 깨진다. 실제 사례: 시공사 BIM 팀이 자체 파라미터 파일로 모델을 받아 파라미터를 재정의하면서 발주처 FM 시스템 COBie 연동이 중단. 사전 예방: 프로젝트 착수 시 LUA BIM LABS 표준 SharedParameters.txt를 발주처·시공사에 배포하고, 공유 파라미터 파일을 ACC Docs `03_문서/BIM표준/` 폴더에 잠금 게시. 파라미터 변경 요청 시 GUID 유지 원칙(파라미터 삭제 후 재생성 금지).
+
+**실패 패턴 3 — 납품 파일 포맷 프로젝트 중간 변경**: 실시설계 납품 직전에 발주처가 "IFC2x3 대신 IFC4로 납품해달라"거나 "COBie 스프레드시트도 추가해달라"고 요구하는 케이스가 빈번하다. 중간 포맷 변경은 수행사 추가 공수 발생뿐 아니라 파라미터 매핑 재점검, IFC Export 설정 재구성, 검수 재수행이 필요해 납기 2~4주 지연으로 직결된다. 사전 예방: BEP 작성 시 `납품 파일 형식 변경은 변경 계약 대상`임을 명문화하고 발주처 서명을 받는다. 체크포인트: BEP Section 7(납품 계획) 납품 형식란에 버전 고정 문구 포함.
+
+- 관련: [[설계_지침서]] · [[시공_지침서]] · [[BIM_시방서]] · [[BEP_수행계획서]]
+
+
+## BIM 지침서 최신 동향 및 표준 업데이트 (2026-05-29)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-05-29
+- Tags: BIM,guideline,IFC,openBIM,update
+
+- 최신 국제 BIM 표준 ISO 19650와 IFC4가 한국의 BIM 지침에 반영되고 있으며, openBIM과 IDS 적용 실무가 강조되고 있습니다.
+- 한국에서는 2025년 기준으로 BuildingSMART Korea BIM 지침이 업데이트되어, openBIM 및 IDS를 통해 데이터 공유와 협업을 높이는 방향으로 진행됩니다.
+- IFC4는 인프라 프로젝트에서의 상호운용성을 향상시키기 위한 최신 표준입니다.
+- Revit에서 IFC4 형식으로 내보내기는 BIM 데이터의 중립성과 상호 운용성을 높이는 중요한 과정이며, 최신 기준은 이 방향을 따르고 있습니다.
+- 관련: [[설계_지침서]] · [[시공_지침서]] · [[건축]] · [[BIM_시방서]]
+
+
+## BIM 지침서 최신 동향 및 표준 업데이트 (2026-05-30)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-05-30
+- Tags: BIM,guideline,IFC,openBIM,update
+
+- 최신 국제 BIM 표준으로 ISO 19650과 IFC4가 채택되어 데이터 교류와 협업을 개선하고 있습니다.
+- IDS(Integrated Delivery Standard) 도입으로 한국의 BIM 지침이 업데이트되었습니다. 이는 openBIM 프레임워크를 강화하여 중립적인 BIM 작업 환경을 구축하는 데 기여합니다.
+- Revit에서 IFC로의 내보내기는 최신 기준으로, BuildingSMART Korea 2025 BIM 표준 업데이트에 따라 지원됩니다.
+- 관련: [[설계_지침서]] · [[시공_지침서]] · [[건축]] · [[BIM_시방서]]

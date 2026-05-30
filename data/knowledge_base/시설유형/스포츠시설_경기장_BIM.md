@@ -1,0 +1,110 @@
+# 스포츠시설·경기장 BIM 적용 기준 지식 베이스
+
+## 개요
+- Source: LUA BIM LABS internal BIM knowledge baseline
+- Tags: #스포츠시설BIM #경기장 #관람석 #피난 #시야각 #방송중계 #잔디 #장스팬 #이벤트운영
+- 업데이트: 2026-05-28
+
+---
+
+## 1. 시설 개요 및 BIM 적용 특성
+
+스포츠시설·경기장은 관람객 피난, 시야각, 장스팬 구조, 방송·조명, 선수·관중 동선 분리가 핵심이다. 경기장 BIM은 건축·구조·MEP뿐 아니라 이벤트 운영, 좌석 수익, 방송 카메라 위치까지 포함해야 한다.
+
+| 구분 | 일반 문화시설 | 스포츠시설·경기장 |
+|---|---|---|
+| 공간 기준 | 객석·무대 | 경기장 규격, 관람석 bowl, 선수 동선 |
+| 구조 | 대공간 | 지붕 장스팬, 캔틸레버, 진동 |
+| 피난 | 공연 종료 집중 | 경기 종료 동시 퇴장, 군중 흐름 |
+| 설비 | 음향·조명 | 스포츠 조명, 방송, 전광판, 잔디 관리 |
+| 운영 | 단일 행사 | 경기·콘서트·지역 행사 전환 |
+
+---
+
+## 2. BIM 필수 파라미터 목록
+
+### 2.1 관람석·시야 파라미터
+
+```
+Pset_StadiumSeating
+  - Seat_Block_ID: 좌석 블록 ID
+  - Seat_Row: 열 번호
+  - Seat_Number: 좌석 번호
+  - Seat_Type: General / Premium / VIP / Accessible / Media
+  - C_Value: 시야 C-value (mm)
+  - Sightline_Status: Clear / Obstructed / Partial
+  - Egress_Aisle_ID: 피난 통로 ID
+  - Vomitory_ID: 관람석 출입구 ID
+  - Occupant_Load: 구역별 관람 인원
+  - Revenue_Category: 일반 / 프리미엄 / 스카이박스
+```
+
+### 2.2 경기장·방송·운영 파라미터
+
+| 파라미터명 | 데이터 타입 | 단위 | 설명 |
+|---|---|---|---|
+| Field_Type | IfcLabel | - | Football / Baseball / Athletics / IndoorCourt |
+| Field_Dimension | IfcLabel | - | 경기장 규격 |
+| Lux_Level_Field | IfcIlluminanceMeasure | lux | 경기면 조도 |
+| Broadcast_Camera_Position | IfcLabel | - | 방송 카메라 포인트 |
+| Scoreboard_ID | IfcLabel | - | 전광판 ID |
+| Crowd_Flow_Rate | IfcReal | person/min | 피난·입장 흐름 |
+| Roof_Span | IfcLengthMeasure | m | 지붕 장스팬 |
+| Turf_Irrigation_Zone | IfcLabel | - | 잔디 관수 존 |
+| Acoustic_Mode | IfcLabel | - | 경기 / 콘서트 / 행사 |
+
+---
+
+## 3. LOD 단계별 요구사항
+
+| LOD | 스포츠시설·경기장 적용 내용 |
+|---|---|
+| LOD 100 | 수용 인원, 경기장 규격, 지붕 매스 |
+| LOD 200 | 관람석 bowl, 주요 동선, 선수·관중·VIP·미디어 구역 |
+| LOD 300 | 좌석 블록, 피난 통로, 지붕 구조, 스포츠 조명, 방송실 |
+| LOD 350 | 시야각 검토, 군중 피난, 조명·전광판·방송 카메라 간섭 |
+| LOD 400 | 좌석·난간·지붕 접합·조명 타워·잔디 설비 상세 |
+| LOD 500 | As-Built + 좌석 자산·이벤트 운영·시설관리 연동 |
+
+---
+
+## 4. IFC Entity 매핑
+
+| 요소 | IFC Entity | 비고 |
+|---|---|---|
+| 경기장 공간 | IfcSpace | 경기 종목 속성 |
+| 관람석 블록 | IfcSpace 또는 IfcSlab | Seat_Block_ID |
+| 개별 좌석 | IfcFurniture | 좌석 번호 |
+| 보미토리 | IfcOpeningElement 또는 IfcSpace | 피난 출입구 |
+| 지붕 트러스 | IfcMember / IfcBeam | 장스팬 구조 |
+| 조명 타워 | IfcColumn + IfcLightFixture | 조도 속성 |
+| 전광판 | IfcBuildingElementProxy | Scoreboard_ID |
+| 잔디 관수 | IfcPipeSegment / IfcDistributionSystem | 관수 존 |
+| 방송 카메라 위치 | IfcAnnotation 또는 IfcProxy | 시야·전원·신호 |
+
+---
+
+## 5. 국가별 기준 차이
+
+| 국가 | BIM 기준 설계 포인트 |
+|---|---|
+| 한국 | 건축법 문화·집회시설, 체육시설법, 소방·장애인 편의 기준. 관람석 피난·장애인석·방송 설비 구역 분리 |
+| 일본 | 建築基準法, 消防法, 대형 지진 후 피난 거점 활용 고려. 지붕 구조·관람석 내진 검토 중요 |
+| 싱가포르 | BCA, SCDF Fire Code, SportsSG 운영 요건. 열대 기후 차양·자연환기·군중 제어 중요 |
+| 미국 | IBC Assembly, ADA, NFPA Life Safety Code, NCAA/MLB/FIFA 등 종목별 기준. 접근성 좌석과 피난 수용량 검증 |
+| EU | Eurocodes, UEFA/FIFA Guide, EPBD. 군중 안전·구조 신뢰성·에너지 성능의 통합 관리 |
+
+---
+
+## 6. 실패 사례 Top 5
+
+1. 좌석 수만 맞추고 C-value 시야 검토가 누락되어 일부 좌석 판매 불가.
+2. 콘서트 모드 전환 시 임시 무대·조명 하중이 구조 BIM에 반영되지 않음.
+3. 관중·선수·미디어 동선이 교차해 보안 운영 문제가 발생.
+4. 전광판·방송 카메라·조명 위치가 늦게 확정되어 케이블트레이 재설계.
+5. 지붕 배수와 관람석 하부 방수 디테일 누락으로 누수 하자 발생.
+
+## 관련 링크
+- [[공연장_문화집회시설_BIM]]
+- [[건물유형별_BIM적용기준]]
+- [[국가별_건설법규_기준비교]]

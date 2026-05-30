@@ -278,3 +278,50 @@ collector = (
 - Autodesk Dynamo 2025에서는 MEP 배관/덕트 자동 배치 기능을 통해 BIM 실무자가 효율적으로 작업할 수 있습니다.
 - 일람표 자동화 기능으로 설계 정보를 빠르게 정리하고 관리할 수 있으며, 이는 시간 절약과 오류 감소에 큰 도움이 됩니다.
 - 물량산출 스크립트 예시로는 배관/덕트의 길이와 부재를 자동으로 계산하여 BIM 모델링 과정을 자동화할 수 있습니다.
+
+## Dynamo Claude Code 심화 업데이트 (2026-05-28)
+- Source: claude-code-enhanced 2026-05-28
+- Tags: Dynamo, Revit자동화, MEP배관, 스크립트, 물량산출, 2025
+
+Dynamo for Revit 2025(버전 3.1)에서는 Python 3.x 엔진(CPython)으로 완전 전환되어 Python 2.x 스크립트는 재작성이 필요하다. Dynamo Player를 활용하면 비개발자도 사전 제작된 스크립트를 버튼 클릭으로 실행할 수 있어 현장 적용성이 높다.
+- MEP 자동화 핵심 스크립트: ① 덕트·배관 자동 라우팅: MEPover 패키지의 Route MEP 노드를 활용하여 시작점-끝점 좌표 입력 시 최적 경로로 배관을 자동 생성. 장애물 회피 알고리즘 포함. ② 공간(Space) 자동 배치: 건축 룸(Room) 데이터를 읽어 MEP 공간을 일괄 생성, 공간별 냉난방 부하 파라미터를 자동 입력. ③ 물량산출 자동화: Element.GetParameterValueByName으로 배관 직경·길이·재질을 추출, Excel로 내보내어 견적 연동.
+- 실무 패키지 추천: MEPover(MEP 특화), Clockwork(Revit API 확장), Rhythm(프로젝트 관리), bimorphNodes(형상 처리). 패키지 설치는 Dynamo Package Manager에서 버전 호환성(Revit 버전과 일치 여부) 확인 후 진행한다.
+- 스크립트 버전 관리: .dyn 파일을 Git 저장소에서 관리하며, 파일명에 Revit 버전을 명시한다(예: MEP_AutoRoute_RVT2025.dyn). 공용 스크립트는 사내 Dynamo Player 라이브러리에 등록하여 전사 공유한다.
+- 성능 최적화: 대형 모델(5,000개 이상 요소)에서는 List.Chop으로 배치 처리하고, Transaction 단위를 최소화하여 실행 시간을 50% 이상 단축한다.
+- 관련: [[Revit_Addin]] · [[설비장비]] · [[설비시공조율]]
+
+## Dynamo 마스터급 경험 지식 (2026-05-28)
+- Source: claude-code-enhanced 2026-05-28
+- Tags: Dynamo, TransactionGroup, CPython전환, IronPython마이그레이션, 패키지배포, 성능최적화
+
+Element.SetParameterByName을 대량(수천 건)으로 실행할 때 Dynamo의 자동 트랜잭션(Auto-Transaction)에 의존하면 요소 하나마다 별도 트랜잭션이 생성되어 속도가 극도로 저하된다. 해결법: Python 노드에서 `TransactionManager.Instance.EnsureInTransaction(doc)` 하나로 묶어 일괄 처리한 뒤 `TransactionManager.Instance.TransactionTaskDone()` 호출. 5,000개 파라미터 업데이트 기준 자동 트랜잭션 대비 처리 시간이 약 80% 단축된다. 복수 트랜잭션을 하나의 Undo 단위로 묶으려면 Revit API의 `TransactionGroup`을 Python 노드 내부에서 `clr.AddReference("RevitAPI")` 후 직접 인스턴스화한다.
+
+List.Map과 List.ForEach의 성능 차이는 리스트 규모가 커질수록 유의미해진다. List.Map은 결과 리스트를 반환하며 Dynamo 내부 병렬 처리 최적화가 적용된다. List.ForEach는 부작용(Side Effect) 목적(Revit 모델 변경, 파일 저장 등)에 적합하지만 순차 실행이라 느리다. 재귀적 요소 순회가 필요할 때(계층 구조 MEP 시스템 탐색)는 `Element.GetSpatialElementCalculationLocation()`보다 Python 노드에서 `MEPSystem.Elements`로 계통 내 모든 요소를 한 번에 가져오는 방식이 신뢰도가 높다.
+
+사용자 정의 패키지 배포(.dyf → pkg): 커스텀 노드(.dyf)를 Package Manager에 등록하려면 `%AppData%\Dynamo\Dynamo Revit\[버전]\packages\[패키지명]\dyf\` 폴더에 .dyf 파일을 배치하고, `pkg.json`에 `"node_libraries"` 경로를 등록한다. 버전 명시(`"version": "1.0.0"`) 필수. 사내 배포 시 Package Manager 대신 폴더 공유 방식으로 배포하고, 스크립트 파일명에 Revit 버전을 명기(`MEP_AutoTag_RVT2025.dyf`)하여 혼용 방지.
+
+Dynamo 2025(Dynamo 3.x) CPython 3.x 전환 시 기존 IronPython(Python 2.7/3.8) 코드 마이그레이션 핵심: ① `import clr; clr.AddReference("RevitAPI")` 패턴은 CPython에서 `pythonnet` 기반으로 동일하게 작동하지만 일부 .NET 타입 캐스팅 방식이 달라짐. ② `System.Collections.Generic.List[ElementId]` 대신 Python 리스트를 직접 전달 가능한 경우가 늘었지만 RevitAPI 메서드에 따라 명시적 캐스팅이 여전히 필요함. ③ `print()` → Python 3 문법 통일, `unicode` 타입 제거. ④ `xrange` 제거 → `range`로 교체. 마이그레이션 전에 노드별로 Python 버전을 `CPython3`으로 명시적 선택 후 테스트 실행 필수.
+
+- 관련: [[Revit_Addin]] · [[설비장비]] · [[설비시공조율]]
+
+
+## Dynamo 최신 기능 및 BIM 자동화 팁 (2026-05-29)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-05-29
+- Tags: dynamo,automation,revit,update
+
+- Autodesk Dynamo 2025에서는 MEP 배관/덕트 자동 배치 기능을 통해 BIM 실무자가 효율적인 모델링 작업을 수행할 수 있습니다.
+- 일람표 자동화 기능으로, 설계 변경사항에 따른 테이블 업데이트를 자동화하여 시간을 절약할 수 있습니다.
+- 물량산출 스크립트 예시로는 배관/덕트 길이 측정 및 자동 산출이 가능합니다. 이를 통해 물량 계산과 관련된 오류를 줄이고 생산성을 높일 수 있습니다.
+
+이러한 기능들은 BIM 프로젝트의 품질 관리와 효율적인 작업을 지원하며, 새로운 버전 업데이트에 따른 적응이 필요할 수 있으므로 주기적으로 스크립트를 확인하고 수정하는 것이 좋습니다.
+- 관련: [[Revit_Addin]] · [[CS_기술지원관]] · [[빌드검증]] · [[엑셀자동화]]
+
+
+## Dynamo 최신 기능 및 BIM 자동화 팁 (2026-05-30)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-05-30
+- Tags: dynamo,automation,revit,update
+
+- Autodesk Dynamo 2025 최신 버전에서는 MEP 배관/덕트 자동 배치 기능을 통해 설계 효율성을 높일 수 있습니다.
+- 일람표 자동화 기능으로 데이터 입력 및 수정 작업을 자동화하여 시간과 노력을 절약할 수 있습니다.
+- 물량산출 스크립트를 사용하면 자동적으로 필요한 재료와 인건비 등을 계산하고, 이를 바탕으로 정확한 예산을 설정할 수 있습니다.
+- 관련: [[Revit_Addin]] · [[CS_기술지원관]] · [[빌드검증]] · [[엑셀자동화]]

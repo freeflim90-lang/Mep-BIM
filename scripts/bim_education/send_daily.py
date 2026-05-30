@@ -1,13 +1,18 @@
 #!/usr/bin/env python3
-"""BIM 일일 교육 텔레그램 발송 — 매일 7시 LaunchAgent가 실행.
+"""BIM 일일 교육 텔레그램 발송 — 매일 8시 KST LaunchAgent가 실행.
 
-365일 완료 시 자동으로 다음 연차 커리큘럼으로 승급 (최대 10년차).
+Starter Plan (90일) + 내부 직원 연간 커리큘럼 지원.
+- Day 61+ : 클라이언트 discipline별 Track 9 레슨 발송
+- Day 30/60/90 : 마일스톤 메시지 자동 발송
+- 매주 금요일 : BIM Check Friday 퀴즈 추가 발송
+- Track 완료일 : 레퍼런스 카드 PDF 발송
 """
 
 from __future__ import annotations
 
 import json
 import os
+import sys
 import urllib.parse
 import urllib.request
 from datetime import date
@@ -17,10 +22,110 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 EDU_DIR = PROJECT_ROOT / "data" / "bim_education"
 MESSAGES_DIR = EDU_DIR / "messages"
 PROGRESS_FILE = EDU_DIR / "progress.json"
+STARTER_CLIENTS_FILE = PROJECT_ROOT / "data" / "starter_plan" / "clients.json"
+STARTER_MESSAGES_DIR = PROJECT_ROOT / "data" / "starter_plan" / "messages"
+STARTER_FRIDAY_DIR = PROJECT_ROOT / "data" / "starter_plan" / "friday_quiz"
+STARTER_CARDS_DIR = PROJECT_ROOT / "data" / "starter_plan" / "reference_cards"
 
 BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 
-TRACK_ORDER = ["1yr","2yr","3yr","4yr","5yr","6yr","7yr","8yr","9yr","10yr"]
+TRACK_ORDER = ["1yr", "2yr", "3yr", "4yr", "5yr", "6yr", "7yr", "8yr", "9yr", "10yr"]
+
+DISCIPLINE_MAP = {
+    "hvac": "hvac",
+    "piping": "piping",
+    "piping/mechanical": "piping",
+    "mechanical": "piping",
+    "plumbing": "plumbing",
+    "plumbing/sanitary": "plumbing",
+    "sanitary": "plumbing",
+    "fire protection": "fire",
+    "fire": "fire",
+    "electrical": "electrical",
+}
+
+DISCIPLINE_DISPLAY = {
+    "hvac": "HVAC",
+    "piping": "Piping",
+    "plumbing": "Plumbing",
+    "fire": "Fire Protection",
+    "electrical": "Electrical",
+}
+
+# Track 완료일 → 레퍼런스 카드 번호 및 파일명
+REFERENCE_CARDS = {
+    7:  (1, "card_01_roles_lod.pdf",       "Card 1: MEP BIM Key Roles & LOD"),
+    14: (2, "card_02_revit_setup.pdf",      "Card 2: Revit MEP Setup Checklist"),
+    21: (3, "card_03_drawing_reading.pdf",  "Card 3: MEP Drawing Reading Guide"),
+    28: (4, "card_04_model_quality.pdf",    "Card 4: Model Quality Self-Review"),
+    38: (5, "card_05_clash_types.pdf",      "Card 5: Clash Types & Priority Matrix"),
+    47: (6, "card_06_data_schedule.pdf",    "Card 6: MEP Data & Schedule Reference"),
+    54: (7, "card_07_site_readiness.pdf",   "Card 7: Site-Readiness Check Guide"),
+    60: (8, "card_08_learning_path.pdf",    "Card 8: BIM Learning Path & Next Steps"),
+}
+
+MILESTONE_MESSAGES = {
+    30: """🎯 30-Day Milestone — Well done!
+
+You've completed 30 days of the MEP BIM Starter Program.
+
+So far you've covered:
+✓ MEP BIM orientation and roles
+✓ Revit MEP setup and modeling basics
+✓ MEP drawing and system reading
+✓ Model quality fundamentals
+
+Keep going — you're one third of the way through the Foundation curriculum.
+
+Day 31 begins the Clash Coordination module.
+
+LUA BIM LABS""",
+
+    60: """🏅 60-Day Certificate — Foundation Complete
+
+Congratulations, {name}!
+
+You have completed the 60-Day MEP BIM Foundation Program.
+
+Your 60-day completion certificate has been issued separately.
+
+Starting Day 61, your lessons shift to your chosen discipline:
+→ {discipline_name} Deep-Dive
+
+This specialist track continues through Day 90.
+
+LUA BIM LABS""",
+
+    90: """🎓 90 Days Complete — You did it!
+
+Congratulations, {name}!
+
+You have completed the full 90-Day MEP BIM Starter Program.
+
+You've built a solid foundation across:
+✓ MEP BIM orientation and workflows
+✓ Revit MEP basics and model quality
+✓ Clash coordination fundamentals
+✓ Data and schedule management
+✓ Site-readiness thinking
+✓ {discipline_name} discipline deep-dive
+
+Your 90-day completion certificate has been issued separately.
+
+What's next:
+
+Personal Tutor — USD 119/month
+- Personalized level diagnosis
+- Custom daily lessons matched to your level
+- Monthly written progress report
+- Level check and advancement tracking
+- Discipline-specific scenario lessons
+- Coming Soon
+
+Reply here if you're interested in continuing with Personal Tutor.
+
+Thank you for learning with LUA BIM LABS.""",
+}
 
 # 직원별 설정 (조서희 관리팀 제외)
 USERS = [
@@ -30,6 +135,63 @@ USERS = [
     {"name": "허진석", "chat_id": "8721440825", "track": "1yr"},
 ]
 
+
+# ---------------------------------------------------------------------------
+# 환경 로딩
+# ---------------------------------------------------------------------------
+
+def load_dotenv() -> None:
+    env_path = PROJECT_ROOT / ".env"
+    if not env_path.exists():
+        return
+    for raw_line in env_path.read_text(encoding="utf-8").splitlines():
+        line = raw_line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        os.environ.setdefault(key.strip(), value.strip().strip('"').strip("'"))
+
+
+# ---------------------------------------------------------------------------
+# 클라이언트 로딩
+# ---------------------------------------------------------------------------
+
+def normalize_discipline(raw: str) -> str:
+    return DISCIPLINE_MAP.get(raw.lower().strip(), "hvac")
+
+
+def load_active_starter_clients() -> list[dict]:
+    if not STARTER_CLIENTS_FILE.exists():
+        return []
+    try:
+        registry = json.loads(STARTER_CLIENTS_FILE.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        print(f"  ⚠️  Starter client registry 오류: {exc}")
+        return []
+
+    targets = []
+    for client in registry.get("clients", []):
+        if client.get("status") != "active":
+            continue
+        if client.get("payment_status") != "paid":
+            continue
+        chat_id = str(client.get("telegram_chat_id", "")).strip()
+        if not chat_id:
+            continue
+        raw_discipline = client.get("discipline", "hvac")
+        targets.append({
+            "name": client.get("name", "Starter Client"),
+            "chat_id": chat_id,
+            "track": "starter",
+            "progress_key": f"starter:{client.get('client_id')}",
+            "discipline": normalize_discipline(raw_discipline),
+        })
+    return targets
+
+
+# ---------------------------------------------------------------------------
+# 진도 관리
+# ---------------------------------------------------------------------------
 
 def load_progress() -> dict:
     if PROGRESS_FILE.exists():
@@ -48,12 +210,40 @@ def next_track(current: str) -> str | None:
     return TRACK_ORDER[idx + 1] if idx + 1 < len(TRACK_ORDER) else None
 
 
-def get_message(track: str, day: int) -> str | None:
-    msg_file = MESSAGES_DIR / track / f"day_{day:03d}.txt"
-    if msg_file.exists():
-        return msg_file.read_text(encoding="utf-8").strip()
-    return None
+# ---------------------------------------------------------------------------
+# 메시지 조회
+# ---------------------------------------------------------------------------
 
+def get_message(track: str, day: int, discipline: str = "hvac") -> str | None:
+    if track != "starter":
+        msg_file = MESSAGES_DIR / track / f"day_{day:03d}.txt"
+        return msg_file.read_text(encoding="utf-8").strip() if msg_file.exists() else None
+
+    if day >= 61:
+        msg_file = STARTER_MESSAGES_DIR / discipline / f"day_{day:03d}.txt"
+    else:
+        msg_file = STARTER_MESSAGES_DIR / f"day_{day:03d}.txt"
+
+    return msg_file.read_text(encoding="utf-8").strip() if msg_file.exists() else None
+
+
+def get_friday_quiz(current_day: int) -> str | None:
+    week_num = min((current_day - 1) // 7 + 1, 13)
+    quiz_file = STARTER_FRIDAY_DIR / f"week_{week_num:02d}.txt"
+    return quiz_file.read_text(encoding="utf-8").strip() if quiz_file.exists() else None
+
+
+def get_milestone_message(day: int, name: str, discipline: str) -> str | None:
+    template = MILESTONE_MESSAGES.get(day)
+    if not template:
+        return None
+    discipline_name = DISCIPLINE_DISPLAY.get(discipline, "HVAC")
+    return template.format(name=name, discipline_name=discipline_name)
+
+
+# ---------------------------------------------------------------------------
+# Telegram API
+# ---------------------------------------------------------------------------
 
 def send_telegram(chat_id: str, text: str) -> bool:
     if not BOT_TOKEN:
@@ -62,7 +252,7 @@ def send_telegram(chat_id: str, text: str) -> bool:
     payload = urllib.parse.urlencode({"chat_id": chat_id, "text": text}).encode("utf-8")
     req = urllib.request.Request(
         f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage",
-        data=payload, method="POST"
+        data=payload, method="POST",
     )
     try:
         with urllib.request.urlopen(req, timeout=10) as resp:
@@ -73,18 +263,160 @@ def send_telegram(chat_id: str, text: str) -> bool:
         return False
 
 
+def send_document(chat_id: str, file_path: Path, caption: str = "") -> bool:
+    if not BOT_TOKEN:
+        return False
+    if not file_path.exists():
+        print(f"  ⚠️  파일 없음 (PDF 미생성): {file_path.name}")
+        return False
+
+    boundary = "BIMBotBoundary7734"
+    body_parts: list[bytes] = []
+
+    def field(name: str, value: str) -> bytes:
+        return (
+            f"--{boundary}\r\n"
+            f'Content-Disposition: form-data; name="{name}"\r\n\r\n'
+            f"{value}\r\n"
+        ).encode("utf-8")
+
+    body_parts.append(field("chat_id", chat_id))
+    if caption:
+        body_parts.append(field("caption", caption))
+
+    file_bytes = file_path.read_bytes()
+    body_parts.append(
+        (
+            f"--{boundary}\r\n"
+            f'Content-Disposition: form-data; name="document"; filename="{file_path.name}"\r\n'
+            f"Content-Type: application/octet-stream\r\n\r\n"
+        ).encode("utf-8")
+        + file_bytes
+        + b"\r\n"
+    )
+    body_parts.append(f"--{boundary}--\r\n".encode("utf-8"))
+    body = b"".join(body_parts)
+
+    req = urllib.request.Request(
+        f"https://api.telegram.org/bot{BOT_TOKEN}/sendDocument",
+        data=body,
+        method="POST",
+        headers={"Content-Type": f"multipart/form-data; boundary={boundary}"},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            print(f"  📎 카드 전송 완료: {file_path.name} (status={resp.status})")
+            return True
+    except Exception as e:
+        print(f"  ❌ 카드 전송 실패: {e}")
+        return False
+
+
+# ---------------------------------------------------------------------------
+# Starter 클라이언트 처리
+# ---------------------------------------------------------------------------
+
+def process_starter_client(
+    user: dict,
+    user_data: dict,
+    progress: dict,
+    today: str,
+    is_friday_today: bool,
+) -> dict:
+    name = user["name"]
+    chat_id = user["chat_id"]
+    progress_key = user["progress_key"]
+    discipline = user.get("discipline", "hvac")
+
+    track = user_data.get("track", "starter")
+    current_day = user_data.get("day", 1)
+
+    disc_display = DISCIPLINE_DISPLAY.get(discipline, "HVAC")
+    track_label = f"Track 9 ({disc_display})" if current_day >= 61 else f"Day {current_day}/60"
+    print(f"\n[{name}] Starter Plan {track_label} — Day {current_day}")
+
+    # 레슨 발송
+    message = get_message(track, current_day, discipline)
+    if not message:
+        if current_day >= 61:
+            print(f"  ⚠️  track9/{discipline}/day_{current_day:03d}.txt 없음 — 레슨 파일 생성 필요")
+        else:
+            print(f"  ⚠️  starter/day_{current_day:03d}.txt 없음 — 레슨 파일 생성 필요")
+        return user_data
+
+    sent = send_telegram(chat_id, message)
+    if not sent:
+        return user_data
+
+    # BIM Check Friday 추가 발송
+    if is_friday_today and current_day <= 90:
+        quiz = get_friday_quiz(current_day)
+        if quiz:
+            print(f"  📋 BIM Check Friday 발송 (Week {min((current_day - 1) // 7 + 1, 13)})")
+            send_telegram(chat_id, quiz)
+        else:
+            print(f"  ⚠️  BIM Check Friday 퀴즈 파일 없음 (week_{min((current_day - 1) // 7 + 1, 13):02d}.txt)")
+
+    # 마일스톤 메시지 발송
+    milestone_msg = get_milestone_message(current_day, name, discipline)
+    if milestone_msg:
+        print(f"  🎯 Day {current_day} 마일스톤 메시지 발송")
+        send_telegram(chat_id, milestone_msg)
+
+    # 레퍼런스 카드 발송
+    if current_day in REFERENCE_CARDS:
+        card_num, filename, card_title = REFERENCE_CARDS[current_day]
+        card_path = STARTER_CARDS_DIR / filename
+        caption = f"📄 Quick Reference Card {card_num}: {card_title}"
+        print(f"  📎 레퍼런스 카드 {card_num} 발송 시도")
+        send_document(chat_id, card_path, caption)
+
+    # 진도 업데이트
+    new_day = current_day + 1 if current_day < 90 else 90
+    return {
+        **user_data,
+        "name": name,
+        "chat_id": chat_id,
+        "track": track,
+        "day": new_day,
+        "last_sent": today,
+        "discipline": discipline,
+    }
+
+
+# ---------------------------------------------------------------------------
+# 메인
+# ---------------------------------------------------------------------------
+
 def main() -> None:
+    load_dotenv()
+    global BOT_TOKEN
+    BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
+
     progress = load_progress()
     today = date.today().isoformat()
+    is_friday_today = date.today().weekday() == 4
 
-    for user in USERS:
+    if is_friday_today:
+        print("📅 오늘은 금요일 — BIM Check Friday 퀴즈 자동 발송")
+
+    users = [*USERS, *load_active_starter_clients()]
+
+    for user in users:
         name = user["name"]
         chat_id = user["chat_id"]
+        progress_key = user.get("progress_key", name)
 
-        user_data = progress.get("users", {}).get(name, {})
+        user_data = progress.get("users", {}).get(progress_key, {})
         track = user_data.get("track", user["track"])
         current_day = user_data.get("day", 1)
 
+        if track == "starter":
+            updated = process_starter_client(user, user_data, progress, today, is_friday_today)
+            progress.setdefault("users", {})[progress_key] = updated
+            continue
+
+        # 내부 직원 연간 커리큘럼
         yr_num = track.replace("yr", "")
         print(f"\n[{name}] {yr_num}년차 커리큘럼 Day {current_day}/365")
 
@@ -98,15 +430,17 @@ def main() -> None:
                 nxt = next_track(track)
                 if nxt:
                     new_track, new_day = nxt, 1
-                    print(f"  🎓 {yr_num}년차 완료 → {nxt.replace('yr','')}년차 승급!")
+                    print(f"  🎓 {yr_num}년차 완료 → {nxt.replace('yr', '')}년차 승급!")
                 else:
-                    new_track, new_day = track, current_day + 1
+                    new_track, new_day = track, current_day
                     print("  🏆 10년차 완주! BIM 마스터 달성!")
             else:
                 new_track, new_day = track, current_day + 1
 
-            progress.setdefault("users", {})[name] = {
+            progress.setdefault("users", {})[progress_key] = {
                 **user_data,
+                "name": name,
+                "chat_id": chat_id,
                 "track": new_track,
                 "day": new_day,
                 "last_sent": today,

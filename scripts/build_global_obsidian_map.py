@@ -9,12 +9,15 @@ category, keywords and graph links.
 from __future__ import annotations
 
 import html
+import hashlib
 import json
 import re
 import shutil
 from collections import Counter, defaultdict
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
+
+WIKILINK_RE = re.compile(r"\[\[([^\]|#]+)(?:#[^\]|]+)?(?:\|[^\]]+)?\]\]")
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -56,6 +59,7 @@ class Doc:
     category: str
     keywords: set[str]
     summary: str
+    wikilinks: set[str] = field(default_factory=set)
 
 
 _VAULT_EXCEPTIONS = {
@@ -106,11 +110,59 @@ def category_for(rel: str) -> str:
     return "Workspace Markdown"
 
 
-def make_id(rel: str, used: set[str]) -> str:
-    stem = Path(rel).stem
-    cleaned = re.sub(r"[^\w가-힣\- ]+", " ", stem, flags=re.UNICODE).strip()
+GENERIC_STEMS = {
+    "readme",
+    "license",
+    "changelog",
+    "claude",
+    "identity",
+    "bug_report",
+}
+
+
+GENERIC_TITLES = {
+    "readme",
+    "license",
+    "changelog",
+    "claude.md",
+    "identity.md - who am i?",
+    "lua bim lab",
+    "lua bim labs",
+}
+
+
+def clean_label(value: str) -> str:
+    cleaned = re.sub(r"[^\w가-힣\- ]+", " ", value, flags=re.UNICODE).strip()
     cleaned = re.sub(r"\s+", " ", cleaned) or "Untitled"
-    candidate = cleaned[:90]
+    return cleaned
+
+
+def path_context(rel: str, depth: int = 2) -> str:
+    path = Path(rel)
+    parts = [part for part in path.parent.parts if part not in {".", ""}]
+    if not parts:
+        return clean_label(path.stem)
+    selected = parts[-depth:]
+    return clean_label(" - ".join(selected))
+
+
+def display_title_for(rel: str, raw_title: str) -> str:
+    path = Path(rel)
+    stem = path.stem
+    title = clean_label(raw_title or stem)
+    lower_title = title.lower()
+    lower_stem = stem.lower()
+    context = path_context(rel)
+
+    if lower_stem in GENERIC_STEMS or lower_title in GENERIC_TITLES:
+        return f"{context} - {title}"
+    if lower_title in {"qa", "index"}:
+        return f"{context} - {title}"
+    return title
+
+
+def make_id(rel: str, title: str, used: set[str]) -> str:
+    candidate = display_title_for(rel, title)[:110]
     if candidate not in used:
         used.add(candidate)
         return candidate
@@ -125,8 +177,8 @@ def make_id(rel: str, used: set[str]) -> str:
 def extract_title(text: str, rel: str) -> str:
     for line in text.splitlines()[:30]:
         if line.startswith("# "):
-            return line[2:].strip()
-    return Path(rel).stem
+            return display_title_for(rel, line[2:].strip())
+    return display_title_for(rel, Path(rel).stem)
 
 
 def extract_summary(text: str) -> str:
@@ -154,9 +206,12 @@ def extract_keywords(text: str, rel: str, category: str) -> set[str]:
     return {kw for kw in found if len(kw) >= 2}
 
 
+def extract_wikilinks(text: str) -> set[str]:
+    return {m.strip() for m in WIKILINK_RE.findall(text) if m.strip()}
+
+
 def scan_docs() -> list[Doc]:
-    used: set[str] = set()
-    docs: list[Doc] = []
+    raw_docs: list[tuple[Path, str, str, str, set[str], str, set[str]]] = []
     for path in sorted(PROJECT_ROOT.rglob("*.md")):
         if should_skip(path):
             continue
@@ -166,17 +221,61 @@ def scan_docs() -> list[Doc]:
         except OSError:
             continue
         category = category_for(rel)
-        doc_id = make_id(rel, used)
+        title = extract_title(text, rel)
+        raw_docs.append((
+            path,
+            rel,
+            category,
+            title,
+            extract_keywords(text, rel, category),
+            extract_summary(text),
+            extract_wikilinks(text),
+        ))
+
+    title_counts = Counter(item[3] for item in raw_docs)
+    used: set[str] = set()
+    docs: list[Doc] = []
+    for path, rel, category, title, keywords, summary, wikilinks in raw_docs:
+        if title_counts[title] > 1:
+            stem = clean_label(Path(rel).stem)
+            context = path_context(rel, depth=2)
+            if stem.lower() not in title.lower():
+                title = f"{context} - {stem} - {title}"
+            else:
+                title = f"{context} - {title}"
+        doc_id = make_id(rel, title, used)
         docs.append(Doc(
             id=doc_id,
-            title=extract_title(text, rel),
+            title=title,
             path=path,
             rel=rel,
             category=category,
-            keywords=extract_keywords(text, rel, category),
-            summary=extract_summary(text),
+            keywords=keywords,
+            summary=summary,
+            wikilinks=wikilinks,
         ))
-    return docs
+    final_title_counts = Counter(doc.title for doc in docs)
+    if not any(count > 1 for count in final_title_counts.values()):
+        return docs
+
+    final_docs: list[Doc] = []
+    final_used: set[str] = set()
+    for doc in docs:
+        title = doc.title
+        if final_title_counts[title] > 1:
+            suffix = hashlib.sha1(doc.rel.encode("utf-8")).hexdigest()[:6]
+            title = f"{title} - {suffix}"
+        final_docs.append(Doc(
+            id=make_id(doc.rel, title, final_used),
+            title=title,
+            path=doc.path,
+            rel=doc.rel,
+            category=doc.category,
+            keywords=doc.keywords,
+            summary=doc.summary,
+            wikilinks=doc.wikilinks,
+        ))
+    return final_docs
 
 
 def wikilink(name: str) -> str:
@@ -216,19 +315,45 @@ def related_docs(docs: list[Doc]) -> dict[str, list[Doc]]:
 
 
 def graph_data(docs: list[Doc], related: dict[str, list[Doc]]) -> dict:
-    nodes = [{"id": f"CAT::{cat}", "label": cat, "group": "Category", "path": ""} for cat in sorted({d.category for d in docs})]
+    nodes = [
+        {"id": f"CAT::{cat}", "label": cat, "group": "Category",
+         "path": "", "summary": "", "keywords": []}
+        for cat in sorted({d.category for d in docs})
+    ]
     for doc in docs:
         nodes.append({
             "id": doc.id,
             "label": doc.title[:72],
             "group": doc.category,
             "path": doc.rel,
+            "summary": doc.summary[:220],
+            "keywords": sorted(doc.keywords)[:12],
         })
+
+    # 위키링크 매핑: 제목 / 파일스템 → doc.id
+    title_to_id: dict[str, str] = {doc.title: doc.id for doc in docs}
+    stem_to_id: dict[str, str] = {Path(doc.rel).stem: doc.id for doc in docs}
+
     edges = []
+    seen_edges: set[tuple[str, str]] = set()
+
+    def add_edge(src: str, tgt: str, etype: str) -> None:
+        key = (src, tgt) if src <= tgt else (tgt, src)
+        if key not in seen_edges:
+            seen_edges.add(key)
+            edges.append({"source": src, "target": tgt, "type": etype})
+
     for doc in docs:
-        edges.append({"source": f"CAT::{doc.category}", "target": doc.id, "type": "category"})
+        add_edge(f"CAT::{doc.category}", doc.id, "category")
+        # 키워드 유사도 기반 관련 엣지
         for other in related.get(doc.id, [])[:4]:
-            edges.append({"source": doc.id, "target": other.id, "type": "related"})
+            add_edge(doc.id, other.id, "related")
+        # [[위키링크]] 기반 엣지 — KB/문서가 성장할수록 자동으로 늘어남
+        for link in doc.wikilinks:
+            target_id = title_to_id.get(link) or stem_to_id.get(link)
+            if target_id and target_id != doc.id:
+                add_edge(doc.id, target_id, "wikilink")
+
     return {"nodes": nodes, "edges": edges}
 
 
@@ -438,58 +563,432 @@ def write_canvas(docs: list[Doc], categories: dict[str, list[Doc]]) -> None:
 
 
 def write_html(graph: dict) -> None:
-    data = json.dumps(graph, ensure_ascii=False)
+    # </script> in JSON string content must be escaped to prevent premature tag close
+    data = json.dumps(graph, ensure_ascii=False).replace("</script>", r"<\/script>").replace("<script", r"<\x73cript")
     groups = sorted({node["group"] for node in graph["nodes"]})
     palette = [
         "#8b5cf6", "#22c55e", "#38bdf8", "#f59e0b", "#ef4444", "#14b8a6",
         "#e879f9", "#84cc16", "#f97316", "#60a5fa", "#d946ef", "#a3a3a3",
+        "#fb923c", "#34d399", "#818cf8", "#e11d48",
     ]
     color_map = {group: palette[i % len(palette)] for i, group in enumerate(groups)}
     color_json = json.dumps(color_map, ensure_ascii=False)
-    legend = "\n".join(
-        f'<span class="swatch" style="background:{html.escape(color_map[group])}"></span><span>{html.escape(group)}</span>'
-        for group in groups[:18]
-    )
+    node_count = len(graph["nodes"])
+    edge_count = len(graph["edges"])
     write_text(VAULT / "Assets" / "global_knowledge_graph.html", f"""<!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>LUA BIM LAB Global Knowledge Graph</title>
   <style>
-    html,body{{margin:0;height:100%;background:#111113;color:#e5e7eb;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}}
-    canvas{{display:block;width:100vw;height:100vh}}
-    .panel{{position:absolute;top:18px;left:18px;width:360px;max-height:80vh;overflow:auto;padding:14px 16px;background:rgba(20,20,24,.84);border:1px solid rgba(139,92,246,.38);border-radius:8px;backdrop-filter:blur(10px)}}
-    h1{{font-size:16px;margin:0 0 8px}} p{{font-size:12px;color:#a1a1aa;line-height:1.45}}
-    .legend{{display:grid;grid-template-columns:14px 1fr;gap:6px 8px;font-size:12px;color:#d4d4d8}}
-    .swatch{{width:12px;height:12px;border-radius:50%;margin-top:2px}}
-    .tip{{position:absolute;right:18px;bottom:18px;color:#71717a;font-size:12px}}
+    *{{box-sizing:border-box;margin:0;padding:0}}
+    html,body{{height:100%;display:flex;background:#0f0f11;color:#e5e7eb;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overflow:hidden}}
+    /* ── 사이드바 ── */
+    #sidebar{{width:300px;min-width:300px;height:100vh;display:flex;flex-direction:column;border-right:1px solid rgba(139,92,246,.22);background:rgba(12,12,14,.97)}}
+    #sb-head{{padding:14px 14px 10px;border-bottom:1px solid rgba(148,163,184,.1);flex-shrink:0}}
+    #sb-head h1{{font-size:13px;font-weight:700;color:#f4f4f5;letter-spacing:-.01em}}
+    #sb-head p{{font-size:11px;color:#52525b;margin-top:2px}}
+    #search{{width:100%;margin-top:9px;padding:8px 10px;background:rgba(2,6,23,.7);border:1px solid rgba(148,163,184,.2);border-radius:6px;color:#e5e7eb;font-size:12px;outline:none;transition:border-color .15s}}
+    #search:focus{{border-color:rgba(139,92,246,.65)}}
+    #search-count{{font-size:10px;color:#52525b;margin-top:4px;min-height:14px}}
+    #tree{{flex:1;overflow-y:auto;padding:4px 0 20px}}
+    #tree::-webkit-scrollbar{{width:4px}}
+    #tree::-webkit-scrollbar-thumb{{background:rgba(139,92,246,.25);border-radius:2px}}
+    details{{border-bottom:1px solid rgba(255,255,255,.04)}}
+    details[open] summary .arrow{{transform:rotate(90deg)}}
+    summary{{cursor:pointer;list-style:none;padding:7px 12px;font-size:11.5px;color:#c4c4cc;display:flex;align-items:center;gap:7px;user-select:none;transition:background .1s}}
+    summary:hover{{background:rgba(139,92,246,.09)}}
+    summary::-webkit-details-marker{{display:none}}
+    .arrow{{font-size:9px;color:#52525b;transition:transform .15s;flex-shrink:0}}
+    .cat-dot{{width:8px;height:8px;border-radius:50%;flex-shrink:0}}
+    .cat-label{{flex:1;font-weight:500}}
+    .cat-count{{color:#52525b;font-size:10px;flex-shrink:0}}
+    .doc-item{{padding:5px 12px 5px 32px;font-size:11px;color:#8a8a99;cursor:pointer;line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;transition:background .1s,color .1s;border-left:2px solid transparent}}
+    .doc-item:hover{{background:rgba(139,92,246,.1);color:#d4d4d8;border-left-color:rgba(139,92,246,.4)}}
+    .doc-item.selected{{background:rgba(139,92,246,.18);color:#fff;font-weight:500;border-left-color:#8b5cf6}}
+    .doc-item.dimmed{{opacity:.35}}
+    /* ── 캔버스 영역 ── */
+    #canvas-wrap{{flex:1;position:relative;overflow:hidden}}
+    canvas{{display:block;width:100%;height:100%;cursor:grab}}
+    canvas.grabbing{{cursor:grabbing}}
+    /* ── 상세 패널 ── */
+    #detail{{position:absolute;right:14px;top:14px;width:270px;padding:14px;background:rgba(12,12,14,.94);border:1px solid rgba(148,163,184,.18);border-radius:8px;backdrop-filter:blur(14px);display:none;max-height:calc(100vh - 80px);overflow-y:auto}}
+    #detail h2{{font-size:13px;font-weight:600;color:#f4f4f5;word-break:break-word;line-height:1.4;margin-bottom:5px}}
+    #detail .d-cat{{font-size:10px;color:#8b5cf6;text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px}}
+    #detail .d-summary{{font-size:11.5px;color:#a1a1aa;line-height:1.55;margin-bottom:10px;white-space:pre-wrap}}
+    #detail .d-kw{{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:10px}}
+    #detail .tag{{font-size:10px;padding:2px 7px;background:rgba(139,92,246,.16);border-radius:10px;color:#c4b5fd}}
+    #detail .d-path{{font-size:10px;color:#52525b;word-break:break-all;line-height:1.5}}
+    #detail .d-related{{margin-top:10px;border-top:1px solid rgba(255,255,255,.06);padding-top:8px}}
+    #detail .d-related-title{{font-size:10px;color:#71717a;margin-bottom:5px;text-transform:uppercase;letter-spacing:.05em}}
+    #detail .rel-item{{font-size:11px;color:#a78bfa;cursor:pointer;padding:2px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
+    #detail .rel-item:hover{{color:#c4b5fd}}
+    /* ── 줌 도구 ── */
+    #zoom-btns{{position:absolute;right:14px;bottom:14px;display:flex;flex-direction:column;gap:4px}}
+    .z-btn{{width:28px;height:28px;background:rgba(20,20,24,.88);border:1px solid rgba(148,163,184,.18);border-radius:5px;color:#d4d4d8;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;line-height:1;user-select:none}}
+    .z-btn:hover{{background:rgba(139,92,246,.25);border-color:rgba(139,92,246,.5)}}
+    #hint{{position:absolute;left:14px;bottom:14px;color:#3f3f46;font-size:10px;pointer-events:none}}
+    /* ── 범례 ── */
+    #legend{{flex-shrink:0;padding:12px 14px;border-top:1px solid rgba(148,163,184,.1);background:rgba(8,8,10,.6)}}
+    #legend-title{{font-size:10px;font-weight:600;color:#52525b;text-transform:uppercase;letter-spacing:.07em;margin-bottom:8px}}
+    .leg-row{{display:flex;align-items:center;gap:8px;margin-bottom:6px}}
+    .leg-row:last-child{{margin-bottom:0}}
+    .leg-line{{flex-shrink:0}}
+    .leg-text{{font-size:11px;color:#8a8a99;line-height:1.3}}
+    .leg-text b{{color:#c4c4cc;font-weight:500}}
   </style>
 </head>
 <body>
-<canvas id="graph"></canvas>
-<div class="panel">
-  <h1>LUA BIM LAB Global Knowledge Graph</h1>
-  <p>모든 주요 Markdown 문서를 카테고리와 관련 키워드로 연결한 로컬 그래프입니다.</p>
-  <p>Nodes: {len(graph["nodes"])} / Edges: {len(graph["edges"])}</p>
-  <div class="legend">{legend}</div>
+<div id="sidebar">
+  <div id="sb-head">
+    <h1>LUA BIM LAB Knowledge</h1>
+    <p>노드 {node_count}개 &middot; 연결 {edge_count}개</p>
+    <input id="search" type="search" placeholder="&#128269; 문서명 · 키워드 · 경로 검색..." autocomplete="off"/>
+    <div id="search-count"></div>
+  </div>
+  <div id="tree"></div>
+  <div id="legend">
+    <div id="legend-title">범례 · Legend</div>
+    <div class="leg-row">
+      <svg class="leg-line" width="36" height="14">
+        <circle cx="5" cy="7" r="5" fill="#8b5cf6"/>
+        <circle cx="31" cy="7" r="3" fill="#22c55e"/>
+      </svg>
+      <span class="leg-text"><b>노드</b> — 큰 원: 카테고리 &nbsp;/&nbsp; 작은 원: 문서</span>
+    </div>
+    <div class="leg-row">
+      <svg class="leg-line" width="36" height="14">
+        <line x1="2" y1="7" x2="34" y2="7" stroke="#8b5cf6" stroke-width="2"/>
+      </svg>
+      <span class="leg-text"><b>카테고리 연결</b> — 문서가 속한 분류</span>
+    </div>
+    <div class="leg-row">
+      <svg class="leg-line" width="36" height="14">
+        <line x1="2" y1="7" x2="34" y2="7" stroke="#6b7280" stroke-width="1.2"/>
+      </svg>
+      <span class="leg-text"><b>키워드 유사도</b> — 관련 키워드 공유</span>
+    </div>
+    <div class="leg-row">
+      <svg class="leg-line" width="36" height="14">
+        <line x1="2" y1="7" x2="34" y2="7" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="4,3"/>
+      </svg>
+      <span class="leg-text"><b>[[위키링크]]</b> — 문서 간 직접 참조 <span style="color:#52525b">(매일 성장)</span></span>
+    </div>
+  </div>
 </div>
-<div class="tip">Drag nodes. Category nodes are larger.</div>
+<div id="canvas-wrap">
+  <canvas id="graph"></canvas>
+  <div id="detail"></div>
+  <div id="zoom-btns">
+    <div class="z-btn" id="z-in">+</div>
+    <div class="z-btn" id="z-fit">&#8635;</div>
+    <div class="z-btn" id="z-out">&minus;</div>
+  </div>
+  <div id="hint">휠: 확대/축소 &nbsp;·&nbsp; 드래그: 이동 &nbsp;·&nbsp; 노드 클릭: 상세 보기</div>
+</div>
 <script>
-const graph={data};
-const colors={color_json};
-const canvas=document.getElementById('graph'),ctx=canvas.getContext('2d');
-let w=0,h=0,drag=null;
-function resize(){{w=canvas.width=innerWidth*devicePixelRatio;h=canvas.height=innerHeight*devicePixelRatio;canvas.style.width=innerWidth+'px';canvas.style.height=innerHeight+'px';ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0)}} addEventListener('resize',resize); resize();
-const nodes=graph.nodes.map((n,i)=>{{let a=i/graph.nodes.length*Math.PI*2,r=n.group==='Category'?170:310+(i%9)*28;return {{...n,x:innerWidth/2+Math.cos(a)*r,y:innerHeight/2+Math.sin(a)*r,vx:0,vy:0}}}});
-const by=new Map(nodes.map(n=>[n.id,n]));
-const edges=graph.edges.map(e=>({{source:by.get(e.source),target:by.get(e.target),type:e.type}})).filter(e=>e.source&&e.target);
-function step(){{for(const e of edges){{let dx=e.target.x-e.source.x,dy=e.target.y-e.source.y,d=Math.max(1,Math.hypot(dx,dy)),want=e.type==='category'?150:210,f=(d-want)*0.0018,fx=dx/d*f,fy=dy/d*f;e.source.vx+=fx;e.source.vy+=fy;e.target.vx-=fx;e.target.vy-=fy}} for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++){{let a=nodes[i],b=nodes[j],dx=b.x-a.x,dy=b.y-a.y,d2=Math.max(36,dx*dx+dy*dy),d=Math.sqrt(d2),f=(a.group==='Category'||b.group==='Category'?1800:650)/d2;a.vx-=dx/d*f;a.vy-=dy/d*f;b.vx+=dx/d*f;b.vy+=dy/d*f}} for(const n of nodes){{if(drag===n)continue;n.vx+=(innerWidth/2-n.x)*0.00055;n.vy+=(innerHeight/2-n.y)*0.00055;n.x+=n.vx;n.y+=n.vy;n.vx*=0.87;n.vy*=0.87}}}}
-function draw(){{ctx.clearRect(0,0,innerWidth,innerHeight);for(const e of edges){{ctx.strokeStyle=e.type==='category'?'rgba(139,92,246,.35)':'rgba(120,120,130,.16)';ctx.lineWidth=e.type==='category'?1.4:.7;ctx.beginPath();ctx.moveTo(e.source.x,e.source.y);ctx.lineTo(e.target.x,e.target.y);ctx.stroke()}} for(const n of nodes){{let category=n.group==='Category',size=category?13:5.5,color=colors[n.group]||'#a1a1aa';ctx.fillStyle=color;ctx.beginPath();ctx.arc(n.x,n.y,size,0,Math.PI*2);ctx.fill();if(category||size>5){{ctx.fillStyle=category?'#f4f4f5':'#d4d4d8';ctx.font=category?'13px sans-serif':'10px sans-serif';ctx.fillText(n.label,n.x+size+5,n.y+4)}}}}}}
-function frame(){{step();draw();requestAnimationFrame(frame)}} frame();
-canvas.addEventListener('pointerdown',ev=>{{let x=ev.clientX,y=ev.clientY;drag=nodes.find(n=>Math.hypot(n.x-x,n.y-y)<18)||null}});
-canvas.addEventListener('pointermove',ev=>{{if(!drag)return;drag.x=ev.clientX;drag.y=ev.clientY;drag.vx=drag.vy=0}});
-addEventListener('pointerup',()=>drag=null);
+const RAW = {data};
+const COLORS = {color_json};
+
+// ── 노드/엣지 초기화 ──────────────────────────────────────────────────────
+const nodes = RAW.nodes.map((n, i) => {{
+  const a = (i / RAW.nodes.length) * Math.PI * 2;
+  const r = n.group === 'Category' ? 160 : 320 + (i % 13) * 22;
+  return {{...n, x: 800 + Math.cos(a)*r, y: 500 + Math.sin(a)*r, vx:0, vy:0}};
+}});
+const byId = new Map(nodes.map(n => [n.id, n]));
+const edges = RAW.edges
+  .map(e => ({{s: byId.get(e.source), t: byId.get(e.target), type: e.type}}))
+  .filter(e => e.s && e.t);
+
+// 이웃 인덱스
+const nbrs = new Map(nodes.map(n => [n.id, []]));
+for (const e of edges) {{
+  nbrs.get(e.s.id).push(e.t);
+  nbrs.get(e.t.id).push(e.s);
+}}
+
+// ── 캔버스 설정 ───────────────────────────────────────────────────────────
+const canvas = document.getElementById('graph');
+const ctx = canvas.getContext('2d');
+const wrap = document.getElementById('canvas-wrap');
+let W = 0, H = 0;
+function resize() {{
+  const dpr = devicePixelRatio || 1;
+  W = wrap.clientWidth; H = wrap.clientHeight;
+  canvas.width = W * dpr; canvas.height = H * dpr;
+  canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+}}
+window.addEventListener('resize', resize); resize();
+
+// ── 뷰 상태 ──────────────────────────────────────────────────────────────
+let scale = 0.9, ox = 0, oy = 0;
+let drag = null, panning = false, panAnchor = null;
+let pointerDownPos = null, didMove = false;
+let selected = null, hovered = null;
+let matchSet = null;
+let simSteps = 0, simActive = true;
+
+// ── 좌표 변환 ─────────────────────────────────────────────────────────────
+const toGraph = (cx, cy) => [(cx - ox) / scale, (cy - oy) / scale];
+
+// ── 물리 시뮬레이션 ──────────────────────────────────────────────────────
+function step() {{
+  if (!simActive) return;
+  simSteps++;
+  if (simSteps > 600) {{ simActive = false; return; }}
+  for (const e of edges) {{
+    const dx = e.t.x - e.s.x, dy = e.t.y - e.s.y;
+    const d = Math.max(1, Math.hypot(dx, dy));
+    const want = e.type === 'category' ? 130 : e.type === 'wikilink' ? 160 : 200;
+    const f = (d - want) * 0.002;
+    const fx = dx/d*f, fy = dy/d*f;
+    e.s.vx += fx; e.s.vy += fy; e.t.vx -= fx; e.t.vy -= fy;
+  }}
+  for (let i = 0; i < nodes.length; i++) {{
+    const a = nodes[i];
+    for (let j = i+1; j < nodes.length; j++) {{
+      const b = nodes[j];
+      const dx = b.x-a.x, dy = b.y-a.y;
+      const d2 = Math.max(16, dx*dx+dy*dy), d = Math.sqrt(d2);
+      const isCAT = a.group==='Category'||b.group==='Category';
+      const f = (isCAT ? 2400 : 700) / d2;
+      a.vx -= dx/d*f; a.vy -= dy/d*f;
+      b.vx += dx/d*f; b.vy += dy/d*f;
+    }}
+  }}
+  const cx = 800, cy = 500;
+  for (const n of nodes) {{
+    if (drag === n) continue;
+    n.vx += (cx - n.x) * 0.0003;
+    n.vy += (cy - n.y) * 0.0003;
+    n.x += n.vx; n.y += n.vy;
+    n.vx *= 0.86; n.vy *= 0.86;
+  }}
+}}
+
+// ── 그리기 ───────────────────────────────────────────────────────────────
+function draw() {{
+  ctx.clearRect(0, 0, W, H);
+  ctx.save();
+  ctx.translate(ox, oy); ctx.scale(scale, scale);
+
+  const selNbrs = selected ? new Set(nbrs.get(selected.id).map(n=>n.id)) : null;
+
+  // 엣지
+  for (const e of edges) {{
+    const active = selected && (e.s===selected || e.t===selected);
+    const dimmed = matchSet && !matchSet.has(e.s.id) && !matchSet.has(e.t.id);
+    const isCat  = e.type === 'category';
+    const isWiki = e.type === 'wikilink';
+    ctx.globalAlpha = dimmed ? 0.04 : active ? 0.9 : isCat ? 0.3 : isWiki ? 0.55 : 0.1;
+    ctx.strokeStyle = active ? '#c4b5fd' : isCat ? '#8b5cf6' : isWiki ? '#fbbf24' : '#6b7280';
+    ctx.lineWidth = (active ? 2 : isCat ? 0.9 : isWiki ? 1.2 : 0.7) / scale;
+    if (isWiki && !active) {{ ctx.setLineDash([4/scale, 3/scale]); }}
+    else {{ ctx.setLineDash([]); }}
+    ctx.beginPath(); ctx.moveTo(e.s.x, e.s.y); ctx.lineTo(e.t.x, e.t.y); ctx.stroke();
+  }}
+  ctx.setLineDash([]);
+  ctx.globalAlpha = 1;
+
+  // 노드
+  for (const n of nodes) {{
+    const isCAT = n.group === 'Category';
+    const isSel = n === selected;
+    const isNbr = selNbrs?.has(n.id);
+    const isHov = n === hovered;
+    const dimmed = matchSet && !matchSet.has(n.id);
+    const r = isCAT ? 12 : isSel ? 9 : isNbr ? 7 : isHov ? 7 : 4.5;
+    ctx.globalAlpha = dimmed ? 0.1 : 1;
+    ctx.fillStyle = COLORS[n.group] || '#a1a1aa';
+    ctx.beginPath(); ctx.arc(n.x, n.y, r, 0, Math.PI*2); ctx.fill();
+    if (isSel) {{ ctx.strokeStyle='#f8fafc'; ctx.lineWidth=2/scale; ctx.stroke(); }}
+    if (isHov && !isSel) {{ ctx.strokeStyle='rgba(255,255,255,.5)'; ctx.lineWidth=1.5/scale; ctx.stroke(); }}
+
+    // 라벨 표시 조건
+    const showLabel = isCAT || isSel || isNbr || isHov || scale > 2.8;
+    if (showLabel && !dimmed) {{
+      const fs = isCAT ? 12 : isSel ? 11 : 10;
+      ctx.font = (isCAT ? '600 ' : isSel ? '500 ' : '') + fs/scale + 'px sans-serif';
+      ctx.fillStyle = isCAT ? '#f4f4f5' : isSel ? '#fff' : isNbr ? '#d4d4d8' : '#a1a1aa';
+      ctx.globalAlpha = isCAT ? 1 : isSel ? 1 : isNbr ? 0.9 : 0.8;
+      const label = n.label.length > 30 ? n.label.slice(0,29)+'…' : n.label;
+      ctx.fillText(label, n.x + r + 4/scale, n.y + 4/scale);
+    }}
+  }}
+  ctx.globalAlpha = 1;
+  ctx.restore();
+}}
+
+// ── 프레임 루프 ───────────────────────────────────────────────────────────
+function frame() {{ step(); draw(); requestAnimationFrame(frame); }}
+frame();
+
+// ── 선택 & 상세 패널 ──────────────────────────────────────────────────────
+const detailEl = document.getElementById('detail');
+function selectNode(n) {{
+  selected = n;
+  document.querySelectorAll('.doc-item').forEach(el =>
+    el.classList.toggle('selected', el.dataset.id === (n?.id||''))
+  );
+  if (n) {{
+    const el = document.querySelector(`.doc-item[data-id="${{n.id}}"]`);
+    el?.scrollIntoView({{block:'nearest',behavior:'smooth'}});
+  }}
+  if (!n || n.group==='Category') {{ detailEl.style.display='none'; return; }}
+  detailEl.style.display = 'block';
+  const kw = (n.keywords||[]).map(k=>`<span class="tag">${{k}}</span>`).join('');
+  const related = (nbrs.get(n.id)||[]).slice(0,8)
+    .map(r=>`<div class="rel-item" data-id="${{r.id}}">${{r.label}}</div>`).join('');
+  detailEl.innerHTML = `
+    <h2>${{n.label}}</h2>
+    <div class="d-cat">${{n.group}}</div>
+    ${{n.summary ? `<div class="d-summary">${{n.summary}}</div>` : ''}}
+    ${{kw ? `<div class="d-kw">${{kw}}</div>` : ''}}
+    <div class="d-path">${{n.path}}</div>
+    ${{related ? `<div class="d-related"><div class="d-related-title">연결 문서</div>${{related}}</div>` : ''}}
+  `;
+  detailEl.querySelectorAll('.rel-item').forEach(el =>
+    el.addEventListener('click', () => jumpTo(byId.get(el.dataset.id)))
+  );
+}}
+
+function jumpTo(n) {{
+  if (!n) return;
+  ox = W/2 - n.x*scale; oy = H/2 - n.y*scale;
+  selectNode(n);
+}}
+
+// ── 사이드바 트리 ─────────────────────────────────────────────────────────
+const treeEl = document.getElementById('tree');
+const searchEl = document.getElementById('search');
+const countEl = document.getElementById('search-count');
+
+function buildTree() {{
+  const map = {{}};
+  for (const n of nodes) {{
+    if (n.group==='Category') continue;
+    if (!map[n.group]) map[n.group] = [];
+    map[n.group].push(n);
+  }}
+  return Object.entries(map).sort(([a],[b])=>a.localeCompare(b))
+    .map(([cat, items]) => ({{cat, items: items.sort((a,b)=>a.label.localeCompare(b.label))}}));
+}}
+const TREE = buildTree();
+
+function renderTree(query) {{
+  const q = (query||'').trim().toLowerCase();
+  let total = 0;
+  const html = TREE.map(g => {{
+    const cat = g.cat, items = g.items;
+    const filtered = q ? items.filter(n =>
+      n.label.toLowerCase().includes(q) ||
+      (n.path||'').toLowerCase().includes(q) ||
+      (n.keywords||[]).some(k=>k.toLowerCase().includes(q)) ||
+      (n.summary||'').toLowerCase().includes(q)
+    ) : items;
+    if (!filtered.length) return '';
+    total += filtered.length;
+    const color = COLORS[cat]||'#71717a';
+    const rows = filtered.map(n =>
+      `<div class="doc-item" data-id="${{n.id}}" title="${{n.path||''}}">${{n.label}}</div>`
+    ).join('');
+    return `<details open>
+      <summary>
+        <span class="arrow">&#9654;</span>
+        <span class="cat-dot" style="background:${{color}}"></span>
+        <span class="cat-label">${{cat}}</span>
+        <span class="cat-count">${{filtered.length}}</span>
+      </summary>
+      ${{rows}}
+    </details>`;
+  }}).join('');
+  treeEl.innerHTML = html;
+
+  // matchSet 업데이트
+  if (q) {{
+    matchSet = new Set();
+    treeEl.querySelectorAll('.doc-item').forEach(el => matchSet.add(el.dataset.id));
+    countEl.textContent = total + '개 검색됨';
+  }} else {{
+    matchSet = null;
+    countEl.textContent = '';
+  }}
+
+  // 이벤트 바인딩
+  treeEl.querySelectorAll('.doc-item').forEach(el => {{
+    el.addEventListener('click', () => jumpTo(byId.get(el.dataset.id)));
+    el.addEventListener('mouseenter', () => {{ hovered = byId.get(el.dataset.id)||null; }});
+    el.addEventListener('mouseleave', () => {{ hovered = null; }});
+  }});
+}}
+
+searchEl.addEventListener('input', () => renderTree(searchEl.value));
+renderTree('');
+
+// ── 줌/팬/드래그 ─────────────────────────────────────────────────────────
+canvas.addEventListener('wheel', ev => {{
+  ev.preventDefault();
+  const rect = canvas.getBoundingClientRect();
+  const mx = ev.clientX - rect.left, my = ev.clientY - rect.top;
+  const d = ev.deltaY > 0 ? 0.82 : 1.22;
+  ox = mx - (mx-ox)*d; oy = my - (my-oy)*d;
+  scale = Math.min(10, Math.max(0.1, scale*d));
+}}, {{passive:false}});
+
+canvas.addEventListener('pointerdown', ev => {{
+  const rect = canvas.getBoundingClientRect();
+  const mx = ev.clientX-rect.left, my = ev.clientY-rect.top;
+  const [gx, gy] = toGraph(mx, my);
+  pointerDownPos = [ev.clientX, ev.clientY]; didMove = false;
+  drag = nodes.find(n => Math.hypot(n.x-gx, n.y-gy) < 14/scale) || null;
+  if (!drag) {{ panning=true; panAnchor=[ev.clientX-ox, ev.clientY-oy]; }}
+  canvas.classList.add('grabbing');
+  canvas.setPointerCapture(ev.pointerId);
+}});
+
+canvas.addEventListener('pointermove', ev => {{
+  if (pointerDownPos) {{
+    const dx = ev.clientX-pointerDownPos[0], dy = ev.clientY-pointerDownPos[1];
+    if (Math.hypot(dx,dy) > 4) {{ didMove=true; if (!simActive){{simActive=true; simSteps=Math.min(simSteps,550);}} }}
+  }}
+  const rect = canvas.getBoundingClientRect();
+  const mx = ev.clientX-rect.left, my = ev.clientY-rect.top;
+  if (drag) {{
+    const [gx,gy] = toGraph(mx,my);
+    drag.x=gx; drag.y=gy; drag.vx=drag.vy=0;
+  }} else if (panning && panAnchor) {{
+    ox=ev.clientX-panAnchor[0]; oy=ev.clientY-panAnchor[1];
+  }} else {{
+    const [gx,gy] = toGraph(mx,my);
+    hovered = nodes.find(n=>Math.hypot(n.x-gx,n.y-gy)<10/scale)||null;
+  }}
+}});
+
+canvas.addEventListener('pointerup', ev => {{
+  if (!didMove) {{
+    const rect = canvas.getBoundingClientRect();
+    const mx=ev.clientX-rect.left, my=ev.clientY-rect.top;
+    const [gx,gy] = toGraph(mx,my);
+    const clicked = nodes.find(n=>Math.hypot(n.x-gx,n.y-gy)<14/scale)||null;
+    selectNode(clicked);
+  }}
+  drag=null; panning=false; panAnchor=null; pointerDownPos=null;
+  canvas.classList.remove('grabbing');
+}});
+
+// ── 줌 버튼 ──────────────────────────────────────────────────────────────
+document.getElementById('z-in').addEventListener('click', () => {{
+  scale=Math.min(10,scale*1.3); ox=W/2-(W/2-ox)*1.3; oy=H/2-(H/2-oy)*1.3;
+}});
+document.getElementById('z-out').addEventListener('click', () => {{
+  scale=Math.max(0.1,scale*0.77); ox=W/2-(W/2-ox)*0.77; oy=H/2-(H/2-oy)*0.77;
+}});
+document.getElementById('z-fit').addEventListener('click', () => {{
+  scale=0.9; ox=W/2-800*0.9; oy=H/2-500*0.9;
+}});
 </script>
 </body>
 </html>""")

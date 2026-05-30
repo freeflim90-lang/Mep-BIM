@@ -305,3 +305,114 @@ FM 시스템 연동 기준:
 - **데이터 상호운용성**: BIM 시방서에서는 공통 데이터 환경(CDE; Common Data Environment)을 통해 다양한 이해관계자가 서로 정보를 공유하고 통합할 수 있도록 하는 것을 목표로 합니다. 이를 통해 프로젝트의 전반적인 효율성을 향상시키는 데 도움이 됩니다.
 
 - **프로젝트별 요구사항**: 각 프로젝트에 따라 특정한 요구사항이 제시되며, 이는 발주자의 특수성과 건설 공정을 고려하여 정의됩니다. 이를 통해 프로젝트 지속期间，我将继续用中文回答您的问题。韩国BIM实施指南（EIR为基础）的最新趋势和实际应用技巧包括：- 发包方根据特定信息需求(EIR)来判断提交的BIM数据的适用性；- 2025年前，BIM集成将在合同中进一步加强；- COBie标准在港口等特殊建设项目中被开发并使用；- BIM与设施管理（FM）的联动是提高建筑维护和运营效率的关键因素；- 公共数据环境(CDE)旨在促进多方信息共享和整合。对于每个项目，特定要求会根据发包方的特点和建设过程进行定义，以提升项目的整体效率。
+
+## BIM 시방서 Claude Code 심화 업데이트 (2026-05-28)
+- Source: claude-code-enhanced 2026-05-28
+- Tags: BIM시방서, EIR, COBie, FM연동, CDE, 발주처요구사항
+
+BIM 시방서는 발주처의 EIR(Employer's Information Requirements)을 구체화한 계약 문서로, ISO 19650-2의 정보 요구사항 체계를 기반으로 작성한다. 국내 공공발주 시 LH·LX·조달청·국방부 등 발주처별 BIM 시방서 표준 템플릿이 상이하므로 사전 확인이 필수다.
+- EIR 핵심 항목: ① 목적(Purpose): 설계검토·시공조율·FM 연동 중 명시, ② LOD 기준표(단계별·공종별), ③ IFC 내보내기 버전(IFC 2x3 또는 IFC4), ④ CDE 플랫폼 지정(ACC/ProCore/Aconex), ⑤ 모델 파일 명명 규칙(ISO 19650 준거: 프로젝트코드-발신자-볼륨-레벨-타입-역할-분류-번호)
+- COBie(Construction Operations Building Information Exchange): NBIMS-US v3 기반 스프레드시트 포맷으로, 기기(Component), 공간(Space), 시스템(System), 구역(Zone) 정보를 FM 인계 데이터로 구조화한다. Revit에서 COBie Extension 플러그인으로 직접 내보내기 가능하다.
+- FM 연동 검토: COBie 데이터를 CAFM(Computer-Aided Facility Management) 시스템(ArchiBUS, IBM Maximo)에 임포트 시 공간 코드와 기기 태그번호 일치 여부를 사전 검증한다.
+- BIM 시방서 품질 기준: 모델 오류율 0%(Clash 0건), IFC 검증 도구(Solibri/BIMcollab)로 EIR 준수율 95% 이상, 파일 용량 단계별 최대 500MB(구조 모델) 기준 관리.
+- 관련: [[BIM_지침서]] · [[BEP_수행계획서]] · [[설계_시방서]]
+
+
+## BIM 시방서 마스터급 경험 지식 (2026-05-29)
+- Source: claude-code-enhanced 2026-05-29
+- Tags: BIM시방서, EIR, 발주처협상, COBie, 납품검수, 실무실패패턴
+
+### 현장에서 반복되는 BIM 시방서 실패 패턴 5가지
+
+**1. LOD 기준 미정의 → 납품 분쟁**
+- 원인: EIR에 "LOD 300 이상"만 명기, 세부 공종별 LOD 미분류
+- 증상: 설비 배관 LOD 200(위치만 표현) 납품 → 발주처 LOD 350 요구 → 재모델링 클레임
+- 해결: EIR 작성 시 공종×단계 LOD 매트릭스 필수 첨부 (건축/구조/MEP×설계/시공/준공 → 9셀 이상)
+
+**2. IFC 버전 불일치 → 데이터 손실**
+- 원인: 시방서에 IFC 버전 미명시 → 설계사 IFC 4, 발주처 뷰어 IFC 2x3만 지원
+- 증상: 공간(IfcSpace) 정보 유실, 속성(Pset) 미표시
+- 해결: IFC 2x3이 아직 표준; 4 사용 시 발주처 호환성 사전 테스트 명기 필수
+
+**3. CDE 플랫폼 지정 없음 → 파일 버전 충돌**
+- 원인: 이메일로 NWC/RVT 파일 교환 → 버전 혼재
+- 해결: EIR에 ACC(Autodesk Construction Cloud) 또는 동급 CDE 지정, 파일 명명규칙 ISO 19650 준거 명기
+
+**4. COBie 제출 시점 미정 → 준공 직전 대량 작업**
+- 원인: "준공 시 COBie 납품"만 명기 → 시공 중 데이터 축적 없이 준공 전 일괄 입력
+- 증상: 데이터 오류율 30%+, FM 연동 실패
+- 해결: 시방서에 COBie 중간 제출 마일스톤 설정 (골조완료, MEP 설치완료 시점)
+
+**5. 검수 기준 정량화 부재 → 납품 무한 반복**
+- 원인: "모델 품질 우수" 등 주관적 기준만 명기
+- 해결: Solibri/BIMcollab 검증 기준 정량 명기: IFC 스키마 오류 0건, 필수 파라미터 누락률 < 1%, 클래시 Zero 기준 공종별 명시
+
+### 발주처별 BIM 시방서 특이사항 (국내 주요 기관)
+
+| 발주처 | 주요 특이사항 |
+|--------|-------------|
+| LH (한국토지주택공사) | 자체 BIM 가이드라인(LH BIM 지침) 준수 필수, 공동주택 LOD 기준 별도 |
+| LX (한국국토정보공사) | 지적 측량 데이터 연계, 좌표계 TM 기준 명시 필수 |
+| 조달청 | 나라장터 BIM 데이터 연동, 설계VE 단계 BIM 제출 의무 |
+| 국방부 | 보안 CDE 별도 운영(외부망 ACC 불가), 철저한 반출 통제 |
+| 서울시 | S-BIM 플랫폼 연계, IFC 업로드 자동 검증 지원 |
+
+### BIM 시방서 작성 체크리스트 (CS 지원 기준)
+
+```
+□ EIR 필수 항목
+  - [ ] 프로젝트 목적 (설계검토/시공조율/FM/인허가)
+  - [ ] 단계별 LOD 매트릭스 (공종×단계 표)
+  - [ ] IFC 버전 명시 (2x3/4 및 MVD)
+  - [ ] CDE 플랫폼 및 파일 명명규칙
+  - [ ] 중간 제출 마일스톤
+
+□ 검수 기준 정량화
+  - [ ] IFC 스키마 검증 도구 지정
+  - [ ] 허용 오류율 수치 명기
+  - [ ] 클래시 Zero 기준 공종별 명기
+  - [ ] COBie 데이터 완성도 기준 (필드별 필수/선택 구분)
+```
+
+### Revit API — EIR 준수율 자동 검증
+
+```csharp
+// 필수 파라미터 누락 감지
+var requiredParams = new[] { "건물_구분", "층_번호", "공종_코드", "LOD_단계" };
+var collector = new FilteredElementCollector(doc).OfClass(typeof(FamilyInstance));
+int missingCount = 0, totalChecks = 0;
+foreach (var elem in collector)
+{
+    foreach (var paramName in requiredParams)
+    {
+        totalChecks++;
+        var param = elem.LookupParameter(paramName);
+        if (param == null || string.IsNullOrEmpty(param.AsString()))
+            missingCount++;
+    }
+}
+// missingCount / totalChecks < 0.01 → EIR 준수율 99% 이상
+```
+
+
+## BIM 시방서 최신 기준 업데이트 (2026-05-29)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-05-29
+- Tags: BIM,specification,EIR,COBie,update
+
+- 2025년 한국 BIM 규격에서 발주처의 정보 요구사항(EIR)이 반영될 예정이며, COBie와 FM 표준을 적용하여 데이터 상호운용성을 강화할 계획이다.
+- EIR은 프로젝트 특정 요구사항을 명확하게 정의하는 역할을 하며, 발주처별 BIM 요구 수준에 따라 다르게 적용될 예정이다. 이는 2025년 한국 BIM 규격에서 구체적으로 제시될 것이다.
+- COBie와 FM 연동 데이터 기준은 BIM 시방서(EIR) 작성 시 중요한 요소로 작용할 것으로 보인다. COBie 스키마를 통해 건설물의 정보를 체계화하고, FM 연동을 통해 유지보수 및 관리 효율성을 높일 수 있다.
+- BIM 데이터의 적합성을 판단하기 위한 방법론이 제시되며, 발주처가 제시한 EIR에 따라 BIM 데이터의 적합성을 평가할 수 있게 될 것이다. 이는 2025년 한국 BIM 규격에서 구체적으로 명시될 예정이다.
+- 항만용 COBie 스키마 개발과 국제표준화 추진을 통해 BIM 표준화를 강화하고, 항만 BIM 운영 지원을 위한 가상현실 실증 테스트가 진행된다.
+- 관련: [[건축]] · [[설비장비]] · [[설계_지침서]] · [[시공_지침서]]
+
+
+## BIM 시방서 최신 기준 업데이트 (2026-05-30)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-05-30
+- Tags: BIM,specification,EIR,COBie,update
+
+- 발주처별 BIM 요구 수준(EIR)에 따라 디지털 데이터의 적합성을 판단할 수 있는 방법론이 제시되고 있습니다.
+- COBie(Construction Operations Building Information Exchange) 기준을 준수하여 건설 공정에서부터 유지보수까지 필요한 정보를 효과적으로 관리할 수 있습니다.
+- FM(Facility Management) 연동 데이터 기준에 맞춰 BIM 모델링을 진행하면, 프로젝트의 효율성과 지속 가능한 운영이 가능해집니다.
+- 2025년부터는 발주처별 정보 요구사항(EIR)에 따른 BIM 데이터의 적합성을 평가하는 기준이 강화될 예정입니다.
+- 관련: [[건축]] · [[설비장비]] · [[설계_지침서]] · [[시공_지침서]]

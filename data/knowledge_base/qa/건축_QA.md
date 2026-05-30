@@ -173,3 +173,278 @@ GTX-A 노선과 관련된 무역센터 리모델링 프로젝트에서는 철근
 [📚 지식 베이스 (score 29) + 🔍 웹 검색 보강]
 
 철근 누락은 시공 기간 연장이나 비용 증가 등의 부수적 영향을 줄 수 있으므로, 이를 대응하기 위한 계획을 마련하는 것이 중요합니다. 하지만 현재까지 알려진 정보로는 무역센터 리모델링 프로젝트와 GTX-A 노선 사이에 직접적인 영향은 없어 보입니다.
+
+
+## Q: 인천공항 제2터미널 연면적이 얼마야 (2026-05-28 08:23:40)
+- Source: search-assisted-qa
+- Tags: qa,auto-collect,revit-addin,search-assisted,knowledge-candidate,needs-review
+
+Status: needs-review
+
+Question:
+인천공항 제2터미널 연면적이 얼마야
+
+Draft answer:
+인천공항 제2터미널(T2)의 연면적은 약 38만 7000㎡입니다. 이는 서울 여의도공원 면적(21만㎡)의 약 20배 규모입니다.
+
+Search evidence:
+• [Tavily] Tavily AI 요약
+  The Incheon Airport Terminal 2 has a total floor area of 347,000 square meters. It was completed in 2018 and expanded to double the size of the original terminal. The expansion added a large, modern design with eco-friendly features.
+  출처: 
+
+• [Naver] 제2 여객터미널-인천국제공항
+  주차대행서비스 이용 시, 차량보관을 위한 별도의 주차장 예약은 불필요합니다. 성수기 차량 일시 집중 시, 불가피하게 임시주차장 및 화물청사주차장에 보관할 수 있습니다. 3층 도로는 주차대행 전면금지구간 입니다.
+  출처: https://www.airport.kr/ap_ko/961/subview.do
+
+• [Naver] 인천국제공항 제2여객터미널
+  개요 인천국제공항 제2여객터미널 은 연면적 380,000m 2 에 지하 2층, 지상 5층의 건물 로 지어졌다.... 영종도 북쪽 해안선을 따라 새로 건설된 도로로 가면 인천공항 제2터미널 이 모습이 드러난다. 두 동의...
+  출처: https://ko.wikipedia.org/wiki/%EC%9D%B8%EC%B2%9C%EA%B5%AD%EC%A0%9C%EA%B3%B5%ED%95%AD_%EC%A0%9C2%EC%97%AC%EA%B0%9D%ED%84%B0%EB%AF%B8%EB%84%90
+
+• [Naver] 편의 · 공공시설
+  제2여객터미널 3층 면세지역 291번 게이트 인근 ; 제2여객터미널 3층 면세지역 279번 게이트 인근 ; 제2여객터미널 3층 면세지역 220번 게이트 인근
+  출처: https://www.airport.kr/ap_ko/1008/subview.do?enc=Zm5jdDF8QEB8JTJGZmFjaWxpdHlJbmZvJTJGYXBfa28lMkYyNSUyRmxpc3QuZG8lM0ZzcmNoVGVybWluYWxJZCUzRFAwMyUyNnNyY2hDb2x1bW4lM0R1c2VyJTI2c3JjaExjbGFzJTNEMSUyNnNyY2hNbHNmYyUzRDE5JTI2c3JjaFNjbGFzJTNEMTkzJTI2c3JjaFdyZCUzRCUyNg%3D%3D
+
+• [Naver] 제2 여객터미널 - 인천국제공항
+  주차 가능 대수 ; 지상 4층 · 888대 가능 ; 지상 3층 · 319대 가능 ; 지상 2층 · 176대 가능 ; 지상 1층 · 만차 ; M 층 · 123대 가능
+  출처: https://www.airport.kr/ap_ko/966/subview.do
+
+• [Naver] [르포] 인천공항 2터미널, 양날개 달고 완전체로…&quot;아름답고 편한 공항...
+  제2터미널의 새 '날개'에는 60ｍ 길이의 일반 무빙워크 6개와 130ｍ 길이의 장거리 무빙워크 3개가 놓였다. 교통약자나 탑승 시간이 얼마 남지 않은 승객의 빠른 이동을 위해서는 현재 인천공항공사가 2대, 대한항공이 6대...
+  출처: https://n.news.naver.com/mnews/article/001/[LONG_ID_MASKED]?sid=102
+
+• [Naver] &quot;출국하러? 난 놀러 간다&quot;...인천공항 제2여객터미널
+  그런 점에서 지난 18일 새롭게 문을 연 '인천국제공항 제2여객터미널(T2)'은 해외로 떠나는 비행기에 몸을... T2가 서울 여의도공원(21만㎡) 20배에 이르는 연면적 38만7000㎡로 들어섰다지만, 출국장만 봐도 T1보다 크게 작다....
+  출처: https://n.news.naver.com/mnews/article/003/[LONG_ID_MASKED]?sid=103
+
+• [Naver] 여행의 시작과 끝, 인천국제공항 사람들
+  바로 인천국제공항이다. 연면적 5,606만㎡(약 1,700만 평) 규모의 인천국제공항은 하루 평균 20만 명의 여객이... 4조 3교대로 근무하는 계류장관리팀은 1조당 6~7명의 인원이 T1(제1여객터미널), T2(제2여객터미널), 탑승동...
+  출처: http://www.laborplus.co.kr/news/articleView.html?idxno=22361
+
+
+## Q: 인천공항 제2터미널 연면적이 얼마야`n`n답변 지침: 개장 당시 수치와 최신 확장 후 수치가 다를 수 있으면 (2026-05-28 08:26:18)
+- Source: search-assisted-qa
+- Tags: qa,auto-collect,revit-addin,search-assisted,knowledge-candidate,needs-review
+
+Status: needs-review
+
+Question:
+인천공항 제2터미널 연면적이 얼마야`n`n답변 지침: 개장 당시 수치와 최신 확장 후 수치가 다를 수 있으면 기준 시점을 구분해서 답하세요.
+
+Draft answer:
+인천공항 제2터미널의 연면적은 개장 당시 약 53,157.68㎡였습니다. 최신 확장 후의 수치는 제공된 정보로는 확인할 수 없습니다. 최근 자료를 참조하시면 정확한 값을 얻을 수 있습니다.
+
+Search evidence:
+• [Tavily] Tavily AI 요약
+  The Incheon International Airport Terminal 2 has a total floor area of 380,000 square meters. It opened on January 18, 2018. The terminal is designed to handle up to 52 million passengers annually.
+  출처: 
+
+• [Naver] 인천항 세관 통합검사장 신축사업
+  68 제2절 예비타당성조사... 91 2. 인천항 시설현...
+  출처: https://www.kdi.re.kr/file/download?atch_no=%2F3Ay2dvDRgPz2seBgvyyLg%3D%3D
+
+• [Naver] 인천항 아암물류2단지 조성사업
+  2016년도 예비타당성조사 보고서 인천항 아암물류2단지 조성사업 인천항 아암물류2단지 조성사업... 의뢰한 인천항 아암물류 단지 조성𰡔 사업𰡕 예비타당성조사의 최종보고서로 제출합니다 2016. 12....
+  출처: https://www.kdi.re.kr/file/download?atch_no=J1HzkA7KWGVTrU4UA8rZwg%3D%3D
+
+• [Naver] IFEZ - 인천경제자유구역청
+  가발계획 2. 단지벌 주요 프로젝트 3 기빈시설 즈성 추진현황 제2설 영중공항도시 개발계획 빛 추신현황 1. 개발계획 1. 금 항 3. 기빈시설 조성 추진현황 3. 광역교농당 R E E E C N Z 0 N E 262 제5장...
+  출처: https://www.ifez.go.kr/other/attach/process.file.do;JSESS=44622AD8EBF8D5CE6053EA246CB17E94?TP=dn&sn=61216&key=25067AEB45803AA
+
+• [Naver] 國土海洋委員會會議錄 第 2 號(附錄) 國 會 事 務 處
+  제303회-국토해양제2차(부록)(2011년10월26일) 1 第303回國會 (定期會) 國土海洋委員會會議錄 第 2 號(附錄) 國 會 事 務 處 日 時 2011年10月26日(水) 場 所 國土海洋委員會會議室 【서면질의․답변서】 (질의서)...
+  출처: https://record.assembly.go.kr/assembly/mnts/apdix/apdixDownload.do?fileId=570575
+
+• [Tavily] 인천국제공항 제2여객터미널(4단계) - 정림건축
+  53,157,681.00m2
+ ###### 연면적
+
+  735,305.05m2
+ ###### 건축면적
+
+  265,478.19m2
+ ###### 규모
+
+  지하 2층, 지상 5층
+ ###### 설계
+
+  스마트 R&D BU
+ ###### 컨소시엄
+
+  삼우종합건축사사무소, 간삼건축사사무소, 나우건축사사무소
+ ###### 참여
+
+  최승환, 이효성, 정목조, 김명진, 강창희, 기현철, 김용재, 손혜경, 신승수, 신학섭, 이상현, 이영한, 이종효, 정재선, 조성원
+
+인천국제공항 제2여객터미널 확장사업은 2001년 개항 이후 20여 년간
+  출처: https://junglim.com/incheon-international-airport-t2-phase4
+
+• [Tavily] 인천공항 제2의 개항 맞이
+  3단계 사업의 핵심은 단일 건물로 2조3000억원이 투입된 제2여객터미널이다. 제2여객터미널은 체크인과 보안검색, 세관검사, 검역, 탑승 등 출입국을 위한 모든 절차가 제1여객터미널과 별도로 이뤄진다.  
+　연면적 38만㎡로 롯데월드타워 32만㎡보다 큰 제2여객터미널은 철골재량만 7만4000여t으로 파리의 에펠탑 10개를 세울 수 있는 양이다. 지붕 면적은 16만2957㎡로 상암 월드컵경기장 전체 면적의 3배, 외장유리 면적도 9만7000㎡로 잠실야구장의 7배이다. 전선과 전력케이블은 2808㎞로 서울∼부산(456㎞)을 3회 왕복할
+  출처: https://airport.khan.kr/entry/%EC%A0%9C2%EC%97%AC%EA%B0%9D%ED%84%B0%EB%AF%B8%EB%84%90-%EA%B0%9C%EC%9E%A5%E2%80%A6%EC%9D%B8%EC%B2%9C%EA%B3%B5%ED%95%AD-%EC%A0%9C2%EC%9D%98-%EA%B0%9C%ED%95%AD
+
+• [Tavily] [르포 영상] 인천공항 2터미널, 양날개 달고 완전체로… “아름답고 편한 공항” | 한인포스트
+  제2터미널 확장은 지난 2017년 말부터 총 4조8천억원을 투입해 7년간 진행한 ‘인천공항 4단계 건설사업’의 핵심이다. 4번째 활주로를 신설하고, 계류장 75곳을 추가해 늘어나는 항공 수요에 대응하고, 인천공항의 글로벌 허브 기능을 강화하기 위한 목적이다. 제4활주로는 2021년 6월 먼저 건설을 마쳤다.
+
+제2터미널에는 터미널 북서쪽으로 각 750ｍ 길이의 ‘양 날개’가 달리면서 축구장 48개 크기, 연면적 34만㎡ 규모의 공간이 추가된다. 2018년 초 개항한 현재의 38만㎡ 규모에서 약 2배로 넓어지는 것이다.
+
+확장 지역을
+  출처: https://haninpost.com/archives/100637
+
+
+## Q: 4단계 확장 포함하면 연면적은 얼마야? (2026-05-28 08:28:04)
+- Source: search-assisted-qa
+- Tags: qa,auto-collect,revit-addin,search-assisted,knowledge-candidate,needs-review
+
+Status: needs-review
+
+Question:
+4단계 확장 포함하면 연면적은 얼마야?
+
+Draft answer:
+4단계 확장 포함하면 연면적 계산 시 계단 면적이 층마다 중복으로 반영됩니다. 예를 들어, 5㎡의 계단이 3층이라면 15㎡가 연면적으로 추가되겠죠. 베란다 확장을 고려해 계산해야 정확한 결과를 얻을 수 있습니다.
+
+Search evidence:
+• [Tavily] Tavily AI 요약
+  The total floor area of the 4th phase expansion of Incheon International Airport is 735,305.05 square meters. The expansion includes the construction of a new runway and the extension of Terminal 2. The project was completed in October 2024.
+  출처: 
+
+• [Naver] 연면적 계산 어디서부터 포함이 될까
+  설계 단계부터 정확한 연면적 계산이 정말 중요해요! 5. 실전 꿀팁 3가지 1. 계단·승강기 면적은 층마다 중복 포함돼요 : 계단 5㎡라도 3층이면 5×3=15㎡로 들어갑니다. 2. 베란다 확장 여부 꼭 체크하세요 : 확장된...
+  출처: https://blog.naver.com/vkool5645/[LONG_ID_MASKED]
+
+• [Naver] 건축법 내 도로법 '접도요건'
+  「건축법」에서 대지란 토지 중에서 건축물을 건축할 수 있는 토지를 의미합니다. 즉, 모든 토지에 건축물을 건축할 수 있는 것이 아닙니다. 「건축법」은 그 목적에도 밝히고 있듯이 건축물을 건축할 수 있는 땅(대지)의 요건을 규정하고 있으며(※대지 참고) 그 요건에 부합하지 않으면 건축행위를 할 수 없습니다. 이를 대지의 접도요건이라고 부르며 「건축법」 제44조 ‘대지...
+  출처: https://www.midascad.com/cad_archive/arhcitectrule-10
+
+• [Naver] 「공유재산 및 물품 관리법 시행령」 개정 설명회(1.31. 대전시청).pdf
+  사용되는 면적을 포함한다. &lt; 비 고 &gt; 1. 기준 면적은 해당 건축물의 연면적을 기준으로 계산하되, 다음... 4. 지방자치단체의 장은 제1호부터 제3호까지의 규정에도 불구하고 해당 지식재산의 사용료등을 산정할...
+  출처: https://mois.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_00074981JbuTp70&fileSn=0
+
+• [Naver] 새만금 간척 사업
+  2 )등을 포함하여 총 409km 2 면적(서울 면적의 2/3 규모)의 간척지를... 18선석, 4.8km 2 ) 및 남북․동서도로(총 43.57km) 등 기반시설... 산업연구용지 내에 새만금 산업단지가 일부 조성(1단계 총 18.5km 2 )되어 일본...
+  출처: https://ko.wikipedia.org/wiki/%EC%83%88%EB%A7%8C%EA%B8%88_%EA%B0%84%EC%B2%99_%EC%82%AC%EC%97%85
+
+• [Naver] [Who Is ?] 정민교 채비 대표이사
+  보호예수와 단계적 매각 원칙을 약속했다. △공모자금 1093억, 충전 인프라·해외 거점·운영 안정화에 배분 채비는 상장으로 확보한 순유입 자금 1093억 원 가량을 충전 인프라 확장, 채비스테이 거점 구축, 해외...
+  출처: https://www.businesspost.co.kr/BP?command=article_view&num=437550
+
+• [Naver] 250억에 시작한 예배당 건축, 500억 됐는데…교인들 &quot;완공 뒤 알았다&quot;
+  도림비전센터는 연면적 2만 4643㎡ 규모에 지하 5층, 지상 5층 크기 건물로, 본당에는 3000명을 수용할 수 있다.... 교인들은 건축 시작 당시 200억 원대가 들 거라는 얘기만 들었을 뿐 총 공사 비용이 얼마나 들었는지 알지...
+  출처: https://www.newsnjoy.or.kr/news/articleView.html?idxno=400400
+
+• [Naver] &quot;CDMO 글로벌 표준 도전장&quot;...BMI, 매출 1조 승부수 전략은
+  겨냥한 연면적 7,476㎡의 CDMO 전초기지다. 한국비엠아이 제주공장이 기존 생산과 매출을 책임지는 안정적... 오송공장은 필요 시 추가 증축을 통해 배양 규모를 확장할 수 있는 구조적 여유를 갖추고 있어 임상 단계에...
+  출처: https://www.pharmnews.com/news/articleView.html?idxno=301685
+
+
+## Q: 인천공한 제2터미널 최신 연면적이 궁금해 (2026-05-28 08:28:32)
+- Source: search-assisted-qa
+- Tags: qa,auto-collect,revit-addin,search-assisted,knowledge-candidate,needs-review
+
+Status: needs-review
+
+Question:
+인천공한 제2터미널 최신 연면적이 궁금해
+
+Draft answer:
+인천공항 제2여객터미널의 최신 연면적은 약 73.5만㎡입니다.
+
+Search evidence:
+• [Tavily] Tavily AI 요약
+  The latest area of Incheon Airport's Terminal 2 is 73.5 square meters. It opened in January 2018 and expanded in December 2024. The expansion increased its capacity and facilities.
+  출처: 
+
+• [Naver] 인천공항 창업, 제2여객터미널 확장공사 준공 세계 3위 규모
+  인천국제공항 제2여객터미널은 이번 4단계 공사를 통해 연면적 약 73.5만㎡, 연간수용능력 5,200만명... 공간과 최신 ICT 기술이 함께 조화를 이룬 터미널로 완성되었는데요. 이로써 인천공항은 225곳에서 동시에...
+  출처: https://blog.naver.com/kdy_3879/[LONG_ID_MASKED]
+
+• [Naver] (주)한화 건설부문, 인천공항 제2여객터미널 확장공사 준공… 앞선 기술력 선보여
+  인천국제공항 제2여객터미널은 이번 4단계 공사를 통해 연면적 약... 인천국제공항의 건물 내부는 친환경 공간과 최신 ICT 기술이 함께... 시공한 동편은 한국의 전통 정원을 테마로 창덕궁 승재정을 재현했다....
+  출처: http://www.ikld.kr/news/articleView.html?idxno=304579
+
+• [Naver] ㈜한화 건설부문, 인천국제공항 제2여객터미널 확장 공사 준공
+  인천국제공항 제2여객터미널은 이번 4단계 공사를 통해 연면적 약... 인천국제공항 건물 내부는 친환경 공간과 최신 정보통신기술(ICT)이... 시공한 동편은 한국의 전통 정원을 테마로 창덕궁 승재정을 재현했다....
+  출처: http://www.newscape.co.kr/news/articleView.html?idxno=107826
+
+• [Naver] 다락휴 | 인천공항 제2여객터미널
+  인천공항 캡슐 호텔은 긴 여행에 지친 몸을 어우르며 편안한 휴식을 취할 수 있도록, 전통적인 인테리어 디자인에 독립된 공간에서 느낄 수 있는 안락함까지 모두 담았습니다.
+  출처: https://www.walkerhill.com/darakhyu/t2/kr/about/Introduction.jsp
+
+• [Tavily] 공항건설 - 인천국제공항공사
+  단계별 주요 시설물 (1·2·3단계 계류장 및 기타시설물 표기 생략)
+
+## 인천공항의 현재
+
+인천공항의 현재 - 구분, 현재
+
+     | 구분 | 현재 |
+| 터미널 면적 | 제1 여객터미널 | 50.7만㎡ |
+| 제2 여객터미널 | 73.5만㎡ |
+| 탑승동 | 16.6만㎡ |
+| 연간처리능력 | 여객 | 1억 600만명 |
+| 화물 | 630만톤 |
+| 운항 | 60만회 |
+| 활주로 제원 | 제1·2활주로(1단계) | 3,750x60m |
+| 제3활주로(2단계) | 4,000x60m |
+| 제4활주로(4단계) | 3,750
+  출처: https://www.airport.kr/co_ko/767/subview.do
+
+• [Tavily] 인천국제공항 제2여객터미널 (r44 판) - 나무위키
+  |  |  |
+ --- |
+| 층 | 제2여객터미널 |
+| 일반구역 | 면세구역 |
+| 5F | 인천공항 홍보전망대 
+| 4F | 전문식당가, 항공사 사무실 | 라운지, 푸드코트 |
+| 3F | 출국장 | 출국장 면세점, 탑승구 208~291, 직행셔틀 |
+| 2F | 정부종합행정센터, 상주기관 사무실 | 도착게이트 |
+| 1F | 입국장 | 입국장 면세점 |
+| B1F | 전문식당가, 교통센터 통로 | 셔틀트레인 |
+
+1. 개요2. 체크인 카운터3. 교통센터4. 은행, ATM, 환전소, 우체국5. 음식점, 카페, 편의점, 약국6.
+  출처: https://namu.wiki/w/%EC%9D%B8%EC%B2%9C%EA%B5%AD%EC%A0%9C%EA%B3%B5%ED%95%AD%20%EC%A0%9C2%EC%97%AC%EA%B0%9D%ED%84%B0%EB%AF%B8%EB%84%90?uuid=8d480718-54ad-43e7-9ce3-8cd43ef5e9a0
+
+• [Tavily] 어서 와, 인천국제공항 제2여객터미널(T2)은 처음이지?> 여행기사
+  여행 마니아에게 최고의 음식은 기내식이다. 하늘에서 먹는 소박한 한 끼만큼이나 여행자를 들뜨게 하는 건 공항의 이국적인 공기다. 여행의 시작과 끝을 알리는 공항은 그 나라, 그 도시의 첫인상이기도 하다. 2001년 개항 이래 세계 공항서비스 평가에서 12년 연속 1위를 하며 세계인들에게 인정받은 인천국제공항이 2018년 제2여객터미널을 공식 개장했다. 2009년 공사에 착수한 지 9년 만에 문을 연 제2여객터미널은 아트포트(Artport·Art+Airport) 개념 의 엔터테인먼트 공간으로 꾸며져 볼거리, 즐길 거리가 가득하다. 더
+  출처: https://korean.visitkorea.or.kr/detail/rem_detail.do?cotid=9cc5925e-575a-4350-a524-ab65322bd9cf
+
+
+## Q: 인천공항 제2터미널 연면적은 얼마야? (2026-05-28 09:23:39)
+- Source: telegram-qa
+- Tags: qa,auto-collect
+
+[📚 지식 베이스 (score 36) + 🔍 웹 검색 보강]
+
+인천공항 제2터미널의 연면적은 약 38만 7000㎡입니다. 이는 서울 여의도공원 면적의 약 20배 규모입니다.
+
+
+## Q: 인천공항 제2터미널 최신 여면적이 궁금했어 (2026-05-28 09:25:50)
+- Source: telegram-qa
+- Tags: qa,auto-collect
+
+[📚 지식 베이스 (score 36) + 🔍 웹 검색 보강]
+
+인천공항 제2터미널의 연면적은 약 40만㎡입니다. 이数值是基于提供的参考知识进行的翻译，但为了更准确地回答问题，我们可以进一步明确：
+
+制2终端楼的建筑面积约为40万平方米。由于没有最新的扩展数据，这个面积应该是最近的数据。
+
+如需最新数据，请查阅相关官方资料或更新的信息来源。
+
+
+## Q: 한국어로 답변해줘 (2026-05-28 09:26:07)
+- Source: telegram-qa
+- Tags: qa,auto-collect
+
+[🔍 웹 검색]
+
+해당 참고 자료는 TikTok에서 'Whatismycursedontexplain'과 관련된 영상들을 탐색하는 내용으로 보입니다. 만약 이와 관련이 없다면, 좀 더 구체적인 질문이나 필요로 하는 정보를 알려주시면 도움을 드리겠습니다.
+
+
+## Q: lua bim labs 첫번째 런칭한 상품 소개해줘 (2026-05-29 19:24:08)
+- Source: telegram-qa
+- Tags: qa,auto-collect
+
+[📚 지식 베이스 (score 35) + 🔍 웹 검색 보강]
+
+lua bim labs의 첫 번째 런칭 상품은 MEP BIM 전문 어시스턴트 기능입니다. 이 제품은 건설 및 인프라 프로젝트에서 MEP ( Mechanical, Electrical, Plumbing ) 설계를 위한 자동화된 도구들을 제공합니다. 이를 통해 엔지니어들은 시간과 노력을 줄이고, 정확도를 높일 수 있습니다.

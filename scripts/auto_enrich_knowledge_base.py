@@ -840,6 +840,40 @@ KB_TOPICS: dict[str, dict] = {
 
 
 # ---------------------------------------------------------------------------
+# 태그 유사도 기반 관련 토픽 사전 계산
+# ---------------------------------------------------------------------------
+_STOP_TAGS = {"update"}
+
+
+def _build_related_map() -> dict[str, list[str]]:
+    """KB_TOPICS 태그 overlap으로 각 파일의 관련 파일 top-5를 사전 계산."""
+    tag_sets: dict[str, set[str]] = {}
+    for stem, topic in KB_TOPICS.items():
+        raw = topic.get("tags", "")
+        tag_sets[stem] = {
+            t.strip() for t in raw.split(",")
+            if t.strip() and t.strip() not in _STOP_TAGS
+        }
+    stems = list(tag_sets.keys())
+    related: dict[str, list[str]] = {}
+    for stem in stems:
+        my_tags = tag_sets[stem]
+        if not my_tags:
+            related[stem] = []
+            continue
+        scores = [
+            (len(my_tags & tag_sets[other]), other)
+            for other in stems if other != stem
+        ]
+        scores.sort(key=lambda x: -x[0])
+        related[stem] = [s for score, s in scores if score > 0][:5]
+    return related
+
+
+RELATED_MAP = _build_related_map()
+
+
+# ---------------------------------------------------------------------------
 # 멀티 엔진 병렬 검색 (Naver + Tavily + Google CSE + DuckDuckGo)
 # ---------------------------------------------------------------------------
 
@@ -1070,12 +1104,17 @@ def needs_update(kb_file: Path) -> bool:
 # ---------------------------------------------------------------------------
 # KB 파일에 섹션 append
 # ---------------------------------------------------------------------------
-def append_section(kb_file: Path, title: str, tags: str, body: str) -> None:
+def append_section(kb_file: Path, title: str, tags: str, body: str, stem: str) -> None:
+    related_stems = RELATED_MAP.get(stem, [])[:4]
+    related_line = ""
+    if related_stems:
+        links = " · ".join(f"[[{s}]]" for s in related_stems)
+        related_line = f"\n- 관련: {links}"
     section = (
         f"\n\n## {title} ({TODAY})\n"
         f"- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama {TODAY}\n"
         f"- Tags: {tags}\n\n"
-        f"{body}\n"
+        f"{body}{related_line}\n"
     )
     with kb_file.open("a", encoding="utf-8") as f:
         f.write(section)
@@ -1124,7 +1163,7 @@ def main() -> None:
         if not kb_file.exists():
             kb_file.write_text(f"# {stem} 지식 베이스\n", encoding="utf-8")
 
-        append_section(kb_file, topic["title"], topic["tags"], body)
+        append_section(kb_file, topic["title"], topic["tags"], body, stem)
         log(f"    → 완료 ({len(body)}자)")
         updated += 1
 
