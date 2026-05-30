@@ -27,6 +27,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SOURCE_CONFIG = PROJECT_ROOT / "config" / "daily_industry_briefing_sources.json"
 REPORT_DIR = PROJECT_ROOT / "docs" / "industry_intelligence" / "daily"
 KB_FILE = PROJECT_ROOT / "data" / "knowledge_base" / "산업동향_데일리브리핑.md"
+SENT_STATE_FILE = PROJECT_ROOT / "runtime" / "daily_industry_briefing_sent_state.json"
 USER_AGENT = "LUA-BIM-LAB-Daily-Briefing/1.0"
 
 FOCUS_KEYWORDS = [
@@ -161,6 +162,126 @@ def clean_google_news_url(url: str) -> str:
     # Google News RSS URLs are acceptable as source links. Keep the original if
     # the canonical URL is not easily exposed.
     return url
+
+
+def normalize_title_key(title: str) -> str:
+    return re.sub(r"\W+", "", title.lower())[:140]
+
+
+def normalize_url_key(url: str) -> str:
+    if not url:
+        return ""
+    parsed = urllib.parse.urlsplit(url)
+    query = urllib.parse.parse_qsl(parsed.query, keep_blank_values=True)
+    filtered_query = [
+        (key, value)
+        for key, value in query
+        if not key.lower().startswith("utm_") and key.lower() not in {"fbclid", "gclid"}
+    ]
+    return urllib.parse.urlunsplit(
+        (
+            parsed.scheme.lower(),
+            parsed.netloc.lower(),
+            parsed.path.rstrip("/"),
+            urllib.parse.urlencode(filtered_query),
+            "",
+        )
+    )
+
+
+def item_fingerprint(item: FeedItem) -> dict[str, str]:
+    return {
+        "url": normalize_url_key(item.url),
+        "title": normalize_title_key(item.title),
+    }
+
+
+def seed_sent_state_from_reports() -> dict:
+    state = {
+        "version": 1,
+        "seeded_from_reports": True,
+        "seen_urls": [],
+        "seen_titles": [],
+        "sent_items": [],
+    }
+    seen_urls: set[str] = set()
+    seen_titles: set[str] = set()
+    sent_items: list[dict[str, str]] = []
+    if not REPORT_DIR.exists():
+        return state
+
+    row_re = re.compile(r"^\|\s*\d+\s*\|\s*[^|]*\|\s*(.*?)\s*\|.*?\[link\]\((.*?)\)\s*\|")
+    for path in sorted(REPORT_DIR.glob("*_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md")):
+        for line in path.read_text(encoding="utf-8", errors="ignore").splitlines():
+            match = row_re.match(line)
+            if not match:
+                continue
+            title = strip_html(match.group(1)).strip()
+            url = match.group(2).strip()
+            url_key = normalize_url_key(url)
+            title_key = normalize_title_key(title)
+            if url_key:
+                seen_urls.add(url_key)
+            if title_key:
+                seen_titles.add(title_key)
+            sent_items.append({
+                "date": path.name[:10],
+                "title": title,
+                "url": url,
+            })
+    state["seen_urls"] = sorted(seen_urls)
+    state["seen_titles"] = sorted(seen_titles)
+    state["sent_items"] = sent_items[-500:]
+    return state
+
+
+def load_sent_state() -> dict:
+    if SENT_STATE_FILE.exists():
+        return json.loads(SENT_STATE_FILE.read_text(encoding="utf-8"))
+    return seed_sent_state_from_reports()
+
+
+def save_sent_state(state: dict) -> None:
+    SENT_STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
+    state["seen_urls"] = sorted(set(state.get("seen_urls", [])))
+    state["seen_titles"] = sorted(set(state.get("seen_titles", [])))
+    state["sent_items"] = state.get("sent_items", [])[-500:]
+    SENT_STATE_FILE.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def filter_new_items(items: list[FeedItem], state: dict) -> list[FeedItem]:
+    seen_urls = set(state.get("seen_urls", []))
+    seen_titles = set(state.get("seen_titles", []))
+    fresh: list[FeedItem] = []
+    for item in items:
+        keys = item_fingerprint(item)
+        if keys["url"] and keys["url"] in seen_urls:
+            continue
+        if keys["title"] and keys["title"] in seen_titles:
+            continue
+        fresh.append(item)
+    return fresh
+
+
+def mark_items_sent(items: list[FeedItem], state: dict, today: str) -> None:
+    seen_urls = set(state.get("seen_urls", []))
+    seen_titles = set(state.get("seen_titles", []))
+    sent_items = list(state.get("sent_items", []))
+    for item in items:
+        keys = item_fingerprint(item)
+        if keys["url"]:
+            seen_urls.add(keys["url"])
+        if keys["title"]:
+            seen_titles.add(keys["title"])
+        sent_items.append({
+            "date": today,
+            "source": item.source,
+            "title": item.title,
+            "url": item.url,
+        })
+    state["seen_urls"] = sorted(seen_urls)
+    state["seen_titles"] = sorted(seen_titles)
+    state["sent_items"] = sent_items[-500:]
 
 
 def score_item(title: str, summary: str, category: str) -> tuple[int, list[str]]:
@@ -358,7 +479,17 @@ def run(send: bool) -> Path:
     append_knowledge_base(today, report_path, selected)
 
     if send:
-        send_telegram(telegram_message(today, selected))
+        sent_state = load_sent_state()
+        new_items = filter_new_items(selected, sent_state)
+        telegram_items = new_items[:7]
+        if telegram_items:
+            if send_telegram(telegram_message(today, telegram_items)):
+                mark_items_sent(telegram_items, sent_state, today)
+                save_sent_state(sent_state)
+                print(f"telegram_new_items={len(telegram_items)} skipped_duplicates={len(selected) - len(new_items)}")
+        else:
+            save_sent_state(sent_state)
+            print(f"telegram=skipped reason=no_new_items skipped_duplicates={len(selected)}")
 
     print(f"report={report_path}")
     print(f"items={len(selected)} failures={len(failures)}")

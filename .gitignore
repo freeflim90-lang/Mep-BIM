@@ -27,6 +27,7 @@ scripts/outbound_sales/data/*.db
 scripts/outbound_sales/.venv/
 config/blogger/client_secret.json
 config/blogger/token.json
+runtime/daily_industry_briefing_sent_state.json
 
 # OS
 .DS_Store
