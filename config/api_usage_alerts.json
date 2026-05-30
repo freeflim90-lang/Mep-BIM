@@ -1,0 +1,19 @@
+{
+  "threshold_step_percent": 10,
+  "monitors": [
+    {
+      "id": "example_free_api",
+      "name": "Example Free API",
+      "enabled": false,
+      "period": "monthly",
+      "limit": 1000000,
+      "unit": "tokens",
+      "reset_hint": "monthly reset",
+      "source": {
+        "type": "json",
+        "path": "runtime/example_free_api_usage.json",
+        "used_key": "used"
+      }
+    }
+  ]
+}
