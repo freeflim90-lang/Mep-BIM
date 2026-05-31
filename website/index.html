@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<title>LUA BIM LABS — MEP Studio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="건물의 보이지 않는 흐름, 정확히 그립니다. MEP 설계·모델링·컨설팅·교육·자동화 전문 스튜디오."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Noto+Serif+KR:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet"/>
+<style>
+:root {
+  --bg:       #14161a;
+  --bg-2:     #1e2024;
+  --bg-3:     #252830;
+  --ink:      #f0ebe1;
+  --ink-soft: rgba(240,235,225,.7);
+  --ink-mute: rgba(240,235,225,.45);
+  --rule:     rgba(240,235,225,.14);
+  --accent:   oklch(0.72 0.12 50);
+  --paper:    #fbf8f1;
+  --f-display-en: "Instrument Serif","Noto Serif KR",serif;
+  --f-display-kr: "Noto Serif KR","Instrument Serif",serif;
+  --f-body: "Pretendard","Apple SD Gothic Neo",ui-sans-serif,system-ui,sans-serif;
+  --f-mono: "JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+html { scroll-behavior:smooth; scroll-snap-type: y mandatory; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--f-body);
+  -webkit-font-smoothing: antialiased;
+  padding-top: 132px;
+}
+
+
+/* ── TOP BAR ── */
+#top-bar {
+  background: var(--bg-2);
+  border-bottom: 1px solid var(--rule);
+  position: fixed; top: 0; left:0; right:0; z-index: 101;
+}
+.top-bar-inner {
+  display: flex; align-items: center; justify-content: center;
+  gap: 16px; padding: 14px 60px; height: 68px;
+  text-decoration: none; color: var(--ink-soft);
+  transition: background .2s;
+}
+.top-bar-inner:hover { background: rgba(240,235,225,.04); }
+.top-bar-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: oklch(0.68 0.15 145); flex-shrink: 0;
+  box-shadow: 0 0 6px oklch(0.68 0.15 145);
+}
+.top-bar-text {
+  font-family: var(--f-mono); font-size: 13px; letter-spacing: .08em;
+}
+.top-bar-qr-wrap {
+  padding: 4px; border: 1px solid var(--rule); border-radius: 4px;
+  background: var(--bg); line-height: 0;
+}
+.top-bar-qr { width: 40px; height: 40px; display: block; }
+.top-bar-arrow {
+  font-family: var(--f-mono); font-size: 12px; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--ink-mute);
+}
+@media(max-width:900px) {
+  .top-bar-inner { padding: 14px 24px; gap: 10px; height: 68px; }
+  .top-bar-arrow { display: none; }
+}
+
+
+/* ── PROFILE ── */
+.profile-grid {
+  display:grid; grid-template-columns:1fr 2fr; gap:80px; align-items:start; margin-top:56px;
+}
+.profile-card {
+  border:1px solid var(--rule); border-radius:8px; padding:32px;
+  background:var(--bg-2); display:flex; flex-direction:column; gap:20px;
+}
+.profile-avatar {
+  width:80px; height:80px; border-radius:50%;
+  background:var(--bg-3); border:1px solid var(--rule);
+  display:flex; align-items:center; justify-content:center;
+  font-family:var(--f-display-en); font-size:32px; font-style:italic;
+  color:var(--ink-soft);
+}
+.profile-name { font-family:var(--f-display-kr); font-weight:500; font-size:32px; letter-spacing:-.02em; }
+.profile-title { font-family:var(--f-mono); font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-mute); }
+.profile-meta { display:flex; flex-direction:column; gap:8px; }
+.profile-meta-row { display:flex; gap:12px; align-items:baseline; }
+.profile-meta-row .k { font-family:var(--f-mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-mute); width:60px; flex-shrink:0; }
+.profile-meta-row .v { font-size:15px; color:var(--ink-soft); }
+.profile-bio { font-size:17px; line-height:1.75; color:var(--ink-soft); word-break:keep-all; }
+.profile-skills { display:flex; gap:8px; flex-wrap:wrap; }
+.profile-skill {
+  font-family:var(--f-mono); font-size:11px; letter-spacing:.08em;
+  padding:6px 12px; border:1px solid var(--rule); border-radius:999px;
+  color:var(--ink-mute);
+}
+
+/* ── PROJECTS ── */
+.proj-filter { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:32px; }
+.proj-filter-btn {
+  font-family:var(--f-mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase;
+  padding:7px 16px; border:1px solid var(--rule); border-radius:999px;
+  color:var(--ink-mute); cursor:pointer; background:none; transition:all .2s;
+}
+.proj-filter-btn.active, .proj-filter-btn:hover {
+  border-color:var(--ink); color:var(--ink); background:rgba(240,235,225,.06);
+}
+.proj-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:0; border-top:2px solid var(--ink); }
+.proj-card {
+  padding:28px 24px 28px 0; border-right:1px solid var(--rule); border-bottom:1px solid var(--rule);
+  display:flex; flex-direction:column; gap:10px; transition:background .2s;
+}
+.proj-card:nth-child(3n) { border-right:none; }
+.proj-card:not(:nth-child(3n+1)) { padding-left:24px; padding-right:0; }
+.proj-cat {
+  font-family:var(--f-mono); font-size:10px; letter-spacing:.12em; text-transform:uppercase;
+  padding:3px 8px; border-radius:999px; display:inline-block; width:fit-content;
+}
+.proj-cat.commercial { background:rgba(240,180,60,.12); color:rgba(240,180,60,.8); border:1px solid rgba(240,180,60,.2); }
+.proj-cat.infra { background:rgba(100,160,240,.12); color:rgba(100,160,240,.8); border:1px solid rgba(100,160,240,.2); }
+.proj-cat.plant { background:rgba(160,100,240,.12); color:rgba(160,100,240,.8); border:1px solid rgba(160,100,240,.2); }
+.proj-no { font-family:var(--f-mono); font-size:11px; color:var(--ink-mute); }
+.proj-name { font-family:var(--f-display-kr); font-weight:500; font-size:22px; letter-spacing:-.015em; line-height:1.2; word-break:keep-all; }
+.proj-role { font-family:var(--f-mono); font-size:11px; color:var(--ink-mute); letter-spacing:.06em; }
+.proj-desc { font-size:14px; line-height:1.6; color:var(--ink-soft); word-break:keep-all; }
+@media(max-width:900px) {
+  .profile-grid { grid-template-columns:1fr; gap:40px; }
+  .proj-grid { grid-template-columns:1fr 1fr; }
+  .proj-card:nth-child(3n) { border-right:1px solid var(--rule); }
+  .proj-card:nth-child(2n) { border-right:none; }
+}
+@media(max-width:600px) {
+  .proj-grid { grid-template-columns:1fr; }
+  .proj-card { border-right:none !important; padding-left:0 !important; }
+  html { scroll-snap-type: none; }
+  section { min-height: auto; scroll-snap-align: none; }
+}
+
+
+/* ── PROJECT CARD IMAGE ── */
+.proj-img {
+  width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:4px;
+  background:var(--bg-3); display:block; margin-bottom:4px;
+  filter:brightness(.85) saturate(.9);
+  transition:filter .3s;
+}
+.proj-card:hover .proj-img { filter:brightness(.95) saturate(1); }
+
+
+/* ── NAV ── */
+nav {
+  position: fixed; top:68px; left:0; right:0; z-index:100;
+  display:flex; align-items:center; justify-content:space-between;
+  padding: 20px 60px;
+  background: rgba(20,22,26,.88);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--rule);
+}
+.nav-logo {
+  display:flex; align-items:center; gap:12px;
+  font-family: var(--f-mono); font-size:15px; letter-spacing:.1em;
+  color: var(--ink); text-decoration:none;
+}
+.nav-logo svg { width:28px; height:28px; }
+.nav-links { display:flex; gap:36px; align-items:center; }
+.nav-links a {
+  font-family: var(--f-mono); font-size:13px; letter-spacing:.1em;
+  color: var(--ink-mute); text-decoration:none; text-transform:uppercase;
+  transition: color .2s;
+}
+.nav-links a:hover { color: var(--ink); }
+.nav-cta {
+  padding:9px 20px;
+  border:1px solid var(--rule);
+  border-radius:999px;
+  color: var(--ink) !important;
+  background: rgba(240,235,225,.06);
+  transition: background .2s !important;
+}
+.nav-cta:hover { background: rgba(240,235,225,.14) !important; }
+
+/* ── SECTIONS ── */
+section {
+  padding: 80px 60px;
+  scroll-margin-top: 132px;
+  min-height: calc(100vh - 132px);
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.s-label {
+  font-family: var(--f-mono); font-size:13px; letter-spacing:.16em;
+  text-transform:uppercase; color: var(--ink-mute); margin-bottom:28px;
+}
+.s-title {
+  font-family: var(--f-display-kr); font-weight:500;
+  font-size: clamp(48px,6vw,84px);
+  line-height:1.05; letter-spacing:-.025em;
+  word-break:keep-all;
+}
+.s-title em {
+  font-family: var(--f-display-en);
+  font-style:italic; font-weight:400;
+}
+.s-lede {
+  font-size:20px; line-height:1.7;
+  color: var(--ink-soft); max-width:56ch;
+  word-break:keep-all; margin-top:24px;
+}
+.rule { height:1px; background:var(--rule); }
+
+/* ── HERO ── */
+#hero {
+  display:flex; flex-direction:column; justify-content:flex-end;
+  padding: 0 60px 100px;
+  position:relative; overflow:hidden;
+}
+.hero-bg {
+  position:absolute; inset:0;
+  background:
+    radial-gradient(ellipse 80% 60% at 70% 30%, rgba(240,200,120,.04) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 80% at 20% 80%, rgba(100,140,240,.04) 0%, transparent 70%);
+}
+.hero-grid {
+  position:absolute; inset:0; pointer-events:none;
+  background-image:
+    linear-gradient(var(--rule) 1px, transparent 1px),
+    linear-gradient(90deg, var(--rule) 1px, transparent 1px);
+  background-size: 80px 80px;
+  mask-image: radial-gradient(ellipse 100% 100% at center, black 30%, transparent 100%);
+}
+.hero-meta {
+  display:grid; grid-template-columns:repeat(4,1fr); gap:24px;
+  border-top:1px solid var(--rule); padding-top:24px;
+  margin-bottom:60px;
+}
+.hero-meta-item .k {
+  font-family:var(--f-mono); font-size:11px; letter-spacing:.14em;
+  text-transform:uppercase; color: var(--ink-mute); margin-bottom:6px;
+}
+.hero-meta-item .v {
+  font-family:var(--f-mono); font-size:15px; color: var(--ink);
+}
+.hero-title {
+  font-family:var(--f-display-en); font-weight:400;
+  font-size: clamp(80px,14vw,200px);
+  line-height:.95; letter-spacing:-.025em;
+  color: var(--ink);
+}
+.hero-sub {
+  display:flex; align-items:flex-end; justify-content:space-between;
+  gap:48px; margin-top:36px;
+}
+.hero-tagline-kr {
+  font-family:var(--f-display-kr); font-weight:500;
+  font-size:clamp(22px,2.8vw,38px);
+  letter-spacing:-.02em; line-height:1.2;
+  word-break:keep-all;
+}
+.hero-tagline-en {
+  font-family:var(--f-display-en); font-style:italic;
+  font-size:20px; color: var(--ink-soft); margin-top:8px;
+}
+.hero-chips {
+  display:flex; gap:10px; flex-wrap:wrap; flex-shrink:0;
+  padding-bottom:6px;
+}
+.hero-chip {
+  font-family:var(--f-mono); font-size:12px; letter-spacing:.07em;
+  text-transform:uppercase; padding:9px 18px;
+  border:1px solid var(--rule); border-radius:999px;
+  color: var(--ink-soft);
+}
+.hero-blog-row {
+  margin-top:40px;
+}
+.hero-blog-btn {
+  display:inline-flex; align-items:center; gap:12px;
+  font-family:var(--f-mono); font-size:13px; letter-spacing:.08em;
+  text-transform:uppercase; text-decoration:none;
+  padding:14px 28px;
+  border:1px solid var(--accent); border-radius:999px;
+  color:var(--accent);
+  background:rgba(202,154,80,.06);
+  transition:background .2s, box-shadow .2s;
+}
+.hero-blog-btn:hover {
+  background:rgba(202,154,80,.14);
+  box-shadow: 0 0 20px rgba(202,154,80,.12);
+}
+.hero-blog-url {
+  font-size:11px; color:var(--ink-mute); letter-spacing:.06em;
+  padding-left:4px; border-left:1px solid var(--rule); padding-right:4px;
+}
+
+/* ── ABOUT ── */
+#about { background: var(--bg-2); }
+.about-grid {
+  display:grid; grid-template-columns:5fr 7fr; gap:80px; align-items:start;
+}
+.stat-row {
+  display:grid; grid-template-columns:repeat(4,1fr);
+  border-top:1px solid var(--rule);
+  border-bottom:1px solid var(--rule);
+  margin-top:40px;
+}
+.stat {
+  padding:24px 24px;
+  border-right:1px solid var(--rule);
+  display:flex; flex-direction:column; gap:8px;
+}
+.stat:last-child { border-right:none; }
+.stat:not(:first-child) { padding-left:24px; }
+.stat .v {
+  font-family:var(--f-display-en); font-weight:400;
+  font-size:56px; line-height:1; letter-spacing:-.02em;
+}
+.stat .k {
+  font-family:var(--f-mono); font-size:11px; letter-spacing:.1em;
+  text-transform:uppercase; color: var(--ink-mute);
+}
+
+/* ── SERVICES ── */
+#services {}
+#projects { background: var(--bg-2); }
+.svc-header {
+  display:flex; justify-content:space-between; align-items:flex-end;
+  gap:48px; margin-bottom:48px;
+}
+.svc-grid {
+  display:grid; grid-template-columns:repeat(2,1fr); gap:0;
+  border-top:2px solid var(--ink);
+}
+.svc-item {
+  padding:36px 36px 36px 0;
+  border-right:1px solid var(--rule);
+  border-bottom:1px solid var(--rule);
+  display:flex; flex-direction:column; gap:16px;
+}
+.svc-item:nth-child(2n) { border-right:none; padding-left:36px; padding-right:0; }
+.svc-item:nth-last-child(-n+2) { border-bottom:none; }
+.svc-no { font-family:var(--f-mono); font-size:12px; letter-spacing:.14em; color:var(--ink-mute); }
+.svc-en { font-family:var(--f-display-en); font-style:italic; font-size:20px; color:var(--ink-soft); }
+.svc-kr {
+  font-family:var(--f-display-kr); font-weight:500;
+  font-size:40px; letter-spacing:-.02em; line-height:1.1;
+  word-break:keep-all;
+}
+.svc-list { list-style:none; display:flex; flex-direction:column; gap:8px; }
+.svc-list li {
+  font-size:16px; line-height:1.55; color:var(--ink-soft);
+  display:flex; gap:12px; word-break:keep-all;
+}
+.svc-list li::before { content:"→"; color:var(--ink-mute); flex-shrink:0; }
+
+/* ── BIM COMMAND CENTER ── */
+#bcc { background: var(--bg); }
+.bcc-layout {
+  display:grid; grid-template-columns:5fr 7fr; gap:64px; align-items:start;
+}
+.bcc-badge {
+  display:inline-block;
+  font-family:var(--f-mono); font-size:11px; letter-spacing:.14em;
+  text-transform:uppercase; padding:7px 14px;
+  border:1px solid var(--accent); border-radius:999px;
+  color:var(--accent); margin-bottom:20px;
+}
+.bcc-meta-grid {
+  display:grid; grid-template-columns:1fr 1fr; gap:0;
+  margin-top:28px; border-top:1px solid var(--rule);
+}
+.bcc-meta-item {
+  padding:16px 0; border-bottom:1px solid var(--rule);
+  border-right:1px solid var(--rule); padding-right:18px;
+  display:flex; flex-direction:column; gap:4px;
+}
+.bcc-meta-item:nth-child(2n) { border-right:none; padding-right:0; padding-left:18px; }
+.bcc-meta-item .k {
+  font-family:var(--f-mono); font-size:11px; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--ink-mute);
+}
+.bcc-meta-item .v {
+  font-family:var(--f-display-en); font-size:30px; line-height:1;
+}
+.bcc-meta-item .v.sm { font-family:var(--f-body); font-size:15px; color:var(--ink); }
+.feat-grid {
+  display:grid; grid-template-columns:repeat(3,1fr); gap:0;
+  border-top:2px solid var(--ink); margin-top:24px;
+}
+.feat-item {
+  padding:18px 16px 18px 0;
+  border-right:1px solid var(--rule);
+  border-bottom:1px solid var(--rule);
+  display:flex; flex-direction:column; gap:8px;
+}
+.feat-item:nth-child(3n) { border-right:none; }
+.feat-item:not(:nth-child(3n+1)) { padding-left:16px; padding-right:0; }
+.feat-item:nth-last-child(-n+3) { border-bottom:none; }
+.feat-no { font-family:var(--f-mono); font-size:11px; color:var(--ink-mute); letter-spacing:.1em; }
+.feat-h {
+  font-family:var(--f-display-kr); font-weight:500;
+  font-size:20px; letter-spacing:-.015em; line-height:1.1;
+  word-break:keep-all;
+}
+.feat-list { list-style:none; display:flex; flex-direction:column; gap:2px; }
+.feat-list li { font-family:var(--f-mono); font-size:11px; color:var(--ink-soft); }
+
+/* Mock dashboard */
+.mock-dash {
+  background:#1a1c20;
+  border:1px solid rgba(240,235,225,.12);
+  border-radius:8px;
+  overflow:hidden;
+  box-shadow: 0 32px 80px rgba(0,0,0,.4);
+}
+.mock-titlebar {
+  background:#111316;
+  padding:10px 16px;
+  display:flex; align-items:center; gap:10px;
+  font-family:var(--f-mono); font-size:12px; color:rgba(240,235,225,.5);
+}
+.mock-dots { display:flex; gap:6px; margin-right:10px; }
+.mock-dots span { width:10px; height:10px; border-radius:50%; }
+.mock-dots span:nth-child(1) { background:oklch(0.65 0.18 25); }
+.mock-dots span:nth-child(2) { background:oklch(0.78 0.15 80); }
+.mock-dots span:nth-child(3) { background:oklch(0.68 0.15 145); }
+.mock-ribbon {
+  background:#1e2024;
+  border-bottom:1px solid rgba(240,235,225,.1);
+  padding:8px 14px;
+  display:flex; gap:14px; align-items:center;
+  font-family:var(--f-mono); font-size:11px; color:rgba(240,235,225,.45);
+}
+.mock-tab.active {
+  background:#111316; color:rgba(240,235,225,.9);
+  padding:3px 10px; border-radius:4px;
+}
+.mock-body { padding:16px; display:flex; flex-direction:column; gap:10px; }
+.mock-row {
+  display:grid; grid-template-columns:repeat(4,1fr); gap:8px;
+}
+.mock-card {
+  background:#111316; border:1px solid rgba(240,235,225,.1);
+  border-radius:6px; padding:12px;
+  display:flex; flex-direction:column; gap:4px;
+}
+.mock-card-tag { font-family:var(--f-mono); font-size:9px; letter-spacing:.1em; color:rgba(240,235,225,.4); }
+.mock-card-name { font-family:var(--f-body); font-size:12px; color:rgba(240,235,225,.8); }
+.mock-card.hi { background:#1e2024; border-color:rgba(240,235,225,.2); }
+
+/* ── DASHBOARD SECTION ── */
+#dashboard { padding:0; }
+.dash-hero {
+  padding:80px 60px 48px;
+  background: var(--bg-3);
+  display:flex; justify-content:space-between; align-items:flex-end; gap:48px;
+}
+.dash-frame-wrap {
+  background:#0d0f12;
+  border-top:1px solid var(--rule);
+  position:relative; overflow:hidden;
+}
+.dash-frame-wrap iframe {
+  width:100%; height:720px;
+  border:none; display:block;
+  transform-origin:top left;
+}
+.dash-overlay {
+  position:absolute; top:16px; right:20px;
+  font-family:var(--f-mono); font-size:11px; letter-spacing:.08em;
+  color:rgba(240,235,225,.35); text-transform:uppercase;
+  pointer-events:none;
+}
+
+/* ── KNOWLEDGE ── */
+#knowledge { background: var(--bg-2); justify-content: flex-start; }
+.knowledge-grid {
+  display:grid; grid-template-columns:5fr 7fr; gap:80px; align-items:stretch;
+  margin-top:40px; flex:1; min-height:0;
+}
+.knowledge-stats {
+  display:grid; grid-template-columns:1fr 1fr; gap:0;
+  border-top:1px solid var(--rule);
+}
+.k-stat {
+  padding:20px 20px 20px 0;
+  border-bottom:1px solid var(--rule);
+  border-right:1px solid var(--rule);
+  display:flex; flex-direction:column; gap:6px;
+}
+.k-stat:nth-child(2n) { border-right:none; padding-left:20px; padding-right:0; }
+.k-stat .v { font-family:var(--f-display-en); font-size:48px; line-height:1; }
+.k-stat .k { font-family:var(--f-mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-mute); }
+.knowledge-graph-frame {
+  background:var(--bg); border:1px solid var(--rule);
+  border-radius:6px; overflow:hidden;
+  height:100%; min-height:380px; position:relative;
+}
+.knowledge-graph-frame iframe { width:100%; height:100%; border:none; }
+.knowledge-graph-frame .k-overlay {
+  position:absolute; inset:0;
+  display:flex; flex-direction:column;
+  align-items:center; justify-content:center;
+  gap:16px;
+  background:rgba(20,22,26,.8);
+  backdrop-filter:blur(4px);
+}
+.knowledge-graph-frame .k-overlay.hidden { display:none; }
+.k-btn {
+  display:inline-flex; align-items:center; gap:10px;
+  font-family:var(--f-mono); font-size:13px; letter-spacing:.08em;
+  text-transform:uppercase; text-decoration:none;
+  padding:12px 24px; border:1px solid var(--rule);
+  border-radius:999px; color: var(--ink);
+  background:rgba(240,235,225,.06);
+  transition:background .2s;
+  cursor:pointer;
+}
+.k-btn:hover { background:rgba(240,235,225,.14); }
+.k-btn.primary {
+  background:var(--ink); color:var(--bg);
+  border-color:var(--ink);
+}
+.k-btn.primary:hover { background:rgba(240,235,225,.85); }
+
+/* ── AI ORG ── */
+#ai { }
+.ai-header {
+  display:flex; justify-content:space-between; align-items:flex-end;
+  gap:48px; margin-bottom:48px;
+}
+.tier-list { display:flex; flex-direction:column; gap:14px; }
+.tier {
+  border:1px solid var(--rule); border-radius:6px;
+  padding:18px 22px;
+  display:flex; align-items:center; gap:24px;
+}
+.tier-no {
+  font-family:var(--f-mono); font-size:11px; letter-spacing:.14em;
+  color:var(--ink-mute); text-transform:uppercase;
+  white-space:nowrap; width:60px; flex-shrink:0;
+}
+.tier-roles {
+  display:flex; gap:12px; flex-wrap:wrap; flex:1;
+}
+.role-tag {
+  font-family:var(--f-display-kr); font-weight:500;
+  font-size:17px; letter-spacing:-.01em;
+  color:rgba(240,235,225,.75);
+  padding-right:12px; border-right:1px solid var(--rule);
+}
+.role-tag:last-child { border-right:none; padding-right:0; }
+.role-tag.primary { color:var(--ink); }
+.tier-desc {
+  font-family:var(--f-body); font-size:14px;
+  color:var(--ink-mute); line-height:1.5;
+  flex:1; min-width:200px; text-align:right;
+}
+.chip-cloud { display:flex; flex-wrap:wrap; gap:6px; }
+.chip {
+  font-family:var(--f-mono); font-size:11px; letter-spacing:.04em;
+  padding:5px 10px; border:1px solid var(--rule);
+  border-radius:999px; color:rgba(240,235,225,.7);
+}
+.chip.disc {
+  font-family:var(--f-display-kr); font-weight:500;
+  font-size:15px; padding:7px 16px;
+}
+.chip.disc.hi { background:rgba(240,235,225,.07); border-color:rgba(240,235,225,.28); color:var(--ink); }
+
+/* ── STRENGTHS ── */
+#strengths { background: var(--bg-2); }
+.strength-table {
+  border-top:2px solid var(--ink); margin-top:48px;
+}
+.strength-row {
+  display:grid; grid-template-columns:60px 220px 1fr;
+  gap:32px; padding:22px 0;
+  border-bottom:1px solid var(--rule);
+  align-items:baseline;
+}
+.strength-row .no { font-family:var(--f-mono); font-size:13px; color:var(--ink-mute); letter-spacing:.12em; }
+.strength-row .h { font-family:var(--f-display-kr); font-weight:500; font-size:32px; letter-spacing:-.02em; line-height:1.1; word-break:keep-all; }
+.strength-row .d { font-size:17px; color:var(--ink-soft); line-height:1.6; word-break:keep-all; max-width:60ch; }
+
+/* ── CONTACT ── */
+#contact { background: var(--bg); border-top:1px solid var(--rule); }
+#contactForm { margin-top:0; }
+.cf-section { border-bottom:1px solid var(--rule); padding:20px 0; }
+.cf-sec-label { font-family:var(--f-mono); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-mute); margin-bottom:14px; }
+.cf-row { display:grid; grid-template-columns:160px 1fr; gap:16px; align-items:center; padding:6px 0; }
+.cf-label { font-family:var(--f-mono); font-size:12px; letter-spacing:.08em; color:var(--ink-soft); }
+.cf-input { width:100%; padding:9px 12px; background:rgba(255,255,255,.03); border:1px solid var(--rule); color:var(--ink); font-size:14px; outline:none; transition:border-color .15s; }
+.cf-input:focus { border-color:var(--ink); }
+.cf-select { appearance:none; cursor:pointer; }
+.cf-check { display:inline-flex; align-items:center; gap:7px; font-size:13px; color:var(--ink-soft); cursor:pointer; user-select:none; }
+.cf-check input { accent-color:var(--ink); width:14px; height:14px; cursor:pointer; }
+.contact-layout {
+  display:grid; grid-template-columns:7fr 5fr; gap:80px;
+}
+.contact-h {
+  font-family:var(--f-display-kr); font-weight:500;
+  font-size:clamp(60px,10vw,120px);
+  line-height:1; letter-spacing:-.03em; word-break:keep-all;
+}
+.contact-h em { font-family:var(--f-display-en); font-style:italic; font-weight:400; }
+.contact-card {
+  border-top:1px solid var(--ink); padding-top:28px;
+  display:flex; flex-direction:column; gap:0;
+}
+.contact-row {
+  display:grid; grid-template-columns:56px 1fr; gap:16px;
+  align-items:baseline; padding:18px 0;
+  border-bottom:1px solid var(--rule);
+}
+.contact-row:last-child { border-bottom:none; }
+.contact-row .k { font-family:var(--f-mono); font-size:12px; letter-spacing:.12em; color:var(--ink-mute); text-transform:uppercase; }
+.contact-row .v { font-family:var(--f-body); font-size:20px; color:var(--ink); word-break:break-word; }
+.contact-row .v a { color:inherit; text-decoration:none; }
+.contact-row .v.serif { font-family:var(--f-display-en); font-size:26px; font-style:italic; }
+
+/* ── FOOTER ── */
+footer {
+  padding:40px 60px;
+  border-top:1px solid var(--rule);
+  display:flex; justify-content:space-between; align-items:center;
+  font-family:var(--f-mono); font-size:12px; color:var(--ink-mute);
+  letter-spacing:.06em;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width:900px) {
+  nav { padding:16px 24px; }
+  .nav-links { gap:18px; }
+  section { padding:80px 24px; }
+  #hero { padding:0 24px 60px; }
+  .hero-title { font-size:clamp(52px,16vw,120px); }
+  .hero-meta { grid-template-columns:1fr 1fr; }
+  .hero-sub { flex-direction:column; }
+  .about-grid, .bcc-layout, .knowledge-grid, .contact-layout { grid-template-columns:1fr; gap:40px; }
+  .knowledge-graph-frame { min-height:320px; height:320px; }
+  .svc-grid { grid-template-columns:1fr; }
+  .svc-item { border-right:none !important; padding-left:0 !important; padding-right:0 !important; }
+  .stat-row { grid-template-columns:1fr 1fr; }
+  .stat:nth-child(2) { border-right:none; }
+  .strength-row { grid-template-columns:1fr; gap:8px; }
+  .feat-grid { grid-template-columns:1fr 1fr; }
+  .tier { flex-wrap:wrap; }
+  .dash-hero { flex-direction:column; }
+  .dash-frame-wrap iframe { height:480px; }
+  footer { flex-direction:column; gap:12px; text-align:center; }
+}
+</style>
+</head>
+<body>
+
+
+<!-- TOP BAR -->
+<div id="top-bar">
+  <a href="#contact" class="top-bar-inner">
+    <span class="top-bar-dot"></span>
+    <span class="top-bar-text">이메일로 문의하기</span>
+    <span class="top-bar-qr-wrap">
+      <img
+        src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&color=f0ebe1&bgcolor=14161a&data=https://luabimlabs.com/%23contact"
+        alt="Contact QR"
+        class="top-bar-qr"
+      />
+    </span>
+    <span class="top-bar-arrow">freeflim90@gmail.com →</span>
+  </a>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="1.1"/><path d="M 16 3 A 13 13 0 1 0 16 29 A 10 13 0 1 1 16 3 Z" fill="currentColor"/></svg>
+    LUA / BIM LABS
+  </a>
+  <div class="nav-links">
+    <a href="#about">회사소개</a>
+    <a href="#services">사업영역</a>
+    <a href="#projects">수행실적</a>
+    <a href="#bcc">제품</a>
+    <a href="#knowledge">지식베이스</a>
+    <a href="#contact">문의</a>
+    <a href="https://engineer250212.blogspot.com/" target="_blank" rel="noopener" class="nav-cta">Blog</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-meta">
+    <div class="hero-meta-item"><div class="k">DOCUMENT</div><div class="v">Company Site</div></div>
+    <div class="hero-meta-item"><div class="k">VERSION</div><div class="v">v.01 · 2026.05</div></div>
+    <div class="hero-meta-item"><div class="k">DOMAIN</div><div class="v">luabimlabs.com</div></div>
+  </div>
+  <h1 class="hero-title">LUA BIM<br><em>Labs.</em></h1>
+  <div class="hero-sub">
+    <div>
+      <p class="hero-tagline-kr">건물의 보이지 않는 흐름,<br>정확히 그립니다.</p>
+      <p class="hero-tagline-en"><em>Mechanical · Electrical · Plumbing — modelled with intent.</em></p>
+    </div>
+    <div class="hero-chips">
+      <span class="hero-chip">MEP 설계 / 모델링</span>
+      <span class="hero-chip">설비 컨설팅 / 감리</span>
+      <span class="hero-chip">Revit MEP 교육</span>
+      <span class="hero-chip">자동화 / 솔루션</span>
+      <span class="hero-chip">샵드로잉 · 기계/소방</span>
+    </div>
+  </div>
+  <div class="hero-blog-row">
+    <a href="https://engineer250212.blogspot.com/" target="_blank" rel="noopener" class="hero-blog-btn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg>
+      블로그 바로가기
+      <span class="hero-blog-url">engineer250212.blogspot.com</span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div>
+      <div class="s-label">§ 01 / 회사소개</div>
+      <h2 class="s-title">보이지 않는<br>흐름을, <em>보이게.</em></h2>
+    </div>
+    <div>
+      <p class="s-lede">
+        LUA BIM LABS는 기계·전기·위생(MEP) 설비 BIM과 시공현장 샵드로잉에 특화된 전문 스튜디오입니다.
+        공조·전기·위생·소방 덕트 구조부터 시공 도면까지 건물의 보이지 않는 설비를 모델 위에서 정밀하게 작성합니다.
+      </p>
+      <p style="font-size:18px; line-height:1.7; color:var(--ink-soft); margin-top:20px; word-break:keep-all;">
+        설비 BIM 수행부터 기계·소방 시공현장 샵드로잉까지, 현장 전문 인력 3인 얼라이언스와 AI 에이전트가 하나의 팀으로 협업합니다.
+        설계 단계의 BIM 모델이 현장 샵드로잉으로 자연스럽게 이어지고, AI가 검수·문서화·보고를 받쳐 빠르고 정밀한 납품을 실현합니다.
+      </p>
+      <div class="stat-row">
+        <div class="stat"><span class="v">MEP</span><span class="k">전문 영역</span></div>
+        <div class="stat"><span class="v">100<span style="font-size:28px;color:var(--ink-soft)">%</span></span><span class="k">설비 전담 인력</span></div>
+        <div class="stat"><span class="v" style="font-size:40px">LOD<br>400</span><span class="k">최대 모델링 정밀도</span></div>
+        <div class="stat"><span class="v" style="font-size:40px">ISO<br>19650</span><span class="k">운영 표준</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div style="display:grid; grid-template-columns:3fr 9fr; gap:60px; align-items:center; margin-bottom:32px;">
+    <div>
+      <div class="s-label">§ 02 / 사업영역</div>
+      <h2 class="s-title" style="font-size:clamp(32px,4vw,56px);">다섯 개의 영역,<br>하나의 <em>설비 모델</em>.</h2>
+    </div>
+    <p style="font-size:16px; line-height:1.65; color:var(--ink-soft); word-break:keep-all;">
+      HVAC · 전기 · 위생 · 소방 설비 BIM 전 라이프사이클에 시공현장 샵드로잉까지, 얼라이언스 체계로 통합 대응합니다.
+    </p>
+  </div>
+  <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:0; border-top:2px solid var(--ink); flex:1;">
+    <div style="padding:24px 20px 24px 0; border-right:1px solid var(--rule); display:flex; flex-direction:column; gap:10px;">
+      <span style="font-family:var(--f-mono); font-size:11px; letter-spacing:.12em; color:var(--ink-mute);">[ 01 ]</span>
+      <span style="font-family:var(--f-display-en); font-style:italic; font-size:17px; color:var(--ink-soft);">Design & Modeling</span>
+      <h3 style="font-family:var(--f-display-kr); font-weight:500; font-size:26px; letter-spacing:-.02em; line-height:1.1; word-break:keep-all;">MEP 설계 · 모델링</h3>
+      <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:6px; margin-top:4px;">
+        <li style="font-size:14px; line-height:1.5; color:var(--ink-soft); display:flex; gap:8px; word-break:keep-all;"><span style="color:var(--ink-mute); flex-shrink:0;">→</span>HVAC · 전기 · 위생 · 소방 통합 모델링</li>
+        <li style="font-size:14px; line-height:1.5; color:var(--ink-soft); display:flex; gap:8px; word-break:keep-all;"><span style="color:var(--ink-mute); flex-shrink:0;">→</span>LOD 100~400 단계별 모델링</li>
+        <li style="font-size:14px; line-height:1.5; color:var(--ink-soft); display:flex; gap:8px; word-break:keep-all;"><span style="color:var(--ink-mute); flex-shrink:0;">→</span>MEP ↔ 구조·건축 간섭 검토</li>
+      </ul>
+    </div>
+    <div style="padding:24px 20px; border-right:1px solid var(--rule); display:flex; flex-direction:column; gap:10px;">
+      <span style="font-family:var(--f-mono); font-size:11px; letter-spacing:.12em; color:var(--ink-mute);">[ 02 ]</span>
+      <span style="font-family:var(--f-display-en); font-style:italic; font-size:17px; color:var(--ink-soft);">Consulting & Audit</span>
+      <h3 style="font-family:var(--f-display-kr); font-weight:500; font-size:26px; letter-spacing:-.02em; line-height:1.1; word-break:keep-all;">설비 컨설팅 · 감리</h3>
+      <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:6px; margin-top:4px;">
+        <li style="font-size:14px; line-height:1.5; color:var(--ink-soft); display:flex; gap:8px; word-break:keep-all;"><span style="color:var(--ink-mute); flex-shrink:0;">→</span>BIM 실행계획서 수립 및 검토</li>
+        <li style="font-size:14px; line-height:1.5; color:var(--ink-soft); display:flex; gap:8px; word-break:keep-all;"><span style="color:var(--ink-mute); flex-shrink:0;">→</span>성과품 메타 기준 및 품질 관리</li>
+        <li style="font-size:14px; line-height:1.5; color:var(--ink-soft); display:flex; gap:8px; word-break:keep-all;"><span style="color:var(--ink-mute); flex-shrink:0;">→</span>기술 감리 및 도면 검수</li>
+      </ul>
+    </div>
+    <div style="padding:24px 20px; border-right:1px solid var(--rule); display:flex; flex-direction:column; gap:10px;">
+      <span style="font-family:var(--f-mono); font-size:11px; letter-spacing:.12em; color:var(--ink-mute);">[ 03 ]</span>
+      <span style="font-family:var(--f-display-en); font-style:italic; font-size:17px; color:var(--ink-soft);">Education & Training</span>
+      <h3 style="font-family:var(--f-display-kr); font-weight:500; font-size:26px; letter-spacing:-.02em; line-height:1.1; word-break:keep-all;">Revit MEP 교육</h3>
+      <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:6px; margin-top:4px;">
+        <li style="font-size:14px; line-height:1.5; color:var(--ink-soft); display:flex; gap:8px; word-break:keep-all;"><span style="color:var(--ink-mute); flex-shrink:0;">→</span>설계사·시공사 맞춤형 교육</li>
+        <li style="font-size:14px; line-height:1.5; color:var(--ink-soft); display:flex; gap:8px; word-break:keep-all;"><span style="color:var(--ink-mute); flex-shrink:0;">→</span>Revit MEP · Navisworks 워크숍</li>
+        <li style="font-size:14px; line-height:1.5; color:var(--ink-soft); display:flex; gap:8px; word-break:keep-all;"><span style="color:var(--ink-mute); flex-shrink:0;">→</span>실제 설비 사례 기반 트레이닝</li>
+      </ul>
+    </div>
+    <div style="padding:24px 0 24px 20px; display:flex; flex-direction:column; gap:10px;">
+      <span style="font-family:var(--f-mono); font-size:11px; letter-spacing:.12em; color:var(--ink-mute);">[ 04 ]</span>
+      <span style="font-family:var(--f-display-en); font-style:italic; font-size:17px; color:var(--ink-soft);">Solutions & Dev</span>
+      <h3 style="font-family:var(--f-display-kr); font-weight:500; font-size:26px; letter-spacing:-.02em; line-height:1.1; word-break:keep-all;">자동화 · 솔루션</h3>
+      <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:6px; margin-top:4px;">
+        <li style="font-size:14px; line-height:1.5; color:var(--ink-soft); display:flex; gap:8px; word-break:keep-all;"><span style="color:var(--ink-mute); flex-shrink:0;">→</span>MEP 라우팅 자동화 애드인</li>
+        <li style="font-size:14px; line-height:1.5; color:var(--ink-soft); display:flex; gap:8px; word-break:keep-all;"><span style="color:var(--ink-mute); flex-shrink:0;">→</span>자동 산출 · 도면 작성 자동화</li>
+        <li style="font-size:14px; line-height:1.5; color:var(--ink-soft); display:flex; gap:8px; word-break:keep-all;"><span style="color:var(--ink-mute); flex-shrink:0;">→</span>APS 기반 데이터 연동</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 얼라이언스 항목 -->
+  <div style="border-top:1px solid var(--rule); display:grid; grid-template-columns:auto 1fr; gap:40px; align-items:start; padding:24px 0;">
+    <div style="display:flex; flex-direction:column; gap:10px; min-width:260px;">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <span style="font-family:var(--f-mono); font-size:11px; letter-spacing:.12em; color:var(--ink-mute);">[ 05 ]</span>
+        <span style="font-family:var(--f-mono); font-size:10px; letter-spacing:.1em; text-transform:uppercase; padding:3px 10px; border:1px solid rgba(240,235,225,.25); color:var(--ink-mute);">Alliance</span>
+      </div>
+      <span style="font-family:var(--f-display-en); font-style:italic; font-size:17px; color:var(--ink-soft);">Shop Drawing</span>
+      <h3 style="font-family:var(--f-display-kr); font-weight:500; font-size:26px; letter-spacing:-.02em; line-height:1.1; word-break:keep-all;">시공현장 샵드로잉</h3>
+    </div>
+    <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:0; border-left:1px solid var(--rule);">
+      <div style="padding:0 24px; border-right:1px solid var(--rule);">
+        <p style="font-family:var(--f-mono); font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-mute); margin-bottom:10px;">기계설비</p>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:6px;">
+          <li style="font-size:14px; line-height:1.5; color:var(--ink-soft); display:flex; gap:8px;"><span style="color:var(--ink-mute); flex-shrink:0;">→</span>공조·배관·덕트 시공 상세도</li>
+          <li style="font-size:14px; line-height:1.5; color:var(--ink-soft); display:flex; gap:8px;"><span style="color:var(--ink-mute); flex-shrink:0;">→</span>위생·냉난방 배관 샵드로잉</li>
+          <li style="font-size:14px; line-height:1.5; color:var(--ink-soft); display:flex; gap:8px;"><span style="color:var(--ink-mute); flex-shrink:0;">→</span>장비 기초·앵커 상세</li>
+        </ul>
+      </div>
+      <div style="padding:0 24px; border-right:1px solid var(--rule);">
+        <p style="font-family:var(--f-mono); font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-mute); margin-bottom:10px;">소방설비</p>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:6px;">
+          <li style="font-size:14px; line-height:1.5; color:var(--ink-soft); display:flex; gap:8px;"><span style="color:var(--ink-mute); flex-shrink:0;">→</span>스프링클러·소화배관 상세도</li>
+          <li style="font-size:14px; line-height:1.5; color:var(--ink-soft); display:flex; gap:8px;"><span style="color:var(--ink-mute); flex-shrink:0;">→</span>알람밸브·가압송수 배치도</li>
+          <li style="font-size:14px; line-height:1.5; color:var(--ink-soft); display:flex; gap:8px;"><span style="color:var(--ink-mute); flex-shrink:0;">→</span>현장 실측 기반 도면 작성</li>
+        </ul>
+      </div>
+      <div style="padding:0 24px;">
+        <p style="font-family:var(--f-mono); font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-mute); margin-bottom:10px;">얼라이언스 체계</p>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:6px;">
+          <li style="font-size:14px; line-height:1.5; color:var(--ink-soft); display:flex; gap:8px;"><span style="color:var(--ink-mute); flex-shrink:0;">→</span>현장 전문 인력 3인 파트너십</li>
+          <li style="font-size:14px; line-height:1.5; color:var(--ink-soft); display:flex; gap:8px;"><span style="color:var(--ink-mute); flex-shrink:0;">→</span>LUA BIM LABS 품질 기준 적용</li>
+          <li style="font-size:14px; line-height:1.5; color:var(--ink-soft); display:flex; gap:8px;"><span style="color:var(--ink-mute); flex-shrink:0;">→</span>BIM 수행과 통합 패키지 가능</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="s-label">§ 03 / 수행실적</div>
+  <h2 class="s-title">직접 수행한<br><em>주요 프로젝트.</em></h2>
+  <div class="proj-grid" style="margin-top:48px;">
+    <div class="proj-card">
+      <span class="proj-cat commercial">상업시설</span>
+      <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=800&q=75" alt="청라 스타필드" class="proj-img" loading="lazy"/>
+      <span class="proj-no">[ 01 ]</span>
+      <h3 class="proj-name">청라 스타필드 (MALL)</h3>
+      <span class="proj-role">MEP BIM Coordination & Engineer</span>
+      <p class="proj-desc">초대형 복합시설 기계·전기·소방 설비 간섭 검토 및 최적 경로 설계. BIM 시뮬레이션으로 천장고 확보 및 비정형 구조물 내 설비 배치 최적화.</p>
+    </div>
+    <div class="proj-card">
+      <span class="proj-cat infra">공공·인프라</span>
+      <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=75" alt="인천공항" class="proj-img" loading="lazy"/>
+      <span class="proj-no">[ 02 ]</span>
+      <h3 class="proj-name">인천국제공항 2터미널</h3>
+      <span class="proj-role">MEP BIM Engineer (PM) · 동/서편 통합 팀장</span>
+      <p class="proj-desc">골조마감공사 4단계 동·서편 MEP 시공 BIM. 시공사 간 MEP 통합 팀장으로 대규모 공종 조율 수행.</p>
+    </div>
+    <div class="proj-card">
+      <span class="proj-cat infra">공공·인프라</span>
+      <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=75" alt="관제센터" class="proj-img" loading="lazy"/>
+      <span class="proj-no">[ 03 ]</span>
+      <h3 class="proj-name">제2철도 관제센터</h3>
+      <span class="proj-role">MEP BIM Coordination & Engineer</span>
+      <p class="proj-desc">24시간 무중단 가동 특수 보안시설. 통신·전력 계통 정밀 코디네이션, LOD 350 수준 상세 설계.</p>
+    </div>
+    <div class="proj-card">
+      <span class="proj-cat infra">공공·인프라</span>
+      <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=75" alt="코엑스" class="proj-img" loading="lazy"/>
+      <span class="proj-no">[ 04 ]</span>
+      <h3 class="proj-name">코엑스 무역센터 개선공사</h3>
+      <span class="proj-role">MEP BIM Coordination & Engineer</span>
+      <p class="proj-desc">운영 중 리모델링 기반 역설계 코디네이션. 기존 노후 설비 스캐닝과 신규 설비 간섭 분석 및 단계별 이설 계획 수립.</p>
+    </div>
+    <div class="proj-card">
+      <span class="proj-cat plant">반도체·플랜트</span>
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=75" alt="삼성 반도체" class="proj-img" loading="lazy"/>
+      <span class="proj-no">[ 05 ]</span>
+      <h3 class="proj-name">삼성전자 · 삼성디스플레이</h3>
+      <span class="proj-role">MEP BIM Engineer (PM)</span>
+      <p class="proj-desc">PH2·X2·PH3·C 라인 및 디스플레이 7/8·A4 LINE 기본 설계 및 MEP 시공 BIM. 다수 프로젝트 PM 수행.</p>
+    </div>
+    <div class="proj-card">
+      <span class="proj-cat plant">반도체·플랜트</span>
+      <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=800&q=75" alt="플랜트" class="proj-img" loading="lazy"/>
+      <span class="proj-no">[ 06 ]</span>
+      <h3 class="proj-name">삼성SDI · 포스코 · 기타</h3>
+      <span class="proj-role">MEP BIM Engineer (PM)</span>
+      <p class="proj-desc">자동차배터리 LINE, 음극제 MEP 전환 설계, 바이오가스 처리장, LX 판토스, 청주 체육관 등 다수 플랜트 프로젝트 수행.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BIM COMMAND CENTER -->
+<section id="bcc">
+  <div class="bcc-layout">
+    <div>
+      <span class="bcc-badge">Flagship Product</span>
+      <div class="s-label">§ 04 / 주력 제품 · Flagship</div>
+      <h2 class="s-title" style="font-size:clamp(40px,5vw,68px);">BIM <em>Command</em><br>Center.</h2>
+      <p style="font-size:18px; line-height:1.7; color:var(--ink-soft); margin-top:16px; word-break:keep-all;">
+        여러 개의 Revit 애드인을, 하나의 통합 패널에서.<br>
+        MEP 모델링·간섭 검토·도면화·데이터 관리 전 과정을 단일 진입점으로 처리합니다.
+      </p>
+      <div class="bcc-meta-grid">
+        <div class="bcc-meta-item"><span class="k">Revit</span><span class="v">2019 – 2027</span></div>
+        <div class="bcc-meta-item"><span class="k">통합 기능</span><span class="v">11<span style="font-size:18px;color:var(--ink-soft)">+</span></span></div>
+        <div class="bcc-meta-item"><span class="k">라이선스</span><span class="v sm">1팀 활성화 · 365일</span></div>
+        <div class="bcc-meta-item"><span class="k">런타임</span><span class="v sm">.NET 4.8 / .NET 8</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="feat-grid">
+        <div class="feat-item">
+          <span class="feat-no">[ 01 ] COMMON</span>
+          <h4 class="feat-h">공통 유틸리티</h4>
+          <ul class="feat-list"><li>단일 설정 · Family 변환</li><li>Workset Dashboard</li><li>Auto Sync</li></ul>
+        </div>
+        <div class="feat-item">
+          <span class="feat-no">[ 02 ] MODELING</span>
+          <h4 class="feat-h">모델링 도구</h4>
+          <ul class="feat-list"><li>Split · Break · Merge</li><li>Align Couplings</li><li>자동 태깅 · 번들 태깅</li></ul>
+        </div>
+        <div class="feat-item">
+          <span class="feat-no">[ 03 ] CLASH</span>
+          <h4 class="feat-h">간섭 검토</h4>
+          <ul class="feat-list"><li>Point Marker 검출</li><li>Section Box 3D 자동</li><li>PDF · PPT 보고서</li></ul>
+        </div>
+        <div class="feat-item">
+          <span class="feat-no">[ 04 ] DATA</span>
+          <h4 class="feat-h">데이터 관리</h4>
+          <ul class="feat-list"><li>Model Health 대시보드</li><li>MEP 필터 자동 생성</li><li>물량산출 · Excel 연동</li></ul>
+        </div>
+        <div class="feat-item">
+          <span class="feat-no">[ 05 ] DRAWING</span>
+          <h4 class="feat-h">도면화 자동화</h4>
+          <ul class="feat-list"><li>CSV / Excel → 시트 생성</li><li>CAD 자동 삽입</li><li>도면번호 매칭</li></ul>
+        </div>
+        <div class="feat-item">
+          <span class="feat-no">[ 06 ] TODO</span>
+          <h4 class="feat-h">할 일 관리</h4>
+          <ul class="feat-list"><li>BIM Todo + 요소 연결</li><li>담당자 · 우선순위</li><li>LUA BIM LAND 연동</li></ul>
+        </div>
+      </div>
+      <!-- Mock dashboard -->
+      <div class="mock-dash" style="margin-top:24px;">
+        <div class="mock-titlebar">
+          <span class="mock-dots"><span></span><span></span><span></span></span>
+          Autodesk Revit 2026 — Project.rvt
+        </div>
+        <div class="mock-ribbon">
+          <span>파일</span><span>건축</span><span>시스템</span>
+          <span class="mock-tab active">BIM Command Center</span>
+          <span style="margin-left:auto;">BIM Dashboard →</span>
+        </div>
+        <div class="mock-body">
+          <div class="mock-row">
+            <div class="mock-card hi"><span class="mock-card-tag">CLASH</span><span class="mock-card-name">간섭 Point Marker</span></div>
+            <div class="mock-card hi"><span class="mock-card-tag">DATA</span><span class="mock-card-name">MEP 필터 자동생성</span></div>
+            <div class="mock-card hi"><span class="mock-card-tag">MODEL</span><span class="mock-card-name">자동 태깅</span></div>
+            <div class="mock-card hi"><span class="mock-card-tag">DRAW</span><span class="mock-card-name">Excel 시트 생성</span></div>
+          </div>
+          <div class="mock-row">
+            <div class="mock-card" style="background:#1a1c20;border-color:rgba(240,235,225,.25);"><span class="mock-card-tag">MODEL</span><span class="mock-card-name">Split (Union)</span></div>
+            <div class="mock-card"><span class="mock-card-tag">MODEL</span><span class="mock-card-name">Break (No Fitting)</span></div>
+            <div class="mock-card"><span class="mock-card-tag">MODEL</span><span class="mock-card-name">Unsplit (Merge)</span></div>
+            <div class="mock-card"><span class="mock-card-tag">MODEL</span><span class="mock-card-name">Align Couplings</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- KNOWLEDGE BASE -->
+<section id="knowledge">
+  <div class="s-label">§ 05 / 지식베이스 · Obsidian Knowledge Graph</div>
+  <h2 class="s-title">지식 그래프,<br><em>실시간으로.</em></h2>
+  <div class="knowledge-grid">
+    <div>
+      <p class="s-lede" style="font-size:17px; margin-top:0;">
+        모든 프로젝트의 결정과 검토 결과가 Obsidian 기반 지식 그래프로 축적됩니다.
+        다음 프로젝트는 이전 프로젝트의 교훈을 그대로 이어받습니다.
+      </p>
+      <div class="knowledge-stats" style="margin-top:28px;">
+        <div class="k-stat"><span class="v" id="kNodeCount">—</span><span class="k">Knowledge Nodes</span></div>
+        <div class="k-stat"><span class="v" id="kEdgeCount">—</span><span class="k">Knowledge Edges</span></div>
+        <div class="k-stat"><span class="v" id="kDocCount">—</span><span class="k">Source Docs</span></div>
+        <div class="k-stat"><span class="v" id="kAgentCount">28</span><span class="k">AI Agents</span></div>
+      </div>
+    </div>
+    <div class="knowledge-graph-frame">
+      <iframe
+        id="kgFrame"
+        src="https://api.luabimlabs.com/knowledge/global_knowledge_graph.html?embed=1"
+        title="Knowledge Graph"
+        loading="lazy"
+      ></iframe></div>
+  </div>
+</section>
+
+<!-- AI ORGANIZATION -->
+<section id="ai">
+  <div class="ai-header">
+    <div>
+      <div class="s-label">§ 06 / AI 조직 & 지식 축적</div>
+      <h2 class="s-title">사람의 판단을,<br><em>AI가 받칩니다.</em></h2>
+    </div>
+    <p style="font-size:17px; line-height:1.7; color:var(--ink-soft); max-width:40ch; word-break:keep-all; padding-bottom:12px;">
+      4계층 28개 에이전트로 구성된 가상 기업 구조가 LUA BIM LABS 운영을 24×7로 지원합니다.
+    </p>
+  </div>
+  <div class="tier-list">
+    <div class="tier">
+      <span class="tier-no">T / 01</span>
+      <div class="tier-roles">
+        <span class="role-tag primary">CEO 에이전트</span>
+        <span class="role-tag">COO</span>
+        <span class="role-tag">CFO</span>
+      </div>
+      <span class="tier-desc">전략 통제 · 70/25/5 재포지셔닝 메커니즘 · DeepSeek V4 Pro</span>
+    </div>
+    <div class="tier">
+      <span class="tier-no">T / 02</span>
+      <div class="tier-roles">
+        <span class="role-tag primary">조율차장 (Total PM)</span>
+      </div>
+      <span class="tier-desc">모든 의뢰를 적절한 그룹·공종으로 배분. 핵심 PM 결정의 단일 진입점.</span>
+    </div>
+    <div class="tier" style="flex-wrap:wrap; gap:16px;">
+      <span class="tier-no">T / 03</span>
+      <div style="flex:1;">
+        <p style="font-family:var(--f-mono); font-size:11px; color:var(--ink-mute); letter-spacing:.1em; text-transform:uppercase; margin-bottom:10px;">28-AGENT OPERATION MATRIX</p>
+        <div class="chip-cloud">
+          <span class="chip">CSO</span><span class="chip">전략기획</span><span class="chip">프로젝트분석</span>
+          <span class="chip">EIR/BEP 심사원</span><span class="chip">견적심사원</span>
+          <span class="chip">프로그램개발</span><span class="chip">QA 테스터</span><span class="chip">빌드검증</span>
+          <span class="chip">배포문서</span><span class="chip">스토어심사</span>
+          <span class="chip">지식업데이트</span><span class="chip">지식큐레이터</span>
+          <span class="chip">라이선스결제</span><span class="chip">고객지원 CS</span><span class="chip">+ 14</span>
+        </div>
+      </div>
+    </div>
+    <div class="tier" style="flex-wrap:wrap; gap:16px;">
+      <span class="tier-no">T / 04</span>
+      <div class="chip-cloud" style="flex:1;">
+        <span class="chip disc">건축 · 구조</span>
+        <span class="chip disc">토목</span>
+        <span class="chip disc hi">공조배관</span>
+        <span class="chip disc hi">공조덕트</span>
+        <span class="chip disc hi">소방기계</span>
+        <span class="chip disc hi">소방전기 · 전기</span>
+        <span class="chip disc hi">위생 · 통신</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STRENGTHS -->
+<section id="strengths">
+  <div class="s-label">§ 07 / 우리의 강점</div>
+  <h2 class="s-title">네 가지<br><em>차별점.</em></h2>
+  <div class="strength-table">
+    <div class="strength-row">
+      <span class="no">[ 01 ]</span>
+      <h3 class="h">AI 조직 이용</h3>
+      <p class="d">4계층 28개 에이전트가 모델링·검수·도면 작성의 반복 구간을 담당합니다. 사람은 판단과 검증에 집중 — 누락·오기·명명 불일치 같은 흔한 오류가 이유됩니다.</p>
+    </div>
+    <div class="strength-row">
+      <span class="no">[ 02 ]</span>
+      <h3 class="h">설비 전문성</h3>
+      <p class="d">HVAC·전기·위생·소방 — 설계부터 감리, 교육, 자동화까지 MEP 풀 라이프사이클 대응. Tier 4 MEP_CORE 에이전트가 공조배관·덕트·소방·위생을 공종별로 나눠 수행합니다.</p>
+    </div>
+    <div class="strength-row">
+      <span class="no">[ 03 ]</span>
+      <h3 class="h">지식 축적</h3>
+      <p class="d">모든 프로젝트의 결정과 검토 결과가 Obsidian 기반 지식 그래프로 자동 저장됩니다. 다음 프로젝트는 이전 프로젝트의 교훈을 그대로 이어받습니다.</p>
+    </div>
+    <div class="strength-row" style="border-bottom:1px solid var(--ink);">
+      <span class="no">[ 04 ]</span>
+      <h3 class="h">빠른 대응</h3>
+      <p class="d">AI 조직이 24×7로 검수·리포팅을 대리하고, 사람은 결정과 확장에 집중합니다. 결정에서 모델 적용까지 평균 24시간 이내.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="justify-content:flex-start; padding-top:72px; padding-bottom:72px;">
+  <div class="s-label">§ 08 / 연락처</div>
+
+  <!-- 문서 헤더 -->
+  <div style="display:grid; grid-template-columns:1fr auto; align-items:end; margin-top:28px; padding-bottom:20px; border-bottom:2px solid var(--ink);">
+    <div>
+      <h2 class="contact-h" style="font-size:clamp(28px,3.5vw,48px);">
+        함께,<br><em>다음 모델을</em> 만듭시다.
+      </h2>
+    </div>
+    <div style="text-align:right; display:flex; flex-direction:column; align-items:flex-end; gap:8px;">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=72x72&data=https://luabimlabs.com/%23contact&bgcolor=14161a&color=f0ebe1&margin=2"
+           alt="QR" width="72" height="72" style="border:1px solid var(--rule);" loading="lazy"/>
+      <span style="font-family:var(--f-mono); font-size:9px; color:var(--ink-mute); letter-spacing:.07em;">luabimlabs.com/#contact</span>
+    </div>
+  </div>
+
+  <!-- 문의서 양식 -->
+  <form id="contactForm">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:0; border-bottom:1px solid var(--rule); margin-top:0;">
+      <div style="padding:4px 0 2px; font-family:var(--f-mono); font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-mute);">문서 구분</div>
+      <div style="padding:4px 0 2px; font-family:var(--f-mono); font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-mute); text-align:right;">BIM 수행 문의서 · LBL-INQ</div>
+    </div>
+
+    <!-- §01 담당자 정보 -->
+    <div class="cf-section">
+      <div class="cf-sec-label">§ 01 &nbsp;담당자 정보</div>
+      <div class="cf-row">
+        <label class="cf-label">성명 / 회사명 *</label>
+        <input type="text" name="company" required placeholder="홍길동 / (주)건설사명" class="cf-input"/>
+      </div>
+      <div class="cf-row">
+        <label class="cf-label">연락처 이메일 *</label>
+        <input type="email" id="cf-email" name="email" required placeholder="your@email.com" class="cf-input"/>
+      </div>
+      <div class="cf-row">
+        <label class="cf-label">전화번호</label>
+        <input type="tel" name="phone" placeholder="010-0000-0000" class="cf-input"/>
+      </div>
+    </div>
+
+    <!-- §02 프로젝트 개요 -->
+    <div class="cf-section">
+      <div class="cf-sec-label">§ 02 &nbsp;프로젝트 개요</div>
+      <div class="cf-row">
+        <label class="cf-label">프로젝트명</label>
+        <input type="text" name="project" placeholder="OO빌딩 MEP BIM 수행" class="cf-input"/>
+      </div>
+      <div class="cf-row">
+        <label class="cf-label">건물 용도</label>
+        <select name="building_type" class="cf-input cf-select">
+          <option value="">— 선택 —</option>
+          <option>상업시설 (쇼핑몰·호텔·오피스)</option>
+          <option>공공·인프라 (공항·철도·관공서)</option>
+          <option>주거 (아파트·오피스텔)</option>
+          <option>반도체·플랜트</option>
+          <option>교육·의료</option>
+          <option>기타</option>
+        </select>
+      </div>
+      <div class="cf-row">
+        <label class="cf-label">연면적</label>
+        <div style="display:flex; align-items:center; gap:8px; flex:1;">
+          <input type="text" name="area" placeholder="예: 45,000" class="cf-input" style="flex:1;"/>
+          <span style="font-family:var(--f-mono); font-size:12px; color:var(--ink-mute); white-space:nowrap;">m²</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- §03 요청 사항 -->
+    <div class="cf-section">
+      <div class="cf-sec-label">§ 03 &nbsp;요청 사항</div>
+      <div class="cf-row" style="align-items:flex-start;">
+        <label class="cf-label" style="padding-top:2px;">요청 공종</label>
+        <div style="display:flex; flex-wrap:wrap; gap:12px 24px; flex:1;">
+          <label class="cf-check"><input type="checkbox" name="discipline" value="HVAC (기계)"/> HVAC · 기계</label>
+          <label class="cf-check"><input type="checkbox" name="discipline" value="전기"/> 전기</label>
+          <label class="cf-check"><input type="checkbox" name="discipline" value="위생·소방"/> 위생 · 소방</label>
+          <label class="cf-check"><input type="checkbox" name="discipline" value="통신·보안"/> 통신 · 보안</label>
+          <label class="cf-check"><input type="checkbox" name="discipline" value="통합 코디네이션"/> 통합 코디네이션</label>
+          <label class="cf-check"><input type="checkbox" name="discipline" value="샵드로잉 (기계·소방설비)"/> 샵드로잉 · 기계/소방</label>
+        </div>
+      </div>
+      <div class="cf-row">
+        <label class="cf-label">LOD 수준</label>
+        <select name="lod" class="cf-input cf-select">
+          <option value="">— 선택 —</option>
+          <option>LOD 100 (개념 설계)</option>
+          <option>LOD 200 (기본 설계)</option>
+          <option>LOD 300 (실시 설계)</option>
+          <option>LOD 350 (시공 조정)</option>
+          <option>LOD 400 (시공 상세)</option>
+        </select>
+      </div>
+      <div class="cf-row" style="align-items:flex-start;">
+        <label class="cf-label" style="padding-top:2px;">납품 형식</label>
+        <div style="display:flex; flex-wrap:wrap; gap:12px 24px; flex:1;">
+          <label class="cf-check"><input type="checkbox" name="format" value="RVT"/> RVT</label>
+          <label class="cf-check"><input type="checkbox" name="format" value="IFC"/> IFC</label>
+          <label class="cf-check"><input type="checkbox" name="format" value="NWD"/> NWD</label>
+          <label class="cf-check"><input type="checkbox" name="format" value="도면 (DWG/PDF)"/> 도면 (DWG/PDF)</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- §04 일정 -->
+    <div class="cf-section">
+      <div class="cf-sec-label">§ 04 &nbsp;일정</div>
+      <div class="cf-row">
+        <label class="cf-label">착수 희망일</label>
+        <input type="date" name="start_date" class="cf-input"/>
+      </div>
+      <div class="cf-row">
+        <label class="cf-label">납품 희망일</label>
+        <input type="date" name="end_date" class="cf-input"/>
+      </div>
+    </div>
+
+    <!-- §05 추가 요청사항 -->
+    <div class="cf-section" style="border-bottom:2px solid var(--ink);">
+      <div class="cf-sec-label">§ 05 &nbsp;추가 요청사항</div>
+      <div class="cf-row" style="align-items:flex-start;">
+        <label class="cf-label" style="padding-top:12px;">기타 사항</label>
+        <textarea id="cf-message" name="message" rows="3"
+          placeholder="조달청 BIM 지침 적용 여부, 현재 사용 소프트웨어, 기타 협의 사항 등을 자유롭게 기재해 주세요."
+          class="cf-input" style="resize:vertical; line-height:1.6; font-family:inherit;"></textarea>
+      </div>
+    </div>
+
+    <!-- 발송 -->
+    <div style="display:flex; align-items:center; justify-content:space-between; padding-top:20px; flex-wrap:wrap; gap:16px;">
+      <p style="font-family:var(--f-mono); font-size:10px; color:var(--ink-mute); letter-spacing:.06em; line-height:1.6;">
+        * 표시 항목은 필수입니다. 제출 시 freeflim90@gmail.com으로 전달됩니다.
+      </p>
+      <div style="display:flex; align-items:center; gap:16px; flex-wrap:wrap;">
+        <button type="submit" id="cf-btn"
+          style="display:inline-flex; align-items:center; gap:10px; padding:14px 32px; background:var(--ink); color:var(--bg); font-family:var(--f-mono); font-size:12px; letter-spacing:.1em; text-transform:uppercase; border:1px solid var(--ink); cursor:pointer; transition:background .2s, color .2s;"
+          onmouseover="this.style.background='transparent';this.style.color='var(--ink)'"
+          onmouseout="this.style.background='var(--ink)';this.style.color='var(--bg)'">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          문의서 제출
+        </button>
+        <span id="cf-status" style="font-family:var(--f-mono); font-size:12px; color:var(--ink-mute);"></span>
+      </div>
+    </div>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span>LUA BIM LABS · MEP Studio · luabimlabs.com</span>
+  <span>© 2026 LUA BIM LABS. All rights reserved.</span>
+</footer>
+
+<script>
+// 문의 양식 제출
+document.getElementById('contactForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const btn = document.getElementById('cf-btn');
+  const status = document.getElementById('cf-status');
+  const form = e.target;
+  const fd = new FormData(form);
+
+  const disciplines = [...form.querySelectorAll('[name="discipline"]:checked')].map(el => el.value);
+  const formats     = [...form.querySelectorAll('[name="format"]:checked')].map(el => el.value);
+
+  const payload = {
+    email:         fd.get('email')?.trim() || '',
+    company:       fd.get('company')?.trim() || '',
+    phone:         fd.get('phone')?.trim() || '',
+    project:       fd.get('project')?.trim() || '',
+    building_type: fd.get('building_type') || '',
+    area:          fd.get('area')?.trim() || '',
+    disciplines:   disciplines.join(', '),
+    lod:           fd.get('lod') || '',
+    formats:       formats.join(', '),
+    start_date:    fd.get('start_date') || '',
+    end_date:      fd.get('end_date') || '',
+    message:       fd.get('message')?.trim() || '',
+  };
+
+  btn.disabled = true;
+  status.style.color = 'var(--ink-mute)';
+  status.textContent = '발송 중…';
+  try {
+    const res = await fetch('https://api.luabimlabs.com/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+    if (res.ok) {
+      status.style.color = '#6ee7b7';
+      status.textContent = '✓ 제출 완료. 5영업일 내 답변드립니다.';
+      form.reset();
+    } else { throw new Error(); }
+  } catch {
+    status.style.color = '#fca5a5';
+    status.textContent = '전송 실패 — 잠시 후 다시 시도해주세요.';
+    btn.disabled = false;
+  }
+});
+
+// Animate stats on scroll
+function animateCount(el, target, suffix = '') {
+  let start = 0;
+  const step = Math.ceil(target / 40);
+  const timer = setInterval(() => {
+    start += step;
+    if (start >= target) { start = target; clearInterval(timer); }
+    el.textContent = start.toLocaleString() + suffix;
+  }, 30);
+}
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const el = e.target;
+      const val = parseInt(el.dataset.val);
+      if (val) animateCount(el, val, el.dataset.suffix || '');
+      observer.unobserve(el);
+    }
+  });
+}, { threshold: 0.3 });
+
+
+// 지식 그래프 통계 로드
+const API = 'https://api.luabimlabs.com';
+fetch(API + '/api/knowledge-stats').then(r => r.json()).then(s => {
+  if (s.nodes)      animateCount(document.getElementById('kNodeCount'), s.nodes);
+  if (s.edges)      animateCount(document.getElementById('kEdgeCount'), s.edges);
+  if (s.source_docs) animateCount(document.getElementById('kDocCount'), s.source_docs);
+}).catch(() => {});
+fetch(API + '/').then(r => r.json()).then(a => {
+  if (a.agents) document.getElementById('kAgentCount').textContent = a.agents.length;
+}).catch(() => {});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+  function updateNav() {
+    const mid = window.scrollY + window.innerHeight / 2;
+    let current = '';
+    sections.forEach(s => {
+      if (mid >= s.offsetTop) current = s.id;
+    });
+    navLinks.forEach(a => {
+      a.style.color = a.getAttribute('href') === '#' + current ? 'var(--ink)' : '';
+    });
+  }
+  window.addEventListener('scroll', updateNav, { passive: true });
+  updateNav();
+});
+</script>
+</body>
+</html>
