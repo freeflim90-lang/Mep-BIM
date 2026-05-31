@@ -264,3 +264,14 @@ if issues := health_check():
 - CI/CD 자동화 도구를 사용하면 DevOps 프로세스에서 배포 시간을 크게 단축할 수 있다. 2025년에는 AI_driven 솔루션을 통해 더욱 효율적인 자동화가 이루어질 것으로 예상된다.
 - PARA Method를 활용하여 지식베이스의 품질 관리에 도움을 줄 수 있다. P, A, R 항목을 잘 관리하면 지속적인 업데이트와 유지보수가 가능해진다.
 - LangChain과 같은 AI 기반 툴을 활용하여 노트 작성 및 검색 과정을 자동화할 수 있다. 이는 작업 효율성을 높이고, 오류를 줄일 수 있는 좋은 방법이다.
+
+
+## DevOps·Obsidian 인프라 최신 동향 (2026-06-01)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-01
+- Tags: devops,obsidian,infrastructure,update
+
+- 최신 자동화 팁을 활용하여 Obsidian 지식 인프라의 효율성을 높일 수 있습니다.
+- Tavily AI 요약에 따르면, Obsidian은 2025년에는 플러그인을 통한 자동화가 더욱 발전할 것으로 예상됩니다. 이를 통해 연구 노트와 참고문헌 관리를 자동화할 수 있습니다.
+- PARA Method를 적용하여 지식 인프라의 구조를 명확히 정의하고, 프로젝트 목표와 완료 기준을 설정하면 효율적인 관리가 가능합니다.
+- CI/CD 자동화 도구를 활용하여 Obsidian 내에서의 변경 사항을 자동으로 반영할 수 있습니다. 이는 지식베이스의 품질 관리를 강화하고, 업데이트 과정을 간소화하는 데 효과적입니다.
+- LangChain과 같은 기술은 Prompt와 Tool을 활용하여 Obsidian 플러그인 개발에 도움을 줄 수 있습니다. 이를 통해 더욱 특화된 자동화 툴을 만들 수 있습니다.

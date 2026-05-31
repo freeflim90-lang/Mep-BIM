@@ -195,3 +195,31 @@ def score_signal(text: str) -> float:
 - Your Digital Construction Week to-do list (Smart Construction, BIM Automation)
 
 운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-05-31 14:40 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-05-31/1440_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- Autodesk Q1 Earnings Call Highlights - The Globe and Mail (BIM Automation)
+- “AI 맞춰 건설산업 프로세스 혁신”…‘AECO AX Summit’ 성료 - 헤럴드경제 (AX/AI Transformation, BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-05-31 19:55 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-05-31/1955_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- Global BIM Market Size Expected to Hit USD 20.7 Billion by 2035 - openPR.com (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-01 07:52 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-01/0752_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- [파워인터뷰]이윤상 가덕도신공항건설공단 이사장 “우선시공분 연내 착공…2035년 반드시 개항” - 대한경제 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
