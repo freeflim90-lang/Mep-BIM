@@ -585,7 +585,7 @@ def write_html(graph: dict) -> None:
     *{{box-sizing:border-box;margin:0;padding:0}}
     html,body{{height:100%;display:flex;background:#0f0f11;color:#e5e7eb;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overflow:hidden}}
     /* ── 사이드바 ── */
-    #sidebar{{width:300px;min-width:300px;height:100vh;display:flex;flex-direction:column;border-right:1px solid rgba(139,92,246,.22);background:rgba(12,12,14,.97)}}
+    #sidebar{{display:none}}
     #sb-head{{padding:14px 14px 10px;border-bottom:1px solid rgba(148,163,184,.1);flex-shrink:0}}
     #sb-head h1{{font-size:13px;font-weight:700;color:#f4f4f5;letter-spacing:-.01em}}
     #sb-head p{{font-size:11px;color:#52525b;margin-top:2px}}
@@ -721,10 +721,18 @@ function resize() {{
   canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 }}
-window.addEventListener('resize', resize); resize();
+function resizeAndFit() {{
+  resize();
+  if (typeof fitAll === 'function' && nodes && nodes.length) fitAll();
+}}
+window.addEventListener('resize', resizeAndFit);
+if (window.ResizeObserver) {{
+  new ResizeObserver(resizeAndFit).observe(wrap);
+}}
+resize();
 
 // ── 뷰 상태 ──────────────────────────────────────────────────────────────
-let scale = 0.9, ox = 0, oy = 0;
+let scale = 0.18, ox = 0, oy = 0;
 let drag = null, panning = false, panAnchor = null;
 let pointerDownPos = null, didMove = false;
 let selected = null, hovered = null;
@@ -734,11 +742,25 @@ let simSteps = 0, simActive = true;
 // ── 좌표 변환 ─────────────────────────────────────────────────────────────
 const toGraph = (cx, cy) => [(cx - ox) / scale, (cy - oy) / scale];
 
+// ── 전체 fit ─────────────────────────────────────────────────────────────
+function fitAll() {{
+  if (!nodes.length) return;
+  let minX=Infinity, maxX=-Infinity, minY=Infinity, maxY=-Infinity;
+  for (const n of nodes) {{
+    minX=Math.min(minX,n.x); maxX=Math.max(maxX,n.x);
+    minY=Math.min(minY,n.y); maxY=Math.max(maxY,n.y);
+  }}
+  const gw=maxX-minX, gh=maxY-minY;
+  scale=Math.min(W/(gw+120), H/(gh+120), 1.5);
+  ox=W/2-(minX+gw/2)*scale; oy=H/2-(minY+gh/2)*scale;
+}}
+
 // ── 물리 시뮬레이션 ──────────────────────────────────────────────────────
 function step() {{
   if (!simActive) return;
   simSteps++;
-  if (simSteps > 600) {{ simActive = false; return; }}
+  if (simSteps > 600) {{ simActive = false; fitAll(); return; }}
+  if (simSteps % 60 === 0) fitAll();
   for (const e of edges) {{
     const dx = e.t.x - e.s.x, dy = e.t.y - e.s.y;
     const d = Math.max(1, Math.hypot(dx, dy));
@@ -895,7 +917,7 @@ function renderTree(query) {{
     const rows = filtered.map(n =>
       `<div class="doc-item" data-id="${{n.id}}" title="${{n.path||''}}">${{n.label}}</div>`
     ).join('');
-    return `<details open>
+    return `<details${{q ? ' open' : ''}}>
       <summary>
         <span class="arrow">&#9654;</span>
         <span class="cat-dot" style="background:${{color}}"></span>
@@ -986,9 +1008,7 @@ document.getElementById('z-in').addEventListener('click', () => {{
 document.getElementById('z-out').addEventListener('click', () => {{
   scale=Math.max(0.1,scale*0.77); ox=W/2-(W/2-ox)*0.77; oy=H/2-(H/2-oy)*0.77;
 }});
-document.getElementById('z-fit').addEventListener('click', () => {{
-  scale=0.9; ox=W/2-800*0.9; oy=H/2-500*0.9;
-}});
+document.getElementById('z-fit').addEventListener('click', fitAll);
 </script>
 </body>
 </html>""")

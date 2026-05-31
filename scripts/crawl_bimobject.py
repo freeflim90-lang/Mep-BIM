@@ -200,6 +200,13 @@ def fetch_category_tree() -> dict[str, dict]:
     return tree
 
 
+def _safe_filename(name: str) -> str:
+    """파일명에 사용할 수 없는 문자 제거"""
+    for ch in r'/\:*?"<>|':
+        name = name.replace(ch, "_")
+    return name.strip("_ ")
+
+
 # ──────────────────── 단일 카테고리 제품 수집 ────────────────────
 def fetch_all_products(cat: dict) -> list[dict]:
     """소분류 하나의 Revit 패밀리 전량 수집"""
@@ -373,26 +380,30 @@ def save_json(crawler: BIMObjectCrawler) -> Path:
 
 
 # ──────────────────── Obsidian 노트 생성 ──────────────────────────
+def _cat_ko_name(tree: dict, code: str) -> tuple[str, str]:
+    """트리 또는 CAT_KO에서 한국어 이름과 아이콘 반환"""
+    if code in tree:
+        return tree[code].get("ko_name", code), tree[code].get("icon", "📦")
+    if code in CAT_KO:
+        return CAT_KO[code]
+    return code, "📦"
+
+
 def generate_obsidian(crawler: BIMObjectCrawler) -> None:
     updated = datetime.now().strftime("%Y-%m-%d %H:%M")
     tree    = crawler.tree
 
     for parent_code, subs in crawler.results.items():
-        pcat    = tree.get(parent_code, {})
-        p_ko    = pcat.get("ko_name", parent_code)
-        p_icon  = pcat.get("icon", "📦")
+        p_ko, p_icon = _cat_ko_name(tree, parent_code)
         p_total = sum(len(v) for v in subs.values())
 
         # 대분류별 폴더
-        folder = VAULT_DIR / p_ko
+        folder = VAULT_DIR / _safe_filename(p_ko)
         folder.mkdir(parents=True, exist_ok=True)
 
         # 소분류별 노트
         for sub_code, products in subs.items():
-            scat   = tree.get(sub_code, {})
-            s_ko   = scat.get("ko_name", sub_code)
-            s_icon = scat.get("icon", "📦")
-            s_name = scat.get("name", sub_code)
+            s_ko, s_icon = _cat_ko_name(tree, sub_code)
 
             lines = [
                 "---",
@@ -429,7 +440,7 @@ def generate_obsidian(crawler: BIMObjectCrawler) -> None:
                 "- [[MOC - BIMobject 패밀리 가이드]]",
             ]
 
-            note = folder / f"{s_ko} 패밀리.md"
+            note = folder / f"{_safe_filename(s_ko)} 패밀리.md"
             note.write_text("\n".join(lines), encoding="utf-8")
 
         # 대분류 MOC
@@ -457,7 +468,7 @@ def generate_obsidian(crawler: BIMObjectCrawler) -> None:
             "## 관련",
             "- [[MOC - BIMobject 패밀리 가이드]]",
         ]
-        moc_note = folder / f"MOC - BIMobject {p_ko}.md"
+        moc_note = folder / f"MOC - BIMobject {_safe_filename(p_ko)}.md"
         moc_note.write_text("\n".join(moc_lines), encoding="utf-8")
         log.info(f"  Obsidian 폴더: {p_ko}/ ({len(subs)}개 소분류 노트)")
 

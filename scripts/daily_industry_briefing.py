@@ -34,16 +34,21 @@ FOCUS_KEYWORDS = [
     "bim", "revit", "autodesk", "navisworks", "ifc", "openbim", "ids",
     "construction cloud", "digital construction", "vdc", "mep", "clash",
     "prefab", "modular", "scan", "digital twin",
+    "trimble", "bentley", "hexagon", "procore", "aec",
+    "generative ai", "llm", "copilot", "contech", "robotics",
+    "net zero", "sustainability", "green building", "carbon",
+    "drone", "lidar", "point cloud", "reality capture",
     "건설", "설계", "시공", "감리", "bim", "스마트건설", "디지털트윈",
     "자동화", "품질", "간섭", "물량", "모듈러", "프리패브",
+    "드론", "로봇", "3d프린팅", "친환경", "탄소중립",
 ]
 
 NEGATIVE_KEYWORDS = [
-    "stock", "shares", "share price", "ytd decline", "investor", "investment",
-    "market cap", "earnings", "pricing guide", "how much do", "vocal.media",
+    "stock", "shares", "share price", "ytd decline",
+    "market cap", "earnings per share", "pricing guide", "how much do", "vocal.media",
     "law review", "securities", "lawsuit", "dividend", "marketbeat",
-    "takes position", "$adsk", "private banking",
-    "주가", "투자", "증권", "실적", "배당",
+    "takes position", "$adsk", "private banking", "hedge fund",
+    "주가", "증권", "배당", "법원",
 ]
 
 STRATEGIC_TAGS = {
@@ -51,7 +56,10 @@ STRATEGIC_TAGS = {
     "MEP BIM 교육": ["mep", "revit", "bim", "교육", "설계", "시공"],
     "Autodesk Store/Add-in": ["autodesk", "revit", "api", "addin", "add-in", "construction cloud"],
     "OpenBIM/표준": ["ifc", "openbim", "ids", "buildingsmart", "표준"],
-    "AI/자동화": ["ai", "automation", "자동화", "생산성", "digital"],
+    "AI/자동화": ["ai", "automation", "자동화", "생산성", "digital", "generative", "llm", "copilot"],
+    "글로벌 AEC 트렌드": ["contech", "trimble", "bentley", "procore", "aec", "digital twin", "디지털트윈"],
+    "로봇/드론/첨단시공": ["robotics", "drone", "3d printing", "lidar", "point cloud", "드론", "로봇", "3d프린팅"],
+    "지속가능성/넷제로": ["net zero", "sustainability", "green building", "carbon", "탄소중립", "친환경"],
 }
 
 
@@ -354,6 +362,12 @@ def strategic_commentary(items: list[FeedItem]) -> list[str]:
         comments.append("IFC, IDS, openBIM 표준 변화는 납품 기준과 품질검사 항목에 반영 가능성을 검토한다.")
     if tag_counts.get("AI/자동화"):
         comments.append("AI/자동화 사례는 생산성 개선 아이템과 내부 자동화 카탈로그 후보로 분류한다.")
+    if tag_counts.get("글로벌 AEC 트렌드"):
+        comments.append("Trimble·Bentley·Procore 등 글로벌 AEC 플랫폼 동향은 경쟁 포지셔닝과 기능 로드맵 비교에 활용한다.")
+    if tag_counts.get("로봇/드론/첨단시공"):
+        comments.append("현장 자동화(드론·로봇·3D프린팅) 사례는 스마트건설 교육 콘텐츠 및 향후 서비스 확장 후보로 분류한다.")
+    if tag_counts.get("지속가능성/넷제로"):
+        comments.append("탄소중립·친환경 건축 트렌드는 BIM 기반 에너지 분석 및 납품 기준 고도화 방향으로 연결한다.")
     return comments or ["오늘 수집된 신호는 참고 수준으로 유지하고, 반복 노출 시 표준문서 또는 교육자료로 승격한다."]
 
 
@@ -403,17 +417,64 @@ tags:
 """
 
 
+CATEGORY_LABEL = {
+    "bim": "BIM",
+    "design": "설계",
+    "construction": "시공",
+    "global": "글로벌",
+    "ai_construction": "AI건설",
+    "contech": "ConTech",
+    "digital_twin": "디지털트윈",
+    "autodesk": "Autodesk",
+    "aec_platform": "AEC플랫폼",
+    "revit": "Revit",
+    "openbim": "OpenBIM",
+    "sustainability": "친환경",
+}
+
+CATEGORY_PRIORITY = [
+    "ai_construction", "contech", "digital_twin", "aec_platform",
+    "global", "openbim", "sustainability", "autodesk", "revit",
+    "bim", "design", "construction",
+]
+
+
+def _title_key(title: str) -> str:
+    """중복 감지용 정규화 키 — 앞 6 단어 기준."""
+    words = re.sub(r"\W+", " ", title.lower()).split()
+    return " ".join(words[:6])
+
+
 def telegram_message(today: str, selected: list[FeedItem]) -> str:
-    lines = [f"[LUA BIM LABS] {today} 건설·설계·시공·BIM 브리핑", ""]
-    for idx, item in enumerate(selected[:7], 1):
-        tags = ", ".join(item.tags[:2])
-        lines.append(f"{idx}. {item.title}")
-        lines.append(f"   - 연결: {tags}")
+    """일간: 카테고리별 top 1 뉴스. 동일 이벤트 중복 제거."""
+    # selected는 score 내림차순 정렬 상태
+    # 1) 카테고리별 최고 점수 항목 1개 선택
+    top_by_cat: dict[str, FeedItem] = {}
+    seen_event_keys: set[str] = set()
+    for item in selected:
+        ekey = _title_key(item.title)
+        if ekey in seen_event_keys:
+            continue
+        if item.category not in top_by_cat:
+            top_by_cat[item.category] = item
+            seen_event_keys.add(ekey)
+
+    # 2) 우선순위 순으로 정렬
+    ordered: list[FeedItem] = []
+    for cat in CATEGORY_PRIORITY:
+        if cat in top_by_cat:
+            ordered.append(top_by_cat.pop(cat))
+    ordered.extend(top_by_cat.values())
+
+    lines = [f"[LUA BIM LABS] {today} 오늘의 건설·BIM·AI", ""]
+    for item in ordered[:8]:
+        label = CATEGORY_LABEL.get(item.category, item.category)
+        title = item.title[:70] + ("…" if len(item.title) > 70 else "")
+        lines.append(f"[{label}] {title}")
         if item.url:
-            lines.append(f"   - {item.url}")
-    lines.append("")
-    lines.extend(f"- {line}" for line in strategic_commentary(selected)[:3])
-    return "\n".join(lines)[:3900]
+            lines.append(f"→ {item.url}")
+        lines.append("")
+    return "\n".join(lines).strip()[:3900]
 
 
 def append_knowledge_base(today: str, report_path: Path, selected: list[FeedItem]) -> None:
@@ -472,7 +533,7 @@ def run(send: bool) -> Path:
         except Exception as exc:  # noqa: BLE001 - source failures are logged.
             failures.append(f"{source.get('name', 'unknown')}: {type(exc).__name__} {exc}")
 
-    selected = balanced_selection(collected, total=12, per_source=3)
+    selected = balanced_selection(collected, total=18, per_source=3)
     REPORT_DIR.mkdir(parents=True, exist_ok=True)
     report_path = REPORT_DIR / f"{today}_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md"
     report_path.write_text(markdown_report(today, now, selected, failures), encoding="utf-8")

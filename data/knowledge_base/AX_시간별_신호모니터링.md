@@ -155,3 +155,43 @@ def score_signal(text: str) -> float:
 - More Architecture for Less: SSdH and the Latent Potential of Existing Buildings (BIM Automation)
 
 운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-05-30 12:51 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-05-30/1251_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- [중대재해사고예방] BS한양, ‘충돌·질식·추락막는 AI’...스마트 안전관리 본격 가동 - 주간한국 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-05-30 14:16 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-05-30/1416_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 한명식 "경영 효율화로 엔지니어링 대가 20~30% 높일 수 있어" - 뉴시스 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-05-30 16:45 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-05-30/1645_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 한명식 "경영 효율화로 엔지니어링 대가 20~30% 높일 수 있어" - yjb0802.com (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-05-30 17:46 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-05-30/1746_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- The buildingSMART Implementers Assembly, February 2026 Event Report (BIM Automation)
+- Python in AEC. The simplest 6-step learning path to automation (BIM Automation)
+- IFC Use Cases – 5 Practical Applications (Part 2) (BIM Automation, Quality/Product)
+- Haulotte tests robotic arms attached to MEWPs (BIM Automation)
+- Your Digital Construction Week to-do list (Smart Construction, BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.

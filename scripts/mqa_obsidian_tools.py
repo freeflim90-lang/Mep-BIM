@@ -271,7 +271,7 @@ def write_graph_html() -> Path:
         const items = group.items.filter(item => !q || `${{item.label}} ${{item.path}} ${{group.label}} ${{group.folder}}`.toLowerCase().includes(q));
         if (!items.length) return '';
         const itemHtml = items.map(item => `<div class="item" data-id="${{item.id}}"><span>${{item.label}}</span><span class="kind">${{item.kind}}</span></div>`).join('');
-        return `<details open><summary><span class="swatch" style="background:${{colors[group.folder] || '#71717a'}}"></span><span>${{group.label}}</span><span class="count">${{items.length}}</span></summary><div class="purpose">${{group.purpose}}</div>${{itemHtml}}</details>`;
+        return `<details${{q ? ' open' : ''}}><summary><span class="swatch" style="background:${{colors[group.folder] || '#71717a'}}"></span><span>${{group.label}}</span><span class="count">${{items.length}}</span></summary><div class="purpose">${{group.purpose}}</div>${{itemHtml}}</details>`;
       }}).join('');
       treeEl.querySelectorAll('.item').forEach(el => el.addEventListener('click', () => selectNode(el.dataset.id)));
     }}

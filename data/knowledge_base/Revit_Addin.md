@@ -177,3 +177,13 @@ Revit 버전별 Breaking Change 대응: Revit 2025에서 ElementId가 Int32 → 
 
 - 为了顺利通过Autodesk Store的审核，请确保您的Add-in符合所有提交要求。特别注意文档准备、功能描述以及用户界面设计需满足专业标准。
 - 관련: [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]] · [[빌드검증]]
+
+
+## Revit Add-in 최신 동향 및 개발 팁 (2026-05-31)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-05-31
+- Tags: revit,addin,API,update
+
+- Autodesk Revit 2025 API는 .NET 8 기반으로 업그레이드되어 C# 외 다른 언어 지원이 중단되었습니다.
+- 새 API 메서드로 성능 최적화가 이루어졌으며, Dynamo의 업데이트와 함께 Revit Home 기능도 추가되었습니다.
+- Add-in 개발 시 Autodesk Store 심사 통과를 위한 팁으로는 사용자 경험을 향상시키는 UI/UX 설계와 보안 및 데이터 프라이버시 관련 요구사항 준수를 꼽을 수 있습니다.
+- 관련: [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]] · [[빌드검증]]

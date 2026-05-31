@@ -103,3 +103,15 @@ Navisworks API 선택 가이드 — COM API vs .NET Managed API: COM API(`Autode
 - 간섭 검토를 자동화하여 시간과 노력을 절약할 수 있으며, 보고서 커스터마이징 기능을 통해 사용자의 요구에 맞춘 보고서 작성이 가능합니다.
 - API를 활용하면 다양한 도구와 연동하여 BIM/GIS 상호운용 플랫폼 개발 등 넓은 범위의 연구가 가능합니다.
 - 관련: [[Revit_Addin]]
+
+
+## Navisworks Add-in 최신 동향 및 활용 팁 (2026-05-31)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-05-31
+- Tags: navisworks,addin,clash-detection,update
+
+- Navisworks 2025 최신 버전에서는 "특성" 패널이 강화되어 더욱 효율적인 작업을 가능하게 합니다.
+- IFC 파일의 정확한 변환을 위한 Autodesk 전환 프레임워크가 개선되었으며, 이는 BIM 데이터 통합에 도움이 됩니다.
+- API를 활용하여 자동 간섭 검토 기능을 개발할 수 있어 작업 효율성이 크게 향상됩니다.
+- 보고서 커스터마이징 옵션도 강화되어 사용자는 필요한 정보만 포함시킬 수 있습니다.
+- Add-in 개발을 위한 새로운 API를 활용하면 더욱 복잡한 자동화 과정을 구현할 수 있습니다.
+- 관련: [[Revit_Addin]]

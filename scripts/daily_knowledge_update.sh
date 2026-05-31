@@ -120,8 +120,12 @@ EOF
 
   "$PYTHON" -m py_compile scripts/mqa_obsidian_tools.py scripts/build_global_obsidian_map.py
   "$PYTHON" -m py_compile scripts/daily_industry_briefing.py scripts/daily_knowledge_curation.py
+  "$PYTHON" -m py_compile scripts/reasoning_training_digest.py
+  "$PYTHON" -m py_compile scripts/news_trend_knowledge_deepener.py
   "$PYTHON" scripts/daily_industry_briefing.py
+  "$PYTHON" scripts/news_trend_knowledge_deepener.py --date "$TODAY"
   "$PYTHON" scripts/daily_knowledge_curation.py --days 2 --date "$TODAY"
+  "$PYTHON" scripts/reasoning_training_digest.py --days 3 --limit 3
 
   # KB 파일 자동 성장 (오늘 업데이트 안 된 파일만 처리)
   echo "==== $(date '+%H:%M:%S') KB auto-enrich start ===="
