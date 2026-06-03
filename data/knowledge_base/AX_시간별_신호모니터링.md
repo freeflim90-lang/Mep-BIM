@@ -223,3 +223,59 @@ def score_signal(text: str) -> float:
 - [파워인터뷰]이윤상 가덕도신공항건설공단 이사장 “우선시공분 연내 착공…2035년 반드시 개항” - 대한경제 (BIM Automation)
 
 운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-01 09:57 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-01/0957_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 한미글로벌·M3시스템즈·밸류맵, ‘AI 기반 모듈러 건축 혁신 비즈니스’ 모델 구축… 건설산업 비효율성 개선 앞장선다 - 국토일보 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-01 17:30 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-01/1730_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- Build safe, smart and sustainable: CIOB Midlands event discusses competence and delivering sustainability safely (BIM Automation)
+- Policy, funding and capability take stage at CIOB retrofit discussion (BIM Automation, Quality/Product)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-02 07:00 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-02/0700_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- IMAGINiT launches Clarity 2027 for AEC automation - Engineering.com (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-02 17:27 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-02/1727_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- '센서·AI·로봇'…스마트 안전기술로 사고 막는다 - 주간한국 (BIM Automation)
+- What if your BIM model could say ‘no’? (Smart Construction, BIM Automation, Quality/Product)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-03 10:42 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-03/1042_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- '센서·AI·로봇'…스마트 안전기술로 사고 막는다 - 주간한국 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-03 17:13 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-03/1713_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- BIM Services India's Revit Models Maximize Site Safety and Productivity - openPR.com (AX/AI Transformation, BIM Automation, Quality/Product)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.

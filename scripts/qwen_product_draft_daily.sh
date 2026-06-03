@@ -9,4 +9,5 @@ else
   PY="python3"
 fi
 
-"$PY" scripts/qwen_product_draft_runner.py --max-tasks 1 --no-telegram
+"$PY" scripts/seed_qwen_addin_idea_queue.py
+"$PY" scripts/qwen_product_draft_runner.py --max-tasks 5 --no-telegram

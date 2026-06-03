@@ -413,9 +413,10 @@ def write_curriculum() -> None:
 
 
 def write_messages() -> None:
-    MESSAGES_DIR.mkdir(parents=True, exist_ok=True)
+    en_dir = MESSAGES_DIR / "en"
+    en_dir.mkdir(parents=True, exist_ok=True)
     for item in LESSONS:
-        path = MESSAGES_DIR / f"day_{item['day']:03d}.txt"
+        path = en_dir / f"day_{item['day']:03d}.txt"
         path.write_text(render_lesson(item) + "\n", encoding="utf-8")
 
 

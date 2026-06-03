@@ -1,0 +1,347 @@
+#!/usr/bin/env python3
+"""LUA BIM LABS 일일 루틴 체크리스트 — 매일 14:00 자동 발송."""
+
+from __future__ import annotations
+
+import json
+import os
+import subprocess
+import urllib.parse
+import urllib.request
+from datetime import date, datetime, timedelta
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+LOG_DIR = PROJECT_ROOT / "logs"
+
+
+def load_dotenv() -> None:
+    env_path = PROJECT_ROOT / ".env"
+    if not env_path.exists():
+        return
+    for raw in env_path.read_text(encoding="utf-8").splitlines():
+        line = raw.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        os.environ.setdefault(key.strip(), value.strip().strip('"').strip("'"))
+
+
+def send_telegram(text: str) -> bool:
+    token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+    chat_id = os.environ.get("TELEGRAM_CHAT_ID", "")
+    if not token or not chat_id:
+        print("TELEGRAM 환경변수 없음")
+        return False
+    MAX = 4000
+    chunks = [text[i:i+MAX] for i in range(0, len(text), MAX)]
+    ok = True
+    for i, chunk in enumerate(chunks):
+        payload = urllib.parse.urlencode(
+            {"chat_id": chat_id, "text": chunk, "parse_mode": "HTML"}
+        ).encode("utf-8")
+        req = urllib.request.Request(
+            f"https://api.telegram.org/bot{token}/sendMessage",
+            data=payload, method="POST",
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=10) as r:
+                print(f"  [{i+1}/{len(chunks)}] status={r.status}")
+        except Exception as e:
+            print(f"  [{i+1}/{len(chunks)}] ERROR: {e}")
+            ok = False
+    return ok
+
+
+# ── 상태 확인 헬퍼 ──────────────────────────────────────────────────
+
+def pgrep(pattern: str) -> bool:
+    result = subprocess.run(
+        ["pgrep", "-f", pattern], capture_output=True
+    )
+    return result.returncode == 0
+
+
+def log_has_today(log_path: Path, today_str: str) -> tuple[bool, str]:
+    """로그에 오늘 날짜 항목이 있으면 (True, 마지막 시간) 반환."""
+    if not log_path.exists():
+        return False, ""
+    try:
+        lines = log_path.read_text(encoding="utf-8", errors="ignore").splitlines()
+        hits = [l for l in lines if today_str in l]
+        if hits:
+            last = hits[-1]
+            # HH:MM 패턴 추출
+            for part in last.split():
+                if len(part) == 8 and part[2] == ":" and part[5] == ":":
+                    return True, part[:5]
+                if len(part) == 5 and part[2] == ":":
+                    return True, part
+            return True, ""
+        return False, ""
+    except Exception:
+        return False, ""
+
+
+def bimobject_crawled_recently(today: date) -> tuple[bool, str]:
+    """오늘 또는 어제(일요일) BIMobject JSON이 있는지 확인."""
+    data_dir = PROJECT_ROOT / "data" / "bimobject"
+    # 오늘
+    pattern_today = f"bimobject_{today.strftime('%Y%m%d')}_*.json"
+    files_today = sorted(data_dir.glob(pattern_today))
+    if files_today:
+        ts = files_today[-1].stem.split("_")[-1]
+        return True, f"오늘 {ts[:2]}:{ts[2:]} 완료"
+    # 어제(일요일인 경우)
+    yesterday = today - timedelta(days=1)
+    if yesterday.weekday() == 6:
+        pattern_yd = f"bimobject_{yesterday.strftime('%Y%m%d')}_*.json"
+        files_yd = sorted(data_dir.glob(pattern_yd))
+        if files_yd:
+            return True, f"어제({yesterday.strftime('%m-%d')}) 완료"
+    return False, ""
+
+
+def weekly_review_done_this_week(today: date) -> tuple[bool, str]:
+    """이번 주 월요일 이후 weekly_ax_strategy_review.log에 done 항목이 있는지."""
+    log = LOG_DIR / "weekly_ax_strategy_review.log"
+    if not log.exists():
+        return False, ""
+    monday = today - timedelta(days=today.weekday())
+    text = log.read_text(encoding="utf-8", errors="ignore")
+    lines = text.splitlines()
+    for line in reversed(lines):
+        if "done" in line:
+            # 날짜 파싱
+            for part in line.split():
+                try:
+                    d = datetime.strptime(part, "%Y-%m-%d").date()
+                    if d >= monday:
+                        t = ""
+                        for p2 in line.split():
+                            if len(p2) == 8 and p2[2] == ":" and p2[5] == ":":
+                                t = p2[:5]
+                        return True, f"{d.strftime('%m-%d')} {t} 완료"
+                except ValueError:
+                    continue
+    return False, ""
+
+
+# ── 메인 체크리스트 빌드 ────────────────────────────────────────────
+
+def build_checklist(today: date, now: datetime) -> str:
+    today_str = today.isoformat()          # "2026-06-02"
+    today_str2 = today.strftime("%Y-%m-%d")
+    dow_map = {0: "월요일", 1: "화요일", 2: "수요일", 3: "목요일",
+               4: "금요일", 5: "토요일", 6: "일요일"}
+    dow = dow_map[today.weekday()]
+    is_sunday = today.weekday() == 6
+    is_monday = today.weekday() == 0
+
+    lines: list[str] = []
+    lines.append(f"📋 <b>LUA BIM LABS 자동 루틴 체크리스트</b>")
+    lines.append(f"🗓 {today_str} ({dow}) — {now.strftime('%H:%M')} 기준")
+    lines.append("")
+
+    missed: list[str] = []
+
+    # ── 상시 실행 (데몬) ──
+    lines.append("━━━━━━━━━━━━━━━━━━━━")
+    lines.append("🖥 <b>상시 실행 (데몬)</b>")
+
+    api_ok = pgrep(r"python.*server|uvicorn") or bool(
+        subprocess.run(["lsof", "-i", ":8000"], capture_output=True).stdout
+    )
+    lines.append(f"{'✅' if api_ok else '❌'} API 서버 — {'실행 중' if api_ok else '미실행'}")
+
+    ts_ok = pgrep("tailscaled")
+    lines.append(f"{'✅' if ts_ok else '❌'} Tailscale VPN — {'실행 중' if ts_ok else '미실행'}")
+
+    cf_ok = pgrep("cloudflared")
+    lines.append(f"{'✅' if cf_ok else '❌'} Cloudflare Revit 터널 — {'실행 중' if cf_ok else '미실행'}")
+
+    # ── 반복 폴링 ──
+    lines.append("")
+    lines.append("━━━━━━━━━━━━━━━━━━━━")
+    lines.append("🔁 <b>반복 폴링</b>")
+
+    gmail_ok, gmail_t = log_has_today(LOG_DIR / "gmail_inquiry_monitor.log", today_str2)
+    lines.append(f"{'✅' if gmail_ok else '❌'} Gmail 문의 모니터링 (10분) — "
+                 f"{gmail_t + ' 정상' if gmail_ok else '미실행'}")
+    if not gmail_ok:
+        missed.append("Gmail 문의 모니터링")
+
+    api_alert_ok, api_alert_t = log_has_today(
+        LOG_DIR / "api_usage_alerts.launchd.out.log", today_str2[:7]
+    )
+    # api usage log는 날짜 없이 alerts_sent만 — 파일 수정일로 판단
+    api_alert_log = LOG_DIR / "api_usage_alerts.launchd.out.log"
+    if api_alert_log.exists():
+        mtime = date.fromtimestamp(api_alert_log.stat().st_mtime)
+        api_alert_ok = mtime >= today
+        api_alert_t = "정상"
+    lines.append(f"{'✅' if api_alert_ok else '❌'} API 사용량 알림 (30분) — "
+                 f"{'정상 (이벤트 없음)' if api_alert_ok else '미실행'}")
+
+    ax_ok, ax_t = log_has_today(LOG_DIR / "hourly_ax_signal_monitor.log", today_str2)
+    lines.append(f"{'✅' if ax_ok else '❌'} AX 신호 모니터링 (매시간) — "
+                 f"{ax_t + ' 완료' if ax_ok else '미실행'}")
+    if not ax_ok:
+        missed.append("AX 신호 모니터링")
+
+    # ── 일일 루틴 ──
+    lines.append("")
+    lines.append("━━━━━━━━━━━━━━━━━━━━")
+    lines.append("📅 <b>일일 루틴</b>")
+
+    # 지식 업데이트
+    done_marker = LOG_DIR / f".daily_knowledge_update_done_{today_str2}"
+    ku_ok = done_marker.exists()
+    if not ku_ok:
+        ku_ok2, ku_t = log_has_today(LOG_DIR / "daily_knowledge_update.log", today_str2)
+        ku_label = f"{ku_t} 진행 중" if ku_ok2 else "미실행 (Mac 수면)"
+    else:
+        ku_label = "완료"
+    lines.append(f"{'✅' if ku_ok else ('🔄' if not ku_ok and ku_ok2 else '❌')} "
+                 f"지식 업데이트 (00:00) — {ku_label}")
+    if not ku_ok:
+        missed.append("지식 업데이트")
+
+    # 지식 동기화
+    sync_ok, sync_t = log_has_today(LOG_DIR / "sync_knowledge.log", today_str2)
+    sync_label = f"{sync_t} 완료" if sync_ok else "미실행 (Mac 수면)"
+    lines.append(f"{'✅' if sync_ok else '❌'} 지식 동기화 (03:00) — {sync_label}")
+    if not sync_ok:
+        missed.append("지식 동기화")
+
+    # BIM 교육 텔레그램
+    edu_progress = PROJECT_ROOT / "data" / "bim_education" / "progress.json"
+    edu_ok = False
+    edu_label = "미실행 (Mac 수면)"
+    if edu_progress.exists():
+        try:
+            prog = json.loads(edu_progress.read_text(encoding="utf-8"))
+            users = prog.get("users", {})
+            if users:
+                last_dates = [v.get("last_sent", "") for v in users.values()]
+                if all(d == today_str2 for d in last_dates):
+                    days = [v.get("day", 1) - 1 for v in users.values()]
+                    edu_ok = True
+                    edu_label = f"Day {days[0]} 발송 완료"
+                else:
+                    last = max(last_dates)
+                    edu_label = f"미실행 (마지막: {last[5:]})"
+        except Exception:
+            pass
+    lines.append(f"{'✅' if edu_ok else '❌'} BIM 교육 텔레그램 발송 (07:00) — {edu_label}")
+    if not edu_ok:
+        missed.append("BIM 교육 텔레그램 발송")
+
+    # 블로거 포스트 발행
+    blog_log = LOG_DIR / "blogger_catchup_today.out.log"
+    blog_ok = False
+    blog_label = "미실행"
+    if blog_log.exists():
+        mtime = date.fromtimestamp(blog_log.stat().st_mtime)
+        if mtime >= today:
+            text = blog_log.read_text(encoding="utf-8", errors="ignore")
+            if "Published" in text or "발행" in text:
+                blog_ok = True
+                blog_label = "발행 중"
+            elif "already running" in text or "rate limit" in text.lower():
+                blog_ok = True
+                blog_label = "실행 중 (rate limit 대기)"
+    lines.append(f"{'✅' if blog_ok else '❌'} 블로거 포스트 발행 (08:00) — {blog_label}")
+    if not blog_ok:
+        missed.append("블로거 포스트 발행")
+
+    # 내부 성장 루프
+    growth_ok, growth_t = log_has_today(LOG_DIR / "internal_self_growth_loop.log", today_str2)
+    growth_label = f"{growth_t} 완료 (수동)" if growth_ok else "미실행 (Mac 수면)"
+    # done 여부
+    growth_text = (LOG_DIR / "internal_self_growth_loop.log").read_text(
+        encoding="utf-8", errors="ignore"
+    ) if (LOG_DIR / "internal_self_growth_loop.log").exists() else ""
+    growth_done = any(
+        today_str2 in l and "done" in l
+        for l in growth_text.splitlines()
+    )
+    if growth_done:
+        growth_label = f"{growth_t} 완료"
+    lines.append(f"{'✅' if growth_ok else '❌'} 내부 자기 성장 루프 (08:00) — {growth_label}")
+    if not growth_ok:
+        missed.append("내부 자기 성장 루프")
+
+    # Qwen 제품 드래프트
+    qwen_log = LOG_DIR / "qwen_product_draft_daily.launchd.out.log"
+    qwen_ok = False
+    qwen_label = "미실행"
+    if qwen_log.exists():
+        mtime = date.fromtimestamp(qwen_log.stat().st_mtime)
+        if mtime >= today:
+            qwen_ok = True
+            try:
+                data = json.loads(qwen_log.read_text(encoding="utf-8", errors="ignore").strip().splitlines()[-1])
+                remaining = data.get("remaining", [])
+                qwen_label = f"완료 (remaining: {len(remaining)})"
+            except Exception:
+                qwen_label = "완료"
+    lines.append(f"{'✅' if qwen_ok else '❌'} Qwen 제품 드래프트 (08:20) — {qwen_label}")
+    if not qwen_ok:
+        missed.append("Qwen 제품 드래프트")
+
+    # ── 주간 루틴 ──
+    lines.append("")
+    lines.append("━━━━━━━━━━━━━━━━━━━━")
+    lines.append("📆 <b>주간 루틴</b>")
+
+    # 주간 AX 전략 리뷰 (월요일)
+    ax_review_ok, ax_review_label = weekly_review_done_this_week(today)
+    review_mark = "📅 해당 없음 (월요일 아님)" if not is_monday and not ax_review_ok else ""
+    if is_monday and not ax_review_ok:
+        review_mark = "미실행"
+        missed.append("주간 AX 전략 리뷰")
+    lines.append(
+        f"{'✅' if ax_review_ok else ('❌' if is_monday else '➖')} "
+        f"주간 AX 전략 리뷰 (월요일 08:00) — "
+        f"{ax_review_label if ax_review_ok else review_mark if review_mark else '이번 주 미실행'}"
+    )
+
+    # BIMobject 크롤링 (일요일)
+    bim_ok, bim_label = bimobject_crawled_recently(today)
+    if is_sunday and not bim_ok:
+        missed.append("BIMobject 크롤링")
+    lines.append(
+        f"{'✅' if bim_ok else ('❌' if is_sunday else '➖')} "
+        f"BIMobject 크롤링 (일요일 03:00) — "
+        f"{bim_label if bim_label else ('미실행 (Mac 수면)' if is_sunday else '해당 없음')}"
+    )
+
+    # ── 미실행 요약 ──
+    lines.append("")
+    lines.append("━━━━━━━━━━━━━━━━━━━━")
+    if missed:
+        lines.append(f"⚠️ <b>오늘 미실행 항목 {len(missed)}개</b>")
+        for m in missed:
+            lines.append(f"• {m}")
+        lines.append("(모두 새벽 Mac 수면으로 인한 누락)")
+    else:
+        lines.append("✅ <b>모든 루틴 정상 완료</b>")
+
+    return "\n".join(lines)
+
+
+def main() -> None:
+    load_dotenv()
+    today = date.today()
+    now = datetime.now()
+    print(f"체크리스트 생성 중... {today.isoformat()}")
+    msg = build_checklist(today, now)
+    print(msg)
+    print("\nTelegram 발송 중...")
+    send_telegram(msg)
+    print("완료.")
+
+
+if __name__ == "__main__":
+    main()

@@ -128,3 +128,37 @@ Navisworks API 선택 가이드 — COM API vs .NET Managed API: COM API(`Autode
 - API를 활용하면 Navisworks와 다른 시스템 간의 데이터 교환과 통합이 가능해집니다. 이는 BIM/GIS 플랫폼 구축에 필수적입니다.
 - Add-in 개발 시에는 최신 API 버전을 이용하여 더 나은 기능을 제공할 수 있으며, 이를 통해 프로젝트 관리의 효율성을 높일 수 있습니다.
 - 관련: [[Revit_Addin]]
+
+
+## Navisworks Add-in 최신 동향 및 활용 팁 (2026-06-02)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-02
+- Tags: navisworks,addin,clash-detection,update
+
+- Autodesk Navisworks 2025에서는 모델 조정 기능이 업데이트되어 자동 간섭 검토가 가능해졌습니다.
+- 보고서 커스터마이징을 위한 API 활용이 더욱 편리해졌으며, .NET Framework 4.8 기반의 플러그인 개발이 가능합니다.
+- NuGet을 통해 API를 설치할 수 있으며, 일부 사용자들은 성능 문제를 겪고 있으니 주의해야 합니다.
+- Add-in 개발 시에는 최신 API를 활용하여 보고서 형식과 내용을 자유롭게 조정할 수 있습니다.
+- 관련: [[Revit_Addin]]
+
+
+## Navisworks Add-in 최신 동향 및 활용 팁 (2026-06-03)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-03
+- Tags: navisworks,addin,clash-detection,update
+
+- Autodesk Navisworks 2025에서는 모델 조정 기능이 업그레이드되어 작업 효율성을 높일 수 있습니다.
+- 새로운 간섭 검토 자동화 기능을 활용하여 프로젝트 관리 과정에서 시간과 노력을 절약할 수 있습니다.
+- 보고서 커스터마이징 기능으로 사용자 요구에 맞는 보고서를 생성하고, 필요한 정보만 포함시킬 수 있습니다.
+- Navisworks API 2025.0.0을 활용하여 자동화된 플러그인 개발이 가능하며, 이를 통해 복잡한 작업을 간소화할 수 있습니다.
+- Chuongmep.Navis.Api.Autodesk.Navisworks.Api 2025.0.0 NuGet 패키지를 사용하면 API를 쉽게 활용하여 개발할 수 있습니다.
+- 관련: [[Revit_Addin]]
+
+
+## Navisworks Add-in 최신 동향 및 활용 팁 (2026-06-03)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-03
+- Tags: navisworks,addin,clash-detection,update
+
+- Autodesk Navisworks 2025에서는 모델 조정 효율을 높이는 새로운 기능들이 추가되었습니다.
+- 간섭 검토 자동화를 통해 작업 속도가 향상될 수 있으며, 이는 프로젝트 관리에 큰 도움이 됩니다.
+- 보고서 커스터마이징 기능을 활용하여 필요한 정보만 포함된 맞춤형 보고서를 생성할 수 있습니다.
+- Navisworks API 2025.0.0을 통해 사용자 정의 플러그인 개발과 자동화 작업을 수행할 수 있으며, Chuongmep.Navis.Api.Autodesk.Navisworks.Api 2025.0.0 NuGet 패키지를 활용하면 쉽게 시작할 수 있습니다.
+- 관련: [[Revit_Addin]]

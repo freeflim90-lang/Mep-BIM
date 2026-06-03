@@ -438,3 +438,35 @@ foreach (var elem in collector)
 
 - BIM 실무 적용 팁: 발주처별 EIR 요구사항에 맞춰 BIM 데이터를 생성하고 관리해야 한다. 이를 위해 BIM 클러스터가 제시하는 방법론을 활용하여, 프로젝트 특성에 따른 적합한 BIM 시방서를 작성하라. COBie와 FM 연동을 위한 표준 스키마를 준수하여, 데이터의 일관성과 통합성을 확보해야 한다.
 - 관련: [[건축]] · [[설비장비]] · [[설계_지침서]] · [[시공_지침서]]
+
+
+## BIM 시방서 최신 기준 업데이트 (2026-06-02)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-02
+- Tags: BIM,specification,EIR,COBie,update
+
+- 2025년 한국 BIM 시장에서는 발주처별 BIM 요구 수준이 상당히 높아지고 있으며, 이는 EIR (Employer’s Information Requirement)에 명시되어 있어야 합니다.
+- 발주처들은 COBie (Construction Operations Building Information Exchange)와 FM (Facility Management) 연동 데이터 기준을 준수하도록 요구하고 있습니다. 이러한 표준은 건설공정에서부터 유지보수까지의 정보 관리를 효율화하는데 도움이 됩니다.
+- ISO 19650를 따르는 것이 중요하며, 이는 프로젝트 정보 관리에 대한 국제적인 지침을 제공합니다.
+- BIM 데이터의 적합성을 판단하는 방법론은 발주처가 제시한 EIR에 따라 이루어져야 합니다. 이를 통해 BIM 데이터의 디지털화와 interoperability를 보장할 수 있습니다.
+- 관련: [[건축]] · [[설비장비]] · [[설계_지침서]] · [[시공_지침서]]
+
+
+## BIM 시방서 최신 기준 업데이트 (2026-06-03)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-03
+- Tags: BIM,specification,EIR,COBie,update
+
+- 2025년까지의 한국 BIM 시방서(EIR 기반) 동향에서는 발주처별 BIM 요구 수준이 증가하고 있으며, 이는 건설 정보와 자산 관리에 대한 디지털화를 촉진하기 위한 목표로 설정되었습니다.
+- COBie(Construction Operations Building Information Exchange) 및 FM(Facility Management) 연동 데이터 기준은 BIM 시방서에서 필수적으로 포함되어야 하는 요소로, 발주처는 이러한 표준을 준수하도록 요구하고 있습니다. 예를 들어, 발주자별 EIR 요구사항(Employer’s Information Requirement)에 따라 제출되는 BIM 데이터의 적합성을 판단할 수 있는 방법론이 제시되었습니다.
+- 2025년까지의 한국 BIM 도입 로드맵에서는 주요 인프라 프로젝트에서 BIM을 의무적으로 사용하도록 규정하고 있습니다. 이를 통해 데이터 공유와 법적 권리 보호를 강화하는 데 중점을 두고 있습니다.
+- 관련: [[건축]] · [[설비장비]] · [[설계_지침서]] · [[시공_지침서]]
+
+
+## BIM 시방서 최신 기준 업데이트 (2026-06-03)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-03
+- Tags: BIM,specification,EIR,COBie,update
+
+- 2025년까지 국내 주요 인프라 프로젝트에서 BIM 사용이 의무화될 예정이다.
+- 발주처별 BIM 요구 수준(EIR)이 다름, 최신 정보에 따르면 발주자는 디지털 데이터의 적합성을 판단할 수 있는 방법론을 제시해야 한다.
+- COBie와 FM 연동 데이터 기준이 필요하며, 이는 건설정보의 효율적인 공유와 관리를 위해 중요하다.
+- BIM 시방서(EIR)에는 데이터 interoperability 및 Common Data Environment (CDE) 구축에 대한 요구사항도 포함되어야 한다.
+- 관련: [[건축]] · [[설비장비]] · [[설계_지침서]] · [[시공_지침서]]

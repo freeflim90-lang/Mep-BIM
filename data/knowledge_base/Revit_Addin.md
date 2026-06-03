@@ -197,3 +197,38 @@ Revit 버전별 Breaking Change 대응: Revit 2025에서 ElementId가 Int32 → 
 - 새롭게 추가된 API 메서드와 성능 최적화를 통해 개발 효율성 향상 가능.
 - Add-in 개발 시 Autodesk Store 심사 통과를 위해 사용자 경험을 고려하고, 안전성과 보안성을 철저히 검토해야 함.
 - 관련: [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]] · [[빌드검증]]
+
+
+## Revit Add-in 최신 동향 및 개발 팁 (2026-06-02)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-02
+- Tags: revit,addin,API,update
+
+- Autodesk Revit 2025 API는 .NET 8 기반으로 업그레이드되어 .NET 4.8 지원이 중단되었습니다.
+- Deprecated enum values는 더 이상 지원되지 않으며, Dynamo에서는 성능 모니터링과 새로운 노드가 추가되었습니다.
+- 새 API 메서드를 개발할 때는 Autodesk Store 심사 기준을 준수하여 사용자 친화적인 Add-in을 만들어야 합니다. 특히 보안性和性能优化是关键。
+- 在开发Add-in时，确保遵循Autodesk Store的审核标准，以通过其审查并获得批准。这包括但不限于提供清晰的功能描述、用户界面友好性以及数据安全措施。
+- 开发过程中注意新API方法的应用，并进行充分的测试以确保兼容性和稳定性。
+- 관련: [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]] · [[빌드검증]]
+
+
+## Revit Add-in 최신 동향 및 개발 팁 (2026-06-03)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-03
+- Tags: revit,addin,API,update
+
+- Autodesk Revit 2025 API는 .NET 8 기반으로 개발되어 Add-in 개발 시 이 프레임워크를 사용해야 한다.
+- 새로운 API 메서드 중 일부는 C#에서만 Enum 지원을 제공한다.
+- 성능 최적화를 위해 복잡한 계산이나 대량 데이터 처리 작업은 별도 스레드로 분리하여 실행하는 것이 좋다.
+- Add-in 개발 시 Autodesk Store 심사 통과를 위한 팁으로는 사용자 경험(UX)을 고려한 인터페이스 설계와 보안 강화, 오류 관리 및 로그 기록이 필수적이다.
+- 관련: [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]] · [[빌드검증]]
+
+
+## Revit Add-in 최신 동향 및 개발 팁 (2026-06-03)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-03
+- Tags: revit,addin,API,update
+
+- Autodesk Revit 2025 API는 .NET 8 기반으로 개발되었으며, Add-in은 이 프레임워크에서 다시 빌드해야 합니다.
+- 새로운 Enum 지원은 C#에만 제한됩니다.
+- 최신 문서와 SDK가 업데이트된 기능을 위한 자료로 제공되고 있습니다.
+- 성능 최적화를 위해 코드 리뷰 시 주의해야 할 사항들을 확인하고, 필요한 부분에서 효율적인 알고리즘을 적용하세요.
+- Autodesk Store 심사 통과를 위해서는 Add-in이 사용자 프라이버시와 보안에 위배되지 않는지 철저히 검토해야 합니다.
+- 관련: [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]] · [[빌드검증]]

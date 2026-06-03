@@ -27,13 +27,18 @@ from topics import TOPICS_1YR, TOPICS_2YR
 from topics_extended import (
     TOPICS_3YR, TOPICS_4YR, TOPICS_5YR, TOPICS_6YR,
     TOPICS_7YR, TOPICS_8YR, TOPICS_9YR, TOPICS_10YR,
+    TOPICS_11YR, TOPICS_12YR, TOPICS_13YR, TOPICS_14YR, TOPICS_15YR,
+    TOPICS_16YR, TOPICS_17YR, TOPICS_18YR, TOPICS_19YR, TOPICS_20YR,
 )
 
 ALL_TRACKS = {
     "1yr": TOPICS_1YR, "2yr": TOPICS_2YR, "3yr": TOPICS_3YR,
     "4yr": TOPICS_4YR, "5yr": TOPICS_5YR, "6yr": TOPICS_6YR,
     "7yr": TOPICS_7YR, "8yr": TOPICS_8YR, "9yr": TOPICS_9YR,
-    "10yr": TOPICS_10YR,
+    "10yr": TOPICS_10YR, "11yr": TOPICS_11YR, "12yr": TOPICS_12YR,
+    "13yr": TOPICS_13YR, "14yr": TOPICS_14YR, "15yr": TOPICS_15YR,
+    "16yr": TOPICS_16YR, "17yr": TOPICS_17YR, "18yr": TOPICS_18YR,
+    "19yr": TOPICS_19YR, "20yr": TOPICS_20YR,
 }
 
 MESSAGES_DIR = PROJECT_ROOT / "data" / "bim_education" / "messages"
@@ -178,7 +183,7 @@ def main() -> None:
 
     parser = argparse.ArgumentParser(description="BIM 교육 메시지 생성기")
     parser.add_argument("--force", action="store_true", help="기존 파일도 재생성")
-    parser.add_argument("--track", choices=list(ALL_TRACKS.keys()), help="특정 트랙만 생성")
+    parser.add_argument("--track", choices=list(ALL_TRACKS.keys()), help="특정 트랙만 생성 (1yr~20yr)")
     parser.add_argument("--day", type=int, help="특정 Day만 생성")
     args = parser.parse_args()
 

@@ -275,3 +275,31 @@ if issues := health_check():
 - PARA Method를 적용하여 지식 인프라의 구조를 명확히 정의하고, 프로젝트 목표와 완료 기준을 설정하면 효율적인 관리가 가능합니다.
 - CI/CD 자동화 도구를 활용하여 Obsidian 내에서의 변경 사항을 자동으로 반영할 수 있습니다. 이는 지식베이스의 품질 관리를 강화하고, 업데이트 과정을 간소화하는 데 효과적입니다.
 - LangChain과 같은 기술은 Prompt와 Tool을 활용하여 Obsidian 플러그인 개발에 도움을 줄 수 있습니다. 이를 통해 더욱 특화된 자동화 툴을 만들 수 있습니다.
+
+
+## DevOps·Obsidian 인프라 최신 동향 (2026-06-02)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-02
+- Tags: devops,obsidian,infrastructure,update
+
+- Obsidian 플러그인을 활용하여 자동화된 지식 관리를 도입할 수 있다. Tavily AI 요약 기능과 같은 AI 드라이브 자동화 도구가 예측 분석 및 테스트를 빠르고 효율적으로 진행시킨다.
+- CI/CD 자동화는 DevOps의 핵심 요소로, Obsidian에서도 이를 지원한다. PARA 방법론을 적용하여 프로젝트와 지속적인 업무 영역을 명확히 정의하고, 필요한 자료를 효과적으로 관리할 수 있다.
+- LangChain과 같은 도구를 활용하면 모델을 구성하고 테스트하는 데 사용되는 프롬프트와 도구를 쉽게 조합할 수 있어, 지식베이스 품질 관리를 위한 고급 기능도 가능하다.
+
+
+## DevOps·Obsidian 인프라 최신 동향 (2026-06-03)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-03
+- Tags: devops,obsidian,infrastructure,update
+
+- Obsidian 플러그인 활용: 최신 동향에서는 Tavily AI와 같은 인공지능 기반 플러그인을 사용하여 Obsidian의 지식 관리를 더욱 효율적으로 할 수 있습니다.
+- CI/CD 자동화: 2025년 DevOpsAutomation Tools은 고속 애플리케이션 배포를 위해 모듈화된 규칙과 명령어화를 활용할 것으로 예상됩니다. 이를 통해 지식 인프라의 유지보수와 업데이트가 더욱 간편해질 것입니다.
+- 지식베이스 품질 관리: PARA Method를 적용하여 프로젝트, 영역, 자료를 명확하게 정의하고 관리할 수 있습니다. 이를 통해 지식베이스의 질을 높이고 유지보수하는데 효과적입니다.
+
+
+## DevOps·Obsidian 인프라 최신 동향 (2026-06-03)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-03
+- Tags: devops,obsidian,infrastructure,update
+
+- 최신 자동화 팁과 도구 동향 중 Obsidian 플러그인 활용: Tavily AI와 같은 인공지능 기반 플러그인을 사용하여 Obsidian의 지식 관리를 더욱 효율적으로 할 수 있다.
+- CI/CD 자동화: 2025년에는 모듈화된 규칙과 명령어화를 통해 높은 속도로 애플리케이션을 배포하는 것이 중요하다. 이를 위해 DevOps 자동화 도구를 활용할 수 있다.
+- 지식베이스 품질 관리: PARA 방법론을 적용하여 프로젝트, 영역, 자료를 구분하고 관리함으로써 지식베이스의 품질을 높일 수 있다. 이를 통해 지속적인 책임감과 정보 접근성을 보장할 수 있다.
+- LangChain 활용: LangChain은 모델과 하네시를 결합하여 사용자의 요구에 맞는 최적의 도구를 제공한다. 이는 Obsidian 플러그인 개발이나 CI/CD 자동화 과정에서 유용하게 활용될 수 있다.

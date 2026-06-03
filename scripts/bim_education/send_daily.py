@@ -6,6 +6,7 @@ Starter Plan (90일) + 내부 직원 연간 커리큘럼 지원.
 - Day 30/60/90 : 마일스톤 메시지 자동 발송
 - 매주 금요일 : BIM Check Friday 퀴즈 추가 발송
 - Track 완료일 : 레퍼런스 카드 PDF 발송
+- 다국어 지원 : 클라이언트 언어(language 필드)에 따라 메시지 선택, 영어 fallback
 """
 
 from __future__ import annotations
@@ -25,11 +26,21 @@ PROGRESS_FILE = EDU_DIR / "progress.json"
 STARTER_CLIENTS_FILE = PROJECT_ROOT / "data" / "starter_plan" / "clients.json"
 STARTER_MESSAGES_DIR = PROJECT_ROOT / "data" / "starter_plan" / "messages"
 STARTER_FRIDAY_DIR = PROJECT_ROOT / "data" / "starter_plan" / "friday_quiz"
+STARTER_MILESTONE_DIR = PROJECT_ROOT / "data" / "starter_plan" / "milestone_messages"
 STARTER_CARDS_DIR = PROJECT_ROOT / "data" / "starter_plan" / "reference_cards"
 
 BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 
 TRACK_ORDER = ["1yr", "2yr", "3yr", "4yr", "5yr", "6yr", "7yr", "8yr", "9yr", "10yr"]
+
+# Supported languages: code → display name
+SUPPORTED_LANGUAGES = {
+    "ko": "Korean",
+    "en": "English",
+    "ja": "Japanese",
+    "zh": "Chinese (Simplified)",
+    "ar": "Arabic",
+}
 
 DISCIPLINE_MAP = {
     "hvac": "hvac",
@@ -64,6 +75,7 @@ REFERENCE_CARDS = {
     60: (8, "card_08_learning_path.pdf",    "Card 8: BIM Learning Path & Next Steps"),
 }
 
+# English milestone messages (fallback if language-specific file not found)
 MILESTONE_MESSAGES = {
     30: """🎯 30-Day Milestone — Well done!
 
@@ -185,6 +197,7 @@ def load_active_starter_clients() -> list[dict]:
             "track": "starter",
             "progress_key": f"starter:{client.get('client_id')}",
             "discipline": normalize_discipline(raw_discipline),
+            "language": client.get("language", "en"),
         })
     return targets
 
@@ -211,33 +224,53 @@ def next_track(current: str) -> str | None:
 
 
 # ---------------------------------------------------------------------------
-# 메시지 조회
+# 메시지 조회 (다국어 지원)
 # ---------------------------------------------------------------------------
 
-def get_message(track: str, day: int, discipline: str = "hvac") -> str | None:
+def _lang_fallbacks(language: str) -> list[str]:
+    """Try requested language first, then English."""
+    return [language, "en"] if language != "en" else ["en"]
+
+
+def get_message(track: str, day: int, discipline: str = "hvac", language: str = "en") -> str | None:
     if track != "starter":
+        # 내부 직원 트랙은 언어 구분 없이 기존 경로 사용 (한국어)
         msg_file = MESSAGES_DIR / track / f"day_{day:03d}.txt"
         return msg_file.read_text(encoding="utf-8").strip() if msg_file.exists() else None
 
-    if day >= 61:
-        msg_file = STARTER_MESSAGES_DIR / discipline / f"day_{day:03d}.txt"
-    else:
-        msg_file = STARTER_MESSAGES_DIR / f"day_{day:03d}.txt"
+    for lang in _lang_fallbacks(language):
+        if day >= 61:
+            msg_file = STARTER_MESSAGES_DIR / lang / discipline / f"day_{day:03d}.txt"
+        else:
+            msg_file = STARTER_MESSAGES_DIR / lang / f"day_{day:03d}.txt"
+        if msg_file.exists():
+            return msg_file.read_text(encoding="utf-8").strip()
+    return None
 
-    return msg_file.read_text(encoding="utf-8").strip() if msg_file.exists() else None
 
-
-def get_friday_quiz(current_day: int) -> str | None:
+def get_friday_quiz(current_day: int, language: str = "en") -> str | None:
     week_num = min((current_day - 1) // 7 + 1, 13)
-    quiz_file = STARTER_FRIDAY_DIR / f"week_{week_num:02d}.txt"
-    return quiz_file.read_text(encoding="utf-8").strip() if quiz_file.exists() else None
+    for lang in _lang_fallbacks(language):
+        quiz_file = STARTER_FRIDAY_DIR / lang / f"week_{week_num:02d}.txt"
+        if quiz_file.exists():
+            return quiz_file.read_text(encoding="utf-8").strip()
+    return None
 
 
-def get_milestone_message(day: int, name: str, discipline: str) -> str | None:
+def get_milestone_message(day: int, name: str, discipline: str, language: str = "en") -> str | None:
+    """언어별 마일스톤 파일 로드, 없으면 영어 fallback."""
+    discipline_name = DISCIPLINE_DISPLAY.get(discipline, "HVAC")
+
+    for lang in _lang_fallbacks(language):
+        msg_file = STARTER_MILESTONE_DIR / lang / f"day_{day:03d}.txt"
+        if msg_file.exists():
+            template = msg_file.read_text(encoding="utf-8").strip()
+            return template.format(name=name, discipline_name=discipline_name)
+
+    # 파일이 없을 경우 코드 내 영어 fallback
     template = MILESTONE_MESSAGES.get(day)
     if not template:
         return None
-    discipline_name = DISCIPLINE_DISPLAY.get(discipline, "HVAC")
     return template.format(name=name, discipline_name=discipline_name)
 
 
@@ -327,21 +360,23 @@ def process_starter_client(
     chat_id = user["chat_id"]
     progress_key = user["progress_key"]
     discipline = user.get("discipline", "hvac")
+    language = user.get("language", "en")
 
     track = user_data.get("track", "starter")
     current_day = user_data.get("day", 1)
 
     disc_display = DISCIPLINE_DISPLAY.get(discipline, "HVAC")
     track_label = f"Track 9 ({disc_display})" if current_day >= 61 else f"Day {current_day}/60"
-    print(f"\n[{name}] Starter Plan {track_label} — Day {current_day}")
+    lang_display = SUPPORTED_LANGUAGES.get(language, language.upper())
+    print(f"\n[{name}] Starter Plan {track_label} — Day {current_day} [{lang_display}]")
 
     # 레슨 발송
-    message = get_message(track, current_day, discipline)
+    message = get_message(track, current_day, discipline, language)
     if not message:
         if current_day >= 61:
-            print(f"  ⚠️  track9/{discipline}/day_{current_day:03d}.txt 없음 — 레슨 파일 생성 필요")
+            print(f"  ⚠️  {language}/track9/{discipline}/day_{current_day:03d}.txt 없음 — 번역 생성 필요")
         else:
-            print(f"  ⚠️  starter/day_{current_day:03d}.txt 없음 — 레슨 파일 생성 필요")
+            print(f"  ⚠️  {language}/day_{current_day:03d}.txt 없음 — 번역 생성 필요")
         return user_data
 
     sent = send_telegram(chat_id, message)
@@ -350,15 +385,15 @@ def process_starter_client(
 
     # BIM Check Friday 추가 발송
     if is_friday_today and current_day <= 90:
-        quiz = get_friday_quiz(current_day)
+        quiz = get_friday_quiz(current_day, language)
         if quiz:
             print(f"  📋 BIM Check Friday 발송 (Week {min((current_day - 1) // 7 + 1, 13)})")
             send_telegram(chat_id, quiz)
         else:
-            print(f"  ⚠️  BIM Check Friday 퀴즈 파일 없음 (week_{min((current_day - 1) // 7 + 1, 13):02d}.txt)")
+            print(f"  ⚠️  BIM Check Friday 퀴즈 없음 ({language}/week_{min((current_day - 1) // 7 + 1, 13):02d}.txt)")
 
     # 마일스톤 메시지 발송
-    milestone_msg = get_milestone_message(current_day, name, discipline)
+    milestone_msg = get_milestone_message(current_day, name, discipline, language)
     if milestone_msg:
         print(f"  🎯 Day {current_day} 마일스톤 메시지 발송")
         send_telegram(chat_id, milestone_msg)
@@ -381,6 +416,7 @@ def process_starter_client(
         "day": new_day,
         "last_sent": today,
         "discipline": discipline,
+        "language": language,
     }
 
 
