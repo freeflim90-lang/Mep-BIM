@@ -1,5 +1,45 @@
 # OpenBIM 프로그램 연동 지식 베이스
 
+## 2026-06-05 OpenBIM 소프트웨어 생태계 AI 즉시 답변 패턴 보강
+- Source: Graphisoft OpenBIM, BIM Corner IFC Confusion, Tekla 공식, 나무위키 BIM, 오토데스크
+- Tags: openbim,ifc,interoperability,solibri,tekla,archicad,bcf,workflow,2026
+
+**AI 즉시 답변 패턴 — "Revit 말고 다른 BIM 소프트웨어와 데이터를 주고받으려면 어떻게 하나요?"**
+```
+OpenBIM 소프트웨어 간 데이터 교환 방법:
+1. IFC 파일 (Industry Foundation Classes): 중립 포맷으로 공식 교환
+   - Revit → IFC Export → Archicad/Tekla/Solibri에서 Import
+   - 주의: IFC Export 설정에 따라 데이터 손실 가능 → 버전·설정 협의 필요
+2. BCF (BIM Collaboration Format): 검토 이슈 공유
+   - Navisworks 클래시 → BCF 내보내기 → Revit에서 직접 위치 확인
+3. Revit Link: Revit 파일끼리 직접 링크 (가장 정확하나 Revit만 지원)
+4. COBie: FM 연동용 데이터 교환 (Excel 형식)
+```
+
+**OpenBIM 소프트웨어 역할 분류 (2026 기준):**
+| 소프트웨어 | 주요 용도 | IFC 지원 | 국내 사용률 |
+|-----------|---------|---------|-----------|
+| Revit (Autodesk) | 건축·구조·MEP 설계 | Export 중심 | 1위 |
+| Archicad (Graphisoft) | 건축 설계 | 양방향 지원 | 2위 |
+| Tekla Structures | 철골 구조 설계·제작 | IFC 양방향 | 구조 1위 |
+| Navisworks | 통합 검토·4D | Import 중심 | 간섭검토 1위 |
+| Solibri | BIM 품질 검토·IDS 검증 | Import+분석 | 품질검토 특화 |
+| Civil 3D | 토목·도로 설계 | IFC 4.3 지원 | 토목 1위 |
+
+**소프트웨어 간 IFC 연동 실무 주의사항:**
+- Revit → Tekla: 철골 상세 정보 손실 가능 → Tekla 전용 Export 설정 필요
+- Revit → Solibri: Pset 파라미터 이름 일치 여부 반드시 사전 확인
+- Archicad → Revit: MEP 연결 정보 손실 → MEP는 Revit에서 직접 작업 권장
+- IFC 버전 통일: 프로젝트 착수 시 IFC 버전(2x3 vs 4) 전 참여사 합의 필수
+
+**BCF 워크플로우 (간섭 이슈 협업):**
+```
+Navisworks Clash Detective → BCF Export
+→ Revit BCF Manager 플러그인 → 모델에서 직접 위치 확인
+→ 담당자 지정·상태 변경(New→In Progress→Resolved)
+→ ACC/BIM 360 이슈 트래킹과 연동
+```
+
 ## OpenBIM 프로그램 간 연동 개요
 - Source: LUA BIM LABS internal BIM knowledge baseline
 - Tags: openbim,ifc,interoperability,workflow,revit,archicad,tekla,navisworks,solibri
