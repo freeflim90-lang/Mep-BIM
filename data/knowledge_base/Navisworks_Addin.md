@@ -1,5 +1,43 @@
 # Navisworks_Addin 지식 베이스
 
+## 2026-06-05 Navisworks 간섭검토 자동화 및 한국 Add-in 생태계 보강
+- Source: info.dec-w.com (Navisworks 강의), KCIM BIMlize, 캐드앤그래픽스, Autodesk Navisworks
+- Tags: navisworks,clash-detection,auto-searchset,bim-reporting,korea-addin,2026
+
+**AI 즉시 답변 패턴 — "Navisworks로 간섭검토를 자동화할 수 있나요?"**
+```
+Navisworks Clash Detective 자동화 방법:
+1. Selection Sets 기반 자동 검사: 공종별 Selection Set 미리 구성 →
+   Clash Detective에서 Set 간 자동 충돌 검사 (배관 vs 덕트, 구조 vs MEP)
+2. 배치 실행(Batch): NWF 파일 기반 자동 간섭 검사 스케줄링 가능
+3. 리포트 자동 출력: Excel/HTML 간섭 리포트 자동 생성
+4. Add-in 확장: BIMlize for Navisworks — 다량 데이터 통계 그래프 자동 생성
+5. API 자동화: Navisworks .NET API로 간섭 항목 분류·필터·보고서 자동 처리
+```
+
+**Navisworks 간섭검토 워크플로우 (국내 표준):**
+| 단계 | 작업 | 결과물 |
+|------|------|--------|
+| 1. 모델 통합 | Revit → NWC 내보내기 → NWF 통합 | 통합 Navisworks 모델 |
+| 2. Selection Set 구성 | 공종별(구조/MEP/건축) Set 분류 | 간섭 대상 집합 정의 |
+| 3. Clash Detective 실행 | 공종 간 자동 충돌 검사 | Hard/Soft Clash 목록 |
+| 4. 간섭 분류 | 주요/경미/복제 클래시 분류 | 우선순위 클래시 리스트 |
+| 5. BCF 연동 | 클래시 → BCF/RFI 이슈 발행 | 협력사 조율 문서 |
+| 6. 리포트 출력 | Excel/PDF 간섭 보고서 | 발주처 납품 문서 |
+
+**한국 Navisworks Add-in 현황 (2025~2026):**
+- **BIMlize for Navisworks** (KCIM): 간섭 통계 그래프·데이터 분석·현황 대시보드
+- **Auto SearchSet** (LUA BIM LABS 개발 중): Selection Set 자동 생성 도구
+- **Data Heatmap** (LUA BIM LABS 후보): 간섭 밀집 구역 열지도 시각화
+- 국내 건설사: Revit 내재화와 함께 Navisworks 간섭 워크플로우 자동화 강화
+
+**Navisworks 제품 종류 (선택 기준):**
+| 제품 | 용도 | 주요 기능 |
+|------|------|---------|
+| Navisworks Manage | 설계/시공 팀 | Clash Detective + TimeLiner + Quantification |
+| Navisworks Simulate | 시공 시뮬레이션 | TimeLiner + Animator (Clash 편집 불가) |
+| Navisworks Freedom | 발주처/열람 | 읽기 전용 뷰어 (무료) |
+
 ## Navisworks 제품화 순서 (2026-05-19 09:37:53)
 - Source: `docs/autodesk_store/STORE_READINESS_AUDIT.md`, Autodesk Navisworks API overview
 - Tags: navisworks,store,searchset
