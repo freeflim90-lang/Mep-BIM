@@ -86,6 +86,34 @@ resp = requests.post(f"{webhook_url}/dm.version.added", json=payload, headers=he
 | 파일 편집 불가 | 뷰어 권한 | 프로젝트 관리자가 편집자로 권한 변경 |
 - 관련: [[BIM_지침서]] · [[Navisworks_Addin]] · [[IFC_OpenBIM]] · [[BEP_수행계획서]]
 
+
+## 2026-06-04 ISO 19650 기반 CDE 운영 보강
+- Source: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_ISO19650_CDE_INFORMATION_MANAGEMENT_UPDATE.md`
+- Tags: acc,bim360,cde,iso19650,information-management
+
+ACC/BIM360 CDE 운영은 폴더 구조 생성만으로 완료되지 않는다. ISO 19650 정보관리 관점에서는 정보 컨테이너의 metadata, status, revision, approval 흐름을 관리해야 한다.
+
+운영 기준:
+- WIP: 작업 중 정보, 외부 제출·공식 검토 증빙으로 사용 금지
+- Shared: 공종 간 검토·조율용 정보, revision과 공유 일시 기록
+- Published: 발주처·감리·고객 제출 기준 정보, 승인자와 Published 일시 기록
+- Archived: 구버전 또는 폐기 정보, 변경 불가 이력으로 보관
+
+CDE 필수 메타데이터:
+- 정보 컨테이너명
+- 상태 코드
+- Revision
+- 작성자/승인자
+- 공유 또는 발행 일시
+- 검토 목적
+- 보안 등급
+
+다음 액션:
+- 납품검수 결과표와 ACC 폴더 운영 기준에 `CDE 상태`, `Revision`, `승인자`, `Published 일시`를 추가한다.
+- 다음 확인일: 2026-06-11
+
+관련: [[BEP 수행계획서 템플릿]] · [[BIM 납품검수 지식 베이스]] · [[EIR BEP_심사원 지식 베이스]]
+
 ## ACC/BIM360 운영 마스터급 경험 지식 (2026-05-28)
 - Source: claude-code-enhanced 2026-05-28
 - Tags: ACC용량한도, 클라우드모델충돌, 대형RVT업로드실패, CloudModel, 동시편집

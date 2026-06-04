@@ -232,3 +232,46 @@ Revit 버전별 Breaking Change 대응: Revit 2025에서 ElementId가 Int32 → 
 - 성능 최적화를 위해 코드 리뷰 시 주의해야 할 사항들을 확인하고, 필요한 부분에서 효율적인 알고리즘을 적용하세요.
 - Autodesk Store 심사 통과를 위해서는 Add-in이 사용자 프라이버시와 보안에 위배되지 않는지 철저히 검토해야 합니다.
 - 관련: [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]] · [[빌드검증]]
+
+
+## Revit Add-in 최신 동향 및 개발 팁 (2026-06-04)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-04
+- Tags: revit,addin,API,update
+
+- Autodesk Revit 2025 API는 .NET 8 기반으로 개발되어 성능이 향상되었습니다.
+- 새 API 메서드로 프로젝트 관리와 자동화 작업에 도움을 줍니다.
+- 새로운 네임스페이스를 통해 기능이 확장되었으며, 이를 통해 더 많은 기능을 활용할 수 있습니다.
+- 성능 최적화를 위해 코드 효율성을 높이는 것이 중요합니다. 불필요한 계산이나 반복 작업을 줄여야 합니다.
+- Autodesk Store에 Add-in을 등록하려면 철저한 문서 작성과 안전성 검토가 필요합니다. 사용자 가이드와 보안 점검을 포함시켜야 합니다.
+- 심사 통과를 위해 API의 기능과 성능, 호환성을 확인하고, 사용자 경험을 최적화하는 것이 중요합니다.
+- 관련: [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]] · [[빌드검증]]
+
+
+## 2026-06-04 Autodesk 공식 신호 기반 Add-in 업데이트 후보
+- Source: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_OFFICIAL_AUTODESK_SIGNAL_UPDATE.md`
+- Tags: revit,addin,autodesk,aps,needs-review
+
+Autodesk 공식 Revit 2026 What's New와 APS 공식 블로그 기준으로 Add-in 운영 지식을 보강한다. 이 섹션은 확정 개발 지시가 아니라 `needs-review` 후보이며, Store 문구·QA 매트릭스·보안 기준에 반영하기 전 공식 문서와 테스트 증빙을 다시 확인한다.
+
+운영 판단:
+- Revit 2026 Add-in 지원 주장은 Revit 2026.4 계열 스모크 테스트와 릴리스 기준 확인 후에만 사용한다.
+- APS AEC Data Model API와 Data Exchanges는 Model Quality Auditor, BIM Command Center, 납품 검수 자동화의 클라우드 데이터 PoC 후보로 둔다.
+- APS Secure Service Accounts는 ACC/BIM360 자동화의 3LO 토큰·계정 보안 기준 후보로 검토한다.
+- APS 과금·비즈니스 모델 변화는 제품 기능 확정 전 비용·라이선스 영향 검토가 필요하다.
+
+다음 액션:
+- `docs/autodesk_store/QA_SMOKE_TEST_PLAN.md`에 Revit 2026 테스트 증빙 연결 여부 확인
+- `ACC_BIM360`, `라이선스_보안관`, `제품패키징`과 APS 연동 비용·보안 검토 연결
+- 다음 확인일: 2026-06-11
+
+관련: [[ACC BIM360 CDE 지식 베이스]] · [[라이선스_보안관]] · [[지식업데이트]] · [[2026-06-04 LUA BIM LABS Official Autodesk Signal Update]]
+
+
+## Revit Add-in 최신 동향 및 개발 팁 (2026-06-05)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-05
+- Tags: revit,addin,API,update
+
+- Autodesk Revit 2025 API는 .NET 8 기반으로 개발되어 Add-in을 C#으로 재구성해야 합니다.
+- 새로운 API 메서드와 성능 최적화 기능이 추가되었습니다, 특히 카본 분석과 MEP/구조 분석에 대한 새 기능들이 포함됩니다.
+- Autodesk Store 심사 통과를 위한 팁: Add-in의 호환성을 확인하고, 사용자 경험을 향상시키는 기능들을 강화하세요.
+- 관련: [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]] · [[빌드검증]]

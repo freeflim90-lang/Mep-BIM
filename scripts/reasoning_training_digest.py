@@ -12,6 +12,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import hashlib
+import json
 import os
 import re
 import urllib.parse
@@ -24,6 +25,11 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 REPORT_DIR = PROJECT_ROOT / "docs" / "reasoning_training"
 KB_FILE = PROJECT_ROOT / "data" / "knowledge_base" / "추론훈련루프.md"
 STATE_FILE = PROJECT_ROOT / "runtime" / "reasoning_training_digest_seen.txt"
+QUESTION_HISTORY_FILE = PROJECT_ROOT / "runtime" / "reasoning_training_question_history.json"
+DEEPSEEK_BUDGET_FILE = PROJECT_ROOT / "data" / "ai_usage" / "deepseek_monthly_budget.json"
+DEEPSEEK_API_URL = "https://api.deepseek.com/chat/completions"
+DEEPSEEK_ESTIMATED_CALL_COST_USD = 0.35
+MIN_DEEPSEEK_QUESTION_NOVELTY = 0.42
 
 SOURCE_GLOBS = [
     "data/knowledge_base/*.md",
@@ -57,6 +63,12 @@ class Signal:
     def fingerprint(self) -> str:
         raw = f"{self.path.as_posix()}::{self.line}"
         return hashlib.sha1(raw.encode("utf-8")).hexdigest()[:16]
+
+    @property
+    def semantic_fingerprint(self) -> str:
+        """Fingerprint the actual signal so daily files cannot repeat it forever."""
+        normalized = re.sub(r"\W+", "", self.line.lower())
+        return hashlib.sha1(normalized.encode("utf-8")).hexdigest()[:16]
 
 
 def load_local_env() -> None:
@@ -114,7 +126,8 @@ def classify(line: str) -> tuple[list[str], int]:
     return categories, score
 
 
-def collect_signals(days: int, limit: int) -> list[Signal]:
+def collect_signals(days: int, limit: int, seen: set[str] | None = None) -> list[Signal]:
+    seen = seen or set()
     signals: list[Signal] = []
     for path in recent_paths(days):
         for raw in path.read_text(encoding="utf-8", errors="ignore").splitlines():
@@ -125,7 +138,10 @@ def collect_signals(days: int, limit: int) -> list[Signal]:
             if categories and score > 0:
                 rel = path.relative_to(PROJECT_ROOT).as_posix()
                 path_weight = 3 if any(part in rel for part in ["team_requests", "03_Errors_Fixes", "05_Revit_API_Gates"]) else 0
-                signals.append(Signal(path=path, line=line, categories=categories, score=score + path_weight))
+                signal = Signal(path=path, line=line, categories=categories, score=score + path_weight)
+                if signal.fingerprint in seen or signal.semantic_fingerprint in seen:
+                    continue
+                signals.append(signal)
     signals.sort(key=lambda item: (item.score, item.path.stat().st_mtime), reverse=True)
     return dedupe_signals(signals, limit)
 
@@ -145,33 +161,219 @@ def dedupe_signals(signals: list[Signal], limit: int) -> list[Signal]:
 
 
 def load_seen() -> set[str]:
+    seen: set[str] = set()
     if not STATE_FILE.exists():
-        return set()
-    return {line.strip() for line in STATE_FILE.read_text(encoding="utf-8").splitlines() if line.strip()}
+        return load_historical_seen()
+    seen.update(line.strip() for line in STATE_FILE.read_text(encoding="utf-8").splitlines() if line.strip())
+    seen.update(load_historical_seen())
+    return seen
+
+
+def load_historical_seen() -> set[str]:
+    """Include old digest observation lines created before semantic seen keys existed."""
+    seen: set[str] = set()
+    for path in REPORT_DIR.glob("**/*_LUA_REASONING_TRAINING_DIGEST.md"):
+        if "/feedback/" in path.as_posix():
+            continue
+        try:
+            text = path.read_text(encoding="utf-8", errors="ignore")
+        except OSError:
+            continue
+        for match in re.finditer(r"^- 관찰 신호:\s*(.+)$", text, flags=re.MULTILINE):
+            normalized = re.sub(r"\W+", "", match.group(1).strip().lower())
+            if normalized:
+                seen.add(hashlib.sha1(normalized.encode("utf-8")).hexdigest()[:16])
+    return seen
 
 
 def save_seen(signals: list[Signal]) -> None:
     STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
     existing = load_seen()
-    existing.update(signal.fingerprint for signal in signals)
+    for signal in signals:
+        existing.add(signal.fingerprint)
+        existing.add(signal.semantic_fingerprint)
     STATE_FILE.write_text("\n".join(sorted(existing)) + "\n", encoding="utf-8")
+
+
+def focus_phrase(signal: Signal) -> str:
+    line = re.sub(r"`([^`]+)`", r"\1", signal.line)
+    line = re.sub(r"[\[\]()*_>#]", "", line)
+    line = re.sub(r"\s+", " ", line).strip(" .,-")
+    if len(line) <= 70:
+        return line
+    return line[:67].rstrip() + "..."
 
 
 def self_questions(signal: Signal) -> list[str]:
     cats = set(signal.categories)
-    questions = [
-        "이 신호가 실제 현장 문제라면 가장 먼저 확인해야 할 증거는 무엇인가?",
-        "과거 LUA BIM LABS 지식 중 같은 패턴으로 연결할 수 있는 기록은 무엇인가?",
-    ]
+    focus = focus_phrase(signal)
+    questions = []
+    if "실무문제" in cats:
+        questions.append(f"`{focus}`가 실제 현장 문제라면 재현 조건, 영향 범위, 임시 조치 중 무엇을 먼저 확인해야 하는가?")
+    else:
+        questions.append(f"`{focus}`를 실제 실행 후보로 볼 때 지금 당장 확인할 근거는 무엇인가?")
     if "자동화" in cats:
-        questions.append("반복 실행 가능한 스크립트나 Add-in 기능으로 승격할 수 있는가?")
+        questions.append(f"`{focus}`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?")
     if "품질" in cats:
-        questions.append("납품 전 체크리스트나 Model Quality Auditor 룰로 바꿀 수 있는가?")
+        questions.append(f"납품 전 품질 기준으로 바꾼다면 `{focus}`는 합격/불합격 조건을 어떻게 가져야 하는가?")
     if "지식공백" in cats:
-        questions.append("공식 문서, 실제 프로젝트, 담당자 경험 중 무엇으로 검증해야 하는가?")
+        questions.append(f"`{focus}`의 미검증 부분은 공식 문서, 프로젝트 사례, 담당자 경험 중 무엇으로 먼저 막아야 하는가?")
     if "사업화" in cats:
-        questions.append("고객에게 설명 가능한 상품, 교육, 리포트 언어로 바꾸면 무엇이 남는가?")
+        questions.append(f"고객에게 설명할 때 `{focus}`는 시간 절감, 품질 안정, 리스크 감소 중 어디에 가장 가깝나?")
+    if len(questions) < 3:
+        questions.append(f"`{focus}`와 연결할 기존 노트가 없다면 새 표준문서, QA, 백로그 중 어디에 임시 보관해야 하는가?")
     return questions[:4]
+
+
+def question_intent(question: str) -> str:
+    if "재현 조건" in question or "확인할 근거" in question:
+        return "evidence"
+    if "스크립트" in question or "Add-in" in question:
+        return "automation"
+    if "합격/불합격" in question or "품질 기준" in question:
+        return "quality_rule"
+    if "공식 문서" in question or "미검증" in question:
+        return "verification"
+    if "고객에게 설명" in question or "시간 절감" in question:
+        return "business_language"
+    if "임시 보관" in question or "표준문서" in question:
+        return "knowledge_placement"
+    return "general"
+
+
+def question_key(question: str) -> str:
+    normalized = re.sub(r"\W+", "", question.lower())
+    return hashlib.sha1(normalized.encode("utf-8")).hexdigest()[:16]
+
+
+def question_tokens(question: str) -> set[str]:
+    cleaned = re.sub(r"`[^`]+`", " SIGNALFOCUS ", question)
+    return {
+        token.lower()
+        for token in re.findall(r"[A-Za-z0-9가-힣]+", cleaned)
+        if len(token) > 1
+    }
+
+
+def jaccard_similarity(left: set[str], right: set[str]) -> float:
+    if not left or not right:
+        return 0.0
+    return len(left & right) / len(left | right)
+
+
+def load_historical_questions() -> list[str]:
+    questions: list[str] = []
+    if QUESTION_HISTORY_FILE.exists():
+        try:
+            data = json.loads(QUESTION_HISTORY_FILE.read_text(encoding="utf-8"))
+            for item in data.get("questions", []):
+                text = str(item.get("question", "")).strip()
+                if text:
+                    questions.append(text)
+        except (OSError, json.JSONDecodeError):
+            pass
+    for path in REPORT_DIR.glob("**/*_LUA_REASONING_TRAINING_DIGEST.md"):
+        if "/feedback/" in path.as_posix():
+            continue
+        try:
+            text = path.read_text(encoding="utf-8", errors="ignore")
+        except OSError:
+            continue
+        for block in re.finditer(r"### 스스로 던질 질문\n(?P<body>.*?)(?:\n### |\n## |\Z)", text, flags=re.DOTALL):
+            for line in block.group("body").splitlines():
+                match = re.match(r"\s*-\s+(.+)", line)
+                if match:
+                    questions.append(match.group(1).strip())
+    seen: set[str] = set()
+    unique: list[str] = []
+    for question in questions:
+        key = question_key(question)
+        if key in seen:
+            continue
+        seen.add(key)
+        unique.append(question)
+    return unique
+
+
+def candidate_questions(signals: list[Signal]) -> list[str]:
+    questions: list[str] = []
+    seen: set[str] = set()
+    for signal in signals:
+        for question in self_questions(signal):
+            key = question_key(question)
+            if key in seen:
+                continue
+            seen.add(key)
+            questions.append(question)
+    return questions
+
+
+def question_novelty_score(questions: list[str], historical: list[str]) -> tuple[float, str]:
+    if not questions:
+        return 0.0, "no_candidate_questions"
+    if not historical:
+        return 1.0, "no_question_history"
+    historical_tokens = [question_tokens(question) for question in historical]
+    novelty_scores: list[float] = []
+    repeated_intents = 0
+    historical_intents = {question_intent(question) for question in historical[-80:]}
+    for question in questions:
+        tokens = question_tokens(question)
+        max_similarity = max((jaccard_similarity(tokens, hist) for hist in historical_tokens), default=0.0)
+        novelty_scores.append(1.0 - max_similarity)
+        if question_intent(question) in historical_intents:
+            repeated_intents += 1
+    avg_novelty = sum(novelty_scores) / len(novelty_scores)
+    intent_penalty = min(repeated_intents / max(len(questions), 1), 1.0) * 0.12
+    score = max(avg_novelty - intent_penalty, 0.0)
+    reason = f"question_novelty={score:.2f} avg={avg_novelty:.2f} repeated_intents={repeated_intents}/{len(questions)}"
+    return score, reason
+
+
+def should_spend_deepseek_for_questions(signals: list[Signal]) -> tuple[bool, str]:
+    questions = candidate_questions(signals)
+    historical = load_historical_questions()
+    score, reason = question_novelty_score(questions, historical)
+    threshold = float(os.environ.get("REASONING_MIN_DEEPSEEK_QUESTION_NOVELTY", str(MIN_DEEPSEEK_QUESTION_NOVELTY)))
+    if score < threshold:
+        return False, f"low_question_novelty {reason} threshold={threshold:.2f}"
+    unique_intents = {question_intent(question) for question in questions}
+    if len(unique_intents) < 2:
+        return False, f"low_question_diversity intents={','.join(sorted(unique_intents)) or 'none'}"
+    return True, reason
+
+
+def save_question_history(report_path: Path, signals: list[Signal], novelty_reason: str) -> None:
+    existing: list[dict] = []
+    if QUESTION_HISTORY_FILE.exists():
+        try:
+            data = json.loads(QUESTION_HISTORY_FILE.read_text(encoding="utf-8"))
+            existing = list(data.get("questions", []))
+        except (OSError, json.JSONDecodeError):
+            existing = []
+    existing_keys = {str(item.get("key", "")) for item in existing}
+    now = dt.datetime.now().isoformat(timespec="seconds")
+    for signal in signals:
+        for question in self_questions(signal):
+            key = question_key(question)
+            if key in existing_keys:
+                continue
+            existing_keys.add(key)
+            existing.append({
+                "key": key,
+                "question": question,
+                "intent": question_intent(question),
+                "signal": signal.semantic_fingerprint,
+                "source": signal.path.relative_to(PROJECT_ROOT).as_posix(),
+                "report": report_path.relative_to(PROJECT_ROOT).as_posix(),
+                "novelty_reason": novelty_reason,
+                "created_at": now,
+            })
+    QUESTION_HISTORY_FILE.parent.mkdir(parents=True, exist_ok=True)
+    QUESTION_HISTORY_FILE.write_text(
+        json.dumps({"version": 1, "questions": existing[-500:]}, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
 
 
 def inference(signal: Signal) -> str:
@@ -214,8 +416,8 @@ def build_report(signals: list[Signal]) -> tuple[str, str]:
 ### 스스로 던질 질문
 {questions}
 
-### 대표 첨언 요청
-- 이 내용이 실제 실무에서 맞는 방향인지, 현장 경험이나 예외 조건을 덧붙인다.
+### 대표 대리 첨언 처리
+- DeepSeek 대표 대리 첨언관이 실무 예외, 고객 설명 언어, 자동 해소 판정을 보강한다.
 """
             )
         body = "\n\n".join(sections)
@@ -242,12 +444,193 @@ tags:
 
 1. 시스템이 문제 신호를 발견한다.
 2. 시스템이 스스로 질문과 1차 추론을 만든다.
-3. 대표가 텔레그램에서 실무 첨언을 더한다.
-4. 첨언을 Obsidian 지식, QA, 체크리스트, 자동화 후보로 승격한다.
+3. DeepSeek 대표 대리 첨언관이 실무 예외와 자동 해소 판정을 보강한다.
+4. 필요할 때만 대표가 직접 보정하고, 첨언을 Obsidian 지식, QA, 체크리스트, 자동화 후보로 승격한다.
 """
 
     telegram = format_telegram(now, signals)
     return content, telegram
+
+
+def current_budget_month() -> str:
+    return dt.datetime.now().strftime("%Y-%m")
+
+
+def load_deepseek_budget_registry() -> dict:
+    if not DEEPSEEK_BUDGET_FILE.exists():
+        return {"monthly_budget_usd": float(os.environ.get("DEEPSEEK_MONTHLY_BUDGET_USD", "50")), "months": {}}
+    try:
+        registry = json.loads(DEEPSEEK_BUDGET_FILE.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        registry = {"months": {}}
+    registry.setdefault("monthly_budget_usd", float(os.environ.get("DEEPSEEK_MONTHLY_BUDGET_USD", "50")))
+    registry.setdefault("months", {})
+    return registry
+
+
+def deepseek_budget_remaining() -> float:
+    registry = load_deepseek_budget_registry()
+    month_data = registry.get("months", {}).get(current_budget_month(), {})
+    used = float(month_data.get("estimated_spend_usd", 0.0))
+    budget = float(registry.get("monthly_budget_usd", 50.0))
+    return round(max(budget - used, 0.0), 4)
+
+
+def can_use_deepseek_budget() -> bool:
+    estimated = float(os.environ.get("DEEPSEEK_ESTIMATED_CALL_COST_USD", str(DEEPSEEK_ESTIMATED_CALL_COST_USD)))
+    return deepseek_budget_remaining() >= estimated
+
+
+def record_deepseek_budget_use(workflow_id: str, target_agent: str) -> None:
+    estimated = round(float(os.environ.get("DEEPSEEK_ESTIMATED_CALL_COST_USD", str(DEEPSEEK_ESTIMATED_CALL_COST_USD))), 4)
+    registry = load_deepseek_budget_registry()
+    month = current_budget_month()
+    month_data = registry.setdefault("months", {}).setdefault(month, {"estimated_spend_usd": 0.0, "calls": []})
+    month_data["estimated_spend_usd"] = round(float(month_data.get("estimated_spend_usd", 0.0)) + estimated, 4)
+    month_data.setdefault("calls", []).append({
+        "timestamp": dt.datetime.now().isoformat(timespec="seconds"),
+        "workflow_id": workflow_id,
+        "target_agent": target_agent,
+        "estimated_cost_usd": estimated,
+    })
+    DEEPSEEK_BUDGET_FILE.parent.mkdir(parents=True, exist_ok=True)
+    DEEPSEEK_BUDGET_FILE.write_text(json.dumps(registry, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def deepseek_enabled_for_delegate() -> bool:
+    if os.environ.get("REASONING_DELEGATE_REVIEW_ENABLED", "true").lower() not in {"1", "true", "yes", "on"}:
+        return False
+    if os.environ.get("PAID_AI_ENABLED", "false").lower() not in {"1", "true", "yes", "on"}:
+        return False
+    key = os.environ.get("DEEPSEEK_API_KEY", "")
+    return bool(key and key != "sk-fake-key-for-test" and can_use_deepseek_budget())
+
+
+def deepseek_delegate_model(text: str = "") -> str:
+    lowered = text.lower()
+    high_enabled = os.environ.get("DEEPSEEK_HIGH_STAKES_REVIEW_ENABLED", "false").lower() in {"1", "true", "yes", "on"}
+    if high_enabled and any(keyword in lowered for keyword in ["가격", "투자", "손익분기", "mrr", "arr", "스토어", "로드맵", "상품화"]):
+        return os.environ.get("DEEPSEEK_HIGH_STAKES_MODEL", "deepseek-v4-pro")
+    return os.environ.get("DEEPSEEK_FINAL_REVIEW_MODEL", "deepseek-v4-flash")
+
+
+def build_delegate_prompt(report_text: str, signals: list[Signal]) -> str:
+    signal_lines = "\n".join(
+        f"- {', '.join(signal.categories)} | {signal.path.relative_to(PROJECT_ROOT).as_posix()} | {sanitize_for_markdown(signal.line)}"
+        for signal in signals[:3]
+    )
+    return (
+        "당신은 LUA BIM LABS 대표의 추론 첨언 대리자입니다.\n"
+        "목표는 대표가 매번 직접 답장하지 않아도 추론 훈련 루프가 현실적인 실무 판단으로 보정되게 하는 것입니다.\n\n"
+        "역할 원칙:\n"
+        "- 대표의 확정 의사결정을 가장하지 말고, '대표 대리 첨언 초안'으로 작성합니다.\n"
+        "- 현장 BIM 실무, 상품화, 교육/온보딩, 자동화 승격 관점에서 빠진 조건을 보강합니다.\n"
+        "- 같은 질문을 반복하지 말고, 이번 후보를 archive/merge/promote/send 중 하나로 판정합니다.\n"
+        "- 민감정보, 고객명, 프로젝트명, 내부 경로를 추정하거나 복원하지 않습니다.\n\n"
+        "출력 형식:\n"
+        "## 대표 대리 추론 첨언\n"
+        "### 대리 판단\n"
+        "- ...\n"
+        "### 보강할 현실 조건\n"
+        "- ...\n"
+        "### 자동 해소 판정\n"
+        "- Decision: archive | merge | promote | send\n"
+        "- Reason: ...\n"
+        "### 다음 지식화 액션\n"
+        "- ...\n\n"
+        "후보 신호:\n"
+        f"{signal_lines}\n\n"
+        "다이제스트:\n"
+        f"{sanitize_for_markdown(report_text[-7000:])}"
+    )
+
+
+def call_deepseek_delegate(report_text: str, signals: list[Signal]) -> tuple[str, str]:
+    if not signals:
+        return "", "no_signals"
+    should_spend, novelty_reason = should_spend_deepseek_for_questions(signals)
+    if not should_spend:
+        return "", novelty_reason
+    if not deepseek_enabled_for_delegate():
+        return "", "disabled_or_budget_or_key"
+    prompt = build_delegate_prompt(report_text, signals)
+    model = deepseek_delegate_model(prompt)
+    payload = {
+        "model": model,
+        "messages": [
+            {
+                "role": "system",
+                "content": (
+                    "당신은 LUA BIM LABS의 대표 대리 추론 첨언관입니다. "
+                    "한국어로 간결하게, 실행 가능한 판단과 자동 해소 판정을 작성합니다."
+                ),
+            },
+            {"role": "user", "content": prompt},
+        ],
+        "max_tokens": 1600,
+        "temperature": 0.2,
+    }
+    request = urllib.request.Request(
+        DEEPSEEK_API_URL,
+        data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
+        headers={
+            "Authorization": f"Bearer {os.environ['DEEPSEEK_API_KEY']}",
+            "Content-Type": "application/json",
+        },
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=45) as response:
+            data = json.loads(response.read().decode("utf-8"))
+    except Exception as exc:  # noqa: BLE001 - daily routine should continue without paid review.
+        return "", f"failed:{type(exc).__name__}"
+    content = (data.get("choices") or [{}])[0].get("message", {}).get("content", "")
+    review = sanitize_for_markdown(content.strip())[:4000]
+    if review:
+        record_deepseek_budget_use("reasoning_training_delegate_annotation", "대표_대리_추론첨언")
+    return review, model if review else "empty_response"
+
+
+def sanitize_for_markdown(text: str) -> str:
+    text = re.sub(r"/Users/[^\s`]+", "[LOCAL_PATH_REDACTED]", text)
+    text = re.sub(r"api[_ -]?key\s*[:=]\s*\S+", "api_key=[REDACTED]", text, flags=re.IGNORECASE)
+    text = re.sub(r"token\s*[:=]\s*\S+", "token=[REDACTED]", text, flags=re.IGNORECASE)
+    text = re.sub(r"secret\s*[:=]\s*\S+", "secret=[REDACTED]", text, flags=re.IGNORECASE)
+    text = re.sub(r"password\s*[:=]\s*\S+", "password=[REDACTED]", text, flags=re.IGNORECASE)
+    return text
+
+
+def append_delegate_annotation(report_path: Path, delegate_review: str, model_or_reason: str) -> str:
+    now = dt.datetime.now()
+    if delegate_review:
+        block = (
+            f"\n\n## 대표 대리 추론 첨언 ({now.strftime('%Y-%m-%d %H:%M:%S')})\n\n"
+            f"- Source: DeepSeek API\n"
+            f"- Model: {sanitize_for_markdown(model_or_reason)}\n"
+            "- Role: 대표 대리 첨언 초안\n\n"
+            f"{delegate_review}\n"
+        )
+        kb_body = delegate_review
+    else:
+        block = (
+            f"\n\n## 대표 대리 추론 첨언 스킵 ({now.strftime('%Y-%m-%d %H:%M:%S')})\n\n"
+            f"- Reason: {sanitize_for_markdown(model_or_reason)}\n"
+        )
+        kb_body = f"스킵: {sanitize_for_markdown(model_or_reason)}"
+    with report_path.open("a", encoding="utf-8") as handle:
+        handle.write(block)
+    KB_FILE.parent.mkdir(parents=True, exist_ok=True)
+    if not KB_FILE.exists():
+        KB_FILE.write_text("# 추론훈련루프 지식 베이스\n\n", encoding="utf-8")
+    with KB_FILE.open("a", encoding="utf-8") as handle:
+        handle.write(
+            f"\n\n## {now.isoformat(timespec='seconds')} 대표 대리 추론 첨언\n"
+            f"- Source: `{report_path.relative_to(PROJECT_ROOT).as_posix()}`\n"
+            f"- Model/Reason: {sanitize_for_markdown(model_or_reason)}\n"
+            "- Tags: reasoning-training,delegate-annotation,deepseek\n\n"
+            f"{kb_body}\n"
+        )
+    return block
 
 
 def format_telegram(now: dt.datetime, signals: list[Signal]) -> str:
@@ -277,7 +660,8 @@ def format_telegram(now: dt.datetime, signals: list[Signal]) -> str:
     lines.extend(
         [
             "",
-            "대표 첨언 요청: 실무에서 맞는 점, 빠진 예외, 고객에게 설명할 언어를 답장으로 남겨주세요.",
+            "대표 대리 첨언: DeepSeek가 실무 예외, 고객 설명 언어, 자동 해소 판정을 보강합니다.",
+            "직접 보정이 필요한 경우에만 이 메시지에 답장해주세요.",
         ]
     )
     return "\n".join(lines)
@@ -326,9 +710,9 @@ def send_telegram(message: str) -> bool:
 
 def run(days: int, limit: int, send: bool, include_seen: bool) -> Path:
     load_local_env()
-    signals = collect_signals(days, limit * 3)
+    seen = set() if include_seen else load_seen()
+    signals = collect_signals(days, limit * 25, seen=seen)
     if not include_seen:
-        seen = load_seen()
         signals = [signal for signal in signals if signal.fingerprint not in seen]
     signals = signals[:limit]
     content, telegram = build_report(signals)
@@ -340,15 +724,22 @@ def run(days: int, limit: int, send: bool, include_seen: bool) -> Path:
     report_path.write_text(content, encoding="utf-8")
     update_kb(report_path, signals)
     save_seen(signals)
-    if send:
+    delegate_review, delegate_model_or_reason = call_deepseek_delegate(content, signals)
+    save_question_history(report_path, signals, delegate_model_or_reason)
+    delegate_block = append_delegate_annotation(report_path, delegate_review, delegate_model_or_reason)
+    if send and signals:
         telegram_with_context = (
             f"{telegram}\n\n"
             f"기록: {report_path.relative_to(PROJECT_ROOT).as_posix()}\n"
-            "이 메시지에 답장으로 회신하면 추론 첨언으로 저장됩니다."
+            f"대표 대리 첨언: {'완료' if delegate_review else '스킵'} ({delegate_model_or_reason})\n"
+            "필요할 때만 이 메시지에 답장하면 대표 직접 보정으로 추가 저장됩니다."
         )
         send_telegram(telegram_with_context)
+    elif send:
+        print("telegram=skipped reason=no_new_reasoning_signals")
     print(f"reasoning_training_digest={report_path}")
     print(f"signals={len(signals)}")
+    print(f"delegate_annotation={'done' if delegate_review else 'skipped'} reason_or_model={delegate_model_or_reason}")
     return report_path
 
 

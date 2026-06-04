@@ -162,3 +162,26 @@ Navisworks API 선택 가이드 — COM API vs .NET Managed API: COM API(`Autode
 - 보고서 커스터마이징 기능을 활용하여 필요한 정보만 포함된 맞춤형 보고서를 생성할 수 있습니다.
 - Navisworks API 2025.0.0을 통해 사용자 정의 플러그인 개발과 자동화 작업을 수행할 수 있으며, Chuongmep.Navis.Api.Autodesk.Navisworks.Api 2025.0.0 NuGet 패키지를 활용하면 쉽게 시작할 수 있습니다.
 - 관련: [[Revit_Addin]]
+
+
+## Navisworks Add-in 최신 동향 및 활용 팁 (2026-06-04)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-04
+- Tags: navisworks,addin,clash-detection,update
+
+- Navisworks 2025에서 최신 기능 중 하나는 간섭 검토 자동화입니다. 이 기능을 활용하면 프로젝트의 모델 간 간섭을 자동으로 식별하고, 이를 통해 작업 효율성을 높일 수 있습니다.
+- 보고서 커스터마이징 기능도 강화되었습니다. 사용자는 필요한 정보만 포함시키거나 제외할 수 있어, 프로젝트의 특성에 맞는 보고서를 생성할 수 있습니다.
+- API 활용 방법을 알아보면, 이는 플러그인 개발에 큰 도움이 됩니다. Navisworks 2025에서는 API의 기능이 향상되어, 사용자는 다양한 자동화 작업과 통합 작업을 수행할 수 있게 되었습니다.
+- 그러나 일부 사용자들은 2025 버전에서 플러그인 성능이 2024 버전보다 떨어진다는 점을 지적하고 있습니다. 따라서 플러그인 개발 시에는 이 점을 고려해야 합니다.
+- 관련: [[Revit_Addin]]
+
+
+## Navisworks Add-in 최신 동향 및 활용 팁 (2026-06-05)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-05
+- Tags: navisworks,addin,clash-detection,update
+
+- Navisworks 2025는 모델 조정 기능을 강화하고 효율성을 향상시켰습니다.
+- 최신 API 버전 2025.0.0을 통해 사용자 정의 플러그인 개발이 가능하여 능력을 확장할 수 있습니다.
+- 간섭 검토 자동화를 위해 AutoCollide 기능을 활용하면 시간과 노력을 절약할 수 있습니다.
+- 보고서 커스터마이징을 위해 Navisworks Report Writer Add-in을 사용하여 필요에 맞게 보고서를 제작할 수 있습니다.
+- API를 활용해 자동화된 품질 검토와 분석 가능한 시스템을 개발하고, 플랫폼과 연계하는 방법을 배울 수 있습니다.
+- 관련: [[Revit_Addin]]

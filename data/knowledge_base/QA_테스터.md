@@ -1,5 +1,56 @@
 # QA_테스터 지식 베이스
 
+## 2026-06-04 BF/편의시설 QA 룰 분리 기준
+- Source: `docs/training_curriculum/team_distribution/samples/2026-06-04_BIM_MODELER_BF_QA_CHECKLIST_SAMPLE.md`
+- Tags: qa,BF,accessibility,checklist,KST
+
+QA_테스터는 BF/편의시설 자동검수 룰을 최종 적합 판정으로 보지 않는다. 자동화는 객체 존재, 파라미터 입력, 도면/뷰 링크, 장애물 후보 탐지에 사용하고, 대상시설·의무/권장·인증 단계·지자체 해석은 수동 검토로 분리한다.
+
+QA 룰 후보:
+- 접근로, 주차, 출입구, 복도, 승강기, 화장실, 안내설비 객체 존재 여부
+- 모델 파라미터 입력 여부
+- BF 검토표, RFI, BCF, 인증 문서 링크 누락 여부
+- 문/복도/화장실 주변 장애물 후보 탐지
+
+수동 검토 후보:
+- 대상시설 여부
+- 의무/권장 편의시설 구분
+- 예비인증/본인증 단계별 요구 차이
+- 특기시방서와 법령 별표 충돌
+- 인증기관, 지자체, 설계자 해석
+
+관련: [[건축]] · [[BIM_납품검수]] · [[2026-06-04 BIM 모델러 BF QA 체크리스트 샘플]]
+
+## 2026-06-04 BF 자동검수 룰 후보 샘플 반영
+- Source: `docs/training_curriculum/team_distribution/samples/2026-06-04_QA_BF_AUTOCHECK_RULE_CANDIDATE_SAMPLE.md`
+- Tags: qa,BF,autocheck,rule-candidate,KST,training
+
+QA_테스터는 BF/편의시설 자동검수 룰을 `존재 확인`, `파라미터 입력`, `증빙 링크`, `장애물 후보 탐지` 중심으로 등록한다. 자동검수 PASS는 BF 적합, 인증 통과, 납품 합격을 의미하지 않는다.
+
+운영 기준:
+- `KST04`: 자동 수집 치수, 객체명, 파라미터 후보는 QA 참고 후보로만 사용한다.
+- `KST03`: 대상시설, 의무/권장, 예비인증/본인증, 지자체 조건, 특기시방서는 수동 검토 또는 RFI로 넘긴다.
+- 인증 통과 보장 문구가 보고서에 포함되면 `QA_FAIL`로 처리한다.
+- 대상성 또는 인증 단계가 미확정이면 `QA_BLOCKED` 또는 `QA_PASS_WITH_NOTES`로 남기고 PM 확인을 요청한다.
+
+관련: [[2026-06-04 QA 테스터 BF 자동검수 룰 후보 샘플]] · [[BIM 납품검수 지식 베이스]] · [[프로그램개발 지식 베이스]]
+
+## 2026-06-04 CS BF 응답과 QA 결과 문구 연결
+- Source: `docs/training_curriculum/team_distribution/samples/2026-06-04_CS_BF_EVIDENCE_RESPONSE_SAMPLE.md`
+- Tags: qa,BF,cs-response,report-wording,KST
+
+QA_테스터는 BF 자동검수 리포트 문구가 CS 응답과 충돌하지 않도록 관리한다. 리포트에는 `자동검수 후보`, `수동 검토 필요`, `PM/RFI 확인 필요` 같은 표현을 사용하고, `BF 불합격`, `인증 통과`, `법규 적합 확정`처럼 최종 판정으로 읽히는 표현을 피한다.
+
+관련: [[고객지원 CS 지식 베이스]] · [[2026-06-04 CS BF 근거기반 고객 응답 샘플]]
+
+## 2026-06-04 BF 자동검수 개발 티켓 QA 연결
+- Source: `docs/training_curriculum/team_distribution/samples/2026-06-04_DEV_BF_AUTOCHECK_TICKET_SAMPLE.md`
+- Tags: qa,BF,development-ticket,test-case,KST
+
+QA_테스터는 BF 자동검수 개발 티켓의 TC-DEV-BF-001~006을 회귀 테스트 후보로 등록한다. 특히 인증 단계 미입력은 `QA_BLOCKED`, 보고서 금지 문구는 `QA_FAIL`, 증빙 링크 누락은 `QA_PASS_WITH_NOTES`로 분리한다.
+
+관련: [[프로그램개발 지식 베이스]] · [[2026-06-04 개발 R D BF 자동검수 티켓 샘플]]
+
 ## Autodesk Store 제출 전 QA 기준 (2026-05-19 09:37:53)
 - Source: `docs/autodesk_store/STORE_SUBMISSION_CHECKLIST.md`
 - Tags: qa,revit,store
@@ -141,6 +192,25 @@ QA 결과 상태:
 - 관련: [[빌드검증]] · [[Dynamo]] · [[Revit_Addin]] · [[CS_기술지원관]]
 
 
+## 2026-06-04 OpenBIM IDS/BCF QA 보강
+- Source: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_OPENBIM_IDS_BCF_UPDATE.md`
+- Tags: qa,ids,bcf,openbim,delivery-quality
+
+QA_테스터는 IDS 자동 검증 결과를 최종 납품 합격으로 보지 않는다. IDS는 IFC 모델의 정보 요구사항 검토에 강하지만 geometry, 간섭, 시공성, MEP 연결성 문제를 모두 보장하지 않는다.
+
+QA 보강 기준:
+- IDS PASS 후에도 더미 값, 의미 없는 코드, 미연결 MEP 시스템, 미배치 Space를 별도 확인한다.
+- BCF 이슈는 검수 실패 항목의 상태, 담당, 재검수일을 추적하는 증빙으로 사용한다.
+- IFC 버전은 최신성보다 발주처 EIR/BEP, 수신 소프트웨어, 검증 도구 지원 여부로 선택한다.
+
+다음 액션:
+- Model Quality Auditor QA 시나리오에 `IDS PASS but operational FAIL` 케이스를 추가한다.
+- BCF 이슈 상태 전환(Open/In Progress/Closed)을 재검수 증빙 항목으로 둔다.
+- 다음 확인일: 2026-06-11
+
+관련: [[IFC OpenBIM 지식 베이스]] · [[BIM 납품검수 지식 베이스]] · [[ACC BIM360 CDE 지식 베이스]]
+
+
 ## BIM Add-in QA 테스트 최신 기준 (2026-05-30)
 - Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-05-30
 - Tags: qa,testing,revit,update
@@ -203,4 +273,25 @@ QA 결과 상태:
 - UI 자동화 시스템을 구축하고, Revit Add-in QA 테스터는 이 시스템을 활용해 사용자 인터페이스의 변화와 문제점을 신속하게 파악할 수 있어야 합니다.
 - P1 버그 기준은 고정되지 않았으나, 일반적으로는 버전 출시 후 30일 내에 수정해야 하는 심각한 버그로 간주됩니다. 
 - P2 버그 기준은 사용자의 일상 작업 수행에 지장을 주지만, 큰 문제는 아닌 경우를 포함합니다. 이들은 90일 내에 수정되어야 합니다.
+- 관련: [[빌드검증]] · [[Dynamo]] · [[Revit_Addin]] · [[CS_기술지원관]]
+
+
+## BIM Add-in QA 테스트 최신 기준 (2026-06-04)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-04
+- Tags: qa,testing,revit,update
+
+- Revit 2024 버전별 회귀 테스트를 진행하여 이전 버전과의 호환성을 확인한다.
+- UI 자동화를 위해 Selenium WebDriver와 같이 사용 가능한 프레임워크를 활용하여 BIM Add-in의 사용자 인터페이스를 자동화한다.
+- P1(Priority 1) 버그는 즉시 수정해야 하며, P2(Priority 2) 버그는 최대한 빨리 해결해야 한다. 이 기준은 버그의 심각성과 사용자의 경험에 영향을 미치는 정도를 나타낸다.
+- Autodesk Model Checker와 같은 도구를 활용하여 API 업데이트 시 모델의 정확성을 확인한다.
+- 관련: [[빌드검증]] · [[Dynamo]] · [[Revit_Addin]] · [[CS_기술지원관]]
+
+
+## BIM Add-in QA 테스트 최신 기준 (2026-06-05)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-05
+- Tags: qa,testing,revit,update
+
+- Revit 2023 버전에서 시작하여 2025 버전까지의 회귀 테스트를 수행해야 합니다.
+- UI 자동화를 위한 Selenium WebDriver와 TestComplete을 활용해 QA 테스팅을 자동화합니다.
+- P1 버그 기준은 사용자 경험에 직접적인 영향을 미치는 심각한 오류이며, P2 버그는 사용자의 작업 진행에 방해가 되는 중등도의 문제입니다.
 - 관련: [[빌드검증]] · [[Dynamo]] · [[Revit_Addin]] · [[CS_기술지원관]]

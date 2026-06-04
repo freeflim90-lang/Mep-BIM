@@ -92,6 +92,26 @@ print(f"필수 파라미터 누락 기기: {len(missing)}개")
 ```
 - 관련: [[OpenBIM_프로그램연동]] · [[BIM_납품검수]] · [[ACC_BIM360]] · [[Revit_Addin]]
 
+
+## 2026-06-04 buildingSMART 공식 OpenBIM 표준 업데이트
+- Source: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_OPENBIM_IDS_BCF_UPDATE.md`
+- Tags: ifc,openbim,ids,bcf,buildingsmart,official-source
+
+buildingSMART 공식 문서 기준으로 IDS 1.0은 공식 표준이며, IFC 모델의 정보 요구사항을 컴퓨터가 해석 가능한 방식으로 정의하고 자동 적합성 검토에 활용한다. IDS 1.0 이전 버전은 공식 표준으로 보지 않는다.
+
+운영 판단:
+- EIR/BEP의 반복 파라미터 요구사항은 IDS 1.0 후보로 분리한다.
+- IDS는 속성, 값, 분류, 재료 등 정보 요구사항 검증에 적합하지만 geometry, 간섭, 시공성, MEP 연결성 검토 전체를 대체하지 않는다.
+- BCF는 검수 이슈를 `.bcfzip` 또는 RESTful 서비스 방식으로 추적하는 openBIM 이슈 언어로 본다.
+- IFC 4.3은 최신 ISO 축이지만 건축/MEP 납품에서는 발주처 요구 버전과 수신 소프트웨어 지원 여부를 먼저 확인한다.
+
+다음 액션:
+- `BIM_납품검수`의 자동 검수 항목을 IDS 후보, BCF 이슈, 수동 샘플링 검토로 분리한다.
+- `QA_테스터`에 IDS 통과 후에도 실무 부적합을 찾는 보완 검토 항목을 연결한다.
+- 다음 확인일: 2026-06-11
+
+관련: [[BIM 납품검수 지식 베이스]] · [[QA_테스터]] · [[ACC BIM360 CDE 지식 베이스]] · [[2026-06-04 LUA BIM LABS OpenBIM IDS BCF Update]]
+
 ## IFC/OpenBIM 마스터급 경험 지식 (2026-05-28)
 - Source: claude-code-enhanced 2026-05-28
 - Tags: IFC4.3소프트웨어미지원, IDS검증실패, GUID재익스포트, FM연동, 2026현황

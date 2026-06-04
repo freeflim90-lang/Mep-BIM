@@ -267,3 +267,83 @@
 - 관련 신호: 7번
 - 판단: 납품검수 파라미터 후보로 보관하고 반복 노출 시 제안서 고급 옵션으로 승격한다.
 - 이유: 친환경 건축은 인증 문구가 아니라 재료·수량·열성능·탄소계수 데이터 관리 문제로 바뀌고 있다.
+
+
+## 2026-06-04 뉴스 트렌드 자동 전략 승격 판단
+- Source: `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/2026-06-04 뉴스 트렌드 18항목 지식 업데이트.md`
+- Tags: ax,strategy-review,auto-deepening,news-trend
+
+**승격/관찰 후보 1: OpenBIM 검증형 납품**
+- 관련 신호: 1번, 4번, 5번, 6번
+- 판단: Model Quality Auditor 장기 백로그로 승격하고 ifctester/IDS PoC 후보를 만든다.
+- 이유: OpenBIM은 파일 교환을 넘어 IDS 요구사항, BCF 이슈 추적, 검증 서비스, 소프트웨어 인증까지 포함하는 납품 계약 언어로 이동한다.
+
+**승격/관찰 후보 2: Python-Dynamo-Grasshopper-Revit API 자동화 교육**
+- 관련 신호: 2번, 3번, 4번, 6번, 7번, 8번, 9번, 10번
+- 판단: Starter/PM 교육 상품에 장비표, 파라미터, 시트/뷰 자동화 실습을 추가한다.
+- 이유: AEC 자동화는 전문 개발자만의 영역이 아니라 실무자가 반복 업무를 줄이는 단계형 역량으로 바뀌고 있다.
+
+**승격/관찰 후보 3: 국내 건설 AX 생태계**
+- 관련 신호: 2번, 3번, 4번, 6번, 7번, 8번, 9번, 10번
+- 판단: 국내 AX 기업/기술 카테고리 표와 파트너십 후보 분류를 생성한다.
+- 이유: 국내 건설 AI는 설계 자동화, 원가·견적·공정관리, 응용솔루션으로 분화되는 단계에 들어섰다.
+
+**승격/관찰 후보 4: Autodesk Forma/Revit 클라우드 연결**
+- 관련 신호: 2번, 9번, 14번, 18번
+- 판단: Add-in 결과물 export 형식과 Autodesk Store 문구를 점검한다.
+- 이유: Autodesk가 Forma 중심 AECO 클라우드와 Revit 연결을 강화할수록 Add-in은 단독 버튼 기능보다 데이터 내보내기와 협업 흐름이 중요해진다.
+
+**승격/관찰 후보 5: 로봇·현장 자동화**
+- 관련 신호: 10번, 11번, 12번, 13번
+- 판단: 직접 상품화는 Watch 유지, 스마트시공 교육 사례로만 활용한다.
+- 이유: 현장 로봇은 BIM의 대체재가 아니라 as-built 현장 상태를 BIM/디지털트윈과 정렬하는 데이터 수집 계층으로 보는 것이 적합하다.
+
+
+## 2026-06-04 Autodesk 공식 기술 신호 전략 반영
+- Source: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_OFFICIAL_AUTODESK_SIGNAL_UPDATE.md`
+- Tags: ax,strategy-review,autodesk,aps,revit
+
+Autodesk 공식 Revit 2026 문서와 APS 공식 블로그 기준으로, LUA BIM LABS의 Add-in 전략은 단독 Revit 버튼 기능에서 ACC/APS 데이터 연동, 보안 계정 운영, 비용 예측 가능한 API 사용 구조로 확장될 필요가 있다.
+
+전략 판단:
+- Revit 2026 호환성은 Store 문구보다 QA 증빙이 먼저다.
+- APS AEC Data Model API는 납품 검수, Model Quality Auditor, BIM Command Center의 장기 데이터 계층 후보로 둔다.
+- Secure Service Accounts는 고객 계정·토큰 보안을 강화하는 운영 기준 후보로 반영한다.
+- APS 과금 전환은 MVP 기능 범위와 고객 과금 구조에 직접 영향을 주므로 `Watch` 상태로 둔다.
+
+다음 액션:
+- APS 데이터 연동은 읽기 전용 PoC부터 시작한다.
+- 보안 계정과 토큰 운영 기준은 `라이선스_보안관`과 연결한다.
+- 비용 영향은 `CFO`, `라이선스결제`, `제품패키징`에서 재검토한다.
+
+관련: [[Revit_Addin]] · [[ACC BIM360 CDE 지식 베이스]] · [[라이선스_보안관]] · [[제품패키징]]
+
+
+## 2026-06-05 뉴스 트렌드 자동 전략 승격 판단
+- Source: `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/2026-06-05 뉴스 트렌드 18항목 지식 업데이트.md`
+- Tags: ax,strategy-review,auto-deepening,news-trend
+
+**승격/관찰 후보 1: OpenBIM 검증형 납품**
+- 관련 신호: 1번, 4번, 5번, 6번
+- 판단: Model Quality Auditor 장기 백로그로 승격하고 ifctester/IDS PoC 후보를 만든다.
+- 이유: OpenBIM은 파일 교환을 넘어 IDS 요구사항, BCF 이슈 추적, 검증 서비스, 소프트웨어 인증까지 포함하는 납품 계약 언어로 이동한다.
+
+**승격/관찰 후보 2: Python-Dynamo-Grasshopper-Revit API 자동화 교육**
+- 관련 신호: 2번, 3번, 4번, 6번, 7번, 8번, 9번, 11번
+- 판단: Starter/PM 교육 상품에 장비표, 파라미터, 시트/뷰 자동화 실습을 추가한다.
+- 이유: AEC 자동화는 전문 개발자만의 영역이 아니라 실무자가 반복 업무를 줄이는 단계형 역량으로 바뀌고 있다.
+
+**승격/관찰 후보 3: 국내 건설 AX 생태계**
+- 관련 신호: 2번, 3번, 4번, 6번, 7번, 8번, 9번, 11번
+- 판단: 국내 AX 기업/기술 카테고리 표와 파트너십 후보 분류를 생성한다.
+- 이유: 국내 건설 AI는 설계 자동화, 원가·견적·공정관리, 응용솔루션으로 분화되는 단계에 들어섰다.
+
+**승격/관찰 후보 4: Autodesk Forma/Revit 클라우드 연결**
+- 관련 신호: 9번, 10번, 13번, 16번
+- 판단: Add-in 결과물 export 형식과 Autodesk Store 문구를 점검한다.
+- 이유: Autodesk가 Forma 중심 AECO 클라우드와 Revit 연결을 강화할수록 Add-in은 단독 버튼 기능보다 데이터 내보내기와 협업 흐름이 중요해진다.
+
+**승격/관찰 후보 5: 로봇·현장 자동화**
+- 관련 신호: 11번, 12번
+- 판단: 직접 상품화는 Watch 유지, 스마트시공 교육 사례로만 활용한다.
+- 이유: 현장 로봇은 BIM의 대체재가 아니라 as-built 현장 상태를 BIM/디지털트윈과 정렬하는 데이터 수집 계층으로 보는 것이 적합하다.

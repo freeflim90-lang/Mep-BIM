@@ -321,3 +321,21 @@ var conductivity = thermalAsset?.get_Parameter(
 
 *출처: 한국패시브건축협회(PHIKO) https://www.phiko.kr/ 기술자료 (2026-05-29 수집)*
 *법규 기준: 건축물의 에너지절약설계기준 (국토교통부고시) 현행 기준 적용*
+
+
+## 2026-06-04 에너지절약설계기준/ZEB 공식 기준 대조 게이트
+- Source: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_ENERGY_ZEB_STANDARD_UPDATE.md`
+- Tags: passive-house,ZEB,energy-saving-design,official-source,review-gate
+
+패시브하우스, PHIKO, ZEB, 녹색건축 인증은 서로 연결될 수 있지만 같은 제도는 아니다. PHPP/패시브 기준, 건축물의 에너지절약설계기준, 건축물 에너지효율등급, ZEB 인증 기준, G-SEED, 지자체 녹색건축 설계기준을 프로젝트별로 분리한다.
+
+운영 기준:
+- 패시브하우스 목표값은 법규 최소 기준으로 단정하지 않는다.
+- ZEB 등급과 에너지자립률은 국가법령정보센터 별표 및 인증 운영세칙으로 확인한다.
+- 열관류율, 기밀, 열교, HRV 효율, 냉방/난방 요구량 수치는 인증 종류별 기준을 명확히 표기한다.
+- Revit Energy Analysis, PHPP, EnergyPlus 결과는 계산 엔진과 입력 조건이 다르므로 단순 비교하지 않는다.
+
+주의:
+- 이 문서의 기존 PHIKO/패시브/ZEB 수치 문장은 프로젝트 적용 전 공식 기준, 인증기관 요구, 발주처 요구, 지자체 기준으로 재확인한다.
+
+관련: [[건축 지식 베이스]] · [[BIM 납품검수 지식 베이스]] · [[2026-06-04 LUA BIM LABS Energy ZEB Standard Update]]

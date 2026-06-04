@@ -1,5 +1,81 @@
 # BIM 납품검수 지식 베이스
 
+## 2026-06-04 BF/편의시설 기반 건축 BIM 납품검수 보강
+- Source: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_BF_ACCESSIBILITY_STANDARD_UPDATE.md`
+- Tags: delivery-quality,BF,accessibility,architecture,official-source
+
+BF/편의시설 대응 프로젝트의 BIM 납품검수는 치수 자동검수만으로 닫지 않는다. 대상시설 여부, 의무/권장 구분, 예비인증/본인증 단계, 지자체 조례 또는 사전검사 조건, 발주처 특기시방서를 함께 확인한다.
+
+검수 추가 필드:
+- BF 인증 또는 편의시설 설치 대상 여부
+- 시설 용도, 규모, 공공/민간 여부
+- 적용 법령/시행령 별표/시행규칙 별표/인증 기준
+- 의무 편의시설과 권장 편의시설 구분
+- 주출입구 접근로, 장애인전용주차구역, 출입구, 복도, 승강기, 화장실, 안내설비, 피난설비 모델 확인 여부
+- 자동 검토 가능 항목과 수동 검토 필요 항목
+- 예비인증/본인증 신청·심사 문서 링크
+- 지자체 사전검사 또는 발주처 RFI 번호
+
+운영 기준:
+- 자동 수집된 문폭, 경사, 단차, 회전반경, 화장실 치수 문장은 공식 기준 확인 전 납품 판정 기준으로 사용하지 않는다.
+- BF 인증 통과 여부는 모델 형상만으로 확정하지 않고, 인증 심사 문서와 설계자/인증기관 확인 증빙을 연결한다.
+
+관련: [[건축 지식 베이스]] · [[견적심사원]] · [[법규변경모니터링]] · [[2026-06-04 LUA BIM LABS BF Accessibility Standard Update]]
+
+## 2026-06-04 BF 기준 미확정 리스크의 납품검수 연결
+- Source: `docs/training_curriculum/team_distribution/samples/2026-06-04_ESTIMATOR_BF_SCOPE_RISK_MEMO_SAMPLE.md`
+- Tags: delivery-quality,BF,estimate,risk,KST
+
+BF/편의시설이 납품 범위에 포함되는지 미확정이면 납품검수팀은 모델 적합/부적합 판정을 닫지 않는다. 먼저 견적서와 과업범위에 BF 대상성 검토, 체크리스트, 인증 대응, 지자체 사전검사, 재검수 공수가 포함됐는지 확인한다.
+
+검수 운영 기준:
+- 자동검수 치수 결과는 후보 증빙이며 인증 통과 근거가 아니다.
+- BF 인증 심사 대응과 BIM 납품검수는 책임 범위가 다르다.
+- BF 범위가 추가되면 변경 견적, RFI, 검수표 버전 변경 이력을 남긴다.
+
+관련: [[견적심사원 지식 베이스]] · [[2026-06-04 견적심사원 BF 기준 미확정 리스크 메모 샘플]]
+
+## 2026-06-04 BF 자동검수 룰 후보의 납품검수 연결
+- Source: `docs/training_curriculum/team_distribution/samples/2026-06-04_QA_BF_AUTOCHECK_RULE_CANDIDATE_SAMPLE.md`
+- Tags: delivery-quality,BF,QA,autocheck,KST
+
+납품검수팀은 BF 자동검수 결과를 최종 합격 판정으로 사용하지 않는다. 자동검수 결과는 누락 후보, 증빙 링크, 파라미터 입력, 장애물 후보를 발견하는 1차 증빙으로 사용하고, 대상성·의무/권장·예비인증/본인증·지자체 조건은 별도 검토한다.
+
+검수 상태 연결:
+- `QA_PASS`: 자동검수 후보 항목 입력 완료, 수동 검토로 전달
+- `QA_PASS_WITH_NOTES`: KST03 주의가 남아 있어 PM/RFI 병행
+- `QA_BLOCKED`: 대상성 또는 인증 단계 정보 부족
+- `QA_FAIL`: 더미 값, 누락, 인증 통과 보장 문구, 증빙 미비
+
+관련: [[QA_테스터 지식 베이스]] · [[2026-06-04 QA 테스터 BF 자동검수 룰 후보 샘플]]
+
+## 2026-06-04 CS BF 고객 응답과 납품검수 연결
+- Source: `docs/training_curriculum/team_distribution/samples/2026-06-04_CS_BF_EVIDENCE_RESPONSE_SAMPLE.md`
+- Tags: delivery-quality,BF,cs,evidence-response,KST
+
+납품검수팀은 CS가 고객에게 안내한 BF 확인 자료 요청 목록을 검수 입력으로 사용한다. 도면, 특기시방서, 인증 단계, 지자체 사전검사 조건, 자동검수 리포트, RFI/BCF 링크가 확인되지 않으면 BF 적합/부적합 판정을 닫지 않는다.
+
+운영 기준:
+- CS 답변의 `확정 불가 범위`는 납품검수 보류 또는 RFI 후보로 등록한다.
+- 자동검수 결과는 검수 증빙 후보이며 최종 인증 판정이 아니다.
+- 고객이 수정 지시를 원하면 설계자/PM 확인 후 변경 범위를 기록한다.
+
+관련: [[고객지원 CS 지식 베이스]] · [[2026-06-04 CS BF 근거기반 고객 응답 샘플]]
+
+## 2026-06-04 PM BF RFI 회의 안건과 납품검수 연결
+- Source: `docs/training_curriculum/team_distribution/samples/2026-06-04_PM_BF_RFI_MEETING_AGENDA_SAMPLE.md`
+- Tags: delivery-quality,BF,PM,RFI,KST
+
+납품검수팀은 PM의 BF RFI 회신 전까지 자동검수 후보를 최종 부적합 판정으로 닫지 않는다. 회신 결과가 BF 미대상, 대상이나 단계 미확정, 본인증 대응 필요, 지자체 조건 추가, 모델 수정 필요 중 어디에 해당하는지에 따라 검수표 상태를 갱신한다.
+
+검수 상태:
+- RFI_WAIT: 적용 기준 회신 대기
+- QA_CANDIDATE: 자동검수 후보, 수동 검토 필요
+- CHANGE_SCOPE: 모델 수정 또는 변경 견적 필요
+- EVIDENCE_LINKED: 도면/RFI/BCF/인증 단계 증빙 연결 완료
+
+관련: [[COO 지식 베이스]] · [[2026-06-04 PM BF RFI 회의 안건 샘플]]
+
 ## BIM 납품검수 개요
 - Source: LUA BIM LABS internal BIM knowledge baseline
 - Tags: bim,quality-check,ids,kbims,checker,deliverable,iso19650
@@ -86,6 +162,188 @@ kbims-checker --ifc model.ifc --standard MOLIT2023 --output report.json
 python parse_kbims_report.py report.json
 ```
 - 관련: [[IFC_OpenBIM]] · [[EIRBEP_심사원]] · [[QA_테스터]] · [[ACC_BIM360]]
+
+
+## 2026-06-04 수도법·하수도법 기반 위생 납품검수 보강
+- Source: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_PLUMBING_WATER_TANK_DRAINAGE_STANDARD_UPDATE.md`
+- Tags: delivery-quality,plumbing,water-tank,drainage,water-quality
+
+위생 BIM 납품검수는 급수/배수 배관 형상과 clash뿐 아니라 저수조 설치기준, 위생점검, 수질검사, 배수설비 신고, 공공하수도 접속 정보를 확인한다.
+
+검수 추가 필드:
+- 수도법 시행규칙 저수조 설치기준 적용 여부
+- 저수조 위생점검 대상 여부
+- 저수조 맨홀, 통기관, 월류관, 배수구, 경보장치 모델링 여부
+- 저수조 청소·점검 접근 공간과 출입 안전성
+- 소화용수 역류방지장치 여부
+- 급수/급탕/급탕환수/오수/배수/통기/우수 계통 분리 여부
+- 배수설비 설치 신고 대상 여부
+- 공공하수도 접속 위치, 접속방법, 평균관경, 연장, 배출수량 데이터
+- 먹는물 수질검사 또는 위생점검 기록 링크
+
+운영 기준:
+- 자동 수집된 구배, 청소구 간격, 수압시험, 집수정 용량, 급수압 문장은 공식 기준 확인 전 납품 판정 기준으로 사용하지 않는다.
+- 토목 인입, 공공하수도 접속, 지자체 협의가 필요한 항목은 위생 단독 검수로 닫지 않는다.
+
+관련: [[위생 지식 베이스]] · [[설비장비 지식 베이스]] · [[FM 시설관리 자산관리 BIM 지식 베이스]] · [[2026-06-04 LUA BIM LABS Plumbing Water Tank Drainage Standard Update]]
+
+
+## 2026-06-04 에너지절약설계기준/ZEB 기반 납품검수 보강
+- Source: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_ENERGY_ZEB_STANDARD_UPDATE.md`
+- Tags: delivery-quality,energy-saving-design,ZEB,green-building,BEMS
+
+에너지 인증 대응 프로젝트의 BIM 납품검수는 모델 형상뿐 아니라 에너지절약계획서, 에너지효율등급, ZEB 인증, BEMS/BAS, 신재생에너지 설비 데이터와의 일치성을 확인한다.
+
+검수 추가 필드:
+- 건축물의 에너지절약설계기준 적용 여부
+- 에너지절약계획서 제출 대상 여부
+- 에너지효율등급/ZEB/녹색건축 인증 대상 여부
+- 외피 열성능과 창호 파라미터 입력 여부
+- 공간/존 경계와 에너지 평가면적 일치 여부
+- 냉방, 난방, 급탕, 조명, 환기 설비 데이터 일치 여부
+- BEMS/BAS 포인트 및 에너지미터 매핑 여부
+- 신재생에너지 설비와 대지 내/외 구분
+- 예비인증/본인증 문서와 준공 모델 변경 이력 연결 여부
+
+운영 기준:
+- 자동 수집된 열관류율, 보온두께, ZEB 의무화 일정, EUI 문장은 공식 기준 확인 전 납품 판정 기준으로 사용하지 않는다.
+- 인증 컨설턴트 산출물과 BIM 파라미터가 다르면 BEP/EIR 기준에 따라 책임 주체와 재계산 공수를 분리한다.
+
+관련: [[건축 지식 베이스]] · [[설비자동제어 지식 베이스]] · [[FM 시설관리 자산관리 BIM 지식 베이스]] · [[2026-06-04 LUA BIM LABS Energy ZEB Standard Update]]
+
+
+## 2026-06-04 IDS/BCF 공식 표준 기반 납품검수 보강
+- Source: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_OPENBIM_IDS_BCF_UPDATE.md`
+- Tags: bim,delivery-quality,ids,bcf,openbim,official-source
+
+buildingSMART 공식 문서 기준으로 IDS 1.0은 납품 정보 요구사항을 IFC 모델에서 자동 검토하는 기준 후보이며, BCF는 검수 이슈를 추적하는 openBIM 이슈 언어다. LUA BIM LABS 납품검수는 체크리스트를 자동 검수, 이슈 추적, 수동 판정으로 분리한다.
+
+검수 분리 기준:
+- IDS 후보: 필수 파라미터, 분류, 재료, 값, 정보 요구사항
+- BCF 이슈: 검수 실패 항목, 담당, 상태, 재검수일, 뷰포인트
+- 수동/반자동 검토: 간섭, 시공성, MEP 연결성, 좌표, LOD 샘플링
+
+운영 기준:
+- IDS 통과는 납품 통과와 동일하지 않다. 실무 부적합, 형상 문제, 연결성 문제는 별도 검토한다.
+- BCF 이슈는 고객 커뮤니케이션과 재검수 증빙에 활용한다.
+- IFC 4.3 적용은 최신 표준이라는 이유만으로 결정하지 않고 발주처 요구와 수신 소프트웨어 지원을 확인한다.
+
+다음 액션:
+- 납품검수 결과표에 `IDS 판정`, `BCF 이슈 ID`, `수동 검토 필요`, `재검수일` 필드를 추가한다.
+- 다음 확인일: 2026-06-11
+
+관련: [[IFC OpenBIM 지식 베이스]] · [[QA_테스터]] · [[ACC BIM360 CDE 지식 베이스]] · [[2026-06-04 LUA BIM LABS OpenBIM IDS BCF Update]]
+
+
+## 2026-06-04 KEC 기반 전기 BIM 납품검수 보강
+- Source: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_KEC_ELECTRICAL_STANDARD_UPDATE.md`
+- Tags: delivery-quality,electrical,KEC,KDS32,KCS32,official-source
+
+전기 BIM 납품검수는 형상 검토와 기준 근거 검토를 분리한다. 케이블 트레이, 전선관, 분전반, 접지, 피뢰, 비상전원, UPS, ESS, EV 충전 설비는 KEC, 전기설비기술기준, KDS/KCS 32, 발주처 특기시방서, 소방·통신 기준을 함께 확인한다.
+
+검수 추가 필드:
+- KEC 공고 번호 및 기준일
+- 적용 KEC 장/절/조항
+- 적용 KDS/KCS 32 코드
+- 발주처 특기시방서 조항
+- 전기 설계자 확인 여부
+- 모델 파라미터와 기준 항목 매핑 여부
+- 자동 검토 가능/수동 검토 필요 구분
+
+운영 기준:
+- 자동 수집된 KEC 조항번호와 수치 문장은 공식 전문 확인 전 납품 판정 기준으로 사용하지 않는다.
+- 강전·약전 이격, 분전반 접근 공간, 트레이 충전율 등은 기준 출처와 발주처 해석을 함께 기록한다.
+
+관련: [[전기 지식 베이스]] · [[법규변경모니터링]] · [[2026-06-04 LUA BIM LABS KEC Electrical Standard Update]]
+
+
+## 2026-06-04 NFPC/NFTC 기반 소방 BIM 납품검수 보강
+- Source: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_NFTC_NFPC_FIRE_STANDARD_UPDATE.md`
+- Tags: delivery-quality,fire-safety,NFPC,NFTC,official-source
+
+소방 BIM 납품검수는 일반 MEP clash와 분리한다. 스프링클러 헤드 장애, 감지기 사각, 내화·내열 배선, 제연 구역, 방화댐퍼, 비상방송, 유도등, 비상조명, 연결송수관, 소화수조·펌프실은 NFPC/NFTC 기준 근거와 소방 설계자 확인 여부를 함께 기록한다.
+
+검수 추가 필드:
+- 적용 NFPC 코드
+- 적용 NFTC 코드
+- 공고 번호 및 시행일
+- 소방기계/소방전기/제연/피난 기준 구분
+- 관할 소방서 또는 소방 설계자 확인 여부
+- 모델 파라미터와 기준 항목 매핑 여부
+- 자동 검토 가능/수동 검토 필요 구분
+
+운영 기준:
+- 자동 수집된 NFTC/KCS 조항번호와 수치 문장은 공식 전문 확인 전 납품 판정 기준으로 사용하지 않는다.
+- 구 NFSC 명칭으로 작성된 검토표는 최신 NFPC/NFTC 대응 기준을 확인한 뒤 제출한다.
+
+관련: [[소방기계 지식 베이스]] · [[소방전기 지식 베이스]] · [[법규변경모니터링]] · [[2026-06-04 LUA BIM LABS NFTC NFPC Fire Standard Update]]
+
+
+## 2026-06-04 기계설비 유지관리·성능점검 기반 납품검수 보강
+- Source: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_MECHANICAL_EQUIPMENT_MAINTENANCE_LAW_UPDATE.md`
+- Tags: delivery-quality,mechanical-equipment-law,maintenance,performance-check,FM
+
+기계설비 BIM 납품검수는 설계·시공 모델의 형상 검토뿐 아니라 유지관리와 성능점검 대응 데이터를 확인한다. 공조, 환기, 위생, 자동제어, 열원, 펌프, 팬, 냉동기, 보일러, AHU, FCU, 집수정, 급수펌프 등은 점검대상 여부와 FM 이관 가능성을 검수 필드로 둔다.
+
+검수 추가 필드:
+- 기계설비법 적용 여부
+- 기계설비 유지관리기준 적용 여부
+- 점검대상 장비·계통 여부
+- 성능점검 대상 여부
+- 측정 위치와 점검 접근성
+- 장비대장/COBie/FM 파라미터 매핑 여부
+- 유지관리지침서/O&M 문서 확인 여부
+
+운영 기준:
+- 자동 수집된 유지관리 주기, LOD, 장비 점검공간 수치는 공식 기준과 발주처 요구 확인 전 납품 판정 기준으로 사용하지 않는다.
+- FM 이관 프로젝트는 장비대장, COBie, 유지관리지침서, 성능점검 보고서 대응 데이터를 별도 검수한다.
+
+관련: [[설비장비 지식 베이스]] · [[FM 시설관리 자산관리 BIM 지식 베이스]] · [[2026-06-04 LUA BIM LABS Mechanical Equipment Maintenance Law Update]]
+
+
+## 2026-06-04 KDS/KCS 기반 납품검수 보강
+- Source: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_KDS_KCS_CONSTRUCTION_STANDARD_UPDATE.md`
+- Tags: delivery-quality,KDS,KCS,construction-standard,official-source
+
+BIM 납품검수에서 KDS/KCS는 EIR, BEP, 과업지시서, 특기시방서의 근거 기준으로 연결한다. KDS는 설계기준, KCS는 시공기준·표준시방서 계열로 분리해 검토하며, 두 기준을 하나의 일반 법규 체크로 섞지 않는다.
+
+검수 추가 필드:
+- 적용 KDS 코드
+- 적용 KCS 코드
+- 기준 시행일 또는 개정 고시일
+- 발주처 특기시방서 우선 여부
+- 모델 파라미터와 기준 항목 매핑 여부
+- 공식 전문 확인 URL 또는 문서 번호
+
+운영 기준:
+- 자동 수집된 KDS/KCS 수치 문장은 공식 전문 확인 전 납품 판정 기준으로 사용하지 않는다.
+- KDS/KCS 기준과 발주처 특기시방서가 다르면 발주처 질의응답 또는 회의록으로 적용 기준을 확정한다.
+- KDS/KCS 확인은 IDS 자동검증 대상이 아니라 기준 적용성 검토와 수동 판정 증빙으로 관리한다.
+
+관련: [[법규변경모니터링]] · [[견적심사원 지식 베이스]] · [[2026-06-04 LUA BIM LABS KDS KCS Construction Standard Update]]
+
+
+## 2026-06-04 ISO 19650/CDE 기반 납품검수 보강
+- Source: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_ISO19650_CDE_INFORMATION_MANAGEMENT_UPDATE.md`
+- Tags: delivery-quality,cde,iso19650,BEP,EIR
+
+납품검수는 모델 내용뿐 아니라 정보관리 증빙을 확인해야 한다. ISO 19650 정보관리 관점에서 고객 제출본은 CDE의 Published 상태, revision, 승인자, 발행 일시가 확인되어야 한다.
+
+검수 추가 필드:
+- CDE 상태: WIP/Shared/Published/Archived
+- Revision
+- 승인자
+- Published 일시
+- EIR 항목 대응 여부
+- BEP 기준과의 일치 여부
+- 자동 검증 대상과 수동 검토 대상 구분
+
+운영 기준:
+- WIP 또는 Shared 상태 파일은 최종 납품본으로 보지 않는다.
+- 고객 제출본은 Published 상태와 승인 기록이 있어야 한다.
+- EIR 요구사항이 모호하면 자동 검증 도구 적용 전에 기준 보정 회의를 요청한다.
+
+관련: [[ACC BIM360 CDE 지식 베이스]] · [[BEP 수행계획서 템플릿]] · [[EIR BEP_심사원 지식 베이스]]
 
 ## BIM 납품검수 마스터급 경험 지식 (2026-05-28)
 - Source: claude-code-enhanced 2026-05-28

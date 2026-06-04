@@ -1,5 +1,27 @@
 # HR_인재분석관 지식 베이스
 
+## 2026-06-04 KST 기반 학습 기록 운영 기준
+- Source: `docs/training_curriculum/team_distribution/samples/2026-06-04_HR_KST_TRAINING_RECORD_SAMPLE.md`
+- Tags: hr,training-record,KST,competency,evidence-response
+
+HR_인재분석관은 지식학습을 단순 이수로 보지 않고, 역할별 산출물과 근거 포함 여부를 기록한다. KST 기반 학습 기록은 개인 평가 점수 확정용이 아니라 교육 적용률, 부족 역량, 다음 교육 설계의 근거로 사용한다.
+
+기록 필드:
+- 이름/역할
+- 학습 지식
+- 지식 상태 코드
+- 적용 산출물
+- 근거 포함 여부
+- 리뷰 결과
+- 다음 검토일
+
+운영 기준:
+- `Pass`는 역할 산출물이 근거, 적용 범위, 주의, 다음 액션을 포함할 때 부여한다.
+- `Revise`는 자동 수집 지식을 확정 기준처럼 쓰거나 다음 액션이 없을 때 부여한다.
+- `KST06 보안제한`이 포함된 산출물은 개인 평가 전에 보안관 또는 지식큐레이터 확인을 먼저 받는다.
+
+관련: [[교육컨설팅]] · [[지식큐레이터]] · [[2026-06-04 HR KST 기반 학습 기록 샘플]]
+
 ## 이력서 분석 대시보드 운영 기준 (2026-05-23)
 - Source: `docs/internal_organization_documents/04_HIRING_ROLE_DEFINITION_STANDARD.md`
 - Tags: hiring,resume,dashboard,people-enablement,local-only
@@ -216,4 +238,64 @@ def analyze_skill_gaps(team_df: pd.DataFrame) -> dict:
 - 채용 시장에서 BIM 관련 직무는 지속적으로 증가할 것으로 보이며, 특히 높은 기술 및 R&D 분야에서의 기회가 많아질 것입니다.
 - 새로운 직업 연구에 따르면, 인공지능 기술 전문가와 디지털 전환 전문가 등이 요구되므로, 이러한 역량 개발도 중요합니다.
 - 중장기 인력 수급 전망에 따르면, 과학기술 분야의 일자리 변화 양상과 함께 BIM 관련 직무에서도 전문성과 현장 경험을 갖춘 인재가 더 이상한 경향이 있습니다.
+- 관련: [[건축]] · [[설계_지침서]] · [[시공_지침서]] · [[BIM_지침서]]
+
+
+## BIM 인재 채용 및 역량 관리 업데이트 (2026-06-04)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-04
+- Tags: hr,talent,BIM,update
+
+- BIM 코디네이터와 매니저의 역량 기준: Revit, Navisworks, 그리고 자동화를 위한 고급 Python 등 주요 기술을 익혀야 합니다.
+- 채용 시장 동향: 2025년까지는 협업과 통합 능력이 높은 역량이 중요해질 것으로 예상됩니다. 특히, IT, MEP, R&D 분야에서 이러한 요구가 증가할 것입니다.
+- 역량 개발 방향: 창의융합 역량을 강화하고, 시스템적 관점에서 문제를 해결하는 능력을 키워야 합니다. 또한, 적절한 채용 및 인력 수급 전망을 고려하여 미래 기술 변화에 대비해야 합니다.
+- 관련: [[건축]] · [[설계_지침서]] · [[시공_지침서]] · [[BIM_지침서]]
+
+
+## 2026-06-04 근거기반 역량 매트릭스 보강
+- Source: `docs/internal_organization_documents/29_ORGANIZATIONAL_KNOWLEDGE_LEARNING_AND_EVIDENCE_RESPONSE_STANDARD.md`
+- Tags: hr,talent,competency,organization-learning,evidence-response
+
+HR_인재분석관은 역량을 소프트웨어 숙련도만으로 보지 않는다. LUA BIM LABS의 핵심 역량은 지식 상태를 구분하고, 근거 기반으로 판단하며, 불확실성을 숨기지 않고 다음 확인 조건을 제시하는 능력이다.
+
+추가 역량 축:
+- 지식 상태 코드 이해: `KST01`~`KST06`
+- 공식 출처와 자동 수집 지식 구분
+- 결론/근거/적용 범위/주의/다음 액션 구조로 응답
+- 반복 질문을 FAQ/교육자료/QA 체크리스트로 승격
+- Obsidian에서 관련 지식 2개 이상 연결
+
+운영 기준:
+- 교육 이수 기록에는 학습 문서와 적용 산출물을 함께 기록한다.
+- 중요 응답에서 근거가 빠지는 직원은 응답 품질 보강 교육을 배정한다.
+- 공식 기준을 확인하지 않은 수치를 확정적으로 말한 경우 재교육 대상이다.
+
+관련: [[교육컨설팅 지식 베이스]] · [[지식큐레이터 지식 베이스]] · [[LUA BIM LABS Organizational Knowledge Learning Evidence Response Standard]]
+
+
+## 2026-06-04 역할별 주간 학습 성과 기록 기준
+- Source: `docs/training_curriculum/team_distribution/08_WEEKLY_ROLE_BASED_KNOWLEDGE_LEARNING_SPRINT_2026-06-04.md`
+- Tags: hr,competency,KST,role-based-learning,evidence-response
+
+HR_인재분석관은 역할별 지식학습 주간 스프린트 결과를 교육 이수 기록이 아니라 역량 증빙으로 기록한다. 같은 공식 기준 업데이트라도 역할별 산출물이 다르므로 산출물 링크와 사용한 `KST` 코드를 함께 저장한다.
+
+기록 기준:
+- 학습 지식
+- 역할
+- 사용한 `KST` 코드
+- 적용 산출물
+- 근거 포함 여부
+- 다음 검토일
+
+관련: [[2026-06-04 Role Based Knowledge Learning Sprint]] · [[교육컨설팅 지식 베이스]] · [[LUA BIM LABS Organizational Knowledge Learning Evidence Response Standard]]
+
+
+## BIM 인재 채용 및 역량 관리 업데이트 (2026-06-05)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-05
+- Tags: hr,talent,BIM,update
+
+- 2025년 BIM 코디네이터와 매니저의 역량 기준으로는 Revit, Navisworks, 그리고 프로젝트 관리 능력이 필수입니다.
+- 반도체와 자동화 같은 하이테크 산업에서 BIM 관련 직무 수요가 증가할 것으로 예상됩니다.
+- 4D 시뮬레이션과 프로젝트 관리 기술은 중요한 역량으로 자리잡을 것입니다.
+- 채용 시장 동향에서는 리더십과 창의융합 능력이 중요하게 여겨질 것으로 보입니다.
+- 역량 개발 방향으로는 K-ACE(Korea Art, Culture, and Entertainment) 분야와 같은 글로벌 핵심역량을 갖춘 전문 경영인력을 양성하는 것이 필요합니다.
 - 관련: [[건축]] · [[설계_지침서]] · [[시공_지침서]] · [[BIM_지침서]]

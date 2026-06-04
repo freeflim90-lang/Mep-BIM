@@ -81,3 +81,74 @@ wb.save("COBie_Package.xlsx")
 - 에너지 절감율: 전년 대비 5% 이상
 - 입주자 만족도: 연간 설비 서비스 만족도 4.0점/5.0점 이상
 - 관련: [[IFC_OpenBIM]] · [[설비장비]] · [[ACC_BIM360]] · [[엔지니어링계산서]]
+
+
+## 2026-06-04 기계설비법 기반 FM 이관 보강
+- Source: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_MECHANICAL_EQUIPMENT_MAINTENANCE_LAW_UPDATE.md`
+- Tags: fm,mechanical-equipment-law,maintenance,performance-check,cobie,official-source
+
+FM BIM 이관 시 기계설비법과 기계설비 유지관리기준 적용 여부를 확인한다. 장비대장, COBie, O&M 문서, 유지관리지침서, 성능점검 보고서 대응 데이터를 서로 연결해야 한다.
+
+FM 추가 필드:
+- 기계설비법 적용 여부
+- 점검대상 기계설비 여부
+- 성능점검 대상 여부
+- 점검 주기
+- 점검 항목
+- 측정 위치
+- 유지관리 책임 주체
+- O&M 문서 링크
+- 성능점검 보고서 참조 ID
+
+운영 기준:
+- COBie Component/Type 데이터는 장비 형상만이 아니라 유지관리·성능점검 책임과 연결한다.
+- 성능점검 주기와 점검 항목은 법령·고시·발주처 요구·제조사 O&M 문서 확인 전 확정하지 않는다.
+
+관련: [[설비장비 지식 베이스]] · [[BIM 납품검수 지식 베이스]] · [[ACC BIM360 CDE 지식 베이스]]
+
+
+## 2026-06-04 에너지/ZEB 기반 FM 이관 보강
+- Source: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_ENERGY_ZEB_STANDARD_UPDATE.md`
+- Tags: fm,energy-saving-design,ZEB,BEMS,COBie,official-source
+
+FM BIM 이관 시 에너지절약계획서, 에너지효율등급, ZEB 인증 결과와 운영 데이터가 끊기지 않아야 한다. 준공 모델은 인증 결과를 설명하는 모델이자, 운영 중 에너지 사용량을 추적하는 기준 모델로 사용될 수 있다.
+
+FM 추가 필드:
+- 에너지절약계획서 적용 여부
+- 에너지효율등급/ZEB 인증 대상 및 등급
+- 단위면적당 1차에너지소요량 참조 ID
+- 에너지자립률 참조 ID
+- 냉방/난방/급탕/조명/환기 용도별 계량 구분
+- 신재생에너지 설비 ID와 대지 내/외 구분
+- BEMS/BAS 포인트 및 에너지미터 ID
+- 예비인증/본인증 문서 링크
+
+운영 기준:
+- 인증 제출 수치와 운영 EUI 수치는 같은 값이 아니다. FM 이관 시 설계 인증값, 준공 본인증값, 운영 실측값을 분리한다.
+- 자동 수집된 EUI 평균값과 절감률 문장은 프로젝트 운영 KPI로 확정하기 전에 발주처 목표, 계량 범위, 건물 용도, 인증 기준을 확인한다.
+
+관련: [[설비자동제어 지식 베이스]] · [[BIM 납품검수 지식 베이스]] · [[2026-06-04 LUA BIM LABS Energy ZEB Standard Update]]
+
+
+## 2026-06-04 위생·저수조·배수설비 FM 이관 보강
+- Source: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_PLUMBING_WATER_TANK_DRAINAGE_STANDARD_UPDATE.md`
+- Tags: fm,plumbing,water-tank,drainage,water-quality,official-source
+
+FM BIM 이관 시 저수조와 배수설비는 수질·위생·신고·유지관리 기록과 연결한다. 준공 모델에는 저수조 위생점검 대상, 청소 접근성, 급수 계통, 공공하수도 접속, 집수정/펌프 점검 정보를 남겨야 한다.
+
+FM 추가 필드:
+- 저수조 설치기준 적용 여부
+- 저수조 위생점검 대상 여부
+- 저수조 청소/위생점검 기록 ID
+- 먹는물 수질검사 기록 ID
+- 맨홀, 통기관, 월류관, 배수구, 경보장치 ID
+- 소화용수 역류방지장치 ID
+- 배수설비 설치 신고 참조 ID
+- 공공하수도 접속 위치와 복구 기록
+- 집수정/오수펌프/배수펌프 점검 기록
+
+운영 기준:
+- FM 이관 데이터는 장비명과 위치만으로 충분하지 않다. 수질검사, 위생점검, 청소, 공공하수도 접속 증빙과 연결한다.
+- 자동 수집된 점검 주기와 수질 기준 문장은 공식 법령·고시·지자체 요구 확인 전 운영 KPI로 확정하지 않는다.
+
+관련: [[위생 지식 베이스]] · [[설비장비 지식 베이스]] · [[BIM 납품검수 지식 베이스]] · [[2026-06-04 LUA BIM LABS Plumbing Water Tank Drainage Standard Update]]

@@ -279,3 +279,48 @@ def score_signal(text: str) -> float:
 - BIM Services India's Revit Models Maximize Site Safety and Productivity - openPR.com (AX/AI Transformation, BIM Automation, Quality/Product)
 
 운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-04 11:35 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-04/1135_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 경기도, 건설 안전·품질 관리분야 AI 도입 추진 - 네이트 (BIM Automation, Quality/Product)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-04 13:27 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-04/1327_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 경기도, 건설현장에도 AI 도입. 중소건설기업 활성화 방안 모색 - 시사일보 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-04 15:25 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-04/1525_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 경기도, 건설현장에도 AI 도입. 중소건설기업 활성화 방안 모색 - 경인통신 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-04 22:42 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-04/2242_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 경기도, 건설현장 스마트화 추진…경기도, AI 활용 정책 연구 착수 - 디스커버리뉴스(DISCOVERYNEWS) (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-05 05:44 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-05/0544_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- BIM and CAD Integrations at the 2026 Esri User Conference - Esri (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.

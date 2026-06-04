@@ -349,6 +349,26 @@ ISO 19650-2 실무 적용에서 가장 많이 실패하는 3가지 패턴과 사
 - 관련: [[설계_지침서]] · [[시공_지침서]] · [[건축]] · [[BIM_시방서]]
 
 
+## 2026-06-04 국내 공공 BIM 지침 공식 출처 업데이트
+- Source: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_KOREA_PUBLIC_BIM_GUIDELINE_UPDATE.md`
+- Tags: BIM,guideline,molit,pps,public-procurement,official-source
+
+국토교통부와 조달청 공식 자료 기준으로 국내 BIM 지침은 계층 구조로 관리한다. 국토부 `건설산업 BIM 기본지침`은 기본원칙과 표준을 제시하는 최상위 공통 기준이며, 국토부 `건설산업 BIM 시행지침`은 BIM 성과품의 작성·납품·활용 절차를 발주자·설계자·시공자 편으로 제시한다. 조달청 `시설사업 BIM 적용지침서 v2.1`은 조달청 시설공사 맞춤형서비스 BIM 적용 공사의 설계공모 지침, 설계용역 과업지침서, 입찰안내서 대응에 직접 영향을 준다.
+
+운영 기준:
+- 국토부 기본지침: 국내 BIM 적용 원칙과 표준의 최상위 기준 후보
+- 국토부 시행지침: 발주자·설계자·시공자별 성과품 작성·납품·활용 절차 기준
+- 발주처 적용지침: 분야별·발주처별 세부 요구 기준
+- 실무요령/과업지시서/입찰안내서: 실제 견적과 납품 범위를 확정하는 문서
+
+다음 액션:
+- 공공 BIM 제안 전 적용 지침 계층을 확인한다.
+- 자동 수집 문서의 출처 약한 BIM 의무화·금액 기준은 공식 발주 문서 확인 전 Watch로 둔다.
+- 다음 확인일: 2026-06-11
+
+관련: [[EIR BEP_심사원 지식 베이스]] · [[BEP 수행계획서 템플릿]] · [[견적심사원 지식 베이스]] · [[2026-06-04 LUA BIM LABS Korea Public BIM Guideline Update]]
+
+
 ## BIM 지침서 최신 동향 및 표준 업데이트 (2026-05-30)
 - Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-05-30
 - Tags: BIM,guideline,IFC,openBIM,update
@@ -409,4 +429,25 @@ ISO 19650-2 실무 적용에서 가장 많이 실패하는 3가지 패턴과 사
 - IFC4는 BIM 데이터 교환과 호환성을 높이기 위해 사용되며, IDS(Information Delivery Specification)는 데이터 공유를 지원한다.
 - openBIM은 buildingSMART에 의해 제안된 원칙으로, 중립적인 표준을 기반으로 하여 다양한 소프트웨어 간의 호환성을 증진시킨다.
 - Revit에서 IFC로의 내보내기는 최신 기준으로, BIM 데이터를 다른 시스템과 쉽게 공유할 수 있게 한다.
+- 관련: [[설계_지침서]] · [[시공_지침서]] · [[건축]] · [[BIM_시방서]]
+
+
+## BIM 지침서 최신 동향 및 표준 업데이트 (2026-06-04)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-04
+- Tags: BIM,guideline,IFC,openBIM,update
+
+- 국제 BIM 표준 ISO 19650와 IFC4는 건설 정보 관리를 위한 공통 기반을 제공하며, 2025년에 대한 최신 업데이트가 예정되어 있다.
+- IDS(Information Delivery Specification)는 IFC 모델의 정보 요구사항을 표준화하여 BIM 데이터 교류를 지원한다.
+- 한국에서는 2025년 BIM 지침이 ISO 19650에 맞춰 개선되며, openBIM mandates가 도입되어 인프라 프로젝트에서 원활한 데이터 교환이 가능해진다.
+- Revit에서 IFC 파일로 내보내기의 최신 기준은 IFC4를 따르며, 이를 통해 BIM 모델의 호환성을 높일 수 있다.
+- 관련: [[설계_지침서]] · [[시공_지침서]] · [[건축]] · [[BIM_시방서]]
+
+
+## BIM 지침서 최신 동향 및 표준 업데이트 (2026-06-05)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-05
+- Tags: BIM,guideline,IFC,openBIM,update
+
+- 최신 국제 BIM 표준 ISO 19650 및 IFC4가 한국의 BIM 지침에 반영되어 있으며, 이는 openBIM과 인프라 프로젝트에서의 협업과 데이터 교환을 강화하기 위한 목적으로 제정되었습니다.
+- IDS(Integrated Delivery Strategy) 적용 실무에서는 다양한 이해관계자 간의 효과적인 정보 공유와 협업이 가능해졌습니다.
+- Revit에서 IFC4.3으로 파일을 내보내는 최신 기준은 BIM 데이터의 호환성과 통합성을 높이는 중요한 단계입니다.
 - 관련: [[설계_지침서]] · [[시공_지침서]] · [[건축]] · [[BIM_시방서]]
