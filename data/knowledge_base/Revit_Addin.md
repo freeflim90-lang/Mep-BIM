@@ -1,5 +1,44 @@
 # Revit_Addin 지식 베이스
 
+## 2026-06-05 Autodesk App Store 수익화 및 한국 Add-in 생태계 최신 업데이트
+- Source: Autodesk App Store, 오토데스크 웨비나 자료, 크몽 Revit API 시장 동향
+- Tags: revit-api,autodesk-store,monetization,add-in-ecosystem,korea,2026
+
+**AI 즉시 답변 패턴 — "Autodesk App Store에 Add-in을 올리면 수익이 나나요?"**
+```
+Autodesk App Store Add-in 수익화:
+- 플랫폼: apps.autodesk.com (한국어 지원, 1,424개 Revit 앱)
+- 수익 모델: 무료(홍보) / 유료 구독 / 일회성 구매
+- Autodesk 수수료: 판매액의 약 30% (개발자 70% 수익)
+- 한국 시장: Revit 사용 건설사 4,200개↑ 잠재 고객
+- 성공 사례: DiRoots (무료 플러그인으로 인지도 → 프리미엄 전환)
+- LUA BIM LABS 전략: 무료 베타 → 유료 구독 전환 (Autodesk Store + 직접 라이선스)
+```
+
+**Autodesk App Store 등록 요건:**
+| 항목 | 요건 |
+|------|------|
+| 언어 | .addin 매니페스트 + DLL 어셈블리 |
+| Revit 버전 | 2023/2024/2025/2026 멀티 버전 지원 권장 |
+| 아이콘 | 32×32px (리본 버튼용), 230×140px (스토어 섬네일) |
+| 스크린샷 | 최소 3장, 기능 시연 영상 권장 |
+| 가격 정책 | 무료·Trial·월/연 구독·영구 라이선스 중 선택 |
+| 심사 기간 | 제출 후 2~4주 (기능 테스트·악성코드 검사) |
+
+**한국 Revit Add-in 개발 생태계 현황 (2026):**
+- 한국어 Autodesk 웨비나: "설계 실무자를 위한 Revit Add-in 소개 및 활용팁"
+- 국내 개발사: 상상진화(X_BOX), REVITBOX, 하나기연 등 활발히 성장
+- 크몽 프리랜서 시장: Revit Add-in 맞춤 개발 서비스 활성화
+- 성장 기회: 500억↑ BIM 의무화(2026)로 Revit 사용자 급증 예상
+
+**LUA BIM LABS Add-in 로드맵 우선순위 (2026):**
+| 제품명 | 상태 | 핵심 기능 | Autodesk Store 전략 |
+|--------|------|---------|------------------|
+| BIM Command Center | 개발 중 | 모델 품질·작업셋·MEP | 무료 베타 → 유료 전환 |
+| Model Health Dashboard | 후보 | 모델 오류 진단 리포트 | 유료 ($9.9/월) |
+| MEP Splitter | 후보 | MEP 간섭 자동 분리 | 유료 ($4.9/월) |
+| Clash Point Reporter | 후보 | 간섭 리포트 자동 생성 | 유료 ($6.9/월) |
+
 ## BIM Command Center 우선 개발 방향 (2026-05-19 09:37:53)
 - Source: `docs/autodesk_store/STORE_LAUNCH_PLAN.md`, `260519 소스 폴더/01_Revit_Addins/Addin Dashboard`
 - Tags: revit-api,commercial-product,addin-dashboard
