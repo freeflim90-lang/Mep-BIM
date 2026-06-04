@@ -1,5 +1,42 @@
 # IFC/OpenBIM 지식 베이스
 
+## 2026-06-05 buildingSMART Korea 및 IFC 5.0 최신 동향 보강
+- Source: buildingSMART International, buildingSMART Korea, BibLus
+- Tags: ifc5,openbim,buildingsmart-korea,certification,iot,digitaltwin,2026
+
+**IFC 5.0 주요 방향 (Draft 단계, 2026 기준):**
+- IoT·센서 데이터 연동: `IfcSensor`, `IfcDistributionSensorElement` 확장 → 실시간 BAS 데이터와 IFC 모델 연결
+- 디지털트윈 지원: 운영 단계 동적 데이터(에너지·환경·구조 모니터링) IFC 레이어로 표현
+- 도시 스케일: IFC와 CityGML/LandXML 연계 → 도시 단위 디지털트윈
+- AI/ML 통합: 모델 기반 예측 유지보수 데이터 링크 표준화
+- 운영 주의: IFC 5.0은 2026년 현재 Draft 수준. 실무 납품은 IFC 4 Coordination View 2.0 또는 IFC 4.3(토목) 사용 권고
+
+**buildingSMART 소프트웨어 인증 프로그램:**
+- 인증 등급: Bronze(기본 IFC R/W) → Silver(상세 MVD 지원) → Gold(완전 구현)
+- 인증 확인: technical.buildingsmart.org/certification 에서 소프트웨어별 IFC 버전·등급 확인
+- 국내 주요 인증 소프트웨어: Revit, ArchiCAD, Solibri, Navisworks, BricsCAD, Tekla Structures
+- buildingSMART Korea: www.buildingsmart.or.kr — 국내 공공 BIM 지침·인증 교육 제공
+
+**국내 OpenBIM 의무화 연계 현황:**
+- 국토부 BIM 시행지침: IFC 기반 납품 권고 (IFC 2x3 TC1 또는 IFC 4)
+- 조달청: BIM 성과품에 IFC 파일 필수 포함
+- buildingSMART Korea의 IFC 검증 서비스 활용 권고 (납품 전 품질 확인)
+- LH공사, SH공사 등 공공발주처: 자체 BIM 지침에서 IFC 납품 버전 명시
+
+**IFC Export 버전 선택 가이드 (2026 실무 기준):**
+| 프로젝트 유형 | 권장 IFC 버전 | 근거 |
+|--------------|--------------|------|
+| 건축·MEP 일반 | IFC 4 Coordination View 2.0 | 수신 소프트웨어 지원 안정 |
+| 토목·도로·철도 | IFC 4.3 | IfcAlignment·IfcBridge 지원 |
+| COBie FM 연동 | IFC 4 Design Transfer View | COBie 파라미터 Export 최적화 |
+| 레거시 발주처 요구 | IFC 2x3 TC1 | 구형 소프트웨어 호환성 |
+
+**openBIM Hackathon Porto 2026:**
+- buildingSMART International 주관 — IFC/IDS 기반 개방형 협업 도구 개발 대회
+- 한국 BIM 스타트업의 글로벌 OpenBIM 생태계 진입 기회
+
+관련: [[BIM 납품검수 지식 베이스]] · [[ACC BIM360 CDE 지식 베이스]] · [[FM 시설관리 자산관리 BIM 지식 베이스]]
+
 ## IFC 개요
 - Source: LUA BIM LABS internal BIM knowledge baseline
 - Tags: ifc,openbim,buildingsmart,iso16739,data-exchange,cde
