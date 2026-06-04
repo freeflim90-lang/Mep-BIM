@@ -1,5 +1,39 @@
 # CEO 지식 베이스
 
+## 2026-06-05 LUA BIM LABS CEO 전략 의사결정 프레임 보강
+- Source: 포브스코리아 스타트업, 스마트건설 챌린지 2025, 메이사(BIM AI 스타트업) 사례
+- Tags: ceo,strategy,startup,revenue-model,growth,2026
+
+**AI 즉시 답변 패턴 — "LUA BIM LABS의 주요 수익원은 무엇인가요?"**
+```
+LUA BIM LABS 수익 모델 (2026년 기준):
+1. MEP BIM 교육 구독 (Starter Plan): 텔레그램 AI 튜터 월 구독
+2. Revit Add-in 판매 (App Store): BIM Command Center 등 월/연 구독
+3. BIM 납품 컨설팅: 1:1 프로젝트 BIM 지원 (프리미엄)
+4. Model Quality Auditor: IFC 납품 자동 검증 SaaS
+5. 기업 맞춤 교육: 건설사·설계사 팀 교육 (B2B)
+```
+
+**BIM AI 스타트업 성공 패턴 (2025~2026 국내 사례):**
+| 기업 | 전략 | 성과 |
+|------|------|------|
+| 큐픽스 | AI 3D 공간 생성 → 글로벌 시장 | ENR Top20 건설사 70% 도입 |
+| 메이사 | 드론+AI BIM 오차 분석 → R&D 지원 | 중기부 지원 + 롯데건설 협력 |
+| LUA BIM LABS 전략 | MEP BIM 교육 + AI 툴 구독 → App Store | 텔레그램 AI 봇 → Starter 전환 |
+
+**CEO 핵심 의사결정 기준 (2026 업데이트):**
+- **상품화 기준**: 공식 기준 존재 + 실무 반복성 확인 → 파일럿 후보 등록
+- **MVP 범위**: 전체 구현보다 핵심 기능 1개 완성 + 사용자 피드백 우선
+- **AX 바우처**: 정부 지원 AX 원스톱 바우처(과제당 13억) 타겟팅 → R&D 가속화
+- **파트너십**: 중소 MEP 설계사 협력 → 실사용자 피드백 루프 구축
+- **글로벌 옵션**: 큐픽스처럼 글로벌 시장 진출 (미국·호주 BIM 의무화 시장)
+
+**2026년 상반기 CEO 최우선 과제:**
+1. BIM Command Center Autodesk App Store 제출 완료
+2. Starter Plan 실사용자 20명 확보 및 피드백 반영
+3. AX 원스톱 바우처 신청 타당성 검토
+4. Model Quality Auditor IDS 기능 추가 착수
+
 ## 2026-06-04 BF 품질진단 상품화 판단 기준
 - Source: `docs/training_curriculum/team_distribution/samples/2026-06-04_CEO_CSO_BF_PRODUCTIZATION_DECISION_MEMO_SAMPLE.md`
 - Tags: ceo,strategy,BF,productization,quality-diagnosis,KST
