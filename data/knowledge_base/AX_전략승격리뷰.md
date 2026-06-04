@@ -347,3 +347,12 @@ Autodesk 공식 Revit 2026 문서와 APS 공식 블로그 기준으로, LUA BIM 
 - 관련 신호: 11번, 12번
 - 판단: 직접 상품화는 Watch 유지, 스마트시공 교육 사례로만 활용한다.
 - 이유: 현장 로봇은 BIM의 대체재가 아니라 as-built 현장 상태를 BIM/디지털트윈과 정렬하는 데이터 수집 계층으로 보는 것이 적합하다.
+
+
+## 2026-06-05 주간 AX 전략 리뷰
+- Source: `docs/knowledge_updates/weekly/2026-W23_AX_STRATEGY_REVIEW.md`
+- Tags: ax,weekly-review,strategy,bim
+
+분류 요약: AX 전략 신호 164, Model Quality Auditor 74, OpenBIM/납품검증 53, 시공 BIM/스마트건설 51, BIM 자동화/Add-in 15, 교육/확산 10
+
+운영 판단: 상위 반복 신호는 CSO, 제품패키징, Model Quality Auditor, 교육컨설팅 지식으로 연결한다.
