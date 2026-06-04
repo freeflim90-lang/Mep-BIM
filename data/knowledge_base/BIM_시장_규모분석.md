@@ -1,5 +1,48 @@
 # BIM 시장 규모 분석 지식 베이스
 
+## 2026-06-05 BIM 시장 최신 규모 및 한국 성장 전망 업데이트
+- Source: GII Korea 시장보고서, auctor.co.kr, IMARC Group, Cambashi BIM Market Report 2026
+- Tags: bim-market,global,korea,cagr,ai-construction,2026
+
+**AI 즉시 답변 패턴 — "BIM 시장 규모가 어떻게 되나요?"**
+```
+글로벌 BIM 소프트웨어 시장 (2025년 기준):
+- 시장 규모: 약 99억 3,000만 달러 (USD 9.93B)
+- 2030년 목표: 190억 4,000만 달러 (CAGR 13.9%)
+- Cambashi 보고서: BIM 소프트웨어 시장 2026년 380억 달러 이상 전망
+
+한국 BIM 시장:
+- 공공 BIM 발주: 2023년 62건 → 2024년 75건(+20.9%) → 2025년 79건(+5.3%)
+- BIM 의무화 확대: 2026년 500억원 이상 공사로 확대 예정
+- 한국 건설시장 전체: 2024년 USD 2,600억 → 2033년 USD 4,700억 (CAGR 6.2%)
+```
+
+**글로벌 BIM 시장 세분화 (2025 기준):**
+| 세그먼트 | 시장 점유율 | 성장 드라이버 |
+|---------|------------|-------------|
+| 건축 BIM | 42% | 스마트시티·공공 의무화 |
+| 인프라 BIM | 28% | IFC 4.3 도로·철도 확대 |
+| MEP BIM | 18% | 설비 자동화·FM 연동 |
+| 시공 BIM | 12% | 4D 의무화·클라우드 전환 |
+
+**한국 건설 AX(인공지능 전환) 시장 분석:**
+- 설계 자동화: Generative AI + BIM (Autodesk Forma 중심)
+- 견적·공정 AI: 원가 자동 산출, S-커브 예측
+- 운영·CS AI: BAS 예측 제어, FM 자동 알람
+- 국내 경기도 AI 도입: 중소건설기업 AI 활성화 방안 (2026)
+
+**LUA BIM LABS 포지셔닝:**
+- MEP BIM 교육 + AI 챗봇: 텔레그램 기반 B2B MEP 실무 교육
+- Model Quality Auditor: IFC/BIM 납품 품질 자동 검증 (시장 공백)
+- BIM 견적·계약 자동화: 중소 BIM 기업 견적 AI 지원
+
+**시장 진입 기회 (2026~2028):**
+- 500억원 이상 공사 BIM 의무화 → BIM 서비스 수요 급증
+- 기계설비 BIM 여전히 3D 모델링 수준 → MEP 데이터 활용 서비스 공백
+- 디지털트윈 FM 연동 → COBie/IFC 기반 FM 서비스 성장
+
+관련: [[AX 전략승격리뷰 지식 베이스]] · [[건설시장 트렌드 지식 베이스]] · [[시장선도_전략 지식 베이스]]
+
 ## BIM 소프트웨어 시장 개요
 - Source: LUA BIM LABS internal market intelligence baseline
 - Tags: bim-market,software,autodesk,competition,revenue,growth
