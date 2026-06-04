@@ -1,5 +1,53 @@
 # Dynamo 지식 베이스
 
+## 2026-06-05 Dynamo AI+MCP 자동화 및 MEP 배치 최신 사례 보강
+- Source: 비아이엠팩토리(businesskorea), DL이앤씨 능동형 BIM, AIBIM 연구단, 기계설비신문
+- Tags: dynamo,ai-bim,mcp,python,mep-automation,pipe-routing,2026
+
+**AI 즉시 답변 패턴 — "Dynamo로 MEP 배관을 자동으로 그릴 수 있나요?"**
+```
+Dynamo MEP 자동화 가능 사례:
+1. 급수배관 자동 모델링: CAD 평면도 → 파이프 경로·위치 자동 분석 → 3D BIM 자동 생성
+   (규칙 기반 알고리즘 + Dynamo Python 스크립트)
+2. 장비표 → 파라미터 일괄 입력: Excel 기기 목록 → Dynamo로 Revit 파라미터 자동 입력
+3. 층별 배관 자동 복사: 표준 배관 패턴을 다른 층에 Dynamo로 자동 복제
+4. 공간(Room) 기반 덕트 배치: IfcSpace 위치 기반 취출구 자동 배치
+
+한계: 복잡한 간섭 회피 경로는 아직 수동 조정 필요
+```
+
+**2025~2026 한국 Dynamo 최신 동향:**
+- **AI+Dynamo**: 2025년 Dynamo User Group에서 "AI 기반 Dynamo Python 활용" 발표
+- **Revit MCP 상용화**: AI가 대화형으로 Dynamo 스크립트 생성 → Revit 모델 직접 조작
+- **DL이앤씨 능동형 BIM**: 평면도+계산서 → MEP 설계 자동화 (지하주차장 2025년 4월 완성)
+- **AIBIM 연구단**: AI 기반 건축설계 자동화 기술 연구 — 급수배관 Dynamo 자동화 사례
+
+**Dynamo 실무 활용 패턴 (즉시 답변용):**
+| 목적 | Dynamo 노드/방법 | 결과 |
+|------|----------------|------|
+| 파라미터 일괄 입력 | Excel → Element.SetParameterByName | 수백 개 설비 데이터 자동 입력 |
+| 층별 공정 색상 코딩 | OverrideGraphicSettings | 4D BIM 공종별 색상 자동 적용 |
+| ActivityID 일괄 추출 | Element.GetParameterValueByName | 공정표 WBS 연동 CSV 생성 |
+| COBie 데이터 추출 | Schedule.Export → Python 변환 | COBie.xlsx 자동 생성 |
+| 패밀리 위치 자동 배치 | FamilyInstance.ByPoint | 기기 좌표 Excel → Revit 자동 배치 |
+
+**Dynamo Python 예시 (MEP 기기 파라미터 대량 입력):**
+```python
+import clr
+clr.AddReference('RevitAPI')
+from Autodesk.Revit.DB import *
+
+# Excel에서 읽은 데이터로 MEP 기기 파라미터 일괄 입력
+elements = IN[0]  # Revit 기기 Element 목록
+data = IN[1]      # [[SerialNumber, Manufacturer, Model], ...]
+
+for el, row in zip(elements, data):
+    el.LookupParameter("SerialNumber").Set(row[0])
+    el.LookupParameter("Manufacturer").Set(row[1])
+    el.LookupParameter("ModelNumber").Set(row[2])
+OUT = "완료"
+```
+
 ## Dynamo 기본 답변 원칙 (2026-05-22)
 - Source: LUA BIM LABS internal Revit/Dynamo automation baseline
 - Tags: dynamo,revit,automation,category-selection,bim

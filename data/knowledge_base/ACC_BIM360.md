@@ -1,5 +1,55 @@
 # ACC/BIM360 CDE 지식 베이스
 
+## 2026-06-05 ACC 한국 공공 프로젝트 적용 및 협업 AI 답변 패턴 보강
+- Source: 오토데스크코리아 뉴스, SCK 오토데스크 센터, ZDNet Korea, Autodesk 공식
+- Tags: acc,bim360,cde,autodesk,cloud,collaboration,korea-public,2026
+
+**AI 즉시 답변 패턴 — "BIM 360과 ACC 차이가 뭔가요?"**
+```
+BIM 360 → ACC(Autodesk Construction Cloud) 전환 관계:
+- BIM 360은 ACC의 이전 버전이며 현재도 병행 운영 중
+- ACC는 BIM 360 + PlanGrid + Assemble + BuildingConnected를 통합한 플랫폼
+- ACC의 핵심 모듈:
+  • Autodesk Build: 현장·프로젝트 관리 (BIM360 + PlanGrid 통합)
+  • Autodesk Takeoff: 2D/3D 물량 산출 (클라우드 기반)
+  • Autodesk Docs: 문서 관리·검토·승인 (CDE 핵심)
+  • Autodesk Design Collaboration: 설계 협업·조율
+- 국내 공공 적용: BIM 의무화 확대로 ACC 채택 공공 발주처 증가 추세
+```
+
+**ACC CDE 워크플로우 (ISO 19650 기반):**
+| 단계 | 상태 | 설명 | 접근 권한 |
+|------|------|------|---------|
+| WIP | 작업 중 | 개인 작업 공간 | 작성자만 |
+| Shared | 공유됨 | 팀 내 검토 공유 | 팀원 |
+| Published | 발행됨 | 발주처 제출용 | 승인된 관계자 |
+| Archived | 보관됨 | 이력 보관 | 관리자 |
+
+**한국 공공 프로젝트 ACC 적용 사례 (2025~2026):**
+- LH공사: 공동주택 BIM 프로젝트에 ACC Docs 기반 납품 협의 중
+- 대형 건설사: 삼성·현대·DL이앤씨 등 ACC로 사내 BIM 협업 전환
+- 한국도로공사: 고속도로 BIM 납품관리시스템과 ACC 연동 검토
+- 스마트건설 얼라이언스: ACC 기반 다자간 협업 플랫폼 표준화 추진
+
+**ACC 모바일 앱 활용 (현장 BIM):**
+- BIM 360 앱: 현장에서 모델 확인·RFI 발행·사진 첨부
+- 오프라인 지원: 네트워크 없는 현장에서도 도면·모델 조회 가능
+- 현장 이슈 연동: Clash Detective 결과 → 현장 담당자 ACC 알림 자동 전송
+
+**ACC API 활용 (LUA BIM LABS 개발 기회):**
+```python
+# ACC Docs API — 파일 업로드·버전 관리 자동화
+import requests
+token = "your_ACC_token"
+hub_id = "your_hub_id"
+project_id = "your_project_id"
+url = f"https://developer.api.autodesk.com/data/v1/projects/{project_id}/folders"
+headers = {"Authorization": f"Bearer {token}"}
+# 폴더 목록 조회 → 특정 폴더에 IFC 파일 자동 업로드
+```
+
+관련: [[IFC OpenBIM 지식 베이스]] · [[BIM 납품검수 지식 베이스]] · [[Revit_Addin 지식 베이스]]
+
 ## ACC(Autodesk Construction Cloud) 개요
 - Source: LUA BIM LABS internal BIM knowledge baseline
 - Tags: acc,bim360,cde,autodesk,cloud,collaboration
