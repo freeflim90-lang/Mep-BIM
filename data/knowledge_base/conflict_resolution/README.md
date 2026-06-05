@@ -25,6 +25,9 @@ conflict_resolution/
 └── cases/             — 케이스별 상세 기록 (CASE_YYYYMMDD_NNN.md)
 ```
 
+리허설 기록은 `AITEST_YYYYMMDD_NNN.md` 형식으로 `cases/`에 저장한다.
+실제 판단 충돌은 `CASE_YYYYMMDD_NNN.md` 형식으로 저장한다.
+
 ---
 
 ## KST 신뢰도 우선순위 (충돌 1단계 판단 기준)

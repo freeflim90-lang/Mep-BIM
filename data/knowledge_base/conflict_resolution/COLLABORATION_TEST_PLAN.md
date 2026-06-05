@@ -13,6 +13,7 @@
 | 기록 위치 | `data/knowledge_base/conflict_resolution/CONFLICT_LOG.md` 또는 별도 케이스 파일 |
 | 통과 기준 | 6개 평가 항목 중 5개 이상 PASS |
 | 실패 처리 | 실패 항목을 SOP, KB, 체크리스트, 자동화 후보 중 하나로 개선 등록 |
+| 실행 템플릿 | `docs/internal_organization_documents/31_AI_COLLABORATION_RUNBOOK_TEMPLATES.md` |
 
 ## 2. 공통 평가표
 
@@ -92,6 +93,8 @@
 | S05 | PASS | 제품화는 전략기획 주관, CSO 승인, 스토어심사/제품패키징 검토 구조가 적합하다. |
 | S06 | PASS | 기존 `conflict_resolution` 체계와 연결하면 충돌 로그가 선례화될 수 있다. |
 
+상세 기록: `cases/AITEST_20260605_001.md`
+
 ## 5. 개선 액션
 
 | 액션 | 담당 | 기한 | 저장 위치 |
@@ -109,3 +112,11 @@
 - [ ] 반복 충돌은 PRECEDENT로 승격한다.
 - [ ] SOP 위반 사례는 내부성장루프의 개선 후보로 등록한다.
 - [ ] 교육/온보딩 문서에 AI 협업 메시지 형식을 포함한다.
+
+## 7. 성숙도 목표
+
+| 기간 | 목표 단계 | 판단 기준 |
+|---|---|---|
+| 2026-06 | L3 검증 협업 | 협업 세션 3건 이상에서 Evidence/Challenge/Consensus 기록 |
+| 2026-07 | L4 학습 협업 | 회고 결과 월 5건 이상 KB, QA, 교육, 자동화 후보로 승격 |
+| 2026-Q3 | L5 자동 개선 협업 후보 | 라우팅, 선례 참조, KPI 점검 자동화 후보 정의 |
