@@ -205,3 +205,35 @@ CDE 필수 메타데이터:
 **대형 .rvt 파일 ACC 업로드 실패 해결**: 단일 .rvt 파일이 500MB 이상이거나, 고속 인터넷 환경에서도 업로드가 반복 실패하는 경우의 해결 절차. ① 네트워크 타임아웃 문제: ACC Desktop Connector를 통한 업로드 방식으로 전환 — 웹 브라우저 업로드보다 재시도(Resume) 기능이 있어 대용량 파일에 적합. ② 파일 내부 오류: 업로드 전 Revit에서 `Purge Unused`, `eTransmit` 실행으로 불필요한 패밀리와 링크 경로 정리 후 파일 크기 감소. ③ 파일 크기 한도: ACC 단일 파일 업로드 한도는 10GB이지만 실무적으로 3GB 이상은 서버 처리 시간이 길어 타임아웃 빈발. 300MB 초과 파일은 모델 분리 검토. ④ 방화벽/프록시 환경: `*.autodesk.com`, `*.autodesk360.com` 도메인을 방화벽 화이트리스트에 등록 — 기업 내 엄격한 방화벽 환경에서 ACC 연결 자체가 차단되는 경우가 있음.
 
 - 관련: [[BIM_지침서]] · [[Navisworks_Addin]] · [[IFC_OpenBIM]] · [[BEP_수행계획서]]
+
+## 2026-06-06 Autodesk Construction Cloud → Autodesk Forma 브랜드 통합 긴급 업데이트
+- Source: Autodesk 공식 블로그, architosh.com, ENR 2026-03
+- Tags: acc,autodesk-forma,rebrand,cde,autodesk-assistant,2026
+
+**핵심: ACC는 2026년 3월부로 Autodesk Forma로 통합됨**
+- Autodesk Construction Cloud(ACC) → **Autodesk Forma** 로 공식 리브랜딩 (2026년 3월)
+- 기능·서비스는 그대로 유지, 브랜드·UI 명칭만 변경
+- Autodesk Docs → **Forma Data Management** (CDE 역할 유지)
+- BIM 360 지원 종료 일정 그대로 진행 중 (BIM 360 잔존 고객은 Forma로 이전 필요)
+
+**고객 대화·납품 문서 용어 변경 필요:**
+| 구용어 | 신용어 (2026년 이후) |
+|--------|---------------------|
+| Autodesk Construction Cloud (ACC) | Autodesk Forma |
+| ACC Docs | Forma Data Management |
+| ACC Model Coordination | Forma Model Coordination |
+| ACC Build | Forma Build |
+| ACC Cost | Forma Cost |
+
+**Autodesk Assistant AI (2026 정식 출시):**
+- 베타 종료 → 정식 출시. Forma 내 모든 워크플로우에 AI 지원 내장
+- 자연어로 RFI·이슈·사양서·공정표·변경지시 즉시 검색 및 분석
+- 기하학 기반 AI 어시스턴트 출시 예고: 3D 모델을 이해하는 Geometry-Based AI
+- 사용 예: "3층 MEP 클래시 미해소 건 목록 보여줘" → Forma 전체 이슈 즉시 집계
+
+**LUA BIM LABS 운영 변경 사항:**
+- 고객 제안서·BEP에서 "ACC" 명칭을 "Autodesk Forma"로 업데이트 필요
+- 교육 자료: "ACC → Forma" 명칭 변경 안내 슬라이드 1장 추가 권고
+- BIM 360 사용 고객: Forma 이전 컨설팅 기회 (데이터 마이그레이션 서비스)
+
+관련: [[BIM_납품검수]] · [[BEP_수행계획서]] · [[IFC_OpenBIM]] · [[4D5D_BIM]]

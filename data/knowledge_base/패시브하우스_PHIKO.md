@@ -366,3 +366,53 @@ var conductivity = thermalAsset?.get_Parameter(
 - 이 문서의 기존 PHIKO/패시브/ZEB 수치 문장은 프로젝트 적용 전 공식 기준, 인증기관 요구, 발주처 요구, 지자체 기준으로 재확인한다.
 
 관련: [[건축 지식 베이스]] · [[BIM 납품검수 지식 베이스]] · [[2026-06-04 LUA BIM LABS Energy ZEB Standard Update]]
+
+## 2026-06-06 BIM 통합 내재탄소(Embodied Carbon) LCA 지식 보강
+- Source: Carbon Leadership Forum, OneClick LCA, EC3, Tally, itcon.org 2026 연구
+- Tags: embodied-carbon,lca,ec3,tally,oneclicklca,bim,revit,carbon-neutral,2026
+
+**배경 — 왜 탄소 데이터 관리가 중요해졌나:**
+- 친환경 건축 인증(패시브하우스·ZEB·G-SEED)은 **운영탄소(Operational Carbon)** 에 집중했으나
+- 2026년 이후 글로벌 규제는 **내재탄소(Embodied Carbon)** — 자재 생산·운반·시공·철거 단계의 탄소 — 까지 요구
+- 한국: G-SEED 탄소 항목 강화, 공공건물 LCA 제출 의무화 논의 진행 중
+- EU EPBD(건물에너지성능지침) 개정: 2030년부터 신규 건물 WLC(Whole Life Carbon) 보고 의무화
+
+**운영탄소 vs 내재탄소 구분:**
+| 구분 | 내용 | BIM 파라미터 |
+|------|------|-------------|
+| 운영탄소 (Operational) | 냉난방·조명·급탕 에너지 사용으로 발생 | EUI, BEMS 실측값 |
+| 내재탄소 (Embodied) | 자재 생산·수송·시공·유지·철거 단계 탄소 | 자재 EPD, kg CO₂eq/㎡ |
+| 총 생애주기 탄소 | 운영 + 내재 | WLC (Whole Life Carbon) |
+
+**BIM 연동 내재탄소 계산 도구 (2026 현황):**
+| 도구 | 연동 방식 | 특징 |
+|------|----------|------|
+| **Tally (KieranTimberlake)** | Revit 플러그인 | 전체 건물 WBLCA, EC3 내보내기 가능 |
+| **OneClick LCA** | Revit 플러그인 + 웹 | EU/글로벌 EPD DB, Revit 2016~2025 지원 |
+| **EC3 (Building Transparency)** | BOM 임포트, Tally/OneClick 연동 | 무료, 미국 공공 프로젝트 사실상 표준 |
+| **Bentley iTwin + EC3** | iTwin 수량 → EC3 자동 연동 | 인프라 탄소 최적화(Carbon Optioneering) |
+
+**Revit → OneClick LCA 워크플로우 (빠른 적용):**
+1. Revit에서 자재 스케줄 작성 (Material Name, Volume, Area)
+2. OneClick LCA Revit 플러그인 → 자재 자동 인식 후 EPD 데이터베이스 매핑
+3. 미매핑 자재 수동 선택 → 한국/아시아 EPD 또는 글로벌 대표값 선택
+4. 설계 대안별 내재탄소 비교 (A vs B 자재 선택 시 탄소 차이 즉시 확인)
+5. 결과 PDF/Excel 출력 → G-SEED, 발주처 보고 자료
+
+**BIM 파라미터 — 내재탄소 추적용 필수 속성:**
+```
+Pset_CarbonFootprint (사용자 정의 PSet):
+  - Material_EPD_Source: 환경성적표지(EPD) 출처 (예: "한국환경산업기술원 EPD-2024-001")
+  - EC_A1A3_kgCO2eq: 원자재 생산~공장 출하 단계 탄소 (kg CO₂eq/unit)
+  - EC_A4_kgCO2eq: 운송 단계 탄소
+  - EC_B_kgCO2eq: 사용·유지보수 단계 탄소
+  - EC_C_kgCO2eq: 폐기·철거 단계 탄소
+  - EC_Total_kgCO2eq: 합산 내재탄소
+```
+
+**LUA BIM LABS 실무 활용 포인트:**
+- BIM 납품 검수 항목에 "내재탄소 파라미터 입력 완료 여부" 추가 (IDS 조건 후보)
+- G-SEED 또는 공공 발주처 탄소 보고 요구 시 → OneClick LCA 연동 교육 제공 가능
+- 2026 글로벌 탄소 규제 대응: 해외(EU·싱가포르·UAE) 발주 프로젝트 WLC 보고 지원 기능 로드맵
+
+관련: [[FM_자산관리]] · [[BIM_납품검수]] · [[건물유형별_BIM적용기준]] · [[IFC_OpenBIM]]

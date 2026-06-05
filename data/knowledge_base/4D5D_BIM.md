@@ -123,3 +123,46 @@ summary.to_excel("cost_estimate.xlsx")
 - Critical Path 변경: 주 1회 FloatTime 재계산 → 0일 이하 활동 목록 갱신
 - 자재 조달 Lead Time: 냉동기 16주, 엘리베이터 24주, 커튼월 20주 기준 역산 발주일
 - 관련: [[Navisworks_Addin]] · [[BEP_수행계획서]] · [[엔지니어링계산서]] · [[BIM_프로젝트_견적산정]]
+
+## 2026-06-06 AI 기반 4D/5D BIM 최신 플랫폼 동향 보강
+- Source: Autodesk Forma 공식 블로그, Bentley Blog, ALICE Technologies, ENR, Construction Dive 2026
+- Tags: 4d-bim,5d-bim,ai-scheduling,autodesk-forma,synchro-plus,alice-ai,2026
+
+**Autodesk Construction Cloud → Autodesk Forma 통합 (2026년 3월):**
+- ACC(Autodesk Construction Cloud)가 2026년 3월 Autodesk Forma로 공식 브랜드 통합
+- Autodesk Docs → **Forma Data Management**로 리브랜딩 (CDE 역할 유지)
+- Autodesk Assistant (AI): 베타 종료 → 정식 출시. 자연어로 RFI·이슈·공정표·사양서 즉시 검색 가능
+  - 예: "향후 2주 공정에 영향을 미칠 미결 항목은?" → 즉시 목록 반환
+- 4D 공정 관련 AI: 공정표 기반 리스크 예측, 원가 예측 고도화, 70개+ 신기능 탑재
+- LUA BIM LABS 실무 영향: Navisworks TimeLiner 납품 결과물을 Forma Data Management로 업로드하고, Autodesk Assistant로 공정 이슈 자연어 질의 가능
+
+**Bentley SYNCHRO+ AI 4D 공정관리 (2026 GA):**
+- SYNCHRO 4D → **SYNCHRO+** 로 메이저 업그레이드, 2025년 12월 Early Access, 2026년 GA
+- Bentley CoPilot (LLM): 자연어로 4D 공정 시퀀싱·리소스 배치 쿼리 가능
+  - 예: "A구역 골조 공사를 2주 앞당기면 전체 공기와 원가가 어떻게 변하나?" → 시뮬레이션 즉시
+- Cesium 지리공간 통합: CIM(도로·철도) 연계 4D 시뮬레이션을 글로벌 지리 맥락에서 시각화
+- 웹 기반 접근: 비전문가(발주처·현장 소장)도 브라우저에서 4D 모델 확인 가능 → 협업 범위 확대
+- LUA BIM LABS 기회: SYNCHRO+ Bentley CoPilot 자연어 쿼리 패턴 → 국내 발주처 시연 자료로 활용
+
+**ALICE Technologies AI 공정 최적화 에이전트:**
+- McKinsey와 파트너십 체결 (Generative AI 공정 최적화)
+- **Insights Agent**: AI와 공정표를 대화하듯 분석 (챗봇 인터페이스)
+  - 공기 단축 시나리오 자동 탐색, 리소스 재배치 추천
+- **ALICE Plan**: 2D 시각적 AI 플래닝 — 전통적 Gantt 차트 → AI 동적 시퀀싱으로 전환
+- 성과 데이터: 프로젝트 기간 **17% 단축**, 인건비 **14% 절감**, 장비비 **12% 절감** (실증 사례)
+- BIM 연동: Revit·Navisworks IFC 임포트 → ALICE에서 4D 빌더블 스케줄 자동 생성
+
+**국토부 디지털 건설기준 2026 API 무상배포:**
+- 국토부 AI 인식 가능 건설기준 구축 사업 → 2026년 완료 후 **API 무상배포** 예정
+- BIM 전면 도입 + AI 자동설계 연계 기반 마련 → 자동 설계·물량산출 Add-in 개발 근거
+- AI 기반 건축설계 자동화 기술개발 사업 (2021~2025, 230억원 투입): 시공 단계 가상시공 자동화 기술 적용 시작
+
+**4D/5D 플랫폼 선택 기준 (2026 실무):**
+| 상황 | 권장 플랫폼 | 근거 |
+|------|------------|------|
+| Autodesk 생태계 표준 납품 | Navisworks TimeLiner + Forma | 국내 발주처 요구 포맷(NWD) |
+| 인프라·CIM 토목 프로젝트 | SYNCHRO+ (Bentley) | CIM + 4D, IFC 4.3 Alignment 지원 |
+| AI 공정 최적화 중점 프로젝트 | ALICE Technologies | 수천만 시나리오 자동 최적화 |
+| 경량·중소 현장 공정 관리 | MS Project + 자체 4D 스크립트 | 초기 도입 비용 최소화 |
+
+관련: [[Navisworks_Addin]] · [[BEP_수행계획서]] · [[엔지니어링계산서]] · [[BIM_프로젝트_견적산정]] · [[ACC_BIM360]]
