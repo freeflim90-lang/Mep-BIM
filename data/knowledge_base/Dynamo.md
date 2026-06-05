@@ -483,3 +483,48 @@ Dynamo 2025(Dynamo 3.x) CPython 3.x 전환 시 기존 IronPython(Python 2.7/3.8)
 - 일람표 자동화를 활용하여 설계 변경 사항이 반영되면서 즉시 업데이트된 일람표를 생성할 수 있습니다. 이를 통해 효율적인 프로젝트 관리가 가능합니다.
 - 물량산출 스크립트를 사용하면 Dynamo에서 직접적인 코드 작성 없이 복잡한 계산을 수행하여 정확한 물량 산출이 가능해집니다. 이는 프로젝트 예산과 스케줄링에 중요한 도움을 줍니다.
 - 관련: [[Revit_Addin]] · [[CS_기술지원관]] · [[빌드검증]] · [[엑셀자동화]]
+
+
+## Dynamo 최신 기능 및 BIM 자동화 팁 (2026-06-06)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-06
+- Tags: dynamo,automation,revit,update
+
+- Autodesk Dynamo 2025에서는 MEP 배관/덕트 자동 배치 기능을 통해 BIM 실무자가 효율적으로 설계 작업을 수행할 수 있습니다.
+- 일람표 자동화 기능으로, 빌드인 스크립트를 활용하여 자동으로 업데이트되며, 시간과 노력을 대폭 절약할 수 있습니다.
+- 물량산출 스크립트를 사용하면 자동으로 물량을 계산하고 보고서를 생성할 수 있어 생산성을 높일 수 있습니다.
+- 관련: [[Revit_Addin]] · [[CS_기술지원관]] · [[빌드검증]] · [[엑셀자동화]]
+
+## 2026-06-06 Dynamo 4.0.2 (.NET 10) + AI Assistant Alpha 긴급 보강
+- Source: Autodesk AEC Tech Drop (2026.04), architosh.com, archilabs.ai, dynamobim.org 2026
+- Tags: dynamo-4,net10,ai-assistant-alpha,mcp,revit2027,performance,2026
+
+**Dynamo 4.0.2 — Revit 2027 탑재 버전 핵심 변경사항:**
+- **.NET 10 업그레이드**: Dynamo 런타임이 .NET 10 기반으로 전환 → 복잡한 파라메트릭 워크플로우의 기하학 연산 속도 **대폭 향상**
+  - 기존: .NET Framework 4.8 → 신규: .NET 10 (크로스플랫폼 가능)
+  - 효과: 대형 MEP 자동화 그래프에서 크래시 감소, 실행 속도 향상
+- **Generative Design 템플릿 라이브러리 확장**: 재실자 동선, 구조 트러스 최적화, 공간 레이아웃 등 샘플 연구 템플릿 추가
+- 참고: Dynamo 버전은 Revit 릴리즈와 함께 번들, Dynamo 4.x는 Revit 2027 대응
+
+**Autodesk Assistant in Dynamo (Alpha 단계, 2026):**
+- Dynamo 내부에 AI 어시스턴트 탑재 (Alpha) → 자연어로 Dynamo 그래프 실행 지시 가능
+- 사례: Weir Stone(교량 돌쌓기) 위치 데이터 → AI가 Revit 모델에 자동 배치
+- 워크플로우: 자연어 프롬프트 → Dynamo 노드 자동 생성 → Revit 요소 배치·수정
+- 현황: Alpha 단계 → 실무 적용 전 안정성 검증 필요
+- LUA BIM LABS 기회: MEP 자동 배치 Dynamo 그래프에 AI Assistant 연동 → 자연어 입력으로 덕트·배관 경로 자동 생성 중장기 로드맵
+
+**Revit 2027 MCP 6개 Tool Group (Autodesk Assistant 연동):**
+| Tool Group | 기능 | Dynamo 활용 가능성 |
+|-----------|------|-----------------|
+| Model Queries | 모델 요소 조회·분석 | Dynamo 데이터 추출 대체 |
+| Sheet Management | 도면 뷰·시트 생성 | 일람표 자동 생성 보완 |
+| Room Management | 공간·실 관리 | 실 번호 자동화 보완 |
+| Schedules | 스케줄 생성·편집 | Dynamo 스케줄 노드와 병행 |
+| Exports | IFC·DWG 내보내기 | Dynamo IFC Export 보완 |
+| Element Operations | 요소 생성·수정·태그 | 핵심 Dynamo 기능과 경쟁 |
+
+**Add-in 개발자 주의사항 (Dynamo 4.x / .NET 10):**
+- 기존 .NET Framework 4.8 기반 Dynamo Zero-Touch 노드는 .NET 10 환경에서 재컴파일 필요
+- NuGet 패키지 의존성 확인: .NET 10 호환 버전으로 업데이트 필요
+- 기존 Dynamo 패키지(MEP Force Layout, MEPover 등) 호환성 검증 필요 (패키지 제작자 업데이트 대기)
+
+관련: [[Revit_Addin]] · [[IFC_OpenBIM]] · [[엑셀자동화]] · [[4D5D_BIM]]
