@@ -136,3 +136,66 @@ Pset_ManufacturingEquipment
 - [[건물유형별_BIM적용기준]]
 - [[국가별_건설법규_기준비교]]
 - [[설비시공조율]]
+
+## 2026-06-06 반도체·이차전지 공장 디지털트윈·스마트팩토리 BIM 보강
+- Source: 삼성전자 AI팩토리(NVIDIA 협력), 정부 스마트공장 구축사업 2026, dec-w.com BIM 동향 2026
+- Tags: semiconductor,battery,smart-factory,digital-twin,bim,mes,carbon-neutral,2025,2026
+
+**삼성전자·SK 반도체 AI 팩토리 디지털트윈 (2025~2026 핵심 사례):**
+- 삼성전자: NVIDIA와 협력 → **반도체 AI 팩토리** 디지털트윈 구축 (공정 AI 최적화)
+- SK: **제조 AI 클라우드** 도입 → 반도체 생산라인 실시간 디지털트윈
+- 글로벌 디지털트윈 시장: **2026년 482억 달러** 전망 (2020년 31억달러 대비 CAGR ~60%)
+- BIM 수요: 반도체·하이테크 BIM 채용 2026년 3월 기준 급증 (BIM 전문인력 부족)
+
+**반도체 팹(Fab) BIM 특화 설계 (2026 최신 기준):**
+```
+반도체 팹 BIM 핵심 MEP 체크리스트:
+1. 초순수(UPW): 전도도 < 0.1 μS/cm, 316L SS EP 배관, 전용 BIM 레이어
+2. 특수가스(CDA/N₂/H₂/PH₃): ATEX Zone 1~2 구역 BIM 공간 속성화
+3. 클린룸 ISO Class 1~5: 별도 Pset_Cleanroom (→ [[연구소_실험시설_BIM]] 참조)
+4. 초진동 제어: 공조기·펌프 방진 → IfcBuildingElementProxy 방진 속성 추가
+5. EHS(환경·안전·보건): 배기 스크러버 위치·용량 BIM → 법규 준수 확인
+6. 전력: 반도체 팹 수전 100MW+ → 변전소~UPS~PDU 계층 BIM 전력 계통도
+```
+
+**이차전지(배터리) 공장 드라이룸 BIM 설계 (2025~2026 급증):**
+- 드라이룸 환경: 이슬점(Dew Point) -35℃~-50℃ 유지 → 극저습도 공조
+- BIM 특화 파라미터:
+  ```
+  Pset_DryRoom:
+    - DewPoint_Target_C: -40 (이슬점 목표)
+    - Desiccant_Wheel_ID: 제습 휠 ID
+    - Air_Change_Rate: 시간당 환기 횟수 (극저습 유지)
+    - Room_Pressure_Pa: 인접실 대비 양압 유지
+    - Vapor_Barrier_Layer: 방습층 BIM 레이어 ID
+    - Li_Battery_Fire_Zone: 리튬 화재 위험구역 여부
+  ```
+- 리튬 화재 특수 소화: 드라이룸 내 리튬 화재 → 일반 스프링클러 금지 → 질식 소화·주수 억제형
+
+**스마트팩토리 BIM → MES/ERP 디지털 통합 (정부 지원 연계):**
+- 2026 정부형 스마트공장 구축사업: 중소기업 대상 스마트팩토리 구축비 최대 50% 지원
+  - 지원 범위: 로봇 자동화 + MES + ERP + 디지털트윈 일괄 패키지
+- BIM ↔ MES 연동 워크플로우:
+  ```
+  설계 단계: 공장 BIM (장비 배치·유틸리티 접속점 확정)
+  ↓ IFC 내보내기 + 장비 ID 매핑
+  구축 단계: MES 공정 레이아웃 BIM 기반 설정
+  ↓ BIM 자산 ID ↔ MES 설비 코드 연동
+  운영 단계: EAM(자산관리) + BIM → 설비 이력·예방 정비
+  ```
+- BIM 파라미터 추가: `MES_Equipment_Code`, `SAP_Plant_ID`, `ERP_Asset_Number`
+
+**탄소 중립 공장 BIM (2030 넷제로 목표 대응):**
+- 삼성전자·SK·LG 등 RE100 가입 → 생산 공장 탄소발자국 BIM 추적 의무화 추세
+- BIM 탄소 파라미터:
+  - `EC_Manufacturing_kgCO2eq`: 건물 내재탄소 + 공정 탄소 합산
+  - `Renewable_Energy_Ratio_%`: 신재생에너지 비율 (RE100 목표)
+  - `Scope2_Emission_Factor`: 전력 탄소계수 (한국 전력 그리드)
+- 지붕 태양광 + 폐열 회수 → BIM 에너지 시뮬레이션 연동 (IES VE / OpenStudio)
+
+**LUA BIM LABS 공장 BIM 수주 전략 (반도체·배터리 클러스터):**
+- 반도체 클러스터: 용인 시스템반도체 클러스터(삼성), SK하이닉스 청주·이천 → 플랜트 BIM 전문 업체와 컨소시엄
+- 배터리 공장: 충북 오창·전북 새만금 이차전지 클러스터 → 드라이룸 MEP BIM 특화 납품
+- 스마트팩토리 BIM 컨설팅: 정부 지원사업 활용 → 중소 제조업체 BIM 전환 지원
+
+관련: [[연구소_실험시설_BIM]] · [[FM_자산관리]] · [[IFC_OpenBIM]] · [[BIM_납품검수]]
