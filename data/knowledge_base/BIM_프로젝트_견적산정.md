@@ -1,6 +1,47 @@
 # BIM 프로젝트 견적산정 로직 (내부 기준)
 <!-- 대외 공개 금지 — 내부 견적 산정 및 제안가 결정 전용 -->
 
+## 2026-06-05 건설공사 표준시장단가 BIM 단가 및 견적 AI 즉시 답변 패턴 보강
+- Source: 건설공사 표준시장단가(2026 상반기), 캐드앤그래픽스, 국토부 BIM 단가 지침서
+- Tags: bim-cost,standard-unit-price,lod,quantity-takeoff,estimate,2026
+
+**AI 즉시 답변 패턴 — "BIM 설계 용역의 단가 기준이 있나요?"**
+```
+건설공사 표준시장단가 BIM 단가 (2026 상반기 기준):
+- 국토교통부 + 한국건설기술연구원 공동 제작 'BIM 단가 상세설명서'
+- 2026 상반기 표준시장단가 공고에 BIM 단가 지침 포함 (1457페이지)
+- 적용 기준: 재료비+직접노무비+직접공사경비 포함
+
+BIM 설계 대가 기준 (참고):
+- 기본설계 BIM: 설계비의 약 10~15% 추가 (LOD 300 기준)
+- 실시설계 BIM: 설계비의 약 15~25% 추가 (LOD 350 기준)
+- 철도 BIM 설계 대가: 국가철도공단 별도 기준 수립 중 (2025)
+```
+
+**BIM 5D 견적산정 연동 방법 (AI 즉시 답변):**
+```python
+# Revit Schedule → BIM 5D 견적 자동 연동
+import pandas as pd, openpyxl
+
+# 1. Revit Schedule CSV 로드
+df = pd.read_csv("revit_quantities.csv")
+
+# 2. 2025 상반기 건설공사 표준단가 로드
+unit_price = pd.read_excel("standard_unit_price_2025.xlsx")
+
+# 3. 공종별 물량 × 단가 = 견적
+merged = df.merge(unit_price, on="Category")
+merged["Amount"] = merged["Quantity"] * merged["UnitPrice"]
+
+# 4. LOD별 정확도 주석 (LOD 300: ±15%, LOD 350: ±10%)
+print(f"LOD 300 견적: {merged['Amount'].sum():,.0f}원 (±15%)")
+```
+
+**LUA BIM LABS BIM 견적 서비스 포지셔닝:**
+- 중소 설계사·건설사: BIM 없이 표준단가 기반 견적 → LUA BIM LABS AI로 견적 보조
+- 계약 분석 API (server_total.py): 예산 5단계 티어 자동 분류 → 범위 판정
+- 2026 기회: 500억↑ BIM 의무화 → BIM 용역 견적 서비스 수요 급증
+
 ---
 
 ## 1. 견적 산정 흐름
