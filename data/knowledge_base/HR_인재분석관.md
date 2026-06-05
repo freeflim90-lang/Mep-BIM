@@ -1,5 +1,28 @@
 # HR_인재분석관 지식 베이스
 
+## 2026-06-05 HR 인재 분석 2026 기준 업데이트
+- Source: LUA BIM LABS 인재 운영 기준, BIM 전문인력 채용 기준
+- Tags: hr,talent,recruitment,bim-skills,learning,2026
+
+**LUA BIM LABS 인재 역량 기준 (2026):**
+| 역할 | 필수 역량 | 우대 역량 |
+|------|---------|---------|
+| MEP BIM 모델러 | Revit MEP 기초, 배관·덕트 모델링 | Dynamo, 간섭검토 |
+| BIM 코디네이터 | Navisworks, 납품 관리 | IFC/IDS, ACC |
+| AI 개발자 | Python, API 연동 | Claude API, Revit API |
+| CS 담당자 | BIM/MEP 기초 지식, 텔레그램 운영 | KST 태그 응답 |
+
+**BIM 전문인력 채용 전략 (2026):**
+- 채용 루트: 한국BIM평가원 교육 이수자, D.E.C BIM 커뮤니티
+- 평가 기준: KST 기반 답변 능력 테스트 (사례 기반)
+- 교육 방식: Starter Plan 무료 제공 → 역량 확인 후 채용
+- 프리랜서: BIM 컨설팅·개발 외주 (잡코리아·크몽 활용)
+
+**팀원 역량 성장 추적 지표:**
+- KST01 비율: 공식 기준 기반 답변 비율 (높을수록 좋음)
+- 반복 실수 패턴: 같은 오류 재발 여부 추적
+- 자기주도 학습: 매주 Starter Plan 콘텐츠 이수 여부
+
 ## 2026-06-04 KST 기반 학습 기록 운영 기준
 - Source: `docs/training_curriculum/team_distribution/samples/2026-06-04_HR_KST_TRAINING_RECORD_SAMPLE.md`
 - Tags: hr,training-record,KST,competency,evidence-response
