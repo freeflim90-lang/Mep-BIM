@@ -230,3 +230,69 @@ FM 추가 필드:
 - 자동 수집된 점검 주기와 수질 기준 문장은 공식 법령·고시·지자체 요구 확인 전 운영 KPI로 확정하지 않는다.
 
 관련: [[위생 지식 베이스]] · [[설비장비 지식 베이스]] · [[BIM 납품검수 지식 베이스]] · [[2026-06-04 LUA BIM LABS Plumbing Water Tank Drainage Standard Update]]
+
+## 2026-06-06 AI 예측 유지보수·Autodesk Tandem·디지털트윈 FM 보강
+- Source: Autodesk Tandem 공식 문서, ZDNet Korea CES 2026 디지털트윈, 스마트시티 디지털트윈 시장 전망
+- Tags: ai-fm,predictive-maintenance,digital-twin,autodesk-tandem,cobie,iso19650,2025,2026
+
+**Autodesk Tandem — BIM→운영 단계 디지털트윈 플랫폼 (2025~2026 핵심):**
+- 정의: AEC용 클라우드 기반 디지털트윈 소프트웨어 (Autodesk 공식 FM 솔루션)
+- 워크플로우:
+  ```
+  설계 BIM (Revit/Navisworks) → Autodesk Tandem 연동
+  → 준공 자산 데이터(COBie) 자동 이관
+  → 운영 단계: IoT 센서 연결 → 실시간 디지털트윈
+  → 예측 유지보수 알람 → 자산 이력 추적
+  ```
+- 주요 기능:
+  | 기능 | 내용 | BIM 연동 방식 |
+  |------|------|------------|
+  | BIM 이관 | Revit → Tandem 자동 자산 데이터 전송 | IfcProduct ID 매핑 |
+  | IoT 연동 | 센서·미터 데이터 → 자산별 실시간 스트리밍 | BIM 자산 ID ↔ IoT Tag |
+  | 경고 알람 | 온도·진동·에너지 이상 → 담당자 알람 | 파라미터 임계값 설정 |
+  | 유지보수 기록 | 작업 이력 → BIM 자산 속성 자동 업데이트 | COBie Activity 확장 |
+
+**AI 예측 유지보수 FM (2025~2026 글로벌 확산):**
+- 적용 설비: 공조기·펌프·냉동기·엘리베이터·발전기 → AI 고장 예측 최우선
+- 데이터 흐름:
+  ```
+  센서 데이터(진동·온도·전력·운전시간) →
+  AI 분석(정상 패턴 학습 → 이상 탐지) →
+  예측 잔여수명(RUL: Remaining Useful Life) 계산 →
+  CMMS 자동 예방작업 지시 → BIM 자산 이력 업데이트
+  ```
+- 효과: 예방 정비 대비 유지보수 비용 25~30% 절감, 비계획 다운타임 70% 감소
+- BIM 파라미터 추가:
+  ```
+  Pset_PredictiveMaintenance:
+    - AI_Health_Score: 0~100 (설비 건강도 점수)
+    - RUL_Days: 예측 잔여수명 (일)
+    - Anomaly_Alert_Level: Normal / Warning / Critical
+    - Last_ML_Update: AI 모델 마지막 업데이트 날짜
+    - Sensor_Tag_ID: IoT 센서 태그 ID
+  ```
+
+**디지털트윈 시장 전망 (2026 기준):**
+- 스마트시티 디지털트윈: **2026년 37.7억 달러** 시장 규모
+- 2025년까지 500개+ 스마트시티 디지털트윈 운영 예상
+- CES 2026: "디지털트윈은 피지컬 AI(로봇·자율주행)의 핵심 인프라"로 자리매김
+
+**ISO 19650 Part 3 — FM 단계 정보 요건:**
+- ISO 19650-3: 자산 운영·유지관리 단계 BIM 정보 요건 국제 표준
+- 핵심 개념: OIR(Organizational Information Requirements) → AIR(Asset Information Requirements) → AIM(Asset Information Model)
+- 한국 적용: 조달청·LH·공공발주처 FM BIM 기준에 ISO 19650-3 반영 진행 중
+- BIM → FM 이관 체계:
+  ```
+  설계 PIM(Project Information Model)
+  ↓ 준공 검수 완료
+  AIM(Asset Information Model) → ISO 19650-3 요건 충족
+  ↓ FM 시스템(Tandem/Archibus/IBM Maximo) 연동
+  운영 데이터 + BIM 자산 = 통합 디지털트윈
+  ```
+
+**LUA BIM LABS FM BIM 서비스 전략 (2025~2026):**
+- Autodesk Tandem 파트너 등록 → 한국 공공 발주처 FM BIM 컨설팅 서비스
+- AI 예측 유지보수 BIM 패키지: IoT 센서 위치 BIM + Tandem 연동 설정 원스톱
+- ISO 19650-3 기반 FM BIM 납품 가이드 자체 개발 → 차별화 컨설팅 서비스
+
+관련: [[IFC_OpenBIM]] · [[BIM_납품검수]] · [[ACC_BIM360]] · [[건물유형별_BIM적용기준]]

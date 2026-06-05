@@ -159,4 +159,45 @@ buildingSMART 공식 문서 기준으로 IDS 1.0은 공식 표준이며, IFC 모
 
 **IFC GUID가 재익스포트마다 바뀌는 문제(FM 연동 중단) 해결법**: Revit에서 IFC를 재익스포트할 때 `IfcProduct`의 `GlobalId`(GUID)가 변경되면 FM 시스템(Autodesk Tandem, Archibus 등)에서 해당 자산의 이력 데이터와 연결이 끊긴다. 원인: Revit의 IFC GUID는 기본적으로 Revit ElementId에서 결정론적으로 생성되지만, 요소가 삭제 후 재생성된 경우(예: 패밀리 교체), 링크 모델 요소, 또는 IFC Export 플러그인 버전 차이로 인해 GUID가 변경될 수 있다. 해결법: ① `IFC GUID` 공유 파라미터를 Revit 요소에 명시적으로 저장하는 Add-in을 활용 — 최초 익스포트 시 GUID를 파라미터에 기록하고 이후 익스포트에서 저장된 GUID를 강제 사용. ② ifcopenshell로 두 버전의 IFC를 비교하여 GUID 변경된 요소 목록 자동 추출 후 FM 시스템에 매핑 업데이트 적용. ③ FM 연동이 중요한 장비(공조기, 펌프, 발전기)는 `IfcProduct.Name` + 제조사 시리얼번호 조합으로 보조 식별자를 IDS에 필수 조건으로 추가하여 GUID 변경 시에도 자산 매칭 가능하도록 설계.
 
-- 관련: [[OpenBIM_프로그램연동]] · [[BIM_납품검수]] · [[ACC_BIM360]] · [[Revit_Addin]]
+## 2026-06-06 Revit 2027 IFC 개선·IDS+BCF 3.0 실무 워크플로우·IFC 5.0 Draft 보강
+- Source: Autodesk Revit 2027 릴리즈 노트, buildingSMART BCF 3.0 API 문서, buildingSMART IFC 5.0 로드맵
+- Tags: revit2027,ifc-export,ids,bcf3.0,ifc5.0,2026,practical-workflow
+
+**Revit 2027 IFC 개선 사항 (2026-04-07 출시):**
+- IFC 4.3 내보내기 안정성 개선: IfcAlignment(선형) 내보내기 오류 수정
+- Autodesk Forma Connected Client → IFC 파일 Forma 클라우드 직접 업로드 가능 (Revit 2027~)
+- IFC Open 개선: IFC 4.3 파일 열기 시 MEP 객체 자동 범주 매핑 정확도 향상
+- Carbon Parameters (EC3 연동): IFC 내보내기 시 `Pset_EnvironmentalImpact` 자동 포함 옵션 추가
+- 주의: Revit 2027 IFC 내보내기 플러그인(IFC for Revit)과 기본 내장 내보내기 통합 — 별도 플러그인 설치 불필요
+
+**IDS + BCF 3.0 실무 워크플로우 (2026 권장 프로세스):**
+```
+[발주처] IDS 파일 작성 (.ids XML)
+    → BIM 요건 정의: 어떤 객체에 어떤 파라미터가 필수인지 명시
+    ↓
+[설계사] Revit에서 IFC 내보내기
+    → ifctester (Python) 또는 Solibri 9.13+로 IDS 자동 검증
+    → 실패 요소: BCF 3.0 이슈 파일(.bcfzip) 자동 생성
+    ↓
+[BIM 관리자] BCF 3.0 이슈 검토
+    → BCF REST API (buildingSMART BCF 3.0 API)로 Jira/Asana 자동 연동
+    → 이슈 상태 추적: Open → In Progress → Resolved
+    ↓
+[검수] 재검증 IDS 통과 → 납품 승인
+```
+- BCF 3.0 주요 변경: REST API 표준화, 비디오 클립 첨부 지원, 뷰포인트에 단면 클리핑 정보 포함
+- 무료 IDS 도구: `ifctester` (Python, buildingSMART 공식), `IDS Audit` (Solibri 플러그인)
+- BCF 3.0 호환 소프트웨어 (2026 기준): Solibri, Revit (내장), Navisworks 2026+, BIMcollab
+
+**IFC 5.0 Draft 현황 (2025~2026):**
+- IFC 5.0 표준: buildingSMART International 개발 중 (2026년 현재 Draft 단계)
+- 주요 변경 예상:
+  | 항목 | IFC 4.x | IFC 5.0 Draft |
+  |------|---------|-------------|
+  | 기하 표현 | BREP/CSG/SweptSolid | Tessellation 표준화 + STEP AP242 통합 |
+  | 프로젝트 구조 | IfcProject > IfcSite | 다중 사이트 지원 확장 |
+  | 인프라 | IFC 4.3 일부 | IfcFacility 계층 완전 통합 |
+  | 디지털트윈 | 미지원 | IoT 센서 시계열 데이터 참조 스펙 포함 |
+- 실무 영향: 2026~2028년은 IFC 4.x 과도기 → IFC 5.0 채택은 2029년 이후 예상
+
+- 관련: [[OpenBIM_프로그램연동]] · [[BIM_납품검수]] · [[ACC_BIM360]] · [[Revit_Addin]] · [[FM_자산관리]]
