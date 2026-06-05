@@ -146,4 +146,43 @@ foreach (var pt in insertionPoints)
 
 **패밀리 버전 간 파라미터 마이그레이션**: 패밀리 v1에서 v2로 업그레이드 시 파라미터명이 변경되거나 삭제된 경우, 기존 인스턴스에 입력된 파라미터 값이 유실되는 문제가 발생한다. 마이그레이션 전략: ① 파라미터 이름 변경 시 기존 파라미터를 삭제하지 말고 새 파라미터를 추가한 후, Dynamo 스크립트로 구 파라미터 값을 새 파라미터로 복사. ② 공유 파라미터(Shared Parameter)는 GUID가 파라미터 동일성을 보장하므로 이름을 바꿔도 기존 데이터가 유지된다 — 가능하면 공유 파라미터로 전환. ③ 패밀리 버전 이력을 GitHub 또는 ACC에서 관리하고, 버전별 "변경된 파라미터 목록"을 CHANGELOG.md로 유지하면 마이그레이션 작업 계획 수립이 용이해진다. ④ 프로젝트에 이미 배치된 패밀리 인스턴스 수가 1,000개 이상인 경우 Revit API 배치 스크립트로 자동 마이그레이션이 사실상 필수.
 
-- 관련: [[Revit_Addin]] · [[BIM_템플릿기획관]] · [[설비장비]] · [[설계_지침서]]
+## 2026-06-06 MEP Content Editor·Revit 2027 패밀리 제작 개선 사항 보강
+- Source: Autodesk Blog MEP Content Editor 2024-10 발표, Revit 2027 What's New (acadsystems.com), Autodesk 웨비나 "What's New in Revit 2027"
+- Tags: mep-content-editor,revit2027,family-authoring,fabrication,2026
+
+**Autodesk MEP Content Editor (mepce.autodesk.com) — 2024 출시 → 2026 확산:**
+- 정의: 웹 기반 MEP 패밀리 제작·편집 전용 도구 (Revit 없이 브라우저에서 MEP 콘텐츠 생성 가능)
+- 핵심 기능:
+  | 기능 | 내용 |
+  |------|------|
+  | 커넥터 자동 정의 | 덕트·파이프·케이블트레이 커넥터 GUI로 설정 |
+  | 파라미터 템플릿 | MEP 계통별 기본 파라미터 세트 자동 적용 |
+  | Revit 내보내기 | 완성된 콘텐츠 → .rfa 직접 다운로드 |
+  | 클라우드 라이브러리 | ACC와 연동하여 팀 공유 라이브러리 관리 |
+- **MEP 패밀리 제작자가 알아야 할 핵심**: 커넥터 설정이 부정확하면 Revit 시스템 자동 계산(풍량·압력·유량)이 작동하지 않아 설비 설계 전체가 무효화됨 → MEP Content Editor는 커넥터 오류를 GUI 단계에서 차단
+
+**Revit 2027 패밀리 에디터 개선 (2026-04-07):**
+- **강화된 콘텐츠 편집기**: MEP 패밀리 커넥터 유효성 검사 내장 → 잘못된 커넥터 설정 시 저장 전 경고
+- **Fabrication-Ready Systems**: 제작도(Fabrication) 단계까지 연속된 MEP 패밀리 지원 강화 — 시공사 BIM 패키지 직결
+- **고급 시스템 분석**: 에너지·HVAC 계통 해석을 패밀리 제작 단계에서 미리 시뮬레이션 (에너지 효율 파라미터 즉각 피드백)
+- **IFC 4.3 내보내기 통합**: MEP 패밀리 → IFC IfcFlowTerminal/IfcDistributionElement 자동 매핑 정확도 향상
+
+**LUA BIM LABS MEP 패밀리 품질 관리 체계 업데이트 (2026):**
+- MEP Content Editor 도입 기준:
+  ```
+  신규 MEP 패밀리 제작 → MEP Content Editor (브라우저)
+    → 커넥터·파라미터 검증 통과
+    → Revit 2027에서 최종 검토 (.rfa 임포트)
+    → ACC BIM 360 표준 라이브러리에 업로드
+    → KST03 등급 부여 → 현장 배포
+  ```
+- Fabrication 지원 여부를 패밀리 속성에 추가:
+  ```
+  Pset_FamilyAuthoring:
+    - Fabrication_Ready: Yes / No / Partial
+    - MEP_Content_Editor_Validated: Yes / No
+    - Revit_Version_Min: 2024 / 2025 / 2026 / 2027
+    - Connector_System_Type: Duct / Pipe / CableTray / Conduit
+  ```
+
+- 관련: [[Revit_Addin]] · [[BIM_템플릿기획관]] · [[설비장비]] · [[설계_지침서]] · [[IFC_OpenBIM]]
