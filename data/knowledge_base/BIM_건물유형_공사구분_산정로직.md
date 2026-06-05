@@ -1,6 +1,18 @@
 # BIM 업무량·견적 산정 상세 로직 — 건물 유형 × 공사 구분
 <!-- 대외 공개 금지 — [[BIM_프로젝트_견적산정]] 의 가중치 인자 상세 보조 문서 -->
 
+## 2026-06-05 산정 로직 2026 업데이트 (AI 절감·신규 보정계수 반영)
+- Source: LUA BIM LABS 내부 견적 경험, 건설공사 표준시장단가 2026
+- Tags: bim-cost,estimate,building-type,correction-factor,ai-reduction,2026
+
+**2026 주요 변경사항:**
+1. AI 절감율 반영: Dynamo·AI Q&A 활용 시 공수 25~30% 절감
+2. 신규 보정계수 추가:
+   - AI 데이터센터: ×2.5 (DLC·UPS·고밀도 MEP)
+   - 배터리 공장(드라이룸): ×2.2 (습도 극저온 관리)
+3. 건설공사 표준시장단가 2026 상반기 BIM 단가 반영
+4. 계약 분석 API 연동: server_total.py `_scope_limit_assessment()` 자동 계산
+
 ---
 
 ## 전체 산정 공식 (통합)
