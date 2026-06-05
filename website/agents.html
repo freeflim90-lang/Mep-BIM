@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<title>AI 에이전트 목록 — LUA BIM LABS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Noto+Serif+KR:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet"/>
+<style>
+:root {
+  --bg:#14161a; --bg-2:#1e2024; --ink:#f0ebe1;
+  --ink-soft:rgba(240,235,225,.7); --ink-mute:rgba(240,235,225,.45);
+  --rule:rgba(240,235,225,.14);
+  --f-en:"Instrument Serif",serif; --f-kr:"Noto Serif KR",serif;
+  --f-body:"Pretendard",ui-sans-serif,system-ui,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,monospace;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);-webkit-font-smoothing:antialiased;}
+nav{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:18px 60px;background:rgba(20,22,26,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--rule);}
+.nav-logo{display:flex;align-items:center;gap:10px;font-family:var(--f-mono);font-size:14px;letter-spacing:.1em;color:var(--ink);text-decoration:none;}
+.nav-logo svg{width:24px;height:24px;}
+.nav-back{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;color:var(--ink-mute);text-decoration:none;text-transform:uppercase;}
+.nav-back:hover{color:var(--ink);}
+main{padding:80px 60px;}
+.page-header{border-bottom:1px solid var(--rule);padding-bottom:40px;margin-bottom:48px;}
+.label{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-mute);margin-bottom:16px;}
+h1{font-family:var(--f-kr);font-weight:500;font-size:clamp(40px,6vw,72px);line-height:1.05;letter-spacing:-.025em;}
+h1 em{font-family:var(--f-en);font-style:italic;font-weight:400;}
+.subtitle{font-size:18px;line-height:1.7;color:var(--ink-soft);max-width:52ch;margin-top:16px;word-break:keep-all;}
+.meta-row{display:flex;gap:32px;margin-top:28px;}
+.meta-item{display:flex;flex-direction:column;gap:4px;}
+.meta-item .v{font-family:var(--f-en);font-size:40px;line-height:1;}
+.meta-item .k{font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-mute);}
+#loading{text-align:center;padding:80px 0;font-family:var(--f-mono);font-size:14px;color:var(--ink-mute);letter-spacing:.08em;}
+.tier-section{margin-bottom:56px;}
+.tier-label{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-mute);margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--rule);}
+.agents-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;}
+.agent-card{border:1px solid var(--rule);border-radius:6px;padding:16px 18px;background:var(--bg-2);display:flex;flex-direction:column;gap:6px;transition:border-color .2s,background .2s;}
+.agent-card:hover{border-color:rgba(240,235,225,.3);background:#252830;}
+.agent-no{font-family:var(--f-mono);font-size:10px;letter-spacing:.1em;color:var(--ink-mute);}
+.agent-name{font-family:var(--f-kr);font-weight:500;font-size:18px;letter-spacing:-.01em;line-height:1.2;}
+.agent-name.en{font-family:var(--f-mono);font-size:14px;letter-spacing:.04em;}
+.agent-tier{display:inline-block;font-family:var(--f-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:3px 8px;border-radius:999px;margin-top:4px;}
+.t1{background:rgba(240,180,60,.12);color:rgba(240,180,60,.8);border:1px solid rgba(240,180,60,.2);}
+.t2{background:rgba(100,160,240,.12);color:rgba(100,160,240,.8);border:1px solid rgba(100,160,240,.2);}
+.t3{background:rgba(160,100,240,.12);color:rgba(160,100,240,.8);border:1px solid rgba(160,100,240,.2);}
+.t4{background:rgba(60,200,120,.12);color:rgba(60,200,120,.8);border:1px solid rgba(60,200,120,.2);}
+footer{padding:32px 60px;border-top:1px solid var(--rule);display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:12px;color:var(--ink-mute);letter-spacing:.06em;}
+@media(max-width:700px){nav,main,footer{padding-left:24px;padding-right:24px;}.meta-row{flex-wrap:wrap;gap:20px;}.agents-grid{grid-template-columns:1fr 1fr;}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="/" class="nav-logo">
+    <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="1.1"/><path d="M 16 3 A 13 13 0 1 0 16 29 A 10 13 0 1 1 16 3 Z" fill="currentColor"/></svg>
+    LUA / BIM LABS
+  </a>
+  <a href="/" class="nav-back">← 홈으로</a>
+</nav>
+
+<main>
+  <div class="page-header">
+    <div class="label">§ AI 조직 / Agent Directory</div>
+    <h1>AI 에이전트<br><em>전체 목록.</em></h1>
+    <p class="subtitle">4계층 구조로 운영되는 LUA BIM LABS의 가상 기업 AI 에이전트 디렉토리입니다.</p>
+    <div class="meta-row">
+      <div class="meta-item"><span class="v" id="totalCount">—</span><span class="k">Total Agents</span></div>
+      <div class="meta-item"><span class="v">4</span><span class="k">Tiers</span></div>
+      <div class="meta-item"><span class="v">24×7</span><span class="k">운영</span></div>
+    </div>
+  </div>
+
+  <div id="loading">에이전트 목록 로딩 중…</div>
+  <div id="content" style="display:none;"></div>
+</main>
+
+<footer>
+  <span>LUA BIM LABS · AI Agent Directory</span>
+  <span id="updatedAt">—</span>
+</footer>
+
+<script>
+const TIER_MAP = {
+  'CEO': 1, 'COO': 1, 'CFO': 1,
+  '조율차장': 2,
+  'Revit_Addin': 3, 'Navisworks_Addin': 3, '프로그램개발': 3, 'QA_테스터': 3,
+  '빌드검증': 3, '배포문서': 3, '스토어심사': 3, '라이선스결제': 3,
+  '고객지원 CS': 3, '경영지원': 3, '전략기획': 3, '브랜드마케팅': 3,
+  'Qwen_Coder_8B': 3, '지식업데이트': 3, '지식큐레이터': 3,
+};
+const TIER_LABELS = {
+  1: {label:'T/01 — Strategic Control', cls:'t1'},
+  2: {label:'T/02 — Total PM · Intent Router', cls:'t2'},
+  3: {label:'T/03 — Operation Matrix', cls:'t3'},
+  4: {label:'T/04 — MEP Core · 공종별 본부', cls:'t4'},
+};
+const MEP_AGENTS = ['건축','구조','토목','공조배관','공조덕트','소방기계','소방전기','전기','위생','통신'];
+
+async function load() {
+  try {
+    const r = await fetch('https://api.luabimlabs.com/api/knowledge-agents');
+    const d = await r.json();
+    const agents = d.agents || [];
+    document.getElementById('totalCount').textContent = agents.length;
+    document.getElementById('updatedAt').textContent = new Date().toLocaleString('ko-KR');
+
+    const tiers = {1:[],2:[],3:[],4:[]};
+    agents.forEach(name => {
+      if (MEP_AGENTS.includes(name)) tiers[4].push(name);
+      else if (TIER_MAP[name]) tiers[TIER_MAP[name]].push(name);
+      else tiers[3].push(name);
+    });
+
+    const content = document.getElementById('content');
+    content.innerHTML = '';
+    [1,2,3,4].forEach(t => {
+      if (!tiers[t].length) return;
+      const sec = document.createElement('div');
+      sec.className = 'tier-section';
+      sec.innerHTML = `<div class="tier-label">${TIER_LABELS[t].label} · ${tiers[t].length}명</div><div class="agents-grid" id="tier${t}"></div>`;
+      content.appendChild(sec);
+      const grid = sec.querySelector(`#tier${t}`);
+      tiers[t].forEach((name, i) => {
+        const isEn = /^[A-Za-z0-9_\/ ]+$/.test(name);
+        grid.innerHTML += `
+          <div class="agent-card">
+            <span class="agent-no">${String(i+1).padStart(2,'0')}</span>
+            <span class="agent-name ${isEn?'en':''}">${name}</span>
+            <span class="agent-tier ${TIER_LABELS[t].cls}">${TIER_LABELS[t].label.split('—')[0].trim()}</span>
+          </div>`;
+      });
+    });
+
+    document.getElementById('loading').style.display = 'none';
+    content.style.display = 'block';
+  } catch(e) {
+    document.getElementById('loading').textContent = 'API 연결 오류. api.luabimlabs.com 상태를 확인해주세요.';
+  }
+}
+load();
+</script>
+</body>
+</html>
