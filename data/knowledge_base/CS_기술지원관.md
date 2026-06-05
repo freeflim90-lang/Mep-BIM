@@ -2,6 +2,38 @@
 
 조직도에서는 `고객지원 CS`가 일반 문의의 단일 통합 창구다. 기술지원관은 별도 담당자 노드가 아니라 CS 내부의 기술 이슈 에스컬레이션 기준으로 유지한다.
 
+## 2026-06-05 CS 기술지원 2026 기준 업데이트
+- Source: LUA BIM LABS CS 운영 기준, KST 태그 체계
+- Tags: technical-support,escalation,kst,bim,2026
+
+**CS 기술지원 에스컬레이션 판단 기준:**
+```
+Level 1 — AI 봇 자동 처리:
+  → KST01 공식 기준이 있는 질문
+  → 설계 수치·법규·납품 형식 등 객관적 답변 가능
+
+Level 2 — CS 담당자 확인 후 답변:
+  → KST03 프로젝트별 확인 필요 항목
+  → 발주처 BEP·과업지시서 확인 필요한 경우
+
+Level 3 — 전문가 에스컬레이션 (PM/RFI):
+  → BF 인증 통과·납품 적합 판정 등 법적 책임 수반
+  → 설계 변경·구조기술사 확인 필요
+  → CS 단독 확정 불가
+
+Level 4 — 외부 기관 안내:
+  → 소방청·국토부·인증기관 등 공식 문의 필요
+```
+
+**기술 이슈 유형별 처리 기준:**
+| 이슈 유형 | 처리 레벨 | 응답 시간 |
+|---------|---------|---------|
+| Revit 기능 질문 | Level 1 (봇) | 즉시 |
+| BIM LOD 기준 | Level 1 (봇) | 즉시 |
+| 발주처별 납품 차이 | Level 2 | 24시간 |
+| 소방·BF 인증 판정 | Level 3 (RFI) | 5영업일 |
+| 법령 해석 | Level 4 | 안내만 |
+
 ## 2026-06-04 근거기반 기술 응답 에스컬레이션 기준
 - Source: `docs/training_curriculum/team_distribution/samples/2026-06-04_CS_TECHNICAL_EVIDENCE_RESPONSE_SAMPLE.md`
 - Tags: technical-support,evidence-response,KST,escalation

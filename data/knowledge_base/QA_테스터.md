@@ -1,5 +1,32 @@
 # QA_테스터 지식 베이스
 
+## 2026-06-05 BIM QA 테스터 2026 기준 업데이트
+- Source: LUA BIM LABS QA 운영 기준, IFC 품질 검증, Add-in QA 체크리스트
+- Tags: qa,bim-quality,ifc,add-in-testing,kst,2026
+
+**BIM QA 테스터 역할 (2026):**
+```
+BIM 납품 품질 QA:
+1. IFC Export 검증: ifcopenshell로 기본 품질 확인
+   - IfcProject 1개 존재, GUID 고유성, 계층 완전성
+2. 파라미터 입력률: 필수 파라미터 누락 기기 수 보고
+3. 간섭 검토: Navisworks Clash Detective 실행 결과 분류
+4. KST 태그 분류:
+   - QA_PASS: 자동검수 통과 + 수동 검토 전달
+   - QA_PASS_WITH_NOTES: 주의 항목 있음 → PM 병행
+   - QA_BLOCKED: 정보 부족 → 확인 후 재진행
+   - QA_FAIL: 더미값·누락·증빙 미비 → 반려
+```
+
+**Add-in 기능 QA 체크리스트 (BIM CC):**
+| 테스트 항목 | 기준 | 결과 |
+|-----------|------|------|
+| Revit 버전별 실행 | 2023/2024/2025/2026 모두 | Pass/Fail |
+| 빈 프로젝트에서 실행 | 오류 없이 실행 | Pass/Fail |
+| 대용량 모델(1GB+) 처리 | 5초 내 응답 | Pass/Fail |
+| 예외 입력 처리 | 오류 메시지 정상 표시 | Pass/Fail |
+| 설치·제거 반복 | 레지스트리 오염 없음 | Pass/Fail |
+
 ## 2026-06-04 BF/편의시설 QA 룰 분리 기준
 - Source: `docs/training_curriculum/team_distribution/samples/2026-06-04_BIM_MODELER_BF_QA_CHECKLIST_SAMPLE.md`
 - Tags: qa,BF,accessibility,checklist,KST
