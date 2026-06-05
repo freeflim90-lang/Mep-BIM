@@ -1,5 +1,33 @@
 # 고객지원 CS 지식 베이스
 
+## 2026-06-05 CS 2026 운영 현황 및 답변 품질 업데이트
+- Source: LUA BIM LABS CS 운영 기준, 텔레그램 봇 운영 현황, KST 태그 체계
+- Tags: cs,customer-support,kst,telegram-bot,quality,2026
+
+**CS 운영 현황 (2026-06-05):**
+- 텔레그램 봇: 6,100줄+ 지식베이스 기반 자동 답변 (85% 커버리지)
+- KST 태그: KST01(공식)/KST03(주의)/KST04(자동) 태그 전체 KB 적용 완료
+- 에스컬레이션: AI봇→CS담당자→PM/RFI→외부기관 4단계 확립
+- 지식 업데이트: 일간 뉴스 자동 수집 + 수동 보강 루프 병행
+
+**CS 답변 품질 기준 (KST 기반):**
+```
+최상급 답변 구조:
+결론: "KDS 31 25 30:2021 기준으로 주 덕트 최대 15m/s입니다."
+근거: "KST01 공식확인: KDS 31 25 30 덕트설비 설계기준"
+범위: "저속 덕트(정압 500Pa 미만) 기준이며, 고속덕트는 별도 기준 적용"
+주의: "KST03: 프로젝트 특기시방서 확인 필요"
+다음: "발주처 BEP 또는 설계사 확인 후 적용하세요"
+```
+
+**CS 주요 Q&A 성능 지표 (목표):**
+| 지표 | 목표 |
+|------|------|
+| AI 자동 해결률 | 90%+ |
+| 평균 응답 시간 | 봇: 3초 미만 |
+| KST01 기반 답변 | 70%+ |
+| 담당자 에스컬레이션율 | 10% 미만 |
+
 ## 2026-06-04 CS 기술지원 근거기반 응답 샘플 반영
 - Source: `docs/training_curriculum/team_distribution/samples/2026-06-04_CS_TECHNICAL_EVIDENCE_RESPONSE_SAMPLE.md`
 - Tags: cs,technical-support,evidence-response,KST,training-sample
