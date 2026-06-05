@@ -1,9 +1,56 @@
 # 건물 유형별 BIM 적용 기준 지식 베이스
 
+## 2026-06-05 건물 유형별 BIM 특화 기준 AI 즉시 답변 패턴 보강
+- Source: 국토교통부 BIM 기본지침, 한국 건설업계 BIM 현황(2025), 오피스·물류·학교 BIM 특화 기준
+- Tags: building-type,office,logistics,school,sports,lod,mep,bim-special,2026
+
+**AI 즉시 답변 패턴 — "오피스 건물과 물류센터의 BIM 차이가 뭔가요?"**
+```
+건물 유형별 BIM 핵심 차이:
+
+오피스 (업무시설):
+- 특징: 층별 반복 평면, 개방형 오피스 레이아웃 변경 잦음
+- MEP 포인트: VAV 존별 공조, 랜덤 인테리어 대응 유연한 배관 경로
+- BIM 활용: 인테리어 변경에 따른 MEP 수정 시뮬레이션
+
+물류센터 (창고시설):
+- 특징: 대공간·대형 랙 시스템, 차량 도입 출입
+- MEP 포인트: 스프링클러 배치(높이 제한), 대용량 환기 (화물 오염 방지)
+- BIM 활용: 랙 배치와 스프링클러 헤드 살수반경 시뮬레이션
+
+학교 (교육시설):
+- 특징: 교실 단위 반복, 방과후 에너지 절약 운전
+- MEP 포인트: 교실별 환기 (CO₂ 기준), 냉난방 스케줄 제어
+- BIM 활용: 교실 유형별 표준 MEP 패턴 Dynamo 자동 배치
+```
+
+**건물 유형별 BIM LOD 요건 비교:**
+| 건물 유형 | 기본설계 LOD | 실시설계 LOD | MEP 특화 항목 |
+|---------|-----------|-----------|------------|
+| 오피스 | 300 | 350 | VAV·FCU 구역 설정 |
+| 공동주택 | 300 | 350 | 세대 PS·난방배관 |
+| 병원 | 300 | 400 | 의료가스·음압·차폐 |
+| 데이터센터 | 350 | 400 | DLC·UPS·PDU |
+| 물류센터 | 200 | 300 | 스프링클러·대공간 환기 |
+| 학교 | 200 | 300 | 교실 환기·스케줄 제어 |
+| 스포츠시설 | 200 | 300 | 관중석 공조·소방 |
+| 공항 | 300 | 400 | BHS·탑승교·HVAC |
+
+**LUA BIM LABS Add-in 건물 유형 자동 감지 로직 (개발 방향):**
+```csharp
+// Revit 프로젝트 정보에서 건물 용도 코드 읽기
+string buildingType = doc.ProjectInformation
+    .LookupParameter("BuildingType")?.AsString() ?? "Unknown";
+
+// 건물 유형별 MEP 체크 규칙 자동 로드
+var rules = BuildingTypeRuleFactory.GetRules(buildingType);
+// → 병원: 의료가스 체크 추가 / 데이터센터: DLC 구역 체크 추가
+```
+
 ## 개요
 - Source: LUA BIM LABS internal BIM knowledge baseline
 - Tags: building-type,bim,lod,parameter,residential,office,hospital,education,industrial,infrastructure
-- 업데이트: 2026-05-28
+- 업데이트: 2026-06-05
 
 건물 용도·형태에 따라 요구되는 BIM LOD 수준, 필수 파라미터, IFC Entity 매핑, 납품 체크리스트가 달라진다.
 LUA BIM LABS Add-in은 건물 유형을 감지해 자동으로 적절한 검수 규칙·파라미터 템플릿을 불러오는 구조로 발전해야 한다.
