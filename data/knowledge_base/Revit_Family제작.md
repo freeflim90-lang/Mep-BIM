@@ -1,5 +1,38 @@
 # Revit 패밀리 제작 지식 베이스
 
+## 2026-06-05 MEP 패밀리 제작 AI 즉시 답변 패턴 보강
+- Source: Revit 패밀리 공식 가이드, SCK 오토데스크 MEP 패밀리 가이드북, BIMobject
+- Tags: revit-family,mep-family,rfa,parameter,connector,lod,2026
+
+**AI 즉시 답변 패턴 — "MEP 패밀리를 Revit에서 만들 때 무엇이 중요한가요?"**
+```
+MEP Revit 패밀리 제작 핵심:
+1. 패밀리 카테고리 선택: Mechanical Equipment(공조기·펌프), 
+   Pipe Fittings(배관 피팅), Duct Fittings(덕트 피팅) 등 정확히 선택
+2. 커넥터(Connector) 설정:
+   - 파이프 커넥터: 유체 종류·압력·흐름 방향 설정
+   - 덕트 커넥터: 풍량·압력·덕트 형상 설정
+   - 전기 커넥터: 전압·상·소비전력 설정
+3. 참조 레벨(Reference Plane): 삽입 기준점·방향 명확히
+4. 파라미터 설정: 인스턴스/타입 구분, 공유 파라미터 사용
+5. COBie 파라미터: SerialNumber, Manufacturer, ModelNumber 추가
+```
+
+**MEP 패밀리 제작 단계별 체크리스트:**
+| 단계 | 확인 항목 |
+|------|---------|
+| 템플릿 선택 | 공조기→Mechanical Equipment, 배관→Pipe Fitting |
+| 형상 모델링 | 실제 치수 기반, LOD 300 상세 수준 |
+| 커넥터 배치 | 유입·유출 방향 정확, 계통 타입 일치 |
+| 파라미터 | 용량·규격·COBie 파라미터 입력 |
+| 테스트 | 프로젝트 로드 후 배관 연결 확인 |
+| 저장 | .rfa로 저장, 버전 명시 (Revit 2024 등) |
+
+**BIMobject 패밀리 활용 (공급사 공식 패밀리):**
+- BIMobject.com: 제조사 공식 Revit 패밀리 무료 다운로드
+- LG전자·삼성·한화·Grundfos 등 국내외 제조사 패밀리 제공
+- 주의: 다운로드 패밀리도 커넥터 타입·파라미터 확인 후 사용
+
 ## 패밀리 개요
 - Source: LUA BIM LABS internal BIM knowledge baseline
 - Tags: revit,family,rfa,bim,lod,parameter,template
