@@ -1,5 +1,35 @@
 # ACC/BIM360 CDE 지식 베이스
 
+## 2026-06-05 ACC MEP 클라우드 협업 성과 데이터 심화 보강
+- Source: Archgyan ACC Guide 2026, novatr.com ACC 완전가이드, VirtualBuildingStudio MEP BIM
+- Tags: acc,mep-coordination,cloud-collaboration,clash-detection,rfi,performance,2026
+
+**ACC MEP 클라우드 협업 실증 성과 (2025~2026):**
+```
+글로벌 실증 데이터:
+- 협업 팀 클래시 감소: 협업 세션마다 80% 클래시 감소
+- 전체 조율 시간: 35% 단축
+- AI 기반 RFI 자동 생성: 2025년 9월 ACC에 추가
+
+ACC 2025년 9월 업데이트 (30개 이상 릴리즈):
+- Autodesk AI 기반 RFI 자동 생성 (Quick RFI Create)
+- Coordination Model 카테고리별 가시성·색상 정밀 제어
+- 크로스 프로젝트·크로스 단계 Coordination Model 워크플로우 강화
+```
+
+**AI 즉시 답변 패턴 — "ACC로 MEP 간섭검토를 어떻게 하나요?"**
+```
+ACC Model Coordination을 통한 MEP 간섭검토:
+1. 각 공종 팀이 Revit 모델을 ACC Docs에 업로드
+2. Model Coordination 탭에서 공종 간 자동 클래시 탐지
+3. 클래시 결과 → BCF 이슈로 자동 변환 → 담당자 알림
+4. AI 기반 RFI 자동 생성 (Quick RFI Create, 2025.09~)
+5. 클래시 해소 → 모델 업데이트 → 재검증
+
+글로벌 성과: 세션마다 80% 클래시 감소, 조율 시간 35% 단축
+한국 적용: LH·삼성·현대·DL이앤씨 등 ACC 도입 확산 중
+```
+
 ## 2026-06-05 ACC 한국 공공 프로젝트 적용 및 협업 AI 답변 패턴 보강
 - Source: 오토데스크코리아 뉴스, SCK 오토데스크 센터, ZDNet Korea, Autodesk 공식
 - Tags: acc,bim360,cde,autodesk,cloud,collaboration,korea-public,2026
