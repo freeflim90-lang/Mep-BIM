@@ -1,9 +1,35 @@
 # R&D 개발지원그룹 지식 베이스
 
+## 2026-06-05 R&D 개발지원그룹 2026 로드맵 업데이트
+- Source: LUA BIM LABS 내부 성장 펄스, Autodesk API 현황, AI 개발 트렌드
+- Tags: rnd,development,revit-api,ai,product-roadmap,2026
+
+**R&D 개발지원그룹 2026 핵심 과제:**
+| 우선순위 | 과제 | 기술 스택 | 완료 목표 |
+|---------|------|---------|---------|
+| 1 | BIM Command Center App Store 제출 | C#, Revit API | 2026 H1 |
+| 2 | Model Quality Auditor IDS 기능 | Python, ifctester | 2026 H2 |
+| 3 | Reasoning Training Digest 고도화 | Python, DeepSeek | 진행 중 |
+| 4 | 계약 분석 API 안정화 | Python, FastAPI | 진행 중 |
+| 5 | 모델 라우팅 최적화 | Python, OpenAI SDK | 진행 중 |
+
+**AI 개발 도구 현황 (2026-06-05):**
+- 서버: FastAPI + Uvicorn (포트 8000)
+- AI 모델: DeepSeek(내부 인프라), Claude API(외부 고품질)
+- 텔레그램 봇: python-telegram-bot (polling 방식)
+- 지식베이스: Obsidian 볼트 + data/knowledge_base/ (101개 파일)
+- 배포: Cloudflare Tunnel + Tailscale (원격 접근)
+
+**2026년 R&D 개발 원칙:**
+- 완전 구현보다 핵심 기능 1개 먼저 완성 후 배포
+- AI 도구(Claude, DeepSeek)로 코드 품질 향상
+- 사용자 피드백 루프 우선 (텔레그램 봇 실사용자 반응)
+- 개인정보 최소화·보안 기본값 원칙 유지
+
 ## 개요
 - Source: LUA BIM LABS internal organization knowledge baseline
 - Tags: #R&D개발지원그룹 #개발지원 #프로그램개발 #요구사항분석 #RevitAddin #빌드검증 #QA #DevOps #제품개발
-- 업데이트: 2026-05-28
+- 업데이트: 2026-06-05
 
 R&D 개발지원그룹은 성장전략그룹이 정의한 제품·자동화 후보를 요구사항, 아키텍처, 구현, 테스트, 패키징 가능한 형태로 전환하는 그룹이다. 핵심 질문은 “이것을 안정적으로 만들고 검증하고 배포할 수 있는가”다.
 

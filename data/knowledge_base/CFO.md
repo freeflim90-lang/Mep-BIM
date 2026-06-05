@@ -1,5 +1,28 @@
 # CFO 지식 베이스
 
+## 2026-06-05 CFO 재무 전략 2026 최신 업데이트
+- Source: LUA BIM LABS 내부 재무 기준, Autodesk Store 수익 모델, 정부 지원사업
+- Tags: cfo,finance,mrr,revenue,cost,government-support,2026
+
+**CFO 핵심 재무 지표 (2026 목표):**
+| 지표 | 현재 | 2026 H2 목표 | 달성 방법 |
+|------|------|------------|---------|
+| MRR (월 반복 수익) | 초기 단계 | USD 1,000+ | Starter Plan 50명 + App Store |
+| AI 운영 비용 | Claude API + DeepSeek | 최적화 중 | 모델 라우팅으로 비용 절감 |
+| R&D 지원 | 자체 자금 | AX 바우처 신청 | 정부 13억 지원 타겟 |
+| 수익 채널 | 교육 구독 | 교육+App+컨설팅 | 3채널 다각화 |
+
+**AI 운영 비용 최적화 전략:**
+- DeepSeek(내부): 고빈도 일반 질문 처리 → 비용 절감
+- Claude API(외부): 고품질 필요 답변·최종 검토 → 품질 확보
+- 모델 라우팅: 질문 복잡도 기반 자동 모델 선택
+- PAID_AI_ENABLED 플래그: 비용 제어 스위치
+
+**정부 지원사업 재무 계획:**
+- AX 원스톱 바우처: 최대 13억원, 2년 → AI·클라우드·데이터 비용 커버
+- 스마트건설 얼라이언스 기술실증 지원: R&D 비용 일부 지원
+- 중소기업 BIM 지원 사업: 교육 서비스 연계
+
 ## Autodesk Store 구독 수익 모델 (2026-05-19 09:37:53)
 - Source: `docs/autodesk_store/SUBSCRIPTION_PRICING.md`
 - Tags: pricing,mrr,subscription
