@@ -10,6 +10,9 @@
 
 기록된 선례는 동일 유형 충돌 재발 시 즉시 참조해 불필요한 중재를 줄인다.
 
+AI 간 일반 협업, 추론 검증, 반론, 합의, 실행 인계는 `docs/internal_organization_documents/30_AI_TO_AI_COLLABORATION_SOP.md`를 기본 기준으로 적용한다.
+월간 리허설과 상황별 테스트는 `COLLABORATION_TEST_PLAN.md`에 누적한다.
+
 ---
 
 ## 파일 구조
@@ -18,6 +21,7 @@
 conflict_resolution/
 ├── README.md          — 이 파일 (운영 기준)
 ├── CONFLICT_LOG.md    — 전체 충돌 케이스 색인 및 상태 현황
+├── COLLABORATION_TEST_PLAN.md — AI 협업 프로세스 리허설 기준
 └── cases/             — 케이스별 상세 기록 (CASE_YYYYMMDD_NNN.md)
 ```
 

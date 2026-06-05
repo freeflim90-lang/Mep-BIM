@@ -1,5 +1,39 @@
 # Caveman_토큰다이어터 지식 베이스
 
+## 2026-06-05 Claude API 토큰 최적화 2026 기준 업데이트
+- Source: Anthropic Claude API 공식 문서, LUA BIM LABS AI 운영 경험
+- Tags: token,context,compression,prompt-caching,claude-api,2026
+
+**LUA BIM LABS AI 토큰 최적화 전략 (2026):**
+```
+토큰 절감 핵심 원칙:
+1. 프롬프트 캐싱 활용:
+   - 반복 사용 KB 컨텍스트를 캐시에 저장
+   - 캐시 히트 시 입력 토큰 90% 절감
+   - Claude API cache_control 파라미터 사용
+
+2. 모델 라우팅 (비용 최적화):
+   - 일반 Q&A → DeepSeek(저비용)
+   - 고품질 필요 답변 → Claude(고품질)
+   - PAID_AI_ENABLED 플래그로 제어
+
+3. 컨텍스트 압축:
+   - KB에서 관련 섹션만 추출 (전체 파일 아님)
+   - 최근/관련 항목 중심으로 잘라 주입
+   - 긴 문서: 요구사항·예외조건·테스트 항목만 요약
+
+4. 청구 모니터링:
+   - DeepSeek 월별 예산 한도 설정
+   - 한도 접근 시 이메일 알림 자동 발송
+```
+
+**토큰 효율 우선순위:**
+| 상황 | 적용 전략 | 절감 효과 |
+|------|---------|---------|
+| 자주 사용하는 KB | 프롬프트 캐싱 | ~90% |
+| 긴 문서 입력 | 관련 섹션만 추출 | ~60% |
+| 단순 Q&A | DeepSeek 라우팅 | ~70% 비용 절감 |
+| 최종 검토 | Claude(필요 시만) | 품질+비용 균형 |
 
 ## 토큰 절감 기준 (2026-05-19 08:53:24)
 - Source: LUA BIM LABS curated baseline, Autodesk official docs checked 2026-05-19
