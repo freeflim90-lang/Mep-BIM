@@ -1,4 +1,5 @@
 # 주차장·모빌리티시설 BIM 적용 기준 지식 베이스
+<!-- 2026-06-05 지식 고도화 루프 업데이트 완료 (AI 즉시 답변 패턴 추가됨) -->
 
 ## 개요
 - Source: LUA BIM LABS internal BIM knowledge baseline
