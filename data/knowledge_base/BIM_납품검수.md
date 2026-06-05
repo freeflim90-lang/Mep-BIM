@@ -1,5 +1,42 @@
 # BIM 납품검수 지식 베이스
 
+## 2026-06-05 IFC 자동검증 SaaS 시장 및 Model Quality Auditor 기회 보강
+- Source: 국토부 BIM 납품 자동검증 동향, buildingSMART Korea, 한국BIM평가원, 학술자료
+- Tags: delivery-quality,ifc-validation,ids,model-quality-auditor,saas,2026
+
+**AI 즉시 답변 패턴 — "BIM 납품 자동 검증이 가능한가요?"**
+```
+IFC 기반 BIM 납품 자동검증 현황 (2026):
+1. buildingSMART IDS(Information Delivery Specification):
+   - IFC 모델의 정보 요구사항을 XML로 정의 → 자동 적합성 검토
+   - ifctester(Python): 오픈소스 IDS 검증 라이브러리
+   - 국토부 IDS 기반 납품 검수 도입 예고 (2026~)
+
+2. 상용 검증 도구:
+   - Solibri Model Checker: 규칙 기반 BIM 품질 검토
+   - BIMcollab: 클라우드 협업 + IFC 품질 검토
+   - Autodesk Model Coordination: ACC 기반 간섭검토
+
+3. LUA BIM LABS Model Quality Auditor 위치:
+   - 국내 특화: 국내 발주처 납품 기준 + IDS 통합 검증
+   - 텔레그램 봇 연동: 검증 결과 즉시 알림
+   - 2026 기회: 500억↑ BIM 의무화로 납품 검수 수요 급증
+```
+
+**BIM 납품 자동검증 시스템 국내 동향 (2025~2026):**
+- **초고속정보통신건물인증 자동화**: BIM 기반 검토 프로세스 구현 연구 (KCI 논문)
+- **국토부 디지털 건설기준 API**: 2026년 무료 개방 후 민간 검증 솔루션 개발 가능
+- **IFC + 체크리스트**: 2026년 이후 IFC 데이터 + 확인 체크리스트를 함께 납품
+
+**Model Quality Auditor 기능 로드맵:**
+| 기능 | 현재 | 2026 목표 |
+|------|------|---------|
+| IFC 기본 검증 | ✅ (ifcopenshell) | ✅ |
+| IDS 규칙 검증 | ⚠️ 개발 중 | ✅ |
+| 국내 지침 자동 대조 | ❌ | ✅ (디지털 건설기준 API) |
+| 텔레그램 알림 | ✅ | ✅ |
+| 납품 리포트 PDF | ❌ | ✅ |
+
 ## 2026-06-04 BF/편의시설 기반 건축 BIM 납품검수 보강
 - Source: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_BF_ACCESSIBILITY_STANDARD_UPDATE.md`
 - Tags: delivery-quality,BF,accessibility,architecture,official-source
