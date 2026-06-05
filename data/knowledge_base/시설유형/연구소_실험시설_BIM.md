@@ -162,3 +162,53 @@ Pset_LaboratorySafety
 - [[오피스_업무시설_BIM]]
 - [[공장_제조시설_BIM]]
 - [[국가별_건설법규_기준비교]]
+
+## 2026-06-06 바이오의약품 GMP 클린룸·CDMO 시설 BIM 보강
+- Source: GMP 클린룸 기준(ISO 14644-1 vs EU GMP), 오송 CDMO 클러스터, 한국제약바이오협회, pharmnews 2026
+- Tags: gmp,cleanroom,cdmo,biotech,iso14644,bim,mep,korea-biotech,2026
+
+**GMP Grade vs ISO 클린룸 기준 차이 (BIM 파라미터 설정 핵심):**
+| 구분 | ISO 14644-1 | EU GMP Grade |
+|------|------------|-------------|
+| 목적 | 공기 중 입자 농도 측정 기준 | 의약품 제조 법적 규제 기준 |
+| 등급 | ISO Class 1~9 | Grade A / B / C / D |
+| 대응 | ISO 5 ≈ Grade A (가장 엄격) | Grade A: 제조/충전 핵심 구역 |
+| 법적 성격 | 기술 표준 | 규제 요구사항 (GMP 위반 시 제조 중단) |
+| 모니터링 | 정기 입자 측정 | 상시 실시간 모니터링 의무 |
+
+**BIM 파라미터 추가 (GMP Grade 전용):**
+```
+Pset_GMP_Cleanroom (GMP 제약 시설 전용):
+  - GMP_Grade: A / B / C / D / Non-GMP
+  - ISO_Class: ISO-3 ~ ISO-8
+  - Particle_Count_0_5um: 0.5㎛ 입자 허용 개수/m³
+  - Microbial_Limit_cfu: 부유 미생물 허용치 (cfu/m³)
+  - HVAC_Redundancy: N+1 / N+2 / None (GMP Grade A는 N+1 이상)
+  - HEPA_Filter_Efficiency: 99.97% / 99.999% / ULPA
+  - Pressure_Cascade_Pa: 인접실 대비 압력 차 (Pa)
+  - Qualification_Status: IQ / OQ / PQ / Validated
+```
+
+**한국 바이오의약품 제조시설 급증 — BIM 수요 배경 (2025~2026):**
+- **오송 CDMO 클러스터** 급성장: mRNA·재조합 단백질·항체 의약품 제조시설 집중 투자
+  - 한국비엠아이 오송캠퍼스: 7,476㎡ 규모, Multi-Modality CDMO 시설
+  - LIMS(실험실 정보 관리 시스템) 도입 → 종이 없는 전산화 GMP 체계
+- 바이오 제조사 디지털 전환: 82%가 3년 내 50억~500억원 공장 자동화·디지털 투자 계획
+- LUA BIM LABS 기회: GMP 시설 MEP BIM 납품 → 전국 오송·인천 바이오 클러스터 대상
+
+**GMP 시설 BIM 설계 핵심 MEP 사항 (ISO 대비 강화 요구사항):**
+- **환기 이중화**: Grade A 구역 AHU N+1 이상 (단일 장애 → 제조 중단 방지)
+- **HEPA 필터 BIM 파라미터**: 필터 교체 주기·테스트 포트 위치 LOD 400 수준
+- **압력 캐스케이드 검증**: Grade A(+15Pa) → B(+10Pa) → C(+5Pa) → D → 복도 순차 양압
+- **실시간 모니터링 연동**: 압력차·온습도·입자 감지기 → BIM 자산 ID 연동 (FM)
+- **배관 재질 관리**: 생물 접촉 배관 → 316L SS 전해 연마(EP), BIM 파라미터 `Pipe_Material_EP`
+
+**CDMO·바이오 시설 국가별 규제 비교:**
+| 국가 | 규제 | BIM 설계 핵심 |
+|------|------|------------|
+| 한국 | 식약처 GMP 기준 (EU GMP 수준 채택) | Grade A~D 기준 공간 파티션·압력 설계 |
+| 미국 | FDA 21 CFR Part 211 / Part 820 | cGMP, 클린유틸리티 IQ/OQ/PQ BIM 문서화 |
+| EU | EU GMP Annex 1 (멸균의약품) | 시뮬레이션 연구 기반 클린룸 설계 |
+| 일본 | PMDA GMP 기준 | 클린룸 밸리데이션, BIM 기반 설비 문서화 |
+
+관련: [[공장_제조시설_BIM]] · [[FM_자산관리]] · [[IFC_OpenBIM]] · [[BIM_납품검수]]
