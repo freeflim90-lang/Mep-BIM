@@ -1,5 +1,31 @@
 # 인프라_DevOps (Obsidian) 지식 베이스
 
+## 2026-06-05 LUA BIM LABS 인프라·DevOps 현황 업데이트
+- Source: LUA BIM LABS 서버 운영 로그, LaunchAgent 설정, GitHub 동기화 현황
+- Tags: devops,obsidian,local,server,launchagent,cloudflare,2026
+
+**LUA BIM LABS 인프라 구성 (2026-06-05 기준):**
+| 컴포넌트 | 기술 | 역할 |
+|---------|------|------|
+| 백엔드 서버 | FastAPI + Uvicorn (port 8000) | API·텔레그램 봇 |
+| 원격 접속 | Cloudflare Tunnel + Tailscale | 외부 접근 |
+| 지식베이스 | data/knowledge_base/ (140개 파일) | AI 답변 소스 |
+| Obsidian | lua_bim_lab_global_map 볼트 | 지식 시각화 |
+| 자동화 | LaunchAgent (15개 에이전트) | 스케줄 실행 |
+| 동기화 | sync_knowledge.sh → GitHub | 코드 백업 |
+| 모니터링 | logs/ 디렉토리 | 실행 이력 |
+
+**2026년 인프라 개선 완료 사항:**
+- 텔레그램 봇 Conflict 해결: `delete_webhook()` 선행 호출 추가
+- 좀비 마커 파일 자동 감지: `.daily_knowledge_update_running` 정리
+- MQA·Knowledge 정적 파일 서빙: `/mqa`, `/knowledge` 경로 추가
+- 모델 라우팅 상태 모니터링: `/api/model-routing-status` 엔드포인트
+
+**Obsidian 볼트 구조 (2026-06-05):**
+- `NAS_Knowledge/`: 800+ 지식 노트 (일간 뉴스 자동 추가)
+- `01_MOC/`: MOC 인덱스 파일 (AI Knowledge Base 134+ 파일)
+- `Assets/`: global_knowledge_graph.html (웹 임베드)
+- 총 source_count: 1,925개
 
 ## 로컬 인프라/DevOps 기준 (2026-05-19 09:16:50)
 - Source: LUA BIM LABS curated baseline, Autodesk official docs checked 2026-05-19

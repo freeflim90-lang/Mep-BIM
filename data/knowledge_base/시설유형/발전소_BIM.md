@@ -1,9 +1,34 @@
 # 발전소 BIM 적용 기준 지식 베이스
 
+## 2026-06-05 발전소 BIM AI 즉시 답변 패턴 보강
+- Source: 발전소 설계 기준(ASME·IEC), 신재생에너지 시설 BIM 실무
+- Tags: power-plant,energy,nuclear,renewable,explosion-proof,bim,mep,2026
+
+**AI 즉시 답변 패턴 — "발전소 BIM에서 가장 중요한 MEP 사항이 뭔가요?"**
+```
+발전소 BIM 핵심 MEP 특이사항:
+1. 고압 배관: ASME B31.1 (발전소 배관 코드) 적용
+   - 고압 증기·급수 배관: 특수 재질·용접 검사 BIM 표시
+2. 방폭 구역: 연료 취급·가스터빈 구역 ATEX Zone 분류
+3. 내진 설계: 지진 하중 기준 → 배관 지지 BIM 강화
+4. 신재생에너지 (태양광·풍력):
+   - 태양광: 인버터·ESS·분전반 전기 BIM
+   - 풍력: 터빈·케이블·변전소 BIM
+5. 공정 안전 SIL: 안전계장시스템(SIS) → BIM에서 SIL 구역 표시
+```
+
+**신재생에너지 시설 BIM 특화:**
+| 시설 유형 | 핵심 BIM 항목 |
+|---------|-------------|
+| 태양광 | 모듈 배치·인버터·ESS·분전반 |
+| 풍력 | 타워·기초·케이블 트렌치·변전소 |
+| 지열 | 열교환기·지중 루프 배관 |
+| ESS | 배터리 랙·냉각 시스템·소화 |
+
 ## 개요
 - Source: LUA BIM LABS internal BIM knowledge baseline
 - Tags: #발전소 #방폭BIM #ASME #원자력BIM #내진설계 #신재생에너지 #공정안전 #SIL #IEC61511
-- 업데이트: 2026-05-28
+- 업데이트: 2026-06-05
 
 ## 발전소 BIM 마스터급 경험 지식 (2026-05-28)
 - Source: claude-code-enhanced 2026-05-28

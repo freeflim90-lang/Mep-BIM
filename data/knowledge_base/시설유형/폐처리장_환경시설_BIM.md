@@ -1,9 +1,25 @@
 # 폐처리장·환경시설 BIM 적용 기준 지식 베이스
 
+## 2026-06-05 환경시설 BIM AI 즉시 답변 패턴 보강
+- Source: 환경부 폐수처리 기준, 소각장 설계 실무, 환경시설 MEP 특화 기준
+- Tags: waste-treatment,environmental,corrosion,explosion-proof,bim,mep,2026
+
+**AI 즉시 답변 패턴 — "폐수처리장 BIM에서 MEP 특이사항이 뭔가요?"**
+```
+폐처리장·환경시설 BIM 핵심 MEP 특이사항:
+1. 내식성 재료: 황산·염산·알칼리 폐수 → 스테인리스·FRP·에폭시 도장 배관
+   - 일반 강관 사용 금지 (부식 파손 위험)
+2. 방폭 구역(ATEX): 소화조·매립가스 발생 구역
+   - 방폭 전기 기기 의무 → BIM에서 방폭 구역 표시
+3. 악취 배기: 처리 공정 악취 → 별도 탈취 장치·배기 경로 BIM
+4. GIS 연동: 관로 위치·처리 용량 → GIS 기반 자산 관리
+5. 누출 방지: 이중 라이너(Double Liner) → 시공 상세 BIM 필수
+```
+
 ## 개요
 - Source: LUA BIM LABS internal BIM knowledge baseline
 - Tags: #환경시설BIM #폐수처리장 #폐기물처리 #소각장 #내식성재료 #방폭 #DoubleLiner #GIS연동
-- 업데이트: 2026-05-28
+- 업데이트: 2026-06-05
 
 ## 폐처리장·환경시설 BIM 마스터급 경험 지식 (2026-05-28)
 - Source: claude-code-enhanced 2026-05-28
