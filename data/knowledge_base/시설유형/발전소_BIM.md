@@ -339,3 +339,72 @@ Dynamo 활용:
 ---
 
 - 관련: [[건물유형별_BIM적용기준]] · [[국가별_건설법규_기준비교]] · [[IFC_OpenBIM]] · [[OpenBIM_프로그램연동]] · [[BIM_납품검수]] · [[해외건설기업_동향분석]]
+
+## 2026-06-06 한국 SMR·해상풍력 발전소 BIM 보강
+- Source: 혁신형 SMR 기술개발사업단(ismr.or.kr), 삼일PwC SMR가이드북, 포스코이앤씨 해상풍력, electimes 2026
+- Tags: smr,small-modular-reactor,offshore-wind,nuclear-bim,i-smr,2025,2026
+
+**한국 SMR(소형모듈원전) 개발 로드맵 (2026 현황):**
+- 국가 프로젝트: **혁신형 SMR(i-SMR)** — 170MW 급 가압경수로형 소형원전
+- 개발 기관: 혁신형 SMR 기술개발사업단 (한국원자력연구원 등 컨소시엄)
+- 단계별 목표:
+  | 단계 | 시점 | 내용 |
+  |------|------|-----|
+  | 설계 완료 | 2028년 | i-SMR 표준 설계 확정 |
+  | 규제 허가 | 2030년 | 원자력안전위원회 건설 허가 |
+  | 상업 운전 | **2035년** | 국내 첫 SMR 상용화 목표 |
+- 정부 지원: 원전산업성장펀드 **1,000억원** (SMR 시장 진출 기업 지원)
+- 2026년: 노형별 규제연구반 운영 → 안전 현안 기술 논의 본격화
+
+**SMR BIM 설계 특화 포인트 (기존 대형 원전 대비):**
+```
+SMR vs 대형 원전 BIM 차이:
+- 규모: 소형 (부지 1km² 이하 vs 대형 5km²+)
+- 모듈화: 공장 제작 → 현장 조립 → BIM LOD 400 사전 제작 상세 필수
+- 냉각방식: 피동안전계통 (외부 전원 불필요) → 능동 설비 BIM 간소화
+- 복수 배치: 동일 부지 2~4기 배치 → 반복 모듈 BIM 전략
+
+SMR BIM 파라미터 추가:
+  Pset_SMR_Nuclear:
+    - Reactor_Power_MWe: 전기 출력 (170MW 기준)
+    - Passive_Safety_System: true/false
+    - Module_ID: 모듈 번호 (복수 배치 시)
+    - Refueling_Interval_Year: 연료 교체 주기
+    - Exclusion_Zone_m: 제한 구역 반경 (m)
+```
+
+**해상풍력 발전소 BIM 설계 (2025~2026 급성장):**
+- 한국 해상풍력 목표: 2030년까지 12GW, 2035년까지 26GW
+- 포스코이앤씨: DNV와 협력 → 해상풍력 설계·구조 기술 고도화, 통합하중해석 국내 최초 실적
+- 해상풍력 BIM 구조 구성요소:
+  | 구성요소 | BIM 설계 포인트 |
+  |---------|--------------|
+  | 모노파일/자켓 기초 | 해저 지반 조사 데이터 → BIM 기초 깊이·형상 |
+  | 타워 (Tower) | 섹션별 강재 중량·용접 위치 BIM LOD 400 |
+  | 나셀 (Nacelle) | 유지보수 크레인 이동 경로 BIM 확보 |
+  | 블레이드 | 회전 반경 → 인접 구조물 이격거리 BIM 검토 |
+  | 해저 케이블 | GIS 좌표 기반 IFC Alignment 연동 |
+  | 변전 플랫폼 | MEP BIM — 변압기·개폐기·GIS 설비 |
+- BIM 파라미터:
+  ```
+  Pset_OffshoreWind:
+    - Water_Depth_m: 해수 깊이
+    - Foundation_Type: Monopile / Jacket / Floating
+    - Turbine_Capacity_MW: 터빈 용량 (최신 14~15MW급)
+    - Hub_Height_m: 허브 높이
+    - Rotor_Diameter_m: 로터 직경 (220m+)
+    - Cable_Route_ID: 해저 케이블 경로 ID
+  ```
+
+**원전 계속운전 BIM (고리·월성·한빛 등 40년 이상 노후 원전):**
+- 한국 원전 계속운전 정책: 설계수명 초과 원전 → 10년 단위 계속운전 허가
+- BIM 필요성: 1970~80년대 설계 → 디지털 도면 부재 → BIM 역설계 수요
+- 레이저 스캔 → 포인트클라우드 → Revit BIM 변환: 배관·설비 현황 BIM 구축
+- 파라미터: `Plant_Commissioning_Year`, `Continue_Operation_License_Year`, `Scan_Date`
+
+**LUA BIM LABS 발전소 BIM 기회:**
+- SMR 개발 참여사(한수원·현대엔지니어링·두산에너빌리티) BIM 하도 용역
+- 해상풍력 변전 플랫폼 MEP BIM 전문 납품 (해양 플랜트 MEP 특화)
+- 노후 원전 계속운전 BIM 역설계: 포인트클라우드 → BIM 전환 서비스
+
+관련: [[공장_제조시설_BIM]] · [[IFC_OpenBIM]] · [[FM_자산관리]] · [[해외건설기업_동향분석]]

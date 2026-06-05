@@ -321,3 +321,54 @@ IfcTrackElement (PredefinedType: RAIL/SLEEPER/RAILPAD)
 ---
 
 - 관련: [[건물유형별_BIM적용기준]] · [[국가별_건설법규_기준비교]] · [[IFC_OpenBIM]] · [[OpenBIM_프로그램연동]] · [[BIM_납품검수]] · [[해외건설기업_동향분석]]
+
+## 2026-06-06 GTX 광역급행철도·터널 스마트 안전시스템 BIM 보강
+- Source: 경기도청 GTX 현황, 현대건설 GTX-C 착공, KB리서치 GTX 개통 100일 분석 (2025)
+- Tags: gtx,metropolitan-express,tunnel-bim,hitts,ifc-alignment,smart-safety,2025,2026
+
+**GTX 수도권 광역급행철도 BIM 수요 (2025~2026):**
+| 노선 | 현황 (2026 기준) | 총 연장 | BIM 포인트 |
+|------|--------------|-------|----------|
+| GTX-A | **2024.3.30 개통** (수서-동탄), 연장 공사 진행 | 83.1km | 개통 후 FM BIM 활용 단계 |
+| GTX-B | 건설 중 (인천 송도~마석) | 82.7km | 설계·시공 BIM 한창 |
+| GTX-C | **2026.4.30 현장 착공** (현대건설 컨소시엄) | 86.5km | 초기 건설 BIM 수요 급증 |
+
+**GTX 역사 BIM 설계 특성 (일반 도시철도 대비):**
+- **지하 40~60m 심부 지하역**: 수직 동선(엘리베이터·에스컬레이터) 길이 급증 → 수직 MEP 계통 복잡도 증가
+- **고속 통과 + 정차역 분리**: 통과 선로 구조와 정차 승강장 BIM 분리 설계 필요
+- **광역 여객 처리**: IATA 수준의 대용량 게이트 + 환승 동선 BIM
+- **IFC 4.3 Alignment 필수**: 심부 곡선 선형 → 지상 좌표계 정합 → BIM 기준점 특별 관리
+
+**HITTS — 터널 스마트 안전시스템 BIM 연동 (GTX-C):**
+- 개발사: 현대건설 (한국 최초 개발)
+- 정식 명칭: **HITTS** (Hyundai Integrated & TVWS-based Tunnel Smart Safety System)
+- 기술: 지하 터널 무선통신 기술(TVWS) + 안전 솔루션 통합
+- BIM 연동 포인트:
+  - HITTS 센서·카메라 위치 → BIM `IfcSensor` 속성화
+  - 굴착 단계 모니터링 데이터 → 4D BIM 진도 연동
+  - 작업자 위치 추적 → BIM 공간 ID 연동 (터널 구간 속성)
+
+**GTX 터널·역사 통합 BIM 파라미터 (IFC 4.3 기반):**
+```
+Pset_GTXTunnel:
+  - Line_Designation: GTX-A / GTX-B / GTX-C
+  - Tunnel_Grade: 터널 경사도 (%) — GTX 40~60m 심도 진입 경사
+  - Track_Speed_kmh: 설계 최고속도 (GTX 180km/h)
+  - Emergency_Exit_Spacing_m: 비상 대피로 간격 (최대 250m)
+  - HITTS_Zone_ID: 스마트 안전 구역 ID
+  - Excavation_Phase: 굴착 단계 (1~N)
+  - Groundwater_Pressure_kPa: 지하수 수압
+
+Pset_GTXStation:
+  - Depth_Below_Grade_m: 지면 아래 깊이
+  - Platform_Type: Side / Island / Single
+  - Express_Track: 통과 선로 여부 (true/false)
+  - Transfer_Mode: 환승 유형 (지하철/버스/주차)
+```
+
+**LUA BIM LABS GTX BIM 수주 전략:**
+- GTX-B/C 건설 BIM 참여: 설계·시공사 하도 BIM 용역 (MEP + 간섭 검토)
+- GTX-A FM BIM: 개통 후 유지관리 BIM 구축 → 역사 자산 관리 시스템
+- 스마트 안전 BIM: HITTS 연동 센서 위치 BIM → 발주처(국토부·철도공사) 제안
+
+관련: [[철도_BIM]] · [[공항_BIM]] · [[FM_자산관리]] · [[IFC_OpenBIM]]

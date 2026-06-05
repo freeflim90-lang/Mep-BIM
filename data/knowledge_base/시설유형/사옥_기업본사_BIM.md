@@ -323,3 +323,58 @@ VR 투어 파일 (.exe / Web GL)
 ## 관련 파일
 - 관련: [[건물유형별_BIM적용기준]] · [[국가별_건설법규_기준비교]] · [[IFC_OpenBIM]] · [[BIM_납품검수]]
 - 참고: [[오피스_업무시설_BIM]] · [[BIM_지침서]] · [[Revit_Addin]] · [[Dynamo]] · [[FM_자산관리]]
+
+## 2026-06-06 스마트오피스 AI+IoT·ESG 사옥 BIM 보강
+- Source: 스마트 빌딩 2026 현황(sisadays), 한국경제 그린빌딩, G-SEED·ZEB 의무화, LEED 국내 사례
+- Tags: smart-office,ai-iot,esg,leed,g-seed,zeb,bim,green-building,2025,2026
+
+**스마트 사옥 AI+IoT 통합 BIM (2026 최신 트렌드):**
+- 2026 현재 스마트 빌딩이 기업 사옥 발주의 핵심 요구사항으로 부상
+- AI + IoT 기반 지능형 통합 관리 시스템 → BIM 디지털트윈 운영
+- 핵심 통합 시나리오:
+  | 시나리오 | AI/IoT 역할 | BIM 연동 방법 |
+  |---------|-----------|------------|
+  | 재실 감지 최적 공조 | 좌석 센서 → AI 존별 자동 공조 | IfcSensor(점유) → HVAC 시스템 연동 |
+  | 예측 유지보수 | 설비 진동·온도 이상 → 예방 정비 | BIM 자산 ID → CMMS 자동 지시 |
+  | 에너지 최적화 | 재실·기상 데이터 → AI 에너지 스케줄 | BEMS ↔ BIM 계량기 자산 연동 |
+  | 비상 대피 경로 | 화재 위치 → AI 최적 대피 안내 | BIM 공간 ID → FMS 실시간 표시 |
+
+**그린 사옥 인증 현황 — 한국 대표 사례 (LEED/G-SEED):**
+| 건물 | 인증 등급 | 특징 |
+|------|---------|------|
+| 네이버 그린팩토리 | LEED Platinum | 한국 최고 수준 지속가능성 |
+| 롯데월드타워 | LEED Gold | 초고층 복합용도 |
+| KT 광화문빌딩 East | LEED Silver | 도심 업무시설 |
+| 서울스퀘어 | LEED Gold | 역세권 리모델링 빌딩 |
+
+**공공건축물 그린리모델링 의무화 (2025~):**
+- 2025년부터 공공건축물 그린리모델링 의무화 (에너지 성능 기준 미달 시설 보강)
+- BIM 수요: 기존 공공 사옥 → 그린리모델링 현황 BIM 구축 → 에너지 개선 시뮬레이션
+
+**ESG 사옥 BIM 파라미터 체계 (기업 ESG 보고서 연동):**
+```
+Pset_ESG_Building:
+  - ZEB_Grade: 1~5 (제로에너지건물 등급)
+  - LEED_Rating: Platinum / Gold / Silver / Certified
+  - GSEED_Rating: 그린 1~5등급
+  - WELL_Rating: Platinum / Gold / Silver
+  - Annual_Energy_kWh_m2: 연간 에너지 사용량 원단위
+  - Annual_Carbon_kgCO2_m2: 연간 탄소 배출 원단위
+  - Renewable_Energy_%: 신재생에너지 비율
+  - Water_Recycling_%: 중수 재이용률
+  - Waste_Recycling_%: 폐기물 재활용률
+  - ESG_Report_Year: ESG 보고서 기준연도
+```
+
+**스마트오피스 좌석제 BIM 활용 (하이브리드 근무 확산 대응):**
+- 기업별 자율좌석제·하이브리드 근무 확산 → 공간 효율 극대화 BIM 수요
+- 공간 전환 파라미터: `Desk_Type: Fixed / Hot-Desk / Collaboration`
+- 재실률 기반 공간 재조정: BIM 공간 → IoT 재실 데이터 → 공간 배치 최적화 분석
+- SKC 스마트오피스 사례: 원하는 자리에 앉아 일하는 완전 자율좌석제 → BIM 자산 관리 연동
+
+**LUA BIM LABS 사옥 BIM 수주 전략:**
+- ZEB + G-SEED 복합 인증 BIM 컨설팅: 대기업 신사옥·공공기관 청사 대상
+- 스마트오피스 리모델링 BIM: 하이브리드 근무 대응 공간 재구성 컨설팅 + MEP BIM
+- 그린리모델링 패키지: 공공 사옥 에너지 성능 개선 → BIM 기반 에너지 분석 + 인증 납품
+
+관련: [[오피스_업무시설_BIM]] · [[일반건물_빌딩_BIM]] · [[패시브하우스_PHIKO]] · [[FM_자산관리]]
