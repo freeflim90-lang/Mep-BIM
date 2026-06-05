@@ -2,6 +2,22 @@
 
 텔레그램 질문·자동 수집 응답 저장소 — 기준 가이드라인(스토어심사.md)과 분리 운영.
 
+## 2026-06-05 Autodesk App Store 심사 실전 Q&A 추가
+- Source: Autodesk App Store Publisher 가이드, LUA BIM LABS Add-in 개발 경험
+- Tags: autodesk-store,app-review,publish,add-in,qa,2026
+
+**Q: Autodesk App Store 심사에 얼마나 걸리나요?**
+A: 제출 후 보통 2~4주가 소요됩니다. 심사 항목에는 기능 테스트(Revit 2023~2026 버전별), 악성코드 스캔, 아이콘·스크린샷·설명 검토가 포함됩니다. 심사 중 수정 요청이 오면 대응하면서 기간이 늘어날 수 있습니다. *(KST01 공식확인)*
+
+**Q: Add-in이 심사에서 자주 반려되는 이유는 뭔가요?**
+A: 주요 반려 사유: ① 아이콘 해상도 부적합(32×32px 미충족), ② 스크린샷 최소 3장 미충족, ③ 여러 Revit 버전 중 일부 버전에서 오류 발생, ④ .addin 매니페스트 경로 오류, ⑤ 설명에 타사 제품 비교·폄하 내용 포함. 제출 전 체크리스트로 확인하는 것이 중요합니다. *(KST01 공식확인)*
+
+**Q: 무료 Add-in을 나중에 유료로 전환할 수 있나요?**
+A: 가능합니다. 무료로 출시 후 사용자 피드백·인지도를 쌓은 다음 유료 구독 또는 프리미엄 버전으로 전환하는 전략이 일반적입니다. 가격 모델 변경은 언제든 Autodesk Publisher 포털에서 수정할 수 있습니다. 단, 기존 무료 사용자 경험을 갑자기 차단하면 부정 리뷰가 쌓일 수 있습니다. *(KST03 적용주의)*
+
+**Q: LUA BIM LABS BIM Command Center는 언제 출시 예정인가요?**
+A: 현재 개발 중이며 Autodesk App Store 제출을 목표로 하고 있습니다. 출시 시 LUA BIM LABS 텔레그램 채널을 통해 안내드리겠습니다. 베타 테스터 신청은 텔레그램 봇에서 가능합니다. *(내부 운영 기준)*
+
 
 ## 스토어심사 FAQ (2026-05-24)
 - Source: LUA BIM LABS internal store submission knowledge baseline

@@ -2,6 +2,22 @@
 
 텔레그램 질문·자동 수집 응답 저장소 — 기준 가이드라인(라이선스결제.md)과 분리 운영.
 
+## 2026-06-05 라이선스·결제 실전 Q&A 추가
+- Source: Autodesk 공식 라이선스 정책, LUA BIM LABS Starter Plan 운영 기준
+- Tags: license,payment,autodesk,subscription,qa,2026
+
+**Q: Autodesk Revit 라이선스 종류가 어떻게 되나요?**
+A: 2024년부터 Named User 구독 방식만 지원합니다. 개인 단위 Named User 라이선스(1인 1라이선스)와 Autodesk Flex(토큰 방식, 사용한 만큼 결제)가 있습니다. AEC Collection은 Revit·AutoCAD·Civil 3D·Navisworks 등 패키지로 연간 구독합니다. 기존 기업용 Network License(동시 사용)는 2024년 종료되었습니다. *(KST01 공식확인)*
+
+**Q: Autodesk 라이선스를 팀원이 함께 써도 되나요?**
+A: 안됩니다. Named User 방식이므로 1개 라이선스는 1명만 사용 가능합니다. 같은 계정으로 여러 기기에서 동시 사용도 불가합니다. 팀원 수만큼 라이선스를 구매해야 합니다. 위반 시 Autodesk 감사 대상이 될 수 있습니다. *(KST01 공식확인)*
+
+**Q: LUA BIM LABS Starter Plan은 어떻게 결제하나요?**
+A: 텔레그램 봇을 통해 결제 링크를 전달드립니다. 월 구독과 연간 구독 중 선택 가능하며, 연간 구독 시 약 15~20% 할인이 적용됩니다. 결제 후 텔레그램 봇에 자동으로 MEP BIM 튜터 권한이 부여됩니다. 구체적인 가격은 운영 채널에서 확인하시기 바랍니다. *(KST03 적용주의: 최신 가격 정책 확인)*
+
+**Q: Autodesk App Store에서 구매한 Add-in은 환불되나요?**
+A: Autodesk App Store 환불 정책에 따라 구매 후 30일 이내, 미사용 시 환불 요청 가능합니다. 유료 구독형 Add-in은 다음 결제 전에 구독 취소하면 됩니다. 구체적인 환불 절차는 Autodesk 고객지원 또는 개발사 정책을 확인하세요. *(KST03 적용주의)*
+
 
 ## 라이선스결제 FAQ (2026-05-24)
 - Source: LUA BIM LABS internal license/billing knowledge baseline
