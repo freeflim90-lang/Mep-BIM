@@ -324,3 +324,13 @@ def score_signal(text: str) -> float:
 - BIM and CAD Integrations at the 2026 Esri User Conference - Esri (BIM Automation)
 
 운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-05 20:12 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-05/2012_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 경기도, 건설분야 AI 활용 전략 수립 착수 - 글로벌에픽 (BIM Automation)
+- 경기도, 건설현장에도 AI 도입. 중소건설기업 활성화 방안 모색 - 엔디엔뉴스 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
