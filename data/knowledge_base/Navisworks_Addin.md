@@ -223,3 +223,15 @@ Navisworks API 선택 가이드 — COM API vs .NET Managed API: COM API(`Autode
 - 보고서 커스터마이징을 위해 Navisworks Report Writer Add-in을 사용하여 필요에 맞게 보고서를 제작할 수 있습니다.
 - API를 활용해 자동화된 품질 검토와 분석 가능한 시스템을 개발하고, 플랫폼과 연계하는 방법을 배울 수 있습니다.
 - 관련: [[Revit_Addin]]
+
+
+## Navisworks Add-in 최신 동향 및 활용 팁 (2026-06-06)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-06
+- Tags: navisworks,addin,clash-detection,update
+
+- Navisworks 2025에서는 모델 조정 기능이 강화되었으며, 새로운 API가 플러그인 개발을 지원합니다.
+- 이 API는 사용자 정의 플러그인과 자동화 작업을 가능하게 합니다. 하지만 일부 사용자는 2024년 버전보다 2025년 버전에서 커스텀 플러그인의 성능 문제가 있다고 보고하였습니다.
+- 간섭 검토를 자동화하려면, API를 활용해 프로세스를 자동으로 실행할 수 있습니다. 예를 들어, 특정 작업이 완료될 때마다 간섭 검토가 자동으로 수행되도록 설정할 수 있습니다.
+- 보고서 커스터마이징을 위해 API를 통해 사용자 정의 보고서 형식을 만들 수 있습니다. 필요한 정보만 포함하고, 보고서의 구성 요소를 쉽게 조정할 수 있습니다.
+- Navisworks 2025에서 API를 활용하여 자동화된 작업을 수행하려면, 먼저 API 문서를 이해하고 필요에 따라 코드를 작성해야 합니다. 이를 통해 복잡한 프로세스도 간단히 처리할 수 있습니다.
+- 관련: [[Revit_Addin]]

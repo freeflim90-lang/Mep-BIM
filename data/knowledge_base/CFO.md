@@ -1,5 +1,19 @@
 # CFO 지식 베이스
 
+## 2026-06-05 상품 Launch Status source of truth 초안
+- Source: `data/knowledge_base/conflict_resolution/PRODUCT_LAUNCH_STATUS_SOURCE_OF_TRUTH_DRAFT_20260605.md`
+- Tags: cfo,pricing,launch-status,source-of-truth,draft
+
+CEO/CFO 최종 승인 전 고객 공개 판매 기준은 Starter만 SALE_READY로 본다. Personal Tutor와 Coordinator Mentor는 COMING_SOON, Project Mentor Standard/Intensive는 CONSULTATION_ONLY로 둔다.
+
+CFO 운영 기준:
+- SALE_READY가 아닌 상품은 결제 링크를 고객에게 발송하지 않는다.
+- Project Mentor 가격은 내부 검토 또는 상담 후보이며, 확정 판매 가격처럼 안내하지 않는다.
+- 상품별 가격표, 환불 조건, 운영 리소스, 법무 검토가 모두 확인된 뒤 Launch Status를 변경한다.
+- 고객지원CS는 승인 전 "지금 결제 가능", "가격 확정", "바로 시작 가능" 문구를 쓰지 않는다.
+
+관련: `AITEST_20260605_007`
+
 ## 2026-06-05 CFO 재무 전략 2026 최신 업데이트
 - Source: LUA BIM LABS 내부 재무 기준, Autodesk Store 수익 모델, 정부 지원사업
 - Tags: cfo,finance,mrr,revenue,cost,government-support,2026
@@ -212,4 +226,14 @@ K-IFRS 15 SaaS 수익인식 실무 함정: 연간 구독료를 계약 체결 시
 - LTV/CAC 비율이 3:1 이상이어야 지속가능성을 확보할 수 있습니다.
 - 구독 수익 인식 기준은 서비스 제공 시점에서 고객이 이용 가능한 경우 해당 기간의 전체 수익을 인식합니다.
 - 환율 리스크를 관리하기 위해 선물 계약이나 옵션 등을 활용할 수 있으며, 주기적인 환율 모니터링도 필요합니다.
+- 관련: [[글로벌_매출관리원]]
+
+
+## CFO 재무 인텔리전스 업데이트 (2026-06-06)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-06
+- Tags: cfo,finance,revenue,update
+
+- 구독 수익 인식 기준을 명확히 설정하고 준수해야 합니다. MRR (월별 재curring 수익)는 회사의 성장 엔진 건강 상태를 파악하는 데 중요한 지표입니다.
+- LTV/CAC 비율은 3:1 이상으로 유지해야 하며, 이는 사업의 생존성을 결정합니다. 정확한 고객 획득 비용(CAC)과 고객 가치(LTV) 추정이 필요합니다.
+- 환율 리스크를 관리하기 위해 통화 옵션이나 선물 등을 활용할 수 있습니다. 이를 통해 외화 대금 관련 불필요한 손실을 줄일 수 있습니다.
 - 관련: [[글로벌_매출관리원]]

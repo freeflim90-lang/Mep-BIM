@@ -494,3 +494,14 @@ ISO 19650-2 실무 적용에서 가장 많이 실패하는 3가지 패턴과 사
 - IDS(Integrated Delivery Strategy) 적용 실무에서는 다양한 이해관계자 간의 효과적인 정보 공유와 협업이 가능해졌습니다.
 - Revit에서 IFC4.3으로 파일을 내보내는 최신 기준은 BIM 데이터의 호환성과 통합성을 높이는 중요한 단계입니다.
 - 관련: [[설계_지침서]] · [[시공_지침서]] · [[건축]] · [[BIM_시방서]]
+
+
+## BIM 지침서 최신 동향 및 표준 업데이트 (2026-06-06)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-06
+- Tags: BIM,guideline,IFC,openBIM,update
+
+- 국제 BIM 표준인 ISO 19650과 IFC4가 최신 동향을 이끌고 있으며, IDS(Information Delivery Specification)는 IFC 모델의 호환성을 위한 지침으로서 계속 개선되고 있다.
+- 한국에서는 BuildingSMART Korea가 2025 BIM 표준 업데이트를 통해 ISO 19650 프레임워크와 IDS 적용을 강조하고 있으며, IDS 최신 버전은 검토 중이다.
+- openBIM은 IFC 기반의 개방 표준으로, 중립적인 BIM 작업을 지원하며, IFC 파일 검증과 워크플로 채택을 위한 프레임워크를 제공한다.
+- Revit에서 IFC로 내보내기의 최신 기준은 BCF(BIM Collaboration Format)와 IDM(Information Delivery Manual)을 통해 정의되며, 이는 BIM 데이터 공유와 협업을 촉진한다.
+- 관련: [[설계_지침서]] · [[시공_지침서]] · [[건축]] · [[BIM_시방서]]

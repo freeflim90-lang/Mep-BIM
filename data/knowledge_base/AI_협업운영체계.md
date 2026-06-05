@@ -80,10 +80,13 @@ KST 등급:
 |---|---|
 | 판단 선례 | `data/knowledge_base/conflict_resolution/CONFLICT_LOG.md` |
 | 업무 기준 | `data/knowledge_base/*.md` |
+| QA/체크리스트 | `data/knowledge_base/qa/*.md` 또는 `docs/internal_organization_documents/16_INTERNAL_QUALITY_AUDIT_CHECKLIST.md` |
 | 교육 필요 | `docs/training_curriculum/` |
+| 표준문서 | `docs/standard_documents/` |
 | 자동화 후보 | `docs/internal_growth/AX_INTERNAL_GROWTH_BACKLOG.md` |
 | 조직 운영 기준 | `docs/internal_organization_documents/` |
 | 고객 응대 문구 | `docs/lua_bim_lab_official_documents/27_CS_RESPONSE_SCRIPT.md` |
+| 의사결정 로그 | `docs/internal_organization_documents/12_DECISION_LOG_TEMPLATE.md` 또는 프로젝트별 결정 로그 |
 
 ## 완료 게이트
 
@@ -96,7 +99,8 @@ KST 등급:
 | G3 반론 게이트 | 최소 1개 실패 조건 또는 예외 조건이 기록됨 |
 | G4 결정 게이트 | 합의 상태 4종 중 하나로 종료됨 |
 | G5 실행 게이트 | 담당, 기한, 검증 방법이 있음 |
-| G6 내재화 게이트 | 저장 위치 또는 보류 이유가 있음 |
+| G6 내재화 게이트 | Reuse Closure 상태가 Created, Updated, 또는 Explicitly Deferred임 |
+| G7 리스크/배포 게이트 | 데이터/외부AI/고객/가격 리스크가 해당 시 기록됨 |
 
 ## 성숙도 모델
 
@@ -122,3 +126,20 @@ KST 등급:
 통과 기준은 역할 라우팅, 근거 품질, 반론 품질, 합의 도출, 실행 인계, 지식화 여부다.
 
 실행 템플릿은 `docs/internal_organization_documents/31_AI_COLLABORATION_RUNBOOK_TEMPLATES.md`를 사용한다.
+
+## 신규 AI 역할 온보딩
+
+신규 AI 역할은 실제 협업 세션에 들어가기 전에 `docs/training_curriculum/team_distribution/samples/2026-06-05_AI_COLLABORATION_ONBOARDING_CARD_SAMPLE.md`로 15분 실습을 수행한다.
+
+온보딩 통과 기준:
+- 자기 역할이 주관, 검토, 반론, 결정권자 중 무엇인지 구분한다.
+- Evidence Pass에 판단, 근거, KST 등급, 적용 조건, 불확실성을 포함한다.
+- Challenge Pass에 실패 조건 또는 예외 조건을 최소 1개 남긴다.
+- 합의 상태를 `CONSENSUS`, `CONSENSUS_WITH_GUARDRAILS`, `SPLIT_DECISION`, `ESCALATE` 중 하나로만 기록한다.
+- 실행 담당, 기한, 검증 방법, Reuse Closure 목적지를 비워 두지 않는다.
+- 고객/개인정보/가격/외부 AI가 포함되면 리스크 게이트 상태값 6개 중 하나를 선택한다.
+
+실제 내재화는 샘플 카드 작성만으로 보지 않는다. 최소 2개 협업 세션에서 교육 기록, 개선 과제, Reuse Closure 증거가 누적되어야 한다.
+
+2026-06-05 기준 `AITEST_20260605_012`에서 신규 AI 온보딩 카드 샘플 2회 적용은 통과했다.
+다만 월간 운영 정착은 실제 운영 세션에서 월 2회 이상 기록이 반복 누적되는지 별도로 본다.

@@ -530,3 +530,14 @@ foreach (var elem in collector)
 - COBie 스키마를 활용하여 건설 산업에서 BIM 통합 스키마를 시범적으로 적용하고, 이를 바탕으로 국제표준화 방안을 추진하고 있습니다. 이는 항만 등 다양한 분야에서 실증 테스트가 이루어지고 있습니다.
 - BIM 시방서의 구체적인 내용은 발주자의 요구사항에 따라 달라질 수 있으므로, 프로젝트 특성과 연관된 특정 요구사항(PSR)을 포함시켜야 합니다. 이를 통해 데이터 상호운용성을 높이고, Request for Proposal(RFP) 과정에서의 효율성을 증가시키는 것이 중요합니다.
 - 관련: [[건축]] · [[설비장비]] · [[설계_지침서]] · [[시공_지침서]]
+
+
+## BIM 시방서 최신 기준 업데이트 (2026-06-06)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-06
+- Tags: BIM,specification,EIR,COBie,update
+
+- 2025년부터 발주처는 BIM 프로젝트에서 EIR(Employer’s Information Requirement) 기반의 시방서 요구가 강화될 예정이다.
+- 발주처별 BIM 요구 수준은 각각 다를 수 있으며, 이를 정확히 이해하고 준수하는 것이 중요하다. 예를 들어, COBie(Coordinating Operating Building Information Exchange)는 건물 운영 및 유지보수에 필요한 데이터 표준으로, FM(Facility Management)과의 연동을 위해 필수적이다.
+- BIM 시방서(EIR) 작성 시에는 데이터의 디지털화와 정보 교류를 위한 명확한 요구사항이 포함되어야 하며, 이를 통해 BIM 프로젝트의 성공 가능성을 높일 수 있다.
+- COBie 스키마는 항만 등 다양한 분야에서 활용되며, 국제표준화 추구가 진행되고 있어 이에 맞춰 데이터 구조를 설계하는 것이 바람직하다.
+- 관련: [[건축]] · [[설비장비]] · [[설계_지침서]] · [[시공_지침서]]

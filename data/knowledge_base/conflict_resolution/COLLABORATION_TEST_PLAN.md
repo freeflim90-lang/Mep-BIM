@@ -95,6 +95,76 @@
 
 상세 기록: `cases/AITEST_20260605_001.md`
 
+## 4.1 2026-06-05 추가 방향성 테스트
+
+| ID | 방향 | 결과 | 핵심 검증 |
+|---|---|---|---|
+| AITEST_20260605_002 | 고객 납품 지연 + 추가 요구 | CONDITIONAL PASS | 고객 발송, 법무 조건, 비용 반론, PM 복구 계획 분리 |
+| AITEST_20260605_003 | 고객 모델 로그 외부 AI 전송 | PASS | 외부 API 금지 조건과 익명화 요약본 제한 허용 게이트 작동 |
+| AITEST_20260605_004 | 견적 판단 충돌 | PRECEDENT | KST02 견적/CFO 판단과 KST05 고객관계 가설의 우선순위 정리 후 선례 승격 |
+| AITEST_20260605_005 | 자동수집 지식 고객 응답 승격 | CONDITIONAL PASS | KST04 확정 사용 금지, 공식 출처 확인 후 승격 절차 작동 |
+| AITEST_20260605_006 | 개인정보/외부 AI 정책 문서 충돌 | ESCALATED | privacy/legal/AI routing 표현 충돌을 발견하고 Local-only 임시 적용 |
+| AITEST_20260605_007 | 상업/가격 source of truth 충돌 | ESCALATED | Starter-only launch와 Project Mentor 가격 약관의 공개 가능 상태 충돌 발견 |
+| AITEST_20260605_008 | PRECEDENT 승격 및 재사용 | PASS | AITEST_20260605_004 선례를 유사한 무상/유상 범위 충돌에 재적용하고 KB/QA 내재화 완료 |
+| AITEST_20260605_009 | 리스크 게이트 상태값 표준화 | PASS | SOP/런북/세션 등록부의 리스크 상태값을 6개 표준값으로 정리 |
+| AITEST_20260605_010 | ESCALATED 후속 SLA 사전 추적 | PASS | 006/007을 닫지 않고 ON_TRACK/AT_RISK/BREACHED/CLOSED 판정 체계로 추적 |
+| AITEST_20260605_011 | 신규 AI 역할 온보딩 및 내재화 | CONDITIONAL PASS | 15분 온보딩 카드와 역량 매트릭스 연결, 012에서 샘플 2회 적용 통과 |
+| AITEST_20260605_012 | 신규 AI 온보딩 카드 2회 반복 적용 | PASS | 역량 매트릭스에 2회 적용 기록과 개선 과제 누적 |
+| AITEST_20260605_013 | ESCALATED source of truth 초안 생성 | CONDITIONAL PASS | 006/007 후속 판단용 초안 2개 생성, 최종 승인 전 |
+| AITEST_20260606_014 | 날짜 롤오버 및 일일 인계 검증 | PASS | 2026-06-06에도 006/007 ON_TRACK 유지, 일일 인계 생성 |
+| AITEST_20260606_015 | 2026-06-12 에스컬레이션 재판정 분기 리허설 | PASS | 승인/명시적 보류/조건부 보완/위반 분기 처리 기준 생성 |
+| AITEST_20260606_016 | 협업 등록부 자동 감사 후보 | PASS | 표준값, 케이스 파일 존재, ESCALATED SLA, Reuse Closure 점검식 통과 |
+| AITEST_20260606_017 | 자동 감사 운영 배치 의사결정 | PASS | 월간 리허설/내부성장 백로그 채택, pre-commit/CI 보류 |
+| AITEST_20260606_018 | 자동 감사 스크립트화 검증 | PASS | Python 스크립트 생성, 세션 ID/SLA 열 수 오탐 수정, 14건 기준 통과 |
+| AITEST_20260606_019 | 자동 감사 네거티브 컨트롤 | PASS | 임시 깨진 등록부의 비표준 리스크 상태값을 실패로 감지 |
+| AITEST_20260606_020 | 자동 감사 네거티브 컨트롤 확장 | PASS | 케이스 파일 누락, CLOSED Reuse Closure 약화, ESCALATED SLA 누락 감지 |
+| AITEST_20260606_021 | 자동 감사 실패 메시지 가독성 | PASS | 실패 메시지에 `fix:` 힌트를 추가해 수정 경로 안내 |
+| AITEST_20260606_022 | 자동 감사 강제 적용 리허설 | PASS | pre-commit/CI 후보 래퍼 생성, 정상 exit 0/실패 exit 1 확인 |
+
+## 4.2 에이전트 감사 반영 현황
+
+| 감사 관점 | 발견 사항 | 조치 |
+|---|---|---|
+| 운영성 | 세션 등록부, SLA, 상태 매핑 부족 | 런북에 세션 등록부 추가, CONFLICT_LOG에 Opened/Due/Owner 필드 추가 |
+| 지식 내재화 | Reuse Closure 증거가 약함 | 런북과 AI 협업 KB에 Reuse Closure 기준 추가 |
+| 보안/상업 리스크 | 외부 AI, 고객 문구, 가격 승인 필드 부족 | SOP/런북에 Risk/Data/External AI Gate 및 Customer/Commercial Release Gate 추가 |
+
+라운드 요약: `TEST_ROUND_20260605_001_SUMMARY.md`
+
+세션 등록부 샘플: `SESSION_REGISTER_202606.md`
+
+## 4.4 2026-06-06 연속성 테스트
+
+| ID | 방향 | 결과 | 핵심 검증 |
+|---|---|---|---|
+| AITEST_20260606_014 | 날짜 롤오버 및 일일 인계 | PASS | 전일 ESCALATED, source of truth 초안, Open 액션이 날짜 변경 후에도 유지됨 |
+| AITEST_20260606_015 | 에스컬레이션 재판정 분기 | PASS | 2026-06-12 승인/보류/보완/위반 처리 경로 사전 정의 |
+| AITEST_20260606_016 | 협업 등록부 자동 감사 후보 | PASS | 등록부 12건, 케이스 파일, SLA 2건, Reuse Closure 반복 점검 기준 생성 |
+| AITEST_20260606_017 | 자동 감사 운영 배치 | PASS | 강제 훅 전 단계로 월간 리허설과 내부성장 백로그 후보에 배치 |
+| AITEST_20260606_018 | 자동 감사 스크립트화 | PASS | `scripts/validate_ai_collaboration_audit.py` 생성 및 14건 기준 통과 |
+| AITEST_20260606_019 | 자동 감사 실패 감지 | PASS | `/private/tmp` 깨진 등록부에서 `LOCAL-ISH`를 invalid risk로 감지 |
+| AITEST_20260606_020 | 자동 감사 결함 유형 확장 | PASS | 케이스 파일 누락, Reuse Closure 오류, SLA 누락을 각각 실패로 감지 |
+| AITEST_20260606_021 | 자동 감사 가독성 | PASS | 실패 메시지가 문제와 수정 경로를 함께 표시 |
+| AITEST_20260606_022 | 자동 감사 강제 적용 리허설 | PASS | 실제 hook 설치 없이 래퍼 기반 차단 흐름 확인 |
+
+상세 기록: `DAILY_HANDOFF_20260606.md`
+
+## 4.3 다음 검증 초점
+
+| 우선순위 | 검증 초점 | 판단 기준 |
+|---|---|---|
+| P1 | ESCALATED 후속 SLA | `AITEST_20260605_006`, `AITEST_20260605_007`이 2026-06-12까지 결정 로그, 정책/가격 source of truth, Reuse Closure 중 하나로 닫히는지 확인 |
+| P1 | 리스크 게이트 상태값 적용성 검증 | 표준 상태값 6개가 다음 실제 세션에서도 자유 문구 없이 유지되는지 확인 |
+| P2 | PRECEDENT 반복 사용 | `AITEST_20260605_004/008` 선례가 새 고객 응대와 견적 판단에서 다시 사용되고 CS/견적 문구가 흔들리지 않는지 확인 |
+| P2 | 에스컬레이션 SLA 재판정 | `ESCALATION_SLA_TRACKER_202606.md`의 ON_TRACK 항목이 2026-06-12에 CLOSED/Explicitly Deferred/AT_RISK/BREACHED 중 하나로 갱신되는지 확인 |
+| P2 | 신규 AI 역할 온보딩 월간 누적 | 온보딩 카드가 실제 운영 세션에서 월 2회 이상 Pass/Conditional/Fail과 개선 과제를 남기는지 확인 |
+| P2 | source of truth 초안 승인성 검증 | 006/007 초안이 CEO/CFO/법무/보안 승인 또는 명시적 보류로 전환되는지 확인 |
+| P2 | 일일 인계 반복성 검증 | 2026-06-07 이후에도 Open/Due/Done 상태가 유지되는지 확인 |
+| P2 | 재판정 분기 실행 검증 | 2026-06-12 실제 결과가 분기 매트릭스대로 등록부/SLA/KB에 반영되는지 확인 |
+| P2 | 자동 감사 월간 실행 검증 | `AUTOMATED_COLLABORATION_AUDIT_202606.md` 점검식이 다음 등록부 증가 후에도 오탐 없이 통과하는지 확인 |
+| P2 | 자동 감사 스크립트 반복 실행 검증 | `scripts/validate_ai_collaboration_audit.py`가 다음 실제 세션 증가 후에도 통과하는지 확인 |
+| P2 | 자동 감사 실제 hook 후보 검토 | 독립 래퍼를 실제 pre-commit 또는 CI 중 어디에 둘지 판단 |
+
 ## 5. 개선 액션
 
 | 액션 | 담당 | 기한 | 저장 위치 |
@@ -103,6 +173,21 @@
 | AI 협업운영체계 KB 생성 | 지식큐레이터 | 2026-06-05 | `data/knowledge_base/AI_협업운영체계.md` |
 | 충돌 해소 README에 협업 테스트 계획 링크 추가 | 조율차장 | 2026-06-05 | `conflict_resolution/README.md` |
 | 월간 리허설 결과를 CONFLICT_LOG 또는 케이스 파일에 누적 | 조율차장 | 매월 | `conflict_resolution/` |
+| ESCALATED 후속 SLA를 다음 라운드의 최우선 검증으로 지정 | 조율차장 | 2026-06-12 | `AITEST_20260605_006`, `AITEST_20260605_007` |
+| PRECEDENT 선례의 KB/QA 반영 여부를 CLOSED 세션 필수 게이트로 적용 | 지식큐레이터 | 2026-06-12 | `SESSION_REGISTER_202606.md` |
+| ESCALATION SLA Tracker 생성 및 2026-06-12 재판정 예약 | 조율차장 | 2026-06-05 | `ESCALATION_SLA_TRACKER_202606.md` |
+| 신규 AI 협업 온보딩 카드 생성 및 역량 매트릭스 연결 | 교육컨설팅 | 2026-06-05 | `2026-06-05_AI_COLLABORATION_ONBOARDING_CARD_SAMPLE.md` |
+| 신규 AI 협업 온보딩 카드 샘플 2회 적용 기록 | 교육컨설팅 | 2026-06-05 | `19_TRAINING_RECORD_COMPETENCY_MATRIX.md` |
+| 006/007 source of truth 초안 생성 | 조율차장 | 2026-06-05 | `EXTERNAL_AI_DISCLOSURE_RULE_DRAFT_20260605.md`, `PRODUCT_LAUNCH_STATUS_SOURCE_OF_TRUTH_DRAFT_20260605.md` |
+| 2026-06-06 일일 인계 감사 생성 | 조율차장 | 2026-06-06 | `DAILY_HANDOFF_20260606.md` |
+| 2026-06-12 재판정 분기 매트릭스 생성 | 조율차장 | 2026-06-06 | `AITEST_20260606_015.md` |
+| 협업 등록부 자동 감사 후보 생성 | 조율차장 | 2026-06-06 | `AUTOMATED_COLLABORATION_AUDIT_202606.md` |
+| 협업 등록부 자동 감사 운영 배치 결정 | 조율차장 | 2026-06-06 | `AITEST_20260606_017.md`, `AX_INTERNAL_GROWTH_BACKLOG.md` |
+| 협업 등록부 자동 감사 스크립트 생성 | 내부성장루프 | 2026-06-06 | `scripts/validate_ai_collaboration_audit.py` |
+| 협업 등록부 자동 감사 네거티브 컨트롤 실행 | QA_테스터 | 2026-06-06 | `AITEST_20260606_019.md` |
+| 협업 등록부 자동 감사 네거티브 컨트롤 확장 | QA_테스터 | 2026-06-06 | `AITEST_20260606_020.md` |
+| 협업 등록부 자동 감사 실패 메시지 가독성 개선 | QA_테스터 | 2026-06-06 | `AITEST_20260606_021.md` |
+| 협업 등록부 자동 감사 강제 적용 래퍼 생성 | 내부성장루프 | 2026-06-06 | `scripts/precommit_ai_collaboration_audit.sh` |
 
 ## 6. 조직 내재화 체크리스트
 
