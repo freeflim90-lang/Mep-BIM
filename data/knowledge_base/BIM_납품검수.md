@@ -1,5 +1,45 @@
 # BIM 납품검수 지식 베이스
 
+## 2026-06-05 AI 기반 IFC 자동검증 최신 연구 결과 심화 보강 (2차)
+- Source: 대한공간정보학회 - AI 기반 IFC 표준안 자동화(2026), 한국연구재단, n8n+AI+벡터DB
+- Tags: delivery-quality,ifc-validation,ai-automation,model-quality-auditor,research,2026
+
+**국내 AI 기반 IFC 자동검증 연구 결과 (2026 최신):**
+```
+대한공간정보학회지 논문 결과:
+- n8n(워크플로우 자동화) + AI 모델 + 벡터DB + IFC 표준 파일 연동
+- 인위적으로 오류를 삽입한 IFC 데이터 테스트 결과:
+  · 정밀도(Precision): 평균 0.93
+  · 재현율(Recall): 평균 0.97
+- IFC 파일에서 속성 정보 누락·오류를 AI가 자동 탐지 가능
+
+LUA BIM LABS Model Quality Auditor 적용 방향:
+1. n8n 워크플로우 + ifcopenshell 조합으로 검증 파이프라인 구성
+2. IFC 표준 규칙(IDS) → 벡터DB에 저장 → RAG 방식 적합성 검토
+3. AI 오류 감지 → 구체적 위치·파라미터 보고서 자동 생성
+```
+
+**IFC 자동검증 구현 전략 (LUA BIM LABS MQA):**
+```python
+# ifcopenshell + AI 검증 파이프라인 예시
+import ifcopenshell
+from ifctester import ids, reporter
+
+# 1. IFC 파일 로드
+ifc = ifcopenshell.open("project.ifc")
+
+# 2. IDS 규칙 파일 로드 (발주처별 납품 요건)
+spec = ids.open("delivery_requirements.ids")
+
+# 3. 검증 실행 (정밀도 0.93, 재현율 0.97 목표)
+engine = ids.Ids()
+engine.validate(spec, ifc)
+
+# 4. 결과 보고서 생성 (PDF/HTML)
+result = reporter.Reporter(engine)
+result.to_html("mqa_report.html")
+```
+
 ## 2026-06-05 IFC 자동검증 SaaS 시장 및 Model Quality Auditor 기회 보강
 - Source: 국토부 BIM 납품 자동검증 동향, buildingSMART Korea, 한국BIM평가원, 학술자료
 - Tags: delivery-quality,ifc-validation,ids,model-quality-auditor,saas,2026

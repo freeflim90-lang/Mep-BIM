@@ -1,5 +1,47 @@
 # Revit_Addin 지식 베이스
 
+## 2026-06-05 Revit 2026 MEP 신기능 및 API 업데이트 (심화 보강)
+- Source: Autodesk Revit 2026 공식 릴리즈노트(2025.04.02), BIM Pure Blog, piaxis.ai
+- Tags: revit-2026,mep-features,api,hvac-zone,fabrication,gpu,2026
+
+**Revit 2026 MEP 핵심 신기능 (2025년 4월 릴리즈):**
+```
+1. HVAC Zone 통합 개선:
+   - HVAC Zone + System Zone → 통합 Systems Zone
+   - 스케치 또는 공간 기반 구역 정의 가능
+   - 확장된 속성·스케줄·색채 채우기 지원
+   - BIM CC 개발 기회: 공조 구역 자동 생성 Add-in
+
+2. 전기설비 개선:
+   - AWG → 케이블 타입·케이블 크기로 변경
+   - 도체 상세 정보 추가 (전압강하 제거)
+   - BIM CC 전기 모듈에 반영 필요
+
+3. MEP 제작(Fabrication) 성능:
+   - 구성 리로드 시간 70% 개선
+   - MEP Content Editor에 커넥터 미리보기 추가
+
+4. GPU 가속 (Tech Preview):
+   - 대형 3D 모델에서 4~5배 성능 향상
+   - 복잡한 MEP 모델 뷰 탐색 속도 대폭 개선
+
+5. API 강화 (자동화 기반):
+   - 파트 타입·배전 시스템 파라미터 태깅/스케줄 가능
+   - 메타데이터 접근 확장
+   - 이벤트 핸들링 안정성 향상 → 더 안정적인 Add-in
+```
+
+**Revit 2026 API 개발 주요 변경사항:**
+- `MEP Fabrication` API: 단계별 평면 패턴 편차 수정 → 수동 조정 필요 감소
+- Systems Zone 객체 모델: 새 Zone 생성 API 업데이트 필요
+- GPU 가속 Tech Preview: 대형 모델 뷰 조작 API 성능 개선
+- 태깅 API: Part Type·Distribution System 직접 태깅 가능
+
+**LUA BIM LABS BIM CC 개발 시 Revit 2026 고려사항:**
+- Systems Zone 통합: MEP 구역 자동 생성 기능에 신규 API 적용
+- 지원 버전: Revit 2023~2026 (PackageContents.xml 업데이트)
+- GPU 가속 활용: 대형 모델 MEP 분석 속도 향상 가능
+
 ## 2026-06-05 Autodesk App Store 수익화 및 한국 Add-in 생태계 최신 업데이트
 - Source: Autodesk App Store, 오토데스크 웨비나 자료, 크몽 Revit API 시장 동향
 - Tags: revit-api,autodesk-store,monetization,add-in-ecosystem,korea,2026
