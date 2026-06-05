@@ -375,3 +375,46 @@ def export_for_pathfinder(doc):
 ## 관련 파일
 - 관련: [[건물유형별_BIM적용기준]] · [[국가별_건설법규_기준비교]] · [[IFC_OpenBIM]] · [[BIM_납품검수]]
 - 참고: [[소방기계]] · [[건축]] · [[4D5D_BIM]] · [[Revit_Addin]] · [[Dynamo]]
+
+## 2026-06-06 공연장 리모델링·몰입형 전시 BIM 보강
+- Source: 인천 문화예술회관 리모델링 2025, 문화체육관광부 공연장 지원사업, 몰입형 전시 국내 확산 동향
+- Tags: performance-hall,immersive-exhibition,acoustics,remodeling,bim,2025,2026
+
+**한국 공연장 리모델링 BIM 수요 급증 (2025~2026):**
+- 배경: 1980~90년대 건설된 지방 문화예술회관 노후화 → 리모델링 러시
+- 사례: 인천 문화예술회관 대공연장 (2025) — 1,504석 → **1,310석** 리모델링 (좌석 배치·시야·음향 개선)
+- 리모델링 BIM 핵심 사항:
+  - 기존 구조 현황 BIM (포인트클라우드 → Revit) → 리모델링 설계 BIM
+  - 좌석 배치 최적화: C-value(시야) 재검토 → 새 좌석 Row/Section BIM 재설계
+  - 음향 성능 개선: 반사판·흡음재·측벽 마감 변경 → BIM LOD 400 상세
+
+**몰입형 전시(Immersive Exhibition) 공간 BIM 설계 신규 분야:**
+- 국내 확산: 팀랩, 클래식500, 빛의 벙커 계열 → 전국 주요 도시 몰입형 전시 공간 급증
+- 기존 공연장·창고·산업 건물 → 몰입형 전시 공간으로 용도 전환 BIM 수요
+- **설계 특수 요구사항:**
+  | 항목 | 내용 | BIM 파라미터 |
+  |------|------|------------|
+  | LED 미디어 벽/천장 | 대형 LED 패널 설치 → 고중량 天板 하중 | `LED_Panel_Load_kN_m2`, `Structural_Reinforce` |
+  | 고밀도 전력 | LED·프로젝터 전력 밀도 매우 높음 | `Power_Density_kW_m2` (일반의 10배+) |
+  | 암실 성능 | 외부광 차단 → 창문 없애거나 차광 | `Blackout_Level: Full/Partial` |
+  | 음향 몰입 | 다채널 사운드시스템 → 반사 제어 | `Acoustic_Mode: Immersive` |
+  | 관람 동선 | 오픈 플로어 → 군중 밀도 제어 | `Crowd_Zone_Capacity` |
+
+**공연장 음향 시뮬레이션 BIM 연동:**
+- 설계 단계: Revit BIM (실내 형상·마감재) → ODEON / CATT-Acoustic 연동
+- 주요 지표:
+  - RT60(잔향시간): 오케스트라 1.8~2.2초, 오페라 1.4~1.8초, 뮤지컬 1.2~1.5초
+  - C80(명료도): +/-5 dB 내 유지 목표
+- BIM 파라미터: `Room_RT60_sec`, `Surface_Absorption_Coefficient`, `Diffuser_Placement`
+
+**공연장 ZEB 의무화 적용 (2025~ 1,000m² 이상):**
+- 대형 공연장·문화회관: 1,000m² 이상 대부분 해당 → ZEB 5등급(민간) / 4등급(공공) 의무
+- 특수 고려사항: 공연 중 관중 발열(1인당 80W) + 대규모 조명 열부하 → 에너지 시뮬레이션 필수
+- BIM 에너지 파라미터: `Peak_Occupancy_Load_W_m2`, `Stage_Lighting_kW`, `Curtain_U_value`
+
+**LUA BIM LABS 공연장 BIM 수주 전략:**
+- 지방 문예회관 리모델링: 현황 BIM + 좌석·음향 개선 설계 BIM 패키지
+- 몰입형 전시 용도 전환: 기존 건물 구조 검토 BIM → 전력·냉방 재설계 MEP BIM
+- 문화체육관광부 공연장 대관료 지원사업 연계 → 지방 공연장 발주처 접촉
+
+관련: [[스포츠시설_경기장_BIM]] · [[건물유형별_BIM적용기준]] · [[소방기계]] · [[FM_자산관리]]
