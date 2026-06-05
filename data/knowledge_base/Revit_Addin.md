@@ -356,3 +356,57 @@ Autodesk 공식 Revit 2026 What's New와 APS 공식 블로그 기준으로 Add-i
 - 새로운 API 메서드와 성능 최적화 기능이 추가되었습니다, 특히 카본 분석과 MEP/구조 분석에 대한 새 기능들이 포함됩니다.
 - Autodesk Store 심사 통과를 위한 팁: Add-in의 호환성을 확인하고, 사용자 경험을 향상시키는 기능들을 강화하세요.
 - 관련: [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]] · [[빌드검증]]
+
+
+## Revit Add-in 최신 동향 및 개발 팁 (2026-06-06)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-06
+- Tags: revit,addin,API,update
+
+- Autodesk Revit 2025 API는 .NET 8 기반으로 개발되었으며, Add-in을 다시 빌드해야 합니다.
+- MacroLanguageType의 Enum 값은 지원되지 않으며, C#만 사용할 수 있습니다.
+- 새 API 메서드로 확장 가능한 저장 필터링 기능이 강화되었습니다.
+- 성능 최적화를 위해 코드 검토 시 복잡한 로직을 간소화하는 것이 중요합니다.
+- Autodesk Store에 등록하기 위해서는 Add-in의 호환성과 안전성을 철저히 검증해야 합니다.
+- 관련: [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]] · [[빌드검증]]
+
+## 2026-06-06 Revit 2027 핵심 신기능 긴급 보강 (2026-04-07 출시)
+- Source: Autodesk 공식 Revit 2027 What's New, goto.archi, interscale.com.au, Autodesk Help 2027
+- Tags: revit-2027,ai-assistant,mcp,forma-connected,carbon-parameters,accelerated-graphics,add-in,2026
+
+**Revit 2027 출시일: 2026년 4월 7일 (GA 정식 출시)**
+
+**① Autodesk Assistant in Revit (AI 어시스턴트 Tech Preview):**
+- Revit 내 AI 채팅 패널 탑재 → 자연어로 모델 데이터 질의·분석
+- 가능 작업: 뷰·스케줄 생성, 파라미터 편집, 공간 관리, 제품 내 가이드
+- 기반 기술: **MCP (Model Context Protocol)** 아키텍처 — Revit 모델을 외부 AI(Claude 등)에 컨텍스트로 제공하는 표준 프로토콜
+- 사용 예: "3층 공조기(AHU) 목록을 스케줄로 만들어줘" → Revit AI가 즉시 실행
+- LUA BIM LABS 시사점: MCP 기반 Revit API 연동 가능성 → LUA BIM LABS 챗봇이 Revit 모델 직접 읽기 중장기 로드맵 검토
+
+**② Revit → Forma 완전 통합 (Forma Connected Client):**
+- Revit 2027이 **첫 번째 Forma Connected Client** 로 지정 (Tech Preview)
+- Revit 구독에 포함: Forma Data Management Essentials + Forma Site Design + Forma Building Design + Forma Board
+- 워크플로우: 초기 부지 검토(Forma) → 상세 설계(Revit) → CDE(Forma Data Management) 끊김 없이 연결
+- 기존 ACC Docs/BIM 360과의 차이: 별도 플랫폼 전환 없이 Revit 내에서 Forma 데이터 직접 접근
+
+**③ 가속 그래픽 (Accelerated Graphics) 정식 지원:**
+- Revit 2026 Tech Preview → Revit 2027 프로덕션 기능으로 정식 전환
+- 성능 예시: 300프레임 Walkthrough(전체 RVT 링크 로드) — 기존 3분 18초 → **38초** (약 5.2배 빠름)
+- Add-in 영향: 가속 그래픽 모드에서 커스텀 뷰 렌더링 API 동작 검증 필요
+
+**④ 탄소 파라미터 (Carbon Parameters in Materials) — EC3 연동:**
+- 재료(Material) 편집 창에 **Carbon 탭** 신설 → Physical·Thermal 탭과 동급
+- EC3(Embodied Carbon in Construction Calculator) 데이터베이스와 연동 → A1~A3 탄소 발자국 비율 직접 입력
+- LUA BIM LABS 기회: EC3 탄소 파라미터 자동 입력 Add-in 개발 가능 → G-SEED·LCA 보고 자동화
+
+**⑤ 기타 주요 개선:**
+- **Rule-based Numbering**: 규칙 기반 자동 번호 부여 → 수동 번호 변경 사이클 제거
+- **Issues for Revit 통합**: Revit 내에서 이슈 생성·확인·해소 가능 → Forma Data Management와 실시간 동기화
+
+**Revit 2027 Add-in 개발 체크리스트:**
+- [ ] Revit 2027 API 변경사항 공식 문서 검토 (Autodesk Revit 2027 Developer Guide)
+- [ ] Accelerated Graphics 모드에서 커스텀 렌더링 Add-in 동작 테스트 필수
+- [ ] MCP 기반 AI 어시스턴트와 충돌 가능성 검토 (동일 명령 채널 사용 여부)
+- [ ] Carbon Parameters EC3 연동 API 활용 가능성 검토 → LCA 자동화 Add-in 개발 후보
+- [ ] Forma Connected Client 환경에서 기존 Add-in 호환성 스모크 테스트 수행
+
+관련: [[ACC_BIM360]] · [[IFC_OpenBIM]] · [[BIM_납품검수]] · [[패시브하우스_PHIKO]] · [[4D5D_BIM]]

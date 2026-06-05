@@ -389,3 +389,44 @@ Cold Aisle / Hot Aisle 격리 BIM 체계:
 ---
 
 - 관련: [[건물유형별_BIM적용기준]] · [[국가별_건설법규_기준비교]] · [[IFC_OpenBIM]] · [[OpenBIM_프로그램연동]] · [[BIM_납품검수]] · [[해외건설기업_동향분석]]
+
+## 2026-06-06 AI 데이터센터 100kW+ 랙 밀도·ASHRAE 90.4·모듈형 IDC 긴급 보강
+- Source: Ramboll Data Center Insights, Data Center Knowledge 2026 Trends, ASHRAE 90.4, KVRM Engineering, Introl Blog 2026
+- Tags: datacenter,ai-datacenter,100kw-rack,ashrae-90-4,mlc,modular,korea-idc,2026
+
+**AI 데이터센터 100kW+ 랙 밀도 — 새로운 설계 기준 (2026):**
+- NVIDIA H100/H200 GPU 서버 랙 1개: **60~80kW** (기존 IT 서버 평균 8~10kW의 8~10배)
+- DGX H100 Pod (랙 2개 구성): **120kW** — 단일 랙 60kW 초과
+- 2026년 신규 AI IDC 표준: **50kW~100kW+/랙** → DLC(직접 액체 냉각) 필수
+- 공랭 한계: 30kW/랙 이상에서 PUE 급증 → 공랭 방식으로는 AI 워크로드 불가
+- 운영 의미: 기존 DC BIM의 랙 파라미터 `kW_per_Rack`을 AI 전환 계획에서 10~15배로 재설정해야 함
+
+**ASHRAE 90.4 데이터센터 에너지 기준 (MLC·ELC 개념):**
+| 지표 | 내용 | BIM 파라미터 |
+|------|------|------------|
+| MLC (Mechanical Load Component) | 냉각 시스템 에너지 효율 지표 — 기후대별 최대값 제한 | CoolingSystem_MLC |
+| ELC (Electrical Loss Component) | UPS·배전 시스템 손실 지표 | PowerSystem_ELC |
+| PUE vs MLC+ELC | PUE는 단일 값, ASHRAE 90.4는 MLC+ELC 분리 평가 → 설계 단계 BIM 파라미터로 분리 관리 필요 | - |
+- ASHRAE 90.4 요구: 8,760시간 기상 데이터 기반 이코노마이저 효과 시뮬레이션 (EnergyPlus 연동)
+- 한국 적용: 국내 IDC는 PUE 규제만 있으나, 글로벌 발주처(Azure·AWS·Google) 요구 시 ASHRAE 90.4 준수 증명 필요
+
+**모듈형 데이터센터 (MDC) 설계 급부상 (2026):**
+- AI IDC 수요 급증 → 12개월 내 구축 압박 → 전통적 현장 시공(18~24개월) 불가
+- 컨테이너형·프리패브 MDC: 공장 제작 후 현장 연결 → BIM 설계 시 모듈 단위 IFC 블록으로 설계
+- 한국 시장: 건설사들이 주택 침체 이후 IDC 대안 시장으로 전환 중 (데이터센터 신규 착공 급증)
+- LUA BIM LABS 기회: MDC 모듈 BIM 패밀리 라이브러리 → 빠른 레이아웃 변경·물량 산출
+
+**2026 한국 AI 데이터센터 시장 동향:**
+- AI 인프라 수요로 한국이 글로벌 IDC 투자처로 급부상 (SK ecoplant, KT, LG CNS 등 대규모 투자)
+- 건설업계: 주택 시장 침체 → IDC·물류센터로 사업 전환 가속
+- HVAC KOREA 2026 전시: AI 데이터센터 냉각·탄소중립 기술 집중 전시
+- BIM 수요: AI IDC 복잡한 MEP 시스템 → BIM 없이 간섭 해소 불가 → BIM 용역 단가 상승 기대
+
+**AI IDC BIM 설계 시 즉시 적용 체크리스트 (100kW+ 랙):**
+- [ ] 랙 파워 밀도 파라미터를 기존 일반 IDC(10kW)에서 AI 랙(60~120kW)으로 재설정
+- [ ] 냉각 방식 결정: 30kW 이하 공랭, 30~60kW DLC 권장, 60kW+ 침지냉각 또는 DLC 필수
+- [ ] ASHRAE 90.4 MLC/ELC 파라미터를 BIM Pset에 추가
+- [ ] MDC(모듈형) 채택 시 모듈 경계 IFC Block 단위 설계, 모듈 간 연결 MEP 인터페이스 정의
+- [ ] DLC 배관 매니폴드 LOD 350 상세 — AI 랙 누수 사고 예방
+
+관련: [[건물유형별_BIM적용기준]] · [[FM_자산관리]] · [[공조덕트]] · [[설비장비]] · [[BIM_시장_규모분석]]
