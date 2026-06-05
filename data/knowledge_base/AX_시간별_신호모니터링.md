@@ -3,6 +3,24 @@
 AX 기업 성장을 위해 건설, 설계, 시공, BIM, AI 관련 시간별 신호를 가볍게 기록한다.
 깊은 판단은 일일 큐레이션과 주간 AX 전략 리뷰에서 수행한다.
 
+## 2026-06-05 AX 신호모니터링 운영 기준 업데이트
+- Source: LUA BIM LABS AX 전략 리뷰(W23), 내부 성장 펄스
+- Tags: ax,signal-monitoring,construction-ai,trend,2026
+
+**AX 시간별 신호 분류 기준 (2026 업데이트):**
+| 신호 유형 | 설명 | 다음 액션 |
+|---------|------|---------|
+| 고신호 (즉시) | BIM 의무화 확대·AX 바우처 공고 | 당일 전략 반영 |
+| 중신호 (주간) | 해외 BIM 트렌드·기술 발표 | 주간 AX 리뷰에서 판단 |
+| 저신호 (관찰) | 일반 건설 뉴스·참고 자료 | Watch 유지 |
+
+**2026-06-05 기준 주요 AX 신호 현황:**
+- 국내 건설 AI 전환 시장 급성장 (경기도 AI 도입 추진)
+- buildingSMART openBIM Hackathon Porto 2026 (글로벌 협업 기회)
+- Autodesk MaintainX 인수($3.6B): BIM+FM 통합 가속
+- AX 원스톱 바우처 지원사업 공고 (13억원 지원)
+- DL이앤씨 MEP BIM 완전 자동화 목표 (2026) → MEP BIM 수요 증가
+
 
 ## 2026-05-28 09:54 AX 시간별 고신호
 - Source: `docs/industry_intelligence/hourly/2026-05-28/0954_AX_SIGNAL_MONITOR.md`
