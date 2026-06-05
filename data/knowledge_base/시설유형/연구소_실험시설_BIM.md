@@ -1,5 +1,32 @@
 # 연구소·실험시설 BIM 적용 기준 지식 베이스
 
+## 2026-06-05 반도체 클린룸 BIM AR 자동화 최신 사례 심화 보강
+- Source: 기계설비신문 ROUTi-AR, BIM구인동향(반도체·플랜트 수요), 캐드앤그래픽스 MEP AR 전망
+- Tags: semiconductor,cleanroom,ar-bim,routing,mep-automation,plant,2026
+
+**반도체 클린룸 BIM 자동화 최신 트렌드 (2025~2026):**
+```
+ROUTi-AR (SLZ 개발):
+- 반도체 플랜트 Hook-up 공정 AR 자동화
+- 클린룸 내 설비·MEP 경로 자동 생성
+- BIM + AR + AI 통합 → 공기 단축 수개월 가능
+- 현재: 15% 수동 작업 잔존 → 2026년 완전 자동화 목표
+
+BIM+MEP 반도체 시장 수요:
+- 전문 BIM 인력: 반도체·플랜트·클린룸 특화
+- 채용 집중: E3D, SP3D, Revit MEP 3D 모델링
+- 배관·덕트 계통 3D 모델링 → 2D 도면 자동 생성
+```
+
+**반도체 클린룸 BIM MEP 특화 요건 (추가):**
+| 항목 | 기준 | BIM 적용 |
+|------|------|---------|
+| Hook-up 도면 | 배관 연결도 자동 생성 | ROUTi-AR 등 활용 |
+| 공정 배관 | P&ID → 3D BIM 변환 | SP3D/PDMS 연동 |
+| 클린룸 경계 | ISO 등급별 압력 차이 | 에어 록·에어 샤워 BIM |
+| 특수가스 | H₂·NH₃·SiH₄ 배관 | 위험 구역 별도 표시 |
+| UPW (초순수) | 배관 재질·전기저항 | 스테인리스 EP 배관 |
+
 ## 2026-06-05 연구소 BIM AI 즉시 답변 패턴 보강
 - Source: 연구실 안전법, 클린룸 설계 기준(ISO 14644), 실험실 MEP 실무
 - Tags: laboratory,cleanroom,fume-hood,special-gas,bim,mep,2026
