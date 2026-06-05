@@ -1,5 +1,42 @@
 # Dynamo 지식 베이스
 
+## 2026-06-05 Dynamo 2026 최신 자동화 도구 비교 및 AI 코딩 트렌드 심화 보강
+- Source: piaxis.ai BIM Automation Tools 2026, studiokrew.com Dynamo vs API 비교, BIM Pure Blog
+- Tags: dynamo,python,ai-coding,vibe-coding,mcp,revit-automation,2026
+
+**2026년 Revit BIM 자동화 도구 비교 (AEC 전문가 순위):**
+| 도구 | 특징 | 적합 용도 |
+|------|------|---------|
+| Dynamo | 비주얼 프로그래밍, 진입 장벽 낮음 | 반복 모델링, 파라미터 자동화 |
+| pyRevit | Python 기반, 커뮤니티 활발 | 커스텀 도구, 스크립트 공유 |
+| C# Revit API | 최고 성능, 상용 Add-in | BIM CC 등 상용 제품 |
+| APS (Autodesk Platform Services) | 클라우드 기반, RESTful | 웹 연동·대시보드 |
+| AI (ChatGPT+MCP) | 대화형 코드 생성 | 빠른 프로토타입, Dynamo 생성 |
+
+**2026 Vibe Coding (AI 기반 BIM 자동화):**
+```
+Vibe Coding = AI(ChatGPT/Claude)와 대화하며 Dynamo/Python 코드 생성
+2026년 주목받는 이유:
+- "LED 조명 설치 자동화해줘" → AI가 Dynamo 스크립트 즉시 생성
+- Revit MCP(Model Context Protocol) 연동 → AI가 Revit 직접 조작
+- 진입 장벽 획기적 감소 → 비개발자도 BIM 자동화 가능
+```
+
+**Dynamo vs Python API 선택 기준:**
+```
+Dynamo 적합:
+- 시각적으로 흐름을 보고 싶을 때
+- 비개발자가 유지보수해야 할 때
+- 간단한 반복 작업 (좌표 배치, 파라미터 입력)
+
+Python/C# API 적합:
+- 복잡한 로직·조건 분기
+- 상용 제품(App Store) 개발
+- 성능이 중요한 대용량 처리
+- LUA BIM LABS BIM CC: C# API (상용 제품)
+- LUA BIM LABS 업무 자동화: Python + Dynamo
+```
+
 ## 2026-06-05 Dynamo AI+MCP 자동화 및 MEP 배치 최신 사례 보강
 - Source: 비아이엠팩토리(businesskorea), DL이앤씨 능동형 BIM, AIBIM 연구단, 기계설비신문
 - Tags: dynamo,ai-bim,mcp,python,mep-automation,pipe-routing,2026
