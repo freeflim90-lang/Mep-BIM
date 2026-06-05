@@ -1,5 +1,31 @@
 # 최고전략 (CSO) 지식 베이스
 
+## 2026-06-05 CSO 2026 전략 방향 업데이트
+- Source: LUA BIM LABS AX 전략 리뷰, BIM 시장 분석, 정부 AX 정책
+- Tags: cso,strategy,product-portfolio,ax,2026
+
+**CSO 2026 전략 포트폴리오:**
+| 상품/서비스 | 단계 | 수익 유형 | 전략적 위치 |
+|-----------|------|---------|-----------|
+| MEP BIM Tutor (Starter) | 운영 중 | 월 구독 | 교두보·리드 확보 |
+| BIM Command Center | App Store 제출 준비 | 구독+라이선스 | 주력 제품 |
+| Model Quality Auditor | IDS 기능 개발 중 | SaaS 구독 | 미래 주력 |
+| BIM 납품 컨설팅 | 요청 시 수행 | 프로젝트 기반 | 수익·레퍼런스 |
+| AX 바우처 R&D | 신청 준비 중 | 정부 지원 | 자금 확보 |
+
+**CSO 전략 의사결정 프레임워크:**
+```
+시장 신호 수신 → AX 전략 리뷰(주간) → 승격 판단:
+- 신뢰도 높음 + 긴급도 높음 + 내부 적합성 높음 → 즉시 착수
+- 신뢰도 중간 + 긴급도 보통 → 파일럿 후보 등록
+- 신뢰도 낮음 → Watch 유지 (과도한 투자 금지)
+```
+
+**2026~2027 CSO 전략 방향:**
+- 2026 핵심: BIM 의무화 수혜 → 교육+도구 통합 패키지
+- 2027 핵심: MQA SaaS → 납품 자동검증 표준화
+- 장기: 글로벌 시장 (영어 버전 + 해외 파트너)
+
 ## 2026-06-04 BF 품질진단 파일럿 전략
 - Source: `docs/training_curriculum/team_distribution/samples/2026-06-04_CEO_CSO_BF_PRODUCTIZATION_DECISION_MEMO_SAMPLE.md`
 - Tags: cso,strategy,BF,portfolio,productization,KST

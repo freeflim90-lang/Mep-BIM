@@ -1,5 +1,38 @@
 # BIM_템플릿기획관 지식 베이스
 
+## 2026-06-05 BIM 템플릿 표준화 AI 즉시 답변 패턴 보강
+- Source: Revit 공식 템플릿 가이드, 국내 발주처 BIM 지침, LUA BIM LABS 내부 표준
+- Tags: bim-template,shared-parameters,naming,view-filter,2026
+
+**AI 즉시 답변 패턴 — "BIM 프로젝트 시작할 때 템플릿은 어떻게 구성하나요?"**
+```
+Revit 프로젝트 템플릿(.rte) 핵심 구성:
+1. 공유 파라미터 파일: 프로젝트 전체 공통 파라미터 정의
+   - COBie 파라미터, LOD 단계, 납품 상태 등
+2. 뷰 템플릿: 공종별(건축·구조·MEP) 표준 뷰 설정
+   - 선 두께, 색상, 표시 기준 사전 정의
+3. 필터: 공종별·계통별 색상 필터 (냉수=파랑, 온수=빨강)
+4. 패밀리: 회사 표준 패밀리 프리로드
+5. 명명 규칙: [프로젝트코드]-[공종]-[층]-[버전] 형식
+6. 좌표계: 공통 기준점과 측지 좌표 설정
+```
+
+**국내 공공 BIM 템플릿 필수 사항:**
+| 항목 | 기준 | 비고 |
+|------|------|------|
+| 파일 명명 | [프로젝트코드]-[공종]-[LOD] | 발주처 별도 기준 우선 |
+| 단위계 | 미터법(mm) | 공공 기준 |
+| 좌표계 | WGS84 또는 UTM-K | 발주처 협의 |
+| IFC 버전 | IFC 4 또는 IFC 2x3 TC1 | BEP에 명시 |
+| 공유 파라미터 | buildingSMART 권고 + 발주처 요건 | 프로젝트별 |
+
+**LUA BIM LABS Add-in 템플릿 자동화 (BIM CC 연계):**
+```csharp
+// 표준 뷰 필터 자동 생성
+FilterElement fe = FilterElement.Create(doc, "MEP_냉수", 
+    new List<ElementId> { new ElementId(BuiltInCategory.OST_PipeCurves) });
+// 냉수 파라미터 필터 → 파란색 오버라이드 자동 적용
+```
 
 ## BIM 템플릿 기획 기준 (2026-05-19 09:16:50)
 - Source: LUA BIM LABS curated baseline, Autodesk official docs checked 2026-05-19

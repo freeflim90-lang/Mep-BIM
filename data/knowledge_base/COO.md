@@ -1,5 +1,28 @@
 # COO 지식 베이스
 
+## 2026-06-05 COO 운영 최우선 과제 2026 업데이트
+- Source: LUA BIM LABS 내부 운영 기준, 스마트건설 얼라이언스, 조직 성장 펄스
+- Tags: coo,operations,process,quality,2026
+
+**COO 2026 운영 핵심 과제:**
+| 과제 | 내용 | 완료 기준 |
+|------|------|---------|
+| 텔레그램 봇 안정화 | 24/7 무중단 운영, Conflict 방지 | 에러율 0.1% 미만 |
+| 지식베이스 품질 관리 | KST 태그 기반 신뢰도 관리 | 전체 KB KST01 분류 완료 |
+| LaunchAgent 스케줄 최적화 | 일간·주간 자동화 안정화 | 실패 없이 30일 운영 |
+| BIM CC 출시 지원 | App Store 제출 프로세스 | 2026 H1 제출 완료 |
+| 파트너사 온보딩 | 협력사 BIM 파이프라인 연동 | 3개사 연동 완료 |
+
+**운영 자동화 현황 (2026-06-05):**
+- 데일리: 뉴스 수집·KB 업데이트·Git 동기화 자동화
+- 주간: AX 전략 리뷰·마켓 트렌드 트래커 자동화
+- 실시간: 텔레그램 봇 Q&A 저장·지식 업데이트
+
+**COO 품질 관리 기준:**
+- 모든 KB 항목: KST01(공식)/KST03(주의)/KST04(자동) 분류
+- CS 답변: 결론→근거→범위→주의→다음액션 5단계 구조
+- 납품 검수: BF 적합 판정은 PM/RFI/인증기관 확인 후 확정
+
 ## 2026-06-04 BF RFI 회의 안건 전환 기준
 - Source: `docs/training_curriculum/team_distribution/samples/2026-06-04_PM_BF_RFI_MEETING_AGENDA_SAMPLE.md`
 - Tags: operations,PM,BF,RFI,meeting,KST
