@@ -169,4 +169,62 @@ IFC 기반 프로그램 연동에서 반복적으로 발생하는 실사례 5가
 
 **실패 5 — 레벨 높이 단위 혼동(mm vs m)**: 일부 소프트웨어(특히 구형 IFC 뷰어, ETABS IFC 임포트)는 IFC 파일의 길이 단위를 mm로 읽어야 하는데 m로 해석하거나 그 반대 경우가 발생하여 건물 층고가 1000배 늘어나거나 0.001배로 축소되는 오류가 생긴다. 해결: IFC 파일 내 `IfcSIUnit` 선언을 ifcopenshell로 확인 — `ifc.by_type("IfcSIUnit")`에서 `.Name == "METRE"` 또는 `.Prefix == "MILLI"` 조합을 점검. Revit IFC Export는 기본적으로 mm(MILLI + METRE)를 사용하므로 수신 소프트웨어의 단위 설정과 맞춰야 한다.
 
-- 관련: [[IFC_OpenBIM]] · [[BIM_지침서]] · [[Revit_Addin]] · [[Navisworks_Addin]] · [[ACC_BIM360]] · [[BIM_납품검수]]
+## 2026-06-06 IfcOpenShell 0.8.x Python 자동화 및 Speckle OpenBIM 생태계 보강
+- Source: IfcOpenShell 공식 문서 0.8.5, Speckle 공식 사이트, OSArch 커뮤니티
+- Tags: ifcopenshell,speckle,python-ifc,blenderbim,openBIM-ecosystem,2025,2026
+
+**IfcOpenShell 0.8.5 — 현재 안정 버전 핵심 정보:**
+- 지원 IFC 버전: IFC2x3 TC1, IFC4 Add2 TC1, IFC4x1, IFC4x2, **IFC4x3 Add2** (완전 파싱)
+- pip 설치: `pip install ifcopenshell` (Python 3.8~3.13)
+- 실무 자주 쓰는 Python API 패턴:
+  ```python
+  import ifcopenshell
+  import ifcopenshell.util.element as ele
+  
+  ifc = ifcopenshell.open("model.ifc")
+  
+  # 특정 타입 요소 조회
+  pipes = ifc.by_type("IfcPipeSegment")
+  
+  # PSet 속성 읽기 (대소문자 문제 방지용 — 실제 키 확인)
+  for pipe in pipes:
+      psets = ele.get_psets(pipe)
+      print(list(psets.keys()))  # 실제 PSet 이름 목록 출력
+  
+  # GUID 안정화 (FM 연동용 매핑 테이블 생성)
+  guid_map = {e.GlobalId: e.Name for e in pipes}
+  ifc.write("model_updated.ifc")
+  ```
+- 0.8 추가 포맷 지원:
+  | 포맷 | 용도 |
+  |------|------|
+  | IFCSQL | IFC 데이터를 SQL 쿼리로 조회 (대용량 모델) |
+  | IFCHDF5 | 고성능 바이너리 IFC (압축·고속 읽기) |
+  | bcf 모듈 | BCF 3.0 파일 Python API 내장 |
+  | BlenderBIM | Blender → IFC 기반 BIM 저작 연동 |
+
+**Speckle — AEC 오픈소스 데이터 허브 (2025~2026):**
+- 정의: Revit·Rhino·Grasshopper·AutoCAD·Blender·Excel 간 실시간 BIM 데이터 교환 플랫폼
+- 특징: 오픈소스(자체 서버 또는 Speckle 클라우드), Git 방식 버전 관리, 브라우저 Web Viewer
+- LUA BIM LABS 활용 시나리오:
+  ```
+  Revit 2027 (Speckle Connector 설치)
+    → Speckle 서버 (클라우드 or NAS 호스팅)
+    → Grasshopper (MEP 하중 계산 자동화)
+    → Python (ifcopenshell IFC 처리·검증)
+    → 납품 IFC 자동 생성 → ACC 업로드
+  ```
+
+**LUA BIM LABS OpenBIM 자동화 파이프라인 권장 스택 (2026):**
+```
+Revit 2027 BIM 모델
+  → IFC 내보내기 (Revit 내장 또는 Speckle Connector)
+  → ifcopenshell 0.8.x 스크립트:
+      - IDS 검증 (ifctester)
+      - PSet 누락 자동 보완
+      - GUID 안정화 (FM 연동용)
+  → BCF 3.0 이슈 파일 자동 생성
+  → ACC BIM 360 업로드 → Solibri 검증 → 납품 승인
+```
+
+- 관련: [[IFC_OpenBIM]] · [[BIM_지침서]] · [[Revit_Addin]] · [[Navisworks_Addin]] · [[ACC_BIM360]] · [[BIM_납품검수]] · [[Dynamo]]
