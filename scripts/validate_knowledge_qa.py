@@ -107,6 +107,18 @@ QA_DATASET: list[tuple[str, str, list[str]]] = [
     # ── Revit 패밀리
     ("MEP Revit 패밀리 커넥터 설정 방법",
      "Revit_Family제작", ["커넥터", "connector", "패밀리"]),
+
+    # ── 구조 BIM (IFC / 해석 연동)
+    ("ETABS Revit 구조 BIM 연동 CSI XRevit 워크플로우",
+     "구조", ["etabs", "xrevit", "단면"]),
+    ("IFC IfcReinforcingBar 철근 BIM LOD 300 400",
+     "구조", ["ifcreinforcingbar", "lod", "철근"]),
+
+    # ── 공조덕트 (풍량 산출 / 방화댐퍼 / IFC)
+    ("공조 덕트 풍량 산출 환기횟수 사무실 병원",
+     "공조덕트", ["환기횟수", "사무실", "m³"]),
+    ("방화댐퍼 퓨즈온도 설치기준 BIM 파라미터",
+     "공조덕트", ["firedamper", "퓨즈", "72"]),
 ]
 
 
