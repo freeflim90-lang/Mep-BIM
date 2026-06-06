@@ -228,3 +228,84 @@ Revit 2027 BIM 모델
 ```
 
 - 관련: [[IFC_OpenBIM]] · [[BIM_지침서]] · [[Revit_Addin]] · [[Navisworks_Addin]] · [[ACC_BIM360]] · [[BIM_납품검수]] · [[Dynamo]]
+
+## 2026-06-06 Scan-to-BIM·포인트클라우드 현실 캡처 지식 보강
+- Source: thefuture3d.com Scan-to-BIM Workflow 2026, Leica Geosystems CloudWorx, iscano.com Scan-to-BIM Guide, lidarasbuiltdrawings.com 2026
+- Tags: scan-to-bim,point-cloud,lidar,reality-capture,leica,faro,matterport,revit,2026
+
+**Scan-to-BIM 개념 및 워크플로우:**
+- 정의: 현장 3D 레이저 스캔(포인트클라우드) 데이터를 BIM 모델로 변환하는 프로세스
+- 핵심 활용:
+  - 기존 건물 리모델링·증축 시 실측 BIM 생성 (도면 없는 노후 건물)
+  - 준공 as-built 검증: 시공 오차 감지 (설계 BIM vs 실측 스캔 비교)
+  - FM BIM 이관: 현장 실측 LOD 500 수준 모델 생성
+  - 역사적 건물·문화재 BIM 디지털화
+
+**Scan-to-BIM 프로세스 단계:**
+```
+1. 현장 스캔 (LiDAR 레이저 스캐너)
+   → 1~3일 (20,000~50,000 ㎡ 기준)
+   
+2. 포인트클라우드 처리 & 등록 (Registration)
+   → 2~5일 (다중 스캔 병합, 노이즈 제거)
+   
+3. 포인트클라우드 파일 변환
+   → 출력 포맷: .e57, .rcp (Autodesk), .las, .obj
+   
+4. Revit BIM 모델링 (포인트클라우드 기반)
+   → 4~16주 (LOD에 따라 상이)
+   → Revit Insert > Point Cloud > .rcp 또는 .e57 링크
+   → 포인트클라우드를 참조 레이어로 표시하며 모델 작성
+   
+5. 품질 검증 (스캔 vs BIM 비교)
+   → 오차 허용 기준: LOD 300 ±5mm, LOD 400 ±2mm
+```
+
+**주요 3D 스캐너 비교 (2026 기준):**
+| 스캐너 | 제조사 | 측량 속도 | 최대 범위 | 정확도 | 적합 용도 |
+|--------|--------|---------|---------|--------|---------|
+| **RTC360** | Leica | 2M pts/초 | 130m | ±1.9mm | 실내·중소 건물, 빠른 촬영 |
+| **Focus Premium** | FARO | 2M pts/초 | 350m | ±1mm | 대형 시설·외벽·산업시설 |
+| **BLK360** | Leica | 360K pts/초 | 60m | ±4mm | 소규모·간편 실내 |
+| **Pro3 LiDAR** | Matterport | - | 20m | ±20mm | 빠른 VR 투어, LOD 200급 |
+
+- **Matterport 주의**: 정확도 ±20mm → AEC 시공 급의 ±2mm 기준 미달. 설계·납품 BIM에 부적합, 마케팅·VR 투어 용도에 적합
+- **국내 권장**: 레이카 RTC360(실내 사무소·병원·리모델링) 또는 FARO Focus Premium(공장·인프라)
+
+**Revit 포인트클라우드 연동 방법:**
+```
+[Autodesk RCP 방식 (권장)]
+스캐너 데이터 → Autodesk ReCap → .rcp 파일
+→ Revit > Insert > Link Point Cloud → .rcp 선택
+→ 포인트클라우드 가시성 설정: V/G > Point Clouds
+
+[E57 범용 방식]
+스캐너 데이터 → .e57 파일
+→ Autodesk ReCap으로 변환 (.rcp) 후 Revit 링크
+또는 직접 .e57 링크 (Revit 2022+)
+
+[Leica CloudWorx for Revit 플러그인]
+Leica 스캐너 전용 플러그인 → 포인트클라우드 단면 슬라이싱, 
+거리 측정, 모델-스캔 편차 체크 내장 기능 제공
+```
+
+**Scan-to-BIM 납품 LOD 기준 (2026 실무):**
+| LOD | 내용 | 스캔 활용 | 예상 납품 기간 |
+|-----|------|---------|------------|
+| LOD 200 | 개략 형상·위치 | Matterport/간편 스캔 | 1~2주 |
+| LOD 300 | 치수 정확 형상 | RTC360/Focus | 4~8주 |
+| LOD 400 | 제작 가능 상세 | 전문 스캐너 + 수동 보완 | 8~16주 |
+| LOD 500 | As-built 최종 | 풀 스캔 + 현장 확인 | 12~20주 |
+
+**국내 Scan-to-BIM 적용 현황 (2026):**
+- 노후 공공건물 리모델링: 1970~1990년대 건물 도면 부재 → 스캔 BIM 필수
+- 준공 검측 자동화: 설계 BIM vs 준공 스캔 자동 비교 → 시공 오차 리포트
+- 플랜트·반도체 시설: 정밀 설비 배치 스캔 → 간섭 검토 및 증설 계획 BIM
+- 역사문화재 디지털화: 국립문화재연구원 주도 3D 레이저 스캔 아카이브
+
+**LUA BIM LABS Scan-to-BIM 기회:**
+- Add-in 기능 후보: 포인트클라우드 스냅(Point Cloud Snap) → BIM 모델 정합 자동화
+- 서비스 후보: 리모델링 전문 Scan-to-BIM LOD 300 패키지 (RTC360 렌탈 + 모델링 포함)
+- MQA 연동: 준공 스캔 vs BIM 자동 편차 검사 → Clash보고서 자동 생성
+
+관련: [[IFC_OpenBIM]] · [[BIM_납품검수]] · [[FM_자산관리]] · [[Revit_Addin]] · [[Navisworks_Addin]] · [[시설유형]]
