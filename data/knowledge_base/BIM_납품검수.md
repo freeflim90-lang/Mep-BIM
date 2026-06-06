@@ -496,3 +496,105 @@ BIM 납품검수에서 KDS/KCS는 EIR, BEP, 과업지시서, 특기시방서의 
 ```
 
 - 관련: [[IFC_OpenBIM]] · [[EIRBEP_심사원]] · [[QA_테스터]] · [[ACC_BIM360]] · [[FM_자산관리]] · [[국가별_건설법규_기준비교]]
+
+
+## 2026-06-06 IFC IfcPropertySet 명명 규칙·BIM 검수 오류코드·자동검수 항목 전문 지식
+- Source: buildingSMART IFC4 공식 스펙 (www.buildingsmart.org), 국토교통부 BIM 시행지침 공종별 납품 기준, LUA BIM LABS MQA(Model Quality Auditor) 운영 경험
+- Tags: IfcPropertySet,Pset,오류코드,검수항목,IFC4,납품검수,모델품질,MQA,2026
+
+**IfcPropertySet (Pset) 명명 규칙 — AI 즉시 답변 패턴:**
+```
+IFC 표준 Pset 명명 형식:
+  Pset_[엔티티명][설명]   (공식 빌딩스마트 정의 Pset)
+  예: Pset_WallCommon, Pset_DoorCommon, Pset_SpaceCommon
+
+사용자 정의(Custom) Pset 명명 형식:
+  [조직명/프로젝트명]_[도메인]_[내용]
+  예: LUA_MEP_FlowData, KR_Building_FireSafety, MOLIT_Structural_Grade
+
+국토교통부 BIM 시행지침 표준 Pset (한국 공공공사):
+  Pset_건물정보, Pset_공간정보, Pset_층정보        → 공통
+  Pset_구조부재, Pset_구조보강                    → 구조
+  Pset_배관계통, Pset_덕트계통, Pset_전기설비       → MEP
+  Pset_소방설비, Pset_통신설비                    → 특수설비
+```
+
+**BIM 납품검수 오류코드 체계 (LUA BIM LABS MQA 기준):**
+| 오류코드 | 분류 | 설명 | 심각도 |
+|---------|------|------|--------|
+| **E001** | 미배치 | 필수 공간(IfcSpace) 미생성 또는 층 할당 누락 | Critical |
+| **E002** | Pset 누락 | 필수 IfcPropertySet 미입력 (EIR 기준) | Critical |
+| **E003** | GUID 중복 | GlobalId 중복 (IFC 파일 내 uniqueness 위반) | Critical |
+| **E004** | 레벨 오류 | 객체가 해당 층(Level) 밖에 배치 | Major |
+| **E005** | 카테고리 불일치 | IFC 분류(IfcType)와 실제 형상 불일치 | Major |
+| **E006** | 파라미터 미입력 | LOD 기준 필수 파라미터 빈값 | Major |
+| **E007** | 간섭 미해소 | Clash Detective 결과 Hard Clash 잔존 | Major |
+| **E008** | 명명 규칙 위반 | 패밀리명/타입명이 프로젝트 기준 위반 | Minor |
+| **E009** | 좌표계 오류 | 공유 좌표(Shared Coordinates) 미적용 | Minor |
+| **E010** | 파일 형식 오류 | 지정 IFC 버전 외 파일 제출 | Minor |
+| **W001** | 경고: 중복 형상 | In-Place 패밀리 과다 사용 (성능 저하) | Warning |
+| **W002** | 경고: 링크 미정리 | 불필요한 Revit 링크 잔존 | Warning |
+
+**IDS(Information Delivery Specification) 검수 항목 표준 (2026 국내 적용):**
+```yaml
+# IDS 체크 예시 — 공조 IfcFlowTerminal
+applicability:
+  entity: IfcFlowTerminal
+  predefinedType: AIROUTLET
+
+requirements:
+  - property:
+      name: Pset_FlowTerminalAirTerminal.AirFlowRateRange
+      dataType: IfcVolumetricFlowRateMeasure
+      required: true
+  - property:
+      name: LUA_MEP_FlowData.DesignAirflow_CMH
+      dataType: IfcReal
+      required: true
+  - classification:
+      system: OmniClass
+      value: "23-33 17 11"  # Air Diffusers
+      required: true
+```
+
+**BIM 납품 검수 단계별 체크리스트 (공공공사 기준):**
+```
+1단계 — 파일 형식 검수 (제출 즉시):
+  □ IFC 버전 적합성 (EIR 지정 버전: IFC4 또는 IFC2x3)
+  □ 파일명 규칙 (프로젝트코드_공종_단계_버전.ifc)
+  □ 파일 크기 및 객체 수 합리성 (연면적 대비 이상치 확인)
+
+2단계 — 모델 완전성 검수 (자동화 가능):
+  □ E001: 공간 객체 층별 완비 여부
+  □ E002: EIR 요구 Pset 모든 객체 입력 여부
+  □ E003: GUID 중복 없음 (IFC 파서로 자동 확인)
+  □ E004: 층 할당 정확성
+
+3단계 — 공종 전문 검수 (도메인 지식 필요):
+  □ 공조: 풍량·정압 파라미터 적합성, 덕트 연결 완전성
+  □ 전기: 케이블트레이 규격, 분전반-부하 연결 구조
+  □ 소방: 스프링클러 살수반경, 감지기 이격 기준
+  □ 위생: 배수 기울기, 통기관 연결
+
+4단계 — 납품 패키지 검수:
+  □ BIM 실행계획서(BEP) vs 실제 모델 일치 여부
+  □ 간섭 보고서(BCF) 해소 이력 첨부
+  □ 물량 산출서(IFC Schedule)와 모델 정합
+```
+
+**MQA(Model Quality Auditor) 자동 검수 로직 핵심 (Revit API 기반):**
+```csharp
+// E002: 필수 Pset 누락 검사 (예: 공조 장비)
+var elements = new FilteredElementCollector(doc)
+    .OfCategory(BuiltInCategory.OST_MechanicalEquipment)
+    .WhereElementIsNotElementType();
+
+foreach (var el in elements)
+{
+    var param = el.LookupParameter("LUA_MEP_FlowData.DesignAirflow_CMH");
+    if (param == null || string.IsNullOrEmpty(param.AsString()))
+        errors.Add(new BimError("E002", el.Id, "필수 파라미터 미입력"));
+}
+```
+
+관련: [[IFC_OpenBIM]] · [[EIRBEP_심사원]] · [[QA_테스터]] · [[ACC_BIM360]] · [[FM_자산관리]] · [[Revit_Addin]] · [[국가별_건설법규_기준비교]]

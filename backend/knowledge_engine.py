@@ -225,28 +225,124 @@ def prioritize_agent_matches(matches: list[dict], agent: str) -> list[dict]:
 def infer_knowledge_agent_from_query(query: str) -> str:
     st = _st()
     lower_text = query.lower()
-    if any(keyword in lower_text for keyword in ["revit", "add-in", "addin", "애드인"]):
+
+    # ── 개발 도구 (최우선)
+    if any(keyword in lower_text for keyword in ["revit", "add-in", "addin", "애드인", ".net", "csproj", "transaction", "externalcommand"]):
         return "Revit_Addin"
     if any(keyword in lower_text for keyword in ["다이나모", "dynamo"]):
         return "Dynamo"
-    if any(keyword in lower_text for keyword in ["navisworks", "나비스웍스"]):
+    if any(keyword in lower_text for keyword in ["navisworks", "나비스웍스", "clash", "클래시", "timeliner"]):
         return "Navisworks_Addin"
+
+    # ── 도면 해석 (공종 구분 포함)
     if any(keyword in lower_text for keyword in ["도면", "계통도", "장비일람표", "부하계산서", "범례"]):
         if any(keyword in lower_text for keyword in ["cws", "cwr", "냉각수", "냉수", "온수", "냉매", "공조배관"]):
             return "공조배관"
         return "설비도면해석"
-    if any(keyword in lower_text for keyword in ["cws", "cwr", "chws", "chwr", "hws", "hwr", "냉각수", "냉수", "냉매"]):
+
+    # ── MEP 공조배관 (약어 우선)
+    if any(keyword in lower_text for keyword in ["cws", "cwr", "chws", "chwr", "hws", "hwr", "냉각수", "냉수", "냉매", "브라인", "글리콜"]):
         return "공조배관"
+
+    # ── BIM 납품·검수·품질
+    if any(keyword in lower_text for keyword in [
+        "납품검수", "납품 검수", "ids", "bcf", "품질검수", "bim 검수", "모델검수",
+        "ifcpropertyset", "pset", "오류코드", "검수항목", "모델 오류", "bim 품질",
+    ]):
+        return "BIM_납품검수"
+
+    # ── IFC / OpenBIM
+    if any(keyword in lower_text for keyword in [
+        "ifc", "openbim", "buildingsmart", "ifc5", "ifc4", "ifc 4.3",
+        "ifcspace", "ifczone", "ifcwall", "ifcbeam", "ifccolumn",
+    ]):
+        return "IFC_OpenBIM"
+
+    # ── Scan-to-BIM / 포인트클라우드
+    if any(keyword in lower_text for keyword in [
+        "scan-to-bim", "스캔", "포인트클라우드", "point cloud", "lidar", "라이다",
+        "leica", "faro", "rcp", "e57", "현실캡처", "reality capture",
+    ]):
+        return "OpenBIM_프로그램연동"
+
+    # ── BIM 견적·단가
+    if any(keyword in lower_text for keyword in [
+        "견적", "단가", "표준시장단가", "원가", "공사비", "mm 산출", "투입공수",
+        "물량산출", "5d bim", "5d", "cost", "비용산정",
+    ]):
+        return "BIM_프로젝트_견적산정"
+
+    # ── BIM 인력·파견·자격
+    if any(keyword in lower_text for keyword in [
+        "인력파견", "파견", "bim 전문가 자격", "자격증", "bim 운용전문가",
+        "iso 19650-5", "보안관리", "파견 계약", "외주 인력",
+    ]):
+        return "BIM_인력파견_기준.md".replace(".md", "")
+
+    # ── BIM 제안서
+    if any(keyword in lower_text for keyword in ["제안서", "bim 제안", "rir", "제안 작성"]):
+        return "BIM_제안서"
+
+    # ── BEP / 수행계획서
+    if any(keyword in lower_text for keyword in ["bep", "수행계획서", "eir", "oir", "air"]):
+        return "BEP_수행계획서"
+
+    # ── 4D/5D BIM
+    if any(keyword in lower_text for keyword in [
+        "4d bim", "4d", "공정시뮬레이션", "wbs", "primavera", "ms project", "공정표",
+    ]):
+        return "4D5D_BIM"
+
+    # ── FM / 디지털트윈
+    if any(keyword in lower_text for keyword in [
+        "디지털트윈", "digital twin", "fm bim", "자산관리", "tandem", "autodesk tandem",
+        "시설관리", "유지관리 bim", "cobie",
+    ]):
+        return "FM_자산관리"
+
+    # ── 패시브하우스 / 탄소
+    if any(keyword in lower_text for keyword in [
+        "패시브하우스", "phiko", "내재탄소", "탄소발자국", "lca", "zeb", "제로에너지",
+    ]):
+        return "패시브하우스_PHIKO"
+
+    # ── Revit 패밀리 제작
+    if any(keyword in lower_text for keyword in [
+        "패밀리", "rfa", "family", "커넥터 설정", "공유 파라미터", "mep 패밀리",
+    ]):
+        return "Revit_Family제작"
+
+    # ── 시장·규모 (프로젝트 면적/연면적 포함)
+    if any(keyword in lower_text for keyword in [
+        "연면적", "바닥면적", "건축면적", "건물 면적", "시설 면적",
+        "공항 면적", "bim 시장", "시장규모", "의무화",
+    ]):
+        return "건축"
+
+    # ── BIM 시방서 / 지침서
+    if any(keyword in lower_text for keyword in ["시방서", "bim 지침", "bim 기준"]):
+        return "BIM_시방서"
+
+    # ── 엑셀 자동화
+    if any(keyword in lower_text for keyword in ["엑셀", "excel", "openpyxl", "xlsxwriter", "파이썬 자동화"]):
+        return "엑셀자동화"
+
+    # ── DISCIPLINE_KEYWORDS 순회 (공종 키워드)
     for agent, keywords in st.DISCIPLINE_KEYWORDS.items():
         if any(keyword.lower() in lower_text for keyword in keywords):
             return agent
+
+    # ── agent명 직접 포함 여부
     for agent in st.KNOWLEDGE_AGENTS:
         if agent.lower() in lower_text:
             return agent
+
+    # ── 기타 명시적 도메인
     if any(keyword in lower_text for keyword in ["교육", "커리큘럼", "온보딩", "연차"]):
         return "교육컨설팅"
-    if any(keyword in lower_text for keyword in ["개발", "코드", "qwen", "api", "addin", "revit", "navisworks"]):
+    if any(keyword in lower_text for keyword in ["개발", "코드", "qwen", "api"]):
         return "프로그램개발"
+
     return "지식업데이트"
 
 
