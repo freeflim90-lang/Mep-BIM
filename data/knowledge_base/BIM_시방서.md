@@ -532,12 +532,84 @@ foreach (var elem in collector)
 - 관련: [[건축]] · [[설비장비]] · [[설계_지침서]] · [[시공_지침서]]
 
 
-## BIM 시방서 최신 기준 업데이트 (2026-06-06)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-06
-- Tags: BIM,specification,EIR,COBie,update
+## 2026-06-06 EIR 작성방법·발주처별 BIM 납품기준·BIM 과업지시서 전문 지식
+- Source: 국토교통부 건설산업 BIM 시행지침 발주자편(2022), LH공사 BIM 적용지침(2024), 한국도로공사 EX-BIM 가이드라인, 국가철도공단 철도 BIM 적용지침(2023)
+- Tags: BIM,EIR,specification,BIM과업지시서,발주자,LOD,납품기준,COBie,CDE,2026
 
-- 2025년부터 발주처는 BIM 프로젝트에서 EIR(Employer’s Information Requirement) 기반의 시방서 요구가 강화될 예정이다.
-- 발주처별 BIM 요구 수준은 각각 다를 수 있으며, 이를 정확히 이해하고 준수하는 것이 중요하다. 예를 들어, COBie(Coordinating Operating Building Information Exchange)는 건물 운영 및 유지보수에 필요한 데이터 표준으로, FM(Facility Management)과의 연동을 위해 필수적이다.
-- BIM 시방서(EIR) 작성 시에는 데이터의 디지털화와 정보 교류를 위한 명확한 요구사항이 포함되어야 하며, 이를 통해 BIM 프로젝트의 성공 가능성을 높일 수 있다.
-- COBie 스키마는 항만 등 다양한 분야에서 활용되며, 국제표준화 추구가 진행되고 있어 이에 맞춰 데이터 구조를 설계하는 것이 바람직하다.
-- 관련: [[건축]] · [[설비장비]] · [[설계_지침서]] · [[시공_지침서]]
+**EIR(발주자정보요구사항) 핵심 항목 체계:**
+```
+EIR 필수 포함 사항 (국토부 BIM 시행지침 발주자편 §3 기준):
+
+1. 프로젝트 목적 및 BIM 활용 목표
+   - BIM 사용 단계: 설계/시공/유지관리 중 적용 범위
+
+2. BIM 정보 요구 수준 (BIL: BIM Information Level)
+   - 기본설계: BIL20 (개략 형상 + 주요 파라미터)
+   - 실시설계: BIL30 (치수·파라미터 확정)
+   - 시공: BIL40 (제작·조립 수준)
+
+3. 제출 일정 (BIM 수행 마일스톤)
+   - 기본설계 BIM 제출 → 중간 검토 → 실시설계 BIM → 준공 BIM
+
+4. 성과품 형식 요건
+   - 원본 파일: .rvt, .nwd 등 네이티브 포맷
+   - 교환 파일: IFC 4.x (오픈BIM), PDF 2D 도면
+
+5. 공통데이터환경(CDE) 플랫폼 지정
+   - BIM 360 / ACC / ProjectWise / 발주처 자체 시스템
+
+6. 좌표계 및 측지계
+   - 한국: GRS80 타원체, TM 좌표계, 수준기면: 인천만
+
+7. BIM 품질관리 계획
+   - 발주처 BIM 검수 방법 (IDS 기반 자동 검수 또는 수동 검토)
+```
+
+**BIM 과업지시서 vs BEP vs EIR 관계:**
+| 문서 | 작성 주체 | 내용 | 시점 |
+|-----|---------|------|------|
+| EIR | 발주자 | "무엇을 원하는가" 요구사항 | 발주 전 |
+| BIM 과업지시서 | 발주자 | EIR의 계약 반영본 | 계약 시 |
+| BEP (BIM 수행계획서) | 수급자(설계/시공사) | "어떻게 실행할 것인가" 계획 | 착수 후 |
+| AIR (자산정보요구사항) | 발주자/운영자 | 유지관리 단계 BIM 데이터 요건 | 준공 전 |
+
+**발주처별 BIM 납품기준 실무 비교 (2024~2025 기준):**
+| 발주처 | 단계 | 납품 LOD | 납품 형식 | 특이사항 |
+|-------|------|---------|---------|---------|
+| LH공사 | 기본설계 | BIL20 | IFC+RVT | 단지계획 포함 |
+| LH공사 | 실시설계 | BIL30 | IFC+RVT+PDF | 단위세대 BIM 포함 |
+| 한국도로공사 | 실시설계 | BIL30 | IFC (Civil 3D) | 선형·토공·교량 |
+| 국가철도공단 | 기본설계 | BIL20 | IFC4.3 | 철도분야 전면 BIM |
+| 국가철도공단 | 실시설계 | BIL30~40 | IFC4.3+PDF | 궤도·토목·건축 통합 |
+| 조달청 (턴키) | 실시설계 | BIL30 | IFC+RVT | 인허가 검토 활용 |
+
+**성능시방서에 BIM 조항 기재 방법 (실무 가이드):**
+```markdown
+# BIM 성능시방서 §X.X — BIM 수행 요건
+
+## X.X.1 BIM 모델 정확도 (LOD)
+- 기본설계 BIM: BIL20 — 주요 시스템 개략 형상, 공간 배치
+- 실시설계 BIM: BIL30 — 전 구성요소 치수·규격·파라미터 확정
+- 납품 BIM 파일 형식: IFC4 이상, 원본 파일 함께 납품
+
+## X.X.2 간섭 검토 (Clash Detection)
+- Navisworks 또는 동급 소프트웨어 활용
+- 구조-MEP 간 Hard Clash: 납품 전 100% 해소
+- 결과 보고서: BCF 파일 또는 PDF 제출
+
+## X.X.3 BIM 품질 검수
+- 납품 BIM: buildingSMART IDS 기반 자동 검수 또는 수동 체크리스트
+- 발주처 BIM 담당자 최종 승인 후 준공 처리
+
+## X.X.4 데이터 교환 환경
+- CDE 플랫폼: [발주처 지정 플랫폼명]
+- 파일 명명 규칙: ISO 19650-2 Annex A 준수
+```
+
+**COBie 납품 시 BIM 시방서 핵심 항목:**
+- COBie: 시설물 유지관리용 BIM 데이터 교환 표준 (BS 1192-4)
+- 주요 시트: Facility / Floor / Space / Zone / Type / Component / System / Connection
+- 국내 적용: LH 등 FM BIM 요구 프로젝트에서 COBie Excel 또는 IFC COBie 납품 요구
+- 준공 BIM에서 장비 자산 데이터 (유지보수 주기, 제조사, 모델번호) 포함
+
+- 관련: [[BEP_수행계획서]] · [[BIM_납품검수]] · [[IFC_OpenBIM]] · [[FM_자산관리]]
