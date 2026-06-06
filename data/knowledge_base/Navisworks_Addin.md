@@ -225,13 +225,54 @@ Navisworks API 선택 가이드 — COM API vs .NET Managed API: COM API(`Autode
 - 관련: [[Revit_Addin]]
 
 
-## Navisworks Add-in 최신 동향 및 활용 팁 (2026-06-06)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-06
-- Tags: navisworks,addin,clash-detection,update
+## Navisworks 2027 신기능 및 Clash Detective 재설계 (2026-06-06)
+- Source: GRAITEC Navisworks 2027 What's New, datechsolution.com Navisworks 2027 분석, Autodesk Community Navisworks 2026
+- Tags: navisworks2027,clash-detective,UI개선,BIM조정,2026-04
 
-- Navisworks 2025에서는 모델 조정 기능이 강화되었으며, 새로운 API가 플러그인 개발을 지원합니다.
-- 이 API는 사용자 정의 플러그인과 자동화 작업을 가능하게 합니다. 하지만 일부 사용자는 2024년 버전보다 2025년 버전에서 커스텀 플러그인의 성능 문제가 있다고 보고하였습니다.
-- 간섭 검토를 자동화하려면, API를 활용해 프로세스를 자동으로 실행할 수 있습니다. 예를 들어, 특정 작업이 완료될 때마다 간섭 검토가 자동으로 수행되도록 설정할 수 있습니다.
-- 보고서 커스터마이징을 위해 API를 통해 사용자 정의 보고서 형식을 만들 수 있습니다. 필요한 정보만 포함하고, 보고서의 구성 요소를 쉽게 조정할 수 있습니다.
-- Navisworks 2025에서 API를 활용하여 자동화된 작업을 수행하려면, 먼저 API 문서를 이해하고 필요에 따라 코드를 작성해야 합니다. 이를 통해 복잡한 프로세스도 간단히 처리할 수 있습니다.
-- 관련: [[Revit_Addin]]
+**Navisworks 2027 출시 (2026-03-31):**
+- "속도를 늦추던 것들을 고쳤다" — 새 기술 도입보다 Clash Detective 전면 재설계·UI 현대화에 집중
+
+**Clash Detective 완전 재설계 — 핵심 변경 사항:**
+| 항목 | 이전 (Navisworks 2026 이하) | 신규 (Navisworks 2027) |
+|------|--------------------------|----------------------|
+| 탭 구조 | Rules, Results, Reports 탭 | 전용 창(Dedicated Windows) + 단일 우측 패널 |
+| 클래시 테스트 생성 | 1개씩 생성 | **여러 개 동시 생성** 가능 |
+| 테스트 구성 | 플랫 목록만 | **폴더 구조** 지원 (복잡한 프로젝트 관리 향상) |
+| 정렬·선택 | 드래그 불가 | Drag-and-drop 재정렬, Ctrl/Shift 멀티 선택 |
+| 필터링 | 불명확한 동작 | 명확한 필터링 동작 개선 |
+| 아이콘·레이아웃 | 구버전 UI | 새 아이콘·클린 레이아웃 |
+
+**Appearance Profiler 업그레이드:**
+- 객체 가시성 제어 정밀도 향상
+- 규칙 기반 색상을 UI에서 직접 편집 가능 (이전: 별도 다이얼로그 필요)
+
+**Navisworks 2026 추가 기능 (참고):**
+- 클래시 속성 데이터 기반 클래시 그룹핑: Clash Detective 폼 내에 그룹핑 기능 직접 내장
+
+**AI 기능 현황 (2026 기준):**
+- Navisworks 2027에는 AI 자동 클래시 분류·해결 제안 기능 **미포함**
+- Autodesk의 AI BIM 기능은 Revit AI Assistant(MCP)와 Forma에 집중, Navisworks는 UI/UX 개선 우선
+
+**Navisworks API 활용 팁 (2026 실무):**
+- Navisworks Manage API (C# .NET): Clash Test 자동 실행, 클래시 보고서 자동 생성
+  ```csharp
+  // 클래시 보고서 자동 출력 예시 (C# Navisworks API)
+  var clashTests = Application.ActiveDocument.GetClash()
+                              .TestsData.Tests;
+  foreach (var test in clashTests)
+  {
+      test.TestType = ClashTestType.Hard;
+      test.RunTest();
+      // 보고서를 HTML로 자동 출력
+      ExportClashReport(test, $"{test.DisplayName}_report.html");
+  }
+  ```
+- API 주의사항: Navisworks 2025/2026 버전에서 일부 커스텀 플러그인 성능 이슈 보고됨 → 2027 업그레이드 후 재검증 권장
+- AutoCollide: 간섭 검토 자동화 기능 — 반복적인 클래시 배치 검토 자동 실행
+
+**LUA BIM LABS Navisworks 전략 (2027 기준):**
+- Navisworks 2027 Clash Detective 폴더 구조 활용 → 공종별(건축/구조/기계/전기/소방) 클래시 체계 정리
+- 클래시 보고서 API 자동화 → 발주처 납품용 클래시 리포트 즉시 생성 서비스
+- IFC 4.3 읽기 지원 (2026 현황 확인 필요) → MEP IFC 클래시 검토 품질 검증
+
+- 관련: [[Revit_Addin]] · [[BIM_납품검수]] · [[IFC_OpenBIM]] · [[ACC_BIM360]]
