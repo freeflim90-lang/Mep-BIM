@@ -410,3 +410,74 @@ Autodesk 공식 Revit 2026 What's New와 APS 공식 블로그 기준으로 Add-i
 - [ ] Forma Connected Client 환경에서 기존 Add-in 호환성 스모크 테스트 수행
 
 관련: [[ACC_BIM360]] · [[IFC_OpenBIM]] · [[BIM_납품검수]] · [[패시브하우스_PHIKO]] · [[4D5D_BIM]]
+
+## 2026-06-06 Revit 2027 SDK .NET 10 마이그레이션·배포 변경사항 긴급 보강
+- Source: Autodesk Developer Blog "Revit 2027 SDK: .NET 10 Migration and Key API Changes", Autodesk Help Revit 2027 What's New, Microsoft .NET 10 Breaking Changes
+- Tags: revit-2027,dotnet10,sdk-migration,add-in-isolation,deployment,breaking-changes,2026
+
+**⚠️ Revit 2027 핵심 변경: .NET 10으로 전환 (LUA BIM LABS Add-in 필수 확인)**
+
+**.NET 10 마이그레이션 개요:**
+- Revit 2027(2026-04-07 출시)은 **.NET 10 런타임**으로 전환 (기존 Revit 2025/2026 = .NET 8)
+- 모든 신규 Add-in은 .NET 10 SDK로 빌드해야 함
+- 장점: 최신 런타임 성능 개선, 툴링 지원 향상, 장기 지원(LTS) 플랫폼 일관성
+
+**호환성 원칙 (가장 중요):**
+| 상황 | 동작 | 대응 |
+|------|------|------|
+| .NET 8 빌드 Add-in → Revit 2027(.NET 10) | **대부분 작동** (하위 호환) | 즉시 테스트, 문제 시 재빌드 |
+| .NET 10 빌드 Add-in → Revit 2025/2026(.NET 8) | **로드/실행 불가** | 버전별 별도 빌드 필요 |
+| 3rd party 의존 라이브러리 | .NET 10 미지원 라이브러리 존재 시 실패 | NuGet 의존성 전부 .NET 10 호환 확인 필수 |
+
+**.NET 10 마이그레이션 시 실패 원인:**
+1. **어셈블리 로딩 동작 변경**: .NET 8에서 암묵적으로 동작하던 어셈블리 해결 방식 변경
+2. **리플렉션(Reflection) 동작 변경**: 동적 코드 생성 또는 private 멤버 접근 방식 차이
+3. **직렬화 동작 변경**: `System.Text.Json` 또는 `Newtonsoft.Json` 버전 불일치
+4. **Native Interop 변경**: P/Invoke 호출 또는 COM Interop 처리 방식 차이
+5. **의존 NuGet 패키지**: 전이적 의존성 포함 전체 패키지가 .NET 10 지원 여부 확인 필요
+
+**배포(Deployment) 변경사항:**
+```
+[Revit 2026 이하] 전사용자 Add-in 경로:
+%ProgramData%\Autodesk\Revit\Addins\2026\
+
+[Revit 2027] 전사용자 Add-in 경로 변경:
+%ProgramFiles%\Autodesk\Revit 2027\AddIns\
+
+이유: ProgramData는 비관리자가 쓰기 가능 → 보안 강화
+→ 인스톨러(.msi/.exe) 배포 시 경로 업데이트 필수
+→ 사용자별(Current User) Add-in 경로: 변경 없음
+```
+
+**강화된 Add-in 격리(Enhanced Add-in Isolation):**
+- Revit 2027에서 Add-in 간 **명시적 의존성 정의** 가능
+- 어셈블리 해결 방식을 Add-in 단위로 제어 → 플러그인 생태계에서 DLL 충돌 방지
+- 대규모 플러그인 환경(여러 Add-in 병존)에서 어셈블리 버전 충돌 문제 해소
+
+**LUA BIM LABS BIM CC 마이그레이션 체크리스트 (Revit 2027 지원 추가 시):**
+```
+[ ] 1. 프로젝트 파일(.csproj) 타겟 프레임워크 업데이트
+    <TargetFramework>net10-windows</TargetFramework>  (기존: net8-windows)
+
+[ ] 2. 전체 NuGet 패키지 .NET 10 호환 여부 확인
+    dotnet list package --framework net10-windows
+
+[ ] 3. Revit 2027 Add-in 참조 DLL 교체
+    RevitAPI.dll, RevitAPIUI.dll → Revit 2027 설치 경로 버전으로 교체
+
+[ ] 4. 배포 경로 업데이트
+    설치 스크립트에서 ProgramData → ProgramFiles 경로 분기 처리
+
+[ ] 5. 멀티 버전 빌드 설정
+    Revit 2024~2026: net8-windows 빌드
+    Revit 2027: net10-windows 빌드
+    → GitHub Actions CI에서 멀티 타깃 빌드 자동화
+
+[ ] 6. App Store 심사 제출 전 Revit 2027 + .NET 10 환경에서 스모크 테스트
+```
+
+**Dynamo 4.0.2 (.NET 10) 성능 개선:**
+- Dynamo 4.0.2도 .NET 10으로 업데이트 → 기하 연산 속도 대폭 향상
+- 복잡한 파라메트릭 워크플로우에서 실행 시간 단축 체감 가능
+
+관련: [[ACC_BIM360]] · [[IFC_OpenBIM]] · [[BIM_납품검수]] · [[빌드검증]] · [[스토어심사]] · [[Dynamo]]
