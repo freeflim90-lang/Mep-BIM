@@ -437,4 +437,62 @@ BIM 납품검수에서 KDS/KCS는 EIR, BEP, 과업지시서, 특기시방서의 
 
 **IDS 검증 통과했지만 실무 부적합 판정 받는 경우**: IDS 기계 검증(ifctester 또는 Solibri)은 통과했으나 발주처 BIM 담당이 "실제 현장에서 쓸 수 없는 모델"이라며 부적합 판정을 내리는 패턴. 주요 원인: ① 파라미터 값이 채워져 있으나 의미 없는 더미 데이터(예: 제조사명 = "TBD", 모델번호 = "00000") — IDS는 존재 여부만 검증하므로 통과되지만 실무 부적합. 대응: IDS 규칙에 정규식 패턴 검증(`<Value type="pattern">[^T][^B][^D].*</Value>`) 추가. ② 형상은 있으나 MEP 커넥터 미연결 — Revit 경고는 없지만 실제 배관 계통이 끊어진 상태. 대응: Revit MEP 시스템 완결성 검사(`Systems` 탭의 "Unconnected" 필터로 미연결 요소 0건 확인). ③ 공간(Space) 미배치 구역 — IFC에 IfcSpace가 존재하지만 일부 구역 공간이 누락된 경우 FM 시스템 데이터 연동 불완전. 대응: 납품 전 "All Rooms/Spaces" 일람표에서 미배치 공간 0건 확인.
 
-- 관련: [[IFC_OpenBIM]] · [[EIRBEP_심사원]] · [[QA_테스터]] · [[ACC_BIM360]]
+## 2026-06-06 CORENET X IFC+SG 납품·COBie FM 핸드오버·AI 검수 보강
+- Source: CORENET X Good Practices Guidebook Dec 2025, 국토부 BIM 지능형 시설관리 2026, buildingSMART COBie 2.4
+- Tags: IFC+SG,COBie,FM핸드오버,AI검수,준공BIM,싱가포르,2025,2026
+
+**싱가포르 CORENET X IFC+SG 납품 — 한국 BIM 납품과 비교:**
+| 항목 | 한국 (국토부 BIM 시행지침) | 싱가포르 (CORENET X IFC+SG) |
+|------|----------------------|--------------------------|
+| 제출 포맷 | IFC4 + 국토부 Pset | IFC4+SG (싱가포르 확장 스키마) |
+| 자동 검증 | 발주처별 상이 | CORENET X Model Checker (내장) |
+| 멀티에이전시 심사 | 공종별 개별 제출 | BCA·URA·SCDF·LTA 동시 심사 |
+| 거절 주요 원인 | 파라미터 누락·LOD 미달 | IFC+SG 파라미터 누락·오류 |
+- 2025.10.1~: GFA 30,000m²+ 신규 프로젝트 CORENET X 의무
+- **2026.10.1~: 모든 신규 프로젝트 CORENET X 전면 의무** (규모 무관)
+
+**COBie 2.4 FM 핸드오버 납품 (2026 한국 공공 BIM 적용 확산):**
+- 국토부: BIM 데이터 → FM 시스템 자동 이관 정책 강화 (2026 지능형 시설관리 추진)
+- COBie 핵심 시트 10개: Facility·Floor·Space·Zone·Component·Type·System·Connection·Spare·Resource
+- Revit → COBie 자동 추출 (ifcopenshell 활용):
+  ```python
+  import ifcopenshell, ifcopenshell.util.element as ele
+  ifc = ifcopenshell.open("준공모델.ifc")
+  for product in ifc.by_type("IfcFlowTerminal"):
+      psets = ele.get_psets(product)
+      mfr = psets.get("Pset_ManufacturerTypeInformation", {})
+      # Component 시트 행 생성
+      row = {
+          "Name": product.Name,
+          "ExternalIdentifier": product.GlobalId,  # GUID — FM 연동 핵심
+          "Manufacturer": mfr.get("Manufacturer", ""),
+          "ModelNumber": mfr.get("ModelReference", ""),
+      }
+  ```
+- COBie 납품 오류 TOP 3: ① GUID 공란, ② 더미값("TBD"·"00000"), ③ Space 연결 누락
+
+**AI 보조 BIM 검수 도구 비교 (2026):**
+| 도구 | 기능 | 적용 범위 |
+|------|------|---------|
+| Solibri Model Checker | IFC 규칙 기반 자동 검증 | 한국·싱가포르·유럽 실무 표준 |
+| CORENET X Model Checker | IFC+SG 규정 자동 검증 | 싱가포르 의무 |
+| ifctester (Python) | IDS 자동 검증 + CI/CD 통합 | 오픈소스·자동화 |
+| Autodesk Forma 검수 | AI 설계 규정 준수 검사 | 2026 초기 도입 단계 |
+- **AI 검수 한계**: 파라미터 존재·형식은 검증하지만 **의미 적합성**(더미값, 미연결 계통)은 인적 검수 필수
+
+**LUA BIM LABS 납품 검수 고도화 3단계 체계 (2026):**
+```
+1단계 자동화 (기계 검수):
+  ifctester(IDS) → Solibri 규칙 검증 → Navisworks Clash(Hard 0건) →
+  파일명 Python 정규식 → LOD 파라미터 완결성 → COBie GUID 공란 체크
+
+2단계 인적 검수:
+  QA 테스터: 샘플 20개 요소 LOD 달성 확인
+  BIM 코디네이터: MEP Unconnected 0건 확인 + Space 완결성
+  발주처 담당: BEP 기준 최종 승인 → BEP 서명본 ACC Published
+
+3단계 FM 이관 준비:
+  COBie 시트 자동 생성 → GUID 안정화 → Autodesk Tandem 사전 연동 테스트
+```
+
+- 관련: [[IFC_OpenBIM]] · [[EIRBEP_심사원]] · [[QA_테스터]] · [[ACC_BIM360]] · [[FM_자산관리]] · [[국가별_건설법규_기준비교]]
