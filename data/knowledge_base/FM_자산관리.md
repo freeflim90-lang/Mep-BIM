@@ -296,3 +296,39 @@ FM 추가 필드:
 - ISO 19650-3 기반 FM BIM 납품 가이드 자체 개발 → 차별화 컨설팅 서비스
 
 관련: [[IFC_OpenBIM]] · [[BIM_납품검수]] · [[ACC_BIM360]] · [[건물유형별_BIM적용기준]]
+
+## 2026-06-06 Autodesk Tandem × Globant 파트너십·Physical AI 디지털트윈 보강
+- Source: Globant PR Newswire 2026-04-13, archBIM.cloud 분석, Engineering.com, Morningstar
+- Tags: autodesk-tandem,globant,digital-twin,physical-ai,airports,smart-buildings,2026
+
+**Autodesk Tandem × Globant 공식 파트너십 (2026-04-13):**
+- 발표: Autodesk가 Globant를 공식 Autodesk Tandem Digital Twin Solution Provider로 지정
+- 기간 배경: 15년간 Autodesk 협력사 Globant가 디지털트윈 전담 실천조직(Digital Twins Practice) 공식화
+- 서비스 범위: 공항·스마트빌딩·제조·물류시설 등 복합 고난도 환경 디지털트윈 구현
+  - 기업 시스템 통합: CMMS·BAS·BMS·IoT 플랫폼 연결
+  - 운영 데이터 활성화(Operational Data Enablement): 실물 자산과 AI 의사결정 연결
+  - 2026년 PoC 목표: 공항·스마트빌딩·산업시설 복수 디지털트윈 구축
+- Physical AI 방향: "BIM → 실시간 운영 데이터 연결 → AI 자율 운영 결정"
+  → 단순 3D 가시화를 넘어 AI가 센서 데이터를 읽고 유지보수·에너지·안전 결정 자동화
+
+**Autodesk Tandem 플랫폼 역할 정의 (BMS와 차이):**
+- **BMS**: 냉난방·조명·환기 등 기계 설비의 On/Off·설정값·알람 실시간 제어
+- **Autodesk Tandem (디지털트윈)**: BMS·CMMS·IoT·BIM 데이터를 통합한 **의사결정 지원 레이어**
+  - BIM as-built 모델 → Tandem 자산 데이터베이스로 이관
+  - 멀티 소스 데이터를 공간 맥락에서 시각화 → 문제 위치 즉시 파악
+  - AI 예측 유지보수 + 에너지 벤치마킹 통합 뷰
+
+**글로벌 디지털트윈 시장 성장 전망 (2026 기준):**
+- 2025년: $21.14B → 2030년: $149.81B (5년 CAGR 약 48%)
+- 주요 성장 산업: 제조/물류, 스마트건물/AECO, 에너지, 헬스케어, 스마트시티
+- 공항 FM 적용 사례: 터미널 자산 수천 개를 Tandem에서 실시간 모니터링 (Globant 구현 대상)
+
+**LUA BIM LABS 전략 업데이트:**
+| 전략 항목 | 내용 |
+|---------|------|
+| Tandem 파트너 생태계 | 한국 시장 Autodesk Tandem 공식 파트너 공백 → 진입 기회 |
+| Physical AI 근거 | BIM 데이터 품질이 AI 운영 자동화의 기반 → Model Quality Auditor 차별화 |
+| 수직 시장 타깃 | 공항·데이터센터·병원 FM BIM 컨설팅: Tandem 기반 한국형 운영 서비스 |
+| COBie 고도화 | Physical AI용 COBie: SerialNumber·Sensor_Tag_ID·AI_Health_Score 파라미터 추가 |
+
+관련: [[IFC_OpenBIM]] · [[BIM_납품검수]] · [[ACC_BIM360]] · [[건물유형별_BIM적용기준]] · [[설비자동제어]]

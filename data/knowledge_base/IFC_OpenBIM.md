@@ -201,3 +201,38 @@ buildingSMART 공식 문서 기준으로 IDS 1.0은 공식 표준이며, IFC 모
 - 실무 영향: 2026~2028년은 IFC 4.x 과도기 → IFC 5.0 채택은 2029년 이후 예상
 
 - 관련: [[OpenBIM_프로그램연동]] · [[BIM_납품검수]] · [[ACC_BIM360]] · [[Revit_Addin]] · [[FM_자산관리]]
+
+## 2026-06-06 IFC 5 점진적 출시 전략·buildingSMART 2026 글로벌 이벤트 보강
+- Source: buildingSMART Implementers Assembly 2026-02 보고서, BibLus IFC 5 분석, bimeventsworld.com
+- Tags: ifc5,buildingsmart,implementers-assembly,infrabim-open,tokyo-summit,incremental-release,2026
+
+**IFC 5 점진적 출시 전략 (buildingSMART Implementers Assembly, 2026년 2월):**
+- 전략 전환: 단일 대형 릴리즈(Big Bang) → **점진적 출시(Incremental Release)** 방식 채택
+  - 1단계: 핵심 기능만 포함한 "IFC 5 Reduced" 먼저 출시
+  - 이후 모듈 추가: IoT·디지털트윈·인프라·AI 연동 기능을 단계적으로 확장
+- 목적: 소프트웨어 공급사의 조기 채택 유도 — 장기 대기 없이 점진 전환 가능
+- 명칭 정리: IFC X(차세대 IFC 연구 명칭) → **IFC 5 Core 프로젝트**로 공식 정리
+- 실무 영향: IFC 5 완전판은 2029년 이후 예상 → 2026~2028년은 IFC 4.x 과도기 유지
+
+**IFC 4.3.2 문서 최신화 (2026):**
+- IFC 4.3.2 공식 문서: ifc43-docs.standards.buildingsmart.org (2026년 지속 업데이트)
+- 인프라 객체(IfcAlignment·IfcBridge·IfcGeotechnicalElement) 상세 사양 확정
+- 소프트웨어 지원 현황 (2026-06 기준):
+  - Revit 2027: IFC 4.3 내보내기 안정화 (IfcAlignment 오류 수정)
+  - Navisworks 2026+: IFC 4.3 읽기 지원
+  - Solibri 9.13+: IFC 4.3 규칙 검증 지원
+  - OpenRoads Designer: IfcAlignment 네이티브 내보내기
+
+**buildingSMART 2026 주요 이벤트:**
+| 이벤트 | 일시 | 장소 | 주요 주제 |
+|--------|------|------|---------|
+| Implementers Assembly | 2026-02 | 유럽 | IFC 5 Core 방향, 표준 개발 |
+| InfraBIM Open 2026 | 2026-06-08~10 | 파리 | 인프라 BIM·IFC 4.3 실무 적용 |
+| International Summit 2026 | 2026-10-06~08 | 도쿄 | 글로벌 OpenBIM 전략·아시아 확산 |
+
+**LUA BIM LABS 이벤트 전략:**
+- InfraBIM Open (파리): IFC 4.3 토목 실무 사례 수집 → 국내 CIM·도로·철도 납품 기준 보강
+- 도쿄 Summit: 일본 BIM 의무화 대응 네트워킹 + buildingSMART Japan 연계 기회
+- IFC 5 Reduced 출시 시: 얼리어답터 준비 — 2027~2028년 채택 선점
+
+관련: [[OpenBIM_프로그램연동]] · [[BIM_납품검수]] · [[ACC_BIM360]] · [[Revit_Addin]] · [[FM_자산관리]] · [[해외건설기업_동향분석]]
