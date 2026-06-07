@@ -143,6 +143,18 @@ QA_DATASET: list[tuple[str, str, list[str]]] = [
      "BIM_시방서", ["eir", "발주자", "과업지시서"]),
     ("COBie BIM 유지관리 납품 데이터 표준",
      "BIM_시방서", ["cobie", "유지관리", "fm"]),
+
+    # ── BIM 제안서 (공공입찰 / 기술제안서)
+    ("공공 BIM 입찰 기술제안서 기술평가 배점 기준",
+     "BIM_제안서", ["배점", "기술능력", "수행실적"]),
+    ("BIM 의무화 확대 일정 2024 2026 2028",
+     "BIM_제안서", ["의무화", "500억", "2026"]),
+
+    # ── 설비자동제어 (BAS/BMS / BACnet / Haystack)
+    ("BAS BACnet 포인트리스트 BIM 연동 IFC 자동제어",
+     "설비자동제어", ["bacnet", "포인트", "bim"]),
+    ("Project Haystack 스마트빌딩 BIM 태깅",
+     "설비자동제어", ["haystack", "태그", "equip"]),
 ]
 
 
