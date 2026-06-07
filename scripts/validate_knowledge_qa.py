@@ -155,6 +155,16 @@ QA_DATASET: list[tuple[str, str, list[str]]] = [
      "설비자동제어", ["bacnet", "포인트", "bim"]),
     ("Project Haystack 스마트빌딩 BIM 태깅",
      "설비자동제어", ["haystack", "태그", "equip"]),
+    # ── 엑셀자동화
+    ("Revit 스케줄 데이터를 pyRevit으로 Excel 자동 추출하는 방법",
+     "엑셀자동화", ["pyrevit", "schedule", "openpyxl"]),
+    ("공공 건설 내역서 BOQ 자동 생성 openpyxl 조달청",
+     "엑셀자동화", ["내역서", "원가계산서", "openpyxl"]),
+    # ── 설비도면해석
+    ("설비 도면 KS 기호 방화댐퍼 게이트밸브 체크밸브 읽는 법",
+     "설비도면해석", ["ks", "방화댐퍼", "기호"]),
+    ("BIM 모델과 2D 도면 대조 체크리스트 MEP 검토 방법",
+     "설비도면해석", ["bim", "도면", "체크"]),
 ]
 
 
