@@ -15,6 +15,8 @@ from datetime import date
 from pathlib import Path
 from typing import Any
 
+import urllib.request
+
 from blogger_publish import load_credentials, resolve_blog_id
 
 
@@ -23,6 +25,7 @@ DEFAULT_LABELS = ["MEP BIM", "LUA BIM LABS", "Revit MEP", "BIM Training"]
 DEFAULT_LOCK_FILE = "runtime/blogger_queue_publish.lock"
 DEFAULT_STATE_FILE = "runtime/blogger_daily_generation_state.json"
 DEFAULT_DAILY_AGENT_PLIST = "/Users/choejeong-yeon/Library/LaunchAgents/com.luabimlab.daily-blogger-post.plist"
+DEFAULT_DUPLICATE_WARN_DAYS = 30
 DEFAULT_SERVICE_CONFIG = "config/personal_mep_bim_tutor_plans.json"
 
 
@@ -178,7 +181,71 @@ LESSON_ANGLES = [
     "Before Construction: Check",
     "How LUA BIM LABS Teaches",
     "From Revit Model to Site Decision:",
+    # Added to extend unique post cycle and cover broader BIM perspectives
+    "Step-by-Step Guide to",
+    "What Site Engineers Need to Know About",
+    "Comparing Approaches to",
+    "Handover Checklist for",
+    "Junior BIM Modeler's Guide to",
+    "How Contractors Interpret",
+    "Five Key Questions About",
+    "Owner and FM Requirements for",
+    "Troubleshooting",
+    "Field vs. Model: Understanding",
+    "Cost and Schedule Implications of",
+    "ISO 19650 and",
 ]
+
+
+def _load_env() -> None:
+    env_path = Path(__file__).resolve().parents[1] / ".env"
+    if not env_path.exists():
+        return
+    for raw in env_path.read_text(encoding="utf-8", errors="ignore").splitlines():
+        line = raw.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        os.environ.setdefault(key.strip(), value.strip().strip('"').strip("'"))
+
+
+def _topic_cycle_length() -> int:
+    return len(TOPIC_AREAS) * max(len(a["subjects"]) for a in TOPIC_AREAS) * len(LESSON_ANGLES)
+
+
+def _send_telegram(message: str) -> None:
+    _load_env()
+    token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+    chat_id = os.environ.get("TELEGRAM_CHAT_ID", "")
+    if not token or not chat_id:
+        print("Telegram credentials missing, skipping notification.")
+        return
+    payload = json.dumps({"chat_id": chat_id, "text": message}).encode("utf-8")
+    req = urllib.request.Request(
+        f"https://api.telegram.org/bot{token}/sendMessage",
+        data=payload,
+        headers={"Content-Type": "application/json"},
+    )
+    try:
+        urllib.request.urlopen(req, timeout=10)
+    except Exception as exc:
+        print(f"Telegram notification failed: {exc}")
+
+
+def _check_duplicate_warning(next_index: int, warn_days: int) -> None:
+    cycle = _topic_cycle_length()
+    position = (next_index - 1) % cycle
+    remaining = cycle - position
+    if remaining <= warn_days:
+        message = (
+            f"⚠️ [LUA BIM LABS 블로그 알림]\n"
+            f"블로그 주제 소진 임박: {remaining}일 후 주제가 반복됩니다.\n"
+            f"현재 인덱스: {next_index} / 사이클: {cycle}\n\n"
+            f"TOPIC_AREAS 또는 LESSON_ANGLES에 새 주제를 추가해주세요.\n"
+            f"파일: scripts/daily_blogger_queue_publish.py"
+        )
+        print(message)
+        _send_telegram(message)
 
 
 def slugify(text: str) -> str:
@@ -343,9 +410,15 @@ def next_generated_index(state_file: Path, log_file: Path | None) -> int:
     return max(366, published_count + 1)
 
 
-def queue_generated_daily_topic(queue_dir: Path, state_file: Path, log_file: Path | None) -> Path:
+def queue_generated_daily_topic(
+    queue_dir: Path,
+    state_file: Path,
+    log_file: Path | None,
+    warn_days: int = DEFAULT_DUPLICATE_WARN_DAYS,
+) -> Path:
     queue_dir.mkdir(parents=True, exist_ok=True)
     index = next_generated_index(state_file, log_file)
+    _check_duplicate_warning(index, warn_days)
     topic = generated_topic(index)
     path = queue_dir / f"{index:03d}-{topic['slug']}.json"
     payload = {
@@ -535,6 +608,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--enable-daily-agent-on-empty", action="store_true")
     parser.add_argument("--daily-agent-plist", default=DEFAULT_DAILY_AGENT_PLIST)
     parser.add_argument("--service-config", default=DEFAULT_SERVICE_CONFIG)
+    parser.add_argument("--duplicate-warn-days", type=int, default=DEFAULT_DUPLICATE_WARN_DAYS)
     return parser.parse_args()
 
 
@@ -573,6 +647,7 @@ def main() -> None:
                     queue_dir,
                     Path(args.state_file),
                     Path(args.log_file) if args.log_file else None,
+                    warn_days=args.duplicate_warn_days,
                 )
             if not topic_file:
                 print(f"No queued topics in {queue_dir}")

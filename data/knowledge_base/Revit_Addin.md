@@ -481,3 +481,14 @@ Autodesk 공식 Revit 2026 What's New와 APS 공식 블로그 기준으로 Add-i
 - 복잡한 파라메트릭 워크플로우에서 실행 시간 단축 체감 가능
 
 관련: [[ACC_BIM360]] · [[IFC_OpenBIM]] · [[BIM_납품검수]] · [[빌드검증]] · [[스토어심사]] · [[Dynamo]]
+
+
+## Revit Add-in 최신 동향 및 개발 팁 (2026-06-07)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-07
+- Tags: revit,addin,API,update
+
+- Autodesk Revit 2025 API는 .NET 8 기반으로 업그레이드되어 .NET 4.8에서의 Add-in 개발을 재구성해야 합니다.
+- C#만 지원하며, 지속가능성 및 탄소 분석에 대한 새로운 기능이 추가되었습니다.
+- 성능 최적화를 위해 API 메서드 사용 시 복잡한 계산 과정을 줄이는 것이 중요합니다.
+- Autodesk Store 심사 통과를 위한 팁으로는 Add-in의 안전성, 보안 및 호환성을 확인하는 것이 필수입니다.
+- 관련: [[간섭검토]] · [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]]

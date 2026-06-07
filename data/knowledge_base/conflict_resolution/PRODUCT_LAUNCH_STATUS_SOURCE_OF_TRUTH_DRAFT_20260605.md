@@ -68,3 +68,8 @@ Project Mentor 문의:
 
 이 문서는 최종 가격표가 아니라 `AITEST_20260605_007`의 후속 결정을 위한 source of truth 초안이다.
 승인 전 운영 상태는 `APPROVED_WITH_HOLD`이며, 실패 시 Starter 외 상품은 Coming Soon 또는 Consultation-only로 유지한다.
+
+## 8. 후속 보완 입력물
+
+2026-06-12 재판정 전 Missing 항목은 `ESCALATED_MISSING_EVIDENCE_MATRIX_20260606.md`의 007 보완 큐를 기준으로 보완한다.
+CEO/CFO 승인, 약관/환불 법무 검토, CS 문구, 운영 리소스, Starter 외 상품 승인 중 하나라도 비어 있으면 Starter-only 원칙을 유지한다.

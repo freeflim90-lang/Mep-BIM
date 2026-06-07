@@ -72,96 +72,105 @@ def log(msg: str) -> None:
 KB_TOPICS: dict[str, dict] = {
     # ── 공종별 ─────────────────────────────────────────────────────────────
     "소방기계": {
-        "title": "소방기계 최신 기술 동향 및 실무 기준",
-        "tags": "fire-mechanical,sprinkler,standards,update",
-        "queries": ["소방기계설비 스프링클러 최신 기준 KCS", "fire suppression BIM Korea 2025"],
+        "title": "소방기계 실무 업데이트",
+        "tags": "fire-mechanical,sprinkler,nftc,field-case,update",
+        "queries": ["소방기계설비 NFTC 최신 개정 2025 스프링클러", "sprinkler BIM coordination case Korea"],
         "prompt": (
-            "한국 소방기계설비(스프링클러, 소화펌프, 소화수조, 소화전) 실무에서 "
-            "오늘 날짜 기준으로 BIM 담당자가 알아야 할 최신 기술 기준 또는 현장 팁을 "
-            "250~350자 분량으로 작성하라. KCS 번호나 NFTC 번호를 구체적으로 언급하고, "
-            "Revit/Navisworks BIM 모델링과 연관된 실무 포인트를 포함하라."
+            "소방기계설비(스프링클러·소화배관·소화펌프) 관련 최신 법규 변경 사항 또는 "
+            "현장 BIM 실무에서 발생한 구체적 문제와 해결 방법 중 하나를 250~350자로 작성하라. "
+            "NFTC 조항 번호, 실제 수치(헤드 간격·이격거리·살수반경)를 반드시 포함하라. "
+            "기존 지식에 이미 있는 내용(헤드 간격 3.7m, 살수반경 2.3m 등)은 반복하지 말고 "
+            "새로운 내용만 작성하라."
         ),
     },
     "소방전기": {
-        "title": "소방전기 최신 기술 동향 및 실무 기준",
-        "tags": "fire-electrical,alarm,detection,update",
-        "queries": ["자동화재탐지설비 NFTC 203 최신 개정", "fire alarm BIM Korea KS"],
+        "title": "소방전기 실무 업데이트",
+        "tags": "fire-electrical,alarm,detection,field-case,update",
+        "queries": ["자동화재탐지설비 NFTC 최신 개정 2025", "fire alarm BIM coordination Korea"],
         "prompt": (
-            "한국 소방전기설비(자동화재탐지, 비상방송, 유도등, 비상조명) 실무에서 "
-            "BIM 담당자가 알아야 할 최신 기술 기준이나 현장 적용 팁을 "
-            "250~350자로 작성하라. NFTC 번호와 KS 규격을 구체적으로 포함하고, "
-            "Revit BIM 모델링과 연관된 실무 포인트를 포함하라."
+            "소방전기설비(자동화재탐지·비상방송·유도등·비상조명) 관련 최신 법규 변경 또는 "
+            "현장 BIM 실무 문제와 해결 방법 중 하나를 250~350자로 작성하라. "
+            "NFTC/KS 번호, 배선 경로·이격 기준을 포함하라. "
+            "기존 지식에 이미 있는 내용은 반복하지 말고 새로운 내용만 작성하라."
         ),
     },
     "공조덕트": {
-        "title": "공조덕트 최신 기술 동향 및 실무 기준",
-        "tags": "hvac,duct,standards,update",
-        "queries": ["공조덕트 KCS 시공기준 최신 2025", "HVAC ductwork BIM coordination Korea"],
+        "title": "공조덕트 실무 업데이트",
+        "tags": "hvac,duct,coordination,field-case,update",
+        "queries": ["공조덕트 KCS 시공기준 최신 개정 2025", "HVAC duct BIM clash coordination Korea"],
         "prompt": (
-            "한국 공조덕트 설비 실무에서 BIM 담당자가 알아야 할 "
-            "최신 시공 기준이나 BIM 협업 포인트를 250~350자로 작성하라. "
-            "덕트 재질, 두께, 지지간격, 방화댐퍼 관련 KCS 기준을 포함하라."
+            "공조덕트(급기·환기·제연·주방배기) 관련 최신 KCS 법규 변경 또는 "
+            "현장 BIM 실무에서 발생한 구체적 문제와 해결 방법 중 하나를 250~350자로 작성하라. "
+            "덕트 종류·사이즈, 이격 기준(mm), KCS/NFTC 조항을 포함하라. "
+            "기존 지식에 이미 있는 내용(제연 이격 100mm, 방화댐퍼 밀착 원칙 등)은 반복하지 말 것."
         ),
     },
     "공조배관": {
-        "title": "공조배관 최신 기술 동향 및 실무 기준",
-        "tags": "hvac,piping,standards,update",
-        "queries": ["냉온수배관 KCS 시공기준 보온 최신", "HVAC piping BIM Korea chilled water"],
+        "title": "공조배관 실무 업데이트",
+        "tags": "hvac,piping,chilled-water,field-case,update",
+        "queries": ["냉온수배관 KCS 보온 기준 최신 2025", "HVAC piping BIM coordination Korea"],
         "prompt": (
-            "한국 공조배관(냉온수, 냉매, 증기) 실무에서 BIM 담당자가 알아야 할 "
-            "최신 시공 기준이나 BIM 협업 포인트를 250~350자로 작성하라. "
-            "배관 재질, 지지간격, 보온 두께, 압력시험 기준을 포함하라."
+            "공조배관(냉온수·냉매·증기·응축수) 관련 최신 KCS 법규 변경 또는 "
+            "현장 BIM 실무에서 발생한 구체적 문제와 해결 방법 중 하나를 250~350자로 작성하라. "
+            "배관 종류·관경, 단열 두께, 실제 수치(이격·압력)를 포함하라. "
+            "기존 지식에 이미 있는 내용은 반복하지 말고 새로운 내용만 작성하라."
         ),
     },
     "전기": {
-        "title": "전기설비 최신 기술 동향 및 실무 기준",
-        "tags": "electrical,KEC,standards,update",
-        "queries": ["KEC 전기설비기술기준 최신 개정 2025", "electrical BIM coordination Korea KEC"],
+        "title": "전기설비 실무 업데이트",
+        "tags": "electrical,cable-tray,KEC,field-case,update",
+        "queries": ["KEC 전기설비기술기준 최신 개정 2025 케이블", "electrical BIM coordination Korea KEC"],
         "prompt": (
-            "한국 전기설비(저압 배선, 분전반, 접지, 케이블 트레이) 실무에서 "
-            "BIM 담당자가 알아야 할 최신 KEC 기준이나 현장 팁을 "
-            "250~350자로 작성하라. KEC 조항 번호를 구체적으로 언급하고 "
-            "Revit BIM 모델링 연관 포인트를 포함하라."
+            "전기설비(케이블 트레이·분전반·접지·조명) 관련 최신 KEC 법규 변경 또는 "
+            "현장 BIM 실무에서 발생한 구체적 문제와 해결 방법 중 하나를 250~350자로 작성하라. "
+            "KEC 조항 번호, 실제 이격 수치(mm), 충전율을 포함하라. "
+            "기존 지식에 이미 있는 내용(강전/약전 300mm 이격 등)은 반복하지 말 것."
         ),
     },
     "통신": {
-        "title": "통신설비 최신 기술 동향 및 실무 기준",
-        "tags": "telecom,communication,standards,update",
-        "queries": ["구내통신설비 시공기준 KCS 2025", "building telecom BIM Korea Cat6 fiber"],
+        "title": "통신설비 실무 업데이트",
+        "tags": "telecom,communication,emi,field-case,update",
+        "queries": ["구내통신설비 시공기준 최신 개정 2025 KCS", "building telecom BIM coordination Korea"],
         "prompt": (
-            "한국 구내통신설비(Cat6A, 광케이블, CCTV, MDF/IDF) 실무에서 "
-            "BIM 담당자가 알아야 할 최신 기준이나 현장 팁을 "
-            "250~350자로 작성하라. 케이블 트레이 이격, 굴곡 반경 기준을 포함하라."
+            "구내통신설비(Cat6A·광케이블·CCTV·MDF/IDF) 관련 최신 법규 변경 또는 "
+            "현장 BIM 실무에서 발생한 구체적 문제와 해결 방법 중 하나를 250~350자로 작성하라. "
+            "통신 규격, 이격 기준(mm), EMI 리스크, KCS/TIA 조항을 포함하라. "
+            "기존 지식에 이미 있는 내용(강전/약전 300mm 이격 등)은 반복하지 말 것."
         ),
     },
     "위생": {
-        "title": "위생설비 최신 기술 동향 및 실무 기준",
-        "tags": "plumbing,sanitary,standards,update",
-        "queries": ["급배수위생설비 KCS 시공기준 최신", "plumbing BIM Korea sanitary"],
+        "title": "위생설비 실무 업데이트",
+        "tags": "plumbing,sanitary,gradient,field-case,update",
+        "queries": ["위생설비 급배수 KCS 시공기준 최신 2025", "plumbing BIM coordination Korea drain"],
         "prompt": (
-            "한국 위생설비(급수, 배수, 통기, 위생기구) 실무에서 "
-            "BIM 담당자가 알아야 할 최신 KCS 기준이나 현장 팁을 "
-            "250~350자로 작성하라. 구배, 청소구 간격, 수압시험 기준을 포함하라."
+            "위생설비(급수·오배수·통기·위생기구) 관련 최신 KCS 법규 변경 또는 "
+            "현장 BIM 실무에서 발생한 구체적 문제와 해결 방법 중 하나를 250~350자로 작성하라. "
+            "관경, 실제 구배값(1/N), KCS 조항을 포함하라. "
+            "기존 지식에 이미 있는 내용(DN100 구배 1/100 등)은 반복하지 말 것."
         ),
     },
     "건축": {
-        "title": "건축 최신 기술 동향 및 법규 기준",
-        "tags": "architecture,building-code,BIM,update",
-        "queries": ["건축법 시행령 최신 개정 2025 방화구획", "architecture BIM Korea building code"],
+        "title": "건축 법규·실무 업데이트",
+        "tags": "architecture,building-code,bim,field-case,update",
+        "queries": ["건축법 시행령 최신 개정 2025 방화", "architecture BIM coordination Korea building code"],
         "prompt": (
-            "한국 건축 설계·시공 실무에서 BIM 담당자가 알아야 할 "
-            "최신 건축법·건축기준 변경 사항이나 현장 팁을 "
-            "250~350자로 작성하라. 방화구획, 피난, 천장고 관련 기준을 포함하라."
+            "건축 설계·시공(방화구획·피난·천장고·마감) 관련 최신 건축법 변경 사항 또는 "
+            "현장 BIM 실무에서 발생한 구체적 문제와 해결 방법 중 하나를 250~350자로 작성하라. "
+            "건축법 조항, 실제 치수(mm)를 반드시 포함하라. "
+            "법률 개정 내용은 시행일·조항·변경 전후 수치를 명확히 제시할 수 있는 경우에만 작성하라. "
+            "불확실한 수치를 추정해 쓰지 말 것. 기존 내용 반복 없이 새로운 내용만 작성하라."
         ),
     },
     "구조": {
-        "title": "구조 최신 기술 동향 및 설계 기준",
-        "tags": "structure,KDS,reinforced-concrete,update",
-        "queries": ["KDS 구조설계기준 최신 개정 2025 콘크리트", "structural BIM Korea KDS"],
+        "title": "구조 법규·실무 업데이트",
+        "tags": "structure,beam,penetration,KDS,field-case,update",
+        "queries": ["KDS 구조설계기준 최신 개정 2025 콘크리트", "structural BIM coordination Korea KDS"],
         "prompt": (
-            "한국 구조 설계·시공 실무에서 BIM 담당자가 알아야 할 "
-            "최신 KDS 기준 변경이나 현장 팁을 250~350자로 작성하라. "
-            "철근 피복두께, 관통 허용 기준, 내진 설계 관련 내용을 포함하라."
+            "구조(보·기둥·슬래브·전이보) 관련 최신 KDS 법규 변경 또는 "
+            "현장 BIM 실무에서 발생한 구체적 문제와 해결 방법 중 하나를 250~350자로 작성하라. "
+            "KDS 조항 번호, 실제 수치(피복두께·관통 조건), 해결 조치를 포함하라. "
+            "법률 개정은 시행일·조항·변경 전후 수치를 명확히 제시할 수 있는 경우에만 작성하라. "
+            "불확실한 수치를 추정해 쓰지 말 것. 기존 내용 반복 없이 새로운 내용만 작성하라."
         ),
     },
     "토목": {
@@ -194,14 +203,28 @@ KB_TOPICS: dict[str, dict] = {
             "Revit BIM 모델과 2D 도면 연동 시 주의사항을 포함하라."
         ),
     },
-    "설비시공조율": {
-        "title": "설비 시공 조율 기준 업데이트",
-        "tags": "mep,coordination,construction,update",
-        "queries": ["MEP BIM 간섭 조율 현장 적용 2025", "MEP clash coordination BIM Korea"],
+    "간섭검토": {
+        "title": "간섭검토 실무 사례 업데이트",
+        "tags": "clash,interference,navisworks,revit,mep,field-case,update",
+        "queries": ["Revit Navisworks 간섭검토 현장 사례 2025", "BIM clash detection resolution case Korea"],
         "prompt": (
-            "MEP 설비 시공 조율 실무에서 BIM 담당자가 알아야 할 "
-            "최신 간섭 조율 기준이나 현장 팁을 250~350자로 작성하라. "
-            "Navisworks 간섭 허용 기준, 공종 우선순위, 조율 회의 운영 기준을 포함하라."
+            "Revit 또는 Navisworks를 활용한 BIM 간섭검토 현장에서 실제 발생한 구체적 문제 사례 하나와 "
+            "공종별 해결 방법을 250~350자로 작성하라. "
+            "관련 공종(건축/구조/기계/전기/소방/통신), 충돌 유형(Hard/Soft/Clearance), "
+            "해결에 적용된 실무 기준(이격 수치, 우선순위 판단 근거)을 반드시 포함하라. "
+            "일반론적 나열(기본 우선순위, 회의 운영)은 피하고 새로운 사례에 집중하라."
+        ),
+    },
+    "설비시공조율": {
+        "title": "설비 시공 조율 현장 사례 업데이트",
+        "tags": "mep,coordination,construction,field-case,update",
+        "queries": ["MEP BIM 협력사 조율 실패 사례 2025", "MEP coordination failure case study Korea"],
+        "prompt": (
+            "MEP 설비 시공 조율 현장에서 실제로 발생한 구체적인 문제 사례 하나와 "
+            "그 해결 방법을 250~350자로 작성하라. "
+            "공종 조합(예: 소방배관 vs 공조덕트, 오배수 vs 전기트레이 등)을 명시하고, "
+            "실제 수치(이격거리, 구배값, 치수)를 포함한 해결 방안을 작성하라. "
+            "이미 잘 알려진 기본 원칙(우선순위, 회의 운영)은 반복하지 말 것."
         ),
     },
     "설비자동제어": {
@@ -1093,6 +1116,58 @@ def generate_kb_section(file_stem: str, topic: dict, search_context: str) -> str
 # ---------------------------------------------------------------------------
 # 파일 업데이트 여부 판단
 # ---------------------------------------------------------------------------
+# 중복 콘텐츠 감지: 기존 파일에 동일한 핵심 문장이 이미 있으면 append 차단
+# ---------------------------------------------------------------------------
+_NOISE_PHRASES = [
+    # 설비시공조율 반복 패턴
+    "navisworks에서는 일반적으로", "navisworks에서 제공하는 기본 간섭 허용",
+    "navisworks에서 설정된 간섭 허용", "navisworks에서 mep 시스템",
+    "navisworks의 간섭 허용 기준은", "navisworks에서 mep 설비 간섭을 최소화",
+    # 공종 우선순위 반복 패턴
+    "먼저 전기설비를 구축하고 그 다음으로는 주조",
+    "건축공사가 진행되므로, 그 다음으로 전기설비",
+    "전기설비, 다음으로는 수도 및 환기 시설, 마지막으로는 난방",
+    "구조 설치(structural) → 설비 배선(electrical) → 주수압",
+    "전기 및 통신 시스템 설치가 먼저 이루어집니다",
+]
+
+_SIMILARITY_THRESHOLD = 0.55  # 기존 콘텐츠와 핵심 3-gram이 55% 이상 겹치면 차단
+
+
+def _extract_trigrams(text: str) -> set[str]:
+    """텍스트에서 한글 3-gram(글자 단위) 추출."""
+    text = re.sub(r"\s+", " ", text.lower())
+    return {text[i:i+3] for i in range(len(text) - 2) if text[i:i+3].strip()}
+
+
+def is_duplicate_content(body: str, kb_file: Path) -> tuple[bool, str]:
+    """생성된 body가 기존 파일 마지막 30줄 또는 전체와 너무 유사하면 True 반환."""
+    # 1. 명시적 노이즈 문구 포함 여부 체크
+    body_lower = body.lower()
+    for phrase in _NOISE_PHRASES:
+        if phrase in body_lower:
+            return True, f"노이즈 문구 포함: '{phrase[:40]}...'"
+
+    if not kb_file.exists():
+        return False, ""
+
+    existing = kb_file.read_text(encoding="utf-8")
+
+    # 2. 최근 auto-enrich 섹션들과 3-gram 유사도 비교 (마지막 2000자)
+    recent_content = existing[-2000:] if len(existing) > 2000 else existing
+    existing_grams = _extract_trigrams(recent_content)
+    body_grams = _extract_trigrams(body)
+
+    if not body_grams:
+        return False, ""
+
+    overlap = len(existing_grams & body_grams) / len(body_grams)
+    if overlap >= _SIMILARITY_THRESHOLD:
+        return True, f"기존 콘텐츠와 {overlap:.0%} 유사 (임계값 {_SIMILARITY_THRESHOLD:.0%})"
+
+    return False, ""
+
+
 def needs_update(kb_file: Path) -> bool:
     """파일에 오늘 날짜 섹션이 없으면 업데이트 필요."""
     if not kb_file.exists():
@@ -1105,6 +1180,12 @@ def needs_update(kb_file: Path) -> bool:
 # KB 파일에 섹션 append
 # ---------------------------------------------------------------------------
 def append_section(kb_file: Path, title: str, tags: str, body: str, stem: str) -> None:
+    # 중복/노이즈 콘텐츠 차단
+    is_dup, reason = is_duplicate_content(body, kb_file)
+    if is_dup:
+        log(f"    → 중복 콘텐츠 차단 ({stem}): {reason}")
+        return
+
     related_stems = RELATED_MAP.get(stem, [])[:4]
     related_line = ""
     if related_stems:

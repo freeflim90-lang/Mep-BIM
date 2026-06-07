@@ -1,6 +1,6 @@
 # AI 간 판단 충돌 로그
 
-> 최종 갱신: 2026-06-05
+> 최종 갱신: 2026-06-06
 > 운영 기준: [[conflict_resolution/README]] | 프로토콜: [[조율차장]]
 
 ---
@@ -12,10 +12,10 @@
 | OPEN | 0 |
 | PENDING | 0 |
 | MEDIATED | 0 |
-| ESCALATED | 2 |
+| ESCALATED | 3 |
 | SETTLED | 1 |
 | PRECEDENT | 1 |
-| 누계 | 4 |
+| 누계 | 5 |
 
 ---
 
@@ -26,6 +26,7 @@
 | AITEST_20260605_004 | 2026-06-05 | T3 우선순위 충돌 | 견적심사원 vs 고객지원CS vs CFO | 범위 외 추가 모델링 무상/유상 판단 | PRECEDENT | 2026-06-05 | 2026-06-08 | 조율차장 | KST02 견적/CFO 판단 우선, 고객관계는 조건부 반영 |
 | AITEST_20260605_006 | 2026-06-05 | T4 정책 충돌 | 라이선스_보안관 vs 법무조항검토 vs 성장전략그룹 | 개인정보/외부 AI 정책 문서 정합성 | ESCALATED | 2026-06-05 | 2026-06-12 | 법무조항검토 | Local-only 임시 적용, CEO+법무+보안관 정책 확정 필요 |
 | AITEST_20260605_007 | 2026-06-05 | T3 우선순위 충돌 / T4 정책 충돌 | CFO vs 고객지원CS vs 전략기획 | 상업/가격 source of truth 정합성 | ESCALATED | 2026-06-05 | 2026-06-12 | CFO | Starter만 확정 판매, 기타 상품은 CEO/CFO 승인 전 공개 판매 금지 |
+| AITEST_20260606_030 | 2026-06-06 | T2 지식 승격 / T4 품질 정책 충돌 | 지식큐레이터 vs 고객지원CS vs 성장전략그룹 | KST04 자동수집 지식 고객 응답 승격 | ESCALATED | 2026-06-06 | 2026-06-13 | 지식큐레이터 | 고객 확정 응답 전 공식 출처, QA 문구, 법무 검토 필요 |
 | AITEST_20260605_008 | 2026-06-05 | T3 우선순위 충돌 | 견적심사원 vs 고객지원CS vs CFO | clash report 추가 리뷰 무상/유상 판단 | SETTLED | 2026-06-05 | 2026-06-06 | 고객지원CS | AITEST_20260605_004 PRECEDENT 적용 |
 
 ---
@@ -64,6 +65,20 @@
 | AITEST_20260606_020 | 2026-06-06 | 자동 감사 네거티브 컨트롤 확장 | PASS | `cases/AITEST_20260606_020.md` |
 | AITEST_20260606_021 | 2026-06-06 | 자동 감사 실패 메시지 가독성 | PASS | `cases/AITEST_20260606_021.md` |
 | AITEST_20260606_022 | 2026-06-06 | 자동 감사 강제 적용 리허설 | PASS | `cases/AITEST_20260606_022.md` |
+| AITEST_20260606_023 | 2026-06-06 | ESCALATED 재판정 준비성 감사 | CONDITIONAL PASS | `cases/AITEST_20260606_023.md` |
+| AITEST_20260606_024 | 2026-06-06 | ESCALATED Missing 증거 보완 리허설 | CONDITIONAL PASS | `cases/AITEST_20260606_024.md` |
+| AITEST_20260606_025 | 2026-06-06 | ESCALATED 결정 로그 패키지 리허설 | CONDITIONAL PASS | `cases/AITEST_20260606_025.md` |
+| AITEST_20260606_026 | 2026-06-06 | ESCALATED Decision Log 자동 감사 확장 | PASS | `cases/AITEST_20260606_026.md` |
+| AITEST_20260606_027 | 2026-06-06 | Decision Log Draft 필드 정합성 자동 감사 | PASS | `cases/AITEST_20260606_027.md` |
+| AITEST_20260606_028 | 2026-06-06 | ESCALATED 재판정 결과 적용 리허설 | PASS | `cases/AITEST_20260606_028.md` |
+| AITEST_20260606_029 | 2026-06-06 | 재판정 4분기 상태 전환 시뮬레이션 | PASS | `cases/AITEST_20260606_029.md` |
+| AITEST_20260606_030 | 2026-06-06 | KST04 고객 응답 승격 충돌 | ESCALATED | `cases/AITEST_20260606_030.md` |
+| AITEST_20260606_031 | 2026-06-06 | KST04 승격 source of truth 및 Missing 증거 큐 | PASS | `cases/AITEST_20260606_031.md` |
+| AITEST_20260606_032 | 2026-06-06 | KST04 후속 큐 자동 감사 확장 | PASS | `cases/AITEST_20260606_032.md` |
+| AITEST_20260606_033 | 2026-06-06 | Conflict Log 요약/색인 정합성 자동 감사 | PASS | `cases/AITEST_20260606_033.md` |
+| AITEST_20260606_034 | 2026-06-06 | ESCALATED 상태 전환 드리프트 자동 감사 | PASS | `cases/AITEST_20260606_034.md` |
+| AITEST_20260606_035 | 2026-06-06 | ESCALATED 닫힘 전환 원자성 자동 감사 | PASS | `cases/AITEST_20260606_035.md` |
+| AITEST_20260606_036 | 2026-06-06 | Decision Log 최종화 자동 감사 | PASS | `cases/AITEST_20260606_036.md` |
 
 ---
 

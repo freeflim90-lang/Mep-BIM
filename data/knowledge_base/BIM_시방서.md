@@ -613,3 +613,14 @@ EIR 필수 포함 사항 (국토부 BIM 시행지침 발주자편 §3 기준):
 - 준공 BIM에서 장비 자산 데이터 (유지보수 주기, 제조사, 모델번호) 포함
 
 - 관련: [[BEP_수행계획서]] · [[BIM_납품검수]] · [[IFC_OpenBIM]] · [[FM_자산관리]]
+
+
+## BIM 시방서 최신 기준 업데이트 (2026-06-07)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-07
+- Tags: BIM,specification,EIR,COBie,update
+
+- 2025년까지 한국에서는 발주처별 BIM 요구 수준(EIR)이 더욱 강화될 예정이다. 이는 프로젝트 참여자에게 필요한 정보 기준을 명확히 정의하고, 데이터 상호 운용성을 보장하기 위함이다.
+- COBie(Construction Operations Building Information Exchange) 표준은 BIM 시방서(EIR)에 포함되어, 건설 현장에서의 효율적인 데이터 관리를 위한 필수 항목으로 자리매김할 것으로 예상된다. 이는 2025년까지 한국 BIM 규격을 반영한 내용이다.
+- FM( Facility Management) 연동 데이터 기준은 BIM 시방서(EIR)를 통해 명시되어야 하며, 이를 통해 건물의 유지보수와 운영 효율성이 향상될 것으로 보인다. 이는 국제표준화 기구인 buildingSMART International에서 제정한 표준을 바탕으로 진행될 예정이다.
+- 발주처가 제시하는 정보 요구사항(EIR)에 따라 BIM 데이터의 적합성을 판단할 수 있는 방법론이 필요하며, 이를 통해 프로젝트 참여자들은 정확하고 효율적인 BIM 데이터를 제공할 수 있게 될 것이다.
+- 관련: [[설비장비]] · [[설계_지침서]] · [[시공_지침서]] · [[BIM_지침서]]

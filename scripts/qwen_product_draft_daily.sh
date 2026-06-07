@@ -10,4 +10,5 @@ else
 fi
 
 "$PY" scripts/seed_qwen_addin_idea_queue.py
+"$PY" scripts/qwen_draft_summary_telegram.py
 "$PY" scripts/qwen_product_draft_runner.py --max-tasks 5 --no-telegram

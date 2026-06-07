@@ -120,6 +120,20 @@
 | AITEST_20260606_020 | 자동 감사 네거티브 컨트롤 확장 | PASS | 케이스 파일 누락, CLOSED Reuse Closure 약화, ESCALATED SLA 누락 감지 |
 | AITEST_20260606_021 | 자동 감사 실패 메시지 가독성 | PASS | 실패 메시지에 `fix:` 힌트를 추가해 수정 경로 안내 |
 | AITEST_20260606_022 | 자동 감사 강제 적용 리허설 | PASS | pre-commit/CI 후보 래퍼 생성, 정상 exit 0/실패 exit 1 확인 |
+| AITEST_20260606_023 | ESCALATED 재판정 준비성 감사 | CONDITIONAL PASS | 006/007은 ON_TRACK 유지, Missing 항목 때문에 승인보다 보류/보완 분기 가능 |
+| AITEST_20260606_024 | ESCALATED Missing 증거 보완 리허설 | CONDITIONAL PASS | Missing Evidence Matrix로 006/007의 Owner, 검증자, 금지 행동, 목표 상태 분해 |
+| AITEST_20260606_025 | ESCALATED 결정 로그 패키지 리허설 | CONDITIONAL PASS | 006/007 Decision Log Draft 생성, 원건 Reuse Closure의 TBD를 실제 경로로 전환 |
+| AITEST_20260606_026 | ESCALATED Decision Log 자동 감사 확장 | PASS | 감사 스크립트가 Decision Log Draft 경로/파일 존재를 검증하고 TBD 퇴행을 실패로 감지 |
+| AITEST_20260606_027 | Decision Log Draft 필드 정합성 자동 감사 | PASS | Decision ID/세션/케이스/합의 상태/선택지/초안 판정을 자동 검증 |
+| AITEST_20260606_028 | ESCALATED 재판정 결과 적용 리허설 | PASS | 승인/보류/조건부 보완/위반 결과별 Decision Log, SLA, Register, KB/QA 갱신 순서 고정 |
+| AITEST_20260606_029 | 재판정 4분기 상태 전환 시뮬레이션 | PASS | 승인/CLOSED, 보류/ESCALATED, 보완/AT_RISK, 위반/BREACHED별 자동 감사 기대 상태 고정 |
+| AITEST_20260606_030 | KST04 고객 응답 승격 충돌 | ESCALATED | 신규 ESCALATED 원건에서도 SLA, Decision Log Draft, 자동 감사 반복 적용 통과 |
+| AITEST_20260606_031 | KST04 승격 source of truth 및 Missing 증거 큐 | PASS | 030 재판정용 고객 응답 금지선, 승격 조건, P0/P1 증거 큐 생성 |
+| AITEST_20260606_032 | KST04 후속 큐 자동 감사 확장 | PASS | source draft/Matrix/SLA readiness/P0 금지선 누락을 자동 감사로 감지 |
+| AITEST_20260606_033 | Conflict Log 요약/색인 정합성 자동 감사 | PASS | 요약 숫자, 색인, 등록부 ESCALATED 원건 누락을 자동 감사로 감지 |
+| AITEST_20260606_034 | ESCALATED 상태 전환 드리프트 자동 감사 | PASS | Register만 CLOSED가 되고 Conflict Log가 ESCALATED로 남는 부분 전환을 실패로 감지 |
+| AITEST_20260606_035 | ESCALATED 닫힘 전환 원자성 자동 감사 | PASS | Register/Conflict Log/SLA 중 하나만 닫히는 부분 전환을 실패로 감지 |
+| AITEST_20260606_036 | Decision Log 최종화 자동 감사 | PASS | 닫힌 원건 Decision Log에 Draft/예정/후보/Missing 문구가 남으면 실패로 감지 |
 
 ## 4.2 에이전트 감사 반영 현황
 
@@ -146,6 +160,20 @@
 | AITEST_20260606_020 | 자동 감사 결함 유형 확장 | PASS | 케이스 파일 누락, Reuse Closure 오류, SLA 누락을 각각 실패로 감지 |
 | AITEST_20260606_021 | 자동 감사 가독성 | PASS | 실패 메시지가 문제와 수정 경로를 함께 표시 |
 | AITEST_20260606_022 | 자동 감사 강제 적용 리허설 | PASS | 실제 hook 설치 없이 래퍼 기반 차단 흐름 확인 |
+| AITEST_20260606_023 | ESCALATED 재판정 준비성 감사 | CONDITIONAL PASS | ON_TRACK과 승인 준비성을 분리해 006/007의 Missing 항목 보완 필요 확인 |
+| AITEST_20260606_024 | ESCALATED Missing 증거 보완 리허설 | CONDITIONAL PASS | 승인 전 Missing 항목을 증거 단위 보완 큐로 전환 |
+| AITEST_20260606_025 | ESCALATED 결정 로그 패키지 리허설 | CONDITIONAL PASS | 재판정일 선택지/보류 조건/후속 조치를 Decision Log Draft에 사전 배치 |
+| AITEST_20260606_026 | ESCALATED Decision Log 자동 감사 확장 | PASS | 원건 Decision Log Draft 누락을 자동 감사 불변조건으로 추가 |
+| AITEST_20260606_027 | Decision Log Draft 필드 정합성 자동 감사 | PASS | Decision Log Draft 내부 필드가 원건과 맞는지 검증 |
+| AITEST_20260606_028 | ESCALATED 재판정 결과 적용 리허설 | PASS | 2026-06-12 결과 적용 순서와 분기별 상태값을 사전 검증 |
+| AITEST_20260606_029 | 재판정 4분기 상태 전환 시뮬레이션 | PASS | 분기별 Register/SLA/Decision Log/자동 감사 불변조건을 비교 |
+| AITEST_20260606_030 | 신규 ESCALATED 반복 적용 | ESCALATED | KST04 지식 승격 충돌을 3번째 ESCALATED 원건으로 등록 |
+| AITEST_20260606_031 | 신규 ESCALATED 후속 큐 내재화 | PASS | 030을 닫기 위한 source of truth 초안과 Missing 증거 Matrix를 생성 |
+| AITEST_20260606_032 | KST04 후속 큐 자동 감사 | PASS | KST04 후속 산출물 누락과 P0 금지선 약화를 실패로 감지 |
+| AITEST_20260606_033 | Conflict Log 정합성 자동 감사 | PASS | 사람이 보는 Conflict Log 요약/색인이 등록부와 어긋나면 실패로 감지 |
+| AITEST_20260606_034 | ESCALATED 상태 전환 드리프트 | PASS | Conflict Log ESCALATED 상태가 Register CLOSED와 충돌하면 실패로 감지 |
+| AITEST_20260606_035 | ESCALATED 닫힘 원자성 | PASS | Conflict SETTLED/PRECEDENT, Register CLOSED, SLA CLOSED 상태 조합을 자동 감사로 검증 |
+| AITEST_20260606_036 | Decision Log 최종화 | PASS | 닫힘 전환에서 Decision Log 초안 흔적을 자동 감사로 검증 |
 
 상세 기록: `DAILY_HANDOFF_20260606.md`
 
@@ -154,6 +182,20 @@
 | 우선순위 | 검증 초점 | 판단 기준 |
 |---|---|---|
 | P1 | ESCALATED 후속 SLA | `AITEST_20260605_006`, `AITEST_20260605_007`이 2026-06-12까지 결정 로그, 정책/가격 source of truth, Reuse Closure 중 하나로 닫히는지 확인 |
+| P1 | ESCALATED Missing 항목 보완 | 006은 제공자 약관/보관삭제/학습사용/국외이전/고객동의/승인, 007은 CEO/CFO 승인/약관환불/리소스 증거를 보완했는지 확인 |
+| P1 | Missing Evidence Matrix 실행성 | `ESCALATED_MISSING_EVIDENCE_MATRIX_20260606.md`의 P0/P1 큐가 실제 결정 로그 또는 명시적 보류 로그로 전환되는지 확인 |
+| P1 | Decision Log Draft 재판정 전환 | `DEC-AICOL-20260605-006-DRAFT.md`, `DEC-AICOL-20260605-007-DRAFT.md`가 2026-06-12에 승인/보류/보완 결과로 갱신되는지 확인 |
+| P1 | Decision Log 자동 감사 반복성 | ESCALATED 원건이 추가될 때 Decision Log Draft 존재 검사가 오탐 없이 작동하는지 확인 |
+| P1 | Decision Log 필드 정합성 반복성 | 새 Decision Log Draft가 추가될 때 ID/세션/케이스/합의 상태 불일치를 잡는지 확인 |
+| P1 | 재판정 결과 적용 실행성 | 2026-06-12 실제 결과가 `ESCALATED_REDECISION_EXECUTION_PLAYBOOK_20260606.md` 순서대로 반영되는지 확인 |
+| P1 | 재판정 분기 상태 조합 실행성 | 실제 결과 분기가 `REDECISION_BRANCH_SIMULATION_20260606.md`의 기대 상태와 일치하는지 확인 |
+| P1 | 신규 ESCALATED 반복 적용성 | `AICOL-20260606-030`이 2026-06-13까지 SLA/Decision Log/KB/QA 경로로 관리되는지 확인 |
+| P1 | KST04 Missing 증거 큐 실행성 | `KST04_PROMOTION_MISSING_EVIDENCE_MATRIX_20260606.md`의 P0 항목이 2026-06-13까지 실제 증거 또는 명시적 보류 로그로 전환되는지 확인 |
+| P1 | KST04 후속 큐 자동 감사 지속성 | KST04 source draft, Matrix, SLA readiness, P0 고객 확정 응답 금지선이 다음 갱신 후에도 유지되는지 확인 |
+| P1 | Conflict Log 정합성 지속성 | 신규 ESCALATED 또는 CLOSED 전환이 생길 때 Conflict Log 요약/색인/등록부 상태가 함께 갱신되는지 확인 |
+| P1 | ESCALATED 상태 전환 양방향 정합성 | Register, Conflict Log, SLA, Decision Log가 닫힘/보류/위반 분기에서 서로 다른 상태로 남지 않는지 확인 |
+| P1 | ESCALATED 닫힘 원자성 | 닫힘 분기에서 Register CLOSED, Conflict SETTLED/PRECEDENT, SLA CLOSED가 같은 패스에서 반영되는지 확인 |
+| P1 | Decision Log 최종화 | 닫힘 분기에서 Decision Log가 실제 선택안/결정일/사유/후속 조치로 바뀌는지 확인 |
 | P1 | 리스크 게이트 상태값 적용성 검증 | 표준 상태값 6개가 다음 실제 세션에서도 자유 문구 없이 유지되는지 확인 |
 | P2 | PRECEDENT 반복 사용 | `AITEST_20260605_004/008` 선례가 새 고객 응대와 견적 판단에서 다시 사용되고 CS/견적 문구가 흔들리지 않는지 확인 |
 | P2 | 에스컬레이션 SLA 재판정 | `ESCALATION_SLA_TRACKER_202606.md`의 ON_TRACK 항목이 2026-06-12에 CLOSED/Explicitly Deferred/AT_RISK/BREACHED 중 하나로 갱신되는지 확인 |
@@ -188,6 +230,14 @@
 | 협업 등록부 자동 감사 네거티브 컨트롤 확장 | QA_테스터 | 2026-06-06 | `AITEST_20260606_020.md` |
 | 협업 등록부 자동 감사 실패 메시지 가독성 개선 | QA_테스터 | 2026-06-06 | `AITEST_20260606_021.md` |
 | 협업 등록부 자동 감사 강제 적용 래퍼 생성 | 내부성장루프 | 2026-06-06 | `scripts/precommit_ai_collaboration_audit.sh` |
+| 006/007 재판정 준비성 Missing 항목 보완 | 법무조항검토, 라이선스_보안관, CFO | 2026-06-12 | `AITEST_20260606_023.md` |
+| 006/007 Missing Evidence Matrix 생성 | 조율차장 | 2026-06-06 | `ESCALATED_MISSING_EVIDENCE_MATRIX_20260606.md` |
+| 006/007 Decision Log Draft 생성 | 조율차장 | 2026-06-06 | `decision_logs/DEC-AICOL-20260605-006-DRAFT.md`, `decision_logs/DEC-AICOL-20260605-007-DRAFT.md` |
+| ESCALATED Decision Log Draft 자동 감사 추가 | QA_테스터 | 2026-06-06 | `scripts/validate_ai_collaboration_audit.py` |
+| Decision Log Draft 필드 정합성 자동 감사 추가 | QA_테스터 | 2026-06-06 | `scripts/validate_ai_collaboration_audit.py` |
+| 2026-06-12 재판정 결과 적용 플레이북 생성 | 조율차장 | 2026-06-06 | `ESCALATED_REDECISION_EXECUTION_PLAYBOOK_20260606.md` |
+| 재판정 4분기 상태 전환 시뮬레이션 생성 | QA_테스터 | 2026-06-06 | `REDECISION_BRANCH_SIMULATION_20260606.md` |
+| 신규 ESCALATED KST04 승격 충돌 등록 | 지식큐레이터 | 2026-06-13 | `AITEST_20260606_030.md` |
 
 ## 6. 조직 내재화 체크리스트
 

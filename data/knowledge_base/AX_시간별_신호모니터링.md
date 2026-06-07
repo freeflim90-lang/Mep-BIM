@@ -361,3 +361,39 @@ def score_signal(text: str) -> float:
 - Modelling the unmortared: how Aecom helped build the 2026 Serpentine Pavilion (BIM Automation, Quality/Product)
 
 운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-06 07:43 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-06/0743_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 경기도, 건설현장에도 AI 도입. 중소건설기업 활성화 방안 모색 - 경기북부탑뉴스 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-06 12:16 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-06/1216_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- Autodesk to acquire MaintainX for $3.6B (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-06 15:22 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-06/1522_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 경기도, 건설현장에도 AI 도입. 중소건설기업 활성화 방안 모색 - 새한일보 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-07 17:28 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-07/1728_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 경기도, 건설분야 AI·콘테크 육성 본격화… ‘스마트 건설 수도’ 도약 추진 - 내외뉴스통신 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.

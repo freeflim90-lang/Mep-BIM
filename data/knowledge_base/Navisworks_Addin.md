@@ -276,3 +276,17 @@ Navisworks API 선택 가이드 — COM API vs .NET Managed API: COM API(`Autode
 - IFC 4.3 읽기 지원 (2026 현황 확인 필요) → MEP IFC 클래시 검토 품질 검증
 
 - 관련: [[Revit_Addin]] · [[BIM_납품검수]] · [[IFC_OpenBIM]] · [[ACC_BIM360]]
+
+
+## Navisworks Add-in 최신 동향 및 활용 팁 (2026-06-07)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-07
+- Tags: navisworks,addin,clash-detection,update
+
+- Navisworks 2025는 모델 조정 기능을 개선하고 새로운 API 어플리케이션 확장 기능을 추가하여 개발者的帮助你了吗？看来您需要关于Autodesk Navisworks 2025的最新功能和Add-in开发实战技巧的信息。以下是在.NET Framework 4.8及以上版本上进行API扩展时的一些关键点：
+
+- 自动化干涉检查：Navisworks 2025引入了改进的模型协调功能，可以自动化干涉检查过程，提高项目管理效率。
+- 报告定制化：用户可以根据需要自定义报告格式和内容，以满足特定项目的文档需求。
+- API利用方法：开发人员可以通过API扩展Navisworks的功能。确保使用.NET Framework 4.8或更高版本进行开发，并充分利用新添加的API功能来增强应用程序。
+
+请注意，有报道称2025年版本的数据处理速度可能比2024年有所下降，因此在开发过程中需要密切关注性能问题。
+- 관련: [[간섭검토]] · [[Revit_Addin]]

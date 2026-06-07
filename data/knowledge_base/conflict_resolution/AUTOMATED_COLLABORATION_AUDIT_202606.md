@@ -26,6 +26,13 @@
 | INV-09 | ESCALATED SLA 항목은 Owner, Due by, 리스크 상태, SLA 상태, 근거를 갖는다. | SLA Tracker를 보강하고 일일 인계에 포함한다. |
 | INV-10 | CLOSED 세션의 Reuse Closure는 `Updated`여야 한다. | CLOSED 유지가 어렵다면 `ESCALATED` 또는 `CONDITIONAL` 케이스로 재분류한다. |
 | INV-11 | 다음 검토일은 `YYYY-MM-DD` 형식이어야 한다. | 특정 날짜 고정보다 세션별 후속 기한을 명시하고, ESCALATED 기한은 SLA Tracker에서 별도 검증한다. |
+| INV-12 | ESCALATED 원건의 Decision Log Draft 경로는 실제 파일로 존재해야 한다. | 케이스 Reuse Closure의 Decision Log 경로를 만들고 `decision_logs/` 아래 초안을 생성한다. |
+| INV-13 | Decision Log Draft의 ID, 세션, 케이스, 합의 상태, 선택지, 초안 판정은 원건과 맞아야 한다. | Decision Log Draft의 핵심 필드를 원건 등록부/케이스 파일과 맞추고 A/B/C/D 선택지를 유지한다. |
+| INV-14 | KST04 ESCALATED 원건은 source draft, Missing Matrix, SLA readiness 참조, P0 고객 확정 응답 금지선을 갖는다. | KST04 후속 산출물을 만들고 P0 기본 행동에 고객 확정 응답 금지를 명시한다. |
+| INV-15 | Conflict Log 요약 숫자와 케이스 색인은 서로 일치하고, 등록부의 ESCALATED 원건을 포함해야 한다. | `CONFLICT_LOG.md` 요약/색인/Owner/Due by를 등록부 기준으로 갱신한다. |
+| INV-16 | Conflict Log가 ESCALATED로 표시한 케이스는 등록부에서도 ESCALATED여야 한다. | Register를 닫을 때 Conflict Log 상태/요약/결정 근거를 같은 패스에서 갱신한다. |
+| INV-17 | Conflict Log가 SETTLED/PRECEDENT로 닫힌 케이스는 Register도 CLOSED여야 하며, 닫힌 Register의 SLA 행은 CLOSED여야 한다. | 닫힘 전환 시 Register, Conflict Log, SLA Tracker를 같은 패스에서 갱신한다. |
+| INV-18 | 닫힌 전환 대상의 Decision Log는 Draft/예정/후보/Missing 같은 초안 흔적을 남기면 안 된다. | 실제 선택안, 결정일, 결정 사유, 후속 조치로 Decision Log를 최종화한다. |
 
 ## 3. 2026-06-06 실행 명령
 
@@ -96,6 +103,20 @@ awk -F'|' '/^\| AICOL-202606(05|06)-[0-9]+ \| 2026-06-(05|06)/{total++; status=$
 | 020 등록 후 재검증 결과 | `PASS sessions=16 closed=14 escalated=2 sla_rows=2` |
 | 021 등록 후 재검증 결과 | `PASS sessions=17 closed=15 escalated=2 sla_rows=2` |
 | 022 등록 후 재검증 결과 | `PASS sessions=18 closed=16 escalated=2 sla_rows=2` |
+| 023 등록 후 재검증 결과 | `PASS sessions=19 closed=17 escalated=2 sla_rows=2` |
+| 024 등록 후 재검증 결과 | `PASS sessions=20 closed=18 escalated=2 sla_rows=2` |
+| 025 등록 후 재검증 결과 | `PASS sessions=21 closed=19 escalated=2 sla_rows=2` |
+| 026 등록 후 재검증 결과 | `PASS sessions=22 closed=20 escalated=2 sla_rows=2` |
+| 027 등록 후 재검증 결과 | `PASS sessions=23 closed=21 escalated=2 sla_rows=2` |
+| 028 등록 후 재검증 결과 | `PASS sessions=24 closed=22 escalated=2 sla_rows=2` |
+| 029 등록 후 재검증 결과 | `PASS sessions=25 closed=23 escalated=2 sla_rows=2` |
+| 030 신규 ESCALATED 등록 후 재검증 결과 | `PASS sessions=26 closed=23 escalated=3 sla_rows=3` |
+| 031 KST04 후속 큐 등록 후 재검증 결과 | `PASS sessions=27 closed=24 escalated=3 sla_rows=3` |
+| 032 KST04 후속 큐 자동 감사 확장 후 재검증 결과 | `PASS sessions=28 closed=25 escalated=3 sla_rows=3` |
+| 033 Conflict Log 정합성 자동 감사 확장 후 재검증 결과 | `PASS sessions=29 closed=26 escalated=3 sla_rows=3 conflicts=5` |
+| 034 ESCALATED 상태 전환 드리프트 자동 감사 후 재검증 결과 | `PASS sessions=30 closed=27 escalated=3 sla_rows=3 conflicts=5` |
+| 035 ESCALATED 닫힘 전환 원자성 자동 감사 후 재검증 결과 | `PASS sessions=31 closed=28 escalated=3 sla_rows=3 conflicts=5` |
+| 036 Decision Log 최종화 자동 감사 후 재검증 결과 | `PASS sessions=32 closed=29 escalated=3 sla_rows=3 conflicts=5` |
 
 스크립트화 과정에서 다음 액션 표의 `AICOL-...` 문구를 세션 행으로 오인한 문제와 SLA 본표 열 수를 잘못 잡은 문제가 발견되어 수정했다.
 018번 등록 후 14건 기준으로 재실행했을 때도 통과했다.
@@ -108,6 +129,16 @@ awk -F'|' '/^\| AICOL-202606(05|06)-[0-9]+ \| 2026-06-(05|06)/{total++; status=$
 | AITEST_20260606_020-A | 케이스 파일 링크를 존재하지 않는 `AITEST_20260606_999.md`로 변경 | FAIL | `FAIL AICOL-20260606-019: missing case file ...` |
 | AITEST_20260606_020-B | CLOSED 세션 Reuse Closure를 `Missing`으로 변경 | FAIL | `FAIL AICOL-20260606-019: CLOSED session reuse closure must be Updated` |
 | AITEST_20260606_020-C | `AICOL-20260605-006` SLA 본표 행 삭제 | FAIL | `FAIL AICOL-20260605-006: missing SLA tracker row` |
+| AITEST_20260606_026 | ESCALATED 원건 Decision Log 경로를 `TBD`로 변경 | FAIL | `FAIL AICOL-20260605-006: missing decision log draft path in case Reuse Closure ...` |
+| AITEST_20260606_027 | Decision Log `Decision ID`와 파일명 불일치 | FAIL | `FAIL AICOL-20260605-006: decision log ID ... != file stem ...` |
+| AITEST_20260606_032-A | KST04 P0 기본 행동에서 고객 확정 응답 금지선 누락 | FAIL | `FAIL AICOL-20260606-030: KST04 P0 row default action does not preserve customer-confirmed-response hold` |
+| AITEST_20260606_032-B | `/private/tmp` SLA 복사본에서 KST04 Matrix 참조 제거 | FAIL | `FAIL AICOL-20260606-030: SLA tracker does not reference KST04 follow-up artifacts` |
+| AITEST_20260606_033-A | `/private/tmp` Conflict Log 복사본에서 ESCALATED 요약을 2로 변경 | FAIL | `FAIL CONFLICT_LOG: summary ESCALATED=2 but index has 3` |
+| AITEST_20260606_033-B | `/private/tmp` Conflict Log 복사본에서 030 색인 제거 | FAIL | `FAIL AICOL-20260606-030: ESCALATED case AITEST_20260606_030 missing from CONFLICT_LOG index` |
+| AITEST_20260606_034 | `/private/tmp` 등록부 복사본에서 030만 CLOSED로 변경 | FAIL | `FAIL AICOL-20260606-030: CONFLICT_LOG still ESCALATED but register status is CLOSED` |
+| AITEST_20260606_035-A | `/private/tmp`에서 030 Register/Conflict는 닫고 SLA만 ON_TRACK 유지 | FAIL | `FAIL AICOL-20260606-030: register is CLOSED but SLA status is ON_TRACK` |
+| AITEST_20260606_035-B | `/private/tmp` Conflict Log만 030 SETTLED로 변경 | FAIL | `FAIL AICOL-20260606-030: CONFLICT_LOG is SETTLED but register status is ESCALATED` |
+| AITEST_20260606_036 | `/private/tmp`에서 030 Register/Conflict/SLA는 닫고 Decision Log만 Draft 유지 | FAIL | `FAIL AICOL-20260606-030: closed case decision log still contains draft or missing-evidence markers` |
 
 원본 등록부는 수정하지 않고 `/private/tmp` 복사본만 사용했다.
 
@@ -120,13 +151,20 @@ awk -F'|' '/^\| AICOL-202606(05|06)-[0-9]+ \| 2026-06-(05|06)/{total++; status=$
 | 케이스 파일 누락 | `FAIL AICOL-20260606-019: missing case file ... | fix: create the case file under conflict_resolution/cases or fix the register link` |
 | CLOSED Reuse Closure 약화 | `FAIL AICOL-20260606-019: CLOSED session reuse closure must be Updated | fix: update KB/QA/backlog evidence or reopen the session before marking it CLOSED` |
 | ESCALATED SLA 누락 | `FAIL AICOL-20260605-006: missing SLA tracker row | fix: add this ESCALATED session to ESCALATION_SLA_TRACKER_202606.md` |
+| ESCALATED Decision Log Draft 누락 | `FAIL AICOL-20260605-006: missing decision log draft path in case Reuse Closure | fix: replace the Decision Log TBD with a real draft path under conflict_resolution/decision_logs` |
+| Decision Log Draft ID 불일치 | `FAIL AICOL-20260605-006: decision log ID ... != file stem ... | fix: make the Decision ID field match the decision log filename` |
+| KST04 후속 산출물 SLA 참조 누락 | `FAIL AICOL-20260606-030: SLA tracker does not reference KST04 follow-up artifacts | fix: add the KST04 source draft and missing evidence matrix to the SLA tracker readiness section` |
+| Conflict Log 요약 불일치 | `FAIL CONFLICT_LOG: summary ESCALATED=2 but index has 3 | fix: update the CONFLICT_LOG status summary to match the case index` |
+| ESCALATED 상태 전환 드리프트 | `FAIL AICOL-20260606-030: CONFLICT_LOG still ESCALATED but register status is CLOSED | fix: when closing a register session, update CONFLICT_LOG status/summary and supporting decision evidence in the same pass` |
+| ESCALATED 닫힘 SLA stale | `FAIL AICOL-20260606-030: register is CLOSED but SLA status is ON_TRACK | fix: when closing an escalated register row, set the matching SLA row to CLOSED or remove/reclassify the stale SLA tracking row` |
+| Decision Log 최종화 누락 | `FAIL AICOL-20260606-030: closed case decision log still contains draft or missing-evidence markers | fix: replace Draft/예정/후보/Missing language with the actual final choice, date, reason, and follow-up actions before closing` |
 
 ## 10. 강제 적용 후보
 
 | 항목 | 값 |
 |---|---|
 | 래퍼 | `scripts/precommit_ai_collaboration_audit.sh` |
-| 정상 리허설 | `PASS sessions=18 closed=16 escalated=2 sla_rows=2`, exit 0 |
+| 정상 리허설 | `PASS sessions=32 closed=29 escalated=3 sla_rows=3 conflicts=5`, exit 0 |
 | 실패 리허설 | missing case file + `fix:` 힌트, exit 1 |
 | 실제 hook 설치 | 보류 |
 
