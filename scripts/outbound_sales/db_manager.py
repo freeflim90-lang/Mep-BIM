@@ -32,6 +32,8 @@ def init_db():
             created_at          TEXT    DEFAULT (datetime('now','localtime')),
             updated_at          TEXT    DEFAULT (datetime('now','localtime')),
             last_contacted_at   TEXT,
+            followup_count      INTEGER DEFAULT 0,
+            next_followup_at    TEXT,
             notes               TEXT
         );
 
@@ -40,10 +42,25 @@ def init_db():
             company_id  INTEGER NOT NULL,
             subject     TEXT,
             status      TEXT,
+            email_type  TEXT    DEFAULT 'initial',
             sent_at     TEXT DEFAULT (datetime('now','localtime')),
             FOREIGN KEY (company_id) REFERENCES companies(id)
         );
     """)
+
+    # 기존 DB에 컬럼이 없으면 추가 (마이그레이션)
+    try:
+        cur.execute("ALTER TABLE companies ADD COLUMN followup_count INTEGER DEFAULT 0")
+    except Exception:
+        pass
+    try:
+        cur.execute("ALTER TABLE companies ADD COLUMN next_followup_at TEXT")
+    except Exception:
+        pass
+    try:
+        cur.execute("ALTER TABLE email_logs ADD COLUMN email_type TEXT DEFAULT 'initial'")
+    except Exception:
+        pass
     conn.commit()
     conn.close()
     print("[DB] 초기화 완료")
@@ -133,16 +150,65 @@ def get_companies_to_contact() -> list[dict]:
     return rows
 
 
-def mark_contacted(company_id: int, subject: str, status: str = "sent"):
+def mark_contacted(company_id: int, subject: str, status: str = "sent", email_type: str = "initial"):
+    from datetime import timedelta
     conn = get_conn()
-    now  = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    now  = datetime.now()
+    now_str = now.strftime("%Y-%m-%d %H:%M:%S")
+    # D+3일에 첫 팔로업 예약
+    next_followup = (now + timedelta(days=3)).strftime("%Y-%m-%d %H:%M:%S")
     conn.execute(
-        "UPDATE companies SET status = 'email_sent', last_contacted_at = ?, updated_at = ? WHERE id = ?",
-        (now, now, company_id)
+        "UPDATE companies SET status = 'email_sent', last_contacted_at = ?, updated_at = ?, next_followup_at = ? WHERE id = ?",
+        (now_str, now_str, next_followup, company_id)
     )
     conn.execute(
-        "INSERT INTO email_logs (company_id, subject, status) VALUES (?, ?, ?)",
-        (company_id, subject, status)
+        "INSERT INTO email_logs (company_id, subject, status, email_type) VALUES (?, ?, ?, ?)",
+        (company_id, subject, status, email_type)
+    )
+    conn.commit()
+    conn.close()
+
+
+def get_companies_for_followup(max_count: int = 30) -> list[dict]:
+    """팔로업 대상 조회: 이메일 발송 후 next_followup_at 도래, 팔로업 2회 미만"""
+    conn = get_conn()
+    cur  = conn.cursor()
+    now  = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    cur.execute("""
+        SELECT id, name, email, address, category, followup_count
+        FROM companies
+        WHERE status = 'email_sent'
+          AND email IS NOT NULL AND email != ''
+          AND next_followup_at IS NOT NULL
+          AND next_followup_at <= ?
+          AND (followup_count IS NULL OR followup_count < 2)
+        ORDER BY next_followup_at ASC
+        LIMIT ?
+    """, (now, max_count))
+    rows = [dict(r) for r in cur.fetchall()]
+    conn.close()
+    return rows
+
+
+def mark_followup_sent(company_id: int, subject: str, followup_count: int):
+    from datetime import timedelta
+    conn = get_conn()
+    now  = datetime.now()
+    now_str = now.strftime("%Y-%m-%d %H:%M:%S")
+    # 팔로업 1차 → D+7, 팔로업 2차 → 종료
+    if followup_count < 2:
+        next_followup = (now + timedelta(days=7)).strftime("%Y-%m-%d %H:%M:%S")
+        new_status = "email_sent"
+    else:
+        next_followup = None
+        new_status = "followup_done"
+    conn.execute(
+        "UPDATE companies SET followup_count = ?, next_followup_at = ?, status = ?, last_contacted_at = ?, updated_at = ? WHERE id = ?",
+        (followup_count, next_followup, new_status, now_str, now_str, company_id)
+    )
+    conn.execute(
+        "INSERT INTO email_logs (company_id, subject, status, email_type) VALUES (?, ?, 'sent', ?)",
+        (company_id, subject, f"followup_{followup_count}")
     )
     conn.commit()
     conn.close()

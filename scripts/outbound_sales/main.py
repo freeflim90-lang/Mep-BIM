@@ -22,14 +22,16 @@ from db_manager import (
     get_companies_without_email,
     update_email,
     get_companies_to_contact,
+    get_companies_for_followup,
     mark_contacted,
+    mark_followup_sent,
     get_stats,
     export_to_csv,
 )
 from crawler       import crawl, crawl_naver
 from email_extractor import extract_emails_from_website, pick_best_email, search_email_via_ddg
 from naver_search   import search_email_via_naver
-from mailer        import send_bulk
+from mailer        import send_bulk, send_followup_bulk
 from config        import BASE_DIR
 
 
@@ -108,11 +110,14 @@ def cmd_extract(args):
 def cmd_send(args):
     """제안 이메일 발송"""
     dry_run = args.dry_run
+    limit   = getattr(args, "limit", None)
     print("=" * 60)
     print(f"✉️  [SEND] 이메일 발송 시작{'  (DRY RUN — 실제 발송 안함)' if dry_run else ''}")
     print("=" * 60)
 
     targets = get_companies_to_contact()
+    if limit:
+        targets = targets[:limit]
     if not targets:
         print("발송 대상 업체가 없습니다. (이메일 있고 미발송인 업체 조회 결과 0건)")
         return
@@ -122,13 +127,39 @@ def cmd_send(args):
     result = send_bulk(targets, dry_run=dry_run)
 
     if not dry_run:
-        # 발송 성공 업체 DB 상태 업데이트
         for company in targets:
             if company.get("email"):
                 subject = f"[LUA BIM LABS] MEP BIM 협업 제안 — {company['name']} 귀중"
-                mark_contacted(company["id"], subject, status="sent")
+                mark_contacted(company["id"], subject, status="sent", email_type="initial")
 
     print(f"\n[SEND 완료] 성공: {result['success']} | 실패: {result['fail']} | 건너뜀: {result['skip']}")
+    if not dry_run:
+        _print_stats()
+
+
+def cmd_followup(args):
+    """팔로업 이메일 발송 (D+3, D+10)"""
+    dry_run = args.dry_run
+    print("=" * 60)
+    print(f"🔁 [FOLLOWUP] 팔로업 발송 시작{'  (DRY RUN)' if dry_run else ''}")
+    print("=" * 60)
+
+    targets = get_companies_for_followup(max_count=50)
+    if not targets:
+        print("팔로업 대상 업체가 없습니다.")
+        return
+
+    print(f"팔로업 대상: {len(targets)}개 업체\n")
+
+    result = send_followup_bulk(targets, dry_run=dry_run)
+
+    if not dry_run:
+        for company in targets:
+            fc = (company.get("followup_count") or 0) + 1
+            subject = f"[LUA BIM LABS] MEP BIM 협업 제안 ({fc}차 팔로업) — {company['name']} 귀중"
+            mark_followup_sent(company["id"], subject, followup_count=fc)
+
+    print(f"\n[FOLLOWUP 완료] 성공: {result['success']} | 실패: {result['fail']}")
     if not dry_run:
         _print_stats()
 
@@ -201,6 +232,10 @@ def main():
 
     p_send = sub.add_parser("send", help="제안 이메일 발송")
     p_send.add_argument("--dry-run", action="store_true", help="실제 발송 없이 미리보기만")
+    p_send.add_argument("--limit", type=int, default=None, help="최대 발송 수 제한 (예: --limit 20)")
+
+    p_followup = sub.add_parser("followup", help="팔로업 이메일 발송 (D+3, D+10 대상 자동 조회)")
+    p_followup.add_argument("--dry-run", action="store_true", help="실제 발송 없이 미리보기만")
 
     sub.add_parser("update",  help="crawl + extract 한번에 실행 (신규 업체 추가·업데이트)")
     sub.add_parser("status",  help="현재 DB 통계 출력")
@@ -216,6 +251,7 @@ def main():
         "crawl":        cmd_crawl,
         "extract":      cmd_extract,
         "send":         cmd_send,
+        "followup":     cmd_followup,
         "update":       cmd_update,
         "status":       cmd_status,
         "export":       cmd_export,
