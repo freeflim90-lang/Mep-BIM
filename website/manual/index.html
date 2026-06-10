@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<title>BIM Command Center — 기능 소개 | LUA BIM LABS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="BIM Command Center for Revit 기능 소개. MEP 모델링·간섭 검토·도면화·데이터 관리를 단일 패널에서."/>
+<link rel="canonical" href="https://luabimlabs.com/manual/"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Noto+Serif+KR:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet"/>
+<style>
+:root {
+  --bg:       #14161a;
+  --bg-2:     #1e2024;
+  --bg-3:     #252830;
+  --ink:      #f0ebe1;
+  --ink-soft: rgba(240,235,225,.7);
+  --ink-mute: rgba(240,235,225,.45);
+  --rule:     rgba(240,235,225,.14);
+  --accent:   oklch(0.72 0.12 50);
+  --f-display-en: "Instrument Serif","Noto Serif KR",serif;
+  --f-display-kr: "Noto Serif KR","Instrument Serif",serif;
+  --f-body: "Pretendard","Apple SD Gothic Neo",ui-sans-serif,system-ui,sans-serif;
+  --f-mono: "JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+*, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+html { scroll-behavior:smooth; }
+body { background:var(--bg); color:var(--ink); font-family:var(--f-body); -webkit-font-smoothing:antialiased; }
+
+/* ── NAV ── */
+nav {
+  position:fixed; top:0; left:0; right:0; z-index:100;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:0 60px; height:64px;
+  background:rgba(20,22,26,.92); backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--rule);
+}
+.nav-logo {
+  font-family:var(--f-mono); font-size:13px; letter-spacing:.1em;
+  color:var(--ink); text-decoration:none;
+}
+.nav-back {
+  display:inline-flex; align-items:center; gap:8px;
+  font-family:var(--f-mono); font-size:12px; letter-spacing:.06em;
+  color:var(--ink-mute); text-decoration:none;
+  padding:8px 16px; border:1px solid var(--rule); border-radius:999px;
+  transition:color .15s, border-color .15s;
+}
+.nav-back:hover { color:var(--ink); border-color:rgba(240,235,225,.3); }
+@media(max-width:600px){ nav { padding:0 24px; } }
+
+/* ── HERO ── */
+.hero {
+  padding: 140px 60px 80px;
+  max-width:900px; margin:0 auto;
+}
+.hero-badge {
+  display:inline-block; font-family:var(--f-mono); font-size:10px;
+  letter-spacing:.14em; text-transform:uppercase;
+  padding:4px 12px; border:1px solid rgba(202,154,80,.4);
+  border-radius:999px; color:var(--accent); margin-bottom:24px;
+}
+.hero-title {
+  font-family:var(--f-display-en); font-size:clamp(40px,6vw,72px);
+  font-weight:400; line-height:1.1; letter-spacing:-.02em;
+}
+.hero-title em { font-style:italic; color:var(--ink-soft); }
+.hero-sub {
+  font-size:18px; line-height:1.7; color:var(--ink-soft);
+  margin-top:20px; max-width:56ch; word-break:keep-all;
+}
+.hero-meta {
+  display:flex; gap:32px; margin-top:36px; flex-wrap:wrap;
+}
+.hero-meta-item { display:flex; flex-direction:column; gap:4px; }
+.hero-meta-item .k { font-family:var(--f-mono); font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-mute); }
+.hero-meta-item .v { font-family:var(--f-mono); font-size:14px; color:var(--ink); }
+
+/* ── SECTION COMMON ── */
+.section {
+  max-width:900px; margin:0 auto;
+  padding:64px 60px; border-top:1px solid var(--rule);
+}
+.section-label {
+  font-family:var(--f-mono); font-size:10px; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--ink-mute); margin-bottom:16px;
+}
+.section-title {
+  font-family:var(--f-display-kr); font-size:clamp(24px,3vw,36px);
+  font-weight:500; line-height:1.2; letter-spacing:-.01em; word-break:keep-all;
+}
+.section-title em { font-style:italic; color:var(--ink-soft); }
+.section-desc {
+  font-size:16px; line-height:1.75; color:var(--ink-soft);
+  margin-top:16px; max-width:60ch; word-break:keep-all;
+}
+
+/* ── FEATURE CARDS ── */
+.feat-grid {
+  display:grid; grid-template-columns:1fr 1fr; gap:1px;
+  background:var(--rule); border:1px solid var(--rule);
+  border-radius:8px; overflow:hidden; margin-top:36px;
+}
+.feat-card {
+  background:var(--bg-2); padding:28px 24px;
+  display:flex; flex-direction:column; gap:10px;
+}
+.feat-no {
+  font-family:var(--f-mono); font-size:10px; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--ink-mute);
+}
+.feat-name {
+  font-family:var(--f-display-kr); font-size:20px; font-weight:500;
+  line-height:1.2; word-break:keep-all;
+}
+.feat-desc {
+  font-size:14px; line-height:1.65; color:var(--ink-soft);
+  word-break:keep-all;
+}
+.feat-tags {
+  display:flex; flex-wrap:wrap; gap:6px; margin-top:4px;
+}
+.feat-tag {
+  font-family:var(--f-mono); font-size:10px; letter-spacing:.06em;
+  padding:3px 8px; border:1px solid var(--rule); border-radius:999px;
+  color:var(--ink-mute);
+}
+
+/* ── KEY BENEFITS ── */
+.benefit-list { display:flex; flex-direction:column; gap:0; margin-top:36px; }
+.benefit-row {
+  display:grid; grid-template-columns:48px 1fr;
+  gap:20px; padding:20px 0; border-bottom:1px solid var(--rule);
+  align-items:start;
+}
+.benefit-row:last-child { border-bottom:none; }
+.benefit-no { font-family:var(--f-mono); font-size:12px; color:var(--ink-mute); padding-top:2px; }
+.benefit-body h4 { font-size:17px; font-weight:600; margin-bottom:6px; }
+.benefit-body p { font-size:14px; line-height:1.65; color:var(--ink-soft); word-break:keep-all; }
+
+/* ── SPEC TABLE ── */
+.spec-table { width:100%; border-collapse:collapse; margin-top:28px; font-size:14px; }
+.spec-table tr { border-bottom:1px solid var(--rule); }
+.spec-table tr:last-child { border-bottom:none; }
+.spec-table td { padding:14px 0; vertical-align:top; }
+.spec-table td:first-child { width:140px; font-family:var(--f-mono); font-size:12px; letter-spacing:.06em; color:var(--ink-mute); padding-right:20px; }
+.spec-table td:last-child { color:var(--ink-soft); line-height:1.6; }
+
+/* ── NOTICE ── */
+.notice {
+  background:var(--bg-2); border:1px solid var(--rule);
+  border-left:3px solid var(--accent); border-radius:0 6px 6px 0;
+  padding:16px 20px; font-size:14px; line-height:1.65;
+  color:var(--ink-soft); margin-top:36px; word-break:keep-all;
+}
+.notice strong { color:var(--ink); }
+
+/* ── CTA ── */
+.cta-section {
+  max-width:900px; margin:0 auto;
+  padding:80px 60px; border-top:1px solid var(--rule);
+  text-align:center;
+}
+.cta-title { font-family:var(--f-display-en); font-size:clamp(28px,4vw,48px); font-weight:400; margin-bottom:16px; }
+.cta-title em { font-style:italic; color:var(--ink-soft); }
+.cta-sub { font-size:16px; color:var(--ink-soft); margin-bottom:36px; word-break:keep-all; }
+.cta-buttons { display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
+.btn-primary {
+  display:inline-flex; align-items:center; gap:10px;
+  font-family:var(--f-mono); font-size:13px; letter-spacing:.08em; text-transform:uppercase;
+  text-decoration:none; padding:16px 36px; border-radius:999px;
+  background:var(--accent); color:#0B1929; font-weight:700;
+  box-shadow:0 0 28px rgba(202,154,80,.25); transition:opacity .2s;
+}
+.btn-secondary {
+  display:inline-flex; align-items:center; gap:10px;
+  font-family:var(--f-mono); font-size:13px; letter-spacing:.08em; text-transform:uppercase;
+  text-decoration:none; padding:15px 28px; border-radius:999px;
+  border:1px solid var(--rule); color:var(--ink-soft);
+  transition:border-color .15s, color .15s;
+}
+.btn-secondary:hover { border-color:rgba(240,235,225,.3); color:var(--ink); }
+
+/* ── FOOTER ── */
+footer {
+  max-width:900px; margin:0 auto; padding:32px 60px 48px;
+  border-top:1px solid var(--rule);
+  font-family:var(--f-mono); font-size:11px; color:var(--ink-mute);
+  display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;
+}
+
+@media(max-width:700px){
+  .hero, .section, .cta-section, footer { padding-left:24px; padding-right:24px; }
+  .feat-grid { grid-template-columns:1fr; }
+  .hero-meta { gap:20px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="https://luabimlabs.com" class="nav-logo">LUA / BIM LABS</a>
+  <a href="https://luabimlabs.com#bcc" class="nav-back">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="15 18 9 12 15 6"/></svg>
+    제품 페이지로
+  </a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <span class="hero-badge">Product Overview · BIM Command Center for Revit</span>
+  <h1 class="hero-title">30개 기능,<br><em>하나의 패널.</em></h1>
+  <p class="hero-sub">
+    BIM Command Center는 MEP BIM 실무에 필요한 기능을 단일 Revit 패널에 통합한 명령 대시보드입니다.
+    모델링, 간섭 검토, 도면화, 데이터 관리를 하나의 진입점으로 처리합니다.
+  </p>
+  <div class="hero-meta">
+    <div class="hero-meta-item"><span class="k">지원 버전</span><span class="v">Revit 2019 – 2027</span></div>
+    <div class="hero-meta-item"><span class="k">런타임</span><span class="v">.NET 4.8 / .NET 8</span></div>
+    <div class="hero-meta-item"><span class="k">라이선스</span><span class="v">365일 · 1회 활성화</span></div>
+    <div class="hero-meta-item"><span class="k">기능 수</span><span class="v">30+ 기능</span></div>
+  </div>
+</div>
+
+<!-- KEY BENEFITS -->
+<div class="section">
+  <div class="section-label">핵심 가치</div>
+  <h2 class="section-title">왜 BIM Command Center인가</h2>
+  <div class="benefit-list">
+    <div class="benefit-row">
+      <span class="benefit-no">01</span>
+      <div class="benefit-body">
+        <h4>애드인 분산 관리 문제 해결</h4>
+        <p>여러 개의 별도 Revit 애드인을 설치하면 리본이 복잡해지고 관리가 어렵습니다. BIM Command Center는 모든 기능을 단일 탭 하나로 통합해 Revit 리본을 깔끔하게 유지합니다.</p>
+      </div>
+    </div>
+    <div class="benefit-row">
+      <span class="benefit-no">02</span>
+      <div class="benefit-body">
+        <h4>검색으로 바로 실행</h4>
+        <p>기능 이름을 기억하지 않아도 됩니다. 패널의 검색창에 키워드를 입력하면 이름·설명·태그를 기준으로 즉시 필터링됩니다. 즐겨찾기 등록으로 자주 쓰는 기능은 한 번에 접근합니다.</p>
+      </div>
+    </div>
+    <div class="benefit-row">
+      <span class="benefit-no">03</span>
+      <div class="benefit-body">
+        <h4>라이선스 1회 활성화로 전체 기능 사용</h4>
+        <p>개별 기능마다 별도 라이선스가 필요하지 않습니다. BIM Command Center 라이선스 하나로 포함된 모든 기능을 즉시 사용할 수 있습니다.</p>
+      </div>
+    </div>
+    <div class="benefit-row">
+      <span class="benefit-no">04</span>
+      <div class="benefit-body">
+        <h4>멀티 버전 단일 설치</h4>
+        <p>설치 프로그램이 PC에 설치된 Revit 버전을 자동으로 감지합니다. 2019~2024(net48)와 2025~2027(net8)을 모두 지원하며, 한 번 설치로 여러 버전에 동시 적용됩니다.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURE MODULES -->
+<div class="section">
+  <div class="section-label">기능 모듈</div>
+  <h2 class="section-title">6개 모듈, <em>30개 이상의 기능</em></h2>
+  <p class="section-desc">각 모듈은 독립적으로 작동하며 라이선스 1회 활성화로 전체 모듈을 사용할 수 있습니다.</p>
+  <div class="feat-grid">
+
+    <div class="feat-card">
+      <span class="feat-no">[ 01 ] COMMON</span>
+      <div class="feat-name">공통 유틸리티</div>
+      <p class="feat-desc">프로젝트 단위 설정, 패밀리 일괄 처리, 워크셋·버전·동기화 관리 도구 모음.</p>
+      <div class="feat-tags">
+        <span class="feat-tag">단위 설정</span>
+        <span class="feat-tag">Family 변환</span>
+        <span class="feat-tag">Workset Dashboard</span>
+        <span class="feat-tag">Multi File Upgrade</span>
+        <span class="feat-tag">Auto Sync</span>
+      </div>
+    </div>
+
+    <div class="feat-card">
+      <span class="feat-no">[ 02 ] MODELING</span>
+      <div class="feat-name">모델링 도구</div>
+      <p class="feat-desc">MEP 요소 분할·병합·정렬 자동화 및 태그 일괄 배치. 반복 수작업을 명령 하나로 처리합니다.</p>
+      <div class="feat-tags">
+        <span class="feat-tag">Split · Break · Merge</span>
+        <span class="feat-tag">Align Couplings</span>
+        <span class="feat-tag">자동 태깅</span>
+        <span class="feat-tag">파이프 번들 태깅</span>
+        <span class="feat-tag">Family Batch</span>
+      </div>
+    </div>
+
+    <div class="feat-card">
+      <span class="feat-no">[ 03 ] CLASH CHECK</span>
+      <div class="feat-name">간섭 검토</div>
+      <p class="feat-desc">간섭 검출부터 Before/After 캡처, PDF·PPT 보고서 생성까지 간섭 검토 전 과정을 자동화합니다.</p>
+      <div class="feat-tags">
+        <span class="feat-tag">Point Marker 검출</span>
+        <span class="feat-tag">Section Box 3D 뷰</span>
+        <span class="feat-tag">일괄 Before/After 캡처</span>
+        <span class="feat-tag">PDF · PPT 보고서</span>
+      </div>
+    </div>
+
+    <div class="feat-card">
+      <span class="feat-no">[ 04 ] DATA</span>
+      <div class="feat-name">데이터 관리</div>
+      <p class="feat-desc">모델 품질 지표 시각화, MEP 시스템별 필터·뷰 자동 생성, 물량산출, Excel 연동.</p>
+      <div class="feat-tags">
+        <span class="feat-tag">Model Health 대시보드</span>
+        <span class="feat-tag">MEP 필터 자동 생성</span>
+        <span class="feat-tag">PIN Dashboard</span>
+        <span class="feat-tag">MEP 물량산출</span>
+        <span class="feat-tag">스케줄 Excel 연동</span>
+        <span class="feat-tag">시스템별 3D 뷰 생성</span>
+      </div>
+    </div>
+
+    <div class="feat-card">
+      <span class="feat-no">[ 05 ] DRAWING</span>
+      <div class="feat-name">도면화 자동화</div>
+      <p class="feat-desc">CSV·Excel 도면목록으로 Revit 시트를 일괄 생성하고 DWG 파일을 도면번호 기준으로 자동 삽입합니다.</p>
+      <div class="feat-tags">
+        <span class="feat-tag">CSV → 시트 생성</span>
+        <span class="feat-tag">Excel → 시트 생성</span>
+        <span class="feat-tag">CAD 자동 삽입</span>
+      </div>
+    </div>
+
+    <div class="feat-card">
+      <span class="feat-no">[ 06 ] TODO + LINK</span>
+      <div class="feat-name">할 일 관리 · 링크 관리</div>
+      <p class="feat-desc">BIM 협업용 할 일 목록을 Revit 요소와 연결해 관리하고, 링크 파일을 일괄 재로드·언로드·추가합니다.</p>
+      <div class="feat-tags">
+        <span class="feat-tag">BIM Todo</span>
+        <span class="feat-tag">요소 연결</span>
+        <span class="feat-tag">링크 일괄 재로드</span>
+        <span class="feat-tag">링크 일괄 언로드</span>
+        <span class="feat-tag">링크 다중 추가</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- SYSTEM SPEC -->
+<div class="section">
+  <div class="section-label">시스템 요구사항</div>
+  <h2 class="section-title">지원 환경</h2>
+  <table class="spec-table">
+    <tr><td>운영체제</td><td>Windows 10 / 11 (64비트)</td></tr>
+    <tr><td>Revit 버전</td><td>2019 · 2020 · 2021 · 2022 · 2023 · 2024 · 2025 · 2026 · 2027</td></tr>
+    <tr><td>.NET</td><td>4.8 이상 (Revit 2019–2024) · 8.0 이상 (Revit 2025–2027)</td></tr>
+    <tr><td>설치 권한</td><td>관리자 권한 필요</td></tr>
+    <tr><td>인터넷</td><td>라이선스 활성화 시 불필요 (오프라인 가능)</td></tr>
+  </table>
+
+  <div class="notice">
+    <strong>상세 사용 설명서</strong>는 라이선스 구매 후 제공됩니다.
+    단계별 설치 방법, 각 기능의 상세 사용법, FAQ를 포함한 전체 매뉴얼을 이메일로 전달해 드립니다.
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta-section">
+  <h2 class="cta-title">지금 시작하기, <em>30일 무료 체험.</em></h2>
+  <p class="cta-sub">라이선스 문의 시 전체 사용 설명서와 설치 파일을 함께 제공합니다.</p>
+  <div class="cta-buttons">
+    <a href="mailto:freeflim90@gmail.com?subject=BIM%20Command%20Center%20License%20문의&body=안녕하세요%2C%20BIM%20Command%20Center%20라이선스에%20대해%20문의드립니다." class="btn-primary">
+      라이선스 문의 →
+    </a>
+    <a href="https://luabimlabs.com#bcc" class="btn-secondary">
+      제품 페이지로
+    </a>
+  </div>
+  <p style="margin-top:20px; font-family:var(--f-mono); font-size:11px; color:var(--ink-mute); letter-spacing:.06em;">
+    Individual USD 14/mo · Annual USD 140/yr · Team 5-Pack USD 490/yr
+  </p>
+</div>
+
+<footer>
+  <span>© 2026 LUA BIM LABS</span>
+  <span>BIM Command Center for Revit · v1.1</span>
+  <a href="https://luabimlabs.com" style="color:var(--ink-mute); text-decoration:none;">luabimlabs.com</a>
+</footer>
+
+</body>
+</html>
