@@ -1,0 +1,40 @@
+LUA BIM LABS Starter
+Day 64 - Fixture Connections — WC, Basin, Sink
+
+1. Why This Matters
+Plumbing fixture connections are the final link between the designed plumbing system and the actual building function. Wrong connection sizes, wrong trap types, or missing vents cause blocked drains, odors, and code violations that require significant rework.
+
+2. Core Concept
+- Each fixture has specific connection requirements:
+
+| Fixture | Waste Size | Trap Type | Water Supply |
+|---|---|---|---|
+| WC (toilet) | DN100 | Integral P-trap | CWS only (DN15) |
+| Wash basin | DN32–DN40 | P-trap (external) | CWS + HWS (DN15) |
+| Kitchen sink | DN40–DN50 | P-trap | CWS + HWS (DN15) |
+| Urinal | DN50 | P-trap | CWS (DN15) |
+| Floor drain | DN50–DN100 | Deep-seal trap | None (drain only) |
+| Shower | DN50 | P-trap (internal) | CWS + HWS (DN20) |
+
+- In Revit: plumbing fixtures are families with built-in connectors — a waste connector, and CWS and HWS connectors
+- Connect waste connector to the sanitary branch pipe — match sizes
+- Connect CWS and HWS connectors to the water supply pipes — match sizes
+- Check trap-to-vent distance: P-trap must be within a maximum distance from the vent connection (typically 750mm for DN40, 1500mm for DN100 — check local code)
+
+3. Real Project Lens
+On a hotel floor, 20 bathrooms each have: 1 WC, 1 basin, 1 shower, 1 floor drain. The modeler places the fixture families, connects each waste to the horizontal branch, connects CWS and HWS to the supply branches. The vent pipes connect to the sanitary branches within code-required trap-to-vent distances. The system is fully connected with no open connectors.
+
+4. BIM Check
+- Check: Every fixture has both waste and water connections made — no open connectors
+- Check: WC waste is DN100 — no WC connected to a DN50 waste branch
+- Check: All P-traps are modeled (as part of fixture family or as separate fitting) — no untrapped drain connections
+
+5. Common Mistake
+Connecting a basin waste (DN32) to a WC soil branch (DN100) without a reducer fitting — Revit may allow the connection but the drawing will show a size mismatch that the plumbing inspector will reject.
+
+6. Today's Action
+In Revit, place one WC family and one basin family. Connect each to a sanitary branch pipe. Confirm the waste connector sizes match the pipe sizes. Check the Properties of each fixture and confirm CWS and HWS connectors show flow direction correctly.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

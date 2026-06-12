@@ -1,0 +1,28 @@
+LUA BIM LABS Starter
+Day 70 - Pump Room Layout — Arrangement, Discharge Headers, and Isolation
+
+1. Why This Matters
+The pump room is the heart of the piping system. Getting the equipment arrangement correct in BIM before construction prevents costly structural modifications and ensures maintenance access is preserved.
+
+2. Core Concept
+- Pump arrangement: in large systems, multiple pumps operate in parallel — each with isolation valves on suction and discharge, a non-return valve on discharge, and a pressure gauge
+- Suction header: a large-diameter pipe that collects water from the chiller and distributes it to the pump inlets
+- Discharge header: collects water from all pump outlets and delivers it to the distribution system
+- Valve placement: isolation valves must be accessible — this drives pump spacing and aisle widths in the model
+- Clearance: allow 600mm minimum between pump side and wall for valve access; 900mm in front of pump for motor removal
+
+3. Real Project Lens
+On a commercial project, the pump room layout was modeled with pumps 450mm from the wall — sufficient for pipe connections but not for motor removal during maintenance. Facilities engineers discovered this after occupation when the first pump motor needed replacement. A temporary wall panel had to be cut to allow extraction.
+
+4. BIM Check
+- Check: each pump has isolation valves on both suction and discharge sides that are reachable without climbing over pipework
+- Check: non-return valves are modeled on the discharge side of each pump
+- Check: there is a 900mm clear access corridor in front of each pump for motor and impeller removal
+
+5. Common Mistake
+Beginners model pump rooms to fit the equipment on plan without verifying that maintenance access clearances are met. Pump rooms that look clean on screen often fail in practice.
+
+6. Today's Action
+Sketch a simple pump room layout with two parallel pumps, suction header, discharge header, isolation valves, and a maintenance aisle. Check that 900mm front clearance exists for each pump.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

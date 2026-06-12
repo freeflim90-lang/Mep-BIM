@@ -1,0 +1,50 @@
+LUA BIM LABS Starter
+Day 75 - Week 3 Review — Conduit Systems Summary
+
+1. Why This Matters
+Conduit systems are the nervous system of an electrical installation — they protect conductors, define routing paths, and interact with structure and fire compartmentation. Week 3 covered the four core rules that make conduit routing constructible: correct material type, correct size, adequate pull box access, and fire-rated penetration treatment. Missing any one of these makes the model incomplete for construction use.
+
+2. Core Concept
+Week 3 Conduit Systems Summary
+
+| Day | Topic | Key Point |
+|---|---|---|
+| 64 | Conduit Routing | 40% fill maximum; max 15m run or 360° bends before pull box |
+| 71 | Conduit Types | EMT / RGS / GI / PVC — model with correct OD for specified material type |
+| 72 | Conduit Fill | 40% fill for 3+ conductors; size per engineer's conduit schedule, not guesswork |
+| 73 | Pull Box Placement | Pull box required at 30m straight limit and at 360° cumulative bend limit |
+| 74 | Fire Penetrations | Every fire-rated wall/floor penetration needs a fire sleeve family with correct fire rating parameter |
+
+Critical Rules — Conduit BIM
+- Never model all conduits as the same default size — size from the conduit schedule or fill calculation
+- OD matters: EMT, RGS, and PVC have different outer diameters for the same trade size — use manufacturer data
+- Pull boxes are constructibility, not optional — a model without pull boxes on long runs will generate site instructions
+- Fire-rated penetrations require sleeve families, not just conduit passing through walls
+- Generate a fire-rated penetration schedule before every coordination submission
+- Confirm pull box positions are in accessible ceiling zones — not buried or above fixed ceilings
+
+Conduit BIM Workflow (summary):
+1. Confirm conduit type from project specification
+2. Size conduit from engineer's conduit schedule (or fill calculation)
+3. Model with correct OD — use manufacturer dimension tables
+4. Check run length and bend count — place pull boxes where required
+5. At every fire-rated wall/floor crossing, add fire sleeve family with fire rating parameter
+6. Generate penetration schedule and submit for structural coordination
+
+3. Real Project Lens
+An electrical BIM coordinator prepares the conduit layer for a coordination review. She runs four checks in sequence: (1) all conduits sized from the engineer's schedule — not default sizes; (2) all conduits have correct OD per material type; (3) no run exceeds 30m or 360° without a pull box; (4) all fire-rated wall penetrations have sleeve families. She finds two issues — three conduits at default 20mm size for a circuit that requires 32mm, and one fire-rated penetration without a sleeve. Both are fixed before the model is submitted.
+
+4. BIM Check
+- Check: Does every conduit in the model have a material type parameter set (EMT, RGS, PVC) that matches the project specification?
+- Check: Are pull boxes present on all conduit runs exceeding 30m straight length or 360° cumulative bends?
+- Check: Is the fire-rated penetration schedule complete — listing all sleeves with their size, wall/floor reference, and fire rating?
+
+5. Common Mistake
+Completing the conduit routing path and considering the conduit work done — without placing pull boxes or fire sleeves. The routing geometry looks correct in 3D, but the model fails constructibility review because the installation steps (pulling wire, achieving fire ratings) have not been addressed.
+
+6. Today's Action
+Review one conduit run on your current or training model. Check it against all five Week 3 rules: correct type, correct size, correct OD, pull box coverage, fire penetration treatment. Write down which rules pass and which require attention. This is your Week 3 quality gate.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

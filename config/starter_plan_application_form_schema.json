@@ -1,0 +1,104 @@
+{
+  "form_title": "LUA BIM LABS Starter Plan Application",
+  "service": "LUA BIM LABS Starter Plan",
+  "price": {
+    "amount": 39,
+    "currency": "USD",
+    "payment_provider": "PayPal"
+  },
+  "sections": [
+    {
+      "id": "client_information",
+      "title": "Client Information",
+      "fields": [
+        {"id": "full_name", "label": "Full name", "type": "short_text", "required": true},
+        {"id": "email", "label": "Email address", "type": "email", "required": true},
+        {"id": "country", "label": "Country", "type": "short_text", "required": true},
+        {"id": "time_zone", "label": "Time zone", "type": "short_text", "required": false},
+        {"id": "preferred_language", "label": "Preferred language", "type": "multiple_choice", "required": true, "options": ["English", "Korean", "Japanese", "Chinese (Simplified)", "Arabic", "Other"]},
+        {"id": "company_or_school", "label": "Company or school", "type": "short_text", "required": false},
+        {"id": "job_title", "label": "Job title", "type": "short_text", "required": false}
+      ]
+    },
+    {
+      "id": "paypal_payment",
+      "title": "PayPal Payment Information",
+      "fields": [
+        {"id": "paypal_email", "label": "Email used for PayPal payment", "type": "email", "required": true},
+        {"id": "paypal_transaction_id", "label": "PayPal transaction ID or receipt ID", "type": "short_text", "required": false},
+        {"id": "payment_date", "label": "Payment date", "type": "date", "required": false}
+      ]
+    },
+    {
+      "id": "telegram_connection",
+      "title": "Telegram Connection",
+      "fields": [
+        {"id": "telegram_username", "label": "Telegram username, including @", "type": "short_text", "required": true},
+        {"id": "telegram_display_name", "label": "Telegram display name", "type": "short_text", "required": false},
+        {"id": "telegram_user_id", "label": "Telegram user ID if known", "type": "short_text", "required": false}
+      ]
+    },
+    {
+      "id": "learning_profile",
+      "title": "Learning Profile",
+      "description": "Your discipline selection determines your Day 61–90 specialist curriculum. Days 1–60 are the same Foundation program for all learners.",
+      "fields": [
+        {"id": "current_bim_level", "label": "Current BIM level", "type": "multiple_choice", "required": true, "options": ["Beginner", "Junior Revit MEP Modeler", "MEP Engineer learning BIM", "BIM Coordinator beginner", "Other"]},
+        {"id": "revit_mep_experience", "label": "Revit MEP experience", "type": "paragraph", "required": false},
+        {"id": "navisworks_experience", "label": "Navisworks experience", "type": "paragraph", "required": false},
+        {
+          "id": "main_mep_discipline",
+          "label": "MEP discipline track (Days 61–90)",
+          "description": "This selection determines your Day 61–90 specialist curriculum. Days 1–60 Foundation is the same for all learners.",
+          "type": "multiple_choice",
+          "required": true,
+          "options": [
+            "HVAC (Air Conditioning & Ventilation)",
+            "Piping / Mechanical",
+            "Plumbing / Sanitary",
+            "Fire Protection",
+            "Electrical"
+          ]
+        },
+        {"id": "learning_goal", "label": "Learning goal", "type": "multiple_choice", "required": false, "options": ["Learn MEP BIM basics", "Improve Revit MEP modeling", "Understand clash coordination", "Prepare for BIM project work", "Build daily BIM learning habit"]},
+        {"id": "biggest_difficulty", "label": "Biggest current difficulty", "type": "paragraph", "required": false}
+      ]
+    },
+    {
+      "id": "service_understanding",
+      "title": "Service Understanding",
+      "fields": [
+        {"id": "understand_90day_structure", "label": "I understand the Starter Plan is a 90-Day MEP BIM program: Day 1–60 Foundation, Day 61–90 Discipline Deep-Dive.", "type": "checkbox", "required": true},
+        {"id": "understand_discipline_track", "label": "I understand my chosen MEP discipline determines my Day 61–90 curriculum track.", "type": "checkbox", "required": true},
+        {"id": "understand_friday_quiz", "label": "I understand I will receive a BIM Check Friday quiz every Friday (self-assessment only, no grades or feedback).", "type": "checkbox", "required": true},
+        {"id": "understand_reference_cards", "label": "I understand Quick Reference Cards will be sent at the end of each foundation track (up to 8 cards over 90 days).", "type": "checkbox", "required": true},
+        {"id": "starter_daily_lessons", "label": "I understand the Starter Plan provides daily MEP BIM lessons through Telegram.", "type": "checkbox", "required": true},
+        {"id": "no_project_file_review", "label": "I understand the Starter Plan does not include project file review.", "type": "checkbox", "required": true},
+        {"id": "no_revit_model_qa", "label": "I understand the Starter Plan does not include Revit model QA.", "type": "checkbox", "required": true},
+        {"id": "no_clash_report_review", "label": "I understand the Starter Plan does not include clash report review.", "type": "checkbox", "required": true},
+        {"id": "educational_only", "label": "I understand the Starter Plan is educational content only and does not provide engineering design verification, code compliance confirmation, construction approval, legal advice, or professional certification.", "type": "checkbox", "required": true},
+        {"id": "no_outcome_guarantee", "label": "I understand LUA BIM LABS does not guarantee employment, certification, project approval, construction acceptance, or business results.", "type": "checkbox", "required": true},
+        {"id": "coming_soon_services", "label": "I understand Personal Tutor, Coordinator Mentor, and Project Mentor are Coming Soon.", "type": "checkbox", "required": true},
+        {"id": "telegram_message_consent", "label": "I agree to receive educational messages through Telegram.", "type": "checkbox", "required": true},
+        {"id": "terms_disclaimer_refund_acceptance", "label": "I have read and agree to the Starter Plan terms, disclaimers, refund policy, and cancellation policy.", "type": "checkbox", "required": true}
+      ]
+    },
+    {
+      "id": "privacy_content_use",
+      "title": "Privacy and Content Use",
+      "fields": [
+        {"id": "no_confidential_files", "label": "I will not upload confidential project files, private drawings, contracts, or personal data through Telegram.", "type": "checkbox", "required": true},
+        {"id": "anonymized_reuse", "label": "I understand that general questions may be anonymized and reused as educational knowledge by LUA BIM LABS.", "type": "checkbox", "required": true},
+        {"id": "profile_storage_consent", "label": "I agree that LUA BIM LABS may store my learning profile and service notes for education delivery and support.", "type": "checkbox", "required": true}
+      ]
+    },
+    {
+      "id": "questions",
+      "title": "Questions",
+      "fields": [
+        {"id": "first_learning_topic", "label": "What would you like to learn first?", "type": "paragraph", "required": false},
+        {"id": "onboarding_question", "label": "Any question before onboarding?", "type": "paragraph", "required": false}
+      ]
+    }
+  ]
+}

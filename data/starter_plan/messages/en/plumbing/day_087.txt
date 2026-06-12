@@ -1,0 +1,64 @@
+LUA BIM LABS Starter
+Day 87 - Plumbing Parameter Checklist
+
+1. Why This Matters
+A plumbing BIM model is only as useful as the data it contains. Geometry without data is visualization. Geometry with complete, accurate data is a construction and facilities management asset. The parameter checklist is the tool that bridges the gap between a model that looks right and a model that is right — and it is the document reviewers use when auditing your work before issue.
+
+2. Core Concept
+The plumbing parameter checklist verifies that every required data field is filled for every model element in the plumbing BIM model.
+
+Core parameters for drainage pipes:
+
+| Parameter | Required Value | Checked By |
+|-----------|---------------|------------|
+| System Name | Project-specific system name (e.g., "Soil Stack - Zone A") | BIM Coordinator |
+| System Type | Sanitary, Domestic Hot Water, Domestic Cold Water | Revit system |
+| Nominal Diameter | DN value matching design intent | BIM Coordinator |
+| Slope | Greater than zero for all horizontal drainage pipes | Schedule filter |
+| Material | PVC-U, Cast Iron, CPVC, Copper, etc. | Shared parameter |
+| Insulation Thickness | Per specification (e.g., 25 mm for cold water) | Shared parameter |
+| Pressure Rating | PN value where applicable | Shared parameter |
+| Fire Stop Rating | Rated / Unrated at each slab/wall penetration | Sleeve family |
+
+Core parameters for plumbing fixtures:
+
+| Parameter | Required Value | Checked By |
+|-----------|---------------|------------|
+| Mark | Unique fixture tag | BIM Coordinator |
+| Fixture Unit Count | DFU value from design specification | Shared parameter |
+| Trap Type | P-trap, deep seal, AAV, bottle trap | Family parameter |
+| System Name | Connected system name | Revit system |
+| Room Name | Architectural room | Room tag |
+
+Core parameters for valves:
+
+| Parameter | Required Value | Checked By |
+|-----------|---------------|------------|
+| Valve Type | Gate, Ball, Check, PRV, etc. | Family name |
+| Service | Hot water, Cold water, Soil, etc. | Shared parameter |
+| Access Required | Yes / No | Shared parameter |
+| Tag | Valve tag matching P&ID | Mark parameter |
+
+How to run the checklist:
+1. Create Revit schedules for pipes, fixtures, and valves — one schedule per element type
+2. Filter for blank cells in key fields: Slope, System Name, Material, Fixture Unit Count
+3. Export to Excel and sort by blank count per zone
+4. Assign correction tasks to modelers by zone
+5. Rerun schedules after corrections to confirm completion
+
+3. Real Project Lens
+On a large commercial development, the BIM manager introduced a weekly parameter checklist export. Every Monday morning, the schedule was exported and any element with more than two blank parameters was flagged for correction by end of day Wednesday. Over six weeks, the number of flagged elements dropped from 480 to 12. The discipline BIM lead credited the routine as the single most effective quality tool on the project.
+
+4. BIM Check
+- Check: A pipe schedule filtered for Slope = 0 returns zero results (all drainage pipes have slope set)
+- Check: A fixture schedule filtered for Fixture Unit Count = blank returns zero results
+- Check: A valve schedule shows a Tag/Mark value for every valve — no untagged valves in the model
+
+5. Common Mistake
+A common mistake is running the checklist only at the end of the project, just before the coordination drawing is issued. At that point, hundreds of elements may have blank parameters, and correcting them under deadline pressure leads to errors. Run the checklist weekly from the start of detailed modeling.
+
+6. Today's Action
+In Revit, create a Pipe Schedule with four columns: System Name, Nominal Diameter, Slope, and Material. Filter to show only pipes where Slope is blank or equals zero. Count the results. This number is your current parameter quality gap for drainage. Set a target to reach zero by next week.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

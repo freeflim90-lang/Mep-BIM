@@ -1,0 +1,43 @@
+---
+type: source-index
+generated: true
+category: AI Knowledge Base
+source_path: "data/knowledge_base/conflict_resolution/cases/AITEST_20260605_007.md"
+---
+
+# AITEST_20260605_007 상업 가격 source of truth 충돌 테스트
+
+## Source
+
+`data/knowledge_base/conflict_resolution/cases/AITEST_20260605_007.md`
+
+Absolute path:
+
+`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/conflict_resolution/cases/AITEST_20260605_007.md`
+
+## Category
+
+- [[MOC - AI Knowledge Base]]
+
+## Summary
+
+- 테스트일: 2026-06-05 - 주관: CFO - 모드: COMMERCIAL_REVIEW + CONFLICT_RESOLUTION - 적용 SOP: `docs/internal_organization_documents/30_AI_TO_AI_COLLABORATION_SOP.md` - 실행 템플릿: `docs/internal_organization_documents/31_AI_COLLABORATION_RUNBOOK_TEMPLATES.md`
+
+## Keywords
+
+ai, aitest_20260605_007.md, base, bim, cases, conflict_resolution, cs, data, knowledge, knowledge_base, mep, qa, 견적, 결제, 교육, 리스크, 보안, 스토어, 심사, 역할, 자산, 지식, 지원, 테스트, 품질
+
+## Related
+
+- [[AITEST_20260605_001 AI 협업 프로세스 6개 상황 드라이런]]
+- [[AITEST_20260605_002 긴급 고객 납품 지연 추가 요구 협업 테스트]]
+- [[AITEST_20260605_003 고객 모델 로그 외부 AI 전송 보안 협업 테스트]]
+- [[AITEST_20260605_004 AI 간 견적 판단 충돌 협업 테스트]]
+- [[AITEST_20260605_005 자동수집 지식의 고객 응답 승격 협업 테스트]]
+- [[AITEST_20260605_006 개인정보 외부 AI 정책 문서 충돌 테스트]]
+- [[AITEST_20260605_008 PRECEDENT 승격 및 재사용 테스트]]
+- [[AITEST_20260605_009 리스크 게이트 상태값 표준화 테스트]]
+
+## Home
+
+- [[Global Knowledge Map]]

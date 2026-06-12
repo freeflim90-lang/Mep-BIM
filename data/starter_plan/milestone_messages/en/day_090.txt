@@ -1,0 +1,29 @@
+🎓 90 Days Complete — You did it!
+
+Congratulations, {name}!
+
+You have completed the full 90-Day MEP BIM Starter Program.
+
+You've built a solid foundation across:
+✓ MEP BIM orientation and workflows
+✓ Revit MEP basics and model quality
+✓ Clash coordination fundamentals
+✓ Data and schedule management
+✓ Site-readiness thinking
+✓ {discipline_name} discipline deep-dive
+
+Your 90-day completion certificate has been issued separately.
+
+What's next:
+
+Personal Tutor — USD 119/month
+- Personalized level diagnosis
+- Custom daily lessons matched to your level
+- Monthly written progress report
+- Level check and advancement tracking
+- Discipline-specific scenario lessons
+- Coming Soon
+
+Reply here if you're interested in continuing with Personal Tutor.
+
+Thank you for learning with LUA BIM LABS.

@@ -1,0 +1,21 @@
+{
+  "feature": "Tag/Text Aligner",
+  "version": 1,
+  "scope": "current_selection",
+  "actions": {
+    "align_left": true,
+    "align_center": true,
+    "align_right": true,
+    "align_top": true,
+    "align_middle": true,
+    "align_bottom": true,
+    "distribute_horizontal": true,
+    "distribute_vertical": true
+  },
+  "safety": {
+    "skip_pinned": true,
+    "preserve_leaders": true,
+    "preview_required": true,
+    "require_confirmation": true
+  }
+}

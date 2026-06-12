@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 27 - Turning Model Review Into a Useful Report
+
+1. Why This Matters
+A report should help people decide what to fix, who owns it, and how urgent it is. Screenshots alone are not enough.
+
+2. Core Concept
+A useful BIM report combines issue description, location, discipline, priority, screenshot, proposed action, and status.
+
+3. Real Project Lens
+A report with many screenshots but no priority or owner can slow a meeting down instead of helping it.
+
+4. BIM Check
+- Group issues by location or system.
+- Add owner, priority, and next action.
+- Separate observations from decisions.
+
+5. Common Mistake
+Beginners often create reports as image collections, not decision tools.
+
+6. Today's Action
+Design a five-column issue report template for beginner coordination review.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

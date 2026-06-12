@@ -1,0 +1,56 @@
+LUA BIM LABS Starter
+Day 88 - Coordination Drawing Package for Fire Protection
+
+1. Why This Matters
+The fire protection BIM model must be communicated not just as a 3D file but as a set of coordinated drawings that contractors, fire authorities, and site supervisors can use in the field. A model without a proper drawing package is an incomplete deliverable — the model data exists but cannot be acted upon by the people who need it.
+
+2. Core Concept
+A fire protection coordination drawing package typically contains the following sheets:
+
+1. Fire Protection Floor Plans (per floor)
+- Scale: 1:50 or 1:100 depending on floor complexity
+- Show: all heads with Mark numbers, all pipe runs with diameter labels, zone valve locations, hose reel positions
+- Annotations: head spacing dimensions at perimeter walls (verify wall offset compliance)
+- Hazard zone boundary lines overlaid on plan
+
+2. Riser Diagram (Schematic)
+- Shows the full pipe hierarchy from the fire pump / town supply connection to the top floor
+- Labels: pipe diameters, zone valve locations, floor-by-floor connections, test and drain points
+- Not to scale — diagrammatic format is standard
+
+3. Penetration / Sleeve Schedule
+- Table format listing every fire-rated penetration: location (Grid reference, floor), pipe diameter, sleeve ID, fire rating of penetrated element, firestop specification reference
+
+4. Sprinkler Head Schedule
+- Generated from Revit: Mark, Floor, Zone, Head Type, Coverage Area, Operating Temperature, System Name
+- Quantity takeoff by zone — used for procurement
+
+5. Coordination Clash Report
+- Summary of all resolved clashes — categorised (Type 1 / Type 2 per Day 76 framework)
+- Shows: clash description, resolution action, approval status (signed off by engineer / contractor)
+
+6. Coverage Verification Plan
+- Overlay of coverage circles (from Day 81 method) on the floor plan
+- Confirms: no dead zones. Any supplemental heads added after initial layout are highlighted.
+
+Drawing Naming Convention:
+[Project Code]-FP-[Type]-[Floor]-[Revision]
+Example: LUA-FP-FPL-L03-C02 = Fire Protection Floor Plan, Level 3, Revision C, Issue 02
+
+3. Real Project Lens
+A fire protection subcontractor receives the model issue without a penetration schedule. On site, the installer does not know which sleeves are required in which walls before the first pour. Work is delayed. After the incident, the project team establishes a rule: no model issue for construction is accepted without a complete penetration schedule and riser diagram.
+
+4. BIM Check
+- Check: Floor plans show head Mark numbers and pipe diameter labels — not just geometry
+- Check: Riser diagram is included and updated to reflect the current model state
+- Check: Penetration schedule lists every fire-rated penetration with sleeve ID, pipe diameter, and firestop specification reference
+
+5. Common Mistake
+Issuing the fire protection model as a Revit NWD/IFC file only, without a 2D drawing package. Not everyone who needs the information can open a model file. Site supervisors, fire authority inspectors, and FM teams need drawings — a model file alone does not meet delivery requirements.
+
+6. Today's Action
+List the sheets that should be in the fire protection drawing package for your current or sample project. Check which sheets already exist and which are missing. If the penetration schedule is missing, draft a template table with the required columns.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

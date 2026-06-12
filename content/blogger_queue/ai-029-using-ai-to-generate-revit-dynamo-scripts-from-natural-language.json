@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "AI",
+    "BIM Automation",
+    "Revit",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "Using AI to Generate Revit Dynamo Scripts from Natural Language",
+  "slug": "using-ai-to-generate-revit-dynamo-scripts-from-natural-language",
+  "content": "<p>Large language models like ChatGPT and Claude can generate Dynamo Python scripts from natural language descriptions. BIM professionals who are not programmers can now describe a task in plain English and receive working code that automates that task in Revit.</p>\n<h2>Why This Matters</h2>\n<p>The barrier to BIM automation has historically been programming knowledge. AI code generation removes this barrier, allowing any BIM professional to automate repetitive tasks without hiring a developer. Understanding how to prompt effectively and how to validate AI-generated code is the new essential skill.</p>\n<h2>Practical Guidance</h2>\n<p><strong>Effective Prompting:</strong> Provide specific context: the Revit version, the element categories involved, the parameter names, and the exact transformation required. Vague prompts produce generic code that does not work in the specific project context.</p>\n<p><strong>Validation Before Production Use:</strong> Test AI-generated scripts on a non-critical model copy. Check that the script handles edge cases: elements on multiple levels, elements with blank parameter values, family types that are not loaded. Never run untested batch scripts on the production model.</p>\n<p><strong>Iterative Refinement:</strong> First-generation AI code rarely works perfectly. Use the AI model iteratively: paste error messages back into the conversation, describe unexpected behaviour, and refine the script through 3-5 iterations before production use.</p>\n<p><strong>Code Review:</strong> Have a technically competent team member review AI-generated scripts before deployment. Look for operations that could affect elements outside the intended scope, missing error handling, and hardcoded values that should be parameters.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Include Revit version and parameter names in every AI code generation prompt</li>\n<li>Test AI-generated scripts on a model copy before production</li>\n<li>Document AI-generated scripts with version, date, and review status</li>\n<li>Establish a peer review step for any batch automation script</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>AI code generation democratises BIM automation — but the responsibility for validation and production safety stays with the BIM professional.</p>"
+}

@@ -1,0 +1,44 @@
+LUA BIM LABS Starter
+Day 52 - Site Conflict vs. Model Conflict
+
+**1. Why This Matters**
+Not every problem on site is a model error — and not every model error causes a site problem. Understanding the difference prevents unnecessary blame and leads to faster resolution.
+
+**2. Core Concept**
+A model conflict is a spatial clash identified in the digital model. A site conflict is a physical installation problem encountered during construction. These are related but distinct.
+
+Key differences:
+
+| | Model Conflict | Site Conflict |
+|---|---|---|
+| **Where found** | Navisworks / BIM checker | On site during installation |
+| **When found** | Pre-construction coordination | During construction |
+| **Root cause** | Modeling error, design clash, or coordination gap | Model vs. reality deviation, trade sequencing, or unrecorded design change |
+| **Resolution path** | Coordination meeting + model update | RFI + site instruction + as-built capture |
+| **Cost impact** | Low (if found pre-construction) | High (rework, delay) |
+
+Common causes of site conflicts that do not appear in the model:
+- Slab deviation (floor level is not exactly as modeled)
+- Structural elements installed out of position
+- Design change issued to site but not updated in model
+- Trade working from superseded drawing
+
+**3. Real Project Lens**
+A piping contractor raises a site conflict on Level 7: a structural column appears 50mm south of its modeled position, causing the piping run to clash with the column flange. The model showed no clash. Investigation reveals the column was installed out of position by the structural contractor — the model was correct, but reality was not. An RFI documents the deviation and a minor pipe offset is approved on site.
+
+**4. BIM Check**
+- Check: Can you describe two causes of site conflicts that would not appear in a clash detection test?
+- Check: Can you explain what an RFI is and how it resolves a site conflict formally?
+- Check: Can you describe how a site conflict deviation should be captured back into the BIM model?
+
+**5. Common Mistake**
+Assuming that a zero-clash model means zero problems on site. Clash detection eliminates model conflicts — it cannot account for construction tolerances, installation deviations, or undocumented design changes.
+
+**6. Today's Action**
+Write two short scenario descriptions: one where a site conflict is caused by a model error, and one where it is caused by a site condition the model could not predict. Describe how each one would be resolved.
+
+---
+
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

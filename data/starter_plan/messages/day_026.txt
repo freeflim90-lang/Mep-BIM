@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 26 - Automation Should Reduce Repetition, Not Judgment
+
+1. Why This Matters
+BIM automation is powerful, but it should support human review. Automated output still needs checking against project intent.
+
+2. Core Concept
+Automation is best for repetitive, rule-based tasks such as renaming, filtering, exporting, checking missing values, or creating draft reports.
+
+3. Real Project Lens
+A script can rename systems quickly, but if the mapping rule is wrong, it can create many wrong values faster than manual work.
+
+4. BIM Check
+- Use automation on repetitive tasks first.
+- Test on a small sample before full execution.
+- Keep a rollback copy and review the result.
+
+5. Common Mistake
+Beginners often trust automated output without validating the rule and result.
+
+6. Today's Action
+Name one BIM task you would automate and one check you would perform after automation.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

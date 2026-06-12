@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "ACC",
+    "BIM Coordination",
+    "BIM",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "ACC Issues: Tracking and Resolving BIM Coordination Problems in the Cloud",
+  "slug": "acc-issues-tracking-and-resolving-bim-coordination-problems-in-the-cloud",
+  "content": "<p>The ACC Issues module provides a centralised tracker for BIM coordination problems, RFIs, design queries, and site observations. Linking issues to specific model elements and locations creates a coordination record that is searchable, assignable, and auditable throughout the project lifecycle.</p>\n<h2>Why This Matters</h2>\n<p>Coordination issues tracked in email threads, spreadsheets, or Word documents cannot be linked to model geometry, updated by the responsible party, or filtered for project reporting. ACC Issues provides the structure that email-based coordination permanently lacks.</p>\n<h2>Practical Guidance</h2>\n<p><strong>Issue Types and Subtypes:</strong> Configure Issue Types at project setup: Clash, Design Query, RFI, Safety Observation, QA Inspection. Each type can have subtypes for more granular tracking. Consistent typing enables meaningful project reporting — 'How many unresolved clashes remain in the MEP zone?'</p>\n<p><strong>Model Markup:</strong> Attach issue markup directly to model elements by pinning the issue to a 3D location in the ACC viewer. This creates a permanent link between the issue and the physical location, allowing site teams to navigate directly to the problem area.</p>\n<p><strong>Assignment and Due Dates:</strong> Assign every issue to a named responsible person with a due date. Issues without assignment and due dates are not tracked — they are noted. The discipline between noting a problem and assigning resolution is what separates effective coordination from coordination theatre.</p>\n<p><strong>Status Workflow:</strong> Configure the issue status workflow: Open → In Review → Resolved → Closed. Each status change can trigger an automatic notification to relevant parties. The Closed status requires confirmation from the coordinator who opened the issue, not just the assignee.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Configure Issue Types before project team is given ACC access</li>\n<li>Attach all issues to model geometry locations in the ACC viewer</li>\n<li>Every issue must have an assignee and due date before distribution</li>\n<li>Coordinator confirms resolution before closing — assignee cannot self-close</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>An issue without an assignee and a due date is a note, not a task — the ACC Issues workflow is only as effective as the assignment discipline behind it.</p>"
+}

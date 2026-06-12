@@ -1,0 +1,38 @@
+{
+  "feature": "Smart Selector Lite",
+  "version": 1,
+  "rules": [
+    {
+      "name": "Pipes by system abbreviation",
+      "scope": "active_view",
+      "category": "Pipes",
+      "filters": [
+        {
+          "parameter": "System Abbreviation",
+          "operator": "exists",
+          "value": ""
+        }
+      ],
+      "safety": {
+        "exclude_grouped": true,
+        "exclude_pinned": false
+      }
+    },
+    {
+      "name": "Doors missing fire rating",
+      "scope": "project",
+      "category": "Doors",
+      "filters": [
+        {
+          "parameter": "Fire Rating",
+          "operator": "missing",
+          "value": ""
+        }
+      ],
+      "safety": {
+        "exclude_grouped": true,
+        "exclude_pinned": true
+      }
+    }
+  ]
+}

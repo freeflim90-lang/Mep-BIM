@@ -1,0 +1,46 @@
+LUA BIM LABS Starter
+Day 67 - Week 1 Electrical Review
+
+1. Why This Matters
+Electrical BIM has specific rules — separation distances, panel clearances, conduit fill limits, tray routing hierarchy — that differ from other MEP disciplines. The Week 1 review ensures these rules are understood before advancing to more complex electrical coordination work.
+
+2. Core Concept
+Week 1 Electrical Summary
+
+| Day | Topic | Key Point |
+|---|---|---|
+| 61 | Power Distribution | MSB → DB → circuit. Each level has a specific location and function |
+| 62 | Cable Tray Sizing | 40% fill max for power, 300mm separation from data |
+| 63 | DB Modeling | Use accurate panel family, check front clearance, match panel schedule |
+| 64 | Conduit Routing | Max 15m run or 360° bends before pull box. 40% fill maximum |
+| 65 | Electrical Separation | HV/LV: 600mm. LV/data: 300mm. Fire alarm: dedicated conduit |
+| 66 | Electrical Clashes | Route trays above HVAC. Recheck separation after every reroute |
+
+Critical Rules — Electrical BIM
+- LV power trays and data trays must maintain 300mm separation — always
+- DB must have accurate dimensions — not a placeholder box
+- Every conduit through a fire-rated wall needs a fire-stopping sleeve
+- Pull boxes are required before 15m and before the third 90° bend
+- Re-check electrical separation after every structural or HVAC clash resolution
+- DB front clearance (600mm–1000mm) cannot be compromised by other MEP elements
+
+3. Real Project Lens
+A new electrical modeler on a large office project uses the Week 1 framework on Day 1: (1) maps the MSB-to-DB distribution hierarchy, (2) routes cable trays at the highest ceiling zone with correct separations, (3) places DBs with accurate dimensions and front clearance zones, (4) models conduit runs within length and bend limits, (5) runs clash test against HVAC and structure, (6) rechecks separations after clash resolution. This structured approach catches the five most common electrical BIM failures before the coordination model is submitted.
+
+4. BIM Check
+- Check: Is the MSB-to-DB distribution hierarchy fully modeled on all floors?
+- Check: Do all parallel LV and data cable trays maintain 300mm separation throughout?
+- Check: Are all DB front clearance zones (600mm) modeled and free of obstruction?
+
+5. Common Mistake
+Assuming that electrical is simpler to coordinate than HVAC (because cables are small) — then discovering that the separation requirements mean an electrical reroute triggers a cascade of additional checks and adjustments that take longer than a duct reroute.
+
+6. Today's Action
+Write a personal electrical BIM checklist — 5 items you will check on every electrical model before submission. Include: distribution hierarchy, tray separation, DB clearance, conduit limits, and fire wall sleeves. Save this list and refine it through Day 90.
+
+---
+
+End of Starter Plan — Support Materials Pack
+LUA BIM LABS | www.luabimlabs.com | Practical BIM Education for MEP
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,44 @@
+LUA BIM LABS Starter
+Day 64 - Standpipe and Hose Reel Locations
+
+1. Why This Matters
+Standpipe systems and hose reels provide manual firefighting capability. Their location is governed by reach distance — if a hose reel is too far from any point in the building, fire cannot be fought manually with the installed equipment. BIM models must reflect code-compliant placement.
+
+2. Core Concept
+- Standpipe: A fixed pipe system with outlet connections for fire brigade hoses. Rises vertically through the building. Typically DN100–DN150
+  - Class I: For fire brigade use only (2.5" outlets in stairwells)
+  - Class II: For building occupant use (1.5" hose reels)
+  - Class III: Both
+- Hose Reel: A cabinet containing a flexible hose (25mm or 19mm diameter, 30m long) for occupant use in early-stage fires
+- Coverage rule: every point in the building must be within 30m hose reach of a hose reel (accounting for walls and corridors — not straight-line distance)
+- Placement: typically in corridors near stairwells and fire exits, at maximum 30m spacing
+- In Revit: model the hose reel cabinet as an equipment family (wall-mounted or recessed). Connect to the domestic/fire water supply with an isolation valve
+- Standpipe outlet elevation: 750mm–1000mm above finished floor level
+
+Hose Reel Placement Checklist
+
+| Requirement | Value |
+|---|---|
+| Maximum hose length | 30m (flexible hose) |
+| Coverage radius | 30m from cabinet (path distance, not straight line) |
+| Maximum spacing | 30–35m between hose reels |
+| Height of outlet | 750–1000mm AFF |
+| Supply pipe size | DN25 (hose reel) / DN100 (standpipe) |
+
+3. Real Project Lens
+A 60m long corridor with fire exit stairs at each end has two hose reel cabinets — one at 20m from each end. A path coverage check in the BIM model confirms that every office door in the corridor is within 30m path distance of at least one hose reel.
+
+4. BIM Check
+- Check: Model hose reels as placed families, not just symbols. Confirm wall recess depth is within the wall construction depth
+- Check: Standpipe outlet heights are modeled at 750–1000mm AFF — not at floor level or ceiling level
+- Check: For every hose reel, trace a 30m path (using a measurement tool) to the furthest point it must serve — confirm it reaches
+
+5. Common Mistake
+Measuring hose reel coverage using straight-line distance — a hose reel that covers 30m straight-line may only cover 18m of an L-shaped corridor because the hose must go around the corner.
+
+6. Today's Action
+On a floor plan (sketch or real), place one hose reel in a corridor. Trace the 30m path coverage along actual corridor routes (around corners and through doors). Identify any uncovered area. Add a second hose reel if needed.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

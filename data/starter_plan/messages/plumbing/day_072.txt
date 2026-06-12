@@ -1,0 +1,45 @@
+LUA BIM LABS Starter
+Day 72 - Sleeve Request Process
+
+1. Why This Matters
+Every time a plumbing pipe passes through a concrete slab or structural wall, a sleeve must be cast in advance. If the sleeve is not requested on time, the contractor must core-drill the structure after it is poured — which damages reinforcing bars, weakens the slab, and triggers a non-conformance. The sleeve request process is how the plumbing BIM team formally communicates penetration locations to the structural team.
+
+2. Core Concept
+A sleeve request is a formal document — typically a drawing or data file — issued from the MEP team to the structural team identifying every slab or wall opening required.
+
+What a sleeve request must include:
+- Plan view showing pipe location with dimensions to two fixed grid lines
+- Sleeve size: pipe OD plus clearance (typically pipe OD + 50 mm each side, or per project standard)
+- Sleeve centerline elevation (for wall sleeves)
+- Floor or slab level reference
+- Pipe system and service (e.g., Soil Stack, DN100)
+- Fire stopping requirement (rated or unrated)
+
+How to prepare a sleeve request from a Revit model:
+1. Model all vertical riser pipes with correct size and system
+2. Create a structural slab penetration family or use a Revit Opening element at each riser location
+3. Place a sleeve symbol at the penetration with the required parameters filled
+4. Generate a sleeve schedule listing all penetrations with coordinates and sizes
+5. Export the sleeve drawing to PDF and the schedule to Excel
+6. Issue to the structural BIM team with a formal transmittal
+
+Timing:
+- Sleeve requests must be issued before the structural slab reinforcement drawing is finalized — typically 2 to 4 weeks before the pour date
+- Late requests cost time and money; build sleeve request milestones into the BIM coordination program
+
+3. Real Project Lens
+On a hospital project, the plumbing BIM coordinator issued a sleeve request for 47 slab penetrations six weeks before the Level 3 pour. The structural engineer reviewed the list and identified three locations that conflicted with primary beam reinforcement. The pipes were rerouted in the BIM model before any concrete was placed. On the same project, two sleeve requests from another zone arrived two days before the pour — both required emergency coring at extra cost.
+
+4. BIM Check
+- Check: Every vertical pipe penetrating a slab has a corresponding sleeve element in the Revit model with size and system filled
+- Check: Sleeve dimensions to grid lines are measurable directly from the coordination drawing
+- Check: The sleeve schedule has been cross-checked against the structural drawing to confirm no penetrations fall within 300 mm of a primary beam or column
+
+5. Common Mistake
+A common mistake is to issue sleeve requests as a 2D AutoCAD sketch without BIM model coordinates, using approximate dimensions from memory. Approximate dimensions lead to misplaced sleeves, which require coring or relocation — both costly. Always dimension from the model, not from memory.
+
+6. Today's Action
+In Revit, place a slab opening family at the location of one of your riser pipes. Fill in the Sleeve Size, System, and Fire Stop Rating parameters. Then create a simple schedule that lists all openings with their coordinates. This is the starting point for a real sleeve request package.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

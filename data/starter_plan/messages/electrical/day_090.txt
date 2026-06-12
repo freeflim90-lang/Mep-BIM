@@ -1,0 +1,55 @@
+LUA BIM LABS Starter
+Day 90 - 90-Day Completion — Electrical Deep Dive Wrap
+
+1. Why This Matters
+You have reached Day 90. Over the past 30 days of the electrical deep-dive track — and 90 days in total — you have built a structured, practical understanding of MEP BIM from the ground up. This is not just knowledge about software tools; it is knowledge about how buildings work electrically, how coordination happens, and how BIM models are built, verified, and handed over. That understanding makes you a more valuable practitioner from your first day on site.
+
+2. Core Concept
+Electrical Deep Dive — Full Track Summary (Days 61–90)
+
+| Week | Theme | Key Topics |
+|---|---|---|
+| Week 1 (Days 61–67) | Electrical Foundations | Power distribution hierarchy, cable tray sizing, DB modeling, conduit routing, separation rules, electrical clashes |
+| Week 2 (Days 68–70) | Panel Board Modeling | Load schedule reading, circuit-to-panel assignment, System Browser verification |
+| Week 3 (Days 71–75) | Conduit Systems | Conduit types and OD, fill calculations, pull box placement, fire wall penetrations |
+| Week 4 (Days 76–80) | Clash Patterns | Tray vs. duct hierarchy, HV/LV separation, structural clashes, ceiling zone routing sequence |
+| Week 5 (Days 81–85) | SLD Tracing | Reading SLDs, linking SLD to BIM, circuit-to-load tracing, load schedule verification |
+| Week 6 (Days 86–89) | Delivery Standards | LOD 350 requirements, parameter checklist, coordination drawing package, FM handover data |
+
+The 10 Rules Every Electrical BIM Practitioner Must Know:
+1. The distribution hierarchy (MSB → DB → circuit) must be fully modeled and named to match the SLD exactly
+2. Cable tray fill: 40% maximum. HV/LV separation: 600mm parallel, 300mm crossing. LV/data: 300mm minimum
+3. DB dimensions come from vendor datasheets — not generic placeholders. Front clearance (600mm minimum) must be modeled
+4. Conduit type determines OD — model EMT, RGS, and PVC with correct manufacturer outer diameters
+5. Pull boxes are required at 30m run length or 360° cumulative bend angle — whichever comes first
+6. Every fire-rated wall/floor penetration needs a fire sleeve family with the correct fire rating parameter
+7. Cable tray yields to HVAC ductwork in the routing hierarchy — tray steps, duct does not move
+8. Circuit-to-load tracing must result in zero orphan circuits and zero orphan loads in the System Browser
+9. LOD 350 requires accurate geometry AND complete data parameters — both must be delivered
+10. FM handover data must be collected during construction — it cannot be reconstructed retrospectively
+
+The 90-Day Journey — Full Program Summary:
+
+| Phase | Days | Track |
+|---|---|---|
+| MEP Foundations | 1–30 | HVAC systems, ductwork coordination, BIM fundamentals |
+| Plumbing & Piping | 31–60 | Drainage, water supply, pipe sizing, clash patterns |
+| Electrical Deep Dive | 61–90 | Power distribution, conduit, panels, SLD, delivery standards |
+
+3. Real Project Lens
+A junior MEP BIM practitioner completes her first coordination submission on a real project six months after completing this program. She models the electrical layer from MSB to final load, runs circuit tracing in the System Browser, resolves tray/duct clashes using the routing hierarchy, submits the fire-rated penetration schedule for structural review, and delivers the LOD 350 model with all parameters populated. Her project manager notes that no data quality issues are returned from the client's model auditor — a first for a junior team member. The 90 days of structured practice made the difference.
+
+4. BIM Check
+- Check: Can you trace any circuit in the model from the SLD → panel family → circuit in the panel schedule → connected load element — without gaps?
+- Check: Does the model pass all six electrical quality gates: distribution hierarchy, tray separations, DB clearances, conduit constructibility, clash coordination, and LOD 350 parameter completeness?
+- Check: Is the handover data package — COBie export or equivalent — complete and validated for all electrical elements?
+
+5. Common Mistake
+Completing 90 days of learning and then waiting for a "real project" to apply the knowledge. The transition from learning to practice requires deliberate effort: reviewing a real model, applying the checklists from this program, and seeking feedback from an experienced coordinator. Start applying the framework immediately — even on a training model — to build the habit before the first live project.
+
+6. Today's Action
+Write your personal Electrical BIM Checklist — consolidating the most important checks from all six weeks into a single one-page reference. Include: distribution hierarchy check, separation distances, DB clearance, pull box rules, fire penetration requirements, SLD linking steps, LOD 350 parameters, and FM handover items. This document is your career toolkit — refine it on every project you work on.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,52 @@
+LUA BIM LABS Starter
+Day 83 - Circuit-to-Load Tracing — From Breaker to Equipment in the Model
+
+1. Why This Matters
+Circuit-to-load tracing is the process of following an electrical circuit from the breaker on the panel schedule all the way to the physical equipment it feeds in the BIM model. This verification confirms that the model represents the actual circuit topology — not just equipment placed in the right room, but equipment correctly connected to the right circuit on the right panel.
+
+2. Core Concept
+Circuit-to-load tracing — step by step:
+
+Step 1: Start at the panel
+- Open the panel schedule view for the target DB in Revit
+- Identify the circuit: circuit number, description, load type, breaker rating
+
+Step 2: Follow the circuit to the load
+- In Revit, select the circuit in the panel schedule and use "Show" or "Highlight in Model" to locate the connected elements
+- Alternatively, use the System Browser: expand the panel → find the circuit → expand the circuit to see all connected loads
+
+Step 3: Verify the load element
+- Confirm the connected element (light fixture, equipment, socket) is the correct element described in the circuit description
+- Check: is the element in the correct room or zone?
+- Check: is it the correct element type (e.g., "AHU-5" not "AHU-4")?
+
+Step 4: Verify parameters
+- Apparent Load (VA) or Wattage on the connected element — should match the panel schedule entry
+- Voltage (230V / 400V) — should match the circuit phase configuration
+- Load Classification (Lighting, Power, HVAC, etc.) — should match the circuit description category
+
+Common circuit tracing issues:
+- Load connected to the wrong panel (e.g., Level 4 equipment connected to DB-L5)
+- Multiple loads sharing a circuit that should be a dedicated circuit (e.g., AHU on a shared power circuit)
+- Circuit shows no connected load — orphan circuit (breaker assigned, but no element linked)
+- Element in the model with no circuit — orphan load (element placed, but no breaker assigned)
+
+Tracing tool: Revit's System Browser is the most efficient tool for circuit-to-load tracing. Filter by panel, expand circuits, verify loads.
+
+3. Real Project Lens
+A modeler traces Circuit 09 on DB-L2 — described as "Extract Fan EF-2" with a 16A breaker. She uses the System Browser to follow Circuit 09 and finds it is connected to a generic mechanical equipment family labeled "Fan Unit." She checks the element's Type Mark parameter — it reads "EF-2." The circuit is correct, but the element's family name is not coordinated with the mechanical model. She flags this as a nomenclature coordination issue and adds it to the issue register.
+
+4. BIM Check
+- Check: For every circuit in the panel schedule, can the connected load element be found and identified in the model using the System Browser — with zero orphan circuits?
+- Check: Does the load element's room location match the circuit description in the panel schedule (e.g., a Level 3 circuit connects only to Level 3 elements)?
+- Check: Are all dedicated circuits (AHU, pump, UPS, server room) confirmed as single-load circuits — not shared with general power loads?
+
+5. Common Mistake
+Verifying the circuit exists in the panel schedule but not tracing it to the physical element — treating the panel schedule as the final check. A circuit can appear correct in the schedule while the connected element in the model is the wrong equipment, in the wrong location, or missing entirely.
+
+6. Today's Action
+In Revit or a training model, pick one DB and trace three circuits using the System Browser. For each circuit, record: circuit number, description, connected element name, element room, and whether the load value matches the panel schedule. Note any discrepancies.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

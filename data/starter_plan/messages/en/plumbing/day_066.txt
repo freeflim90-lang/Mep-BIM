@@ -1,0 +1,46 @@
+LUA BIM LABS Starter
+Day 66 - Sanitary Clash Patterns — Slab and Structure
+
+1. Why This Matters
+Sanitary pipes are gravity-driven, which means they slope downward through the floor zone. This brings them into frequent conflict with structural beams, slabs, and other MEP services at low elevations. Sanitary clashes are often discovered too late — after slabs are poured or ceilings are installed.
+
+2. Core Concept
+- Most common sanitary clash patterns:
+  - Sloped pipe drops below slab soffit (pipe falls too far along a long horizontal run)
+  - Sanitary branch crosses structural beam at the same elevation (gravity slope means the pipe cannot easily route over or under)
+  - Soil stack core not large enough (insulation and clearance not accounted for)
+  - Floor drain at slab level clashes with beam below (drain body extends into the structural zone)
+  - Horizontal branch at ceiling conflicts with HVAC duct (both systems competing for the narrow ceiling zone)
+- Solutions:
+  - For long horizontal runs that drop below the slab: use an additional stack closer to the fixtures to limit run length
+  - For beam crossings: request a structural penetration in the beam web (with engineer approval)
+  - For stack cores: verify insulated OD before requesting core size
+  - For drain bodies: select slim-profile drain families or coordinate drain location with structural layout
+
+Sanitary Clash Priority Table
+
+| Clash | Priority | Resolution |
+|---|---|---|
+| Sanitary pipe below slab soffit | P1 | Add stack or reroute |
+| Sanitary through beam flange | P1 | Reroute — structural approval needed |
+| Stack core undersized | P1 | Revise sleeve request before pour |
+| Sanitary vs. HVAC in ceiling | P2 | Re-elevate HVAC or add duct depth |
+| Drain body in structural zone | P2 | Coordinate drain location |
+
+3. Real Project Lens
+On Level 3 of an office building with 4m floor-to-floor height, a 6m long DN100 WC waste branch must connect to the stack. At 1:80 slope, the pipe falls 75mm over 6m. Starting at 400mm below FFl, the pipe ends at 475mm below FFl — still within the 600mm structural zone. Acceptable — but if the run were 10m, the fall would be 125mm, potentially clashing with the beam zone. The BIM modeler checks this for every long branch.
+
+4. BIM Check
+- Check: For every horizontal sanitary run longer than 3m, calculate total fall and check it stays above beam soffit level
+- Check: All floor drain bodies are checked against structural beam layout — drain centerlines should be between beams
+- Check: Run a clash test in Navisworks — Sanitary Piping vs. Structure. Review all P1 results before submitting
+
+5. Common Mistake
+Not modeling the sloped pipe correctly in Revit (pipe placed flat, slope parameter set but not reflected in geometry) — the model appears fine but the 3D geometry shows a flat pipe, causing the clash report to miss the real clash that would occur in the field.
+
+6. Today's Action
+Find the longest horizontal sanitary run in a model (or estimate one on paper). Calculate the total fall using the appropriate slope. Check whether the pipe invert at the downstream end is above the beam soffit below.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

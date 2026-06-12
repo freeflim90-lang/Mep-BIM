@@ -1,0 +1,43 @@
+LUA BIM LABS Starter
+Day 71 - Vertical Riser Basics
+
+1. Why This Matters
+Multi-storey buildings stack plumbing systems on top of each other, and vertical risers are what connect them. If you cannot model and coordinate risers correctly, fixture connections on upper floors have nowhere to go. Riser coordination also touches structural drawings, architectural shaft layouts, and fire stopping — making it one of the most cross-disciplinary tasks in plumbing BIM.
+
+2. Core Concept
+A vertical riser is a pipe segment that travels vertically between floors to collect or distribute flow.
+
+Types of plumbing risers:
+- Soil stack: receives WC discharge from all floors; connects to underground drain at base
+- Waste stack: receives basin, bath, and sink discharge from all floors
+- Vent stack: extends vertically to atmosphere; maintains system pressure
+- Rainwater downpipe: carries roof stormwater down to the underground drain
+
+Key modeling principles:
+- Risers must be placed at the correct plan coordinate and set to the correct pipe diameter for the number of fixture units served
+- In Revit, a vertical pipe segment connects floor-to-floor using the pipe tool with a 90-degree connection at each level
+- The riser must be contained within a shaft or core enclosure — coordinate the shaft size with the architect
+- Sleeve openings through each slab must be modeled and dimensioned to enable the structural sleeve request
+- Vertical pipes carry no slope; slope applies only to horizontal branches connecting into the riser
+
+Riser sizing rules of thumb:
+- Soil stack: DN100 for up to 8 WC units; DN150 for larger loadings
+- Waste stack: DN75 for light residential loadings; DN100 for commercial
+- Vent stack: minimum DN50; match or exceed the soil/waste stack where required
+
+3. Real Project Lens
+On a 20-storey apartment tower, the sanitary riser serving floors 1–20 was initially located by the MEP designer in the center of the kitchen. When the BIM model was coordinated with architecture, it conflicted with a kitchen cabinet column. The riser had to shift 400 mm, which moved the slab penetration and required a new sleeve request to structural — adding two weeks to the coordination cycle. Early vertical riser placement in the BIM model prevents this.
+
+4. BIM Check
+- Check: Each plumbing riser is assigned to the correct pipe system (Soil Stack, Waste Stack, Vent Stack)
+- Check: Riser plan coordinates are confirmed against the architectural shaft drawing before sleeves are requested
+- Check: Riser diameter is sized for the fixture unit count served on all connected floors
+
+5. Common Mistake
+A common mistake is modeling a riser as a series of disconnected short vertical segments on each floor rather than a continuous pipe that runs through a shaft. Disconnected segments break system connectivity in Revit, prevent accurate flow path tracing, and cause incorrect schedule totals.
+
+6. Today's Action
+In Revit, model a soil stack riser from Level 1 to Level 4 at DN100. Connect a horizontal branch at Level 2 and Level 3. Verify the pipe system connectivity using the Highlight in Model or System Inspector tool. Check that all segments belong to the same system.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

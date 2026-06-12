@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "BIM Handover",
+    "BIM",
+    "Multi-Discipline",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "BIM Handover Package: What Owners and FM Teams Need from All Disciplines",
+  "slug": "bim-handover-package-what-owners-and-fm-teams-need-from-all-disciplines",
+  "content": "<p>A BIM handover package is the set of models, data files, and documentation that transfers from the project team to the building owner and FM team at completion. The content and format of this package determines whether the BIM investment is realised or wasted in the first year of occupancy.</p>\n<h2>Why This Matters</h2>\n<p>The majority of BIM models handed over to FM teams are not actively used within 12 months of handover. The most common reasons: data is incomplete, the FM software cannot import the IFC, nobody trained the FM team to use it, and the model does not reflect as-built conditions. A planned handover process prevents all of these.</p>\n<h2>Practical Guidance</h2>\n<p><strong>Data Requirements Definition:</strong> Define FM data requirements at project start, not at handover. The owner's FM team should specify which parameters they need for each asset category. These requirements drive parameter setup, modeling protocols, and QA throughout the project.</p>\n<p><strong>As-Built Model:</strong> The handover model must reflect as-built conditions. Significant deviations from the design model (rerouted ducts, repositioned equipment, structural changes) must be updated in all discipline models before handover. Point cloud comparison supports as-built verification.</p>\n<p><strong>COBIE Data:</strong> COBie (Construction Operations Building Information Exchange) is a widely used FM handover data format. If required, populate COBie data fields during design and construction, not in a handover sprint. COBie produced at the end of a project is largely inaccurate.</p>\n<p><strong>FM System Test Import:</strong> Perform a test import of the handover IFC into the owner's FM system before formal handover. Test imports regularly identify property set mapping failures, element classification errors, and file size issues that require resolution before handover completion.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Agree FM data requirements with owner at project start</li>\n<li>Update as-built deviations in all discipline models before handover</li>\n<li>Populate COBie data during project — not in a handover sprint</li>\n<li>Perform FM system test import at least 3 months before completion</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>BIM handover is a project deliverable, not a project ending — plan it from day one and execute it throughout, not in the final week.</p>"
+}

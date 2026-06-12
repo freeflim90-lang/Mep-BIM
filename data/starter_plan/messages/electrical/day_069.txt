@@ -1,0 +1,43 @@
+LUA BIM LABS Starter
+Day 69 - Circuit Tracing in the Model — Connecting Loads Back to Panels in Revit
+
+1. Why This Matters
+Circuit tracing means following the electrical path from a panel breaker to the equipment it feeds, inside the Revit model. This connection is what makes a BIM model electrically intelligent — it enables panel schedule generation, load calculation, and system verification. Junior modelers who understand circuit tracing can validate model completeness and support design coordination.
+
+2. Core Concept
+In Revit, an electrical circuit is a logical connection between a source (panel/DB) and one or more loads (light fixtures, sockets, equipment).
+
+Steps for circuit tracing and assignment:
+- Select the load element (e.g., a lighting fixture or mechanical equipment)
+- Use Modify > Power (or Electrical > Power) to create a power circuit
+- Assign the circuit to the correct panel by selecting from the panel list
+- Specify the phase, circuit number, and wire size if required by project standards
+- Repeat for all loads on the floor or zone
+- Open the panel schedule view to verify the circuit appears correctly
+
+Circuit tracing verification:
+- Use Revit's System Browser to view all circuits on a panel
+- Check that no load is unconnected (orphan elements show no circuit assignment)
+- Confirm that loads are connected to the correct floor's DB — a Level 3 light should not be on DB-L4
+- Check that high-load equipment (AHUs, pumps) have dedicated circuits, not shared circuits
+- Verify that circuit descriptions in the model match the engineering panel schedule
+
+Common Revit parameters to check: Panel Name, Circuit Number, Load Classification, Apparent Load (VA), Number of Poles
+
+3. Real Project Lens
+A BIM coordinator is asked to verify that all lighting fixtures on Level 6 are connected to DB-L6. She opens the System Browser, filters by DB-L6, and lists all connected loads. She finds 47 fixtures — but the reflected ceiling plan shows 52. The five missing fixtures are orphan elements placed but never circuit-assigned. She flags these for the electrical modeler to connect before the next coordination submission.
+
+4. BIM Check
+- Check: Are all electrical load elements (lights, sockets, equipment) assigned to a circuit in the System Browser — with no orphan (unconnected) elements?
+- Check: Does each circuit connect to the correct floor DB — not a DB on a different floor or an MSB directly?
+- Check: Do dedicated high-load circuits (HVAC equipment, lifts, server room UPS) appear as single-load circuits, not shared with general power?
+
+5. Common Mistake
+Placing equipment families in the model but never running the circuit assignment step. The model looks complete visually, but the panel schedule remains empty or incomplete — making it useless for load verification or handover documentation.
+
+6. Today's Action
+In Revit (or a training model), select three light fixtures on the same floor. Assign all three to a single circuit connected to a panel. Open the panel schedule view and confirm the circuit appears with the correct load. Check the System Browser to see the circuit listed.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,38 @@
+{
+  "client_id": "client_0001",
+  "name": "",
+  "email": "",
+  "telegram_username": "",
+  "language": "ko",
+  "plan_id": "starter",
+  "payment": {
+    "status": "pending",
+    "provider": "PayPal",
+    "billing_cycle": "monthly",
+    "amount": 39,
+    "currency": "USD",
+    "paypal_order_id": "",
+    "paypal_subscription_id": "",
+    "paid_at": "",
+    "next_billing_at": ""
+  },
+  "profile": {
+    "bim_level": "Level 1",
+    "discipline": [
+      "HVAC",
+      "Piping"
+    ],
+    "revit_mep_experience": "",
+    "navisworks_experience": "",
+    "project_type": "",
+    "goal": "",
+    "weak_points": [],
+    "preferred_daily_lesson_minutes": 5
+  },
+  "learning_state": {
+    "current_path": "",
+    "last_lesson_date": "",
+    "completed_lessons": 0,
+    "notes": []
+  }
+}

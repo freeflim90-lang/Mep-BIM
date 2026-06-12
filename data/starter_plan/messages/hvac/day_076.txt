@@ -1,0 +1,28 @@
+LUA BIM LABS Starter
+Day 76 - Return Air Systems — Ducted vs. Ceiling Plenum
+
+1. Why This Matters
+Whether return air is collected through dedicated ducts or the ceiling void acting as a plenum fundamentally changes how the ceiling is modeled and what constraints apply to all other services in the void.
+
+2. Core Concept
+- Ducted return: return air travels back to the AHU through dedicated return ducts — requires significant ceiling void space alongside supply ducts
+- Ceiling plenum return: the entire ceiling void acts as the return air path — no return ducts modeled but the void must be airtight and combustible material restrictions apply
+- Plenum-rated requirement: in a ceiling plenum return system, all cables, insulation, and materials in the void must be plenum-rated
+- Coordination impact: a plenum return system creates material requirements that affect electrical and data teams — this must be flagged early
+- Confirm the return air method in the project specifications before finalizing HVAC BIM coordination
+
+3. Real Project Lens
+On a healthcare project, the HVAC engineer specified ducted return for infection control reasons. The initial BIM model only showed supply ducts. When return ducts were added to the already-crowded ceiling void containing beams, sprinklers, cable trays, and lighting, two zones had to be completely redesigned with relocated AHU positions.
+
+4. BIM Check
+- Check: the return air method (ducted or plenum) is confirmed in project specifications before HVAC coordination is finalized
+- Check: if ducted return is specified, return duct routing is included in the coordination model alongside supply ducts
+- Check: if ceiling plenum return is used, the plenum-rated material requirement is flagged to the electrical and data teams
+
+5. Common Mistake
+Beginners model only supply systems and assume return air will be resolved later. In ducted return systems, return ductwork can occupy as much ceiling void space as the supply ductwork.
+
+6. Today's Action
+Check the HVAC specification (or ask the engineer) whether the project uses ducted return or ceiling plenum return. Write down what changes in your coordination approach for each option.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

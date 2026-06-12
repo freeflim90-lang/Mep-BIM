@@ -1,0 +1,49 @@
+LUA BIM LABS Starter
+Day 78 - Floor Drain Connections
+
+1. Why This Matters
+Floor drains collect incidental spills, floor washing water, and equipment drainage across a wide variety of spaces — plant rooms, toilets, kitchens, car parks, and balconies. In BIM, floor drain connections are small in diameter but large in coordination impact: their horizontal branches often conflict with structural beams because they must slope to a low point that may be close to a beam flange. Understanding floor drain connection rules makes you a more effective coordinator in those critical zone types.
+
+2. Core Concept
+A floor drain is a point drainage fitting set flush with the finished floor, connected below the slab to a horizontal drain branch.
+
+Types and uses:
+- Linear floor drain (channel drain): used in shower rooms, commercial kitchens, accessible WCs
+- Square/round floor drain: used in plant rooms, toilets, car parks
+- Roof drain (roof outlet): similar principle; used on flat roofs and podiums
+
+Connection requirements:
+- Minimum pipe size: DN50 for light-duty use; DN75–DN100 for plant rooms and commercial kitchens
+- Slope: minimum 1:100 for DN100; 1:80 for DN75; 1:40 for DN50
+- Trap requirement: floor drains must have an anti-siphon trap or a deep-seal trap (75 mm minimum water seal); traps that are infrequently used may dry out — specify self-sealing or trapped gully types for low-use areas
+- Invert of drain outlet must sit below the finished floor level — typically 100 mm to 200 mm below FFL depending on the drain body type
+
+BIM modeling steps:
+1. Place floor drain families at locations specified in the architectural fit-out drawing
+2. Connect a horizontal waste pipe from the drain outlet (set system to Sanitary — Waste or Stormwater depending on the drainage system)
+3. Set the slope on the horizontal branch
+4. Route to the nearest waste stack or drainage channel
+5. Check the invert level against the structural beam and slab depth at each location
+6. Flag any location where the drain invert conflicts with the top of a structural beam
+
+Anti-siphon and deep-seal traps:
+- Anti-siphon traps allow air to enter to prevent siphonage without losing the water seal
+- Deep-seal traps (150 mm water seal) are used where venting is not practical
+- Both types are available as Revit families in standard MEP content libraries
+
+3. Real Project Lens
+In a hospital plant room, eight floor drains were positioned across a 15 × 10 metre space. The horizontal branch drainage from each drain had to slope to a common DN100 collector pipe. When the BIM model was coordinated with the structural model, three of the drain branches conflicted with 600-mm-deep structural beams spanning across the plant room. The drains were repositioned to avoid the beam bays, keeping all branches in the clear zone between beams.
+
+4. BIM Check
+- Check: All floor drains have the correct trap type specified in the Revit family parameter (deep-seal or anti-siphon)
+- Check: Floor drain branch inverts are checked against structural beam levels at every beam crossing
+- Check: The system classification of floor drain branches is correctly set — roof drains to Stormwater, internal floor drains to Waste
+
+5. Common Mistake
+A common mistake is forgetting that the floor drain fitting body extends below the finished floor level. If the drain family is placed at the FFL without accounting for the body depth, the outlet invert conflicts with the slab or beam before any piping is even connected. Always check the drain family dimensions against the available slab-to-beam clear depth.
+
+6. Today's Action
+In Revit, place two floor drain families in a plant room. Connect each to a horizontal DN100 branch with a 1:100 slope routing to a common stack. Load a structural beam family across the room and check whether your drain branches clear the top of the beam flange. Adjust invert levels or reroute if needed.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,30 @@
+LUA BIM LABS Starter
+Day 61 - HVAC System Flow Overview (AHU to Diffuser)
+
+1. Why This Matters
+If you cannot trace the full air path from the AHU to the last diffuser in the space, you will model disconnected systems that fail system checks, produce incorrect schedules, and cause clash issues that cannot be traced back to a source.
+
+2. Core Concept
+- The Air Handling Unit (AHU) conditions air: filters, cools or heats, and fans it out
+- Supply air travels from the AHU through main supply ducts to branch ducts to VAV boxes or directly to supply diffusers
+- Return air travels from return grilles in the space back to the AHU via return ducts
+- Exhaust air (from toilets, kitchens, carparks) is pulled out by exhaust fans and discharged outside — it does not return to the AHU
+- Outside Air (OA) is introduced at the AHU for ventilation — percentage defined by ventilation code
+- The full air loop: AHU → Main Supply Duct → Branch Duct → VAV Box (if VAV system) → Flexible Duct → Diffuser → Return Grille → Return Duct → AHU
+
+3. Real Project Lens
+On a commercial office floor, one AHU on Level 12 serves the entire floor via a central supply duct running along the corridor. Branch ducts split left and right into office bays. Each bay has 4–6 supply diffusers and a VAV box controlling airflow based on thermostat. Return grilles near the corridor feed a return plenum above the ceiling tiles, which connects back to the AHU return inlet.
+
+4. BIM Check
+- Check: Open Revit's Mechanical Systems Browser — confirm every duct segment is assigned to a named supply or return air system
+- Check: Trace from AHU connector to last diffuser — confirm no open ends (gaps in the duct run)
+- Check: Confirm return ducts are assigned "Return Air" system — not accidentally labeled "Supply Air"
+
+5. Common Mistake
+Modeling supply and return ducts in the correct physical location but failing to connect them to the AHU connector in Revit — causing the system browser to show them as "unassigned" and breaking all flow calculations.
+
+6. Today's Action
+Open a Revit MEP model (your own or a sample file). Navigate to Systems Browser. Find any duct tagged as "Unassigned" and trace why it is not connected to a system. Fix one connection.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

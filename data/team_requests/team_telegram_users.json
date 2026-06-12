@@ -1,0 +1,74 @@
+{
+  "users": [
+    {
+      "name": "최정연",
+      "telegram_chat_id": "7899169126",
+      "telegram_username": "",
+      "role_or_discipline": "",
+      "permissions": [
+        "knowledge_question",
+        "knowledge_more",
+        "development_request"
+      ],
+      "status": "active",
+      "registered_at": "2026-05-26",
+      "notes": "1년차 교육 대상자. 2026-05-27 2일차부터 교육 메시지 수신."
+    },
+    {
+      "name": "오수빈",
+      "telegram_chat_id": "8579787318",
+      "telegram_username": "",
+      "role_or_discipline": "",
+      "permissions": [
+        "knowledge_question",
+        "knowledge_more",
+        "development_request"
+      ],
+      "status": "pending_start_check",
+      "registered_at": "2026-05-21",
+      "notes": "팀원 1:1 Telegram 이용 예정. 봇과 /start 완료 여부 확인 필요."
+    },
+    {
+      "name": "허진석",
+      "telegram_chat_id": "8721440825",
+      "telegram_username": "",
+      "role_or_discipline": "",
+      "permissions": [
+        "knowledge_question",
+        "knowledge_more",
+        "development_request"
+      ],
+      "status": "pending_start_check",
+      "registered_at": "2026-05-21",
+      "notes": "팀원 1:1 Telegram 이용 예정. 봇과 /start 완료 여부 확인 필요."
+    },
+    {
+      "name": "김선정",
+      "telegram_chat_id": "8420202032",
+      "telegram_username": "",
+      "role_or_discipline": "",
+      "permissions": [
+        "knowledge_question",
+        "knowledge_more",
+        "development_request"
+      ],
+      "status": "pending_start_check",
+      "registered_at": "2026-05-21",
+      "notes": "팀원 1:1 Telegram 이용 예정. 봇과 /start 완료 여부 확인 필요."
+    },
+    {
+      "name": "조서희",
+      "telegram_chat_id": "8629323687",
+      "telegram_username": "",
+      "role_or_discipline": "관리팀",
+      "permissions": [
+        "knowledge_question",
+        "knowledge_more",
+        "development_request"
+      ],
+      "status": "pending_start_check",
+      "registered_at": "2026-05-21",
+      "notes": "관리팀. 1:1 Telegram 이용 예정. 봇과 /start 완료 여부 확인 필요."
+    }
+  ]
+}

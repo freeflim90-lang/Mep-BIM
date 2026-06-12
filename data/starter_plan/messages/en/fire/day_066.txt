@@ -1,0 +1,46 @@
+LUA BIM LABS Starter
+Day 66 - Fire Protection Clash with HVAC and Ceiling
+
+1. Why This Matters
+Fire protection branch lines and sprinkler drops run at ceiling level — exactly where HVAC ducts, cable trays, and light fittings compete for space. Clashes in the ceiling zone are the most common fire protection coordination issue and must be resolved before ceiling installation.
+
+2. Core Concept
+- Common fire protection clash patterns:
+  - Sprinkler head conflicts with HVAC supply diffuser (both at ceiling face level)
+  - Branch line behind HVAC duct (blocks access to sprinkler head)
+  - Sprinkler drop passes through HVAC flexible duct
+  - Head position obstructed by light fitting or ceiling grid
+  - Branch line too close to cable tray (minimum 150mm separation from electrical)
+- Code requirement: sprinkler heads must be within a maximum distance from the ceiling face (NFPA 13: 25mm to 300mm below ceiling, depending on head type)
+- Coordination priority: fire protection head positions are often fixed by coverage geometry — other trades must route around them
+- Concealed ceiling: sprinkler heads must align with ceiling grid modules — coordinate with architect
+- Obstruction rule: if an HVAC duct or beam is deeper than 150mm and the branch line is on one side, a separate head is needed on the other side of the obstruction
+
+Ceiling Zone Coordination Hierarchy
+
+| Priority | System |
+|---|---|
+| 1 (top) | Structural elements (beams, slab) |
+| 2 | Large HVAC supply/return mains |
+| 3 | Lighting (recessed) |
+| 4 | Fire protection branch lines |
+| 5 | Cable trays (small power/data) |
+| 6 | Flexible ducts, small pipes |
+
+3. Real Project Lens
+On a Level 4 office floor, the HVAC coordination model shows 600×250mm supply ducts at 2700mm ceiling height, with the duct soffit at 2450mm. Fire protection branch lines need to be below the duct at 2300mm to serve concealed pendant heads at 2200mm (face of ceiling). The modeler adjusts branch line elevation to route under the ducts, adding elbows where needed. The fire engineer is notified to confirm the routing does not significantly increase friction loss.
+
+4. BIM Check
+- Check: All sprinkler heads are within code distance from ceiling face (25–300mm for pendant heads)
+- Check: No sprinkler drop passes through an HVAC duct or flexible duct — check in 3D view
+- Check: Branch lines maintain 150mm minimum clearance from cable trays and electrical conduits
+
+5. Common Mistake
+Routing the fire protection branch line above the HVAC duct to avoid clashing — then discovering the sprinkler drop cannot reach the ceiling face without passing through the duct, because the branch is now 600mm above the ceiling.
+
+6. Today's Action
+In a 3D BIM view (or Navisworks), navigate to the ceiling zone on one floor. Visually check: (1) Are any sprinkler heads behind or inside an HVAC duct? (2) Are any drops cutting through duct insulation? (3) Do all heads clear the ceiling grid modules?
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

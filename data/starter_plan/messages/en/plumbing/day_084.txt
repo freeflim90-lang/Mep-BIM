@@ -1,0 +1,46 @@
+LUA BIM LABS Starter
+Day 84 - Plumbing vs. Other MEP Disciplines
+
+1. Why This Matters
+Plumbing does not occupy the ceiling void alone. HVAC ductwork, chilled water pipes, electrical cable trays, sprinkler pipes, and plumbing drainage all compete for the same space above the ceiling. Without a clear coordination hierarchy, every discipline fights for the highest level — and plumbing drainage almost always loses because it is the least flexible. Understanding the coordination hierarchy, and knowing how to defend plumbing space, is a key skill for any MEP BIM coordinator.
+
+2. Core Concept
+Coordination hierarchy is the agreed priority order for routing services in a congested ceiling zone. A common hierarchy (from highest priority to lowest):
+
+1. Structural elements — fixed; cannot move
+2. Gravity drainage (sloped pipes) — must maintain slope; very limited flexibility
+3. Sprinkler mains — large diameter, cannot slope, but can flex horizontally
+4. HVAC supply and return ductwork — large volume; can be split or rerouted
+5. HVAC chilled water and heating water pipes — medium flexibility
+6. Electrical cable trays — most flexible; can change routing, direction, and level easily
+
+Plumbing drainage occupies position 2 — second only to structure — because slope is non-negotiable. This means every other service must route around the drain, not the other way around.
+
+Coordination principles for plumbing vs. MEP disciplines:
+- Establish the drain invert level first, then stack other services below it — or reroute them around the drain zone
+- Sprinkler mains often conflict with sloped drains at the downstream end of a long drain run; coordinate the sprinkler route to cross the drain at a right angle with adequate clearance (100 mm min)
+- HVAC ducts should be routed in the zone above the drain where possible; if the duct must cross a drain, a local step-down in the duct can create clearance
+- Electrical cable trays are typically routed at the same level as or below the drain — but not underneath sloped drains where condensation could drip onto the cables
+- Fire protection rules often require electrical trays to be separated from water services by a minimum horizontal distance — check the project specification
+
+BIM coordination tools:
+- Use Navisworks clash detection with discipline-filtered views to identify conflicts
+- Create section cuts at regular intervals (every 2–3 metres) through congested ceiling zones
+- Produce a services zone allocation drawing showing each discipline's allocated level band
+
+3. Real Project Lens
+On an airport terminal project with a congested ceiling void, the MEP coordination team established a services zoning plan at the start of detailed design. Plumbing drainage was allocated the 2.800–2.650 m zone (150 mm depth for DN100 pipes with slope). HVAC ductwork was set above 3.200 m. Sprinklers and electrical were assigned the 2.900–3.200 m band. When the BIM models from each discipline were overlaid, 95% of clashes between plumbing and other services were resolved automatically because each team had designed within their zone.
+
+4. BIM Check
+- Check: A services zone allocation drawing or level table exists for the project and has been agreed by all MEP disciplines
+- Check: Plumbing drain pipes are modeled within their allocated level zone and do not encroach into the zones of other disciplines
+- Check: All remaining clashes between plumbing and other MEP services are documented in the clash report with a resolution status
+
+5. Common Mistake
+A common mistake is waiting for clash detection to reveal conflicts and then negotiating service by service. This reactive approach wastes weeks of coordination time. A proactive services zoning plan agreed at the start of detailed design prevents the majority of multi-discipline clashes before modeling begins.
+
+6. Today's Action
+For one ceiling zone in your project, create a simple table with three columns: Service, Allocated Level Band, Responsible Discipline. Fill in at least five services. Check whether your plumbing drain pipes are within the level band you allocated. If they are not, note what change is needed and why.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,42 @@
+LUA BIM LABS Starter
+Day 58 - MEP BIM Portfolio Building for Beginners
+
+**1. Why This Matters**
+In MEP BIM, portfolios are sparse — most beginners skip them and then struggle to demonstrate capability in job applications. A focused, honest portfolio gets you past the first round of hiring review.
+
+**2. Core Concept**
+An MEP BIM portfolio shows what you can do with real examples. It does not need to be from paid work — training exercises, self-study projects, and academic work are all valid starting points.
+
+What to include in a beginner MEP BIM portfolio:
+
+- **Project snapshots**: 3D model views or coordination drawings from Revit or Navisworks — even if from a training project, clearly labeled as such
+- **Clash detection examples**: A clash report screenshot with a brief explanation of what you found and how it would be resolved
+- **Schedule examples**: A screenshot of a Revit equipment or pipe schedule with a note about what it shows
+- **Workflow descriptions**: A short written paragraph (3–5 sentences) explaining your process for one task — employers value people who can explain what they did and why
+- **Tools used**: A clear list — Revit version, Navisworks version, Dynamo (if used), BIM 360 / ACC
+- **Project types you have worked on or studied**: Residential, commercial, healthcare — even if from a training module
+
+What to avoid:
+- Images with confidential project data or client names
+- Claims of LOD or deliverable compliance without evidence
+- Long paragraphs of text — use visuals with captions
+
+**3. Real Project Lens**
+A beginner BIM technician applies for a junior coordinator role with a portfolio showing three items: a Revit pipe model screenshot with a schedule, a Navisworks clash report from a training exercise (labeled "training"), and a written workflow summary of how they ran a clash test and grouped results. The hiring manager notes the portfolio as a positive differentiator — most applicants at that level submit nothing.
+
+**4. BIM Check**
+- Check: Can you name three types of content a beginner can include in an MEP BIM portfolio without having professional project experience?
+- Check: Can you explain why labeling training or self-study work as such is better than omitting it or misrepresenting it?
+- Check: Can you identify which tool versions you currently use and write a clear tools list for a portfolio page?
+
+**5. Common Mistake**
+Waiting until you have professional project experience to start a portfolio. Training work, sample models, and study exercises are legitimate portfolio content — the habit of documenting your work should start now.
+
+**6. Today's Action**
+Create a simple portfolio entry for one thing you have done in this 90-day course. Include: a screenshot or description, the tool used, what you did, and what you learned. This is the first item in your MEP BIM portfolio.
+
+---
+
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

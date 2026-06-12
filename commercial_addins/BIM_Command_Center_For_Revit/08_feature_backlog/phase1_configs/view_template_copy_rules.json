@@ -1,0 +1,15 @@
+{
+  "feature": "View Template Copier",
+  "version": 1,
+  "collision_policy": "skip",
+  "preview_required": true,
+  "copy_filters": {
+    "include_view_templates": true,
+    "include_view_filters": false,
+    "include_view_types": false
+  },
+  "naming": {
+    "rename_suffix": "_Imported",
+    "preserve_source_name": true
+  }
+}

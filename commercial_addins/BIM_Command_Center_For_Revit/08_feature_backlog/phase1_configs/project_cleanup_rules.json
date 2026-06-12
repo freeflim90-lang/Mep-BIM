@@ -1,0 +1,21 @@
+{
+  "feature": "Project Cleanup Lite",
+  "version": 1,
+  "mode": "audit_only",
+  "checks": {
+    "warnings_count": true,
+    "import_instances": true,
+    "unused_views_candidate": true,
+    "view_templates_count": true,
+    "schedules_count": true
+  },
+  "safety": {
+    "allow_delete": false,
+    "require_report_before_cleanup": true,
+    "require_owner_qa_before_actions": true
+  },
+  "report": {
+    "format": "task_dialog",
+    "include_counts": true
+  }
+}

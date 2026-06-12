@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "BIM",
+    "Revit",
+    "Revit Workflow",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "Revit Worksets: Best Practices for Large Multi-Discipline Teams",
+  "slug": "revit-worksets-best-practices-for-large-multi-discipline-teams",
+  "content": "<p>Worksets in Revit allow multiple team members to work simultaneously on the same central model by dividing model ownership into logical groups. On large projects with 10+ active users, workset strategy directly impacts model performance, file stability, and coordination clarity.</p>\n<h2>Why This Matters</h2>\n<p>Poor workset strategy causes performance problems (too few worksets means large sync operations), ownership conflicts (elements on the wrong workset cannot be edited by the right team member), and coordination confusion (elements visible in wrong discipline's view templates).</p>\n<h2>Practical Guidance</h2>\n<p><strong>Workset Naming Strategy:</strong> Name worksets to reflect ownership and function: WST_ARCH_WALLS, WST_ARCH_FITTINGS, WST_LINK_STRUC, WST_MEP_DUCT, WST_SHARED. Consistent naming allows view templates to control visibility by workset discipline and makes ownership unambiguous.</p>\n<p><strong>Linked Model Worksets:</strong> Place each linked model on a dedicated workset (WST_LINK_ARCH, WST_LINK_MEP). This allows a user who only needs to work in the structural model to unload all linked models using workset visibility, dramatically improving performance.</p>\n<p><strong>Workset Ownership:</strong> Assign workset ownership to the team member responsible for the elements it contains. Elements on an owned workset can only be edited by the owner. Unowned worksets are editable by anyone — appropriate for shared elements but risky for design-critical geometry.</p>\n<p><strong>Workset and Sync Performance:</strong> Large worksets with many elements cause long sync operations. If a single workset has more than 5,000 complex elements, consider splitting it. Monitor sync duration as the model grows and split worksets when sync exceeds 5 minutes.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Define workset naming convention before first team member joins the model</li>\n<li>Place each linked discipline model on a dedicated workset</li>\n<li>Assign ownership for all design-critical worksets</li>\n<li>Monitor sync duration and split worksets that are causing performance problems</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>Workset strategy is a team workflow decision, not a Revit setting — plan it before the model grows too large to restructure efficiently.</p>"
+}

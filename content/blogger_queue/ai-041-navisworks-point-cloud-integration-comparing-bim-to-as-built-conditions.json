@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "Navisworks",
+    "BIM",
+    "As-Built BIM",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "Navisworks Point Cloud Integration: Comparing BIM to As-Built Conditions",
+  "slug": "navisworks-point-cloud-integration-comparing-bim-to-as-built-conditions",
+  "content": "<p>Point cloud scans from laser scanning or photogrammetry capture the actual as-built condition of a building. Comparing these scans to the design BIM model in Navisworks identifies construction deviations, supports as-built documentation, and validates facility management data.</p>\n<h2>Why This Matters</h2>\n<p>Design BIM models diverge from reality during construction. Installation deviations, design changes, and unforeseen conditions mean that the delivered building is never exactly what the BIM model shows. Point cloud comparison quantifies this divergence before handover.</p>\n<h2>Practical Guidance</h2>\n<p><strong>Point Cloud Import:</strong> Navisworks imports point clouds in .rcp and .rcs formats (Autodesk) and .e57 format (neutral). Large point clouds (500 million+ points) require LOD decimation before import to maintain Navisworks performance. Check maximum point count against available system memory.</p>\n<p><strong>Coordinate Alignment:</strong> Point cloud scans and BIM models must use the same coordinate system for meaningful comparison. If the scan was georeferenced to a site survey datum, confirm it matches the BIM shared coordinate system before comparison.</p>\n<p><strong>Deviation Analysis:</strong> Use Navisworks clash detection with the point cloud as one input to identify locations where as-built geometry deviates from the BIM model. Deviations above 20mm typically require BIM model update or construction rectification.</p>\n<p><strong>As-Built Model Update:</strong> Record significant deviations and update the Revit model to reflect actual as-built conditions. As-built BIM models are required for FM handover under many client contracts. Document the update process with scan date and deviation threshold.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Confirm scan coordinate system matches BIM shared coordinates before import</li>\n<li>Decimate point cloud if required for Navisworks performance</li>\n<li>Run deviation analysis before construction completion inspection</li>\n<li>Update Revit model for deviations above agreed threshold before handover</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>A design BIM model and an as-built BIM model are different deliverables — point cloud comparison is the bridge between them.</p>"
+}

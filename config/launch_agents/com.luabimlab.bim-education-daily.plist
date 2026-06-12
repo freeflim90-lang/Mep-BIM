@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.luabimlab.bim-education-daily</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/choejeong-yeon/LUA BIM LABS/.dev-venv/bin/python</string>
+    <string>/Users/choejeong-yeon/LUA BIM LABS/scripts/bim_education/send_daily.py</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/choejeong-yeon/LUA BIM LABS</string>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>TELEGRAM_BOT_TOKEN</key>
+    <string>8614972966:AAGSwFZTc_v4_1OksX9WLVhJAk0aUJpppcA</string>
+  </dict>
+
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>7</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>/Users/choejeong-yeon/LUA BIM LABS/logs/bim_education_daily.out.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/Users/choejeong-yeon/LUA BIM LABS/logs/bim_education_daily.err.log</string>
+
+  <key>RunAtLoad</key>
+  <false/>
+</dict>
+</plist>

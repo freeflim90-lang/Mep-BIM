@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "Navisworks",
+    "BIM",
+    "Quantity Takeoff",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "Navisworks Quantification: Automated Takeoff from BIM Models",
+  "slug": "navisworks-quantification-automated-takeoff-from-bim-models",
+  "content": "<p>Navisworks Quantification provides quantity takeoff directly from federated BIM models, combining geometry from architectural, structural, and MEP disciplines in a single takeoff workspace. This eliminates the need to switch between multiple authoring tools for quantity extraction.</p>\n<h2>Why This Matters</h2>\n<p>Quantity takeoff from multiple discipline models in different software formats is time-consuming and error-prone. Navisworks Quantification processes all disciplines simultaneously, applies consistent measurement rules, and produces a unified BOQ that can be exported to cost management software.</p>\n<h2>Practical Guidance</h2>\n<p><strong>Catalog Setup:</strong> Define a Quantification Catalog that maps Navisworks element types to BOQ line items. The catalog structure should match the project specification or NBS system to allow direct export to the cost plan. Set up the catalog before starting the takeoff, not during it.</p>\n<p><strong>Virtual Items:</strong> Navisworks Quantification supports Virtual Items — quantities that cannot be measured directly from geometry but are calculated from element properties (e.g., number of pipe fittings estimated from pipe length). Configure virtual item formulas to match quantity surveying conventions.</p>\n<p><strong>2D Takeoff Integration:</strong> Quantification can incorporate 2D drawing measurements alongside 3D model takeoff. This is useful for items not fully modeled in BIM — finishes, fittings, external works — where the 2D drawing is the authoritative source.</p>\n<p><strong>Export and Audit:</strong> Export Quantification results to Excel for cost planning integration. Always include a column showing the source (3D model, 2D drawing, manual entry) to allow the quantity surveyor to audit and verify the takeoff basis.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Define Quantification Catalog before starting takeoff</li>\n<li>Agree virtual item formulas with quantity surveyor</li>\n<li>Flag all manual entries and 2D takeoff items in export</li>\n<li>Reconcile sample quantities against manual measurement before submitting BOQ</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>Navisworks Quantification is a tool for extracting quantities, not for verifying the model is complete — validate model coverage before trusting the output.</p>"
+}

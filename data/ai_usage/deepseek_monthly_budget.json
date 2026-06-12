@@ -1,0 +1,28 @@
+{
+  "monthly_budget_usd": 50.0,
+  "months": {
+    "2026-06": {
+      "estimated_spend_usd": 1.05,
+      "calls": [
+        {
+          "timestamp": "2026-06-02T04:01:44",
+          "workflow_id": "reasoning_training_final_review",
+          "target_agent": "전략기획",
+          "estimated_cost_usd": 0.35
+        },
+        {
+          "timestamp": "2026-06-03T10:43:29",
+          "workflow_id": "reasoning_training_final_review",
+          "target_agent": "전략기획",
+          "estimated_cost_usd": 0.35
+        },
+        {
+          "timestamp": "2026-06-07T17:34:11",
+          "workflow_id": "csuite_rejection_redeliberation",
+          "target_agent": "CEO",
+          "estimated_cost_usd": 0.35
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+LUA BIM LABS Starter
+Day 46 - Model-Based Quantity Basics
+
+**1. Why This Matters**
+One of BIM's clearest commercial benefits is the ability to extract quantities directly from the model — reducing estimation time and improving the accuracy of material procurement.
+
+**2. Core Concept**
+Model-based quantity takeoff uses Revit schedules and parameters to count and measure elements without manual calculation. The accuracy of the output depends entirely on the completeness and accuracy of the model.
+
+Key concepts:
+- **Quantity fields**: Length (pipes/ducts), Area (ductwork lining/insulation), Count (fittings, equipment), Volume (insulation)
+- **Itemize vs. Group**: Grouped schedules show total quantity per type; itemized schedules show every single element
+- **Nested families**: Equipment like AHUs may contain sub-components — understand whether the schedule is counting the host family or the nested parts
+- **Unhosted elements**: Elements placed without a host (e.g., pipe fittings placed manually) may have different quantity behavior than system-generated fittings
+- **LOD limitation**: Quantities from an LOD 200 model are indicative only; LOD 350 quantities are suitable for procurement
+- **Cross-reference**: Always cross-reference model quantities against engineering calculations — BIM quantities are a check, not a replacement for the design calculation
+
+**3. Real Project Lens**
+On a hospital fitout, the procurement manager requests a pipe quantity takeoff by size and material for Level 4. The BIM coordinator produces a Pipe Schedule grouped by Diameter and Material, showing total lengths by size. The 100mm copper domestic hot water pipe quantity from the model shows 87 meters — close to the engineer's 90-meter estimate, providing confidence that the model geometry is substantially complete.
+
+**4. BIM Check**
+- Check: Can you create a Revit schedule that shows total pipe length grouped by nominal diameter?
+- Check: Can you explain why quantity takeoffs from an early-stage (LOD 200) model should not be used for procurement?
+- Check: Can you identify at least two element types where the "Count" field in a schedule gives useful procurement data?
+
+**5. Common Mistake**
+Using model quantities for procurement without verifying the model LOD. An LOD 200 duct length schedule may exclude all branch connections and transitions — the delivered quantity could be 20-30% higher than the schedule shows.
+
+**6. Today's Action**
+In Revit, create a schedule for Pipe Fittings or Duct Fittings that includes a Count field. Group by Type to see how many of each fitting type the model contains. Note the top three most-used types.
+
+---
+
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

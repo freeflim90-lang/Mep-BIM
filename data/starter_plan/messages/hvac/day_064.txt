@@ -1,0 +1,37 @@
+LUA BIM LABS Starter
+Day 64 - VAV Box Connections in Revit
+
+1. Why This Matters
+VAV (Variable Air Volume) boxes are the key flow control device on VAV systems. If VAV boxes are not properly connected in Revit — both to the upstream supply duct and the downstream flexible duct to diffusers — the system cannot calculate airflow correctly and coordination with controls contractors is compromised.
+
+2. Core Concept
+- A VAV box sits between the main supply branch duct and the final flex duct to diffusers
+- It has: one supply air inlet connector (connected to branch duct from AHU) and one or more discharge connectors (connected to flex duct to diffusers)
+- Some VAV boxes include a reheat coil (hot water or electric) — these have additional pipe connectors
+- In Revit: load the correct VAV box family, place it at the correct elevation (above ceiling, upstream of diffusers), and connect branch duct to inlet, flex duct to outlet
+- Mark parameter: set the VAV box mark to match the engineer's schedule (e.g., VAV-B05-01)
+- Set maximum and minimum CFM in the instance parameters to match the design schedule
+- Typical VAV box connection sequence in Revit:
+  1. Place VAV box family at correct elevation
+  2. Draw branch duct from main supply to VAV inlet connector
+  3. Draw flex duct from VAV discharge connector to first diffuser
+  4. Set Mark, Max Flow, Min Flow in instance properties
+  5. Verify VAV is on Supply Air system
+
+3. Real Project Lens
+An office floor has 12 VAV boxes — one per zone. Each is tagged VAV-L6-01 through VAV-L6-12. The controls contractor needs the Revit model to show the exact location and connectivity of each box, because they will install the DDC controller wiring based on the BIM model.
+
+4. BIM Check
+- Check: Each VAV box has a unique Mark matching the engineering schedule
+- Check: Inlet connector shows flow in the correct direction (supply from branch duct)
+- Check: Discharge connector is connected — no unconnected stub
+- Check: For reheat VAV boxes, hot water pipe connectors are connected to the piping model
+
+5. Common Mistake
+Placing the VAV box family as a non-hosted element at the wrong elevation — it appears correct on plan but is 200mm too high in section, causing it to clash with a structural beam that the modeler did not check.
+
+6. Today's Action
+In Revit, place one VAV box family in a sample project. Connect a supply duct to the inlet. Connect a short flex duct to the discharge. Open Properties and set the Mark and Max Flow Rate. Verify it appears in the Mechanical Systems Browser.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

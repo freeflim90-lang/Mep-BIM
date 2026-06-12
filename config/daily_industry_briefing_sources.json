@@ -1,0 +1,114 @@
+{
+  "sources": [
+    {
+      "name": "Google News - 건설 BIM",
+      "category": "bim",
+      "url": "https://news.google.com/rss/search?q=%EA%B1%B4%EC%84%A4+BIM+when:1d&hl=ko&gl=KR&ceid=KR:ko"
+    },
+    {
+      "name": "Google News - 설계 BIM",
+      "category": "design",
+      "url": "https://news.google.com/rss/search?q=%EC%84%A4%EA%B3%84+BIM+when:1d&hl=ko&gl=KR&ceid=KR:ko"
+    },
+    {
+      "name": "Google News - 시공 디지털전환",
+      "category": "construction",
+      "url": "https://news.google.com/rss/search?q=%EC%8B%9C%EA%B3%B5+%EB%94%94%EC%A7%80%ED%84%B8%EC%A0%84%ED%99%98+OR+BIM+when:1d&hl=ko&gl=KR&ceid=KR:ko"
+    },
+    {
+      "name": "Google News - 건설 AI 자동화",
+      "category": "ai_construction",
+      "url": "https://news.google.com/rss/search?q=%EA%B1%B4%EC%84%A4+AI+%EC%9E%90%EB%8F%99%ED%99%94+%EB%94%94%EC%A7%80%ED%84%B8%ED%8A%B8%EC%9C%88+when:3d&hl=ko&gl=KR&ceid=KR:ko"
+    },
+    {
+      "name": "Google News - 스마트건설 드론 로봇",
+      "category": "contech",
+      "url": "https://news.google.com/rss/search?q=%EC%8A%A4%EB%A7%88%ED%8A%B8%EA%B1%B4%EC%84%A4+%EB%93%9C%EB%A1%A0+%EB%A1%9C%EB%B4%87+3D%ED%94%84%EB%A6%B0%ED%8C%85+when:3d&hl=ko&gl=KR&ceid=KR:ko"
+    },
+    {
+      "name": "Google News - Construction BIM",
+      "category": "global",
+      "url": "https://news.google.com/rss/search?q=construction+BIM+digital+construction+when:1d&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "name": "Google News - AI Construction Global",
+      "category": "ai_construction",
+      "url": "https://news.google.com/rss/search?q=AI+construction+BIM+automation+when:1d&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "name": "Google News - Generative AI AEC Design",
+      "category": "ai_construction",
+      "url": "https://news.google.com/rss/search?q=generative+AI+architecture+design+AEC+when:3d&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "name": "Google News - Construction Tech ConTech",
+      "category": "contech",
+      "url": "https://news.google.com/rss/search?q=construction+technology+contech+innovation+startup+when:3d&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "name": "Google News - Digital Twin AEC",
+      "category": "digital_twin",
+      "url": "https://news.google.com/rss/search?q=digital+twin+construction+BIM+when:3d&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "name": "Google News - Construction Robotics Drone",
+      "category": "contech",
+      "url": "https://news.google.com/rss/search?q=construction+robotics+drone+3D+printing+prefab+when:7d&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "name": "Google News - Autodesk Construction Cloud",
+      "category": "autodesk",
+      "url": "https://news.google.com/rss/search?q=Autodesk+Construction+Cloud+BIM+when:7d&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "name": "Google News - Trimble Bentley Hexagon AEC",
+      "category": "aec_platform",
+      "url": "https://news.google.com/rss/search?q=Trimble+OR+Bentley+OR+Hexagon+AEC+BIM+construction+when:7d&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "name": "Google News - Revit BIM API",
+      "category": "revit",
+      "url": "https://news.google.com/rss/search?q=Revit+BIM+API+Autodesk+when:7d&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "name": "Google News - BIM UK Europe",
+      "category": "global",
+      "url": "https://news.google.com/rss/search?q=BIM+construction+UK+Europe+when:3d&hl=en-US&gl=GB&ceid=GB:en"
+    },
+    {
+      "name": "Google News - IFC OpenBIM Global",
+      "category": "openbim",
+      "url": "https://news.google.com/rss/search?q=IFC+openBIM+buildingSMART+standard+when:7d&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "name": "Google News - Green Building Net Zero BIM",
+      "category": "sustainability",
+      "url": "https://news.google.com/rss/search?q=green+building+BIM+net+zero+construction+when:7d&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "name": "buildingSMART News",
+      "category": "openbim",
+      "url": "https://www.buildingsmart.org/feed/"
+    },
+    {
+      "name": "ArchDaily",
+      "category": "design",
+      "url": "https://www.archdaily.com/rss"
+    },
+    {
+      "name": "Construction Dive",
+      "category": "global",
+      "url": "https://www.constructiondive.com/feeds/news/"
+    },
+    {
+      "name": "BIM+",
+      "category": "bim",
+      "url": "https://www.bimplus.co.uk/news/rss"
+    },
+    {
+      "name": "BIM Corner",
+      "category": "bim",
+      "url": "https://bimcorner.com/feed/"
+    }
+  ]
+}

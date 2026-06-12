@@ -1,0 +1,46 @@
+LUA BIM LABS Starter
+Day 78 - Electrical vs. Structure Clashes — Cable Tray Hangers and Beam Penetrations
+
+1. Why This Matters
+Structural elements are fixed — beams, columns, and slabs do not move to accommodate electrical routing. Electrical clashes with structure are among the most expensive coordination failures because resolving them often requires an engineer's approval and may involve structural modification. Identifying these clashes early in the BIM model is far cheaper than resolving them on site.
+
+2. Core Concept
+Two main categories of electrical vs. structure clashes:
+
+Category 1 — Cable tray hanger conflicts:
+- Cable trays are suspended from the structural slab or from secondary steel — using threaded rods, beam clamps, or unistrut channels
+- The hanger rod occupies space between the tray and the slab soffit — typically 150–300mm above the tray top
+- When a structural beam runs across the ceiling zone, the hanger may clash with the beam web or flange
+- In the BIM model: model hanger rods as simple cylinder families placed at standard hanger spacing (typically 1,500–1,800mm centers)
+- Run clash detection including hanger families — not just the tray body
+- Resolution: offset the hanger to a clear beam spacing, or use beam clamp fittings that attach to the beam flange rather than penetrating it
+
+Category 2 — Conduit beam penetrations:
+- When a conduit must cross a structural beam, a penetration (sleeve) through the beam web may be required
+- Beam penetrations are subject to strict engineering rules: maximum hole size, minimum distance from the beam end, minimum distance from the bottom flange
+- Typical rule: maximum hole diameter = D/3 (where D is the beam depth); hole centre between D/4 and 3D/4 of the beam depth
+- In BIM: model the penetration sleeve through the beam web and flag it for structural engineer approval via a formal Penetration Request (PR)
+- Never assume beam penetrations are acceptable without structural engineer sign-off
+
+Practical BIM approach:
+- Route conduit below beam flanges wherever possible — this avoids the penetration process entirely
+- When beam penetration is unavoidable, check that the conduit size is within the engineer's permitted maximum
+- Group all beam penetration requests in a Penetration Register with beam ID, penetration location, conduit size, and required date
+
+3. Real Project Lens
+A coordinator routes 40mm conduit from an electrical DB to a motor control panel. The direct route crosses a 500mm deep structural beam. A 40mm hole at mid-depth is within D/3 = 167mm and at mid-height — acceptable in principle. She models the penetration sleeve, generates the penetration request, and sends it to the structural engineer. The engineer approves it but requires the hole be reinforced with a steel ring — she adds this to the model and updates the penetration register.
+
+4. BIM Check
+- Check: Are cable tray hanger families modeled at the correct spacing, and do they pass the structural clash test — not just the tray body?
+- Check: Does every conduit that crosses a structural beam have a modeled penetration sleeve — with a corresponding entry in the Penetration Register?
+- Check: Are all beam penetration requests submitted to the structural engineer before the coordination model is frozen?
+
+5. Common Mistake
+Running the clash test with only the tray body against the structural model — ignoring the hanger rods entirely. The tray passes clash detection, but on site the hanger rods conflict with beam flanges at every other hanger point, causing delays while the hanger pattern is redesigned.
+
+6. Today's Action
+In a model or sketch, identify one cable tray crossing a zone with structural beams. Sketch the hanger arrangement at a beam location. Note: does the hanger need to attach to the beam flange (beam clamp) or bypass the beam entirely? What information does the structural engineer need to approve a beam web penetration?
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,32 @@
+LUA BIM LABS Starter
+Day 32 - Clash Grouping and Prioritization
+
+1. Why This Matters
+A single clash test can return hundreds or thousands of results — without grouping and prioritization, the coordination team wastes time reviewing the same clash multiple times or fixing low-priority items first.
+
+2. Core Concept
+After running a clash test, results must be organized before the coordination meeting. Grouping and prioritization reduce noise and focus effort where it matters most.
+
+Key approaches:
+- Group by Grid: Clusters clashes in the same structural bay together — useful for large floor plates
+- Group by Level: Separates clashes by floor, so each trade knows which level to address
+- Group by Assigned: Lets you assign clashes to specific people or companies for resolution
+- Status tags: New, Active, Reviewed, Approved, Resolved — each clash moves through these states
+- Priority tiers: Critical (blocks structure or ceiling install), Major (requires rerouting), Minor (can be resolved with small adjustment)
+
+3. Real Project Lens
+A plumbing coordinator running a test against structural steel might see 420 raw clashes. After grouping by level and filtering out "Reviewed" items from last week, the active list drops to 38 clashes — all on Level 3, all involving the same beam run. This focused list drives the agenda for the Thursday coordination meeting.
+
+4. BIM Check
+- Check: Can you group clashes in Clash Detective by Grid or Level using the "Group" dropdown?
+- Check: Can you change the status of a clash from "New" to "Active"?
+- Check: Can you assign a clash to a specific model file or discipline?
+
+5. Common Mistake
+Teams that skip grouping tend to fix clashes in random order. This leads to trades rerouting pipes around a beam that will itself be modified next week — wasted effort that proper prioritization would have prevented.
+
+6. Today's Action
+In a Navisworks file with at least two models appended, run a clash test and manually tag three clashes as Critical, Major, and Minor based on what you observe at each location.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

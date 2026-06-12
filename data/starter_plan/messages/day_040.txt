@@ -1,0 +1,37 @@
+LUA BIM LABS Starter
+Day 40 - MEP Equipment Schedule Basics
+
+**1. Why This Matters**
+MEP equipment schedules are a standard project deliverable — they link the BIM model to specifications, procurement lists, and commissioning records, and they are reviewed by engineers and clients alike.
+
+**2. Core Concept**
+An MEP equipment schedule documents the key parameters of each piece of mechanical, electrical, or plumbing equipment in the model. It is often contractually required as part of the BIM deliverable.
+
+Typical fields for an MEP equipment schedule:
+- **Mark**: Unique equipment tag (e.g., AHU-01, FCU-L3-04) — must be set per element
+- **Family and Type**: The Revit family name and type (describes the equipment category and size)
+- **Level**: Which floor the equipment is located on
+- **System Classification / System Name**: The HVAC or plumbing system the equipment belongs to
+- **Flow Rate / Capacity**: Design parameter values — must be filled in manually or from the design spec
+- **Manufacturer / Model**: Often left blank in early BIM but required for procurement and commissioning
+- **Comments**: Free-text field for coordination notes or status flags
+
+**3. Real Project Lens**
+On a hotel project, the BIM coordinator produces a Fan Coil Unit Schedule filtered by floor. The schedule shows 48 FCUs across Levels 3–8, but 11 of them have no Mark value set, and 6 have no flow rate entered. The coordinator flags this to the mechanical modeler before the schedule is submitted to the engineer — preventing an incomplete deliverable from leaving the project team.
+
+**4. BIM Check**
+- Check: Can you verify that every piece of equipment in a schedule has a unique Mark value?
+- Check: Can you identify which fields in an equipment schedule are model-driven vs. manually entered?
+- Check: Can you filter the schedule to show only equipment with missing or blank parameter values?
+
+**5. Common Mistake**
+Submitting an equipment schedule with blank Mark fields. Unmarked equipment cannot be tracked, purchased, or commissioned — every item must have a unique, readable tag before the schedule leaves the model.
+
+**6. Today's Action**
+Open an existing Revit project (or a sample model) and find the equipment schedule. Identify three elements where a required field is blank, and manually enter placeholder values to test how the schedule updates live.
+
+---
+
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

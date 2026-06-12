@@ -1,0 +1,28 @@
+LUA BIM LABS Starter
+Day 79 - Piping LOD 350 Requirements
+
+1. Why This Matters
+LOD 350 is the coordination standard at which pipe models are accurate enough for trade coordination, clash detection, and prefabrication. Understanding the LOD 350 requirements for piping ensures the model is ready before it is issued.
+
+2. Core Concept
+- Piping at LOD 350 requires: correct pipe diameter (matching engineering schedule), correct pipe material and specification, all fittings (elbows, tees, reducers) as actual geometry not representations, all valves and accessories placed at correct locations, insulation modeled as clearance layer
+- Equipment at LOD 350: outer dimensions match approved submittal, all pipe connection points located at correct face and elevation, maintenance clearance zones documented
+- Parameters required at LOD 350: pipe system type, design flow rate, pipe specification (pressure rating, material), insulation specification, LOD status
+- Common LOD 350 gaps in piping models: missing insulation clearance, pipe reducers missing between different pipe sizes, valve families not matching specified type
+- Pipe drawings at LOD 350 must be sufficient to produce isometric spool drawings for prefabrication without additional survey
+
+3. Real Project Lens
+On a laboratory project, the piping model was issued as LOD 350 for coordination but pipe reducers were modeled as symbolic connections rather than actual reducer geometry. The clash detection missed 8 reducer-to-structure conflicts because the model showed straight pipe where a physically larger reducer fitting would be installed. All 8 clashes were discovered during installation.
+
+4. BIM Check
+- Check: all pipe reducers are modeled with actual reducer fitting geometry, not as a direct size change in the straight pipe
+- Check: pipe insulation thickness is applied to all specified insulated pipes and included in the clash detection geometry
+- Check: all valves are modeled with correct Revit families matching their specified type — gate, butterfly, ball, or commissioning valve
+
+5. Common Mistake
+Beginners model pipes at the correct diameter throughout but omit fittings and insulation because they are smaller than the pipe. These omissions cause clash detection to miss real installation conflicts.
+
+6. Today's Action
+List the five LOD 350 elements required for one section of chilled water piping: pipe diameter, material, fittings, insulation, and valves.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

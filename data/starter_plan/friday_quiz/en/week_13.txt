@@ -1,0 +1,13 @@
+LUA BIM LABS — BIM Check Friday ✓
+Week 13 | Final Review — 90-Day Course Wrap
+
+Q1. You are asked to produce a site-readiness package for a Level 3 MEP zone. List five items you would include.
+Q2. A design change arrives and reopens 12 previously resolved clashes. Describe the steps you take from notification to reissue.
+Q3. An equipment schedule has 20 blank "Mark" fields out of 140 elements. What do you do before submitting it?
+Q4. Explain the difference between a coordination drawing and a spool drawing — who uses each, and for what purpose?
+Q5. In one sentence each: define LOD, EIR, BEP, and IFC.
+
+Think through each one.
+No grades — this tests your own understanding.
+
+You have completed the 90-day Starter curriculum. Apply what you know — the next step is practice on real projects.

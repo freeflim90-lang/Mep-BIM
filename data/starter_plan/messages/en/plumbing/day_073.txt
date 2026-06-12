@@ -1,0 +1,46 @@
+LUA BIM LABS Starter
+Day 73 - Riser Shaft Coordination
+
+1. Why This Matters
+In most commercial and residential buildings, plumbing, mechanical, and electrical risers share a common shaft. If each discipline models its risers independently without coordination, the shaft fills up with conflicting pipes, ducts, and cable trays before anyone realizes there is not enough room. Riser shaft coordination is where BIM saves the most physical space on a building project.
+
+2. Core Concept
+A riser shaft is a vertical chase that passes through every floor, typically 600 mm × 600 mm to 1,200 mm × 2,000 mm depending on the building type and the number of services it carries.
+
+Common occupants of a shared riser shaft:
+- Plumbing: soil stack, waste stack, vent stack, cold water riser, hot water riser
+- Fire protection: sprinkler riser, wet riser / dry riser
+- HVAC: small-bore refrigerant lines, condensate drain
+- Electrical: main cable tray riser, data trunking
+- BMS: sensor cabling
+
+Coordination principles:
+- Map all services on a cross-section drawing of the shaft at a minimum scale of 1:20
+- Assign each service a designated zone within the shaft: plumbing typically on one side, electrical on the opposite side, fire protection in between
+- Maintain a 50 mm minimum clearance between services to allow for insulation and installation
+- Access doors must align with the services requiring valve or inspection access
+- Where fire stopping is required (every floor), ensure sleeve clearance allows for intumescent collars or fire-rated wrap
+
+Steps for riser shaft coordination in Revit:
+1. Set up a shaft opening family in the architectural model
+2. Place all discipline risers within the shaft boundary
+3. Create a vertical section cut through the shaft to visualize all services
+4. Run clash detection (Navisworks or Revit Interference Check) for the shaft zone
+5. Issue a coordination section drawing for multi-discipline review
+
+3. Real Project Lens
+On an office building project with a 900 mm × 900 mm shared riser shaft, the initial BIM model showed the plumbing soil stack at the same plan coordinate as the sprinkler riser. Both teams had assumed they had rights to the corner of the shaft. A section cut through the shaft in Navisworks revealed the conflict in the first coordination meeting. The plumbing stack was shifted 150 mm and the sprinkler riser was rotated — both changes were possible within the shaft. Without BIM, this conflict would only have been discovered during installation.
+
+4. BIM Check
+- Check: A shaft cross-section at 1:20 or larger has been produced and reviewed by all disciplines sharing the shaft
+- Check: Minimum 50 mm clearance is maintained between all services within the shaft
+- Check: Plumbing and electrical risers are on opposite sides of the shaft to comply with separation requirements
+
+5. Common Mistake
+A common mistake is coordinating only the floor-level slab penetration and ignoring the space inside the shaft between floors. Services modeled correctly at slab level can still conflict with each other mid-shaft — particularly where insulated pipes and large cable trays are present.
+
+6. Today's Action
+Create a vertical section view through a riser shaft in your Revit model. Zoom to a scale of 1:20 and add all services from different disciplines if your model includes them. Measure the clearance between the largest pipe and the nearest adjacent service. If you do not have a model, sketch a shaft section by hand with three services and assign each a 150 mm zone.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

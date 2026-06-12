@@ -1,0 +1,44 @@
+LUA BIM LABS Starter
+Day 65 - Electrical Separation — HV, LV, Data
+
+1. Why This Matters
+Electrical systems of different voltage categories must be physically separated. High voltage cables near low voltage cables can cause induction, interference, and fire risk. High voltage near data cables can corrupt signals and damage equipment. Separation is a safety and performance requirement — not a preference.
+
+2. Core Concept
+- Voltage categories (typical classification):
+  - HV (High Voltage): Above 1000V AC. Typically utility incoming supply, 11kV or 22kV. Separate shaft, separate cable trays, separate room
+  - LV (Low Voltage): 230V–400V AC. Building power distribution — MSB to DBs to final circuits
+  - ELV / Data: Below 50V AC / 120V DC. IT networks, telephone, fire alarm, BMS, security, AV
+- Separation requirements:
+  - HV and LV: minimum 600mm separation (or separate enclosed conduit/tray)
+  - LV power and data: minimum 300mm separation (or separated by a metal divider in a divided tray)
+  - Fire alarm cables: typically in separate conduit or dedicated FAS tray — must be fire-resistant cable
+  - BMS cables: separate from power but can run with low-voltage data at 150mm separation
+- In Revit: use separate cable tray systems or tray with dividers. Use circuit names and cable categories to keep systems distinct
+
+Electrical Separation Quick Reference
+
+| Systems | Minimum Separation |
+|---|---|
+| HV and LV | 600mm (or separate enclosed pathway) |
+| LV Power and Data | 300mm |
+| Power and Fire Alarm | 300mm (FAS in dedicated conduit preferred) |
+| Data and BMS | 150mm |
+
+3. Real Project Lens
+An IT room on Level 5 has three cable trays running to a central comms rack: one 450mm LV power tray, one 300mm data tray, and one 150mm fire alarm tray. The LV and data trays are separated by 300mm vertical offset (data above, power below). The fire alarm tray runs in its own rigid conduit. The BIM modeler verifies separations in the 3D model before the coordination model submission.
+
+4. BIM Check
+- Check: Measure the separation between LV power trays and data trays — confirm 300mm minimum throughout
+- Check: HV cables (if any) are in a separate enclosed pathway — not on an open ladder tray adjacent to LV
+- Check: Fire alarm cables are in a dedicated fire-resistant conduit or separately labeled FAS cable tray
+
+5. Common Mistake
+Dividing a cable tray with a central divider and placing LV power on one side and data on the other — this only provides 0mm separation (they share the same enclosure), which violates the 300mm separation rule.
+
+6. Today's Action
+In a ceiling zone with LV power tray at 2700mm ceiling height, place a data tray at a position that satisfies the 300mm separation rule. Consider whether this means: (1) horizontal separation at the same elevation, or (2) vertical separation at a different elevation.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

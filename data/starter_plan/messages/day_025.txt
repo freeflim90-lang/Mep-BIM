@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 25 - Ceiling Device Coordination
+
+1. Why This Matters
+Ceilings contain diffusers, lights, sprinklers, detectors, speakers, access panels, and sometimes tight duct or pipe routes above.
+
+2. Core Concept
+Ceiling coordination aligns visible devices and hidden services so the ceiling can be built, maintained, and reviewed clearly.
+
+3. Real Project Lens
+A diffuser, sprinkler head, and light fixture may each be correct individually but conflict visually or physically when combined in the ceiling grid.
+
+4. BIM Check
+- Compare reflected ceiling plan with MEP device layout.
+- Check above-ceiling service routes.
+- Review access panels for valves, dampers, and equipment.
+
+5. Common Mistake
+Beginners often coordinate hidden services and visible ceiling devices separately.
+
+6. Today's Action
+Choose one small ceiling grid and list all devices that need coordinated positions.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

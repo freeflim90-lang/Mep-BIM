@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 14 - Clash Results Need Classification
+
+1. Why This Matters
+A clash report with hundreds of items is not useful until the issues are grouped and prioritized. Classification turns noise into action.
+
+2. Core Concept
+Clash classification means sorting results by system, location, severity, repetition, responsible discipline, and practical impact.
+
+3. Real Project Lens
+Ten clashes from the same repeated pipe sleeve issue may require one modeling rule, while one critical plant room clash may need a coordination decision.
+
+4. BIM Check
+- Group repeated clashes before assigning actions.
+- Separate hard clashes from clearance concerns.
+- Prioritize issues that block installation or access.
+
+5. Common Mistake
+Beginners often count clash quantity instead of judging clash importance.
+
+6. Today's Action
+Look at a sample clash list and create three groups: critical, repeated, and low-priority.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

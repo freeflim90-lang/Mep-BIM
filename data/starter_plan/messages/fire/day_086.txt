@@ -1,0 +1,51 @@
+LUA BIM LABS Starter
+Day 86 - LOD 350 Requirements for Fire Protection
+
+1. Why This Matters
+LOD 350 (Level of Development 350) is the standard delivery level for coordinated construction-ready BIM models. For fire protection, reaching LOD 350 means the model is geometrically complete, dimensionally accurate, and contains enough data for trade contractors to fabricate and install directly from the model. Understanding what LOD 350 requires prevents the common failure of submitting an LOD 200 or 300 model as if it were construction-ready.
+
+2. Core Concept
+LOD 350 Definition for Fire Protection (per AIA / BIMForum LOD Specification):
+The element is modeled as a specific assembly — size, shape, location, quantity, and orientation — with interfaces to other building elements and systems coordinated.
+
+What LOD 350 Requires for Fire Protection Elements:
+
+| Element | LOD 350 Requirement |
+|---|---|
+| Sprinkler heads | Correct family type, modeled at exact ceiling elevation, with correct horizontal and vertical offsets |
+| Pipes (all levels) | Correct nominal diameter, system type, exact routing, slope where required |
+| Fittings | All elbows, tees, reducers, unions modeled — no generic straight-run assumptions |
+| Hangers and supports | Modeled at correct spacing (per code and project spec), coordinated with structure |
+| Valves and specialties | Alarm check valves, zone valves, test and drain assemblies modeled at correct locations |
+| Sleeves | All wall and slab penetration sleeves modeled with correct ID and fire rating |
+
+LOD 350 Data Requirements:
+- System Name (e.g., FP-WET-ZONE-03)
+- Pipe nominal diameter
+- Head type (pendant, upright, sidewall, concealed)
+- Head coverage area
+- Fire rating of penetrated elements
+- RFI reference (for elements changed from design intent)
+
+What LOD 350 Does NOT Require (this is LOD 400 / 500 territory):
+- Exact bolt counts on flanged connections
+- Fabrication shop drawings
+- Actual installed condition records (that is as-built / LOD 500)
+
+3. Real Project Lens
+A construction contractor reviews the fire protection model issued for tender and finds it at LOD 300 — hangers are absent, test and drain assemblies are missing, and sleeves are not modeled. The contractor requests an LOD 350 reissue. The BIM team adds hanger families at 3.0 m maximum spacing, models test and drain assemblies at each zone valve, and adds sleeve families at all rated penetrations. The revised issue takes three days of work that should have been done before the first issue.
+
+4. BIM Check
+- Check: All fire protection fittings are modeled explicitly — no pipe segments that run through walls or around corners without modeled elbows and tees
+- Check: Zone valves, alarm check valve assemblies, and test and drain assemblies are modeled at their correct locations
+- Check: Pipe hangers are modeled at the required spacing (typically 3.0 m maximum for small-bore fire protection pipe)
+
+5. Common Mistake
+Modeling fire protection pipes as straight runs with no fittings, relying on Revit's automatic routing without checking whether all bends and connections are represented by the correct fitting families. A pipe that appears to turn a corner may have a smooth curve in Revit but no explicit elbow modeled — this fails LOD 350.
+
+6. Today's Action
+Review one section of your fire protection model and check it against the LOD 350 element list above. Identify which elements are present and correctly modeled, and which are missing or incomplete. Create a brief gap list for that section.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

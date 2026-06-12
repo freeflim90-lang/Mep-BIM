@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "BIM",
+    "Revit",
+    "Revit Workflow",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "Revit Shared Coordinates: Setting Up for Multi-Building and Site Projects",
+  "slug": "revit-shared-coordinates-setting-up-for-multi-building-and-site-projects",
+  "content": "<p>Shared coordinates are the mechanism that allows multiple Revit models on a project — architectural, structural, MEP, site — to align correctly in a federated model. Errors in shared coordinate setup are among the most time-consuming to diagnose and fix mid-project.</p>\n<h2>Why This Matters</h2>\n<p>When models use different coordinate origins, linking them produces misaligned geometry that looks correct when viewed individually but does not align in a federated view. On multi-building or campus projects, shared coordinates are the only reliable way to maintain correct relative positions between buildings.</p>\n<h2>Practical Guidance</h2>\n<p><strong>Survey Point vs Project Base Point:</strong> The Survey Point represents a real-world geographic location. The Project Base Point is the project's internal origin. Shared coordinates are defined by the Survey Point. All disciplines must export IFC from the Survey Point, not the Project Base Point.</p>\n<p><strong>Acquiring Coordinates:</strong> The architectural model sets the shared coordinates. All other discipline models acquire coordinates from the architectural model by linking it and using the Acquire Coordinates command. Never set coordinates independently in a discipline model.</p>\n<p><strong>Multi-Building Projects:</strong> On campus or multi-building projects, each building Revit model uses the same shared coordinate system (site survey datum). This allows all buildings to be federated in a site Navisworks model with correct geographic positions.</p>\n<p><strong>After Coordinate Changes:</strong> If the architectural model's shared coordinates are changed after linked models have acquired them, all linked models must re-acquire coordinates. Notify all discipline modelers before any shared coordinate adjustment.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Set shared coordinates in architectural model before first discipline model is created</li>\n<li>All discipline models acquire coordinates from architectural — never set independently</li>\n<li>Notify all modelers before any shared coordinate change</li>\n<li>Verify alignment in federated Navisworks model after coordinate setup</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>Shared coordinate setup is a one-time decision that affects every model on the project — do it correctly at project start and treat changes as formal change events.</p>"
+}

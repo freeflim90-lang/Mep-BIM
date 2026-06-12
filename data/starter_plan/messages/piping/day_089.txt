@@ -1,0 +1,59 @@
+LUA BIM LABS Starter
+Day 89 - Piping Handover Data for FM
+
+1. Why This Matters
+When a building is handed over to the facilities management team, the piping BIM model becomes the primary technical reference for mechanical system operation and maintenance. If the model contains good geometry but poor data, the FM team inherits a visual tool with no operational value. Preparing FM-ready piping data means the building owner receives a model they can actually use to run the building — and this is increasingly a contractual requirement, not a courtesy.
+
+2. Core Concept
+FM teams need piping BIM data to support three main activities: planned preventive maintenance, fault investigation, and future modification. Each activity has specific data requirements.
+
+For planned preventive maintenance:
+- Equipment asset data: manufacturer, model, serial number, installation date, maintenance interval
+- Valve data: tag, type, service, normally open/closed, shutdown zone (which circuits are isolated when this valve is closed)
+- Strainer locations: tag, service, cleaning interval
+- Test point locations: pressure gauge tappings, temperature sensor positions, sample valves
+
+For fault investigation:
+- System flow diagrams (P&ID) linked to model elements
+- Pipe material, nominal diameter, and pressure rating — so the FM team knows what they are working with before they open a system
+- Isolation valve locations for every sub-circuit — the FM team must be able to isolate any zone without draining the entire system
+
+For future modification:
+- System design parameters: design flow rate, design pressure, operating temperature range
+- Spare capacity data: whether the pipework was designed for future extension
+- Original design basis reference: tied to the specification and design report
+
+Key shared parameters for FM handover:
+
+| Element | FM Parameters Required |
+|---------|----------------------|
+| Pumps | Tag, manufacturer, model, duty flow, duty head, motor power, installation date |
+| Valves | Tag, type, service, shutdown zone, access required, normally open/closed |
+| Expansion vessels | Tag, manufacturer, pre-charge pressure, total volume, installation date |
+| Pipe segments | Material, nominal diameter, pressure rating, insulation spec |
+| Strainers | Tag, mesh size, service, cleaning interval |
+| Pressure gauges / thermometers | Tag, service, location description |
+
+How to prepare FM data in Revit:
+1. Confirm all FM shared parameters are loaded in the Revit project template
+2. Fill equipment data progressively as procurement proceeds during construction
+3. Cross-reference valve tags against the current P&ID revision before handover
+4. Export the asset register in the client's required format: COBie Excel, IFC with properties, or CAFM-specific export
+5. Validate the export against the FM platform to confirm data imports correctly
+
+3. Real Project Lens
+On a large district cooling project, the FM data handover was specified in the employer's information requirements as a COBie spreadsheet with 18 mandatory data fields per piping asset. The piping BIM team had been entering data progressively throughout the construction phase. At handover, 95% of fields were complete. The 5% gap — mostly installation dates for field-installed items — was filled from the construction completion records in two days. The FM team confirmed the data was usable from day one of building occupation. The client cited the piping BIM data quality as the strongest element of the handover package.
+
+4. BIM Check
+- Check: All mechanical equipment families have Manufacturer, Model, Serial Number, and Installation Date parameters filled in the handover model
+- Check: All valves have Valve Tag, Shutdown Zone, and Access Required parameters filled and cross-checked against the current P&ID
+- Check: The COBie or FM data export has been tested against the client's FM platform — not just exported, but confirmed to import and display correctly
+
+5. Common Mistake
+A common mistake is treating valve shutdown zones as something the FM team will figure out from the model after handover. Shutdown zones must be documented explicitly — ideally as a parameter on each valve and as a written valve schedule. FM technicians working under pressure during a building fault cannot be expected to trace pipe circuits through a 3D model under time pressure.
+
+6. Today's Action
+Choose one pump in your piping model. List the FM data fields that are required for handover. For each field, check whether the parameter exists in the Revit family and whether it is filled. If the parameter is missing, note what shared parameter would need to be added. This exercise reveals the data gap between a construction-issue model and an FM-ready handover model.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

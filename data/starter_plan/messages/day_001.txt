@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 1 - What MEP BIM Coordination Really Means
+
+1. Why This Matters
+MEP BIM is not only about drawing ducts, pipes, trays, or equipment in 3D. The real value is helping a project team see whether systems can be installed, accessed, maintained, and coordinated before site work becomes expensive.
+
+2. Core Concept
+MEP BIM coordination means checking how mechanical, electrical, plumbing, fire protection, architecture, and structure affect each other inside the same project space.
+
+3. Real Project Lens
+A duct route may look clean in plan view, but it can still block a valve, conflict with a cable tray, reduce ceiling space, or leave no room for insulation and maintenance access.
+
+4. BIM Check
+- Check whether the element has enough physical clearance.
+- Check whether access is still possible after installation.
+- Check whether the model data matches the intended system and discipline.
+
+5. Common Mistake
+Beginners often think no clash means ready for construction. In real coordination, clearance, access, sequence, and maintainability matter too.
+
+6. Today's Action
+Open any MEP model or sample drawing and choose one crowded ceiling area. Write down three things that could become a coordination issue even if there is no hard clash.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

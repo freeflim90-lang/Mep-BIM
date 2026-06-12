@@ -1,0 +1,28 @@
+LUA BIM LABS Starter
+Day 73 - Pipe Insulation — Specification, Clearance, and Coordination
+
+1. Why This Matters
+Pipe insulation serves multiple purposes: preventing heat gain, preventing condensation, and providing acoustic damping. In BIM, insulation must be modeled as an additional clearance layer — not just noted on a drawing.
+
+2. Core Concept
+- Chilled water pipes require insulation to prevent condensation and heat gain — typical thickness is 25-50mm depending on pipe size and ambient conditions
+- Insulation adds to the effective diameter of the pipe — a 100mm pipe with 38mm insulation has an overall diameter of 176mm
+- In Revit: insulation can be applied to pipes as an additional layer using the pipe insulation parameter — this adds to the model geometry for clash detection
+- Coordination impact: insulated pipes require more clearance from walls, slabs, structural beams, and other services
+- Insulation type: for chilled water, typically closed-cell foam (Armaflex or similar) — this differs from the mineral wool used on hot water and steam pipes
+
+3. Real Project Lens
+On a commercial building, pipe insulation was not modeled in the BIM coordination. After installation, 12 insulated chilled water pipes were found to be touching or pressing against structural beams — creating thermal bridges that caused condensation and dripping. The contractor had to re-route or re-insulate all 12 locations.
+
+4. BIM Check
+- Check: pipe insulation thickness is applied in the Revit pipe insulation parameter for all chilled water and hot water pipes
+- Check: insulated pipe diameter (pipe plus insulation) is used for all clash detection runs, not bare pipe diameter
+- Check: the minimum clearance between insulated pipes and adjacent surfaces meets the specification requirement
+
+5. Common Mistake
+Beginners model bare pipe sizes and assume installers will add insulation without coordination. Insulated pipes are significantly larger and require dedicated clearance space in the ceiling void.
+
+6. Today's Action
+For one chilled water pipe in a model or sketch, calculate the total installed diameter including insulation. How much more clearance does this require compared to the bare pipe?
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 29 - Building a Personal BIM Learning Log
+
+1. Why This Matters
+A learning log turns daily mistakes and discoveries into career growth. It also helps future mentoring become more personalized.
+
+2. Core Concept
+A BIM learning log records topic, problem, what you checked, what you learned, and how you will apply it next time.
+
+3. Real Project Lens
+If you repeatedly write down clearance issues, you may discover that vertical coordination or section review is your weak point.
+
+4. BIM Check
+- Record one issue per day.
+- Separate tool skill from coordination judgment.
+- Review repeated patterns every week.
+
+5. Common Mistake
+Beginners often learn the same lesson many times because they never record the pattern.
+
+6. Today's Action
+Create a simple five-line BIM learning log template and fill it with one recent lesson.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

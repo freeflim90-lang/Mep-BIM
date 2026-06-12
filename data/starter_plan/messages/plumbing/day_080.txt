@@ -1,0 +1,39 @@
+LUA BIM LABS Starter
+Day 80 - Week 4 Review — Fixture Connection Summary
+
+1. Why This Matters
+Days 76–80 covered the connections between individual plumbing fixtures and the drainage stack system. This block is where abstract piping knowledge becomes tangible: every WC, basin, sink, and floor drain in a building requires a correctly sized, sloped, and vented connection. This review consolidates the rules so you can apply them consistently across different fixture types.
+
+2. Core Concept
+Summary of Days 76–80:
+
+| Day | Fixture Type | Key Rules |
+|-----|-------------|-----------|
+| 76 | WC / Toilet | DN100 minimum; 1:40–1:80 slope; max 6 m to stack; max 2 WCs per unvented DN100 branch |
+| 77 | Washbasin / Sink | DN40 basin, DN50 sink; P-trap required; max 1.7 m (DN40) or 3.0 m (DN50) to stack unvented |
+| 78 | Floor Drain | DN50–DN100; deep-seal or anti-siphon trap; check invert vs. structural beam |
+| 79 | Fixture Schedule | Parameters required: Mark, Level, Room, System, Pipe Size, Fixture Units, Trap Type |
+| 80 | Week review | This lesson |
+
+Cross-cutting rules for all fixture connections:
+- Every fixture connection must be assigned to the correct system (Soil or Waste)
+- Every fixture must have a trap — no untrapped connections
+- Horizontal branch slope must be set in Revit using the Slope parameter, not manual elevation adjustments
+- Branch connections to the stack must be made with 45-degree wye fittings — not 90-degree tees — wherever possible
+
+3. Real Project Lens
+A BIM quality auditor reviewing a residential tower plumbing model found the following issues across 8 toilet cores: 12 WC branches with slope set to zero, 6 washbasin waste pipes connected to the soil stack instead of the waste stack, 3 floor drains without a trap family placed, and a fixture schedule with Fixture Unit Count blank for all 280 fixtures. Every one of these errors was traceable to a habit that this week's lessons address directly. The audit finding became a checklist for the team's daily model review.
+
+4. BIM Check
+- Check: All WC, basin, sink, and floor drain fixture connections are modeled with the correct pipe diameter and slope for their fixture type
+- Check: No fixture in the model is connected to the wrong stack system (e.g., basin waste going to soil stack)
+- Check: The fixture schedule is complete with no blank parameter cells for Level, System Name, Pipe Size, or Fixture Unit Count
+
+5. Common Mistake
+A common mistake is applying a single slope value to all horizontal drainage branches regardless of fixture type and pipe size. WC branches need steeper slopes than larger-bore waste branches. Using 1:100 for a DN40 basin waste pipe — appropriate for DN100 but too flat for DN40 — will cause blockages and a design non-conformance.
+
+6. Today's Action
+Choose one toilet core in your model (or sketch one). List every fixture by type and confirm the minimum pipe size, minimum slope, and trap requirement for each. Compare what you have in the model or sketch against the rules from Days 76–79. Write down the most common gap you find — this is your personal quality check trigger for the next project.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

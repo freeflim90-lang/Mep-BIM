@@ -1,0 +1,63 @@
+LUA BIM LABS Starter
+Day 87 - Electrical Parameter Checklist — Panel Name, Circuit Number, Load, Voltage, System
+
+1. この重要性
+電気パラメータは、 Clash ディテクション以外でも BIM モデルが有用になるデータ層です。正確なジオメトリーを持つモデルでもパラメータが欠落していると、レベローカード、負荷サマリ、または引き渡しデータの生成に信頼性が失われます。システムチェックリストは、モデル提出前にデータギャップをキャッチし、クライアント承認後の費用対効果の高い修正を防ぎます。
+
+2. 核心概念
+電気パラメータチェックリスト — 要素ごとに：
+
+パネル / 配電盤：
+- Panel Name — SLD パネル ID と完全に一致する
+- Voltage — 例：400V、230V
+- Number of Phases — 1 または 3
+- Incomer Rating (A) — 主ブローカーのアンペア数
+- Fault Rating (kA) — バスバーショート・キューティングのランク
+- Number of Poles / Circuits — 総回路容量
+- Room Name — パネルが所在する部屋名
+- Served Floor / Zone — このパネルによって供給される階またはエリア
+- Emergency / Normal — 力源分類
+
+回路（パネルスケジュール内の各回路）：
+- Circuit Number — SLD 回路番号と一致する
+- Circuit Description — 工程配電盤スケジュール説明と一致する
+- Load Classification — Lighting / Power / HVAC / Fire Alarm / Emergency
+- Number of Poles — 1Ph（1 pole）または 3Ph（3 poles）
+- Frame Size / Rating (A) — ブローカーのランク
+- Apparent Load (VA) or Wattage (W) — 接続負荷値
+- Connected Element ID — 負荷機器ファミリへのリンク
+
+ケーブルトラフ / クオード：
+- System Type — Power-HV / Power-LV / Data / Fire Alarm / Security
+- Material — Steel / GI / PVC / Aluminium
+- Width (mm) — トラフ幅
+- Depth (mm) — トラフの深さ
+- Trade Size（クオードのみ）— mm またはインチ
+
+機器（回路上接続された負荷）：
+- Equipment Name / Mark — 電気スケジュールと一致する
+- Panel Name — この機器を供給する DB
+- Circuit Number — この機器を供給するブローカーの番号
+- Voltage — 230V または 400V
+- Load (kW) or VA — 接続負荷値
+
+チェックツール：Revit スケジュールビュー — 上記パラメータを持つすべての電気要素を含むマルチカテゴリスケジュールを作成します。空欄フィルターを使用して表示し、任意の空欄セルはデータギャップです。
+
+3. 実際のプロジェクト視点
+BIM コーディネーターは、ホテルプロジェクト上のすべての DB、回路、接続された機器をカバーする Revit のマルチカテゴリパラメータスケジュールを作成します。空欄「Panel Name」フィールドを持つ機器でフィルターを適用すると、31 の機器ファミリが全員配置されましたが、回路割り当てなしで見つかります。回路の「Load Classification」が空欄であるためのフィルターを使用すると、18 の回路が分類がないことがわかりました。両方のギャップは手渡しデータエクスポート前に修正され、施設管理チームからのデータ品質拒否を避けることができます。
+
+4. BIM チェック
+- 検証：Revit のマルチカテゴリスケジュールで Panel Name、Circuit Number、Load Classification がすべての電気要素に対してゼロの空欄セルを示しているか？
+- 検証：配電盤と接続された機器ファミリの Voltage パラメータが設定されているか？Revit のデフォルトに残されていないか？
+- 検証：ケーブルトラフおよびコンduit ランの System Type パラメータが設定されているか？システムベースのフィルターとクラッシュルール割り当てを可能にする。
+
+5. 一般的な誤り
+パネルのみにパラメータを充填し、接続された負荷機器には充填しない。パネルスケジュールは完全に見えるが、負荷機器ファミリには Panel Name や Circuit Number が存在せず、機器からパネルへの追跡が手動で必要となる。
+
+6. 今日のアクション
+Revit で電気設備（または照明器具）用の単純なスケジュールを作成し、三列：ファミリ名、Panel Name、Circuit Number。エクスポートします。空欄 Panel Name や Circuit Number のセル数を数えます。これは電力モデルのデータギャップ基準です。
+
+---
+範囲注記：
+この内容は教育的なものであり、プロジェクトレビュー、エンジニアリング検証、規制適合確認、建設承認ではありません。
+---

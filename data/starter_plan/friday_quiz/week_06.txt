@@ -1,0 +1,13 @@
+LUA BIM LABS — BIM Check Friday ✓
+Week 6 | Clash Coordination Basics — Part 2
+
+Q1. Name three common clash resolution patterns used in MEP coordination and describe when each is appropriate.
+Q2. What is an issue tracker, and what five fields should every issue tracker entry contain?
+Q3. What should you check before issuing a coordination drawing to a site team?
+Q4. If you fix a clash by moving a pipe, what should you always do immediately afterward in Navisworks?
+Q5. Which clash resolution pattern requires a structural engineer's approval before the model is updated?
+
+Think through each one.
+No grades — this tests your own understanding.
+
+Next week: Data and Schedule Basics check (Part 1).

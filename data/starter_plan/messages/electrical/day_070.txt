@@ -1,0 +1,50 @@
+LUA BIM LABS Starter
+Day 70 - Week 2 Review — Panel Board Modeling Summary
+
+1. Why This Matters
+Panel board modeling is the electrical discipline's equivalent of HVAC equipment placement — it anchors the entire distribution system in the model. Week 2 covered the DB as a physical object, as a data container, and as the origin point for every circuit in the system. This review consolidates those concepts before moving to conduit systems.
+
+2. Core Concept
+Week 2 Panel Board Modeling Summary
+
+| Day | Topic | Key Point |
+|---|---|---|
+| 63 | DB Modeling | Use accurate panel family with correct dimensions; check front clearance (600mm minimum) |
+| 68 | Load Schedule | Match every circuit in the engineering panel schedule to a circuit in the Revit model |
+| 69 | Circuit Tracing | Assign all load elements to circuits; verify in System Browser — no orphan elements |
+
+Critical Rules — Panel Board BIM
+- Panel names must be consistent across all documents: the Revit family name, the panel schedule heading, and the SLD panel ID must all match exactly
+- DB geometry must reflect actual vendor dimensions — not a generic placeholder
+- Front clearance (600mm–1000mm depending on voltage class) must be modeled as a zone and kept clear of all other MEP elements
+- Every circuit assignment requires: panel name, circuit number, phase, load classification
+- High-load equipment (AHU, pump, UPS) must have dedicated single-load circuits
+- Spare breaker slots must be represented as empty slots — not absent from the model
+- Circuit descriptions in the model must match the engineering panel schedule word-for-word where possible
+- Run the System Browser check before every coordination submission — zero orphan elements
+
+Panel Board BIM Workflow (summary):
+1. Place DB family using vendor datasheet dimensions
+2. Set panel name parameter to match SLD and panel schedule
+3. Model 600mm front clearance zone
+4. Assign circuits from DB to all loads on the served floor or zone
+5. Open panel schedule view — cross-check against engineering panel schedule
+6. Confirm no orphan elements in System Browser
+
+3. Real Project Lens
+A coordination lead reviews all floor DBs before submitting the electrical model for the first coordination clash run. She checks: (1) all DB names match the SLD, (2) all DB front clearance zones are free of obstruction, (3) panel schedule views match the engineering schedules within 5%, (4) System Browser shows zero unconnected loads. This 20-minute pre-submission check has prevented three major rework cycles on past projects.
+
+4. BIM Check
+- Check: Does every DB in the model have a name that matches the engineering SLD and panel schedule exactly?
+- Check: Are all panel schedule views in Revit populated — no empty schedule views for placed DB families?
+- Check: Does the System Browser show zero orphan electrical elements on every floor?
+
+5. Common Mistake
+Completing the DB geometry and considering the job done — without running circuit assignments or validating the panel schedule view. The model appears complete in 3D but fails every data-quality check because the electrical intelligence layer was never built.
+
+6. Today's Action
+On your current project or training model, open the System Browser and count the number of unconnected (orphan) electrical elements. Record the number. This is your Week 2 baseline. Your target for Week 3 is zero orphans on at least one full floor.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 8 - Cable Tray Coordination Basics
+
+1. Why This Matters
+Cable trays occupy large ceiling space and need bend radius, access, separation, and support space. They can become major coordination drivers in corridors and plant rooms.
+
+2. Core Concept
+Cable tray BIM coordination checks not only the tray body but also installation access, branching space, vertical drops, and separation from wet systems or heat sources.
+
+3. Real Project Lens
+A tray route may pass a hard clash test but still block access to dampers, valves, or ceiling panels if the corridor is crowded.
+
+4. BIM Check
+- Review tray width, bend area, and drop points.
+- Check separation from piping and mechanical equipment.
+- Confirm access below and beside the tray route.
+
+5. Common Mistake
+Beginners often model tray centerlines but forget the real width and bend space.
+
+6. Today's Action
+Choose one tray route and identify where a bend, drop, or access issue could happen.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

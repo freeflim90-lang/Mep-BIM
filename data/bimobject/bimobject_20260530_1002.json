@@ -1,0 +1,659 @@
+{
+  "updated_at": "2026-05-30T10:02:31.726163",
+  "source": "https://www.bimobject.com/ko",
+  "total_products": 50,
+  "categories": {
+    "hvac": [
+      {
+        "id": "f6c11b21-55bc-4e02-a470-ee02f1e7fa17",
+        "name": "Vertiv™ CoolPhase Perimeter – DX Floor Mount, PAM010-140, R513A Indoor",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vertiv-pam-dx-perimeter-unit",
+        "url": "https://www.bimobject.com/ko/vertiv/vertiv-pam-dx-perimeter-unit",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 5
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "005ed177-7877-4060-b027-156d8192f64f",
+        "name": "model SRM4_Single suction multi-wing fan",
+        "brand": "EBARA［荏原製作所］",
+        "brand_permalink": "ebara-japan",
+        "permalink": "model-srm4",
+        "url": "https://www.bimobject.com/ko/ebara-japan/model-srm4",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 10
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "081b9826-cc51-40af-b82b-092c3b3a06a9",
+        "name": "Vertiv™ Liebert® AFC - The Inverter Screw Chiller Range with low-GWP Refrigerant",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vertiv-afc-chillers",
+        "url": "https://www.bimobject.com/ko/vertiv/vertiv-afc-chillers",
+        "rating": {
+          "numberOfRatings": 6,
+          "sumOfRatings": 30
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "99f98e55-7a62-42a9-8122-3be1b307509c",
+        "name": "Vertiv™ CoolPhase Condenser – OAC models",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vertiv-oac-coolphase-condenser",
+        "url": "https://www.bimobject.com/ko/vertiv/vertiv-oac-coolphase-condenser",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "bb93909d-4f5a-4473-93d6-7bd8a92718ba",
+        "name": "Sloped Wall Canopy Exhaust Hood with Perforated Supply Plenum, SND-2 Series",
+        "brand": "CaptiveAire",
+        "brand_permalink": "captiveaire",
+        "permalink": "captiveaire-043",
+        "url": "https://www.bimobject.com/ko/captiveaire/captiveaire-043",
+        "rating": {
+          "numberOfRatings": 16,
+          "sumOfRatings": 54
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "5ecbf06c-04f9-4d54-8768-87fcb8b1ec38",
+        "name": "RO 400 Series Water Treatment System",
+        "brand": "DriSteem",
+        "brand_permalink": "dristeem",
+        "permalink": "400-series-water-treatment-system",
+        "url": "https://www.bimobject.com/ko/dristeem/400-series-water-treatment-system",
+        "rating": {
+          "numberOfRatings": 5,
+          "sumOfRatings": 20
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "3dffc978-62b0-4f27-843e-e85896a25325",
+        "name": "Linear Slot Diffuser - Drop Face - Model 6600 Series",
+        "brand": "METALAIRE",
+        "brand_permalink": "metalaire",
+        "permalink": "6600-lsd-concealed-drop-face",
+        "url": "https://www.bimobject.com/ko/metalaire/6600-lsd-concealed-drop-face",
+        "rating": {
+          "numberOfRatings": 13,
+          "sumOfRatings": 55
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "b92625e5-48d1-41bb-aff8-5f12d0a63157",
+        "name": "Big Ass Fans Haiku L 52in Indoor Smart Ceiling Fan",
+        "brand": "Big Ass Fans",
+        "brand_permalink": "bigassfan",
+        "permalink": "big-ass-fans-haiku-l-52in-indoor-smart-ceiling-fan",
+        "url": "https://www.bimobject.com/ko/bigassfan/big-ass-fans-haiku-l-52in-indoor-smart-ceiling-fan",
+        "rating": {
+          "numberOfRatings": 30,
+          "sumOfRatings": 111
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "e3a7db3f-a8f8-4b36-bef4-57321451b67e",
+        "name": "MIT 02Lt/1000Lt - Expansion Tanks",
+        "brand": "Ekin Endustriyel",
+        "brand_permalink": "ekin-endustriyel",
+        "permalink": "mit-02-1000-expansion-tanks",
+        "url": "https://www.bimobject.com/ko/ekin-endustriyel/mit-02-1000-expansion-tanks",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 10
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "f2465e41-ed28-4792-ba7d-ec0329058367",
+        "name": "CADDY Loop Hangers",
+        "brand": "nVent",
+        "brand_permalink": "nvent",
+        "permalink": "nvent-caddy-loop-hangers",
+        "url": "https://www.bimobject.com/ko/nvent/nvent-caddy-loop-hangers",
+        "rating": {
+          "numberOfRatings": 3,
+          "sumOfRatings": 12
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "1d9acd3b-d541-4b4e-ab02-e01378b0fa20",
+        "name": "Single Island V-Bank Exhaust Only Hood with Perforated Supply Plenum, NDI Series",
+        "brand": "CaptiveAire",
+        "brand_permalink": "captiveaire",
+        "permalink": "captiveaire-044",
+        "url": "https://www.bimobject.com/ko/captiveaire/captiveaire-044",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 20
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "c9cc63b7-fa77-4a0a-bcdc-e165ee8b06e2",
+        "name": "SMD/AMD - Modular Louvered Face Diffuser",
+        "brand": "Price Industries",
+        "brand_permalink": "price-industries",
+        "permalink": "smd-modular-louvered-diffuser",
+        "url": "https://www.bimobject.com/ko/price-industries/smd-modular-louvered-diffuser",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 10
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "88609e05-ada7-40f2-b930-ca73284266cb",
+        "name": "Vertiv™ CoolPhase Condenser – OAV models",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vertiv-oav-coolphase-condenser",
+        "url": "https://www.bimobject.com/ko/vertiv/vertiv-oav-coolphase-condenser",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "7dcaac11-7449-47aa-8e04-c133ed4a015e",
+        "name": "Duct Fancoil",
+        "brand": "GREE Products",
+        "brand_permalink": "greeproducts",
+        "permalink": "duct-fancoil",
+        "url": "https://www.bimobject.com/ko/greeproducts/duct-fancoil",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 5
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "b5591cc0-267e-4db8-b329-09bc3fd9e59b",
+        "name": "Cassette 360º",
+        "brand": "GREE Products",
+        "brand_permalink": "greeproducts",
+        "permalink": "cassette-360",
+        "url": "https://www.bimobject.com/ko/greeproducts/cassette-360",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 20
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "e08453f4-b1ae-403c-ab41-4c7518994333",
+        "name": "SDS - Linear Slot Diffuser",
+        "brand": "Price Industries",
+        "brand_permalink": "price-industries",
+        "permalink": "sds-sdr-linear-slot-diffuser",
+        "url": "https://www.bimobject.com/ko/price-industries/sds-sdr-linear-slot-diffuser",
+        "rating": {
+          "numberOfRatings": 5,
+          "sumOfRatings": 23
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "12a7f692-6668-494e-b4fb-4f28f8038d5c",
+        "name": "Wall Canopy Exhaust Hood with Perforated Supply Plenum, ND-2 Series",
+        "brand": "CaptiveAire",
+        "brand_permalink": "captiveaire",
+        "permalink": "captiveaire-032",
+        "url": "https://www.bimobject.com/ko/captiveaire/captiveaire-032",
+        "rating": {
+          "numberOfRatings": 7,
+          "sumOfRatings": 26
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "d6e7c40a-38f9-4829-a2ce-a8139f67ed61",
+        "name": "Ventilation Systems BEDROOM",
+        "brand": "Stiebel Eltron (Thailand) สตีเบล เอลทรอน",
+        "brand_permalink": "stiebel-eltron-thailand",
+        "permalink": "ventilation-systems-bedroom",
+        "url": "https://www.bimobject.com/ko/stiebel-eltron-thailand/ventilation-systems-bedroom",
+        "rating": {
+          "numberOfRatings": 24,
+          "sumOfRatings": 109
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "81968d5d-5f6f-4c2f-8884-8f69331d17e1",
+        "name": "Dehumidifier",
+        "brand": "DriSteem",
+        "brand_permalink": "dristeem",
+        "permalink": "dehumidifier",
+        "url": "https://www.bimobject.com/ko/dristeem/dehumidifier",
+        "rating": {
+          "numberOfRatings": 5,
+          "sumOfRatings": 25
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "f8230142-13b3-40b3-87e0-84e34f8a63e8",
+        "name": "Wall Canopy Exhaust Hood, ND-2 Series",
+        "brand": "CaptiveAire",
+        "brand_permalink": "captiveaire",
+        "permalink": "captiveaire-031",
+        "url": "https://www.bimobject.com/ko/captiveaire/captiveaire-031",
+        "rating": {
+          "numberOfRatings": 13,
+          "sumOfRatings": 39
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "7b27023a-2f69-45c3-9ed7-1a0cf8dfa638",
+        "name": "Bathroom Fans EA",
+        "brand": "BVN",
+        "brand_permalink": "bvn",
+        "permalink": "ea",
+        "url": "https://www.bimobject.com/ko/bvn/ea",
+        "rating": {
+          "numberOfRatings": 26,
+          "sumOfRatings": 111
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "d0553a5c-5681-47ab-9141-7a82e0f9b77f",
+        "name": "Vertiv HCR & HBR Dry Cooler Systems",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vertiv-hcr-and-hbr",
+        "url": "https://www.bimobject.com/ko/vertiv/vertiv-hcr-and-hbr",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 5
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "63f72220-0ec1-4a45-9488-36b6a254d23a",
+        "name": "CTM",
+        "brand": "ANJOS Ventilation",
+        "brand_permalink": "anjos_ventilation",
+        "permalink": "anj010016",
+        "url": "https://www.bimobject.com/ko/anjos_ventilation/anj010016",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 17
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "59ef08a3-af08-4e2e-a1ef-2a472f2dab46",
+        "name": "Topvex TR Series. Compact AHU",
+        "brand": "Systemair",
+        "brand_permalink": "systemair",
+        "permalink": "systemair-topvex-tr",
+        "url": "https://www.bimobject.com/ko/systemair/systemair-topvex-tr",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 20
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "729f7c96-be2f-4e11-9939-f641ad9218de",
+        "name": "Liebert® XDU1350 Coolant Distribution Unit",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vertiv-xdu-1350",
+        "url": "https://www.bimobject.com/ko/vertiv/vertiv-xdu-1350",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 10
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "291150e4-91b1-4882-8e9d-b8c9723a86ee",
+        "name": "Heat & Condensate Exhaust Only Vent Hood, VH1 Series",
+        "brand": "CaptiveAire",
+        "brand_permalink": "captiveaire",
+        "permalink": "captiveaire-040",
+        "url": "https://www.bimobject.com/ko/captiveaire/captiveaire-040",
+        "rating": {
+          "numberOfRatings": 12,
+          "sumOfRatings": 51
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "03942dbe-3735-44d7-8b4a-d3a64647442a",
+        "name": "Big Ceiling Air Conditioner",
+        "brand": "Samsung HVAC North America",
+        "brand_permalink": "samsung",
+        "permalink": "big-ceiling-air-conditioner",
+        "url": "https://www.bimobject.com/ko/samsung/big-ceiling-air-conditioner",
+        "rating": {
+          "numberOfRatings": 11,
+          "sumOfRatings": 48
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "101a585e-7ae7-451c-a5b9-90a75b777cbd",
+        "name": "Suspension Kit Wire System HVAC",
+        "brand": "Hilti",
+        "brand_permalink": "hilti",
+        "permalink": "wiresystem_suspension",
+        "url": "https://www.bimobject.com/ko/hilti/wiresystem_suspension",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 10
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "d08b760f-4600-4682-ba67-8667d47854d0",
+        "name": "RO 200 Series Water Treatment System",
+        "brand": "DriSteem",
+        "brand_permalink": "dristeem",
+        "permalink": "200-series-water-treatment-system",
+        "url": "https://www.bimobject.com/ko/dristeem/200-series-water-treatment-system",
+        "rating": {
+          "numberOfRatings": 7,
+          "sumOfRatings": 31
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "caa74b23-a985-45bf-ad8e-21b9c76e4471",
+        "name": "CADDY Clevis Hangers",
+        "brand": "nVent",
+        "brand_permalink": "nvent",
+        "permalink": "nvent-caddy-clevis-hangers",
+        "url": "https://www.bimobject.com/ko/nvent/nvent-caddy-clevis-hangers",
+        "rating": {
+          "numberOfRatings": 3,
+          "sumOfRatings": 11
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "50e7f66f-8a80-49e5-a09c-20fc6938ca65",
+        "name": "Atmospheric RO Holding Tank",
+        "brand": "DriSteem",
+        "brand_permalink": "dristeem",
+        "permalink": "atmospheric-ro-holding-tank",
+        "url": "https://www.bimobject.com/ko/dristeem/atmospheric-ro-holding-tank",
+        "rating": {
+          "numberOfRatings": 11,
+          "sumOfRatings": 51
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "be38bc0c-bb35-4880-8579-94a7dcabc853",
+        "name": "Pre-Treatment Systems",
+        "brand": "DriSteem",
+        "brand_permalink": "dristeem",
+        "permalink": "pre-treatment",
+        "url": "https://www.bimobject.com/ko/dristeem/pre-treatment",
+        "rating": {
+          "numberOfRatings": 9,
+          "sumOfRatings": 44
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "0da3c424-65e8-4769-a40c-cffbe3d05a5d",
+        "name": "FUJITSU SPLIT ASYG18LFCA",
+        "brand": "GENERAL",
+        "brand_permalink": "generalww",
+        "permalink": "asyg18lfca",
+        "url": "https://www.bimobject.com/ko/generalww/asyg18lfca",
+        "rating": {
+          "numberOfRatings": 80,
+          "sumOfRatings": 365
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "3f3718f3-1f9c-44ca-a3fe-72bad08adc9e",
+        "name": "Vertiv™ CoolPhase Ceiling",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vertiv-coolphase-ceiling",
+        "url": "https://www.bimobject.com/ko/vertiv/vertiv-coolphase-ceiling",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "bd4ad781-c292-4fc1-bb6a-00b235ceed65",
+        "name": "Linear Bar Grille L-BG, and Linear Bar Grille with damper L-BG-OB",
+        "brand": "LAMINAIRE",
+        "brand_permalink": "laminaire",
+        "permalink": "l-bg",
+        "url": "https://www.bimobject.com/ko/laminaire/l-bg",
+        "rating": {
+          "numberOfRatings": 8,
+          "sumOfRatings": 37
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "0f3c6b98-d282-4d14-81bd-183a28810393",
+        "name": "80 - Egg Crate Grille",
+        "brand": "Price Industries",
+        "brand_permalink": "price-industries",
+        "permalink": "80-81-82-egg-crate",
+        "url": "https://www.bimobject.com/ko/price-industries/80-81-82-egg-crate",
+        "rating": {
+          "numberOfRatings": 8,
+          "sumOfRatings": 33
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "3420bebf-f820-4f05-aeea-d1ff3711f2c3",
+        "name": "GreenRoo™ Turbine Vent, Wind-Driven Turbine Ventilator",
+        "brand": "Moffitt Corporation",
+        "brand_permalink": "moffitt",
+        "permalink": "greenroo-turbine-vent",
+        "url": "https://www.bimobject.com/ko/moffitt/greenroo-turbine-vent",
+        "rating": {
+          "numberOfRatings": 32,
+          "sumOfRatings": 138
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "6dcefbea-bd6b-42fd-bab9-5ed1e5c88011",
+        "name": "Ceiling & Inline Fan, CFA Series",
+        "brand": "CaptiveAire",
+        "brand_permalink": "captiveaire",
+        "permalink": "captiveaire-006",
+        "url": "https://www.bimobject.com/ko/captiveaire/captiveaire-006",
+        "rating": {
+          "numberOfRatings": 13,
+          "sumOfRatings": 56
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "8ec4e41c-7bd9-4f1d-bbe4-afe496b574bd",
+        "name": "MIT BC 20/1680 Shell&Tube Condenser",
+        "brand": "Ekin Endustriyel",
+        "brand_permalink": "ekin-endustriyel",
+        "permalink": "mit-bc-20-1680",
+        "url": "https://www.bimobject.com/ko/ekin-endustriyel/mit-bc-20-1680",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 4
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "69a8eb12-aacd-4789-9713-b56e5290c743",
+        "name": "Big Ass Fans Haiku 52in Indoor Smart Ceiling Fan",
+        "brand": "Big Ass Fans",
+        "brand_permalink": "bigassfan",
+        "permalink": "big-ass-fans-haiku-52in-indoor-smart-ceiling-fan",
+        "url": "https://www.bimobject.com/ko/bigassfan/big-ass-fans-haiku-52in-indoor-smart-ceiling-fan",
+        "rating": {
+          "numberOfRatings": 25,
+          "sumOfRatings": 112
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "ef049f05-74dc-4d92-ae6f-1047be2e4133",
+        "name": "AT Cooling Tower - End Connection",
+        "brand": "EVAPCO, Inc.",
+        "brand_permalink": "evapco",
+        "permalink": "at-endconnection",
+        "url": "https://www.bimobject.com/ko/evapco/at-endconnection",
+        "rating": {
+          "numberOfRatings": 7,
+          "sumOfRatings": 35
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "bb35de6f-92c6-46e9-8692-d3a480da240c",
+        "name": "Gyrofocus - Suspended designer fireplace",
+        "brand": "Focus Creation",
+        "brand_permalink": "focus",
+        "permalink": "gyrofocus",
+        "url": "https://www.bimobject.com/ko/focus/gyrofocus",
+        "rating": {
+          "numberOfRatings": 24,
+          "sumOfRatings": 107
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "ae0ef829-a53f-46c1-9118-c384aba9cc1d",
+        "name": "Standard Side/Down Discharge Rooftop Filtered Make-up Air Fan",
+        "brand": "CaptiveAire",
+        "brand_permalink": "captiveaire",
+        "permalink": "captiveaire-041",
+        "url": "https://www.bimobject.com/ko/captiveaire/captiveaire-041",
+        "rating": {
+          "numberOfRatings": 9,
+          "sumOfRatings": 41
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "28550491-a137-4dbf-a5c5-65062787f2e0",
+        "name": "PURMO Compact",
+        "brand": "Purmo",
+        "brand_permalink": "purmo",
+        "permalink": "purmo-compact-panel-radiators",
+        "url": "https://www.bimobject.com/ko/purmo/purmo-compact-panel-radiators",
+        "rating": {
+          "numberOfRatings": 20,
+          "sumOfRatings": 66
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "ef661cbf-8800-46c6-99bd-7d10c083777d",
+        "name": "Wall Mounted, MSZ Series Air Conditioner D Series",
+        "brand": "Mitsubishi Electric US",
+        "brand_permalink": "mitsubishi-electric-us",
+        "permalink": "mitsubishielectric-020",
+        "url": "https://www.bimobject.com/ko/mitsubishi-electric-us/mitsubishielectric-020",
+        "rating": {
+          "numberOfRatings": 14,
+          "sumOfRatings": 49
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "552985f3-60a0-4852-bfe8-326cfcb4f14a",
+        "name": "AIRFOR3 WALL – CENTRIFUGAL AIR CURTAIN WITH UPPER AIR INTAKE",
+        "brand": "Tecnosystemi S.p.A. Società Benefit",
+        "brand_permalink": "tecnosystemi",
+        "permalink": "airfor3-wall-centrifugal-air-curtain-with-upper-air-intake",
+        "url": "https://www.bimobject.com/ko/tecnosystemi/airfor3-wall-centrifugal-air-curtain-with-upper-air-intake",
+        "rating": {
+          "numberOfRatings": 9,
+          "sumOfRatings": 37
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "d5b808d2-fea4-4a87-a641-c8350e4c45d3",
+        "name": "MIT 1250Lt/10000Lt - Expansion Tanks",
+        "brand": "Ekin Endustriyel",
+        "brand_permalink": "ekin-endustriyel",
+        "permalink": "mit-1250lt-10000lt-expansion-tanks",
+        "url": "https://www.bimobject.com/ko/ekin-endustriyel/mit-1250lt-10000lt-expansion-tanks",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 10
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "8d2231e4-8103-4285-b0e5-f2beb3be2b8b",
+        "name": "Vertiv™ CoolPhase Wall Condenser Unit",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vertiv-coolphase-wall-condenser-unit",
+        "url": "https://www.bimobject.com/ko/vertiv/vertiv-coolphase-wall-condenser-unit",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "156fbf5f-064b-4f3e-b08b-408c484a963a",
+        "name": "FLYARM",
+        "brand": "GREE Products",
+        "brand_permalink": "greeproducts",
+        "permalink": "flyarm",
+        "url": "https://www.bimobject.com/ko/greeproducts/flyarm",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 10
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "8c16629e-2943-4419-bd16-3b310c563022",
+        "name": "SCD - Square Cone Diffuser",
+        "brand": "Price Industries",
+        "brand_permalink": "price-industries",
+        "permalink": "scd-square-cone-diffuser",
+        "url": "https://www.bimobject.com/ko/price-industries/scd-square-cone-diffuser",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 20
+        },
+        "category_code": "hvac"
+      }
+    ]
+  }
+}

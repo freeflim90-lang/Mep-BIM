@@ -1,0 +1,46 @@
+LUA BIM LABS Starter
+Day 66 - Piping Clash with Structure and MEP
+
+1. Why This Matters
+Piping clashes — especially large-bore chilled water mains passing through structural beams or crossing other MEP systems — are among the most expensive to resolve on site. Each coordination failure can stop an entire floor of work while the clash is resolved.
+
+2. Core Concept
+- Most common piping clashes:
+  - Pipe through structural beam (most critical — never cut flanges)
+  - Pipe through shear wall (needs structural sleeve and fire stopping)
+  - CHW supply and return too close (violates insulation clearance — typically need 50mm between insulated pipe surfaces)
+  - Piping crossing cable tray (electrical separation and clearance conflict)
+  - Piping at riser shaft boundary (pipe too large for the shaft opening)
+- Clash resolution strategies:
+  - Reroute the pipe to avoid the structural element
+  - Use a structural penetration (beam web only — approved by structural engineer)
+  - Negotiate with other MEP trades for vertical stacking (pipe below duct, tray above)
+- In Navisworks: run Piping vs. Structure and Piping vs. All MEP tests separately — this gives cleaner clash grouping
+
+Piping Clash Priority
+
+| Clash | Priority | Resolution |
+|---|---|---|
+| Pipe through beam flange | P1 | Reroute — never cut |
+| Pipe through shear wall no sleeve | P1 | Model sleeve, coordinate |
+| CHW pipe insulation touching | P2 | Increase spacing |
+| Pipe crossing cable tray < 100mm | P2 | Re-elevate one system |
+| Pipe in shaft too wide | P1 | Revise shaft size or pipe path |
+
+3. Real Project Lens
+The 200mm CHWS riser passes through Level 3 floor slab. A 100mm diameter core is modeled — but the pipe insulation is 50mm thick, making the insulated OD 300mm. The core is too small. The BIM team catches this in the coordination model and requests a 350mm core to allow insulation and clearance.
+
+4. BIM Check
+- Check: All pipe penetrations through slabs and walls include modeled sleeve (or at minimum a penetration request submitted)
+- Check: Insulated pipe sizes — add insulation thickness to OD before checking clearance (e.g., DN100 pipe + 50mm insulation = 214mm insulated OD)
+- Check: Re-run clash test after all pipe re-routes — confirm zero remaining P1 clashes
+
+5. Common Mistake
+Running clash tests with bare pipe geometry only — the insulation adds 50–100mm to each side, which turns a "near miss" into a hard clash once insulation is installed on site.
+
+6. Today's Action
+For any pipe in your model (or a sample), calculate the insulated outside diameter using: Insulated OD = Pipe OD + (2 × insulation thickness). Compare to the available gap between the pipe and the nearest structural element. Does it pass?
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

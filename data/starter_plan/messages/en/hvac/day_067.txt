@@ -1,0 +1,44 @@
+LUA BIM LABS Starter
+Day 67 - Week 1 HVAC Review
+
+1. Why This Matters
+Without reviewing what you learned, information fades. This review session consolidates Days 61–66 into a usable reference and identifies any gaps before you move to more advanced HVAC topics.
+
+2. Core Concept
+Week 1 HVAC Summary
+
+| Day | Topic | Key Point |
+|---|---|---|
+| 61 | System Flow | AHU → Supply Duct → VAV → Diffuser → Return → AHU |
+| 62 | Duct Sizing | Airflow ÷ Velocity = Duct Area. Match engineer's schedule |
+| 63 | System Assignment | Supply / Return / Exhaust — never mix in Revit systems browser |
+| 64 | VAV Connections | Connect inlet to supply branch, outlet to flex duct, set Mark and flow |
+| 65 | AHU Room Layout | 900mm filter access, 1000mm circulation, actual unit dimensions |
+| 66 | HVAC-Structure Clash | Duct vs. beam most common. Route around or get approved penetration |
+
+Key Rules to Remember
+- Duct size comes from the engineer's schedule — never guess
+- System assignment in Revit is set at the system level, not just the duct
+- VAV marks must match the engineering schedule exactly
+- AHU clearance zones must be modeled — not assumed
+- All P1 clashes must be resolved before coordination model submission
+
+3. Real Project Lens
+A junior HVAC modeler is handed a Level 7 HVAC model on Day 1 of a project. Using the skills from Days 61–66, they: (1) check the systems browser for unassigned ducts, (2) cross-reference duct sizes with the engineer's schedule, (3) verify VAV marks, (4) model AHU clearance zones, (5) run a clash test against structural model, and (6) issue a clash report before the coordination meeting — completing the work in one day.
+
+4. BIM Check
+- Check: Can you trace air flow from AHU to diffuser and back in the model without breaking the connection?
+- Check: Are all VAV boxes marked and connected correctly?
+- Check: Is the AHU clearance zone modeled and clear of obstructions?
+
+5. Common Mistake
+Treating the Week 1 review as optional. The most frequent cause of errors in Month 2 HVAC work is skipping the basics covered in Days 61–66 and advancing without fixing foundational gaps.
+
+6. Today's Action
+Write a personal checklist of 5 things you would check first if you were handed a new HVAC Revit model today. Save it — you will expand this list through Day 90.
+
+---
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

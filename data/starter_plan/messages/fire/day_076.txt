@@ -1,0 +1,49 @@
+LUA BIM LABS Starter
+Day 76 - Head vs. Duct and Tray Clashes
+
+1. Why This Matters
+Sprinkler heads clashing with ductwork and cable trays is the single most common fire protection clash type in ceiling coordination. A head that cannot be installed at the design position because a duct is in the way will be relocated on site — often incorrectly. Resolving these clashes in BIM before construction is the core value of fire protection BIM coordination.
+
+2. Core Concept
+Two types of head-vs-duct/tray clashes occur:
+
+Type 1 — Head Blocked by Duct Above the Ceiling Plane
+- A supply or return air duct runs above the intended head position
+- The head cannot reach the ceiling face — the drop (sprig) is blocked
+- Resolution: reroute the duct branch, or reposition the head laterally to a clear zone
+- Never shorten the drop to avoid the duct — the head must be at the correct ceiling distance
+
+Type 2 — Head Below a Duct (spray shadow)
+- Duct is below the head — this creates an obstruction shadow zone (review Day 69 rules)
+- The duct blocks the spray cone from reaching the floor area behind it
+- Resolution: move the head or add a supplemental head below the duct
+
+Cable Tray Clashes
+- Cable trays are typically thinner than ducts (50–150 mm deep) but wide (300–600 mm)
+- A wide cable tray above a head acts as an obstruction — check the 3× shadow rule
+- A tray that runs through the drop zone blocks the sprig installation
+- Resolution: route the tray around the drop zone, or provide a cut-out/bridge at the drop location
+
+Coordination Approach in BIM
+- Run Navisworks or Revit clash detection: discipline filter = Fire Protection vs. Mechanical + Electrical
+- Set clash tolerance to 50 mm (not 0 mm) to catch near-misses that will cause on-site problems
+- For each clash: categorise as Type 1 (blocked drop) or Type 2 (spray shadow)
+- Type 1 is always critical. Type 2 requires engineering judgment on whether a supplemental head is needed.
+
+3. Real Project Lens
+A ceiling coordination meeting on a hospital project reveals 47 clashes between fire protection drops and mechanical ductwork on Level 4. The fire protection modeler categorises 31 as Type 1 (drop blocked) and 16 as Type 2 (spray shadow). The Type 1 clashes are re-coordinated by repositioning heads. The 16 Type 2 clashes are sent to the fire engineer for determination — 9 require supplemental heads, 7 are acceptable based on duct size.
+
+4. BIM Check
+- Check: Clash detection has been run between fire protection drops and all mechanical ducts — no Type 1 (blocked drop) clashes remain unresolved
+- Check: Wide ducts (> 300 mm) below any sprinkler head have been evaluated for spray shadow — result documented
+- Check: Cable trays wider than 300 mm within the head coverage zone have been checked for obstruction impact
+
+5. Common Mistake
+Resolving head-vs-duct clashes by simply shortening the drop pipe to stop it clashing. This brings the head above the allowable ceiling distance range — creating a non-compliant installation. The drop length is fixed by the head-to-ceiling rule, not by what is convenient for coordination.
+
+6. Today's Action
+Run a clash detection test in Navisworks or Revit between fire protection and mechanical/electrical on one floor. Count the total clashes and categorise at least three as Type 1 (blocked drop) or Type 2 (spray shadow).
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

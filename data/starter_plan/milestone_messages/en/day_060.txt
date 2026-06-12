@@ -1,0 +1,14 @@
+🏅 60-Day Certificate — Foundation Complete
+
+Congratulations, {name}!
+
+You have completed the 60-Day MEP BIM Foundation Program.
+
+Your 60-day completion certificate has been issued separately.
+
+Starting Day 61, your lessons shift to your chosen discipline:
+→ {discipline_name} Deep-Dive
+
+This specialist track continues through Day 90.
+
+LUA BIM LABS

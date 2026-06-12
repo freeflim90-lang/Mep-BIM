@@ -1,0 +1,63 @@
+당신은 BIM 소프트웨어 회사 LUA BIM LABS의 제품 전략 분석가입니다.
+Autodesk Marketplace에서 AEC 분야 앱 2,916개를 수집했습니다.
+
+## 현재 LUA BIM LABS 보유 애드인
+- BIM Command Center For Revit
+
+## 상위 30개 인기 앱 (평점/리뷰 기준)
+- Increment (Gilles Chanteau) | 평점=5.0 리뷰=803 가격=FREE $0 | A dialog box providing tools to increment numeric, alphabetic, alphanumeric, hex
+- Increment (Gilles Chanteau) | 평점=5.0 리뷰=803 가격=FREE $0 | Cuadro de diálogo que proporciona herramientas para incrementar los valores numé
+- Increment (Gilles Chanteau) | 평점=5.0 리뷰=803 가격=FREE $0 | Une boite dialogue qui fournit des outils pour incrémenter des valeurs numérique
+- Drawing Purge (AVapps) | 평점=4.7 리뷰=285 가격=FREE $0 | This plug-in helps to remove the unused DGN LineTypes, TextStyles, RegApps, Anno
+- ProSheets - Batch export to PDF, DWG, IFC, etc. (DiRoots) | 평점=4.4 리뷰=169 가격=UNLIMITED_TRIAL $0 | ProSheets is a plugin for Autodesk® Revit® that allows users to bulk export view
+- Export/ Import Excel (MLabs) | 평점=4.4 리뷰=151 가격=FREE $0 | A powerful tool to export and modify Autodesk® Revit® schedules in Excel.
+- Align (BIM 42) | 평점=4.7 리뷰=134 가격=FREE $0 | Quickly and easily align elements, tags, and texts for perfect models.
+- Lumion View & LiveSync® for Autodesk® Revit® (Act-3D B.V.) | 평점=3.4 리뷰=116 가격=UNLIMITED_TRIAL $0 | Visualize your ideas as you design with Lumion View for Autodesk® Revit®. Add a 
+- Multiple Offset (Engiware) | 평점=5.0 리뷰=105 가격=FREE $0 | Offset 2D entities with different distances at once.
+- Naviate LT (Microdesk Accelerator) (Naviate ) | 평점=4.8 리뷰=92 가격=FREE $0 | Naviate LT (Microdesk Accelerator) is a suite of features designed to simplify m
+- DiRootsOne - Productivity Pack (DiRoots) | 평점=4.1 리뷰=80 가격=UNLIMITED_TRIAL $0 | Autodesk® Revit® Productivity Tools for Data Management, Filter, Model Checking,
+- Docuflow PDF (archi) | 평점=4.9 리뷰=74 가격=UNLIMITED_TRIAL $0 | The most advanced publisher tool for construction professionals. Exports PDF, DW
+- AutoSave CC (MLabs) | 평점=4.8 리뷰=65 가격=FREE $0 | This is an add-in with the main task of minimizing the loss of data. Just instal
+- Enscape™ (Enscape) | 평점=4.5 리뷰=64 가격=UNLIMITED_TRIAL $0 | Enscape™ – The only real-time visualization plugin that is 100% integrated into 
+- Blocks® – Families Plugin for Autodesk® Revit® (Blks BIM Spain SL) | 평점=3.5 리뷰=60 가격=UNLIMITED_TRIAL $0 | Parametric family library for Architecture & Interior Design. Weekly additions i
+- ElectroBIM (Design Master Software) | 평점=4.9 리뷰=58 가격=UNLIMITED_TRIAL $0 | Adds single-line diagrams, feeder and branch circuit wire sizing, fault calculat
+- ElementRenumbering (Juan Osborne - WiseBuild.es) | 평점=4.8 리뷰=56 가격=FREE $0 | Re-assign the number properties, or other, of multiple elements in the order tha
+- Navisworks® Coordination Issues Add-In (Autodesk, Inc.) | 평점=3.5 리뷰=55 가격=FREE $0 | View, Respond & Create Issues directly within Autodesk® Navisworks®. Collaborate
+- Room Finishing (BIM 42) | 평점=4.7 리뷰=53 가격=FREE $0 | Create finishing details for architectural rooms.
+- AutoRebar 2027 (AutoRebar) | 평점=4.5 리뷰=51 가격=ONE_TIME $249 | Reinforced concrete detailing software and automatic bar bending schedules.
+- TotalLength (Michael Truell) | 평점=4.8 리뷰=50 가격=FREE $0 | Calculates the Total Length of multiple objects of selected type(s).
+- Plex-Earth 2026 (Plex-Earth) | 평점=4.5 리뷰=48 가격=UNLIMITED_TRIAL $0 | Plex-Earth brings design-ready imagery, terrain, and Google Earth tools into Aut
+- FilterMore (Juan Osborne - WiseBuild.es) | 평점=4.9 리뷰=45 가격=ONE_TIME $9.99 | Advanced filter with expanding capabilities and selection keeper.
+- Express Document Tab (BIMsoft) | 평점=5.0 리뷰=41 가격=UNLIMITED_TRIAL $0 | The Express Document Tab program is a utility program that makes it easy to swit
+- Express Document Tab (BIMsoft) | 평점=5.0 리뷰=41 가격=UNLIMITED_TRIAL $0 | Express Document Tab 프로그램 설명
+Express Document Tab 프로그램은 Autodesk® AutoCAD®에서 DW
+- RQuick Select Trial (2018-2022) (CAD Masters, Inc.) | 평점=4.7 리뷰=41 가격=UNLIMITED_TRIAL $0 | Select elements by family type and their properties.
+- Magic Join (SiruS) | 평점=5.0 리뷰=40 가격=FREE $0 | Automatic Multi Join to save significant time.
+Controlling the default join ord
+- ZombieKiller (Gilles Chanteau) | 평점=4.9 리뷰=38 가격=FREE $0 | Commandes pour chercher et supprimer les entités et objets proxy.
+- ZombieKiller (Gilles Chanteau) | 평점=4.9 리뷰=38 가격=FREE $0 | Tools to find and erase proxy objects from the drawing.
+- TransferSingle (Juan Osborne - WiseBuild.es) | 평점=4.6 리뷰=37 가격=ONE_TIME $9.99 | An advanced way to transfer content and standards between one file and another (
+
+## 가격 분포
+{"UNLIMITED_TRIAL": 724, "SUBSCRIPTION_ANNUAL": 296, "SUBSCRIPTION_MONTHLY": 138, "FREE": 876, "ONE_TIME": 690, "TRIAL_30_DAYS": 179, "UNKNOWN": 13}
+
+## 이번 크롤링에서 새로 발견된 앱 (4개)
+- 3D Design Exchange (Centre for Computational Technologies (CCTech)) | Add 3D Designs Exchange from Autodesk® Revit®, Autodesk® Inventor®, and 150+ mor
+- ConsoleCapture (👨🏻‍💻Shotaro TAKAZOE) | ConsoleCapture is a tool for displaying debug logs output from Autodesk® Revit® 
+- SKEN COLUMN (NOUWD.) | High-precision structural audit tool to reconcile Autodesk® Revit® columns again
+- Hello World (test) | AppDirectDemo
+
+## 분석 요청
+다음 형식으로 한국어로 분석해주세요:
+
+### 1. 시장 갭 (우리가 개발할 수 있는 미개척 영역, 3~5개)
+각 갭마다: 기능 설명, 왜 기회인지, 난이도 (하/중/상)
+
+### 2. 검증된 수요 (높은 평점·리뷰를 가진 카테고리, 진입 가능성 있는 것 3개)
+각 항목마다: 경쟁 앱 이름, 우리가 차별화할 수 있는 포인트
+
+### 3. 한국 시장 특화 기회 (한국어 지원 없거나 한국 시장 특화가 필요한 기능)
+2~3개
+
+### 4. 우선순위 개발 추천 (종합, 1~3위)
+순위, 앱 컨셉, 예상 개발 기간, 수익 모델

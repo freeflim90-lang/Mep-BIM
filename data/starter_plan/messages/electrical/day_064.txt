@@ -1,0 +1,47 @@
+LUA BIM LABS Starter
+Day 64 - Conduit Routing and Pull Box Placement
+
+1. Why This Matters
+Conduits protect individual cables between the cable tray and the final device (socket, switch, light). Incorrectly routed conduits are the most common cause of cable installation failures on site — too many bends, too long a run, or a missing pull box means the cable cannot be pulled through.
+
+2. Core Concept
+- Conduit types:
+  - EMT (Electrical Metallic Tubing): Thin wall, easy to bend, used in dry indoor areas
+  - Rigid PVC: Used in wet areas, concealed in walls or slabs
+  - GI Conduit: Heavy-duty, used in industrial or exposed areas
+- Conduit sizing: based on the number and size of cables inside
+  - Maximum fill: 40% of conduit internal area for 3+ cables
+  - Common sizes: 20mm, 25mm, 32mm, 50mm diameter
+- Pull box requirement: required when:
+  - Run exceeds 15m (check local code)
+  - More than 2 × 90° bends in the run
+  - Conduit changes direction more than 360° total
+- Pull box sizing: must allow cables to make the bend inside — minimum internal dimension = 8 × conduit diameter
+- In Revit: conduit is modeled using the Conduit tool. Pull boxes are modeled as junction box families
+
+Conduit Routing Rules
+
+| Rule | Limit |
+|---|---|
+| Maximum run before pull box | 15m (or 360° total bends) |
+| Maximum bends between pull boxes | 2 × 90° bends (varies by code) |
+| Minimum bend radius | 6 × conduit OD |
+| Maximum fill ratio | 40% (3+ cables) |
+
+3. Real Project Lens
+A power circuit from DB-L3 to a socket cluster 12m away passes through a 90° bend at the ceiling, a 90° bend into the wall, and a 90° bend into the floor socket box — three 90° bends totaling 270°. This is within limits (270° < 360°) and the run is only 12m, so no pull box is needed. The modeler confirms this before finalizing the routing.
+
+4. BIM Check
+- Check: No conduit run exceeds 15m without a pull box modeled
+- Check: No run has more than 2 × 90° bends between boxes (or 360° total, check local code)
+- Check: Pull boxes are accessible — not concealed inside sealed walls or above inaccessible ceiling
+
+5. Common Mistake
+Routing a conduit from the cable tray directly to an outlet with 4 × 90° bends over a 20m run — no pull boxes modeled. On site, the cable puller cannot pull the cable through the conduit, requiring conduit to be cut open and pull boxes retrofitted.
+
+6. Today's Action
+Sketch a conduit run from a cable tray to a wall socket 10m away with two 90° bends. Count the total bend angle. Determine whether a pull box is required based on the 360° rule.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

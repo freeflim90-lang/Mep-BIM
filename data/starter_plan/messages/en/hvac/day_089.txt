@@ -1,0 +1,28 @@
+LUA BIM LABS Starter
+Day 89 - HVAC Discipline Integration — How HVAC Connects to Other MEP
+
+1. Why This Matters
+HVAC does not exist in isolation. Understanding how HVAC connects to plumbing, electrical, fire protection, and structure makes you a more complete coordination team member — not just an HVAC specialist.
+
+2. Core Concept
+- HVAC connects to plumbing: condensate drains, chilled water and heating water connections to AHU and FCU, domestic cold water to humidifiers
+- HVAC connects to electrical: power supply to AHU, FCU, VAV actuators, pumps; control wiring for BMS points; emergency power for smoke control fans
+- HVAC connects to fire protection: fire dampers at rated boundaries; sprinkler heads must clear HVAC ducts; smoke detectors in ductwork
+- HVAC connects to structure: hanger loads, equipment pad footings, slab penetrations for risers and exhaust shafts
+- In BIM coordination: HVAC is usually the first trade modeled because it requires the most ceiling void space — other trades route around HVAC
+
+3. Real Project Lens
+On a healthcare project, a junior HVAC modeler flagged that the fire protection team had placed sprinkler heads in locations that conflicted with 4 supply diffusers on the same reflected ceiling plane. The HVAC modeler had coordinated against structure and electrical but had not shared the model with the fire protection team. The issue was resolved with a single coordination meeting that produced 6 revised sprinkler head positions.
+
+4. BIM Check
+- Check: every chilled water and heating water pipe connection at the AHU is coordinated with the piping team's model
+- Check: power supply to all HVAC equipment is confirmed with the electrical team's load schedule
+- Check: fire damper locations have been shared with the fire protection team to confirm no downstream sprinkler conflicts
+
+5. Common Mistake
+Beginners coordinate HVAC against structure and sometimes electrical but often miss the connections to plumbing and fire protection until late in the process.
+
+6. Today's Action
+List 3 HVAC-to-other-discipline connections on a typical floor: one to plumbing, one to electrical, and one to fire protection. Describe what information must be coordinated for each.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

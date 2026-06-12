@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.luabimlab.daily-routine-checklist</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/choejeong-yeon/LUA BIM LABS/.dev-venv/bin/python</string>
+    <string>/Users/choejeong-yeon/LUA BIM LABS/scripts/daily_routine_checklist.py</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/choejeong-yeon/LUA BIM LABS</string>
+
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>14</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>/Users/choejeong-yeon/LUA BIM LABS/logs/daily_routine_checklist.out.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/Users/choejeong-yeon/LUA BIM LABS/logs/daily_routine_checklist.err.log</string>
+
+  <key>RunAtLoad</key>
+  <false/>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+  </dict>
+</dict>
+</plist>

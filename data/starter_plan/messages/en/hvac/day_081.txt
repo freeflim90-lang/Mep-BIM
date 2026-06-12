@@ -1,0 +1,28 @@
+LUA BIM LABS Starter
+Day 81 - TAB — Testing, Adjusting, and Balancing — What BIM Supports
+
+1. Why This Matters
+TAB is the commissioning process that verifies HVAC systems deliver the correct airflow and water flow to every space. BIM models support TAB — but only if the model carries accurate system data.
+
+2. Core Concept
+- TAB (Testing, Adjusting, and Balancing) is performed after installation to verify airflow and water flow meet design specifications at every terminal
+- The TAB engineer uses the BIM model's schedule data to understand the design airflow for each supply diffuser, VAV box, and FCU
+- For BIM to support TAB: every terminal device must have the design airflow in its parameters; all equipment must have correct system assignment
+- Volume control dampers must be modeled because TAB engineers adjust them during balancing — if they are missing from the model, the TAB report cannot reference them
+- After TAB: some as-balanced airflows will differ from design — update BIM parameters to reflect actual balanced values if required by the EIR
+
+3. Real Project Lens
+On an office project, the TAB engineer requested the HVAC airflow schedule from the BIM model before the balancing run. The schedule showed 22 supply diffusers with no airflow value — the families were placed but the CFM parameter was never filled in. The TAB engineer had to use the engineer's paper design schedules instead, working around the BIM model entirely.
+
+4. BIM Check
+- Check: every supply and return diffuser in the model has a design airflow value (CFM or L/s) in its properties
+- Check: volume control dampers are modeled at their installed locations and appear in the HVAC schedule export
+- Check: the HVAC system schedule exported from Revit matches the engineer's design airflow schedule before the TAB run
+
+5. Common Mistake
+Beginners model ductwork geometry correctly but rarely fill in flow parameters. The model is geometrically useful but not usable for commissioning or facilities management.
+
+6. Today's Action
+Open any HVAC model and check 5 supply diffusers. How many have a design airflow value in their properties?
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

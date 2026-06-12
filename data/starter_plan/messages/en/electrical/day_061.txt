@@ -1,0 +1,39 @@
+LUA BIM LABS Starter
+Day 61 - Power Distribution Overview — MSB to DB to Circuits
+
+1. Why This Matters
+Understanding how electrical power flows from the incoming supply to the final outlet is the foundation of all electrical BIM work. Without this understanding, you cannot correctly model distribution boards, route cable trays, or coordinate with other MEP systems.
+
+2. Core Concept
+- Electrical power distribution hierarchy:
+
+| Level | Equipment | Description |
+|---|---|---|
+| Incoming Supply | HV Switchgear / Transformer | High voltage from utility converted to LV |
+| Main Distribution | MSB (Main Switchboard) | Central LV distribution point for the building |
+| Sub-Distribution | DB (Distribution Board) | Serves one floor or zone |
+| Final Circuit | MCB / Isolator | Individual circuit to a socket, lighting point, or equipment |
+
+- MSB (Main Switchboard): located near the incoming supply (basement or ground floor), houses the main circuit breakers for each riser and major distribution circuit
+- DB (Distribution Board): one per floor or per zone. Houses MCBs for all circuits on that floor. Fed from MSB or sub-MSB via a riser cable
+- The riser: cables or busbar trunking rising from MSB to each floor DB — housed in an electrical riser shaft
+- In Revit: MSB and DBs are modeled as equipment families placed in electrical rooms and within office floor areas respectively
+- Electrical circuits: assigned in Revit from the DB to each connected device (light, socket, equipment)
+
+3. Real Project Lens
+A 10-floor office building has: one MSB in the basement electrical room, one sub-DB on Level 1 (for basement and Level 1), and one DB per floor on Levels 2–10. Each floor DB is fed by a cable rising in the dedicated electrical riser shaft. The floor DB feeds lighting circuits, power circuits, and a UPS circuit for IT equipment.
+
+4. BIM Check
+- Check: MSB is modeled in the electrical room with accurate dimensions from the vendor datasheet
+- Check: Each floor has a DB modeled at the correct location (typically near the riser shaft or in the electrical cupboard)
+- Check: Riser cables or busbar trunking are modeled in the riser shaft — confirm they fit within the shaft cross-section
+
+5. Common Mistake
+Modeling DBs as generic boxes without checking actual panel dimensions — on site, the DB may be 200mm deeper than the wall niche allows, requiring an expensive wall reconstruction.
+
+6. Today's Action
+Sketch the electrical distribution diagram for a 5-floor building: Incoming supply → Transformer → MSB → Sub-DB → DB per floor. Label each item. This diagram is your reference for the next 6 days.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

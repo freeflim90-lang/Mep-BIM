@@ -1,0 +1,37 @@
+LUA BIM LABS Starter
+Day 59 - Common Career Questions in MEP BIM
+
+**1. Why This Matters**
+Knowing how to answer common interview and career questions in MEP BIM — with specific, honest answers — directly improves your chances of landing your first role or moving into a coordination position.
+
+**2. Core Concept**
+MEP BIM hiring conversations follow predictable patterns. Preparing clear, honest answers to the most common questions saves anxiety and projects professionalism.
+
+The most common career questions and how to approach them:
+
+- **"What MEP BIM tools do you know?"** — Be specific: name the tools, versions, and what tasks you have used them for. Do not claim tools you have only read about.
+- **"What is your coordination experience?"** — Be honest about level. If your experience is training-based, say so clearly and describe the process you followed.
+- **"What does LOD mean?"** — Explain Level of Development: the amount of geometric and parameter detail required in a model element at a given project stage (LOD 100–500). Give one example.
+- **"Can you run a clash test?"** — If yes, describe the steps: export NWC → append in Navisworks → set up Clash Detective test → run → review → group → report.
+- **"What discipline do you want to specialize in?"** — Have an opinion: mechanical, electrical, or plumbing. Generalists are fine early in a career, but directional thinking signals maturity.
+- **"Where do you see yourself in three years?"** — Aim for a specific BIM role: junior coordinator → coordinator → BIM manager. Show you understand the career path.
+
+**3. Real Project Lens**
+A junior BIM technician is asked in an interview: "Tell me about a coordination challenge you solved." They describe a training scenario: running a clash test, finding 40 conflicts between HVAC ductwork and the structural model, grouping them by level, and prioritizing the six that were Critical. The interviewer is satisfied — the answer demonstrates process knowledge even without professional project experience.
+
+**4. BIM Check**
+- Check: Can you answer "What MEP BIM tools do you know?" in two sentences, naming tools and specific tasks?
+- Check: Can you describe the clash detection process in five steps without notes?
+- Check: Can you explain LOD clearly to someone who has never heard the term?
+
+**5. Common Mistake**
+Overclaiming in interviews — saying you have "extensive coordination experience" when you have completed training exercises. Interviewers with BIM backgrounds ask follow-up questions that quickly expose overstatement. Honest, specific answers build more trust than inflated ones.
+
+**6. Today's Action**
+Write out answers to three questions from the list above. Keep each answer under 60 words. Read them aloud — if they sound unnatural, rewrite them until they do not.
+
+---
+
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

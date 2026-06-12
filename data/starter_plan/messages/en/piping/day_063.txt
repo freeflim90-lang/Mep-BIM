@@ -1,0 +1,45 @@
+LUA BIM LABS Starter
+Day 63 - Isolation Valves and Accessories in Revit
+
+1. Why This Matters
+Isolation valves and pipe accessories are not decorative — they control which sections of pipe can be shut down for maintenance. A missing isolation valve in the model means a missing valve on site, which means the entire system must be shut down to service a single FCU.
+
+2. Core Concept
+- Key pipe accessories and their function:
+  - Gate Valve / Ball Valve: Full isolation (open or closed). Used at equipment connections and branch takeoffs
+  - Globe Valve: Flow control (throttling). Used where fine flow adjustment is needed
+  - Check Valve: Allows flow in one direction only. Used on pump discharge, bypass lines
+  - Strainer (Y-type): Removes debris from fluid. Always installed on suction side of pumps and before control valves
+  - Balancing Valve: Manual or automatic flow balancing. Used at each FCU or AHU coil connection
+  - Pressure Reducing Valve (PRV): Reduces high pressure to a set value at system zones
+  - Flexible Connector: Vibration isolation at pumps and equipment
+- In Revit: use pipe accessory families — not just a pipe fitting. Each accessory has a unique family with a connector and a Mark parameter
+
+Valve Placement Rule of Thumb
+
+| Location | Valve Type |
+|---|---|
+| Equipment inlet/outlet | Isolation (ball or gate) valve |
+| Branch takeoff from riser | Isolation valve |
+| Pump suction | Strainer + Isolation valve |
+| Pump discharge | Isolation valve + Check valve |
+| FCU coil connection | 2-way or 3-way control valve + balancing valve |
+| Zone isolation | Ball valve both sides of each floor branch |
+
+3. Real Project Lens
+An FCU on Level 4 requires: CHWS: ball valve → 2-way control valve → coil → ball valve → CHWR. The modeler places these accessories in sequence, sets the Mark for each valve (e.g., V-CHW-L4-FCU07-IN), and confirms the pipe sizes match the FCU connection size (typically DN20–DN25 for fan coils).
+
+4. BIM Check
+- Check: Every equipment connection point has an isolation valve modeled on both supply and return sides
+- Check: Every pump has a strainer on the suction side
+- Check: Control valves (2-way, 3-way) are placed on the correct side of the FCU coil (supply side for 2-way)
+
+5. Common Mistake
+Placing valve families that are too large — a DN50 ball valve placed on a DN25 branch creates a Revit connector mismatch error and prints incorrectly on the drawing.
+
+6. Today's Action
+In Revit (or a sample file), place one ball valve on a pipe branch. Confirm its size matches the pipe. Set the Mark parameter. Verify it appears in the pipe accessory schedule.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

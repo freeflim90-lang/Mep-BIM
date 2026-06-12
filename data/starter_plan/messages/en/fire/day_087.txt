@@ -1,0 +1,59 @@
+LUA BIM LABS Starter
+Day 87 - Fire Protection Parameter Checklist
+
+1. Why This Matters
+A geometrically correct fire protection model with empty or incorrect parameters is not a complete BIM deliverable. Parameters are what make the model machine-readable — they drive schedules, inform the hydraulic engineer, support FM handover, and enable downstream users to query the model without opening drawings. Populating parameters correctly is as important as modeling geometry correctly.
+
+2. Core Concept
+Required Parameters for Fire Protection Elements at LOD 350 Delivery:
+
+Sprinkler Heads:
+| Parameter | Example Value | Purpose |
+|---|---|---|
+| Mark | FP-H-03-0047 | Unique identifier for this head |
+| System Name | FP-WET-ZONE-03 | Links head to its hydraulic zone |
+| Head Type | Pendant Concealed | For schedule and procurement |
+| Coverage Area | 12.1 m² | Verify coverage calculation |
+| Operating Temperature | 68°C | Standard office/commercial rating |
+| Manufacturer / Model | [As specified] | For procurement and approval |
+
+Pipes:
+| Parameter | Example Value | Purpose |
+|---|---|---|
+| System Name | FP-WET-ZONE-03 | Same as heads it serves |
+| Nominal Diameter | DN50 | Must match sizing schedule |
+| Pipe Level | Branch Line | Identifies hierarchy level |
+| Material / Specification | Black Steel, SCH 10 | For procurement |
+| RFI Reference | RFI-FP-047 | If changed from as-designed |
+
+Valves and Specialties:
+| Parameter | Example Value | Purpose |
+|---|---|---|
+| Mark | FP-V-03-001 | Unique identifier |
+| Valve Type | Zone Control Valve | For schedule |
+| System Name | FP-WET-ZONE-03 | Zone linkage |
+| Zone | Zone 03 | For FM use and commissioning |
+
+Common Parameter Errors:
+- System Name left blank — element is unassigned and invisible in zone schedules
+- Coverage Area not populated — coverage calculation schedule cannot run
+- Mark not assigned — element cannot be referenced in RFIs or field coordination
+- Nominal Diameter mismatch — schedule shows DN40 but model is DN50
+
+3. Real Project Lens
+Before issuing the Level 6 fire protection model, the BIM modeler runs a Revit schedule filtered by System Name = "(none)". Twelve heads and four pipe segments appear with no system assigned — they were placed during a coordination reroute and were not connected to the system properly. Each element is corrected: heads reconnected to the system, pipes assigned to the correct system name. The schedule now shows zero unassigned elements.
+
+4. BIM Check
+- Check: Every sprinkler head has a unique Mark, correct System Name, and populated Coverage Area parameter
+- Check: Every pipe has a System Name and Nominal Diameter that matches the fire engineer's sizing schedule
+- Check: Running a Revit schedule filtered by System Name = "(none)" returns zero fire protection elements — nothing is unassigned
+
+5. Common Mistake
+Treating parameters as an administrative task to be done at the end of modeling. Parameters that are populated progressively — as elements are placed — are always more accurate than parameters added retrospectively. A head placed two months ago is hard to trace; a head tagged at placement with Mark and System Name is immediately identifiable.
+
+6. Today's Action
+Run a Revit schedule of all sprinkler heads in your current or sample model. Filter for any heads where System Name or Coverage Area is blank. Count the number of incomplete records and estimate how long it would take to complete them. Set a deadline to close all blanks before the next model issue.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

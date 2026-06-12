@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 15 - The First 15-Day MEP BIM Review
+
+1. Why This Matters
+Learning becomes stronger when concepts are connected. The first two weeks should build a basic mental model of systems, views, clearance, data, and QA.
+
+2. Core Concept
+MEP BIM skill is a combination of drawing reading, model operation, system understanding, and coordination judgment.
+
+3. Real Project Lens
+A beginner who understands only Revit commands may model quickly but still miss drawing intent, access problems, and wrong system data.
+
+4. BIM Check
+- Review one HVAC concept, one piping concept, and one coordination concept.
+- Identify one Revit setting that affects visibility.
+- Name one QA check you can perform before sharing work.
+
+5. Common Mistake
+Beginners often collect isolated tips without building a repeatable checking routine.
+
+6. Today's Action
+Write a 10-line personal MEP BIM checklist based on Days 1-14.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

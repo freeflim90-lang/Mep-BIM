@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "IFC",
+    "OpenBIM",
+    "BIM",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "Validating IFC Files Before Submission: Tools and Checklist",
+  "slug": "validating-ifc-files-before-submission-tools-and-checklist",
+  "content": "<p>An IFC file that passes visual inspection in a viewer may still fail validation against schema rules, missing required properties, incorrect spatial containment, or duplicate GlobalIDs. Validation before submission prevents rejection cycles and protects project programme.</p>\n<h2>Why This Matters</h2>\n<p>IFC validation failures are invisible to the naked eye. A file can look geometrically correct in Navisworks while containing elements with no IfcBuildingStorey containment, duplicate GUIDs that corrupt FM system imports, or property sets with incorrect data types.</p>\n<h2>Practical Guidance</h2>\n<p><strong>Schema Validation:</strong> Use Solibri Model Checker or IfcOpenShell to validate IFC schema compliance. These tools check that all required attributes are present, data types are correct, and element relationships are valid. Run schema validation before every formal submission.</p>\n<p><strong>Spatial Containment:</strong> Every building element must be contained in a valid IfcBuildingStorey. Elements not assigned to a floor are problematic for FM systems and coordination tools. Check for uncontained elements in validation output.</p>\n<p><strong>GlobalID Uniqueness:</strong> Every IFC element must have a unique GlobalID (GUID). Duplicate GUIDs cause problems in FM import and model comparison workflows. Duplicate GUIDs are most common when model elements are copied between Revit files.</p>\n<p><strong>Geometry Check:</strong> Validate that all elements have at least one geometry representation. Elements with missing geometry (often family instances with no geometry in certain views) appear in property schedules but not in coordination. These cause false-negative clash results.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Run schema validation in Solibri before every formal IFC submission</li>\n<li>Check for uncontained elements (no floor assignment)</li>\n<li>Validate GlobalID uniqueness — especially after model copy operations</li>\n<li>Confirm all elements have geometry representation</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>IFC validation is a quality gate, not a box-tick — treat a failed validation as a model quality issue that requires investigation, not just a re-export.</p>"
+}

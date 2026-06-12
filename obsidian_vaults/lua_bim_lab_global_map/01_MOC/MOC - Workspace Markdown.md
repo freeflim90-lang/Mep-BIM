@@ -1,0 +1,419 @@
+---
+type: category-moc
+category: Workspace Markdown
+generated: true
+count: 406
+---
+
+# MOC - Workspace Markdown
+
+- [[11034 - A1__Dashboard - 11034 - A1__Dashboard - A1 IFC Dashboard]] — `data/bim_scripts/DTU-Byg/11034/A1__Dashboard/readme.md`
+- [[11034 - A2__Rules - 11034 - A2__Rules - A2 Rules]] — `data/bim_scripts/DTU-Byg/11034/A2__Rules/readme.md`
+- [[11034 - A3__Use_Case - 11034 - A3__Use_Case - 3 Use Case]] — `data/bim_scripts/DTU-Byg/11034/A3__Use_Case/readme.md`
+- [[11034 - A4__Future format - 11034 - A4__Future format - Assignment 4]] — `data/bim_scripts/DTU-Byg/11034/A4__Future format/readme.md`
+- [[11034 - A5__Custom tools - 11034 - A5__Custom tools - A5 Custom Tool]] — `data/bim_scripts/DTU-Byg/11034/A5__Custom tools/readme.md`
+- [[11034 Advanced BIM]] — `data/bim_scripts/kfjordt/11034-advanced-bim/Assignment 2/change.md`
+- [[11034-advanced-bim - Assignment 3 - 11034-advanced-bim - Assignment 3 - Assignment 3]] — `data/bim_scripts/kfjordt/11034-advanced-bim/Assignment 3/README.md`
+- [[11034-advanced-bim - Assignment 4 - 11034-advanced-bim - Assignment 4 - Group 01]] — `data/bim_scripts/kfjordt/11034-advanced-bim/Assignment 4/README.md`
+- [[3P-DanSan - Revit-Dynamo-Python---add-shared-Parameter-to-Family - 3P-DanSan - Revit-Dynamo-Python---add-share]] — `data/bim_scripts/3P-DanSan/Revit-Dynamo-Python---add-shared-Parameter-to-Family/README.md`
+- [[7-Day GitHub Proof Plan]] — `data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/docs/github-proof-plan.md`
+- [[AGENTS md]] — `data/bim_scripts/viktor-platform/aps-automation-sdk/AGENTS.md`
+- [[AI-POWERED-ENERGY-CONSUMPTION-FORECASTING - data - AI-POWERED-ENERGY-CONSUMPTION-FORECASTING - data - Data Fol]] — `data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/data/README.md`
+- [[AI-POWERED-ENERGY-CONSUMPTION-FORECASTING - docs - AI-POWERED-ENERGY-CONSUMPTION-FORECASTING - docs - Document]] — `data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/docs/README.md`
+- [[AI-POWERED-ENERGY-CONSUMPTION-FORECASTING - docs - System Architecture]] — `data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/docs/architecture.md`
+- [[AI-POWERED-ENERGY-CONSUMPTION-FORECASTING - notebooks - AI-POWERED-ENERGY-CONSUMPTION-FORECASTING - notebooks ]] — `data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/notebooks/README.md`
+- [[API Reference]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/api/index.md`
+- [[APS ACC Public Activity Signing]] — `data/bim_scripts/viktor-platform/aps-automation-sdk/.agents/skills/aps-acc-public-activity-signing/SKILL.md`
+- [[ASHRAE 핵심 기준 요약 설계 참고]] — `data/technical_pdfs/text_knowledge/ashrae_hvac_standards_summary.md`
+- [[ASSET-Lab - BuildingEnergy - ASSET-Lab - BuildingEnergy - BuildingEnergy]] — `data/bim_scripts/ASSET-Lab/BuildingEnergy/README.md`
+- [[Advanced BIM Coordination]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination Advanced.md`
+- [[Agent Context for OpenBES-py Thermal Simulation Refactoring]] — `data/bim_scripts/openBES-ecosystem/OpenBES-py/AGENTS.md`
+- [[BETALAB-team - EUReCA - BETALAB-team - EUReCA - EUReCA]] — `data/bim_scripts/BETALAB-team/EUReCA/README.md`
+- [[BIM Automation Toolkit Expansion Design Document]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-07-automation-toolkit-expansion-design.md`
+- [[BIM Automation Toolkit Expansion Implementation Plan]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-07-automation-toolkit-expansion.md`
+- [[BIM Autpmatic Coordination System]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Autpmatic Coordination System.md`
+- [[BIM Command Center]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Command Center.md`
+- [[BIM Command Center Power BI Setup Guide]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/docs/powerbi/command-center-setup.md`
+- [[BIM Coordinates Panel Design Document]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-08-bim-coordinates-panel-design.md`
+- [[BIM Coordinates Panel Implementation Plan]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-08-bim-coordinates-panel.md`
+- [[BIM Coordination Automation Package Master Index]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination Package - Index.md`
+- [[BIM Coordination Automation Toolkit]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination Automation Toolkit.md`
+- [[BIM Coordination Toolbar design doc]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination Toolbar design doc.md`
+- [[BIM Coordinator 101]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination 101.md`
+- [[BIM Learning Path Next Steps]] — `data/starter_plan/reference_cards/card_08_bim_learning_path.md`
+- [[BIM Package Reconciliation Implementation Plan]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-07-bim-package-reconciliation.md`
+- [[BIM Portfolio Governance Exporter Phase 5 Advanced Tier]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/BIM compliance dashboard Requirements.md`
+- [[BIM Revit model setup automation]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Revit model setup automation.md`
+- [[BIM Score Implementation Plan]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Score implementation Plan.md`
+- [[BIM Troubleshooting Decision Tree]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Troubleshooting Mega-Guide.md`
+- [[BIM automation plan]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/BIM automation plan.md`
+- [[BIM clash heat map]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/BIM clash heat map.md`
+- [[BIM panel - HealthScore pushbutton - BIM panel - HealthScore pushbutton - README]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/BIMTools.extension/BIM.panel/HealthScore.pushbutton/README.md`
+- [[BIM scoring system]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/BIM scoring system.md`
+- [[BIM-Modeling]] — `data/bim_scripts/renatogcruz/BIM-Modeling/README (Conflicted copy from DESKTOP-BKHADKA on 2021-05-31).md`
+- [[BIM-Modeling - blender - BIM-Modeling - blender - BIM-Modeling]] — `data/bim_scripts/renatogcruz/BIM-Modeling/blender/README.md`
+- [[BIM-Modeling - sverchok - BIM-Modeling - sverchok - Sverchok http nikitron cc ua sverchok_en html]] — `data/bim_scripts/renatogcruz/BIM-Modeling/sverchok/README.md`
+- [[BIM_Automation - acc_integration - BIM_Automation - acc_integration - README]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/BIM_Automation/acc_integration/README.md`
+- [[BIM_Automation - clash_processing - BIM_Automation - clash_processing - README]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/BIM_Automation/clash_processing/README.md`
+- [[BIM_Automation - data - BIM_Automation - data - README]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/BIM_Automation/data/README.md`
+- [[BIM_Automation - reports - BIM_Automation - reports - README]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/BIM_Automation/reports/README.md`
+- [[Bekko-dev - Energy-trading-learning - Bekko-dev - Energy-trading-learning - Energy Trading Learning]] — `data/bim_scripts/Bekko-dev/Energy-trading-learning/README.md`
+- [[BenLin-UC - Revit_Auto_Audit - BenLin-UC - Revit_Auto_Audit - Revit Model Coordination Toolkit]] — `data/bim_scripts/BenLin-UC/Revit_Auto_Audit/README.md`
+- [[Ber-Ilya - modelica_building_energy_system - Ber-Ilya - modelica_building_energy_system - modelica_building_en]] — `data/bim_scripts/Ber-Ilya/modelica_building_energy_system/README.md`
+- [[Blender MCP Server Integration with Claude - Research Report]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/research-blender-mcp.md`
+- [[Blender Skill Inventory Briefing]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/masterplan/briefing-blender.md`
+- [[Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package - skills - Blender-Bonsai-ifcOpenshell-Sverchok-Clau]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/skills/CLAUDE.md`
+- [[Bonsai BIM Comprehensive Pre-Research Document]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/vooronderzoek-bonsai.md`
+- [[Bonsai BIM Supplementary Research Gap Domains]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/supplementary-bonsai-gaps.md`
+- [[Bonsai Skill Inventory Briefing]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/masterplan/briefing-bonsai.md`
+- [[BuildingEnergy - local - BuildingEnergy - local - E Python Local Environment]] — `data/bim_scripts/ASSET-Lab/BuildingEnergy/local/README.md`
+- [[BuildingMetrics - BuildingMetrics-DEER-Energy-Plus-Utilities - BuildingMetrics - BuildingMetrics-DEER-Energy-P]] — `data/bim_scripts/BuildingMetrics/BuildingMetrics-DEER-Energy-Plus-Utilities/README.md`
+- [[BuildingMetrics-DEER-Energy-Plus-Utilities - commercial - BuildingMetrics-DEER-Energy-Plus-Utilities - commerc]] — `data/bim_scripts/BuildingMetrics/BuildingMetrics-DEER-Energy-Plus-Utilities/commercial/README.md`
+- [[C-BSS - ESTtoolBar - C-BSS - ESTtoolBar - ESTtoolBar]] — `data/bim_scripts/C-BSS/ESTtoolBar/README.md`
+- [[C-Claus - IfcScripts - C-Claus - IfcScripts - IfcScripts]] — `data/bim_scripts/C-Claus/IfcScripts/README.md`
+- [[Chrisvandr - parametric-simulation-energyplus - Chrisvandr - parametric-simulation-energyplus - parametric-sim]] — `data/bim_scripts/Chrisvandr/parametric-simulation-energyplus/README.md`
+- [[Clash Types Priority Matrix]] — `data/starter_plan/reference_cards/card_05_clash_types_priority.md`
+- [[Codex Workflow]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/workflows/codex.md`
+- [[Complete Scope Analysis All Python-Scriptable Domains]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/scope-analysis.md`
+- [[Completeness Review Masterplan v2026-03-06]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/masterplan/review-completeness.md`
+- [[Contributing to APS Automation SDK]] — `data/bim_scripts/viktor-platform/aps-automation-sdk/CONTRIBUTING.md`
+- [[Contributing to idfkit-mcp]] — `data/bim_scripts/idfkit/idfkit-mcp/CONTRIBUTING.md`
+- [[Contributing to ifc-live]] — `data/bim_scripts/FelonBall/ifc-live/CONTRIBUTING.md`
+- [[Contributor Covenant Code of Conduct]] — `data/bim_scripts/specklesystems/specklepy/.github/CODE_OF_CONDUCT.md`
+- [[Coordinates Panel]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/08-coordinates.md`
+- [[Coordination Panel]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/03-coordination.md`
+- [[CoreCoordinate System Calc Engine]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/CoreCoordinate System Calc Engine.md`
+- [[Cross-Technology Briefing Dependencies Build Order Batch Plan]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/masterplan/briefing-cross-tech.md`
+- [[Curiosit - IfcJsonLcabygParser - Curiosit - IfcJsonLcabygParser - IfcJsonLcabygParser]] — `data/bim_scripts/Curiosit/IfcJsonLcabygParser/README.md`
+- [[CyrilWaechter - pythoncvc net - CyrilWaechter - pythoncvc net - pythoncvc net]] — `data/bim_scripts/CyrilWaechter/pythoncvc.net/README.md`
+- [[Código de Conducta convenido para Contribuyentes]] — `data/bim_scripts/simon-un/ifc-processing/CODE_OF_CONDUCT.md`
+- [[DECISIONS]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/DECISIONS.md`
+- [[DEFINITIVE Masterplan Sverchok Claude Skill Package]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/masterplan/sverchok-masterplan.md`
+- [[DTU-Byg - 11034 - DTU-Byg - 11034 - 11034 Advanced Building Design]] — `data/bim_scripts/DTU-Byg/11034/README.md`
+- [[Data-science-for-architecture - House_Rocket - Data-science-for-architecture - House_Rocket - Maximizando a re]] — `data/bim_scripts/renatogcruz/Data-science-for-architecture/House_Rocket/README.md`
+- [[Data-science-for-architecture - california_housing - Data-science-for-architecture - california_housing - Cali]] — `data/bim_scripts/renatogcruz/Data-science-for-architecture/california_housing/README.md`
+- [[Data-science-for-architecture - genero_origem - Data-science-for-architecture - genero_origem - Xxxxxxxxxx xxx]] — `data/bim_scripts/renatogcruz/Data-science-for-architecture/genero_origem/README.md`
+- [[Data-science-for-architecture - ifc_analysis - Data-science-for-architecture - ifc_analysis - IFC analysis]] — `data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/README.md`
+- [[Data_science_for_AEC - 1 - Python Fundamentals - Data_science_for_AEC - 1 - Python Fundamentals - Introduction]] — `data/bim_scripts/renatogcruz/Data-science-for-architecture/Data_science_for_AEC/1 - Python Fundamentals/README.md`
+- [[Definitive Masterplan Blender-Bonsai-IfcOpenShell Claude Skill Package]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/masterplan/masterplan.md`
+- [[Documentation Tools]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/tools/docs.md`
+- [[Dujltqzv - Some-Many-Books - Dujltqzv - Some-Many-Books - Preface]] — `data/bim_scripts/Dujltqzv/Some-Many-Books/README.md`
+- [[Ecosystem Research Claude Anthropic Skill Development Platform]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/ecosystem-claude-platform.md`
+- [[Error Semantics]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/concepts/error-semantics.md`
+- [[Exercises - exercise_0 - Exercises - exercise_0 - Exercise 0 Basic Automation]] — `data/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/Exercises/exercise_0/README.md`
+- [[Exercises - exercise_1 - Exercises - exercise_1 - Exercise 1 Enhanced Object Processing]] — `data/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/Exercises/exercise_1/README.md`
+- [[Exercises - exercise_2 - Exercises - exercise_2 - Exercise 2 Property Validation]] — `data/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/Exercises/exercise_2/README.md`
+- [[Exercises - exercise_3 - Exercises - exercise_3 - Exercise 3 Externalised Configuration]] — `data/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/Exercises/exercise_3/README.md`
+- [[FelonBall - ifc-live - FelonBall - ifc-live - CLAUDE md]] — `data/bim_scripts/FelonBall/ifc-live/CLAUDE.md`
+- [[FelonBall - ifc-live - FelonBall - ifc-live - ifc-live]] — `data/bim_scripts/FelonBall/ifc-live/README.md`
+- [[Final Proof Checklist]] — `data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/docs/proof-checklist.md`
+- [[First Session]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/getting-started/first-session.md`
+- [[Folder Index]] — `FOLDER_INDEX.md`
+- [[Freedomwithin - BuildingAutomationSimulator - Freedomwithin - BuildingAutomationSimulator - Building Energy Ma]] — `data/bim_scripts/Freedomwithin/BuildingAutomationSimulator/README.md`
+- [[Full Implementation Plan Phase-Wise]] — `data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/docs/implementation-phases.md`
+- [[Full LLM Export]] — `data/bim_scripts/viktor-platform/aps-automation-sdk/.agents/skills/full-llm-export/SKILL.md`
+- [[GerhardPaw - RevitPythonDocs - GerhardPaw - RevitPythonDocs - RevitPythonDocs]] — `data/bim_scripts/GerhardPaw/RevitPythonDocs/README.md`
+- [[GerhardPaw - RevitPythonDocs - index]] — `data/bim_scripts/GerhardPaw/RevitPythonDocs/index.md`
+- [[Grid Coordinate finder]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/Grid Coordinate finder.md`
+- [[Group 01]] — `data/bim_scripts/kfjordt/11034-advanced-bim/Assignment 5/Group01_Assignment5.md`
+- [[IFC Schema Version Comparison for IfcOpenShell Python Programming]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/topic-research/ifcos-schema-version-comparison.md`
+- [[IFC Schema Versions Entity Hierarchy IfcOpenShell Research]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/ifcos-schema-versions.md`
+- [[IFC_analysis_with_IfcOpenShell - 01_Initial_instructions - IFC_analysis_with_IfcOpenShell - 01_Initial_instruc]] — `data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/01_Initial_instructions/README.md`
+- [[IFC_analysis_with_IfcOpenShell - 02_Introduction_to_Python_for_use_with_BIM - IFC_analysis_with_IfcOpenShell -]] — `data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/02_Introduction_to_Python_for_use_with_BIM/README.md`
+- [[IFC_analysis_with_IfcOpenShell - 03_Basics_with_ifcopenshell_notebook - IFC_analysis_with_IfcOpenShell - 03_Ba]] — `data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/03_Basics_with_ifcopenshell_notebook/README.md`
+- [[IFC_analysis_with_IfcOpenShell - 04_Basics_Project - IFC_analysis_with_IfcOpenShell - 04_Basics_Project - This]] — `data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/04_Basics_Project/README.md`
+- [[IFC_analysis_with_IfcOpenShell - 05_Get_list_of_room_names_and_descriptions - IFC_analysis_with_IfcOpenShell -]] — `data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/05_Get_list_of_room_names_and_descriptions/README.md`
+- [[IFC_analysis_with_IfcOpenShell - 06_Redefining_an_IfcBuildingElementProxy_to_IfcWall - IFC_analysis_with_IfcOp]] — `data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/06_Redefining_an_IfcBuildingElementProxy_to_IfcWall/README.md`
+- [[IFC_analysis_with_IfcOpenShell - 07_Challenge_Solution_Calculating_Coordinates_for_hangers - IFC_analysis_with]] — `data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/07_Challenge_Solution_Calculating_Coordinates_for_hangers/README.md`
+- [[IfcOpenShell API Categories - Complete Reference]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/ifcos-api-categories.md`
+- [[IfcOpenShell Core Operations - File I O]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/ifcos-core-operations.md`
+- [[IfcOpenShell Error Patterns Performance Installation Guide]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/ifcos-errors-performance.md`
+- [[IfcOpenShell Error Patterns Performance and AI Pitfalls - Research Document]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/topic-research/ifcos-errors-performance-research.md`
+- [[IfcOpenShell Pre-Research Document Vooronderzoek]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/vooronderzoek-ifcopenshell.md`
+- [[IfcOpenShell Python Library - Core Operations Research]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/topic-research/ifcos-core-operations.md`
+- [[IfcOpenShell Skill Inventory Briefing]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/masterplan/briefing-ifcopenshell.md`
+- [[IliaShkola - honey-ifc - IliaShkola - honey-ifc - HoneyIFC]] — `data/bim_scripts/IliaShkola/honey-ifc/README.md`
+- [[Impertio-Studio - Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package - Impertio-Studio - Blender-Bonsai 2]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/CLAUDE.md`
+- [[Impertio-Studio - Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package - Impertio-Studio - Blender-Bonsai]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/CHANGELOG.md`
+- [[Impertio-Studio - Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package - Contributing]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/CONTRIBUTING.md`
+- [[Impertio-Studio - Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package - Impertio-Studio - Blender-Bonsai 3]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/README.md`
+- [[Impertio-Studio - Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package - Security Policy]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/SECURITY.md`
+- [[Information for Autodesk Revit]] — `data/bim_scripts/brean/python-ifc-blender/docs/revit.md`
+- [[JSON-configuration]] — `data/bim_scripts/brean/python-ifc-blender/docs/actions.md`
+- [[Jmanrique-bim - ManriqueToolsPyRevit - Jmanrique-bim - ManriqueToolsPyRevit - README]] — `data/bim_scripts/Jmanrique-bim/ManriqueToolsPyRevit/README.md`
+- [[KBBrian-dev - KBBrian-dev - KBBrian-dev - KBBrian-dev - Hello I m Kiogora Brian]] — `data/bim_scripts/KBBrian-dev/KBBrian-dev/README.md`
+- [[KTH-UrbanT - mubes-ubem - KTH-UrbanT - mubes-ubem - MUBES_UBEM]] — `data/bim_scripts/KTH-UrbanT/mubes-ubem/README.md`
+- [[Kennystruct - Clash-Detection-Matrix-Automation - Kennystruct - Clash-Detection-Matrix-Automation - DATA SCIEN]] — `data/bim_scripts/Kennystruct/Clash-Detection-Matrix-Automation/README.md`
+- [[LESSONS LEARNED]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/LESSONS.md`
+- [[LUA BIM LABS 팀원 Telegram 1 1 이용 등록부]] — `data/team_requests/team_telegram_users.md`
+- [[MAT]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/MAT.md`
+- [[MCP Client Setup]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/getting-started/client-setup.md`
+- [[MEP BIM Coordination Console 개발 핸드오프]] — `HANDOFF.md`
+- [[MEP BIM Key Roles LOD Reference]] — `data/starter_plan/reference_cards/card_01_mep_bim_roles_lod.md`
+- [[MEP BIM 조율 실무 기준 문서]] — `data/technical_pdfs/text_knowledge/mep_bim_coordination_guide.md`
+- [[MEP Data Schedule Reference]] — `data/starter_plan/reference_cards/card_06_mep_data_schedule.md`
+- [[MEP Drawing Reading Guide]] — `data/starter_plan/reference_cards/card_03_mep_drawing_reading.md`
+- [[Melhefny - Python-Code-for-Revit - Melhefny - Python-Code-for-Revit - Python-Code-for-Revit]] — `data/bim_scripts/Melhefny/Python-Code-for-Revit/README.md`
+- [[Mep-BIM - Mep-BIM - Mep-BIM]] — `Mep-BIM/README.md`
+- [[Milestone 1 Two Bonsai Instances Live Sync]] — `data/bim_scripts/FelonBall/ifc-live/docs/MILESTONE_1.md`
+- [[Model Health Panel]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/02-model-health.md`
+- [[Model Quality Self-Review Checklist]] — `data/starter_plan/reference_cards/card_04_model_quality_checklist.md`
+- [[Model Read Tools]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/tools/model-read.md`
+- [[Model Write Tools]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/tools/model-write.md`
+- [[Modeling Simulation Troubleshooting]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/troubleshooting/simulation.md`
+- [[Multi-Agent Patterns]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/workflows/multi-agent-patterns.md`
+- [[Open-Agents oa-cli Improvements Report]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/oa-improvements-report.md`
+- [[OpenAEC Foundation Code Repository Research]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/ecosystem-openaec-code.md`
+- [[OpenAEC Foundation IFC Infrastructure Ecosystem Research]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/ecosystem-openaec-ifc.md`
+- [[OpenBES-py Development Wishlist Post-Excel]] — `data/bim_scripts/openBES-ecosystem/OpenBES-py/dev-wishlist.md`
+- [[OpenBES-py Shared Specification Vulnerability Report]] — `data/bim_scripts/openBES-ecosystem/OpenBES-py/meta/security/shared-specification-vulnerability-report.md`
+- [[OttomanAI - mep_automation_kit - OttomanAI - mep_automation_kit - Drainage Processor]] — `data/bim_scripts/OttomanAI/mep_automation_kit/README.md`
+- [[PULL_REQUEST_TEMPLATE]] — `data/bim_scripts/fesworkscience/pyrevit_rocket/.github/PULL_REQUEST_TEMPLATE.md`
+- [[Pautas de contribución]] — `data/bim_scripts/simon-un/ifc-processing/CONTRIBUTING.md`
+- [[Phase 6 Content Validation Report]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/validation/validation-phase6-content.md`
+- [[Phase 6 Cross-Reference Validation Report]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/validation/validation-phase6-structure.md`
+- [[Power BI Auto-Push Design]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-08-powerbi-auto-push-design.md`
+- [[Power BI Auto-Push Implementation Plan]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-08-powerbi-auto-push.md`
+- [[Power BI Command Center]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/07-power-bi.md`
+- [[Power BI Command Center Design Document]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-08-powerbi-command-center-design.md`
+- [[Power BI Command Center Implementation Plan]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-08-powerbi-command-center.md`
+- [[Practical Review Sverchok Skill Masterplan]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/masterplan/sverchok-review-practical.md`
+- [[Project Setup Panel]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/01-project-setup.md`
+- [[Python - IFC Local Coordinates - Python - IFC Local Coordinates - How-To]] — `data/bim_scripts/DTU-Byg/11034/Example files/Python/IFC Local Coordinates/README.md`
+- [[Python - Installation - Python - Installation - readme]] — `data/bim_scripts/DTU-Byg/11034/Example files/Python/Installation/readme.md`
+- [[Python - Read_excel_file - Python - Read_excel_file - Read Excel file]] — `data/bim_scripts/DTU-Byg/11034/Example files/Python/Read_excel_file/readme.md`
+- [[Python - Working with excel - Python - Working with excel - readme]] — `data/bim_scripts/DTU-Byg/11034/Example files/Python/Working with excel/readme.md`
+- [[Python Automation Pipeline]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/06-pipeline.md`
+- [[Quick Start]] — `data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/QUICKSTART.md`
+- [[R-Rijnbeek - IFCManipulations - R-Rijnbeek - IFCManipulations - IFCManipulations]] — `data/bim_scripts/R-Rijnbeek/IFCManipulations/README.md`
+- [[R-Rijnbeek - IFC_WebViewer - R-Rijnbeek - IFC_WebViewer - IFC_WebViewer]] — `data/bim_scripts/R-Rijnbeek/IFC_WebViewer/README.md`
+- [[RAW Masterplan Sverchok Claude Skill Package]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/masterplan/sverchok-masterplan-raw.md`
+- [[README - README - Mep-BIM]] — `README.md`
+- [[README Tool Documentation Design]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-08-readme-and-tool-docs-design.md`
+- [[README Tool Documentation Implementation Plan]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-08-readme-and-tool-docs.md`
+- [[REQUIREMENTS]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/REQUIREMENTS.md`
+- [[ROADMAP]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/ROADMAP.md`
+- [[Raw Masterplan v1 - Blender-Bonsai-IfcOpenShell-Sverchok Skill Package]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/masterplan/raw-masterplan.md`
+- [[Reporting Panel]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/04-reporting.md`
+- [[Research CLAUDE md Best Practices for Claude Code]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/research-claude-md-and-mcp.md`
+- [[Research Index]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/INDEX.md`
+- [[Resources]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/api/resources.md`
+- [[Review Masterplan Quality Consistency Check]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/masterplan/review-quality.md`
+- [[Review Research Coverage Verification]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/masterplan/review-research-coverage.md`
+- [[Revit MEP Setup Checklist]] — `data/starter_plan/reference_cards/card_02_revit_mep_setup.md`
+- [[Revit_Auto_Audit - AutoAudit pushbutton - Revit_Auto_Audit - AutoAudit pushbutton - Revit AutoAudit Tool]] — `data/bim_scripts/BenLin-UC/Revit_Auto_Audit/AutoAudit.pushbutton/README.md`
+- [[Revit_Auto_Audit - DocumentAudit pushbutton - Revit_Auto_Audit - DocumentAudit pushbutton - Revit Document Aud]] — `data/bim_scripts/BenLin-UC/Revit_Auto_Audit/DocumentAudit.pushbutton/README.md`
+- [[Revit_Auto_Audit - ParametersExport pushbutton - Revit_Auto_Audit - ParametersExport pushbutton - Revit Docume]] — `data/bim_scripts/BenLin-UC/Revit_Auto_Audit/ParametersExport.pushbutton/README.md`
+- [[Roadmap]] — `data/bim_scripts/FelonBall/ifc-live/docs/ROADMAP.md`
+- [[SOURCES]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/SOURCES.md`
+- [[SSA ACC Hub Setup Guide]] — `data/bim_scripts/viktor-platform/aps-automation-sdk/docs/ssa-acc-hub-setup.md`
+- [[Sangeeta1512 - revit-assembly-navigator-automation - Sangeeta1512 - revit-assembly-navigator-automation - Revi]] — `data/bim_scripts/Sangeeta1512/revit-assembly-navigator-automation/README.md`
+- [[Schema Tools]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/tools/schema.md`
+- [[Server]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/api/server.md`
+- [[Server State]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/concepts/server-state.md`
+- [[Session Prompts - Ready to Use]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/masterplan/session-prompts.md`
+- [[Sessions - W1 - Sessions - W1 - readme]] — `data/bim_scripts/DTU-Byg/11034/Sessions/W1/readme.md`
+- [[Sessions - W10 - Sessions - W10 - readme]] — `data/bim_scripts/DTU-Byg/11034/Sessions/W10/readme.md`
+- [[Sessions - W11 - Sessions - W11 - readme]] — `data/bim_scripts/DTU-Byg/11034/Sessions/W11/readme.md`
+- [[Sessions - W12 - Sessions - W12 - readme]] — `data/bim_scripts/DTU-Byg/11034/Sessions/W12/readme.md`
+- [[Sessions - W13 - Sessions - W13 - readme]] — `data/bim_scripts/DTU-Byg/11034/Sessions/W13/readme.md`
+- [[Sessions - W2 - Sessions - W2 - readme]] — `data/bim_scripts/DTU-Byg/11034/Sessions/W2/readme.md`
+- [[Sessions - W3 - Sessions - W3 - readme]] — `data/bim_scripts/DTU-Byg/11034/Sessions/W3/readme.md`
+- [[Sessions - W4 - Sessions - W4 - readme]] — `data/bim_scripts/DTU-Byg/11034/Sessions/W4/readme.md`
+- [[Sessions - W5 - Sessions - W5 - readme]] — `data/bim_scripts/DTU-Byg/11034/Sessions/W5/readme.md`
+- [[Sessions - W6 - Sessions - W6 - readme]] — `data/bim_scripts/DTU-Byg/11034/Sessions/W6/readme.md`
+- [[Sessions - W7 - Sessions - W7 - readme]] — `data/bim_scripts/DTU-Byg/11034/Sessions/W7/readme.md`
+- [[Sessions - W8 - Sessions - W8 - readme]] — `data/bim_scripts/DTU-Byg/11034/Sessions/W8/readme.md`
+- [[Sessions - W9 - Sessions - W9 - readme]] — `data/bim_scripts/DTU-Byg/11034/Sessions/W9/readme.md`
+- [[Setup Configuration]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/troubleshooting/setup.md`
+- [[Setup Guide Blender MCP Claude Code BIM Stack]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/SETUP.md`
+- [[Shared Coordinate System Design Doc]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-08-shared-coordinate-system-design.md`
+- [[Simulation Tools]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/tools/simulation.md`
+- [[Site-Readiness Check Guide]] — `data/starter_plan/reference_cards/card_07_site_readiness_guide.md`
+- [[Skill Catalog]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/INDEX.md`
+- [[Skill Package Development Workflow 0 to 100]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/workflow/skill-package-workflow.md`
+- [[Smart Openings - Умные отверстия в плитах]] — `data/bim_scripts/fesworkscience/pyrevit_rocket/docs/SmartOpenings_Spec.md`
+- [[Speckle Contribution Guidelines]] — `data/bim_scripts/specklesystems/specklepy/.github/CONTRIBUTING.md`
+- [[SpencerMAQ - pyRevitSpencer - SpencerMAQ - pyRevitSpencer - pyRevitSpencer]] — `data/bim_scripts/SpencerMAQ/pyRevitSpencer/README.md`
+- [[State]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/api/state.md`
+- [[Supplementary IfcOpenShell Research -- Gap Domains]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/supplementary-ifcos-gaps.md`
+- [[Supplementary Research Blender Python API Gap Domains]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/supplementary-blender-gaps.md`
+- [[Sverchok Core Architecture]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/sverchok-core-architecture.md`
+- [[Sverchok Coverage Gap Analysis]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/sverchok-coverage-gap-analysis.md`
+- [[Sverchok Extensions and IfcSverchok Comprehensive Research]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/sverchok-extensions-ifcsverchok.md`
+- [[Sverchok Python Integration -- Comprehensive Research Document]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/sverchok-python-integration.md`
+- [[Sverchok Skills Validation Report]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/sverchok-validation-report.md`
+- [[TODO]] — `data/bim_scripts/brean/python-ifc-blender/TODO.md`
+- [[Task prompt template]] — `data/bim_scripts/FelonBall/ifc-live/docs/task-template.md`
+- [[Technical Review Sverchok Skill Masterplan]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/masterplan/sverchok-review-technical.md`
+- [[Tew12345678910 - ICC-Thermal-Energy-Storage-System - Tew12345678910 - ICC-Thermal-Energy-Storage-System - ICC ]] — `data/bim_scripts/Tew12345678910/ICC-Thermal-Energy-Storage-System/README.md`
+- [[Tool Reference Overview]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/tools/index.md`
+- [[Tool architecture]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/Tool architecture.md`
+- [[Tools Documentation]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/api/tools-docs.md`
+- [[Tools Geometry]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/api/tools-geometry.md`
+- [[Tools Integrity]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/api/tools-integrity.md`
+- [[Tools Peak Loads]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/api/tools-peak-loads.md`
+- [[Tools Read]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/api/tools-read.md`
+- [[Tools Schedule]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/api/tools-schedule.md`
+- [[Tools Schema]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/api/tools-schema.md`
+- [[Tools Simulation]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/api/tools-simulation.md`
+- [[Tools Validation]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/api/tools-validation.md`
+- [[Tools Weather]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/api/tools-weather.md`
+- [[Tools Write]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/api/tools-write.md`
+- [[Tools Zone Properties]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/api/tools-zone-properties.md`
+- [[Tutorial Create a Revit Design Automation Addin]] — `data/bim_scripts/viktor-platform/aps-automation-sdk/examples/Addins/example_create_revit_addin.md`
+- [[Universal BIM Coordinate Tool v1 Implementation]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/Universal BIM Coordinate Tool (v1) Implementation.md`
+- [[Universal Coordinate Engine]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/Universal Coordinate Engine.md`
+- [[Utilities Panel]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/05-utilities.md`
+- [[Validation Tools]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/tools/validation.md`
+- [[Vasile-Corjan - Applepy - Vasile-Corjan - Applepy - sparkles Applepy - pyRevit tools for Revit sparkles]] — `data/bim_scripts/Vasile-Corjan/Applepy/README.md`
+- [[Vooronderzoek Blender Python API bpy]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/vooronderzoek-blender.md`
+- [[Vooronderzoek F Ecosystem Sources]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/vooronderzoek-ecosystem-sources.md`
+- [[Vooronderzoek Sverchok Visual Node Programming for Blender]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/vooronderzoek-sverchok.md`
+- [[WAY OF WORK]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/WAY_OF_WORK.md`
+- [[Weather Tools]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/tools/weather.md`
+- [[Wire Protocol]] — `data/bim_scripts/FelonBall/ifc-live/docs/PROTOCOL.md`
+- [[_vendor - idna - _vendor - idna - _vendor - idna - LICENSE - d3ec1a]] — `scripts/outbound_sales/.venv/lib/python3.14/site-packages/pip-26.1.1.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md`
+- [[_vendor - idna - _vendor - idna - _vendor - idna - LICENSE - e07784]] — `scripts/outbound_sales/.venv/lib/python3.14/site-packages/pip/_vendor/idna/LICENSE.md`
+- [[aecoder-br - dynamo-chatgpt - aecoder-br - dynamo-chatgpt - Dynamo ChatGPT]] — `data/bim_scripts/aecoder-br/dynamo-chatgpt/README.md`
+- [[agnes-schroeder-bim - ifc-ids-prevalidator - agnes-schroeder-bim - ifc-ids-prevalidator - IFC IDS Pre-Validato]] — `data/bim_scripts/agnes-schroeder-bim/ifc-ids-prevalidator/README.md`
+- [[ahmetcik - Chemical-Transferable-Potentials - ahmetcik - Chemical-Transferable-Potentials - Chemical-transfera]] — `data/bim_scripts/ahmetcik/Chemical-Transferable-Potentials/README.md`
+- [[aiamkovoi - QAcheck - aiamkovoi - QAcheck - SmartCheck Rule-Based Model Checking in Revit]] — `data/bim_scripts/aiamkovoi/QAcheck/README.md`
+- [[alternative]] — `data/bim_scripts/brean/python-ifc-model/TODO.md`
+- [[aothms - IfcOpenShell_PythonWrapper - aothms - IfcOpenShell_PythonWrapper - README]] — `data/bim_scripts/aothms/IfcOpenShell_PythonWrapper/README.md`
+- [[aps-automation-sdk - agents - aps-automation-sdk - agents - Local Agent Skills]] — `data/bim_scripts/viktor-platform/aps-automation-sdk/.agents/README.md`
+- [[auto_knowledge_gap_log]] — `data/knowledge_quality/auto_knowledge_gap_log.md`
+- [[automation_context]] — `data/bim_scripts/specklesystems/specklepy/docs/speckle_automate/automation_context.md`
+- [[base]] — `data/bim_scripts/specklesystems/specklepy/docs/specklepy/objects/base.md`
+- [[bayoBpas - bpasAutomationInstalls - bayoBpas - bpasAutomationInstalls - NewRepo2]] — `data/bim_scripts/bayoBpas/bpasAutomationInstalls/README.md`
+- [[blender - blender_bim - blender - blender_bim - README]] — `data/bim_scripts/renatogcruz/BIM-Modeling/blender/blender_bim/README.md`
+- [[blender - blender_for_arch - blender - blender_for_arch - Intro to Blender for Architectural Design]] — `data/bim_scripts/renatogcruz/BIM-Modeling/blender/blender_for_arch/README.md`
+- [[blender_bim - breve-introducao-blender-bim - blender_bim - breve-introducao-blender-bim - README]] — `data/bim_scripts/renatogcruz/BIM-Modeling/blender/blender_bim/breve-introducao-blender-bim/README.md`
+- [[brean - python-ifc-blender - brean - python-ifc-blender - IFC-Blender]] — `data/bim_scripts/brean/python-ifc-blender/README.md`
+- [[brean - python-ifc-model - brean - python-ifc-model - IFC model]] — `data/bim_scripts/brean/python-ifc-model/README.md`
+- [[client]] — `data/bim_scripts/specklesystems/specklepy/docs/specklepy/api/client.md`
+- [[colinBSI - bim-coord-auto-package - colinBSI - bim-coord-auto-package - BIM Coord Auto Package]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/CLAUDE.md`
+- [[colinBSI - bim-coord-auto-package - colinBSI - bim-coord-auto-package - BIM Coordination Auto Package]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/README.md`
+- [[credentials]] — `data/bim_scripts/specklesystems/specklepy/docs/specklepy/api/credentials.md`
+- [[custos_e_orcamentos - previsao_CUB - custos_e_orcamentos - previsao_CUB - README]] — `data/bim_scripts/renatogcruz/Data-science-for-architecture/custos_e_orcamentos/previsao_CUB/README.md`
+- [[data_objects]] — `data/bim_scripts/specklesystems/specklepy/docs/specklepy/objects/data_objects.md`
+- [[datadrivenconstruction - Checking-the-quality-of-Revit-and-IFC-projects - datadrivenconstruction - Checking-th]] — `data/bim_scripts/datadrivenconstruction/Checking-the-quality-of-Revit-and-IFC-projects/README.md`
+- [[dirkarnez - ifcopenshell-python-playground - dirkarnez - ifcopenshell-python-playground - README]] — `data/bim_scripts/dirkarnez/ifcopenshell-python-playground/README.md`
+- [[docs - concepts - System Architecture]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/concepts/architecture.md`
+- [[docs - getting-started - Installation]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/getting-started/installation.md`
+- [[docs - workflows - docs - workflows - Claude Workflow]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/workflows/claude.md`
+- [[dragance106 - overhang-surrogates - dragance106 - overhang-surrogates - LICENSE]] — `data/bim_scripts/dragance106/overhang-surrogates/LICENSE.md`
+- [[dragance106 - overhang-surrogates - dragance106 - overhang-surrogates - README]] — `data/bim_scripts/dragance106/overhang-surrogates/README.md`
+- [[duckduckgo_search-8 1 1 dist-info - licenses - duckduckgo_search-8 1 1 dist-info - licenses - LICENSE]] — `scripts/outbound_sales/.venv/lib/python3.14/site-packages/duckduckgo_search-8.1.1.dist-info/licenses/LICENSE.md`
+- [[duytran-git - bonsai_python - duytran-git - bonsai_python - Bonsai Python]] — `data/bim_scripts/duytran-git/bonsai_python/README.md`
+- [[duytran-git - ifcOpenShell-python - duytran-git - ifcOpenShell-python - IfcOpenShell Python]] — `data/bim_scripts/duytran-git/ifcOpenShell-python/README.md`
+- [[engpaulocosta-bim - orzio-plugins-public - engpaulocosta-bim - orzio-plugins-public - bim-automation-lab]] — `data/bim_scripts/engpaulocosta-bim/orzio-plugins-public/README.md`
+- [[exceptions]] — `data/bim_scripts/specklesystems/specklepy/docs/specklepy/logging/exceptions.md`
+- [[fesworkscience - pyrevit_rocket - fesworkscience - pyrevit_rocket - CPSK Tools]] — `data/bim_scripts/fesworkscience/pyrevit_rocket/README.md`
+- [[fesworkscience - pyrevit_rocket - fesworkscience - pyrevit_rocket - CPSK Tools - pyRevit Extension]] — `data/bim_scripts/fesworkscience/pyrevit_rocket/CLAUDE.md`
+- [[fuadbaba - Calibration-BEM - fuadbaba - Calibration-BEM - Calibration-BEM]] — `data/bim_scripts/fuadbaba/Calibration-BEM/README.md`
+- [[github - ISSUE_TEMPLATE - feature_request - c2450b]] — `data/bim_scripts/fesworkscience/pyrevit_rocket/.github/ISSUE_TEMPLATE/feature_request.md`
+- [[github - ISSUE_TEMPLATE - feature_request - c2d159]] — `data/bim_scripts/specklesystems/specklepy/.github/ISSUE_TEMPLATE/feature_request.md`
+- [[github - ISSUE_TEMPLATE - github - ISSUE_TEMPLATE - github - ISSUE_TEMPLATE - bug_report - 58e044]] — `data/bim_scripts/specklesystems/specklepy/.github/ISSUE_TEMPLATE/bug_report.md`
+- [[github - ISSUE_TEMPLATE - github - ISSUE_TEMPLATE - github - ISSUE_TEMPLATE - bug_report - d774b2]] — `data/bim_scripts/IliaShkola/honey-ifc/.github/ISSUE_TEMPLATE/bug_report.md`
+- [[github - ISSUE_TEMPLATE - github - ISSUE_TEMPLATE - github - ISSUE_TEMPLATE - bug_report - df0e81]] — `data/bim_scripts/fesworkscience/pyrevit_rocket/.github/ISSUE_TEMPLATE/bug_report.md`
+- [[idfkit - idfkit-mcp - idfkit - idfkit-mcp - CLAUDE md]] — `data/bim_scripts/idfkit/idfkit-mcp/CLAUDE.md`
+- [[idfkit - idfkit-mcp - idfkit - idfkit-mcp - Changelog]] — `data/bim_scripts/idfkit/idfkit-mcp/CHANGELOG.md`
+- [[idfkit - idfkit-mcp - idfkit - idfkit-mcp - idfkit-mcp]] — `data/bim_scripts/idfkit/idfkit-mcp/README.md`
+- [[idfkit-mcp]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/index.md`
+- [[idna-3 16 dist-info - licenses - idna-3 16 dist-info - licenses - LICENSE]] — `scripts/outbound_sales/.venv/lib/python3.14/site-packages/idna-3.16.dist-info/licenses/LICENSE.md`
+- [[ifc-live - examples - ifc-live - examples - Reserved for example IFC files demo scripts and integration test f]] — `data/bim_scripts/FelonBall/ifc-live/examples/README.md`
+- [[ifc-live - tests - ifc-live - tests - Cross-package integration tests]] — `data/bim_scripts/FelonBall/ifc-live/tests/README.md`
+- [[ifc-live - tools - ifc-live - tools - ifc-live-dev]] — `data/bim_scripts/FelonBall/ifc-live/tools/README.md`
+- [[ifc-live Design Document]] — `data/bim_scripts/FelonBall/ifc-live/docs/DESIGN.md`
+- [[ifc_analysis - Captura_Analise_e_Visualizacao_de_Dados_na_Construcao - ifc_analysis - Captura_Analise_e_Visual]] — `data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/Captura_Analise_e_Visualizacao_de_Dados_na_Construcao/README.md`
+- [[ifc_analysis - IFC_analysis_with_IfcOpenShell - ifc_analysis - IFC_analysis_with_IfcOpenShell - IFC analysis w]] — `data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/README.md`
+- [[ifcopenshell_examples - 3D - ifcopenshell_examples - 3D - 3D Geometry Examples]] — `data/bim_scripts/stefkeB/ifcopenshell_examples/3D/README.md`
+- [[ifcopenshell_examples - Console - ifcopenshell_examples - Console - Console Examples]] — `data/bim_scripts/stefkeB/ifcopenshell_examples/Console/README.md`
+- [[ifcopenshell_examples - GUI - ifcopenshell_examples - GUI - GUI Treeviewer Example]] — `data/bim_scripts/stefkeB/ifcopenshell_examples/GUI/README.md`
+- [[ifcopenshell_examples - Viewer - ifcopenshell_examples - Viewer - Viewer for IFC Files]] — `data/bim_scripts/stefkeB/ifcopenshell_examples/Viewer/README.md`
+- [[infra-plan - ifc-material-qto - infra-plan - ifc-material-qto - IFC Material QTO]] — `data/bim_scripts/infra-plan/ifc-material-qto/README.md`
+- [[iot-streaming-workflows - 01_Arduino IDE prototypes - iot-streaming-workflows - 01_Arduino IDE prototypes - Ar]] — `data/bim_scripts/lfontanella/iot-streaming-workflows/01_Arduino IDE prototypes/README.md`
+- [[iot-streaming-workflows - 02_Proprietary streaming - iot-streaming-workflows - 02_Proprietary streaming - Prop]] — `data/bim_scripts/lfontanella/iot-streaming-workflows/02_Proprietary streaming/README.md`
+- [[iot-streaming-workflows - 03_Open source streaming - iot-streaming-workflows - 03_Open source streaming - Open]] — `data/bim_scripts/lfontanella/iot-streaming-workflows/03_Open source streaming/README.md`
+- [[iot-streaming-workflows - 04_Database driven visualization - iot-streaming-workflows - 04_Database driven visu]] — `data/bim_scripts/lfontanella/iot-streaming-workflows/04_Database driven visualization/README.md`
+- [[iot-streaming-workflows - 05_Case study HBIM - Gallerie Accademia Venezia - iot-streaming-workflows - 05_Case ]] — `data/bim_scripts/lfontanella/iot-streaming-workflows/05_Case study HBIM - Gallerie Accademia Venezia/README.md`
+- [[johannesmichael - ifc-python - johannesmichael - ifc-python - ifc-python]] — `data/bim_scripts/johannesmichael/ifc-python/README.md`
+- [[jpstaub - Revit-Dynamo-MEP - jpstaub - Revit-Dynamo-MEP - Revit-Dynamo-MEP]] — `data/bim_scripts/jpstaub/Revit-Dynamo-MEP/README.md`
+- [[kavyajeetbora - IFC - kavyajeetbora - IFC - readme]] — `data/bim_scripts/kavyajeetbora/IFC/readme.md`
+- [[kfjordt - 11034-advanced-bim - kfjordt - 11034-advanced-bim - 11034 Advanced BIM]] — `data/bim_scripts/kfjordt/11034-advanced-bim/README.md`
+- [[kuvbur - pyIfcLayer - kuvbur - pyIfcLayer - pyIfcLayer]] — `data/bim_scripts/kuvbur/pyIfcLayer/README.md`
+- [[lfontanella - iot-streaming-workflows - lfontanella - iot-streaming-workflows - IoT Streaming Workflows]] — `data/bim_scripts/lfontanella/iot-streaming-workflows/README.md`
+- [[lfontanella - thermal-transmittance-workflows - lfontanella - thermal-transmittance-workflows - Thermal Transm]] — `data/bim_scripts/lfontanella/thermal-transmittance-workflows/README.md`
+- [[logs - qa_simulation - qa_simulation_2026-06-06 - LUA BIM LABS Q A 품질 시뮬레이션 리포트]] — `logs/qa_simulation/qa_simulation_2026-06-06.md`
+- [[logs - qa_simulation - qa_simulation_2026-06-07 - LUA BIM LABS Q A 품질 시뮬레이션 리포트]] — `logs/qa_simulation/qa_simulation_2026-06-07.md`
+- [[logs - qa_simulation - qa_simulation_2026-06-09 - LUA BIM LABS Q A 품질 시뮬레이션 리포트]] — `logs/qa_simulation/qa_simulation_2026-06-09.md`
+- [[lvanlier - d4su-server - lvanlier - d4su-server - D4SU Server]] — `data/bim_scripts/lvanlier/d4su-server/readme.md`
+- [[microtech-sd - IntelliZone - microtech-sd - IntelliZone - README]] — `data/bim_scripts/microtech-sd/IntelliZone/README.md`
+- [[mitevpi - py-design - mitevpi - py-design - Python-Revit-Resources]] — `data/bim_scripts/mitevpi/py-design/README.md`
+- [[mitevpi - stenotype - mitevpi - stenotype - Stenotype]] — `data/bim_scripts/mitevpi/stenotype/README.md`
+- [[mitrofmep - Revit-API-scripts - mitrofmep - Revit-API-scripts - Dynamo Scripts for Revit]] — `data/bim_scripts/mitrofmep/Revit-API-scripts/README.md`
+- [[ogr2ifc - docs - ogr2ifc - docs - ogr2ifc]] — `data/bim_scripts/Robinini/ogr2ifc/docs/README.md`
+- [[open-ideas - StROBe - open-ideas - StROBe - StROBe]] — `data/bim_scripts/open-ideas/StROBe/README.md`
+- [[openBES-ecosystem - OpenBES-py - openBES-ecosystem - OpenBES-py - OpenBES-py]] — `data/bim_scripts/openBES-ecosystem/OpenBES-py/README.md`
+- [[opensourceBIM - python-mvdxml - opensourceBIM - python-mvdxml - Create a new file]] — `data/bim_scripts/opensourceBIM/python-mvdxml/README.md`
+- [[operations]] — `data/bim_scripts/specklesystems/specklepy/docs/specklepy/api/operations.md`
+- [[packages - ifc-ops - packages - ifc-ops - ifc-ops]] — `data/bim_scripts/FelonBall/ifc-live/packages/ifc-ops/README.md`
+- [[packages - ifc-sync-bonsai - packages - ifc-sync-bonsai - ifc-sync-bonsai]] — `data/bim_scripts/FelonBall/ifc-live/packages/ifc-sync-bonsai/README.md`
+- [[packages - ifc-sync-core - packages - ifc-sync-core - ifc-sync-core]] — `data/bim_scripts/FelonBall/ifc-live/packages/ifc-sync-core/README.md`
+- [[packages - ifc-sync-server - packages - ifc-sync-server - ifc-sync-server]] — `data/bim_scripts/FelonBall/ifc-live/packages/ifc-sync-server/README.md`
+- [[pedramnojedehi - eppy-energyplus-workshop - pedramnojedehi - eppy-energyplus-workshop - Eppy EnergyPlus Automa]] — `data/bim_scripts/pedramnojedehi/eppy-energyplus-workshop/README.md`
+- [[polala234 - Revit-door-auto-numbering- - polala234 - Revit-door-auto-numbering- - Revit Door Auto Numbering py]] — `data/bim_scripts/polala234/Revit-door-auto-numbering-/README.md`
+- [[power-theory - powertwin-solver - power-theory - powertwin-solver - PowerTwin Solver v1 2]] — `data/bim_scripts/power-theory/powertwin-solver/README.md`
+- [[procheteau - Dynamo-Delete_Parameters - procheteau - Dynamo-Delete_Parameters - Dynamo- Delete Parameters]] — `data/bim_scripts/procheteau/Dynamo-Delete_Parameters/README.md`
+- [[pull_request_template]] — `data/bim_scripts/specklesystems/specklepy/.github/pull_request_template.md`
+- [[pyRevit 150-Point Model Health Scorer Design Document]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-07-pyrevit-health-scorer-design.md`
+- [[pyRevit BIM Coordinator Toolbar Design Document]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-07-pyrevit-toolbar-design.md`
+- [[pyRevit BIM Coordinator Toolbar Implementation Plan]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-07-pyrevit-toolbar.md`
+- [[pyRevit Model Health Scorer Implementation Plan]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-07-pyrevit-health-scorer.md`
+- [[pyrevit_rocket - ifc_checker - pyrevit_rocket - ifc_checker - ifc_checker]] — `data/bim_scripts/fesworkscience/pyrevit_rocket/ifc_checker/README.md`
+- [[pyrevit_rocket - release_scripts - pyrevit_rocket - release_scripts - readme]] — `data/bim_scripts/fesworkscience/pyrevit_rocket/release_scripts/readme.md`
+- [[pytest_cache - pytest_cache - pytest cache directory]] — `.pytest_cache/README.md`
+- [[python-ifc-blender - docs - Installation]] — `data/bim_scripts/brean/python-ifc-blender/docs/install.md`
+- [[renatogcruz - BIM-Modeling - renatogcruz - BIM-Modeling - BIM-Modeling]] — `data/bim_scripts/renatogcruz/BIM-Modeling/README.md`
+- [[renatogcruz - Data-science-for-architecture - renatogcruz - Data-science-for-architecture - Data Science for A]] — `data/bim_scripts/renatogcruz/Data-science-for-architecture/README.md`
+- [[runner]] — `data/bim_scripts/specklesystems/specklepy/docs/speckle_automate/runner.md`
+- [[satyrVTteam - Revit_python_for_pyRevit - satyrVTteam - Revit_python_for_pyRevit - README]] — `data/bim_scripts/satyrVTteam/Revit_python_for_pyRevit/README.md`
+- [[schema]] — `data/bim_scripts/specklesystems/specklepy/docs/speckle_automate/schema.md`
+- [[serializer]] — `data/bim_scripts/specklesystems/specklepy/docs/specklepy/serialization/serializer.md`
+- [[sharathramkumar - energyplus-python-basic - sharathramkumar - energyplus-python-basic - energyplus-python-basi]] — `data/bim_scripts/sharathramkumar/energyplus-python-basic/README.md`
+- [[shekharkandpal - revit-python-tools - shekharkandpal - revit-python-tools - revit-python-tools]] — `data/bim_scripts/shekharkandpal/revit-python-tools/README.md`
+- [[shri694-Rawal - AI-POWERED-ENERGY-CONSUMPTION-FORECASTING - shri694-Rawal - AI-POWERED-ENERGY-CONSUMPTION-FORE 2]] — `data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/README.md`
+- [[shri694-Rawal - AI-POWERED-ENERGY-CONSUMPTION-FORECASTING - shri694-Rawal - AI-POWERED-ENERGY-CONSUMPTION-FORE]] — `data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/CHANGELOG.md`
+- [[shri694-Rawal - AI-POWERED-ENERGY-CONSUMPTION-FORECASTING - Contributing]] — `data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/CONTRIBUTING.md`
+- [[simon-un - ifc-processing - simon-un - ifc-processing - ifc-processing]] — `data/bim_scripts/simon-un/ifc-processing/README.md`
+- [[soupsieve-2 8 3 dist-info - licenses - soupsieve-2 8 3 dist-info - licenses - LICENSE]] — `scripts/outbound_sales/.venv/lib/python3.14/site-packages/soupsieve-2.8.3.dist-info/licenses/LICENSE.md`
+- [[speckle-automate-qa_qc_workshop - Utilities - speckle-automate-qa_qc_workshop - Utilities - Utilities Director]] — `data/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/Utilities/README.md`
+- [[speckle-automate-qa_qc_workshop - tests - speckle-automate-qa_qc_workshop - tests - Local Testing Guide for Sp]] — `data/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/tests/README.md`
+- [[speckleifc - licenses - speckleifc - licenses - Third-Party Licenses]] — `data/bim_scripts/specklesystems/specklepy/src/speckleifc/licenses/README.md`
+- [[specklepy API Reference]] — `data/bim_scripts/specklesystems/specklepy/docs/index.md`
+- [[specklesystems - speckle-automate-qa_qc_workshop - specklesystems - speckle-automate-qa_qc_workshop - Speckle ]] — `data/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/README.md`
+- [[specklesystems - specklepy - specklesystems - specklepy - Repo structure]] — `data/bim_scripts/specklesystems/specklepy/README.md`
+- [[specklesystems - specklepy - Security Policy]] — `data/bim_scripts/specklesystems/specklepy/SECURITY.md`
+- [[starter_lesson_template]] — `data/starter_plan/lesson_templates/starter_lesson_template.md`
+- [[stefkeB - ifcopenshell_examples - stefkeB - ifcopenshell_examples - IfcOpenShell Examples]] — `data/bim_scripts/stefkeB/ifcopenshell_examples/README.md`
+- [[tbrus - install-ifcopenshell-python - tbrus - install-ifcopenshell-python - Changelog]] — `data/bim_scripts/tbrus/install-ifcopenshell-python/CHANGELOG.md`
+- [[tbrus - install-ifcopenshell-python - tbrus - install-ifcopenshell-python - install-ifcopenshell-python]] — `data/bim_scripts/tbrus/install-ifcopenshell-python/README.md`
+- [[telegram_knowledge_requests]] — `data/team_requests/telegram_knowledge_requests.md`
+- [[thermal-transmittance-workflows - 01_Proprietary workflow - thermal-transmittance-workflows - 01_Proprietary w]] — `data/bim_scripts/lfontanella/thermal-transmittance-workflows/01_Proprietary workflow/README.md`
+- [[thermal-transmittance-workflows - 02_Open source workflow - thermal-transmittance-workflows - 02_Open source w]] — `data/bim_scripts/lfontanella/thermal-transmittance-workflows/02_Open source workflow/README.md`
+- [[tmp Workspace Verification Report]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/tmp-verification-report.md`
+- [[transports]] — `data/bim_scripts/specklesystems/specklepy/docs/specklepy/transports/transports.md`
+- [[valizadehm - Bayesian_calibration - valizadehm - Bayesian_calibration - Bayesian_calibration]] — `data/bim_scripts/valizadehm/Bayesian_calibration/README.md`
+- [[vicquick - ifc2quant - vicquick - ifc2quant - LICENSE]] — `data/bim_scripts/vicquick/ifc2quant/LICENSE.md`
+- [[vicquick - ifc2quant - vicquick - ifc2quant - ifc2quant]] — `data/bim_scripts/vicquick/ifc2quant/README.md`
+- [[viktor-platform - aps-automation-sdk - viktor-platform - aps-automation-sdk - APS Automation SDK]] — `data/bim_scripts/viktor-platform/aps-automation-sdk/README.md`
+- [[viktor-platform - aps-automation-sdk - viktor-platform - aps-automation-sdk - CLAUDE md]] — `data/bim_scripts/viktor-platform/aps-automation-sdk/CLAUDE.md`
+- [[Кодекс поведения]] — `data/bim_scripts/fesworkscience/pyrevit_rocket/CODE_OF_CONDUCT.md`
+- [[Политика безопасности]] — `data/bim_scripts/fesworkscience/pyrevit_rocket/SECURITY.md`
+- [[Руководство по участию в проекте]] — `data/bim_scripts/fesworkscience/pyrevit_rocket/CONTRIBUTING.md`
+- [[화재안전기술기준 NFTC 핵심 요약]] — `data/technical_pdfs/text_knowledge/nftc_fire_safety_standards_summary.md`
+
+## 상위
+
+- [[Global Knowledge Map]]

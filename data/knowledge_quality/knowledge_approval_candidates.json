@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "id": "K20260606150704-001",
+      "status": "pending_owner_approval",
+      "agent": "지식업데이트",
+      "title": "Telegram 더 찾아줘 자동 수집 결과",
+      "content": "원 질문: 간섭검토를 진행할때 고려해야하는 사항에 대해서 공정별로 회피해야하는 기본적인 가이드라인 알려줘\n추가 요청: 추가 설명 없음\n\n자동 수집 결과:\n\n• [Tavily] Tavily AI 요약\n  To avoid interference, construction phases should consider coordination between different trades, review design changes, and manage construction sequences. Key steps include regular meetings, design reviews, and conflict checks between different construction phases.\n  출처: \n\n• [Naver] 시·도 조례에 따른 환경영향평가 안내서\n  위한 기본적인 사항과 환경영향평가 단계에서의 검토 방법· 및 내용 등을 수록하였습니다.... 지침 등을 고려하여 탄력적으로 적용 하는 것이 바람직합니다. 차 / 례 / 제 편 환경영향평가 제도 개요1...\n  출처: https://www.eia-career.or.kr/cmm/fms/FileDown.do?atchFileId=FILE_000000000222221&fileSn=0\n\n• [Naver] CNS TODAY 제1호 정책정보 상세보기\n  종합발전 기본계획 분석 정부는 1980년대부터 항행안전시설 중장기 확충방안 을 수립하는 등의 지속적인 시설확충, 신설계획을 마련... 또한, 일본은 기본적으로 미국의 NextGen 프로젝트, ICAO의 ATM...\n  출처: https://www.molit.go.kr/USR/policyData/m_34681/dtl.jsp?id=3800\n\n• [Naver] 우리나라 수용법제에 대한 법경제학적 검토\n  법경제학적 검토 2013년도 정책연구 보고서 2013년도 정책연구 보고서 우리나라 수용법제에 대한 법경제학적 검토 2013. 12. 공 공 투 자... 법경제학적 검토 KDI 연구진 : 이호준 연구위원 - 연구총괄 홍성필...\n  출처: https://www.kdi.re.kr/file/download?atch_no=DFTQuuN9hKweatdV6kYO1Q%3D%3D\n\n• [Naver] 공정거래법 위반 행위로 받게 되는 제재의 종류 및 내용 1 _ 독과점행위, 불공정거래행위, 부당공동행위, 재판매....\n  보호하는 동시에 국민 경제의 균형 있는 발전을 도모하는 데 목적을 두고 있으며, 독과점화 규제, 불공정 거래 규제, 경쟁 제한 행위의 규제 등 경쟁정책 외 다양한 정책을 두고 있습니다. 관련 법의 위반에 대해서는...\n  출처: https://blog.naver.com/lawfluencer/222663928988\n\n• [Tavily] [PDF] 건설산업 BIM 시행지침 _시공자 편\n  그림 4 BIM 수행계획서 작성 절차 [출처: BEP Guide & Templates – Version 2.2, 2019] 32 건설산업 BIM 시행지침_시공자 편 표 2 BIM 수행계획서 세부구성 항목 예시 구분 내용 BIM 과업 개요 과업의 기본 정보, BIM 목표 및 활용 등에 대한 개요 명시 BIM 업무 범위 계획수립 BIM 업무수행 범위, BIM 업무 일정계획, 작성대상 및 수준 등에 대한 계획 명시 실제 시공 일정과 BIM 검토완료 시기에 대한 구체적 계획 명시 BIM 수행 조직 계획수립 BIM 업무수행 조직 편성, 조직\n  출처: https://damassets.autodesk.net/content/dam/autodesk/www/pdf/construction-bim-implementation-guide-for-operator-final.pdf\n\n• [Tavily] [PDF] 철도 BIM 적용지침 - 빌딩스마트협회\n  [그림 1-1] BIM의 구성 및 활용 철도 BIM 적용지침 - 2 -1.1.2 철도분야 BIM 적용 기대효과 ・철도사업의 특성상 여러 분야의 시설물(노반, 건축, 설비, 궤도, 전차선, 신호통신 등)을 분리하여 단계별 설계 및 시공함에 따라 각 분야 간의 인터페이스 및 간섭사항, 선후 공정관리 등의 세부 검토가 필요하다. [...] ・[표 1-1]와 같이 철도에 BIM(3차원 도면에 설계정보가 포함된 통합모델 기반의 업무방식) 을 도입하게 되면, 전 분야의 시설물 도면을 3차원 모델로 작성하여 직관적인 설계오류 검토 및 타 분야와\n  출처: https://buildingsmart.or.kr/NewsFile/%EC%A7%80%EC%B9%A8/KR/%EB%B6%99%EC%9E%841.%20%EC%B2%A0%EB%8F%84%20BIM%20%EC%A0%81%EC%9A%A9%EC%A7%80%EC%B9%A8.pdf\n\n• [Tavily] 행정규칙 > 건설공사 사업관리방식 검토기준 및 업무수행지침\n  2. 설계조직 간의 조직적 및 기술적 연계성을 확립하고, 필요한 설계정보가 문서화되고 정기적으로 검토되기 위해서 필요한 경우 정기적인 검토회의를 개최해야 하며, 설계조직 간의 체계도를 작성하여 관리\n\n3. 실시설계업무 협조 및 조정\n\n4. 실시설계 업무의 연계성 검토, 발주청 지원\n\n5. 공종 간 간섭사항 검토\n\n② 건설사업관리기술인은 실시설계단계에서 공사비가 타당한 사유로 예산을 초과해야 할 경우, 발주청으로 하여금 설계용역을 중지하거나 진행하면서 총사업비 증액조정업무를 처리하도록 하여야 한다.\n\n③ 건설사업관리기술인은 견적방법 \n  출처: https://www.law.go.kr/LSW//admRulInfoP.do?admRulSeq=2100000256028&chrClsCd=010201\n\n검토 기준: 공식 문서 여부, 최신성, 프로젝트 적용 가능성, 보안/개인정보 포함 여부를 확인한 뒤 표준/교육/FAQ 후보로 승격한다.",
+      "source": "telegram-auto-search:@FreeFilmer (7899169126)",
+      "tags": "telegram,team-request,auto-collect,needs-review",
+      "qa_path": "data/knowledge_base/qa/지식업데이트_QA.md",
+      "assessment": {
+        "ok": true,
+        "reasons": [
+          "자동 수집 완료",
+          "QA 후보 저장",
+          "최고 지배자 승인 대기"
+        ],
+        "top_score": "-"
+      },
+      "created_at": "2026-06-06T15:07:04"
+    },
+    {
+      "id": "K20260606150907-002",
+      "status": "pending_owner_approval",
+      "agent": "Revit_Addin",
+      "title": "Telegram 더 찾아줘 자동 수집 결과",
+      "content": "원 질문: revit 간섭 검토시 고려해야 하는 공종간 회피해야하는 공종에 대한 우선순위 알고 싶어\n추가 요청: 추가 설명 없음\n\n자동 수집 결과:\n\n• [Tavily] Tavily AI 요약\n  To avoid interference in Revit, focus on avoiding conflicts between structural and electrical components. Use Revit's built-in interference check tool to identify and resolve overlaps. Ensure your add-in manifest correctly references necessary DLLs for API integration.\n  출처: \n\n• [Tavily] building revit plug-ins with visual studio: part two | archi-lab\n  So there it is. We have the structure of our plug-in in place. We defined the sequence of how we will create our plug-in using pseudo code, we implemented IExternalCommand with Transaction Attribute and prepared ourselves for potential errors and how to handle them. Now, we just need to add a \\.addi\n  출처: https://archi-lab.net/building-revit-plug-ins-with-visual-studio-part-two\n\n• [Tavily] [PDF] Preparing Apps for the Store: Guidelines\n  Revit goes through the common install folder and parse for Revit apps for the appropriate environments (RuntimeRequirements) 2.\nRevit picks up the location of addin manifest (ModuleName) 3.\nRead .addin manifest and load the app. Revit App Auto Load Flow <?xml version=\"1.0\" encoding=\"utf-8\"?> <Applic\n  출처: https://damassets.autodesk.net/content/dam/autodesk/www/developer-network/app-store/revit/pdf/3%20Autodesk%20Exchange%20Publish%20Revit%20Apps%20-%20Preparing%20Apps%20for%20the%20Store_Guidelines.pdf\n\n• [Tavily] Revit API Docs\n  #### Other Resources\n\n##### Autodesk\n\n Autodesk Developer Network\n 2017: Developer's Guide\n 2016: Developer's Guide\n 2015: Developer's Guide\n 2014: Developer's Guide\n Dynamo Primer - Python\n\n##### Blogs + Resources\n\n ArchiLabs\n ArchiLabs Blog\n ArchiLabs Free Revit Tools\n Building Coder Blog\n Python-\n  출처: https://www.revitapidocs.com\n\n• [Tavily] Practice Revit MEP / 전기 BIM / 간섭 확인하기 및 해결하기 - YouTube\n  Practice Revit MEP / 전기 BIM / 간섭 확인하기 및 해결하기 1. 간섭 확인하기 2. 간섭 해결하기 Music from YouTube Audio Library [Aka YAL] Music\n  출처: https://www.youtube.com/watch?v=Gks4Yw9jXSc\n\n• [Tavily] Revit(기초) 12. 간섭 보고\n  ### Tag\n\nBIM, REVIT, Revit 2022, 레빗, 레빗 2022\n\n### '황 야의 Revit 2022'의 다른글\n\n 이전글Revit(기초) 11. 룸 및 색상 범례\n 현재글Revit(기초) 12. 간섭 보고\n 다음글Revit(기초) 13. 일조 연구 및 보행 시선\n\n### 관련글\n\n Revit(기초) 13. 일조 연구 및 보행 시선 2023.08.28\n Revit(기초) 11. 룸 및 색상 범례 2023.08.20\n Revit(기초) 10. 일람표 작성하기 2023.07.03\n Revit(기초) 09. 치수 및 지\n  출처: https://hwang-ya.tistory.com/entry/Revit%EA%B8%B0%EC%B4%88-12-%EA%B0%84%EC%84%AD-%EB%B3%B4%EA%B3%A0\n\n검토 기준: 공식 문서 여부, 최신성, 프로젝트 적용 가능성, 보안/개인정보 포함 여부를 확인한 뒤 표준/교육/FAQ 후보로 승격한다.",
+      "source": "telegram-auto-search:@FreeFilmer (7899169126)",
+      "tags": "telegram,team-request,auto-collect,needs-review",
+      "qa_path": "data/knowledge_base/qa/Revit_Addin_QA.md",
+      "assessment": {
+        "ok": true,
+        "reasons": [
+          "자동 수집 완료",
+          "QA 후보 저장",
+          "최고 지배자 승인 대기"
+        ],
+        "top_score": "-"
+      },
+      "created_at": "2026-06-06T15:09:07"
+    }
+  ]
+}

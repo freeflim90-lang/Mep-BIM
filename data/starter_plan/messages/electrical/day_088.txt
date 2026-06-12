@@ -1,0 +1,51 @@
+LUA BIM LABS Starter
+Day 88 - Coordination Drawing Package for Electrical — Views and Drawings to Include
+
+1. Why This Matters
+The coordination drawing package translates the 3D BIM model into 2D deliverables that engineers, contractors, and site supervisors can use during construction. An incomplete or poorly structured coordination drawing package means critical information stays locked in the model and does not reach the people who need it on site. Knowing what views and drawings to include is a core BIM delivery skill.
+
+2. Core Concept
+Standard coordination drawing package for electrical — views and drawings to include:
+
+| Drawing Type | Purpose | Key Content |
+|---|---|---|
+| Electrical Services Plan (each floor) | Shows all electrical elements in plan | Cable trays, conduit, DBs, equipment — with system labels |
+| Reflected Ceiling Plan (RCP) | Coordination with ceiling and lighting | Light fitting positions, conduit to fixtures, ceiling grid clearance |
+| Electrical Services Sections | Confirms ceiling zone routing in section | Tray positions, separations, clearances — at congested zones |
+| DB Location Plan | Shows all panel locations on each floor | DB family, panel name label, front clearance zone |
+| Fire-Rated Penetration Schedule | Lists all conduit/tray fire wall penetrations | Sleeve ID, location, conduit size, fire rating, PR status |
+| Clash Report | Documents coordination status | Outstanding clashes, resolved clashes, responsible parties |
+| Panel Schedule Views | Verifies circuit data | Exported from Revit — matches engineering panel schedule |
+| Conduit Routing Details | Complex routing at risers and plant rooms | Section and isometric views at congested conduit banks |
+| Legend Sheet | Defines symbols and system color coding | Tray colors by system, conduit line types, equipment symbols |
+
+View setup standards:
+- Use system-based view filters: color code cable trays by system type (e.g., HV = red, LV = orange, Data = blue, Fire alarm = yellow)
+- Show annotation for all key elements: panel names, tray widths, conduit sizes
+- Include a scale bar and north point on all plan views
+- Section views must show the ceiling structure reference — not floating MEP elements in a void
+
+Drawing set organization:
+- EL-001: Legend and General Notes
+- EL-1XX: Floor plans by level
+- EL-2XX: Sections
+- EL-3XX: Schedules (panels, fire penetrations)
+- EL-4XX: Details (riser, plant room, complex conduit routing)
+
+3. Real Project Lens
+A BIM coordinator prepares the electrical coordination package for a 5-floor office fit-out. She includes: 5 floor plans (one per level), 3 sections through congested ceiling zones, a DB location plan, a fire-rated penetration schedule with 18 entries, and a panel schedule comparison matrix. The site electrician uses the floor plans for installation sequencing and flags one section showing a tray conflict the 3D model missed — caught before installation begins.
+
+4. BIM Check
+- Check: Does the coordination drawing package include a section view for every ceiling zone identified as congested during the clash coordination process?
+- Check: Are all cable trays and conduits annotated with their system type and key dimension (tray width, conduit trade size) on the floor plan views?
+- Check: Is the fire-rated penetration schedule included as a numbered schedule view — not as annotations embedded in floor plan drawings?
+
+5. Common Mistake
+Issuing only plan views and assuming engineers and contractors can interpret all coordination decisions from the plan alone. Congested ceiling zones, HV/LV separation distances, and conduit step-overs are only visible and verifiable in section views — plans alone are insufficient for complex coordination.
+
+6. Today's Action
+For one floor of your project or training model, list every view type you would include in the coordination drawing package. Check it against today's table — are any types missing? Identify one congested ceiling zone that would benefit from a dedicated section view, and set up that section in Revit.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

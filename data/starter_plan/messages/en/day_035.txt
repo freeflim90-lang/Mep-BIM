@@ -1,0 +1,32 @@
+LUA BIM LABS Starter
+Day 35 - Issue Tracking in BIM Projects
+
+1. Why This Matters
+Verbal agreements in meetings disappear — a formal issue tracker turns coordination decisions into documented, assignable, auditable records that protect all parties.
+
+2. Core Concept
+Issue tracking is the process of logging, assigning, and closing coordination problems through a structured system. It is distinct from the clash report — the tracker is a live working document.
+
+Common tools and methods:
+- BIM 360 / ACC Issues: Cloud-based, linked to model elements, visible to all project team members
+- Revit Worksharing Monitor + Comments: Simple in-model notes for small teams
+- Excel-based trackers: Still widely used on projects without a cloud platform
+- Key fields in any tracker: Issue ID, Description, Location (grid/level), Assigned To, Due Date, Status, Resolution Notes, Closed By, Closed Date
+- Status lifecycle: Open to In Progress to Resolved to Verified to Closed
+
+3. Real Project Lens
+On a data center project, the MEP coordinator uses Autodesk Construction Cloud (ACC) Issues. Each clash that requires a trade response is logged as an Issue pinned to the 3D model. The mechanical subcontractor receives an email notification and can mark it "In Progress" from their mobile app on site. The coordinator verifies the fix in the updated model before closing the issue.
+
+4. BIM Check
+- Check: Can you describe the minimum five fields an issue tracker entry should contain?
+- Check: Can you explain the difference between "Resolved" (trade says it's fixed) and "Verified" (coordinator confirmed in model)?
+- Check: Can you identify which issue tracking tool your current project or employer uses?
+
+5. Common Mistake
+Logging issues without assigning a clear owner and due date makes the tracker useless. Every open issue must have a name and a deadline — without both, nothing gets resolved.
+
+6. Today's Action
+Create a simple 6-column issue tracker template in Excel or Google Sheets: Issue ID, Description, Location, Assigned To, Due Date, Status. Add three fictional issues and practice filling out each field.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

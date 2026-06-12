@@ -1,0 +1,67 @@
+LUA BIM LABS Starter
+Day 89 - Electrical Handover Data — What Facilities Management Needs from the Electrical BIM Model
+
+1. Why This Matters
+The BIM model does not end at construction completion — it becomes the starting point for building operations. The Facilities Management (FM) team uses the handover BIM model to plan maintenance, identify equipment, locate panels, and manage the electrical system throughout the building's life. If the handover data is missing or incorrect, the FM team cannot use the model, and the investment in BIM is lost at the moment it should start delivering long-term value.
+
+2. Core Concept
+What FM needs from the electrical BIM model — by element type:
+
+Distribution Boards (Panels):
+- Panel Name, Location (floor, room)
+- Manufacturer and Model Number
+- Voltage, Phase, Incomer Rating (A)
+- Fault Rating (kA)
+- Number of circuits total / spare circuits
+- Installation date
+- Maintenance schedule reference
+- Link to O&M manual (document reference or hyperlink)
+
+Cable Trays and Conduit (major routes):
+- System Type (HV, LV, Data, Fire Alarm)
+- Material and trade size
+- Route description (from/to)
+- Access points for maintenance (pull box locations)
+
+Electrical Equipment (AHU feeders, lift feeders, UPS, etc.):
+- Equipment Name / Tag Number
+- Panel Name and Circuit Number that feeds the equipment
+- Rated Load (kW), Voltage
+- Manufacturer, Model, Serial Number
+- Warranty expiry date
+- Maintenance interval
+- Link to O&M manual
+
+Fire-Rated Penetrations:
+- Sleeve location reference
+- Fire rating achieved
+- Firestop system and manufacturer
+- Test certificate reference
+
+Handover model standards:
+- FM data is typically transferred using COBie (Construction Operations Building Information Exchange) — a spreadsheet format exported from Revit using the COBie extension or a similar tool
+- Alternatively, the client may specify an asset management system (e.g., IBM Maximo, Archibus) and require data in that system's format
+- Confirm the handover data format with the client before populating parameters — different systems require different field names
+
+Common FM requests that the BIM model should be able to answer:
+- "Which breaker on which panel controls the lighting in Room 305?"
+- "Where is the nearest pull box for the Level 6 server room conduit?"
+- "What is the maintenance interval for the UPS on Level 2?"
+
+3. Real Project Lens
+An FM manager receives the electrical BIM model at practical completion. She opens the panel schedule for DB-L3 and finds no Manufacturer or Model Number parameters populated — the model shows the electrical geometry but not the product data. She contacts the BIM coordinator, who discovers that equipment data was never entered during the construction phase. Populating it retrospectively takes three weeks and requires coordination with the contractor — avoidable if the parameter list had been agreed and checked at the LOD 350 submission stage.
+
+4. BIM Check
+- Check: Does every distribution board family in the handover model have Manufacturer, Model Number, and O&M Manual Reference parameters populated?
+- Check: Does every electrical equipment family (AHU feeder, UPS, lift) have Panel Name, Circuit Number, and Rated Load populated — so FM can trace from equipment to breaker?
+- Check: Is a COBie export (or equivalent) generated and validated before the handover model is submitted — confirming all required FM data fields are complete?
+
+5. Common Mistake
+Treating handover data as a task for the end of the project — then discovering that manufacturers, model numbers, and serial numbers were never collected during installation, and the contractor has already demobilized. FM data must be collected progressively during construction and entered into the model as equipment is commissioned.
+
+6. Today's Action
+Write a list of five questions an FM manager might ask about the electrical system on Day 1 of building operations. For each question, identify which BIM parameter would provide the answer. This exercise clarifies exactly which parameters must be populated in the handover model.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,227 @@
+{
+  "version": 2,
+  "product": "LUA BIM LABS Starter Plan",
+  "price": "USD 39 / month",
+  "duration_days": 90,
+  "positioning": "Productized daily MEP BIM education for beginners and early-stage BIM learners.",
+  "quality_standard": "docs/starter_plan_lesson_quality_standard.md",
+  "lessons": [
+    {
+      "day": 1,
+      "phase": "MEP BIM orientation",
+      "topic": "What MEP BIM Coordination Really Means",
+      "learning_outcome": "Open any MEP model or sample drawing and choose one crowded ceiling area. Write down three things that could become a coordination issue even if there is no hard clash."
+    },
+    {
+      "day": 2,
+      "phase": "Revit MEP basics",
+      "topic": "Why System Names Matter in Revit MEP",
+      "learning_outcome": "Pick five MEP elements in a sample model. Record category, system name, size, and level for each one."
+    },
+    {
+      "day": 3,
+      "phase": "Coordination basics",
+      "topic": "Clearance Is Not the Same as Clash",
+      "learning_outcome": "Choose one pipe, duct, or cable tray route. Describe the extra space needed around it for installation and maintenance."
+    },
+    {
+      "day": 4,
+      "phase": "Drawing literacy",
+      "topic": "Reading MEP Drawings Before Modeling",
+      "learning_outcome": "Take one MEP drawing sheet and identify three pieces of information that cannot be fully understood from plan view alone."
+    },
+    {
+      "day": 5,
+      "phase": "Model QA basics",
+      "topic": "The Beginner's Model QA Mindset",
+      "learning_outcome": "Create a three-column checklist: Geometry, Data, Coordination. Add three checks under each column."
+    },
+    {
+      "day": 6,
+      "phase": "HVAC BIM",
+      "topic": "Supply Air, Return Air, Exhaust Air, and Outdoor Air",
+      "learning_outcome": "List four air systems and write one coordination concern for each."
+    },
+    {
+      "day": 7,
+      "phase": "Piping BIM",
+      "topic": "Supply and Return Piping Logic",
+      "learning_outcome": "Sketch one simple supply-return loop and mark equipment, valves, and flow direction."
+    },
+    {
+      "day": 8,
+      "phase": "Electrical BIM",
+      "topic": "Cable Tray Coordination Basics",
+      "learning_outcome": "Choose one tray route and identify where a bend, drop, or access issue could happen."
+    },
+    {
+      "day": 9,
+      "phase": "Fire protection BIM",
+      "topic": "Sprinkler Coordination Is More Than Head Layout",
+      "learning_outcome": "Take a small ceiling area and list every ceiling device that must coordinate with sprinkler heads."
+    },
+    {
+      "day": 10,
+      "phase": "Sanitary and plumbing BIM",
+      "topic": "Why Drainage Slope Changes Coordination",
+      "learning_outcome": "Pick one drainage route and calculate whether the end elevation will be lower than the start elevation."
+    },
+    {
+      "day": 11,
+      "phase": "Revit workflow",
+      "topic": "Levels, Views, and Why They Affect MEP Modeling",
+      "learning_outcome": "Select one MEP element and record its level, offset, and visibility in plan, section, and 3D."
+    },
+    {
+      "day": 12,
+      "phase": "Revit workflow",
+      "topic": "Families, Types, and Instances",
+      "learning_outcome": "Select one MEP family and identify three type parameters and three instance parameters."
+    },
+    {
+      "day": 13,
+      "phase": "Coordination workflow",
+      "topic": "Using Sections to Understand Congested Areas",
+      "learning_outcome": "Create or imagine one section through a crowded ceiling zone and list the systems from top to bottom."
+    },
+    {
+      "day": 14,
+      "phase": "Navisworks basics",
+      "topic": "Clash Results Need Classification",
+      "learning_outcome": "Look at a sample clash list and create three groups: critical, repeated, and low-priority."
+    },
+    {
+      "day": 15,
+      "phase": "Midpoint review",
+      "topic": "The First 15-Day MEP BIM Review",
+      "learning_outcome": "Write a 10-line personal MEP BIM checklist based on Days 1-14."
+    },
+    {
+      "day": 16,
+      "phase": "Model data",
+      "topic": "Parameters Are Coordination Data",
+      "learning_outcome": "Choose one element category and list five parameters that would matter for coordination or reporting."
+    },
+    {
+      "day": 17,
+      "phase": "Model data",
+      "topic": "Schedules as a QA Tool",
+      "learning_outcome": "Create a sample schedule idea for one category and decide which columns would help QA."
+    },
+    {
+      "day": 18,
+      "phase": "Shared coordinates",
+      "topic": "Why Coordinates Matter Before Clash Review",
+      "learning_outcome": "Write down three alignment checks you would perform before a coordination review."
+    },
+    {
+      "day": 19,
+      "phase": "Worksets and collaboration",
+      "topic": "Worksets and Model Sharing Discipline",
+      "learning_outcome": "List the workset types you would expect in a simple MEP coordination model."
+    },
+    {
+      "day": 20,
+      "phase": "Issue management",
+      "topic": "Writing Clear BIM Coordination Issues",
+      "learning_outcome": "Rewrite a vague issue into a clear coordination issue using location, systems, impact, and action."
+    },
+    {
+      "day": 21,
+      "phase": "Site-readiness thinking",
+      "topic": "Installability as a BIM Thinking Habit",
+      "learning_outcome": "Choose one routed element and describe the installation sequence in three simple steps."
+    },
+    {
+      "day": 22,
+      "phase": "Site-readiness thinking",
+      "topic": "Maintenance Access in MEP BIM",
+      "learning_outcome": "Make a list of five MEP elements that usually require maintenance access."
+    },
+    {
+      "day": 23,
+      "phase": "MEP rooms",
+      "topic": "Mechanical Room Coordination Basics",
+      "learning_outcome": "Choose one mechanical equipment item and list the access zones needed around it."
+    },
+    {
+      "day": 24,
+      "phase": "Vertical coordination",
+      "topic": "Shaft Coordination Basics",
+      "learning_outcome": "Describe how you would compare a shaft on three different floors."
+    },
+    {
+      "day": 25,
+      "phase": "Ceiling coordination",
+      "topic": "Ceiling Device Coordination",
+      "learning_outcome": "Choose one small ceiling grid and list all devices that need coordinated positions."
+    },
+    {
+      "day": 26,
+      "phase": "Automation awareness",
+      "topic": "Automation Should Reduce Repetition, Not Judgment",
+      "learning_outcome": "Name one BIM task you would automate and one check you would perform after automation."
+    },
+    {
+      "day": 27,
+      "phase": "Reporting",
+      "topic": "Turning Model Review Into a Useful Report",
+      "learning_outcome": "Design a five-column issue report template for beginner coordination review."
+    },
+    {
+      "day": 28,
+      "phase": "Professional habit",
+      "topic": "Asking Better BIM Questions",
+      "learning_outcome": "Rewrite one broad BIM question into a specific question with context and desired decision."
+    },
+    {
+      "day": 29,
+      "phase": "Career habit",
+      "topic": "Building a Personal BIM Learning Log",
+      "learning_outcome": "Create a simple five-line BIM learning log template and fill it with one recent lesson."
+    },
+    {
+      "day": 30,
+      "phase": "Monthly review",
+      "topic": "Your First Month Starter Review",
+      "learning_outcome": "Write your own 30-day MEP BIM improvement plan with three focus areas: tool skill, system understanding, and coordination judgment."
+    }
+  ],
+  "structure": {
+    "foundation": {
+      "days": "1-60",
+      "description": "8-track MEP BIM Foundation common to all disciplines"
+    },
+    "discipline_deep_dive": {
+      "days": "61-90",
+      "description": "30-day discipline-specific specialist track"
+    },
+    "disciplines": [
+      "hvac",
+      "piping",
+      "plumbing",
+      "fire",
+      "electrical"
+    ]
+  },
+  "weekly_quiz": "BIM Check Friday quiz sent every Friday (self-assessment)",
+  "reference_cards": {
+    "count": 8,
+    "delivery": "Sent at track completion milestones",
+    "milestones": [
+      7,
+      14,
+      21,
+      28,
+      38,
+      47,
+      54,
+      60
+    ]
+  },
+  "milestones": {
+    "day_30": "Mid-foundation message",
+    "day_60": "Foundation completion message + reference card 8",
+    "day_90": "Program completion message"
+  }
+}

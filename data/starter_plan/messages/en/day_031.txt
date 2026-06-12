@@ -1,0 +1,33 @@
+LUA BIM LABS Starter
+Day 31 - Navisworks Basics
+
+1. Why This Matters
+Navisworks is the industry-standard tool for clash detection and coordination review — knowing how to navigate it is a baseline skill expected on any BIM coordination project.
+
+2. Core Concept
+Navisworks is a model aggregation and review tool. It lets you combine models from multiple disciplines (HVAC, plumbing, structure, architecture) into one federated model for clash checking and visual review.
+
+Key elements:
+- Append vs. Merge: Append adds models as separate items; Merge combines them into one file
+- NWC files: Navisworks Cache files exported from Revit — lightweight and fast to load
+- NWD files: Packaged project files that bundle all appended models
+- Selection Tree: Left-side panel showing the file/model hierarchy
+- Clash Detective: The module where clash tests are run and results are reviewed
+- Viewpoint: A saved camera position used to document and revisit specific clash locations
+
+3. Real Project Lens
+On a mid-size commercial project, the MEP coordinator receives NWC exports from the mechanical, electrical, and plumbing modelers every Friday. These are appended into a single NWD file in Navisworks, and the Clash Detective test is re-run to capture new conflicts introduced that week.
+
+4. BIM Check
+- Check: Can you open a NWC file in Navisworks and see the model geometry?
+- Check: Can you identify the Selection Tree panel and expand it to see individual model files?
+- Check: Can you locate the Clash Detective module in the Home tab ribbon?
+
+5. Common Mistake
+Beginners often open only one discipline's model and run clashes against itself. Clash detection is only useful when two or more models from different disciplines are appended together.
+
+6. Today's Action
+Open Navisworks (or Navisworks Freedom if you don't have a license), load a sample NWC file, and practice saving a viewpoint at one location in the model.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

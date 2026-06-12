@@ -1,0 +1,28 @@
+LUA BIM LABS Starter
+Day 72 - Condensate Drain Piping — Slope and Connection
+
+1. Why This Matters
+Condensate drainage is one of the most overlooked HVAC coordination issues. A poorly modeled drain pan connection or missing slope causes pooling, overflow, and water damage — all avoidable with correct BIM coordination.
+
+2. Core Concept
+- Every FCU, AHU, and chilled beam produces condensate that must drain by gravity to the nearest sanitary stack
+- The condensate drain pipe must slope continuously — minimum 1:50 — from the equipment outlet to the stack
+- In Revit: connect the FCU drain connector to a sloped pipe routed to the plumbing stack
+- Coordination check: does the drain route conflict with ductwork or cable tray below the ceiling void?
+- Drain pan invert level must be at the correct height — not connected symbolically at the same elevation as the outlet
+
+3. Real Project Lens
+On a hotel project, 14 FCU condensate drains were modeled horizontally with no slope. The plumbing engineer flagged the error before the model was issued. Re-routing with correct slope added 120mm of vertical drop per connection — a small change that would have caused ceiling water damage if undetected.
+
+4. BIM Check
+- Check: the condensate drain pipe has a continuous downward slope from FCU outlet to the sanitary stack
+- Check: no ductwork or cable tray blocks the drain pipe route below the FCU
+- Check: the FCU Revit family has a drain connector at the correct height relative to the drain pan
+
+5. Common Mistake
+Beginners connect condensate drains at the same elevation as the FCU outlet, treating it as a flat pipe rather than a sloped gravity drain.
+
+6. Today's Action
+Sketch the condensate path for one FCU: start point (drain pan), slope direction, and discharge point to the plumbing stack.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

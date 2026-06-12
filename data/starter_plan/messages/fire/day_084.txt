@@ -1,0 +1,46 @@
+LUA BIM LABS Starter
+Day 84 - As-Installed vs. As-Designed Verification
+
+1. Why This Matters
+The fire protection BIM model starts as an as-designed representation. During construction, pipes are rerouted, heads are relocated, and additional fittings are added to solve on-site problems. If these changes are not captured in the model, the as-built model is wrong — and the building owner, fire authority, and facility manager are handed documentation that does not reflect what was actually installed.
+
+2. Core Concept
+The Gap Between As-Designed and As-Installed:
+- As-designed: the model at the time of construction issue — represents the engineer's design intent
+- As-installed (as-built): the model updated to reflect what was physically installed on site
+- The gap between the two accumulates through RFIs, site instructions, and coordination changes
+
+The RFI Process for Fire Protection:
+- RFI (Request for Information): raised by the installer when on-site conditions differ from the model
+- Common fire protection RFIs: head relocated due to an obstruction discovered on site, branch line rerouted, pipe size changed due to availability, additional fittings added
+- The BIM modeler's role: receive the RFI, update the model to reflect the approved change, document the change in the model (using a revision tag or parameter)
+
+Model Update Requirements per RFI:
+1. Move or add the affected element (head, pipe, fitting, sleeve)
+2. Update pipe length and diameter if changed
+3. Update any affected parameters (Mark, System Name, Coverage Area for relocated heads)
+4. If the change affects coverage or hydraulics — flag to fire engineer for sign-off before closing the RFI in the model
+
+As-Built Delivery Requirements:
+- Final model must reflect all approved RFI changes before handover
+- Each changed element should reference the RFI number that authorised the change (use the Comments parameter)
+- The fire engineer must sign off the as-built hydraulic calculation if critical path changes were made
+- An as-built sprinkler layout drawing (from the model) is typically required for the fire authority record
+
+3. Real Project Lens
+During Level 5 installation, the sprinkler contractor raises 8 RFIs: 5 head relocations (duct obstruction found on site), 2 branch line reroutes (beam position differed from structural drawings), and 1 pipe size change (DN65 not available, DN80 substituted). The BIM modeler processes each RFI within 48 hours, updating the model and tagging each changed element with the RFI number. Before handover, the updated model is issued as the as-built record set.
+
+4. BIM Check
+- Check: All approved fire protection RFIs have been incorporated into the model before the as-built model is issued
+- Check: Relocated heads have had their coverage areas rechecked — a head moved 500 mm may now leave a gap or create a spacing violation
+- Check: RFI numbers are recorded in the Comments or Description parameter of each modified element
+
+5. Common Mistake
+Closing an RFI on the project management platform without updating the BIM model. The paper record shows the RFI was resolved, but the model still shows the old position. The as-built model is wrong, and the fire authority record is incorrect — a compliance risk that may surface during a future inspection.
+
+6. Today's Action
+Identify one RFI from your current or sample fire protection project. Open the Revit model and verify whether the RFI change has been incorporated. If it has, confirm the RFI number is recorded in the element's parameter. If it has not, note what needs to be updated.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

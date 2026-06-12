@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.luabimlab.cloudflare-revit-tunnel</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/opt/homebrew/bin/cloudflared</string>
+    <string>tunnel</string>
+    <string>run</string>
+    <string>--token</string>
+    <string>eyJhIjoiMTFkMGM3ZmVjNDBiNDk2MDMyODllMTBjYWE1YzkxYTgiLCJ0IjoiZjA2ZDNkNGMtOTIxZC00YjliLWEwOTgtNGFhZjE1MmU4N2JmIiwicyI6Ik1XUTRNall4WVRJdFltUmxZeTAwWXpOakxUa3lNamd0WkRWall6RmtZVGs0TVdGbSJ9</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/choejeong-yeon/LUA BIM LABS</string>
+
+  <key>KeepAlive</key>
+  <true/>
+
+  <key>StandardOutPath</key>
+  <string>/Users/choejeong-yeon/LUA BIM LABS/logs/cloudflared-revit-api.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/Users/choejeong-yeon/LUA BIM LABS/logs/cloudflared-revit-api.err.log</string>
+</dict>
+</plist>

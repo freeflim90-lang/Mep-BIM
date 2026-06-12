@@ -1,0 +1,38 @@
+LUA BIM LABS Starter
+Day 68 - Sprinkler Head Spacing Rules
+
+1. Why This Matters
+Incorrect sprinkler head spacing is one of the most frequently cited fire protection BIM errors. Heads placed too far apart leave unprotected zones; heads placed too close waste material and distort hydraulic calculations. Getting spacing right in the model is the foundation of a compliant fire protection layout.
+
+2. Core Concept
+Sprinkler head spacing is governed by hazard classification and ceiling type. The two key limits are minimum spacing and maximum spacing.
+
+| Hazard Classification | Max Coverage Area per Head | Max Spacing Between Heads |
+|---|---|---|
+| Light Hazard | 18.6 m² (200 ft²) | 4.6 m (15 ft) |
+| Ordinary Hazard (Group 1 & 2) | 12.1 m² (130 ft²) | 4.6 m (15 ft) |
+| Extra Hazard (Group 1 & 2) | 9.3 m² (100 ft²) | 3.7 m (12 ft) |
+
+- Minimum spacing between heads: typically 1.8 m (6 ft) — prevents water from cooling adjacent sprinkler heads before activation
+- Maximum distance from a wall: half the maximum spacing between heads (e.g., for 4.6 m spacing, wall offset ≤ 2.3 m)
+- Hazard classification is assigned per room or zone — not per floor. A corridor may be Light Hazard while adjacent kitchen is Ordinary Hazard Group 2.
+- In Revit: place sprinkler families on the correct ceiling level. Verify the coverage area parameter matches the hazard class on the design schedule.
+- Square layout vs. staggered layout: both are acceptable. Staggered layout can improve coverage in irregular rooms.
+
+3. Real Project Lens
+An open-plan office floor is classified as Light Hazard. The modeler places heads at 4.5 m centres with a 2.2 m wall offset. Total coverage per head is 17.5 m² — within the 18.6 m² limit. The kitchen on the same floor is reclassified as Ordinary Hazard Group 1 and heads are respaced at 3.5 m centres, reducing coverage per head to 12.25 m².
+
+4. BIM Check
+- Check: Maximum coverage area per head does not exceed the hazard classification limit for each zone
+- Check: Head-to-wall distance does not exceed half the maximum head-to-head spacing
+- Check: Minimum 1.8 m spacing is maintained between all adjacent sprinkler heads
+
+5. Common Mistake
+Using a single spacing rule for the entire floor without checking zone-by-zone hazard classification. A kitchen, server room, or storage area requires a stricter classification than the surrounding office — applying office Light Hazard spacing to those spaces creates an unprotected condition.
+
+6. Today's Action
+On a floor plan of your current or sample project, identify at least two zones with different hazard classifications. Calculate the maximum allowed coverage area per head for each zone and verify whether the current head layout meets the limit.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

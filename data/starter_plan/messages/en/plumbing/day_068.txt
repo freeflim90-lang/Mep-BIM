@@ -1,0 +1,40 @@
+LUA BIM LABS Starter
+Day 68 - Sanitary Drainage System Overview
+
+1. Why This Matters
+The sanitary drainage system is the backbone of every plumbing model. If you do not understand how gravity drives flow from fixture to stack to building drain, you will make sizing and routing errors that affect every downstream trade. Getting this right early saves coordination hours later.
+
+2. Core Concept
+Sanitary drainage uses gravity, not pressure. Flow moves from high to low.
+
+Key components in order:
+- Fixture trap: seals the fixture outlet, prevents sewer gas entry
+- Branch drain: horizontal pipe serving one or more fixtures, runs to a stack
+- Soil/waste stack: vertical pipe collecting from multiple branch drains on each floor
+- Building drain: lowest horizontal collector pipe inside the building
+- Building sewer: exits the building and connects to the municipal sewer
+
+Stack logic in BIM:
+- Each stack is modeled as a continuous vertical pipe element
+- Branch drains connect horizontally to the stack at each floor level
+- Stacks are typically located in wet walls or plumbing chases
+- Offset connections at the base of the stack must account for sweep radius
+
+In Revit, stacks appear as vertical pipe runs. Branch connections use standard fittings (wye, sanitary tee) that represent the actual flow direction. The system type should be set to Sanitary.
+
+3. Real Project Lens
+On a 15-story residential tower, the plumbing engineer assigns three soil stacks — one per bathroom cluster per floor. The BIM modeler sets up each stack as a vertical pipe run from the top floor down to the basement building drain. Branch drains from toilets, basins, and showers connect to the stack at each level using properly oriented wye fittings. During coordination, the structural team checks where each stack passes through slabs and confirms core locations. Getting the stack positions correct in the model from Day 1 avoids costly slab re-coring later.
+
+4. BIM Check
+- Check: All branch drains are connected to a stack, not left with open connectors
+- Check: Stack pipe elements are assigned to the Sanitary system type in Revit
+- Check: Branch-to-stack connections use directional fittings (wye or sanitary tee), not straight tees
+
+5. Common Mistake
+Beginners often model branch drains as horizontal pipes that simply touch the stack without a proper fitting connection. This looks correct visually but breaks the system connectivity and produces wrong flow calculations.
+
+6. Today's Action
+Open any Revit plumbing sample file or a blank project. Place a vertical pipe representing a soil stack spanning three floors. Add two branch drain connections using wye fittings at different floor levels. Assign the Sanitary system type and check that the system browser shows a connected tree.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

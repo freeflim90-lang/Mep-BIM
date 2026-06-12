@@ -1,0 +1,54 @@
+LUA BIM LABS Starter
+Day 88 - Piping Coordination Drawing Package
+
+1. Why This Matters
+The piping BIM model must be converted into a set of coordination drawings before it can be used for construction installation. Contractors, structural engineers, and site managers work from drawings — not from Revit. A complete piping coordination drawing package ensures that every pipe, valve, equipment connection, and support location is communicated clearly, dimensioned accurately, and issued with the correct revision status. Producing this package correctly is one of the defining deliverables of the piping BIM role.
+
+2. Core Concept
+A piping coordination drawing package for construction issue typically includes:
+
+Plan drawings (one per floor or zone):
+- Piping layout plan: all pipe segments with system labels (CHW, HHW, CWS, CWR, etc.), nominal diameters, and flow direction arrows
+- Equipment plan: all mechanical equipment shown at actual size with connection points tagged
+- Valve and isolation plan: valve tags referenced to the valve schedule
+
+Section and elevation drawings:
+- Mechanical room sections: minimum two orthogonal sections through each plant room at 1:20, showing pipe runs, equipment, clearances, and support locations
+- Congested ceiling zone sections: wherever three or more services share a zone, a section at 1:20 with all services dimensioned from a common datum
+- Riser elevation: a vertical elevation through each piping riser shaft showing all pipe sizes and connection levels
+
+Detail drawings:
+- Typical connection details: pump connection detail, expansion vessel connection, pressure relief valve discharge
+- Hanger and support details: standard hanger types used on the project with spacing table
+- Flexible connection detail: showing isolating valves, flexible connector, and branch arrangement
+
+Annotation standards for piping drawings:
+- Pipe sizes as DNxx or NPS xx (confirm with project BIM execution plan)
+- System identified by color code or reference tag
+- Flow direction shown on all supply and return mains
+- Centerline elevation noted at changes of direction and at equipment connections
+- All valves tagged matching the P&ID
+
+Drawing issue process:
+1. Generate all views from the Revit model — 2D drafting outside the model is not acceptable for LOD 350 issue
+2. Conduct an internal discipline review against the coordination drawing checklist
+3. Issue for multi-discipline review — minimum one week for other disciplines to respond
+4. Incorporate comments and re-issue with revision cloud and revision number
+5. Issue for construction with project title block, date, and authorized signature
+
+3. Real Project Lens
+On a pharmaceutical manufacturing facility, the piping coordination drawing package was issued without mechanical room sections. The contractor's piping foreman submitted 22 RFIs in the first month of mechanical room installation, all requesting vertical clearance and support information that should have been in section drawings. The engineer's site representative noted that every one of the 22 RFIs could have been answered by four section drawings that were in the model but never extracted and issued. The package was supplemented within two weeks, but the RFI cycle delayed the installation program by three weeks.
+
+4. BIM Check
+- Check: Plan drawings cover every level and zone of the piping scope, with pipe sizes, system labels, and flow direction arrows annotated
+- Check: Mechanical room sections are included at a minimum of 1:20 scale for every plant room, showing all pipe runs with centerline elevations
+- Check: All valve tags on coordination drawings match the valve tag numbers on the current P&ID revision
+
+5. Common Mistake
+A common mistake is issuing plans without an accompanying valve and isolation schedule. On site, the installation team needs to know not just where valves are, but what they isolate, what type they are, and whether they require an access panel. A plan drawing without this context leaves the contractor making decisions that should have been made during coordination.
+
+6. Today's Action
+List the drawing types required for one mechanical room in your piping coordination package. For each type, confirm whether the Revit view exists and is annotated. Identify the first view that is missing or incomplete. Set up that view in Revit today with the correct scale, crop region, and at least two dimension strings.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

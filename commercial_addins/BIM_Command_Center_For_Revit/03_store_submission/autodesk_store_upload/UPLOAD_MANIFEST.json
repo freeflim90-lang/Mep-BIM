@@ -1,0 +1,43 @@
+{
+  "created_at": "2026-05-19T15:23:50",
+  "product": "BIM Command Center for Revit",
+  "upload_mode": "manual_autodesk_publisher_center",
+  "docs": {
+    "STORE_FORM_FIELD_VALUES.md": "included",
+    "BIM_COMMAND_CENTER_STORE_LISTING_DRAFT.md": "included",
+    "SUBSCRIPTION_PRICING.md": "included",
+    "PRIVACY_POLICY_DRAFT.md": "included",
+    "EULA_DRAFT.md": "included",
+    "USER_GUIDE_DRAFT.md": "included",
+    "SUPPORT_RUNBOOK.md": "included",
+    "SUPPORT_EMAIL_TEMPLATES.md": "included",
+    "RELEASE_NOTES_V1_0.md": "included",
+    "QA_SMOKE_TEST_PLAN.md": "included",
+    "SCREENSHOT_VIDEO_SHOTLIST.md": "included",
+    "ENTITLEMENT_API_IMPLEMENTATION.md": "included",
+    "SUBSCRIPTION_ACCOUNT_PAYMENT_RISK.md": "included",
+    "AUTODESK_STORE_ACTUAL_WORKFLOW.md": "included",
+    "UPLOAD_AUTOMATION_POLICY.md": "included",
+    "commercial:04_qa_evidence/PHASE1_DRY_RUN_TEST_CHECKLIST.md": "included",
+    "commercial:08_feature_backlog/BIMLIZE_RIBBON_FEATURE_MATRIX.md": "included",
+    "commercial:08_feature_backlog/PHASE1_SIMPLE_FEATURES.md": "included",
+    "commercial:08_feature_backlog/BIMIZE_FEATURE_INTERNALIZATION.md": "included"
+  },
+  "assets": {},
+  "missing": [
+    "installer",
+    "icon",
+    "screenshots",
+    "video"
+  ],
+  "manual_steps": [
+    "Log in to Autodesk Publisher Center.",
+    "Create or open the BIM Command Center product draft.",
+    "Select Desktop based app, Windows, English.",
+    "Select Subscription only after confirming price.",
+    "Upload installer/package manually.",
+    "Upload icon, screenshots and video URL manually.",
+    "Preview Store page.",
+    "Submit manually."
+  ]
+}

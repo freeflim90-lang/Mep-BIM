@@ -1,0 +1,28 @@
+LUA BIM LABS Starter
+Day 82 - Piping Coordination with HVAC and Structure
+
+1. Why This Matters
+Piping systems must be coordinated against HVAC ductwork, structural elements, and other services before construction. In dense ceiling voids, this coordination determines which trade routes first and which trades must adapt.
+
+2. Core Concept
+- Routing priority in ceiling voids: gravity-fed systems (drainage, condensate) are routed first because they cannot change elevation; HVAC ducts are routed next because they are largest; then piping and cable trays
+- HVAC to piping coordination: chilled water pipes connecting to AHU must reach the correct connection face without crossing the HVAC supply or return duct route
+- Structure to piping: all beam web penetrations for pipes require structural engineer approval — pipe size and location must be submitted before structural steelwork is fabricated
+- Slab penetrations: riser pipes through structural slabs require sleeves to be cast in or cored — submit penetration schedule before concrete is poured
+- Combined BIM coordination: run clash tests against the structural model, HVAC model, and electrical model before issuing the piping model
+
+3. Real Project Lens
+On a commercial office project, the piping team routed chilled water mains through three structural beam webs without submitting penetration requests. The structural engineer rejected all three penetrations — the beam webs in those locations contained critical reinforcing. The piping team had to re-route 24 metres of main pipe above the beams, losing 150mm of ceiling void and creating new conflicts with HVAC.
+
+4. BIM Check
+- Check: all piping beam web penetration requests have been submitted to and approved by the structural engineer before the coordination model is issued
+- Check: chilled water pipes connecting to AHUs do not cross or block the HVAC supply and return duct main routes
+- Check: a clash test against the current structural model has been run and all critical clashes are resolved or flagged
+
+5. Common Mistake
+Beginners run clash tests against one or two trades and assume the rest will sort out during construction. A coordinated piping model must be checked against structure, HVAC, and electrical before submission.
+
+6. Today's Action
+List 3 piping-to-structure coordination actions that must happen before a piping model can be issued for construction.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,33 @@
+LUA BIM LABS Starter
+Day 34 - Coordination Meetings Basics
+
+1. Why This Matters
+The coordination meeting is where clashes get resolved — or get delayed. Knowing how these meetings work helps you contribute effectively rather than sit silently through them.
+
+2. Core Concept
+MEP coordination meetings bring together representatives from each trade and discipline to review clash results, assign responsibility, and agree on resolution paths. They follow a predictable structure.
+
+Typical meeting flow:
+- Pre-meeting prep: Coordinator filters clash list to only open/active items for that week's zone
+- Screen share: Clash Detective or a pre-exported report is displayed for the group
+- Clash-by-clash review: Each open item is shown in 3D; trades discuss root cause
+- Resolution decision: One of three outcomes — Fix (trade commits to reroute), Hold (pending design info), or Accept (no physical change needed, but documented)
+- Action assignment: Name + deadline added to each item in the issue tracker
+- Meeting minutes: Written record sent within 24 hours listing all decisions
+
+3. Real Project Lens
+On a hospital MEP package, the weekly coordination meeting covers Level 5 only. The mechanical sub commits to dropping a 600mm duct by 150mm to clear a structural beam. The plumbing sub agrees to shift a waste stack 200mm east. Both decisions are logged in the issue tracker with a two-week resolution deadline before the next review.
+
+4. BIM Check
+- Check: Can you describe the difference between a "Fix," "Hold," and "Accept" resolution outcome?
+- Check: Can you identify who typically chairs an MEP coordination meeting on a large project?
+- Check: Can you explain why meeting minutes matter beyond just documentation?
+
+5. Common Mistake
+Attending coordination meetings without a prepared clash list for your discipline means you cannot speak to your own items. Always know which clashes belong to your trade before entering the room.
+
+6. Today's Action
+Write a short outline (5-6 bullet points) of how you would prepare for your first coordination meeting as a junior MEP BIM modeler — what would you check and bring?
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

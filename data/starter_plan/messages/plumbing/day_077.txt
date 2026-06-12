@@ -1,0 +1,45 @@
+LUA BIM LABS Starter
+Day 77 - Washbasin and Sink Connections
+
+1. Why This Matters
+Washbasins and sinks are the most common fixtures in any building. Their waste connections — sizing, trap type, and routing to the waste stack — must be modeled correctly in BIM to ensure the drainage system works, and to give the contractor the information needed to install pipework above ceilings and within vanity units. Poor waste connection modeling is a frequent cause of above-ceiling clashes in toilet and kitchen zones.
+
+2. Core Concept
+Washbasins and sinks discharge through a waste pipe (not a soil pipe), since they carry only grey water without solids from WC discharge.
+
+Typical connection requirements:
+- Washbasin: DN40 waste pipe minimum; P-trap integral or separate
+- Kitchen sink: DN50 waste pipe minimum; P-trap required; grease trap may be required for commercial kitchens
+- Maximum horizontal distance from trap to stack (unvented): 1.7 m for DN40; 3.0 m for DN50
+- Horizontal waste pipe slope: 1:80 to 1:40 (1:40 preferred for kitchen waste due to grease)
+
+P-trap essentials:
+- The P-trap retains a water seal (minimum 75 mm depth) that blocks sewer gas from entering the room
+- The P-trap is modeled as a fittings family in Revit
+- Where P-trap depth conflicts with the vanity unit or cabinet, use a bottle trap or a shallow P-trap — both are available as Revit families
+- The trap seal is lost if: (a) there is no vent, (b) the pipe run is too long, or (c) the slope is incorrect
+
+BIM modeling steps:
+1. Place washbasin or sink families at architectural fixture locations
+2. Connect a horizontal waste pipe from the trap outlet
+3. Set slope to 1:40 or per project standard
+4. Route to the waste stack using a branch fitting
+5. Set the pipe system to Sanitary — Waste
+6. Verify horizontal run length is within the venting limit for the pipe size
+
+3. Real Project Lens
+On a hotel fit-out, the architect specified a vanity unit with a very shallow cabinet depth. The standard P-trap extended below the vanity bottom rail and conflicted with the cabinet frame. The BIM model revealed the conflict during an architectural-MEP review. The plumbing designer substituted a bottle trap, which fit within the cabinet. The revision was made in the BIM model three weeks before installation — no site rework needed.
+
+4. BIM Check
+- Check: All washbasins and sinks have a P-trap family modeled at the outlet
+- Check: Horizontal waste pipe runs from trap to stack are within the maximum unvented length for the pipe diameter
+- Check: Waste pipe system classification is set to Sanitary — Waste (not Soil) for all basin and sink branches
+
+5. Common Mistake
+A common mistake is routing the waste pipe from a basin directly to the soil stack instead of the waste stack. In a combined stack system this may be acceptable, but in a separate system it is not — soil and waste must remain separated until they join at the inspection chamber below ground. Misrouting creates cross-contamination risk and fails inspection.
+
+6. Today's Action
+In Revit, model a washbasin with a DN40 waste connection, including a P-trap family. Set the horizontal branch slope to 1:40 and route it to a waste stack. Measure the horizontal run from trap outlet to stack. If it exceeds 1.7 m for a DN40 pipe, note what change would be needed — either vent the fixture or move the stack.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "IFC",
+    "OpenBIM",
+    "Fire Protection BIM",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "IFC for Fire Protection: Exporting Sprinkler and Alarm Systems",
+  "slug": "ifc-for-fire-protection-exporting-sprinkler-and-alarm-systems",
+  "content": "<p>Fire protection systems — sprinklers, alarm devices, suppression equipment, and escape routes — require specific IFC treatment for regulatory submission, coordination, and FM handover. The mapping from Revit fire protection families to IFC classes is not automatic.</p>\n<h2>Why This Matters</h2>\n<p>Fire protection IFC submissions are reviewed by authorities having jurisdiction for coverage, clearances, and device positioning. Incorrect IFC classification (a sprinkler exported as a generic proxy) prevents automated checking tools from validating coverage requirements.</p>\n<h2>Practical Guidance</h2>\n<p><strong>Sprinkler Head Classification:</strong> Revit sprinkler families must be mapped to IfcFireSuppressionTerminal in IFC export. The default mapping often produces IfcBuildingElementProxy. Configure the category mapping in the IFC Export Setup before the first submission.</p>\n<p><strong>Alarm Device Classification:</strong> Smoke detectors, heat detectors, and manual call points map to IfcAlarm. Alarm panels map to IfcController or IfcDistributionControlElement depending on the receiving software's interpretation.</p>\n<p><strong>Fire Compartment Data:</strong> IFC IfcZone elements can represent fire compartments. Compartment boundaries, fire ratings, and travel distances should be included in the IFC submission for regulatory review tools that perform automated escape route analysis.</p>\n<p><strong>Suppression System Properties:</strong> Suppression system IFC files should include property sets for coverage area, activation temperature, response classification (standard, quick, extended), and water demand. These properties are required by some regulatory checking tools.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Configure sprinkler category to IfcFireSuppressionTerminal mapping in IFC Export Setup</li>\n<li>Define fire compartment zones in Revit before IFC export</li>\n<li>Include suppression system property sets in export configuration</li>\n<li>Validate IFC against fire protection code checking tool before submission</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>Fire protection IFC accuracy can affect regulatory approval timelines — get the element classification right before the first submission.</p>"
+}

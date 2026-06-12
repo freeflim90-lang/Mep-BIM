@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "BIM",
+    "BIM Coordination",
+    "Multi-Discipline",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "How to Build a BIM Quality Assurance Process from Design to Handover",
+  "slug": "how-to-build-a-bim-quality-assurance-process-from-design-to-handover",
+  "content": "<p>BIM quality assurance is the continuous process of checking that models meet project standards for geometry, data, and coordination quality throughout the project lifecycle. Without a systematic QA process, quality checking becomes a handover sprint that discovers problems too late to fix efficiently.</p>\n<h2>Why This Matters</h2>\n<p>BIM QA problems discovered at handover require model corrections, resubmissions, and programme extensions that are more expensive than the same problems caught during design. A staged QA process — checking at each design milestone — catches problems when they are cheap to fix.</p>\n<h2>Practical Guidance</h2>\n<p><strong>Stage Gates:</strong> Define BIM quality gate checks at each project stage: Concept (levels and grids), Schematic Design (room data, element classification), Detailed Design (clash-free, LOD 300 complete), Construction Issue (as-built verified), Handover (FM data complete). Each gate has a specific checklist.</p>\n<p><strong>Automated Checking Tools:</strong> Use Solibri Model Checker, Revit warnings, or custom Dynamo scripts to automate recurring checks. Automated checks are consistent and fast. Manual checking is selective and slow. Reserve manual review for decisions that require engineering judgement.</p>\n<p><strong>Discipline Self-Certification:</strong> Require each discipline to self-certify model quality before issuing for coordination. The self-certification checklist includes: no critical warnings, all elements on correct levels, required parameters populated, IFC export validated. Self-certification shifts quality ownership to the modeler.</p>\n<p><strong>QA Record:</strong> Keep a QA record for each issued model version: who checked, which checklist was used, what was found, what was resolved. This record protects the project from disputed liability if model quality causes a site problem.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Define BIM quality gate checklists for each project stage</li>\n<li>Automate recurring checks with Solibri or Dynamo</li>\n<li>Require discipline self-certification before model issue</li>\n<li>Maintain a QA record for each issued model version</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>BIM quality assurance is continuous, not terminal — build checks into every model issue cycle, not just the final handover.</p>"
+}

@@ -1,0 +1,28 @@
+LUA BIM LABS Starter
+Day 83 - Piping As-Built Requirements
+
+1. Why This Matters
+As-built piping records are critical for facilities management — valve locations, pipe diameters, and system boundaries must be accurate or maintenance and emergency isolation become guesswork.
+
+2. Core Concept
+- Common as-built changes in piping: pipe routes modified to avoid late-identified structural conflicts, valve locations adjusted for access, additional isolation valves added, pipe sizes changed due to late engineering revisions
+- Most critical as-built data for piping: isolation valve locations (for emergency and maintenance isolation), pipe diameters (for flow calculations), pressure test zone boundaries
+- Update process: record all RFI-approved changes in the BIM model during construction; do not batch-update at project completion
+- Riser as-built accuracy: riser pipes in vertical shafts are difficult to access after construction — ensure the as-built model records the correct sleeve location and pipe offset from the shaft wall
+- LOD 500: as-built piping models at LOD 500 are used as the basis for building management system integration and facilities management handover
+
+3. Real Project Lens
+On a district cooling project, the as-built piping model was issued 6 months after practical completion, reconstructed from marked-up drawings. When a chilled water isolation valve was needed for emergency maintenance 18 months later, the facilities team found that 4 valves shown in the as-built model were at different locations in the ceiling void. The building had to remain partially uncooled for 2 days while valves were located physically.
+
+4. BIM Check
+- Check: a process is in place to update the BIM model from approved RFIs and site instructions as they occur — not as a batch at the end
+- Check: isolation valve locations in the as-built model are verified against physical installed positions before the model is handed over
+- Check: riser pipe locations in shafts are recorded with correct offsets from the shaft walls in the as-built model
+
+5. Common Mistake
+Beginners treat as-built updating as a single end-of-project activity. By then, the details of each change have been forgotten and the update is based on incomplete records.
+
+6. Today's Action
+Think of one piping change that commonly occurs on site. Write down what information you would need from the site team to update the BIM model accurately.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

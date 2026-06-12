@@ -1,0 +1,77 @@
+{
+  "version": "2.0",
+  "lastUpdated": "2026-04-21T01:23:34.109Z",
+  "activeFeatures": [
+    "RevitLOAChat"
+  ],
+  "primaryFeature": "RevitLOAChat",
+  "features": {
+    "RevitLOAChat": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-04-19T23:10:00.895Z",
+        "lastUpdated": "2026-04-21T01:23:34.109Z"
+      },
+      "lastFile": "C:\\Users\\user\\Desktop\\개발 소스\\RevitLOAChat\\ApiClient.cs"
+    }
+  },
+  "pipeline": {
+    "currentPhase": 1,
+    "level": "Dynamic",
+    "phaseHistory": []
+  },
+  "session": {
+    "startedAt": "2026-04-19T23:09:18.873Z",
+    "onboardingCompleted": false,
+    "lastActivity": "2026-04-21T01:23:34.109Z"
+  },
+  "history": [
+    {
+      "timestamp": "2026-04-19T23:10:00.895Z",
+      "feature": "RevitLOAChat",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-04-19T23:10:04.187Z",
+      "feature": "RevitLOAChat",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-04-19T23:10:52.526Z",
+      "feature": "RevitLOAChat",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-04-19T23:13:28.012Z",
+      "feature": "RevitLOAChat",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-04-21T01:05:46.183Z",
+      "feature": "RevitLOAChat",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-04-21T01:20:21.628Z",
+      "feature": "RevitLOAChat",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-04-21T01:23:34.109Z",
+      "feature": "RevitLOAChat",
+      "phase": "do",
+      "action": "updated"
+    }
+  ]
+}

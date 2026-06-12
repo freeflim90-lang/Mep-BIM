@@ -1,0 +1,46 @@
+LUA BIM LABS Starter
+Day 83 - Pressure and Flow at the Most Remote Head — What Modelers Need to Know
+
+1. Why This Matters
+The most remote head in a fire protection system is the hardest point for water to reach — it has the longest pipe run, the most friction losses, and the greatest elevation change. The hydraulic calculation is designed around this head. As a modeler, you must understand this concept because any change to the routing between the supply and the most remote head directly affects system performance.
+
+2. Core Concept
+The Most Remote Head (Design Point):
+- The fire engineer identifies the "design area" — typically the group of simultaneously operating heads in the worst-case location, usually the farthest cluster from the riser
+- The hydraulic calculation confirms that the system delivers the required minimum pressure and flow at this design point
+- Typical minimum operating pressure at a sprinkler head: 0.5–1.0 bar (50–100 kPa) depending on head type and standard
+- Typical minimum flow per head: 57–115 L/min for pendant heads in standard hazard applications
+
+What Increases Pressure Loss (and therefore affects the most remote head):
+- Longer pipe runs (more friction loss)
+- More fittings (each fitting has an equivalent pipe length)
+- Smaller pipe diameter (much higher friction loss — varies with diameter to the 5th power)
+- Higher elevation of the head relative to the pump (static pressure loss: ~0.1 bar per metre of height)
+
+What Modelers Must Protect:
+- The pipe route from the riser to the design area must not be lengthened without notification
+- The pipe sizes on this critical path must not be reduced
+- The number of fittings on this path must not be increased without notification
+- If coordination forces a re-route of this critical path, flag it immediately — it is not the same as re-routing a branch serving one head
+
+Identifying the Most Remote Head in the Model:
+- Ask the fire engineer for the design area drawing or hydraulic calculation sketch
+- In Revit, create a view filter that highlights the pipes on the critical path — this helps you know which pipes require special care during coordination
+
+3. Real Project Lens
+A coordination re-route moves the cross main around a large duct penetration, adding 4 m of pipe and 2 additional elbows on the critical path to the most remote head. The modeler flags this immediately: "Cross main re-route at Grid D-8, Level 2 — critical path to design area extended by 4 m and 2 × 90° elbows. Fire engineer review required." The engineer recalculates and requests an upsized cross main from DN100 to DN125 on this section.
+
+4. BIM Check
+- Check: The fire engineer's hydraulic calculation or design area sketch has been obtained and the critical path pipes are identified in the model
+- Check: Any coordination change that lengthens pipe, adds fittings, or reduces pipe diameter on the critical path has been flagged to the fire engineer
+- Check: Elevation changes of pipes on the critical path are accurately modeled — no assumed flat runs where a floor-to-floor drop exists
+
+5. Common Mistake
+Treating all fire protection pipes as equally flexible for coordination. A branch line serving one head can be re-routed with minimal hydraulic impact. The cross main on the critical path to the remote design area cannot be re-routed freely — every metre and fitting matters.
+
+6. Today's Action
+Ask your fire engineer (or review the hydraulic calculation on a sample project) to identify the most remote head / design area. Mark the critical path in your Revit model using a colour-coded pipe filter. Write a note on any coordination constraint on this path.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

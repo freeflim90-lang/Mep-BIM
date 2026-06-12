@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 4 - Reading MEP Drawings Before Modeling
+
+1. Why This Matters
+Modeling without reading the drawings first often creates rework. BIM modelers need to understand system intent before placing elements in Revit.
+
+2. Core Concept
+MEP drawings communicate system type, route, size, elevation, equipment connection, flow direction, control intent, and installation constraints.
+
+3. Real Project Lens
+A pipe route may be drawn simply in plan view, but the riser diagram, equipment schedule, and section detail may reveal the correct connection or elevation.
+
+4. BIM Check
+- Read the plan, section, riser, and schedule together.
+- Confirm system abbreviation and drawing legend.
+- Check whether equipment connections match the modeled route.
+
+5. Common Mistake
+Beginners often model from one plan view only, missing elevation, slope, system connection, and equipment relationship.
+
+6. Today's Action
+Take one MEP drawing sheet and identify three pieces of information that cannot be fully understood from plan view alone.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "IFC",
+    "OpenBIM",
+    "Revit",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "Common IFC Export Errors from Revit and How to Fix Them",
+  "slug": "common-ifc-export-errors-from-revit-and-how-to-fix-them",
+  "content": "<p>Revit IFC exports consistently produce a set of known errors that affect coordination quality and downstream use. Understanding these errors and how to fix them prevents repeated validation failures and the frustration of receiving parties.</p>\n<h2>Why This Matters</h2>\n<p>The same IFC export errors appear on project after project because they come from default Revit settings, not project-specific modeling mistakes. Knowing the common errors and their fixes turns IFC export from a source of anxiety into a reliable delivery step.</p>\n<h2>Practical Guidance</h2>\n<p><strong>Wrong Element Classification:</strong> The most common error. Revit architectural Generic Models export as IfcBuildingElementProxy rather than the correct IFC class. Fix: Review the IFC Export Setup category mapping and add explicit mappings for custom Revit families.</p>\n<p><strong>Missing Spatial Containment:</strong> Elements placed outside a room boundary or on non-building storeys export without IfcBuildingStorey containment. Fix: Place all elements within valid level and room boundaries. Run a Revit warning check for elements at wrong levels before export.</p>\n<p><strong>Coordinate Origin Mismatch:</strong> Exporting with Internal Origin instead of Shared Coordinates places the model at a different location than other discipline IFC files. Fix: Always export using Shared Coordinates. Confirm the shared coordinates are set from the site survey point.</p>\n<p><strong>Duplicate GUIDs:</strong> Copying elements between Revit files can produce duplicate GlobalIDs. Fix: After model merges or copy operations, run a GlobalID uniqueness check using IfcOpenShell or Solibri before export.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Review and update IFC Export Setup category mapping at project start</li>\n<li>Check for level-assignment warnings before export</li>\n<li>Always export using Shared Coordinates</li>\n<li>Run GlobalID uniqueness check after any model merge or copy operation</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>IFC export errors are predictable and fixable — build the fixes into the export procedure, not the resubmission cycle.</p>"
+}

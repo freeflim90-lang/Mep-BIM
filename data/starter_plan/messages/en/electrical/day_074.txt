@@ -1,0 +1,47 @@
+LUA BIM LABS Starter
+Day 74 - Conduit Sleeve and Fire-Rated Wall Penetrations — Firestop Requirements
+
+1. Why This Matters
+Every conduit that passes through a fire-rated wall or floor must be fire-stopped. Without proper fire-stopping, a fire can travel through the conduit opening and spread between compartments. In the BIM model, missing fire-rated sleeve information means the coordination model is incomplete and fire safety compliance cannot be verified.
+
+2. Core Concept
+Fire wall penetration requirements for conduit:
+
+| Element | Requirement |
+|---|---|
+| Sleeve material | Galvanized steel sleeve, sized to allow firestop material fill around conduit |
+| Annular gap | The gap between conduit OD and sleeve ID must be filled with approved intumescent or mineral wool firestop material |
+| Fire rating match | The firestop system must achieve the same fire rating as the wall (e.g., 2-hour wall needs 2-hour rated firestop) |
+| Documentation | Manufacturer's listed system number (e.g., 3M FS-195 Series) must be specified in the model or on the drawing |
+| Metallic conduit advantage | Steel conduit through a fire-rated wall can often use a simpler firestop (intumescent putty or wrap) versus PVC conduit which requires an intumescent collar to close as the PVC melts |
+
+BIM modeling requirements:
+- Model every fire-rated wall penetration as a sleeve family — not just a conduit passing through a wall with no annotation
+- The sleeve family should include the sleeve OD, wall thickness, and fire rating parameter
+- Coordinate sleeve placement with the structural and architectural models — sleeve locations affect reinforcement layout
+- Group all fire-rated penetrations in a dedicated penetration schedule view for review and approval
+- Typically, each fire-rated penetration requires a Penetration Request (PR) or Fire Stopping Request (FSR) submitted to the structural engineer
+
+Common fire-rated wall types requiring conduit firestop:
+- Basement/plant room walls (typically 2-hour rated)
+- Stairwell and lift shaft enclosures
+- Plant room floors (conduit rising between floors)
+- Compartment walls between tenancies
+
+3. Real Project Lens
+A modeler routes 24 conduits through a 2-hour fire-rated basement wall to the electrical intake room. She models each penetration as a fire sleeve family with a "2HR" fire rating parameter. She generates a penetration schedule showing all 24 sleeves, their sizes, and ratings. The structural engineer reviews the schedule and requests that four sleeves be relocated to avoid clash with a shear wall reinforcement cage — caught before concrete is poured.
+
+4. BIM Check
+- Check: Is every conduit that passes through a fire-rated wall or floor modeled with a fire sleeve family — not just a conduit family passing through the wall?
+- Check: Does the fire rating parameter on each sleeve family match the fire rating of the wall or floor it penetrates?
+- Check: Is a fire-rated penetration schedule generated from the model and included in the coordination submission?
+
+5. Common Mistake
+Modeling conduit through a fire-rated wall without any sleeve or firestop annotation, on the assumption that "the contractor will handle it on site." This results in unapproved penetrations, costly firestop rectification work, and potential failure of fire-rating certification.
+
+6. Today's Action
+On a project or training model, identify one conduit that passes through a wall tagged as fire-rated. Confirm whether a sleeve family is placed at that penetration. If not, note what information you would need to add the sleeve correctly: sleeve OD, wall thickness, fire rating, and firestop system reference.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

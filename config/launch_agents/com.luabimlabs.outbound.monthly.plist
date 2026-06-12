@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.luabimlabs.outbound.monthly</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/choejeong-yeon/LUA BIM LABS/scripts/outbound_sales/run_monthly.sh</string>
+    </array>
+
+    <!-- 매월 1일 오전 9시 실행 -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Day</key>
+        <integer>1</integer>
+        <key>Hour</key>
+        <integer>9</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/Users/choejeong-yeon/LUA BIM LABS/scripts/outbound_sales/data/logs/launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/choejeong-yeon/LUA BIM LABS/scripts/outbound_sales/data/logs/launchd_err.log</string>
+
+    <key>RunAtLoad</key>
+    <false/>
+</dict>
+</plist>

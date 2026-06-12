@@ -1,0 +1,36 @@
+LUA BIM LABS Starter
+Day 49 - Reading a Coordination Drawing on Site
+
+**1. Why This Matters**
+A coordination drawing is the most common BIM output that site installers use — being able to read one confidently is a practical skill that makes you directly useful on site.
+
+**2. Core Concept**
+An MEP coordination drawing is a plan-view (or section-view) drawing extracted from the federated model. It shows all MEP systems within a defined zone at a defined level, overlaid on structural grid references.
+
+Key elements to read:
+- **Title block**: Project name, drawing number, revision, zone, level, issue date — always check these first to confirm you have the right drawing
+- **Grid lines**: Alphanumeric grid (e.g., A–H, 1–10) from the structural model — used to locate elements in the building
+- **System color code**: Each MEP system is represented by a different color or line weight — the legend is in the drawing margin
+- **Elevation annotations**: Numbers such as "IL 2750 FFL" mean invert level 2750mm above finished floor level — critical for setting out pipes
+- **Service identification tags**: Labels like "HWS-D150" mean Heating Hot Water Supply, Diameter 150mm
+- **Section reference markers**: Arrows or cut lines pointing to a section drawing that shows vertical relationships between services
+
+**3. Real Project Lens**
+A plumbing site supervisor reads a Level 4 coordination drawing and identifies that a 100mm soil stack is annotated at "CL 2900 FFL" — centerline 2900mm above finished floor. They mark the wall bracket position accordingly. The section reference on the drawing shows a second drawing that reveals the stack must drop 200mm to clear a structural tie at Grid D3.
+
+**4. BIM Check**
+- Check: Can you find the revision number and issue date on a coordination drawing before using it on site?
+- Check: Can you read an elevation annotation (e.g., "IL 2650 FFL") and explain what it means in physical terms?
+- Check: Can you use the grid reference system to locate a specific element on site from the drawing?
+
+**5. Common Mistake**
+Working from a coordination drawing without checking the revision. An earlier revision may show routing that was later changed — always confirm you have the current issue before committing to installation.
+
+**6. Today's Action**
+Find a sample MEP coordination drawing online and identify: (1) the title block revision, (2) one elevation annotation, (3) one system tag and what it likely means, and (4) one grid intersection referenced in the drawing.
+
+---
+
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

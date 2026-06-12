@@ -1,0 +1,28 @@
+LUA BIM LABS Starter
+Day 86 - Top 5 Common HVAC BIM Errors
+
+1. Why This Matters
+Learning from common errors is faster than discovering them on your own project. These five HVAC BIM errors appear repeatedly on real projects and most are completely avoidable.
+
+2. Core Concept
+- Error 1: Insulation clearance not modeled — duct looks fine but insulation was not included, causing post-coordination clashes
+- Error 2: Wrong system assignment — duct modeled as exhaust is assigned to supply system, causing incorrect schedule data and missed connections in the system inspector
+- Error 3: VAV box and diffuser misaligned with ceiling grid — placed for coordination convenience, not aligned to the tile pattern
+- Error 4: Missing fire dampers — duct passes through fire-rated walls without damper families; only discovered during fire authority review
+- Error 5: Equipment at design dimensions, not submittal dimensions — AHU or FCU modeled at the engineer's assumed size, not the approved submittal size, causing installation fit problems
+
+3. Real Project Lens
+A review of 10 HVAC models on commercial and healthcare projects found Error 4 (missing fire dampers) to be the most costly. Fire authority reviews returned models with 20 to 60 missing dampers, each requiring a model revision, coordination review, and drawing re-issue.
+
+4. BIM Check
+- Check: duct insulation clearance is included as part of the duct geometry for all specified insulated ductwork
+- Check: every duct in the model is assigned to a named Revit MEP system, visible and correct in the system inspector
+- Check: fire damper families are placed at every fire-rated boundary penetration before the coordination model is issued
+
+5. Common Mistake
+Beginners focus on modeling speed and miss small details like system assignment and insulation. These details take minutes to fix during modeling but hours to correct after coordination is finalized.
+
+6. Today's Action
+Review one of the five error types in any HVAC model you have access to. Can you find an example, or confirm it is not present?
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

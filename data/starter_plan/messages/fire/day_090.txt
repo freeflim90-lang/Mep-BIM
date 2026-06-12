@@ -1,0 +1,60 @@
+LUA BIM LABS Starter
+Day 90 - 90-Day Completion — Fire Protection Deep Dive Wrap
+
+1. Why This Matters
+You have completed 90 days of MEP BIM education. Day 90 is not just the end of the Fire Protection track — it is the completion of the full Starter Plan curriculum. The knowledge you have built over these 90 days — from reading your first BIM drawings to delivering a fully verified fire protection model — is the foundation of a professional MEP BIM career. Take a moment to recognise what you have covered and what it means for your work going forward.
+
+2. Core Concept
+Fire Protection Deep Dive — Full Track Summary (Days 61–90)
+
+| Week | Days | Theme | Key Outcome |
+|---|---|---|---|
+| Week 1 | 61–67 | Fire Protection Fundamentals | System types, head basics, pipe hierarchy, hose reels, hydraulics, ceiling zone clashes |
+| Week 2 | 68–70 | Head Placement | Hazard classification spacing rules, obstruction shadow zones, coverage area verification |
+| Week 3 | 71–75 | Pipe Routing | Cross main/branch sizing, standpipe coverage, hydraulic impact of rerouting, tree/loop/grid systems |
+| Week 4 | 76–80 | Clash Patterns | Head vs. duct/tray, branch vs. structure, clear zones, fire-rated penetrations and firestop |
+| Week 5 | 81–85 | System Verification | Coverage verification, dead zone remediation, remote head hydraulics, as-installed vs. as-designed |
+| Week 6 | 86–90 | Delivery Standards | LOD 350 geometry and data, parameter checklist, coordination drawing package, FM handover data |
+
+The 20-Point Fire Protection BIM Checklist (Your Career Tool)
+1. Correct system type per zone (wet / dry / pre-action)
+2. Hazard classification per zone documented
+3. Max coverage area per head verified against hazard class limit
+4. Min/max head spacing verified
+5. Wall offset ≤ half of max head-to-head spacing
+6. 3D obstruction check completed (beams, ducts, trays)
+7. Head-to-ceiling distance within specified range
+8. Pipe sizes match the fire engineer's sizing schedule
+9. Hose reel coverage verified by path distance (not straight-line)
+10. Any pipe re-routes flagged to fire engineer
+11. System configuration (tree/loop/grid) correctly modeled — loops closed
+12. Head vs. duct/tray clashes resolved — no shortened drops
+13. Structural beam penetrations approved and documented
+14. Slab sleeve requests issued before structural drawings are finalised
+15. 450 mm clear zone below deflector plate verified
+16. All fire-rated penetrations have correctly sized firestop sleeves
+17. Coverage verified by distribution method — not head count alone
+18. Dead zones identified and remediated or documented
+19. Critical path pipes identified and protected from unnotified re-routing
+20. All RFIs incorporated into the model before handover issue
+
+3. Real Project Lens
+A junior fire protection BIM coordinator who started this program on Day 1 is now the person their team calls when a coordination issue involves fire protection. They recognise the difference between a Type 1 and Type 2 head-vs-duct clash. They know what to flag to the fire engineer and what they can resolve independently. They deliver models that FM teams can use without calling back for explanations. That practitioner is you — 90 days later.
+
+4. BIM Check
+- Check: Your personal fire protection BIM checklist has all 20 items — and you know the reasoning behind each one
+- Check: You can explain to a colleague why fire protection BIM has a higher standard than HVAC or electrical BIM coordination
+- Check: You have at least one floor of fire protection modeled or reviewed that you can point to as your hands-on learning record
+
+5. Common Mistake
+Treating Day 90 as the finish line. It is not — it is the starting point for competence. The 90 days gave you the framework and the vocabulary. Real expertise comes from applying these rules across multiple projects, encountering the edge cases, making mistakes, and solving them. Keep the 20-point checklist. Use it on every project.
+
+6. Today's Action
+Complete your personal fire protection BIM checklist. Print it, save it, or add it to your BIM toolkit folder. Write one sentence for each of the 20 items explaining why it matters — in your own words. Then share it with a colleague or post it somewhere you will see it before your next model issue.
+
+---
+Congratulations on completing the LUA BIM LABS 90-Day Starter Plan. You have covered the full arc of MEP BIM — from reading drawings and understanding system fundamentals, through coordination, clash resolution, and system verification, to LOD 350 delivery and FM handover. Keep building. The field needs people who know what they are doing.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

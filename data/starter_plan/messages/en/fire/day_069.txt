@@ -1,0 +1,33 @@
+LUA BIM LABS Starter
+Day 69 - Coverage Area and Obstruction Rules
+
+1. Why This Matters
+An obstruction between a sprinkler head and the floor can block the water spray pattern, creating an unprotected shadow zone. BIM models that ignore obstructions — beams, ductwork, shelving, cable trays — will produce layouts that look correct in plan view but fail in 3D coordination review and real fire events.
+
+2. Core Concept
+Obstructions within the coverage area of a sprinkler head require additional heads or head relocation. The key rules are:
+
+- Obstruction Rule: if a solid obstruction is wider than 300 mm (12 in) and located between the sprinkler head and the floor, a secondary head must be placed below the obstruction.
+- The "3× Rule" (NFPA 13 reference): an obstruction creates a shadow zone equal to approximately 3 times the depth of the obstruction. Example: a 400 mm deep beam creates a ~1,200 mm shadow zone below it.
+- Beam pockets in concrete slab: if the beam pocket depth exceeds 300 mm, a head must be provided in the pocket.
+- Duct and tray obstruction: continuous ductwork or cable tray that runs across a head's coverage area must be evaluated. A head may need to be relocated to the side of the duct or dropped below it.
+- Distance from ceiling: heads must typically be within 25–300 mm (1–12 in) of the ceiling depending on standard and head type. Pendant vs. upright placement rules differ.
+- In Revit: use section views and clash detection to identify obstruction conflicts. Never rely on plan view alone.
+
+3. Real Project Lens
+A row of 600 mm deep concrete beams runs across a parking level at 3.0 m spacing. The modeler runs a section cut and confirms that beam depth exceeds 300 mm. Additional upright heads are placed in each beam bay pointing upward toward the underside of the slab, supplementing the pendant heads in the clear zones. The engineer confirms coverage before finalising the layout.
+
+4. BIM Check
+- Check: All obstructions wider than 300 mm within the head coverage radius have been flagged and reviewed
+- Check: Section cuts have been checked at every beam bay and duct crossing to verify spray shadow zones
+- Check: Head-to-ceiling distance is within the specified range (pendant heads not recessed beyond allowable depth)
+
+5. Common Mistake
+Checking head placement only in plan view and missing deep beams or large ductwork. Plan view shows the head coordinate but not the 3D spray cone. Obstructions are always a 3D problem — always use sections and 3D views.
+
+6. Today's Action
+Take any one room in your current or sample model. In Revit, cut a section across the head placement zone and check for any obstruction deeper than 300 mm. Note whether a supplemental head would be needed based on the 3× shadow rule.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

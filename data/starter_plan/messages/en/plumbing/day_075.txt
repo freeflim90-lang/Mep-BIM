@@ -1,0 +1,42 @@
+LUA BIM LABS Starter
+Day 75 - Week 3 Review — Vertical Riser Summary
+
+1. Why This Matters
+Vertical risers are the spine of a multi-storey plumbing system. Days 71–75 covered the full lifecycle of a riser — from initial modeling and sizing, through the sleeve request process and shaft coordination, to the final vent-through-roof detail. This review consolidates those lessons so you can apply them as a connected workflow, not isolated steps.
+
+2. Core Concept
+Summary of Days 71–75:
+
+| Day | Topic | Key Action |
+|-----|-------|------------|
+| 71 | Vertical riser basics | Model soil/waste/vent stacks as continuous pipe segments within a shaft |
+| 72 | Sleeve request process | Issue slab penetration schedule with coordinates before structural reinforcement is finalized |
+| 73 | Riser shaft coordination | Produce a 1:20 shaft section; separate plumbing and electrical; confirm 50 mm clearances |
+| 74 | Stack vent and vent through roof | Extend stacks above roof; confirm termination location against HVAC intakes and roof plan |
+| 75 | Week review | This lesson |
+
+Riser coordination workflow in sequence:
+1. Design engineer issues riser layout — confirm stack diameters and fixture unit counts
+2. BIM modeler places risers in the shared shaft and produces a shaft section
+3. Multi-discipline review confirms clearances and resolves overlaps
+4. Sleeve request package prepared — coordinates, sizes, fire stopping requirements
+5. Sleeve request issued to structural team before reinforcement cutoff date
+6. Vent terminations confirmed against architectural roof plan
+7. Coordination drawing issued for construction
+
+3. Real Project Lens
+A junior plumbing BIM modeler was given responsibility for the riser shaft coordination on a 12-storey residential block. By following the workflow above — starting with shaft sections, then sleeve requests, then roof vent confirmation — she issued a clean coordination drawing package on the first attempt. The senior coordinator noted that in her previous project without this workflow, the same task had required three revision cycles.
+
+4. BIM Check
+- Check: All risers in the project are modeled as continuous connected segments from basement to roof
+- Check: A sleeve schedule has been produced from the Revit model and reviewed against structural drawings
+- Check: Vent terminations above roof are confirmed against the architectural roof plan with clearances documented
+
+5. Common Mistake
+A common mistake is treating the sleeve request and the riser shaft coordination as separate tasks done by different team members without a shared review. When these tasks are not linked, sleeve requests are sometimes issued before shaft conflicts are resolved — meaning the sleeves are cast in the wrong location.
+
+6. Today's Action
+Sketch or model a riser coordination workflow checklist for a hypothetical 5-storey office building. Include: stack sizes, shaft section step, sleeve request step, vent extension step. Assign a responsible discipline and a timing requirement to each step. This is the format used in real BIM execution plans.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

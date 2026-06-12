@@ -1,0 +1,44 @@
+LUA BIM LABS Starter
+Day 67 - Week 1 Piping Review
+
+1. Why This Matters
+The fundamentals of piping BIM — system logic, pump configuration, valve placement, pipe sizing, room layout, and clash management — form the foundation for all piping work in Month 3. Gaps here will slow down every lesson from Day 68 onward.
+
+2. Core Concept
+Week 1 Piping Summary
+
+| Day | Topic | Key Point |
+|---|---|---|
+| 61 | CHW System Overview | CHWS at 6–7°C, CHWR at 12–13°C. Separate piping systems in Revit |
+| 62 | Pump Configuration | Straight pipe before suction. All accessories modeled |
+| 63 | Valves and Accessories | Isolation, check, strainer, balancing — all at specific locations |
+| 64 | Pipe Sizing | Match engineer's schedule. Velocity 1.5–2.5 m/s for chilled water |
+| 65 | Mechanical Room Layout | Clearances, installation path, equipment sequencing |
+| 66 | Piping Clashes | Include insulation OD in clash checks. Reroute before cutting structure |
+
+Critical Rules — Piping BIM
+- Supply and return are always separate piping systems — never combine
+- Every pump needs: strainer, flexible connectors, isolation valves, check valve on discharge
+- Model insulation thickness before running clearance checks
+- Pipe sizes in Revit must match the engineer's schedule exactly
+- Mechanical rooms need installation access paths — model them, do not assume
+
+3. Real Project Lens
+A piping BIM modeler given a new Level 2 mechanical room task uses the Week 1 checklist: (1) assign pipe systems correctly, (2) model pump accessories in sequence, (3) check sizes against schedule, (4) model clearance zones, (5) run clash check, (6) submit clash report. Total time from model open to clash report submission: 4 hours for an experienced modeler — 8 hours for a beginner still consolidating these skills.
+
+4. BIM Check
+- Check: Are all piping systems named correctly and assigned to every pipe in the model?
+- Check: Is the mechanical room layout reviewed for installation sequence and clearance?
+- Check: Has the insulated pipe OD been used in all clash checks?
+
+5. Common Mistake
+Rushing to Day 68 content without reviewing the six fundamentals from this week — the most common outcome is a piping model that looks complete but fails the coordination model review because of system naming errors and missing accessories.
+
+6. Today's Action
+Review your own pipe model (or a sample). Run a quick self-check against the six topics above. Write down the one area where you feel least confident. Focus next week's practice on that area.
+
+---
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

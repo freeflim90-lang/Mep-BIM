@@ -1,0 +1,13 @@
+LUA BIM LABS — BIM Check Friday ✓
+Week 9 | Site-Readiness Thinking — Part 1
+
+Q1. What does "BIM goes to site" mean, and name three outputs the construction team needs from the BIM model?
+Q2. On a coordination drawing, what does "IL 2650 FFL" mean and why does it matter for installation?
+Q3. What is the typical MEP installation sequence in a ceiling void — name at least five steps in order?
+Q4. What is an RFI, and what triggers one during MEP installation?
+Q5. Why should clash detection be completed before spool drawings are produced from a BIM model?
+
+Think through each one.
+No grades — this tests your own understanding.
+
+Next week: Site-Readiness Thinking check (Part 2).

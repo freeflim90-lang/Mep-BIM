@@ -1,0 +1,43 @@
+LUA BIM LABS Starter
+Day 71 - Cross Main and Branch Line Sizing
+
+1. Why This Matters
+Pipe sizing in fire protection is not a modeling decision — it is an engineering calculation. But as a BIM modeler, you are responsible for modeling the correct pipe diameter at each level of the hierarchy. Getting the hierarchy wrong means the hydraulic calculation is invalid, and the system will not deliver the required flow at the design pressure.
+
+2. Core Concept
+Fire protection pipework follows a strict size hierarchy from the supply riser downward:
+
+| Pipe Level | Typical Name | Role |
+|---|---|---|
+| 1 | Riser / Main Feed | Connects from the fire pump or town supply into the building |
+| 2 | Cross Main | Runs horizontally along the floor, fed from the riser |
+| 3 | Branch Line | Runs perpendicular from the cross main to serve a row of heads |
+| 4 | Drop / Sprig | Short vertical pipe from branch to individual pendant head |
+
+Size Reduction Rules
+- Pipe size reduces at each level down the hierarchy — never increases (unless the engineer has a specific reason)
+- A branch line never exceeds the cross main diameter it is connected to
+- A drop never exceeds the branch line diameter it connects from
+- Typical cross main sizes: DN100 to DN150 for ordinary hazard floors
+- Typical branch line sizes: DN25 to DN50 depending on number of heads served
+- Drops to pendant heads: usually DN25 (1 inch) for light and ordinary hazard
+
+In Revit: use pipe type families with the correct nominal diameter. Pipe sizes are engineering-determined — do not resize pipes without engineering approval. When in doubt, use the engineer's pipe sizing schedule as the reference document.
+
+3. Real Project Lens
+On a typical office floor, the fire engineer's sizing schedule shows: cross main DN100, branch lines DN40 for lines serving 6–8 heads, DN32 for lines serving 3–5 heads, and DN25 drops to each head. The modeler follows this schedule directly. When routing a branch line requires a longer run than planned, the modeler flags it to the engineer rather than assuming the DN40 size still works at the new length.
+
+4. BIM Check
+- Check: Pipe sizes at every level match the fire engineer's sizing schedule — do not use estimated or default sizes
+- Check: Pipe size reduces (or stays constant) moving from cross main to branch to drop — no unexpected size increases
+- Check: Drops to pendant heads are modeled at the correct diameter (not left at cross main size by accident)
+
+5. Common Mistake
+Using a single pipe diameter for all branch lines on a floor because it is faster to model. Branch lines serving different numbers of heads require different sizes — a DN40 line serving 8 heads cannot be replaced with DN25 without recalculating the hydraulics.
+
+6. Today's Action
+Locate the fire engineer's pipe sizing schedule on your current or sample project. List the required pipe diameter for: (1) cross main, (2) the longest branch line, and (3) the drops. Verify these three sizes are correctly reflected in the Revit model.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

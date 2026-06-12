@@ -1,0 +1,28 @@
+LUA BIM LABS Starter
+Day 78 - Piping Coordination with Electrical — Separation Rules
+
+1. Why This Matters
+Piping and electrical systems share ceiling voids, risers, and plant rooms. Understanding the separation requirements between pipes and electrical equipment prevents safety hazards and coordination failures.
+
+2. Core Concept
+- Water pipes must not be routed directly above exposed live electrical equipment — including switch rooms, distribution boards, motor control centres, and server rooms
+- Minimum separation: typically 300mm horizontal separation between water pipes and cable trays or conduits carrying power cables
+- If pipes must cross above electrical equipment, a drip-proof tray or diverter must be installed below the pipe to catch any leaks
+- Pipe flanges and joints must not be located above electrical equipment — the risk of leakage at joints is higher than at straight pipe
+- In BIM: flag any location where a water pipe is within 300mm of a power cable tray or is routed above an electrical room entrance
+
+3. Real Project Lens
+On a commercial project, a chilled water pipe was routed across the ceiling of a distribution board room — with a flanged joint directly above the main busbars. The electrical engineer flagged the safety issue during the final coordination review. Re-routing the pipe required moving a 6-metre section through a congested ceiling void, adding 3 days to the piping program.
+
+4. BIM Check
+- Check: no water pipe is routed directly above an exposed live electrical distribution board, MCC, or switch room
+- Check: horizontal separation between water pipes and power cable trays is at least 300mm or as specified by the project
+- Check: no pipe flange or mechanical coupling is located within 600mm directly above electrical equipment
+
+5. Common Mistake
+Beginners route pipes by the shortest path without checking what is below their route. Routing above electrical equipment creates safety risks that override spatial efficiency.
+
+6. Today's Action
+Identify one location in a project or sketch where a pipe route would conflict with the electrical separation rule. Describe an alternative route that maintains the required separation.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

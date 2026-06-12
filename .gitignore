@@ -50,3 +50,7 @@ node_modules/
 *.rfa
 *.nwd
 *.nwc
+
+# Local tooling caches
+.wrangler/
+.claude/settings.local.json

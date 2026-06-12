@@ -1,0 +1,36 @@
+LUA BIM LABS Starter
+Day 39 - What Is a Revit Schedule?
+
+**1. Why This Matters**
+Revit schedules turn model elements into structured data tables — they are how engineers, contractors, and project managers extract real information from a BIM model without manually counting or measuring.
+
+**2. Core Concept**
+A Revit schedule is a view type that reads parameter values from model elements and displays them as a table. It is live — when the model changes, the schedule updates automatically.
+
+Key concepts:
+- **Schedule View**: Found in the Project Browser under Views > Schedules
+- **Fields**: The columns in your schedule, each mapped to an element parameter (e.g., Family, Type, Level, Mark, System Classification)
+- **Filter**: Limits rows to a subset of elements (e.g., only Level 3, only HVAC supply air)
+- **Sorting/Grouping**: Organizes rows by a field value — commonly by Level or System
+- **Calculated Value**: A custom column that performs a formula (e.g., total duct length = quantity × length)
+- **Totals**: Footers that sum numeric fields for a group or the entire schedule
+
+**3. Real Project Lens**
+An MEP BIM coordinator creates a Mechanical Equipment Schedule in Revit by adding fields for Mark, Family, Type, Level, System Type, and Flow Rate. After filtering to Level 5 only, the schedule shows 12 fan coil units with their flow parameters — exactly what the mechanical engineer needs to cross-check against the design specification.
+
+**4. BIM Check**
+- Check: Can you locate the Schedule view type in the Revit View tab and create a new schedule from scratch?
+- Check: Can you add and remove fields (columns) in a schedule using the Schedule Properties dialog?
+- Check: Can you apply a filter to show only elements on a specific level?
+
+**5. Common Mistake**
+Creating a schedule without setting a filter and including elements from all levels — the resulting table mixes data from every floor, making it unreadable and unreliable for any specific use.
+
+**6. Today's Action**
+In Revit, create a new Mechanical Equipment Schedule with at least four fields: Mark, Family Name, Type Name, and Level. Apply a filter to show only one level and count the results.
+
+---
+
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,42 @@
+LUA BIM LABS Starter
+Day 38 - Track 5 Review — Clash Coordination Basics
+
+**1. Why This Matters**
+Clash coordination is the activity that connects BIM modeling to real construction — reviewing the core concepts ensures you can participate in the process, not just observe it.
+
+**2. Core Concept**
+Track 5 covered the full clash coordination workflow from tool setup to drawing issue. Here is a structured recap:
+
+| Day | Topic | Key Takeaway |
+|-----|-------|--------------|
+| 31 | Navisworks Basics | Append NWC files; use Clash Detective; save viewpoints |
+| 32 | Grouping & Prioritization | Group by level/grid; assign Critical/Major/Minor |
+| 33 | Clash Report Reading | Read Element IDs, status, distance; know Reviewed vs. Resolved |
+| 34 | Coordination Meetings | Prepare your discipline's open clashes; Fix / Hold / Accept |
+| 35 | Issue Tracking | Log with owner and due date; track Open → Closed lifecycle |
+| 36 | Resolution Patterns | Elevation shift, offset, re-route, penetration, accept |
+| 37 | Coordination Drawing Check | Verify model version, elevations, grid refs, revision cloud |
+
+**3. Real Project Lens**
+A junior MEP BIM coordinator on a commercial office project uses every skill from this track in a single week: they export NWC files, run the clash test, group results by level, attend the coordination meeting, log new issues in the tracker, update the model with resolutions, and issue an updated coordination drawing for Level 4 by Friday.
+
+**4. BIM Check**
+- Check: Can you explain the difference between a hard clash and a soft clash without notes?
+- Check: Can you describe the five status stages of an issue tracker entry?
+- Check: Can you name three clash resolution patterns and give a one-sentence use case for each?
+
+**5. Common Mistake**
+Treating clash coordination as a software task rather than a communication task. The tools (Navisworks, issue tracker, coordination drawings) are only as effective as the communication and agreements that happen around them.
+
+**6. Today's Action**
+Write a one-paragraph summary of the clash coordination workflow — from model export to coordination drawing issue — as if explaining it to someone joining the project next week.
+
+---
+
+## Track 6 — Data and Schedule Basics (Days 39–47)
+
+---
+
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,13 @@
+LUA BIM LABS — BIM Check Friday ✓
+Week 3 | Drawing and System Reading
+
+Q1. What is the difference between a plan view and a section view on an MEP drawing?
+Q2. What does "IL 2750 FFL" mean on a plumbing drawing?
+Q3. On a duct drawing, what does the annotation "600×300 SA" typically represent?
+Q4. What is a P&ID, and which MEP discipline uses it most commonly?
+Q5. Why is it important to check a drawing's revision block before using it for installation?
+
+Think through each one.
+No grades — this tests your own understanding.
+
+Next week: Model Quality Basics check.

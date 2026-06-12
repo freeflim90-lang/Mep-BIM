@@ -1,0 +1,50 @@
+LUA BIM LABS Starter
+Day 80 - Week 4 Review — Clash Pattern Summary
+
+1. Why This Matters
+Clash resolution is where BIM delivers its most measurable value in fire protection. The patterns covered in Days 76–79 — head vs. duct/tray, pipe vs. structure, clear zones, and fire-rated penetrations — account for the majority of fire protection coordination failures on site. Internalising these patterns means you can catch them before they become RFIs or, worse, on-site rework.
+
+2. Core Concept
+Week 4 Fire Protection — Clash Pattern Summary
+
+| Day | Topic | Key Rule |
+|---|---|---|
+| 76 | Head vs. Duct/Tray | Type 1 (blocked drop) = always critical. Type 2 (spray shadow) = engineering judgment. Never shorten drops to avoid ducts |
+| 77 | Branch Pipe vs. Structure | Beam penetrations require structural approval. Slab penetrations need pre-formed sleeves — issue requests before slab drawings are finalised |
+| 78 | Clear Zones Around Heads | 450 mm below deflector plate — nothing. 300 mm from heat sources. Air diffusers within 450 mm flagged to engineer |
+| 79 | Fire-Rated Penetrations | Every rated wall/floor penetration needs a firestop sleeve. Sleeve ID = pipe OD + insulation + 25 mm gap |
+
+Critical Rules — Clash Patterns
+- Never shorten a sprinkler drop to resolve a duct clash — the drop length is governed by head-to-ceiling rules
+- Structural beam penetrations are not assumptions — always get structural engineer approval
+- Fire-rated wall/floor penetrations must be firestopped — a missing firestop is a compartmentation failure
+- Sleeve sizing must include insulation thickness — not just bare pipe OD
+- Clear zones are 3D, not 2D — check all six directions around a head
+
+Combined Running Checklist (Days 61–80)
+Items 1–11: (Days 61–75 — see Day 75)
+12. Head vs. duct/tray clashes resolved — no shortened drops
+13. Structural beam penetrations approved and documented
+14. Slab sleeve requests issued before structural drawings are finalised
+15. 450 mm clear zone below deflector plate verified
+16. All fire-rated penetrations have firestop sleeves with correct ID
+
+3. Real Project Lens
+A Level 7 coordination issue log shows 34 open fire protection items. After applying the Week 4 clash pattern framework, the modeler categorises: 12 as blocked drops (Type 1 — critical, reroute required), 8 as spray shadow (Type 2 — send to engineer), 6 as structural beam penetrations needing approval, 4 as clear zone violations, and 4 as fire-rated penetrations missing firestop sleeves. Each category has a clear resolution path — coordination progresses efficiently.
+
+4. BIM Check
+- Check: Clash detection has been run with clash tolerance set to 50 mm — not 0 mm
+- Check: All 16 items on the running checklist have been reviewed for the current floor
+- Check: Every fire protection RFI or clash note references the specific rule it violates — not just "clash detected"
+
+5. Common Mistake
+Running clash detection and reporting raw clash counts without categorisation. "47 clashes found" is not useful. "12 blocked drops, 8 spray shadows, 6 structural penetrations, 4 clear zone violations, 4 firestop gaps" gives every stakeholder a clear action item.
+
+6. Today's Action
+Update your personal fire protection BIM checklist with Items 12–16 from the running checklist above. Your checklist should now have 16 items. Review it against one floor of your project and record a pass/fail/pending status for each item.
+
+---
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

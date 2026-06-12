@@ -1,0 +1,35 @@
+LUA BIM LABS Starter
+Day 42 - Parameter Completeness Check
+
+**1. Why This Matters**
+A model with missing parameter values fails BIM LOD requirements and produces unreliable schedules and reports — checking completeness before submission is a professional responsibility.
+
+**2. Core Concept**
+Parameter completeness means every required field for every element contains a valid, non-blank value. It is one of the most common BIM quality check items.
+
+How to check parameter completeness in Revit:
+- **Schedule-based check**: Create a schedule for the target category, add all required fields, then sort by the field you want to check — blank values appear first or last
+- **Filter trick**: Add a filter where a field "does not equal" a known valid value — any blank entries will appear in the filtered view
+- **Dynamo**: Write a simple script that flags elements with empty required parameters and outputs a list with Element IDs
+- **BIM Collab / Solibri**: Model checker tools can run automated parameter completeness rules across an entire federated model
+- **Project parameters vs. shared parameters**: If a parameter isn't showing values, verify it was added as a shared parameter, not a project parameter — shared parameters can be scheduled and exported; project parameters cannot always be shared across files
+
+**3. Real Project Lens**
+Before submitting the MEP model for a BIM Level 2 milestone review, the BIM coordinator runs a parameter completeness check across all mechanical equipment. The schedule reveals that 23 out of 140 elements have no "Mark" value and 11 have no "System Name" assigned. These are fixed before submission, preventing the model from failing the client's BIM checker tool.
+
+**4. BIM Check**
+- Check: Can you create a Revit schedule that clearly shows which elements have a blank value in a required field?
+- Check: Can you explain the difference between a shared parameter and a project parameter in terms of schedule availability?
+- Check: Can you name two tools (beyond Revit schedules) that can automate parameter completeness checking?
+
+**5. Common Mistake**
+Assuming that if a field shows a value in the Properties panel for one element, all similar elements also have that value. Parameter completeness must be checked across the entire category, not element by element.
+
+**6. Today's Action**
+Pick one element category in your Revit model (e.g., Mechanical Equipment or Pipes). Create a schedule with four key fields and sort by each field to identify any blank values. Write down how many elements are incomplete.
+
+---
+
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,45 @@
+LUA BIM LABS Starter
+Day 67 - Week 1 Fire Protection Review
+
+1. Why This Matters
+Fire protection is a life safety system. Every lesson from Days 61–66 directly affects whether people in a building are protected or not. The Week 1 review reinforces the non-negotiable rules that separate compliant fire protection BIM from non-compliant modeling.
+
+2. Core Concept
+Week 1 Fire Protection Summary
+
+| Day | Topic | Key Point |
+|---|---|---|
+| 61 | System Types | Wet, dry, pre-action — determined by environment, not preference |
+| 62 | Head Placement | Coverage area per head must not exceed hazard classification limit |
+| 63 | Pipe Routing | Main → cross main → branch → drop. Size reduces at each level |
+| 64 | Standpipe and Hose Reel | 30m path coverage per hose reel. Not straight-line distance |
+| 65 | Hydraulic Calculations | Modeler must preserve pipe sizes and routing that the engineer calculated |
+| 66 | Ceiling Zone Clashes | Heads must be within code distance from ceiling. Route branches under ducts |
+
+Critical Rules — Fire Protection BIM
+- Never change fire protection pipe sizes without notifying the fire engineer
+- Never place a wet pipe system in a space that requires dry (freezer room, unheated zone)
+- Head coverage must be calculated — never guessed
+- 30m hose reel coverage is path distance, not straight-line
+- Sprinkler drops must reach the ceiling face — check elevation carefully
+- Any pipe re-route must be flagged to the fire engineer for recalculation review
+
+3. Real Project Lens
+A fire protection modeler on Day 1 of a new floor uses the Week 1 framework: (1) confirm system type for each zone, (2) check head coverage calculations, (3) verify pipe hierarchy sizes match the engineer's output, (4) confirm hose reel locations by path coverage, (5) run a ceiling zone clash test. This structured approach prevents the three most common fire protection BIM failures: wrong system type, incorrect coverage, and ceiling zone clashes.
+
+4. BIM Check
+- Check: Every zone of the building has the correct fire protection system type assigned
+- Check: Head coverage calculation is documented — maximum area per head does not exceed limit
+- Check: All hose reel coverage has been verified by path distance measurement
+
+5. Common Mistake
+Treating fire protection BIM as the same as HVAC or piping BIM — it is not. The life safety consequences mean zero tolerance for missing heads, wrong system types, or pipe size errors. The bar is higher.
+
+6. Today's Action
+Write a personal fire protection BIM checklist — 5 items you will check on every fire protection model before submission. This list will grow as you advance through Day 90.
+
+---
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

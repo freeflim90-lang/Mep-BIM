@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "default_principle": "local_first_deepseek_final_review",
+  "local_models": {
+    "knowledge_qa": {
+      "provider": "ollama",
+      "model_env": "KNOWLEDGE_QA_MODEL",
+      "default_model": "qwen2.5:7b",
+      "use_for": [
+        "team_telegram_qa_synthesis",
+        "obsidian_knowledge_summary",
+        "daily_knowledge_enrichment",
+        "private_or_repetitive_operations"
+      ]
+    },
+    "coder": {
+      "provider": "ollama",
+      "model_env": "LOCAL_CODER_MODEL",
+      "default_model": "qwen2.5-coder:7b",
+      "use_for": [
+        "code_draft",
+        "excel_automation_draft",
+        "revit_or_navisworks_static_plan",
+        "local_only_development_review"
+      ]
+    }
+  },
+  "deepseek_models": {
+    "final_review": {
+      "model_env": "DEEPSEEK_FINAL_REVIEW_MODEL",
+      "default_model": "deepseek-v4-flash",
+      "use_for": [
+        "reasoning_training_final_review",
+        "logic_gap_review",
+        "business_risk_review",
+        "next_question_generation"
+      ]
+    },
+    "high_stakes_strategy": {
+      "model_env": "DEEPSEEK_HIGH_STAKES_MODEL",
+      "default_model": "deepseek-v4-pro",
+      "enabled_env": "DEEPSEEK_HIGH_STAKES_REVIEW_ENABLED",
+      "default_enabled": false,
+      "use_for": [
+        "pricing_strategy",
+        "investment_priority",
+        "autodesk_store_positioning",
+        "critical_product_roadmap"
+      ]
+    }
+  },
+  "routing_rules": [
+    {
+      "name": "sensitive_or_internal_data",
+      "mode": "local_only",
+      "reason": "privacy_security_contract_or_internal_path"
+    },
+    {
+      "name": "team_daily_operations",
+      "mode": "local_only",
+      "reason": "repeatable_private_operational_work"
+    },
+    {
+      "name": "reasoning_training",
+      "mode": "local_then_deepseek_final_review",
+      "reason": "local_context_first_deepseek_as_reviewer"
+    },
+    {
+      "name": "strategy_productization",
+      "mode": "deepseek_allowed_after_redaction",
+      "reason": "external_review_only_after_local_conclusion"
+    }
+  ]
+}

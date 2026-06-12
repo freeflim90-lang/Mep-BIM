@@ -1,0 +1,47 @@
+LUA BIM LABS Starter
+Day 65 - Domestic Water Supply Distribution
+
+1. Why This Matters
+The domestic water supply system delivers clean potable water to every fixture. Undersized pipes cause low pressure at outlets. Oversized pipes waste material. A poorly designed distribution layout causes cross-connections or dead legs that breed bacteria.
+
+2. Core Concept
+- Water supply distribution types:
+  - Direct system: Mains pressure supplies all fixtures directly (low-rise buildings)
+  - Break tank and booster pump system: Water stored in a tank, pumped up to high zones (high-rise or low mains pressure areas)
+  - Downfeed system: Water pumped to a roof tank, gravity-feeds down to floors (some older or institutional buildings)
+- Pipe sizing is based on fixture units (each fixture is rated a demand value):
+  - WC: 8 fixture units
+  - Basin tap: 1.5 fixture units
+  - Shower: 3 fixture units
+  - Sink: 3 fixture units
+- As branch pipes move further from the riser, fewer fixtures are served and pipe size reduces
+- Dead legs (a pipe that ends at one fixture with no circulation): maximum 3 litres of water in the pipe — beyond this, hot water cools and risks Legionella growth
+- Insulation: hot water supply pipes must be insulated to retain heat. Cold water pipes in hot areas also insulated to prevent condensation
+
+CWS/HWS Branch Sizing Guide
+
+| Fixtures Served | Suggested CWS/HWS Pipe Size |
+|---|---|
+| 1–2 | DN15 |
+| 3–6 | DN20 |
+| 7–12 | DN25 |
+| 12–20 | DN32 |
+| 20–40 | DN40–DN50 |
+
+3. Real Project Lens
+A 15-storey apartment block has one cold water riser (DN65) and one hot water riser (DN50) rising from the basement plant room. On each floor, a DN25 branch serves 4 apartments. Each apartment has a local sub-distribution with DN15 and DN20 branches to each fixture. The BIM modeler sizes each segment from the riser outward, reducing size at each branch takeoff.
+
+4. BIM Check
+- Check: Pipe sizes reduce at every branch — no segment is larger downstream than upstream
+- Check: Dead leg lengths are under code maximum (check local plumbing code — typically equivalent to 3 litres pipe volume)
+- Check: CWS and HWS pipes are separate throughout — no common pipe carrying both temperatures
+
+5. Common Mistake
+Running the HWS distribution at the same elevation as the CWS pipe in the ceiling — the hot pipe raises the temperature of the cold pipe above it by convection, causing the cold water to warm above 20°C, which is a Legionella risk.
+
+6. Today's Action
+For a simple bathroom group (WC, basin, shower), calculate the total fixture units for CWS and HWS. Use the table above to select the branch pipe size. Draw the distribution from the riser to each fixture with correct sizes.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

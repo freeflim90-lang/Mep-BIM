@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "BIM Automation",
+    "Revit",
+    "AI",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "Using Revit API for Custom BIM Automation: Getting Started",
+  "slug": "using-revit-api-for-custom-bim-automation-getting-started",
+  "content": "<p>The Revit API provides programmatic access to every element, parameter, and document in a Revit model. Custom automation built on the Revit API can perform tasks that Dynamo cannot — complex UI integrations, external data synchronisation, and multi-document batch operations.</p>\n<h2>Why This Matters</h2>\n<p>Dynamo covers most common automation tasks, but some workflows require the full Revit API: real-time synchronisation with external databases, custom ribbon tools that multiple team members use daily, or automation that spans multiple Revit documents simultaneously.</p>\n<h2>Practical Guidance</h2>\n<p><strong>Development Environment:</strong> Revit API add-ins are written in C# or Python (pyRevit). C# provides the best performance and IDE support. pyRevit allows Python scripting with Revit API access and is more accessible to BIM professionals who are not professional developers.</p>\n<p><strong>External Commands:</strong> The most common Revit API pattern is an External Command — a button in the Revit ribbon that executes a custom operation. Start with simple External Commands before building complex event-driven automation.</p>\n<p><strong>Transaction Management:</strong> All Revit model modifications must occur within a Transaction. Transactions can be committed (saved) or rolled back (cancelled). Always wrap model modifications in a transaction with a descriptive name that appears in the Revit undo history.</p>\n<p><strong>API Limitations:</strong> The Revit API does not expose all internal operations. Some tasks (modifying Revit type parameters in certain families, accessing some analysis data) are not available through the API. Test feasibility before committing to an API-based automation approach.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Start with pyRevit for first automation tools before committing to C# development</li>\n<li>Wrap all model modifications in named transactions</li>\n<li>Test API scripts on a non-critical model copy first</li>\n<li>Check Revit API changelog when upgrading Revit versions — APIs change between versions</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>The Revit API unlocks automation that Dynamo cannot reach — but it requires a disciplined development approach to avoid corrupting production models.</p>"
+}

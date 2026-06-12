@@ -1,0 +1,27 @@
+LUA BIM LABS Starter
+Day 88 - HVAC Deep-Dive Wrap-Up
+
+1. Why This Matters
+Day 88 completes the HVAC discipline deep-dive. This is a moment to consolidate what you have covered, identify what to practice next, and prepare for what real HVAC BIM work looks like in the field.
+
+2. Core Concept
+- Over the past 28 days you have covered: system flow from AHU to diffuser, duct sizing logic, VAV systems, AHU room layout, fire dampers, condensate drainage, smoke control, submittals, LOD 350, quality checks, commissioning support, and as-built requirements
+- Key competencies you have built: reading HVAC systems in Revit, identifying coordination conflicts between HVAC and other trades, applying model quality standards, understanding commissioning and as-built processes
+- What comes next in practice: these concepts are entry-level competencies for an HVAC BIM modeler — the next step is applying them on a real project or a practice model
+- Areas to keep developing: duct sizing calculations, Navisworks clash grouping, system balancing documentation, and working with MEP engineers on design intent
+
+3. Real Project Lens
+A junior HVAC BIM modeler who completed a structured 90-day program joined a hospital project team. In the first week, they identified a missing fire damper that the senior coordinator had overlooked during a busy review period. The find was small, but it demonstrated coordination awareness beyond just drawing ducts — and the junior modeler was included in coordination meetings earlier than expected.
+
+4. BIM Check
+- Check: you can explain what a VAV system is and why VAV boxes require ceiling access panels
+- Check: you can name the five most common HVAC BIM errors and describe how to check for each one
+- Check: you can describe what information the commissioning engineer needs from the HVAC BIM model before a TAB run
+
+5. Common Mistake
+Beginners sometimes finish a training program feeling they are not ready for real work. The foundation is real. The next step is practice, not more theory.
+
+6. Today's Action
+Write 3 sentences: one thing you are confident doing in HVAC BIM, one thing you want to practice more, and one question you would ask a senior HVAC coordinator on your first real project.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

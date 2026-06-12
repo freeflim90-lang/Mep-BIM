@@ -1,0 +1,13 @@
+LUA BIM LABS — BIM Check Friday ✓
+Week 2 | Revit MEP Basics
+
+Q1. What is the difference between a Revit System and a Revit Family in the context of MEP modeling?
+Q2. How does a Workshared (central) Revit file differ from a standard local Revit file on a team project?
+Q3. What is a Revit Workset, and why are they used in MEP projects?
+Q4. If a pipe appears in the wrong color in a Revit view, what is the most likely cause?
+Q5. What does "Sync to Central" do, and why is it important to do it regularly?
+
+Think through each one.
+No grades — this tests your own understanding.
+
+Next week: Drawing and System Reading check.

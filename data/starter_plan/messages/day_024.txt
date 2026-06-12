@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 24 - Shaft Coordination Basics
+
+1. Why This Matters
+Shafts are vertical coordination zones where multiple systems compete for limited space across many floors.
+
+2. Core Concept
+Shaft coordination reviews system stacking, riser spacing, fire stopping assumptions, access doors, sleeves, and floor-by-floor consistency.
+
+3. Real Project Lens
+A riser may fit on one floor but shift into conflict on another if architectural or structural conditions change.
+
+4. BIM Check
+- Compare shaft layout across floors.
+- Check riser spacing and access.
+- Review sleeve and penetration assumptions.
+
+5. Common Mistake
+Beginners often check one floor and assume the entire shaft is consistent.
+
+6. Today's Action
+Describe how you would compare a shaft on three different floors.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

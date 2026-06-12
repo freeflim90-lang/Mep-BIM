@@ -1,0 +1,46 @@
+LUA BIM LABS Starter
+Day 78 - Maintaining Clear Zones Around Sprinkler Heads
+
+1. Why This Matters
+Sprinkler heads require a clear zone in all directions to activate correctly and distribute water effectively. Objects placed too close to a head — whether a light fitting, a duct, a diffuser, or a cable tray — can delay thermal activation or physically deflect the spray. These conflicts must be resolved in BIM before any element is installed.
+
+2. Core Concept
+Two separate clear zone requirements apply to every sprinkler head:
+
+1. Thermal Sensitivity Clear Zone (above and around the head)
+- Minimum distance from any heat source (light fittings, hot surfaces): 300 mm
+- Objects directly above a pendant head can shield it from heat — delaying or preventing activation
+- Air supply diffusers within 450 mm of a head can affect thermal sensitivity — flagged for engineering review
+
+2. Spray Pattern Clear Zone (below and around the head)
+- No object may be placed within 450 mm below the deflector plate of a pendant head
+- This 450 mm zone is measured from the deflector downward — not from the ceiling
+- Objects within this zone deflect the spray pattern and create unprotected shadow areas
+- The horizontal extent of the clear zone: typically 900 mm radius around the head centerline
+- Sprinkler guards (wire cages): acceptable for heads in mechanical rooms but must not restrict spray
+
+Common Objects That Violate Clear Zones:
+- Recessed downlights installed too close to a pendant head
+- Exposed cable tray running immediately below the deflector plate
+- Mechanical diffusers or linear grilles positioned beside a head
+- Structural ties, hanger rods, or brace cables within the spray zone
+
+In Revit: use a head clearance family or interference sphere to visualise the 450 mm exclusion zone below each head. Run interference checks with architectural and electrical models.
+
+3. Real Project Lens
+An architectural coordination review of a hotel lobby identifies 12 cases where recessed downlights are within 200 mm of a pendant sprinkler head. The fire protection modeler flags these to the architect. Eight lights are repositioned; four are replaced with a different fixture type that is set flush beyond the 450 mm exclusion zone. All 12 conflicts are resolved before the reflected ceiling plan is issued for tender.
+
+4. BIM Check
+- Check: No heat-producing light fitting is within 300 mm of a sprinkler head
+- Check: No physical object (cable tray, duct, diffuser, structural element) is within 450 mm below the deflector plate
+- Check: Supply air diffusers within 1 m of a head have been flagged to the fire engineer for thermal sensitivity review
+
+5. Common Mistake
+Thinking the clear zone only applies to objects directly below the head. The thermal sensitivity zone applies around and above the head as well — a heat source too close can cause false activation; a cool air supply too close can delay activation.
+
+6. Today's Action
+In your Revit model, check three sprinkler heads in a ceiling-congested zone (corridor, lobby, or ceiling plenum). Measure the distance to the nearest lighting fixture, duct, or cable tray. Record whether each head passes or fails the 450 mm spray zone and 300 mm thermal zone requirements.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,60 @@
+LUA BIM LABS Starter
+Day 90 - 90-Day Completion — Piping Deep Dive Wrap
+
+1. Why This Matters
+Today marks the end of 90 days of structured MEP BIM education. The piping track has taken you from system fundamentals through to construction-issue drawings and FM handover data — the complete lifecycle of a piping BIM deliverable. More importantly, it has given you a professional vocabulary, a set of repeatable workflows, and the confidence to contribute on real MEP coordination projects.
+
+2. Core Concept
+What you have covered across 90 days:
+
+Month 1 (Days 1–30): MEP BIM Foundations
+- BIM coordination workflows, model federation, clash detection
+- Discipline roles and responsibilities
+- Revit essentials, coordination drawing reading
+
+Month 2 (Days 31–60): HVAC and Mechanical Systems
+- Ductwork, air systems, VAV, AHU coordination
+- Mechanical room layout and equipment arrangement
+- Model quality, LOD progression, as-built preparation
+
+Month 3 — Piping Deep Dive (Days 61–90):
+
+| Block | Days | Topic |
+|-------|------|-------|
+| System Types and Flow | 61–67 | Piping systems, flow direction, sizing logic, pump room basics |
+| Chilled Water and Heating | 68–74 | CHW/HHW systems, pipe sizing, expansion tanks, isolation valves |
+| Connections and Quality | 75–80 | Flexible connections, insulation, hanger coordination, model quality |
+| Coordination and Integration | 81–87 | Commissioning, structural interface, as-built, discipline integration |
+| Delivery Standards | 88–90 | Coordination drawing package, FM handover data, 90-day wrap |
+
+Skills you now have:
+- You can set up and model a complete piping system in Revit with correct system types and flow direction
+- You can coordinate a mechanical room — layout, clearances, support, clash resolution
+- You can produce a LOD 350-compliant piping model and coordination drawing package
+- You can prepare FM-ready piping data for handover, including valve shutdown zones and equipment asset data
+- You understand the full lifecycle of a piping BIM model: from design through construction to FM
+
+What sets strong piping BIM coordinators apart:
+- They understand the engineering intent — not just the model geometry
+- They coordinate proactively, not reactively — services zoning before clash detection
+- They build data quality habits from the start of modeling, not the end
+- They communicate across disciplines clearly — the right information to the right person at the right time
+
+3. Real Project Lens
+A BIM coordinator who completed a structured 90-day piping program was brought onto a large hospital mechanical room coordination mid-project. Within two weeks, she had identified a pump connection detail that would have blocked future impeller removal, a chilled water valve with no access provision, and a missing strainer on the primary circuit return. Each finding was documented in the clash report and resolved. Her team leader's note: "She arrived already knowing what to look for. We spent time on design decisions, not on explaining coordination basics."
+
+4. BIM Check
+- Check: You can describe the end-to-end process for coordinating a mechanical plant room — from initial layout to construction-issue drawing — in five steps or fewer
+- Check: You can name four FM data fields required for piping equipment handover and explain why each is needed
+- Check: You can explain the coordination hierarchy for piping in a congested ceiling zone and defend the priority order
+
+5. Common Mistake
+The most common mistake at completion is treating the 90 days as finished learning. In MEP BIM, the standards, tools, and project requirements evolve continuously. The 90-day program is a foundation — not a ceiling. Apply these skills on a real project, then return to the areas where you found gaps, and deepen from there.
+
+6. Today's Action
+Write a short personal skill statement — three to five sentences — describing what you can now do as an MEP BIM coordinator that you could not do 90 days ago. Be specific: name the systems, the tools, and the workflows. Keep it. Read it again in six months and see how far you have come.
+
+You have completed the LUA BIM LABS MEP BIM Starter Plan — 90 days, three disciplines, one professional foundation. The next project starts now.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

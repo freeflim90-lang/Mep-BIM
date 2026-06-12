@@ -1,0 +1,28 @@
+LUA BIM LABS Starter
+Day 72 - Isolation Valves, Balancing Valves, and Commissioning Sets
+
+1. Why This Matters
+Valves are what make a piping system maintainable, adjustable, and commissionable. Every valve in the BIM model must be in the right location, of the right type, and accessible — or the system cannot be operated as designed.
+
+2. Core Concept
+- Isolation valves: gate or butterfly valves that allow a section of pipe or a piece of equipment to be isolated for maintenance without shutting down the whole system
+- Balancing valves: manual or automatic valves that set the flow rate through each branch to ensure correct distribution — required at every FCU and terminal unit
+- Commissioning sets: combined isolation valve and flow measurement device installed at each terminal unit — allow the TAB engineer to measure and set flow during commissioning
+- Valve placement rule: isolation valves must be reachable without ladders or tools — this affects how much space must be left around pipe risers and horizontal runs
+- In Revit: model each valve type with its correct family — generic valve families produce incorrect schedule data
+
+3. Real Project Lens
+On a hotel project, balancing valves were omitted from 34 FCU connections because the BIM modeler assumed they would be added by the contractor. During commissioning, the TAB engineer found that many FCUs were receiving significantly more or less flow than designed because there was no way to balance the branches. Retrofitting commissioning sets after ceiling tiles were installed cost $28,000.
+
+4. BIM Check
+- Check: isolation valves are placed on both sides of every major piece of equipment
+- Check: balancing or commissioning valves are placed at every terminal unit (FCU, fan coil, AHU) in the BIM model
+- Check: all modeled valves use the correct Revit family type corresponding to their function (gate, butterfly, ball, balancing)
+
+5. Common Mistake
+Beginners omit valves from BIM models because they are small and add modeling time. Missing valves create commissioning and maintenance problems that are expensive to retrofit.
+
+6. Today's Action
+List 5 locations on a chilled water system where isolation valves must be placed and explain why each is necessary.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

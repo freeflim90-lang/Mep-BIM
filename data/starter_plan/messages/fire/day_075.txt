@@ -1,0 +1,56 @@
+LUA BIM LABS Starter
+Day 75 - Week 3 Review — Pipe Routing Summary
+
+1. Why This Matters
+Fire protection pipe routing is the discipline where modelers have the most direct responsibility and the most common errors. Getting the hierarchy, sizes, configuration, and hydraulic rules right in the model is the difference between a system that works and a system that fails to deliver water at the design pressure. Week 3 consolidates these rules before moving into clash patterns.
+
+2. Core Concept
+Week 3 Fire Protection — Pipe Routing Summary
+
+| Day | Topic | Key Rule |
+|---|---|---|
+| 71 | Cross Main and Branch Sizing | Pipe size reduces moving down the hierarchy. Always follow the engineer's sizing schedule |
+| 72 | Standpipe and Hose Reel | 30 m hose coverage = path distance. Measure along corridors, not straight-line |
+| 73 | Hydraulic Calculation Basics | Any pipe re-route that changes length or fitting count must be flagged to the fire engineer |
+| 74 | Tree / Loop / Grid Systems | Confirm the correct configuration. Never leave a loop open. Coordinate grid mains with structure first |
+
+Critical Rules — Pipe Routing
+- Never change pipe sizes without engineering approval
+- Never leave a loop system open — both ends must connect
+- Hose reel path distance, not straight-line — always measure the travel path
+- Each re-route that adds pipe or fittings = a required notification to the fire engineer
+- Cross mains are first-priority routes — coordinate before HVAC and electrical mains
+- Drops to pendant heads: always model at the correct diameter per the sizing schedule
+
+Combined Running Checklist (Days 61–75)
+1. Correct system type per zone (wet / dry / pre-action)
+2. Hazard classification per zone
+3. Max coverage area per head verified
+4. Min/max head spacing verified
+5. Wall offset ≤ half of max head spacing
+6. 3D obstruction check (beams, ducts, trays)
+7. Head-to-ceiling distance within range
+8. Pipe sizes match engineer's sizing schedule
+9. Hose reel coverage verified by path distance
+10. Any pipe re-routes flagged to fire engineer
+11. System configuration (tree/loop/grid) correctly modeled
+
+3. Real Project Lens
+A senior BIM coordinator uses the 11-point checklist above as a structured model QA pass before issuing the Level 3 fire protection model for a multi-tenancy office building. Two issues are found: a branch line sized at DN50 where the engineer specified DN40, and a hose reel that measures 33 m by path to the farthest point. Both are corrected and flagged before the issue date.
+
+4. BIM Check
+- Check: All 11 items on the running checklist have been reviewed for the current floor or zone
+- Check: Pipe sizing schedule is attached to the model issue package so reviewers can verify sizes against the schedule
+- Check: System configuration (tree, loop, or grid) is correctly reflected — no dead loops, no missing connections
+
+5. Common Mistake
+Submitting a fire protection model for coordination review without a documented QA check. Coordination reviewers find pipe size errors and open loop connections that would have been caught in a 15-minute self-QA pass — wasting everyone's time with avoidable RFIs.
+
+6. Today's Action
+Apply the 11-point running checklist to one floor of your current or sample fire protection model. Record which items pass, which need correction, and any items that require a question to the fire engineer.
+
+---
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

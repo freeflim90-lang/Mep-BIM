@@ -1,0 +1,43 @@
+LUA BIM LABS Starter
+Day 71 - Conduit Types — EMT, Rigid Steel, GI, and PVC
+
+1. Why This Matters
+Choosing and modeling the correct conduit type is not just a material specification detail — it affects the conduit's outer diameter, bend radius, fire rating, and coordination with other building elements. Modeling the wrong conduit type creates sizing errors and coordination failures that are expensive to correct in the field.
+
+2. Core Concept
+Common conduit types and their BIM modeling implications:
+
+| Type | Full Name | Use Case | Key Properties |
+|---|---|---|---|
+| EMT | Electrical Metallic Tubing | Indoor, commercial, dry areas | Thin wall, lightest metal conduit, cannot be threaded |
+| RGS / RSC | Rigid Galvanized Steel | Heavy industrial, outdoor, exposed | Thick wall, threaded, heaviest — larger OD for same trade size |
+| GI | Galvanized Iron (rigid) | General building use — common in Asia/Middle East | Similar to RGS, sometimes used interchangeably in specifications |
+| PVC | Rigid PVC (Schedule 40/80) | Underground, wet locations, non-metallic required zones | No metallic interference, lower fire resistance than steel |
+| FMC | Flexible Metal Conduit | Final connections to vibrating equipment (motors, AHUs) | Short runs only — not used for long conduit runs |
+
+BIM modeling considerations by type:
+- EMT: use the manufacturer's EMT OD (outer diameter) for clash detection — thinner wall than RGS means a smaller OD for the same trade size
+- RGS/GI: use the correct OD from standards tables — the threaded coupling adds additional width at joints
+- PVC: model underground PVC runs with correct burial depth (typically 600mm minimum for power conduit below slabs)
+- FMC: model as a flexible connector at equipment terminations — typically 300–600mm maximum length
+- All types: model with the correct trade size (1/2", 3/4", 1", etc. or metric equivalent: 16mm, 20mm, 25mm)
+
+Trade size vs. actual OD — the trade size is NOT the outer diameter. Always use manufacturer dimension tables when setting conduit family parameters.
+
+3. Real Project Lens
+A modeler is routing conduit from a DB to a motor control panel (MCC) room on the same floor. The specification requires RGS for conduit over 25mm trade size. She models small branch conduits in EMT (correct — thinner wall, easier to route in tight ceiling space) and the main feeder in RGS (correct — specification compliance). Using the wrong OD for RGS would make the feeder conduit appear 6mm smaller in the model than on site, potentially hiding a real clash with a structural beam.
+
+4. BIM Check
+- Check: Do conduit families in the model have the correct outer diameter for their specified type (EMT, RGS, PVC) — not a generic default OD?
+- Check: Are flexible conduit (FMC) connections modeled at equipment terminations for all motor-driven equipment?
+- Check: Is underground PVC conduit modeled at the correct burial depth below the slab or grade?
+
+5. Common Mistake
+Using a single generic conduit family for all conduit types, with a uniform OD that does not match any specific material. This prevents accurate clash detection and makes the model useless for quantity take-off or fabrication.
+
+6. Today's Action
+Look up the outer diameter of a 1-inch (25mm trade size) conduit in three types: EMT, RGS, and PVC Schedule 40. Write the three OD values side by side. Note which is largest and which is smallest. This difference matters for clash detection accuracy.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

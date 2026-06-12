@@ -1,0 +1,45 @@
+LUA BIM LABS Starter
+Day 79 - Fire-Rated Wall and Floor Penetrations
+
+1. Why This Matters
+Every pipe that passes through a fire-rated wall or floor breaks the fire compartment boundary. Without a correctly specified and installed firestop, a fire can spread through the gap around the pipe — undermining the entire compartmentation strategy of the building. In BIM, every penetration through a fire-rated element must be identified, sized, and specified for firestop.
+
+2. Core Concept
+Fire compartmentation: buildings are divided into fire compartments — enclosed volumes designed to contain a fire for a specified duration (e.g., 1 hour, 2 hours, 4 hours). When a pipe penetrates a compartment boundary (wall or floor), the penetration must be firestopped to restore the compartment's rated integrity.
+
+Types of Firestop Systems for Pipe Penetrations:
+| Pipe Material | Firestop Type | How It Works |
+|---|---|---|
+| Steel (no insulation) | Intumescent collar or sealant | Sealant fills the annular gap; collar expands if pipe heats |
+| CPVC / plastic pipe | Intumescent collar (mandatory) | Plastic melts in fire — collar expands to close the opening |
+| Pipe with insulation | Firestop wrap system | Wrap maintains integrity across the insulated pipe |
+
+Key BIM Rules for Penetrations:
+- Identify every wall or floor with a fire rating in the model — use the Fire Rating parameter on walls and floors
+- For each fire protection pipe that crosses a rated element, add a firestop sleeve or collar family
+- Annular gap (gap between pipe OD and sleeve ID): maximum 25–50 mm depending on firestop product spec
+- Sleeve length: typically equal to wall thickness + 50 mm each side
+- Never model a pipe passing through a fire-rated wall without a sleeve — even in an early-stage model, add a placeholder
+
+Coordination Note:
+- Firestop specification is an MEP responsibility — not architectural
+- Every penetration must appear on a penetration schedule or firestop drawing
+- The sleeve diameter must match the pipe OD plus allowance for insulation (if any)
+
+3. Real Project Lens
+A fire protection riser passes through a 2-hour fire-rated concrete floor slab between Level 4 (sprinkler zone) and Level 5 (adjacent zone). The pipe is steel, DN65, uninsulated. The modeler adds a cast-in sleeve family (DN65 pipe OD 76.1 mm + 25 mm annular gap = 100 mm sleeve ID minimum) and tags it with: pipe system, fire rating of floor, firestop product reference. The sleeve is included in the structural slab sleeve request.
+
+4. BIM Check
+- Check: All fire-rated walls and floors in the model have the Fire Rating parameter populated — not left blank
+- Check: Every fire protection pipe that penetrates a rated wall or floor has a firestop sleeve or collar family placed
+- Check: Sleeve diameter accounts for pipe OD plus insulation (if any) plus required annular gap for firestop product
+
+5. Common Mistake
+Using a sleeve sized only for the bare pipe OD and forgetting that the pipe will be insulated. An insulated DN100 pipe may have an outside diameter of 160 mm or more — a sleeve sized for DN100 (OD 114.3 mm) will not accept the insulated pipe and will require re-coring on site.
+
+6. Today's Action
+Identify three fire-rated walls on your current or sample project that fire protection pipes pass through. For each one: record the wall fire rating, pipe size, whether the pipe is insulated, and the minimum sleeve ID required based on pipe OD + insulation + 25 mm gap.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

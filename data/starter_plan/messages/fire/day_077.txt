@@ -1,0 +1,45 @@
+LUA BIM LABS Starter
+Day 77 - Branch Pipe vs. Structure Clashes
+
+1. Why This Matters
+Branch lines that clash with structural beams, columns, or concrete slab require either penetration sleeves or pipe rerouting. Both solutions involve cost and coordination effort. Identifying structural clashes early — before concrete is poured or steelwork is erected — is far cheaper than cutting penetrations or redesigning pipe routes on site.
+
+2. Core Concept
+Branch pipe vs. structure clashes fall into three categories:
+
+Category 1 — Pipe Passes Through a Structural Beam
+- Steel beam: penetration is possible but must be structurally approved. A circular opening is cut through the web. Size, location, and spacing of penetrations are governed by structural engineering rules.
+- Concrete beam: coring post-pour is expensive and weakens the beam. Penetrations should be pre-formed (cast-in sleeves) — modeled in BIM before concrete is poured.
+- Rule: never assume beam penetration is acceptable — every penetration must be approved by the structural engineer.
+
+Category 2 — Pipe Runs Alongside a Column or Wall
+- A column or wall narrowing the ceiling zone may force a pipe to drop below its designed elevation
+- Resolution: coordinate the routing elevation before the structural model is finalised
+
+Category 3 — Pipe Penetrates a Concrete Slab (Floor-to-Floor Runs)
+- Vertical pipes (risers, drops between floors) must pass through concrete slabs via pre-formed sleeves
+- The sleeve must be large enough to allow for pipe movement (thermal expansion) and firestop material
+- Minimum sleeve diameter: pipe OD + 50 mm for small pipes, larger for pipes with insulation
+
+Sleeve Coordination in BIM
+- Model every slab penetration sleeve as a generic family or structural opening request
+- Tag each sleeve with: pipe diameter, system name, elevation, and firestop specification reference
+- Issue structural opening requests to the structural engineer at the earliest model stage — before RC slab drawings are issued for construction
+
+3. Real Project Lens
+A fire protection riser passes through 8 concrete slabs in a 10-storey building. The BIM modeler creates 8 sleeve families at the correct slab locations and issues a Structural Opening Request drawing showing each sleeve with its required diameter and centerline coordinate. The structural engineer incorporates the sleeves into the slab reinforcement drawings. No post-pour coring is needed.
+
+4. BIM Check
+- Check: All branch line vs. structural beam clashes have been identified and flagged — no assumed penetrations without structural approval
+- Check: All slab penetrations for fire protection pipes are modeled as sleeves with correct diameter and coordinates
+- Check: Structural opening request documents have been issued to the structural engineer before slab drawings are finalised
+
+5. Common Mistake
+Routing a branch line through a structural beam web without notifying the structural engineer, assuming it is the same as cutting a hole in a partition wall. Structural beam penetrations require engineering assessment — the beam web has minimum edge distance requirements and a maximum penetration size limit.
+
+6. Today's Action
+Identify one structural beam that a fire protection branch line must cross on your current or sample project. Look up the beam size, then check whether a penetration through the web is geometrically possible given: pipe OD, minimum edge distance (typically beam depth / 4 from the top/bottom flange), and maximum hole size (typically beam depth / 3).
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,49 @@
+LUA BIM LABS Starter
+Day 81 - Reading a Single Line Diagram — Symbols, Bus Ratings, and Protective Device Notation
+
+1. Why This Matters
+The Single Line Diagram (SLD) is the master reference document for the electrical distribution system. Every panel, feeder, and protective device on the project is defined on the SLD before the BIM model is built. A modeler who cannot read an SLD cannot verify that the model correctly represents the engineer's design — making every subsequent model check unreliable.
+
+2. Core Concept
+Key SLD elements and their BIM relevance:
+
+| SLD Element | Symbol / Notation | BIM Meaning |
+|---|---|---|
+| Busbar | Horizontal bold line with voltage label (e.g., 400V) | Represents the MSB or DB bus — model as panel family with correct voltage parameter |
+| Circuit Breaker (MCB/MCCB) | Rectangle or box on a line | Each breaker = one circuit in the Revit panel schedule |
+| Main Incomer | Bold line at the top with kA rating | Represents the main connection to the panel — defines panel ampere rating |
+| Feeder cable | Line between panels with cable size (e.g., 3×70mm²+E) | Route this as a cable tray or conduit run in the model |
+| Fuse | Diamond or S symbol on a line | Protective device — note the fuse rating as a model parameter |
+| Earth / Ground | Three horizontal lines (decreasing) | Confirm earthing system type (TN-S, TN-C-S) — affects cable routing strategy |
+| Transformer | Two circles with coils | Represents step-down transformer — model as equipment family in electrical room |
+| Panel / Board label | Rectangle with panel ID (e.g., DB-L3) | Panel ID must match Revit family name exactly |
+
+Reading a bus rating:
+- "400V / 3Ph / 4W" means: 400 volts, three-phase, four-wire (3 phases + neutral) — standard LV system
+- "kA rating" (e.g., 25kA) is the fault current rating of the busbar — record this as a panel parameter
+- "MCB 16A / 1P" means: 16-ampere, single-pole miniature circuit breaker — one circuit in the panel schedule
+
+Protective device notation:
+- MCB: Miniature Circuit Breaker — residential and light commercial, up to ~63A
+- MCCB: Moulded Case Circuit Breaker — larger panels, up to 1,600A
+- ACB: Air Circuit Breaker — main incomer on large MSBs
+- RCD/RCCB: Residual Current Device — required for socket circuits and wet areas
+- RCBO: Combined MCB + RCD — note on the SLD as "RCBO" and flag in panel schedule
+
+3. Real Project Lens
+A junior modeler receives an SLD for a 12-floor office building. She reads the SLD from top to bottom: the MSB is fed by an 11kV/400V transformer (she notes the transformer location — basement electrical room), the MSB serves 12 floor DBs and 3 mechanical plant DBs. Each floor DB is labeled DB-L1 through DB-L12. She lists all 15 panel IDs and confirms each one has a corresponding family placed in the Revit model before beginning circuit assignment.
+
+4. BIM Check
+- Check: Does every panel ID on the SLD have a corresponding Revit panel family placed in the model — with a matching name parameter?
+- Check: Is the voltage and phase configuration (e.g., 400V/3Ph/4W) recorded as a parameter on each panel family in the model?
+- Check: Are all feeder cables shown on the SLD modeled as cable tray or conduit runs connecting the source panel to the destination panel?
+
+5. Common Mistake
+Reading only the panel boxes on the SLD and ignoring the feeder cables between them. The feeder cables represent the largest conductors on the project — if they are not modeled, the cable tray sizing and routing cannot be verified for the main distribution circuits.
+
+6. Today's Action
+Find an SLD from a project file, textbook, or online sample. Identify and label: (1) the MSB bus, (2) at least three panel IDs, (3) one feeder cable with its conductor size, (4) one MCB with its rating. Write the bus voltage and phase configuration. Practice reading from supply top to final load bottom.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

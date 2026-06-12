@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "AI",
+    "BIM",
+    "BIM Coordination",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "How AI Is Changing BIM Coordination: Current Applications and Limits",
+  "slug": "how-ai-is-changing-bim-coordination-current-applications-and-limits",
+  "content": "<p>Artificial intelligence is entering BIM coordination workflows through clash prioritisation, issue classification, automated reporting, and generative design. Understanding which AI applications are production-ready and which are still experimental helps BIM teams make informed investment decisions.</p>\n<h2>Why This Matters</h2>\n<p>BIM teams that ignore AI tools risk falling behind in productivity. Teams that adopt unproven AI tools for critical coordination tasks risk project delays when the tools fail in production conditions. A grounded assessment of current AI capability is essential.</p>\n<h2>Practical Guidance</h2>\n<p><strong>Clash Prioritisation (Production-Ready):</strong> AI-powered clash detection in tools like Autodesk Construction Cloud and BIMcollab Zoom can classify clashes by severity, assign disciplines, and identify duplicate issues automatically. These tools are in production use on large projects and demonstrably reduce coordination meeting time.</p>\n<p><strong>Issue Classification (Production-Ready):</strong> Natural language processing tools can read RFI text, classify issues by discipline and type, and suggest assignment routing. These are in use on large infrastructure projects but require training on project-specific terminology for good accuracy.</p>\n<p><strong>Generative Layout (Experimental):</strong> Generative design tools for MEP routing and structural layout optimization are in active development. Current tools produce options that require significant engineering review before use. Not yet suitable for unsupervised production use.</p>\n<p><strong>Automated Drawing Production (Experimental):</strong> AI-assisted drawing production (automatic dimensioning, annotation, sheet layout) is available in some tools but produces output that requires substantial manual correction on complex projects.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Evaluate AI tools against production use cases, not demo conditions</li>\n<li>Pilot AI clash prioritisation on one project before full deployment</li>\n<li>Require AI tool vendors to provide accuracy metrics from comparable projects</li>\n<li>Document AI tool use and output review procedures in BIM Execution Plan</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>AI in BIM is most valuable where the task is high-volume and rule-based — prioritise coordination tools over generative design tools for near-term productivity gains.</p>"
+}

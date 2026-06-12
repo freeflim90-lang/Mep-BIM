@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 2 - Why System Names Matter in Revit MEP
+
+1. Why This Matters
+System names affect visibility, filtering, schedules, clash grouping, and team communication. A model can look correct geometrically but still create confusion if systems are named incorrectly.
+
+2. Core Concept
+In Revit MEP, a system is a logical grouping of connected elements such as supply air, return air, chilled water, sanitary, fire protection, power, or communication.
+
+3. Real Project Lens
+If a chilled water return pipe is assigned to the wrong system, it may appear in the wrong schedule, clash group, or color filter. This makes QA and coordination slower.
+
+4. BIM Check
+- Review the system name of a selected duct, pipe, tray, or equipment item.
+- Compare the system name with the drawing legend or project naming rule.
+- Check whether filters and schedules rely on that system value.
+
+5. Common Mistake
+Beginners often focus only on size and location, then forget that incorrect system data can damage downstream coordination.
+
+6. Today's Action
+Pick five MEP elements in a sample model. Record category, system name, size, and level for each one.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

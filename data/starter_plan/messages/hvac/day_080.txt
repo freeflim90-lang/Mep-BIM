@@ -1,0 +1,34 @@
+LUA BIM LABS Starter
+Day 80 - HVAC Model Quality — 10-Point Self-Check
+
+1. Why This Matters
+A model quality self-check before every submission prevents rework, protects your professional reputation, and demonstrates the discipline that senior coordinators recognize and reward.
+
+2. Core Concept
+- Run this 10-point check before every HVAC model submission:
+- 1. System assignment: every duct and fitting is assigned to the correct Revit MEP system
+- 2. Open connectors: no unconnected duct ends exist — verified with the System Inspector
+- 3. Element naming: all equipment has a Mark value; ducts use the correct type name
+- 4. LOD status: all elements are at the agreed LOD for this submission stage
+- 5. Insulation: applied to all ducts requiring it per the project specification
+- 6. Fire dampers: placed at all fire-rated wall and floor penetrations
+- 7. Clearance: access clearance zones are maintained around all equipment
+- 8. Coordination zone: no elements are placed outside the agreed scope boundary
+- 9. Revit warnings: warning count is below 50 and no critical warnings exist
+- 10. NWC export: a fresh NWC export has been tested in Navisworks before submission
+
+3. Real Project Lens
+A BIM coordinator who implemented this 10-point check as a team routine saw the average clash count per HVAC submission drop from 340 to 95 within two months. The reduction came from fixing open connector and system assignment errors before submission — errors that had been generating phantom clashes in Navisworks.
+
+4. BIM Check
+- Check: running the Revit System Inspector shows zero unconnected HVAC elements
+- Check: all HVAC equipment has a Mark value visible in the element properties
+- Check: a test NWC export opens correctly in Navisworks with all elements visible in the selection tree
+
+5. Common Mistake
+Beginners skip the self-check because it feels like extra work. In practice, an unchecked model returns for revision and costs more time than the check would have taken.
+
+6. Today's Action
+Run 3 of the 10 checks on any HVAC model you have access to. Write down what you find for each of the three.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

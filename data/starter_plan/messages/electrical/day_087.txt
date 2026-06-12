@@ -1,0 +1,62 @@
+LUA BIM LABS Starter
+Day 87 - Electrical Parameter Checklist — Panel Name, Circuit Number, Load, Voltage, System
+
+1. Why This Matters
+Electrical parameters are the data layer that makes the BIM model useful beyond clash detection. A model with correct geometry but missing or inconsistent parameters cannot generate reliable panel schedules, load summaries, or handover data. A systematic parameter checklist catches data gaps before the model is submitted — preventing costly corrections after client acceptance.
+
+2. Core Concept
+Electrical parameter checklist — element by element:
+
+Panel / Distribution Board:
+- Panel Name — matches SLD panel ID exactly
+- Voltage — e.g., 400V, 230V
+- Number of Phases — 1 or 3
+- Incomer Rating (A) — main breaker amperage
+- Fault Rating (kA) — busbar short-circuit rating
+- Number of Poles / Circuits — total circuit capacity
+- Room Name — room the panel is located in
+- Served Floor / Zone — floors or areas fed by this panel
+- Emergency / Normal — power type classification
+
+Circuit (per circuit in the panel schedule):
+- Circuit Number — matches SLD circuit number
+- Circuit Description — matches engineering panel schedule description
+- Load Classification — Lighting / Power / HVAC / Fire Alarm / Emergency
+- Number of Poles — 1Ph (1 pole) or 3Ph (3 poles)
+- Frame Size / Rating (A) — breaker rating
+- Apparent Load (VA) or Wattage (W) — connected load value
+- Connected Element ID — links to the load equipment family
+
+Cable Tray / Conduit:
+- System Type — Power-HV / Power-LV / Data / Fire Alarm / Security
+- Material — Steel / GI / PVC / Aluminium
+- Width (mm) — tray width
+- Depth (mm) — tray depth
+- Trade Size (conduit only) — in mm or inches
+
+Equipment (loads connected to circuits):
+- Equipment Name / Mark — matches mechanical or electrical schedule
+- Panel Name — which DB feeds this equipment
+- Circuit Number — which circuit breaker feeds this equipment
+- Voltage — 230V or 400V
+- Load (kW) or VA — connected load value
+
+Checking tool: Revit schedule views — create a multi-category schedule including all electrical elements with the above parameters. Filter to show empty fields — any empty cell is a data gap.
+
+3. Real Project Lens
+A BIM coordinator creates a multi-category parameter schedule in Revit covering all DBs, circuits, and connected equipment on a hotel project. Filtering for empty "Panel Name" fields on equipment, she finds 31 equipment families with no panel name — all placed but never circuit-assigned. Filtering for empty "Load Classification" on circuits, she finds 18 circuits with no classification. Both gaps are fixed before the handover data export, avoiding a data quality rejection from the facility management team.
+
+4. BIM Check
+- Check: Does a Revit multi-category schedule show zero empty cells for Panel Name, Circuit Number, and Load Classification across all electrical elements?
+- Check: Is the Voltage parameter set on every distribution board and every connected equipment family — not left at the Revit default?
+- Check: Is the System Type parameter set on every cable tray and conduit run — allowing system-based filtering and clash rule assignment?
+
+5. Common Mistake
+Populating parameters only on panels and forgetting to populate them on connected load equipment. Panel schedules look complete, but the load equipment families have no Panel Name or Circuit Number — making it impossible to trace from equipment back to panel without manually searching the System Browser.
+
+6. Today's Action
+In Revit, create a simple schedule for electrical equipment (or light fixtures) with three columns: Family Name, Panel Name, Circuit Number. Export it. Count how many rows have empty Panel Name or Circuit Number cells. This count is your data gap baseline for the electrical model.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

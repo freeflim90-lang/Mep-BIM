@@ -1,0 +1,48 @@
+LUA BIM LABS Starter
+Day 62 - Cable Tray Sizing and Routing Basics
+
+1. Why This Matters
+Cable trays carry power, data, and control cables through the building. An undersized cable tray cannot accommodate all cables. An oversized tray wastes ceiling space and creates unnecessary clashes with HVAC. Incorrect routing creates safety hazards (power cables too close to data cables) and maintenance access problems.
+
+2. Core Concept
+- Cable tray types:
+  - Ladder Tray: Open rung design for heavy power cables. Good airflow — preferred for HV and LV power
+  - Perforated Tray: Perforated base for lighter cables. Used for data and control cables
+  - Solid Bottom Tray: Used in hazardous environments or areas requiring cable protection
+- Tray sizing: based on cable fill ratio
+  - Power cables: maximum 40% of tray cross-section area
+  - Data/control cables: maximum 50% of tray cross-section area
+  - Rule: always allow room for future cables — size for current + 20% spare capacity
+- Common tray widths: 100mm, 150mm, 200mm, 300mm, 450mm, 600mm
+- Routing rules:
+  - Power and data trays must be separated by minimum 300mm (reduces electromagnetic interference)
+  - Tray must be continuous from source to destination — no gaps
+  - Maintain minimum 300mm above finished floor level (for access panels) or route high in ceiling zone
+  - Trays require support brackets every 1200–1500mm
+
+Cable Tray Selection Guide
+
+| Cable Type | Tray Type | Minimum Separation |
+|---|---|---|
+| HV Power | Ladder tray | Separate shaft or 600mm from LV |
+| LV Power | Ladder tray | 300mm from data/control |
+| Data (IT) | Perforated tray | 300mm from LV power |
+| Fire Alarm / Control | Perforated tray | 300mm from power |
+
+3. Real Project Lens
+Level 4 of an office building requires: one 450mm wide ladder tray for LV power (fed from DB-L4) and one 300mm wide perforated tray for IT data cables (from the IT room to each workstation cluster). The two trays are routed at 2800mm and 2650mm ceiling height respectively — 150mm vertical separation — insufficient. The modeler re-routes the data tray to 2500mm, achieving 300mm separation.
+
+4. BIM Check
+- Check: Power and data trays maintain 300mm minimum separation throughout their parallel runs
+- Check: Tray cross-section fill is below 40% (power) or 50% (data) — calculate from cable schedule
+- Check: Tray supports (hangers or brackets) are modeled at maximum 1500mm centers
+
+5. Common Mistake
+Routing all cable trays in the same horizontal plane at the same elevation to simplify the model — this makes the model look clean but puts power and data trays at the same level, creating electromagnetic interference and a code violation.
+
+6. Today's Action
+For a DB supplying 12 circuits, estimate the total cable cross-section area (assume each circuit uses 4mm² × 3-core cable ≈ 28mm² per circuit). Calculate the total fill area. Select a tray width where 12 × 28mm² = 336mm² is less than 40% of the tray area.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

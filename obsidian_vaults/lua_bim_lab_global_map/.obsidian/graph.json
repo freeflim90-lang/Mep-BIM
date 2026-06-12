@@ -1,0 +1,12 @@
+{
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": false,
+  "nodeSizeMultiplier": 1.1,
+  "lineSizeMultiplier": 1,
+  "centerStrength": 0.55,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 170
+}

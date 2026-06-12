@@ -1,0 +1,28 @@
+LUA BIM LABS Starter
+Day 76 - Flanged, Grooved, and Threaded Connections — When and How
+
+1. Why This Matters
+Connection types determine installation method, maintenance access requirements, and BIM family selection. Modeling the wrong connection type leads to schedule errors and installation coordination issues.
+
+2. Core Concept
+- Flanged connections: bolted plate connections — used for equipment connections, valves above 65mm diameter, and anywhere future disassembly is needed; requires space for bolt tightening on all sides
+- Grooved (Victaulic) connections: a groove is cut in the pipe end and a mechanical coupling clamps over it — fast to install, requires less radial space than flanged but cannot be used in all applications
+- Threaded (screwed) connections: used for small-bore pipes (typically 50mm and below) — requires thread engagement; used for instrument connections and domestic water
+- In Revit: select the correct pipe fitting family for each connection type — using a generic elbow for a flanged connection produces wrong dimensions in the model
+- BIM coordination impact: flanged joints require bolt clearance (typically 100mm radial clearance around the flange face) — this affects spacing in congested areas
+
+3. Real Project Lens
+On a plant room project, all pipe-to-equipment connections were modeled as generic fittings. When the piping contractor arrived on site, 14 flanged connections at AHU and chiller interfaces did not have sufficient bolt clearance. Three connections required rotating the equipment connection branch, adding 2 days to the plant room installation.
+
+4. BIM Check
+- Check: flanged connections are modeled with the correct flange dimensions and bolt clearance radius
+- Check: grooved connections are used only where the pipe material and diameter allow mechanical coupling, per the engineer's specification
+- Check: no flanged connection is modeled with less than 100mm clearance around the full flange face for bolt tightening
+
+5. Common Mistake
+Beginners model all pipe connections with the same generic fitting regardless of connection type. In practice, each connection type has different dimensional requirements that affect coordination.
+
+6. Today's Action
+For one pipe-to-pump connection in a sketch, draw the flanged connection correctly showing flange plate, bolt holes, and the 100mm clearance zone required around the flange face.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

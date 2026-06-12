@@ -1,0 +1,51 @@
+LUA BIM LABS Starter
+Day 70 - Week 2 Review — Head Placement Summary
+
+1. Why This Matters
+Head placement is the most visible and most commonly reviewed element of fire protection BIM. Authorities, engineers, and contractors all check head positions. The Week 2 review locks in the rules from Days 68–69 and connects them to the broader fire protection framework established in Week 1.
+
+2. Core Concept
+Week 2 Fire Protection — Head Placement Summary
+
+| Day | Topic | Key Rule |
+|---|---|---|
+| 68 | Sprinkler Head Spacing | Max coverage area per head is defined by hazard class — Light 18.6 m², Ordinary 12.1 m², Extra 9.3 m² |
+| 69 | Coverage and Obstructions | Solid obstructions > 300 mm wide require supplemental heads — shadow zone ≈ 3× obstruction depth |
+
+Critical Rules — Head Placement
+- Hazard classification is per zone, not per floor — reclassify storage rooms, kitchens, and high-rack areas separately
+- Wall offset ≤ half the maximum head-to-head spacing
+- Minimum spacing between any two heads: 1.8 m (prevents thermal shielding)
+- Obstruction check must be done in 3D — plan view is insufficient
+- Beam depth > 300 mm: supplemental head required in the beam bay
+- Head-to-ceiling distance: within specified range per head type (pendant vs. upright differs)
+- Never move a head without rechecking the coverage area calculation
+
+Combined Week 1 + Week 2 Rules (running checklist so far)
+1. Confirm system type (wet / dry / pre-action) per zone
+2. Verify hazard classification per zone
+3. Check maximum coverage area per head
+4. Check minimum and maximum spacing
+5. Verify wall offsets
+6. Run 3D obstruction check — beams, ducts, trays
+7. Confirm head-to-ceiling distance
+
+3. Real Project Lens
+A BIM coordinator reviewing a Level 3 fire protection model uses the combined Week 1 + Week 2 checklist above as a structured QA pass before issuing the model for coordination. In 20 minutes, the coordinator identifies one zone with an incorrect system type (wet where dry was required) and two beam bays where supplemental heads were omitted. Both issues are flagged as RFIs before the model is issued.
+
+4. BIM Check
+- Check: All zones on the floor have the correct hazard classification recorded in the model or on a separate reference schedule
+- Check: The coverage area of every head has been verified against the hazard class limit — no head exceeds its allowed area
+- Check: 3D obstruction check has been completed and documented — no beam or duct deeper than 300 mm has been ignored
+
+5. Common Mistake
+Completing head placement without documenting the hazard classification per zone. If the zone classification changes later (e.g., storage area reclassified from Light to Ordinary), the modeler has no record to guide which heads need repositioning.
+
+6. Today's Action
+Update your personal fire protection BIM checklist (started on Day 67) by adding the four new head placement rules from Days 68–69. Your checklist should now have at least 9 items.
+
+---
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

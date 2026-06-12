@@ -1,0 +1,28 @@
+LUA BIM LABS Starter
+Day 90 - HVAC Month 3 Complete — Next Steps
+
+1. Why This Matters
+Day 90 marks the end of the 90-Day MEP BIM Starter Program. You have completed the Foundation curriculum and the HVAC discipline deep-dive. This lesson sets out what to do next.
+
+2. Core Concept
+- What you have completed: 8 Foundation tracks covering MEP BIM orientation, Revit MEP basics, drawing reading, model quality, clash coordination, data and schedules, site-readiness, and BIM career habits — plus 30 days of HVAC deep-dive
+- The 90-day program gives you a structured entry point into HVAC BIM coordination work. Real competency develops through project practice — the program is the map, not the destination
+- Next steps for HVAC BIM practice: find or create a sample Revit MEP model, practice running clash tests against a structural model, practice filling in HVAC schedules with design data
+- Career development: look for junior MEP BIM modeler or BIM coordinator roles that include HVAC coordination; portfolio projects can include sample models with annotated coordination decisions
+- Continuing education: the Personal Tutor plan provides personalized daily lessons, level checks, and monthly progress reports for learners who want structured advancement beyond the Starter foundation
+
+3. Real Project Lens
+A Starter Plan graduate applied for a junior BIM coordinator role. In the interview, they were asked to walk through how they would coordinate an HVAC system with the structural model. Using concepts from the 90-day program — system assignment, LOD 350, clash grouping, penetration submission — they answered confidently. They were offered the role as a junior BIM coordinator with a 6-month probation.
+
+4. BIM Check
+- Check: you can describe the end-to-end HVAC BIM coordination process from system setup to as-built model
+- Check: you can identify the three most common coordination clashes between HVAC and other trades and explain how to resolve them
+- Check: you have a plan for what to practice next to build on the 90-day foundation
+
+5. Common Mistake
+Beginners who complete a program sometimes wait for the perfect opportunity to apply their skills. The best practice is to start with a sample model immediately — imperfect application builds competency faster than waiting.
+
+6. Today's Action
+Write your next 3 learning actions: one thing to practice in Revit, one model to find or create, and one role or project to work toward in the next 3 months.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

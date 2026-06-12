@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "AI",
+    "BIM Automation",
+    "Revit",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "How Dynamo and Python Scripts Replace Repetitive BIM Tasks with Automation",
+  "slug": "how-dynamo-and-python-scripts-replace-repetitive-bim-tasks-with-automation",
+  "content": "<p>Dynamo visual programming and Python scripts within the Revit API eliminate repetitive manual tasks that consume significant BIM team time. Parameter renaming, view creation, sheet population, and model auditing are all candidates for automation.</p>\n<h2>Why This Matters</h2>\n<p>Repetitive BIM tasks are not just slow — they introduce inconsistency. A team member manually renaming 300 doors will make errors. A Dynamo script does it identically every time. Automating these tasks frees BIM professionals for higher-value coordination and decision-making work.</p>\n<h2>Practical Guidance</h2>\n<p><strong>Parameter Batch Update:</strong> Dynamo can read parameter values from an Excel spreadsheet and write them to Revit elements in batch. This is the most commonly automated task: updating room names, equipment tag numbers, and specification references from a project database.</p>\n<p><strong>View and Sheet Creation:</strong> Python scripts using the Revit API can create 50 floor plan views, apply view templates, place them on sheets, and add titleblock information in minutes. The equivalent manual operation takes hours.</p>\n<p><strong>Model Audit Automation:</strong> Dynamo graphs can check for common model quality issues — elements not on their host level, parameters with blank values, duplicate element names — and output a report or highlight elements in the model.</p>\n<p><strong>When Not to Automate:</strong> Automation is valuable for tasks that are truly repetitive and rule-based. Tasks requiring engineering judgement, aesthetic evaluation, or knowledge of project context are not suitable for automation. Mis-applied automation can introduce errors faster than manual work.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Identify top 5 most repeated BIM tasks and evaluate automation feasibility</li>\n<li>Test automation scripts on a non-critical model copy before production use</li>\n<li>Keep a rollback copy before running batch operations</li>\n<li>Document scripts in the project BIM folder with version and usage notes</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>The best automation target is the task you do the same way every time — if it varies by judgement, automate the reporting, not the decision.</p>"
+}

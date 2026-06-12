@@ -1,0 +1,45 @@
+{
+  "completed": [
+    "MQA-QWEN-001",
+    "MQA-QWEN-002"
+  ],
+  "in_progress": null,
+  "last_report": {
+    "task_id": "MQA-QWEN-002",
+    "title": "품질진단 룰 JSON 스키마 초안",
+    "ok": true,
+    "reason": "",
+    "note": "obsidian_vaults/model_quality_auditor/06_Qwen_Drafts/MQA-QWEN-002-2026-05-21 품질진단 룰 JSON 스키마 초안.md",
+    "next_task": "MQA-QWEN-003",
+    "timestamp": "2026-05-21T09:16:29"
+  },
+  "runs": [
+    {
+      "task_id": "MQA-QWEN-001",
+      "title": "도메인 모델 및 데이터 계약 초안",
+      "ok": true,
+      "reason": "",
+      "note": "obsidian_vaults/model_quality_auditor/06_Qwen_Drafts/MQA-QWEN-001-2026-05-21 도메인 모델 및 데이터 계약 초안.md",
+      "next_task": "MQA-QWEN-002",
+      "timestamp": "2026-05-21T08:57:49"
+    },
+    {
+      "task_id": "MQA-QWEN-001",
+      "title": "도메인 모델 및 데이터 계약 초안",
+      "ok": true,
+      "reason": "",
+      "note": "obsidian_vaults/model_quality_auditor/06_Qwen_Drafts/MQA-QWEN-001-2026-05-21 도메인 모델 및 데이터 계약 초안.md",
+      "next_task": "MQA-QWEN-002",
+      "timestamp": "2026-05-21T08:59:05"
+    },
+    {
+      "task_id": "MQA-QWEN-002",
+      "title": "품질진단 룰 JSON 스키마 초안",
+      "ok": true,
+      "reason": "",
+      "note": "obsidian_vaults/model_quality_auditor/06_Qwen_Drafts/MQA-QWEN-002-2026-05-21 품질진단 룰 JSON 스키마 초안.md",
+      "next_task": "MQA-QWEN-003",
+      "timestamp": "2026-05-21T09:16:29"
+    }
+  ]
+}

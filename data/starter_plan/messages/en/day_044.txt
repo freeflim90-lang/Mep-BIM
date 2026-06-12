@@ -1,0 +1,35 @@
+LUA BIM LABS Starter
+Day 44 - Tracking Model Changes
+
+**1. Why This Matters**
+On live projects, the model is modified daily — without change tracking, coordination decisions made last week may be unknowingly overwritten, creating conflicts that were supposed to be resolved.
+
+**2. Core Concept**
+Model change tracking records what changed in the model, when, and by whom. It supports accountability, coordination integrity, and audit trails.
+
+Methods and tools:
+- **Revit Worksharing / Central Model history**: In a workshared project, the server log records which user synced changes and when — accessible through Manage > Worksharing Monitor
+- **Model Version naming**: A discipline-standard naming convention (e.g., MEP_L2_COORD_v03_2026-05-29.rvt) lets teams track model states without in-software tools
+- **BIM 360 / ACC Model Versioning**: Cloud-hosted Revit files record every publish event with a timestamp and user — accessible from the project's Files dashboard
+- **Revision table in drawings**: Formal issued drawings carry a revision block tracking drawing-level changes, not model-level
+- **Change log (manual)**: A shared document (often Excel) where modelers record what they changed, why, and which coordination item it relates to
+
+**3. Real Project Lens**
+A mechanical modeler makes 14 duct routing changes to resolve coordination items but does not sync the central file until end of day Friday. A clash test run by the coordinator on Thursday afternoon reflects the old model state. The Friday sync updates the model, but the Thursday clash report was already sent to the site team — causing confusion about which routes are current.
+
+**4. BIM Check**
+- Check: Can you view the worksharing history of a Revit central file to see recent sync events?
+- Check: Can you describe a model file naming convention that makes version history readable without opening the file?
+- Check: Can you explain why running a clash test on an out-of-date NWC file produces unreliable results?
+
+**5. Common Mistake**
+Saving the Revit file locally and not syncing to the central model. Local changes are invisible to everyone else on the project until synced — always sync after completing coordination-related edits.
+
+**6. Today's Action**
+Write a short model version naming convention for a fictional project — include project code, discipline code, zone, version number, and date. Test it by writing three "version" names that show progression over two weeks.
+
+---
+
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

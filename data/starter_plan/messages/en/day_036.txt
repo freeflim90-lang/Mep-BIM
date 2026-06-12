@@ -1,0 +1,33 @@
+LUA BIM LABS Starter
+Day 36 - Common Clash Resolution Patterns
+
+1. Why This Matters
+Most MEP clashes are resolved using one of a small set of standard approaches — recognizing these patterns lets you contribute to resolution discussions even as a junior team member.
+
+2. Core Concept
+Rather than treating each clash as a unique problem, experienced coordinators recognize resolution patterns that apply repeatedly across projects.
+
+The most common patterns:
+- Elevation drop/raise: Duct or pipe shifts up or down to clear a beam or other system — most frequent resolution
+- Horizontal offset: Pipe or conduit moves left or right within tolerance to clear a parallel run
+- Size reduction with velocity check: Duct is reduced in size (and velocity re-checked by engineer) to fit within the available zone
+- Penetration through structure: A sleeve or core is added to structural element — requires structural engineer approval
+- System re-routing: An entire run is redesigned along a different path — used when no small adjustment is possible
+- Accept with clearance note: The clash is accepted as-is because the elements are flexible (e.g., a cable tray with a pipe that has documented clearance)
+
+3. Real Project Lens
+In a corridor ceiling space with 350mm clearance, a 400mm HVAC duct clashes with a structural beam. The resolution is to offset the duct horizontally by 600mm around the beam end, reconnect it with two 45-degree elbows, and maintain the same invert elevation. This is a horizontal offset combined with elevation preservation — a pattern the team has used on every floor of the same building.
+
+4. BIM Check
+- Check: Can you name three resolution patterns and describe when each one is appropriate?
+- Check: Can you explain why a size reduction on a duct requires engineer confirmation before the model is updated?
+- Check: Can you identify which pattern requires approval from a structural engineer before implementation?
+
+5. Common Mistake
+Junior modelers sometimes fix a clash by moving an element without checking whether the new position creates a new clash with a third system. Always re-run the test after making a resolution change.
+
+6. Today's Action
+Pick one clash resolution pattern and sketch (on paper or digitally) what it looks like in section view — show the original position, the conflict, and the resolved position.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,49 @@
+LUA BIM LABS Starter
+Day 85 - Week 5 Review — System Verification Summary
+
+1. Why This Matters
+System verification is the quality gate between modeling and delivery. Everything modeled in Days 61–84 must be verified before the model is issued — for coordination, for construction, or for handover. Week 5 has covered the four verification activities that prevent the most serious fire protection BIM failures from reaching the field.
+
+2. Core Concept
+Week 5 Fire Protection — System Verification Summary
+
+| Day | Topic | Key Rule |
+|---|---|---|
+| 81 | Verifying Head Coverage | Circle plot method — every point on the floor must be within coverage radius. Count alone is insufficient |
+| 82 | Identifying Dead Zones | Dead zones occur predictably: wall offsets, post-partition areas, equipment shadows, ceiling changes |
+| 83 | Pressure and Flow at Remote Head | Critical path pipes must not be re-routed, lengthened, or reduced in size without fire engineer notification |
+| 84 | As-Installed vs. As-Designed | All RFIs must be incorporated into the model. As-built ≠ as-designed without documented updates |
+
+Critical Rules — System Verification
+- Coverage verification must use distribution check — not just head count
+- Dead zones have predictable causes — check corners, recesses, partitioned areas, and equipment rooms
+- Any coordination change on the hydraulic critical path is an engineering notification event, not a modeling decision
+- As-built model must incorporate all RFIs before handover — paper RFI closure alone is not model closure
+- RFI reference numbers must be stored in the modified element's parameter for traceability
+
+Combined Running Checklist (Days 61–85)
+Items 1–16: (Days 61–80 — see Day 80)
+17. Coverage verified by distribution method (circle plot or equivalent) — not head count only
+18. Dead zones identified and remediated or documented
+19. Critical path pipes identified and protected from unnotified re-routing
+20. All open RFIs incorporated into the model before issue
+
+3. Real Project Lens
+The BIM lead on a 15-storey mixed-use project applies the 20-point running checklist as a pre-issue QA gate for every fire protection model issue. Items 17–20 are the final gate before the as-built issue. The process catches a dead zone in a lobby recess (remediated), an open RFI that was resolved on paper but not in the model (updated), and a critical path pipe that had been rerouted without notification (fire engineer alerted). All three are resolved in the same day.
+
+4. BIM Check
+- Check: All 20 items on the running checklist have been reviewed for the floor or zone being issued
+- Check: Coverage verification documentation (circle plot or equivalent record) is attached to the model issue
+- Check: Fire engineer has been notified of and has signed off on any critical path changes made during the project
+
+5. Common Mistake
+Running verification only once — at the beginning of the coordination phase — and not rerunning it after architectural changes, RFIs, or coordination reroutes. Fire protection verification is not a one-time event. It must be repeated every time a significant change is made to the model.
+
+6. Today's Action
+Apply Items 17–20 of the running checklist to one floor of your current or sample model. Record the result for each item: pass, fail, or pending (action required). If any item fails, identify the specific element and the action needed to resolve it.
+
+---
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

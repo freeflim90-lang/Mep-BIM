@@ -1,0 +1,28 @@
+LUA BIM LABS Starter
+Day 75 - Flexible Connections and Vibration Isolation
+
+1. Why This Matters
+Pumps, chillers, and AHUs create vibration that must not be transmitted through the building structure via the piping system. Flexible connections in BIM ensure this requirement is modeled — not just noted in a specification.
+
+2. Core Concept
+- Flexible connections (also called expansion joints or flexible hose assemblies) are installed at the connection points between rotating equipment and rigid pipe
+- Purpose: absorb vibration, allow for thermal expansion of pipe, and accommodate minor misalignment during installation
+- Location: required at suction and discharge of every pump; at connections to chiller evaporator and condenser barrels; at AHU connections on vibration isolation pads
+- Length: typically 300-500mm on each side of the equipment — the flexible section requires clearance beyond the rigid pipe route
+- In Revit: model flexible connections as fittings between the equipment connector and the first rigid pipe isolation valve
+
+3. Real Project Lens
+On a commercial tower, flexible connections were not modeled at pump discharge points — only at the suction side. During commissioning, vibration was measurable through the building structure on all levels served by one pump. A flexible connection was retrofitted at the discharge, but the confined pump room made installation complex and added 3 days to the commissioning program.
+
+4. BIM Check
+- Check: flexible connections are modeled at both suction and discharge of every pump in the BIM model
+- Check: flexible connections are also placed at AHU chilled water connections where the AHU is on vibration isolation mounts
+- Check: the length of the flexible connection section has clearance in the model — it is not compressed against a wall or valve
+
+5. Common Mistake
+Beginners model rigid pipe directly from pump connection to isolation valve without allowing space for flexible hose. The omission is discovered during installation when the piping contractor finds no room to install the required component.
+
+6. Today's Action
+Identify one pump in a project or sketch. Mark the location of flexible connections on both suction and discharge sides, allowing realistic length for each flexible hose.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

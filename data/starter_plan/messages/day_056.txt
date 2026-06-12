@@ -1,0 +1,36 @@
+LUA BIM LABS Starter
+Day 56 - Using BIM References and Standards
+
+**1. Why This Matters**
+BIM work does not happen in a vacuum — industry standards define what is expected at each project stage, and knowing how to find and use those references makes your work defensible and professional.
+
+**2. Core Concept**
+BIM standards provide documented frameworks for how models should be created, shared, and verified. Understanding the key references helps you answer questions like "How detailed should this model be?" and "What parameters are required at this stage?"
+
+Key BIM references and standards:
+- **ISO 19650 (Parts 1 & 2)**: International standard for information management using BIM — defines how information is produced, shared, and archived across a project lifecycle
+- **LOD Specification (BIMForum)**: Defines Level of Development (LOD 100–500) for each element type — the most widely referenced guide for model content requirements
+- **National BIM Standards (country-specific)**: UK has PAS 1192 (now superseded by UK BIM Framework/ISO 19650); Singapore has BCA BIM guidelines; US has NBIMS-US
+- **EIR (Employer's Information Requirements)**: A project-specific document written by the client defining what BIM information they require and when
+- **BEP (BIM Execution Plan)**: Written by the project team in response to the EIR — defines who delivers what model content, in what format, at what stage
+- **Revit MEP Content Standards**: Many firms maintain internal standards for family naming, parameter naming, and system naming conventions
+
+**3. Real Project Lens**
+A junior BIM coordinator is asked what parameters should be in the mechanical equipment model at RIBA Stage 4 (Technical Design). Rather than guessing, they consult the project's BEP, which references the LOD Specification and lists the required fields: Mark, System Name, Flow Rate, Manufacturer, and Model Number. This directly answers the question without needing to involve senior staff.
+
+**4. BIM Check**
+- Check: Can you name the international standard that governs information management in BIM projects?
+- Check: Can you explain the difference between an EIR and a BEP in terms of who writes each and what it contains?
+- Check: Can you find the LOD Specification online and identify what LOD 350 requires for a mechanical duct?
+
+**5. Common Mistake**
+Modeling to a self-determined standard without consulting the project EIR or BEP. Every project has specific information requirements — assuming you know what is needed without checking the contract documents leads to rework or non-compliant deliverables.
+
+**6. Today's Action**
+Download or find the BIMForum LOD Specification (free PDF online). Look up one MEP element (e.g., Pipe or HVAC Duct) and read what is required at LOD 300 vs. LOD 350. Write down the difference in two sentences.
+
+---
+
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

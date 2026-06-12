@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.luabimlab.daily-blogger-post</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/choejeong-yeon/LUA BIM LABS/.dev-venv/bin/python</string>
+    <string>/Users/choejeong-yeon/LUA BIM LABS/scripts/daily_blogger_queue_publish.py</string>
+    <string>--generate-when-empty</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/choejeong-yeon/LUA BIM LABS</string>
+
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>8</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>/Users/choejeong-yeon/LUA BIM LABS/logs/daily_blogger_post.out.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/Users/choejeong-yeon/LUA BIM LABS/logs/daily_blogger_post.err.log</string>
+</dict>
+</plist>

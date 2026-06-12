@@ -1,0 +1,40 @@
+LUA BIM LABS Starter
+Day 62 - Duct Sizing Logic — CFM and Velocity
+
+1. Why This Matters
+Duct sizes are not guesses. If you model a duct that is too small, the system will not deliver the required airflow — and you will be asked to change it during construction, causing major coordination rework. If too large, it wastes ceiling space and causes unnecessary clashes.
+
+2. Core Concept
+- CFM (Cubic Feet per Minute) or L/s is the volume of air that must pass through the duct
+- Velocity is how fast the air moves through the duct (in m/s or fpm)
+- Duct area = Airflow divided by Velocity
+- Target velocities by application:
+  - Main supply duct in office: 5–8 m/s
+  - Branch duct to VAV: 3–5 m/s
+  - Final branch to diffuser: 2–3 m/s
+  - Return duct: 3–5 m/s
+- Duct shape: Rectangular is most common for large spaces (easier to coordinate with flat ceilings). Round ducts are used for smaller branches
+- After sizing: check that the duct fits within the ceiling zone (confirm available space with structural beam depth and ceiling height)
+- Duct size quick reference (Rectangular, Supply Air):
+  - Airflow 100–200 L/s: suggested size 300 x 150mm
+  - Airflow 200–400 L/s: suggested size 400 x 200mm
+  - Airflow 400–700 L/s: suggested size 600 x 250mm
+  - Airflow 700–1200 L/s: suggested size 800 x 300mm
+  - Airflow 1200–2000 L/s: suggested size 1000 x 400mm
+
+3. Real Project Lens
+The engineer's design schedule specifies 850 L/s for the main supply duct on Level 5. At a velocity of 6 m/s, the duct area required is 850/1000 divided by 6 = 0.142 m². A 600 x 250mm duct gives 0.15 m² — acceptable. The modeler enters 600 x 250 as the duct width and height in Revit.
+
+4. BIM Check
+- Check: Open the engineer's duct schedule — compare each duct size on the schedule to the size modeled in Revit
+- Check: For any duct modeled at a size not on the schedule, log it as a discrepancy and raise with the engineer
+- Check: Confirm the duct invert elevation fits within the ceiling zone (bottom of duct = ceiling level + clearance)
+
+5. Common Mistake
+Modelers sometimes scale duct sizes visually from the 2D drawing without reading the size tag — resulting in a duct that looks right on plan but is 200mm too wide, causing a clash with the sprinkler main.
+
+6. Today's Action
+Find a duct size schedule from a real project or sample drawing. Pick one duct entry. Calculate the duct area (flow divided by velocity). Confirm the size in the schedule gives adequate area.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

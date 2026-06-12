@@ -1,0 +1,43 @@
+LUA BIM LABS Starter
+Day 69 - Pipe Slope Requirements
+
+1. Why This Matters
+Drainage pipes only work because they slope. If a horizontal drain is modeled flat or at the wrong grade, solids settle, blockages form, and the system fails before handover. In BIM, slope errors are invisible unless you actively check them — making this a critical quality control habit.
+
+2. Core Concept
+Slope is expressed as a ratio or percentage. Common minimum grades:
+
+- DN50 (2 inch) pipes: 1:40 gradient (25 mm per metre run)
+- DN80 (3 inch) pipes: 1:80 gradient (12.5 mm per metre run)
+- DN100 (4 inch) and larger: 1:100 gradient (10 mm per metre run)
+
+These are minimums. Steeper slopes are acceptable if they do not cause self-siphoning or flow issues.
+
+How to model slope in Revit:
+- Select a horizontal drainage pipe
+- In properties, set the slope value (e.g., 1.04% for 1:100)
+- Revit adjusts the pipe end elevations automatically
+- Use the Slope parameter, not manual elevation adjustments, to maintain consistency
+- When connecting multiple branch drains, verify that downstream inverts are always lower than upstream inverts
+
+Common slope vocabulary:
+- Gradient: the rise-over-run ratio (e.g., 1:100)
+- Grade: American term for the same concept
+- Invert level: the inside bottom of the pipe at a given point
+
+3. Real Project Lens
+A hospital project has a 30-metre branch drain serving ward bathrooms on Level 3. The modeler sets a 1:100 slope throughout. At the upstream end the pipe invert sits at 2.800 m above finished floor. By the time it reaches the soil stack 30 metres away, the invert has dropped 300 mm to 2.500 m. This drop is checked against the structural beams below the slab. If the beam flange is at 2.400 m, the pipe just clears — but if the slope were set to 1:50, the pipe would conflict with the beam and require a design change.
+
+4. BIM Check
+- Check: All horizontal drainage pipes have a non-zero slope value set in Revit properties
+- Check: Downstream pipe inverts are consistently lower than upstream inverts along the run
+- Check: Slope values comply with the project's design standard or local plumbing code minimum grades
+
+5. Common Mistake
+A common error is modeling drainage pipes as perfectly horizontal (slope = 0) because it is faster. The model looks fine in 3D, but the system will not drain correctly. Coordination reviewers often catch this, which requires rework of the entire run.
+
+6. Today's Action
+In Revit, draw a 10-metre horizontal drainage pipe. Set its slope to 1% (1:100). Note the elevation difference between the start and end point. Then change the slope to 2% and observe how the end invert drops further. Practice until setting slope feels routine.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

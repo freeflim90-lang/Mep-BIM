@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "ACC",
+    "Revit",
+    "BIM",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "Revit to ACC: Publishing and Syncing BIM Models for Team Coordination",
+  "slug": "revit-to-acc-publishing-and-syncing-bim-models-for-team-coordination",
+  "content": "<p>Publishing Revit models to Autodesk Construction Cloud makes them available for cloud coordination, issue tracking, and access by project parties who do not have Revit installed. Understanding the publication workflow — what gets published, when, and how it updates — is essential for teams adopting ACC.</p>\n<h2>Why This Matters</h2>\n<p>Teams that publish Revit models to ACC without understanding the publish settings frequently find that model updates are not reflected in coordination results, that linked models are missing from the published view, or that geometry is simplified in ways that affect clash accuracy.</p>\n<h2>Practical Guidance</h2>\n<p><strong>Publish vs Sync:</strong> In Cloud Worksharing, Sync saves changes to the cloud model and makes them available to other Revit team members. Publish creates a coordination-ready version of the model in ACC Model Coordination. Sync happens frequently; Publish happens at agreed coordination milestones.</p>\n<p><strong>View and Workset Settings:</strong> Configure the Publish Settings in Revit to include all discipline worksets relevant to coordination. Exclude in-progress worksets that contain incomplete elements which would generate false coordination issues.</p>\n<p><strong>Linked Model Handling:</strong> Linked models are not automatically included in the published coordination model. Each discipline team publishes their own model independently. The ACC Model Coordination space combines them. Do not expect linked model geometry to appear in another discipline's published model.</p>\n<p><strong>Publication Frequency:</strong> Publish to coordination at agreed milestones: at minimum weekly during active design, and before every formal coordination meeting. Teams that rely on unsynchronised local models for coordination meetings make decisions based on outdated information.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Configure Publish Settings to include all coordination-relevant worksets</li>\n<li>Establish a publication schedule and communicate it to all disciplines</li>\n<li>Confirm each discipline publishes independently — linked models are not inherited</li>\n<li>Verify coordination results reflect latest publication before each coordination meeting</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>Publishing to ACC is a coordination commitment — only publish models that are ready for coordination review, not works in progress.</p>"
+}

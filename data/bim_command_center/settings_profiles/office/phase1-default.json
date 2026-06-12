@@ -1,0 +1,10 @@
+{
+  "name": "phase1-default",
+  "scope": "office",
+  "version": "1.0",
+  "description": "Phase 1 default profile",
+  "settings": {
+    "collision_policy": "skip",
+    "dry_run_default": true
+  }
+}

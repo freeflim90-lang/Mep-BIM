@@ -1,0 +1,13 @@
+LUA BIM LABS — BIM Check Friday ✓
+Week 11 | BIM Standards and References
+
+Q1. What is ISO 19650, and which two project documents does it influence most directly?
+Q2. What is the difference between an EIR and a BEP — who writes each, and what does each contain?
+Q3. In the LOD Specification, what is the key difference between LOD 300 and LOD 350 for a pipe?
+Q4. If you are unsure what parameters to include in your MEP model at a given project stage, where should you look first?
+Q5. Name one national BIM standard (other than ISO 19650) and the country it applies to.
+
+Think through each one.
+No grades — this tests your own understanding.
+
+Next week: Portfolio and Career Questions check.

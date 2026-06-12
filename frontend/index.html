@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌟 LUA BIM LABS | 무인 엔터프라이즈 지휘 통제 대시보드 v19.6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="static/dashboard.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>🌟 LUA BIM <span>LABS</span> 가상 기업 엔터프라이즈 지휘 통제 대시보드</h1>
+        <div class="header-actions">
+            <div class="view-switcher" aria-label="dashboard view switcher">
+                <button class="view-tab active" type="button" data-view="command">
+                    <i class="fa-solid fa-sitemap"></i> Command
+                </button>
+                <button class="view-tab" type="button" data-view="bimland">
+                    <i class="fa-solid fa-map-location-dot"></i> BIM LAND
+                </button>
+            </div>
+            <div class="system-status">
+                <div class="status-pulse connecting" id="backendPulse"></div>
+                <span id="backendStatusText">백엔드 연결 중…</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-control-tower dashboard-view active" id="commandView">
+        
+        <div class="orchestration-map">
+            
+            <div class="tree-level">
+                <div class="node family-layer" style="min-width: 320px;">
+                    <div class="tag"><i class="fa-solid fa-crown"></i> The Choi Family Office (지분율 100% 독점)</div>
+                    <div class="name">👑 최고 지배자: Choi Jung-yeon (차장)</div>
+                    <div class="desc" style="color: var(--accent-lua);">평시: 자본 공급 통제 / 🚨비상시: 5회 상신 우회권 작동</div>
+                </div>
+                <div class="node family-layer" style="min-width: 320px;">
+                    <div class="tag"><i class="fa-solid fa-crown"></i> 가문 유산 승계 레이어</div>
+                    <div class="name">👑 후계 공주님: Choi Lua (최루아)</div>
+                    <div class="desc" style="color: var(--color-family);">미래의 최고 지배권 및 5% 안전 고정 배당 승계권 확보</div>
+                </div>
+            </div>
+
+            <div style="font-size: 11px; color: var(--color-family); background: rgba(255,117,143,0.08); padding: 4px 20px; border-radius: 20px; border: 1px dashed var(--color-family); font-family: monospace;">
+                <i class="fa-solid fa-lock"></i> LOCK: 소유와 경영의 절대적 분리 (지배자 경영 참여도 0% 하드코딩 완료)
+            </div>
+
+            <div class="tree-level">
+                <div class="node c-level" style="min-width: 450px;">
+                    <div class="tag">Tier 1: C-Level Strategic Control [DeepSeek V4 Pro]</div>
+                    <div class="name"><i class="fa-solid fa-brain"></i> CEO 에이전트 & COO & CFO</div>
+                    <div class="desc" style="color: var(--color-c-level);">세후 전액 재투자 및 정관 비율(70:25:5) 자본 통제 매커니즘</div>
+                    <div class="tx">0 tx</div>
+                </div>
+            </div>
+
+            <div class="tree-level">
+                <div class="node management" style="min-width: 450px;">
+                    <div class="tag">Tier 2: Total Project Management</div>
+                    <div class="name"><i class="fa-solid fa-gem"></i> 조율차장 (Total PM)</div>
+                    <div class="desc" style="color: var(--color-mgmt);">🛜 Intent Router 구동 및 전략 실행 명령 하달 관제 총괄</div>
+                    <div class="tx">0 tx</div>
+                </div>
+            </div>
+
+            <div class="section-divider">
+                <span>Tier 3: 전 공종 통합 R&D 및 전략 지원 본부</span>
+                <span style="color: var(--accent-lua);">28 AGENT OPERATION MATRIX</span>
+            </div>
+
+            <div class="symmetric-tier-3">
+                
+                <div class="side-group" style="border-top: 3px solid var(--color-left-group);">
+                    <h3 style="color: var(--color-left-group);"><span>🎯 성장 전략 그룹</span> <span>[DeepSeek V4 Pro]</span></h3>
+                    <div class="agent-sub-grid">
+                        <div class="node"><div class="tag">ESTIMATION</div><div class="node-header"><i class="fa-solid fa-brain" style="color:var(--color-left-group);"></i><div class="name">최고전략 (CSO)</div></div><div class="tx">0 tx</div></div>
+                        <div class="node"><div class="tag">ESTIMATION</div><div class="node-header"><i class="fa-solid fa-lightbulb"></i><div class="name">아이디어발굴</div></div><div class="tx">0 tx</div></div>
+                        <div class="node"><div class="tag">ESTIMATION</div><div class="node-header"><i class="fa-solid fa-paste"></i><div class="name">전략기획</div></div><div class="tx">0 tx</div></div>
+                        <div class="node"><div class="tag">ESTIMATION</div><div class="node-header"><i class="fa-solid fa-chart-simple"></i><div class="name">프로젝트분석</div></div><div class="tx">0 tx</div></div>
+                        <div class="node"><div class="tag">ESTIMATION</div><div class="node-header"><i class="fa-solid fa-bullhorn"></i><div class="name">브랜드마케팅</div></div><div class="tx">0 tx</div></div>
+                        <div class="node"><div class="tag">CS</div><div class="node-header"><i class="fa-solid fa-headset"></i><div class="name">고객지원 CS</div></div><div class="desc">일반 문의 통합 창구 / 기술지원 에스컬레이션</div><div class="tx">0 tx</div></div>
+                        <div class="node"><div class="tag">ESTIMATION</div><div class="node-header"><i class="fa-solid fa-handshake"></i><div class="name">협력사안부</div></div><div class="tx">0 tx</div></div>
+                        <div class="node"><div class="tag">ESTIMATION</div><div class="node-header"><i class="fa-solid fa-gavel"></i><div class="name">법무조항검토</div></div><div class="tx">0 tx</div></div>
+                        <div class="node"><div class="tag">ESTIMATION</div><div class="node-header"><i class="fa-solid fa-calculator"></i><div class="name">견적심사원</div></div><div class="tx">0 tx</div></div>
+                        <div class="node"><div class="tag">ESTIMATION</div><div class="node-header"><i class="fa-solid fa-file-shield"></i><div class="name">EIR/BEP_심사원</div></div><div class="tx">0 tx</div></div>
+                        <div class="node"><div class="tag">ESTIMATION</div><div class="node-header"><i class="fa-solid fa-compass-drafting"></i><div class="name">BIM_템플릿기획관</div></div><div class="tx">0 tx</div></div>
+                        <div class="node"><div class="tag">ESTIMATION</div><div class="node-header"><i class="fa-solid fa-wand-magic-sparkles"></i><div class="name">프롬프트엔지니어</div></div><div class="tx">0 tx</div></div>
+                        <div class="node"><div class="tag">ESTIMATION</div><div class="node-header"><i class="fa-solid fa-cart-shopping"></i><div class="name">글로벌_유통기획관</div></div><div class="tx">0 tx</div></div>
+                    </div>
+                </div>
+
+                <div class="side-group" style="border-top: 3px solid var(--color-right-group);">
+                    <h3 style="color: var(--color-right-group);"><span>🛠️ R&D 개발 지원 그룹</span> <span>[DS-Reasoner / Tavily]</span></h3>
+                    <div class="agent-sub-grid">
+                        <div class="node"><div class="tag">ENGINEERING</div><div class="node-header"><i class="fa-solid fa-diagram-project" style="color:var(--color-right-group);"></i><div class="name">파이프라인_오케스트레이터</div></div><div class="tx">0 tx</div></div>
+                        <div class="node"><div class="tag">ENGINEERING</div><div class="node-header"><i class="fa-solid fa-scissors"></i><div class="name">Caveman_토큰다이어터</div></div><div class="tx">0 tx</div></div>
+                        <div class="node"><div class="tag">ENGINEERING</div><div class="node-header"><i class="fa-solid fa-code"></i><div class="name">프로그램개발</div></div><div class="tx">0 tx</div></div>
+                        <div class="node"><div class="tag">ENGINEERING</div><div class="node-header"><i class="fa-solid fa-vial-circle-check"></i><div class="name">QA_테스터</div></div><div class="tx">0 tx</div></div>
+                        <div class="node"><div class="tag">ENGINEERING</div><div class="node-header"><i class="fa-solid fa-book-open"></i><div class="name">테크니컬_라이터</div></div><div class="tx">0 tx</div></div>
+                        <div class="node"><div class="tag">ENGINEERING</div><div class="node-header"><i class="fa-solid fa-square-root-variable"></i><div class="name">엔지니어링계산서</div></div><div class="tx">0 tx</div></div>
+                        <div class="node"><div class="tag">ENGINEERING</div><div class="node-header"><i class="fa-solid fa-user-secret"></i><div class="name">외주관리</div></div><div class="tx">0 tx</div></div>
+                        <div class="node"><div class="tag">ENGINEERING</div><div class="node-header"><i class="fa-solid fa-file-invoice-dollar"></i><div class="name">견적서담당</div></div><div class="tx">0 tx</div></div>
+                        <div class="node"><div class="tag">ENGINEERING</div><div class="node-header"><i class="fa-solid fa-coins"></i><div class="name">글로벌_매출관리원</div></div><div class="tx">0 tx</div></div>
+                        <div class="node"><div class="tag">ENGINEERING</div><div class="node-header"><i class="fa-solid fa-briefcase"></i><div class="name">경영지원</div></div><div class="tx">0 tx</div></div>
+                        <div class="node"><div class="tag">PEOPLE</div><div class="node-header"><i class="fa-solid fa-chalkboard-user"></i><div class="name">교육컨설팅</div></div><div class="desc">신규 직원 온보딩 / 연차별 직무교육 설계</div><div class="tx">0 tx</div></div>
+                        <div class="node"><div class="tag">PEOPLE</div><div class="node-header"><i class="fa-solid fa-person-chalkboard"></i><div class="name">러닝콘텐츠디자이너</div></div><div class="desc">NotebookLM / 슬라이드 / 퀴즈 교육자료 제작</div><div class="tx">0 tx</div></div>
+                        <div class="node"><div class="tag">ENGINEERING</div><div class="node-header"><i class="fa-solid fa-file-excel"></i><div class="name">엑셀자동화</div></div><div class="tx">0 tx</div></div>
+                        <div class="node"><div class="tag">ENGINEERING</div><div class="node-header"><i class="fa-solid fa-rotate"></i><div class="name">지식업데이트</div></div><div class="tx">0 tx</div></div>
+                        <div class="node"><div class="tag">KNOWLEDGE</div><div class="node-header"><i class="fa-solid fa-filter-circle-dollar"></i><div class="name">지식큐레이터</div></div><div class="desc">일일 큐레이션 / 승격·보류 / Obsidian 연결 품질</div><div class="tx">0 tx</div></div>
+                        <div class="node" style="border-color: var(--accent-lua);"><div class="tag" style="color:var(--accent-lua)">Mac mini M4 HOST</div><div class="node-header"><i class="fa-solid fa-cubes-stacked" style="color:var(--accent-lua)"></i><div class="name">인프라_DevOps (Obsidian)</div></div><div class="tx">0 tx</div></div>
+                        <div class="node"><div class="tag">ENGINEERING</div><div class="node-header"><i class="fa-solid fa-key"></i><div class="name">라이선스_보안관</div></div><div class="tx">0 tx</div></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section-divider">
+                <span>Add-in 개발 및 출시 AI 파이프라인</span>
+                <span style="color: var(--accent-lua);">STORE RELEASE CREW</span>
+            </div>
+
+            <div class="release-pipeline-grid">
+                <div class="node"><div class="tag">SPEC</div><div class="name">요구사항분석</div><div class="tx">0 tx</div></div>
+                <div class="node"><div class="tag">REVIT</div><div class="name">Revit_Addin</div><div class="tx">0 tx</div></div>
+                <div class="node"><div class="tag">NAVIS</div><div class="name">Navisworks_Addin</div><div class="tx">0 tx</div></div>
+                <div class="node"><div class="tag">QA</div><div class="name">빌드검증</div><div class="tx">0 tx</div></div>
+                <div class="node"><div class="tag">DOCS</div><div class="name">배포문서</div><div class="tx">0 tx</div></div>
+                <div class="node"><div class="tag">PKG</div><div class="name">제품패키징</div><div class="tx">0 tx</div></div>
+                <div class="node"><div class="tag">STORE</div><div class="name">스토어심사</div><div class="tx">0 tx</div></div>
+                <div class="node"><div class="tag">BILLING</div><div class="name">라이선스결제</div><div class="tx">0 tx</div></div>
+                <div class="node"><div class="tag">CS</div><div class="name">고객지원 CS</div><div class="tx">0 tx</div></div>
+            </div>
+
+            <div class="section-divider">
+                <span>Tier 4: 공종별 엔지니어링 수행 실무 본부 (MEP_CORE)</span>
+            </div>
+
+            <div class="mep-core-grid">
+                <div class="node"><div class="tag">ESTIMATION</div><i class="fa-solid fa-building" style="color: #a855f7;"></i><div class="name">건축·구조</div><div class="tx">0 tx</div></div>
+                <div class="node"><div class="tag">ESTIMATION</div><i class="fa-solid fa-tractor" style="color: #eab308;"></i><div class="name">토목</div><div class="tx">0 tx</div></div>
+                <div class="node"><div class="tag">ENGINEERING</div><i class="fa-solid fa-trowel-bricks" style="color: #3b82f6;"></i><div class="name">공조배관</div><div class="tx">0 tx</div></div>
+                <div class="node"><div class="tag">ENGINEERING</div><i class="fa-solid fa-wind" style="color: #22c55e;"></i><div class="name">공조덕트</div><div class="tx">0 tx</div></div>
+                <div class="node"><div class="tag">ENGINEERING</div><i class="fa-solid fa-fire-burner" style="color: #ef4444;"></i><div class="name">소방기계</div><div class="tx">0 tx</div></div>
+                <div class="node"><div class="tag">ENGINEERING</div><i class="fa-solid fa-bolt" style="color: #06b6d4;"></i><div class="name">소방전기 / 전기</div><div class="tx">0 tx</div></div>
+                <div class="node" style="border-color: var(--accent-lua); background-color: rgba(222, 255, 154, 0.05);">
+                    <div class="tag">REPORTING</div><i class="fa-solid fa-faucet-drip" style="color: var(--accent-lua);"></i>
+                    <div class="name"><span class="status-pulse mini"></span>위생/통신/현장기술지원</div><div class="tx">0 tx</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="console-panel">
+            <h2><i class="fa-solid fa-terminal"></i> 기업 의사결정 실시간 수신반</h2>
+            <div class="console-log" id="consoleLog">
+                <div class="log-entry"><span class="time">[08:00:01]</span> <span class="status">[SYSTEM]</span> 가문 지배 레이어 신탁 연동 완.</div>
+                <div class="log-entry"><span class="time">[08:00:03]</span> <span class="status">[SECURITY]</span> 소유-경영 격리 잠금 활성화.</div>
+                <div class="log-entry"><span class="time">[08:03:44]</span> <span class="status">[T3_DevOps]</span> 🧪 Mac mini M4 로컬 옵시디언 가상 금고 마운트 완료.</div>
+                <div class="log-entry" style="color: #ffaa00;"><span class="time">[08:04:15]</span> <span class="status">[T4_TELEGRAM]</span> 🛜 Telegram API 인프라 서버 동기화 완료. 에러 진단 런타임 활성.</div>
+            </div>
+
+            <form class="addin-task-panel" id="addinTaskForm">
+                <div class="cfo-panel-header">
+                    <span class="cfo-title">Revit / Navisworks Add-in 개발 및 출시 지시</span>
+                    <span class="dividend-status-badge execute">STORE READY</span>
+                </div>
+                <div class="addin-task-row">
+                    <select id="addinTarget" name="target">
+                        <option value="Revit">Revit</option>
+                        <option value="Navisworks">Navisworks</option>
+                        <option value="Revit + Navisworks">Revit + Navisworks</option>
+                        <option value="Autodesk Store Release">Autodesk Store Release</option>
+                    </select>
+                    <select id="addinDiscipline" name="discipline">
+                        <option value="공통">공통</option>
+                        <option value="건축">건축</option>
+                        <option value="구조">구조</option>
+                        <option value="토목">토목</option>
+                        <option value="위생">위생</option>
+                        <option value="공조배관">공조배관</option>
+                        <option value="공조덕트">공조덕트</option>
+                        <option value="소방기계">소방기계</option>
+                        <option value="소방전기">소방전기</option>
+                        <option value="전기">전기</option>
+                        <option value="통신">통신</option>
+                        <option value="MEP통합">MEP통합</option>
+                        <option value="전체공정">전체공정</option>
+                    </select>
+                </div>
+                <div class="addin-task-row">
+                    <select id="addinPriority" name="priority">
+                        <option value="normal">Normal</option>
+                        <option value="urgent">Urgent</option>
+                        <option value="research">Research</option>
+                    </select>
+                    <input id="addinReviewMode" type="text" value="공정 지식 의견 반영" disabled>
+                </div>
+                <input id="addinTitle" name="title" type="text" value="Clash issue 자동 보고 Add-in" autocomplete="off">
+                <textarea id="addinRequest" name="request">Revit/Navisworks Add-in으로 모델 요소 정보를 읽고, 간섭 검토 결과를 정리해 Telegram과 대시보드로 보고하는 기능을 설계해줘. Autodesk App Store 판매를 전제로 설치, 라이선스, 개인정보, 고객지원, 심사 제출 항목까지 같이 검토해줘.</textarea>
+                <button class="addin-submit-btn" id="addinSubmitBtn" type="submit">
+                    <i class="fa-solid fa-paper-plane"></i> 개발 파이프라인 실행
+                </button>
+            </form>
+
+            <form class="addin-task-panel" id="knowledgeUpdateForm">
+                <div class="cfo-panel-header">
+                    <span class="cfo-title">공정 AI 지식 업데이트</span>
+                    <span class="dividend-status-badge execute">KNOWLEDGE</span>
+                </div>
+                <div class="addin-task-row">
+                    <select id="knowledgeAgent" name="agent">
+                        <option value="건축">건축</option>
+                        <option value="구조">구조</option>
+                        <option value="토목">토목</option>
+                        <option value="위생">위생</option>
+                        <option value="공조배관">공조배관</option>
+                        <option value="공조덕트">공조덕트</option>
+                        <option value="소방기계">소방기계</option>
+                        <option value="소방전기">소방전기</option>
+                        <option value="전기">전기</option>
+                        <option value="통신">통신</option>
+                        <option value="Revit_Addin">Revit_Addin</option>
+                        <option value="Navisworks_Addin">Navisworks_Addin</option>
+                        <option value="스토어심사">스토어심사</option>
+                    </select>
+                    <input id="knowledgeTags" name="tags" type="text" placeholder="태그: clash, report, code">
+                </div>
+                <input id="knowledgeTitle" name="title" type="text" value="현장 기준 업데이트" autocomplete="off">
+                <input id="knowledgeSource" name="source" type="text" value="manual" autocomplete="off">
+                <textarea id="knowledgeContent" name="content">이 공정 AI가 Add-in 요구사항 검토 때 반드시 참고해야 할 실무 기준, 예외 조건, 보고서 항목을 입력하세요.</textarea>
+                <button class="addin-submit-btn" id="knowledgeSubmitBtn" type="submit">
+                    <i class="fa-solid fa-database"></i> 공정 지식 저장
+                </button>
+            </form>
+            
+            <div class="cfo-routing-panel inactive" id="cfoPanel">
+                <div class="cfo-panel-header">
+                    <span class="cfo-title">CFO 자본 배분 알고리즘 (제3조)</span>
+                    <button class="toggle-btn" id="cfoToggleBtn" onclick="toggleCFOMode()">
+                        <i class="fa-solid fa-power-off"></i> <span>Inactive</span>
+                    </button>
+                </div>
+                
+                <div class="inactive-notice">🚧 R&D 인프라 빌드 모드 (수익배분 대기)</div>
+
+                <div class="cfo-content-wrapper">
+                    <h1 style="color: var(--accent-lua); font-size: 32px; font-weight: bold; margin-top: 2px;" id="cfoBudget">$50.00</h1>
+                    <div class="routing-bar">
+                        <div class="route-70" id="bar70" title="조직 성장 재투자 (70%)"></div>
+                        <div class="route-25" id="bar25" title="세금 유보 (25%)"></div>
+                        <div class="route-05" id="bar05" title="가문 안전 고정 배당 (5%)"></div>
+                    </div>
+                    <div class="routing-legend">
+                        <div class="routing-item"><span>재투자 (70%):</span> <b id="val70" style="color:var(--color-mgmt);">$0.00</b></div>
+                        <div class="routing-item"><span>세금유보 (25%):</span> <b id="val25" style="color:var(--color-c-level);">$0.00</b></div>
+                        <div class="routing-item">
+                            <span>가문 배당 (5%): <b id="val05" style="color:var(--color-family);">$0.00</b></span>
+                            <span id="dividendStatus" class="dividend-status-badge hold">🔒 HOLD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- ═══════════════════════════════════════════════════════════ BIM LAND VIEW -->
+    <div class="bim-land-view dashboard-view" id="bimlandView">
+
+        <!-- 왼쪽: 지도 + 영토 테이블 -->
+        <div class="bl-left">
+            <div class="bl-map-header">
+                <span class="bl-section-title"><i class="fa-solid fa-map-location-dot"></i> 대한민국 영토 현황</span>
+                <div class="bl-stats">
+                    <span>영토 <b id="blStatTerritories">0</b></span>
+                    <span>팀 <b id="blStatTeams">0</b></span>
+                    <span>누적 XP <b id="blStatXp">0</b></span>
+                    <span>등록 프로젝트 <b id="blStatProjects">0</b></span>
+                </div>
+                <button class="bl-refresh-btn" onclick="loadBimLandData()"><i class="fa-solid fa-rotate-right"></i></button>
+            </div>
+            <div id="blDrawHint" style="display:none;background:rgba(226,185,111,0.15);border:1px solid rgba(226,185,111,0.5);color:#e2b96f;font-size:10px;padding:5px 10px;border-radius:4px;margin-bottom:4px;text-align:center"></div>
+            <div id="blMap"></div>
+
+            <div class="bl-table-wrap">
+                <table class="bl-table">
+                    <thead>
+                        <tr>
+                            <th>등급</th><th>프로젝트명</th><th>점령팀</th>
+                            <th>XP</th><th>동기화 파일</th><th>상태</th>
+                        </tr>
+                    </thead>
+                    <tbody id="blTerritoryBody"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 오른쪽: 리더보드 + 어드민 패널 -->
+        <div class="bl-right">
+
+            <!-- 리더보드 -->
+            <div class="bl-card">
+                <div class="bl-card-title"><i class="fa-solid fa-trophy"></i> 팀 랭킹</div>
+                <div id="blLeaderboard"></div>
+            </div>
+
+            <!-- 어드민 패널 -->
+            <div class="bl-card bl-admin">
+                <div class="bl-card-title">
+                    <i class="fa-solid fa-shield-halved"></i> 관리자 패널
+                    <span class="bl-admin-badge">ADMIN</span>
+                </div>
+
+                <!-- 탭 -->
+                <div class="bl-admin-tabs">
+                    <button class="bl-admin-tab active" data-atab="reports">신고 내역</button>
+                    <button class="bl-admin-tab" data-atab="gfa-review">연면적 검토</button>
+                    <button class="bl-admin-tab" data-atab="loc-requests">위치 변경</button>
+                    <button class="bl-admin-tab" data-atab="claims">참여 승인</button>
+                    <button class="bl-admin-tab" data-atab="blocked">차단 목록</button>
+                    <button class="bl-admin-tab" data-atab="register">프로젝트 등록</button>
+                    <button class="bl-admin-tab" data-atab="manual-block">신고 접수</button>
+                </div>
+
+                <!-- 신고 내역 -->
+                <div class="bl-admin-panel active" id="blAdminReports">
+                    <div class="bl-filter-row">
+                        <select id="blReportFilter" onchange="loadBimLandData()">
+                            <option value="all">전체</option>
+                            <option value="pending" selected>대기중</option>
+                            <option value="resolved_blocked">차단 완료</option>
+                            <option value="resolved_dismissed">기각</option>
+                        </select>
+                    </div>
+                    <div id="blReportList"></div>
+                </div>
+
+                <!-- 연면적 검토 -->
+                <div class="bl-admin-panel" id="blAdminGfaReview">
+                    <div class="bl-filter-row">
+                        <select id="blGfaFilter" onchange="loadBimLandData()">
+                            <option value="pending" selected>검토 대기</option>
+                            <option value="suspended">유보됨</option>
+                            <option value="approved">승인됨</option>
+                            <option value="unset">미입력</option>
+                            <option value="all">전체</option>
+                        </select>
+                    </div>
+                    <div style="font-size:9px;color:#666;margin:4px 0 6px;padding:4px 6px;background:rgba(226,185,111,0.05);border-radius:4px">
+                        💡 연면적은 프로젝트 수행계획서 기준으로 입력하세요. 미입력 또는 과도한 값은 승인 유보됩니다.
+                    </div>
+                    <div id="blGfaReviewList"></div>
+                </div>
+
+                <!-- 위치 변경 승인 -->
+                <div class="bl-admin-panel" id="blAdminLocRequests">
+                    <div class="bl-filter-row">
+                        <select id="blLocReqFilter" onchange="loadBimLandData()">
+                            <option value="pending" selected>대기중</option>
+                            <option value="approved">승인됨</option>
+                            <option value="rejected">거절됨</option>
+                            <option value="all">전체</option>
+                        </select>
+                    </div>
+                    <div id="blLocationRequests"></div>
+                </div>
+
+                <!-- 참여 승인 -->
+                <div class="bl-admin-panel" id="blAdminClaims">
+                    <div class="bl-filter-row" style="display:flex;gap:6px">
+                        <select id="blClaimsFilter" onchange="loadBimLandData()">
+                            <option value="pending" selected>대기중</option>
+                            <option value="approved">승인됨</option>
+                            <option value="rejected">거절됨</option>
+                            <option value="all">전체</option>
+                        </select>
+                        <input id="blClaimsProjectFilter" type="text" placeholder="프로젝트 코드 필터"
+                               style="flex:1;background:var(--bg-node);border:1px solid var(--border-color);color:var(--text-primary);font-size:9px;padding:3px 6px;border-radius:4px"
+                               oninput="loadBimLandData()">
+                    </div>
+                    <div id="blClaimsList"></div>
+                </div>
+
+                <!-- 프로젝트 등록 (관리자 전용) -->
+                <div class="bl-admin-panel" id="blAdminRegister">
+                    <div class="bl-form">
+                        <!-- 필수 항목 — 프로젝트 코드는 팀명 기반 자동 부여 -->
+                        <input id="blProjName" type="text" placeholder="프로젝트명 * (예: 강남 역삼 오피스 A동)">
+                        <input id="blProjTeam"   type="text" placeholder="팀명 * (예: LUA BIM LABS, 삼성 디스플레이)">
+                        <input id="blProjPerson" type="text" placeholder="담당자 이름 * (예: 최정연 → CJY)">
+                        <p class="bl-form-note" style="margin-top:2px">💡 코드 자동 생성 예시: LUA BIM LABS + 최정연 → <b>LUA-CJY-001</b></p>
+
+                        <!-- 주소 자동완성 -->
+                        <div class="bl-addr-wrap">
+                            <input id="blProjAddrSearch" type="text"
+                                   placeholder="🔍 주소 검색 — 한글로 입력하세요"
+                                   oninput="debouncedAddrSearch(this.value)"
+                                   autocomplete="off">
+                            <div id="blAddrDropdown" class="bl-addr-dropdown"></div>
+                        </div>
+                        <div style="text-align:right;margin-top:1px">
+                            <span id="blAddrModeToggle"
+                                  style="font-size:9px;color:#666;cursor:pointer;text-decoration:underline"
+                                  onclick="toggleAddrMode()">✏️ 직접 입력</span>
+                        </div>
+
+                        <!-- 자동검색 결과 행 -->
+                        <div id="blAddrAutoRow">
+                            <input id="blProjAddr" type="text" readonly
+                                   placeholder="선택된 주소 (자동입력)"
+                                   class="bl-addr-selected" style="cursor:default">
+                            <div style="display:flex;gap:5px;margin-top:5px">
+                                <input id="blProjLat" type="text" readonly placeholder="위도 (자동입력)"
+                                       class="bl-addr-coord" style="flex:1;cursor:default">
+                                <input id="blProjLng" type="text" readonly placeholder="경도 (자동입력)"
+                                       class="bl-addr-coord" style="flex:1;cursor:default">
+                            </div>
+                        </div>
+
+                        <!-- 직접 입력 행 (기본 숨김) -->
+                        <div id="blAddrManualRow" style="display:none;flex-direction:column;gap:5px">
+                            <input id="blProjAddrManual" type="text" placeholder="현장 주소 직접 입력">
+                            <div style="display:flex;gap:5px">
+                                <input id="blProjLatManual" type="number" placeholder="위도 (예: 37.5013)"
+                                       step="0.000001" style="flex:1">
+                                <input id="blProjLngManual" type="number" placeholder="경도 (예: 127.0398)"
+                                       step="0.000001" style="flex:1">
+                            </div>
+                            <p class="bl-form-note">💡 카카오맵 · 네이버지도에서 원하는 위치 우클릭 → 좌표 복사 후 붙여넣기</p>
+                        </div>
+
+                        <!-- 연면적 (필수 3가지 항목 중 하나) -->
+                        <input id="blProjGfa" type="number" placeholder="연면적 m² (입력 권장)" step="1">
+
+                        <!-- 선택 항목 (접기) -->
+                        <details class="bl-optional-section">
+                            <summary>추가 정보 (선택)</summary>
+                            <div class="bl-optional-body">
+                                <div style="display:flex;gap:5px">
+                                    <input id="blProjStart" type="date"
+                                           style="flex:1;background:var(--bg-node);border:1px solid var(--border-color);color:var(--text-primary);font-size:10px;padding:4px 6px;border-radius:5px">
+                                    <input id="blProjEnd"   type="date"
+                                           style="flex:1;background:var(--bg-node);border:1px solid var(--border-color);color:var(--text-primary);font-size:10px;padding:4px 6px;border-radius:5px">
+                                </div>
+                                <input id="blProjDisc" type="text" placeholder="참여 공종 (쉼표 구분: 건축,구조,MEP)">
+                            </div>
+                        </details>
+
+                        <textarea id="blProjDesc" rows="2" placeholder="프로젝트 설명 (선택)"></textarea>
+                        <button onclick="adminRegisterProject()">
+                            <i class="fa-solid fa-map-pin"></i> 프로젝트 등록
+                        </button>
+                    </div>
+                    <div style="margin-top:8px">
+                        <div style="font-size:9px;color:var(--text-secondary);margin-bottom:4px">등록된 프로젝트</div>
+                        <div id="blProjectList"></div>
+                    </div>
+                </div>
+
+                <!-- 차단 목록 -->
+                <div class="bl-admin-panel" id="blAdminBlocked">
+                    <div id="blBlockedList"></div>
+                </div>
+
+                <!-- 신고 접수 (사용자용) -->
+                <div class="bl-admin-panel" id="blAdminManualBlock">
+                    <div class="bl-form">
+                        <input id="blReporterEmail"  type="email" placeholder="신고자 이메일 (본인)">
+                        <input id="blReporterPhone"  type="tel"   placeholder="신고자 연락처 (필수) 010-0000-0000">
+                        <input id="blReportedEmail"  type="email" placeholder="피신고자 이메일">
+                        <input id="blReportProject"  type="text"  placeholder="프로젝트 코드 (예: PRJ-INCHEON-001)">
+                        <textarea id="blReportReason" rows="2" placeholder="신고 사유 (구체적으로 입력)"></textarea>
+                        <button onclick="submitReport()"><i class="fa-solid fa-triangle-exclamation"></i> 신고 접수</button>
+                    </div>
+                    <p class="bl-form-note">※ 신고 접수 후 피신고자에게 연락처 제출이 요청됩니다. 양방향 확인 후 관리자가 처리합니다.</p>
+                </div>
+
+                <!-- 직접 차단 (어드민용) -->
+                <div class="bl-admin-panel" id="blAdminDirectBlock" style="display:none">
+                    <div class="bl-form">
+                        <input id="blBlockEmail" type="email" placeholder="차단할 이메일">
+                        <input id="blBlockReason" type="text" placeholder="차단 사유">
+                        <button onclick="adminBlockUser()"><i class="fa-solid fa-ban"></i> 차단 실행</button>
+                    </div>
+                    <p class="bl-form-note">※ 영구 차단 — 이후 해당 계정의 동기화는 거부됩니다.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ══════════════════════════════════════════════════ BIM LAND VIEW END -->
+
+    <footer>
+        <span>LUA BIM LABS PIPELINE ORCHESTRATION v19.6</span>
+        <span id="totalTxCounter">가상 기업 총 트랜잭션 자원량: 0 tx</span>
+    </footer>
+    <script src="static/dashboard.js"></script>
+</body>
+</html>

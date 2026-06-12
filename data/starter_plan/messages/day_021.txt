@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 21 - Installability as a BIM Thinking Habit
+
+1. Why This Matters
+A model is more valuable when it helps the team understand whether work can actually be installed on site.
+
+2. Core Concept
+Installability means checking whether routing, access, supports, sequence, and working space make practical sense for construction.
+
+3. Real Project Lens
+A pipe route may be geometrically possible but impossible to install because the support, equipment access, or assembly sequence was not considered.
+
+4. BIM Check
+- Review access for installation and maintenance.
+- Consider support and hanger space.
+- Ask whether the element can be installed in the planned sequence.
+
+5. Common Mistake
+Beginners often model final positions without thinking about how the element gets installed.
+
+6. Today's Action
+Choose one routed element and describe the installation sequence in three simple steps.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

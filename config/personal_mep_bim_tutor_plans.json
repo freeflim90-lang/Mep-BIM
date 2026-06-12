@@ -1,0 +1,91 @@
+{
+  "currency": "USD",
+  "service": "LUA BIM LABS Personal MEP BIM Tutor",
+  "primary_payment_provider": "PayPal",
+  "launch_mode": "starter_only",
+  "service_links": {
+    "application_form": "https://forms.gle/qACC117o53XCMnyV6",
+    "application_sheet": "https://docs.google.com/spreadsheets/d/1v1t5k76mAhKSBx-x19fEw3Kmi7c6heFKMrkIbK_qcFk/edit?usp=sharing",
+    "telegram_contact": "",
+    "telegram_bot_username": "",
+    "telegram_start_link": "",
+    "contact_email": "",
+    "terms_url": ""
+  },
+  "plans": [
+    {
+      "id": "starter",
+      "name": "Starter",
+      "monthly_price": 39,
+      "launch_status": "public",
+      "paypal_payment_link": "https://www.paypal.com/ncp/payment/9NQE7BEG2M7PS",
+      "paypal_subscription_link": "",
+      "target": "Beginners, students, and light learners",
+      "features": [
+        "Daily common MEP BIM lesson",
+        "Monthly learning path",
+        "Basic checklist"
+      ],
+      "limits": [
+        "No unlimited 1:1 Q&A",
+        "No project file review",
+        "No Revit model QA",
+        "No clash report review",
+        "One short clarification question per week during launch"
+      ]
+    },
+    {
+      "id": "personal_tutor",
+      "name": "Personal Tutor",
+      "monthly_price": 119,
+      "launch_status": "coming_soon",
+      "paypal_payment_link": "",
+      "paypal_subscription_link": "",
+      "target": "Revit MEP modelers and junior engineers",
+      "features": [
+        "Level diagnosis",
+        "Personalized daily lessons",
+        "Telegram Q&A",
+        "Weak-point tracking"
+      ]
+    },
+    {
+      "id": "coordinator_mentor",
+      "name": "Coordinator Mentor",
+      "monthly_price": 229,
+      "launch_status": "coming_soon",
+      "paypal_payment_link": "",
+      "paypal_subscription_link": "",
+      "target": "BIM coordinators and working professionals",
+      "features": [
+        "Personalized lessons",
+        "Weekly issue review",
+        "Clash/report/model QA feedback",
+        "Coordination workflow guidance"
+      ]
+    },
+    {
+      "id": "project_mentor",
+      "name": "Project Mentor",
+      "monthly_price_from": 490,
+      "launch_status": "coming_soon",
+      "paypal_payment_link": "",
+      "target": "Project leads, companies, and urgent support clients",
+      "features": [
+        "Project-specific mentoring",
+        "QA review",
+        "Workflow consulting",
+        "Custom scope"
+      ]
+    }
+  ],
+  "payment_methods": {
+    "primary": [
+      "PayPal Payment Links",
+      "PayPal Subscriptions"
+    ],
+    "fallback": [
+      "Stripe later if needed"
+    ]
+  }
+}

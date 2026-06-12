@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 9 - Sprinkler Coordination Is More Than Head Layout
+
+1. Why This Matters
+Sprinkler modeling affects ceiling devices, branch pipes, structural coordination, and maintenance access. It also interacts heavily with architectural ceiling plans.
+
+2. Core Concept
+A sprinkler layout should be reviewed with ceiling grids, lights, diffusers, detectors, beams, branch pipe routes, and access requirements in mind.
+
+3. Real Project Lens
+A sprinkler head may be positioned correctly in plan but still conflict with a ceiling device, beam zone, or branch pipe routing constraint.
+
+4. BIM Check
+- Compare sprinkler heads with ceiling device layout.
+- Review branch pipe route and support space.
+- Check coordination with beams and ceiling zones.
+
+5. Common Mistake
+Beginners often place heads first and think the system is complete before reviewing branch pipe routing.
+
+6. Today's Action
+Take a small ceiling area and list every ceiling device that must coordinate with sprinkler heads.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

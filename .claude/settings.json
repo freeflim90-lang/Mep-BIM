@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd \"/Users/choejeong-yeon/LUA BIM LABS\" && python3 scripts/save_qa.py latest-session --project-dir \"/Users/choejeong-yeon/LUA BIM LABS\" >> logs/qa_autosave.log 2>&1 || true",
+            "timeout": 60,
+            "statusMessage": "Q&A 지식 자동 저장 중..."
+          }
+        ]
+      }
+    ]
+  }
+}

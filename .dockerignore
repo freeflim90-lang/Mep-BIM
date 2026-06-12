@@ -1,0 +1,14 @@
+.dev-venv/
+__pycache__/
+*.pyc
+*.pyo
+.git/
+logs/
+.env
+legacy/
+dist/
+.DS_Store
+node_modules/
+obsidian_vaults/
+data/bimobject/
+"260519 소스 폴더"/

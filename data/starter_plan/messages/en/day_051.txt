@@ -1,0 +1,36 @@
+LUA BIM LABS Starter
+Day 51 - Prefabrication and Spool Drawings
+
+**1. Why This Matters**
+Prefabrication is growing rapidly in MEP construction — BIM models are the source data for spool drawings, making model accuracy a direct driver of fabrication quality.
+
+**2. Core Concept**
+Prefabrication (or offsite manufacturing) involves building sections of pipework or ductwork in a factory, then delivering them to site for final connection. This requires highly accurate model data to produce correct spool drawings.
+
+Key terms:
+- **Spool**: A pre-built section of pipework including fittings, flanges, and supports — manufactured to exact dimensions
+- **Spool drawing**: A 2D fabrication drawing showing each segment, fitting, and connection point with precise dimensions — produced from the BIM model
+- **ISO drawing (isometric)**: A spool drawing shown in isometric view to clearly display the 3D routing and all connections
+- **Cut length**: The exact length of each straight pipe segment, accounting for fitting allowances — derived from the model
+- **End preparation**: The type of joint at each spool end (flanged, grooved, butt-welded) specified in the spool drawing
+- **BIM-to-fabrication tolerance**: The model must be accurate to ±3mm at LOD 350 for fabrication drawings to be reliable
+
+**3. Real Project Lens**
+A mechanical contractor on a pharmaceutical project uses the BIM model to generate spool drawings for the process pipework on Level 2. The pipework is fabricated in a workshop in segments no longer than 6 meters (for transport). Each spool is tagged with a unique ID matching the spool drawing — site crews install by matching the tag to the drawing, significantly reducing on-site cutting and fitting time.
+
+**4. BIM Check**
+- Check: Can you explain the difference between a spool drawing and a coordination drawing?
+- Check: Can you describe why a BIM model must be at LOD 350 (not LOD 200) before spool drawings are produced?
+- Check: Can you identify what "cut length" means on a spool drawing and how it is derived from the model?
+
+**5. Common Mistake**
+Generating spool drawings from a model that has not been clash-resolved. If the coordinated routing changes after spools are fabricated, the pre-built sections may not fit on site — extremely costly rework.
+
+**6. Today's Action**
+Search for a sample pipe isometric (ISO) spool drawing online. Identify three pieces of information shown on it (dimensions, fitting types, end connections, etc.) and note which ones would come directly from a BIM model.
+
+---
+
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

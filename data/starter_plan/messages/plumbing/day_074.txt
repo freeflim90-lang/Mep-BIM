@@ -1,0 +1,42 @@
+LUA BIM LABS Starter
+Day 74 - Stack Vent and Vent Through Roof
+
+1. Why This Matters
+Every soil and waste stack must be vented to atmosphere at the top of the building. Without proper venting, the air pressure inside the drainage system fluctuates when large volumes of water are discharged — pulling water out of fixture traps and allowing sewer gas to enter occupied spaces. Vent through roof is one of the most frequently missed items when plumbing BIM models are reviewed for LOD 350 compliance.
+
+2. Core Concept
+The stack vent is the continuation of the soil or waste stack above the highest fixture connection. It extends through the roof to open air, allowing the drainage system to breathe.
+
+Design requirements:
+- The vent pipe must terminate a minimum of 150 mm above the roof surface (some codes require 300 mm or more — check the applicable standard)
+- Termination must be kept away from operable windows, air intake louvers, and occupied roof terraces — minimum separation is typically 3 metres horizontally or 600 mm vertically above any opening
+- The vent pipe penetrates the roof membrane and structure; it must have a flashing collar and a weatherproof cap
+- Combined vent stacks (serving both soil and waste) must be the same diameter as the stack they serve, or one size smaller per local code
+
+BIM modeling steps for vent through roof:
+1. Extend the soil/waste stack pipe upward through the roof slab
+2. Add a roof sleeve or opening element at the penetration
+3. Terminate with a vent cap family at the correct height above roof level
+4. Set the system type to Vent
+5. Check the termination location against the architectural roof plan for skylights, HVAC units, and access hatches
+
+Additional vent types:
+- Air admittance valve (AAV): a mechanical valve used where extending a vent to roof is not practical; check local code acceptance
+- Loop vent: connects the waste pipe back to the main vent stack instead of going to atmosphere directly
+
+3. Real Project Lens
+On a mixed-use tower, the plumbing BIM model showed vent stack terminations on the roof. During the architectural coordination meeting, the roof plan showed a mechanical plant room addition directly above two of the vent locations. The vent caps would have discharged sewer gas directly into the HVAC air intake. Both vents were rerouted in the BIM model to terminate on the opposite side of the plant room before the roof slab drawings were issued.
+
+4. BIM Check
+- Check: Every soil and waste stack has a vent extension that terminates above the roof level with a cap family
+- Check: Vent terminations are located at least 3 metres from any HVAC air intake, operable window, or occupied area on the roof
+- Check: Roof sleeve openings for vent pipes are modeled and included in the sleeve request package
+
+5. Common Mistake
+A common mistake is stopping the stack model at the underside of the roof slab and assuming the vent detail will be handled during construction. If the vent penetration is not in the BIM model, it is not in the sleeve request — and the roof waterproofing will be installed without provision for the pipe, requiring a later core-drill through the roofing membrane.
+
+6. Today's Action
+In your Revit model, extend one soil stack pipe above the roof slab to 300 mm above finished roof level. Add a pipe cap or vent cap family at the top. Check the distance between your vent termination and any mechanical equipment or roof openings shown in the architectural model. Document the clearance distance.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

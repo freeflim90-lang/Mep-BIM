@@ -1,0 +1,52 @@
+LUA BIM LABS Starter
+Day 80 - Week 4 Review — Electrical Clash Pattern Summary
+
+1. Why This Matters
+Electrical clash resolution is not just about moving elements until the model turns green in Navisworks. It requires understanding why the clash exists, which discipline yields to which, and what physical constraints govern the resolution. Week 4 covered the four most common electrical clash patterns and how to resolve each one systematically.
+
+2. Core Concept
+Week 4 Electrical Clash Pattern Summary
+
+| Day | Topic | Key Point |
+|---|---|---|
+| 66 | Electrical Clashes (intro) | Route trays above HVAC; recheck separation after every reroute |
+| 76 | Cable Tray vs. HVAC Duct | Tray yields to duct; step over or under with 50mm minimum clearance |
+| 77 | HV/LV Separation | 600mm parallel separation; 300mm at 90° crossings; measure edge-to-edge |
+| 78 | Electrical vs. Structure | Hanger rods need clash check; beam penetrations need structural engineer PR |
+| 79 | Ceiling Zone Sequence | Agree routing sequence before modeling; electrical routes after HVAC is frozen |
+
+Critical Rules — Electrical Clash Patterns
+- Cable tray steps over or under duct — duct does not move for tray
+- All tray offsets (steps) must be modeled with ramp fittings — not abrupt 90° transitions
+- HV/LV separation is measured edge-to-edge, not centerline-to-centerline
+- After any reroute, re-verify all separation distances in the adjusted section
+- Hanger rod families must be included in clash tests — not just tray bodies
+- Beam penetrations require formal Penetration Requests — never assume approval
+- Routing sequence is an agreement — enforce it before modeling begins
+- After clash resolution, always check ceiling clearance — the finished ceiling must remain at the required height
+
+Electrical Clash Resolution Workflow (summary):
+1. Run discipline clash test — electrical vs. HVAC, structural, plumbing
+2. Sort clashes by category: tray/duct, tray/structure, separation violation, hanger/beam
+3. Resolve in priority order: structure first, then gravity drainage, then HVAC, then electrical
+4. After each resolution, re-run separation check for the modified zone
+5. Confirm ceiling clearance is maintained after all resolutions
+6. Issue clash report showing before/after resolution status
+
+3. Real Project Lens
+A BIM coordinator runs the Week 4 post-coordination check on a Level 8 ceiling zone. She identifies: (1) three cable tray/duct overlaps — resolved by stepping trays over ducts; (2) two HV/LV separation violations at 400mm — resolved by moving HV tray up 200mm; (3) one hanger rod clashing with a steel beam — resolved using a beam clamp fitting; (4) one beam penetration conduit without a PR — flagged and PR submitted. All four clash categories from Week 4 appear in one zone — and all are resolved using the Week 4 rules.
+
+4. BIM Check
+- Check: After all clash resolutions in a ceiling zone, do all HV/LV and LV/data separations still meet the required minimums — measured edge-to-edge?
+- Check: Are all cable tray steps (offsets) modeled with ramp fittings, and do they maintain the required clearance to HVAC elements throughout the step?
+- Check: Is a Penetration Register maintained and up to date — listing all structural beam penetrations with PR status for each?
+
+5. Common Mistake
+Resolving clashes one at a time without re-running the full clash test after each resolution. A tray reroute that fixes one duct clash can introduce a new HV/LV separation violation on the same run — which is only found at the next coordination meeting, days later.
+
+6. Today's Action
+On your current or training model, run a clash test between the electrical model and both the HVAC and structural models. Sort the results into the four Week 4 categories: tray/duct, separation violation, hanger/structure, beam penetration. Record the count in each category. This is your Week 4 baseline.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

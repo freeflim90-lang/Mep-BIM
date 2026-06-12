@@ -1,0 +1,37 @@
+LUA BIM LABS Starter
+Day 37 - Coordination Drawing Check
+
+**1. Why This Matters**
+A coordination drawing is only useful if it accurately reflects the agreed resolutions — checking it before issue means catching errors before they reach the construction team.
+
+**2. Core Concept**
+A coordination drawing (also called a coordination sheet or MEP coordination plan) is a 2D drawing produced from the federated model that shows all MEP systems in a defined zone, used by site teams to install work without conflicts.
+
+What to check before issuing a coordination drawing:
+- **Model status**: Is the drawing exported from the latest clash-resolved model — not a two-week-old version?
+- **Elevation annotations**: Are pipe/duct inverts clearly labeled at changes in direction or crossings?
+- **Clearance zones**: Is maintenance access space shown for major equipment?
+- **Grid references**: Are structural grid lines shown as reference so site can orient the drawing?
+- **Revision cloud**: If this is an updated issue, is the change area marked with a revision cloud?
+- **Title block data**: Is the issue date, revision number, and zone name correct?
+- **Clash status**: Have all Critical and Major clashes in this zone been resolved before issue?
+
+**3. Real Project Lens**
+A BIM coordinator issues a Level 2 plant room coordination drawing without checking the model version. The drawing shows a chilled water pipe at 2800mm FFL, but that pipe was lowered to 2650mm FFL in the model two days ago to resolve a beam clash. The mechanical installer sets out to the old elevation and drills brackets in the wrong position — a rework event that costs half a day.
+
+**4. BIM Check**
+- Check: Can you verify which model version a coordination drawing was generated from by checking the title block or issue log?
+- Check: Can you identify whether all Major clashes in a zone have been resolved before a drawing is issued?
+- Check: Can you confirm that all pipe and duct elevations are annotated at key change points in the drawing?
+
+**5. Common Mistake**
+Issuing a coordination drawing with unresolved Major clashes marked as "TBC" on site. If a clash is not resolved in the model, it is not resolved — site will have to improvise, and the result will not match the BIM.
+
+**6. Today's Action**
+Find a sample MEP coordination drawing (search "MEP coordination drawing example" online). Identify three pieces of annotation information and check whether each one is clearly readable at a standard print scale.
+
+---
+
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

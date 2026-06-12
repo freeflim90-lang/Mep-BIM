@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "BIM",
+    "BIM Coordination",
+    "Multi-Discipline",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "BIM Execution Plan: Writing a Practical Document for Each Discipline",
+  "slug": "bim-execution-plan-writing-a-practical-document-for-each-discipline",
+  "content": "<p>A BIM Execution Plan (BEP) is the project document that defines how BIM will be used, by whom, with what software, to what level of detail, and for what purposes. A practical BEP is specific enough to guide daily decisions. A generic BEP is a compliance document that nobody reads.</p>\n<h2>Why This Matters</h2>\n<p>Most BEP failures are failures of specificity. A BEP that states 'all disciplines will use IFC for coordination' without specifying IFC version, exchange setup, validation tool, and issue frequency has not made a useful coordination agreement — it has restated a principle.</p>\n<h2>Practical Guidance</h2>\n<p><strong>Discipline-Specific Software and Versions:</strong> List the exact software and version used by each discipline: Revit 2025.1, ArchiCAD 27, Tekla 2024, Navisworks Manage 2025. Version mismatches between disciplines affect IFC compatibility. This information must be current and updated when software is upgraded.</p>\n<p><strong>LOD Matrix:</strong> Define the required Level of Development for each element type at each project milestone. A one-page LOD matrix communicates more clearly than paragraphs of LOD description. Attach the LOD matrix as an appendix to the BEP.</p>\n<p><strong>Coordination Protocol:</strong> Define the coordination workflow in sequence: model issue frequency, clash test matrix, issue assignment process, resolution verification, and meeting cadence. This section should be specific enough that a new team member can follow it without asking questions.</p>\n<p><strong>Data Deliverables:</strong> List every BIM data deliverable: which parameters are required on which element types, in which format, at which project stage. This section is the FM data requirement specification and must be agreed with the client before modeling begins.</p>\n<h2>Checklist</h2>\n<ul>\n<li>List exact software versions for all disciplines</li>\n<li>Attach LOD matrix as appendix — do not describe LOD in prose only</li>\n<li>Write coordination protocol as a sequence of steps, not a description</li>\n<li>Agree FM data deliverables with client before BEP is finalised</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>A BEP that a new team member can follow without asking questions is a good BEP. If it requires interpretation, it is an aspiration document.</p>"
+}

@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 6 - Supply Air, Return Air, Exhaust Air, and Outdoor Air
+
+1. Why This Matters
+Air systems drive ceiling coordination, equipment connection, fire damper placement, and balancing discussions. Misunderstanding the air system can lead to wrong routes and wrong clash priorities.
+
+2. Core Concept
+SA, RA, EA, and OA represent different air purposes. Each system has different routing logic, pressure relationships, equipment connections, and coordination risks.
+
+3. Real Project Lens
+A return air duct near a supply air duct may look similar in the model, but its connection, insulation, grille relationship, and balancing intent can be different.
+
+4. BIM Check
+- Confirm the system abbreviation in the drawing legend.
+- Check whether duct route and terminal connection match the system.
+- Review whether color filters clearly separate air systems.
+
+5. Common Mistake
+Beginners often model ducts by shape and size only, without understanding what the air system is doing.
+
+6. Today's Action
+List four air systems and write one coordination concern for each.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,47 @@
+LUA BIM LABS Starter
+Day 64 - Pipe Sizing Parameters
+
+1. Why This Matters
+Pipe sizing is engineering work — but the modeler must verify that the sizes in the Revit model match the engineer's design. Wrong pipe sizes in the model produce wrong material take-offs, wrong clash checks, and wrong shop drawings.
+
+2. Core Concept
+- Pipe size is defined by Nominal Pipe Size (NPS) in imperial or DN (Diameter Nominal) in metric
+  - DN50 = NPS 2 inch (approximately)
+  - DN100 = NPS 4 inch
+  - DN150 = NPS 6 inch
+  - DN200 = NPS 8 inch
+- Pipe sizing is driven by:
+  - Flow rate (L/s or GPM)
+  - Velocity limit (typically 1.5–2.5 m/s for chilled water)
+  - Pressure drop limit (typically 100–300 Pa/m)
+- As flow branches out, pipe size reduces at each takeoff — the riser is the largest, the FCU connection is the smallest
+- Wall thickness matters: pipe schedule (Schedule 40, Schedule 80) affects outer diameter — relevant for clash checking
+- In Revit: pipe type (material + schedule) and size are set in type properties and instance properties
+
+Chilled Water Pipe Size Quick Reference
+
+| Flow Rate (L/s) | Suggested DN |
+|---|---|
+| 0.1–0.5 | DN20–DN25 |
+| 0.5–2.0 | DN32–DN50 |
+| 2.0–6.0 | DN65–DN100 |
+| 6.0–15.0 | DN125–DN150 |
+| 15.0–35.0 | DN200–DN250 |
+
+3. Real Project Lens
+The engineer's pipe schedule shows the Level 7 main branch at DN100 CHWS and CHWR. A junior modeler has drawn DN80 based on a misread drawing. The discrepancy is caught when the pipe schedule exported from Revit does not match the engineer's Excel schedule — saving a costly site change.
+
+4. BIM Check
+- Check: Export the pipe schedule from Revit (Mark, Size, System, Flow). Compare row by row to the engineer's schedule
+- Check: Verify that pipe type (material) matches spec — carbon steel, CPVC, copper, or stainless steel per system type
+- Check: Confirm pipe sizes reduce at every branch takeoff — no section that is larger downstream than upstream
+
+5. Common Mistake
+Changing a pipe size in the model without updating the pipe type — Revit may accept the size input but the pipe family has no corresponding size in its size table, resulting in a "pipe size not in type" warning that is often ignored.
+
+6. Today's Action
+Open the engineer's piping schedule (or a sample). Pick one pipe run. Calculate whether the velocity is within 1.5–2.5 m/s using: Velocity = Flow (L/s) ÷ Pipe Area (m²). Confirm the selected DN is appropriate.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

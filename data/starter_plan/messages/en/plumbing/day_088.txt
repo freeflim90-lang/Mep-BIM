@@ -1,0 +1,54 @@
+LUA BIM LABS Starter
+Day 88 - Coordination Drawing Package for Plumbing
+
+1. Why This Matters
+A BIM model is not a drawing package. Before the plumbing model can be used on site, it must be converted into a set of coordination drawings — plan views, sections, and schedules — that contractors can read, dimension from, and use for installation. Producing a complete coordination drawing package is one of the final steps before construction issue, and it is where modelers and coordinators demonstrate that the BIM model is truly construction-ready.
+
+2. Core Concept
+A plumbing coordination drawing package typically includes the following:
+
+Plan drawings (one per floor level):
+- Plumbing drainage plan: all soil, waste, and vent pipes at that level with pipe sizes, system labels, and slope annotations
+- Cold and hot water distribution plan: all supply pipes with sizes and flow direction
+- Fixture layout plan: all sanitary fixtures with mark numbers aligned to the fixture schedule
+
+Section drawings:
+- Toilet core sections: at least two sections (longitudinal and transverse) through each toilet core showing all pipe connections from fixture to stack, with invert levels noted
+- Riser shaft section: vertical section through every shared riser shaft at 1:20 showing all services
+- Congested zone sections: sections at 1:20 through any ceiling zone with multiple discipline services
+
+Schedule sheets:
+- Sanitary fixture schedule (from Day 79)
+- Pipe system schedule: pipe type, material, size count per system
+- Sleeve / penetration schedule: all slab and wall penetrations with coordinates and fire stop ratings
+- Valve schedule: tag, type, location, service
+
+Annotation standards for plumbing drawings:
+- Pipe sizes annotated as DNxx (e.g., DN100)
+- Slope annotated as a ratio (e.g., 1:100) or percentage (e.g., 1.0%)
+- Invert levels annotated at junctions, changes of direction, and stack connections
+- System types indicated by color or linetype (refer to the project BIM execution plan)
+
+Drawing issue process:
+1. Generate all views from the Revit model — do not produce drawings in 2D separately from the model
+2. Review each drawing for annotation completeness
+3. Issue for multi-discipline review (internal)
+4. Incorporate review comments and re-issue
+5. Issue for construction with project title block, revision number, and signatures
+
+3. Real Project Lens
+On a healthcare project, the plumbing coordination drawing package was initially issued without toilet core sections. The contractor's site team could not determine invert levels at the fixture connections from the plan drawings alone, and submitted 14 requests for information in the first two weeks of plumbing installation. All 14 RFIs were answered with toilet core section drawings that should have been in the original package. The sections took three days to produce — time that could have been built into the original drawing package program.
+
+4. BIM Check
+- Check: Plan drawings cover every occupied floor level and include pipe sizes, slopes, and system labels
+- Check: Toilet core section drawings are included in the package with invert levels at every connection point
+- Check: All schedule sheets (fixture, sleeve, valve) are generated from the Revit model — not manually compiled — and match the model data
+
+5. Common Mistake
+A common mistake is issuing plan drawings without section drawings, assuming contractors can deduce vertical information from the plan. In plumbing, invert levels and stack connection heights are critical for installation sequencing and cannot be read from a plan. Sections are not optional.
+
+6. Today's Action
+List the drawing types required for your plumbing coordination package. For each drawing type, check whether you have a corresponding Revit view set up and annotated. Identify any missing view. Create a placeholder view in Revit for the first missing drawing type and add the annotation elements needed to complete it.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,44 @@
+LUA BIM LABS Starter
+Day 65 - Mechanical Room Equipment Arrangement
+
+1. Why This Matters
+A mechanical room that looks tidy on plan but has no logical installation sequence or maintenance access will fail during both construction and operation. Equipment arrangement is a BIM coordination deliverable, not just an aesthetic choice.
+
+2. Core Concept
+- Mechanical room layout priorities:
+  1. Access for installation: Can the largest equipment (chiller, pump skid) physically enter the room and be installed? Check door and corridor widths
+  2. Maintenance access: Filters, strainers, and coils need clear front access — minimum 900mm
+  3. Pipe connection logic: Equipment connections should align logically — inlet on one side, outlet on the other, in the direction of flow
+  4. Electrical clearance: MCC panels, VFDs, and starters must have 1000mm front clearance (most electrical codes)
+  5. Floor drains: All equipment with drain pans must be within 2m of a floor drain
+  6. Vibration and noise: Pumps and air handling units need vibration isolators — model these as part of the equipment height
+- Arrangement sequence: Place large equipment first (chillers, AHUs, cooling towers), then pumps, then headers, then accessories, then smaller equipment
+
+Mechanical Room Quick Check Table
+
+| Item | Minimum |
+|---|---|
+| Pump maintenance clearance | 600mm sides, 900mm front |
+| Chiller maintenance | 1000mm tube pull clearance |
+| Pipe header spacing | 150mm between pipe centerlines (minimum) |
+| MCC front clearance | 1000mm |
+| Aisle width | 1200mm minimum |
+| Ceiling clearance above piping | 300mm minimum |
+
+3. Real Project Lens
+A chiller room on Level B2 contains two 500kW chillers, four primary pumps, and associated piping. The initial layout shows chillers side by side with pumps in front — but the chiller tube pull direction is toward the wall. A BIM review catches this and the chillers are rotated 90°, adding 2m to the room footprint. The structural team is informed early enough to revise the slab layout.
+
+4. BIM Check
+- Check: Model the tube pull direction for chillers as a reference plane or clearance volume — confirm it is unobstructed
+- Check: All pump accessories (strainer, valves, gauges) are modeled and fit within the room without overlapping
+- Check: Confirm the equipment installation path from the access door to final position — no width constraint larger than 100mm tighter than equipment dimension
+
+5. Common Mistake
+Modeling equipment at vendor-provided clearance minimums while forgetting that piping headers above the equipment also need space — resulting in a room where the ceiling is 200mm above the top of the pipe header with no room for insulation.
+
+6. Today's Action
+Sketch a simple mechanical room layout for a 3-pump arrangement (duty/standby/standby) with a common suction header and discharge header. Show the isolation valves, strainer, check valves, and where the floor drain should be located.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

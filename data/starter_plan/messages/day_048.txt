@@ -1,0 +1,36 @@
+LUA BIM LABS Starter
+Day 48 - What Happens When BIM Goes to Site?
+
+**1. Why This Matters**
+BIM models created in the office eventually drive physical installation on site — understanding how that transition works prevents you from producing models that cannot be built.
+
+**2. Core Concept**
+"BIM goes to site" describes the process by which the coordinated digital model is translated into information that construction workers can actually use. This is not automatic — it requires deliberate preparation.
+
+What the transition involves:
+- **Coordination drawings issued**: 2D plans and sections extracted from the model and formally issued to the installation teams
+- **Setting-out information**: Grid-referenced dimensions derived from the model used to mark hole positions, hanger locations, and equipment bases on the slab or wall
+- **Model access on site**: Tablets or laptops with BIM viewer apps (e.g., Navisworks Freedom, BIM 360 Docs, Autodesk Viewer) give site supervisors direct model access
+- **Spool drawings**: Pre-fabricated pipe or duct assemblies are produced from model segments — these are manufactured off-site and delivered for installation
+- **RFI (Request for Information)**: When site conditions differ from the model, a formal RFI is raised back to the design team
+- **As-built updates**: Deviations from the model on site are recorded and fed back to the BIM coordinator for as-built documentation
+
+**3. Real Project Lens**
+On a laboratory fitout project, the MEP BIM coordinator packages the Level 3 coordination drawings, a set of pipe spool drawings, and a Navisworks NWD file onto a project tablet. The site supervisor uses the NWD file to verify pipe hanger spacing during installation, raising two RFIs where the ceiling void was tighter than the model showed due to an unreported slab deviation.
+
+**4. BIM Check**
+- Check: Can you name three information outputs that a site team needs to install MEP systems from a BIM model?
+- Check: Can you explain what an RFI is and what triggers one during MEP installation?
+- Check: Can you describe the purpose of an as-built update in the BIM workflow?
+
+**5. Common Mistake**
+Assuming that issuing a coordination drawing is the end of the BIM team's involvement. Site conditions rarely match the model exactly — the BIM team must remain available to respond to RFIs and capture deviations as the build progresses.
+
+**6. Today's Action**
+Write a list of five questions a site supervisor might ask a BIM coordinator on their first day using a federated model on site — then write a one-sentence answer for each.
+
+---
+
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 3 - Clearance Is Not the Same as Clash
+
+1. Why This Matters
+Many beginners learn clash detection first, but real MEP coordination also depends on clearance. An element can avoid touching another element and still be impossible to install or maintain.
+
+2. Core Concept
+A hard clash means two modeled objects overlap. Clearance means the usable space around an object is enough for insulation, hangers, access panels, valves, maintenance, and installation sequence.
+
+3. Real Project Lens
+A pipe may not clash with a tray, but if there is no space to install insulation or operate a valve handle, the routing still needs review.
+
+4. BIM Check
+- Check modeled object size and real installed size.
+- Include insulation, flange, valve handle, support, and access space.
+- Review crowded areas in section view, not only in plan view.
+
+5. Common Mistake
+Beginners often export clash reports and assume all important problems are captured. Clearance problems often require human judgment and project rules.
+
+6. Today's Action
+Choose one pipe, duct, or cable tray route. Describe the extra space needed around it for installation and maintenance.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

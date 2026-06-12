@@ -1,0 +1,48 @@
+LUA BIM LABS Starter
+Day 79 - Coordinating Electrical in Ceiling Zones — Sequence of Routing Decisions
+
+1. Why This Matters
+Ceiling zones are the most contested coordination space in commercial buildings. Electrical, HVAC, plumbing, and sprinkler systems all compete for the same limited height. Without a structured routing sequence, modelers from different disciplines overwrite each other's work, generating cascading clashes that take longer to resolve than the original routing took to model. The routing sequence is the coordination team's agreement protocol.
+
+2. Core Concept
+Standard sequence for routing decisions in a ceiling zone:
+
+| Step | Action | Discipline |
+|---|---|---|
+| 1 | Set coordination zone boundaries | All (BIM coordinator leads) |
+| 2 | Route gravity drainage (slope-constrained) | Plumbing/drainage |
+| 3 | Route major HVAC ductwork (supply, return, exhaust) | HVAC |
+| 4 | Route sprinkler branch mains | Fire protection |
+| 5 | Route LV power cable tray | Electrical |
+| 6 | Route data/comms cable tray | IT/ELV |
+| 7 | Route small-bore pipework and conduit | All MEP |
+| 8 | Clash test — full discipline overlay | BIM coordinator |
+| 9 | Resolve remaining clashes | All — per hierarchy |
+| 10 | Freeze zone routing — issue for review | BIM coordinator |
+
+Electrical-specific considerations in the ceiling zone:
+- Power cable trays should be routed before data trays — power trays are wider and harder to reroute
+- Maintain 300mm separation from data trays from the start — do not route power and data trays first, then try to create separation
+- Where the ceiling zone narrows (at beam zones, at riser shaft edges), electrical trays may need to stack vertically — confirm the stacked arrangement maintains HV/LV/data separation rules
+- At light fitting positions: confirm the tray does not block access to the lighting fixture for maintenance
+- Reserve 200mm below the lowest MEP element for the ceiling grid and ceiling tile clearance
+
+Key principle: routing sequence is an agreement — not a right. Any discipline that routes out of sequence creates rework for all others. The BIM coordinator enforces the sequence.
+
+3. Real Project Lens
+On a hospital project, the electrical modeler routes cable trays before the HVAC modeler has finalized duct positions. When the HVAC model is updated, six duct reroutes push into the cable tray zone. The BIM coordinator rolls back the electrical tray routing for two zones and re-routes after the HVAC model is frozen. The project adopts a zone-freeze protocol: no discipline routes until gravity drainage is complete, and no electrical routes until HVAC is signed off by the lead engineer.
+
+4. BIM Check
+- Check: In each ceiling zone, is the routing sequence documented and agreed by all discipline modelers before any routing begins?
+- Check: Are power cable trays routed before data/comms trays — and does the initial routing already include 300mm separation between them?
+- Check: Is a 200mm clearance zone reserved below the lowest MEP element in every coordinated ceiling zone, for ceiling grid installation?
+
+5. Common Mistake
+Each discipline modeler routes independently in their own model without reference to other disciplines, then expects clash detection to resolve all conflicts. Clash detection identifies problems — it does not resolve them. By the time clashes are found, each modeler has already committed to a routing path that is difficult to change.
+
+6. Today's Action
+For one ceiling zone in your project or training model, write the routing sequence you would follow for all five disciplines: drainage, HVAC, sprinkler, power tray, data tray. Assign a day and a responsible modeler to each step. This is the foundation of a coordination program.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

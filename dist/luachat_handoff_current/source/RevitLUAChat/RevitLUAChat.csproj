@@ -1,0 +1,81 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net48;net8.0-windows</TargetFrameworks>
+    <AssemblyName>RevitLUAChat</AssemblyName>
+    <RootNamespace>RevitLUAChat</RootNamespace>
+    <Nullable>enable</Nullable>
+    <LangVersion>10.0</LangVersion>
+    <UseWPF>true</UseWPF>
+    <Platforms>x64</Platforms>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
+  <!-- Revit 2019-2024: .NET Framework 4.8 -->
+  <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
+    <Reference Include="System.Net.Http"/>
+    <Reference Include="RevitAPI">
+      <HintPath>C:\Program Files\Autodesk\Revit 2024\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI">
+      <HintPath>C:\Program Files\Autodesk\Revit 2024\RevitAPIUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+  <!-- Revit 2025-2026: .NET 8 -->
+  <ItemGroup Condition="'$(TargetFramework)' == 'net8.0-windows'">
+    <Reference Include="RevitAPI">
+      <HintPath>C:\Program Files\Autodesk\Revit 2026\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI">
+      <HintPath>C:\Program Files\Autodesk\Revit 2026\RevitAPIUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3"/>
+  </ItemGroup>
+
+  <!-- Post-build: copy DLLs + addin files to installed Revit addin folders -->
+  <Target Name="CopyToRevitAddins" AfterTargets="Build">
+    <PropertyGroup>
+      <AddinSrc>$(MSBuildProjectDirectory)\addin</AddinSrc>
+    </PropertyGroup>
+
+    <!-- Revit 2023 (net48) -->
+    <Copy Condition="'$(TargetFramework)' == 'net48' AND Exists('C:\ProgramData\Autodesk\Revit\Addins\2023')"
+          SourceFiles="$(OutputPath)RevitLUAChat.dll"
+          DestinationFolder="C:\ProgramData\Autodesk\Revit\Addins\2023" SkipUnchangedFiles="true"/>
+    <Copy Condition="'$(TargetFramework)' == 'net48' AND Exists('C:\ProgramData\Autodesk\Revit\Addins\2023')"
+          SourceFiles="$(AddinSrc)\RevitLUAChat_2023.addin"
+          DestinationFiles="C:\ProgramData\Autodesk\Revit\Addins\2023\RevitLUAChat.addin" SkipUnchangedFiles="true"/>
+
+    <!-- Revit 2024 (net48) -->
+    <Copy Condition="'$(TargetFramework)' == 'net48' AND Exists('C:\ProgramData\Autodesk\Revit\Addins\2024')"
+          SourceFiles="$(OutputPath)RevitLUAChat.dll"
+          DestinationFolder="C:\ProgramData\Autodesk\Revit\Addins\2024" SkipUnchangedFiles="true"/>
+    <Copy Condition="'$(TargetFramework)' == 'net48' AND Exists('C:\ProgramData\Autodesk\Revit\Addins\2024')"
+          SourceFiles="$(AddinSrc)\RevitLUAChat_2024.addin"
+          DestinationFiles="C:\ProgramData\Autodesk\Revit\Addins\2024\RevitLUAChat.addin" SkipUnchangedFiles="true"/>
+
+    <!-- Revit 2025 (net8.0-windows) -->
+    <Copy Condition="'$(TargetFramework)' == 'net8.0-windows' AND Exists('C:\ProgramData\Autodesk\Revit\Addins\2025')"
+          SourceFiles="$(OutputPath)RevitLUAChat.dll"
+          DestinationFolder="C:\ProgramData\Autodesk\Revit\Addins\2025" SkipUnchangedFiles="true"/>
+    <Copy Condition="'$(TargetFramework)' == 'net8.0-windows' AND Exists('C:\ProgramData\Autodesk\Revit\Addins\2025')"
+          SourceFiles="$(AddinSrc)\RevitLUAChat_2025.addin"
+          DestinationFiles="C:\ProgramData\Autodesk\Revit\Addins\2025\RevitLUAChat.addin" SkipUnchangedFiles="true"/>
+
+    <!-- Revit 2026 (net8.0-windows) -->
+    <Copy Condition="'$(TargetFramework)' == 'net8.0-windows' AND Exists('C:\ProgramData\Autodesk\Revit\Addins\2026')"
+          SourceFiles="$(OutputPath)RevitLUAChat.dll"
+          DestinationFolder="C:\ProgramData\Autodesk\Revit\Addins\2026" SkipUnchangedFiles="true"/>
+    <Copy Condition="'$(TargetFramework)' == 'net8.0-windows' AND Exists('C:\ProgramData\Autodesk\Revit\Addins\2026')"
+          SourceFiles="$(AddinSrc)\RevitLUAChat_2026.addin"
+          DestinationFiles="C:\ProgramData\Autodesk\Revit\Addins\2026\RevitLUAChat.addin" SkipUnchangedFiles="true"/>
+  </Target>
+
+</Project>

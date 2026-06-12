@@ -1,0 +1,43 @@
+LUA BIM LABS Starter
+Day 70 - Week 2 Review — Slope Modeling Summary
+
+1. Why This Matters
+The first ten days of the plumbing deep-dive established the technical foundation every MEP BIM coordinator needs: how sanitary systems are classified, what slope rules apply, and how to model slope correctly in Revit. This review consolidates those lessons so they stay accessible when you need them on a real project.
+
+2. Core Concept
+Summary of Days 61–70:
+
+| Day | Topic | Key Rule |
+|-----|-------|----------|
+| 61 | Sanitary system overview | Soil / Waste / Vent / Stormwater are separate systems |
+| 62 | Soil system | Carries WC discharge; DN100 minimum; connect to soil stack |
+| 63 | Waste system | Carries basin/sink discharge; P-trap required at every fixture |
+| 64 | Vent system | Maintains air pressure; prevents trap seal loss |
+| 65 | Combined vs. separate systems | Check whether project uses single or dual drainage stack |
+| 66 | Stormwater system | Separated from foul drainage; design to catch basin |
+| 67 | Horizontal slope rules | DN50: 1:40 min; DN80: 1:80 min; DN100+: 1:100 min |
+| 68 | Invert levels | Track invert at junctions; downstream always lower |
+| 69 | Slope modeling in Revit | Use Slope parameter, not manual elevation; verify with section |
+| 70 | Week review | This lesson |
+
+Key modeling habits established this week:
+- Every horizontal drainage pipe must have a slope value set
+- System classification (Soil, Waste, Vent) must be applied to every pipe
+- Invert levels must be checked at every branch junction
+
+3. Real Project Lens
+During a coordination review on a residential tower, the BIM manager ran a Revit filter to highlight all drainage pipes with Slope = 0. Over 40 pipes lit up — mostly short branches connecting WC pans to the soil stack. Each one had to be corrected before the coordination drawing could be issued. The fix took half a day. A weekly self-review habit would have caught those errors the same day they were modeled.
+
+4. BIM Check
+- Check: All horizontal drainage pipes in your model have a slope value greater than zero
+- Check: System parameters (Soil, Waste, Vent) are assigned to every pipe segment — no unclassified pipes
+- Check: Invert levels at branch junctions are documented and show a consistent downstream fall
+
+5. Common Mistake
+A common mistake is treating system classification as optional during the modeling phase and planning to add it later. In practice, "later" rarely happens before the coordination issue. Unclassified pipes cause incorrect schedule counts, clash filter gaps, and coordination issues that slow the whole team down.
+
+6. Today's Action
+Run a Revit schedule or filter on your plumbing model to check three things: (1) all horizontal drain pipes have Slope > 0, (2) all pipes have a System Classification assigned, and (3) no two adjacent pipe segments have identical invert levels. Document any gaps you find.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

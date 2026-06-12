@@ -1,0 +1,56 @@
+LUA BIM LABS Starter
+Day 89 - Commissioning and Handover Data — What FM Needs from the Fire Protection BIM Model
+
+1. Why This Matters
+The fire protection model does not end at construction handover — it becomes the living record of the building's life safety system. Facility managers, building maintenance teams, and future fire engineers will rely on this model to maintain, inspect, and modify the system. Delivering a model that is geometrically complete but data-empty is a missed opportunity that the building owner will pay for in ongoing operational costs.
+
+2. Core Concept
+What Facility Management (FM) Needs from the Fire Protection BIM at Handover:
+
+1. System Zoning Map
+- Which zone covers which area — with zone valve locations and isolation sequences
+- Critical for: emergency response, planned maintenance isolation, future fit-out coordination
+- In the model: System Name parameter must match the zone map. Every element has a zone.
+
+2. Head Type and Operating Temperature Record
+- FM needs to know which head type (pendant, upright, concealed, sidewall) and temperature rating is installed in each zone
+- Critical for: replacement procurement — fitting the wrong temperature rating is a compliance failure
+- In the model: Head Type and Operating Temperature parameters (see Day 87)
+
+3. Valve Register
+- List of all zone valves, alarm check valves, and test and drain assemblies with their location, zone served, and service instructions
+- Critical for: annual inspection, hydrostatic testing, isolation for maintenance work
+- In the model: each valve has a Mark, Valve Type, Zone, and Location parameter
+
+4. Maintenance Access Notes
+- Identify which heads are concealed (cover plate must be removed for inspection) vs. standard pendant
+- Identify which branch lines require draining for winter shutdown (dry zones)
+- In the model: add a Maintenance Note parameter where non-standard access is needed
+
+5. As-Built Hydraulic Reference
+- The final accepted hydraulic calculation (from the fire engineer) tied to the as-built model
+- FM needs this if they want to add or modify the system in the future — they cannot start from scratch
+- Delivered as a linked document reference in the model or handover data pack
+
+LOD at Handover (typically LOD 400–500):
+- All RFIs incorporated (LOD 500 element = as-installed)
+- All parameters populated per Day 87 checklist
+- Valve register exported as a spreadsheet or linked to FM platform (e.g., Archibus, Maximo)
+
+3. Real Project Lens
+A hospital facility manager receives a fire protection model at handover with no zone map, no valve register, and concealed heads not identified. Three months later, a maintenance team isolates the wrong zone during a plumbing repair, triggering an alarm. A complete FM-ready handover model — with zone maps and valve registers — would have prevented this in under 5 minutes of model query time.
+
+4. BIM Check
+- Check: Every fire protection element has a System Name / Zone that maps to the physical zone valve — FM can trace any head back to its isolation valve
+- Check: A valve register schedule has been exported from the model and included in the handover data package
+- Check: As-built hydraulic calculation is linked or referenced in the handover package — not just the design calculation
+
+5. Common Mistake
+Handing over the fire protection model without a valve register, assuming FM will figure out the zoning from the drawings. Drawings do not show isolation sequences. FM teams need to know: if I need to isolate Zone 3 for maintenance, which valve do I close, and what area does that affect? This must be explicit in the model data.
+
+6. Today's Action
+Open your current or sample fire protection model and run a Revit schedule of all zone valves. Check whether each valve has: Mark, Zone, Valve Type, and Location populated. If any field is blank, note it as a handover data gap.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 13 - Using Sections to Understand Congested Areas
+
+1. Why This Matters
+Plan view can hide vertical conflicts. Sections reveal elevation, clearance, support space, and installation sequence more clearly.
+
+2. Core Concept
+A section is a vertical slice through the model. It helps you understand how elements stack above ceilings, inside shafts, and around equipment.
+
+3. Real Project Lens
+A corridor may look organized in plan but show stacked ducts, trays, pipes, and beams competing for the same vertical space in section.
+
+4. BIM Check
+- Cut sections through congested areas.
+- Review top and bottom elevations of major systems.
+- Compare model clearance with required installation space.
+
+5. Common Mistake
+Beginners often review coordination only in plan and 3D, skipping the most useful section views.
+
+6. Today's Action
+Create or imagine one section through a crowded ceiling zone and list the systems from top to bottom.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

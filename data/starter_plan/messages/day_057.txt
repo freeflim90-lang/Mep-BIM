@@ -1,0 +1,35 @@
+LUA BIM LABS Starter
+Day 57 - Asking Good Questions in a BIM Team
+
+1. Why This Matters
+Knowing when and how to ask questions is one of the most underrated skills in BIM. Asking too rarely leads to errors buried in the model. Asking poorly wastes senior staff time and signals poor preparation.
+
+2. Core Concept
+Good BIM questions share three qualities: they show you already looked for the answer, they are specific, and they include what you have tried so far.
+
+A weak question: "How do I model this duct?"
+A strong question: "The supply duct on Level 3 Grid C needs to pass through the structural beam at 2750 FFL. The beam is 600mm deep. Based on the BEP, penetrations under 300mm diameter are allowed with structural approval. Should I model the penetration and flag it as pending approval, or raise an RFI first?"
+
+What to include when raising a question or issue:
+- The location (grid, level, zone)
+- What you observed or are unsure about
+- What you already checked (BEP, drawings, previous coordination records)
+- What decision or input you need
+- The urgency — will this block other work?
+
+3. Real Project Lens
+A plumbing modeler on a commercial tower noticed that a riser route conflicted with a structural column that was not shown in the original model. Instead of guessing, they raised an RFI with the grid reference, a screenshot, and the BEP clause they believed applied. The structural engineer responded within 24 hours with a revised routing zone. The problem was resolved before it reached the coordination meeting.
+
+4. BIM Check
+- Check: When you ask a question, do you include the location, what you checked, and what decision you need?
+- Check: Do you distinguish between questions that need an immediate answer and questions that can wait?
+- Check: Do you record the answers you receive so you can reference them later?
+
+5. Common Mistake
+Beginners often ask vague questions or ask the same question twice because they did not record the first answer. Both waste team time and reduce confidence in the asker.
+
+6. Today's Action
+Think of a question you currently have about BIM work — real or hypothetical. Write it out using the strong format: location, what you observed, what you checked, what you need.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

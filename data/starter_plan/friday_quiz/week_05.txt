@@ -1,0 +1,13 @@
+LUA BIM LABS — BIM Check Friday ✓
+Week 5 | Clash Coordination Basics — Part 1
+
+Q1. What is the difference between a hard clash and a soft clash in Navisworks?
+Q2. What file format does Revit export for use in Navisworks, and what does that format contain?
+Q3. In Navisworks Clash Detective, what does the status "Reviewed" mean — and how is it different from "Resolved"?
+Q4. Why is it important to group clash results before attending a coordination meeting?
+Q5. What are the three typical resolution outcomes for a clash in a coordination meeting?
+
+Think through each one.
+No grades — this tests your own understanding.
+
+Next week: Clash Coordination Basics check (Part 2).

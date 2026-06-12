@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "Navisworks",
+    "BIM Handover",
+    "BIM",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "Navisworks for Asset Management: Navigating BIM After Handover",
+  "slug": "navisworks-for-asset-management-navigating-bim-after-handover",
+  "content": "<p>After project handover, Navisworks NWD files provide facility management teams with a navigable 3D model that does not require Revit licenses. FM teams can locate assets, read equipment data, and create service viewpoints without design software expertise. This use of Navisworks extends its value from coordination into the operational phase.</p>\n<h2>Why This Matters</h2>\n<p>FM teams that have no access to the BIM model after handover cannot realise the value of BIM for maintenance, refurbishment planning, or space management. A Navisworks NWD file distributed to the FM team is a low-cost way to make BIM data accessible without a full CAFM system integration.</p>\n<h2>Practical Guidance</h2>\n<p><strong>NWD File Preparation for FM:</strong> Before issuing a Navisworks NWD to FM teams, optimise it for FM use: hide construction-phase elements, configure property display to show FM-relevant parameters (asset tag, manufacturer, maintenance interval), and create saved viewpoints for each major plant area.</p>\n<p><strong>Search Sets for Asset Location:</strong> Create Navisworks Search Sets that allow FM teams to find assets by category, floor, and system without navigating through the entire model. A Search Set for 'All FCUs on Level 3' or 'All isolating valves in Plantroom A' is a practical FM tool.</p>\n<p><strong>Freedom vs Manage for FM:</strong> Navisworks Freedom is a free viewer that reads NWD files. FM teams do not need a Navisworks Manage license for model navigation, property access, and saved viewpoints. Distribute NWD files with Freedom viewer instructions to maximise access.</p>\n<p><strong>Model Update Schedule:</strong> NWD files issued at handover become outdated as the building changes. Establish a model update protocol: when significant MEP changes occur (replacement equipment, major rerout), an updated NWD is issued to the FM team.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Configure NWD for FM use: hide construction elements, set FM property display</li>\n<li>Create Search Sets for common FM asset location tasks</li>\n<li>Distribute Navisworks Freedom viewer with first FM NWD issue</li>\n<li>Establish a model update protocol for significant building changes post-handover</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>Navisworks is the most accessible BIM format for FM teams — a well-prepared NWD file is more useful to FM than an unreadable IFC or an inaccessible Revit file.</p>"
+}

@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 12 - Families, Types, and Instances
+
+1. Why This Matters
+Understanding families, types, and instances helps beginners edit the right thing without damaging many elements accidentally.
+
+2. Core Concept
+A family defines the object category and behavior, a type defines shared properties, and an instance is one placed object in the model.
+
+3. Real Project Lens
+Changing a type parameter may update many diffusers or valves at once. Changing an instance parameter affects only one placed element.
+
+4. BIM Check
+- Identify whether a property is type-based or instance-based.
+- Check how many elements use the same type.
+- Duplicate a type before making risky changes.
+
+5. Common Mistake
+Beginners often edit type properties when they only meant to change one element.
+
+6. Today's Action
+Select one MEP family and identify three type parameters and three instance parameters.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,39 @@
+LUA BIM LABS Starter
+Day 63 - Vertical Riser Planning and Sleeve Requests
+
+1. Why This Matters
+Plumbing risers — the vertical stacks that carry drainage and water supply between floors — must pass through floor slabs. Every penetration must be planned, sized, and approved before concrete is poured. A missed sleeve means core-drilling after construction — which is expensive and may cut through rebar.
+
+2. Core Concept
+- Plumbing riser types:
+  - Soil Stack: Carries WC waste (black water) vertically — minimum DN100
+  - Waste Stack: Carries waste from basins, showers (gray water) — typically DN75–DN100
+  - Vent Stack: Carries air for the drainage system — typically DN50–DN75
+  - Cold and Hot Water Risers: Pressurized supply — size varies by floor demand
+- Sleeve sizing rule: Sleeve diameter = Pipe OD + Insulation (if any) + 25mm clearance
+  - Example: DN100 soil stack OD = 114mm. No insulation. Sleeve = 114 + 25 = 139mm → use 150mm sleeve
+- Sleeve location: must be coordinated with structural team — never through structural beams or within 300mm of a beam
+- Sleeve request process:
+  1. Finalize riser location in BIM model
+  2. Export sleeve drawing (plan view with grid references and elevations)
+  3. Submit to structural team with a written request before slab pour date
+  4. Structural team confirms or revises location
+  5. Contractor installs sleeve before concrete pour
+
+3. Real Project Lens
+A 20-floor residential tower has a wet wall with 6 plumbing stacks (2 soil, 2 waste, 1 vent, 1 CWS riser) on every floor. The BIM modeler creates a sleeve schedule from Revit — listing each sleeve: grid reference, floor level, pipe size, sleeve size, top of sleeve elevation. This schedule is submitted to the structural engineer 8 weeks before the first slab pour.
+
+4. BIM Check
+- Check: Every vertical pipe penetrating a slab has a sleeve modeled (or at minimum a penetration request logged)
+- Check: Sleeve size = Pipe OD + clearance. Confirm no sleeve is undersized
+- Check: Sleeve locations are at least 300mm from structural beams (check against structural model)
+
+5. Common Mistake
+Submitting a sleeve request with only pipe sizes listed — the structural engineer needs the sleeve centerline coordinates (X, Y from grids, Z elevation) to locate the sleeve in the formwork. Missing coordinates means the sleeve is placed in the wrong location.
+
+6. Today's Action
+Pick one sanitary riser in a model (or sketch). Calculate the required sleeve size (Pipe OD + 25mm clearance). Then write a one-line sleeve request entry: Grid reference, Level, Pipe size, Sleeve size, Top of slab elevation.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

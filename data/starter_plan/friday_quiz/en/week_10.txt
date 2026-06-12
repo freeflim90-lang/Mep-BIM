@@ -1,0 +1,13 @@
+LUA BIM LABS — BIM Check Friday ✓
+Week 10 | Site-Readiness Thinking — Part 2
+
+Q1. What is the difference between a model conflict and a site conflict — and give one example of each?
+Q2. Name three things a site supervisor needs from the BIM team that a design engineer typically does not need.
+Q3. What is a spool drawing, and at what LOD should the BIM model be before spool drawings are produced?
+Q4. A structural column was installed 50mm out of position. The model shows no clash. How should this be resolved?
+Q5. What does "as-built capture" mean in the BIM workflow, and why does it matter after construction?
+
+Think through each one.
+No grades — this tests your own understanding.
+
+Next week: BIM Standards and Career check (Part 1).

@@ -1,0 +1,29 @@
+LUA BIM LABS Starter
+Day 71 - Expansion Tanks and Air Separators in Hydronic Systems
+
+1. Why This Matters
+Expansion tanks and air separators are small but critical components in hydronic piping systems. Missing or misplaced in the BIM model, they create commissioning failures that are expensive to correct after installation.
+
+2. Core Concept
+- Expansion tank: absorbs the volume change of water as it heats and cools — prevents excessive pressure fluctuations in the closed loop
+- Placement: the expansion tank connects to the system at the pump suction — this is the point of zero pressure in the system
+- Sizing: expansion tank size depends on system volume and operating temperature range — the engineer specifies the size; the BIM modeler places the family correctly
+- Air separator: removes dissolved air from the water before it can cause noise, corrosion, and reduced heat transfer
+- Placement: the air separator is installed in the return pipe near the pump suction, upstream of the expansion tank connection
+- Automatic air vents: small automatic venting devices placed at high points in the system to release trapped air
+
+3. Real Project Lens
+On a district cooling project, the expansion tank was modeled at the pump discharge instead of the suction side — an error that passed unnoticed through BIM coordination. During commissioning, the system experienced water hammer and pressure surges. The expansion tank had to be relocated, requiring the contractor to cut and re-weld two pipe connections and rerun pressure tests.
+
+4. BIM Check
+- Check: the expansion tank connects to the system at the pump suction side, not the discharge
+- Check: an air separator is modeled in the return line upstream of the expansion tank connection point
+- Check: automatic air vents are placed at the highest points in the distribution system
+
+5. Common Mistake
+Beginners often place expansion tanks and air separators wherever they fit spatially without verifying the correct system connection point.
+
+6. Today's Action
+In a simple hydronic system sketch, mark the correct positions for: expansion tank, air separator, and two automatic air vents. Label why each position is correct.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,44 @@
+LUA BIM LABS Starter
+Day 76 - Toilet and WC Connections
+
+1. Why This Matters
+Toilet and WC connections generate the largest volumes of soil discharge in a building. Getting the pipe sizing, fall, and connection routing right in the BIM model directly affects whether the drainage system performs without blockages. It also drives where the soil stack must be positioned — making WC connection layout one of the first things modeled when a toilet core is designed.
+
+2. Core Concept
+A WC pan discharges to a soil pipe, which connects to the soil stack or a branch soil pipe.
+
+Typical WC connection requirements:
+- Minimum pipe size: DN100 (100 mm nominal bore)
+- Maximum horizontal distance from WC pan outlet to soil stack: 6 metres (some codes allow up to 9 m with specific conditions)
+- Horizontal branch slope: 1:40 to 1:80 (steeper than general waste pipes due to solids content)
+- No more than two WC pans should connect to a single unvented 100 mm branch
+- 45-degree branch connections to the stack are preferred over 90-degree tees to reduce turbulence
+
+BIM modeling steps:
+1. Place WC pan families at the fixture locations shown on the architectural layout
+2. Connect a DN100 soil pipe from each WC outlet to the horizontal branch
+3. Set the horizontal branch slope to 1:40 or the project-specified grade
+4. Route the branch to the soil stack using a 45-degree wye or combination fitting
+5. Verify the invert level at the stack connection is lower than all branch inverts upstream
+6. Label the pipe system as Sanitary — Soil
+
+Additional considerations:
+- WC pans with a P-trap outlet connect directly to a horizontal soil pipe (no separate P-trap fitting needed)
+- Where two WC pans are back-to-back, a common branch can be used, but the branch diameter must be confirmed
+
+3. Real Project Lens
+On a commercial office fit-out, the toilet core had four WC pans all connecting to a single DN100 horizontal branch. The maximum allowable fixture count for an unvented DN100 branch was two. The BIM model made this visible when the system inspector showed four fixtures on one branch. The design was revised to split the WCs across two separate branches, each connecting to the soil stack at different heights.
+
+4. BIM Check
+- Check: All WC pipe connections are modeled at DN100 or larger
+- Check: Horizontal soil branch slope is set to at least 1:40 for all WC branches
+- Check: The number of WC pans per unvented branch does not exceed the project or code limit
+
+5. Common Mistake
+A common mistake is connecting WC branches to the soil stack at exactly the same invert level as another branch on the opposite side. This creates a cross-flow condition where discharge from one branch enters the opposite branch instead of flowing down the stack. Branches should connect at different heights — minimum 200 mm vertical separation.
+
+6. Today's Action
+In Revit, model two WC pans in a small toilet room connected by a DN100 horizontal branch to a soil stack. Set the slope to 1:40. Measure the horizontal distance from each WC outlet to the stack. Check both connections fall within the 6-metre maximum. Document the invert level at the stack junction.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

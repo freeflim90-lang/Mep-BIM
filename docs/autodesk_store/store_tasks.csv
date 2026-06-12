@@ -1,0 +1,37 @@
+priority,area,owner_ai,status,task,source
+P0,Security,License/Compliance AI,done,Remove hardcoded activation secrets from Addin Dashboard source,STORE_READINESS_AUDIT
+P0,Packaging,Build/Installer AI,open,Create clean release installer and uninstaller for BIM Command Center,STORE_LAUNCH_PLAN
+P0,Packaging,Build/Installer AI,open,Remove hardcoded developer paths from manifests and project files,STORE_READINESS_AUDIT
+P0,Product,Product Strategy AI,open,Freeze first release module list and hide experimental modules,STORE_LAUNCH_PLAN
+P0,Product,Product Strategy AI,done,Exclude RevitAddin.MepBim from first commercial dashboard package,STORE_LAUNCH_PLAN
+P0,Privacy,Legal/Privacy AI,open,Finalize privacy policy based on actual data/network behavior,PRIVACY_POLICY_DRAFT
+P0,Pricing,CEO/CFO AI,open,Use USD 19 monthly and USD 190 yearly as first Store subscription price,SUBSCRIPTION_PRICING
+P0,Licensing,License/Compliance AI,done,Scaffold Autodesk Entitlement API check for 30-day trial and subscription unlock,SUBSCRIPTION_PRICING
+P0,Licensing,License/Compliance AI,open,Insert final Autodesk Store App ID into Addin Dashboard license-settings.json after Store app record is created,SUBSCRIPTION_PRICING
+P0,Build,Build/Installer AI,open,Rebuild release binaries so old local-license code is removed from shipped DLLs,STORE_SUBMISSION_CHECKLIST
+P0,Build,Owner,open,Complete Revit/Navisworks API dependent build and validation on Autodesk-installed machine,commercial_addins/BIM_Command_Center_For_Revit/00_product/WORK_BOUNDARY.md
+P0,Build,Build/Installer AI,done,Add Windows release build helper script for BIM Command Center,scripts/build_bim_command_center_release.ps1
+P0,Payment,CEO/CFO AI,open,Choose PayPal or BlueSnap and configure payment processor settings in Publisher Corner,AUTODESK_STORE_ACTUAL_WORKFLOW
+P0,Store Submission,Product Strategy AI,done,Document actual Autodesk Store subscription workflow,AUTODESK_STORE_ACTUAL_WORKFLOW
+P1,Store Submission,Release Manager AI,done,Document upload automation boundary and add local upload package helper,UPLOAD_AUTOMATION_POLICY
+P1,Release Management,Release Manager AI,done,Create separate commercial addin workspace for BIM Command Center,commercial_addins/BIM_Command_Center_For_Revit
+P1,QA,QA AI,open,Run smoke tests on Revit 2024 2025 2026,STORE_SUBMISSION_CHECKLIST
+P1,Documentation,Documentation AI,done,Write user guide draft for BIM Command Center workflows,USER_GUIDE_DRAFT
+P1,Store Listing,Marketing AI,done,Prepare screenshot and demo video shot list,SCREENSHOT_VIDEO_SHOTLIST
+P1,Support,Support AI,done,Prepare customer issue workflow and email templates,SUPPORT_RUNBOOK
+P1,Legal,Legal/Privacy AI,done,Prepare EULA draft,EULA_DRAFT
+P1,Store Listing,Marketing AI,done,Prepare Store form field values,STORE_FORM_FIELD_VALUES
+P1,Release,Release Manager AI,done,Prepare v1.0 release notes draft,RELEASE_NOTES_V1_0
+P1,QA,QA AI,done,Prepare QA smoke test evidence template,QA_SMOKE_TEST_PLAN
+P2,Navisworks,Navisworks AI,open,Prepare Navisworks Auto SearchSet as separate future listing,STORE_LAUNCH_PLAN
+P2,AI Features,AI/Cloud AI,open,Define policy and cost controls before shipping external AI features,STORE_LAUNCH_PLAN
+P1,Feature Backlog,Product Strategy AI,done,Create BIMIZE public feature internalization roadmap without copying competitor code or UI,commercial_addins/BIM_Command_Center_For_Revit/08_feature_backlog/BIMIZE_FEATURE_INTERNALIZATION.md
+P1,Feature Backlog,Revit Addin AI,done,Define Phase 1 simple features: Line Cleanup Lite Smart Selector Lite Workset Inspector Lite,commercial_addins/BIM_Command_Center_For_Revit/08_feature_backlog/PHASE1_SIMPLE_FEATURES.md
+P1,Feature Backlog,QA AI,done,Add validation script for feature backlog docs and JSON configs,scripts/validate_feature_backlog.py
+P1,Feature Implementation,Owner,open,Implement and validate Phase 1 Revit API commands on Autodesk-installed build machine,commercial_addins/BIM_Command_Center_For_Revit/08_feature_backlog/PHASE1_SIMPLE_FEATURES.md
+P1,Feature Backlog,Product Strategy AI,done,Convert user-provided BIMlize ribbon screenshot into internal feature matrix,commercial_addins/BIM_Command_Center_For_Revit/08_feature_backlog/BIMLIZE_RIBBON_FEATURE_MATRIX.md
+P1,Feature Backlog,Revit Addin AI,done,Add simple-first specs for settings profile view template copy type batch definition and tag text alignment,commercial_addins/BIM_Command_Center_For_Revit/08_feature_backlog/feature_specs
+P1,Feature Implementation,Revit Addin AI,done,Add Phase 1 dry-run commands to BIM Command Center source,$BCC_ADDIN_DEV_SOURCE_ROOT/01_Revit_Addins/Addin Dashboard/CommercialFeatures
+P1,QA,Owner,open,Build and smoke-test Commercial Phase 1 dry-run commands on Revit-installed machine,commercial_addins/BIM_Command_Center_For_Revit/04_qa_evidence/PHASE1_DRY_RUN_TEST_CHECKLIST.md
+P1,Feature Implementation,Revit Addin AI,done,Add Project Cleanup Lite and Schedule Excel Export dry-run commands to Phase 1,$BCC_ADDIN_DEV_SOURCE_ROOT/01_Revit_Addins/Addin Dashboard/CommercialFeatures
+P1,QA,Revit Addin AI,done,Add static validation script for BIM Command Center source without Revit,scripts/validate_bim_command_center_static.py

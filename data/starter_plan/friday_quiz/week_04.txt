@@ -1,0 +1,13 @@
+LUA BIM LABS — BIM Check Friday ✓
+Week 4 | Model Quality Basics
+
+Q1. What is the difference between LOD 200 and LOD 350 in terms of what a model element contains?
+Q2. Name two types of model quality checks that should be performed before a BIM model is submitted to a client.
+Q3. What does it mean when a Revit element has no "Mark" value assigned?
+Q4. What is a shared parameter in Revit, and why does it matter for BIM deliverables?
+Q5. If a model quality checker tool flags 120 elements as failing, what should you do before fixing them all?
+
+Think through each one.
+No grades — this tests your own understanding.
+
+Next week: Clash Coordination Basics check (Part 1).

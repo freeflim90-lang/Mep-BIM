@@ -1,0 +1,30 @@
+LUA BIM LABS Starter
+Day 85 - Piping Coordination Review Checklist
+
+1. Why This Matters
+A structured pre-submission piping review demonstrates professional quality and prevents the back-and-forth of unchecked model submissions.
+
+2. Core Concept
+- The piping coordination review covers 7 areas: system completeness, flow direction, fittings, insulation, valves, trade coordination, and file quality
+- System completeness: all pipes are connected to equipment or end at a correctly placed cap or open stub; no floating pipe sections
+- Flow direction: supply and return assignment is correct at every equipment connection; pipe system types in the Revit inspector show a connected network from source to terminal
+- Fittings: reducers are placed at all size transitions; elbows and tees use actual fitting geometry
+- Insulation: insulation is applied to all pipes specified to be insulated; insulated diameter is used for clash detection
+- Valves: isolation valves are on both sides of all major equipment; balancing valves are at all terminal connections
+- File quality: Revit warnings below 50; NWC export tested and verified in Navisworks
+
+3. Real Project Lens
+On a large commercial project, the piping contractor implemented a formal pre-submission checklist for all piping zone submissions. Review turnaround time dropped from an average of 7 days to 3 days because the most common errors — reversed connections, missing reducers, and open connectors — were caught before submission.
+
+4. BIM Check
+- Check: the piping model passes the Revit System Inspector with zero unconnected elements
+- Check: a clash test against the structural model has been run and reviewed before submission
+- Check: the submitted NWC file opens correctly in Navisworks with all piping elements visible
+
+5. Common Mistake
+Beginners submit models without a checklist because submission deadlines feel more urgent than review quality. Unchecked models consistently require more total review time than checked models.
+
+6. Today's Action
+Create your own 5-item piping model checklist based on what you have learned over the past 25 days.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

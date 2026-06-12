@@ -1,0 +1,28 @@
+LUA BIM LABS Starter
+Day 79 - HVAC Model LOD 350 — Required Elements Before Coordination
+
+1. Why This Matters
+LOD 350 is the coordination standard most projects require before construction. Understanding what LOD 350 means for HVAC ensures the model is complete enough to support clash detection and installation planning.
+
+2. Core Concept
+- LOD 350 means the model element is accurate enough for trade coordination and prefabrication drawing production
+- Ductwork at LOD 350: actual cross-section dimensions, insulation thickness as clearance zone, all fittings (elbows, tees, transitions), all accessories (dampers, fire dampers, access doors), connection to equipment
+- Equipment at LOD 350: outer envelope dimensions match approved submittal, maintenance clearance zones are modeled or documented, all connection points located correctly
+- Parameters required at LOD 350: duct system type, airflow (CFM or L/s), insulation type and thickness, LOD status, Mark value
+- Common LOD 350 gaps: missing insulation clearance, generic fittings instead of actual geometry, equipment without maintenance zone, missing fire dampers
+
+3. Real Project Lens
+On a hospital project, the HVAC model was submitted as 'LOD 350' but insulation clearances were not modeled. When the clash test ran, 87 duct-to-structure clashes appeared — all caused by insulation clearance not being included in the geometry. The model was returned for revision, delaying the coordination package by three weeks.
+
+4. BIM Check
+- Check: all insulated ducts have insulation thickness added as a clearance zone in the model geometry
+- Check: all duct fittings are modeled with actual geometry, not represented as straight duct segments
+- Check: all fire dampers, volume control dampers, and access doors are placed at their correct locations before the model is issued
+
+5. Common Mistake
+Beginners model ductwork at LOD 300 (correct route and size) and claim LOD 350 without adding insulation clearance, fittings, or accessories.
+
+6. Today's Action
+List the five LOD 350 elements required for one HVAC zone: duct size, insulation, fittings, accessories, and equipment connection.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

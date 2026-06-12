@@ -1,0 +1,28 @@
+LUA BIM LABS Starter
+Day 75 - VAV Box Placement and Ceiling Zone Coordination
+
+1. Why This Matters
+VAV boxes occupy ceiling voids and serve specific zones. Getting their placement wrong causes duct rerouting, ceiling conflicts, and poor acoustic performance — all discovered too late if BIM coordination is skipped.
+
+2. Core Concept
+- A VAV box receives primary air from the AHU supply duct and delivers conditioned air to its zone through downstream ductwork
+- Placement factors: VAV box must be accessible via ceiling access panel below, must not conflict with structural beams, and must have space for downstream connections
+- The primary supply duct (AHU to VAV) is high-velocity and requires more clearance than downstream branch ducts
+- In Revit: the VAV box family has supply air inlet and outlet connectors — assign both to the correct system
+- Coordination sequence: route the primary duct first, then position VAV boxes along the duct at zone boundaries
+
+3. Real Project Lens
+On a large office floor with a 500mm ceiling void, VAV boxes were placed for coordination convenience without reference to the structural beam layout. Three VAV boxes conflicted with primary beams. Resolving the conflicts required reducing the zone count from 18 to 14 and re-routing two primary supply ducts.
+
+4. BIM Check
+- Check: each VAV box has a ceiling access panel directly below it in the reflected ceiling plan
+- Check: the primary supply duct from AHU to VAV box does not conflict with structural beams or main cable trays
+- Check: downstream ductwork from the VAV box can reach all supply diffusers in the zone without conflicts
+
+5. Common Mistake
+Beginners place VAV boxes first and then try to route primary ducts to them. The correct sequence is to route the primary duct first, then position VAV boxes at zone boundaries along the duct.
+
+6. Today's Action
+On a floor plan or sketch, draw the primary supply duct route, place two VAV boxes along it, and mark where the ceiling access panels would be.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

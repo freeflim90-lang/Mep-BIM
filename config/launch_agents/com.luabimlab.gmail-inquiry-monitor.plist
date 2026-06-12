@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.luabimlab.gmail-inquiry-monitor</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/choejeong-yeon/LUA BIM LABS/.dev-venv/bin/python</string>
+    <string>/Users/choejeong-yeon/LUA BIM LABS/scripts/gmail_inquiry_monitor.py</string>
+  </array>
+  <key>StartInterval</key>
+  <integer>600</integer>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>WorkingDirectory</key>
+  <string>/Users/choejeong-yeon/LUA BIM LABS</string>
+  <key>StandardOutPath</key>
+  <string>/Users/choejeong-yeon/LUA BIM LABS/logs/gmail_inquiry_monitor.launchd.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/choejeong-yeon/LUA BIM LABS/logs/gmail_inquiry_monitor.launchd.err.log</string>
+</dict>
+</plist>

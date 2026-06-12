@@ -1,0 +1,43 @@
+LUA BIM LABS Starter
+Day 62 - Sprinkler Head Placement Rules
+
+1. Why This Matters
+Sprinkler heads that are placed incorrectly will not activate when needed or will activate and not cover the fire area. Both outcomes are life safety failures. Placement rules are defined by NFPA 13, EN 12845, or local standards — and the BIM model must reflect these rules.
+
+2. Core Concept
+- Key sprinkler placement rules (based on NFPA 13 as reference — verify local code):
+  - Maximum coverage area per head: Depends on hazard classification
+    - Light Hazard (offices, hotels): up to 20.9 m² per head
+    - Ordinary Hazard Group 1 (retail, dining): up to 12.1 m²
+    - Extra Hazard: up to 9.3 m²
+  - Maximum spacing between heads: 4.6m (Light), 4.6m (Ordinary) — check local code
+  - Maximum distance from wall to first head: half the maximum spacing (e.g., 2.3m for 4.6m max)
+  - Obstruction rule: If an obstruction (beam, duct) is deeper than 150mm, add a sprinkler below the obstruction
+  - Ceiling type matters: Flat ceiling = pendant heads. Exposed structure = upright heads. Concealed ceiling = concealed heads
+
+Sprinkler Layout Quick Reference
+
+| Space Type | Head Type | Max Area/Head | Max Spacing |
+|---|---|---|---|
+| Open office | Pendant (concealed) | 20.9 m² | 4.6m |
+| Storage room | Upright | 9.3 m² | 3.7m |
+| Carpark | Pendant (standard) | 12.1 m² | 4.6m |
+| Corridor | Pendant | 20.9 m² | 4.6m |
+
+3. Real Project Lens
+An open-plan office floor plate of 800m² is served by pendant concealed sprinklers at light hazard classification. Maximum area per head = 20.9m². Minimum heads required = 800 ÷ 20.9 = 39 heads. The BIM modeler lays out heads in a regular grid, verifying maximum distance from walls and between heads, then checks for beams deeper than 150mm that require additional sub-beam heads.
+
+4. BIM Check
+- Check: Calculate area coverage per head — confirm no head exceeds the maximum for its hazard classification
+- Check: Measure distance from each wall to the nearest head — confirm it is less than half the maximum spacing
+- Check: Check all beams and ducts deeper than 150mm — confirm sub-obstruction heads are added
+
+5. Common Mistake
+Placing sprinkler heads at a regular grid without checking the maximum distance from the wall — the first row of heads ends up 3.5m from the wall in a light hazard zone, exceeding the 2.3m limit.
+
+6. Today's Action
+For a room 10m x 8m (80 m²) at Light Hazard classification, calculate the minimum number of heads required. Sketch a grid layout that satisfies both the maximum coverage area and the maximum distance-from-wall rule.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

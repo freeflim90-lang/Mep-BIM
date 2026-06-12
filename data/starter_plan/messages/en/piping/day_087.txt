@@ -1,0 +1,28 @@
+LUA BIM LABS Starter
+Day 87 - Piping Month 3 Coordination Review — Lessons Learned
+
+1. Why This Matters
+Before completing the piping deep-dive, reviewing the key lessons from the past 4 weeks consolidates your understanding and prepares you to apply these skills on a real project.
+
+2. Core Concept
+- Week 1 review (Days 61-67): system types, flow direction, pipe sizing logic, pump room layout, expansion tanks, isolation valves, mechanical room quality check
+- Week 2 review (Days 68-74): chilled water system, pipe sizing, pump rooms, expansion tanks, isolation valves, insulation, hanger coordination
+- Week 3 review (Days 75-80): flexible connections, connection types, mechanical room quality check, electrical separation, LOD 350, model quality check
+- Week 4 review (Days 81-87): commissioning, structural coordination, as-built requirements, common errors, coordination review checklist, discipline integration
+- Key skill gained: you can now describe the end-to-end piping BIM coordination process from system setup to as-built handover
+
+3. Real Project Lens
+On a commercial project, a junior piping BIM modeler who had completed structured training was paired with a senior coordinator for a mechanical room coordination review. The junior modeler identified 4 of the 6 issues the senior coordinator flagged — a supply/return reversal, a missing reducer, a valve with blocked handle access, and an insulation clearance conflict with a structural bracket. The senior coordinator used the exercise to confirm the junior modeler was ready to lead a zone independently.
+
+4. BIM Check
+- Check: you can explain what pump room coordination involves and name 3 common errors found in pump room BIM models
+- Check: you can describe the LOD 350 requirements for a piping system and name 3 common gaps
+- Check: you can run an 8-point piping model quality check and document the result
+
+5. Common Mistake
+Beginners often have knowledge without application practice. The lessons in this deep-dive are most valuable when applied to a sample model — even a simple one.
+
+6. Today's Action
+Identify 3 things you learned in the piping deep-dive that surprised you or changed how you thought about piping BIM coordination.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

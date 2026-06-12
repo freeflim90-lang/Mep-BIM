@@ -1,0 +1,32 @@
+LUA BIM LABS Starter
+Day 69 - Duct Material Types and Insulation Standards in BIM
+
+1. Why This Matters
+Duct material and insulation affect the physical size of what you model in BIM. If you model a bare sheet metal duct but the spec calls for insulated duct with a 2-inch wrap, your clash detection results will be wrong and the ceiling plenum will be more congested than your model shows. Getting material and insulation right at the modeling stage prevents costly surprises during installation.
+
+2. Core Concept
+- Galvanized steel is the most common duct material. Used for supply, return, and exhaust in most commercial projects.
+- Aluminum flex duct is used for short final connections from a branch duct to a diffuser. It should not exceed 6 feet in length and must not be kinked.
+- Fiberglass duct board is used in some applications. Less common in large commercial projects.
+- Stainless steel or grease duct is required for kitchen exhaust due to high temperature and grease content.
+- External insulation: 1.5 to 2 inches of fiberglass wrap added around supply air ducts. This adds to the total duct size in the ceiling.
+- Internal liner: Sometimes used instead of external wrap. Reduces internal duct dimensions and airflow capacity.
+- In Revit, insulation can be added to duct objects using the Duct Insulation tool. The insulation thickness should reflect the spec requirement.
+- LOD 300 models often show bare duct. LOD 350 models must include insulation thickness in the modeled envelope.
+
+3. Real Project Lens
+On a hotel project, the spec requires 1.5-inch external insulation on all supply air ducts above occupied spaces. A modeler sets up the Revit duct type with insulation included. When the coordinated model is reviewed in Navisworks, the insulated envelope of the ducts shows a real conflict with a recessed light fixture that was not visible when looking at bare duct geometry. The early catch allows the lighting layout to be adjusted without field rework.
+
+4. BIM Check
+- Check: Duct types in the Revit project include the correct insulation thickness per the mechanical specification.
+- Check: Kitchen exhaust ducts are modeled as a separate system and material type from standard supply ducts.
+- Check: Flex duct connections to diffusers are modeled at the correct length and are not shown running longer than 6 feet.
+
+5. Common Mistake
+Beginners model ducts without insulation and then assume that the modeled size is the installed size. The installed envelope of an insulated duct can be 3 to 4 inches larger than the bare sheet metal dimension, which changes every clearance check in the coordinated model.
+
+6. Today's Action
+Review the Revit Duct Types dialog in a sample project or the Revit help documentation. Find where insulation thickness is defined in a duct type. Write down the steps required to add a new duct type with 1.5-inch external insulation, and note how this changes the visible size of a duct segment in a section view.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

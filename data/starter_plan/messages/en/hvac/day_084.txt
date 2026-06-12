@@ -1,0 +1,27 @@
+LUA BIM LABS Starter
+Day 84 - HVAC Commissioning Preparation
+
+1. Why This Matters
+Commissioning verifies that the installed HVAC system performs as designed. A well-maintained BIM model accelerates commissioning by providing accurate system data and reducing the time the commissioning team spends searching for information.
+
+2. Core Concept
+- Commissioning engineers need from the HVAC BIM model: equipment list with specifications, airflow schedule by zone and terminal, access point locations for each damper and piece of equipment
+- Before commissioning: verify all equipment has manufacturer and model number in parameters, all design airflows are assigned to terminals, all access panels are modeled at their locations
+- Commissioning sequence: ductwork pressure test, damper function test, fan speed verification, airflow measurement at each terminal, system balancing
+- After commissioning: as-balanced airflows may differ from design — update BIM parameters if the EIR requires as-installed accuracy
+
+3. Real Project Lens
+On a large office project, the commissioning engineer requested the HVAC airflow schedule 5 days before the TAB run. The model schedule was complete and accurate, allowing the commissioning team to pre-position measurement equipment at each terminal before arriving on site. The TAB run completed in 2 days instead of 4.
+
+4. BIM Check
+- Check: all HVAC equipment in the model has a Mark value, manufacturer name, and model number in its parameters
+- Check: a schedule of all supply terminals showing design airflow by zone can be exported directly from Revit
+- Check: access panel locations are modeled or documented so commissioning teams can reach dampers and equipment without opening ceiling tiles randomly
+
+5. Common Mistake
+Beginners think commissioning only involves the installed system, not the model. In practice, the BIM model is the reference document for commissioning planning — an incomplete model slows commissioning.
+
+6. Today's Action
+From any HVAC model or project you know, list three pieces of information the commissioning engineer would most need to plan the TAB run.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,51 @@
+LUA BIM LABS Starter
+Day 84 - Verifying Load Schedule Against Model — Cross-Checking Parameter Values
+
+1. Why This Matters
+The electrical engineer produces a load schedule as part of the design documentation — listing the connected load for every circuit and the total demand for every panel. If the BIM model's panel schedules do not match this document, the model cannot be used to verify design intent, and any load calculations performed from the model will be incorrect. Cross-checking parameter values is the final quality gate before model submission.
+
+2. Core Concept
+Load schedule verification — what to check and how:
+
+| Parameter | Engineering Document Source | Revit Location | Acceptable Tolerance |
+|---|---|---|---|
+| Panel Name | Panel schedule header | Family Name parameter | Exact match — no tolerance |
+| Circuit Count | Number of circuits listed | Panel schedule row count | Exact match |
+| Circuit Description | Circuit description column | Circuit Description parameter | Exact or equivalent match |
+| Breaker Rating (A) | Circuit breaker column | Frame Size or Rating parameter | Exact match |
+| Connected Load (kW or VA) | Connected load column | Apparent Load or Load parameter | Within 5% |
+| Phase | Phase column (A/B/C or 1Ph/3Ph) | Number of Poles parameter | Exact match |
+| Total Panel Load | Sum at bottom of panel schedule | Panel schedule total in Revit | Within 5% |
+
+How to perform the cross-check:
+1. Export the Revit panel schedule as a spreadsheet (CSV or Excel)
+2. Place it side by side with the engineering panel schedule
+3. Work row by row — flag any value that does not match within tolerance
+4. Record all flags in a Load Schedule Discrepancy Log: panel ID, circuit number, parameter, engineering value, model value, action required
+5. Submit the log with the model for engineer review
+
+Common discrepancy causes:
+- Engineer updated the panel schedule but the modeler was not notified
+- Load values were entered manually and contain a typo
+- A circuit was added late in design and modeled but not included in the engineering schedule
+- Circuit descriptions use different naming conventions (e.g., "AHU-4" in engineering vs. "Air Handling Unit 4" in Revit)
+
+Revision control: always record which revision of the engineering panel schedule was used for verification. SLD and panel schedule revisions must be in sync.
+
+3. Real Project Lens
+A BIM coordinator exports all 15 panel schedules from Revit and lines them up against the electrical engineer's load schedule submission (Rev C). She finds that DB-B1 (basement DB) has a total connected load of 42kW in the model versus 38kW in the engineering document — a 10% discrepancy, above tolerance. Investigation reveals that a 4kW domestic hot water heater was added to the model but not yet added to the engineering schedule. She flags the discrepancy and the engineer updates the schedule to Rev D.
+
+4. BIM Check
+- Check: Has the Revit panel schedule been exported and compared against the current engineering panel schedule revision — with all discrepancies logged?
+- Check: Do total panel loads in the Revit model match the engineering totals within 5% for every panel?
+- Check: Is the Load Schedule Discrepancy Log submitted with the model — not left as informal email threads?
+
+5. Common Mistake
+Assuming the Revit panel schedule is correct because the circuits were assigned by the electrical engineer's team. Engineers often update load values in the schedule document without updating the Revit model parameters — the two can drift significantly by the time the model is submitted for coordination.
+
+6. Today's Action
+Create a blank Load Schedule Discrepancy Log template with five columns: Panel ID, Circuit Number, Parameter, Engineering Value, Model Value, Action. This template is reusable on every project. Even without a live project, having the template ready means you can begin the verification process immediately when needed.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

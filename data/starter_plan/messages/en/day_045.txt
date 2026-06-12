@@ -1,0 +1,36 @@
+LUA BIM LABS Starter
+Day 45 - Revision and Change Management in BIM
+
+**1. Why This Matters**
+Design changes after coordination is underway are one of the biggest sources of rework — having a clear change management process protects both the BIM team and the construction team from avoidable errors.
+
+**2. Core Concept**
+Change management in BIM covers how design changes are communicated, incorporated into the model, and propagated to all affected coordination documents.
+
+Key elements of a BIM change management process:
+- **Change Notification**: The design team issues a formal notice (email, RFI response, or design bulletin) describing the change — this triggers the BIM update
+- **Impact Assessment**: Before updating the model, the BIM coordinator assesses which elements are affected and whether the change reopens previously resolved clashes
+- **Model Update**: The modeler makes the change in the model with a notation in the element's Comments field or a Revit workset named for the change event
+- **Re-clash**: After the model update, a targeted clash test is re-run for the affected zone
+- **Drawing Reissue**: Any coordination drawings or equipment schedules affected by the change are updated and reissued with a new revision number
+- **Stakeholder Notification**: The updated model/drawings are distributed to all parties who received the previous version
+
+**3. Real Project Lens**
+The structural engineer issues a design bulletin moving a major beam 400mm lower on Level 6. The BIM coordinator identifies that this reopens 12 previously resolved HVAC clashes and affects three issued coordination drawings. The mechanical modeler updates the model, the clashes are re-run, six new resolution decisions are made, and the three drawings are reissued at Revision B — all within five working days of the bulletin.
+
+**4. BIM Check**
+- Check: Can you describe what happens to previously resolved clashes when a structural element changes position?
+- Check: Can you explain what a "design bulletin" is and how it triggers a BIM update workflow?
+- Check: Can you list three document types that may need reissuing after a significant model change?
+
+**5. Common Mistake**
+Making the model change without notifying the site team that previously issued coordination drawings are now superseded. Construction crews may continue working from the old drawings if they are not formally notified of the reissue.
+
+**6. Today's Action**
+Write a four-step change management checklist that a junior BIM modeler should follow when they receive notification of a design change that affects their model.
+
+---
+
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

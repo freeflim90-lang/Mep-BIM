@@ -1,0 +1,29 @@
+LUA BIM LABS Starter
+Day 87 - HVAC Coordination Review Checklist
+
+1. Why This Matters
+A structured pre-submission review reduces rework, demonstrates professional quality, and builds trust with project managers and senior coordinators who review your work.
+
+2. Core Concept
+- The HVAC coordination review covers six areas: system completeness, geometry accuracy, parameters, trade coordination, documentation, and file hygiene
+- System completeness: all supply, return, exhaust, and OA systems are modeled; all equipment is connected; all accessories are placed
+- Geometry accuracy: duct sizes match the engineer's design schedule; equipment dimensions match approved submittals; insulation clearances are included
+- Parameters: all equipment has Mark values; all ducts have system type; design airflows are entered for all terminals
+- Trade coordination: a clash test has been run against structure and fire protection; critical clashes are resolved or flagged
+- File hygiene: Revit warnings are below 50; file is named per the project convention; NWC export tested in Navisworks
+
+3. Real Project Lens
+On a government building project, introducing a formal coordination checklist that all trades completed before submission reduced HVAC review time from an average of 5 days to 2 days. Common pre-checklist errors — missing system assignments, excessive Revit warnings, wrong file names — were caught before submission rather than during review.
+
+4. BIM Check
+- Check: the Revit System Inspector shows zero unconnected HVAC elements in the submitted model
+- Check: a clash test against at least the structural model has been run and the results are available alongside the submission
+- Check: the submitted NWC file opens in Navisworks and all elements appear correctly in the selection tree
+
+5. Common Mistake
+Beginners submit models without a checklist because it feels like extra work. An unchecked model consistently takes longer to review and usually comes back for revision — costing more time than the checklist would have taken.
+
+6. Today's Action
+Write your own 5-item HVAC model checklist based on the past 27 days of learning. These should be the five most important checks before any submission.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

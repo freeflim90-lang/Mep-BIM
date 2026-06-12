@@ -1,0 +1,29 @@
+{
+  "feature": "Workset Inspector Lite",
+  "version": 1,
+  "rules": [
+    {
+      "name": "Revit links should be on link worksets",
+      "categories": ["RVT Links"],
+      "expected_workset_keywords": ["link", "rvt", "linked"],
+      "severity": "warning"
+    },
+    {
+      "name": "CAD imports should be on CAD worksets",
+      "categories": ["Imports in Families", "CAD Links"],
+      "expected_workset_keywords": ["cad", "dwg", "import"],
+      "severity": "warning"
+    },
+    {
+      "name": "Levels and grids should be on datum worksets",
+      "categories": ["Levels", "Grids"],
+      "expected_workset_keywords": ["datum", "grid", "level", "shared"],
+      "severity": "info"
+    }
+  ],
+  "report": {
+    "format": "csv",
+    "include_empty_worksets": true,
+    "include_category_counts": true
+  }
+}

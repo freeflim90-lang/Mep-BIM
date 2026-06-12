@@ -1,0 +1,28 @@
+LUA BIM LABS Starter
+Day 81 - Piping Commissioning and Pressure Testing
+
+1. Why This Matters
+Pressure testing is required before piping systems are insulated and closed in. BIM models support pressure testing by defining system boundaries, test point locations, and documentation.
+
+2. Core Concept
+- Pressure test: the piping system is filled with water and pressurized to 1.5 times operating pressure for a defined period — typically 4 hours with no pressure drop allowed
+- System boundary: before pressure testing, the system is sectioned into test zones — isolation valves define zone boundaries
+- Test points: pressure gauges and temporary blanks are installed at specific points; these locations must be accessible during the test
+- BIM support: the model can be used to produce system boundary diagrams showing which valves define each test zone
+- After pressure testing: all results are recorded in a test record; the BIM model is updated if any pipe routes were changed to resolve test failures
+
+3. Real Project Lens
+On a hospital project, the piping contractor conducted pressure tests on the chilled water system in 6 zones. The BIM model was used to produce the system boundary diagrams that the testing engineer used to locate the correct isolation valves for each zone. Without the model, the testing engineer would have spent an estimated half day per zone identifying valve locations.
+
+4. BIM Check
+- Check: isolation valves are placed in the BIM model at all logical system boundary points where pressure test zones would be defined
+- Check: pressure gauge connection points are accessible from a standard step ladder without removal of ceiling tiles or soffit panels
+- Check: after any pipe route change made to resolve a pressure test failure, the BIM model is updated to reflect the as-tested condition
+
+5. Common Mistake
+Beginners do not consider pressure testing during BIM coordination. Pressure test zone boundaries are determined by isolation valve locations — if valves are missing, zones cannot be isolated.
+
+6. Today's Action
+Divide a simple chilled water distribution system sketch into 3 pressure test zones. Draw the isolation valves that would define each zone boundary.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

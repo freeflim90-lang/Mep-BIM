@@ -1,0 +1,25 @@
+{
+  "feature": "Type Batch Definer",
+  "version": 1,
+  "dry_run_required": true,
+  "update_existing_types": false,
+  "definitions": [
+    {
+      "category": "Doors",
+      "base_type_name": "Single-Flush",
+      "new_type_name": "LUA-Door-900",
+      "type_parameters": {
+        "Width": "900",
+        "Description": "Office standard sample"
+      }
+    },
+    {
+      "category": "Text Notes",
+      "base_type_name": "2.5mm Arial",
+      "new_type_name": "LUA-Text-2.5mm",
+      "type_parameters": {
+        "Type Comments": "Office standard sample"
+      }
+    }
+  ]
+}

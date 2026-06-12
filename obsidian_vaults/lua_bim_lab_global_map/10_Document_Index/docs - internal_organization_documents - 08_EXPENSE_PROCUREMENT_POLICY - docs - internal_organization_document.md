@@ -1,0 +1,43 @@
+---
+type: source-index
+generated: true
+category: Internal Organization
+source_path: "docs/internal_organization_documents/08_EXPENSE_PROCUREMENT_POLICY.md"
+---
+
+# docs - internal_organization_documents - 08_EXPENSE_PROCUREMENT_POLICY - docs - internal_organization_documents - LUA BIM LAB
+
+## Source
+
+`docs/internal_organization_documents/08_EXPENSE_PROCUREMENT_POLICY.md`
+
+Absolute path:
+
+`/Users/choejeong-yeon/LUA BIM LABS/docs/internal_organization_documents/08_EXPENSE_PROCUREMENT_POLICY.md`
+
+## Category
+
+- [[MOC - Internal Organization]]
+
+## Summary
+
+━━━━━━━━━━━━━━━━━━━━ 문서번호: LBL-ORG-008 문서상태: 내부 기준 초안 작성일: 2026-05-20 본 문서는 프로젝트 수행과 조직 운영에 필요한 비용 정산, 장비/소프트웨어 구매, 외주 비용 요청 기준을 정의한다. 영수증, 세금계산서, 거래명세서 등 증빙을 제출한다. 고객 청구 가능 비용과 내부 비용은 구분한다. `경비정산_AI`는 Telegram으로 제출된 영수증, 세금계산서, 거래명세서, 카드전표를 수집하고 날짜, 금액, 사용처, 
+
+## Keywords
+
+api, bim, cs, docs, expense_procurement_policy.md, internal, internal_organization_documents, navisworks, organization, qwen, revit, 결제, 교육, 라이선스, 보안, 자산, 조직, 지원
+
+## Related
+
+- [[AI 간 협업 의사소통 및 합의 운영 기준]]
+- [[AI 협업 문서 활용성 감사 보고서]]
+- [[AI 협업 실행 런북 및 템플릿]]
+- [[LUA BIM LAB 내부 조직 운영 문서 패키지]]
+- [[LUA BIM LABS Local SSD Knowledge Accumulation Policy]]
+- [[docs - internal_organization_documents - 01_ORGANIZATION_OPERATING_CHARTER - docs - internal_organization_docu]]
+- [[docs - internal_organization_documents - 02_ROLE_RESPONSIBILITY_RACI - docs - internal_organization_documents ]]
+- [[docs - internal_organization_documents - 03_DECISION_AUTHORITY_MATRIX - docs - internal_organization_documents]]
+
+## Home
+
+- [[Global Knowledge Map]]

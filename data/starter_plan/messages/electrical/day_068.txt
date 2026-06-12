@@ -1,0 +1,45 @@
+LUA BIM LABS Starter
+Day 68 - Load Schedule — Reading and Matching Panel Schedules to the BIM Model
+
+1. Why This Matters
+A panel schedule is the primary engineering document for an electrical distribution board. If the loads listed in the schedule do not match what is modeled in Revit, the model cannot be trusted for coordination, clash detection, or handover. Matching panel schedules to the BIM model is one of the most frequent tasks for a junior MEP BIM practitioner.
+
+2. Core Concept
+A panel schedule lists every circuit on a distribution board (DB), with:
+
+| Column | Meaning |
+|---|---|
+| Circuit Number | Breaker position — odd numbers on the left, even on the right |
+| Description | Load served (e.g., "Lighting — Office Level 3") |
+| Phase | A, B, or C (single-phase) or 3-phase |
+| Breaker Rating | Amperage of the MCB (e.g., 16A, 20A, 32A) |
+| Connected Load (kW) | Design load for that circuit |
+| Remarks | Spares, special equipment, future circuits |
+
+How to match a panel schedule to the BIM model:
+- Locate the corresponding DB family in Revit — confirm panel name matches
+- Open the DB's Electrical Panel Schedule view in Revit
+- Check that every circuit in the paper schedule has a corresponding circuit assigned in the model
+- Verify circuit descriptions match the connected equipment in the model
+- Check that breaker ratings in the schedule match MCB parameters in the Revit family
+- Flag any circuits marked "spare" — model as unoccupied breaker slots, not as missing data
+
+Tools: Revit Electrical Panel Schedule view, parameter mapping, project browser panel families
+
+3. Real Project Lens
+A coordinator receives the M&E consultant's panel schedule for DB-L4 (Level 4 distribution board) as a PDF. She opens the Revit model, finds the DB-L4 family, and opens its panel schedule view. She works through 24 circuits row by row, checking that each load is connected to the correct Revit element and that breaker ratings match. On Circuit 07 she finds "AHU-4" listed but the circuit is not connected to any element — she flags it as a coordination issue.
+
+4. BIM Check
+- Check: Does the panel name in the Revit family match the panel ID on the engineering panel schedule exactly (e.g., "DB-L4", not "DB4" or "Panel-L4")?
+- Check: Is the total connected load shown in the Revit panel schedule within 5% of the total shown on the engineering document?
+- Check: Are all spare circuits modeled as unoccupied slots rather than missing entries?
+
+5. Common Mistake
+Assuming that because the panel family is placed in the model, the circuits are automatically correct. The panel family placement is just geometry — circuit connections and load parameters must be assigned separately, and this step is frequently skipped under deadline pressure.
+
+6. Today's Action
+Find a sample panel schedule (from a project file, textbook, or online reference). List five pieces of information you would cross-check against a Revit panel schedule view. Note any parameter in Revit that corresponds to each piece of schedule data.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

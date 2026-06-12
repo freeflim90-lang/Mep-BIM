@@ -1,0 +1,45 @@
+LUA BIM LABS Starter
+Day 72 - Standpipe and Hose Reel Systems
+
+1. Why This Matters
+Standpipe and hose reel systems are the manual firefighting component of fire protection — used by occupants and firefighters when sprinklers alone are not enough. In BIM, hose reel coverage zones must be physically verified, and standpipe locations must be coordinated with structural cores, stair lobbies, and firefighter access routes.
+
+2. Core Concept
+Standpipe and hose reel systems serve different purposes and have different coverage rules:
+
+| System | User | Coverage Rule |
+|---|---|---|
+| Class I Standpipe | Fire service / firefighters only | 30 m hose length + 9 m throw = ~39 m effective reach |
+| Class II Standpipe (Hose Reel) | Occupants (first aid) | 30 m path distance from hose reel to most remote point |
+| Class III | Both occupants and fire service | Combined requirements |
+
+Key BIM Rules for Hose Reels
+- 30 m coverage is path distance — measure along corridors, around walls, through doors. Not straight-line.
+- Hose reels are placed in or adjacent to exit corridors, stair lobbies, or central accessible points
+- Hose reel height: inlet typically at 1.0–1.2 m AFF, boxed or semi-recessed in a wall cabinet
+- Hose reel cabinet size must be coordinated with the architectural wall — typically 600 × 600 × 200 mm recess or surface mount
+- Hose reel must be fed from the fire protection wet system — no shared connection with domestic cold water
+- In Revit: model hose reel as a pipe specialty fitting on the correct system. Include the cabinet as an equipment family for architectural coordination.
+
+Standpipe Risers
+- One standpipe riser per stair core in most buildings
+- Outlet (fire brigade connection) at each floor landing — coordinate with stair enclosure walls
+- Riser size: typically DN100 for Class I and III systems
+
+3. Real Project Lens
+A 10-storey office building has two stair cores. The fire engineer specifies one hose reel per core per floor. The modeler measures path distance from each hose reel to the farthest office corner along the corridor — the east core covers 27 m maximum, the west core covers 29 m. Both are within the 30 m limit. If either had exceeded 30 m, a third hose reel mid-corridor would be required.
+
+4. BIM Check
+- Check: Hose reel coverage has been verified by path measurement (not straight-line distance) to the most remote point on the floor
+- Check: Hose reel cabinets are coordinated with architectural wall layout — no conflict with structural elements
+- Check: Standpipe riser outlets are modeled at each floor landing in the correct stair core location
+
+5. Common Mistake
+Measuring hose reel coverage as a straight-line radius in plan view. Walls, partitions, and doors all add path distance. A head that appears within 30 m in plan may be over 30 m of walking path away — requiring an additional hose reel.
+
+6. Today's Action
+On your current or sample floor plan, draw the travel path from one hose reel to the most remote point on the floor. Measure the path distance. Does it stay within 30 m? If not, identify where a second hose reel should be placed.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

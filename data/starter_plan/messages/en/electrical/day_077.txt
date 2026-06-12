@@ -1,0 +1,48 @@
+LUA BIM LABS Starter
+Day 77 - High Voltage / Low Voltage Separation — Minimum Distances and Crossing Rules
+
+1. Why This Matters
+High voltage (HV) and low voltage (LV) cable systems must be physically separated to prevent electromagnetic interference, induction heating, and safety hazards. In the BIM model, modeling HV and LV cables or trays without checking separation distances produces a model that appears coordinated but would violate electrical safety regulations on site.
+
+2. Core Concept
+HV/LV separation requirements:
+
+| Configuration | Minimum Separation (typical) |
+|---|---|
+| HV and LV cable trays running parallel | 600mm edge-to-edge (check project spec — some require more) |
+| HV conduit and LV cable tray parallel | 600mm |
+| HV and LV crossing at 90° | 300mm at the crossing point |
+| HV and data/comms tray parallel | 600mm minimum (data is more susceptible to interference) |
+| LV power and data/comms parallel | 300mm minimum |
+
+Definitions for this context:
+- HV: Above 1,000V AC — includes 11kV, 22kV feeders from transformer to MSB
+- LV: Up to 1,000V AC — includes 230V/400V distribution from MSB/DB to loads
+- ELV (Extra Low Voltage): Below 50V AC — data, fire alarm, BMS, security — most sensitive to interference
+
+BIM modeling rules for separation:
+- HV cable trays or conduits should be modeled in dedicated trays or conduit banks, clearly labeled in the model (parameter: Electrical Data — System Type = HV)
+- Run a separation check in Navisworks or Revit interference check between HV and LV tray families
+- At any crossing, the model should show the correct 300mm minimum gap — verify in section view
+- HV cable routes typically require dedicated shafts or separate ceiling zones in large buildings — coordinate with architect and structural engineer for shaft allocation
+- Where HV and LV must run parallel in a shared zone (constrained ceiling), use a divider or barrier partition between tray banks and model it
+
+Key rule: separation is measured edge-to-edge, not centerline-to-centerline. Always check the actual tray widths and positions when verifying separation.
+
+3. Real Project Lens
+A modeler routes 11kV HV feeder cables in a cable tray from the basement HV room to a rooftop transformer. Along one corridor, the HV tray runs parallel to an existing LV power tray at 400mm edge-to-edge separation. The project specification requires 600mm. She raises the HV tray by 300mm (creating 600mm edge-to-edge vertical separation) and confirms the new position still fits within the ceiling zone. The separation check passes on the next clash run.
+
+4. BIM Check
+- Check: Is the separation between HV and LV parallel cable trays at least 600mm edge-to-edge throughout the entire run — measured in section, not just in plan?
+- Check: At every HV/LV crossing, does the model show at least 300mm gap between the two systems at the crossing point?
+- Check: Are all HV cable routes identified with a System Type parameter — so clash rules can be applied selectively in Navisworks?
+
+5. Common Mistake
+Measuring separation centerline-to-centerline instead of edge-to-edge. A 600mm centerline separation between a 200mm wide HV tray and a 300mm wide LV tray gives only 250mm of actual edge-to-edge clearance — well below the 600mm requirement.
+
+6. Today's Action
+In your model or on paper, identify one location where an HV and an LV cable tray run parallel. Measure (or estimate) the edge-to-edge separation. Is it 600mm or more? If not, calculate how much the tray would need to move to achieve compliance.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

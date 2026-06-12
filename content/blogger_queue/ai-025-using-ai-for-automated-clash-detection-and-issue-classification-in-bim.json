@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "AI",
+    "BIM",
+    "Navisworks",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "Using AI for Automated Clash Detection and Issue Classification in BIM",
+  "slug": "using-ai-for-automated-clash-detection-and-issue-classification-in-bim",
+  "content": "<p>Traditional clash detection produces hundreds or thousands of raw issues that a coordination team must manually review, classify, and assign. AI tools can automate much of this triage, allowing coordinators to focus on resolution rather than administration.</p>\n<h2>Why This Matters</h2>\n<p>On a typical mid-size building project, a full clash detection run produces 500-2000 raw clashes. Manual classification and deduplication of this volume takes a full working day. AI-assisted classification can reduce this to a few hours, compressing the coordination meeting cycle.</p>\n<h2>Practical Guidance</h2>\n<p><strong>Smart Grouping:</strong> AI grouping algorithms identify clusters of clashes that share a common root cause — for example, a duct running below the required clearance along an entire corridor. Rather than 40 individual clashes, the team reviews one grouped issue with a single resolution action.</p>\n<p><strong>Severity Classification:</strong> AI models trained on historical project data can classify clashes as hard, soft, or workflow conflicts and estimate site impact severity. This allows the coordination team to prioritise hard structural clashes before reviewing aesthetic conflicts.</p>\n<p><strong>Discipline Assignment:</strong> AI can read element property sets (system classification, discipline, contractor) and automatically assign clashes to the responsible party. This reduces administrative overhead for the BIM coordinator and improves issue tracking accuracy.</p>\n<p><strong>Learning from Resolutions:</strong> AI tools that learn from how previous clashes were resolved can suggest resolution actions for similar new issues. This is particularly valuable for recurring coordination patterns in similar building types.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Pilot AI clash grouping on a coordination run before replacing manual review</li>\n<li>Verify AI severity classification against structural engineer judgement on sample clashes</li>\n<li>Document auto-assignment rules in coordination protocol</li>\n<li>Review AI learning data quality if tool uses historical resolution data</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>AI clash classification removes the administration burden, not the engineering judgement — coordinators still make decisions, just on a smaller, better-organised set of issues.</p>"
+}

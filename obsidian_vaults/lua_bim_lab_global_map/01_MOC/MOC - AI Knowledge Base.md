@@ -1,0 +1,225 @@
+---
+type: category-moc
+category: AI Knowledge Base
+generated: true
+count: 212
+---
+
+# MOC - AI Knowledge Base
+
+- [[4D 5D BIM 지식 베이스]] — `data/knowledge_base/4D5D_BIM.md`
+- [[ACC BIM360 CDE 지식 베이스]] — `data/knowledge_base/ACC_BIM360.md`
+- [[AI Collaboration Automated Audit - 2026-06]] — `data/knowledge_base/conflict_resolution/AUTOMATED_COLLABORATION_AUDIT_202606.md`
+- [[AI Collaboration Daily Handoff - 2026-06-06]] — `data/knowledge_base/conflict_resolution/DAILY_HANDOFF_20260606.md`
+- [[AI 간 판단 충돌 로그]] — `data/knowledge_base/conflict_resolution/CONFLICT_LOG.md`
+- [[AI 협업 세션 등록부 - 2026-06]] — `data/knowledge_base/conflict_resolution/SESSION_REGISTER_202606.md`
+- [[AI 협업 프로세스 테스트 계획]] — `data/knowledge_base/conflict_resolution/COLLABORATION_TEST_PLAN.md`
+- [[AI 협업운영체계 지식 베이스]] — `data/knowledge_base/AI_협업운영체계.md`
+- [[AITEST_20260605_001 AI 협업 프로세스 6개 상황 드라이런]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260605_001.md`
+- [[AITEST_20260605_002 긴급 고객 납품 지연 추가 요구 협업 테스트]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260605_002.md`
+- [[AITEST_20260605_003 고객 모델 로그 외부 AI 전송 보안 협업 테스트]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260605_003.md`
+- [[AITEST_20260605_004 AI 간 견적 판단 충돌 협업 테스트]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260605_004.md`
+- [[AITEST_20260605_005 자동수집 지식의 고객 응답 승격 협업 테스트]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260605_005.md`
+- [[AITEST_20260605_006 개인정보 외부 AI 정책 문서 충돌 테스트]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260605_006.md`
+- [[AITEST_20260605_007 상업 가격 source of truth 충돌 테스트]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260605_007.md`
+- [[AITEST_20260605_008 PRECEDENT 승격 및 재사용 테스트]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260605_008.md`
+- [[AITEST_20260605_009 리스크 게이트 상태값 표준화 테스트]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260605_009.md`
+- [[AITEST_20260605_010 ESCALATED 후속 SLA 사전 추적 테스트]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260605_010.md`
+- [[AITEST_20260605_011 신규 AI 역할 온보딩 및 내재화 테스트]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260605_011.md`
+- [[AITEST_20260605_012 신규 AI 온보딩 카드 2회 반복 적용 테스트]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260605_012.md`
+- [[AITEST_20260605_013 ESCALATED source of truth 초안 생성 테스트]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260605_013.md`
+- [[AITEST_20260606_014 날짜 롤오버 및 일일 인계 검증]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260606_014.md`
+- [[AITEST_20260606_015 2026-06-12 에스컬레이션 재판정 분기 리허설]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260606_015.md`
+- [[AITEST_20260606_016 협업 등록부 자동 감사 후보 테스트]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260606_016.md`
+- [[AITEST_20260606_017 자동 감사 운영 배치 의사결정 테스트]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260606_017.md`
+- [[AITEST_20260606_018 자동 감사 스크립트화 검증]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260606_018.md`
+- [[AITEST_20260606_019 자동 감사 네거티브 컨트롤 검증]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260606_019.md`
+- [[AITEST_20260606_020 자동 감사 네거티브 컨트롤 확장]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260606_020.md`
+- [[AITEST_20260606_021 자동 감사 실패 메시지 가독성 검증]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260606_021.md`
+- [[AITEST_20260606_022 자동 감사 강제 적용 리허설]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260606_022.md`
+- [[AITEST_20260606_023 ESCALATED 재판정 준비성 감사]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260606_023.md`
+- [[AITEST_20260606_024 ESCALATED Missing 증거 보완 리허설]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260606_024.md`
+- [[AITEST_20260606_025 ESCALATED 결정 로그 패키지 리허설]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260606_025.md`
+- [[AITEST_20260606_026 ESCALATED Decision Log 자동 감사 확장]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260606_026.md`
+- [[AITEST_20260606_027 Decision Log Draft 필드 정합성 자동 감사]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260606_027.md`
+- [[AITEST_20260606_028 ESCALATED 재판정 결과 적용 리허설]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260606_028.md`
+- [[AITEST_20260606_029 재판정 4분기 상태 전환 시뮬레이션]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260606_029.md`
+- [[AITEST_20260606_030 KST04 고객 응답 승격 충돌]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260606_030.md`
+- [[AITEST_20260606_031 KST04 승격 Source of Truth 및 Missing 증거 큐]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260606_031.md`
+- [[AITEST_20260606_032 KST04 후속 큐 자동 감사 확장]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260606_032.md`
+- [[AITEST_20260606_033 Conflict Log 요약 색인 정합성 자동 감사]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260606_033.md`
+- [[AITEST_20260606_034 ESCALATED 상태 전환 드리프트 자동 감사]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260606_034.md`
+- [[AITEST_20260606_035 ESCALATED 닫힘 전환 원자성 자동 감사]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260606_035.md`
+- [[AITEST_20260606_036 Decision Log 최종화 자동 감사]] — `data/knowledge_base/conflict_resolution/cases/AITEST_20260606_036.md`
+- [[AX 시간별 신호모니터링 지식 베이스]] — `data/knowledge_base/AX_시간별_신호모니터링.md`
+- [[AX 전략승격리뷰 지식 베이스]] — `data/knowledge_base/AX_전략승격리뷰.md`
+- [[BEP 수행계획서 템플릿]] — `data/knowledge_base/BEP_수행계획서.md`
+- [[BIM 납품검수 지식 베이스]] — `data/knowledge_base/BIM_납품검수.md`
+- [[BIM 등급별 투입일 기준표 마스터 스케줄 입력용]] — `data/knowledge_base/BIM_등급별_투입일_기준표.md`
+- [[BIM 시방서 지식 베이스]] — `data/knowledge_base/BIM_시방서.md`
+- [[BIM 시장 규모 분석 지식 베이스]] — `data/knowledge_base/BIM_시장_규모분석.md`
+- [[BIM 업무량 견적 산정 상세 로직 건물 유형 공사 구분]] — `data/knowledge_base/BIM_건물유형_공사구분_산정로직.md`
+- [[BIM 제안서 템플릿]] — `data/knowledge_base/BIM_제안서.md`
+- [[BIM 지침서 지식 베이스]] — `data/knowledge_base/BIM_지침서.md`
+- [[BIM 프로젝트 견적산정 로직 내부 기준]] — `data/knowledge_base/BIM_프로젝트_견적산정.md`
+- [[BIM 프로젝트 인력 파견 기준 내부 기준]] — `data/knowledge_base/BIM_인력파견_기준.md`
+- [[BIM_템플릿기획관 지식 베이스]] — `data/knowledge_base/BIM_템플릿기획관.md`
+- [[BIMobject 패밀리 라이브러리 인덱스]] — `data/knowledge_base/BIMobject_패밀리_인덱스.md`
+- [[CEO Q A 지식]] — `data/knowledge_base/qa/CEO_QA.md`
+- [[CEO 지식 베이스]] — `data/knowledge_base/CEO.md`
+- [[CFO Q A 지식]] — `data/knowledge_base/qa/CFO_QA.md`
+- [[CFO 지식 베이스]] — `data/knowledge_base/CFO.md`
+- [[COO Q A 지식]] — `data/knowledge_base/qa/COO_QA.md`
+- [[COO 지식 베이스]] — `data/knowledge_base/COO.md`
+- [[CS 기술지원 에스컬레이션 지식 베이스]] — `data/knowledge_base/CS_기술지원관.md`
+- [[Caveman_토큰다이어터 지식 베이스]] — `data/knowledge_base/Caveman_토큰다이어터.md`
+- [[DEC-AICOL-20260605-006-DRAFT External AI Disclosure Rule 재판정 로그 초안]] — `data/knowledge_base/conflict_resolution/decision_logs/DEC-AICOL-20260605-006-DRAFT.md`
+- [[DEC-AICOL-20260605-007-DRAFT Product Launch Status 재판정 로그 초안]] — `data/knowledge_base/conflict_resolution/decision_logs/DEC-AICOL-20260605-007-DRAFT.md`
+- [[DEC-AICOL-20260606-030-DRAFT KST04 고객 응답 승격 재판정 로그 초안]] — `data/knowledge_base/conflict_resolution/decision_logs/DEC-AICOL-20260606-030-DRAFT.md`
+- [[Dynamo 지식 베이스]] — `data/knowledge_base/Dynamo.md`
+- [[EIR BEP_심사원 지식 베이스]] — `data/knowledge_base/EIRBEP_심사원.md`
+- [[ESCALATED Missing Evidence Matrix - 2026-06-06]] — `data/knowledge_base/conflict_resolution/ESCALATED_MISSING_EVIDENCE_MATRIX_20260606.md`
+- [[ESCALATED Redecision Execution Playbook - 2026-06-06]] — `data/knowledge_base/conflict_resolution/ESCALATED_REDECISION_EXECUTION_PLAYBOOK_20260606.md`
+- [[ESCALATION SLA Tracker - 2026-06]] — `data/knowledge_base/conflict_resolution/ESCALATION_SLA_TRACKER_202606.md`
+- [[External AI Disclosure Rule Draft - 2026-06-05]] — `data/knowledge_base/conflict_resolution/EXTERNAL_AI_DISCLOSURE_RULE_DRAFT_20260605.md`
+- [[FM 시설관리 자산관리 BIM 지식 베이스]] — `data/knowledge_base/FM_자산관리.md`
+- [[HR_인재분석관 Q A 지식]] — `data/knowledge_base/qa/HR_인재분석관_QA.md`
+- [[HR_인재분석관 지식 베이스]] — `data/knowledge_base/HR_인재분석관.md`
+- [[IFC OpenBIM 지식 베이스]] — `data/knowledge_base/IFC_OpenBIM.md`
+- [[KST 지식 신뢰도 전사 현황]] — `data/knowledge_base/KST_신뢰도_현황.md`
+- [[KST04 Customer Response Promotion Source of Truth Draft - 2026-06-06]] — `data/knowledge_base/conflict_resolution/KST04_CUSTOMER_RESPONSE_PROMOTION_SOURCE_OF_TRUTH_DRAFT_20260606.md`
+- [[KST04 Promotion Missing Evidence Matrix - 2026-06-06]] — `data/knowledge_base/conflict_resolution/KST04_PROMOTION_MISSING_EVIDENCE_MATRIX_20260606.md`
+- [[Navisworks_Addin Q A 지식]] — `data/knowledge_base/qa/Navisworks_Addin_QA.md`
+- [[Navisworks_Addin 지식 베이스]] — `data/knowledge_base/Navisworks_Addin.md`
+- [[OpenBIM 프로그램 연동 지식 베이스]] — `data/knowledge_base/OpenBIM_프로그램연동.md`
+- [[Product Launch Status Source of Truth Draft - 2026-06-05]] — `data/knowledge_base/conflict_resolution/PRODUCT_LAUNCH_STATUS_SOURCE_OF_TRUTH_DRAFT_20260605.md`
+- [[QA_테스터 Q A 지식]] — `data/knowledge_base/qa/QA_테스터_QA.md`
+- [[QA_테스터 지식 베이스]] — `data/knowledge_base/QA_테스터.md`
+- [[Qwen_Coder_8B 지식 베이스]] — `data/knowledge_base/Qwen_Coder_8B.md`
+- [[R D 개발지원그룹 지식 베이스]] — `data/knowledge_base/R&D_개발지원그룹.md`
+- [[Redecision Branch Simulation - 2026-06-06]] — `data/knowledge_base/conflict_resolution/REDECISION_BRANCH_SIMULATION_20260606.md`
+- [[Revit 패밀리 제작 지식 베이스]] — `data/knowledge_base/Revit_Family제작.md`
+- [[Revit_Addin 지식 베이스]] — `data/knowledge_base/Revit_Addin.md`
+- [[Revit_Addin_QA]] — `data/knowledge_base/qa/Revit_Addin_QA.md`
+- [[TEST_ROUND_20260605_001 AI 협업 프로세스 다방향 검증 요약]] — `data/knowledge_base/conflict_resolution/TEST_ROUND_20260605_001_SUMMARY.md`
+- [[knowledge_base - conflict_resolution - knowledge_base - conflict_resolution - AI 간 판단 충돌 해소 체계]] — `data/knowledge_base/conflict_resolution/README.md`
+- [[간섭검토 Clash Detection Interference Review 지식 베이스]] — `data/knowledge_base/간섭검토.md`
+- [[간섭검토 Q A 지식]] — `data/knowledge_base/qa/간섭검토_QA.md`
+- [[건물 유형별 BIM 적용 기준 지식 베이스]] — `data/knowledge_base/건물유형별_BIM적용기준.md`
+- [[건설 얼라이언스 분석 지식 베이스]] — `data/knowledge_base/건설_얼라이언스_분석.md`
+- [[건설시장 트렌드 지식 베이스]] — `data/knowledge_base/건설시장_트렌드.md`
+- [[건축 Q A 지식]] — `data/knowledge_base/qa/건축_QA.md`
+- [[건축 지식 베이스]] — `data/knowledge_base/건축.md`
+- [[견적서담당 Q A 지식]] — `data/knowledge_base/qa/견적서담당_QA.md`
+- [[견적서담당 지식 베이스]] — `data/knowledge_base/견적서담당.md`
+- [[견적심사원 지식 베이스]] — `data/knowledge_base/견적심사원.md`
+- [[경비정산_AI Q A 지식]] — `data/knowledge_base/qa/경비정산_AI_QA.md`
+- [[경비정산_AI 지식 베이스]] — `data/knowledge_base/경비정산_AI.md`
+- [[경영지원 Q A 지식]] — `data/knowledge_base/qa/경영지원_QA.md`
+- [[경영지원 지식 베이스]] — `data/knowledge_base/경영지원.md`
+- [[고객지원 CS 지식 베이스]] — `data/knowledge_base/고객지원CS.md`
+- [[고객지원 운영 기준 지식 베이스]] — `data/knowledge_base/고객지원운영.md`
+- [[고객지원CS Q A 지식]] — `data/knowledge_base/qa/고객지원CS_QA.md`
+- [[공연장_문화집회시설 BIM 적용 기준 지식 베이스]] — `data/knowledge_base/시설유형/공연장_문화집회시설_BIM.md`
+- [[공장 제조시설 BIM 적용 기준 지식 베이스]] — `data/knowledge_base/시설유형/공장_제조시설_BIM.md`
+- [[공조덕트 Q A 지식]] — `data/knowledge_base/qa/공조덕트_QA.md`
+- [[공조덕트 지식 베이스]] — `data/knowledge_base/공조덕트.md`
+- [[공조배관 Q A 지식]] — `data/knowledge_base/qa/공조배관_QA.md`
+- [[공조배관 지식 베이스]] — `data/knowledge_base/공조배관.md`
+- [[공항 BIM 적용 기준 지식 베이스]] — `data/knowledge_base/시설유형/공항_BIM.md`
+- [[교육컨설팅 Q A 지식]] — `data/knowledge_base/qa/교육컨설팅_QA.md`
+- [[교육컨설팅 지식 베이스]] — `data/knowledge_base/교육컨설팅.md`
+- [[구조 Q A 지식]] — `data/knowledge_base/qa/구조_QA.md`
+- [[구조 지식 베이스]] — `data/knowledge_base/구조.md`
+- [[국가별 건설 법규 기준 비교 지식 베이스]] — `data/knowledge_base/국가별_건설법규_기준비교.md`
+- [[글로벌_매출관리원 지식 베이스]] — `data/knowledge_base/글로벌_매출관리원.md`
+- [[글로벌_유통기획관 지식 베이스]] — `data/knowledge_base/글로벌_유통기획관.md`
+- [[내부성장루프 지식 베이스]] — `data/knowledge_base/내부성장루프.md`
+- [[데이터센터 BIM 적용 기준 지식 베이스]] — `data/knowledge_base/시설유형/데이터센터_BIM.md`
+- [[라이선스_보안관 지식 베이스]] — `data/knowledge_base/라이선스_보안관.md`
+- [[라이선스결제 Q A 지식]] — `data/knowledge_base/qa/라이선스결제_QA.md`
+- [[라이선스결제 지식 베이스]] — `data/knowledge_base/라이선스결제.md`
+- [[러닝콘텐츠디자이너 Q A 지식]] — `data/knowledge_base/qa/러닝콘텐츠디자이너_QA.md`
+- [[러닝콘텐츠디자이너 지식 베이스]] — `data/knowledge_base/러닝콘텐츠디자이너.md`
+- [[물류센터 창고시설 BIM 적용 기준 지식 베이스]] — `data/knowledge_base/시설유형/물류센터_창고시설_BIM.md`
+- [[발전소 BIM 적용 기준 지식 베이스]] — `data/knowledge_base/시설유형/발전소_BIM.md`
+- [[배포문서 Q A 지식]] — `data/knowledge_base/qa/배포문서_QA.md`
+- [[배포문서 지식 베이스]] — `data/knowledge_base/배포문서.md`
+- [[법규변경모니터링 지식 베이스]] — `data/knowledge_base/법규변경모니터링.md`
+- [[법무조항검토 지식 베이스]] — `data/knowledge_base/법무조항검토.md`
+- [[병원 의료시설 BIM 적용 기준 지식 베이스]] — `data/knowledge_base/시설유형/병원_의료시설_BIM.md`
+- [[브랜드마케팅 지식 베이스]] — `data/knowledge_base/브랜드마케팅.md`
+- [[빌드검증 Q A 지식]] — `data/knowledge_base/qa/빌드검증_QA.md`
+- [[빌드검증 지식 베이스]] — `data/knowledge_base/빌드검증.md`
+- [[사옥_기업본사 BIM 적용 기준 지식 베이스]] — `data/knowledge_base/시설유형/사옥_기업본사_BIM.md`
+- [[산업동향 데일리 브리핑 지식 베이스]] — `data/knowledge_base/산업동향_데일리브리핑.md`
+- [[설계 시방서 지식 베이스]] — `data/knowledge_base/설계_시방서.md`
+- [[설계 지침서 지식 베이스]] — `data/knowledge_base/설계_지침서.md`
+- [[설비기초 지식 베이스]] — `data/knowledge_base/설비기초.md`
+- [[설비도면해석 지식 베이스]] — `data/knowledge_base/설비도면해석.md`
+- [[설비시공조율 지식 베이스]] — `data/knowledge_base/설비시공조율.md`
+- [[설비자동제어 지식 베이스]] — `data/knowledge_base/설비자동제어.md`
+- [[설비장비 지식 베이스]] — `data/knowledge_base/설비장비.md`
+- [[성장전략그룹 지식 베이스]] — `data/knowledge_base/성장전략그룹.md`
+- [[소방기계 Q A 지식]] — `data/knowledge_base/qa/소방기계_QA.md`
+- [[소방기계 지식 베이스]] — `data/knowledge_base/소방기계.md`
+- [[소방전기 Q A 지식]] — `data/knowledge_base/qa/소방전기_QA.md`
+- [[소방전기 지식 베이스]] — `data/knowledge_base/소방전기.md`
+- [[스토어심사 Q A 지식]] — `data/knowledge_base/qa/스토어심사_QA.md`
+- [[스토어심사 지식 베이스]] — `data/knowledge_base/스토어심사.md`
+- [[스포츠시설 경기장 BIM 적용 기준 지식 베이스]] — `data/knowledge_base/시설유형/스포츠시설_경기장_BIM.md`
+- [[시공 시방서 지식 베이스]] — `data/knowledge_base/시공_시방서.md`
+- [[시공 지침서 지식 베이스]] — `data/knowledge_base/시공_지침서.md`
+- [[시장선도 전략 지식 베이스]] — `data/knowledge_base/시장선도_전략.md`
+- [[아이디어발굴 지식 베이스]] — `data/knowledge_base/아이디어발굴.md`
+- [[아파트_공동주택 BIM 적용 기준 지식 베이스]] — `data/knowledge_base/시설유형/아파트_공동주택_BIM.md`
+- [[엑셀자동화 Q A 지식]] — `data/knowledge_base/qa/엑셀자동화_QA.md`
+- [[엑셀자동화 지식 베이스]] — `data/knowledge_base/엑셀자동화.md`
+- [[엔지니어링계산서 지식 베이스]] — `data/knowledge_base/엔지니어링계산서.md`
+- [[연구소 실험시설 BIM 적용 기준 지식 베이스]] — `data/knowledge_base/시설유형/연구소_실험시설_BIM.md`
+- [[오피스_업무시설 BIM 적용 기준 지식 베이스]] — `data/knowledge_base/시설유형/오피스_업무시설_BIM.md`
+- [[외주관리 지식 베이스]] — `data/knowledge_base/외주관리.md`
+- [[요구사항분석 Q A 지식]] — `data/knowledge_base/qa/요구사항분석_QA.md`
+- [[요구사항분석 지식 베이스]] — `data/knowledge_base/요구사항분석.md`
+- [[위생 Q A 지식]] — `data/knowledge_base/qa/위생_QA.md`
+- [[위생 지식 베이스]] — `data/knowledge_base/위생.md`
+- [[인프라_DevOps Obsidian 지식 베이스]] — `data/knowledge_base/인프라_DevOpsObsidian.md`
+- [[일반건물 빌딩 BIM 적용 기준 지식 베이스]] — `data/knowledge_base/시설유형/일반건물_빌딩_BIM.md`
+- [[전기 Q A 지식]] — `data/knowledge_base/qa/전기_QA.md`
+- [[전기 지식 베이스]] — `data/knowledge_base/전기.md`
+- [[전략기획 지식 베이스]] — `data/knowledge_base/전략기획.md`
+- [[제품패키징 Q A 지식]] — `data/knowledge_base/qa/제품패키징_QA.md`
+- [[제품패키징 지식 베이스]] — `data/knowledge_base/제품패키징.md`
+- [[조율차장 Q A 지식]] — `data/knowledge_base/qa/조율차장_QA.md`
+- [[조율차장 지식 베이스]] — `data/knowledge_base/조율차장.md`
+- [[주요 고객사 협력사 관계망 지식 베이스]] — `data/knowledge_base/주요_고객사_협력사_관계망.md`
+- [[주차장 모빌리티시설 BIM 적용 기준 지식 베이스]] — `data/knowledge_base/시설유형/주차장_모빌리티시설_BIM.md`
+- [[지식업데이트 지식 베이스]] — `data/knowledge_base/지식업데이트.md`
+- [[지식업데이트_QA]] — `data/knowledge_base/qa/지식업데이트_QA.md`
+- [[지식큐레이터 Q A 지식]] — `data/knowledge_base/qa/지식큐레이터_QA.md`
+- [[지식큐레이터 지식 베이스]] — `data/knowledge_base/지식큐레이터.md`
+- [[지하철역사 BIM 적용 기준 지식 베이스]] — `data/knowledge_base/시설유형/지하철역사_BIM.md`
+- [[철도 BIM 적용 기준 지식 베이스]] — `data/knowledge_base/시설유형/철도_BIM.md`
+- [[최고전략 CSO 지식 베이스]] — `data/knowledge_base/최고전략CSO.md`
+- [[추론훈련루프 지식 베이스]] — `data/knowledge_base/추론훈련루프.md`
+- [[테크니컬_라이터 지식 베이스]] — `data/knowledge_base/테크니컬_라이터.md`
+- [[토목 Q A 지식]] — `data/knowledge_base/qa/토목_QA.md`
+- [[토목 지식 베이스]] — `data/knowledge_base/토목.md`
+- [[통신 Q A 지식]] — `data/knowledge_base/qa/통신_QA.md`
+- [[통신 지식 베이스]] — `data/knowledge_base/통신.md`
+- [[파이프라인_오케스트레이터 지식 베이스]] — `data/knowledge_base/파이프라인_오케스트레이터.md`
+- [[판매시설_쇼핑몰 BIM 적용 기준 지식 베이스]] — `data/knowledge_base/시설유형/판매시설_쇼핑몰_BIM.md`
+- [[패시브하우스 에너지절약 기술 지식 PHIKO 기반]] — `data/knowledge_base/패시브하우스_PHIKO.md`
+- [[폐처리장 환경시설 BIM 적용 기준 지식 베이스]] — `data/knowledge_base/시설유형/폐처리장_환경시설_BIM.md`
+- [[프로그램개발 Q A 지식]] — `data/knowledge_base/qa/프로그램개발_QA.md`
+- [[프로그램개발 지식 베이스]] — `data/knowledge_base/프로그램개발.md`
+- [[프로젝트분석 지식 베이스]] — `data/knowledge_base/프로젝트분석.md`
+- [[프롬프트엔지니어 지식 베이스]] — `data/knowledge_base/프롬프트엔지니어.md`
+- [[학교 교육시설 BIM 적용 기준 지식 베이스]] — `data/knowledge_base/시설유형/학교_교육시설_BIM.md`
+- [[해외 건설기업 동향 분석 지식 베이스]] — `data/knowledge_base/해외건설기업_동향분석.md`
+- [[협력사안부 지식 베이스]] — `data/knowledge_base/협력사안부.md`
+- [[호텔_숙박시설 BIM 적용 기준 지식 베이스]] — `data/knowledge_base/시설유형/호텔_숙박시설_BIM.md`
+
+## 상위
+
+- [[Global Knowledge Map]]

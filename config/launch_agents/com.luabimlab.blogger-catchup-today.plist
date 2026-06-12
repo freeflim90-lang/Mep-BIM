@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.luabimlab.blogger-catchup-today</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/choejeong-yeon/LUA BIM LABS/.dev-venv/bin/python</string>
+    <string>/Users/choejeong-yeon/LUA BIM LABS/scripts/daily_blogger_queue_publish.py</string>
+    <string>--publish-all</string>
+    <string>--sleep-seconds</string>
+    <string>2</string>
+    <string>--rate-limit-sleep-seconds</string>
+    <string>3600</string>
+    <string>--enable-daily-agent-on-empty</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/choejeong-yeon/LUA BIM LABS</string>
+
+  <key>RunAtLoad</key>
+  <true/>
+
+  <key>StandardOutPath</key>
+  <string>/Users/choejeong-yeon/LUA BIM LABS/logs/blogger_catchup_today.out.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/Users/choejeong-yeon/LUA BIM LABS/logs/blogger_catchup_today.err.log</string>
+</dict>
+</plist>

@@ -1,0 +1,26 @@
+SHELL=/bin/bash
+PATH=/usr/local/bin:/usr/bin:/bin
+
+# api-usage-alerts: 30분마다
+*/30 * * * * . /etc/environment; python3 "/Users/choejeong-yeon/LUA BIM LABS/scripts/api_usage_10pct_alert.py" >> "/app/logs/api_usage_alerts.log" 2>&1
+
+# daily-blogger-post: 매일 08:00
+0 8 * * * . /etc/environment; python3 "/Users/choejeong-yeon/LUA BIM LABS/scripts/daily_blogger_queue_publish.py" --generate-when-empty >> "/app/logs/daily_blogger_post.log" 2>&1
+
+# daily-knowledge-update: 매일 07:00
+0 7 * * * . /etc/environment; zsh "/Users/choejeong-yeon/LUA BIM LABS/scripts/daily_knowledge_update.sh" >> "/app/logs/daily_knowledge_update.log" 2>&1
+
+# hourly-ax-signal-monitor: 매시간
+0 * * * * . /etc/environment; zsh "/Users/choejeong-yeon/LUA BIM LABS/scripts/hourly_ax_signal_monitor.sh" >> "/app/logs/hourly_ax_signal_monitor.log" 2>&1
+
+# internal-self-growth-loop: 매일 08:10 (충돌 방지 오프셋)
+10 8 * * * . /etc/environment; zsh "/Users/choejeong-yeon/LUA BIM LABS/scripts/internal_self_growth_loop.sh" >> "/app/logs/internal_self_growth_loop.log" 2>&1
+
+# qwen-product-draft-daily: 매일 08:20
+20 8 * * * . /etc/environment; zsh "/Users/choejeong-yeon/LUA BIM LABS/scripts/qwen_product_draft_daily.sh" >> "/app/logs/qwen_product_draft_daily.log" 2>&1
+
+# starter-telegram-sheet-sync: 10분마다
+*/10 * * * * . /etc/environment; python3 "/Users/choejeong-yeon/LUA BIM LABS/scripts/starter_plan_sync_telegram_sheet.py" >> "/app/logs/starter_telegram_sheet_sync.log" 2>&1
+
+# weekly-ax-strategy-review: 매주 월요일 07:30
+30 7 * * 1 . /etc/environment; zsh "/Users/choejeong-yeon/LUA BIM LABS/scripts/weekly_ax_strategy_review.sh" >> "/app/logs/weekly_ax_strategy_review.log" 2>&1

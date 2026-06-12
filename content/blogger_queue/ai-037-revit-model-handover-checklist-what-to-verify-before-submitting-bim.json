@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "BIM",
+    "Revit",
+    "BIM Handover",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "Revit Model Handover Checklist: What to Verify Before Submitting BIM",
+  "slug": "revit-model-handover-checklist-what-to-verify-before-submitting-bim",
+  "content": "<p>BIM handover is the formal transfer of the project model and its data to the client or FM team at project completion. Without a systematic handover checklist, models arrive with missing data, broken links, unresolved warnings, and geometry errors that make them useless for FM operations.</p>\n<h2>Why This Matters</h2>\n<p>FM teams that receive incomplete BIM models often abandon them and revert to 2D drawings within months of handover. A complete, validated BIM handover is the only way to realise the long-term FM value of the investment in BIM during design and construction.</p>\n<h2>Practical Guidance</h2>\n<p><strong>Data Completeness:</strong> Verify that all required FM parameters (equipment tag, manufacturer, model number, installation date, warranty expiry, maintenance zone) are populated for every asset-class element. Run a parameter completeness report and resolve gaps before submission.</p>\n<p><strong>Geometry Quality:</strong> Purge unused families, line styles, and view templates. Remove all in-place families and replace with parametric ones where possible. Check Revit warnings and resolve all critical warnings before handover.</p>\n<p><strong>Coordinate Verification:</strong> Confirm the handover model uses the agreed shared coordinate system. The FM team or GIS team may need the model to align with a geographic coordinate system for site management.</p>\n<p><strong>IFC Validation:</strong> Run the handover IFC through a schema validator (Solibri) and a FM system test import before formal submission. Test imports are the only reliable way to confirm that property set data will be correctly received by the FM system.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Run parameter completeness report against FM data requirements</li>\n<li>Purge unused content and resolve critical Revit warnings</li>\n<li>Verify shared coordinate system alignment</li>\n<li>Perform test IFC import into FM system before formal handover submission</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>A BIM handover is only complete when the FM team confirms they can import and use the data — submission is not completion.</p>"
+}

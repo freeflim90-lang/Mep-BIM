@@ -1,0 +1,32 @@
+LUA BIM LABS Starter
+Day 70 - Fire Damper Placement Rules and BIM Modeling Requirements
+
+1. Why This Matters
+Fire dampers are required by code wherever a duct penetrates a fire-rated wall or floor assembly. In BIM, incorrect or missing fire dampers are a major coordination failure that can delay inspections and require expensive field corrections. Knowing the placement rules lets you model them correctly the first time and catch omissions during QA review.
+
+2. Core Concept
+- A fire damper closes automatically when a fusible link melts at elevated temperature, stopping fire spread through the duct.
+- Required at: every penetration of a fire-rated wall, every penetration of a fire-rated floor/ceiling assembly.
+- Not required when the duct is part of a listed wall assembly tested with the duct in place, or when exemptions apply per local code.
+- Combination fire/smoke dampers are used when the duct penetrates both a fire-rated and a smoke barrier wall simultaneously.
+- Access is required for inspection and resetting. A minimum 12x12 inch access panel is typically required in the ceiling or wall near each damper.
+- In Revit, fire dampers are modeled as duct accessories placed directly in the duct run at the penetration location.
+- The damper body must be positioned at the face of the rated wall, not offset inward or outward.
+- The sleeve length through the wall must also be modeled if the spec requires a rated sleeve assembly.
+
+3. Real Project Lens
+On a hospital renovation, the BIM coordination model shows 14 locations where supply ducts pass through 2-hour rated corridor walls. The modeler places fire dampers at each location and also checks that access panels have been coordinated with the ceiling tile layout above each damper. Two locations are found to be inside a fixed ceiling with no panel provision — the architect adjusts the ceiling type before construction.
+
+4. BIM Check
+- Check: Every duct that crosses a fire-rated wall or floor has a fire damper placed at the assembly face.
+- Check: Access panels for damper inspection are coordinated with ceiling type and do not conflict with structural elements.
+- Check: Combination fire/smoke dampers are used at walls designated as both fire-rated and smoke barrier in the architectural model.
+
+5. Common Mistake
+Beginners often place fire dampers in the middle of a wall thickness rather than at the wall face, which misrepresents the actual sleeve and frame installation and causes incorrect clash geometry in coordination.
+
+6. Today's Action
+In Revit, place a fire damper family in a duct segment and practice snapping it to the face of a modeled wall. Check the element's position using a section view cut through the wall to confirm it is at the wall face. Note how the damper's visible bounding box relates to the wall assembly thickness.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

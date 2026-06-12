@@ -1,0 +1,13 @@
+LUA BIM LABS — BIM Check Friday ✓
+Week 7 | Data and Schedule Basics — Part 1
+
+Q1. What is a Revit schedule, and how is it different from a manually created Excel table?
+Q2. In an MEP equipment schedule, what three fields are most important to verify before submitting to a client?
+Q3. What does "grouping" a duct schedule by size achieve, compared to listing every instance individually?
+Q4. What is a shared parameter, and why does it matter for MEP schedules?
+Q5. If a schedule shows blank values for 15 elements in the "Mark" column, what is the correct next step?
+
+Think through each one.
+No grades — this tests your own understanding.
+
+Next week: Data and Schedule Basics check (Part 2).

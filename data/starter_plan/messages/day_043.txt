@@ -1,0 +1,36 @@
+LUA BIM LABS Starter
+Day 43 - Exporting Data from Revit
+
+**1. Why This Matters**
+BIM data is only useful if it can reach the people who need it — engineers, contractors, facility managers. Knowing how to export data correctly prevents information getting lost in translation.
+
+**2. Core Concept**
+Revit offers multiple data export paths depending on the target audience and use case.
+
+Common export methods:
+- **Export Schedule to .txt or .csv**: In any schedule view, go to File > Export > Reports > Schedule — produces a tab-delimited or comma-separated file readable in Excel
+- **Export to IFC**: File > Export > IFC — the universal open format for sharing BIM data with non-Revit tools; preserves element parameters and geometry
+- **Export to CAD (DWG/DXF)**: File > Export > CAD Formats — for teams working in 2D CAD; loses most BIM parameter data
+- **Dynamo to Excel**: A Dynamo script can write parameter values directly to an Excel file with precise column mapping — preferred for complex data exports
+- **Navisworks (NWC)**: Export via the Navisworks plugin from Revit — carries parameter data into Navisworks for clash detection and model review
+- **ODBC/Linked database**: Advanced — links Revit to an external database; rarely used on standard projects
+
+**3. Real Project Lens**
+The project manager on a healthcare project needs an equipment list for procurement. The BIM coordinator exports the Mechanical Equipment Schedule as a CSV from Revit, opens it in Excel, formats it with the project's procurement template headers, and sends it to the purchasing team — a 10-minute task that replaces what used to be a full day of manual counting.
+
+**4. BIM Check**
+- Check: Can you export a Revit schedule as a .csv file and open it successfully in Excel?
+- Check: Can you explain what data is preserved and what is lost when exporting from Revit to DWG?
+- Check: Can you name the Revit export format used when sharing the model with teams using non-Autodesk software?
+
+**5. Common Mistake**
+Exporting a schedule without checking the unit settings first. If the Revit file uses millimeters but the export is read by a team expecting meters, every length value will appear 1,000 times larger than reality — a procurement error waiting to happen.
+
+**6. Today's Action**
+Export any schedule from Revit (or a sample model) as a .csv file. Open it in Excel or Google Sheets and verify that the column headers, values, and units appear as expected.
+
+---
+
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

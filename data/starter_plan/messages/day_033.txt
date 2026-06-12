@@ -1,0 +1,34 @@
+LUA BIM LABS Starter
+Day 33 - Clash Report Reading
+
+1. Why This Matters
+The clash report is the official output of coordination — every stakeholder, from the project manager to the subcontractor, uses it to understand what needs to be fixed and by whom.
+
+2. Core Concept
+Navisworks can export clash reports in multiple formats. Understanding what each field means lets you use the report as a working document, not just a printout.
+
+Key fields in a clash report:
+- Clash Name/ID: Unique identifier (e.g., MEP-STRUCT-0045) used to track the item across meetings
+- Status: Current state — New, Active, Reviewed, or Resolved
+- Distance: The depth of penetration for a hard clash (negative = overlap in mm)
+- Element 1 / Element 2: The two objects in conflict — includes Element ID, file source, and category
+- Assigned To: Responsible party for resolution
+- Image: Viewpoint screenshot embedded in the report showing the clash location
+- Found / Approved Date: Timeline markers for coordination tracking
+
+3. Real Project Lens
+A junior BIM coordinator receives a clash report PDF before a meeting. By scanning the "Element 1 / Element 2" columns, they can quickly identify that most conflicts are between the HVAC ductwork (from the mechanical model) and the structural steel (from the structural model) — and that the structural engineer has already marked seven of those as "Approved" because the duct can pass through a web penetration.
+
+4. BIM Check
+- Check: Can you identify the Element ID for both elements in a clash from the report?
+- Check: Can you find which model file (NWC) each clashing element came from?
+- Check: Can you read the distance value and understand whether it represents a gap or an overlap?
+
+5. Common Mistake
+Beginners often confuse "Reviewed" with "Resolved." Reviewed means someone has looked at the clash; Resolved means the physical conflict has been eliminated in the model. Treating them as the same leads to false close-outs.
+
+6. Today's Action
+Find a sample Navisworks clash report (Autodesk provides examples online) and locate five clashes. For each one, write down the two elements involved and the current status.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

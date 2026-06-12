@@ -1,0 +1,37 @@
+LUA BIM LABS Starter
+Day 63 - Main and Branch Pipe Routing
+
+1. Why This Matters
+The routing of fire protection mains and branch lines determines how water reaches each sprinkler head. Poor routing creates hydraulic imbalance (some heads get too much flow, others too little), unnecessary clashes with other MEP systems, and maintenance access problems.
+
+2. Core Concept
+- Fire protection pipe hierarchy:
+  - Main (or Riser Main): The primary supply pipe from the pump room or riser — typically DN100–DN150
+  - Cross Main: Horizontal pipe fed from the main, running the long axis of the floor — typically DN65–DN100
+  - Branch Line: Pipes fed from the cross main, running perpendicular to it — typically DN25–DN50
+  - Sprinkler Drop: Short pipe from the branch line to each sprinkler head — typically DN20–DN25
+- Tree system vs. Loop system:
+  - Tree (dead-end): One flow path. Simpler. Used in smaller zones
+  - Loop (gridded): Water can reach a head from two directions. More resilient. Used in large open floors
+- Routing rules:
+  - Branch lines should be parallel and evenly spaced
+  - Cross main should be centered on the floor plate for balanced pressure distribution
+  - Avoid routing branch lines below air conditioning ducts without checking clearance
+
+3. Real Project Lens
+An office floor 50m × 25m uses a gridded system. A DN100 cross main runs north-south at mid-floor. DN50 branch lines run east-west at 3.6m centers. DN25 drops serve each pendant head. The grid pattern allows hydraulic balance and any single branch failure does not render a large area unprotected.
+
+4. BIM Check
+- Check: Cross main is connected to the riser with a zone control valve (alarm check valve assembly) — confirm it is modeled
+- Check: Branch lines are evenly spaced — no branch spacing exceeds the maximum coverage distance
+- Check: Sprinkler drops are modeled at the correct elevation — pendant head face is at the correct distance from the ceiling (typically 25–150mm below ceiling face)
+
+5. Common Mistake
+Routing branch lines over the top of air conditioning ducts, then adding sprinkler drops that must penetrate the duct insulation to reach the ceiling level — creating a clash that is impossible to resolve without rerouting the branch line.
+
+6. Today's Action
+For a floor plate 30m × 20m, sketch (on paper) a tree or gridded fire protection layout. Show: riser connection point, cross main, branch lines, and approximate head positions. Label approximate pipe sizes at each level of the hierarchy.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

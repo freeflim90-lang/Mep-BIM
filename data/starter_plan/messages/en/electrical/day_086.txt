@@ -1,0 +1,47 @@
+LUA BIM LABS Starter
+Day 86 - LOD 350 Requirements for Electrical — Geometry, Data, and System Classification
+
+1. Why This Matters
+LOD (Level of Development) 350 is the standard delivery requirement for coordination models — it means the model is detailed enough for multi-discipline coordination, fabrication planning, and construction sequencing. Electrical elements at LOD 350 must be geometrically accurate and carry sufficient data for coordination, quantity take-off, and handover. Delivering a model that does not meet LOD 350 will fail a model audit and delay the project.
+
+2. Core Concept
+LOD 350 requirements for electrical elements:
+
+| Element | Geometry Requirements | Data Requirements |
+|---|---|---|
+| MSB / DB (Panels) | Accurate dimensions (H×W×D) from vendor datasheet; door swing modeled | Panel Name, Voltage, Phase, Incomer Rating (A), Fault Rating (kA), Location (Room) |
+| Cable Tray | Correct width and depth; correct tray type (ladder/solid/wire mesh); fittings at all bends and tees | System Type (HV/LV/Data), Material, Width, Depth |
+| Conduit | Correct trade size; correct outer diameter per material type; fittings at bends | Conduit Type (EMT/RGS/PVC), Trade Size, System |
+| Pull Box | Correct body dimensions; modeled at correct location | Size (H×W×D), Material, Accessible (Y/N) |
+| Fire Sleeve | Correct sleeve OD; modeled through fire-rated wall/floor at correct position | Fire Rating, Sleeve OD, Wall Reference, Firestop System |
+| Equipment (AHU feeder, etc.) | Vendor dimensions; connection point at correct location | Equipment Name, Circuit Number, Panel Name, Load (kW), Voltage |
+
+LOD 350 system classification requirements:
+- Every electrical element must be assigned to an Electrical System in Revit
+- Cable trays and conduits must have a System Type parameter: Power-HV, Power-LV, Data/Comms, Fire Alarm, Security, ELV-General
+- Panels must have a System Classification: LV Distribution, Emergency Power, UPS, HVAC Control
+
+What LOD 350 does NOT require:
+- Individual wire or cable modeling within trays (this is LOD 400 or above)
+- Internal component detail of panels (breaker arrangement inside the cabinet)
+- Conduit wire fill calculation modeled geometrically
+
+Checking LOD compliance: most projects use a BIM Execution Plan (BEP) LOD matrix. Confirm which LOD is required for each element type on your project — requirements vary by client and contract.
+
+3. Real Project Lens
+A BIM coordinator receives an electrical model for LOD 350 review. She checks five DB families: all have correct plan dimensions but two are missing the "Fault Rating (kA)" parameter. She also finds cable trays modeled without the System Type parameter — they appear in the model but cannot be filtered or clash-checked by system. Both issues fail the LOD 350 data check. She returns the model with a data quality issue report before it is submitted to the client.
+
+4. BIM Check
+- Check: Do all panel (DB/MSB) families have vendor-accurate dimensions AND all required LOD 350 data parameters — Panel Name, Voltage, Phase, Incomer Rating, Fault Rating, Room?
+- Check: Do all cable tray elements have a System Type parameter assigned — allowing filtering by HV, LV, Data, Fire Alarm?
+- Check: Do all fire sleeve families carry a Fire Rating parameter that matches the wall or floor they penetrate?
+
+5. Common Mistake
+Meeting the geometry requirements of LOD 350 (accurate sizes and positions) but ignoring the data requirements. A model can look visually complete at LOD 350 while being empty of the parameter data that makes it useful for coordination, take-off, and handover.
+
+6. Today's Action
+Review the BIM Execution Plan or project LOD matrix for your current project. Find the LOD requirement for electrical panels and cable trays. List which parameters are explicitly required. If you do not have a project BEP, find a public BIM Execution Plan template online and review its LOD matrix for MEP.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

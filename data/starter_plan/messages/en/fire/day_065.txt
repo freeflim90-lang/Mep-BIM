@@ -1,0 +1,46 @@
+LUA BIM LABS Starter
+Day 65 - Hydraulic Calculation Basics for Modelers
+
+1. Why This Matters
+Hydraulic calculations determine the minimum pressure and flow required at the water supply to ensure the most remote sprinkler heads operate correctly. A BIM modeler does not perform engineering calculations — but must understand what the calculations require and ensure the model supports them.
+
+2. Core Concept
+- Hydraulic calculation determines:
+  - Design area: The worst-case group of sprinkler heads that could activate simultaneously (typically a 139 m² area for Light Hazard per NFPA 13)
+  - Flow rate: Total water demand from all heads in the design area
+  - Pressure: Required pressure at the inlet to the design area
+  - Pipe sizes: Must be sufficient to deliver the required flow at the required pressure
+- Key parameters the modeler must get correct for calculations to work:
+  - Pipe size and material (affects friction loss)
+  - Pipe routing and length (affects friction loss calculation)
+  - Fittings count (each elbow, tee adds equivalent pipe length for friction)
+  - Head K-factor (a property of the sprinkler head — typically K=80 or K=115 in metric)
+- Most remote area: hydraulic calculations focus on the area farthest from the water supply — ensure the model shows the most challenging routing accurately
+- The modeler's role: ensure pipe sizes match the hydraulic calculation output; flag any field changes to the engineer for recalculation
+
+Key Terms for Modelers
+
+| Term | Meaning |
+|---|---|
+| K-factor | Sprinkler discharge coefficient (higher K = more flow per unit pressure) |
+| Design density | L/min/m² required at the ceiling (e.g., 4 L/min/m² for Light Hazard) |
+| Residual pressure | Pressure remaining after system losses — must meet minimum at remote head |
+| Hazen-Williams C | Pipe material friction coefficient (e.g., steel = 120, CPVC = 150) |
+
+3. Real Project Lens
+The fire engineer calculates that the remote design area on Level 8 requires 750 L/min at 0.7 bar at the branch line inlet. They specify DN50 branch lines and a DN80 cross main. The modeler checks the Revit model — all branch lines are DN50, cross main is DN80, and pipe lengths match the engineer's routing assumption. No discrepancy. Calculation is valid.
+
+4. BIM Check
+- Check: Pipe sizes in the model match the hydraulic calculation output — do not change pipe sizes without informing the fire engineer
+- Check: Pipe material in Revit matches the material used in the calculation (steel, CPVC, or stainless)
+- Check: If any pipes were rerouted (longer path), notify the fire engineer — the recalculation may require larger pipes
+
+5. Common Mistake
+Re-routing a branch line 3m longer to avoid a clash — without telling the fire engineer. The longer route increases friction loss, which may drop pressure below the required minimum at the remote head, making the calculation invalid.
+
+6. Today's Action
+Find a fire protection hydraulic calculation sheet (or a sample online). Identify: (1) the design area, (2) the required flow rate, (3) the required pressure at the system inlet. Write these three numbers down — they are the key outputs the modeler must protect in the BIM model.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

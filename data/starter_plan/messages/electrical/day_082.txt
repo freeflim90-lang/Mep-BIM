@@ -1,0 +1,53 @@
+LUA BIM LABS Starter
+Day 82 - Linking the SLD to the BIM Model — From SLD Panel ID to Revit Panel Family
+
+1. Why This Matters
+The SLD and the BIM model must represent the same electrical system. When they do not match — different panel names, missing panels, or mismatched feeder routing — the model cannot be used to verify design intent, generate accurate panel schedules, or support handover. Linking SLD to BIM is the quality bridge between electrical engineering and BIM coordination.
+
+2. Core Concept
+SLD-to-BIM linking — a systematic approach:
+
+Step 1: Create a Panel Register from the SLD
+- List every panel/board shown on the SLD
+- Record: Panel ID, voltage, phase, incomer rating (A), fault rating (kA), location (floor/room)
+- This register becomes the master checklist for model verification
+
+Step 2: Match SLD panels to Revit families
+- Open the Revit project browser — locate all electrical panel families
+- For each panel in the register, confirm a Revit family exists with the same name
+- Check: panel name parameter in Revit must match SLD panel ID exactly (case-sensitive in some workflows)
+
+Step 3: Verify panel location
+- SLD shows which floor or zone each panel serves — confirm the Revit family is placed in the correct room or electrical cupboard
+- Use the Room parameter on the family to cross-check against the room schedule
+
+Step 4: Verify feeder connections in the model
+- Each feeder on the SLD (from MSB to DB, or DB to sub-DB) should be modeled as a cable run in the appropriate tray or conduit
+- Check feeder conductor size against the conduit/tray sizing in the model
+
+Step 5: Generate the linking matrix
+- A simple table: SLD Panel ID | Revit Family Name | Floor | Room | Feeder Modeled (Y/N) | Discrepancies
+- Submit this matrix with each coordination submission — it is evidence that SLD and model are synchronized
+
+Common discrepancies to watch for:
+- SLD shows "DB-L3-A" and "DB-L3-B" (two panels on one floor) — model has only one DB placed
+- SLD shows a future panel ("DB-L5-F1" — Future) — model should include it as a placed family with "Future" parameter set
+- SLD has been revised but the model was not updated — always check SLD revision number against the model
+
+3. Real Project Lens
+A BIM coordinator creates the Panel Register for a 20-floor hotel: 22 panels on the SLD. She checks the Revit model and finds 19 panel families placed. Three are missing: two sub-DBs in the kitchen area and one emergency DB in the basement. She adds these to the coordination issue log and requests the electrical modeler place the missing families before the next submission.
+
+4. BIM Check
+- Check: Is the Panel Register complete — listing every panel on the current SLD revision, with its Revit family name and placement status?
+- Check: Are all panel names in the Revit model identical to the panel IDs on the SLD — no abbreviations, no renaming?
+- Check: Does every feeder cable shown on the SLD have a corresponding cable run modeled in the correct tray or conduit in the BIM model?
+
+5. Common Mistake
+Using abbreviated or informal panel names in the Revit model (e.g., "Panel 3" instead of "DB-L3") while the SLD uses the formal ID. Downstream, the panel schedule export, the handover data, and the facility management system all expect the formal ID — every discrepancy requires manual correction.
+
+6. Today's Action
+Using the SLD you found on Day 81 (or a new sample), create a Panel Register table with five columns: SLD Panel ID, Revit Family Name, Floor, Location, Feeder Modeled (Y/N). Populate it for all panels shown. Even if you do not have a Revit model, completing the SLD columns is a useful exercise in reading the document systematically.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

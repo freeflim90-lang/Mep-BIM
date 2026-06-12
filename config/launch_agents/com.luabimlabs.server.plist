@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+    "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.luabimlabs.server</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/choejeong-yeon/LUA BIM LABS/scripts/start_server.sh</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/choejeong-yeon/LUA BIM LABS</string>
+
+    <!-- 로그인 시 자동 시작 -->
+    <key>RunAtLoad</key>
+    <true/>
+
+    <!-- 비정상 종료 시 자동 재시작 -->
+    <key>KeepAlive</key>
+    <dict>
+        <key>Crashed</key>
+        <true/>
+    </dict>
+
+    <!-- 재시작 최소 간격 10초 -->
+    <key>ThrottleInterval</key>
+    <integer>10</integer>
+
+    <key>StandardOutPath</key>
+    <string>/Users/choejeong-yeon/LUA BIM LABS/logs/server.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/choejeong-yeon/LUA BIM LABS/logs/server_error.log</string>
+</dict>
+</plist>

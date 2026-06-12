@@ -1,0 +1,14 @@
+📚 [BIM 일일 교육] Day 125 — 3년차 과정
+
+🏗 오늘의 주제: C# 심화 — LINQ 활용
+
+💡 핵심 개념
+LINQ(Language Integrated Query)는 C#에서 컬렉션 데이터를 직관적이고 효율적으로 쿼리할 수 있는 기능입니다. SQL 문법처럼 데이터를 필터링, 정렬, 변환할 수 있어 복잡한 반복문을 간결하게 대체하고, Revit 요소들을 다룰 때 코드 가독성과 유지보수성을 크게 높입니다.
+
+🔧 실무 예시
+특정 층의 모든 벽(Wall)을 찾고 면적 순으로 정렬해야 할 때: `var walls = doc.OfCategory(BuiltInCategory.OST_Walls).OfClass(typeof(Wall)).Cast<Wall>().Where(w => w.Level.Name == "2F").OrderByDescending(w => w.Area);` 한 줄로 처리 가능합니다. 또한 문이 달린 모든 벽을 찾아 통과 높이를 검사할 때도 LINQ의 Select와 Any를 조합하면 복잡한 반복문 없이 깔끔하게 구현할 수 있습니다.
+
+💼 오늘의 팁
+`.ToList()`는 즉시 실행(Immediate Execution)되므로, 대용량 요소 처리 시에는 `.AsEnumerable()`로 지연 실행(Deferred Execution)을 활용해 성능을 최적화하세요.
+
+📌 내일 예고: 단위 테스트 — Revit 애드인

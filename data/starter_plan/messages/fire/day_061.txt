@@ -1,0 +1,38 @@
+LUA BIM LABS Starter
+Day 61 - Fire Protection System Types — Wet, Dry, Pre-Action
+
+1. Why This Matters
+Fire protection systems are life safety systems. Modeling the wrong system type in the BIM model — for example, showing a wet system in a freezer room where a dry system is required — creates a non-compliant installation that will fail authority inspection and potentially endanger lives.
+
+2. Core Concept
+- Three primary automatic sprinkler system types:
+
+| System Type | How It Works | Where Used |
+|---|---|---|
+| Wet Pipe | Pipes always filled with water under pressure. Sprinkler opens → water flows immediately | Offices, hotels, retail, most occupied spaces |
+| Dry Pipe | Pipes filled with pressurized air/nitrogen. Water enters only after sprinkler opens and air releases | Freezer rooms, unheated carparks, loading docks |
+| Pre-Action | Requires two events: detection AND sprinkler activation. Until both occur, no water | Data centers, museums, archive rooms |
+
+- Additional system types:
+  - Deluge: All sprinkler heads are open — no fusible element. Water covers entire area simultaneously. Used in high-hazard areas (aircraft hangars, chemical storage)
+  - Foam/Water: Water mixed with foam concentrate. Aircraft hangars and fuel storage
+- In Revit: pipe system type is set as "Fire Protection Wet", "Fire Protection Dry", or "Fire Protection Pre-Action" — this affects schedules and drawings
+- Zone boundary: each system type occupies a separately valved zone — the BIM model must show zone valves (alarm check valve assembly, dry pipe valve, pre-action valve)
+
+3. Real Project Lens
+A mixed-use building has offices (wet system), a freezer room in the kitchen (dry system), and a server room (pre-action). The BIM modeler creates three separate fire protection systems in Revit — one per type. Zone valves are modeled at the riser for each system. Pipe color is coded per system type for clarity.
+
+4. BIM Check
+- Check: Each zone of the model is assigned the correct system type (wet, dry, pre-action)
+- Check: Zone valve assemblies are modeled at the correct locations — one per zone
+- Check: Dry pipe zones do not overlap with wet pipe zones — no shared pipe between the two
+
+5. Common Mistake
+Modeling a dry pipe zone as a wet pipe system because the pipes look identical on plan — this error is invisible until the hydraulic calculation is run or the authority inspector reviews the drawings.
+
+6. Today's Action
+Identify the fire protection system types required on a project you are working on or a sample project. List: (1) each zone, (2) system type for that zone, (3) the reason for that system type selection.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

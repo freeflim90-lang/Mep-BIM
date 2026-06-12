@@ -1,0 +1,28 @@
+LUA BIM LABS Starter
+Day 73 - Fire Dampers — Placement Rules and BIM Modeling
+
+1. Why This Matters
+Fire dampers are required wherever HVAC ducts penetrate fire-rated walls and floors. Missing dampers in the BIM model are only discovered during fire authority approval — causing delays that are entirely avoidable.
+
+2. Core Concept
+- A fire damper installed in the duct at a fire-rated wall closes automatically under heat to prevent fire spreading through the duct
+- Combination fire/smoke dampers are required in smoke-control zone boundaries
+- In Revit: place the fire damper accessory family at the face of the fire-rated wall, not in the middle of the duct run
+- Coordination with architecture: fire ratings of all walls must be confirmed before damper placement
+- Access requirement: a maintenance access panel must be provided downstream of every fire damper for inspection and reset
+
+3. Real Project Lens
+On a hospital project, the fire consultant identified 23 fire-rated wall penetrations without fire dampers in the federated model. The HVAC modeler had routed ducts through the walls without placing damper families because the architectural model had not yet flagged the fire ratings. Resolving this delayed the fire authority submission by two weeks.
+
+4. BIM Check
+- Check: every duct crossing a fire-rated wall or floor has a fire damper placed at the face of the rated element
+- Check: each fire damper has clearance for an access panel on the accessible side
+- Check: the fire rating of all wall penetrations is confirmed in the architectural model before dampers are placed
+
+5. Common Mistake
+Beginners route ducts through rated walls and mark fire dampers as 'TBC' without placing the family. This creates gaps only discovered during authority review.
+
+6. Today's Action
+Identify one fire-rated wall in any model or drawing. Count how many ducts pass through it and note how many would require a fire damper.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

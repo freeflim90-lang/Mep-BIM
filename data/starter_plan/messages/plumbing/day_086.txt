@@ -1,0 +1,48 @@
+LUA BIM LABS Starter
+Day 86 - LOD 350 Requirements for Plumbing
+
+1. Why This Matters
+LOD 350 (Level of Development 350) is the standard required for construction-issue BIM models in most MEP projects. At LOD 350, the model must be detailed enough for contractors to use directly for installation, procurement, and clash coordination without needing to make assumptions. Understanding exactly what LOD 350 requires for plumbing models lets you build right the first time — and pass your LOD audit without rework.
+
+2. Core Concept
+LOD 350 for plumbing means that every modeled element includes both geometry and data that is sufficient for construction use.
+
+Geometry requirements at LOD 350:
+- All pipe segments modeled at actual nominal bore (not schematic diameter)
+- All fittings modeled as 3D elements: tees, elbows, reducers, couplings — not represented as pipe center-line connections
+- All fixtures modeled at actual size and shape with connection points
+- Valves and access fittings modeled at correct location with handle clearance represented
+- Insulation represented as the correct outer diameter (not just pipe OD)
+- Pipe hangers and supports modeled at maximum hanger spacing intervals
+
+Data requirements at LOD 350:
+- System Name and System Type set for every pipe segment
+- Nominal diameter, material, and pressure rating for all pipes
+- Slope value set for all horizontal drainage pipes
+- Fixture Unit count for all plumbing fixtures
+- Fire stop rating for slab and wall penetrations
+- Tag and mark for all valves, cleanouts, and access points
+
+Common LOD 350 gaps found in plumbing models:
+- Fittings missing (pipe center-lines connected without fitting families)
+- Insulation not modeled
+- Slope parameter missing on drainage pipes
+- Valve families placed without handle clearance check
+- System Name blank on isolated pipe segments
+
+3. Real Project Lens
+On a government hospital project, the LOD audit was conducted by the client's BIM manager six weeks before the construction issue deadline. The plumbing model was found to have: 180 pipe segments with no slope set, 23 missing fitting families replaced by pipe-to-pipe direct connections, insulation not modeled on any cold water pipes, and no system names on 40% of drainage segments. The team had six weeks to correct approximately 300 individual model elements. A 30-minute LOD 350 self-audit at the start of the construction modeling phase would have prevented the crisis.
+
+4. BIM Check
+- Check: All horizontal drainage pipes have a Slope parameter value greater than zero
+- Check: All pipe junctions are represented by a fitting family (tee, wye, elbow) — not direct pipe connections
+- Check: All cold water and hot water pipes have insulation modeled at the correct thickness per the project specification
+
+5. Common Mistake
+A common mistake is treating LOD 350 as a documentation requirement rather than a modeling requirement — assuming the model can pass a LOD audit without changing the geometry or data. LOD 350 is verified by checking the model elements directly. Missing fittings, unset slopes, and blank system names will fail the audit regardless of what the accompanying documentation says.
+
+6. Today's Action
+Open your plumbing model and run a quick LOD 350 self-check on one zone: (1) count any pipes with Slope = 0, (2) check one junction for a fitting family, (3) check one insulated pipe for modeled insulation. Record your findings in three lines. This is the format of a real LOD audit response.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

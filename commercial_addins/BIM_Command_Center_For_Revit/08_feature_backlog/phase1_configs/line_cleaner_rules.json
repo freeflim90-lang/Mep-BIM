@@ -1,0 +1,31 @@
+{
+  "feature": "Line Cleanup Lite",
+  "version": 1,
+  "scope": "active_view",
+  "units": "mm",
+  "checks": {
+    "duplicate_lines": {
+      "enabled": true,
+      "endpoint_tolerance_mm": 1.0,
+      "same_line_style_only": true
+    },
+    "short_lines": {
+      "enabled": true,
+      "minimum_length_mm": 10.0
+    },
+    "model_line_report": {
+      "enabled": true,
+      "convert_model_lines": false
+    }
+  },
+  "safety": {
+    "skip_pinned": true,
+    "skip_grouped": true,
+    "require_preview": true,
+    "require_confirmation": true
+  },
+  "report": {
+    "format": "csv",
+    "include_element_ids": true
+  }
+}

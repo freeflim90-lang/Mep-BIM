@@ -1,0 +1,41 @@
+LUA BIM LABS Starter
+Day 61 - Sanitary System Classification — Waste, Vent, Water
+
+1. Why This Matters
+Plumbing is divided into distinct systems that must never be connected to each other. Confusing a waste pipe with a vent pipe — or connecting a cold water supply to a sanitary line — creates health hazards and fails inspection. Correct system classification in the BIM model is the foundation of all plumbing coordination.
+
+2. Core Concept
+- Three primary plumbing system categories:
+  - Sanitary Waste: Carries used water and sewage from fixtures (WC, basin, floor drain) to the building drain and public sewer. Flows by gravity. System type: "Sanitary"
+  - Vent: Allows air into the drain system to maintain correct pressure (prevents siphoning of traps). Does not carry sewage. Connects to waste pipes but terminates above roof. System type: "Vent"
+  - Domestic Water: Pressurized clean water supply — Cold Water Supply (CWS) and Hot Water Supply (HWS). Completely separate from sanitary. System types: "Domestic Cold Water", "Domestic Hot Water"
+- In Revit: each pipe must be assigned to a named piping system that matches its actual function
+- Visual color coding helps: sanitary typically shown in gray/brown; vent in yellow/green; cold water in blue; hot water in red
+
+System Classification Table
+
+| System | Flow Type | Direction | In Revit |
+|---|---|---|---|
+| Sanitary Waste | Gravity | Downward to sewer | "Sanitary" system |
+| Vent | Air pressure relief | Upward to atmosphere | "Vent" system |
+| Cold Water Supply | Pressurized | Distributed to fixtures | "Domestic Cold Water" |
+| Hot Water Supply | Pressurized | Distributed to fixtures | "Domestic Hot Water" |
+| Storm / Rainwater | Gravity | Downward to storm drain | "Storm" system |
+
+3. Real Project Lens
+On a hotel floor with 20 bathrooms, the BIM modeler creates four separate piping systems: Sanitary, Vent, CWS, HWS. Each WC connects to the Sanitary system. The vent pipe rises from each WC trap to a vent stack. CWS and HWS serve each basin and shower. The systems never cross-connect.
+
+4. BIM Check
+- Check: Every sanitary pipe is assigned to the Sanitary piping system — not "Unassigned"
+- Check: Vent pipes connect to the tops of sanitary pipes (never to water supply)
+- Check: Cold water and hot water are in separate, named systems — no pipe shared between them
+
+5. Common Mistake
+Assigning vent pipes to the sanitary system in Revit (because they appear to connect to sanitary lines) — this merges the two systems in schedules and makes it impossible to generate a separate vent riser diagram.
+
+6. Today's Action
+In Revit, create three piping systems: Sanitary, Vent, and Domestic Cold Water. Place one pipe in each system. Verify in the Mechanical Systems Browser that each pipe appears under its correct system.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

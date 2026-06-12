@@ -1,0 +1,49 @@
+LUA BIM LABS Starter
+Day 76 - Cable Tray vs. HVAC Duct Clashes — Routing Hierarchy and Elevation Priority
+
+1. Why This Matters
+Cable tray and HVAC ductwork occupy the same ceiling zone and are the two largest MEP elements competing for ceiling space. Without a clear routing hierarchy, clashes between cable tray and ductwork are the single most common source of coordination rework in commercial building projects. Understanding who routes first — and who yields — is fundamental MEP BIM knowledge.
+
+2. Core Concept
+Standard MEP routing hierarchy in ceiling zones (top to bottom):
+
+| Priority | System | Reason |
+|---|---|---|
+| 1st (highest) | Gravity drainage (soil, waste, storm) | Cannot change slope — gravity is non-negotiable |
+| 2nd | HVAC supply and return ductwork (large) | Large cross-section, difficult to offset |
+| 3rd | Sprinkler branch mains | Must maintain slope for drainage |
+| 4th | Cable tray (power) | Flat, flexible — can step up or down |
+| 5th | Cable tray (data/comms) | Smallest cross-section, most flexible |
+| 6th (lowest) | Small-bore pipework, conduit | Easiest to offset and reroute |
+
+Cable tray vs. duct clash resolution rules:
+- Cable tray yields to ductwork in the primary routing hierarchy — the tray steps over or under the duct
+- Stepping over: preferred for power cable trays — keeps tray at higher elevation, reducing corridor access conflicts
+- Stepping under: acceptable only if clear height requirements are still met after the step
+- Where the tray must cross under a duct, use a transverse offset — model the tray descending at 45°, passing below the duct, then returning to the original elevation
+- Minimum clearance between power cable tray and metallic ductwork: 50mm air gap (check project specification — some require 150mm for thermal reasons)
+- After any reroute, recheck LV/data tray separation (300mm) — a step to avoid a duct can accidentally close the separation gap
+
+BIM coordination workflow:
+1. Route HVAC ductwork first (after gravity drainage)
+2. Route cable trays second, stepping over or under ducts as required
+3. Run NWC/Navisworks clash test after both are placed
+4. Resolve remaining clashes — always step the tray, not the duct, unless the duct is a small flexible branch
+
+3. Real Project Lens
+A coordination model shows a 600mm wide cable tray running parallel to a 800×400mm supply duct at the same elevation. In section, they overlap by 200mm. Resolution: the cable tray steps up 300mm using 30° ramps at each end of the duct run, passes over the duct with 75mm clearance, then returns to its original elevation. The adjusted section is modeled, clash test confirms zero remaining overlap, and the step does not reduce ceiling height below the required 2,700mm.
+
+4. BIM Check
+- Check: Do power cable trays maintain a minimum 50mm air gap above or below HVAC ductwork at all crossing and parallel-run locations?
+- Check: Are cable tray offsets (steps) modeled with proper ramp fittings — not abrupt 90° elevation changes?
+- Check: After every cable tray reroute around ductwork, is the 300mm LV/data tray separation still maintained throughout the adjusted section?
+
+5. Common Mistake
+Routing cable tray and duct in the same section of the model at different times without running a clash check between them — then discovering at the coordination meeting that 15 trays clash with major supply ducts, requiring a full re-routing session under time pressure.
+
+6. Today's Action
+In a model or section sketch, draw a ceiling zone cross-section showing a 800×400mm duct and a 400mm wide cable tray at the same elevation. Sketch two resolution options: step the tray over the duct, and step the tray under the duct. Label the required clearances and note which option preserves more ceiling height.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

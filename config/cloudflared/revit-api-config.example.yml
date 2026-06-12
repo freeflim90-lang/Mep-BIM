@@ -1,0 +1,7 @@
+tunnel: lua-bim-labs-revit-api
+credentials-file: /Users/choejeong-yeon/.cloudflared/lua-bim-labs-revit-api.json
+
+ingress:
+  - hostname: api.luabimlabs.com
+    service: http://127.0.0.1:8000
+  - service: http_status:404

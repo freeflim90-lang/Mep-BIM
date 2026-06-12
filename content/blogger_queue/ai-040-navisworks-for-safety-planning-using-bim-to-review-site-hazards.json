@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "Navisworks",
+    "BIM",
+    "Construction Safety",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "Navisworks for Safety Planning: Using BIM to Review Site Hazards",
+  "slug": "navisworks-for-safety-planning-using-bim-to-review-site-hazards",
+  "content": "<p>BIM models contain the geometry and sequence information needed to identify construction safety hazards before they occur on site. Navisworks enables safety planners to review working-at-height risks, falling object zones, vehicle movement conflicts, and crane swing areas within the 3D model.</p>\n<h2>Why This Matters</h2>\n<p>Construction fatalities and injuries are frequently caused by hazards that were identifiable from the construction programme and building geometry but were not reviewed. BIM-based safety review is a proactive tool that supplements, not replaces, traditional safety management.</p>\n<h2>Practical Guidance</h2>\n<p><strong>Working-at-Height Zone Identification:</strong> Model temporary edge protection, scaffold, and access routes in Navisworks. Review the 4D simulation to identify periods when work-at-height activities occur without completed edge protection. Flag these periods as safety hazards requiring method statement review.</p>\n<p><strong>Crane Swing Analysis:</strong> Model crane positions and swing radii as simple geometry in Navisworks. Review the 4D simulation to identify periods when crane swing overlaps with public footpaths, adjacent buildings, or other work areas. Coordinate crane positions with the programme before site mobilisation.</p>\n<p><strong>Vehicle Movement:</strong> Model site roads, delivery routes, and pedestrian access in Navisworks. Use 4D simulation to identify periods when heavy vehicle movements conflict with pedestrian access routes or overhead work activities.</p>\n<p><strong>Documentation:</strong> Export safety hazard viewpoints and 4D simulation clips as part of the Pre-Construction Health and Safety Plan. Provide these to the Principal Contractor as evidence of BIM-informed safety planning.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Model temporary works and edge protection in 4D simulation</li>\n<li>Review crane swing radii against programme during peak lifting periods</li>\n<li>Check vehicle movement routes against pedestrian access in 4D</li>\n<li>Export safety review viewpoints for inclusion in Pre-Construction H&S Plan</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>BIM safety review does not guarantee a safe site, but it identifies hazards when changes are cheap — before the first shovel breaks ground.</p>"
+}

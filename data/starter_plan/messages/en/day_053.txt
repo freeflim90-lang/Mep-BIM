@@ -1,0 +1,37 @@
+LUA BIM LABS Starter
+Day 53 - What a Site Supervisor Needs from BIM
+
+**1. Why This Matters**
+BIM outputs are only valuable if the site team can actually use them — designing your outputs for the end user (the site supervisor) makes the BIM model a real construction tool, not just a documentation exercise.
+
+**2. Core Concept**
+Site supervisors have different needs from BIM coordinators and engineers. Understanding those needs shapes what you produce and how you present it.
+
+What a site supervisor typically needs from BIM:
+
+- **Clear, printed coordination drawings**: A3 or A1 format, clearly dimensioned from grid lines, showing the zone they are installing today — not the whole building
+- **Simple elevation data**: Pipe inverts and duct soffit levels relative to the finished floor — not complex model coordinates
+- **Model access for visual reference**: A lightweight NWD or Revit-to-viewer file they can rotate in 3D to understand spatial relationships
+- **Clash status**: Confirmation that the zone is clear of unresolved Major clashes before they start work
+- **Spool delivery schedule**: If prefabricated spools are being used, they need to know which spools arrive when so they can sequence the install
+- **Quick RFI response**: When something on site doesn't match the drawing, they need an answer within 24 hours — delays cascade
+
+**3. Real Project Lens**
+A mechanical site supervisor on a data center project asks the BIM coordinator for a "one-page cheat sheet" for the Level 2 comms room — a plan with duct sizes, elevations, and critical dimensions, printed large enough to read in low light with gloves on. The coordinator exports a cropped coordination drawing at 1:20 scale with annotation enlarged. The supervisor uses this drawing for three days of installation without a single RFI.
+
+**4. BIM Check**
+- Check: Can you name three specific outputs a site supervisor needs from the BIM team during active MEP installation?
+- Check: Can you explain why a site supervisor's needs differ from an engineer's needs when accessing BIM data?
+- Check: Can you describe what information should be on a zone-specific coordination drawing prepared specifically for site use?
+
+**5. Common Mistake**
+Sending the full federated NWD file to the site supervisor and expecting them to navigate it independently. Site teams need curated, simplified outputs — not raw model access that requires BIM software training to use effectively.
+
+**6. Today's Action**
+Design the content of a one-page "site information sheet" for a single zone (one floor, one area). List exactly what information it would contain, in what format, and at what scale — as if you were handing it to a site supervisor tomorrow.
+
+---
+
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

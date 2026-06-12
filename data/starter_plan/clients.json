@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "_schema": {
+    "client_id": "unique string identifier",
+    "name": "client display name",
+    "telegram_chat_id": "Telegram numeric chat ID (string)",
+    "discipline": "hvac | piping | plumbing | fire | electrical",
+    "language": "ko | en | ja | zh | ar  (default: en)",
+    "status": "active | paused | completed | cancelled",
+    "payment_status": "paid | pending | refunded",
+    "start_date": "YYYY-MM-DD"
+  },
+  "clients": []
+}

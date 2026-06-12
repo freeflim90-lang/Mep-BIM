@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 18 - Why Coordinates Matter Before Clash Review
+
+1. Why This Matters
+If linked models are not aligned, clash results become unreliable. Coordination begins with confirming model position, not with running clash tests.
+
+2. Core Concept
+Coordinates define where each model sits in the shared project space. Architecture, structure, and MEP must use the same reference strategy.
+
+3. Real Project Lens
+A perfectly modeled duct can appear to clash everywhere if the MEP model is shifted relative to the architectural model.
+
+4. BIM Check
+- Confirm model origin and shared coordinate strategy.
+- Check levels and grids across linked models.
+- Review one known reference point in 3D before clash testing.
+
+5. Common Mistake
+Beginners often start clash detection before confirming whether the models are aligned.
+
+6. Today's Action
+Write down three alignment checks you would perform before a coordination review.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

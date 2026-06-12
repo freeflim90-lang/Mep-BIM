@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "IFC",
+    "OpenBIM",
+    "Revit",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "How to Configure IFC Export from Revit for Architectural Submissions",
+  "slug": "how-to-configure-ifc-export-from-revit-for-architectural-submissions",
+  "content": "<p>Architectural IFC submissions for regulatory purposes and multi-discipline coordination require specific configuration. The default Revit IFC export settings produce files that are technically valid but often fail validation checks and frustrate downstream users.</p>\n<h2>Why This Matters</h2>\n<p>Regulators and coordination teams reject IFC files that lack required property sets, use incorrect element classifications, or have misaligned coordinate origins. Each rejection adds weeks to project programmes on permit-critical paths.</p>\n<h2>Practical Guidance</h2>\n<p><strong>Export Setup File:</strong> Create a named IFC Export Setup in Revit that maps project categories to correct IFC classes. Save this setup as an .IFCExportConfig file and distribute it to all discipline modelers to ensure consistent classification across the federated model.</p>\n<p><strong>Level of Detail Setting:</strong> Set the export Level of Detail to control tessellation of curved geometry. Higher settings produce more accurate curved surfaces but larger file sizes. For regulatory submission, use Medium or High. For coordination, Medium balances quality and performance.</p>\n<p><strong>Include Linked Files:</strong> For a complete architectural submission, include linked site and landscape models in the export. Confirm with the receiving authority whether linked model elements should be merged into a single IFC or submitted as separate files.</p>\n<p><strong>Split by Level or Building:</strong> Large models export more reliably and are easier to navigate when split by level or by building. Confirm the split strategy with the receiving authority before first submission to avoid resubmission for format non-compliance.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Create and save a named IFC Export Setup configuration</li>\n<li>Test export with a sample floor before full model submission</li>\n<li>Confirm split strategy (full model vs per-level) with receiving authority</li>\n<li>Validate exported file in Solibri or equivalent before submission</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>A well-configured IFC export setup is a reusable project asset — invest an hour in setup to save days of resubmission cycles.</p>"
+}

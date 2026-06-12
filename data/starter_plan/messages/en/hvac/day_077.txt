@@ -1,0 +1,28 @@
+LUA BIM LABS Starter
+Day 77 - Smoke Control and Pressurization Systems in BIM
+
+1. Why This Matters
+Smoke control systems are required in high-rise buildings, hospitals, and large public spaces. BIM modelers need to understand which HVAC elements belong to the smoke control system to model and coordinate them correctly.
+
+2. Core Concept
+- Smoke control uses HVAC systems to manage smoke movement during a fire — keeping escape routes clear for occupants
+- Stairwell pressurization: dedicated fans supply fresh air into stairwells under fire conditions to maintain a smoke-free escape route
+- Smoke exhaust: large atria, car parks, and retail atriums use dedicated smoke exhaust fans to remove smoke from the space
+- Smoke control fans must be temperature-rated — typically 200°C for 60 minutes or 400°C for 30 minutes — unlike normal HVAC fans
+- In Revit: model smoke control ductwork and fans in a separate system type or dedicated workset, distinct from normal HVAC
+
+3. Real Project Lens
+On a 35-storey residential tower, smoke control fans were initially placed as standard supply fans. During the fire authority review, the temperature rating was queried. The correct rated fans were 300mm wider than the standard fans modeled, requiring the fan room layout to be revised — a change that could have been avoided if the correct families were used from the start.
+
+4. BIM Check
+- Check: fans designated as smoke control have the correct temperature rating in their Revit parameters
+- Check: smoke control ductwork is assigned to a separate Revit system type, distinguishable from normal HVAC supply and exhaust
+- Check: smoke exhaust fans discharge directly to the outside with no shared ductwork connecting to normal HVAC systems
+
+5. Common Mistake
+Beginners treat smoke control systems as just another HVAC system. The distinction matters because smoke control equipment has separate standards, testing regimes, and coordination responsibilities.
+
+6. Today's Action
+Identify one smoke control component in a building you know or research (stairwell fan, smoke exhaust vent, pressurization AHU). Write down one way it must function differently from a normal HVAC unit.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

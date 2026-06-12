@@ -1,0 +1,41 @@
+LUA BIM LABS Starter
+Day 54 - Track 7 Review — Site-Readiness Thinking
+
+**1. Why This Matters**
+A BIM model that cannot be built from is incomplete — site-readiness thinking means designing your coordination process with the construction team's needs as the primary output standard.
+
+**2. Core Concept**
+Track 7 covered how BIM transitions from the office model to active construction. Here is the structured recap:
+
+| Day | Topic | Key Takeaway |
+|-----|-------|--------------|
+| 48 | BIM Goes to Site | Coordination drawings, setting-out, spool drawings, RFIs, as-built |
+| 49 | Reading Coordination Drawings | Title block, grid refs, elevation annotations, system tags, section refs |
+| 50 | Installation Sequence | Primary containment first; ceiling grid last; sequence = spatial + time |
+| 51 | Prefabrication and Spools | LOD 350 required; spool IDs; cut lengths from model; clash-resolve first |
+| 52 | Site vs. Model Conflict | Model conflict = digital; site conflict = physical; different resolution paths |
+| 53 | What Site Supervisors Need | Curated zone drawings; simple elevation data; fast RFI response |
+
+**3. Real Project Lens**
+The BIM coordinator for a Level 3 fitout zone prepares a site-readiness package: a zone coordination drawing, a pipe spool delivery schedule, a simplified 3D viewer link, and a clash clearance sign-off memo. The mechanical contractor installs the full zone in four days with only one RFI — the lowest RFI rate of any zone on the project.
+
+**4. BIM Check**
+- Check: Can you describe the difference between a spool drawing and a coordination drawing in terms of their purpose and audience?
+- Check: Can you explain why installation sequence matters during BIM coordination — not just during construction?
+- Check: Can you list three things a site supervisor needs that a design engineer does not need?
+
+**5. Common Mistake**
+Completing Track 7 thinking that "site-readiness" is someone else's job. Whether you are a modeler, coordinator, or junior BIM technician, producing model outputs that can actually be used on site is part of your professional responsibility.
+
+**6. Today's Action**
+Write a short "site-readiness checklist" for a single zone — at least six items that must be confirmed before a coordination package is handed to a site supervisor. Make each item a yes/no check.
+
+---
+
+## Track 8 — Career and Professional Basics (Selected Lessons)
+
+---
+
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

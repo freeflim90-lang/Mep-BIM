@@ -1,0 +1,45 @@
+---
+type: blog-knowledge
+source: blogger
+brand: LUA BIM LABS
+published: 2026-05-30
+url: https://engineer250212.blogspot.com/2026/05/daily-training-guide-to-main-pipe.html
+tags:
+  - mep-bim
+  - lua-bim-labs
+  - revit-mep
+  - bim-training
+---
+
+# Daily Training Guide to Main Pipe Routing in Fire Protection BIM
+
+## Blog Link
+
+https://engineer250212.blogspot.com/2026/05/daily-training-guide-to-main-pipe.html
+
+## Knowledge Insight
+
+practical main pipe routing decisions in fire protection BIM
+
+MEP BIM knowledge should be retained when it improves project judgment, model quality, coordination decisions, or repeatable education. This topic is useful for LUA BIM LABS because it connects software workflow with engineering and construction consequences.
+
+## Educational Insight
+
+This topic can be reused as a short daily lesson for engineers, BIM modelers, and coordinators. It supports the LUA BIM LABS Telegram training model by turning one focused issue into a practical checklist and discussion point.
+
+## Practical Case
+
+In a real project, main pipe routing can look acceptable in a model view, but still create coordination risk when installation sequence, access, clearance, and model data are reviewed together.
+
+## Checklist
+
+- Review sprinkler coverage intent
+- Check ceiling device conflicts
+- Confirm valve station access
+
+## Reuse Ideas
+
+- Convert into a Telegram daily MEP BIM lesson.
+- Expand into a Revit/Navisworks hands-on exercise.
+- Use as a short onboarding discussion for junior BIM staff.
+- Link to future case studies, QA checklists, or automation scripts.

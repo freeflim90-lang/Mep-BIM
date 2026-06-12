@@ -1,0 +1,53 @@
+LUA BIM LABS Starter
+Day 82 - Drain vs. Floor Slab
+
+1. Why This Matters
+Every horizontal drain must travel from the fixture outlet to the stack while maintaining slope — but the slab above and the slab below define the physical limits. When the drain invert drops below the structural slab on which it is supported, it can no longer be suspended from above. It either runs into the slab or must be accommodated by a lowered slab zone. Understanding level conflicts between drains and slabs is essential for coordinating with both structural and architectural teams.
+
+2. Core Concept
+The conflict occurs in buildings where drain pipes must slope over a long horizontal distance, causing the downstream invert to fall below the structural slab soffit level.
+
+Key levels to understand:
+- Finished Floor Level (FFL): the top surface of the finished floor
+- Structural slab top (SSL): the top of the concrete slab, below the screed and finish
+- Structural slab soffit (underside): where suspended services hang
+- Beam flange level: the bottom of the structural beam flange
+
+When a drain must pass through a slab (rather than beneath it), solutions include:
+
+1. Lowered slab zone (recessed slab):
+   - The structural engineer recesses the slab by 200–400 mm in a defined zone to allow the drain to run at the correct invert without penetrating the full slab thickness
+   - Common in wet rooms, bathrooms, and kitchen zones of apartments
+   - Must be coordinated with structural early — after reinforcement design it is very difficult to add
+
+2. Drainage boxing or service void:
+   - A raised floor or service void is created within the architectural fit-out to contain the drain above the structural slab
+   - Common in healthcare and refurbishment projects
+
+3. Rerouting to a closer stack:
+   - Shortening the pipe run keeps the invert higher and within the available depth
+   - Often the simplest solution when stack locations are flexible early in design
+
+BIM workflow:
+1. Model the drain at the correct slope
+2. Compare drain invert levels against the structural slab soffit level at each point along the run
+3. Where the invert is below the slab soffit, flag the zone for coordination
+4. Propose a lowered slab zone and confirm its limits with the structural engineer
+5. Update the architectural floor level in that zone and recheck the drain invert
+
+3. Real Project Lens
+On a luxury apartment project, each bathroom had a linear floor drain connected to a horizontal branch drain running under the bathroom floor. The drain branches needed to slope from the drain outlet down to the soil stack — a 3-metre run at 1:40, creating a 75 mm invert drop. The structural slab was only 200 mm deep with 20 mm screed above. The drain required a 120 mm lowered slab zone to accommodate the drain body and branch without penetrating the slab. The structural engineer confirmed this was achievable in 15 of 16 bathroom locations; one bathroom required the stack to be moved 400 mm closer.
+
+4. BIM Check
+- Check: Drain invert levels have been checked against structural slab soffit levels along the entire horizontal run
+- Check: Any zone where a lowered slab is required is identified on both the plumbing coordination drawing and the structural drawing
+- Check: The extent (plan area and depth) of every lowered slab zone is confirmed by the structural engineer before slab drawings are issued
+
+5. Common Mistake
+A common mistake is assuming a lowered slab zone can be added at any time. In practice, once the structural slab reinforcement drawing has been issued for construction, adding a lowered slab requires a formal design change, a revised reinforcement layout, and a cost variation. All lowered slab requirements must be identified during the early coordination phase.
+
+6. Today's Action
+In Revit, check the invert level of a horizontal drain branch at its lowest point (furthest from the fixture). Compare it to the structural slab soffit level at that location. Calculate the depth difference. If the drain invert is below the slab soffit, sketch a lowered slab zone plan showing its minimum extent and depth.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

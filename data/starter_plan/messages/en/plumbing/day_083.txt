@@ -1,0 +1,47 @@
+LUA BIM LABS Starter
+Day 83 - Vent Pipe vs. Structure and Architecture
+
+1. Why This Matters
+Vent pipes must travel vertically from the drainage system to atmosphere, passing through multiple slabs, walls, and potentially the roof. Unlike drain pipes, vent pipes carry no flow and have no slope requirement — but they take up structural slab penetrations and wall cavities on every floor. If vent routing is not coordinated with structure and architecture early, vents end up passing through load-bearing elements or finishing up inside occupied wall cavities — both unacceptable outcomes.
+
+2. Core Concept
+Vent pipes face coordination challenges at three distinct locations:
+
+1. Slab penetrations (floor-to-floor travel):
+   - Vent pipes typically travel inside wall cavities or within the plumbing shaft
+   - Every time a vent crosses a slab it requires a sleeve — just like a riser
+   - Multiple vents from different fixture groups may join before passing through the slab, reducing the total number of penetrations
+
+2. Wall penetrations (horizontal offsets):
+   - Where a vent pipe must shift horizontally between floors, it may pass through a wall
+   - Wall penetrations must not compromise fire compartment walls without fire-rated sealing
+   - Structural walls — particularly shear walls and party walls — may not be penetrated without engineer approval
+
+3. Roof penetration and external routing:
+   - As covered in Day 74, the final vent penetration through the roof must be flashed and capped
+   - Architectural features such as parapet walls, roof gardens, and photovoltaic arrays may require the vent to be routed to a specific side of the roof
+
+BIM coordination workflow for vents:
+1. Model all vent branches from fixture groups up to the vent stack
+2. Route vent stacks within the plumbing shaft or designated wall cavity
+3. Add sleeve elements at every slab penetration
+4. Check vent routes against the architectural floor plan for wall types — confirm no penetrations of structural or fire-compartment walls without approval
+5. For horizontal vent offsets, use the standard 45-degree offset fitting to minimize turbulence
+6. At roof level, confirm vent termination location against the architectural roof plan
+
+3. Real Project Lens
+On a commercial building with a central core, the plumbing vent stacks were initially routed through the core — which contained the fire-protected lift lobby. The fire engineer confirmed that penetrations of the lobby walls were not permitted without intumescent sealing at every level. The vents were rerouted to a dedicated plumbing shaft adjacent to the core, which required a 600 × 600 mm shaft addition confirmed by the architect. The BIM model made the problem visible three months before the walls were constructed.
+
+4. BIM Check
+- Check: Vent pipes are routed through the plumbing shaft or architectural wall cavity — not through structural or fire-compartment walls without documented approval
+- Check: All vent slab penetrations are modeled as sleeve elements and included in the sleeve request schedule
+- Check: Vent pipe routing has been checked against the architectural wall type drawings to confirm penetration acceptability at each level
+
+5. Common Mistake
+A common mistake is modeling vent pipes as straight vertical runs through whatever is in the way, assuming the structural or architectural team will accommodate them. Vent pipes are low-priority services — they will always be asked to move if they conflict with structure or fire separations. Model the constraints first, then route the vents to comply.
+
+6. Today's Action
+In your Revit model, check one vent stack route from the fixture level to the roof. At each floor, identify the wall or shaft cavity it uses. Confirm whether that wall type is structural, fire-rated, or standard partition. If it is structural or fire-rated, flag it as a coordination item. Document your findings as a one-line entry per floor level.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,44 @@
+LUA BIM LABS Starter
+Day 73 - Pull Box Placement Rules — Run Length and Bend Angle Limits
+
+1. Why This Matters
+Pull boxes allow electricians to pull wire through long or complex conduit runs without damaging insulation. When pull boxes are missing from the model, the conduit routing is not constructible — cables cannot be pulled on site. Correctly placing pull boxes is one of the most overlooked aspects of electrical BIM modeling.
+
+2. Core Concept
+Pull box placement triggers — a pull box is required when:
+
+| Trigger | Rule |
+|---|---|
+| Straight run length | Maximum 30m (100 ft) between pull points for most conductor sizes — check project specification; some require 15m |
+| Total bend angle | Maximum 360° of bends (four 90° turns) between pull points |
+| Combined rule | Either limit triggers the requirement — whichever comes first |
+
+Additional considerations:
+- A junction box (smaller) is acceptable for smaller conduits and simple splices; a pull box is required for larger conduits (typically 53mm / 2" trade size and above) or where pulling access is critical
+- Pull box sizing: the pull box length must be at least 8 times the largest conduit trade size for straight pulls (NEC 314.28) — a 50mm conduit requires a pull box at least 400mm long
+- Pull box access: pull boxes must be accessible — they cannot be buried in concrete or hidden above non-accessible ceilings. In the model, confirm the pull box is within an accessible ceiling or a surface-mounted location
+- BIM modeling: model pull boxes as a specific family (not a generic junction box) — include actual dimensions, not symbolic boxes
+
+Common pull box locations on a floor plan:
+- At every floor penetration for riser conduits
+- At each end of a long straight run in the ceiling void
+- Before the third 90° bend in a conduit run
+- At equipment room entries where the conduit transitions to flexible connection
+
+3. Real Project Lens
+A modeler routes a conduit run from DB-L7 across the full length of a 50m building to a server room. She initially models it as a single continuous run. Checking the 30m rule, she adds a pull box at the 25m point. She also counts four 90° bends along the route — already at the 360° limit. She adds a second pull box to split the bend count. The final route has two pull boxes, making the run fully constructible.
+
+4. BIM Check
+- Check: Is there a pull box within every 30m of straight conduit run (or the project-specified maximum) for all conduits 25mm trade size and above?
+- Check: Is the total bend angle between any two pull points 360° or less — counting all bends including offsets?
+- Check: Are all pull boxes located in accessible positions — within accessible ceiling voids, electrical rooms, or surface-mounted?
+
+5. Common Mistake
+Routing conduit in a single long sweep with multiple bends and no pull boxes because the model looks tidy and clash-free. The 3D model passes coordination, but the run is impossible to wire on site — resulting in a site instruction to add pull boxes after installation has begun.
+
+6. Today's Action
+On a project or training model, trace one conduit run longer than 20m. Count the total straight length and sum all the bend angles. Determine whether a pull box is required based on the 30m / 360° rules. If required, identify where you would place it.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

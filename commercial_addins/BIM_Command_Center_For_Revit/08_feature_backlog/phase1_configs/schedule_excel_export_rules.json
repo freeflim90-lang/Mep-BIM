@@ -1,0 +1,20 @@
+{
+  "feature": "Schedule Excel Export",
+  "version": 1,
+  "mode": "dry_run",
+  "export": {
+    "active_schedule_only": true,
+    "format": "csv",
+    "include_headers": true,
+    "preserve_visible_field_order": true
+  },
+  "safety": {
+    "allow_import": false,
+    "skip_read_only_fields_on_future_import": true,
+    "require_preview": true
+  },
+  "report": {
+    "format": "task_dialog",
+    "include_field_count": true
+  }
+}

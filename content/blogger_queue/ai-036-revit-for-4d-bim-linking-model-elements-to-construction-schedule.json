@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "BIM",
+    "Revit",
+    "4D BIM",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "Revit for 4D BIM: Linking Model Elements to Construction Schedule",
+  "slug": "revit-for-4d-bim-linking-model-elements-to-construction-schedule",
+  "content": "<p>4D BIM connects Revit model elements to a construction programme, allowing teams to visualise the construction sequence, identify scheduling conflicts, and communicate construction logic to site teams and clients. This connection between BIM and programme is increasingly required on major projects.</p>\n<h2>Why This Matters</h2>\n<p>Construction programmes on paper do not communicate spatial relationships — two activities can appear sequential in the programme but spatially conflicting on site. 4D BIM exposes these conflicts before they become site delays.</p>\n<h2>Practical Guidance</h2>\n<p><strong>Navisworks TimeLiner for 4D:</strong> Navisworks TimeLiner is the most widely used 4D BIM tool. It links Navisworks selection sets (which map to Revit worksets or categories) to tasks in a Microsoft Project or Primavera P6 schedule. Changes to the programme update the 4D simulation automatically.</p>\n<p><strong>Revit Element Phasing for 4D:</strong> Revit construction phases can be used as a basic 4D sequencing tool within Revit. Assigning elements to phases allows a rough construction sequence visualisation. This is simpler than Navisworks TimeLiner but lacks time-accurate simulation.</p>\n<p><strong>Activity Mapping:</strong> Map Revit worksets or element parameters (Construction Zone, Activity ID) to programme activities. The mapping strategy depends on how the programme is structured. Confirm the mapping approach with the project planner before modeling begins.</p>\n<p><strong>Site Logistics Integration:</strong> 4D BIM is most valuable when site logistics — crane positions, delivery routes, laydown areas — are modeled alongside the building elements. This requires site models that are usually maintained by the contractor, not the design team.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Agree workset-to-programme activity mapping before model setup</li>\n<li>Use named Navisworks selection sets that correspond to programme activities</li>\n<li>Run 4D simulation before construction programme is baselined</li>\n<li>Update 4D model when programme changes to maintain value for site coordination</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>4D BIM is only useful when the programme is accurate and the model reflects construction sequence — maintaining both through a long project is the real challenge.</p>"
+}

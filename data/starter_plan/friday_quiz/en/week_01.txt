@@ -1,0 +1,13 @@
+LUA BIM LABS — BIM Check Friday ✓
+Week 1 | MEP BIM Orientation
+
+Q1. What does MEP stand for, and what does each letter represent on a building project?
+Q2. What is the difference between a BIM model and a 2D CAD drawing in terms of the information they contain?
+Q3. What is LOD, and what does LOD 300 generally mean for a mechanical duct?
+Q4. What is the purpose of a BIM Execution Plan (BEP) on a construction project?
+Q5. Name two MEP systems that would typically be coordinated against each other in a BIM clash test.
+
+Think through each one.
+No grades — this tests your own understanding.
+
+Next week: Revit MEP Basics check.

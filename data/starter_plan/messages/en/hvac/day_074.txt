@@ -1,0 +1,28 @@
+LUA BIM LABS Starter
+Day 74 - AHU and Mechanical Room Layout Coordination
+
+1. Why This Matters
+Mechanical rooms contain the largest HVAC equipment on a project. Getting the room layout right in BIM before construction saves rework, crane costs, and structural changes that become very expensive after concrete is poured.
+
+2. Core Concept
+- AHU room coordination involves: equipment footprint and height, maintenance clearances, vibration isolation bases, pipe connection directions, air intake and discharge routes
+- Clearances: AHU typically requires 1000mm filter-access clearance on the filter face, 600mm minimum on other sides
+- Structural coordination: AHU bases often require reinforced pad footings or spring isolator systems in the structural model
+- Pipe connections to AHU: chilled water supply and return, condensate drain, hot water — routed to the correct connection face without blocking access
+- Lift route: for equipment replacement, verify there is a lift path from the AHU to the building exterior
+
+3. Real Project Lens
+On a commercial tower, the mechanical room layout was issued without verifying lift access for AHU replacement. After construction, the facilities team discovered the AHU could not be removed without demolishing a partition wall. A $40,000 modification was required — a cost that BIM coordination would have caught before a single brick was laid.
+
+4. BIM Check
+- Check: the AHU has manufacturer-specified maintenance clearance on all sides
+- Check: chilled water pipe connections are on the correct AHU face and accessible without stepping over other equipment
+- Check: there is a clear lift route from the mechanical room entrance to the AHU location
+
+5. Common Mistake
+Beginners model the AHU correctly but forget the maintenance clearance zone. Placing equipment too close together looks fine on screen but fails in practice.
+
+6. Today's Action
+For one piece of HVAC equipment, find its manufacturer's minimum clearance requirements and verify whether those clearances exist in the model or sketch.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

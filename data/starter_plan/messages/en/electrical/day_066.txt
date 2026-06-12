@@ -1,0 +1,45 @@
+LUA BIM LABS Starter
+Day 66 - Electrical Clash with HVAC and Structure
+
+1. Why This Matters
+Electrical cable trays and conduits must be routed through the same ceiling zones as HVAC ducts, piping, and structure. Electrical systems have strict separation requirements that make clash resolution more complex than other MEP disciplines — because moving an electrical tray to avoid a duct may bring it too close to another electrical system.
+
+2. Core Concept
+- Common electrical clash types:
+  - Cable tray through structural beam (same as all MEP — P1 priority)
+  - Cable tray above HVAC duct (access problem — tray is unreachable for cable installation)
+  - LV tray too close to data tray after HVAC reroute (separation violation created by a clash fix)
+  - Conduit through fire-rated wall without sleeve (fire integrity failure)
+  - Electrical cupboard door clearance blocked by pipe (maintenance access clash)
+- Resolution strategy:
+  - Electrical trays typically route at the highest point in the ceiling zone (above HVAC and piping) to keep them accessible
+  - Use tray drops or conduit to descend from the tray to the device — this is more practical than routing tray at low level
+  - When re-routing a tray to avoid a duct clash, immediately recheck separation from adjacent electrical systems
+
+Electrical Clash Resolution Approach
+
+| Clash | Resolution |
+|---|---|
+| Tray through beam | Route around beam or request beam web penetration |
+| Tray above inaccessible duct | Re-elevate tray above duct; confirm ceiling access panel below |
+| LV/data separation violated | Increase vertical or horizontal offset; use metal divider |
+| Conduit through fire wall | Model fire-stopping sleeve in the wall |
+| DB access blocked | Reroute pipe or duct — DB clearance takes priority |
+
+3. Real Project Lens
+On Level 9 of a commercial building, an 800mm HVAC supply duct runs east-west at 2700mm. The 450mm LV cable tray is routed at 2650mm — below the duct, which puts it below the duct soffit and makes it inaccessible for cable installation. The modeler raises the cable tray to 2800mm (above the duct) and confirms it clears the slab soffit at 3000mm. The separation between LV and data trays is re-verified after the move.
+
+4. BIM Check
+- Check: All cable trays are above HVAC ducts wherever possible — confirm access height above each tray is at least 500mm for cable installation
+- Check: After any electrical reroute to fix a structural or HVAC clash, recheck all separation distances to adjacent electrical systems
+- Check: All conduits through fire-rated walls have fire-stopping sleeves modeled (or at minimum logged as a coordination item)
+
+5. Common Mistake
+Moving a cable tray to avoid a duct clash without checking the new position against the adjacent data tray — the two trays end up 200mm apart after the move, creating a new separation violation that triggers a second round of coordination.
+
+6. Today's Action
+In a BIM model or Navisworks, find one instance where a cable tray and an HVAC duct are at the same elevation. Propose a resolution: which one moves? Why? After the move, what other checks are required?
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

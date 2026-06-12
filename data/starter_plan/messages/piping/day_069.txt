@@ -1,0 +1,29 @@
+LUA BIM LABS Starter
+Day 69 - Pipe Sizing Basics — Velocity, Pressure Drop, and Schedule Reference
+
+1. Why This Matters
+Pipe sizes in a BIM model must match the engineer's design calculations. Understanding the basic logic behind pipe sizing helps you verify your model against the pipe schedule and identify errors before they reach coordination.
+
+2. Core Concept
+- Pipe sizing balances two factors: velocity (how fast the water moves) and pressure drop (how much pump energy is required to push it)
+- Typical velocity limits for chilled water: 1.5-3.0 m/s in distribution mains; 0.5-1.5 m/s in terminal connections to FCUs
+- Higher velocity = smaller pipe (cheaper) but more noise and higher pressure drop
+- Lower velocity = larger pipe but quieter and lower energy consumption
+- The engineer produces a pipe schedule listing each section of the system with its design flow rate and required pipe size
+- BIM modeler's role: model the pipe at the size shown on the engineer's schedule — do not resize based on visual judgment
+
+3. Real Project Lens
+On a hospital project, a junior piping modeler resized several branch pipes to 'look right' relative to the main pipe without checking the engineer's schedule. The downsized branches had velocities exceeding 4 m/s — causing pipe noise complaints in occupied wards. The contractor had to replace 40 metres of branch pipework after occupation.
+
+4. BIM Check
+- Check: every pipe in the BIM model matches the pipe size shown in the engineer's pipe sizing schedule for that section
+- Check: the main distribution pipe sizes are larger than the branch pipes feeding individual AHUs or FCUs
+- Check: no pipe size has been changed from the engineer's schedule without a documented design instruction
+
+5. Common Mistake
+Beginners resize pipes to maintain visual proportionality in the model rather than following the engineer's sizing schedule. Pipe sizes in BIM must reflect engineering calculations.
+
+6. Today's Action
+Request or find a simple pipe sizing schedule from a project or textbook. Pick three pipe sections and verify whether the sizes in the schedule make sense given the flow direction.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

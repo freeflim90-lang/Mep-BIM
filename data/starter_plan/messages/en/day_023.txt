@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 23 - Mechanical Room Coordination Basics
+
+1. Why This Matters
+Mechanical rooms concentrate equipment, pipes, ducts, valves, drains, electrical panels, and maintenance access in one tight area.
+
+2. Core Concept
+Mechanical room BIM coordination should review equipment clearance, pipe connection, duct connection, valve access, floor drain logic, and replacement path.
+
+3. Real Project Lens
+A pump may fit in the model but still have poor access if valves, strainers, cable trays, or walls block maintenance space.
+
+4. BIM Check
+- Check equipment clearance and replacement path.
+- Review pipe and duct connection direction.
+- Confirm valve, strainer, and drain access.
+
+5. Common Mistake
+Beginners often coordinate equipment footprint only and ignore maintenance and replacement space.
+
+6. Today's Action
+Choose one mechanical equipment item and list the access zones needed around it.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

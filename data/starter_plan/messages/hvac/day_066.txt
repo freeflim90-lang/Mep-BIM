@@ -1,0 +1,45 @@
+LUA BIM LABS Starter
+Day 66 - HVAC Clash with Structure — Finding and Fixing
+
+1. Why This Matters
+HVAC ducts are the largest MEP elements by cross-section. They clash with structure more frequently than any other MEP system. An unresolved duct-beam clash discovered on site means cutting, re-routing, or delaying the entire floor.
+
+2. Core Concept
+- Common HVAC-structure clash types:
+  - Duct crossing a beam flange (most common)
+  - Duct passing through a shear wall without a sleeve
+  - AHU on roof penetrating the roof slab
+  - Supply/return duct at corridor crossing a deep transfer beam
+- Resolution strategies:
+  - Lower the duct: Acceptable if ceiling clearance allows — check finished ceiling level
+  - Route around the beam: Change duct path — may affect supply to a zone
+  - Structural penetration: Engineer-approved opening through the beam web only (flanges cannot be cut)
+  - Raise the beam: Structural design change — expensive and slow
+- In Navisworks: run HVAC vs. Structure clash test. Set tolerance to 0mm for hard clashes, 50mm for soft clearance clashes
+
+Clash Resolution Workflow
+
+1. Export HVAC model + Structural model to Navisworks
+2. Run Clash Detective: HVAC vs. Structure, hard clash
+3. Group clashes by floor and by duct size
+4. Prioritize P1 clashes (main ducts crossing primary beams)
+5. For each clash: screenshot viewpoint, assign to HVAC modeler, set deadline
+6. Resolve in Revit — update in Navisworks on next coordination cycle
+
+3. Real Project Lens
+On Level 3 of an office building, the main 1000x400mm supply duct runs east-west along the corridor. At Grid C, a 600mm deep secondary beam crosses the path. The duct invert is at 2800mm, the beam soffit is at 2750mm — a 50mm hard clash. Resolution: reroute the duct 1m north through a beam web opening (structural approval required).
+
+4. BIM Check
+- Check: All P1 duct-beam clashes are logged in the clash tracker with a unique ID
+- Check: Structural penetrations (beam web openings) have written confirmation from the structural engineer before modeling
+- Check: After re-route, re-run clash test to confirm zero remaining hard clashes on that duct run
+
+5. Common Mistake
+Resolving a duct-beam clash by lowering the duct 100mm without checking the finished ceiling level — the duct now passes below the false ceiling and is exposed in the occupied space.
+
+6. Today's Action
+Open Navisworks (or a sample clash report). Find one HVAC vs. Structure clash. Determine from the report whether it is a main duct or branch duct. Write a one-sentence proposed resolution based on today's strategies.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

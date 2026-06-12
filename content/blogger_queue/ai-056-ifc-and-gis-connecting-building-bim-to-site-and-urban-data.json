@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "IFC",
+    "OpenBIM",
+    "Civil BIM",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "IFC and GIS: Connecting Building BIM to Site and Urban Data",
+  "slug": "ifc-and-gis-connecting-building-bim-to-site-and-urban-data",
+  "content": "<p>Building IFC models can be connected to Geographic Information System (GIS) data to enable site-scale analysis: shadow impact on neighbouring properties, noise propagation, flood risk assessment, and urban planning visualisation. This connection between BIM and GIS is increasingly required for planning applications.</p>\n<h2>Why This Matters</h2>\n<p>Urban planning authorities are beginning to require IFC submissions alongside planning applications for assessment of visual impact, solar access, and infrastructure capacity. BIM teams that understand how to produce georeferenced IFC for GIS integration add value beyond traditional BIM coordination.</p>\n<h2>Practical Guidance</h2>\n<p><strong>Georeferenced IFC:</strong> An IFC file exported using national grid coordinates (not internal project coordinates) can be directly imported into GIS software (QGIS, ArcGIS, Esri CityEngine). Confirm the CRS (Coordinate Reference System) used for IFC export matches the target GIS system before submission.</p>\n<p><strong>CityGML and IFC:</strong> CityGML is the GIS standard for 3D urban models. Some planning authorities receive CityGML rather than IFC. IFC-to-CityGML conversion tools exist but produce variable results. Test the conversion on a sample model before committing to CityGML delivery for planning.</p>\n<p><strong>Urban Analysis from BIM:</strong> Autodesk Forma and other urban planning tools import IFC for solar analysis, wind analysis, and urban heat island assessment. These analyses use building massing IFC (LOD 200) rather than detailed coordination IFC — confirm LOD requirements with the planning authority.</p>\n<p><strong>Infrastructure Integration:</strong> IFC4.3 infrastructure extensions allow civil infrastructure (roads, bridges, utilities) to be modeled in the same IFC schema as buildings. This enables a connected BIM data model from building interior to urban infrastructure for smart city applications.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Export IFC using national grid CRS for GIS integration</li>\n<li>Confirm CRS match with GIS team before first submission</li>\n<li>Use LOD 200 massing IFC for planning shadow and solar analysis</li>\n<li>Test IFC-to-CityGML conversion on sample before committing to CityGML delivery</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>Georeferenced BIM connects building data to the city — the IFC coordinate system choice determines whether this connection works or not.</p>"
+}

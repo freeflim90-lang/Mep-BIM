@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 10 - Why Drainage Slope Changes Coordination
+
+1. Why This Matters
+Drainage systems need slope, and slope changes vertical space. A route that looks possible in plan can fail when elevation and fall are considered.
+
+2. Core Concept
+Drainage slope means the pipe elevation changes along its route. BIM coordination must account for start elevation, end elevation, pipe size, fittings, and ceiling space.
+
+3. Real Project Lens
+A long horizontal drain may begin above the ceiling but gradually drop into a conflict zone near beams, ductwork, or cable trays.
+
+4. BIM Check
+- Confirm slope direction and slope value.
+- Review start and end elevations.
+- Check the route in section view along the pipe run.
+
+5. Common Mistake
+Beginners often model drainage as flat piping, then discover elevation conflicts later.
+
+6. Today's Action
+Pick one drainage route and calculate whether the end elevation will be lower than the start elevation.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

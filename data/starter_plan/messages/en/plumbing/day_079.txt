@@ -1,0 +1,47 @@
+LUA BIM LABS Starter
+Day 79 - Sanitary Fixture Schedule
+
+1. Why This Matters
+A fixture schedule is not just an administrative document — it is a quality control tool, a procurement reference, and a handover record all in one. In MEP BIM, the fixture schedule is generated from the model and its accuracy depends entirely on how well the Revit families and parameters have been set up. Producing a correct fixture schedule forces you to check the model data, not just the geometry.
+
+2. Core Concept
+A sanitary fixture schedule lists every plumbing fixture in the project with its key parameters. In Revit, a fixture schedule is a view that queries the model database — it reflects what is actually in the model, not what was intended.
+
+Parameters to include in a sanitary fixture schedule:
+
+| Parameter | What It Records | Source |
+|-----------|----------------|--------|
+| Mark / ID | Unique fixture tag | Revit family instance |
+| Fixture Type | WC, Washbasin, Urinal, Sink, Floor Drain | Family name |
+| Level | Floor / storey location | Level parameter |
+| Room Name | Room where the fixture is located | Revit room tag |
+| System Name | Soil, Waste, Vent | Pipe system assignment |
+| Pipe Size (outlet) | DN of the discharge pipe | Pipe parameter |
+| Fixture Unit Count | Drainage unit value for sizing | Shared parameter or family parameter |
+| Trap Type | P-trap, deep seal, AAV | Family shared parameter |
+| Remarks | Accessibility, specialist fixtures | Manual entry |
+
+How to build the schedule:
+1. Confirm all fixture families have the required shared parameters loaded
+2. Fill in fixture-specific parameters when placing each family
+3. Create a Revit Schedule view filtered to Category: Plumbing Fixtures
+4. Add the required fields in the correct order
+5. Apply sorting by Level, then by Room Name
+6. Review the schedule to identify missing or blank parameter values — these are data gaps in the model
+
+3. Real Project Lens
+On a hospital project, the FM handover required a fixture schedule with room names, fixture unit counts, and trap types for all 340 fixtures. The BIM coordinator discovered that fixture unit values had never been added to the Revit families used on the project — they were in the design specification but not in the BIM model. Adding them retroactively required opening each family, adding a shared parameter, and re-placing the families. The process took three days and could have been avoided if the schedule requirements had been checked at the start of modeling.
+
+4. BIM Check
+- Check: All plumbing fixture families have Fixture Unit Count, Trap Type, and System Name parameters loaded and filled
+- Check: The Revit schedule shows no blank cells for Level, Room Name, or Pipe Size (outlet)
+- Check: The fixture count in the schedule matches the count on the architectural fixture layout drawing
+
+5. Common Mistake
+A common mistake is creating a fixture schedule at the end of the project from whatever data exists in the model. Blank parameter fields are then filled with placeholder text or left empty. This produces a schedule that looks complete but contains inaccurate data, which becomes a problem during FM handover or commissioning.
+
+6. Today's Action
+In Revit, create a Plumbing Fixture Schedule with at least six parameter columns including Level, Fixture Type, System Name, Pipe Size, and Fixture Unit Count. Review the result for any blank cells. For any blank cell, go back to the family or the pipe system and add the missing value. Run the schedule again to confirm it is complete.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

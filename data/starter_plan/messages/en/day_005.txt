@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 5 - The Beginner's Model QA Mindset
+
+1. Why This Matters
+Model QA is not a final inspection at the end. It is a daily habit that keeps the model useful for coordination, reporting, and construction discussion.
+
+2. Core Concept
+Model QA means checking whether geometry, data, view settings, naming, systems, levels, and coordination assumptions are consistent enough for the next person to trust the model.
+
+3. Real Project Lens
+A model may look acceptable in 3D, but missing levels, wrong worksets, inconsistent names, or empty parameters can make schedules and exports unreliable.
+
+4. BIM Check
+- Check geometry: location, size, elevation, and connection.
+- Check data: system name, type, level, and key parameters.
+- Check coordination: view filters, worksets, links, and shared coordinates.
+
+5. Common Mistake
+Beginners often treat QA as someone else's job. Strong BIM teams expect every modeler to perform small QA checks before sharing work.
+
+6. Today's Action
+Create a three-column checklist: Geometry, Data, Coordination. Add three checks under each column.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

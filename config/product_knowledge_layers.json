@@ -1,0 +1,123 @@
+{
+  "version": 1,
+  "service": "LUA BIM LABS",
+  "knowledge_promotion_flow": [
+    "raw_intake",
+    "reviewed_insight",
+    "product_knowledge",
+    "public_or_training_reuse"
+  ],
+  "plans": [
+    {
+      "id": "starter",
+      "name": "Starter",
+      "launch_status": "public",
+      "obsidian_paths": [
+        "NAS_Knowledge/Blog_MEP_BIM",
+        "NAS_Knowledge/Starter_Plan_Clients",
+        "NAS_Knowledge/Product_Knowledge/Starter"
+      ],
+      "collect": [
+        "topic interest",
+        "beginner questions",
+        "terminology gaps",
+        "daily lesson reactions",
+        "basic checklist improvements"
+      ],
+      "reuse": [
+        "public blog",
+        "telegram lesson",
+        "starter FAQ",
+        "beginner checklist"
+      ],
+      "exclude": [
+        "confidential files",
+        "project drawings",
+        "engineering verification",
+        "code compliance confirmation",
+        "construction approval"
+      ]
+    },
+    {
+      "id": "personal_tutor",
+      "name": "Personal Tutor",
+      "launch_status": "coming_soon",
+      "obsidian_paths": [
+        "NAS_Knowledge/Product_Knowledge/Personal_Tutor",
+        "NAS_Knowledge/Client_Learning_Profiles"
+      ],
+      "collect": [
+        "level diagnosis patterns",
+        "skill gaps",
+        "discipline-specific blockers",
+        "personalized curriculum templates",
+        "repeated Q&A patterns"
+      ],
+      "reuse": [
+        "anonymized skill-gap patterns",
+        "diagnosis rubric",
+        "paid curriculum",
+        "personalized lesson templates"
+      ],
+      "review_required": [
+        "client-specific context",
+        "screenshots",
+        "project-implied questions"
+      ]
+    },
+    {
+      "id": "coordinator_mentor",
+      "name": "Coordinator Mentor",
+      "launch_status": "coming_soon",
+      "obsidian_paths": [
+        "NAS_Knowledge/Product_Knowledge/Coordinator_Mentor",
+        "NAS_Knowledge/MEP_Coordination_Playbook"
+      ],
+      "collect": [
+        "coordination decision patterns",
+        "clash classification examples",
+        "model QA checklist improvements",
+        "meeting note structures",
+        "issue tracking workflows"
+      ],
+      "reuse": [
+        "anonymized coordination cases",
+        "QA checklist",
+        "clash triage method",
+        "reporting template"
+      ],
+      "restricted": [
+        "real project names",
+        "model files",
+        "drawings",
+        "clash reports without anonymization"
+      ]
+    },
+    {
+      "id": "project_mentor",
+      "name": "Project Mentor",
+      "launch_status": "coming_soon",
+      "obsidian_paths": [
+        "NAS_Knowledge/Product_Knowledge/Project_Mentor",
+        "NAS_Knowledge/Project_Mentor_Private_Review"
+      ],
+      "collect": [
+        "project mentoring playbooks",
+        "scope definition patterns",
+        "risk and decision logs",
+        "contracted deliverable boundaries",
+        "custom workflow templates"
+      ],
+      "reuse": [
+        "fully anonymized lessons",
+        "internal process improvements",
+        "non-client-specific templates"
+      ],
+      "review_required": [
+        "project-derived examples",
+        "deliverables",
+        "code/design/approval/construction decision issues"
+      ]
+    }
+  ]
+}

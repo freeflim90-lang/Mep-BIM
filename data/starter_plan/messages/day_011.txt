@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 11 - Levels, Views, and Why They Affect MEP Modeling
+
+1. Why This Matters
+MEP elements depend on level, offset, view range, and discipline views. Wrong level logic can make elements appear missing or incorrectly scheduled.
+
+2. Core Concept
+Levels define vertical reference. Views control what you see. Offsets position elements relative to levels. All three affect modeling confidence.
+
+3. Real Project Lens
+A duct may exist in the model but appear missing because the view range or discipline setting hides it. This can cause false QA comments.
+
+4. BIM Check
+- Check element level and offset.
+- Review view range and discipline settings.
+- Confirm whether the element appears in section and 3D views.
+
+5. Common Mistake
+Beginners often assume hidden means deleted, when it may be a view setting issue.
+
+6. Today's Action
+Select one MEP element and record its level, offset, and visibility in plan, section, and 3D.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

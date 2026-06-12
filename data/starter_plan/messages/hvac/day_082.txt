@@ -1,0 +1,28 @@
+LUA BIM LABS Starter
+Day 82 - HVAC and Structural Coordination — Penetrations and Hangers
+
+1. Why This Matters
+HVAC ductwork is often the largest element competing for space with structure. Coordinating penetrations and hanger points before concrete is poured is far less expensive than coordinating after.
+
+2. Core Concept
+- Slab penetrations: where ductwork passes through a concrete slab, a sleeve or opening must be coordinated and submitted before the slab is poured
+- Submit a penetration schedule: grid reference, elevation, size, fire rating, and discipline for each slab opening
+- Beam web penetrations: duct passing through a structural steel beam web requires structural engineer approval — location, size, and reinforcing details
+- Hanger spacing: typically every 2400mm for rectangular ducts under 600mm wide; hanger attachment points must not conflict with structural elements
+- Combined loading: when HVAC, plumbing, and electrical hang from the same structural bay, check cumulative point loads do not exceed slab capacity
+
+3. Real Project Lens
+On a hospital project, 47 slab penetration requests were submitted. The structural engineer approved 39, requested repositioning for 6 (too close to column heads), and rejected 2 (penetrations through post-tensioned slab ribs). Reviewing all 47 in the BIM model before drilling began saved an estimated 3 days of post-construction remediation work.
+
+4. BIM Check
+- Check: every duct crossing a structural slab is submitted as a penetration request with grid reference, elevation, and size
+- Check: duct hanger attachment points do not coincide with structural beams or slab ribs
+- Check: beam web penetrations have received structural engineer approval before the duct route is finalized
+
+5. Common Mistake
+Beginners model the duct route without considering where physical hangers will attach. In dense ceiling voids, hanger locations become a coordination issue in their own right.
+
+6. Today's Action
+For one duct run in a model or sketch, identify two points where trapeze hangers would be required. Note whether each attachment point is clear of the structure.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,45 @@
+LUA BIM LABS Starter
+Day 62 - Gravity Drainage and Slope Modeling in Revit
+
+1. Why This Matters
+Sanitary drainage works by gravity — the pipe must slope downward continuously from the fixture to the drain point. A flat sanitary pipe will block. A pipe with back-fall will cause sewage to pool and back up into fixtures. Slope modeling in Revit is a specific technical skill that must be learned correctly.
+
+2. Core Concept
+- Standard slope requirements:
+  - DN50–DN75 waste pipes: minimum 1:40 (25mm fall per 1000mm run)
+  - DN100 (WC waste): minimum 1:80 (12.5mm fall per 1000mm run)
+  - DN150 and larger: minimum 1:150 (6.7mm fall per 1000mm run)
+- How to set slope in Revit:
+  - Select a pipe → Properties → Slope parameter (set as percentage or ratio)
+  - Or use the "Slope" tool in the Pipe tab for pitched pipes
+  - Always set the high end first (at the fixture) and slope toward the branch collector or stack
+- Slope direction: flow arrow must point downward in elevation — from fixture to drain
+- Slope accumulates: if two branches join, the combined slope continues to the stack
+- Stack (vertical pipe): carries drainage from all floors vertically — no slope needed, it is vertical
+
+Slope Reference Table
+
+| Pipe Size | Minimum Slope | Fall per Metre |
+|---|---|---|
+| DN50 | 1:40 | 25mm |
+| DN75 | 1:40 | 25mm |
+| DN100 | 1:80 | 12.5mm |
+| DN150 | 1:100 | 10mm |
+
+3. Real Project Lens
+A bathroom on Level 5 has a WC at one end and a floor drain at the other — a run of 4.5 metres. The WC waste (DN100) must slope at 1:80 — a total fall of 56mm over 4.5m. The pipe start elevation is set at 400mm below finished floor level. The pipe end elevation at the stack connection is 400 + 56 = 456mm below finished floor. The modeler inputs these elevations and confirms the slope with Revit's slope indicator.
+
+4. BIM Check
+- Check: All sanitary branch pipes have a slope parameter — no horizontal sanitary pipes
+- Check: Slope direction is toward the stack or collector — not back toward the fixture
+- Check: Calculate total fall for the longest branch — confirm it fits within the floor zone (does not drop below the slab soffit below)
+
+5. Common Mistake
+Setting a slope on a pipe that was originally placed horizontally — Revit adjusts the pipe in one direction but the fitting connections at each end may not update correctly, creating a geometric gap in the pipe run.
+
+6. Today's Action
+In Revit, draw a 3-metre horizontal sanitary pipe. Set a slope of 1:80 from one end. Check the elevation difference between the start and end of the pipe. Confirm it shows approximately 37.5mm fall.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

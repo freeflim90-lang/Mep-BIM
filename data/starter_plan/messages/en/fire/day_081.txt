@@ -1,0 +1,47 @@
+LUA BIM LABS Starter
+Day 81 - Verifying Head Coverage in BIM
+
+1. Why This Matters
+A fire protection model can look complete — heads placed, pipes connected, no visible gaps — and still have zones that are not adequately covered. Visual inspection alone is not sufficient. Systematic coverage verification in BIM is the only way to confirm that every square metre of the floor area is within the effective range of at least one sprinkler head.
+
+2. Core Concept
+Coverage verification is the process of confirming that every point on the floor area falls within the design coverage radius of at least one operational sprinkler head.
+
+Method 1 — Revit Coverage Area Parameter
+- Each sprinkler family in Revit can store a Coverage Area parameter (e.g., 12.1 m² for Ordinary Hazard)
+- Sum of all head coverage areas should equal or exceed the total floor area being protected
+- Limitation: this method confirms quantity but not distribution — heads could be clustered at one end
+
+Method 2 — Manual Circle Plot (Rapid Check)
+- In plan view, draw a circle of radius = √(max coverage area / π) around each head
+- Ordinary Hazard: max area 12.1 m² → radius ≈ 1.96 m → use 2.0 m check circle
+- Light Hazard: max area 18.6 m² → radius ≈ 2.43 m → use 2.4 m check circle
+- Any floor area not overlapped by at least one circle is a coverage gap
+
+Method 3 — Navisworks or Third-Party Coverage Tools
+- Some BIM coordination tools have coverage heat map plugins
+- The modeler inputs hazard class and max coverage area; the tool visualises covered vs. uncovered zones
+
+Gap Detection — What to Look For:
+- Irregular room shapes: corners of L-shaped rooms, alcoves, recesses are common gap zones
+- Rooms with large obstructions: equipment rooms where large machinery creates shadow zones
+- Partitioned areas: if a partition was added after the head layout was set, it may create new dead zones
+- Areas below raised floors or within plenums (if protected): often overlooked
+
+3. Real Project Lens
+A modeler verifies coverage on a reconfigured office floor after the architect added three new meeting room partitions. Using the circle plot method, the modeler identifies one 8 m² alcove created by the new partitions that falls outside all head coverage circles. An additional head is added to the alcove, and the branch line is extended. The fire engineer confirms the updated layout.
+
+4. BIM Check
+- Check: Total modeled head coverage area (sum of all head Coverage Area parameters) meets or exceeds the total protected floor area
+- Check: Circle plot method (or equivalent) has been used to confirm distribution — no coverage gap larger than half the head spacing
+- Check: Areas modified by late architectural changes (new partitions, added rooms) have been rechecked for coverage after the change
+
+5. Common Mistake
+Verifying coverage only by counting heads — confirming "we have 48 heads on this floor, which should be enough." Head count alone does not verify distribution. Two heads clustered close together and a large uncovered zone in the corner can both satisfy a head count while failing coverage.
+
+6. Today's Action
+Select one floor of your current or sample model. Use the circle plot method: draw circles of the appropriate radius (based on hazard class) around each head. Identify any area not covered by at least one circle and note its size and location.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

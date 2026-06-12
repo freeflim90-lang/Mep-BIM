@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 30 - Your First Month Starter Review
+
+1. Why This Matters
+The first month should give you a practical foundation: systems, drawings, model data, QA, clash thinking, access, installability, and reporting.
+
+2. Core Concept
+Starter Plan is not about memorizing every BIM command. It is about building a daily habit of checking model meaning, coordination risk, and practical next actions.
+
+3. Real Project Lens
+A beginner who can explain why an issue matters, what to check, and what action to take is already becoming more useful in a BIM team.
+
+4. BIM Check
+- Review your strongest topic from the month.
+- Identify your weakest topic from the month.
+- Choose one habit to repeat for the next 30 days.
+
+5. Common Mistake
+Beginners often finish lessons passively. The value comes from turning them into a repeatable checking habit.
+
+6. Today's Action
+Write your own 30-day MEP BIM improvement plan with three focus areas: tool skill, system understanding, and coordination judgment.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "Navisworks",
+    "BIM Coordination",
+    "BIM",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "Clash Report Workflow in Navisworks: From Detection to Site Resolution",
+  "slug": "clash-report-workflow-in-navisworks-from-detection-to-site-resolution",
+  "content": "<p>Running clash detection in Navisworks is straightforward. Turning the results into resolved site decisions is the complex part. A clear clash report workflow — from detection through classification, assignment, and resolution verification — is what makes clash detection valuable rather than just producing lists.</p>\n<h2>Why This Matters</h2>\n<p>Clash detection without a resolution workflow produces lists of unresolved issues that grow larger with each run. Projects with effective clash workflows use BIM coordination to measurably reduce site RFIs, construction delays, and rework costs.</p>\n<h2>Practical Guidance</h2>\n<p><strong>Clash Test Matrix:</strong> Define a clash test matrix before running detection: which discipline is tested against which, with what clearance tolerance. Document this in the BIM Execution Plan. Running every discipline against every other discipline produces overwhelming results — prioritise by risk.</p>\n<p><strong>Grouping and Classification:</strong> After detection, group clashes by location zone and then by root cause. A routing conflict affecting an entire corridor is one issue requiring one resolution decision, not 40 individual clash items.</p>\n<p><strong>Assignment Protocol:</strong> Assign each clash group to the discipline responsible for proposing a resolution. The assignee confirms the issue in their model, proposes a solution, and updates the clash status to 'Reviewed'. The coordination lead approves the resolution and marks it 'Approved'.</p>\n<p><strong>Resolution Verification:</strong> When a discipline updates their model to resolve a clash, re-run the specific clash test to confirm the resolution is effective before closing the issue. Never close clashes based on verbal confirmation — verify in the model.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Define and document clash test matrix in BIM Execution Plan</li>\n<li>Group clashes by location zone and root cause before distribution</li>\n<li>Assign resolution responsibility to discipline, not to an individual</li>\n<li>Re-run specific clash test to verify resolution before closing issue</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>The clash report workflow is a project coordination protocol — the quality of clash resolution depends on the clarity of the assignment and verification process, not on the software.</p>"
+}

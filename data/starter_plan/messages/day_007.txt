@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 7 - Supply and Return Piping Logic
+
+1. Why This Matters
+Piping systems are not just lines. Supply and return logic affects equipment connection, valve location, flow direction, insulation, and maintenance access.
+
+2. Core Concept
+Supply piping delivers fluid to equipment or terminals; return piping brings it back. Correct separation helps the team understand system performance and coordination sequence.
+
+3. Real Project Lens
+In a mechanical room, chilled water supply and return pipes may run close together. If the model does not clearly separate them, schedules and review comments become confusing.
+
+4. BIM Check
+- Confirm flow direction and equipment connection.
+- Check supply and return naming consistency.
+- Review valve and strainer access on both sides of equipment.
+
+5. Common Mistake
+Beginners often copy pipe routes without checking whether the connection is supply or return.
+
+6. Today's Action
+Sketch one simple supply-return loop and mark equipment, valves, and flow direction.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

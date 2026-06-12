@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "BIM",
+    "Revit",
+    "Revit Workflow",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "Revit Linked Model Management: Best Practices for Large Project Teams",
+  "slug": "revit-linked-model-management-best-practices-for-large-project-teams",
+  "content": "<p>On large projects, Revit models link dozens of discipline and zone files. Without systematic link management, models open slowly, links break when files move, and coordinators work with outdated discipline models without knowing it.</p>\n<h2>Why This Matters</h2>\n<p>A Revit model with 15 unloaded or missing links produces coordination decisions based on incomplete information. The coordinator may not realise that the structural link has not been updated in three weeks because no notification was sent and the missing link is not visible in the current view.</p>\n<h2>Practical Guidance</h2>\n<p><strong>Link Organization:</strong> Store all linked models in a consistent folder structure: /ProjectName/BIM/[Discipline]/Issued/. Use Revit's Manage Links dialog to confirm path type (Relative vs Absolute). Relative paths survive folder moves within the project structure; absolute paths do not.</p>\n<p><strong>Update Notification Protocol:</strong> Establish a team agreement: when a discipline issues a new model version, they notify the coordination team with the filename and date. The coordination team reloads the link and confirms alignment before the next coordination run.</p>\n<p><strong>Workset-Based Link Visibility:</strong> Place each linked model on a dedicated workset (e.g. WST_LINK_ARCH, WST_LINK_STRUC, WST_LINK_MEP). This allows coordinators to show or hide each discipline model using workset visibility controls without affecting other model elements.</p>\n<p><strong>Link Performance:</strong> Large linked models slow Revit significantly. Open link options allow links to be loaded as room-bounding only, or not loaded by default. Configure link open options per discipline to balance performance and coordination visibility.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Store all linked models in a consistent project folder structure with relative paths</li>\n<li>Establish a formal notification protocol for new model versions</li>\n<li>Place each link on a dedicated workset</li>\n<li>Set link open options to balance performance and coordination needs</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>Link management is version control for the coordination model — treat link updates as formal events, not casual file swaps.</p>"
+}

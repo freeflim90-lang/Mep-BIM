@@ -1,0 +1,28 @@
+LUA BIM LABS Starter
+Day 74 - Pipe Support and Hanger Coordination
+
+1. Why This Matters
+Pipe supports and hangers hold the distribution system in place throughout its operating life. BIM modeling of hanger positions and types prevents structural conflicts and ensures the system can be installed and maintained.
+
+2. Core Concept
+- Pipe hangers attach to the structure above and hold the pipe at its design elevation — the attachment point must be a suitable structural member
+- Hanger spacing: maximum spacing depends on pipe material and diameter — typically 2400-3000mm for steel pipe, 1200-1800mm for copper
+- Trapeze hangers: used when multiple pipes run parallel — a horizontal rod carries multiple pipes at different levels from one set of structural attachment points
+- Hanger point conflicts: attachment bolts or rods cannot pass through post-tensioned slabs, embedded services, or waterproofing membranes
+- In BIM: model hanger attachment points at the correct spacing and verify each attachment is to an accessible structural element
+
+3. Real Project Lens
+On a hospital project, the piping team submitted a hanger point schedule showing 340 structural attachment points. The structural engineer identified 18 points that fell within the flat soffit of a post-tensioned slab — attachment was not permitted. The piping team had to re-route 4 pipe runs to find alternative hanger attachment zones.
+
+4. BIM Check
+- Check: hanger attachment points are spaced at or below the maximum spacing for the pipe material and diameter
+- Check: no hanger attachment point is located within a post-tensioned slab, waterproofing membrane, or embedded conduit zone
+- Check: trapeze hanger widths account for all pipes they carry, with minimum 50mm spacing between adjacent pipe insulation
+
+5. Common Mistake
+Beginners model pipes without considering where the physical hangers will connect to the structure. In dense ceiling voids, hanger attachment zones become a critical coordination constraint.
+
+6. Today's Action
+For one 10-metre pipe run in a model or sketch, mark the hanger positions at the correct spacing. Note which structural elements each hanger would attach to.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

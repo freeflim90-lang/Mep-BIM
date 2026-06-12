@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 17 - Schedules as a QA Tool
+
+1. Why This Matters
+Schedules are not only for quantity takeoff. They can reveal missing data, inconsistent types, wrong levels, and unexpected system values.
+
+2. Core Concept
+A Revit schedule is a structured view of model data. It helps you review many elements faster than selecting them one by one.
+
+3. Real Project Lens
+A schedule can quickly show that some diffusers have no system name or that equipment is assigned to the wrong level.
+
+4. BIM Check
+- Sort schedules by system, level, and type.
+- Look for blank values in important columns.
+- Use schedules to find outliers before sharing the model.
+
+5. Common Mistake
+Beginners often treat schedules as output only, not as a daily model checking tool.
+
+6. Today's Action
+Create a sample schedule idea for one category and decide which columns would help QA.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

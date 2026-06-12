@@ -1,0 +1,52 @@
+LUA BIM LABS Starter
+Day 81 - Sloped Drain vs. Structural Beam
+
+1. Why This Matters
+Sloped drainage pipes and horizontal structural beams are on a collision course in almost every multi-storey building. As a drain pipe runs horizontally away from a fixture, its invert drops. Structural beams run horizontally at a fixed level. At some point, the two intersect. This is the single most common plumbing clash in BIM coordination, and understanding how to resolve it is a core competency for any MEP BIM coordinator.
+
+2. Core Concept
+The clash occurs because:
+- A drain pipe starts at a fixture outlet at a relatively high invert and slopes downward as it extends
+- A structural beam is fixed at a set level below the slab
+- As the drain travels far enough, its invert drops below the top of the beam flange
+
+Resolution strategies in order of preference:
+
+1. Reroute the pipe to run parallel to the beam rather than across it
+   - Most effective when the beam runs in one direction and the pipe can be turned to follow the beam bay
+
+2. Raise the fixture outlet (raise the finished floor level)
+   - Only possible if the architect can raise the FFL in that zone — requires early coordination
+
+3. Reduce pipe run length
+   - Move the stack closer to the fixtures to shorten the slope drop
+
+4. Use a lower pipe diameter (if fixture unit count allows)
+   - A smaller diameter pipe can run at a steeper slope for a shorter distance
+
+5. Coordinate a structural beam notch or coring
+   - Last resort; requires structural engineer approval and a detailed design change
+
+BIM workflow to identify and resolve:
+1. Run Interference Check in Revit or clash detection in Navisworks between plumbing pipes and structural framing
+2. Filter results to show only drain pipe vs. beam hard clashes
+3. For each clash, measure the available clearance and the pipe invert at the conflict point
+4. Apply the preferred resolution strategy
+5. Rerun clash detection to confirm the resolution is effective
+
+3. Real Project Lens
+On a hospital Level 2 coordination, a 25-metre branch drain serving a ward bathroom ran perpendicular to a series of 500-mm-deep secondary beams. Clash detection in Navisworks showed 7 hard clashes between the drain and the beam flanges. The resolution was to redirect the drain to run along the corridor in the beam bay, then turn 90 degrees to reach the stack — adding 4 metres to the pipe run but eliminating all 7 clashes. The detour was confirmed against the updated fixture unit count and pipe sizing.
+
+4. BIM Check
+- Check: Interference Check has been run between all drainage pipes and structural framing models
+- Check: All hard clashes between sloped drain pipes and structural beams have been resolved and documented in the clash report
+- Check: Resolution strategies have been noted in the coordination log — not just fixed silently in the model
+
+5. Common Mistake
+A common mistake is resolving the clash by lifting the drain pipe over the beam without checking whether this disrupts the slope continuity. Raising a pipe mid-run to jump over a beam can create a reverse-slope section upstream of the beam. That section holds water and causes chronic blockages.
+
+6. Today's Action
+In your Revit model, run an Interference Check between your drainage pipes and structural framing. Identify the first hard clash. Measure the pipe invert and the beam top-of-flange level at that point. Record the gap. Then test one resolution strategy — reroute or shorten — and rerun the check to confirm the clash is resolved.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

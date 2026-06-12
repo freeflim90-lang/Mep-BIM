@@ -1,0 +1,28 @@
+LUA BIM LABS Starter
+Day 84 - Top 5 Common Piping BIM Errors
+
+1. Why This Matters
+Learning from errors that appear repeatedly on real projects is more efficient than discovering them for the first time on your own project. These five piping BIM errors are the most frequently found on MEP coordination reviews.
+
+2. Core Concept
+- Error 1: Supply and return pipes reversed at equipment — the most common and costly piping BIM error; discovered only at commissioning
+- Error 2: Missing pipe reducers — direct pipe size changes without reducer fittings; causes clash detection to miss the larger fitting footprint
+- Error 3: Insulation not modeled — pipes clash with structure during installation when insulation is applied; not visible in the uninsulated BIM model
+- Error 4: Balancing valves omitted — commissioning cannot be completed; retrofitting after ceiling closure is expensive
+- Error 5: Incorrect system assignment — supply pipes assigned to return system or vice versa; produces wrong data in schedules and system inspector
+
+3. Real Project Lens
+A piping model review on a commercial project found all five errors present in a single model submission. The model was returned for full revision, adding 8 days to the coordination program. Error 1 (reversed supply/return) and Error 5 (wrong system assignment) appeared together — the modeler had modeled the correct route but assigned the wrong system type, then reversed the connection at the AHU to try to fix the system display.
+
+4. BIM Check
+- Check: supply and return pipe system assignments are verified at every equipment connection point
+- Check: reducer fittings are present wherever pipe diameter changes in the model
+- Check: insulation thickness is applied to all specified insulated pipes before the model is used for clash detection
+
+5. Common Mistake
+Beginners often fix the most visible errors (open connectors, Revit warnings) before submission and miss the less visible but more critical errors (reversed supply/return, missing reducers).
+
+6. Today's Action
+Review one piping model for all five error types. Write down whether each error is present, absent, or cannot be determined from the information available.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "BIM",
+    "LOD",
+    "Multi-Discipline",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "LOD Matrix for Multi-Discipline BIM: What Each Team Must Deliver",
+  "slug": "lod-matrix-for-multi-discipline-bim-what-each-team-must-deliver",
+  "content": "<p>A Level of Development matrix is the project document that defines what each element in each discipline model must contain at each project stage. Without an agreed LOD matrix, disciplines deliver models at different LODs and coordination decisions are made from incompatible information.</p>\n<h2>Why This Matters</h2>\n<p>An LOD matrix disagreement surfaces most painfully when a structural engineer coordinates against an architectural model assuming LOD 300 wall positions and discovers the walls are LOD 200 schematic placeholders. The LOD matrix prevents this by creating a formal agreement before coordination begins.</p>\n<h2>Practical Guidance</h2>\n<p><strong>Matrix Structure:</strong> Structure the LOD matrix by discipline row and project stage column. Each cell contains the required LOD (100-400) and a brief note on the key characteristics. For example: 'Architectural Walls, Detailed Design Stage: LOD 300 — actual dimensions, material types, fire ratings populated'.</p>\n<p><strong>Discipline-Specific LOD Requirements:</strong> Architectural elements typically advance to LOD 300 earlier than MEP systems. Structural elements in the foundation zone must reach LOD 300 before MEP underground design begins. These sequencing requirements should be explicit in the matrix.</p>\n<p><strong>LOD vs LOI:</strong> Level of Development (LOD) covers both geometry (Level of Detail) and information (Level of Information, LOI). A wall at LOD 300 has both correct geometry and required parameters (fire rating, material, cost code). Both must be specified and verified in the matrix.</p>\n<p><strong>Verification Process:</strong> Define how LOD compliance is verified at each stage gate: automated Solibri check, manual sample audit, or discipline self-certification. Without a verification mechanism, the LOD matrix is an aspiration, not a commitment.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Create LOD matrix before first modeling begins</li>\n<li>Include LOD sequencing requirements (what must reach LOD 300 before what can be designed)</li>\n<li>Specify LOD (geometry) and LOI (information) separately for each element type</li>\n<li>Define verification process for each stage gate in the matrix</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>An LOD matrix without a verification process is a wish list — the matrix has value only when someone checks compliance.</p>"
+}

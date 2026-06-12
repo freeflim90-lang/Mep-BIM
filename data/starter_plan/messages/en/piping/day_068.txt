@@ -1,0 +1,29 @@
+LUA BIM LABS Starter
+Day 68 - Chilled Water System Overview — Supply, Return, and Flow Direction
+
+1. Why This Matters
+Chilled water systems are the circulatory system of large HVAC plants. Understanding how water flows from chiller to AHU and back is the foundation for coordinating all piping connections in BIM.
+
+2. Core Concept
+- The chilled water system uses chilled water produced by a chiller to cool air in AHUs and FCUs
+- Primary loop: water circulates from chiller evaporator through the primary pumps and back — this loop maintains constant flow through the chiller
+- Secondary loop: distribution pumps push chilled water through the building to AHUs and FCUs — flow varies based on cooling demand
+- Supply water is typically 6-7°C; return water is 12-14°C after absorbing heat from the air
+- In Revit: supply and return pipes must be assigned to separate system types — 'Hydronic Supply' and 'Hydronic Return'
+- Flow direction determines pipe connection orientation at every piece of equipment — verify supply and return connections match the equipment's inlet/outlet faces
+
+3. Real Project Lens
+On a commercial tower, the piping modeler connected chilled water supply and return pipes to the AHUs without confirming the connection face orientation in the manufacturer's submittal. Seven AHUs had their supply and return connected in reverse. The error was discovered during commissioning when the water flow meters showed reversed temperature differentials. Correcting the pipe connections required the piping contractor to return to 7 levels.
+
+4. BIM Check
+- Check: supply and return pipes are assigned to separate named Revit MEP systems throughout the chilled water distribution
+- Check: the flow direction at each AHU and FCU connection matches the manufacturer's indicated supply inlet and return outlet
+- Check: a Revit pipe system diagram can be produced showing the complete chilled water flow path from chiller to each AHU
+
+5. Common Mistake
+Beginners often model the pipe geometry correctly but reverse supply and return at equipment connections because they did not confirm the connection face in the submittal.
+
+6. Today's Action
+Sketch a simple chilled water flow diagram: chiller → primary pump → distribution header → two AHUs → return header → chiller. Label supply temperature (6°C) and return temperature (13°C) at each segment.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

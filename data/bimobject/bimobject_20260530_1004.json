@@ -1,0 +1,5215 @@
+{
+  "updated_at": "2026-05-30T10:04:05.419724",
+  "source": "https://www.bimobject.com/ko",
+  "total_products": 400,
+  "categories": {
+    "hvac": [
+      {
+        "id": "f6c11b21-55bc-4e02-a470-ee02f1e7fa17",
+        "name": "Vertiv™ CoolPhase Perimeter – DX Floor Mount, PAM010-140, R513A Indoor",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vertiv-pam-dx-perimeter-unit",
+        "url": "https://www.bimobject.com/ko/vertiv/vertiv-pam-dx-perimeter-unit",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 5
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "005ed177-7877-4060-b027-156d8192f64f",
+        "name": "model SRM4_Single suction multi-wing fan",
+        "brand": "EBARA［荏原製作所］",
+        "brand_permalink": "ebara-japan",
+        "permalink": "model-srm4",
+        "url": "https://www.bimobject.com/ko/ebara-japan/model-srm4",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 10
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "081b9826-cc51-40af-b82b-092c3b3a06a9",
+        "name": "Vertiv™ Liebert® AFC - The Inverter Screw Chiller Range with low-GWP Refrigerant",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vertiv-afc-chillers",
+        "url": "https://www.bimobject.com/ko/vertiv/vertiv-afc-chillers",
+        "rating": {
+          "numberOfRatings": 6,
+          "sumOfRatings": 30
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "99f98e55-7a62-42a9-8122-3be1b307509c",
+        "name": "Vertiv™ CoolPhase Condenser – OAC models",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vertiv-oac-coolphase-condenser",
+        "url": "https://www.bimobject.com/ko/vertiv/vertiv-oac-coolphase-condenser",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "bb93909d-4f5a-4473-93d6-7bd8a92718ba",
+        "name": "Sloped Wall Canopy Exhaust Hood with Perforated Supply Plenum, SND-2 Series",
+        "brand": "CaptiveAire",
+        "brand_permalink": "captiveaire",
+        "permalink": "captiveaire-043",
+        "url": "https://www.bimobject.com/ko/captiveaire/captiveaire-043",
+        "rating": {
+          "numberOfRatings": 16,
+          "sumOfRatings": 54
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "5ecbf06c-04f9-4d54-8768-87fcb8b1ec38",
+        "name": "RO 400 Series Water Treatment System",
+        "brand": "DriSteem",
+        "brand_permalink": "dristeem",
+        "permalink": "400-series-water-treatment-system",
+        "url": "https://www.bimobject.com/ko/dristeem/400-series-water-treatment-system",
+        "rating": {
+          "numberOfRatings": 5,
+          "sumOfRatings": 20
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "3dffc978-62b0-4f27-843e-e85896a25325",
+        "name": "Linear Slot Diffuser - Drop Face - Model 6600 Series",
+        "brand": "METALAIRE",
+        "brand_permalink": "metalaire",
+        "permalink": "6600-lsd-concealed-drop-face",
+        "url": "https://www.bimobject.com/ko/metalaire/6600-lsd-concealed-drop-face",
+        "rating": {
+          "numberOfRatings": 13,
+          "sumOfRatings": 55
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "b92625e5-48d1-41bb-aff8-5f12d0a63157",
+        "name": "Big Ass Fans Haiku L 52in Indoor Smart Ceiling Fan",
+        "brand": "Big Ass Fans",
+        "brand_permalink": "bigassfan",
+        "permalink": "big-ass-fans-haiku-l-52in-indoor-smart-ceiling-fan",
+        "url": "https://www.bimobject.com/ko/bigassfan/big-ass-fans-haiku-l-52in-indoor-smart-ceiling-fan",
+        "rating": {
+          "numberOfRatings": 30,
+          "sumOfRatings": 111
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "e3a7db3f-a8f8-4b36-bef4-57321451b67e",
+        "name": "MIT 02Lt/1000Lt - Expansion Tanks",
+        "brand": "Ekin Endustriyel",
+        "brand_permalink": "ekin-endustriyel",
+        "permalink": "mit-02-1000-expansion-tanks",
+        "url": "https://www.bimobject.com/ko/ekin-endustriyel/mit-02-1000-expansion-tanks",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 10
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "f2465e41-ed28-4792-ba7d-ec0329058367",
+        "name": "CADDY Loop Hangers",
+        "brand": "nVent",
+        "brand_permalink": "nvent",
+        "permalink": "nvent-caddy-loop-hangers",
+        "url": "https://www.bimobject.com/ko/nvent/nvent-caddy-loop-hangers",
+        "rating": {
+          "numberOfRatings": 3,
+          "sumOfRatings": 12
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "1d9acd3b-d541-4b4e-ab02-e01378b0fa20",
+        "name": "Single Island V-Bank Exhaust Only Hood with Perforated Supply Plenum, NDI Series",
+        "brand": "CaptiveAire",
+        "brand_permalink": "captiveaire",
+        "permalink": "captiveaire-044",
+        "url": "https://www.bimobject.com/ko/captiveaire/captiveaire-044",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 20
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "c9cc63b7-fa77-4a0a-bcdc-e165ee8b06e2",
+        "name": "SMD/AMD - Modular Louvered Face Diffuser",
+        "brand": "Price Industries",
+        "brand_permalink": "price-industries",
+        "permalink": "smd-modular-louvered-diffuser",
+        "url": "https://www.bimobject.com/ko/price-industries/smd-modular-louvered-diffuser",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 10
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "88609e05-ada7-40f2-b930-ca73284266cb",
+        "name": "Vertiv™ CoolPhase Condenser – OAV models",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vertiv-oav-coolphase-condenser",
+        "url": "https://www.bimobject.com/ko/vertiv/vertiv-oav-coolphase-condenser",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "7dcaac11-7449-47aa-8e04-c133ed4a015e",
+        "name": "Duct Fancoil",
+        "brand": "GREE Products",
+        "brand_permalink": "greeproducts",
+        "permalink": "duct-fancoil",
+        "url": "https://www.bimobject.com/ko/greeproducts/duct-fancoil",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 5
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "b5591cc0-267e-4db8-b329-09bc3fd9e59b",
+        "name": "Cassette 360º",
+        "brand": "GREE Products",
+        "brand_permalink": "greeproducts",
+        "permalink": "cassette-360",
+        "url": "https://www.bimobject.com/ko/greeproducts/cassette-360",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 20
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "e08453f4-b1ae-403c-ab41-4c7518994333",
+        "name": "SDS - Linear Slot Diffuser",
+        "brand": "Price Industries",
+        "brand_permalink": "price-industries",
+        "permalink": "sds-sdr-linear-slot-diffuser",
+        "url": "https://www.bimobject.com/ko/price-industries/sds-sdr-linear-slot-diffuser",
+        "rating": {
+          "numberOfRatings": 5,
+          "sumOfRatings": 23
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "12a7f692-6668-494e-b4fb-4f28f8038d5c",
+        "name": "Wall Canopy Exhaust Hood with Perforated Supply Plenum, ND-2 Series",
+        "brand": "CaptiveAire",
+        "brand_permalink": "captiveaire",
+        "permalink": "captiveaire-032",
+        "url": "https://www.bimobject.com/ko/captiveaire/captiveaire-032",
+        "rating": {
+          "numberOfRatings": 7,
+          "sumOfRatings": 26
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "d6e7c40a-38f9-4829-a2ce-a8139f67ed61",
+        "name": "Ventilation Systems BEDROOM",
+        "brand": "Stiebel Eltron (Thailand) สตีเบล เอลทรอน",
+        "brand_permalink": "stiebel-eltron-thailand",
+        "permalink": "ventilation-systems-bedroom",
+        "url": "https://www.bimobject.com/ko/stiebel-eltron-thailand/ventilation-systems-bedroom",
+        "rating": {
+          "numberOfRatings": 24,
+          "sumOfRatings": 109
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "81968d5d-5f6f-4c2f-8884-8f69331d17e1",
+        "name": "Dehumidifier",
+        "brand": "DriSteem",
+        "brand_permalink": "dristeem",
+        "permalink": "dehumidifier",
+        "url": "https://www.bimobject.com/ko/dristeem/dehumidifier",
+        "rating": {
+          "numberOfRatings": 5,
+          "sumOfRatings": 25
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "f8230142-13b3-40b3-87e0-84e34f8a63e8",
+        "name": "Wall Canopy Exhaust Hood, ND-2 Series",
+        "brand": "CaptiveAire",
+        "brand_permalink": "captiveaire",
+        "permalink": "captiveaire-031",
+        "url": "https://www.bimobject.com/ko/captiveaire/captiveaire-031",
+        "rating": {
+          "numberOfRatings": 13,
+          "sumOfRatings": 39
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "7b27023a-2f69-45c3-9ed7-1a0cf8dfa638",
+        "name": "Bathroom Fans EA",
+        "brand": "BVN",
+        "brand_permalink": "bvn",
+        "permalink": "ea",
+        "url": "https://www.bimobject.com/ko/bvn/ea",
+        "rating": {
+          "numberOfRatings": 26,
+          "sumOfRatings": 111
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "d0553a5c-5681-47ab-9141-7a82e0f9b77f",
+        "name": "Vertiv HCR & HBR Dry Cooler Systems",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vertiv-hcr-and-hbr",
+        "url": "https://www.bimobject.com/ko/vertiv/vertiv-hcr-and-hbr",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 5
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "63f72220-0ec1-4a45-9488-36b6a254d23a",
+        "name": "CTM",
+        "brand": "ANJOS Ventilation",
+        "brand_permalink": "anjos_ventilation",
+        "permalink": "anj010016",
+        "url": "https://www.bimobject.com/ko/anjos_ventilation/anj010016",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 17
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "59ef08a3-af08-4e2e-a1ef-2a472f2dab46",
+        "name": "Topvex TR Series. Compact AHU",
+        "brand": "Systemair",
+        "brand_permalink": "systemair",
+        "permalink": "systemair-topvex-tr",
+        "url": "https://www.bimobject.com/ko/systemair/systemair-topvex-tr",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 20
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "729f7c96-be2f-4e11-9939-f641ad9218de",
+        "name": "Liebert® XDU1350 Coolant Distribution Unit",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vertiv-xdu-1350",
+        "url": "https://www.bimobject.com/ko/vertiv/vertiv-xdu-1350",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 10
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "291150e4-91b1-4882-8e9d-b8c9723a86ee",
+        "name": "Heat & Condensate Exhaust Only Vent Hood, VH1 Series",
+        "brand": "CaptiveAire",
+        "brand_permalink": "captiveaire",
+        "permalink": "captiveaire-040",
+        "url": "https://www.bimobject.com/ko/captiveaire/captiveaire-040",
+        "rating": {
+          "numberOfRatings": 12,
+          "sumOfRatings": 51
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "03942dbe-3735-44d7-8b4a-d3a64647442a",
+        "name": "Big Ceiling Air Conditioner",
+        "brand": "Samsung HVAC North America",
+        "brand_permalink": "samsung",
+        "permalink": "big-ceiling-air-conditioner",
+        "url": "https://www.bimobject.com/ko/samsung/big-ceiling-air-conditioner",
+        "rating": {
+          "numberOfRatings": 11,
+          "sumOfRatings": 48
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "101a585e-7ae7-451c-a5b9-90a75b777cbd",
+        "name": "Suspension Kit Wire System HVAC",
+        "brand": "Hilti",
+        "brand_permalink": "hilti",
+        "permalink": "wiresystem_suspension",
+        "url": "https://www.bimobject.com/ko/hilti/wiresystem_suspension",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 10
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "d08b760f-4600-4682-ba67-8667d47854d0",
+        "name": "RO 200 Series Water Treatment System",
+        "brand": "DriSteem",
+        "brand_permalink": "dristeem",
+        "permalink": "200-series-water-treatment-system",
+        "url": "https://www.bimobject.com/ko/dristeem/200-series-water-treatment-system",
+        "rating": {
+          "numberOfRatings": 7,
+          "sumOfRatings": 31
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "caa74b23-a985-45bf-ad8e-21b9c76e4471",
+        "name": "CADDY Clevis Hangers",
+        "brand": "nVent",
+        "brand_permalink": "nvent",
+        "permalink": "nvent-caddy-clevis-hangers",
+        "url": "https://www.bimobject.com/ko/nvent/nvent-caddy-clevis-hangers",
+        "rating": {
+          "numberOfRatings": 3,
+          "sumOfRatings": 11
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "50e7f66f-8a80-49e5-a09c-20fc6938ca65",
+        "name": "Atmospheric RO Holding Tank",
+        "brand": "DriSteem",
+        "brand_permalink": "dristeem",
+        "permalink": "atmospheric-ro-holding-tank",
+        "url": "https://www.bimobject.com/ko/dristeem/atmospheric-ro-holding-tank",
+        "rating": {
+          "numberOfRatings": 11,
+          "sumOfRatings": 51
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "be38bc0c-bb35-4880-8579-94a7dcabc853",
+        "name": "Pre-Treatment Systems",
+        "brand": "DriSteem",
+        "brand_permalink": "dristeem",
+        "permalink": "pre-treatment",
+        "url": "https://www.bimobject.com/ko/dristeem/pre-treatment",
+        "rating": {
+          "numberOfRatings": 9,
+          "sumOfRatings": 44
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "0da3c424-65e8-4769-a40c-cffbe3d05a5d",
+        "name": "FUJITSU SPLIT ASYG18LFCA",
+        "brand": "GENERAL",
+        "brand_permalink": "generalww",
+        "permalink": "asyg18lfca",
+        "url": "https://www.bimobject.com/ko/generalww/asyg18lfca",
+        "rating": {
+          "numberOfRatings": 80,
+          "sumOfRatings": 365
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "3f3718f3-1f9c-44ca-a3fe-72bad08adc9e",
+        "name": "Vertiv™ CoolPhase Ceiling",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vertiv-coolphase-ceiling",
+        "url": "https://www.bimobject.com/ko/vertiv/vertiv-coolphase-ceiling",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "bd4ad781-c292-4fc1-bb6a-00b235ceed65",
+        "name": "Linear Bar Grille L-BG, and Linear Bar Grille with damper L-BG-OB",
+        "brand": "LAMINAIRE",
+        "brand_permalink": "laminaire",
+        "permalink": "l-bg",
+        "url": "https://www.bimobject.com/ko/laminaire/l-bg",
+        "rating": {
+          "numberOfRatings": 8,
+          "sumOfRatings": 37
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "0f3c6b98-d282-4d14-81bd-183a28810393",
+        "name": "80 - Egg Crate Grille",
+        "brand": "Price Industries",
+        "brand_permalink": "price-industries",
+        "permalink": "80-81-82-egg-crate",
+        "url": "https://www.bimobject.com/ko/price-industries/80-81-82-egg-crate",
+        "rating": {
+          "numberOfRatings": 8,
+          "sumOfRatings": 33
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "3420bebf-f820-4f05-aeea-d1ff3711f2c3",
+        "name": "GreenRoo™ Turbine Vent, Wind-Driven Turbine Ventilator",
+        "brand": "Moffitt Corporation",
+        "brand_permalink": "moffitt",
+        "permalink": "greenroo-turbine-vent",
+        "url": "https://www.bimobject.com/ko/moffitt/greenroo-turbine-vent",
+        "rating": {
+          "numberOfRatings": 32,
+          "sumOfRatings": 138
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "6dcefbea-bd6b-42fd-bab9-5ed1e5c88011",
+        "name": "Ceiling & Inline Fan, CFA Series",
+        "brand": "CaptiveAire",
+        "brand_permalink": "captiveaire",
+        "permalink": "captiveaire-006",
+        "url": "https://www.bimobject.com/ko/captiveaire/captiveaire-006",
+        "rating": {
+          "numberOfRatings": 13,
+          "sumOfRatings": 56
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "8ec4e41c-7bd9-4f1d-bbe4-afe496b574bd",
+        "name": "MIT BC 20/1680 Shell&Tube Condenser",
+        "brand": "Ekin Endustriyel",
+        "brand_permalink": "ekin-endustriyel",
+        "permalink": "mit-bc-20-1680",
+        "url": "https://www.bimobject.com/ko/ekin-endustriyel/mit-bc-20-1680",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 4
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "69a8eb12-aacd-4789-9713-b56e5290c743",
+        "name": "Big Ass Fans Haiku 52in Indoor Smart Ceiling Fan",
+        "brand": "Big Ass Fans",
+        "brand_permalink": "bigassfan",
+        "permalink": "big-ass-fans-haiku-52in-indoor-smart-ceiling-fan",
+        "url": "https://www.bimobject.com/ko/bigassfan/big-ass-fans-haiku-52in-indoor-smart-ceiling-fan",
+        "rating": {
+          "numberOfRatings": 25,
+          "sumOfRatings": 112
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "ef049f05-74dc-4d92-ae6f-1047be2e4133",
+        "name": "AT Cooling Tower - End Connection",
+        "brand": "EVAPCO, Inc.",
+        "brand_permalink": "evapco",
+        "permalink": "at-endconnection",
+        "url": "https://www.bimobject.com/ko/evapco/at-endconnection",
+        "rating": {
+          "numberOfRatings": 7,
+          "sumOfRatings": 35
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "bb35de6f-92c6-46e9-8692-d3a480da240c",
+        "name": "Gyrofocus - Suspended designer fireplace",
+        "brand": "Focus Creation",
+        "brand_permalink": "focus",
+        "permalink": "gyrofocus",
+        "url": "https://www.bimobject.com/ko/focus/gyrofocus",
+        "rating": {
+          "numberOfRatings": 24,
+          "sumOfRatings": 107
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "ae0ef829-a53f-46c1-9118-c384aba9cc1d",
+        "name": "Standard Side/Down Discharge Rooftop Filtered Make-up Air Fan",
+        "brand": "CaptiveAire",
+        "brand_permalink": "captiveaire",
+        "permalink": "captiveaire-041",
+        "url": "https://www.bimobject.com/ko/captiveaire/captiveaire-041",
+        "rating": {
+          "numberOfRatings": 9,
+          "sumOfRatings": 41
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "28550491-a137-4dbf-a5c5-65062787f2e0",
+        "name": "PURMO Compact",
+        "brand": "Purmo",
+        "brand_permalink": "purmo",
+        "permalink": "purmo-compact-panel-radiators",
+        "url": "https://www.bimobject.com/ko/purmo/purmo-compact-panel-radiators",
+        "rating": {
+          "numberOfRatings": 20,
+          "sumOfRatings": 66
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "ef661cbf-8800-46c6-99bd-7d10c083777d",
+        "name": "Wall Mounted, MSZ Series Air Conditioner D Series",
+        "brand": "Mitsubishi Electric US",
+        "brand_permalink": "mitsubishi-electric-us",
+        "permalink": "mitsubishielectric-020",
+        "url": "https://www.bimobject.com/ko/mitsubishi-electric-us/mitsubishielectric-020",
+        "rating": {
+          "numberOfRatings": 14,
+          "sumOfRatings": 49
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "552985f3-60a0-4852-bfe8-326cfcb4f14a",
+        "name": "AIRFOR3 WALL – CENTRIFUGAL AIR CURTAIN WITH UPPER AIR INTAKE",
+        "brand": "Tecnosystemi S.p.A. Società Benefit",
+        "brand_permalink": "tecnosystemi",
+        "permalink": "airfor3-wall-centrifugal-air-curtain-with-upper-air-intake",
+        "url": "https://www.bimobject.com/ko/tecnosystemi/airfor3-wall-centrifugal-air-curtain-with-upper-air-intake",
+        "rating": {
+          "numberOfRatings": 9,
+          "sumOfRatings": 37
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "d5b808d2-fea4-4a87-a641-c8350e4c45d3",
+        "name": "MIT 1250Lt/10000Lt - Expansion Tanks",
+        "brand": "Ekin Endustriyel",
+        "brand_permalink": "ekin-endustriyel",
+        "permalink": "mit-1250lt-10000lt-expansion-tanks",
+        "url": "https://www.bimobject.com/ko/ekin-endustriyel/mit-1250lt-10000lt-expansion-tanks",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 10
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "8d2231e4-8103-4285-b0e5-f2beb3be2b8b",
+        "name": "Vertiv™ CoolPhase Wall Condenser Unit",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vertiv-coolphase-wall-condenser-unit",
+        "url": "https://www.bimobject.com/ko/vertiv/vertiv-coolphase-wall-condenser-unit",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "156fbf5f-064b-4f3e-b08b-408c484a963a",
+        "name": "FLYARM",
+        "brand": "GREE Products",
+        "brand_permalink": "greeproducts",
+        "permalink": "flyarm",
+        "url": "https://www.bimobject.com/ko/greeproducts/flyarm",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 10
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "8c16629e-2943-4419-bd16-3b310c563022",
+        "name": "SCD - Square Cone Diffuser",
+        "brand": "Price Industries",
+        "brand_permalink": "price-industries",
+        "permalink": "scd-square-cone-diffuser",
+        "url": "https://www.bimobject.com/ko/price-industries/scd-square-cone-diffuser",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 20
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "9f019aae-ef60-4633-a92b-87ae418569b8",
+        "name": "MIT Vertical Air Tank-50L/10000L",
+        "brand": "Ekin Endustriyel",
+        "brand_permalink": "ekin-endustriyel",
+        "permalink": "mit-vertical-air-tank-50l-10000l",
+        "url": "https://www.bimobject.com/ko/ekin-endustriyel/mit-vertical-air-tank-50l-10000l",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "b7babc9b-ae7c-4b2f-919e-c55636966718",
+        "name": "MW Water Softener",
+        "brand": "Miura America",
+        "brand_permalink": "miura-america",
+        "permalink": "mw-water-softener",
+        "url": "https://www.bimobject.com/ko/miura-america/mw-water-softener",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 9
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "3c30335c-2062-4774-bf46-68036f814125",
+        "name": "Electric Water Heater - LYDOS HYBRID",
+        "brand": "Ariston",
+        "brand_permalink": "ariston",
+        "permalink": "lydos-hybrid",
+        "url": "https://www.bimobject.com/ko/ariston/lydos-hybrid",
+        "rating": {
+          "numberOfRatings": 23,
+          "sumOfRatings": 105
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "f0935683-a813-417d-8dbe-ebd71b68350f",
+        "name": "PF2 Closed Circuit Cooling Tower",
+        "brand": "Baltimore Aircoil Company",
+        "brand_permalink": "baltimoreaircoil",
+        "permalink": "pf2",
+        "url": "https://www.bimobject.com/ko/baltimoreaircoil/pf2",
+        "rating": {
+          "numberOfRatings": 7,
+          "sumOfRatings": 30
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "b86ee182-1f59-49f3-9061-99449691a77c",
+        "name": "AURÉA",
+        "brand": "ANJOS Ventilation",
+        "brand_permalink": "anjos_ventilation",
+        "permalink": "aurea",
+        "url": "https://www.bimobject.com/ko/anjos_ventilation/aurea",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 9
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "1982b821-1151-4e5c-a058-beba6b672b74",
+        "name": "Domestic water meter kit",
+        "brand": "Caleffi",
+        "brand_permalink": "caleffi",
+        "permalink": "7941",
+        "url": "https://www.bimobject.com/ko/caleffi/7941",
+        "rating": {
+          "numberOfRatings": 40,
+          "sumOfRatings": 177
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "34b67db4-681a-4594-9364-c24759516524",
+        "name": "CADDY Trapeze Hangers",
+        "brand": "nVent",
+        "brand_permalink": "nvent",
+        "permalink": "nvent-caddy-trapeze-hangers",
+        "url": "https://www.bimobject.com/ko/nvent/nvent-caddy-trapeze-hangers",
+        "rating": {
+          "numberOfRatings": 11,
+          "sumOfRatings": 50
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "b6bd207c-c082-4c57-b577-cd0f81c6e3ad",
+        "name": "Dura-Power™ DEN and DEL",
+        "brand": "A. O. Smith",
+        "brand_permalink": "aosmith",
+        "permalink": "aosmith-dura-den-del",
+        "url": "https://www.bimobject.com/ko/aosmith/aosmith-dura-den-del",
+        "rating": {
+          "numberOfRatings": 29,
+          "sumOfRatings": 135
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "12d4194a-d5f8-4a03-a25e-2741060db65f",
+        "name": "FUJITSU SINGLE-ROOM MINI-SPLIT ASU30RLE",
+        "brand": "GENERAL",
+        "brand_permalink": "generalww",
+        "permalink": "asu30rle",
+        "url": "https://www.bimobject.com/ko/generalww/asu30rle",
+        "rating": {
+          "numberOfRatings": 5,
+          "sumOfRatings": 24
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "5173d02f-abcb-40fc-97b5-060e83a3a126",
+        "name": "Vertiv CRV In-Row Cooling System",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vertiv-crv",
+        "url": "https://www.bimobject.com/ko/vertiv/vertiv-crv",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 10
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "7eec4590-87ae-44f2-a62c-c54f63c288ff",
+        "name": "Round diffuser with neck_DFCI",
+        "brand": "Airzone",
+        "brand_permalink": "airzone",
+        "permalink": "airq_dfci_wn",
+        "url": "https://www.bimobject.com/ko/airzone/airq_dfci_wn",
+        "rating": {
+          "numberOfRatings": 19,
+          "sumOfRatings": 84
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "c0f8ef27-5e82-4581-8195-20a2d845d3bd",
+        "name": "Heat Pump HPDHW HT PRO",
+        "brand": "Eurofred",
+        "brand_permalink": "eurofred",
+        "permalink": "heat-pump-ht-pro-hpdw",
+        "url": "https://www.bimobject.com/ko/eurofred/heat-pump-ht-pro-hpdw",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 4
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "505932b1-9435-4133-b7a5-ad8282993e8b",
+        "name": "CO2  Room sensor without control (White&Black)",
+        "brand": "DUCO",
+        "brand_permalink": "duco",
+        "permalink": "co2-room-sensor-without-control-white-and-black",
+        "url": "https://www.bimobject.com/ko/duco/co2-room-sensor-without-control-white-and-black",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 5
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "f32f5c5e-6235-45bc-9020-8815dcda260b",
+        "name": "GTS® Humidifier LX Series",
+        "brand": "DriSteem",
+        "brand_permalink": "dristeem",
+        "permalink": "gts-humidifier-lx-series",
+        "url": "https://www.bimobject.com/ko/dristeem/gts-humidifier-lx-series",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 18
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "06ce3ce2-1773-41c1-b1e4-445f89fa1893",
+        "name": "Linear Slot Diffuser - Narrow Tee Mounting - Model 6600 Series",
+        "brand": "METALAIRE",
+        "brand_permalink": "metalaire",
+        "permalink": "6600-lsd-concealed-narrow-tee",
+        "url": "https://www.bimobject.com/ko/metalaire/6600-lsd-concealed-narrow-tee",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 2
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "20a70c51-12c0-42c5-a6ed-313605e99c5e",
+        "name": "UM CDT",
+        "brand": "GREE Products",
+        "brand_permalink": "greeproducts",
+        "permalink": "um-cdt",
+        "url": "https://www.bimobject.com/ko/greeproducts/um-cdt",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "2fd6719e-b1b6-4622-99d3-5d0e15f8b5fe",
+        "name": "VERSATI III AIO",
+        "brand": "GREE Products",
+        "brand_permalink": "greeproducts",
+        "permalink": "versati-iii-aio",
+        "url": "https://www.bimobject.com/ko/greeproducts/versati-iii-aio",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "4d7e4000-1dc1-4624-a8fd-7748a359f748",
+        "name": "Electrolux Split Air Conditioner 12.000 BTUs Color Adapt Hot/Cold with Wi-fi (YI12R/YE12R)",
+        "brand": "Electrolux Brasil",
+        "brand_permalink": "electroluxbrasil",
+        "permalink": "yi12r-ye12r",
+        "url": "https://www.bimobject.com/ko/electroluxbrasil/yi12r-ye12r",
+        "rating": {
+          "numberOfRatings": 9,
+          "sumOfRatings": 37
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "e960cd2e-238d-4bb5-919a-a4109adca289",
+        "name": "Vertiv MCL & MCM Outdoor Condenser",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vertiv-mcl-and-mcm",
+        "url": "https://www.bimobject.com/ko/vertiv/vertiv-mcl-and-mcm",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "094d5536-54e1-4eb3-9fe7-3a63e796decf",
+        "name": "YORK® Commercial Split Systems 7-50 Tons",
+        "brand": "Johnson Controls",
+        "brand_permalink": "johnsoncontrols",
+        "permalink": "york_split-dx",
+        "url": "https://www.bimobject.com/ko/johnsoncontrols/york_split-dx",
+        "rating": {
+          "numberOfRatings": 14,
+          "sumOfRatings": 65
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "086b7433-674f-4d9e-b2c7-49c681110b65",
+        "name": "Heat Pump - NIMBUS COMPACT S NET R32",
+        "brand": "Ariston",
+        "brand_permalink": "ariston",
+        "permalink": "nimbus-compact-s-net-r32",
+        "url": "https://www.bimobject.com/ko/ariston/nimbus-compact-s-net-r32",
+        "rating": {
+          "numberOfRatings": 9,
+          "sumOfRatings": 40
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "08d66713-d55c-4cd7-ac14-155c394c4fea",
+        "name": "Heat & Condensate Exhaust Only Vent Hood, VHB Series",
+        "brand": "CaptiveAire",
+        "brand_permalink": "captiveaire",
+        "permalink": "captiveaire-042",
+        "url": "https://www.bimobject.com/ko/captiveaire/captiveaire-042",
+        "rating": {
+          "numberOfRatings": 6,
+          "sumOfRatings": 26
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "46979db9-c550-448e-acaf-6f6bb4175e74",
+        "name": "Liebert® DCD Water Based Cooling Modules",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vertiv-dcd",
+        "url": "https://www.bimobject.com/ko/vertiv/vertiv-dcd",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "86fab72f-84b0-4390-aaf4-afb6ada81ee9",
+        "name": "CD60DC Galvanized steel airfoil blade damper (Data Center)",
+        "brand": "Ruskin",
+        "brand_permalink": "ruskin",
+        "permalink": "cd60dc",
+        "url": "https://www.bimobject.com/ko/ruskin/cd60dc",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 4
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "12a1f488-0268-4c19-841c-364862c8cd56",
+        "name": "UM CST",
+        "brand": "GREE Products",
+        "brand_permalink": "greeproducts",
+        "permalink": "um-cst",
+        "url": "https://www.bimobject.com/ko/greeproducts/um-cst",
+        "rating": {
+          "numberOfRatings": 3,
+          "sumOfRatings": 14
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "168b025b-f0eb-4fb6-aa09-91f8c26a58e2",
+        "name": "Universal Plenum for Linear Slot Diffusers - UP-6600/UPI-6600",
+        "brand": "METALAIRE",
+        "brand_permalink": "metalaire",
+        "permalink": "6600-up-upi-lsd",
+        "url": "https://www.bimobject.com/ko/metalaire/6600-up-upi-lsd",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 11
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "70665ac0-4a6b-4f27-9fa2-ba61212d0b3c",
+        "name": "500/600 - Steel/Aluminum Louvered Grille",
+        "brand": "Price Industries",
+        "brand_permalink": "price-industries",
+        "permalink": "500-supply-return",
+        "url": "https://www.bimobject.com/ko/price-industries/500-supply-return",
+        "rating": {
+          "numberOfRatings": 6,
+          "sumOfRatings": 24
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "532ac98b-b0b9-4cd6-9e56-d34e3fbe73f8",
+        "name": "Regency® Grandview™ G800P Traditional Gas Fireplace",
+        "brand": "Regency Fireplace Products",
+        "brand_permalink": "regency-fireplace-products",
+        "permalink": "g800p-gas-fireplace",
+        "url": "https://www.bimobject.com/ko/regency-fireplace-products/g800p-gas-fireplace",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "c69fa293-33e0-4454-8140-787092f33e3d",
+        "name": "Lipari PRO TFS",
+        "brand": "Fondital",
+        "brand_permalink": "fondital",
+        "permalink": "lipari_pro_tfs",
+        "url": "https://www.bimobject.com/ko/fondital/lipari_pro_tfs",
+        "rating": {
+          "numberOfRatings": 11,
+          "sumOfRatings": 51
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "28b614c9-7b28-4bcc-ac94-4e62023d9684",
+        "name": "ECONIZER™",
+        "brand": "ZEHNDER CALADAIR INTERNATIONAL",
+        "brand_permalink": "caladair",
+        "permalink": "econizer",
+        "url": "https://www.bimobject.com/ko/caladair/econizer",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 5
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "1040476c-6b95-4a6b-85c5-604287ba9810",
+        "name": "Domofocus - Suspended designer fireplace",
+        "brand": "Focus Creation",
+        "brand_permalink": "focus",
+        "permalink": "domofocus",
+        "url": "https://www.bimobject.com/ko/focus/domofocus",
+        "rating": {
+          "numberOfRatings": 17,
+          "sumOfRatings": 69
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "24d00f40-3ff1-4349-b545-600b2a64899d",
+        "name": "FLOWMATIC® - Pressure independent control valve",
+        "brand": "Caleffi",
+        "brand_permalink": "caleffi",
+        "permalink": "145",
+        "url": "https://www.bimobject.com/ko/caleffi/145",
+        "rating": {
+          "numberOfRatings": 5,
+          "sumOfRatings": 22
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "4f2290ec-4e48-4f91-ad95-adaa88ef9667",
+        "name": "GMV5 PV",
+        "brand": "GREE Products",
+        "brand_permalink": "greeproducts",
+        "permalink": "gmv5-pv",
+        "url": "https://www.bimobject.com/ko/greeproducts/gmv5-pv",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "95020bef-9ec0-43dc-8ad2-ff6d612d35c0",
+        "name": "Vertiv™ CoolChip CDU, 600",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vertiv-xdu-600",
+        "url": "https://www.bimobject.com/ko/vertiv/vertiv-xdu-600",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 5
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "8e1e4859-9933-43c9-b07d-b51401a023dc",
+        "name": "700 - Stainless Steel Louvered Grille",
+        "brand": "Price Industries",
+        "brand_permalink": "price-industries",
+        "permalink": "700-supply-return",
+        "url": "https://www.bimobject.com/ko/price-industries/700-supply-return",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 19
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "c6ec4356-8225-4aa0-969f-5e19bd03f207",
+        "name": "Laundry Room",
+        "brand": "Stiebel Eltron (Thailand) สตีเบล เอลทรอน",
+        "brand_permalink": "stiebel-eltron-thailand",
+        "permalink": "storage-room",
+        "url": "https://www.bimobject.com/ko/stiebel-eltron-thailand/storage-room",
+        "rating": {
+          "numberOfRatings": 8,
+          "sumOfRatings": 27
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "066419b9-f74c-4a6b-ab7f-20500275ae92",
+        "name": "ALIZE AUTO",
+        "brand": "ANJOS Ventilation",
+        "brand_permalink": "anjos_ventilation",
+        "permalink": "anj010012",
+        "url": "https://www.bimobject.com/ko/anjos_ventilation/anj010012",
+        "rating": {
+          "numberOfRatings": 8,
+          "sumOfRatings": 28
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "29ed7a83-248c-4c58-9684-748ca61a4e64",
+        "name": "DucoBox Energy Comfort Plus D450",
+        "brand": "DUCO",
+        "brand_permalink": "duco",
+        "permalink": "ducobox-energy-comfort-plus-d450",
+        "url": "https://www.bimobject.com/ko/duco/ducobox-energy-comfort-plus-d450",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 9
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "2a44d49d-80d0-4b14-952f-45f1d5bbe9c5",
+        "name": "EL - Electrode Boiler Steam Humidifier",
+        "brand": "Condair",
+        "brand_permalink": "condair",
+        "permalink": "condair-el",
+        "url": "https://www.bimobject.com/ko/condair/condair-el",
+        "rating": {
+          "numberOfRatings": 5,
+          "sumOfRatings": 24
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "55f5e9b2-71e9-45f7-b89d-74cdd230dee2",
+        "name": "YORK® YMAE Air-to-Water Inverter Scroll Heat Pumps",
+        "brand": "Johnson Controls",
+        "brand_permalink": "johnsoncontrols",
+        "permalink": "york_ymae",
+        "url": "https://www.bimobject.com/ko/johnsoncontrols/york_ymae",
+        "rating": {
+          "numberOfRatings": 6,
+          "sumOfRatings": 29
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "a0f5bd39-43e1-468e-9eb4-4932663abf5b",
+        "name": "RM ME",
+        "brand": "ANJOS Ventilation",
+        "brand_permalink": "anjos_ventilation",
+        "permalink": "anj010014",
+        "url": "https://www.bimobject.com/ko/anjos_ventilation/anj010014",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "bb668ed9-3fe6-48f9-b783-a8588c94adb8",
+        "name": "NICZUK U-bolt KB",
+        "brand": "NICZUK",
+        "brand_permalink": "niczuk",
+        "permalink": "kablaki-kb",
+        "url": "https://www.bimobject.com/ko/niczuk/kablaki-kb",
+        "rating": {
+          "numberOfRatings": 14,
+          "sumOfRatings": 57
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "c835a74d-78f3-4953-bb7f-0c6149063918",
+        "name": "CARA",
+        "brand": "ANJOS Ventilation",
+        "brand_permalink": "anjos_ventilation",
+        "permalink": "anj010017",
+        "url": "https://www.bimobject.com/ko/anjos_ventilation/anj010017",
+        "rating": {
+          "numberOfRatings": 8,
+          "sumOfRatings": 29
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "01e40b14-772d-4993-b15f-e439c5964ace",
+        "name": "Linear Slot Diffuser L-SD, with or without plenum box",
+        "brand": "LAMINAIRE",
+        "brand_permalink": "laminaire",
+        "permalink": "l-sd",
+        "url": "https://www.bimobject.com/ko/laminaire/l-sd",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 19
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "1c59e155-cd41-4b6e-8c1f-71663b634244",
+        "name": "NICZUK Threaded rod M",
+        "brand": "NICZUK",
+        "brand_permalink": "niczuk",
+        "permalink": "prety-m",
+        "url": "https://www.bimobject.com/ko/niczuk/prety-m",
+        "rating": {
+          "numberOfRatings": 7,
+          "sumOfRatings": 28
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "5e452c6d-4208-482c-8d1b-cea7d81a924c",
+        "name": "Water meter",
+        "brand": "Caleffi",
+        "brand_permalink": "caleffi",
+        "permalink": "794",
+        "url": "https://www.bimobject.com/ko/caleffi/794",
+        "rating": {
+          "numberOfRatings": 23,
+          "sumOfRatings": 107
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "67a8293b-5f9d-4d16-b11f-381e08a510b2",
+        "name": "Axial Wallmount Fan, WPC Series",
+        "brand": "CaptiveAire",
+        "brand_permalink": "captiveaire",
+        "permalink": "captiveaire-002",
+        "url": "https://www.bimobject.com/ko/captiveaire/captiveaire-002",
+        "rating": {
+          "numberOfRatings": 15,
+          "sumOfRatings": 62
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "9a073c53-64e6-4d54-a8a0-3f561e3b9891",
+        "name": "BIMobject TH x Thai Obayashi_Fan Exhaust Wall Rectangular Panasonic FVSeries",
+        "brand": "BIMobject TH x Thai Obayashi",
+        "brand_permalink": "bimobject-th-x-thai-obayashi",
+        "permalink": "bimobject_th_x_thai_obayashi_fan-exhaust-wall-rectangular-panasonic-fvseries",
+        "url": "https://www.bimobject.com/ko/bimobject-th-x-thai-obayashi/bimobject_th_x_thai_obayashi_fan-exhaust-wall-rectangular-panasonic-fvseries",
+        "rating": {
+          "numberOfRatings": 21,
+          "sumOfRatings": 94
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "1a8eda84-f71b-4b4b-8d74-8b306ea77222",
+        "name": "Extruded Aluminum Linear Bar Grille - 1\" Border, 7/32\" Bars on 1/2\" Centers - Model 2000",
+        "brand": "METALAIRE",
+        "brand_permalink": "metalaire",
+        "permalink": "extruded-aluminum-linear-bar-grille-2000",
+        "url": "https://www.bimobject.com/ko/metalaire/extruded-aluminum-linear-bar-grille-2000",
+        "rating": {
+          "numberOfRatings": 9,
+          "sumOfRatings": 30
+        },
+        "category_code": "hvac"
+      },
+      {
+        "id": "7e074296-3357-4e9c-b739-e93c8b6d967c",
+        "name": "BEIP",
+        "brand": "ANJOS Ventilation",
+        "brand_permalink": "anjos_ventilation",
+        "permalink": "anj010032",
+        "url": "https://www.bimobject.com/ko/anjos_ventilation/anj010032",
+        "rating": {
+          "numberOfRatings": 12,
+          "sumOfRatings": 43
+        },
+        "category_code": "hvac"
+      }
+    ],
+    "plumbing": [
+      {
+        "id": "a13e947f-24dc-4ee8-8e27-384c1e47c5a2",
+        "name": "SCH80 CPVC/PVC All Revit Files",
+        "brand": "Spears Manufacturing",
+        "brand_permalink": "spearsmfg",
+        "permalink": "spears-sch80-revit",
+        "url": "https://www.bimobject.com/ko/spearsmfg/spears-sch80-revit",
+        "rating": {
+          "numberOfRatings": 3,
+          "sumOfRatings": 11
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "320c145c-f507-4019-870a-532bdeba539a",
+        "name": "DWV PVC All Revit Files",
+        "brand": "Spears Manufacturing",
+        "brand_permalink": "spearsmfg",
+        "permalink": "spears-dwv-revit",
+        "url": "https://www.bimobject.com/ko/spearsmfg/spears-dwv-revit",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 7
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "0372a175-4ebf-4f95-9142-f240091a5f14",
+        "name": "FIT Monobloco 2 polos",
+        "brand": "Schneider Motobombas",
+        "brand_permalink": "motobombas",
+        "permalink": "fit-monobloco-2-polos",
+        "url": "https://www.bimobject.com/ko/motobombas/fit-monobloco-2-polos",
+        "rating": {
+          "numberOfRatings": 6,
+          "sumOfRatings": 30
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "2142efeb-d0eb-430d-a671-700dfbf37f4a",
+        "name": "VALSIR® HDPE",
+        "brand": "Valsir",
+        "brand_permalink": "valsir",
+        "permalink": "hdpe",
+        "url": "https://www.bimobject.com/ko/valsir/hdpe",
+        "rating": {
+          "numberOfRatings": 40,
+          "sumOfRatings": 180
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "b9997f47-5685-4c4b-a764-f55eb5da322d",
+        "name": "3E SERIES ",
+        "brand": "EBARA Pumps Europe",
+        "brand_permalink": "ebara",
+        "permalink": "3e-series",
+        "url": "https://www.bimobject.com/ko/ebara/3e-series",
+        "rating": {
+          "numberOfRatings": 3,
+          "sumOfRatings": 14
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "cb5fe9c7-4fa0-4146-ab21-bb1751fa88c7",
+        "name": "Marine All Revit Files",
+        "brand": "Spears Manufacturing",
+        "brand_permalink": "spearsmfg",
+        "permalink": "spears-marine-revit",
+        "url": "https://www.bimobject.com/ko/spearsmfg/spears-marine-revit",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "a043a151-174e-4235-9c0c-41fa46bb92b9",
+        "name": "Flanged Fittings - Elbows, Tees, Crosses, Wyes, Reducers",
+        "brand": "UNITED Water Products",
+        "brand_permalink": "united-water-products",
+        "permalink": "flanged-fittings",
+        "url": "https://www.bimobject.com/ko/united-water-products/flanged-fittings",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 18
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "bafa7a22-3e58-4f41-b567-ba803ef13fcf",
+        "name": "VALSIR TRIPLUS",
+        "brand": "Valsir",
+        "brand_permalink": "valsir",
+        "permalink": "triplus",
+        "url": "https://www.bimobject.com/ko/valsir/triplus",
+        "rating": {
+          "numberOfRatings": 23,
+          "sumOfRatings": 101
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "bafe8205-2f83-4f07-9150-f7d2f151a62e",
+        "name": "Mechanical Joint Fittings - Bends, Tees, Crosses, Wyes, Reducers, Caps, Plugs",
+        "brand": "UNITED Water Products",
+        "brand_permalink": "united-water-products",
+        "permalink": "mechanical-joint-fittings",
+        "url": "https://www.bimobject.com/ko/united-water-products/mechanical-joint-fittings",
+        "rating": {
+          "numberOfRatings": 5,
+          "sumOfRatings": 21
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "2f89aeee-537b-4bc5-8511-9af46456f553",
+        "name": "SCG Blue PVC Non Pressure Pipe",
+        "brand": "SCG เอสซีจี",
+        "brand_permalink": "scg",
+        "permalink": "scg_blue_pvc_non_pressure_pipe",
+        "url": "https://www.bimobject.com/ko/scg/scg_blue_pvc_non_pressure_pipe",
+        "rating": {
+          "numberOfRatings": 19,
+          "sumOfRatings": 87
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "98f5c74b-44a0-494e-8311-2cacb5c26df1",
+        "name": "ME-1 IN",
+        "brand": "Schneider Motobombas",
+        "brand_permalink": "motobombas",
+        "permalink": "me-1-in",
+        "url": "https://www.bimobject.com/ko/motobombas/me-1-in",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 5
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "4194f3cc-da61-4a9a-b9a6-0df9ba0ed150",
+        "name": "LabWaste® CPVC All Revit Files",
+        "brand": "Spears Manufacturing",
+        "brand_permalink": "spearsmfg",
+        "permalink": "spears-labwaste-revit",
+        "url": "https://www.bimobject.com/ko/spearsmfg/spears-labwaste-revit",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "988afb3d-903c-4098-b0d7-94df0cdd270a",
+        "name": "SCG Blue PVC Pressure Pipe",
+        "brand": "SCG เอสซีจี",
+        "brand_permalink": "scg",
+        "permalink": "scg_blue_pvc_pressure_pipe",
+        "url": "https://www.bimobject.com/ko/scg/scg_blue_pvc_pressure_pipe",
+        "rating": {
+          "numberOfRatings": 32,
+          "sumOfRatings": 145
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "ee63590e-2149-449d-87c3-d46fef539ee3",
+        "name": "VALSIR PP/PP3®",
+        "brand": "Valsir",
+        "brand_permalink": "valsir",
+        "permalink": "pp3",
+        "url": "https://www.bimobject.com/ko/valsir/pp3",
+        "rating": {
+          "numberOfRatings": 32,
+          "sumOfRatings": 149
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "f6cb3456-5e6a-4d3c-ac9f-5d85973dc6e9",
+        "name": "VALSIR SILERE",
+        "brand": "Valsir",
+        "brand_permalink": "valsir",
+        "permalink": "silere",
+        "url": "https://www.bimobject.com/ko/valsir/silere",
+        "rating": {
+          "numberOfRatings": 14,
+          "sumOfRatings": 60
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "553ec5c8-87c3-4cd3-b2b1-8d9d51808504",
+        "name": "PIPE PPR NIRON",
+        "brand": "Italsan",
+        "brand_permalink": "italsan",
+        "permalink": "pprnirontuberia",
+        "url": "https://www.bimobject.com/ko/italsan/pprnirontuberia",
+        "rating": {
+          "numberOfRatings": 45,
+          "sumOfRatings": 197
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "3ce1d47a-a314-46a6-ac21-98b51cd1ee76",
+        "name": "SCH80 CPVC/PVC Tee - Reducing (Soc)",
+        "brand": "Spears Manufacturing",
+        "brand_permalink": "spearsmfg",
+        "permalink": "spears-801-r",
+        "url": "https://www.bimobject.com/ko/spearsmfg/spears-801-r",
+        "rating": {
+          "numberOfRatings": 13,
+          "sumOfRatings": 57
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "899334a4-0a4c-4ac2-94af-1e8b198efecc",
+        "name": "FIT Mancal",
+        "brand": "Schneider Motobombas",
+        "brand_permalink": "motobombas",
+        "permalink": "fit-mancal",
+        "url": "https://www.bimobject.com/ko/motobombas/fit-mancal",
+        "rating": {
+          "numberOfRatings": 7,
+          "sumOfRatings": 32
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "0fa85cb8-0f29-4a5e-b124-122b6101ebe8",
+        "name": "ME-AL/BR 2",
+        "brand": "Schneider Motobombas",
+        "brand_permalink": "motobombas",
+        "permalink": "me-al-br-2",
+        "url": "https://www.bimobject.com/ko/motobombas/me-al-br-2",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "d402a4b4-474f-442e-9c0c-0dbbf72afe85",
+        "name": "VALSIR PEXAL® BRASS",
+        "brand": "Valsir",
+        "brand_permalink": "valsir",
+        "permalink": "pexal-brass",
+        "url": "https://www.bimobject.com/ko/valsir/pexal-brass",
+        "rating": {
+          "numberOfRatings": 8,
+          "sumOfRatings": 38
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "8468d525-86d5-4bf1-8850-313e0c2b25cd",
+        "name": "Pressure Relief, Sustaining or Backpressure Control Valve - LFM116, LFM1116",
+        "brand": "Watts",
+        "brand_permalink": "watts",
+        "permalink": "pressure-relief-control-valve-lfm116-lfm1116",
+        "url": "https://www.bimobject.com/ko/watts/pressure-relief-control-valve-lfm116-lfm1116",
+        "rating": {
+          "numberOfRatings": 5,
+          "sumOfRatings": 20
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "ef01fe24-4518-4c34-9042-52f49f73cb9c",
+        "name": "Multilayer and PE-X pipe system",
+        "brand": "Standard Hidráulica",
+        "brand_permalink": "standard_hidraulica",
+        "permalink": "sistema_multicapa_multisthplus",
+        "url": "https://www.bimobject.com/ko/standard_hidraulica/sistema_multicapa_multisthplus",
+        "rating": {
+          "numberOfRatings": 8,
+          "sumOfRatings": 39
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "6d436ef5-e4d0-4e49-a230-2bf6aa9861ba",
+        "name": "Float Control Valve for Adjustable High and Low Levels - LFF110-14, LFF1110-14",
+        "brand": "Watts",
+        "brand_permalink": "watts",
+        "permalink": "modulating-control-valve-lff110-14-lff1110-14",
+        "url": "https://www.bimobject.com/ko/watts/modulating-control-valve-lff110-14-lff1110-14",
+        "rating": {
+          "numberOfRatings": 17,
+          "sumOfRatings": 75
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "03441f43-5636-43ad-8170-1317e0dc8fa9",
+        "name": "Amanco Wavin Water Tank",
+        "brand": "Amanco Wavin",
+        "brand_permalink": "amanco-wavin",
+        "permalink": "amanco-wavin-caixas-dagua",
+        "url": "https://www.bimobject.com/ko/amanco-wavin/amanco-wavin-caixas-dagua",
+        "rating": {
+          "numberOfRatings": 71,
+          "sumOfRatings": 339
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "87e8e768-319e-4f08-a7e5-9886f7734f2b",
+        "name": "BT4 ",
+        "brand": "Schneider Motobombas",
+        "brand_permalink": "motobombas",
+        "permalink": "bt4",
+        "url": "https://www.bimobject.com/ko/motobombas/bt4",
+        "rating": {
+          "numberOfRatings": 7,
+          "sumOfRatings": 30
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "a47c75d8-d028-438b-97f1-8c3d4658390f",
+        "name": "BPI FIT Monobloco 4 polos",
+        "brand": "Schneider Motobombas",
+        "brand_permalink": "motobombas",
+        "permalink": "bpi-fit-4-polos",
+        "url": "https://www.bimobject.com/ko/motobombas/bpi-fit-4-polos",
+        "rating": {
+          "numberOfRatings": 6,
+          "sumOfRatings": 28
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "21d6b99b-9131-4295-b22b-286e613e3f1a",
+        "name": "Gate Valve - Model 1010/1010-T/1510/1310",
+        "brand": "UNITED Water Products",
+        "brand_permalink": "united-water-products",
+        "permalink": "gate-valve-model-1010-1010-t-1510-1310",
+        "url": "https://www.bimobject.com/ko/united-water-products/gate-valve-model-1010-1010-t-1510-1310",
+        "rating": {
+          "numberOfRatings": 3,
+          "sumOfRatings": 10
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "b2fe9ef5-23de-4b6c-b43a-039de02f0f77",
+        "name": "Wilo - Atmos TERA-SCH-HE Axially Split Case Pump",
+        "brand": "Wilo USA LLC",
+        "brand_permalink": "weil-pump",
+        "permalink": "wilo-atmos-tera-sch-he-axially-split-case-pump",
+        "url": "https://www.bimobject.com/ko/weil-pump/wilo-atmos-tera-sch-he-axially-split-case-pump",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 10
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "3a50ede5-0f3e-4243-8a73-53d50a40d6fc",
+        "name": "BPI FIT Monobloco 2 polos",
+        "brand": "Schneider Motobombas",
+        "brand_permalink": "motobombas",
+        "permalink": "bpi-fit-2-polos",
+        "url": "https://www.bimobject.com/ko/motobombas/bpi-fit-2-polos",
+        "rating": {
+          "numberOfRatings": 9,
+          "sumOfRatings": 42
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "9d683379-da62-4231-ac4c-49cf84c29ee8",
+        "name": "Gate Valve - Model 2010-Series A/Model 2010-Series B/2010FF-XH",
+        "brand": "UNITED Water Products",
+        "brand_permalink": "united-water-products",
+        "permalink": "resilient-seat-gate-valve-model-2010",
+        "url": "https://www.bimobject.com/ko/united-water-products/resilient-seat-gate-valve-model-2010",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 10
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "ebd93285-bd67-434c-9176-070b443d2e94",
+        "name": "Wilo - NL-HE High Efficiency Base Mount End Suction Pumps",
+        "brand": "Wilo USA LLC",
+        "brand_permalink": "weil-pump",
+        "permalink": "nl-he-high-efficiency-base-mount-end-suction-pumps",
+        "url": "https://www.bimobject.com/ko/weil-pump/nl-he-high-efficiency-base-mount-end-suction-pumps",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 19
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "3c53f302-da19-4bda-9d0c-f37f625d64b8",
+        "name": "VFD BC-92",
+        "brand": "Schneider Motobombas",
+        "brand_permalink": "motobombas",
+        "permalink": "vfd-bc-92",
+        "url": "https://www.bimobject.com/ko/motobombas/vfd-bc-92",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "79681829-4b48-4bea-8fb0-fa2c8013644c",
+        "name": "BC-92T 1",
+        "brand": "Schneider Motobombas",
+        "brand_permalink": "motobombas",
+        "permalink": "bc-92-t-1",
+        "url": "https://www.bimobject.com/ko/motobombas/bc-92-t-1",
+        "rating": {
+          "numberOfRatings": 7,
+          "sumOfRatings": 31
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "f2d3863f-65a3-4751-9e81-07c5cbdb7902",
+        "name": "VALSIR PLUMBING FIXTURE CONNECTIONS",
+        "brand": "Valsir",
+        "brand_permalink": "valsir",
+        "permalink": "fixtureconnections",
+        "url": "https://www.bimobject.com/ko/valsir/fixtureconnections",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 9
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "24a5576a-5967-47f9-a99c-b8ba8fe77b5a",
+        "name": "3873 - 3873BY _ G1” distribution manifold in moulded brass FLOOR with connections 3/4\"x18 (Euroconus) and fluxmeters, optional bypass",
+        "brand": "TIEMME",
+        "brand_permalink": "tiemme",
+        "permalink": "3873-3873by-manifold-radiant-collettore-radiante",
+        "url": "https://www.bimobject.com/ko/tiemme/3873-3873by-manifold-radiant-collettore-radiante",
+        "rating": {
+          "numberOfRatings": 9,
+          "sumOfRatings": 34
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "903686a8-75c8-4b5a-9803-0caaac84becd",
+        "name": "FIT PRO Mancal",
+        "brand": "Schneider Motobombas",
+        "brand_permalink": "motobombas",
+        "permalink": "fit-pro-mancal",
+        "url": "https://www.bimobject.com/ko/motobombas/fit-pro-mancal",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "00d28cd2-d382-4d42-bbe5-bb474c7498e7",
+        "name": "VALSIR PEXAL EASY®",
+        "brand": "Valsir",
+        "brand_permalink": "valsir",
+        "permalink": "pexal-easy",
+        "url": "https://www.bimobject.com/ko/valsir/pexal-easy",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 18
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "18f8fd0f-d7de-4457-953c-09ced7557ab4",
+        "name": "PVC-U",
+        "brand": "GF Piping Systems",
+        "brand_permalink": "gf-piping-system",
+        "permalink": "pvc-u",
+        "url": "https://www.bimobject.com/ko/gf-piping-system/pvc-u",
+        "rating": {
+          "numberOfRatings": 37,
+          "sumOfRatings": 173
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "86e9726b-9f6f-4fd9-8294-54f3bf2bf28b",
+        "name": "PPEcoforte® - Sewer System",
+        "brand": "Valsir",
+        "brand_permalink": "valsir",
+        "permalink": "ppecoforte",
+        "url": "https://www.bimobject.com/ko/valsir/ppecoforte",
+        "rating": {
+          "numberOfRatings": 28,
+          "sumOfRatings": 116
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "83cac640-2a20-4ba3-93f9-a4e277303155",
+        "name": "Lead Free* Reduced Pressure Zone Assemblies - LF009",
+        "brand": "Watts",
+        "brand_permalink": "watts",
+        "permalink": "6831",
+        "url": "https://www.bimobject.com/ko/watts/6831",
+        "rating": {
+          "numberOfRatings": 33,
+          "sumOfRatings": 148
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "e5bf3b98-5d5d-4d68-b059-e480349a5978",
+        "name": "Silenta Extreme",
+        "brand": "GF Piping Systems",
+        "brand_permalink": "gf-piping-system",
+        "permalink": "silenta-extreme",
+        "url": "https://www.bimobject.com/ko/gf-piping-system/silenta-extreme",
+        "rating": {
+          "numberOfRatings": 17,
+          "sumOfRatings": 78
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "5b76dcbe-734e-4e06-a434-d2a5de8ec480",
+        "name": "SYGEF ECTFE Pipe & FIttings",
+        "brand": "GF Piping Systems",
+        "brand_permalink": "gf-piping-system",
+        "permalink": "sygef-ectfe",
+        "url": "https://www.bimobject.com/ko/gf-piping-system/sygef-ectfe",
+        "rating": {
+          "numberOfRatings": 11,
+          "sumOfRatings": 48
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "399743be-4ba8-4f7a-8000-b8b187ec5590",
+        "name": "Swing Check Valve - Model 8700",
+        "brand": "UNITED Water Products",
+        "brand_permalink": "united-water-products",
+        "permalink": "swing-check-valve-model-8700",
+        "url": "https://www.bimobject.com/ko/united-water-products/swing-check-valve-model-8700",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 16
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "05345b1b-d6e9-43db-87f6-00d7f38b3ef6",
+        "name": "SCH80 CPVC/PVC Pipe",
+        "brand": "Spears Manufacturing",
+        "brand_permalink": "spearsmfg",
+        "permalink": "spears-sch80-pipe",
+        "url": "https://www.bimobject.com/ko/spearsmfg/spears-sch80-pipe",
+        "rating": {
+          "numberOfRatings": 11,
+          "sumOfRatings": 44
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "67a4b672-bbb7-4bdf-93f6-40db87b89794",
+        "name": "NK  ",
+        "brand": "Grundfos",
+        "brand_permalink": "grundfos",
+        "permalink": "nkbasis",
+        "url": "https://www.bimobject.com/ko/grundfos/nkbasis",
+        "rating": {
+          "numberOfRatings": 39,
+          "sumOfRatings": 151
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "1d46ba5c-8dc3-4839-bda4-18d529629b89",
+        "name": "Weil Pump - Series 5300 Booster System",
+        "brand": "Wilo USA LLC",
+        "brand_permalink": "weil-pump",
+        "permalink": "series_5300_booster_system",
+        "url": "https://www.bimobject.com/ko/weil-pump/series_5300_booster_system",
+        "rating": {
+          "numberOfRatings": 10,
+          "sumOfRatings": 43
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "915b653b-9af5-46c0-b4ab-75c2613cd543",
+        "name": "LS",
+        "brand": "Grundfos",
+        "brand_permalink": "grundfos",
+        "permalink": "lsfam",
+        "url": "https://www.bimobject.com/ko/grundfos/lsfam",
+        "rating": {
+          "numberOfRatings": 31,
+          "sumOfRatings": 106
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "9f6bc0b4-e510-4d31-8876-1f0eae79f253",
+        "name": "Malleable Cast Iron Fittings",
+        "brand": "GF Piping Systems",
+        "brand_permalink": "gf-piping-system",
+        "permalink": "malleable-cast-iron-fittings",
+        "url": "https://www.bimobject.com/ko/gf-piping-system/malleable-cast-iron-fittings",
+        "rating": {
+          "numberOfRatings": 26,
+          "sumOfRatings": 106
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "f82b231c-c8de-48ab-9801-c947448d4da5",
+        "name": "VALSIR NICKEL-PLATED MANIFOLDS",
+        "brand": "Valsir",
+        "brand_permalink": "valsir",
+        "permalink": "nickel-plated-manifolds",
+        "url": "https://www.bimobject.com/ko/valsir/nickel-plated-manifolds",
+        "rating": {
+          "numberOfRatings": 7,
+          "sumOfRatings": 34
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "23cd6aee-05e9-49f0-9974-5825e3a6e3df",
+        "name": "Butterfly Valve - Model 3900",
+        "brand": "UNITED Water Products",
+        "brand_permalink": "united-water-products",
+        "permalink": "butterfly-valve-model-3900",
+        "url": "https://www.bimobject.com/ko/united-water-products/butterfly-valve-model-3900",
+        "rating": {
+          "numberOfRatings": 6,
+          "sumOfRatings": 29
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "e3312e0b-e964-4948-bf05-9f00931901fe",
+        "name": "EverTUFF® CTS CPVC All Revit Files",
+        "brand": "Spears Manufacturing",
+        "brand_permalink": "spearsmfg",
+        "permalink": "spears-cts-revit",
+        "url": "https://www.bimobject.com/ko/spearsmfg/spears-cts-revit",
+        "rating": {
+          "numberOfRatings": 3,
+          "sumOfRatings": 15
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "5f9498a8-9c6e-4d91-a40a-6efb484aaf16",
+        "name": "FIT Monobloco 4 polos",
+        "brand": "Schneider Motobombas",
+        "brand_permalink": "motobombas",
+        "permalink": "fit-monobloco-4-polos",
+        "url": "https://www.bimobject.com/ko/motobombas/fit-monobloco-4-polos",
+        "rating": {
+          "numberOfRatings": 3,
+          "sumOfRatings": 15
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "3ba65dd5-7bb0-409d-97c8-cd3a56535e20",
+        "name": "CPAC Concrete Water Tank",
+        "brand": "CPAC ซีแพค",
+        "brand_permalink": "cpac",
+        "permalink": "cpac_concretewatertank",
+        "url": "https://www.bimobject.com/ko/cpac/cpac_concretewatertank",
+        "rating": {
+          "numberOfRatings": 15,
+          "sumOfRatings": 73
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "476166c0-5900-4c8e-a97f-ca0d6aab6e88",
+        "name": "VALSIR BRAVOPRESS®",
+        "brand": "Valsir",
+        "brand_permalink": "valsir",
+        "permalink": "bravopress",
+        "url": "https://www.bimobject.com/ko/valsir/bravopress",
+        "rating": {
+          "numberOfRatings": 6,
+          "sumOfRatings": 27
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "cbea4629-ed47-4284-811b-733305467a42",
+        "name": "KDN OVERSIZE",
+        "brand": "Dab Pumps",
+        "brand_permalink": "dab-pumps",
+        "permalink": "kdn-oversize",
+        "url": "https://www.bimobject.com/ko/dab-pumps/kdn-oversize",
+        "rating": {
+          "numberOfRatings": 24,
+          "sumOfRatings": 118
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "311a73ae-2b9d-4173-b52f-2150884a84f9",
+        "name": "SeaCor CPVC",
+        "brand": "GF Piping Systems",
+        "brand_permalink": "gf-piping-system",
+        "permalink": "seacor-cpvc",
+        "url": "https://www.bimobject.com/ko/gf-piping-system/seacor-cpvc",
+        "rating": {
+          "numberOfRatings": 9,
+          "sumOfRatings": 40
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "60c2a4a8-850b-43fa-b63a-3c01005bb396",
+        "name": "Ball valve PN30 F-F Thread Lever red cover - Sena",
+        "brand": "Válvulas Arco",
+        "brand_permalink": "valvulas-arco",
+        "permalink": "sena",
+        "url": "https://www.bimobject.com/ko/valvulas-arco/sena",
+        "rating": {
+          "numberOfRatings": 3,
+          "sumOfRatings": 14
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "4f333719-bdce-45b5-a081-54f9a8664a8e",
+        "name": "Commercial Reverse Osmosis Systems Up to 120 Gallons Per Minute - PWR8024",
+        "brand": "Watts",
+        "brand_permalink": "watts",
+        "permalink": "7295",
+        "url": "https://www.bimobject.com/ko/watts/7295",
+        "rating": {
+          "numberOfRatings": 7,
+          "sumOfRatings": 30
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "893bf6c0-fd03-4785-ae79-3ee4bea61f28",
+        "name": "I_FLUX",
+        "brand": "Ecomess",
+        "brand_permalink": "ecomess",
+        "permalink": "i-flux",
+        "url": "https://www.bimobject.com/ko/ecomess/i-flux",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "65039305-8d45-4a95-ad6e-894d80aa80b7",
+        "name": "VALVE NOVA - FULL BORE BRASS BALL VALVE",
+        "brand": "RASTELLI RUBINETTERIE SRL",
+        "brand_permalink": "rastelli-rubinetterie-srl",
+        "permalink": "nova",
+        "url": "https://www.bimobject.com/ko/rastelli-rubinetterie-srl/nova",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 19
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "e0975423-2ffc-4cc4-837a-c5d2c86d2dfa",
+        "name": "Gate Valve - Model 2030-Series A/Model 2030-Series B/Model 2030FF-XH",
+        "brand": "UNITED Water Products",
+        "brand_permalink": "united-water-products",
+        "permalink": "gate-valve-model-2030-series-a-model-2030-series-b-model-2030ff-xh",
+        "url": "https://www.bimobject.com/ko/united-water-products/gate-valve-model-2030-series-a-model-2030-series-b-model-2030ff-xh",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 5
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "e22cf1ed-b31c-4f92-ace2-b39ec327fb00",
+        "name": "Z886 Perma-Trench® Linear Trench Drain System",
+        "brand": "Zurn",
+        "brand_permalink": "zurnindustries",
+        "permalink": "zurn-z886",
+        "url": "https://www.bimobject.com/ko/zurnindustries/zurn-z886",
+        "rating": {
+          "numberOfRatings": 15,
+          "sumOfRatings": 69
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "e98df1ee-4de3-4b16-b1b9-92f102c4cc0e",
+        "name": "BLACKFIRE®",
+        "brand": "Valsir",
+        "brand_permalink": "valsir",
+        "permalink": "blackfire",
+        "url": "https://www.bimobject.com/ko/valsir/blackfire",
+        "rating": {
+          "numberOfRatings": 17,
+          "sumOfRatings": 76
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "5e92b62e-9229-438c-882c-9fe685048b92",
+        "name": "Modulating Control Valve for Constant Tank Level - LFF110-10, LFF1110-10",
+        "brand": "Watts",
+        "brand_permalink": "watts",
+        "permalink": "modulating-control-valve-lff110-10-lff1110-10",
+        "url": "https://www.bimobject.com/ko/watts/modulating-control-valve-lff110-10-lff1110-10",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 10
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "ad81da5a-ff8f-494f-8720-cfe5f3b673ca",
+        "name": "SCH80 CPVC/PVC Bushing - Reducing (Spig x Soc)",
+        "brand": "Spears Manufacturing",
+        "brand_permalink": "spearsmfg",
+        "permalink": "spears-837-r",
+        "url": "https://www.bimobject.com/ko/spearsmfg/spears-837-r",
+        "rating": {
+          "numberOfRatings": 8,
+          "sumOfRatings": 33
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "173e8c2c-b9d1-4fe7-bbdc-a340072589e6",
+        "name": "Silenta Premium",
+        "brand": "GF Piping Systems",
+        "brand_permalink": "gf-piping-system",
+        "permalink": "silenta-premium",
+        "url": "https://www.bimobject.com/ko/gf-piping-system/silenta-premium",
+        "rating": {
+          "numberOfRatings": 21,
+          "sumOfRatings": 100
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "c7b4b53f-0b0e-4d86-bf76-48e357e96051",
+        "name": "UFH - UNDERFLOOR HEATING MANIFOLD - PAM",
+        "brand": "Valsir",
+        "brand_permalink": "valsir",
+        "permalink": "ufh_manifold_pam",
+        "url": "https://www.bimobject.com/ko/valsir/ufh_manifold_pam",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 19
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "3c961e9d-f82d-40cd-ab1c-1ea5d3d76308",
+        "name": "2200G-2220G-2240G _ URAGANO Full bore ball valves for GAS female/female",
+        "brand": "TIEMME",
+        "brand_permalink": "tiemme",
+        "permalink": "2200g-2220g-2240g_ball-valve-gas_valvola-sfera-gas",
+        "url": "https://www.bimobject.com/ko/tiemme/2200g-2220g-2240g_ball-valve-gas_valvola-sfera-gas",
+        "rating": {
+          "numberOfRatings": 7,
+          "sumOfRatings": 31
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "c3eaaea3-b41e-4bac-bc86-ab992cf18c8b",
+        "name": "Wilkins SXL Cast Bronze \"Y\" Type Strainer, Lead-Free*",
+        "brand": "Wilkins",
+        "brand_permalink": "wilkins",
+        "permalink": "zurn-sxl",
+        "url": "https://www.bimobject.com/ko/wilkins/zurn-sxl",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 5
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "89ada094-2a76-4108-b4c6-2226cc15b22d",
+        "name": "End Suction HVAC Pumps, 1200 RPM, 1800 RPM, 3600 RPM",
+        "brand": "Patterson Pump Company",
+        "brand_permalink": "patterson-pump-company",
+        "permalink": "patterson-hves-01",
+        "url": "https://www.bimobject.com/ko/patterson-pump-company/patterson-hves-01",
+        "rating": {
+          "numberOfRatings": 19,
+          "sumOfRatings": 82
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "b2a5216b-b488-4e45-a594-bb685b930472",
+        "name": "GT2700 Grease Interceptor",
+        "brand": "Zurn",
+        "brand_permalink": "zurnindustries",
+        "permalink": "zurn-gt2700",
+        "url": "https://www.bimobject.com/ko/zurnindustries/zurn-gt2700",
+        "rating": {
+          "numberOfRatings": 12,
+          "sumOfRatings": 53
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "d8217a87-7024-43ea-8ea3-29e6097bbe35",
+        "name": "Commercial Reverse Osmosis Systems Up to 10,800 Gallons Per Day - PWR4021",
+        "brand": "Watts",
+        "brand_permalink": "watts",
+        "permalink": "7292",
+        "url": "https://www.bimobject.com/ko/watts/7292",
+        "rating": {
+          "numberOfRatings": 5,
+          "sumOfRatings": 20
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "f2a9373b-fbbf-4815-8b33-416ffe4eec55",
+        "name": "BC-92 S 1",
+        "brand": "Schneider Motobombas",
+        "brand_permalink": "motobombas",
+        "permalink": "bc-92-s-1",
+        "url": "https://www.bimobject.com/ko/motobombas/bc-92-s-1",
+        "rating": {
+          "numberOfRatings": 8,
+          "sumOfRatings": 36
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "55420ee5-83fd-4d50-bf8e-339fcdfffd3a",
+        "name": "Premier Product Water Tank D-Tank  A-5000",
+        "brand": "Premier Product พรีเมียร์ โพรดักส์",
+        "brand_permalink": "premier-product",
+        "permalink": "premierproduct_watertank_d-tank_a-5000",
+        "url": "https://www.bimobject.com/ko/premier-product/premierproduct_watertank_d-tank_a-5000",
+        "rating": {
+          "numberOfRatings": 13,
+          "sumOfRatings": 65
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "bd0d5268-4323-4e79-babb-4ad462a5dd8b",
+        "name": "BRAVA",
+        "brand": "Schneider Motobombas",
+        "brand_permalink": "motobombas",
+        "permalink": "brava",
+        "url": "https://www.bimobject.com/ko/motobombas/brava",
+        "rating": {
+          "numberOfRatings": 9,
+          "sumOfRatings": 39
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "091c920f-9a2d-4cab-99bc-188a42e3d97a",
+        "name": "Wilkins ZW209 Pressure Reducing Valve, Lead-Free*",
+        "brand": "Wilkins",
+        "brand_permalink": "wilkins",
+        "permalink": "zurn-zw209",
+        "url": "https://www.bimobject.com/ko/wilkins/zurn-zw209",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 5
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "72a12f4f-078a-4c73-8fcc-dba1f4c5d894",
+        "name": "Ball valve PN50 F-F Thread VITAQ Stainless steel Lever handle Green cover - Tajo 2000",
+        "brand": "Válvulas Arco",
+        "brand_permalink": "valvulas-arco",
+        "permalink": "tajo-2000",
+        "url": "https://www.bimobject.com/ko/valvulas-arco/tajo-2000",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 20
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "7badb45d-3cc8-4807-a8cf-fe9b16896918",
+        "name": "Swing Check Valves - Model 7700, Model 7700LW, Model 7700LS",
+        "brand": "UNITED Water Products",
+        "brand_permalink": "united-water-products",
+        "permalink": "swing-check-valves-model-7700-770lw-7700ls",
+        "url": "https://www.bimobject.com/ko/united-water-products/swing-check-valves-model-7700-770lw-7700ls",
+        "rating": {
+          "numberOfRatings": 6,
+          "sumOfRatings": 22
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "c71f9bce-2d05-4ce8-b336-9d26bb3f9b7d",
+        "name": "Gala-Drain SQ Integrated drainage kit 105",
+        "brand": "Gala",
+        "brand_permalink": "gala",
+        "permalink": "5340400",
+        "url": "https://www.bimobject.com/ko/gala/5340400",
+        "rating": {
+          "numberOfRatings": 8,
+          "sumOfRatings": 33
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "d2f87e1e-008e-477d-a785-aa8dec911df9",
+        "name": "VALSIR PEXAL EASY® MANIFOLDS",
+        "brand": "Valsir",
+        "brand_permalink": "valsir",
+        "permalink": "pexal-easy-manifolds",
+        "url": "https://www.bimobject.com/ko/valsir/pexal-easy-manifolds",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 19
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "2a1335b7-abda-46b5-9858-d13fcbe69783",
+        "name": "VALVE 210 - BRONZE GATE VALVE PN16 FxF FULL BORE",
+        "brand": "RASTELLI RUBINETTERIE SRL",
+        "brand_permalink": "rastelli-rubinetterie-srl",
+        "permalink": "210",
+        "url": "https://www.bimobject.com/ko/rastelli-rubinetterie-srl/210",
+        "rating": {
+          "numberOfRatings": 5,
+          "sumOfRatings": 24
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "36c10f93-8a2f-44e5-874f-5ad7cefb1971",
+        "name": "Z1715 Roof Drain",
+        "brand": "Zurn",
+        "brand_permalink": "zurnindustries",
+        "permalink": "zurn-z1715",
+        "url": "https://www.bimobject.com/ko/zurnindustries/zurn-z1715",
+        "rating": {
+          "numberOfRatings": 26,
+          "sumOfRatings": 124
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "ef188b3f-5c22-4f95-91db-409d90cee891",
+        "name": "K TWIN IMPELLER",
+        "brand": "Dab Pumps",
+        "brand_permalink": "dab-pumps",
+        "permalink": "k-twin-impeller",
+        "url": "https://www.bimobject.com/ko/dab-pumps/k-twin-impeller",
+        "rating": {
+          "numberOfRatings": 35,
+          "sumOfRatings": 150
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "353c11ee-1365-48f5-9519-5597091b9eef",
+        "name": "DWV PVC P-Trap",
+        "brand": "Spears Manufacturing",
+        "brand_permalink": "spearsmfg",
+        "permalink": "spears-dwv-p706x",
+        "url": "https://www.bimobject.com/ko/spearsmfg/spears-dwv-p706x",
+        "rating": {
+          "numberOfRatings": 33,
+          "sumOfRatings": 120
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "1d429d78-ee4f-4e39-a886-3106ebaa790c",
+        "name": "UFH - UNDERFLOOR HEATING MANIFOLD - STAINLESS STEEL",
+        "brand": "Valsir",
+        "brand_permalink": "valsir",
+        "permalink": "ufh_manifold_stainless_steel",
+        "url": "https://www.bimobject.com/ko/valsir/ufh_manifold_stainless_steel",
+        "rating": {
+          "numberOfRatings": 9,
+          "sumOfRatings": 40
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "8a0973e6-450d-4c4a-a0a9-af0a53d9bfe8",
+        "name": "Ball valve PN40 M-F Thread Black Lever handle Red cover - Turia",
+        "brand": "Válvulas Arco",
+        "brand_permalink": "valvulas-arco",
+        "permalink": "turia",
+        "url": "https://www.bimobject.com/ko/valvulas-arco/turia",
+        "rating": {
+          "numberOfRatings": 7,
+          "sumOfRatings": 33
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "62000d1f-5d83-4af0-8c41-618eed8258fb",
+        "name": "Lead Free* Brass Gate Valves - LFWGV",
+        "brand": "Watts",
+        "brand_permalink": "watts",
+        "permalink": "7679",
+        "url": "https://www.bimobject.com/ko/watts/7679",
+        "rating": {
+          "numberOfRatings": 9,
+          "sumOfRatings": 42
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "c4ba6043-61a9-438e-96b1-d426348729dc",
+        "name": "0630B – Multilayer pipe in polyethylene with aluminium coil and thermal insulation sheath. Blue color.",
+        "brand": "TIEMME",
+        "brand_permalink": "tiemme",
+        "permalink": "0630b_al-cobrapex_multi-layer-pipes_tubo-multistrato-isolato",
+        "url": "https://www.bimobject.com/ko/tiemme/0630b_al-cobrapex_multi-layer-pipes_tubo-multistrato-isolato",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 18
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "6ff2a12e-ec9c-4f4f-968e-cbc6ca1555ff",
+        "name": "Reduced Pressure Zone Assemblies - 009",
+        "brand": "Watts",
+        "brand_permalink": "watts",
+        "permalink": "895",
+        "url": "https://www.bimobject.com/ko/watts/895",
+        "rating": {
+          "numberOfRatings": 18,
+          "sumOfRatings": 87
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "9e520b05-3792-4733-ad02-1778a007495a",
+        "name": "Sanifos 1600/2100/3100 - tank only",
+        "brand": "SFA SANIFLO SANITRIT",
+        "brand_permalink": "sfa",
+        "permalink": "sanifos160021003100",
+        "url": "https://www.bimobject.com/ko/sfa/sanifos160021003100",
+        "rating": {
+          "numberOfRatings": 3,
+          "sumOfRatings": 4
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "28903d34-6fd6-4cbd-a4a6-e013ed2fe5a3",
+        "name": "VALVE 215 - BRASS GATE VALVE PN16 FxF FULL BORE",
+        "brand": "RASTELLI RUBINETTERIE SRL",
+        "brand_permalink": "rastelli-rubinetterie-srl",
+        "permalink": "215",
+        "url": "https://www.bimobject.com/ko/rastelli-rubinetterie-srl/215",
+        "rating": {
+          "numberOfRatings": 3,
+          "sumOfRatings": 15
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "b065d5fb-455d-45cb-aea1-3b3914df36d7",
+        "name": "DWV PVC Schedule 40 Pipe",
+        "brand": "Spears Manufacturing",
+        "brand_permalink": "spearsmfg",
+        "permalink": "spears-dwv-pd-400",
+        "url": "https://www.bimobject.com/ko/spearsmfg/spears-dwv-pd-400",
+        "rating": {
+          "numberOfRatings": 17,
+          "sumOfRatings": 72
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "014a5202-1372-4507-9575-e7e88fdb0c69",
+        "name": "CM-(G)/CP-(G)",
+        "brand": "Dab Pumps",
+        "brand_permalink": "dab-pumps",
+        "permalink": "cm-g-cp-g",
+        "url": "https://www.bimobject.com/ko/dab-pumps/cm-g-cp-g",
+        "rating": {
+          "numberOfRatings": 10,
+          "sumOfRatings": 34
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "05f102e5-616d-43bb-b8f9-d36ec45d4878",
+        "name": "ChlorFIT CPVC - Commercial Potable Water",
+        "brand": "GF Piping Systems",
+        "brand_permalink": "gf-piping-system",
+        "permalink": "chlorfit-cpvc-commercial-potable-water",
+        "url": "https://www.bimobject.com/ko/gf-piping-system/chlorfit-cpvc-commercial-potable-water",
+        "rating": {
+          "numberOfRatings": 9,
+          "sumOfRatings": 40
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "7d8ef7ed-141a-42fc-a4fa-8d7d8bf2a998",
+        "name": "Wilkins 48 Resilient Wedge Gate Valve, 2-1/2\" to 12\", Lead-Free*",
+        "brand": "Wilkins",
+        "brand_permalink": "wilkins",
+        "permalink": "zurn-48",
+        "url": "https://www.bimobject.com/ko/wilkins/zurn-48",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 10
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "c3d96c7c-ebd7-4c75-901e-80806441f7a8",
+        "name": "42521XXX AXOR Drain Finish set shower drain 800",
+        "brand": "AXOR",
+        "brand_permalink": "axor",
+        "permalink": "42521xxx",
+        "url": "https://www.bimobject.com/ko/axor/42521xxx",
+        "rating": {
+          "numberOfRatings": 6,
+          "sumOfRatings": 30
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "3eb46cc4-d059-4a72-9bbc-dbb36af506af",
+        "name": "Pressure Relief, Sustaining or Backpressure Control Valve - LFF116, LFF1116",
+        "brand": "Watts",
+        "brand_permalink": "watts",
+        "permalink": "pressure-relief-control-valve-lff116-lff1116",
+        "url": "https://www.bimobject.com/ko/watts/pressure-relief-control-valve-lff116-lff1116",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 4
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "0a3a2800-0555-4627-b794-87d6db5b4ba7",
+        "name": "Meter Demand Duplex Alternating Water Softeners for Hardness Reduction - PWS20-2",
+        "brand": "Watts",
+        "brand_permalink": "watts",
+        "permalink": "7284",
+        "url": "https://www.bimobject.com/ko/watts/7284",
+        "rating": {
+          "numberOfRatings": 7,
+          "sumOfRatings": 27
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "16e7ca72-5d19-48c9-9f63-20d0389d2b1d",
+        "name": "HIPPO",
+        "brand": "Schneider Motobombas",
+        "brand_permalink": "motobombas",
+        "permalink": "hippo",
+        "url": "https://www.bimobject.com/ko/motobombas/hippo",
+        "rating": {
+          "numberOfRatings": 3,
+          "sumOfRatings": 15
+        },
+        "category_code": "plumbing"
+      },
+      {
+        "id": "517acd93-f614-42a2-a307-f8d820fa5de5",
+        "name": "Premier Product Water Tank Big Tank HT-25AG",
+        "brand": "Premier Product พรีเมียร์ โพรดักส์",
+        "brand_permalink": "premier-product",
+        "permalink": "premierproduct_watertank_bigtank_ht-25ag",
+        "url": "https://www.bimobject.com/ko/premier-product/premierproduct_watertank_bigtank_ht-25ag",
+        "rating": {
+          "numberOfRatings": 8,
+          "sumOfRatings": 38
+        },
+        "category_code": "plumbing"
+      }
+    ],
+    "fire-products": [
+      {
+        "id": "e705e3d0-e30b-40e8-a1b9-8a7ed3be3bf8",
+        "name": "Dry Barrel Fire Hydrant FIREFLO Model F-06 & F-06M",
+        "brand": "UNITED Water Products",
+        "brand_permalink": "united-water-products",
+        "permalink": "dry-barrel-fire-hydrant-f-06",
+        "url": "https://www.bimobject.com/ko/united-water-products/dry-barrel-fire-hydrant-f-06",
+        "rating": {
+          "numberOfRatings": 7,
+          "sumOfRatings": 32
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "ddfb1e8b-1261-4f86-84a9-58e7e6dcf9a0",
+        "name": "Smoke Guard© Model 200/400 - archived Nov 12 2019",
+        "brand": "Smoke Guard",
+        "brand_permalink": "smokeguard",
+        "permalink": "smokeguard-200-400",
+        "url": "https://www.bimobject.com/ko/smokeguard/smokeguard-200-400",
+        "rating": {
+          "numberOfRatings": 3,
+          "sumOfRatings": 13
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "09111ebd-4716-4334-98d4-422584f5dcca",
+        "name": "Model 200 Smoke Curtain",
+        "brand": "Smoke Guard",
+        "brand_permalink": "smokeguard",
+        "permalink": "200_smoke_curtain",
+        "url": "https://www.bimobject.com/ko/smokeguard/200_smoke_curtain",
+        "rating": {
+          "numberOfRatings": 9,
+          "sumOfRatings": 44
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "33d473cc-eef5-4867-b712-19ab43963c0e",
+        "name": "ABC Portable Fire Extinguisher",
+        "brand": "Nystrom",
+        "brand_permalink": "nystrom",
+        "permalink": "nystrom-149",
+        "url": "https://www.bimobject.com/ko/nystrom/nystrom-149",
+        "rating": {
+          "numberOfRatings": 67,
+          "sumOfRatings": 283
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "46746b29-7e25-45eb-b492-d267c30e1412",
+        "name": "Wet Barrel Fire Hydrant FIREFLO Model F-08",
+        "brand": "UNITED Water Products",
+        "brand_permalink": "united-water-products",
+        "permalink": "wet-barrel-fire-hydrant-f-08",
+        "url": "https://www.bimobject.com/ko/united-water-products/wet-barrel-fire-hydrant-f-08",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 18
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "f7a60ee5-f970-435c-b0be-8ca8bdffc27c",
+        "name": "Combination Fire and Smoke Damper FSD60 - Class I Airfoil Blade",
+        "brand": "Ruskin",
+        "brand_permalink": "ruskin",
+        "permalink": "rd-00317-001",
+        "url": "https://www.bimobject.com/ko/ruskin/rd-00317-001",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 5
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "40d6bc9d-d6fd-46f4-8b4c-58fc1743501b",
+        "name": "Manual Pull Stations",
+        "brand": "Edwards",
+        "brand_permalink": "edwardsutc",
+        "permalink": "edwards-utc-011",
+        "url": "https://www.bimobject.com/ko/edwardsutc/edwards-utc-011",
+        "rating": {
+          "numberOfRatings": 24,
+          "sumOfRatings": 112
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "1c301683-75b8-4396-878b-232e4b4508df",
+        "name": "Intelligent Smoke Detector with Optional CO Sensor",
+        "brand": "Edwards",
+        "brand_permalink": "edwardsutc",
+        "permalink": "edwards-utc-85001-0619",
+        "url": "https://www.bimobject.com/ko/edwardsutc/edwards-utc-85001-0619",
+        "rating": {
+          "numberOfRatings": 17,
+          "sumOfRatings": 76
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "312ad483-95d3-4906-815a-7c106983b482",
+        "name": "Model 7500 - Pressure Gauge",
+        "brand": "AGF Manufacturing",
+        "brand_permalink": "agf",
+        "permalink": "agf-model-7500",
+        "url": "https://www.bimobject.com/ko/agf/agf-model-7500",
+        "rating": {
+          "numberOfRatings": 57,
+          "sumOfRatings": 248
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "d874e369-2e3c-4fd2-85c5-3132929dfb3c",
+        "name": "Crown Fire Extinguisher Cabinet",
+        "brand": "Babcock-Davis",
+        "brand_permalink": "babcock",
+        "permalink": "crown-fire-extinguisher-cabinet",
+        "url": "https://www.bimobject.com/ko/babcock/crown-fire-extinguisher-cabinet",
+        "rating": {
+          "numberOfRatings": 11,
+          "sumOfRatings": 53
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "b9288c81-0a9e-4109-b130-60bc064fac19",
+        "name": "G1 LED - Compact Wall - Horn - Strobe",
+        "brand": "Edwards",
+        "brand_permalink": "edwardsutc",
+        "permalink": "edwards-utc-g1",
+        "url": "https://www.bimobject.com/ko/edwardsutc/edwards-utc-g1",
+        "rating": {
+          "numberOfRatings": 17,
+          "sumOfRatings": 80
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "10bec7ae-e128-4560-8bf5-c48a77a0b350",
+        "name": "Intelligent Photoelectric Smoke Detector",
+        "brand": "Edwards",
+        "brand_permalink": "edwardsutc",
+        "permalink": "edwards-utc-85001-0269",
+        "url": "https://www.bimobject.com/ko/edwardsutc/edwards-utc-85001-0269",
+        "rating": {
+          "numberOfRatings": 32,
+          "sumOfRatings": 138
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "c3e574fb-9014-4006-b34e-850715110931",
+        "name": "SIGNAGE FOR EXTINGUISHERS",
+        "brand": "Cea Estintori",
+        "brand_permalink": "cea-estintori",
+        "permalink": "signage",
+        "url": "https://www.bimobject.com/ko/cea-estintori/signage",
+        "rating": {
+          "numberOfRatings": 10,
+          "sumOfRatings": 49
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "551ccece-0c88-4e6f-afee-56ccdae8cd53",
+        "name": "F1FR Series",
+        "brand": "Reliable Sprinkler",
+        "brand_permalink": "reliable",
+        "permalink": "f1fr",
+        "url": "https://www.bimobject.com/ko/reliable/f1fr",
+        "rating": {
+          "numberOfRatings": 14,
+          "sumOfRatings": 62
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "2f83fa02-b359-48c6-a41b-c963c333bc45",
+        "name": "949 CONCEALED SPRINKLER QUICK RESPONSE",
+        "brand": "Bocciolone Antincendio",
+        "brand_permalink": "bocciolone-antincendio",
+        "permalink": "art-949-spinkler-concealed-quick-response",
+        "url": "https://www.bimobject.com/ko/bocciolone-antincendio/art-949-spinkler-concealed-quick-response",
+        "rating": {
+          "numberOfRatings": 25,
+          "sumOfRatings": 106
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "6de6d83c-511d-44f4-9664-5419832a4ff2",
+        "name": "BlueKit Thermo Flap - Roof hood with louvred cap",
+        "brand": "D+H Mechatronic AG",
+        "brand_permalink": "dh-mechatronic",
+        "permalink": "buekit-thermo-flap-roof-hood-with-louvte-cap",
+        "url": "https://www.bimobject.com/ko/dh-mechatronic/buekit-thermo-flap-roof-hood-with-louvte-cap",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "fee24e4c-8ac2-4780-9f81-99295229754c",
+        "name": "Wilkins FP63 Mechanical Tees",
+        "brand": "Zurn",
+        "brand_permalink": "zurnindustries",
+        "permalink": "zurn-fp63",
+        "url": "https://www.bimobject.com/ko/zurnindustries/zurn-fp63",
+        "rating": {
+          "numberOfRatings": 9,
+          "sumOfRatings": 38
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "68e42034-2f1c-4c24-88c4-b612ebedd562",
+        "name": "GL6WBX",
+        "brand": "Cea Estintori",
+        "brand_permalink": "cea-estintori",
+        "permalink": "gl6wbx",
+        "url": "https://www.bimobject.com/ko/cea-estintori/gl6wbx",
+        "rating": {
+          "numberOfRatings": 14,
+          "sumOfRatings": 68
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "1250210b-ec8c-41f8-9a43-c490f31fd446",
+        "name": "Fire Alarm Telephones",
+        "brand": "Edwards",
+        "brand_permalink": "edwardsutc",
+        "permalink": "edwards-utc-022",
+        "url": "https://www.bimobject.com/ko/edwardsutc/edwards-utc-022",
+        "rating": {
+          "numberOfRatings": 12,
+          "sumOfRatings": 45
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "29d123dc-11ff-4dc7-88a1-d5456ad95eb2",
+        "name": "80/L SWINGING FIRE HOSE REEL “Murano Collection”",
+        "brand": "Bocciolone Antincendio",
+        "brand_permalink": "bocciolone-antincendio",
+        "permalink": "art-80-l-naspo-murano-collection",
+        "url": "https://www.bimobject.com/ko/bocciolone-antincendio/art-80-l-naspo-murano-collection",
+        "rating": {
+          "numberOfRatings": 16,
+          "sumOfRatings": 75
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "1315b9b7-b677-4f7c-b8e8-860794597edf",
+        "name": "PD50BE",
+        "brand": "Cea Estintori",
+        "brand_permalink": "cea-estintori",
+        "permalink": "pd50be",
+        "url": "https://www.bimobject.com/ko/cea-estintori/pd50be",
+        "rating": {
+          "numberOfRatings": 5,
+          "sumOfRatings": 25
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "017f8bb3-5019-47a8-ae96-0192d8674105",
+        "name": "EST3 Cabinets and Chassis",
+        "brand": "Edwards",
+        "brand_permalink": "edwardsutc",
+        "permalink": "edwards-utc-030",
+        "url": "https://www.bimobject.com/ko/edwardsutc/edwards-utc-030",
+        "rating": {
+          "numberOfRatings": 6,
+          "sumOfRatings": 30
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "d8887306-8bd2-4439-86bb-7ea271aa66c2",
+        "name": "PD12MQ",
+        "brand": "Cea Estintori",
+        "brand_permalink": "cea-estintori",
+        "permalink": "pd12mq",
+        "url": "https://www.bimobject.com/ko/cea-estintori/pd12mq",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 19
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "ef2c4bbf-674d-41b0-99f1-5b5557e0eb98",
+        "name": "Intelligent Heat Detectors",
+        "brand": "Edwards",
+        "brand_permalink": "edwardsutc",
+        "permalink": "edwards-utc-85001-0243",
+        "url": "https://www.bimobject.com/ko/edwardsutc/edwards-utc-85001-0243",
+        "rating": {
+          "numberOfRatings": 14,
+          "sumOfRatings": 64
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "02f42e7e-7995-45db-90df-987ba7ae1010",
+        "name": "PD9ES",
+        "brand": "Cea Estintori",
+        "brand_permalink": "cea-estintori",
+        "permalink": "pd9es",
+        "url": "https://www.bimobject.com/ko/cea-estintori/pd9es",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 16
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "61e40e66-cfd6-4561-a140-43c63e01098d",
+        "name": "36/KC FIRE EXTINGUISHER CABINET \"Murano\" COLLECTION",
+        "brand": "Bocciolone Antincendio",
+        "brand_permalink": "bocciolone-antincendio",
+        "permalink": "art-36-kc-fire-exting-cabinet-murano",
+        "url": "https://www.bimobject.com/ko/bocciolone-antincendio/art-36-kc-fire-exting-cabinet-murano",
+        "rating": {
+          "numberOfRatings": 6,
+          "sumOfRatings": 28
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "71218e27-ecf6-47c7-94b3-92010247e963",
+        "name": "Model 8611 Corner RiserPACK",
+        "brand": "AGF Manufacturing",
+        "brand_permalink": "agf",
+        "permalink": "agf-corner-riser",
+        "url": "https://www.bimobject.com/ko/agf/agf-corner-riser",
+        "rating": {
+          "numberOfRatings": 16,
+          "sumOfRatings": 74
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "f93bfe9e-f96c-4e20-8600-39fb43e3a7a9",
+        "name": "ITC-FS : Fire Sprinkler Digital Heat Trace Controller 1 & 2 Circuit",
+        "brand": "Chromalox",
+        "brand_permalink": "chromalox",
+        "permalink": "chromalox-itc-digital-heat-trace-controller",
+        "url": "https://www.bimobject.com/ko/chromalox/chromalox-itc-digital-heat-trace-controller",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 19
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "d549f453-53b2-4b9d-a0f4-3780630ea6b1",
+        "name": "Sprinkler head_YSGU68/YSGU93",
+        "brand": "YAMATO PROTEC [ヤマトプロテック]",
+        "brand_permalink": "yamatoprotec",
+        "permalink": "ysgu68-93",
+        "url": "https://www.bimobject.com/ko/yamatoprotec/ysgu68-93",
+        "rating": {
+          "numberOfRatings": 7,
+          "sumOfRatings": 27
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "04272dd0-2d3a-4e42-83cc-8999cadbbe98",
+        "name": "Wilkins FP52 - Elbows",
+        "brand": "Zurn",
+        "brand_permalink": "zurnindustries",
+        "permalink": "zurn-fp52",
+        "url": "https://www.bimobject.com/ko/zurnindustries/zurn-fp52",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 8
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "0f005b77-1082-4490-abbf-ae036f079109",
+        "name": "MB-60E EI Fire Single Doors",
+        "brand": "Aluprof",
+        "brand_permalink": "aluprof",
+        "permalink": "mb-60e-ei-fire-single-doors",
+        "url": "https://www.bimobject.com/ko/aluprof/mb-60e-ei-fire-single-doors",
+        "rating": {
+          "numberOfRatings": 9,
+          "sumOfRatings": 42
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "1ebf78b4-f091-468e-b6cb-16293ddcee13",
+        "name": "PD30",
+        "brand": "Cea Estintori",
+        "brand_permalink": "cea-estintori",
+        "permalink": "pd30",
+        "url": "https://www.bimobject.com/ko/cea-estintori/pd30",
+        "rating": {
+          "numberOfRatings": 7,
+          "sumOfRatings": 30
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "e46efe5f-714c-4f38-8a70-f57f8734d186",
+        "name": "R-Series Remote Annunciators",
+        "brand": "Edwards",
+        "brand_permalink": "edwardsutc",
+        "permalink": "edwards-utc-014",
+        "url": "https://www.bimobject.com/ko/edwardsutc/edwards-utc-014",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 19
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "694ade1e-91df-4e80-a6ac-468140b50f85",
+        "name": "Model 2511T TESTanDRAIN - Single Handle Ball Valve",
+        "brand": "AGF Manufacturing",
+        "brand_permalink": "agf",
+        "permalink": "agf-model-2511t",
+        "url": "https://www.bimobject.com/ko/agf/agf-model-2511t",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 14
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "7d7fde49-e9cf-4510-967b-c89bd551dd34",
+        "name": "2/N FIRE HOSE SYSTEM FOR UNDERGROUND HYDRANT - \"Electa\" CABINET",
+        "brand": "Bocciolone Antincendio",
+        "brand_permalink": "bocciolone-antincendio",
+        "permalink": "art-2-n-sistema-servizio-sottosuolo-electa",
+        "url": "https://www.bimobject.com/ko/bocciolone-antincendio/art-2-n-sistema-servizio-sottosuolo-electa",
+        "rating": {
+          "numberOfRatings": 8,
+          "sumOfRatings": 38
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "9a6283b8-708a-4e26-8cb4-6d8faea6c391",
+        "name": "Control Relay Modules",
+        "brand": "Edwards",
+        "brand_permalink": "edwardsutc",
+        "permalink": "edwards-utc-033",
+        "url": "https://www.bimobject.com/ko/edwardsutc/edwards-utc-033",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 19
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "4e56eb9c-77d6-4274-b1aa-4ddc3146de96",
+        "name": "GC LED - Ceiling - Horn - Strobe",
+        "brand": "Edwards",
+        "brand_permalink": "edwardsutc",
+        "permalink": "edwards-utc-gc",
+        "url": "https://www.bimobject.com/ko/edwardsutc/edwards-utc-gc",
+        "rating": {
+          "numberOfRatings": 14,
+          "sumOfRatings": 64
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "9988e909-44b8-4b1d-8cd9-c504aaa4ea65",
+        "name": "JL-14 ESFR",
+        "brand": "Reliable Sprinkler",
+        "brand_permalink": "reliable",
+        "permalink": "jl14esfr",
+        "url": "https://www.bimobject.com/ko/reliable/jl14esfr",
+        "rating": {
+          "numberOfRatings": 5,
+          "sumOfRatings": 25
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "b3acda27-d70f-429b-9703-ac2f610e3c2c",
+        "name": "Speaker and Speaker- Strobes",
+        "brand": "Edwards",
+        "brand_permalink": "edwardsutc",
+        "permalink": "edwards-utc-013",
+        "url": "https://www.bimobject.com/ko/edwardsutc/edwards-utc-013",
+        "rating": {
+          "numberOfRatings": 10,
+          "sumOfRatings": 44
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "bcbfc700-fac8-4dde-9b65-438e45ae9c38",
+        "name": "AL105NX Alarm Horn Sounder & Xenon Strobe Beacon",
+        "brand": "Conspec Controls",
+        "brand_permalink": "conspec-controls",
+        "permalink": "al105nx-horn-strobe-combo",
+        "url": "https://www.bimobject.com/ko/conspec-controls/al105nx-horn-strobe-combo",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "cc138832-c1eb-4872-ad3b-d4b10a79d553",
+        "name": "205/B FIRE BRIGADE CONNECTION - HORIZONTAL, FLANGED",
+        "brand": "Bocciolone Antincendio",
+        "brand_permalink": "bocciolone-antincendio",
+        "permalink": "art-205-b-attacco-mandata-flangiato",
+        "url": "https://www.bimobject.com/ko/bocciolone-antincendio/art-205-b-attacco-mandata-flangiato",
+        "rating": {
+          "numberOfRatings": 7,
+          "sumOfRatings": 29
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "42c6caed-05bd-4204-9a81-5bd9de507f9b",
+        "name": "Combination Fire and Smoke Damper FSD35 - Class III V-Groove Blade",
+        "brand": "Ruskin",
+        "brand_permalink": "ruskin",
+        "permalink": "rd-00317-003",
+        "url": "https://www.bimobject.com/ko/ruskin/rd-00317-003",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 4
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "5f88b03d-3326-47e1-a57a-e5ab1528ace9",
+        "name": "MB-60E EI Fire Double Doors",
+        "brand": "Aluprof",
+        "brand_permalink": "aluprof",
+        "permalink": "mb-60e-ei-fire-double-doors",
+        "url": "https://www.bimobject.com/ko/aluprof/mb-60e-ei-fire-double-doors",
+        "rating": {
+          "numberOfRatings": 5,
+          "sumOfRatings": 25
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "094cbed5-5f09-449f-ae06-26bca31f58a8",
+        "name": "Model 1000 TESTanDRAIN® - Single Handle Ball Valve",
+        "brand": "AGF Manufacturing",
+        "brand_permalink": "agf",
+        "permalink": "agf-model-1000",
+        "url": "https://www.bimobject.com/ko/agf/agf-model-1000",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 20
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "6ae90a74-d346-4d51-897b-9c3a84641554",
+        "name": "2/M FIRE HOSE SYSTEM FOR FIRE SERVICE USE DN 70 - \"Electa\" CABINET",
+        "brand": "Bocciolone Antincendio",
+        "brand_permalink": "bocciolone-antincendio",
+        "permalink": "art-2-m-sistema-servizio-soprasuolo-electa",
+        "url": "https://www.bimobject.com/ko/bocciolone-antincendio/art-2-m-sistema-servizio-soprasuolo-electa",
+        "rating": {
+          "numberOfRatings": 18,
+          "sumOfRatings": 85
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "ac5bda13-a41b-4040-86dd-344c925b3dfd",
+        "name": "EST4 Cabinets and Chassis",
+        "brand": "Edwards",
+        "brand_permalink": "edwardsutc",
+        "permalink": "edwards-est4-cab",
+        "url": "https://www.bimobject.com/ko/edwardsutc/edwards-est4-cab",
+        "rating": {
+          "numberOfRatings": 6,
+          "sumOfRatings": 30
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "1504a69f-415b-4ae6-aad4-b7d34d941f49",
+        "name": "Intelligent Smoke & Heat Detector with Optional CO Sensor",
+        "brand": "Edwards",
+        "brand_permalink": "edwardsutc",
+        "permalink": "edwards-utc-85001-0621",
+        "url": "https://www.bimobject.com/ko/edwardsutc/edwards-utc-85001-0621",
+        "rating": {
+          "numberOfRatings": 6,
+          "sumOfRatings": 25
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "1f453077-9166-43a2-89d4-da59b44d5a01",
+        "name": "PD50",
+        "brand": "Cea Estintori",
+        "brand_permalink": "cea-estintori",
+        "permalink": "pd50",
+        "url": "https://www.bimobject.com/ko/cea-estintori/pd50",
+        "rating": {
+          "numberOfRatings": 5,
+          "sumOfRatings": 20
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "a3a1aaf6-b3f7-4efc-9f06-f5931eba40b9",
+        "name": "Smoke & Comfort Ventilation w. Dome Flat roof window - CSP ISD",
+        "brand": "VELUX roof windows",
+        "brand_permalink": "velux",
+        "permalink": "csp",
+        "url": "https://www.bimobject.com/ko/velux/csp",
+        "rating": {
+          "numberOfRatings": 15,
+          "sumOfRatings": 70
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "10dad259-a220-418d-9547-eb33fe59b393",
+        "name": "G4 LED - Wall - Horn - Strobe",
+        "brand": "Edwards",
+        "brand_permalink": "edwardsutc",
+        "permalink": "edwards-utc-g4",
+        "url": "https://www.bimobject.com/ko/edwardsutc/edwards-utc-g4",
+        "rating": {
+          "numberOfRatings": 20,
+          "sumOfRatings": 93
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "3213d911-e146-4aea-9057-dd7387700718",
+        "name": "MB-86EI Fireproof Door Double with Fanlight and Sidelights",
+        "brand": "Aluprof",
+        "brand_permalink": "aluprof",
+        "permalink": "mb-86ei-door-dbl-with-fanlight-and-sidelights",
+        "url": "https://www.bimobject.com/ko/aluprof/mb-86ei-door-dbl-with-fanlight-and-sidelights",
+        "rating": {
+          "numberOfRatings": 5,
+          "sumOfRatings": 23
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "64840a2b-562e-4661-9fb2-3e60c3574c50",
+        "name": "Sprinkler clamp FRSP",
+        "brand": "fischer",
+        "brand_permalink": "fischer",
+        "permalink": "fischer-sprinkler-clamp-frsp",
+        "url": "https://www.bimobject.com/ko/fischer/fischer-sprinkler-clamp-frsp",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 15
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "84eeb104-00a4-4391-bb32-6be9618787ac",
+        "name": "Orivent 23",
+        "brand": "Kera Group",
+        "brand_permalink": "kera-group",
+        "permalink": "orivent-23",
+        "url": "https://www.bimobject.com/ko/kera-group/orivent-23",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "97533955-ac86-4cb7-86ef-d91f74a41fe1",
+        "name": "H2ES",
+        "brand": "Cea Estintori",
+        "brand_permalink": "cea-estintori",
+        "permalink": "h2es",
+        "url": "https://www.bimobject.com/ko/cea-estintori/h2es",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 18
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "c795e23b-a343-40db-ad1e-ff554e3fa465",
+        "name": "2/PE FIRE HYDRANT WITH LAY-FLAT HOSE \"Murano\", WITH FIRE EXTINGUISHER PLACE",
+        "brand": "Bocciolone Antincendio",
+        "brand_permalink": "bocciolone-antincendio",
+        "permalink": "art-2-pe-idrante-45-murano-porta-estintore",
+        "url": "https://www.bimobject.com/ko/bocciolone-antincendio/art-2-pe-idrante-45-murano-porta-estintore",
+        "rating": {
+          "numberOfRatings": 8,
+          "sumOfRatings": 39
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "22e159e9-d9fe-4466-8b5d-2e3105a17954",
+        "name": "205/D FIRE BRIGADE CONNECTION \"All-In-One\" - FLANGED",
+        "brand": "Bocciolone Antincendio",
+        "brand_permalink": "bocciolone-antincendio",
+        "permalink": "art-205-d-attacco-mandata-all-in-one-flangiato",
+        "url": "https://www.bimobject.com/ko/bocciolone-antincendio/art-205-d-attacco-mandata-all-in-one-flangiato",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 10
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "56a9d631-7ffa-41b0-bc70-621ec1e38806",
+        "name": "JL Industries | Fire Extinguisher Cabinet Frameless Acrylic Door with Steel Trim | Panorama Series",
+        "brand": "Activar Construction Products Group",
+        "brand_permalink": "activar",
+        "permalink": "activar-fec-panorama-s",
+        "url": "https://www.bimobject.com/ko/activar/activar-fec-panorama-s",
+        "rating": {
+          "numberOfRatings": 6,
+          "sumOfRatings": 29
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "81fc4462-ad01-4dc2-a502-d20683413b14",
+        "name": "206 DRY RISER",
+        "brand": "Bocciolone Antincendio",
+        "brand_permalink": "bocciolone-antincendio",
+        "permalink": "art-206-dry-riser-valve-with-cabinet",
+        "url": "https://www.bimobject.com/ko/bocciolone-antincendio/art-206-dry-riser-valve-with-cabinet",
+        "rating": {
+          "numberOfRatings": 7,
+          "sumOfRatings": 30
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "eb158674-4be8-4aa1-aa32-7dd5a17f04bc",
+        "name": "PBI12MQ",
+        "brand": "Cea Estintori",
+        "brand_permalink": "cea-estintori",
+        "permalink": "pbi12mq",
+        "url": "https://www.bimobject.com/ko/cea-estintori/pbi12mq",
+        "rating": {
+          "numberOfRatings": 10,
+          "sumOfRatings": 48
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "27c13a51-07b7-4249-9dc4-4f233904ff05",
+        "name": "EST3 Remote Annunciators",
+        "brand": "Edwards",
+        "brand_permalink": "edwardsutc",
+        "permalink": "edwards-utc-015",
+        "url": "https://www.bimobject.com/ko/edwardsutc/edwards-utc-015",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 19
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "48857ed2-a5f2-46ff-992b-05a9a811f955",
+        "name": "Orivent T1",
+        "brand": "Kera Group",
+        "brand_permalink": "kera-group",
+        "permalink": "orivent-t1",
+        "url": "https://www.bimobject.com/ko/kera-group/orivent-t1",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "95f5c4db-2102-4fd3-8206-da520f32184b",
+        "name": "EST4 Remote Annunciators",
+        "brand": "Edwards",
+        "brand_permalink": "edwardsutc",
+        "permalink": "edwards-est4-ann",
+        "url": "https://www.bimobject.com/ko/edwardsutc/edwards-est4-ann",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 10
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "ad6366ec-ec5d-4f60-95d6-79f2b1f96d59",
+        "name": "Sprinkler Pipe Hangers MP-SPN HVAC",
+        "brand": "Hilti",
+        "brand_permalink": "hilti",
+        "permalink": "sprinklerpipehanger_com",
+        "url": "https://www.bimobject.com/ko/hilti/sprinklerpipehanger_com",
+        "rating": {
+          "numberOfRatings": 18,
+          "sumOfRatings": 71
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "f766e530-bff7-48c7-89bb-2be103e52a0a",
+        "name": "SafeFire Linear Heat Detection Cable with Optional DLM-Z2 Controller and",
+        "brand": "Conspec Controls",
+        "brand_permalink": "conspec-controls",
+        "permalink": "dlm-z2_controller-and-linear-heat-detection-cable",
+        "url": "https://www.bimobject.com/ko/conspec-controls/dlm-z2_controller-and-linear-heat-detection-cable",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 5
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "13158388-876f-45b6-b298-2d22068b537e",
+        "name": "Electromagnetic Door Holders",
+        "brand": "Edwards",
+        "brand_permalink": "edwardsutc",
+        "permalink": "edwards-utc-026",
+        "url": "https://www.bimobject.com/ko/edwardsutc/edwards-utc-026",
+        "rating": {
+          "numberOfRatings": 11,
+          "sumOfRatings": 53
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "2b1584c5-206a-4b08-bda6-20668f4c8dea",
+        "name": "205/D FIRE BRIGADE CONNECTION \"All-In-One\" - THREADED",
+        "brand": "Bocciolone Antincendio",
+        "brand_permalink": "bocciolone-antincendio",
+        "permalink": "art-205-d-attacco-mandata-all-in-one-filettato",
+        "url": "https://www.bimobject.com/ko/bocciolone-antincendio/art-205-d-attacco-mandata-all-in-one-filettato",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "75c531e2-6832-4e6f-ae6f-065418a01e60",
+        "name": "PS100",
+        "brand": "Cea Estintori",
+        "brand_permalink": "cea-estintori",
+        "permalink": "ps100",
+        "url": "https://www.bimobject.com/ko/cea-estintori/ps100",
+        "rating": {
+          "numberOfRatings": 3,
+          "sumOfRatings": 14
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "9218dbf2-41a8-4fcf-9760-c1db0feda4de",
+        "name": "205/C FIRE BRIGADE CONNECTION - HORIZONTAL, STEEL COLLECTOR",
+        "brand": "Bocciolone Antincendio",
+        "brand_permalink": "bocciolone-antincendio",
+        "permalink": "art-205-c-attacco-mandata-collettore-acciaio",
+        "url": "https://www.bimobject.com/ko/bocciolone-antincendio/art-205-c-attacco-mandata-collettore-acciaio",
+        "rating": {
+          "numberOfRatings": 3,
+          "sumOfRatings": 14
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "4b9e89a9-d88f-405c-9ace-f3cef72cfdd4",
+        "name": "AK5 CO2 extinguisher",
+        "brand": "Saval",
+        "brand_permalink": "saval",
+        "permalink": "8902800",
+        "url": "https://www.bimobject.com/ko/saval/8902800",
+        "rating": {
+          "numberOfRatings": 17,
+          "sumOfRatings": 73
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "8758fced-4423-4ca0-84db-f668295cd016",
+        "name": "Curtain Type Fire Damper IBD2",
+        "brand": "Ruskin",
+        "brand_permalink": "ruskin",
+        "permalink": "rd-00317-008",
+        "url": "https://www.bimobject.com/ko/ruskin/rd-00317-008",
+        "rating": {
+          "numberOfRatings": 9,
+          "sumOfRatings": 33
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "e54407e8-0e86-4036-a22a-3f2bb65d4d30",
+        "name": "205/D FIRE BRIGADE CONNECTION \"All-In-One\" - GROOVED",
+        "brand": "Bocciolone Antincendio",
+        "brand_permalink": "bocciolone-antincendio",
+        "permalink": "art-205-d-attacco-mandata-all-in-one-scanalato",
+        "url": "https://www.bimobject.com/ko/bocciolone-antincendio/art-205-d-attacco-mandata-all-in-one-scanalato",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 4
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "24de19a4-a3fa-4207-a99a-b8a21b090a81",
+        "name": "Closed type foam solution head_YCXP68-26",
+        "brand": "YAMATO PROTEC [ヤマトプロテック]",
+        "brand_permalink": "yamatoprotec",
+        "permalink": "ycxp68-26",
+        "url": "https://www.bimobject.com/ko/yamatoprotec/ycxp68-26",
+        "rating": {
+          "numberOfRatings": 3,
+          "sumOfRatings": 14
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "b8998109-597b-4500-9d23-5e28e179cd93",
+        "name": "MB-78EI Fireproof Single Door with Fanlight Opening Outwards",
+        "brand": "Aluprof",
+        "brand_permalink": "aluprof",
+        "permalink": "mb-78ei_fireproof_single_door_with_fanlight_opening_outwards",
+        "url": "https://www.bimobject.com/ko/aluprof/mb-78ei_fireproof_single_door_with_fanlight_opening_outwards",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 15
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "32c7e161-515f-40d7-b869-f5a220168ff3",
+        "name": "JL Industries | Fire Hose & FD Valve Cabinet Stainless Steel | Crownline 6000 & 7000 Series  ",
+        "brand": "Activar Construction Products Group",
+        "brand_permalink": "activar",
+        "permalink": "activar-hv-crownline-ss-6000-7000",
+        "url": "https://www.bimobject.com/ko/activar/activar-hv-crownline-ss-6000-7000",
+        "rating": {
+          "numberOfRatings": 6,
+          "sumOfRatings": 22
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "89b3d956-d7cc-4107-8b6e-99ee0c5b4364",
+        "name": "JL Industries | Fire Extinguisher Cabinet Steel | Ambassador Series",
+        "brand": "Activar Construction Products Group",
+        "brand_permalink": "activar",
+        "permalink": "activar-fec-ambassador",
+        "url": "https://www.bimobject.com/ko/activar/activar-fec-ambassador",
+        "rating": {
+          "numberOfRatings": 7,
+          "sumOfRatings": 24
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "b966250f-6a41-409e-8cdf-0db4e2eaeb1f",
+        "name": "JL Industries | Fire Extinguisher Cabinet Frameless Acrylic Door with Stainless Steel Trim | Panorama Series",
+        "brand": "Activar Construction Products Group",
+        "brand_permalink": "activar",
+        "permalink": "activar-fec-panorama-ss",
+        "url": "https://www.bimobject.com/ko/activar/activar-fec-panorama-ss",
+        "rating": {
+          "numberOfRatings": 3,
+          "sumOfRatings": 15
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "fa725e2f-d4d5-4bf8-b6a7-3e978733236b",
+        "name": "205/A FIRE BRIGADE CONNECTION - HORIZONTAL, THREADED",
+        "brand": "Bocciolone Antincendio",
+        "brand_permalink": "bocciolone-antincendio",
+        "permalink": "art-205-a-attacco-mandata-filettato",
+        "url": "https://www.bimobject.com/ko/bocciolone-antincendio/art-205-a-attacco-mandata-filettato",
+        "rating": {
+          "numberOfRatings": 5,
+          "sumOfRatings": 21
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "9cd641f5-1652-4c75-a44f-ca90dd0dc628",
+        "name": "Indoor hydrant 33: HWG-33-20/30 MODULAR",
+        "brand": "Gras",
+        "brand_permalink": "gras",
+        "permalink": "hwg_33_20_30",
+        "url": "https://www.bimobject.com/ko/gras/hwg_33_20_30",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 10
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "c91ee243-ec49-4beb-a1fa-fae5199d28f5",
+        "name": "Model 8000 Commercial RiserPACK® - Prepackage Commercial Riser Assembly",
+        "brand": "AGF Manufacturing",
+        "brand_permalink": "agf",
+        "permalink": "agf-model-8000com",
+        "url": "https://www.bimobject.com/ko/agf/agf-model-8000com",
+        "rating": {
+          "numberOfRatings": 7,
+          "sumOfRatings": 32
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "710bbe5a-4bd2-4467-a7e0-7be0ceb1cc4d",
+        "name": "FP23 Couplings",
+        "brand": "Zurn",
+        "brand_permalink": "zurnindustries",
+        "permalink": "zurn-fp23",
+        "url": "https://www.bimobject.com/ko/zurnindustries/zurn-fp23",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 9
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "b8716eb9-9cbf-493c-a633-73c6fb98f765",
+        "name": "900 WET ALARM VALVE \"Fireflow WET-1000\"",
+        "brand": "Bocciolone Antincendio",
+        "brand_permalink": "bocciolone-antincendio",
+        "permalink": "art-900-wet-alarm-valve",
+        "url": "https://www.bimobject.com/ko/bocciolone-antincendio/art-900-wet-alarm-valve",
+        "rating": {
+          "numberOfRatings": 8,
+          "sumOfRatings": 36
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "328e1a34-e7d1-4a91-8fcf-24d892bbfa54",
+        "name": "PD6ES",
+        "brand": "Cea Estintori",
+        "brand_permalink": "cea-estintori",
+        "permalink": "pd6es",
+        "url": "https://www.bimobject.com/ko/cea-estintori/pd6es",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 20
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "74db6712-74bf-440c-a13e-539d0790c40c",
+        "name": "Fire hydrant 2 1/2\"",
+        "brand": "Saval",
+        "brand_permalink": "saval",
+        "permalink": "2414016",
+        "url": "https://www.bimobject.com/ko/saval/2414016",
+        "rating": {
+          "numberOfRatings": 21,
+          "sumOfRatings": 70
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "f60f13a4-e6f0-48b2-9606-0a235e83b88e",
+        "name": "H5ES",
+        "brand": "Cea Estintori",
+        "brand_permalink": "cea-estintori",
+        "permalink": "h5es",
+        "url": "https://www.bimobject.com/ko/cea-estintori/h5es",
+        "rating": {
+          "numberOfRatings": 3,
+          "sumOfRatings": 15
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "15474e77-8a4f-4791-93d9-d7177281fb73",
+        "name": "Smoke Guard© Model 200 Smoke Curtain",
+        "brand": "Smoke Guard",
+        "brand_permalink": "smokeguard",
+        "permalink": "smoke-guard-004",
+        "url": "https://www.bimobject.com/ko/smokeguard/smoke-guard-004",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "4418aca2-4af9-44e9-9057-fb9d42aa68f5",
+        "name": "GCS LED - Ceiling - Speaker - Strobe",
+        "brand": "Edwards",
+        "brand_permalink": "edwardsutc",
+        "permalink": "edwards-gcs",
+        "url": "https://www.bimobject.com/ko/edwardsutc/edwards-gcs",
+        "rating": {
+          "numberOfRatings": 16,
+          "sumOfRatings": 66
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "89732a3b-e3c5-4535-bd0f-51f48506b1f5",
+        "name": "Repolen Butt Weld/Socket PP-RCT Fire Fittings",
+        "brand": "Reboca",
+        "brand_permalink": "reboca",
+        "permalink": "repolen-pprct-fire-fittings",
+        "url": "https://www.bimobject.com/ko/reboca/repolen-pprct-fire-fittings",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "a78d6a81-167d-40c0-a8e3-95917b755b2a",
+        "name": "Curaflam® Konfix Pro",
+        "brand": "DOYMA GmbH & Co",
+        "brand_permalink": "doyma-gmbh-co",
+        "permalink": "curaflam-konfix-pro",
+        "url": "https://www.bimobject.com/ko/doyma-gmbh-co/curaflam-konfix-pro",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 10
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "b03b437e-2fc5-40d7-984d-a3f4abf62b3a",
+        "name": "Pressure proportioner tank vertical type_YVPT-S410_YVHE A2000",
+        "brand": "YAMATO PROTEC [ヤマトプロテック]",
+        "brand_permalink": "yamatoprotec",
+        "permalink": "yvpt-s410_yvhea2000",
+        "url": "https://www.bimobject.com/ko/yamatoprotec/yvpt-s410_yvhea2000",
+        "rating": {
+          "numberOfRatings": 9,
+          "sumOfRatings": 38
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "f29cbfb6-4372-4c10-8454-96706e1b54fe",
+        "name": "MB-78EI Fireproof Single Door Opening Outwards",
+        "brand": "Aluprof",
+        "brand_permalink": "aluprof",
+        "permalink": "mb-78ei_fireproof_single_door_opening_outwards",
+        "url": "https://www.bimobject.com/ko/aluprof/mb-78ei_fireproof_single_door_opening_outwards",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 5
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "0930eeb5-e913-4729-ac25-16c2ef463f56",
+        "name": "2/HP FIRE HYDRANT WITH LAY-FLAT HOSE \"Electa\" METAL DOOR",
+        "brand": "Bocciolone Antincendio",
+        "brand_permalink": "bocciolone-antincendio",
+        "permalink": "art-2-hp-idrante-45-electa-pp",
+        "url": "https://www.bimobject.com/ko/bocciolone-antincendio/art-2-hp-idrante-45-electa-pp",
+        "rating": {
+          "numberOfRatings": 6,
+          "sumOfRatings": 28
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "53afb5b8-bd3e-4e35-a6c4-cb408c5de95c",
+        "name": "Model 8011 Commercial RiserPACK® - Prepackage Commercial Riser Assembly",
+        "brand": "AGF Manufacturing",
+        "brand_permalink": "agf",
+        "permalink": "agf-model-8011com",
+        "url": "https://www.bimobject.com/ko/agf/agf-model-8011com",
+        "rating": {
+          "numberOfRatings": 11,
+          "sumOfRatings": 49
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "c88206ff-8a54-451c-b6e0-f0c4eeadb7cd",
+        "name": "152 AIR VENT VALVE FOR FIRE PROTECTION",
+        "brand": "Bocciolone Antincendio",
+        "brand_permalink": "bocciolone-antincendio",
+        "permalink": "art-152-air-vent-valve-fire-protection",
+        "url": "https://www.bimobject.com/ko/bocciolone-antincendio/art-152-air-vent-valve-fire-protection",
+        "rating": {
+          "numberOfRatings": 7,
+          "sumOfRatings": 33
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "04bcf157-ba9c-4a6c-bfe3-c9035ed05fda",
+        "name": "Smoke extraction unit MZ2 32A",
+        "brand": "Kingspan Light + Air ",
+        "brand_permalink": "kingspan-light-air",
+        "permalink": "mz2_32a",
+        "url": "https://www.bimobject.com/ko/kingspan-light-air/mz2_32a",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "0ab66446-1ce0-41ec-8c08-6e01b319a103",
+        "name": "MB-78EI90 Fire-rated 2sash Window",
+        "brand": "Aluprof",
+        "brand_permalink": "aluprof",
+        "permalink": "mb-78ei90_firerated_window",
+        "url": "https://www.bimobject.com/ko/aluprof/mb-78ei90_firerated_window",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 5
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "53cc8b5b-7459-4d3d-86e8-2cdbf6760996",
+        "name": "MB-78EI Fireproof Double Door with Fanlight Opening Outwards",
+        "brand": "Aluprof",
+        "brand_permalink": "aluprof",
+        "permalink": "mb-78ei_fireproof_double_door_with_fanlight_opening_outwards",
+        "url": "https://www.bimobject.com/ko/aluprof/mb-78ei_fireproof_double_door_with_fanlight_opening_outwards",
+        "rating": {
+          "numberOfRatings": 3,
+          "sumOfRatings": 11
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "630a7168-a8b3-4a92-825d-02920af0ca75",
+        "name": "BlueKit JK190 - Louvre Flap",
+        "brand": "D+H Mechatronic AG",
+        "brand_permalink": "dh-mechatronic",
+        "permalink": "bluekit-jk-190-louvre-flap",
+        "url": "https://www.bimobject.com/ko/dh-mechatronic/bluekit-jk-190-louvre-flap",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "dbcff010-fc16-4b1d-9d35-2d628c3a952e",
+        "name": "AK2 CO2 extinguisher",
+        "brand": "Saval",
+        "brand_permalink": "saval",
+        "permalink": "8902700",
+        "url": "https://www.bimobject.com/ko/saval/8902700",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 10
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "06d188bb-0833-4631-a9ee-42f1a7268ef3",
+        "name": "DIBD60 UL Classified 1 1/2 hr. Dynamic, Integral 16\" Sleeve",
+        "brand": "Ruskin",
+        "brand_permalink": "ruskin",
+        "permalink": "rd-00317-132",
+        "url": "https://www.bimobject.com/ko/ruskin/rd-00317-132",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "fire-products"
+      },
+      {
+        "id": "4b31a63c-b949-45dd-8c6f-0fed3abeee51",
+        "name": "66/C DRY BARREL PILLAR HYDRANT STYLE EUR - DN 150 X 2 OUTLETS",
+        "brand": "Bocciolone Antincendio",
+        "brand_permalink": "bocciolone-antincendio",
+        "permalink": "art-66-c-pillar-hydrant-dn150-2out",
+        "url": "https://www.bimobject.com/ko/bocciolone-antincendio/art-66-c-pillar-hydrant-dn150-2out",
+        "rating": {
+          "numberOfRatings": 5,
+          "sumOfRatings": 18
+        },
+        "category_code": "fire-products"
+      }
+    ],
+    "electrical": [
+      {
+        "id": "77994912-2ae0-4807-a073-3f9e0d5d881c",
+        "name": "Diesel Generator, India, QSB7, 150-200 kW, 175-250 kVA, 50/60Hz",
+        "brand": "Cummins",
+        "brand_permalink": "cummins",
+        "permalink": "diesel-generator-india-qsb7-150-200-kw-175-220-kva-50-60hz",
+        "url": "https://www.bimobject.com/ko/cummins/diesel-generator-india-qsb7-150-200-kw-175-220-kva-50-60hz",
+        "rating": {
+          "numberOfRatings": 5,
+          "sumOfRatings": 24
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "e2fa282a-dc99-4691-bb83-879c432e82b0",
+        "name": "Cablofil CF Series Open Cable Management",
+        "brand": "Cablofil",
+        "brand_permalink": "cablofil",
+        "permalink": "cablofil-cf-tray",
+        "url": "https://www.bimobject.com/ko/cablofil/cablofil-cf-tray",
+        "rating": {
+          "numberOfRatings": 17,
+          "sumOfRatings": 50
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "2bf870b5-d6ec-4eae-9e19-28bf044dbc00",
+        "name": "Aluminum Cable Trays",
+        "brand": "ABB",
+        "brand_permalink": "abb",
+        "permalink": "tnb-129",
+        "url": "https://www.bimobject.com/ko/abb/tnb-129",
+        "rating": {
+          "numberOfRatings": 15,
+          "sumOfRatings": 64
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "ea8b25c2-f6de-4ac8-9783-0bc8ced4454c",
+        "name": "SCG Solar Pack Floating Solar",
+        "brand": "CPAC ซีแพค",
+        "brand_permalink": "cpac",
+        "permalink": "scg_solarpack_floatingsolar",
+        "url": "https://www.bimobject.com/ko/cpac/scg_solarpack_floatingsolar",
+        "rating": {
+          "numberOfRatings": 43,
+          "sumOfRatings": 195
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "90616f30-f22a-48f5-b383-4a813b3b0a08",
+        "name": "Diesel Generator, KTA50, 1120-1545 kW, 50/60Hz",
+        "brand": "Cummins",
+        "brand_permalink": "cummins",
+        "permalink": "kta50-diesel-generator-series",
+        "url": "https://www.bimobject.com/ko/cummins/kta50-diesel-generator-series",
+        "rating": {
+          "numberOfRatings": 11,
+          "sumOfRatings": 47
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "f94d5857-485c-4c85-a605-8407b6c7f62d",
+        "name": "Distribution Panel Protecta Plus",
+        "brand": "ABB",
+        "brand_permalink": "abb",
+        "permalink": "distribution-panel-protecta-plus",
+        "url": "https://www.bimobject.com/ko/abb/distribution-panel-protecta-plus",
+        "rating": {
+          "numberOfRatings": 27,
+          "sumOfRatings": 127
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "8ed8f641-5d17-44af-8ed6-9f8aff3c86cf",
+        "name": "Stainless Steel, Galvanized Steel or Pregalvanized Steel Cable Trays",
+        "brand": "ABB",
+        "brand_permalink": "abb",
+        "permalink": "tnb-130",
+        "url": "https://www.bimobject.com/ko/abb/tnb-130",
+        "rating": {
+          "numberOfRatings": 12,
+          "sumOfRatings": 57
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "008cb3bf-c96d-459c-b084-1d420a0a8ce4",
+        "name": "Wire Basket Cable Tray System",
+        "brand": "Panduit",
+        "brand_permalink": "panduit",
+        "permalink": "wire-basket-cable-tray-system",
+        "url": "https://www.bimobject.com/ko/panduit/wire-basket-cable-tray-system",
+        "rating": {
+          "numberOfRatings": 13,
+          "sumOfRatings": 37
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "4a766edf-3055-4ea8-8c7e-f20c1d559c95",
+        "name": "Okken - Power distribution and motor control switchboard up to 7300A",
+        "brand": "Schneider Electric",
+        "brand_permalink": "schneider",
+        "permalink": "okken",
+        "url": "https://www.bimobject.com/ko/schneider/okken",
+        "rating": {
+          "numberOfRatings": 23,
+          "sumOfRatings": 93
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "e51a64ce-6ad6-4207-90a0-200ee70a35d8",
+        "name": "Prisma Plus P - LV Switchboards up to 4000A",
+        "brand": "Schneider Electric",
+        "brand_permalink": "schneider",
+        "permalink": "prisma_p",
+        "url": "https://www.bimobject.com/ko/schneider/prisma_p",
+        "rating": {
+          "numberOfRatings": 14,
+          "sumOfRatings": 58
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "e935d31a-ff78-4604-ba64-3a644ab0d6ea",
+        "name": "X-Series Transfer Switch Series",
+        "brand": "Cummins",
+        "brand_permalink": "cummins",
+        "permalink": "x-series-transfer-switch-series",
+        "url": "https://www.bimobject.com/ko/cummins/x-series-transfer-switch-series",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 5
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "91001132-1bba-4672-a413-d35b8624cf7a",
+        "name": "Vertiv™ PowerBar HPB UL",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vrt-bts-ul-hpb-busbar",
+        "url": "https://www.bimobject.com/ko/vertiv/vrt-bts-ul-hpb-busbar",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 4
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "18927468-4ba8-42af-b3e2-a2db14752d4f",
+        "name": "Round Wire Basket Tray",
+        "brand": "Hubbell Wiring Device-Kellems",
+        "brand_permalink": "hubbellwiring",
+        "permalink": "hubbell-round-wire-basket-tray-hbt0204",
+        "url": "https://www.bimobject.com/ko/hubbellwiring/hubbell-round-wire-basket-tray-hbt0204",
+        "rating": {
+          "numberOfRatings": 3,
+          "sumOfRatings": 7
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "f6896163-5116-46be-b518-10452a7a3773",
+        "name": "EUROPA - Mechanism series",
+        "brand": "Solera",
+        "brand_permalink": "solera",
+        "permalink": "europa_mecanism",
+        "url": "https://www.bimobject.com/ko/solera/europa_mecanism",
+        "rating": {
+          "numberOfRatings": 8,
+          "sumOfRatings": 35
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "c2897a3a-e798-43c2-b2cf-d0341c8046c0",
+        "name": "Vertiv™ PowerBar HPB IEC",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vrt-bts-iec-hpb-busbar",
+        "url": "https://www.bimobject.com/ko/vertiv/vrt-bts-iec-hpb-busbar",
+        "rating": {
+          "numberOfRatings": 3,
+          "sumOfRatings": 15
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "829e06b1-e1b3-4504-b659-7eef72df731c",
+        "name": "Diesel Generator, India, 6BT, 72-136 kW, 90-170 kVA, 50/60 Hz",
+        "brand": "Cummins",
+        "brand_permalink": "cummins",
+        "permalink": "diesel-generator-india-6bt-72-136-kw-90-170-kva-50-60-hz",
+        "url": "https://www.bimobject.com/ko/cummins/diesel-generator-india-6bt-72-136-kw-90-170-kva-50-60-hz",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 5
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "06ab54c8-f9b4-4c6f-9fce-f46aeedbfc68",
+        "name": "Diesel Generator, India, X2.5 Series, 12-22 kW, 15-28 kVA, 50/60Hz",
+        "brand": "Cummins",
+        "brand_permalink": "cummins",
+        "permalink": "diesel-generator-india-x25-series-12-22-kw-15-28-kva-50-60hz",
+        "url": "https://www.bimobject.com/ko/cummins/diesel-generator-india-x25-series-12-22-kw-15-28-kva-50-60hz",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "a6630d8c-7418-4ac6-aaf3-10d9fb48e71d",
+        "name": "SunPower Solar Panels Performance 3 UPP",
+        "brand": "SCG เอสซีจี",
+        "brand_permalink": "scg",
+        "permalink": "sunpower_solar_panels_performance_3_upp",
+        "url": "https://www.bimobject.com/ko/scg/sunpower_solar_panels_performance_3_upp",
+        "rating": {
+          "numberOfRatings": 48,
+          "sumOfRatings": 157
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "826e1b1d-7920-4fab-b28e-22c10e5006f4",
+        "name": "RISEN Solar Pack Solar Panel",
+        "brand": "CPAC ซีแพค",
+        "brand_permalink": "cpac",
+        "permalink": "risen_solarpack_solarpanel",
+        "url": "https://www.bimobject.com/ko/cpac/risen_solarpack_solarpanel",
+        "rating": {
+          "numberOfRatings": 29,
+          "sumOfRatings": 119
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "423fa518-b143-4ff9-91e4-56e247df1d49",
+        "name": "Prisma Plus G LV Switchboard up to 630A",
+        "brand": "Schneider Electric",
+        "brand_permalink": "schneider",
+        "permalink": "prisma_g",
+        "url": "https://www.bimobject.com/ko/schneider/prisma_g",
+        "rating": {
+          "numberOfRatings": 15,
+          "sumOfRatings": 63
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "0511d659-b036-4288-8803-0650e38b3be8",
+        "name": "44 CE range",
+        "brand": "GEWISS",
+        "brand_permalink": "gewiss",
+        "permalink": "44_ce",
+        "url": "https://www.bimobject.com/ko/gewiss/44_ce",
+        "rating": {
+          "numberOfRatings": 8,
+          "sumOfRatings": 34
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "5e97b0d6-ae7d-499b-8547-5640ace9ccd5",
+        "name": "Vertiv™ Liebert® EXL S1 UPS",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vertiv-liebert-exl-s1-ups",
+        "url": "https://www.bimobject.com/ko/vertiv/vertiv-liebert-exl-s1-ups",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 3
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "55c602b4-76b3-4ecc-aef3-3c00906e2946",
+        "name": "Diesel Generator, India, QSL9-G5, 250-300 kW, 275-330 kVA, 50/60Hz",
+        "brand": "Cummins",
+        "brand_permalink": "cummins",
+        "permalink": "diesel-generator-india-qsl9-g5-250-300-kwe-50-60hz",
+        "url": "https://www.bimobject.com/ko/cummins/diesel-generator-india-qsl9-g5-250-300-kwe-50-60hz",
+        "rating": {
+          "numberOfRatings": 5,
+          "sumOfRatings": 25
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "2cf0c3be-b9db-4d63-a30c-f5f63cc10121",
+        "name": "Vertiv VR Rack",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vertiv-vr-rack",
+        "url": "https://www.bimobject.com/ko/vertiv/vertiv-vr-rack",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "b9cfbe89-bb25-44b0-a031-0684d5ec2415",
+        "name": "Flat Style Wire Basket Tray",
+        "brand": "Hubbell Wiring Device-Kellems",
+        "brand_permalink": "hubbellwiring",
+        "permalink": "hubbell-flat-style-wire-basket-tray",
+        "url": "https://www.bimobject.com/ko/hubbellwiring/hubbell-flat-style-wire-basket-tray",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 12
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "1957f64f-9338-44bd-a6b0-dfa99eac71de",
+        "name": "Diesel Generator, QST30 Series 750-1000 kWe 50/60Hz",
+        "brand": "Cummins",
+        "brand_permalink": "cummins",
+        "permalink": "cummins-qst30",
+        "url": "https://www.bimobject.com/ko/cummins/cummins-qst30",
+        "rating": {
+          "numberOfRatings": 7,
+          "sumOfRatings": 32
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "00189399-09ce-4b06-a0f3-17234d723972",
+        "name": "PLUS single socket-outlet screw PW RAL9010",
+        "brand": "ELKO",
+        "brand_permalink": "elko",
+        "permalink": "eko03775",
+        "url": "https://www.bimobject.com/ko/elko/eko03775",
+        "rating": {
+          "numberOfRatings": 39,
+          "sumOfRatings": 169
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "ef177050-93ab-47dd-b0d0-0534f0b9c046",
+        "name": "CPAC Floating Solar Farm",
+        "brand": "CPAC ซีแพค",
+        "brand_permalink": "cpac",
+        "permalink": "cpac_floatingsolarfarm",
+        "url": "https://www.bimobject.com/ko/cpac/cpac_floatingsolarfarm",
+        "rating": {
+          "numberOfRatings": 20,
+          "sumOfRatings": 92
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "036cdf1c-af43-4bc9-ae86-9d4b867fcdc8",
+        "name": "FRE Composites IPS XW BREATHSAVER® 45° Elbow",
+        "brand": "Atkore",
+        "brand_permalink": "atkore",
+        "permalink": "fre_composites_ips_xw_breathsaver_45_elbow",
+        "url": "https://www.bimobject.com/ko/atkore/fre_composites_ips_xw_breathsaver_45_elbow",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "82a715aa-b49d-4e47-a938-df1d4665689b",
+        "name": "Minera - Oil distribution transformers EU548",
+        "brand": "Schneider Electric",
+        "brand_permalink": "schneider",
+        "permalink": "minera",
+        "url": "https://www.bimobject.com/ko/schneider/minera",
+        "rating": {
+          "numberOfRatings": 55,
+          "sumOfRatings": 247
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "95ee817c-5a81-40db-98c8-67c670b6f491",
+        "name": "Electric cable H07Z1-U/R",
+        "brand": "Nexans",
+        "brand_permalink": "nexans",
+        "permalink": "electric_cable_h07z1",
+        "url": "https://www.bimobject.com/ko/nexans/electric_cable_h07z1",
+        "rating": {
+          "numberOfRatings": 6,
+          "sumOfRatings": 18
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "f943e759-4e33-44da-8342-636205bdb768",
+        "name": "FRE Composites IPS XW BREATHSAVER® Conduit Bodies",
+        "brand": "Atkore",
+        "brand_permalink": "atkore",
+        "permalink": "fre_composites_ips_xw_breathsaver_conduit_bodies",
+        "url": "https://www.bimobject.com/ko/atkore/fre_composites_ips_xw_breathsaver_conduit_bodies",
+        "rating": {
+          "numberOfRatings": 7,
+          "sumOfRatings": 30
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "d7268ec4-6143-4179-ab71-df8f42563c2c",
+        "name": "PrismaSeT and PrismaSet Active - Digitally connected switchboards for power distribution up to 4000A",
+        "brand": "Schneider Electric",
+        "brand_permalink": "schneider",
+        "permalink": "prismaset",
+        "url": "https://www.bimobject.com/ko/schneider/prismaset",
+        "rating": {
+          "numberOfRatings": 8,
+          "sumOfRatings": 39
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "82d1506d-b29a-4e8f-af59-ac522ad2dd96",
+        "name": "UK-Electrical enclosures panelboard",
+        "brand": "Hager",
+        "brand_permalink": "hager-group",
+        "permalink": "uk-panelboard_enclosures",
+        "url": "https://www.bimobject.com/ko/hager-group/uk-panelboard_enclosures",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 6
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "f57ba0e2-09e2-444b-9fb8-b7454fd480ed",
+        "name": "Diesel Generator, China, QSX15, 550 kVA, 50hz",
+        "brand": "Cummins",
+        "brand_permalink": "cummins",
+        "permalink": "diesel-generator-china-qsx15-550-kva-50hz",
+        "url": "https://www.bimobject.com/ko/cummins/diesel-generator-china-qsx15-550-kva-50hz",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 19
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "3ceb40a0-ef37-4bb0-bcf0-dd6659afa479",
+        "name": "Gas Generator, QSK60G, 50/60Hz",
+        "brand": "Cummins",
+        "brand_permalink": "cummins",
+        "permalink": "qsk60g-gas-generator-series",
+        "url": "https://www.bimobject.com/ko/cummins/qsk60g-gas-generator-series",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 10
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "5f6e355e-7349-4efa-b3c5-4f39c6e5d285",
+        "name": "Canalis and I-Line – Busbar trunking system up to 6300A",
+        "brand": "Schneider Electric",
+        "brand_permalink": "schneider",
+        "permalink": "canalis",
+        "url": "https://www.bimobject.com/ko/schneider/canalis",
+        "rating": {
+          "numberOfRatings": 82,
+          "sumOfRatings": 338
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "0e922f88-abdb-4401-a9ab-3a88a4775570",
+        "name": "EXPP Express Plus DC Fast Charging Platform",
+        "brand": "ChargePoint",
+        "brand_permalink": "chargepoint",
+        "permalink": "express-plus-modular-dc-fast-charging-platform",
+        "url": "https://www.bimobject.com/ko/chargepoint/express-plus-modular-dc-fast-charging-platform",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 5
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "609f8686-73b1-4ee7-a37e-ebad692bae06",
+        "name": "Trihal cast resin dry type transformer 315-3000 kVA",
+        "brand": "Schneider Electric",
+        "brand_permalink": "schneider",
+        "permalink": "trihal-eco_aus",
+        "url": "https://www.bimobject.com/ko/schneider/trihal-eco_aus",
+        "rating": {
+          "numberOfRatings": 16,
+          "sumOfRatings": 74
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "402ec71c-d6a0-45dc-b4ac-dae34143c3ac",
+        "name": "DC Compact Level 3 Electric Vehicle Charger",
+        "brand": "Southwest Solutions Group",
+        "brand_permalink": "southwest-solutions-group",
+        "permalink": "ssg_charger_electric_vehicle_dc_compact_pcs",
+        "url": "https://www.bimobject.com/ko/southwest-solutions-group/ssg_charger_electric_vehicle_dc_compact_pcs",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 20
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "32d473f3-d66b-4750-b5ee-55323fb5f86a",
+        "name": "Protecta Plus MCB Distribution Board-Type2",
+        "brand": "ABB",
+        "brand_permalink": "abb",
+        "permalink": "protecta-plus-mcb-distribution-board-type2",
+        "url": "https://www.bimobject.com/ko/abb/protecta-plus-mcb-distribution-board-type2",
+        "rating": {
+          "numberOfRatings": 15,
+          "sumOfRatings": 62
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "171ae286-6fb9-485a-81a7-a0da336567de",
+        "name": "AC Home Level 2 Electric Vehicle Charger",
+        "brand": "Southwest Solutions Group",
+        "brand_permalink": "southwest-solutions-group",
+        "permalink": "ssg_charger_electric_vehicle_ac_home_pcs",
+        "url": "https://www.bimobject.com/ko/southwest-solutions-group/ssg_charger_electric_vehicle_ac_home_pcs",
+        "rating": {
+          "numberOfRatings": 8,
+          "sumOfRatings": 38
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "5aecd828-e529-4b01-973b-b66b813e0fa0",
+        "name": "Simon 360 - 2 elements mechanisms",
+        "brand": "Simon ",
+        "brand_permalink": "simon",
+        "permalink": "simon-360-2-elements-mechanisms",
+        "url": "https://www.bimobject.com/ko/simon/simon-360-2-elements-mechanisms",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "d74c5c7a-bce1-48c7-a9ef-2360885c1c3a",
+        "name": "Italy-Electrical enclosures pablo",
+        "brand": "Hager",
+        "brand_permalink": "hager-group",
+        "permalink": "it-pablo_enclosures",
+        "url": "https://www.bimobject.com/ko/hager-group/it-pablo_enclosures",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "e2c7f173-cad3-45ba-b6d6-8a9d1b13d4b7",
+        "name": "Diesel Generator, QSK60 Series 1750-2500 kWe 50/60Hz",
+        "brand": "Cummins",
+        "brand_permalink": "cummins",
+        "permalink": "cummins-qsk60",
+        "url": "https://www.bimobject.com/ko/cummins/cummins-qsk60",
+        "rating": {
+          "numberOfRatings": 15,
+          "sumOfRatings": 73
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "5d9e29de-c93e-4c8d-bb51-dd20dd5cb5ce",
+        "name": "Ventilated Tray MKS Cable Systems",
+        "brand": "OBO Bettermann",
+        "brand_permalink": "obo-bettermann",
+        "permalink": "ventilated-mks",
+        "url": "https://www.bimobject.com/ko/obo-bettermann/ventilated-mks",
+        "rating": {
+          "numberOfRatings": 7,
+          "sumOfRatings": 23
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "dbef5ced-47fc-4b67-8bcc-d170ad59b2b6",
+        "name": "Blokset - Distribution and motor control switchboard up to 6300A",
+        "brand": "Schneider Electric",
+        "brand_permalink": "schneider",
+        "permalink": "blokset",
+        "url": "https://www.bimobject.com/ko/schneider/blokset",
+        "rating": {
+          "numberOfRatings": 14,
+          "sumOfRatings": 58
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "0dc85e5e-0050-4a8e-95ad-fe23c4538a1b",
+        "name": "Solid Tray MKS Cable Systems",
+        "brand": "OBO Bettermann",
+        "brand_permalink": "obo-bettermann",
+        "permalink": "solid-mks",
+        "url": "https://www.bimobject.com/ko/obo-bettermann/solid-mks",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 9
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "4e399e2c-354f-4b05-b07b-afcb097a23c3",
+        "name": "Stainless Steel Wire Basket Tray",
+        "brand": "Hubbell Wiring Device-Kellems",
+        "brand_permalink": "hubbellwiring",
+        "permalink": "hubbell-stainless-steel-wire-basket-hbt0418s04",
+        "url": "https://www.bimobject.com/ko/hubbellwiring/hubbell-stainless-steel-wire-basket-hbt0418s04",
+        "rating": {
+          "numberOfRatings": 3,
+          "sumOfRatings": 8
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "f8404e5d-46f1-4665-bd49-7ec044d41883",
+        "name": "Battery Energy Storage Systems (BESS)",
+        "brand": "Cummins",
+        "brand_permalink": "cummins",
+        "permalink": "china-battery-energy-storage-systems",
+        "url": "https://www.bimobject.com/ko/cummins/china-battery-energy-storage-systems",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 4
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "08f5211a-3edc-4c20-b2c8-98fc8578b385",
+        "name": "FRE Composites ID XW BREATHSAVER® 90° Elbow",
+        "brand": "Atkore",
+        "brand_permalink": "atkore",
+        "permalink": "fre_composites_id_xw_breathsaver_90_elbow",
+        "url": "https://www.bimobject.com/ko/atkore/fre_composites_id_xw_breathsaver_90_elbow",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 15
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "de963ce7-de5e-4d7b-8953-7b760186fe50",
+        "name": "Vertiv™ Liebert® MTP UPS",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vertiv-mtp",
+        "url": "https://www.bimobject.com/ko/vertiv/vertiv-mtp",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "266e6cbb-43c7-4cac-ac3b-7640b4802eed",
+        "name": "Cable Tray System",
+        "brand": "Niedax Group",
+        "brand_permalink": "niedax",
+        "permalink": "niedax_cable_trays",
+        "url": "https://www.bimobject.com/ko/niedax/niedax_cable_trays",
+        "rating": {
+          "numberOfRatings": 16,
+          "sumOfRatings": 78
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "f10b9c72-ca85-46c2-b0ed-08bb5c88978f",
+        "name": "Diesel Generator, India, 4BTAA3.3-G12, 40-60 kW, 60Hz",
+        "brand": "Cummins",
+        "brand_permalink": "cummins",
+        "permalink": "diesel-generator-india-4btaa33-g12-40-60-kw-60hz",
+        "url": "https://www.bimobject.com/ko/cummins/diesel-generator-india-4btaa33-g12-40-60-kw-60hz",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 5
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "66f9204f-9ec4-4f98-b762-b4b34cb43127",
+        "name": "Kit Sundeck",
+        "brand": "SolarWorld AG",
+        "brand_permalink": "solarworld",
+        "permalink": "sr0506",
+        "url": "https://www.bimobject.com/ko/solarworld/sr0506",
+        "rating": {
+          "numberOfRatings": 18,
+          "sumOfRatings": 77
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "50450e2c-c5ae-488b-a824-04cfa39c8666",
+        "name": "Vertiv™ TFX Power Distribution Unit",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vertiv-tfx",
+        "url": "https://www.bimobject.com/ko/vertiv/vertiv-tfx",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "f03321c4-ebf4-4da2-b8c5-191e4e171c7b",
+        "name": "Diesel Generator, QSK23 Series 600-800 kWe 50/60Hz",
+        "brand": "Cummins",
+        "brand_permalink": "cummins",
+        "permalink": "cummins-qsk23",
+        "url": "https://www.bimobject.com/ko/cummins/cummins-qsk23",
+        "rating": {
+          "numberOfRatings": 3,
+          "sumOfRatings": 10
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "cdd32903-5d82-400d-9896-655210992276",
+        "name": "EVlink Charging Station",
+        "brand": "Schneider Electric",
+        "brand_permalink": "schneider",
+        "permalink": "evlink",
+        "url": "https://www.bimobject.com/ko/schneider/evlink",
+        "rating": {
+          "numberOfRatings": 32,
+          "sumOfRatings": 124
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "2ca03575-2de1-421c-bf7e-791046733385",
+        "name": "FRE Composites ID XW BREATHSAVER® Conduit Bodies",
+        "brand": "Atkore",
+        "brand_permalink": "atkore",
+        "permalink": "fre_composites_id_xw_breathsaver_conduit_bodies",
+        "url": "https://www.bimobject.com/ko/atkore/fre_composites_id_xw_breathsaver_conduit_bodies",
+        "rating": {
+          "numberOfRatings": 8,
+          "sumOfRatings": 35
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "c8c02246-74e6-4963-b90b-484ef61fba2e",
+        "name": "OTEC Transfer Switches",
+        "brand": "Cummins",
+        "brand_permalink": "cummins",
+        "permalink": "otec-transfer-switch",
+        "url": "https://www.bimobject.com/ko/cummins/otec-transfer-switch",
+        "rating": {
+          "numberOfRatings": 9,
+          "sumOfRatings": 37
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "778e2fd3-bf79-4e45-8600-025c4f353e0a",
+        "name": "FRE Composites IPS XW BREATHSAVER® 90° Elbow",
+        "brand": "Atkore",
+        "brand_permalink": "atkore",
+        "permalink": "fre_composites_ips_xw_breathsaver_90_elbow",
+        "url": "https://www.bimobject.com/ko/atkore/fre_composites_ips_xw_breathsaver_90_elbow",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "7dbeeabf-de20-4007-9d0e-c74b96b717b5",
+        "name": "Diesel Generator, India, QSK23-G9, 750-900 kVA, 50 Hz",
+        "brand": "Cummins",
+        "brand_permalink": "cummins",
+        "permalink": "diesel-generator-india-qsk23-g9-750-900-kva-50-hz",
+        "url": "https://www.bimobject.com/ko/cummins/diesel-generator-india-qsk23-g9-750-900-kva-50-hz",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 5
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "00ddd595-9270-45e9-aae4-3c84dee53515",
+        "name": "Metal Raceway HBL3000 Series",
+        "brand": "Hubbell Wiring Device-Kellems",
+        "brand_permalink": "hubbellwiring",
+        "permalink": "hubbell-metal-raceway-hbl3000biv",
+        "url": "https://www.bimobject.com/ko/hubbellwiring/hubbell-metal-raceway-hbl3000biv",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 10
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "c06725de-b626-43bd-998f-63ac9ef9d52d",
+        "name": "Distribution Panel Protecta Compact",
+        "brand": "ABB",
+        "brand_permalink": "abb",
+        "permalink": "distribution-panel-protecta-compact",
+        "url": "https://www.bimobject.com/ko/abb/distribution-panel-protecta-compact",
+        "rating": {
+          "numberOfRatings": 21,
+          "sumOfRatings": 93
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "380188c1-0daf-4b43-accb-3bc17ccc8848",
+        "name": "Trihal – Cast Resin dry type transformer IEC 60076",
+        "brand": "Schneider Electric",
+        "brand_permalink": "schneider",
+        "permalink": "sch-trihal-01",
+        "url": "https://www.bimobject.com/ko/schneider/sch-trihal-01",
+        "rating": {
+          "numberOfRatings": 15,
+          "sumOfRatings": 66
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "2c059670-a055-4066-a827-3f8e9158155d",
+        "name": "GTEC Transfer Switches",
+        "brand": "Cummins",
+        "brand_permalink": "cummins",
+        "permalink": "gtec-transfer-switch",
+        "url": "https://www.bimobject.com/ko/cummins/gtec-transfer-switch",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 9
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "f849fcc1-5b34-48b7-9d36-92dc63c112f2",
+        "name": "Three Phase LV Dry Type Transformer",
+        "brand": "ABB",
+        "brand_permalink": "abb",
+        "permalink": "three-phase-lv-dry-type-transformer",
+        "url": "https://www.bimobject.com/ko/abb/three-phase-lv-dry-type-transformer",
+        "rating": {
+          "numberOfRatings": 9,
+          "sumOfRatings": 39
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "0cd1f69c-f355-4ccd-978b-aca2ae7377ee",
+        "name": "OfficeFit",
+        "brand": "HAFELE เฮเฟเล่",
+        "brand_permalink": "hafele",
+        "permalink": "the-learning-room-officefit",
+        "url": "https://www.bimobject.com/ko/hafele/the-learning-room-officefit",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 5
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "27b308af-51c4-475b-9b00-00d2efde6500",
+        "name": "Vertiv™ Liebert® CWA Thermal Wall",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vertiv-liebert-cwa-thermal-wall",
+        "url": "https://www.bimobject.com/ko/vertiv/vertiv-liebert-cwa-thermal-wall",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 6
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "4afee7ea-94a1-4ead-a047-c34a298f1d55",
+        "name": "SmartOnline SV Series Modular 3phase UPS 20-80KVA Medium Frame",
+        "brand": "Tripp Lite by Eaton",
+        "brand_permalink": "tripplite",
+        "permalink": "sv80km4p0b",
+        "url": "https://www.bimobject.com/ko/tripplite/sv80km4p0b",
+        "rating": {
+          "numberOfRatings": 9,
+          "sumOfRatings": 39
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "01a8e629-f6c9-4508-97c5-b561385b5e0a",
+        "name": "Diesel Generator, China, Centum™ Force QSK60, 2000-2750 kVA, 50Hz",
+        "brand": "Cummins",
+        "brand_permalink": "cummins",
+        "permalink": "diesel-generator-china-powerbloc-qsk60-2000-2750-kva-50hz",
+        "url": "https://www.bimobject.com/ko/cummins/diesel-generator-china-powerbloc-qsk60-2000-2750-kva-50hz",
+        "rating": {
+          "numberOfRatings": 2,
+          "sumOfRatings": 7
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "2c1491f2-e63d-4a2b-a289-cc4bbd1244a1",
+        "name": "Diesel Generator, India, QSL9-G7, 230-300 kW, 250-330 kVA, 50/60Hz",
+        "brand": "Cummins",
+        "brand_permalink": "cummins",
+        "permalink": "diesel-generator-india-qsl9-g7-230-300-kw-250-330-kva-50-60hz",
+        "url": "https://www.bimobject.com/ko/cummins/diesel-generator-india-qsl9-g7-230-300-kw-250-330-kva-50-60hz",
+        "rating": {
+          "numberOfRatings": 3,
+          "sumOfRatings": 15
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "81dd1773-277b-4dfe-84f5-7c67e01959b7",
+        "name": "CP6000 AC Charging",
+        "brand": "ChargePoint",
+        "brand_permalink": "chargepoint",
+        "permalink": "cp6000-ac-charging-station-for-business",
+        "url": "https://www.bimobject.com/ko/chargepoint/cp6000-ac-charging-station-for-business",
+        "rating": {
+          "numberOfRatings": 5,
+          "sumOfRatings": 24
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "9dfd907a-a6f0-48ec-89df-9da0b3fa7f71",
+        "name": "Diesel Generator, India, 4BTAA3.3-G13, 44-66 kVA, 50Hz",
+        "brand": "Cummins",
+        "brand_permalink": "cummins",
+        "permalink": "diesel-generator-india-4btaa33-g13-44-66-kva-50hz",
+        "url": "https://www.bimobject.com/ko/cummins/diesel-generator-india-4btaa33-g13-44-66-kva-50hz",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 5
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "99cda23c-8724-4c78-9de2-23a6bb372a91",
+        "name": "Wallbox AC Charger",
+        "brand": "ABB",
+        "brand_permalink": "abb",
+        "permalink": "wallbox-ac-charger",
+        "url": "https://www.bimobject.com/ko/abb/wallbox-ac-charger",
+        "rating": {
+          "numberOfRatings": 9,
+          "sumOfRatings": 37
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "4b40e052-a66c-4d12-9070-447af0b82896",
+        "name": "Diesel Generator, India, 4BTAA3.3-G14, 44-66 kVA, 50Hz",
+        "brand": "Cummins",
+        "brand_permalink": "cummins",
+        "permalink": "diesel-generator-india-4btaa33-g14-44-66-kva-50hz",
+        "url": "https://www.bimobject.com/ko/cummins/diesel-generator-india-4btaa33-g14-44-66-kva-50hz",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "f24d7b8b-b63b-4a72-abc2-278b9b6d5d89",
+        "name": "Battery Pack for SV-Series 3-Phase UPS Matching Battery Cabinet",
+        "brand": "Tripp Lite by Eaton",
+        "brand_permalink": "tripplite",
+        "permalink": "bp240v370",
+        "url": "https://www.bimobject.com/ko/tripplite/bp240v370",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 20
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "b8aebddf-8137-416a-bc60-d9ee36a85e32",
+        "name": "ARELOS - Electrical distribution box",
+        "brand": "Solera",
+        "brand_permalink": "solera",
+        "permalink": "arelos",
+        "url": "https://www.bimobject.com/ko/solera/arelos",
+        "rating": {
+          "numberOfRatings": 3,
+          "sumOfRatings": 14
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "10b50708-b5f3-438a-92db-5d9edcbf11f6",
+        "name": "Wire Mesh Tray GR Magic Cable Systems",
+        "brand": "OBO Bettermann",
+        "brand_permalink": "obo-bettermann",
+        "permalink": "wire_mesh-gr-magic",
+        "url": "https://www.bimobject.com/ko/obo-bettermann/wire_mesh-gr-magic",
+        "rating": {
+          "numberOfRatings": 6,
+          "sumOfRatings": 24
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "88d82001-e4b1-46a6-ab8a-2485f0c97516",
+        "name": "BC Imprego - Impregnated dry type transformers/autotransformers",
+        "brand": "Schneider Electric",
+        "brand_permalink": "schneider",
+        "permalink": "imprego",
+        "url": "https://www.bimobject.com/ko/schneider/imprego",
+        "rating": {
+          "numberOfRatings": 5,
+          "sumOfRatings": 20
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "33fc82aa-b733-4202-a256-5c63b25b38bf",
+        "name": "Kit Sunfix aero duo",
+        "brand": "SolarWorld AG",
+        "brand_permalink": "solarworld",
+        "permalink": "sr0511",
+        "url": "https://www.bimobject.com/ko/solarworld/sr0511",
+        "rating": {
+          "numberOfRatings": 33,
+          "sumOfRatings": 146
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "608dd0c2-5545-4319-ba83-cdec362db1df",
+        "name": "Vertiv™ PowerBar Cast Resin IEC",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vrt-bts-iec-crb-busbar",
+        "url": "https://www.bimobject.com/ko/vertiv/vrt-bts-iec-crb-busbar",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "26f25ebd-17f3-4b2e-96e7-e682e2d3ae56",
+        "name": "Confidence collection, double horizontal cover plate for light switches and sockets ",
+        "brand": "Modelec",
+        "brand_permalink": "modelec",
+        "permalink": "confidence-collection-double-horizontal",
+        "url": "https://www.bimobject.com/ko/modelec/confidence-collection-double-horizontal",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "8a402326-c382-4ad0-9a37-926145116be1",
+        "name": "Belgium-EVCS Witty",
+        "brand": "Hager",
+        "brand_permalink": "hager-group",
+        "permalink": "be-witty_evcs",
+        "url": "https://www.bimobject.com/ko/hager-group/be-witty_evcs",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "115d2b3c-a1d8-4f7f-a4db-ed22aacb497b",
+        "name": "ILSCO SureCrimp® Copper Compression Lugs",
+        "brand": "nVent",
+        "brand_permalink": "nvent",
+        "permalink": "ilsco-surecrimp-copper-compression-lugs",
+        "url": "https://www.bimobject.com/ko/nvent/ilsco-surecrimp-copper-compression-lugs",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "21d10aef-4d97-434c-b27e-aa26db8bab16",
+        "name": "WTP : Freeze Protection Heat Trace Panel",
+        "brand": "Chromalox",
+        "brand_permalink": "chromalox",
+        "permalink": "chromalox-wtp-freeze-protection-heat-trace-panel",
+        "url": "https://www.bimobject.com/ko/chromalox/chromalox-wtp-freeze-protection-heat-trace-panel",
+        "rating": {
+          "numberOfRatings": 9,
+          "sumOfRatings": 44
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "08a7b2c9-8354-44f0-98d9-d610113fd281",
+        "name": "Atkore - ACS/Uni-Fab - Double 20A TR Duplex Receptacles with Universal Bracket",
+        "brand": "Atkore",
+        "brand_permalink": "atkore",
+        "permalink": "double-20a-tr-duplex-receptacles-universal-bracket",
+        "url": "https://www.bimobject.com/ko/atkore/double-20a-tr-duplex-receptacles-universal-bracket",
+        "rating": {
+          "numberOfRatings": 6,
+          "sumOfRatings": 29
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "8cb7d495-4a52-420f-bf89-b55bd412301e",
+        "name": "SolarScapes Awnings & Carports",
+        "brand": "Lumos Solar",
+        "brand_permalink": "lumossolar",
+        "permalink": "solarscapes",
+        "url": "https://www.bimobject.com/ko/lumossolar/solarscapes",
+        "rating": {
+          "numberOfRatings": 16,
+          "sumOfRatings": 66
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "ce210520-2e8b-4971-8106-3698d4eb66c2",
+        "name": "RM6 - Gas Insulated Ring Main Unit",
+        "brand": "Schneider Electric",
+        "brand_permalink": "schneider",
+        "permalink": "rm6",
+        "url": "https://www.bimobject.com/ko/schneider/rm6",
+        "rating": {
+          "numberOfRatings": 9,
+          "sumOfRatings": 39
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "5ca70716-b817-46af-a4ba-59ad876a2b5e",
+        "name": "Vertiv™ PowerBar MPB3 IEC",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vrt-bts-iec-mpb3-busbar",
+        "url": "https://www.bimobject.com/ko/vertiv/vrt-bts-iec-mpb3-busbar",
+        "rating": {
+          "numberOfRatings": 1,
+          "sumOfRatings": 3
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "7e54f869-9184-4a78-845d-58e73576710b",
+        "name": "Electric cable N2XH",
+        "brand": "Nexans",
+        "brand_permalink": "nexans",
+        "permalink": "electric_cable_n2xh",
+        "url": "https://www.bimobject.com/ko/nexans/electric_cable_n2xh",
+        "rating": {
+          "numberOfRatings": 8,
+          "sumOfRatings": 32
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "1924e380-14ce-4e09-ad1c-ea56b81711f1",
+        "name": "Diesel Generator, China, KTA38/50, 1062-1675 kVA, 50Hz",
+        "brand": "Cummins",
+        "brand_permalink": "cummins",
+        "permalink": "diesel-generator-china-kta38-50-1062-1675-kva-50hz",
+        "url": "https://www.bimobject.com/ko/cummins/diesel-generator-china-kta38-50-1062-1675-kva-50hz",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "b0ffb8c9-a62f-4eca-83d8-45fdfd61a388",
+        "name": "CPAC Electrical For Single House",
+        "brand": "CPAC ซีแพค",
+        "brand_permalink": "cpac",
+        "permalink": "cpac_electricalforsinglehouse",
+        "url": "https://www.bimobject.com/ko/cpac/cpac_electricalforsinglehouse",
+        "rating": {
+          "numberOfRatings": 17,
+          "sumOfRatings": 78
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "d19126c2-228a-465d-8a84-9d9471d0e745",
+        "name": "AC Business Level 2 Electric Vehicle Charger",
+        "brand": "Southwest Solutions Group",
+        "brand_permalink": "southwest-solutions-group",
+        "permalink": "ssg_charger_electric_vehicle_ac_business_pcs",
+        "url": "https://www.bimobject.com/ko/southwest-solutions-group/ssg_charger_electric_vehicle_ac_business_pcs",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 17
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "f8932d58-50c8-462c-888c-0968657f96fe",
+        "name": "PLUS switch 1-pole/two-way screwless PW RAL9010",
+        "brand": "ELKO",
+        "brand_permalink": "elko",
+        "permalink": "eko03891",
+        "url": "https://www.bimobject.com/ko/elko/eko03891",
+        "rating": {
+          "numberOfRatings": 21,
+          "sumOfRatings": 92
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "2105d485-3fa7-4912-9fc1-361ad2b8e1cd",
+        "name": "Single socket outlet RS16 flush PW RAL9003",
+        "brand": "ELKO",
+        "brand_permalink": "elko",
+        "permalink": "eko07241",
+        "url": "https://www.bimobject.com/ko/elko/eko07241",
+        "rating": {
+          "numberOfRatings": 10,
+          "sumOfRatings": 47
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "c76eb755-95ae-4f25-be1f-269b978545ee",
+        "name": "Germany-Kleinverteiler volta",
+        "brand": "Hager",
+        "brand_permalink": "hager-group",
+        "permalink": "de-volta_enclosures",
+        "url": "https://www.bimobject.com/ko/hager-group/de-volta_enclosures",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 16
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "0d086516-f998-4d4b-bb13-049d7f868b9f",
+        "name": "Vertiv Trinergy Cube 400 kW Core UPS",
+        "brand": "Vertiv",
+        "brand_permalink": "vertiv",
+        "permalink": "vertiv-trinergy",
+        "url": "https://www.bimobject.com/ko/vertiv/vertiv-trinergy",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "201a47b0-d2d3-441d-88c0-749852c510cd",
+        "name": "Diesel Generator, QSK78 Series 2500-2750 kWe 50/60Hz",
+        "brand": "Cummins",
+        "brand_permalink": "cummins",
+        "permalink": "cummins-qsk78",
+        "url": "https://www.bimobject.com/ko/cummins/cummins-qsk78",
+        "rating": {
+          "numberOfRatings": 4,
+          "sumOfRatings": 20
+        },
+        "category_code": "electrical"
+      },
+      {
+        "id": "634c150c-8e09-454b-8146-13645326b8f9",
+        "name": "FRE Composites IPS XW BREATHSAVER® 11.25° Elbow",
+        "brand": "Atkore",
+        "brand_permalink": "atkore",
+        "permalink": "fre_composites_ips_xw_breathsaver_11_25_elbow",
+        "url": "https://www.bimobject.com/ko/atkore/fre_composites_ips_xw_breathsaver_11_25_elbow",
+        "rating": {
+          "numberOfRatings": 0,
+          "sumOfRatings": 0
+        },
+        "category_code": "electrical"
+      }
+    ]
+  }
+}

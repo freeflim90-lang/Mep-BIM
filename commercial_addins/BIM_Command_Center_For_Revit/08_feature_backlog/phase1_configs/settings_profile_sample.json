@@ -1,0 +1,30 @@
+{
+  "feature": "Settings Profile Manager",
+  "version": 1,
+  "profile_name": "Office Default",
+  "profile_version": 1,
+  "product": "BIM Command Center for Revit",
+  "features": {
+    "line_cleanup_lite": {
+      "rule_file": "line_cleaner_rules.json"
+    },
+    "smart_selector_lite": {
+      "rule_file": "quick_select_rules.json"
+    },
+    "workset_inspector_lite": {
+      "rule_file": "workset_inspector_rules.json"
+    },
+    "view_template_copier": {
+      "collision_policy": "skip",
+      "preview_required": true
+    },
+    "type_batch_definer": {
+      "dry_run_required": true,
+      "update_existing_types": false
+    },
+    "tag_text_aligner": {
+      "skip_pinned": true,
+      "preserve_leaders": true
+    }
+  }
+}

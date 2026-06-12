@@ -1,0 +1,36 @@
+LUA BIM LABS Starter
+Day 41 - Duct and Pipe Schedule Configuration
+
+**1. Why This Matters**
+Duct and pipe schedules are used to verify that system sizes match the design specification and to generate material takeoff quantities — both are essential for procurement and QA.
+
+**2. Core Concept**
+Unlike equipment schedules (which list individual pieces), duct and pipe schedules typically aggregate by type and size. Configuration choices directly affect whether the output is useful or misleading.
+
+Key configuration steps:
+- **Category selection**: Choose Ducts or Pipes as the schedule category — do not mix them
+- **Fields to include**: Size (Width × Height or Diameter), Length, Level, System Name, Insulation Thickness, Material/Specification
+- **Itemize Every Instance vs. Group**: "Group by" similar elements to get total lengths by size; ungroup to see every segment individually
+- **Calculated Length column**: Revit reports duct/pipe length in the model unit — verify it matches your project units (mm or m)
+- **Sorting by size**: Sort by Width then Height (for rectangular duct) to create a readable size-ordered table
+- **Phase filter**: Make sure the schedule phase matches the construction phase of the model
+
+**3. Real Project Lens**
+A mechanical coordinator configures a Duct Schedule grouped by size and system. After grouping, the schedule shows 85 meters of 600×300mm supply air ductwork on Level 2. The mechanical engineer cross-checks this against the design calculation sheet, which shows 88 meters — a 3-meter discrepancy that leads to discovering one run was modeled at an incorrect size.
+
+**4. BIM Check**
+- Check: Can you create a Duct Schedule that groups elements by size and shows total length per size?
+- Check: Can you verify the unit of the Length field matches your project's unit setting?
+- Check: Can you filter the schedule to show only ducts within a specific system (e.g., supply air only)?
+
+**5. Common Mistake**
+Using the default "itemize every instance" setting for a duct schedule on a large model — this produces thousands of rows of individual duct segments and is unreadable for any practical use. Always group by size when producing a takeoff schedule.
+
+**6. Today's Action**
+In Revit, create a Duct Schedule with at minimum these fields: Size, Length, Level, System Name. Group the rows by Size and confirm that the Length column shows a summed total for each size group.
+
+---
+
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

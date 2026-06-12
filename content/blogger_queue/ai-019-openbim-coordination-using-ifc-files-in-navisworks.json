@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "IFC",
+    "OpenBIM",
+    "Navisworks",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "OpenBIM Coordination: Using IFC Files in Navisworks",
+  "slug": "openbim-coordination-using-ifc-files-in-navisworks",
+  "content": "<p>Navisworks can coordinate projects where different disciplines use different BIM authoring software — Revit, ArchiCAD, Bentley, Tekla — as long as each discipline provides an IFC file. This OpenBIM coordination workflow is increasingly required on public projects and international collaborations.</p>\n<h2>Why This Matters</h2>\n<p>Projects with mixed software environments cannot rely on native format coordination. IFC-based Navisworks coordination requires understanding of how different authoring tools produce IFC, how Navisworks reads IFC properties, and where gaps in data transfer occur.</p>\n<h2>Practical Guidance</h2>\n<p><strong>Appending IFC Files:</strong> Append each discipline IFC file to the Navisworks federated model as a separate file. This preserves the ability to update individual discipline files independently. Merging into a single NWD loses the ability to reload updated discipline models.</p>\n<p><strong>IFC Property Access:</strong> Navisworks reads IFC property sets and displays them in the Properties panel. Use these properties in Search Sets and Clash Detective rules to filter elements by discipline, fire rating, or system classification.</p>\n<p><strong>Coordinate Alignment:</strong> IFC files exported using Shared Coordinates from their authoring tools should align automatically in Navisworks. Files exported using internal origin require manual repositioning. Document the expected alignment check procedure in the coordination protocol.</p>\n<p><strong>Geometry Fidelity:</strong> IFC geometry fidelity varies by authoring software. ArchiCAD and Vectorworks IFC exports typically have excellent geometry quality. Some structural software IFC exports tessellate curved geometry heavily. Review geometry fidelity before accepting an IFC model for coordination.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Append each discipline IFC as a separate file in Navisworks</li>\n<li>Run coordinate alignment check before first clash detection run</li>\n<li>Document IFC geometry fidelity issues in coordination meeting minutes</li>\n<li>Use IFC property sets in Clash Detective rules to filter by discipline</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>OpenBIM coordination in Navisworks is only as good as the weakest IFC export in the federated model — review all discipline IFC files before the first coordination meeting.</p>"
+}

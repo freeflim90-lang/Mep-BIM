@@ -1,0 +1,47 @@
+LUA BIM LABS Starter
+Day 74 - Tree vs. Loop vs. Grid Systems — Configuration and Coordination
+
+1. Why This Matters
+The configuration of the pipe network — tree, loop, or grid — affects how the system is hydraulically balanced, how many pipes cross the ceiling zone, and how coordination clashes are resolved. Understanding which configuration is used on your project changes how you model, route, and check fire protection pipework.
+
+2. Core Concept
+| Configuration | Description | Where Used |
+|---|---|---|
+| Tree System | One cross main, branch lines feed off it like branches. Dead-end at each branch. | Most common — offices, retail, residential |
+| Loop System | Cross main forms a closed loop. Branch lines feed from the loop. More redundancy. | Large floor plates, hospitals, critical facilities |
+| Grid System | Both cross mains and branch lines form a connected grid. Most hydraulically efficient. | Warehouses, large open areas, high-rack storage |
+
+Tree System — BIM Coordination Impact
+- Most straightforward to model and route
+- Each branch is a dead-end — pressure is lowest at the end of the branch (remote head problem)
+- One cross main runs the length of the floor — coordinate this main route first before branches
+
+Loop System — BIM Coordination Impact
+- Cross main runs around the perimeter — more ceiling congestion at the perimeter
+- Connections at both ends of the loop must be modeled — do not leave the loop open
+- Larger floor area under the loop may have fewer coordination conflicts in the central zone
+
+Grid System — BIM Coordination Impact
+- Multiple cross mains running in parallel — significant ceiling zone congestion
+- Coordination must prioritise the grid main routes early — they cannot be easily rerouted
+- Typically used in high-bay storage where the ceiling zone is less congested
+
+In Revit: clearly name systems by configuration if mixed — e.g., "FP-WET-TREE-L03" vs. "FP-WET-GRID-WAREHOUSE".
+
+3. Real Project Lens
+A 10,000 m² logistics warehouse uses a grid system because of high-rack storage and large design area requirements. The BIM modeler sets up the two parallel cross mains first, then models branch lines perpendicular to them at 3.5 m centres. The high congestion zone is the roof steel level — the modeler coordinates grid main routes with the structural engineer's purlins and roof bracing before placing any branches.
+
+4. BIM Check
+- Check: The correct system configuration (tree, loop, or grid) is modeled as designed — not defaulted to tree if loop or grid is specified
+- Check: Loop systems are closed — both ends connect back to the main feed, no open loop
+- Check: Cross main and grid main routes are coordinated with structural and HVAC layouts before branch lines are placed
+
+5. Common Mistake
+Modeling a loop system as a tree system because it is faster — leaving the second end of the loop unconnected. An open loop defeats the hydraulic redundancy the engineer designed for and will fail inspection.
+
+6. Today's Action
+Identify which system configuration (tree, loop, or grid) is used on your current or sample project. If it is a tree system, locate the cross main and trace the flow path from riser to the most remote head. Draw a simple sketch showing the hierarchy.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

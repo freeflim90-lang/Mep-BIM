@@ -1,0 +1,1245 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "key": "222b562d43c03fa2",
+      "question": "`분류 요약: 반복 Telegram QA, 혼합 언어 자동 수집 요약, 반복 뉴스 트렌드 기준, Autodesk 정책 후보...`가 실제 현장 문제라면 재현 조건, 영향 범위, 임시 조치 중 무엇을 먼저 확인해야 하는가?",
+      "intent": "evidence",
+      "signal": "b1be1fdf8fb8ac43",
+      "source": "data/knowledge_base/추론훈련루프.md",
+      "report": "docs/reasoning_training/2026-06-05/0000_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T00:00:27"
+    },
+    {
+      "key": "4d6bd1a587e4cf46",
+      "question": "`분류 요약: 반복 Telegram QA, 혼합 언어 자동 수집 요약, 반복 뉴스 트렌드 기준, Autodesk 정책 후보...`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "b1be1fdf8fb8ac43",
+      "source": "data/knowledge_base/추론훈련루프.md",
+      "report": "docs/reasoning_training/2026-06-05/0000_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T00:00:27"
+    },
+    {
+      "key": "748233040cbf7b9f",
+      "question": "납품 전 품질 기준으로 바꾼다면 `분류 요약: 반복 Telegram QA, 혼합 언어 자동 수집 요약, 반복 뉴스 트렌드 기준, Autodesk 정책 후보...`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "b1be1fdf8fb8ac43",
+      "source": "data/knowledge_base/추론훈련루프.md",
+      "report": "docs/reasoning_training/2026-06-05/0000_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T00:00:27"
+    },
+    {
+      "key": "ad1786398bf243e5",
+      "question": "고객에게 설명할 때 `분류 요약: 반복 Telegram QA, 혼합 언어 자동 수집 요약, 반복 뉴스 트렌드 기준, Autodesk 정책 후보...`는 시간 절감, 품질 안정, 리스크 감소 중 어디에 가장 가깝나?",
+      "intent": "business_language",
+      "signal": "b1be1fdf8fb8ac43",
+      "source": "data/knowledge_base/추론훈련루프.md",
+      "report": "docs/reasoning_training/2026-06-05/0000_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T00:00:27"
+    },
+    {
+      "key": "fc43222927b723f3",
+      "question": "`CSO는 BF/편의시설 대응을 단일 자동검수 기능이 아니라 포트폴리오형 파일럿으로 본다. BF BIM 품질진단 라이트는...`를 실제 실행 후보로 볼 때 지금 당장 확인할 근거는 무엇인가?",
+      "intent": "evidence",
+      "signal": "09f3500aa189c443",
+      "source": "data/knowledge_base/최고전략CSO.md",
+      "report": "docs/reasoning_training/2026-06-05/0000_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T00:00:27"
+    },
+    {
+      "key": "76e26620abd1855c",
+      "question": "`CSO는 BF/편의시설 대응을 단일 자동검수 기능이 아니라 포트폴리오형 파일럿으로 본다. BF BIM 품질진단 라이트는...`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "09f3500aa189c443",
+      "source": "data/knowledge_base/최고전략CSO.md",
+      "report": "docs/reasoning_training/2026-06-05/0000_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T00:00:27"
+    },
+    {
+      "key": "66acaab96d955722",
+      "question": "납품 전 품질 기준으로 바꾼다면 `CSO는 BF/편의시설 대응을 단일 자동검수 기능이 아니라 포트폴리오형 파일럿으로 본다. BF BIM 품질진단 라이트는...`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "09f3500aa189c443",
+      "source": "data/knowledge_base/최고전략CSO.md",
+      "report": "docs/reasoning_training/2026-06-05/0000_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T00:00:27"
+    },
+    {
+      "key": "168260af6e4efddb",
+      "question": "고객에게 설명할 때 `CSO는 BF/편의시설 대응을 단일 자동검수 기능이 아니라 포트폴리오형 파일럿으로 본다. BF BIM 품질진단 라이트는...`는 시간 절감, 품질 안정, 리스크 감소 중 어디에 가장 가깝나?",
+      "intent": "business_language",
+      "signal": "09f3500aa189c443",
+      "source": "data/knowledge_base/최고전략CSO.md",
+      "report": "docs/reasoning_training/2026-06-05/0000_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T00:00:27"
+    },
+    {
+      "key": "a1b0ee3a2c933620",
+      "question": "`분류 요약: 간섭 증가 알림, 뷰 템플릿 diff, 자동 태깅 사용률, 납품 검수 서비스 수요, IFC 오류 방어, 외주...`가 실제 현장 문제라면 재현 조건, 영향 범위, 임시 조치 중 무엇을 먼저 확인해야 하는가?",
+      "intent": "evidence",
+      "signal": "bd6d8128d819fc10",
+      "source": "data/knowledge_base/추론훈련루프.md",
+      "report": "docs/reasoning_training/2026-06-05/0000_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T00:00:27"
+    },
+    {
+      "key": "9af562db9f4ccb00",
+      "question": "납품 전 품질 기준으로 바꾼다면 `분류 요약: 간섭 증가 알림, 뷰 템플릿 diff, 자동 태깅 사용률, 납품 검수 서비스 수요, IFC 오류 방어, 외주...`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "bd6d8128d819fc10",
+      "source": "data/knowledge_base/추론훈련루프.md",
+      "report": "docs/reasoning_training/2026-06-05/0000_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T00:00:27"
+    },
+    {
+      "key": "fd01b025abd02583",
+      "question": "고객에게 설명할 때 `분류 요약: 간섭 증가 알림, 뷰 템플릿 diff, 자동 태깅 사용률, 납품 검수 서비스 수요, IFC 오류 방어, 외주...`는 시간 절감, 품질 안정, 리스크 감소 중 어디에 가장 가깝나?",
+      "intent": "business_language",
+      "signal": "bd6d8128d819fc10",
+      "source": "data/knowledge_base/추론훈련루프.md",
+      "report": "docs/reasoning_training/2026-06-05/0000_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T00:00:27"
+    },
+    {
+      "key": "45c2cfc5992994f7",
+      "question": "`Navisworks Manage 2025 APICOM API + .NET Managed API는 이전 버전 대비 Clas...`를 실제 실행 후보로 볼 때 지금 당장 확인할 근거는 무엇인가?",
+      "intent": "evidence",
+      "signal": "4f4550857043c1c7",
+      "source": "data/knowledge_base/Navisworks_Addin.md",
+      "report": "docs/reasoning_training/2026-06-05/0545_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T05:45:20"
+    },
+    {
+      "key": "7918297a203976ee",
+      "question": "`Navisworks Manage 2025 APICOM API + .NET Managed API는 이전 버전 대비 Clas...`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "4f4550857043c1c7",
+      "source": "data/knowledge_base/Navisworks_Addin.md",
+      "report": "docs/reasoning_training/2026-06-05/0545_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T05:45:20"
+    },
+    {
+      "key": "0a6313fe3046270d",
+      "question": "납품 전 품질 기준으로 바꾼다면 `Navisworks Manage 2025 APICOM API + .NET Managed API는 이전 버전 대비 Clas...`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "4f4550857043c1c7",
+      "source": "data/knowledge_base/Navisworks_Addin.md",
+      "report": "docs/reasoning_training/2026-06-05/0545_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T05:45:20"
+    },
+    {
+      "key": "ba087f164ad69293",
+      "question": "`분류 요약: 간섭 알림 조건부 지식화, 뷰 템플릿 diff SOP, 자동 태깅 요구사항, 납품 검수 서비스 상품화, IF...`가 실제 현장 문제라면 재현 조건, 영향 범위, 임시 조치 중 무엇을 먼저 확인해야 하는가?",
+      "intent": "evidence",
+      "signal": "4d380f10684db9c3",
+      "source": "data/knowledge_base/추론훈련루프.md",
+      "report": "docs/reasoning_training/2026-06-05/0545_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T05:45:20"
+    },
+    {
+      "key": "fd121ebc9291b4b1",
+      "question": "납품 전 품질 기준으로 바꾼다면 `분류 요약: 간섭 알림 조건부 지식화, 뷰 템플릿 diff SOP, 자동 태깅 요구사항, 납품 검수 서비스 상품화, IF...`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "4d380f10684db9c3",
+      "source": "data/knowledge_base/추론훈련루프.md",
+      "report": "docs/reasoning_training/2026-06-05/0545_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T05:45:20"
+    },
+    {
+      "key": "d23c18e915b805b5",
+      "question": "`분류 요약: 간섭 알림 조건부 지식화, 뷰 템플릿 diff SOP, 자동 태깅 요구사항, 납품 검수 서비스 상품화, IF...`의 미검증 부분은 공식 문서, 프로젝트 사례, 담당자 경험 중 무엇으로 먼저 막아야 하는가?",
+      "intent": "verification",
+      "signal": "4d380f10684db9c3",
+      "source": "data/knowledge_base/추론훈련루프.md",
+      "report": "docs/reasoning_training/2026-06-05/0545_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T05:45:20"
+    },
+    {
+      "key": "ec24653ec2a40e42",
+      "question": "고객에게 설명할 때 `분류 요약: 간섭 알림 조건부 지식화, 뷰 템플릿 diff SOP, 자동 태깅 요구사항, 납품 검수 서비스 상품화, IF...`는 시간 절감, 품질 안정, 리스크 감소 중 어디에 가장 가깝나?",
+      "intent": "business_language",
+      "signal": "4d380f10684db9c3",
+      "source": "data/knowledge_base/추론훈련루프.md",
+      "report": "docs/reasoning_training/2026-06-05/0545_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T05:45:20"
+    },
+    {
+      "key": "d58a7d97866ee88d",
+      "question": "`분류 요약: 납품 검수와 신규 기능 개발, 외주 피드백과 내부 교육, 고객 불만 응대와 표준 답변 개선, 요구사항 정의와...`가 실제 현장 문제라면 재현 조건, 영향 범위, 임시 조치 중 무엇을 먼저 확인해야 하는가?",
+      "intent": "evidence",
+      "signal": "9bdd57f5782b75f9",
+      "source": "data/knowledge_base/추론훈련루프.md",
+      "report": "docs/reasoning_training/2026-06-05/0545_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T05:45:20"
+    },
+    {
+      "key": "9eff6ba66ca40898",
+      "question": "`분류 요약: 납품 검수와 신규 기능 개발, 외주 피드백과 내부 교육, 고객 불만 응대와 표준 답변 개선, 요구사항 정의와...`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "9bdd57f5782b75f9",
+      "source": "data/knowledge_base/추론훈련루프.md",
+      "report": "docs/reasoning_training/2026-06-05/0545_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T05:45:20"
+    },
+    {
+      "key": "549ee3dafda2d8cf",
+      "question": "납품 전 품질 기준으로 바꾼다면 `분류 요약: 납품 검수와 신규 기능 개발, 외주 피드백과 내부 교육, 고객 불만 응대와 표준 답변 개선, 요구사항 정의와...`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "9bdd57f5782b75f9",
+      "source": "data/knowledge_base/추론훈련루프.md",
+      "report": "docs/reasoning_training/2026-06-05/0545_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T05:45:20"
+    },
+    {
+      "key": "782af99ac0506daa",
+      "question": "고객에게 설명할 때 `분류 요약: 납품 검수와 신규 기능 개발, 외주 피드백과 내부 교육, 고객 불만 응대와 표준 답변 개선, 요구사항 정의와...`는 시간 절감, 품질 안정, 리스크 감소 중 어디에 가장 가깝나?",
+      "intent": "business_language",
+      "signal": "9bdd57f5782b75f9",
+      "source": "data/knowledge_base/추론훈련루프.md",
+      "report": "docs/reasoning_training/2026-06-05/0545_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T05:45:20"
+    },
+    {
+      "key": "370a738c0de15088",
+      "question": "`분류 요약: 시공 BIM/스마트건설 16, AX 전략 신호 15, OpenBIM/납품검증 14, Model Quality...`가 실제 현장 문제라면 재현 조건, 영향 범위, 임시 조치 중 무엇을 먼저 확인해야 하는가?",
+      "intent": "evidence",
+      "signal": "681a36b4a47794af",
+      "source": "data/knowledge_base/AX_전략승격리뷰.md",
+      "report": "docs/reasoning_training/2026-06-05/0558_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T05:58:18"
+    },
+    {
+      "key": "5c8b34b461430ccc",
+      "question": "`분류 요약: 시공 BIM/스마트건설 16, AX 전략 신호 15, OpenBIM/납품검증 14, Model Quality...`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "681a36b4a47794af",
+      "source": "data/knowledge_base/AX_전략승격리뷰.md",
+      "report": "docs/reasoning_training/2026-06-05/0558_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T05:58:18"
+    },
+    {
+      "key": "1de66974022c9fde",
+      "question": "납품 전 품질 기준으로 바꾼다면 `분류 요약: 시공 BIM/스마트건설 16, AX 전략 신호 15, OpenBIM/납품검증 14, Model Quality...`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "681a36b4a47794af",
+      "source": "data/knowledge_base/AX_전략승격리뷰.md",
+      "report": "docs/reasoning_training/2026-06-05/0558_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T05:58:18"
+    },
+    {
+      "key": "6de90b64c40b3cbc",
+      "question": "고객에게 설명할 때 `분류 요약: 시공 BIM/스마트건설 16, AX 전략 신호 15, OpenBIM/납품검증 14, Model Quality...`는 시간 절감, 품질 안정, 리스크 감소 중 어디에 가장 가깝나?",
+      "intent": "business_language",
+      "signal": "681a36b4a47794af",
+      "source": "data/knowledge_base/AX_전략승격리뷰.md",
+      "report": "docs/reasoning_training/2026-06-05/0558_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T05:58:18"
+    },
+    {
+      "key": "700298b81621785c",
+      "question": "`제품화: Revit Add-in 신규 모듈 MEP 자동 간섭 해소, LOD 자동 검증 → Autodesk App Stor...`가 실제 현장 문제라면 재현 조건, 영향 범위, 임시 조치 중 무엇을 먼저 확인해야 하는가?",
+      "intent": "evidence",
+      "signal": "36e0d7169022ab0e",
+      "source": "data/knowledge_base/AX_전략승격리뷰.md",
+      "report": "docs/reasoning_training/2026-06-05/0558_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T05:58:18"
+    },
+    {
+      "key": "62db6d2df317ef68",
+      "question": "`제품화: Revit Add-in 신규 모듈 MEP 자동 간섭 해소, LOD 자동 검증 → Autodesk App Stor...`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "36e0d7169022ab0e",
+      "source": "data/knowledge_base/AX_전략승격리뷰.md",
+      "report": "docs/reasoning_training/2026-06-05/0558_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T05:58:18"
+    },
+    {
+      "key": "1129c78cf75d803c",
+      "question": "납품 전 품질 기준으로 바꾼다면 `제품화: Revit Add-in 신규 모듈 MEP 자동 간섭 해소, LOD 자동 검증 → Autodesk App Stor...`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "automation",
+      "signal": "36e0d7169022ab0e",
+      "source": "data/knowledge_base/AX_전략승격리뷰.md",
+      "report": "docs/reasoning_training/2026-06-05/0558_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T05:58:18"
+    },
+    {
+      "key": "0385e56f880aa531",
+      "question": "고객에게 설명할 때 `제품화: Revit Add-in 신규 모듈 MEP 자동 간섭 해소, LOD 자동 검증 → Autodesk App Stor...`는 시간 절감, 품질 안정, 리스크 감소 중 어디에 가장 가깝나?",
+      "intent": "automation",
+      "signal": "36e0d7169022ab0e",
+      "source": "data/knowledge_base/AX_전략승격리뷰.md",
+      "report": "docs/reasoning_training/2026-06-05/0558_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T05:58:18"
+    },
+    {
+      "key": "6995308dcaefca13",
+      "question": "`산출물: Python 업무 자동화 → Dynamo/Grasshopper 모델 자동화 → Revit API/Add-in 제...`를 실제 실행 후보로 볼 때 지금 당장 확인할 근거는 무엇인가?",
+      "intent": "evidence",
+      "signal": "cec6d0cc15c8a8b3",
+      "source": "data/knowledge_base/AX_전략승격리뷰.md",
+      "report": "docs/reasoning_training/2026-06-05/0558_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T05:58:18"
+    },
+    {
+      "key": "f7df4ae00cc4e614",
+      "question": "`산출물: Python 업무 자동화 → Dynamo/Grasshopper 모델 자동화 → Revit API/Add-in 제...`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "cec6d0cc15c8a8b3",
+      "source": "data/knowledge_base/AX_전략승격리뷰.md",
+      "report": "docs/reasoning_training/2026-06-05/0558_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T05:58:18"
+    },
+    {
+      "key": "4d31137d8222e203",
+      "question": "고객에게 설명할 때 `산출물: Python 업무 자동화 → Dynamo/Grasshopper 모델 자동화 → Revit API/Add-in 제...`는 시간 절감, 품질 안정, 리스크 감소 중 어디에 가장 가깝나?",
+      "intent": "automation",
+      "signal": "cec6d0cc15c8a8b3",
+      "source": "data/knowledge_base/AX_전략승격리뷰.md",
+      "report": "docs/reasoning_training/2026-06-05/0558_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-05T05:58:18"
+    },
+    {
+      "key": "24e6e34af84e5157",
+      "question": "`외부 자료나 기존 프로젝트 산출물에서 유용한 문서 형식이 발견되면 원문을 복사하지 않고 구조, 항목, 검토 흐름만 추출하...`가 실제 현장 문제라면 재현 조건, 영향 범위, 임시 조치 중 무엇을 먼저 확인해야 하는가?",
+      "intent": "evidence",
+      "signal": "c039c864cd4c42d4",
+      "source": "data/knowledge_base/지식업데이트.md",
+      "report": "docs/reasoning_training/2026-06-06/0007_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-06T00:07:52"
+    },
+    {
+      "key": "2896a2b965261461",
+      "question": "`외부 자료나 기존 프로젝트 산출물에서 유용한 문서 형식이 발견되면 원문을 복사하지 않고 구조, 항목, 검토 흐름만 추출하...`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "c039c864cd4c42d4",
+      "source": "data/knowledge_base/지식업데이트.md",
+      "report": "docs/reasoning_training/2026-06-06/0007_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-06T00:07:52"
+    },
+    {
+      "key": "7cc62bd54017b4a9",
+      "question": "납품 전 품질 기준으로 바꾼다면 `외부 자료나 기존 프로젝트 산출물에서 유용한 문서 형식이 발견되면 원문을 복사하지 않고 구조, 항목, 검토 흐름만 추출하...`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "c039c864cd4c42d4",
+      "source": "data/knowledge_base/지식업데이트.md",
+      "report": "docs/reasoning_training/2026-06-06/0007_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-06T00:07:52"
+    },
+    {
+      "key": "d5794e9daf03928a",
+      "question": "`브리핑은 단순 뉴스 저장이 아니라 Model Quality Auditor 룰 후보, MEP BIM 교육 사례, Autod...`를 실제 실행 후보로 볼 때 지금 당장 확인할 근거는 무엇인가?",
+      "intent": "evidence",
+      "signal": "405ee35a9319d07f",
+      "source": "data/knowledge_base/지식업데이트.md",
+      "report": "docs/reasoning_training/2026-06-06/0007_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-06T00:07:52"
+    },
+    {
+      "key": "6c9950cbf0f25548",
+      "question": "`브리핑은 단순 뉴스 저장이 아니라 Model Quality Auditor 룰 후보, MEP BIM 교육 사례, Autod...`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "405ee35a9319d07f",
+      "source": "data/knowledge_base/지식업데이트.md",
+      "report": "docs/reasoning_training/2026-06-06/0007_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-06T00:07:52"
+    },
+    {
+      "key": "387b7e9347496b71",
+      "question": "납품 전 품질 기준으로 바꾼다면 `브리핑은 단순 뉴스 저장이 아니라 Model Quality Auditor 룰 후보, MEP BIM 교육 사례, Autod...`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "405ee35a9319d07f",
+      "source": "data/knowledge_base/지식업데이트.md",
+      "report": "docs/reasoning_training/2026-06-06/0007_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-06T00:07:52"
+    },
+    {
+      "key": "498ddbcf4b828c52",
+      "question": "고객에게 설명할 때 `브리핑은 단순 뉴스 저장이 아니라 Model Quality Auditor 룰 후보, MEP BIM 교육 사례, Autod...`는 시간 절감, 품질 안정, 리스크 감소 중 어디에 가장 가깝나?",
+      "intent": "business_language",
+      "signal": "405ee35a9319d07f",
+      "source": "data/knowledge_base/지식업데이트.md",
+      "report": "docs/reasoning_training/2026-06-06/0007_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-06T00:07:52"
+    },
+    {
+      "key": "ed7528492346fa55",
+      "question": "`AI 에이전트/상품화: Revit Add-in, Telegram/Revit Assistant, Model Quality...`를 실제 실행 후보로 볼 때 지금 당장 확인할 근거는 무엇인가?",
+      "intent": "evidence",
+      "signal": "393726170b30e59d",
+      "source": "data/knowledge_base/지식업데이트.md",
+      "report": "docs/reasoning_training/2026-06-06/0007_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-06T00:07:52"
+    },
+    {
+      "key": "9ea716d3d6ff795e",
+      "question": "`AI 에이전트/상품화: Revit Add-in, Telegram/Revit Assistant, Model Quality...`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "393726170b30e59d",
+      "source": "data/knowledge_base/지식업데이트.md",
+      "report": "docs/reasoning_training/2026-06-06/0007_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-06T00:07:52"
+    },
+    {
+      "key": "a3cf530860fbc7ff",
+      "question": "납품 전 품질 기준으로 바꾼다면 `AI 에이전트/상품화: Revit Add-in, Telegram/Revit Assistant, Model Quality...`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "automation",
+      "signal": "393726170b30e59d",
+      "source": "data/knowledge_base/지식업데이트.md",
+      "report": "docs/reasoning_training/2026-06-06/0007_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-06T00:07:52"
+    },
+    {
+      "key": "8b7fa9e6c8341e72",
+      "question": "고객에게 설명할 때 `AI 에이전트/상품화: Revit Add-in, Telegram/Revit Assistant, Model Quality...`는 시간 절감, 품질 안정, 리스크 감소 중 어디에 가장 가깝나?",
+      "intent": "automation",
+      "signal": "393726170b30e59d",
+      "source": "data/knowledge_base/지식업데이트.md",
+      "report": "docs/reasoning_training/2026-06-06/0007_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-06T00:07:52"
+    },
+    {
+      "key": "166638530679051e",
+      "question": "`판정 코드는 needs-review, 보류, 병합, 승격, QA/체크리스트, 교육자료, 상품/자동화 후보, 보안검토로 구...`를 실제 실행 후보로 볼 때 지금 당장 확인할 근거는 무엇인가?",
+      "intent": "evidence",
+      "signal": "eb4f66105c9128f5",
+      "source": "data/knowledge_base/지식업데이트.md",
+      "report": "docs/reasoning_training/2026-06-06/0024_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-06T00:24:23"
+    },
+    {
+      "key": "4725f810c71f9cf5",
+      "question": "`판정 코드는 needs-review, 보류, 병합, 승격, QA/체크리스트, 교육자료, 상품/자동화 후보, 보안검토로 구...`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "eb4f66105c9128f5",
+      "source": "data/knowledge_base/지식업데이트.md",
+      "report": "docs/reasoning_training/2026-06-06/0024_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-06T00:24:23"
+    },
+    {
+      "key": "3d9f024043a1ec30",
+      "question": "납품 전 품질 기준으로 바꾼다면 `판정 코드는 needs-review, 보류, 병합, 승격, QA/체크리스트, 교육자료, 상품/자동화 후보, 보안검토로 구...`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "eb4f66105c9128f5",
+      "source": "data/knowledge_base/지식업데이트.md",
+      "report": "docs/reasoning_training/2026-06-06/0024_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-06T00:24:23"
+    },
+    {
+      "key": "887e26bb71b2f03a",
+      "question": "`판정 코드는 needs-review, 보류, 병합, 승격, QA/체크리스트, 교육자료, 상품/자동화 후보, 보안검토로 구...`의 미검증 부분은 공식 문서, 프로젝트 사례, 담당자 경험 중 무엇으로 먼저 막아야 하는가?",
+      "intent": "verification",
+      "signal": "eb4f66105c9128f5",
+      "source": "data/knowledge_base/지식업데이트.md",
+      "report": "docs/reasoning_training/2026-06-06/0024_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-06T00:24:23"
+    },
+    {
+      "key": "383ea8af77a06658",
+      "question": "`분류 요약: AX 전략 신호 12, 시공 BIM/스마트건설 11, OpenBIM/납품검증 8, Model Quality...`가 실제 현장 문제라면 재현 조건, 영향 범위, 임시 조치 중 무엇을 먼저 확인해야 하는가?",
+      "intent": "evidence",
+      "signal": "5e96f662790daf7e",
+      "source": "data/knowledge_base/AX_전략승격리뷰.md",
+      "report": "docs/reasoning_training/2026-06-06/0024_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-06T00:24:23"
+    },
+    {
+      "key": "8a4b1859ed35e876",
+      "question": "`분류 요약: AX 전략 신호 12, 시공 BIM/스마트건설 11, OpenBIM/납품검증 8, Model Quality...`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "5e96f662790daf7e",
+      "source": "data/knowledge_base/AX_전략승격리뷰.md",
+      "report": "docs/reasoning_training/2026-06-06/0024_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-06T00:24:23"
+    },
+    {
+      "key": "604dc56285ac7cf0",
+      "question": "납품 전 품질 기준으로 바꾼다면 `분류 요약: AX 전략 신호 12, 시공 BIM/스마트건설 11, OpenBIM/납품검증 8, Model Quality...`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "5e96f662790daf7e",
+      "source": "data/knowledge_base/AX_전략승격리뷰.md",
+      "report": "docs/reasoning_training/2026-06-06/0024_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-06T00:24:23"
+    },
+    {
+      "key": "4e9ae29065119d53",
+      "question": "고객에게 설명할 때 `분류 요약: AX 전략 신호 12, 시공 BIM/스마트건설 11, OpenBIM/납품검증 8, Model Quality...`는 시간 절감, 품질 안정, 리스크 감소 중 어디에 가장 가깝나?",
+      "intent": "business_language",
+      "signal": "5e96f662790daf7e",
+      "source": "data/knowledge_base/AX_전략승격리뷰.md",
+      "report": "docs/reasoning_training/2026-06-06/0024_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-06T00:24:23"
+    },
+    {
+      "key": "683bbf144b936d38",
+      "question": "`분류 요약: AX 전략 신호 164, Model Quality Auditor 74, OpenBIM/납품검증 53, 시공...`가 실제 현장 문제라면 재현 조건, 영향 범위, 임시 조치 중 무엇을 먼저 확인해야 하는가?",
+      "intent": "evidence",
+      "signal": "cd3af66bdd6a687e",
+      "source": "data/knowledge_base/AX_전략승격리뷰.md",
+      "report": "docs/reasoning_training/2026-06-06/0024_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-06T00:24:23"
+    },
+    {
+      "key": "02a44127d4c35c1a",
+      "question": "`분류 요약: AX 전략 신호 164, Model Quality Auditor 74, OpenBIM/납품검증 53, 시공...`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "cd3af66bdd6a687e",
+      "source": "data/knowledge_base/AX_전략승격리뷰.md",
+      "report": "docs/reasoning_training/2026-06-06/0024_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-06T00:24:23"
+    },
+    {
+      "key": "71ae0440eb7e9fdb",
+      "question": "납품 전 품질 기준으로 바꾼다면 `분류 요약: AX 전략 신호 164, Model Quality Auditor 74, OpenBIM/납품검증 53, 시공...`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "cd3af66bdd6a687e",
+      "source": "data/knowledge_base/AX_전략승격리뷰.md",
+      "report": "docs/reasoning_training/2026-06-06/0024_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-06T00:24:23"
+    },
+    {
+      "key": "1e3957500b500f99",
+      "question": "고객에게 설명할 때 `분류 요약: AX 전략 신호 164, Model Quality Auditor 74, OpenBIM/납품검증 53, 시공...`는 시간 절감, 품질 안정, 리스크 감소 중 어디에 가장 가깝나?",
+      "intent": "business_language",
+      "signal": "cd3af66bdd6a687e",
+      "source": "data/knowledge_base/AX_전략승격리뷰.md",
+      "report": "docs/reasoning_training/2026-06-06/0024_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-06T00:24:23"
+    },
+    {
+      "key": "f01b8285a49e1ae4",
+      "question": "`분류 요약: 품질 신호, 원인 추론, 사업화 판단, 자동화 ROI, 오류 탐지, 고객 커뮤니케이션 등 20개 훈련 문제`가 실제 현장 문제라면 재현 조건, 영향 범위, 임시 조치 중 무엇을 먼저 확인해야 하는가?",
+      "intent": "evidence",
+      "signal": "612f996725ca7962",
+      "source": "data/knowledge_base/추론훈련루프.md",
+      "report": "docs/reasoning_training/2026-06-06/0340_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-06T03:40:02"
+    },
+    {
+      "key": "44158792dc2b1166",
+      "question": "`분류 요약: 품질 신호, 원인 추론, 사업화 판단, 자동화 ROI, 오류 탐지, 고객 커뮤니케이션 등 20개 훈련 문제`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "612f996725ca7962",
+      "source": "data/knowledge_base/추론훈련루프.md",
+      "report": "docs/reasoning_training/2026-06-06/0340_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-06T03:40:02"
+    },
+    {
+      "key": "e2edd5941256da8d",
+      "question": "납품 전 품질 기준으로 바꾼다면 `분류 요약: 품질 신호, 원인 추론, 사업화 판단, 자동화 ROI, 오류 탐지, 고객 커뮤니케이션 등 20개 훈련 문제`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "612f996725ca7962",
+      "source": "data/knowledge_base/추론훈련루프.md",
+      "report": "docs/reasoning_training/2026-06-06/0340_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-06T03:40:02"
+    },
+    {
+      "key": "4436b39cd04ecac8",
+      "question": "고객에게 설명할 때 `분류 요약: 품질 신호, 원인 추론, 사업화 판단, 자동화 ROI, 오류 탐지, 고객 커뮤니케이션 등 20개 훈련 문제`는 시간 절감, 품질 안정, 리스크 감소 중 어디에 가장 가깝나?",
+      "intent": "business_language",
+      "signal": "612f996725ca7962",
+      "source": "data/knowledge_base/추론훈련루프.md",
+      "report": "docs/reasoning_training/2026-06-06/0340_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-06T03:40:02"
+    },
+    {
+      "key": "4c5f2183268dcebc",
+      "question": "`분류 요약: 품질 점수 하락, 일정 지연 반복, 애드인 사용률 감소, CS 재문의 증가, 외주 재제출 증가, 고객 클레임...`가 실제 현장 문제라면 재현 조건, 영향 범위, 임시 조치 중 무엇을 먼저 확인해야 하는가?",
+      "intent": "evidence",
+      "signal": "5a9908bee71384d8",
+      "source": "data/knowledge_base/추론훈련루프.md",
+      "report": "docs/reasoning_training/2026-06-06/0340_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-06T03:40:02"
+    },
+    {
+      "key": "15f192a9965e004e",
+      "question": "납품 전 품질 기준으로 바꾼다면 `분류 요약: 품질 점수 하락, 일정 지연 반복, 애드인 사용률 감소, CS 재문의 증가, 외주 재제출 증가, 고객 클레임...`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "5a9908bee71384d8",
+      "source": "data/knowledge_base/추론훈련루프.md",
+      "report": "docs/reasoning_training/2026-06-06/0340_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-06T03:40:02"
+    },
+    {
+      "key": "c6db8b08534ff8f7",
+      "question": "고객에게 설명할 때 `분류 요약: 품질 점수 하락, 일정 지연 반복, 애드인 사용률 감소, CS 재문의 증가, 외주 재제출 증가, 고객 클레임...`는 시간 절감, 품질 안정, 리스크 감소 중 어디에 가장 가깝나?",
+      "intent": "business_language",
+      "signal": "5a9908bee71384d8",
+      "source": "data/knowledge_base/추론훈련루프.md",
+      "report": "docs/reasoning_training/2026-06-06/0340_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-06T03:40:02"
+    },
+    {
+      "key": "fcabd5cd90fa8044",
+      "question": "`분류 요약: Telegram 반복 질문, Autodesk 공식 문서 변경, 외부 Dynamo 팁, 현장 오류 반복, 납품...`가 실제 현장 문제라면 재현 조건, 영향 범위, 임시 조치 중 무엇을 먼저 확인해야 하는가?",
+      "intent": "evidence",
+      "signal": "8f375b9bb50e6415",
+      "source": "data/knowledge_base/추론훈련루프.md",
+      "report": "docs/reasoning_training/2026-06-06/0340_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-06T03:40:02"
+    },
+    {
+      "key": "51a0800794e7ef8b",
+      "question": "`분류 요약: Telegram 반복 질문, Autodesk 공식 문서 변경, 외부 Dynamo 팁, 현장 오류 반복, 납품...`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "8f375b9bb50e6415",
+      "source": "data/knowledge_base/추론훈련루프.md",
+      "report": "docs/reasoning_training/2026-06-06/0340_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-06T03:40:02"
+    },
+    {
+      "key": "9eaebc755bc36341",
+      "question": "납품 전 품질 기준으로 바꾼다면 `분류 요약: Telegram 반복 질문, Autodesk 공식 문서 변경, 외부 Dynamo 팁, 현장 오류 반복, 납품...`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "8f375b9bb50e6415",
+      "source": "data/knowledge_base/추론훈련루프.md",
+      "report": "docs/reasoning_training/2026-06-06/0340_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-06T03:40:02"
+    },
+    {
+      "key": "a39624e226a90392",
+      "question": "`분류 요약: Telegram 반복 질문, Autodesk 공식 문서 변경, 외부 Dynamo 팁, 현장 오류 반복, 납품...`의 미검증 부분은 공식 문서, 프로젝트 사례, 담당자 경험 중 무엇으로 먼저 막아야 하는가?",
+      "intent": "verification",
+      "signal": "8f375b9bb50e6415",
+      "source": "data/knowledge_base/추론훈련루프.md",
+      "report": "docs/reasoning_training/2026-06-06/0340_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-06T03:40:02"
+    },
+    {
+      "key": "3d357a583843c37b",
+      "question": "`LUA BIM LABS가 텔레그램을 통해 MEP BIM 교육 서비스를 시작했습니다. 이 서비스는 연차별 교육을 중심으로...`를 실제 실행 후보로 볼 때 지금 당장 확인할 근거는 무엇인가?",
+      "intent": "evidence",
+      "signal": "05c99296cc11f236",
+      "source": "data/team_requests/telegram_knowledge_requests.md",
+      "report": "docs/reasoning_training/2026-06-07/1729_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-07T17:29:04"
+    },
+    {
+      "key": "7aa0cb08c201db2e",
+      "question": "`LUA BIM LABS가 텔레그램을 통해 MEP BIM 교육 서비스를 시작했습니다. 이 서비스는 연차별 교육을 중심으로...`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "05c99296cc11f236",
+      "source": "data/team_requests/telegram_knowledge_requests.md",
+      "report": "docs/reasoning_training/2026-06-07/1729_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-07T17:29:04"
+    },
+    {
+      "key": "eb3fc5fb0f801fba",
+      "question": "고객에게 설명할 때 `LUA BIM LABS가 텔레그램을 통해 MEP BIM 교육 서비스를 시작했습니다. 이 서비스는 연차별 교육을 중심으로...`는 시간 절감, 품질 안정, 리스크 감소 중 어디에 가장 가깝나?",
+      "intent": "business_language",
+      "signal": "05c99296cc11f236",
+      "source": "data/team_requests/telegram_knowledge_requests.md",
+      "report": "docs/reasoning_training/2026-06-07/1729_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-07T17:29:04"
+    },
+    {
+      "key": "0bbb8e14de19c1ac",
+      "question": "`Obsidian Q&A 기록: obsidianvaults/luabimlabglobalmap/NASKnowledge/Tea...`를 실제 실행 후보로 볼 때 지금 당장 확인할 근거는 무엇인가?",
+      "intent": "evidence",
+      "signal": "cc1fda68b7c0a44d",
+      "source": "data/team_requests/telegram_knowledge_requests.md",
+      "report": "docs/reasoning_training/2026-06-07/1729_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-07T17:29:04"
+    },
+    {
+      "key": "3a49805d6f8c2c87",
+      "question": "`Obsidian Q&A 기록: obsidianvaults/luabimlabglobalmap/NASKnowledge/Tea...`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "cc1fda68b7c0a44d",
+      "source": "data/team_requests/telegram_knowledge_requests.md",
+      "report": "docs/reasoning_training/2026-06-07/1729_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-07T17:29:04"
+    },
+    {
+      "key": "66ef1b9664481fc7",
+      "question": "납품 전 품질 기준으로 바꾼다면 `Obsidian Q&A 기록: obsidianvaults/luabimlabglobalmap/NASKnowledge/Tea...`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "cc1fda68b7c0a44d",
+      "source": "data/team_requests/telegram_knowledge_requests.md",
+      "report": "docs/reasoning_training/2026-06-07/1729_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-07T17:29:04"
+    },
+    {
+      "key": "f8ea4427a270f2dd",
+      "question": "`Obsidian Q&A 기록: obsidianvaults/luabimlabglobalmap/NASKnowledge/Tea...`의 미검증 부분은 공식 문서, 프로젝트 사례, 담당자 경험 중 무엇으로 먼저 막아야 하는가?",
+      "intent": "verification",
+      "signal": "cc1fda68b7c0a44d",
+      "source": "data/team_requests/telegram_knowledge_requests.md",
+      "report": "docs/reasoning_training/2026-06-07/1729_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-07T17:29:04"
+    },
+    {
+      "key": "a49a82cf1cfe5a15",
+      "question": "`재발 방지: 체크리스트, 템플릿, Revit 파라미터, Navisworks 룰, 교육자료 반영`가 실제 현장 문제라면 재현 조건, 영향 범위, 임시 조치 중 무엇을 먼저 확인해야 하는가?",
+      "intent": "evidence",
+      "signal": "7cd2cd2010678d45",
+      "source": "data/knowledge_base/설비시공조율.md",
+      "report": "docs/reasoning_training/2026-06-07/1729_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-07T17:29:04"
+    },
+    {
+      "key": "89c2e7cf10e5f454",
+      "question": "`재발 방지: 체크리스트, 템플릿, Revit 파라미터, Navisworks 룰, 교육자료 반영`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "7cd2cd2010678d45",
+      "source": "data/knowledge_base/설비시공조율.md",
+      "report": "docs/reasoning_training/2026-06-07/1729_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-07T17:29:04"
+    },
+    {
+      "key": "29386aa386630d1c",
+      "question": "납품 전 품질 기준으로 바꾼다면 `재발 방지: 체크리스트, 템플릿, Revit 파라미터, Navisworks 룰, 교육자료 반영`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "7cd2cd2010678d45",
+      "source": "data/knowledge_base/설비시공조율.md",
+      "report": "docs/reasoning_training/2026-06-07/1729_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-07T17:29:04"
+    },
+    {
+      "key": "e304598ccd2656dd",
+      "question": "고객에게 설명할 때 `재발 방지: 체크리스트, 템플릿, Revit 파라미터, Navisworks 룰, 교육자료 반영`는 시간 절감, 품질 안정, 리스크 감소 중 어디에 가장 가깝나?",
+      "intent": "business_language",
+      "signal": "7cd2cd2010678d45",
+      "source": "data/knowledge_base/설비시공조율.md",
+      "report": "docs/reasoning_training/2026-06-07/1729_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=11/11 threshold=0.42",
+      "created_at": "2026-06-07T17:29:04"
+    },
+    {
+      "key": "95cfaf45c12cca0f",
+      "question": "`2026-05-28T09:59:14 | docs/internalgrowth/2026-05-28/0959INTERNALSE...`를 실제 실행 후보로 볼 때 지금 당장 확인할 근거는 무엇인가?",
+      "intent": "evidence",
+      "signal": "54cfa92200e72478",
+      "source": "docs/internal_growth/AX_INTERNAL_GROWTH_BACKLOG.md",
+      "report": "docs/reasoning_training/2026-06-09/0013_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-09T00:13:23"
+    },
+    {
+      "key": "9f82575b886e79dc",
+      "question": "`2026-05-28T09:59:14 | docs/internalgrowth/2026-05-28/0959INTERNALSE...`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "54cfa92200e72478",
+      "source": "docs/internal_growth/AX_INTERNAL_GROWTH_BACKLOG.md",
+      "report": "docs/reasoning_training/2026-06-09/0013_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-09T00:13:23"
+    },
+    {
+      "key": "ec096a3da458c82d",
+      "question": "납품 전 품질 기준으로 바꾼다면 `2026-05-28T09:59:14 | docs/internalgrowth/2026-05-28/0959INTERNALSE...`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "54cfa92200e72478",
+      "source": "docs/internal_growth/AX_INTERNAL_GROWTH_BACKLOG.md",
+      "report": "docs/reasoning_training/2026-06-09/0013_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-09T00:13:23"
+    },
+    {
+      "key": "307d0597c80e02d9",
+      "question": "`2026-05-28T09:59:14 | docs/internalgrowth/2026-05-28/0959INTERNALSE...`의 미검증 부분은 공식 문서, 프로젝트 사례, 담당자 경험 중 무엇으로 먼저 막아야 하는가?",
+      "intent": "verification",
+      "signal": "54cfa92200e72478",
+      "source": "docs/internal_growth/AX_INTERNAL_GROWTH_BACKLOG.md",
+      "report": "docs/reasoning_training/2026-06-09/0013_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-09T00:13:23"
+    },
+    {
+      "key": "e37b0ef650cd7df2",
+      "question": "`2026-05-29T08:00:03 | docs/internalgrowth/2026-05-29/0800INTERNALSE...`를 실제 실행 후보로 볼 때 지금 당장 확인할 근거는 무엇인가?",
+      "intent": "evidence",
+      "signal": "8fb5ccf63f3b877c",
+      "source": "docs/internal_growth/AX_INTERNAL_GROWTH_BACKLOG.md",
+      "report": "docs/reasoning_training/2026-06-09/0013_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-09T00:13:23"
+    },
+    {
+      "key": "0c466ca5b5156a09",
+      "question": "`2026-05-29T08:00:03 | docs/internalgrowth/2026-05-29/0800INTERNALSE...`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "8fb5ccf63f3b877c",
+      "source": "docs/internal_growth/AX_INTERNAL_GROWTH_BACKLOG.md",
+      "report": "docs/reasoning_training/2026-06-09/0013_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-09T00:13:23"
+    },
+    {
+      "key": "070b5f764c60b6aa",
+      "question": "납품 전 품질 기준으로 바꾼다면 `2026-05-29T08:00:03 | docs/internalgrowth/2026-05-29/0800INTERNALSE...`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "8fb5ccf63f3b877c",
+      "source": "docs/internal_growth/AX_INTERNAL_GROWTH_BACKLOG.md",
+      "report": "docs/reasoning_training/2026-06-09/0013_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-09T00:13:23"
+    },
+    {
+      "key": "878641c39c9ee3a7",
+      "question": "`2026-05-29T08:00:03 | docs/internalgrowth/2026-05-29/0800INTERNALSE...`의 미검증 부분은 공식 문서, 프로젝트 사례, 담당자 경험 중 무엇으로 먼저 막아야 하는가?",
+      "intent": "verification",
+      "signal": "8fb5ccf63f3b877c",
+      "source": "docs/internal_growth/AX_INTERNAL_GROWTH_BACKLOG.md",
+      "report": "docs/reasoning_training/2026-06-09/0013_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-09T00:13:23"
+    },
+    {
+      "key": "e90585cf3c7bb6f6",
+      "question": "`2026-05-30T11:33:39 | docs/internalgrowth/2026-05-30/1133INTERNALSE...`를 실제 실행 후보로 볼 때 지금 당장 확인할 근거는 무엇인가?",
+      "intent": "evidence",
+      "signal": "547a75ccdfa620c7",
+      "source": "docs/internal_growth/AX_INTERNAL_GROWTH_BACKLOG.md",
+      "report": "docs/reasoning_training/2026-06-09/0013_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-09T00:13:23"
+    },
+    {
+      "key": "5853c95ff28ff55d",
+      "question": "`2026-05-30T11:33:39 | docs/internalgrowth/2026-05-30/1133INTERNALSE...`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "547a75ccdfa620c7",
+      "source": "docs/internal_growth/AX_INTERNAL_GROWTH_BACKLOG.md",
+      "report": "docs/reasoning_training/2026-06-09/0013_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-09T00:13:23"
+    },
+    {
+      "key": "280ba920cc6653bb",
+      "question": "납품 전 품질 기준으로 바꾼다면 `2026-05-30T11:33:39 | docs/internalgrowth/2026-05-30/1133INTERNALSE...`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "547a75ccdfa620c7",
+      "source": "docs/internal_growth/AX_INTERNAL_GROWTH_BACKLOG.md",
+      "report": "docs/reasoning_training/2026-06-09/0013_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-09T00:13:23"
+    },
+    {
+      "key": "d00561cf026f614e",
+      "question": "`2026-05-30T11:33:39 | docs/internalgrowth/2026-05-30/1133INTERNALSE...`의 미검증 부분은 공식 문서, 프로젝트 사례, 담당자 경험 중 무엇으로 먼저 막아야 하는가?",
+      "intent": "verification",
+      "signal": "547a75ccdfa620c7",
+      "source": "docs/internal_growth/AX_INTERNAL_GROWTH_BACKLOG.md",
+      "report": "docs/reasoning_training/2026-06-09/0013_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-09T00:13:23"
+    },
+    {
+      "key": "382c09b0cd279606",
+      "question": "`A: 단계별 커리큘럼: ① 1주차 기초: BIM 개념, Revit UI, 기본 모델링벽/바닥/지붕 ② 2~3주차 공종별:...`를 실제 실행 후보로 볼 때 지금 당장 확인할 근거는 무엇인가?",
+      "intent": "evidence",
+      "signal": "b3d3fed72787c852",
+      "source": "data/knowledge_base/qa/교육컨설팅_QA.md",
+      "report": "docs/reasoning_training/2026-06-10/0008_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=10/10 threshold=0.42",
+      "created_at": "2026-06-10T00:08:38"
+    },
+    {
+      "key": "5cfed5e720999a5a",
+      "question": "`A: 단계별 커리큘럼: ① 1주차 기초: BIM 개념, Revit UI, 기본 모델링벽/바닥/지붕 ② 2~3주차 공종별:...`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "b3d3fed72787c852",
+      "source": "data/knowledge_base/qa/교육컨설팅_QA.md",
+      "report": "docs/reasoning_training/2026-06-10/0008_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=10/10 threshold=0.42",
+      "created_at": "2026-06-10T00:08:38"
+    },
+    {
+      "key": "fc9727cbf81e8df6",
+      "question": "납품 전 품질 기준으로 바꾼다면 `A: 단계별 커리큘럼: ① 1주차 기초: BIM 개념, Revit UI, 기본 모델링벽/바닥/지붕 ② 2~3주차 공종별:...`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "b3d3fed72787c852",
+      "source": "data/knowledge_base/qa/교육컨설팅_QA.md",
+      "report": "docs/reasoning_training/2026-06-10/0008_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=10/10 threshold=0.42",
+      "created_at": "2026-06-10T00:08:38"
+    },
+    {
+      "key": "503c5904e524926f",
+      "question": "고객에게 설명할 때 `A: 단계별 커리큘럼: ① 1주차 기초: BIM 개념, Revit UI, 기본 모델링벽/바닥/지붕 ② 2~3주차 공종별:...`는 시간 절감, 품질 안정, 리스크 감소 중 어디에 가장 가깝나?",
+      "intent": "business_language",
+      "signal": "b3d3fed72787c852",
+      "source": "data/knowledge_base/qa/교육컨설팅_QA.md",
+      "report": "docs/reasoning_training/2026-06-10/0008_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=10/10 threshold=0.42",
+      "created_at": "2026-06-10T00:08:38"
+    },
+    {
+      "key": "20d940301040276b",
+      "question": "`A: 방법 1 Revit 내보내기: Revit View → Export → Reports → Schedule로 내보낸 T...`를 실제 실행 후보로 볼 때 지금 당장 확인할 근거는 무엇인가?",
+      "intent": "evidence",
+      "signal": "6994faede61c46c5",
+      "source": "data/knowledge_base/qa/엑셀자동화_QA.md",
+      "report": "docs/reasoning_training/2026-06-10/0008_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=10/10 threshold=0.42",
+      "created_at": "2026-06-10T00:08:38"
+    },
+    {
+      "key": "b138ef16e8c9a9b5",
+      "question": "`A: 방법 1 Revit 내보내기: Revit View → Export → Reports → Schedule로 내보낸 T...`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "6994faede61c46c5",
+      "source": "data/knowledge_base/qa/엑셀자동화_QA.md",
+      "report": "docs/reasoning_training/2026-06-10/0008_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=10/10 threshold=0.42",
+      "created_at": "2026-06-10T00:08:38"
+    },
+    {
+      "key": "c29156c9300b63d0",
+      "question": "고객에게 설명할 때 `A: 방법 1 Revit 내보내기: Revit View → Export → Reports → Schedule로 내보낸 T...`는 시간 절감, 품질 안정, 리스크 감소 중 어디에 가장 가깝나?",
+      "intent": "business_language",
+      "signal": "6994faede61c46c5",
+      "source": "data/knowledge_base/qa/엑셀자동화_QA.md",
+      "report": "docs/reasoning_training/2026-06-10/0008_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=10/10 threshold=0.42",
+      "created_at": "2026-06-10T00:08:38"
+    },
+    {
+      "key": "ba94b7b01527fa9e",
+      "question": "`A: LUA BIM LABS 채용 평가 기준 BIM 직군: ① 필수 역량: Revit 실무 경험 연수, IFC/LOD 이...`를 실제 실행 후보로 볼 때 지금 당장 확인할 근거는 무엇인가?",
+      "intent": "evidence",
+      "signal": "f22e40bc0f9864ba",
+      "source": "data/knowledge_base/qa/HR_인재분석관_QA.md",
+      "report": "docs/reasoning_training/2026-06-10/0008_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=10/10 threshold=0.42",
+      "created_at": "2026-06-10T00:08:38"
+    },
+    {
+      "key": "71c275ef0d167730",
+      "question": "`A: LUA BIM LABS 채용 평가 기준 BIM 직군: ① 필수 역량: Revit 실무 경험 연수, IFC/LOD 이...`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "f22e40bc0f9864ba",
+      "source": "data/knowledge_base/qa/HR_인재분석관_QA.md",
+      "report": "docs/reasoning_training/2026-06-10/0008_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=10/10 threshold=0.42",
+      "created_at": "2026-06-10T00:08:38"
+    },
+    {
+      "key": "f624fd9e029f0b55",
+      "question": "납품 전 품질 기준으로 바꾼다면 `A: LUA BIM LABS 채용 평가 기준 BIM 직군: ① 필수 역량: Revit 실무 경험 연수, IFC/LOD 이...`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "f22e40bc0f9864ba",
+      "source": "data/knowledge_base/qa/HR_인재분석관_QA.md",
+      "report": "docs/reasoning_training/2026-06-10/0008_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=10/10 threshold=0.42",
+      "created_at": "2026-06-10T00:08:38"
+    },
+    {
+      "key": "8fedace2c66b4c03",
+      "question": "`분류 요약: 교육 105, 자동화 189, 전략 82, 제품화 115, 지식공백 36, 품질룰 136`를 실제 실행 후보로 볼 때 지금 당장 확인할 근거는 무엇인가?",
+      "intent": "evidence",
+      "signal": "8faeabb9c4b4db80",
+      "source": "data/knowledge_base/내부성장루프.md",
+      "report": "docs/reasoning_training/2026-06-11/0002_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-11T00:02:06"
+    },
+    {
+      "key": "3121ed4cd059a713",
+      "question": "`분류 요약: 교육 105, 자동화 189, 전략 82, 제품화 115, 지식공백 36, 품질룰 136`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "8faeabb9c4b4db80",
+      "source": "data/knowledge_base/내부성장루프.md",
+      "report": "docs/reasoning_training/2026-06-11/0002_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-11T00:02:06"
+    },
+    {
+      "key": "cfd4e6a65b4d05cc",
+      "question": "납품 전 품질 기준으로 바꾼다면 `분류 요약: 교육 105, 자동화 189, 전략 82, 제품화 115, 지식공백 36, 품질룰 136`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "8faeabb9c4b4db80",
+      "source": "data/knowledge_base/내부성장루프.md",
+      "report": "docs/reasoning_training/2026-06-11/0002_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-11T00:02:06"
+    },
+    {
+      "key": "3e275c7116fb9126",
+      "question": "`분류 요약: 교육 105, 자동화 189, 전략 82, 제품화 115, 지식공백 36, 품질룰 136`의 미검증 부분은 공식 문서, 프로젝트 사례, 담당자 경험 중 무엇으로 먼저 막아야 하는가?",
+      "intent": "verification",
+      "signal": "8faeabb9c4b4db80",
+      "source": "data/knowledge_base/내부성장루프.md",
+      "report": "docs/reasoning_training/2026-06-11/0002_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-11T00:02:06"
+    },
+    {
+      "key": "6a253e46b2f7565d",
+      "question": "`분류 단계 매시: Python 키워드 분류 → 교육/자동화/전략/제품화/지식공백/품질룰 6개 축`를 실제 실행 후보로 볼 때 지금 당장 확인할 근거는 무엇인가?",
+      "intent": "evidence",
+      "signal": "5c1aa1d9b0000c2e",
+      "source": "data/knowledge_base/내부성장루프.md",
+      "report": "docs/reasoning_training/2026-06-11/0002_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-11T00:02:06"
+    },
+    {
+      "key": "97bcd83c0b4f1776",
+      "question": "`분류 단계 매시: Python 키워드 분류 → 교육/자동화/전략/제품화/지식공백/품질룰 6개 축`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "5c1aa1d9b0000c2e",
+      "source": "data/knowledge_base/내부성장루프.md",
+      "report": "docs/reasoning_training/2026-06-11/0002_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-11T00:02:06"
+    },
+    {
+      "key": "dbd7f189ba10e950",
+      "question": "납품 전 품질 기준으로 바꾼다면 `분류 단계 매시: Python 키워드 분류 → 교육/자동화/전략/제품화/지식공백/품질룰 6개 축`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "5c1aa1d9b0000c2e",
+      "source": "data/knowledge_base/내부성장루프.md",
+      "report": "docs/reasoning_training/2026-06-11/0002_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-11T00:02:06"
+    },
+    {
+      "key": "e66845e85c697361",
+      "question": "`분류 단계 매시: Python 키워드 분류 → 교육/자동화/전략/제품화/지식공백/품질룰 6개 축`의 미검증 부분은 공식 문서, 프로젝트 사례, 담당자 경험 중 무엇으로 먼저 막아야 하는가?",
+      "intent": "verification",
+      "signal": "5c1aa1d9b0000c2e",
+      "source": "data/knowledge_base/내부성장루프.md",
+      "report": "docs/reasoning_training/2026-06-11/0002_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-11T00:02:06"
+    },
+    {
+      "key": "4b9a454e794ade7c",
+      "question": "`분류 요약: 교육 107, 자동화 248, 전략 171, 제품화 182, 지식공백 39, 품질룰 179`를 실제 실행 후보로 볼 때 지금 당장 확인할 근거는 무엇인가?",
+      "intent": "evidence",
+      "signal": "459849453048b089",
+      "source": "data/knowledge_base/내부성장루프.md",
+      "report": "docs/reasoning_training/2026-06-11/0002_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-11T00:02:06"
+    },
+    {
+      "key": "c426827f625d12a7",
+      "question": "`분류 요약: 교육 107, 자동화 248, 전략 171, 제품화 182, 지식공백 39, 품질룰 179`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "459849453048b089",
+      "source": "data/knowledge_base/내부성장루프.md",
+      "report": "docs/reasoning_training/2026-06-11/0002_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-11T00:02:06"
+    },
+    {
+      "key": "dedad75a5705aa7d",
+      "question": "납품 전 품질 기준으로 바꾼다면 `분류 요약: 교육 107, 자동화 248, 전략 171, 제품화 182, 지식공백 39, 품질룰 179`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "459849453048b089",
+      "source": "data/knowledge_base/내부성장루프.md",
+      "report": "docs/reasoning_training/2026-06-11/0002_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-11T00:02:06"
+    },
+    {
+      "key": "e216aa983848aa8a",
+      "question": "`분류 요약: 교육 107, 자동화 248, 전략 171, 제품화 182, 지식공백 39, 품질룰 179`의 미검증 부분은 공식 문서, 프로젝트 사례, 담당자 경험 중 무엇으로 먼저 막아야 하는가?",
+      "intent": "verification",
+      "signal": "459849453048b089",
+      "source": "data/knowledge_base/내부성장루프.md",
+      "report": "docs/reasoning_training/2026-06-11/0002_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-11T00:02:06"
+    },
+    {
+      "key": "6d52867a4245a25a",
+      "question": "`분류 요약: 교육 121, 자동화 296, 전략 236, 제품화 207, 지식공백 39, 품질룰 218`를 실제 실행 후보로 볼 때 지금 당장 확인할 근거는 무엇인가?",
+      "intent": "evidence",
+      "signal": "bdfd20a2dc4adcb7",
+      "source": "data/knowledge_base/내부성장루프.md",
+      "report": "docs/reasoning_training/2026-06-12/0006_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-12T00:06:35"
+    },
+    {
+      "key": "469b1a5ff1c28870",
+      "question": "`분류 요약: 교육 121, 자동화 296, 전략 236, 제품화 207, 지식공백 39, 품질룰 218`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "bdfd20a2dc4adcb7",
+      "source": "data/knowledge_base/내부성장루프.md",
+      "report": "docs/reasoning_training/2026-06-12/0006_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-12T00:06:35"
+    },
+    {
+      "key": "87957203c7385d50",
+      "question": "납품 전 품질 기준으로 바꾼다면 `분류 요약: 교육 121, 자동화 296, 전략 236, 제품화 207, 지식공백 39, 품질룰 218`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "bdfd20a2dc4adcb7",
+      "source": "data/knowledge_base/내부성장루프.md",
+      "report": "docs/reasoning_training/2026-06-12/0006_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-12T00:06:35"
+    },
+    {
+      "key": "512da77badf85d8e",
+      "question": "`분류 요약: 교육 121, 자동화 296, 전략 236, 제품화 207, 지식공백 39, 품질룰 218`의 미검증 부분은 공식 문서, 프로젝트 사례, 담당자 경험 중 무엇으로 먼저 막아야 하는가?",
+      "intent": "verification",
+      "signal": "bdfd20a2dc4adcb7",
+      "source": "data/knowledge_base/내부성장루프.md",
+      "report": "docs/reasoning_training/2026-06-12/0006_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-12T00:06:35"
+    },
+    {
+      "key": "fbd69e0612186505",
+      "question": "`분류 요약: 교육 127, 자동화 357, 전략 344, 제품화 234, 지식공백 37, 품질룰 273`를 실제 실행 후보로 볼 때 지금 당장 확인할 근거는 무엇인가?",
+      "intent": "evidence",
+      "signal": "dad72237a52b2b42",
+      "source": "data/knowledge_base/내부성장루프.md",
+      "report": "docs/reasoning_training/2026-06-12/0006_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-12T00:06:35"
+    },
+    {
+      "key": "d0b8ea6be0ae077e",
+      "question": "`분류 요약: 교육 127, 자동화 357, 전략 344, 제품화 234, 지식공백 37, 품질룰 273`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "dad72237a52b2b42",
+      "source": "data/knowledge_base/내부성장루프.md",
+      "report": "docs/reasoning_training/2026-06-12/0006_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-12T00:06:35"
+    },
+    {
+      "key": "87fdeb75995265cb",
+      "question": "납품 전 품질 기준으로 바꾼다면 `분류 요약: 교육 127, 자동화 357, 전략 344, 제품화 234, 지식공백 37, 품질룰 273`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "dad72237a52b2b42",
+      "source": "data/knowledge_base/내부성장루프.md",
+      "report": "docs/reasoning_training/2026-06-12/0006_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-12T00:06:35"
+    },
+    {
+      "key": "db98dc4c756c7371",
+      "question": "`분류 요약: 교육 127, 자동화 357, 전략 344, 제품화 234, 지식공백 37, 품질룰 273`의 미검증 부분은 공식 문서, 프로젝트 사례, 담당자 경험 중 무엇으로 먼저 막아야 하는가?",
+      "intent": "verification",
+      "signal": "dad72237a52b2b42",
+      "source": "data/knowledge_base/내부성장루프.md",
+      "report": "docs/reasoning_training/2026-06-12/0006_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-12T00:06:35"
+    },
+    {
+      "key": "3b5de94da37a93f3",
+      "question": "`분류 요약: 교육 145, 자동화 395, 전략 397, 제품화 258, 지식공백 39, 품질룰 314`를 실제 실행 후보로 볼 때 지금 당장 확인할 근거는 무엇인가?",
+      "intent": "evidence",
+      "signal": "40b33312fa4cbabd",
+      "source": "data/knowledge_base/내부성장루프.md",
+      "report": "docs/reasoning_training/2026-06-12/0006_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-12T00:06:35"
+    },
+    {
+      "key": "e14a6983c2de10e7",
+      "question": "`분류 요약: 교육 145, 자동화 395, 전략 397, 제품화 258, 지식공백 39, 품질룰 314`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "40b33312fa4cbabd",
+      "source": "data/knowledge_base/내부성장루프.md",
+      "report": "docs/reasoning_training/2026-06-12/0006_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-12T00:06:35"
+    },
+    {
+      "key": "c533f5094a6927ae",
+      "question": "납품 전 품질 기준으로 바꾼다면 `분류 요약: 교육 145, 자동화 395, 전략 397, 제품화 258, 지식공백 39, 품질룰 314`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "40b33312fa4cbabd",
+      "source": "data/knowledge_base/내부성장루프.md",
+      "report": "docs/reasoning_training/2026-06-12/0006_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-12T00:06:35"
+    },
+    {
+      "key": "0e878183a57e91b2",
+      "question": "`분류 요약: 교육 145, 자동화 395, 전략 397, 제품화 258, 지식공백 39, 품질룰 314`의 미검증 부분은 공식 문서, 프로젝트 사례, 담당자 경험 중 무엇으로 먼저 막아야 하는가?",
+      "intent": "verification",
+      "signal": "40b33312fa4cbabd",
+      "source": "data/knowledge_base/내부성장루프.md",
+      "report": "docs/reasoning_training/2026-06-12/0006_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
+      "created_at": "2026-06-12T00:06:35"
+    }
+  ]
+}

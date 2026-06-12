@@ -1,0 +1,42 @@
+LUA BIM LABS Starter
+Day 85 - Week 5 Review — Plumbing Clash Summary
+
+1. Why This Matters
+Days 81–85 covered the most common plumbing coordination conflicts and how to resolve them. These are not hypothetical problems — they appear on virtually every building project where MEP BIM coordination is performed. This review brings the clash resolution strategies together as a repeatable process you can use on any project.
+
+2. Core Concept
+Summary of Days 81–85:
+
+| Day | Clash Type | Root Cause | Primary Resolution |
+|-----|-----------|------------|-------------------|
+| 81 | Sloped drain vs. structural beam | Drain invert drops below beam flange as it extends horizontally | Reroute parallel to beam bay; shorten pipe run; move stack |
+| 82 | Drain vs. floor slab | Invert drops below slab soffit on long runs | Lowered slab zone; raised floor void; move stack closer |
+| 83 | Vent pipe vs. structure/architecture | Vent routed through structural or fire-compartment walls | Route through dedicated shaft or approved wall cavity |
+| 84 | Plumbing vs. other MEP disciplines | No agreed services zoning; drain modeled after other services | Establish level zone table before modeling; drain routes first |
+| 85 | Week review | This lesson | — |
+
+Plumbing clash resolution process (applicable to all types):
+1. Run clash detection (Revit Interference Check or Navisworks Clash Detective)
+2. Filter results by clash type: hard clash (physical overlap) vs. clearance clash (within tolerance)
+3. Prioritize hard clashes involving drainage — these are the most constrained to resolve
+4. For each clash, identify which element has priority (drainage > most other services)
+5. Propose resolution using the strategies from this week
+6. Confirm resolution with the relevant discipline and update the clash report status
+7. Rerun clash detection to verify the fix is effective
+
+3. Real Project Lens
+A BIM coordinator on a mixed-use development used the strategies from this week to clear a clash report that initially contained 340 plumbing-related clashes. After applying services zoning (Day 84), rerouting drains parallel to beams (Day 81), and identifying two lowered slab zones (Day 82), 290 clashes were resolved in the model. The remaining 50 clashes required structural or architectural changes that were logged for multi-discipline review. The final clash report went from 340 items to 12 unresolved items in 10 working days.
+
+4. BIM Check
+- Check: Clash detection has been run between plumbing and all other discipline models — structure, architecture, HVAC, electrical, fire protection
+- Check: All hard clashes involving sloped drainage pipes have a documented resolution status — resolved, in review, or pending design change
+- Check: A services level zone table exists, is agreed by all MEP disciplines, and is being used to guide modeling decisions
+
+5. Common Mistake
+A common mistake is running clash detection once, resolving the clashes found, and considering the task complete. Coordination is iterative — every model update from every discipline can introduce new clashes. Build a regular clash detection cycle (weekly or per model update) into your coordination workflow.
+
+6. Today's Action
+Review the clash types covered this week and score yourself on each: (1) can I identify this clash type in a BIM model, (2) can I propose a resolution, (3) have I seen this on a real project. For any score below 2 out of 3, revisit the lesson for that clash type and note one action you will take to strengthen that skill.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

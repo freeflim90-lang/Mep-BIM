@@ -1,0 +1,41 @@
+LUA BIM LABS Starter
+Day 65 - AHU Room Layout and Clearance
+
+1. Why This Matters
+An AHU that fits in a room on plan but has no maintenance access cannot be serviced after installation. MEP plants packed too tightly together cause failures during construction and long maintenance shutdowns during operation.
+
+2. Core Concept
+- AHU clearance requirements:
+  - Filter access side: minimum 900mm–1200mm (for filter slide-out)
+  - Coil access side: minimum 900mm (for coil pull-out or cleaning)
+  - Fan motor side: minimum 600mm
+  - General circulation: 1000mm between units
+- Floor loading: AHUs are heavy — confirm floor slab load capacity with structural engineer
+- Vibration isolation: AHUs must sit on spring isolators or pads — this adds 100–150mm to overall height
+- Service routes: confirm ductwork connections at AHU do not block access panels
+- AHU rooms need: floor drain, access door (large enough for unit entry during install), lighting, and ventilation
+- AHU room layout checklist:
+  - Filter access clearance: 900–1200mm minimum
+  - Coil pull clearance: 900mm minimum
+  - Motor/fan side clearance: 600mm minimum
+  - General circulation path: 1000mm clear minimum
+  - Door width for installation: equipment width + 200mm minimum
+  - Floor drain: within 2m of AHU drain pan
+  - Vibration isolation allowance: 100–150mm height addition
+
+3. Real Project Lens
+On Level 14 of a hotel, the AHU room hosts three rooftop-type units. The first draft of the model shows 500mm between Unit 1 and the wall — insufficient for filter access. The BIM coordinator flags this in the clash report as a soft clash (clearance violation). The layout is revised to shift Unit 1 by 500mm, requiring the supply duct to be re-routed.
+
+4. BIM Check
+- Check: Model AHU with actual manufacturer dimensions (not a placeholder box)
+- Check: Create clearance zones as Revit in-place families or reference planes — visually confirm access zones do not overlap
+- Check: Confirm AHU top elevation + vibration pad height does not exceed ceiling or beam soffit
+
+5. Common Mistake
+Using a generic AHU family with default dimensions (1000 x 500 x 800mm) when the actual specified unit is 2400 x 1200 x 1600mm — causing the room layout to look fine in the model but failing completely when site installation begins.
+
+6. Today's Action
+Find one AHU on a sample or real project model. Open its properties and check the actual dimensions. Then measure the clearance between the AHU and the nearest wall in the model. Compare to the minimum 900mm requirement. Log whether it passes or fails.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

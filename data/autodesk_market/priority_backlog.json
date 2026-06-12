@@ -1,0 +1,218 @@
+[
+  {
+    "date": "20260612",
+    "source": "autodesk_marketplace_crawl",
+    "new_apps_count": 4,
+    "analysis_summary": "",
+    "new_app_samples": [
+      {
+        "name": "3D Design Exchange",
+        "publisher": "Centre for Computational Technologies (CCTech)",
+        "desc": "Add 3D Designs Exchange from Autodesk® Revit®, Autodesk® Inventor®, and 150+ more software into your"
+      },
+      {
+        "name": "ConsoleCapture",
+        "publisher": "👨🏻‍💻Shotaro TAKAZOE",
+        "desc": "ConsoleCapture is a tool for displaying debug logs output from Autodesk® Revit® and other add-ins in"
+      },
+      {
+        "name": "SKEN COLUMN",
+        "publisher": "NOUWD.",
+        "desc": "High-precision structural audit tool to reconcile Autodesk® Revit® columns against CAD links. Employ"
+      },
+      {
+        "name": "Hello World",
+        "publisher": "test",
+        "desc": "AppDirectDemo"
+      }
+    ]
+  },
+  {
+    "date": "20260609",
+    "source": "autodesk_marketplace_crawl",
+    "new_apps_count": 24,
+    "analysis_summary": "",
+    "new_app_samples": [
+      {
+        "name": "FileUpgrader",
+        "publisher": "Haluk Uzuner",
+        "desc": "Effortlessly batch upgrade your Autodesk® Revit® projects and families to your current Revit version"
+      },
+      {
+        "name": "AutoSheets",
+        "publisher": "HikeByte",
+        "desc": "Create multiple Revit® sheets from a master template: copy titleblocks and parameters, replicate leg"
+      },
+      {
+        "name": "Greater BIM",
+        "publisher": "Greater BIM",
+        "desc": "The Greater BIM add-in enhances Revit workflows with smart MEP bending and advanced view management "
+      },
+      {
+        "name": "Beam ABS Tag",
+        "publisher": "Roman Boichin",
+        "desc": "Adds a tag for structural beams displaying absolute elevation (OK_ABS_ELEVATION).\r\nThe parameter is "
+      },
+      {
+        "name": "AI Image Generator",
+        "publisher": "Vitruvius",
+        "desc": "Generate AI-powered concept images from your  Autodesk® Revit® view and insert them into the project"
+      },
+      {
+        "name": "E-Keynote",
+        "publisher": "e f f e",
+        "desc": "The Autodesk® Revit® add-in helps to copy keynote text to descriptions, update keynote TXT from para"
+      },
+      {
+        "name": "Buildings AI",
+        "publisher": "Centre for Computational Technologies (CCTech)",
+        "desc": "Buildings AI is a cloud-native, AI-powered simulation platform that streamlines BIM-to-simulation wo"
+      },
+      {
+        "name": "pdf2CAD",
+        "publisher": "Kleen Software GmbH",
+        "desc": "Papierpläne intelligent digitalisieren"
+      },
+      {
+        "name": "pdf2CAD",
+        "publisher": "Kleen Software GmbH",
+        "desc": "Digitising paper plans intelligently."
+      },
+      {
+        "name": "Print Order Control",
+        "publisher": "PIXELTOOLS",
+        "desc": "Reordene folhas de impressão com arrastar e soltar no Autodesk Revit."
+      }
+    ]
+  },
+  {
+    "date": "20260602",
+    "source": "autodesk_marketplace_crawl",
+    "new_apps_count": 0,
+    "analysis_summary": "",
+    "new_app_samples": []
+  },
+  {
+    "date": "20260531",
+    "source": "autodesk_marketplace_crawl",
+    "new_apps_count": 0,
+    "analysis_summary": "",
+    "new_app_samples": []
+  },
+  {
+    "date": "20260531",
+    "source": "autodesk_marketplace_crawl",
+    "new_apps_count": 2845,
+    "analysis_summary": "",
+    "new_app_samples": [
+      {
+        "name": "Section Transfer Tool",
+        "publisher": "Roman Boichin",
+        "desc": "Transfer section views between Autodesk® Revit® models quickly and accurately."
+      },
+      {
+        "name": "ASME Valves Parametric Families",
+        "publisher": "Khai Long Tech (RVT Families)",
+        "desc": "ASME Valves Parametric Families for Food, Beverage, Pharma, Oil and Gas piping in Autodesk® Revit®."
+      },
+      {
+        "name": "Swagelok Metric Parametric Families",
+        "publisher": "Khai Long Tech (RVT Families)",
+        "desc": "This package includes pipes, fittings, valves, instruments, and various common components used in th"
+      },
+      {
+        "name": "DIN 11850 (EN 10357) Parametric Families",
+        "publisher": "Khai Long Tech (RVT Families)",
+        "desc": "DIN 11850 (EN 10357) Parametric families for Food, Beverage, Pharma piping in Autodesk® Revit®"
+      },
+      {
+        "name": "AG Hanger Generator",
+        "publisher": "AG",
+        "desc": "Hanger Generator creates hangers automatically on MEP linear elements such as pipes, ducts, conduits"
+      },
+      {
+        "name": "Door Factory Preview 2025",
+        "publisher": "RevitWorks Ltd",
+        "desc": "Create Doors & Curtain Panel Doors quickly with the RevitWorks Door Factory Preview: a FREE door mak"
+      },
+      {
+        "name": "Door Factory Preview 2026",
+        "publisher": "RevitWorks Ltd",
+        "desc": "Create Doors & Curtain Panel Doors quickly with the RevitWorks Door Factory Preview: a FREE door mak"
+      },
+      {
+        "name": "Door Factory Preview 2027",
+        "publisher": "RevitWorks Ltd",
+        "desc": "Create Doors & Curtain Panel Doors quickly with the RevitWorks Door Factory Preview: a FREE door mak"
+      },
+      {
+        "name": "Autotag by Bimrock AI",
+        "publisher": "Bimrock AI",
+        "desc": "Automate MEP annotation in Autodesk® Revit®. Create reusable tagging profiles, place tags with autom"
+      },
+      {
+        "name": "VISIBILTY MANAGER",
+        "publisher": "IB-BIM",
+        "desc": "Efficiently copy, remove, export, and import filters and V/G overrides between Autodesk® Revit® view"
+      }
+    ]
+  },
+  {
+    "date": "20260531",
+    "source": "autodesk_marketplace_crawl",
+    "new_apps_count": 50,
+    "analysis_summary": "",
+    "new_app_samples": [
+      {
+        "name": "Verkaufspläne Generator",
+        "publisher": "bimMajster",
+        "desc": "Automatisierte Erstellung und Aktualisierung von Verkaufsplänen direkt aus dem Autodesk® Revit®-BIM-"
+      },
+      {
+        "name": "Drawing Sync",
+        "publisher": "Code Truck",
+        "desc": "Easily track changes you and others make to drawings in your project. Keep a history of local edits,"
+      },
+      {
+        "name": "Sequenza - 4D Construction Sequence Exporter",
+        "publisher": "AvantLeap",
+        "desc": "The Sequenza is an Autodesk® Revit® add-in that extracts construction sequence data from a Revit mod"
+      },
+      {
+        "name": "Voussoir",
+        "publisher": "BUILT CoLAB",
+        "desc": "Create Parametric Stereotomic Vaults Directly in Autodesk® Revit®. "
+      },
+      {
+        "name": "Sheet set to/from Excel - PRO",
+        "publisher": "NTCL Soft",
+        "desc": "Use Excel Autofill to batch edit Sheet properties (built-in and custom) and Sheet drawing paths. Adv"
+      },
+      {
+        "name": "NavVis IVION Add-In for Autodesk® Revit®",
+        "publisher": "NavVis GmbH",
+        "desc": "This app integrates BIM models and NavVis reality capture technology. Create and update models faste"
+      },
+      {
+        "name": "panelSLD",
+        "publisher": "DQ Projects",
+        "desc": "panelSLD es un complemento para Autodesk® Revit® para el dibujo de diagramas monolineales y cálculos"
+      },
+      {
+        "name": "panelSLD",
+        "publisher": "DQ Projects",
+        "desc": "panelSLD is a plugin for Autodesk® Revit® that draws and calculates single-line diagrams according t"
+      },
+      {
+        "name": "KTools",
+        "publisher": "Koptev Pty Ltd",
+        "desc": "Streamline Autodesk® Revit® tasks: Excel-driven element creation, sheet management, and parameter-ba"
+      },
+      {
+        "name": "Auto Finishes",
+        "publisher": "Bimminent",
+        "desc": "This Autodesk® Revit® plugin helps you save time when assigning room finishes - floor tiles, walls a"
+      }
+    ]
+  }
+]

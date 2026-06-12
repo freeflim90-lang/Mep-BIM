@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "ACC",
+    "BIM",
+    "BIM Coordination",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "Getting Started with Autodesk Construction Cloud for BIM Teams",
+  "slug": "getting-started-with-autodesk-construction-cloud-for-bim-teams",
+  "content": "<p>Autodesk Construction Cloud (ACC) is the unified platform that brings together Revit collaboration, clash detection, document management, issue tracking, and site management. For BIM teams moving from desktop-only workflows, ACC changes how models are shared, coordinated, and accessed by all project parties.</p>\n<h2>Why This Matters</h2>\n<p>BIM workflows that rely on email-attached model files, shared drives, and manual version tracking produce coordination failures through outdated models, missed issues, and siloed data. ACC centralises these workflows so every team member accesses the same current model version.</p>\n<h2>Practical Guidance</h2>\n<p><strong>Project Setup:</strong> Create the ACC project with correct member roles before distributing access. BIM Manager, Coordinator, and Viewer roles control who can publish models, create issues, and view data. Poor role setup is the most common cause of early ACC adoption problems.</p>\n<p><strong>Revit Cloud Worksharing:</strong> Revit models on ACC use Cloud Worksharing instead of local central files. Team members work in the model via BIM 360 Design. Changes sync to the cloud rather than being saved locally. This requires a reliable internet connection and Revit 2020 or later.</p>\n<p><strong>Model Coordination Module:</strong> The Model Coordination module in ACC replaces the manual Navisworks coordination workflow for teams that need cloud-based clash detection. Models published to ACC are automatically coordinated against other discipline models, with results available in a browser without Navisworks installed.</p>\n<p><strong>Folder Structure:</strong> Set up the ACC folder structure before inviting team members. Create separate folders for each discipline with appropriate permission levels. The folder structure cannot be easily changed after teams are working within it.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Configure member roles before distributing ACC project access</li>\n<li>Set up folder structure and permissions before first model publication</li>\n<li>Test Cloud Worksharing with a sample Revit file before migrating the project model</li>\n<li>Enable Model Coordination module and confirm discipline model mapping</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>ACC setup is a project administration task that must be done before technical work begins — poor setup costs more time than it saves.</p>"
+}

@@ -1,0 +1,32 @@
+LUA BIM LABS Starter
+Day 71 - AHU Room Layout: Clearance Zones, Access Doors, and Connection Points
+
+1. Why This Matters
+The Air Handling Unit room is the heart of the HVAC system, and how it is laid out in BIM directly affects whether the equipment can be maintained, replaced, or even delivered to the floor. Poorly modeled AHU rooms cause last-minute redesigns when contractors realize they cannot open a filter door or pull a coil without dismantling adjacent equipment.
+
+2. Core Concept
+- Clearance zones are service areas required around each AHU. Typical requirements: filter access side needs 3 to 4 feet clear, coil pull side needs full coil length plus 2 feet, electrical connection side needs 36 inches.
+- These clearance zones are not just open space — they must be free of pipe, duct, conduit, and structure.
+- Access doors into the AHU room must be sized for the largest piece of equipment that will pass through during initial installation or future replacement.
+- The AHU connects to the duct system at the supply air and return air openings, typically on opposite sides or top/bottom.
+- Chilled water supply and return piping connects to the cooling coil. Hot water or steam connects to the heating coil.
+- Condensate drain pans must drain by gravity to a visible floor drain or condensate pump.
+- In Revit, model the AHU using a manufacturer-specific family when available, or a parametric box representing the actual footprint and height.
+- Model clearance zones as reference planes or 3D solid voids to visualize service space requirements.
+
+3. Real Project Lens
+On a mid-rise office building, the mechanical room on Level 4 has two 15,000 CFM AHUs placed against opposite walls. The BIM modeler checks filter access clearance and finds that the maintenance walkway between units is only 2 feet wide after accounting for pipe insulation. The equipment layout is revised to shift one AHU toward the window wall, solving the clearance issue before structural concrete is poured for the walls.
+
+4. BIM Check
+- Check: Filter access clearance meets manufacturer minimum requirements and is free of other services.
+- Check: Coil pull-out space is provided in the model and is unobstructed.
+- Check: The room access door width is sufficient for the AHU section dimensions shown on equipment submittals.
+
+5. Common Mistake
+Beginners model the AHU as a simple box and do not account for door swings on access panels. In reality, filter doors, damper actuator doors, and control panel doors all swing open into the clearance zone and must be shown in the model to verify there is no conflict.
+
+6. Today's Action
+Review an AHU manufacturer's installation manual (many are available publicly online). Identify the minimum clearance requirements listed for filter access, coil access, and electrical connections. Sketch a simple plan view showing how those clearance zones would be arranged in a typical mechanical room.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

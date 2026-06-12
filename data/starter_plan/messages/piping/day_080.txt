@@ -1,0 +1,32 @@
+LUA BIM LABS Starter
+Day 80 - Piping Model Quality Self-Check
+
+1. Why This Matters
+A piping model quality check before every submission catches errors that are cheap to fix in the model and expensive to discover during coordination review or installation.
+
+2. Core Concept
+- Run this 8-point check before every piping model submission:
+- 1. System assignment: every pipe is assigned to the correct Revit MEP system (Hydronic Supply / Return / Domestic Cold Water etc.)
+- 2. Open connectors: no unconnected pipe ends — check with Revit System Inspector
+- 3. Size transitions: reducers are placed wherever pipe size changes — no direct size jumps in the model
+- 4. Insulation: applied to all pipes requiring it per specification
+- 5. Valve placement: isolation valves at all specified equipment connections; balancing valves at all terminals
+- 6. Slope: drainage pipes and condensate pipes have correct slope — check in elevation view
+- 7. Structural penetrations: all slab and wall penetrations are submitted or flagged
+- 8. Revit warnings: warning count below 50 and no critical warnings
+
+3. Real Project Lens
+A piping coordinator introduced this 8-point check as a pre-submission standard. Within 6 weeks, the number of clash-detection returns (models sent back for correction rather than proceeding to coordination) dropped from 4 in 10 submissions to 1 in 10. The single biggest improvement came from catching open connectors and missing reducers before the model was issued.
+
+4. BIM Check
+- Check: the Revit System Inspector shows no unconnected pipe elements in the submitted model
+- Check: every pipe size change in the model has a reducer fitting — there are no direct diameter jumps
+- Check: all pipes requiring insulation per the specification have insulation applied in the Revit model
+
+5. Common Mistake
+Beginners submit piping models without checking for open connectors and missing reducers because these errors are not visually obvious in a 3D view.
+
+6. Today's Action
+Run the 8-point check on any piping model you have access to. Write down the result for each of the 8 checks.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

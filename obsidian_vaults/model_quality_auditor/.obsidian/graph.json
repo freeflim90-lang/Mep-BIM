@@ -1,0 +1,93 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": false,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "path:03_Errors_Fixes",
+      "color": {
+        "a": 1,
+        "rgb": 16724016
+      }
+    },
+    {
+      "query": "path:04_Decisions",
+      "color": {
+        "a": 1,
+        "rgb": 16755200
+      }
+    },
+    {
+      "query": "path:05_Revit_API_Gates",
+      "color": {
+        "a": 1,
+        "rgb": 5763711
+      }
+    },
+    {
+      "query": "path:06_Qwen_Drafts",
+      "color": {
+        "a": 1,
+        "rgb": 6074879
+      }
+    },
+    {
+      "query": "path:08_Knowledge_Map",
+      "color": {
+        "a": 1,
+        "rgb": 9124863
+      }
+    },
+    {
+      "query": "[node_type:concept]",
+      "color": {
+        "a": 1,
+        "rgb": 2450411
+      }
+    },
+    {
+      "query": "[node_type:procedure]",
+      "color": {
+        "a": 1,
+        "rgb": 366185
+      }
+    },
+    {
+      "query": "[node_type:event]",
+      "color": {
+        "a": 1,
+        "rgb": 16096779
+      }
+    },
+    {
+      "query": "[node_type:claim]",
+      "color": {
+        "a": 1,
+        "rgb": 14427686
+      }
+    },
+    {
+      "query": "[node_type:actor]",
+      "color": {
+        "a": 1,
+        "rgb": 7041664
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": true,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1.2,
+  "lineSizeMultiplier": 1.1,
+  "collapse-forces": true,
+  "centerStrength": 0.55,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 180,
+  "scale": 1,
+  "close": false
+}

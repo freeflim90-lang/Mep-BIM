@@ -1,0 +1,43 @@
+LUA BIM LABS Starter
+Day 47 - Track 6 Review — Data and Schedule Basics
+
+**1. Why This Matters**
+The ability to extract reliable data from a BIM model is what separates a model used for reference from a model used for decision-making — this track built the foundation for that capability.
+
+**2. Core Concept**
+Track 6 covered how Revit stores, organizes, and exports data, and how change events affect that data. Here is the structured recap:
+
+| Day | Topic | Key Takeaway |
+|-----|-------|--------------|
+| 39 | What Is a Revit Schedule? | Live table linked to model parameters; filter and group for useful output |
+| 40 | MEP Equipment Schedule | Every item needs Mark, Level, System — check for blanks before submission |
+| 41 | Duct and Pipe Schedules | Group by size for takeoff; verify unit settings match project standard |
+| 42 | Parameter Completeness | Schedule-based check; shared vs. project parameters; use BIM checker tools |
+| 43 | Exporting Data | CSV for Excel; IFC for open exchange; NWC for Navisworks; DWG loses data |
+| 44 | Tracking Model Changes | Sync discipline; version naming convention; central model history |
+| 45 | Revision and Change Mgmt | Notify → assess → update → re-clash → reissue → distribute |
+| 46 | Model-Based Quantities | LOD matters; group by type; cross-reference against design calculations |
+
+**3. Real Project Lens**
+A BIM coordinator on a commercial tower uses every skill from this track in the same week: creates equipment schedules for the weekly report, checks parameter completeness before a milestone submission, exports a pipe quantity CSV for procurement, tracks a mid-week structural change through the revision process, and issues updated coordination drawings at Revision C by end of week.
+
+**4. BIM Check**
+- Check: Can you explain the difference between a schedule filter and a schedule grouping?
+- Check: Can you describe the correct export format for sharing Revit data with a non-Revit team?
+- Check: Can you outline the five steps you would take when a design change arrives mid-coordination?
+
+**5. Common Mistake**
+Treating schedules as final outputs without checking the underlying model data quality. A schedule is only as accurate as the parameters it reads — garbage parameters produce garbage schedules.
+
+**6. Today's Action**
+Create a one-page "data checklist" for your own use — listing five parameter fields you would check before submitting any MEP model or schedule to an engineer or client.
+
+---
+
+## Track 7 — Site-Readiness Thinking (Days 48–54)
+
+---
+
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

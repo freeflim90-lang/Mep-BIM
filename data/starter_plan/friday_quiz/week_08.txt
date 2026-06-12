@@ -1,0 +1,13 @@
+LUA BIM LABS — BIM Check Friday ✓
+Week 8 | Data and Schedule Basics — Part 2
+
+Q1. What Revit export format should you use when sharing model data with a team that does not use Autodesk software?
+Q2. A design change arrives mid-coordination. Name the five steps you should follow to manage it correctly.
+Q3. What LOD level is typically required before model quantities can be used for material procurement?
+Q4. Why is it risky to use an LOD 200 duct quantity schedule for procurement purposes?
+Q5. What does "Sync to Central" have to do with model change tracking on a workshared project?
+
+Think through each one.
+No grades — this tests your own understanding.
+
+Next week: Site-Readiness Thinking check (Part 1).

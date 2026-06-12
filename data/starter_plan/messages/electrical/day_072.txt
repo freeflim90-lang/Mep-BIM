@@ -1,0 +1,50 @@
+LUA BIM LABS Starter
+Day 72 - Conduit Fill Calculations — Wire Fill Limits and What They Mean for BIM
+
+1. Why This Matters
+Conduit fill rules set the maximum number and size of wires that can be pulled through a conduit. Oversized wire bundles cannot be pulled through — they overheat and violate electrical codes. For BIM modelers, understanding fill limits helps size conduit correctly so the model reflects constructible, code-compliant routing.
+
+2. Core Concept
+Conduit fill limits — the basics:
+
+| Number of Conductors | Maximum Fill (% of conduit cross-section) |
+|---|---|
+| 1 conductor | 53% |
+| 2 conductors | 31% |
+| 3 or more conductors | 40% |
+
+How fill is calculated:
+1. Find the cross-sectional area of each wire (from conductor tables — based on wire gauge and insulation type)
+2. Sum the total wire cross-section area
+3. Divide by the conduit's internal cross-section area
+4. Result must not exceed the applicable percentage
+
+NEC vs. IEC reference:
+- NEC (North America): Chapter 9, Tables 1, 4, and 5 — used in the US and many Asian projects following US practice
+- IEC 60364 / local codes: similar fill principles, but consult the project specification for the applicable standard
+- Most project specifications include a conduit sizing schedule — the engineer has already performed the calculation; the modeler's job is to model the specified conduit size, not recalculate from scratch
+
+BIM modeler's practical rule — when the engineer's schedule is not available:
+- For 3–4 conductors up to 10mm² (8 AWG): use 25mm (1 inch) trade size minimum
+- For feeder circuits 25mm² (4 AWG) and larger: use 50mm (2 inch) trade size minimum as a starting point
+- Flag any conduit run longer than 15m or with more than 3 bends for engineer confirmation — derating may apply
+
+Derating: when many conductors share a conduit, the current-carrying capacity of each must be reduced (derated). This is an engineering calculation — flag runs with more than 3 current-carrying conductors to the engineer.
+
+3. Real Project Lens
+A BIM modeler receives a conduit schedule showing a feeder run carrying eight 16mm² conductors. He calculates the total fill area, checks against the 40% rule, and selects a 63mm conduit. When he models this in Revit and runs the section box view, he notices the 63mm conduit is tighter than expected against the structural beam. He flags this to the engineer before the coordination meeting — saving a site-level rework.
+
+4. BIM Check
+- Check: Do modeled conduit sizes match the conduit sizing schedule provided by the electrical engineer — not just estimated sizes?
+- Check: Are feeder conduits (carrying multiple large-gauge conductors) modeled at larger sizes than branch circuit conduits?
+- Check: Are runs with more than 6 current-carrying conductors flagged in the model or noted for engineer derating confirmation?
+
+5. Common Mistake
+Modeling all conduits at the same default size (commonly 20mm or 25mm) regardless of the number of conductors they carry. On site, the electrician attempts to pull six large cables through a 20mm conduit — and it is physically impossible.
+
+6. Today's Action
+Using a conductor table (NEC Table 5 or equivalent), find the cross-sectional area of a 2.5mm² (14 AWG) conductor with THHN insulation. Calculate how many of these conductors fit in a 20mm (3/4") conduit at 40% fill. Write the answer and compare it to a 25mm (1") conduit.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

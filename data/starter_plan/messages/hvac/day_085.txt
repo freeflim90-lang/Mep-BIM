@@ -1,0 +1,28 @@
+LUA BIM LABS Starter
+Day 85 - HVAC As-Built Requirements
+
+1. Why This Matters
+After installation, the as-built model must reflect what was actually built — not what was designed. Understanding what changes in the field and why prepares you for the as-built update process.
+
+2. Core Concept
+- Common as-built changes in HVAC: equipment relocated during installation, duct routes modified at site to avoid unforeseen clashes, access panels added or relocated, duct sizes changed due to late coordination decisions
+- As-built accuracy levels vary: some EIRs require millimeter-accurate geometry; others require only system-level accuracy (correct connections and parameters)
+- Most critical as-built data for facilities management: equipment location, connection sizes, valve locations, access panel locations
+- Update process: site team marks up drawings during construction; BIM modeler updates the Revit model after each zone is completed, not as a batch at the end
+- LOD 500: as-built models are sometimes described as LOD 500, meaning actual installed conditions are verified and recorded in the model
+
+3. Real Project Lens
+On a commercial project, the HVAC contractor made 12 routing changes during installation — all approved via RFI but never updated in the BIM model. When the facilities team received the as-built model, 3 fire damper access panels shown in the model were not at their physical installed locations. Ceiling tiles had to be removed in multiple locations to find the actual damper positions.
+
+4. BIM Check
+- Check: a process exists to record site changes from RFIs and site instructions and update the BIM model accordingly
+- Check: all approved routing changes are incorporated in the Revit model before the as-built package is issued
+- Check: access panel locations in the as-built model match their physically installed locations
+
+5. Common Mistake
+Beginners treat as-built updates as a batch activity at project end. Updating as changes are approved is far easier than reconstructing what changed after construction is complete.
+
+6. Today's Action
+Think of one HVAC change that typically happens on site (a duct re-routed around unexpected structure). Write down what information you would need from the site team to update the model accurately.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

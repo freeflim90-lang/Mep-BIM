@@ -1,0 +1,63 @@
+{
+  "product": "Model Quality Auditor",
+  "selected_item": "MEP BIM 모델 품질진단 Add-in",
+  "source_documents": [
+    "docs/revenue_products/model_quality_audit/00_PRODUCT_PACKAGE_INDEX.md",
+    "docs/revenue_products/model_quality_audit/04_AUDIT_CHECKLIST.md",
+    "docs/revenue_products/model_quality_audit/05_AUDIT_REPORT_TEMPLATE.md",
+    "docs/revenue_products/model_quality_audit/11_ADDIN_MVP_FEATURE_SPEC.md",
+    "docs/revenue_products/model_quality_audit/13_PRODUCT_ROADMAP.md",
+    "obsidian_vaults/model_quality_auditor/01_Project/Qwen Development Boundary.md"
+  ],
+  "tasks": [
+    {
+      "id": "MQA-QWEN-001",
+      "title": "도메인 모델 및 데이터 계약 초안",
+      "deliverable": "ModelIssue, AuditRule, AuditResult, ModelSnapshot 데이터 구조와 JSON 예시",
+      "scope": "Revit API 비의존 순수 도메인 모델. 실제 Document/Element 접근 금지.",
+      "output_path_hint": "backend/model_quality_auditor/domain_contracts.py"
+    },
+    {
+      "id": "MQA-QWEN-002",
+      "title": "품질진단 룰 JSON 스키마 초안",
+      "deliverable": "룰 카테고리, 심각도, 검사 조건, 메시지, 수정 가이드 필드 설계",
+      "scope": "명명, 파라미터, LOD, 링크, 좌표, 패밀리 품질을 표현하는 스키마.",
+      "output_path_hint": "backend/model_quality_auditor/rule_schema.json"
+    },
+    {
+      "id": "MQA-QWEN-003",
+      "title": "점수 계산 엔진 초안",
+      "deliverable": "Critical/Major/Minor 가중치, 공종별 점수, 납품 적합성 등급 계산 로직",
+      "scope": "샘플 이슈 리스트를 입력받아 점수와 우선순위를 계산하는 순수 Python 로직.",
+      "output_path_hint": "backend/model_quality_auditor/scoring.py"
+    },
+    {
+      "id": "MQA-QWEN-004",
+      "title": "Markdown/CSV 리포트 생성 초안",
+      "deliverable": "진단 결과를 Markdown 보고서와 CSV 이슈 목록으로 변환하는 설계",
+      "scope": "고객 제출 보고서 템플릿과 내부 이슈대장을 모두 고려.",
+      "output_path_hint": "backend/model_quality_auditor/reporting.py"
+    },
+    {
+      "id": "MQA-QWEN-005",
+      "title": "샘플 데이터 및 단위 테스트 초안",
+      "deliverable": "샘플 ModelSnapshot, AuditRule, AuditResult와 pytest 테스트 시나리오",
+      "scope": "Revit 없이 로컬에서 검증 가능한 테스트만 포함.",
+      "output_path_hint": "tests/model_quality_auditor/test_scoring.py"
+    },
+    {
+      "id": "MQA-QWEN-006",
+      "title": "Revit API 어댑터 인터페이스 초안",
+      "deliverable": "실제 Revit 환경에서 구현할 어댑터 경계와 게이트 체크리스트",
+      "scope": "인터페이스와 의사코드만 작성. Revit API 호출 확정 금지.",
+      "output_path_hint": "backend/model_quality_auditor/revit_adapter_contract.md"
+    },
+    {
+      "id": "MQA-QWEN-007",
+      "title": "Add-in Dashboard 병합 백엔드 계약 초안",
+      "deliverable": "대시보드가 받을 진단 실행 상태, 리포트 경로, 오류 상태 API 계약",
+      "scope": "별도 프로젝트에서 Addin Dashboard로 병합할 때 필요한 데이터 계약.",
+      "output_path_hint": "backend/model_quality_auditor/dashboard_contract.md"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+LUA BIM LABS Starter
+Day 90 - 90-Day Completion — Plumbing Deep Dive Wrap
+
+1. Why This Matters
+You started Day 1 as someone learning MEP BIM. You have spent the last 30 days — and the full 90 days — building a structured understanding of MEP BIM coordination from the ground up. Today is not just the end of a lesson series. It is the beginning of your professional practice with the knowledge, vocabulary, and workflows needed to contribute on real projects.
+
+2. Core Concept
+What you have covered across 90 days:
+
+Month 1 (Days 1–30): MEP BIM Foundations
+- BIM coordination workflows, model federation, clash detection principles
+- Discipline roles: architectural, structural, MEP
+- Revit essentials for MEP modeling
+- Reading and working with coordination drawings
+
+Month 2 (Days 31–60): HVAC and Mechanical Systems
+- Ductwork systems, air handling units, VAV systems
+- Chilled water and heating water distribution
+- Mechanical room layout and equipment coordination
+- Commissioning data and as-built preparation
+
+Month 3 — Plumbing Deep Dive (Days 61–90):
+
+| Block | Days | Topic |
+|-------|------|-------|
+| System Classification | 61–70 | Soil, waste, vent, stormwater system types, slope rules, invert levels |
+| Vertical Risers | 71–75 | Riser modeling, sleeve requests, shaft coordination, vent through roof |
+| Fixture Connections | 76–80 | WC, basin, floor drain connections, fixture schedules |
+| System Clashes | 81–85 | Drain vs. beam, drain vs. slab, vent routing, MEP coordination hierarchy |
+| Delivery Standards | 86–90 | LOD 350, parameter checklist, coordination drawings, FM handover data |
+
+Skills you now have:
+- You can classify and model a complete sanitary drainage system in Revit
+- You can identify and resolve the most common plumbing BIM clashes
+- You can produce a LOD 350-compliant plumbing model and coordination drawing package
+- You can prepare FM handover data from a plumbing BIM model
+- You understand how plumbing coordination fits within the multi-discipline MEP workflow
+
+3. Real Project Lens
+A junior MEP BIM coordinator who completed a structured 90-day program was assigned to lead the plumbing coordination zone on a 15-storey mixed-use tower six months later. She produced the sleeve request package independently, ran the first clash detection cycle, and resolved 85% of clashes without escalation. Her senior coordinator's assessment: "She needed guidance on structural interface decisions, but her model quality and process discipline were at the level of someone with two years of experience." Structured learning compounds.
+
+4. BIM Check
+- Check: You can name the four plumbing system types and their key rules without looking at your notes
+- Check: You can describe the LOD 350 requirements for a plumbing model in three sentences
+- Check: You can explain the coordination hierarchy for plumbing vs. other MEP disciplines and why drainage ranks second after structure
+
+5. Common Mistake
+The most common mistake at the 90-day mark is stopping. The knowledge from this program fades quickly without application. The next step is to open a model — any model — and apply what you have learned. Find a coordination issue, resolve it, document it. Repeat until the process is instinct, not recall.
+
+6. Today's Action
+Write three sentences describing what you knew about MEP BIM on Day 1, what you know now, and one specific thing you will do differently on your next project because of this program. Share it with a colleague or keep it as a personal benchmark. Then open Revit and start your next project.
+
+You have completed the LUA BIM LABS MEP BIM Starter Plan — 90 days, three disciplines, one solid foundation.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

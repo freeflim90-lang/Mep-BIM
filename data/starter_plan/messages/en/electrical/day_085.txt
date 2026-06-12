@@ -1,0 +1,50 @@
+LUA BIM LABS Starter
+Day 85 - Week 5 Review — Single Line Diagram Tracing Summary
+
+1. Why This Matters
+The SLD tracing workflow — from reading the diagram, to linking it to the model, to tracing circuits to loads, to verifying load data — is the process that transforms an electrical BIM model from a 3D geometry file into a verified data model. Week 5 covered all four steps of this process. Mastering this workflow is what separates a competent electrical BIM practitioner from one who only places families.
+
+2. Core Concept
+Week 5 SLD Tracing Summary
+
+| Day | Topic | Key Point |
+|---|---|---|
+| 81 | Reading the SLD | Identify panel IDs, bus ratings, protective devices, and feeder cables from the SLD |
+| 82 | SLD to BIM Linking | Create a Panel Register; match every SLD panel to a Revit family with an identical name |
+| 83 | Circuit-to-Load Tracing | Use System Browser to follow each circuit from the breaker to the connected element |
+| 84 | Load Schedule Verification | Export Revit panel schedules; cross-check against engineering load schedule — log all discrepancies |
+
+Critical Rules — SLD Tracing
+- Panel names in Revit must match SLD panel IDs exactly — no abbreviations, no reformatting
+- Every panel on the SLD must have a corresponding Revit family placed — including future panels
+- Zero orphan circuits: every breaker slot has either a connected load or is marked as a spare
+- Zero orphan loads: every electrical element in the model has a circuit assignment
+- Load verification tolerance: ±5% for individual circuits, ±5% for panel totals
+- The Load Schedule Discrepancy Log is a required deliverable — not optional documentation
+- SLD revision must match the panel schedule revision used for verification — record both
+
+SLD Tracing Workflow (summary):
+1. Receive current SLD revision — read and create Panel Register
+2. Match all SLD panels to Revit families — flag missing families
+3. Verify feeder cables are modeled for all SLD feeders
+4. Trace all circuits in System Browser — resolve orphan circuits and orphan loads
+5. Export Revit panel schedules — cross-check against engineering load schedule
+6. Submit Panel Register + Load Schedule Discrepancy Log with each coordination submission
+
+3. Real Project Lens
+At the Week 5 milestone review, a BIM lead checks the electrical model against the Week 5 framework. Panel Register: 22 SLD panels, all 22 placed in Revit — pass. Feeder cables: all modeled — pass. System Browser: 3 orphan loads on Level 9 — fail, sent back to modeler. Load schedule: 2 discrepancies above 5% tolerance — fail, flagged for engineer confirmation. The model is resubmitted after both issues are resolved. The disciplined approach catches two real design coordination issues before the coordination model freeze.
+
+4. BIM Check
+- Check: Is the Panel Register complete and up to date — showing all SLD panels, their Revit family placement status, and feeder cable modeling status?
+- Check: Does the System Browser show zero orphan circuits and zero orphan loads on every floor of the model?
+- Check: Is the Load Schedule Discrepancy Log complete — covering all panels, with resolution status for each flagged item?
+
+5. Common Mistake
+Treating SLD tracing as a one-time task completed at the start of the project. The SLD and panel schedules are revised multiple times during design — every revision requires a re-check of panel names, circuit counts, and load values against the model. Failing to re-check after each revision allows the model and the engineering documents to drift out of sync.
+
+6. Today's Action
+Create a two-column checklist: "SLD Tracing Steps" and "Status." List all six steps from the summary above. On your current or training project, mark which steps are complete, which are in progress, and which have not started. This becomes your Week 5 completion tracker.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

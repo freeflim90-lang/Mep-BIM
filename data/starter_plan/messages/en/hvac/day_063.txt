@@ -1,0 +1,31 @@
+LUA BIM LABS Starter
+Day 63 - Supply vs. Return vs. Exhaust System Assignment
+
+1. Why This Matters
+Assigning a duct to the wrong system type — supply labeled as return, or exhaust misassigned — corrupts airflow calculations, makes schedules wrong, and creates commissioning failures that are traced back to the BIM model.
+
+2. Core Concept
+- Three main air system types in HVAC BIM:
+  - Supply Air: Conditioned air from AHU to space. Flows toward the occupied area. Duct assigned as "Supply Air" in Revit
+  - Return Air: Air from occupied space back to AHU. Separate duct or plenum. Assigned "Return Air"
+  - Exhaust Air: Air expelled outside. Toilets, kitchens, carparks, server rooms. Assigned "Exhaust Air" — never recirculated
+- In Revit, system type is set at the mechanical system level — not just at the duct level
+- Connector polarity matters: AHU supply outlet connector links to supply system; AHU return inlet connector links to return system
+- Mixed-mode error: if return ducts are accidentally connected to the supply system, Revit's system analysis will show reversed flow or incorrect pressures
+
+3. Real Project Lens
+On a hospital project, the operating theatre has three separate duct systems: HEPA-filtered supply air (positive pressure), exhaust air (negative pressure, expelled outside), and a corridor return air system. The BIM modeler must create three separate mechanical systems in Revit — one per type — and connect each duct run to the correct system. Mixing them triggers infection control failures.
+
+4. BIM Check
+- Check: In Mechanical Systems Browser, expand each system — confirm all ducts inside are the correct type (no supply duct inside a return system)
+- Check: Verify exhaust ducts do not connect back to any AHU return inlet — trace each exhaust duct to an exhaust fan or louver termination point
+- Check: Confirm fresh air intake duct at AHU is separate from the exhaust discharge — no short-circuiting
+
+5. Common Mistake
+Copying a supply duct and changing its physical routing without changing the system assignment — the new duct remains on the supply system even though it is now feeding a return grille. This is invisible on plan but breaks system analysis.
+
+6. Today's Action
+In Revit, open the Mechanical Systems dialog. Find a project or sample model with at least two mechanical systems. Check whether each duct in the model belongs to the correct system. Rename any system that has an unclear name (e.g., "Mechanical System 1" should be "L3-AHU01-Supply").
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

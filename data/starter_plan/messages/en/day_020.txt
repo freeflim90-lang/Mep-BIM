@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 20 - Writing Clear BIM Coordination Issues
+
+1. Why This Matters
+A coordination issue is useful only when another person can understand the problem, location, impact, and expected action.
+
+2. Core Concept
+A good issue note includes location, involved systems, problem type, practical impact, proposed action, and owner.
+
+3. Real Project Lens
+Saying pipe clash is weak. Saying CHW pipe conflicts with cable tray at Level 03 corridor grid B-4 and blocks tray access is much more useful.
+
+4. BIM Check
+- State the location clearly.
+- Name the involved systems and disciplines.
+- Describe the impact and next action.
+
+5. Common Mistake
+Beginners often write issue notes that describe what they see but not what needs to happen next.
+
+6. Today's Action
+Rewrite a vague issue into a clear coordination issue using location, systems, impact, and action.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

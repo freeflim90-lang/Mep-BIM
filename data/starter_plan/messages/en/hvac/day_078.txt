@@ -1,0 +1,28 @@
+LUA BIM LABS Starter
+Day 78 - HVAC Equipment Submittals and BIM Model Updates
+
+1. Why This Matters
+BIM models must reflect actual equipment being installed, not just the design engineer's assumed sizes. Submittal review is the process that aligns the BIM model with what will physically arrive on site.
+
+2. Core Concept
+- Equipment submittals are documents provided by the contractor showing the specific manufacturer and model number proposed for each HVAC item
+- Common differences between design assumption and submittal: equipment may be larger, have connections on a different face, or require different clearances
+- BIM modeler's role in submittal review: compare submitted dimensions and connection locations to the model family — update if dimensions differ by more than the agreed tolerance
+- Key parameters to check: width, depth, height, weight (structural impact), connection face, connection size, access panel requirements, electrical connection point
+- If submitted equipment does not fit in the modeled space, the contractor must find an alternative or the room layout must be revised — this is resolved in BIM before concrete is poured
+
+3. Real Project Lens
+On a commercial project, the HVAC contractor submitted a chiller 200mm longer than the design assumption. The BIM coordinator found the extra length would block pipe maintenance access on the non-drive end. The contractor sourced an alternative model with the same capacity but shorter casing — a change that cost nothing during design but would have been expensive after installation.
+
+4. BIM Check
+- Check: when a submittal is approved, the Revit family dimensions are updated to match the approved equipment dimensions
+- Check: the connection face and connection size on the approved submittal match the pipes already modeled in the BIM
+- Check: the weight of the approved equipment is within the structural loading assumed in the structural design
+
+5. Common Mistake
+Beginners update the model only after construction begins, when actual equipment arrives. By then, size differences have already caused coordination problems.
+
+6. Today's Action
+Find one equipment data sheet online (AHU, FCU, or chiller — any manufacturer). Write down its dimensions and compare them to a typical Revit family for the same equipment type.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

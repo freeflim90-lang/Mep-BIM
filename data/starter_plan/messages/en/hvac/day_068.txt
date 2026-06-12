@@ -1,0 +1,30 @@
+LUA BIM LABS Starter
+Day 68 - HVAC System Sizing Basics: CFM, Static Pressure, and Duct Sizing Logic
+
+1. Why This Matters
+Before you model a single duct in Revit, the sizing decisions have already been made by the mechanical engineer. As a BIM modeler, understanding how those sizes are determined helps you catch errors early and model with intent rather than just copying dimensions. Duct sizing drives space planning, ceiling height, and coordination with every other discipline.
+
+2. Core Concept
+- CFM (Cubic Feet per Minute) is the volume of air a duct or diffuser needs to deliver. The engineer calculates this based on room load.
+- Static pressure is the resistance the air must overcome as it travels through duct, fittings, and equipment. Higher resistance means a stronger (and larger) fan is needed.
+- Duct sizing balances two things: keeping air velocity low enough to avoid noise, and keeping duct cross-section small enough to fit in the ceiling cavity.
+- Velocity limits by application: supply air in main ducts typically stays under 1,500 FPM, branch ducts under 1,000 FPM.
+- The engineer uses duct sizing software or manual equal-friction method to set dimensions. The BIM model must match those dimensions exactly.
+- In Revit, duct size is set on each segment. Do not change a size without confirming with the engineer.
+
+3. Real Project Lens
+On a 20-story office tower, the mechanical engineer calculates 8,000 CFM for the main trunk duct coming off the AHU on Level 12. That translates to a 36x24 inch duct running along the primary corridor. When the structural engineer places a 30-inch deep beam at the same elevation, the coordination team must catch this conflict before fabrication. Understanding that the duct cannot be arbitrarily reduced in size tells you the structure or the routing must change, not the duct dimension.
+
+4. BIM Check
+- Check: Duct sizes in the model match the mechanical engineer's schedule exactly, not approximated values.
+- Check: Main trunk ducts have been checked against available ceiling cavity height including insulation thickness.
+- Check: Branch duct sizes reduce logically from trunk to terminal device — no branch is larger than the trunk it connects to.
+
+5. Common Mistake
+Beginners sometimes resize ducts to avoid a clash without notifying the engineer, creating a model that looks conflict-free but is mechanically undersized. Any size change must go through the engineer before it enters the coordinated model.
+
+6. Today's Action
+Open Revit or a duct sizing reference chart. Find the duct size needed to carry 1,200 CFM at 900 FPM velocity. Calculate the required cross-sectional area (Area = CFM / FPM) and convert to square inches. Then find a standard rectangular duct size (e.g., 18x12) that meets or exceeds that area.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

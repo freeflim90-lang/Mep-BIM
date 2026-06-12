@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "Navisworks",
+    "4D BIM",
+    "BIM",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "Navisworks TimeLiner: Setting Up 4D BIM for Construction Sequence Review",
+  "slug": "navisworks-timeliner-setting-up-4d-bim-for-construction-sequence-review",
+  "content": "<p>Navisworks TimeLiner connects model geometry to a construction programme to create a time-animated simulation of the building sequence. When properly set up, 4D BIM reveals programme conflicts that are invisible in a Gantt chart — two activities competing for the same physical space at the same time.</p>\n<h2>Why This Matters</h2>\n<p>Construction programmes with spatial conflicts cause costly delays and disruption on site. A crane that cannot operate because a structural pour is occurring below it, or a duct installation that cannot proceed because the ceiling structure is not yet complete, are typical 4D BIM findings that save project time when caught in the office.</p>\n<h2>Practical Guidance</h2>\n<p><strong>Programme Import:</strong> Import the project programme from Microsoft Project (.mpp) or Primavera P6 (.xml). TimeLiner reads task names, start dates, end dates, and WBS codes. Changes to the programme can be refreshed in TimeLiner without rebuilding the link.</p>\n<p><strong>Task Type Assignment:</strong> Assign Task Types (Construct, Temporary, Demolish) to each programme activity. Construct shows elements appearing; Demolish shows elements disappearing; Temporary shows scaffold, formwork, or site cabins that exist for a defined period.</p>\n<p><strong>Selection Set Mapping:</strong> Map TimeLiner tasks to Navisworks Selection Sets. Selection Sets should correspond to programme activities — if the programme has a 'Level 3 Structural Slab' task, there should be a corresponding Selection Set that selects all Level 3 structural slab elements.</p>\n<p><strong>Simulation Review:</strong> Play the simulation at a speed that allows review of spatial conflicts. Stop the simulation when spatial conflicts appear. Record conflict descriptions, dates, and responsible parties as 4D issues in the project tracker.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Import programme from authoritative source (MS Project or P6), not a copy</li>\n<li>Assign Task Types to all activities before running simulation</li>\n<li>Align Selection Set naming with programme activity naming</li>\n<li>Record 4D conflicts with simulation date and screenshot</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>4D BIM simulation is most useful reviewed with the contractor and planner together — the spatial conflicts are visible to anyone, but the programme solution requires their expertise.</p>"
+}

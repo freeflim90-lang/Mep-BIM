@@ -1,0 +1,46 @@
+LUA BIM LABS Starter
+Day 73 - Hydraulic Calculation Basics — What Modelers Need to Know
+
+1. Why This Matters
+Hydraulic calculations determine whether water reaches the most remote sprinkler head at the required pressure and flow rate. As a modeler you do not perform these calculations — the fire engineer does. But your pipe routing decisions directly affect the calculation results. A re-routed pipe, a changed diameter, or an added fitting can invalidate a calculation the engineer has already completed.
+
+2. Core Concept
+What hydraulic calculations determine:
+- The pressure required at the inlet (fire pump or town supply) to deliver design flow at the most remote head
+- Whether pipe sizes are adequate for the required flow and friction losses
+- The number of simultaneously operating heads (design area) that must be supplied
+
+Key inputs that come from the BIM model:
+- Pipe lengths (longer pipes = more friction loss = more pressure required)
+- Pipe diameters (smaller diameter = more friction loss)
+- Number of fittings (each elbow, tee, reducer adds equivalent pipe length)
+- Elevation changes (height increases pressure demand)
+
+What this means for modelers:
+- Do not change pipe sizes without notifying the fire engineer
+- Do not add excessive fittings (unnecessary bends, offsets) without flagging to the engineer
+- Do not increase pipe length significantly by re-routing without notifying the engineer
+- When re-routing is unavoidable, provide the new pipe lengths and fitting count to the engineer for recalculation
+- In Revit: use the pipe length parameter and fitting count in schedules to track changes. A pipe that grows from 4 m to 12 m due to coordination re-routing is a reportable change.
+
+Equivalent Length of Common Fittings (approximate, for reference only)
+- 90° elbow: 1–3 m equivalent length depending on pipe size
+- Tee (branch): 3–7 m equivalent length depending on pipe size
+
+3. Real Project Lens
+A coordination re-route moves a branch line around a large duct, adding 3 elbows and 6 m of extra pipe. The modeler flags this to the fire engineer with a note: "Branch line BL-04, Level 3: re-routed +6 m, +3 × 90° elbows due to mechanical duct conflict at grid C-5." The engineer recalculates and confirms the existing pipe size is still adequate, or requests an upsized pipe.
+
+4. BIM Check
+- Check: Any pipe re-route that adds more than 2 m of pipe length or more than 2 fittings has been flagged to the fire engineer
+- Check: Pipe sizes have not been changed during coordination without engineering review
+- Check: Elevation changes in the pipe routing are correctly modeled — no assumed level runs where there is a floor-to-floor change
+
+5. Common Mistake
+Re-routing fire protection pipes freely during coordination without notifying the engineer, then submitting the model as if the hydraulic calculation still applies. The calculation was done on the original routing — any change to the network may require recalculation.
+
+6. Today's Action
+Identify one branch line re-route on your current or sample project that involved adding pipe length or fittings. Write a brief coordination note to the fire engineer (2–3 sentences) describing the change: location, old length, new length, and reason for re-route.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,44 @@
+LUA BIM LABS Starter
+Day 67 - Week 1 Plumbing Review
+
+1. Why This Matters
+Plumbing BIM requires precision in system classification, slope geometry, sleeve coordination, fixture connectivity, and spatial clash management. A one-week review ensures these fundamentals are locked in before advancing to more complex plumbing scenarios.
+
+2. Core Concept
+Week 1 Plumbing Summary
+
+| Day | Topic | Key Point |
+|---|---|---|
+| 61 | System Classification | Sanitary, Vent, CWS, HWS — four separate systems, never cross-connect |
+| 62 | Gravity Drainage and Slope | DN100 = 1:80 min slope. Set slope in Revit. Check total fall fits in floor zone |
+| 63 | Riser and Sleeve Planning | Sleeve = Pipe OD + clearance. Submit sleeve schedule before slab pour |
+| 64 | Fixture Connections | Each fixture has specific waste size and water supply size. No open connectors |
+| 65 | Water Supply Distribution | Pipe size reduces at each branch. Avoid dead legs > 3 litres |
+| 66 | Sanitary Clashes | Long runs fall below slab. Stack core must include insulation OD |
+
+Critical Rules — Plumbing BIM
+- Sanitary and vent are separate systems — do not merge in Revit
+- Every horizontal sanitary pipe must have a slope — never flat
+- Sleeve requests must be submitted before slab pour with exact coordinates
+- Model P-traps for every fixture — missing traps fail plumbing inspection
+- Dead legs in HWS must be within code limit — Legionella risk
+
+3. Real Project Lens
+A plumbing BIM modeler joins a hotel project on Day 1 of a new floor. Using the Week 1 skills, they: assign system types to all pipes, set slopes on all branches, submit a sleeve schedule, connect all fixtures, check dead leg lengths, and run a sanitary clash test — before handing the model to the coordination team. This structured approach prevents the most common plumbing rework scenarios.
+
+4. BIM Check
+- Check: Systems Browser — no pipe showing as "Unassigned"
+- Check: Every sanitary branch has a slope parameter and the slope direction is correct
+- Check: Sleeve schedule drafted and ready for structural submission
+
+5. Common Mistake
+Believing plumbing BIM is simpler than HVAC or piping because the pipes are smaller — then missing the slope and clearance checks that are specific to sanitary systems and failing the coordination review.
+
+6. Today's Action
+Open any plumbing model (or create a simple test model). Verify: (1) system assignments, (2) slope on sanitary branches, (3) fixture connections. Write a short personal checklist you will use at the start of every plumbing model review.
+
+---
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

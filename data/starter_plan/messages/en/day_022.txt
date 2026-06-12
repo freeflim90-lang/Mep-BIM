@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 22 - Maintenance Access in MEP BIM
+
+1. Why This Matters
+MEP systems must be maintained after construction. BIM coordination should protect access to valves, filters, panels, dampers, and equipment.
+
+2. Core Concept
+Maintenance access is the space needed for inspection, operation, replacement, and safe work after installation.
+
+3. Real Project Lens
+A valve above a ceiling may not clash with anything, but if no one can reach or operate it, the coordination is weak.
+
+4. BIM Check
+- Identify elements that need future access.
+- Check access panel or ceiling opening logic.
+- Review whether another system blocks operation or replacement.
+
+5. Common Mistake
+Beginners often coordinate only physical overlap and miss access needs.
+
+6. Today's Action
+Make a list of five MEP elements that usually require maintenance access.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[COMPANY_NAME] - [SLOGAN]</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+
+    <style>
+        /*
+        ================================================================
+        [브랜드 교체 가이드 (찾아바꾸기 전용 키워드)]
+        텍스트 내용을 일괄 변경하려면 아래 키워드를 원하시는 문구로
+        찾아바꾸기(Ctrl + H) 하세요.
+
+        1.  [COMPANY_NAME]      : 회사명 (예: BIM솔루션즈)
+        2.  [SLOGAN]            : 브라우저 탭 슬로건 (예: 정밀 BIM 설계·시공 파트너)
+        3.  [HERO_TITLE]        : 히어로 메인 카피 (예: 도면을 넘어,<br>디지털 건물을 먼저 짓습니다)
+        4.  [HERO_SUBTITLE]     : 히어로 서브 카피
+        5.  [PHONE_NUMBER]      : 대표 전화번호 (예: 02-1234-5678)
+        6.  [OFFICE_ADDRESS]    : 사무실 주소
+        7.  [BUSINESS_NUMBER]   : 사업자 등록번호
+        8.  [OFFICE_HOURS]      : 운영 시간
+        9.  [BIM_MANAGER_NAME]  : 대표 BIM 매니저 이름
+        10. [CAREER_YEARS]      : 경력 연수 (숫자만, 예: 12)
+        11. [PROJECT_COUNT]     : 완료 프로젝트 수 (숫자만, 예: 280)
+        12. [AREA_COUNT]        : 총 설계 면적 만m² (숫자만, 예: 45)
+        13. [PARTNER_COUNT]     : 협력 건설사 수 (숫자만, 예: 60)
+        ================================================================
+        */
+
+        :root {
+            --bg-dark:       #0B1929;
+            --bg-medium:     #112236;
+            --point-cyan:    #0EA5E9;
+            --point-amber:   #F59E0B;
+            --point-teal:    #2DD4BF;
+            --point-partner: #A78BFA;   /* 협력사 협업 서비스 구분 컬러 */
+            --text-white:    #E2EEF9;
+            --text-muted:    #7D9BB5;
+            --text-dark:     #0B1929;
+            --pure-white:    #FFFFFF;
+
+            --font-main:     'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            --shadow-sm:     0 4px 6px -1px rgba(0, 0, 0, 0.3);
+            --shadow-md:     0 10px 20px -3px rgba(0, 0, 0, 0.4);
+            --radius-sm:     8px;
+            --radius-md:     16px;
+            --transition:    all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; outline: none; }
+
+        html {
+            scroll-behavior: smooth;
+            font-family: var(--font-main);
+            background-color: var(--bg-dark);
+            color: var(--text-white);
+        }
+
+        body { overflow-x: hidden; line-height: 1.6; }
+
+        ul { list-style: none; }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        button, input, select, textarea { font-family: var(--font-main); }
+
+        /* 공통 레이아웃 */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section { padding: 100px 0; position: relative; }
+        .section-light { background-color: var(--bg-medium); }
+
+        .section-title-wrap {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--pure-white);
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--point-cyan), var(--point-teal));
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            color: var(--point-cyan);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 600;
+        }
+
+        /* 버튼 */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px;
+            font-weight: 600;
+            border-radius: var(--radius-sm);
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 0.95rem;
+        }
+
+        .btn-cyan {
+            background: linear-gradient(135deg, var(--point-cyan), var(--point-teal));
+            color: var(--bg-dark);
+        }
+
+        .btn-cyan:hover {
+            filter: brightness(1.15);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(14, 165, 233, 0.35);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid var(--point-cyan);
+            color: var(--point-cyan);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--point-cyan);
+            color: var(--bg-dark);
+            transform: translateY(-2px);
+        }
+
+        /* 이미지 플레이스홀더 */
+        .img-placeholder {
+            background: linear-gradient(135deg, #112236 0%, #0b1929 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border: 1px solid rgba(14, 165, 233, 0.2);
+            border-radius: var(--radius-md);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .img-placeholder::before {
+            content: '🏗️';
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        /* ── 1. 헤더 ── */
+        .header {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%;
+            height: 80px;
+            background-color: rgba(11, 25, 41, 0.95);
+            backdrop-filter: blur(12px);
+            box-shadow: var(--shadow-sm);
+            z-index: 1000;
+            transition: var(--transition);
+            border-bottom: 1px solid rgba(14, 165, 233, 0.1);
+        }
+
+        .header.scrolled {
+            height: 68px;
+            background-color: var(--bg-dark);
+        }
+
+        .header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--pure-white);
+            letter-spacing: -0.5px;
+        }
+
+        .logo span { color: var(--point-cyan); }
+
+        .nav-menu { display: flex; gap: 35px; }
+
+        .nav-link {
+            font-size: 0.97rem;
+            font-weight: 500;
+            color: var(--text-white);
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .nav-link:hover, .nav-link.active { color: var(--point-cyan); }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0;
+            width: 0; height: 2px;
+            background: linear-gradient(90deg, var(--point-cyan), var(--point-teal));
+            transition: var(--transition);
+        }
+
+        .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+
+        .header-btn { padding: 10px 20px; font-size: 0.85rem; }
+
+        /* 햄버거 */
+        .hamburger { display: none; cursor: pointer; background: none; border: none; z-index: 1001; }
+        .bar {
+            display: block;
+            width: 25px; height: 3px;
+            margin: 5px auto;
+            transition: var(--transition);
+            background-color: var(--text-white);
+            border-radius: 2px;
+        }
+
+        /* ── 2. 히어로 ── */
+        .hero {
+            padding-top: 180px;
+            padding-bottom: 100px;
+            min-height: 88vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* 배경 그리드 패턴 (건축 도면 느낌) */
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(14,165,233,0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(14,165,233,0.04) 1px, transparent 1px);
+            background-size: 50px 50px;
+            pointer-events: none;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 60px;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(14, 165, 233, 0.12);
+            border: 1px solid rgba(14, 165, 233, 0.3);
+            color: var(--point-cyan);
+            font-size: 0.82rem;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+        }
+
+        .hero-tag::before {
+            content: '';
+            width: 6px; height: 6px;
+            background-color: var(--point-cyan);
+            border-radius: 50%;
+            animation: pulse 1.8s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(0.7); }
+        }
+
+        .hero-title {
+            font-size: 3.2rem;
+            font-weight: 800;
+            line-height: 1.22;
+            color: var(--pure-white);
+            margin-bottom: 25px;
+            word-break: keep-all;
+        }
+
+        .hero-title span { color: var(--point-cyan); }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            word-break: keep-all;
+            line-height: 1.8;
+        }
+
+        .hero-btns { display: flex; gap: 15px; }
+
+        .hero-img-wrap {
+            position: relative;
+            width: 100%;
+            height: 500px;
+        }
+
+        .hero-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-md);
+            border-left: 2px solid var(--point-cyan);
+        }
+
+        /* 히어로 이미지 위 오버레이 배지 */
+        .hero-badge {
+            position: absolute;
+            bottom: 25px;
+            left: -20px;
+            background: var(--bg-medium);
+            border: 1px solid rgba(14, 165, 233, 0.3);
+            border-radius: var(--radius-sm);
+            padding: 14px 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .hero-badge-icon { font-size: 1.8rem; }
+
+        .hero-badge-text .label {
+            font-size: 0.75rem;
+            color: var(--point-cyan);
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .hero-badge-text .value {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--pure-white);
+        }
+
+        /* ── 3. 신뢰 지표 ── */
+        .counters {
+            background-color: var(--bg-medium);
+            padding: 65px 0;
+            border-top: 1px solid rgba(14, 165, 233, 0.08);
+            border-bottom: 1px solid rgba(14, 165, 233, 0.08);
+        }
+
+        .counter-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            text-align: center;
+        }
+
+        .counter-card { padding: 20px; }
+
+        .counter-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--point-cyan);
+            margin-bottom: 10px;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .counter-unit {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--point-teal);
+        }
+
+        .counter-label {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        /* ── 4. 서비스 ── */
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .service-card {
+            background-color: rgba(17, 34, 54, 0.5);
+            border: 1px solid rgba(14, 165, 233, 0.1);
+            padding: 40px 30px;
+            border-radius: var(--radius-md);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 3px; height: 0;
+            background: linear-gradient(180deg, var(--point-cyan), var(--point-teal));
+            transition: var(--transition);
+        }
+
+        .service-card:hover::before { height: 100%; }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            background-color: var(--bg-medium);
+            border-color: rgba(14, 165, 233, 0.35);
+            box-shadow: var(--shadow-md);
+        }
+
+        .service-icon {
+            font-size: 2.4rem;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .service-lod {
+            display: inline-block;
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: var(--point-cyan);
+            background: rgba(14, 165, 233, 0.1);
+            border: 1px solid rgba(14, 165, 233, 0.25);
+            padding: 2px 8px;
+            border-radius: 4px;
+            letter-spacing: 0.5px;
+            margin-bottom: 14px;
+        }
+
+        /* 자체 역량 / 협력사 구분 배지 */
+        .capability-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 20px;
+            letter-spacing: 0.5px;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+
+        .badge-own {
+            background: rgba(14, 165, 233, 0.15);
+            border: 1px solid rgba(14, 165, 233, 0.4);
+            color: var(--point-cyan);
+        }
+
+        .badge-own::before { content: '●'; font-size: 0.5rem; }
+
+        .badge-partner {
+            background: rgba(167, 139, 250, 0.12);
+            border: 1px solid rgba(167, 139, 250, 0.35);
+            color: var(--point-partner);
+        }
+
+        .badge-partner::before { content: '◆'; font-size: 0.5rem; }
+
+        /* 협력 서비스 카드 - 테두리 색상 변경 */
+        .service-card.partner-card::before {
+            background: linear-gradient(180deg, var(--point-partner), #7C3AED);
+        }
+
+        .service-card.partner-card:hover {
+            border-color: rgba(167, 139, 250, 0.4);
+            box-shadow: 0 10px 20px rgba(167, 139, 250, 0.08);
+        }
+
+        .service-card.partner-card .service-lod {
+            color: var(--point-partner);
+            background: rgba(167, 139, 250, 0.1);
+            border-color: rgba(167, 139, 250, 0.3);
+        }
+
+        /* 역량 범례 */
+        .capability-legend {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+        }
+
+        .legend-dot {
+            width: 10px; height: 10px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .legend-dot.own     { background: var(--point-cyan); box-shadow: 0 0 6px rgba(14,165,233,0.5); }
+        .legend-dot.partner { background: var(--point-partner); box-shadow: 0 0 6px rgba(167,139,250,0.5); }
+
+        .service-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--pure-white);
+            display: block;
+        }
+
+        .service-desc {
+            color: var(--text-muted);
+            font-size: 0.93rem;
+            word-break: keep-all;
+            line-height: 1.7;
+        }
+
+        /* ── 5. 담당자 소개 ── */
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .profile-img-wrap { width: 100%; height: 520px; }
+
+        .profile-img-wrap img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-md);
+            border-right: 2px solid var(--point-cyan);
+        }
+
+        .profile-info h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: var(--pure-white);
+        }
+
+        .profile-rank {
+            color: var(--point-cyan);
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .profile-cert {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 30px;
+        }
+
+        .cert-tag {
+            font-size: 0.78rem;
+            font-weight: 600;
+            background: rgba(14, 165, 233, 0.1);
+            border: 1px solid rgba(14, 165, 233, 0.25);
+            color: var(--point-teal);
+            padding: 4px 10px;
+            border-radius: 4px;
+        }
+
+        .profile-block { margin-bottom: 25px; }
+
+        .profile-block h4 {
+            font-size: 1rem;
+            color: var(--point-teal);
+            margin-bottom: 10px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .profile-block h4::before {
+            content: '▪';
+            color: var(--point-cyan);
+        }
+
+        .profile-block ul li {
+            color: var(--text-white);
+            margin-bottom: 6px;
+            font-size: 0.93rem;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .profile-block ul li::before {
+            content: '-';
+            position: absolute;
+            left: 0;
+            color: var(--text-muted);
+        }
+
+        /* ── 6. 진행 절차 ── */
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            position: relative;
+        }
+
+        /* 스텝 연결선 */
+        .process-grid::before {
+            content: '';
+            position: absolute;
+            top: 38px;
+            left: calc(12.5% + 20px);
+            width: calc(75% - 40px);
+            height: 2px;
+            background: linear-gradient(90deg, var(--point-cyan), var(--point-teal));
+            opacity: 0.3;
+            z-index: 1;
+        }
+
+        .process-card {
+            background-color: var(--bg-dark);
+            border: 1px solid rgba(14, 165, 233, 0.12);
+            padding: 40px 25px 30px;
+            border-radius: var(--radius-md);
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            transition: var(--transition);
+        }
+
+        .process-card:hover {
+            border-color: var(--point-cyan);
+            transform: translateY(-4px);
+            box-shadow: 0 0 20px rgba(14, 165, 233, 0.1);
+        }
+
+        .process-step {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px; height: 40px;
+            background: linear-gradient(135deg, var(--point-cyan), var(--point-teal));
+            color: var(--bg-dark);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1rem;
+            box-shadow: 0 0 12px rgba(14, 165, 233, 0.4);
+        }
+
+        .process-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin: 15px 0 10px;
+            color: var(--pure-white);
+        }
+
+        .process-desc {
+            color: var(--text-muted);
+            font-size: 0.88rem;
+            word-break: keep-all;
+            line-height: 1.7;
+        }
+
+        /* ── 7. 포트폴리오 / 후기 ── */
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .review-card {
+            background-color: rgba(11, 25, 41, 0.7);
+            border-top: 3px solid var(--point-cyan);
+            padding: 35px 28px;
+            border-radius: 0 0 var(--radius-md) var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .review-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .review-tag {
+            display: inline-block;
+            font-size: 0.72rem;
+            font-weight: 700;
+            background: rgba(14, 165, 233, 0.1);
+            border: 1px solid rgba(14, 165, 233, 0.2);
+            color: var(--point-cyan);
+            padding: 3px 9px;
+            border-radius: 4px;
+            letter-spacing: 0.5px;
+            margin-bottom: 14px;
+        }
+
+        .review-text {
+            color: var(--text-white);
+            font-size: 0.93rem;
+            margin-bottom: 24px;
+            min-height: 80px;
+            word-break: keep-all;
+            line-height: 1.75;
+        }
+
+        .review-user { display: flex; align-items: center; gap: 14px; }
+
+        .avatar {
+            width: 44px; height: 44px;
+            background-color: var(--bg-medium);
+            border: 1px solid var(--point-cyan);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: var(--point-cyan);
+            font-size: 0.82rem;
+            flex-shrink: 0;
+        }
+
+        .user-info .user-name {
+            font-weight: 600;
+            font-size: 0.93rem;
+            color: var(--pure-white);
+        }
+
+        .user-info .user-tag {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+
+        /* ── 8. 문의 폼 ── */
+        .contact-wrap {
+            max-width: 820px;
+            margin: 0 auto;
+            background-color: var(--bg-medium);
+            border: 1px solid rgba(14, 165, 233, 0.12);
+            padding: 50px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-md);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+
+        .form-group { display: flex; flex-direction: column; gap: 8px; }
+        .form-group-full { grid-column: span 2; }
+
+        .form-label {
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--point-teal);
+        }
+
+        .form-control {
+            background-color: var(--bg-dark);
+            border: 1px solid rgba(14, 165, 233, 0.2);
+            padding: 13px 16px;
+            border-radius: var(--radius-sm);
+            color: var(--text-white);
+            font-size: 0.93rem;
+            transition: var(--transition);
+        }
+
+        .form-control::placeholder { color: var(--text-muted); }
+
+        .form-control:focus {
+            border-color: var(--point-cyan);
+            box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+        }
+
+        textarea.form-control { resize: none; height: 140px; }
+
+        .btn-submit { width: 100%; padding: 16px; font-size: 1rem; }
+
+        /* ── 9. 푸터 ── */
+        .footer {
+            background-color: #060F1A;
+            padding: 60px 0 30px;
+            border-top: 1px solid rgba(14, 165, 233, 0.08);
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--pure-white);
+            margin-bottom: 14px;
+        }
+
+        .footer-logo span { color: var(--point-cyan); }
+
+        .footer-desc { font-size: 0.88rem; line-height: 1.75; }
+
+        .footer-info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px 30px;
+        }
+
+        .info-item span {
+            display: block;
+            font-size: 0.78rem;
+            color: var(--point-cyan);
+            margin-bottom: 3px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(14, 165, 233, 0.05);
+            font-size: 0.8rem;
+        }
+
+        /* 리빌 애니메이션 */
+        .reveal {
+            opacity: 0;
+            transform: translateY(32px);
+            transition: all 0.75s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ================================================================
+           반응형
+        ================================================================ */
+        @media (max-width: 1024px) {
+            .hero-title { font-size: 2.6rem; }
+            .service-grid { grid-template-columns: repeat(2, 1fr); }
+            .profile-grid { grid-template-columns: 1fr; gap: 40px; }
+            .profile-img-wrap { height: 420px; }
+            .process-grid { grid-template-columns: repeat(2, 1fr); gap: 40px 25px; }
+            .process-grid::before { display: none; }
+        }
+
+        @media (max-width: 768px) {
+            .section { padding: 70px 0; }
+            .header { height: 70px; }
+            .hamburger { display: block; }
+
+            .nav-menu {
+                position: fixed;
+                top: 70px; left: -100%;
+                flex-direction: column;
+                background-color: var(--bg-dark);
+                width: 100%;
+                height: calc(100vh - 70px);
+                text-align: center;
+                gap: 0;
+                transition: 0.4s;
+                border-top: 1px solid rgba(14, 165, 233, 0.1);
+            }
+
+            .nav-menu.active { left: 0; }
+            .nav-item { width: 100%; }
+            .nav-link {
+                display: block;
+                padding: 24px 0;
+                border-bottom: 1px solid rgba(14, 165, 233, 0.05);
+            }
+            .header-btn { display: none; }
+
+            .hamburger.active .bar:nth-child(2) { opacity: 0; }
+            .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+            .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+            .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+            .hero-img-wrap { height: 320px; order: -1; }
+            .hero-badge { left: 10px; bottom: 15px; }
+            .hero-content { text-align: center; }
+            .hero-btns { justify-content: center; flex-wrap: wrap; }
+            .hero-tag { margin: 0 auto 24px; }
+
+            .counter-grid { grid-template-columns: repeat(2, 1fr); gap: 30px 15px; }
+            .service-grid { grid-template-columns: 1fr; }
+            .review-grid { grid-template-columns: 1fr; }
+            .form-grid { grid-template-columns: 1fr; }
+            .form-group-full { grid-column: span 1; }
+            .contact-wrap { padding: 30px 20px; }
+            .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+            .footer-info { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. 헤더 -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="#" class="logo">[COMPANY_NAME]<span>.</span></a>
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="#hero"     class="nav-link active">소개</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">서비스</a></li>
+                    <li class="nav-item"><a href="#profile"  class="nav-link">담당자</a></li>
+                    <li class="nav-item"><a href="#process"  class="nav-link">진행절차</a></li>
+                    <li class="nav-item"><a href="#reviews"  class="nav-link">포트폴리오</a></li>
+                    <li class="nav-item"><a href="#contact"  class="nav-link">문의</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="btn btn-cyan header-btn">프로젝트 문의</a>
+            <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 2. 히어로 -->
+    <section class="hero section" id="hero">
+        <div class="container hero-grid">
+            <div class="hero-content reveal active">
+                <div class="hero-tag">MEP BIM Specialist</div>
+                <h1 class="hero-title">[HERO_TITLE]</h1>
+                <p class="hero-subtitle">[HERO_SUBTITLE]</p>
+                <div class="hero-btns">
+                    <a href="#contact"         class="btn btn-cyan">프로젝트 문의하기</a>
+                    <a href="tel:[PHONE_NUMBER]" class="btn btn-outline">전화 상담</a>
+                </div>
+            </div>
+            <div class="hero-img-wrap reveal active">
+                <!-- [이미지1] 히어로: 권장 600x800px (세로형) — BIM 모델 렌더링 또는 현장 사진 -->
+                <img src="hero_bim.jpg" alt="[COMPANY_NAME] BIM 모델링 렌더링 또는 현장 시공 이미지" onerror="handleImgError(this, 600, 800)">
+                <div class="hero-badge">
+                    <div class="hero-badge-icon">🏆</div>
+                    <div class="hero-badge-text">
+                        <div class="label">CERTIFIED</div>
+                        <div class="value">ISO 19650 준수</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. 신뢰 지표 -->
+    <section class="counters">
+        <div class="container counter-grid">
+            <div class="counter-card">
+                <div class="counter-number" data-target="[CAREER_YEARS]" data-unit="년">0</div>
+                <div class="counter-label">BIM 전문 경력</div>
+            </div>
+            <div class="counter-card">
+                <div class="counter-number" data-target="[PROJECT_COUNT]" data-suffix="+">0</div>
+                <div class="counter-label">완료 프로젝트</div>
+            </div>
+            <div class="counter-card">
+                <div class="counter-number" data-target="[AREA_COUNT]" data-unit="만 m²">0</div>
+                <div class="counter-label">총 설계 면적</div>
+            </div>
+            <div class="counter-card">
+                <div class="counter-number" data-target="[PARTNER_COUNT]" data-suffix="+">0</div>
+                <div class="counter-label">협력 건설사</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 서비스 -->
+    <section class="section section-light" id="services">
+        <div class="container">
+            <div class="section-title-wrap reveal">
+                <p class="section-subtitle">Our BIM Services</p>
+                <h2 class="section-title">제공 서비스 안내</h2>
+            </div>
+
+            <!-- 역량 범례 -->
+            <div class="capability-legend reveal">
+                <div class="legend-item">
+                    <div class="legend-dot own"></div>
+                    <span>자체 핵심 역량 (MEP BIM 직접 수행)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot partner"></div>
+                    <span>전문 협력사 네트워크 연계</span>
+                </div>
+            </div>
+
+            <div class="service-grid">
+
+                <!-- ── MEP 자체 역량 (4개) ── -->
+                <div class="service-card reveal">
+                    <div class="service-icon">🌡️</div>
+                    <span class="service-lod">LOD 300 ~ 400</span>
+                    <span class="service-title">MEP BIM 모델링 <span class="capability-badge badge-own">자체 역량</span></span>
+                    <p class="service-desc">기계(HVAC·배관)·전기·소방 설비를 LOD 기준에 맞게 정밀 모델링합니다. Revit MEP 기반으로 시스템 구성·스펙·연결 정보를 완전히 반영합니다.</p>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="service-icon">⚡</div>
+                    <span class="service-lod">Clash Detection</span>
+                    <span class="service-title">MEP 간섭 체크·조정 <span class="capability-badge badge-own">자체 역량</span></span>
+                    <p class="service-desc">기계·전기·배관 간 충돌을 Navisworks로 사전 검출하고 조정합니다. 건축·구조 모델 통합 간섭까지 협력사와 연계하여 완전 해소합니다.</p>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="service-icon">📅</div>
+                    <span class="service-lod">4D BIM</span>
+                    <span class="service-title">MEP 공정 시뮬레이션 <span class="capability-badge badge-own">자체 역량</span></span>
+                    <p class="service-desc">설비 공종 일정과 BIM 모델을 연동해 공정별 시공 순서를 시각화합니다. 타 공종과의 간섭 공정을 사전 발굴해 현장 혼란을 최소화합니다.</p>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="service-icon">💹</div>
+                    <span class="service-lod">5D BIM</span>
+                    <span class="service-title">설비 물량·원가 산출 <span class="capability-badge badge-own">자체 역량</span></span>
+                    <p class="service-desc">MEP BIM 객체로부터 설비 자재 수량을 자동 산출하고 원가 데이터와 연동합니다. 수작업 견적 대비 시간을 70% 이상 단축합니다.</p>
+                </div>
+
+                <!-- ── 협력사 연계 (2개) ── -->
+                <div class="service-card partner-card reveal">
+                    <div class="service-icon">🏗️</div>
+                    <span class="service-lod">건축·구조 협업</span>
+                    <span class="service-title">건축·구조 BIM <span class="capability-badge badge-partner">협력사 연계</span></span>
+                    <p class="service-desc">건축사사무소·구조엔지니어링 전문 협력사 네트워크와 연계합니다. MEP 모델과 통합 납품이 필요한 경우 원스톱으로 프로젝트를 구성합니다.</p>
+                </div>
+
+                <div class="service-card partner-card reveal">
+                    <div class="service-icon">🔧</div>
+                    <span class="service-lod">FM BIM</span>
+                    <span class="service-title">유지관리 BIM <span class="capability-badge badge-partner">협력사 연계</span></span>
+                    <p class="service-desc">준공 후 As-built BIM 데이터를 FM 시스템과 연동합니다. 시설관리 전문 파트너사와 협업하여 건물 수명주기 전반의 데이터 자산을 관리합니다.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. 담당자 소개 -->
+    <section class="section" id="profile">
+        <div class="container">
+            <div class="section-title-wrap reveal">
+                <p class="section-subtitle">Our Expert</p>
+                <h2 class="section-title">BIM 전문가 소개</h2>
+            </div>
+            <div class="profile-grid">
+                <div class="profile-img-wrap reveal">
+                    <!-- [이미지2] 담당자: 권장 600x800px (세로형) — 프로필 또는 업무 사진 -->
+                    <img src="bim_manager_profile.jpg" alt="[BIM_MANAGER_NAME] BIM 매니저 프로필 사진" onerror="handleImgError(this, 600, 800)">
+                </div>
+                <div class="profile-info reveal">
+                    <h3>[BIM_MANAGER_NAME]</h3>
+                    <p class="profile-rank">대표 MEP BIM 전문가</p>
+                    <div class="profile-cert">
+                        <span class="cert-tag">BIM 전문가 1급</span>
+                        <span class="cert-tag">Revit MEP</span>
+                        <span class="cert-tag">Navisworks</span>
+                        <span class="cert-tag">ISO 19650</span>
+                        <span class="cert-tag">기계설비 BIM</span>
+                    </div>
+
+                    <div class="profile-block">
+                        <h4>자격 및 이력</h4>
+                        <ul>
+                            <li>국토교통부 BIM 전문가 인증 1급</li>
+                            <li>전) [PREVIOUS_FIRM] MEP BIM 팀장</li>
+                            <li>한국BIM학회 정회원</li>
+                            <li>조달청 시설사업 BIM 적용 지침 실무 수행</li>
+                        </ul>
+                    </div>
+
+                    <div class="profile-block">
+                        <h4>MEP 핵심 전문 분야</h4>
+                        <ul>
+                            <li>HVAC·배관·전기·소방 설비 BIM 모델링 (LOD 300~400)</li>
+                            <li>Navisworks 기반 전 공종 간섭 체크 및 조정</li>
+                            <li>MEP 4D 공정·5D 물량 산출 자동화</li>
+                        </ul>
+                    </div>
+
+                    <div class="profile-block">
+                        <h4>협력 네트워크</h4>
+                        <ul>
+                            <li>건축 BIM — 건축사사무소 전문 협력사 연계</li>
+                            <li>구조 BIM — 구조엔지니어링 파트너사 연계</li>
+                            <li>FM BIM — 시설관리 전문 파트너사 연계</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. 진행 절차 -->
+    <section class="section section-light" id="process">
+        <div class="container">
+            <div class="section-title-wrap reveal">
+                <p class="section-subtitle">Work Process</p>
+                <h2 class="section-title">체계적인 BIM 수행 절차</h2>
+            </div>
+            <div class="process-grid">
+                <div class="process-card reveal">
+                    <div class="process-step">01</div>
+                    <h3 class="process-title">요구사항 분석</h3>
+                    <p class="process-desc">프로젝트 범위, LOD 수준, 납품 포맷 및 발주 지침을 검토하여 BIM 실행 계획(BEP)을 수립합니다.</p>
+                </div>
+                <div class="process-card reveal">
+                    <div class="process-step">02</div>
+                    <h3 class="process-title">BIM 모델 구축</h3>
+                    <p class="process-desc">합의된 LOD 기준과 라이브러리 표준에 따라 건축·구조·MEP 모델을 단계적으로 작성합니다.</p>
+                </div>
+                <div class="process-card reveal">
+                    <div class="process-step">03</div>
+                    <h3 class="process-title">간섭 검토·협업</h3>
+                    <p class="process-desc">CDE 환경에서 전 공종 모델을 통합하고 간섭 체크, 공정 검토, 피드백 반영을 반복 수행합니다.</p>
+                </div>
+                <div class="process-card reveal">
+                    <div class="process-step">04</div>
+                    <h3 class="process-title">납품 및 사후 지원</h3>
+                    <p class="process-desc">최종 BIM 데이터 및 도서를 납품하고, 준공 후 As-built 모델 업데이트와 FM 연동을 지원합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. 포트폴리오 / 후기 -->
+    <section class="section" id="reviews">
+        <div class="container">
+            <div class="section-title-wrap reveal">
+                <p class="section-subtitle">Portfolio &amp; Reviews</p>
+                <h2 class="section-title">협력사가 경험한 BIM 성과</h2>
+            </div>
+            <div class="review-grid">
+                <div class="review-card reveal">
+                    <span class="review-tag">기계설비 · MEP BIM 모델링</span>
+                    <p class="review-text">"HVAC 및 배관 시스템 BIM 모델링을 처음 의뢰했는데 LOD 기준에 딱 맞게 납품해 주셨습니다. 발주처 검토도 한 번에 통과해 일정을 지킬 수 있었습니다."</p>
+                    <div class="review-user">
+                        <div class="avatar">설비</div>
+                        <div class="user-info">
+                            <div class="user-name">[CLIENT_A] 기계설비 전문건설</div>
+                            <div class="user-tag">MEP 설계팀 과장</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card reveal">
+                    <span class="review-tag">복합시설 · MEP 간섭 체크</span>
+                    <p class="review-text">"MEP 간섭으로 인한 현장 재시공이 늘 골칫거리였는데, 시공 전 충돌을 90% 이상 사전 해소해 주셔서 공기를 3주 단축했습니다. 다음 현장도 함께 하려 합니다."</p>
+                    <div class="review-user">
+                        <div class="avatar">시공</div>
+                        <div class="user-info">
+                            <div class="user-name">[CLIENT_B] 종합건설</div>
+                            <div class="user-tag">현장소장 / 공정관리팀</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card reveal">
+                    <span class="review-tag">5D BIM · 설비 물량 산출</span>
+                    <p class="review-text">"수작업으로 이틀 걸리던 설비 물량 산출이 BIM 연동 후 반나절로 줄었습니다. 견적 정확도도 크게 향상되어 입찰 경쟁력이 올라갔습니다."</p>
+                    <div class="review-user">
+                        <div class="avatar">견적</div>
+                        <div class="user-info">
+                            <div class="user-name">[CLIENT_C] 건설</div>
+                            <div class="user-tag">견적팀 팀장</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. 문의 폼 -->
+    <section class="section section-light" id="contact">
+        <div class="container">
+            <div class="section-title-wrap reveal">
+                <p class="section-subtitle">Contact Us</p>
+                <h2 class="section-title">BIM 프로젝트 문의</h2>
+            </div>
+            <div class="contact-wrap reveal">
+                <form id="bimContactForm" onsubmit="return validateAndSubmitForm(event)">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="clientName" class="form-label">담당자명 / 회사명 *</label>
+                            <input type="text" id="clientName" class="form-control" placeholder="담당자 성함 또는 회사명" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="clientPhone" class="form-label">연락처 *</label>
+                            <input type="tel" id="clientPhone" class="form-control" placeholder="숫자만 입력 (예: 01012345678)" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="projectType" class="form-label">프로젝트 유형 *</label>
+                            <select id="projectType" class="form-control" required>
+                                <option value="" disabled selected>유형을 선택해 주세요</option>
+                                <option value="arch">건축 BIM 모델링</option>
+                                <option value="clash">구조·MEP 간섭 체크</option>
+                                <option value="4d">4D 공정 시뮬레이션</option>
+                                <option value="5d">5D 물량·원가 연동</option>
+                                <option value="collab">시공 단계 협업 BIM</option>
+                                <option value="fm">유지관리 FM BIM</option>
+                                <option value="etc">기타 / 복합 문의</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="projectScale" class="form-label">프로젝트 규모</label>
+                            <select id="projectScale" class="form-control">
+                                <option value="" disabled selected>연면적 또는 규모 선택</option>
+                                <option value="sm">3,000m² 미만</option>
+                                <option value="md">3,000 ~ 10,000m²</option>
+                                <option value="lg">10,000 ~ 30,000m²</option>
+                                <option value="xl">30,000m² 이상</option>
+                            </select>
+                        </div>
+                        <div class="form-group form-group-full">
+                            <label for="clientMessage" class="form-label">프로젝트 상세 내용 *</label>
+                            <textarea id="clientMessage" class="form-control" placeholder="프로젝트 개요, 납품 일정, 발주 지침(조달청·LH 등), 사용 소프트웨어 등을 간략히 기재해 주시면 더 정확한 견적 안내가 가능합니다." required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-cyan btn-submit">BIM 프로젝트 문의 보내기</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. 푸터 -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <div class="footer-logo">[COMPANY_NAME]<span>.</span></div>
+                <p class="footer-desc">MEP BIM을 핵심 역량으로,<br>건축·구조·FM 전문 협력사 네트워크와 함께<br>프로젝트 전 공종을 원스톱으로 지원합니다.</p>
+            </div>
+            <div class="footer-info">
+                <div class="info-item">
+                    <span>주소</span>
+                    [OFFICE_ADDRESS]
+                </div>
+                <div class="info-item">
+                    <span>대표 전화</span>
+                    [PHONE_NUMBER]
+                </div>
+                <div class="info-item">
+                    <span>사업자등록번호</span>
+                    [BUSINESS_NUMBER]
+                </div>
+                <div class="info-item">
+                    <span>운영 시간</span>
+                    [OFFICE_HOURS]
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 [COMPANY_NAME]. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function handleImgError(image, width, height) {
+            const parent = image.parentNode;
+            const placeholder = document.createElement('div');
+            placeholder.className = 'img-placeholder';
+            placeholder.style.width = '100%';
+            placeholder.style.height = '100%';
+            placeholder.innerHTML = `<div><strong>[이미지 교체 필요]</strong><br>권장 규격: ${width}×${height}px</div>`;
+            parent.replaceChild(placeholder, image);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // 헤더 스크롤 효과
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', () => {
+                header.classList.toggle('scrolled', window.scrollY > 50);
+                trackNavHighlight();
+            });
+
+            // 햄버거 메뉴
+            const hamburger = document.getElementById('hamburger');
+            const navMenu   = document.getElementById('nav-menu');
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                });
+            });
+
+            // 스크롤 리빌
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) entry.target.classList.add('active');
+                });
+            }, { threshold: 0.12 });
+            document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+            // 카운터 감시
+            const counterSection = document.querySelector('.counters');
+            let counted = false;
+            const counterObserver = new IntersectionObserver((entries) => {
+                if (entries[0].isIntersecting && !counted) {
+                    counted = true;
+                    triggerCountUp();
+                }
+            }, { threshold: 0.3 });
+            if (counterSection) counterObserver.observe(counterSection);
+
+            // 카운트업
+            function triggerCountUp() {
+                document.querySelectorAll('.counter-number').forEach(counter => {
+                    const rawTarget = counter.getAttribute('data-target');
+                    const target    = parseInt(rawTarget);
+                    const unit      = counter.getAttribute('data-unit') || '';
+                    const suffix    = counter.getAttribute('data-suffix') || '';
+                    const duration  = 1800;
+                    const increment = Math.max(Math.ceil(target / 80), 1);
+                    let current = 0;
+                    const stepTime = Math.max(Math.floor(duration / (target / increment)), 12);
+
+                    const timer = setInterval(() => {
+                        current += increment;
+                        if (current >= target) {
+                            counter.innerHTML = target.toLocaleString() + (unit ? `<span class="counter-unit"> ${unit}</span>` : suffix);
+                            clearInterval(timer);
+                        } else {
+                            counter.innerText = current.toLocaleString();
+                        }
+                    }, stepTime);
+                });
+            }
+
+            // 네비 하이라이트
+            const sections = document.querySelectorAll('section[id]');
+            function trackNavHighlight() {
+                const scrollY = window.pageYOffset;
+                sections.forEach(sec => {
+                    const top = sec.offsetTop - 110;
+                    const id  = sec.getAttribute('id');
+                    const link = document.querySelector(`.nav-menu a[href*=${id}]`);
+                    if (!link) return;
+                    if (scrollY >= top && scrollY < top + sec.offsetHeight) {
+                        link.classList.add('active');
+                    } else {
+                        link.classList.remove('active');
+                    }
+                });
+            }
+        });
+
+        // 폼 검증
+        function validateAndSubmitForm(event) {
+            event.preventDefault();
+            const name  = document.getElementById('clientName').value.trim();
+            const phone = document.getElementById('clientPhone').value.trim();
+
+            if (!/^[0-9]{9,11}$/.test(phone)) {
+                alert('올바른 연락처 형식이 아닙니다. 하이픈(-) 없이 숫자만 입력해 주세요.');
+                document.getElementById('clientPhone').focus();
+                return false;
+            }
+
+            alert(`[문의 접수 완료]\n\n감사합니다, ${name}님.\nBIM 프로젝트 문의가 정상적으로 접수되었습니다.\n검토 후 1영업일 이내에 연락드리겠습니다.`);
+            document.getElementById('bimContactForm').reset();
+            return true;
+        }
+    </script>
+</body>
+</html>

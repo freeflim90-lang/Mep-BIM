@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 28 - Asking Better BIM Questions
+
+1. Why This Matters
+Good questions help mentors, coordinators, and engineers answer faster. Weak questions create back-and-forth and delay learning.
+
+2. Core Concept
+A strong BIM question includes context, tool, system, location, what you checked, and the decision you need.
+
+3. Real Project Lens
+Instead of saying this pipe is wrong, ask whether the chilled water return pipe at Level 02 grid C-5 should route below the tray because the current clearance is limited.
+
+4. BIM Check
+- Include system and location.
+- Say what you already checked.
+- Ask for a clear decision or next step.
+
+5. Common Mistake
+Beginners often ask broad questions without context, making it hard to give practical guidance.
+
+6. Today's Action
+Rewrite one broad BIM question into a specific question with context and desired decision.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

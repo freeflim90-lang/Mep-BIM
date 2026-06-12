@@ -1,0 +1,28 @@
+LUA BIM LABS Starter
+Day 86 - Piping Discipline Integration — How Piping Connects to Other MEP
+
+1. Why This Matters
+Piping does not operate in isolation. Understanding how the piping system connects to HVAC, electrical, plumbing, and fire protection makes you a more complete coordination team member.
+
+2. Core Concept
+- Piping connects to HVAC: chilled water and heating water pipes connect to AHUs, FCUs, and fan coil units — the connection face and flow direction must be coordinated
+- Piping connects to electrical: pumps, valves, and control panels require power and BMS connections — pipe routing must allow electrical cable routes to equipment
+- Piping connects to plumbing: make-up water to the expansion tank and chemical dosing points require domestic water connections from the plumbing system
+- Piping connects to fire protection: fire suppression systems in plant rooms may be mist or gas suppression — confirm whether water-based sprinklers are also required
+- Piping connects to structure: all pipe routes through slabs and beams require penetration approval — this must be coordinated before structural work is complete
+
+3. Real Project Lens
+On a hospital project, the piping and electrical teams coordinated their models separately before federated coordination. When the models were combined, the electrical team's cable tray for pump motor starters ran directly through the space allocated for the pump suction piping. Three weeks of re-coordination were required because neither team had shared their models during their individual design phases.
+
+4. BIM Check
+- Check: chilled water pipe connections to all AHUs and FCUs are coordinated with the HVAC team before either model is issued for construction
+- Check: motor control centre locations for pump starters are shown in the piping team's coordination zone
+- Check: make-up water connections from the plumbing system to the hydronic expansion tanks are included in the piping model
+
+5. Common Mistake
+Beginners coordinate piping against structure and then issue the model without confirming connections to electrical and plumbing. Multi-trade coordination requires sharing model data across all disciplines simultaneously.
+
+6. Today's Action
+List 3 piping-to-other-discipline connection points on a typical plant room floor and describe the information that must be exchanged for each.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

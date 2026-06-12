@@ -1,0 +1,38 @@
+LUA BIM LABS Starter
+Day 50 - MEP Installation Sequence Basics
+
+**1. Why This Matters**
+MEP trades must install in a defined sequence to avoid blocking each other's work — understanding installation sequence helps you model and coordinate in the right order.
+
+**2. Core Concept**
+MEP installation is not random — it follows a sequence driven by physical access, structural completion, and ceiling void priorities.
+
+Typical MEP installation sequence (simplified):
+1. **Structural frame complete** — prerequisite for all MEP work in a zone
+2. **Primary containment**: Large cable trays and major duct trunks installed first — they occupy the highest and most space-constrained positions
+3. **Mechanical ductwork**: Main runs then branches; larger sections before smaller sections
+4. **Sprinkler mains**: Typically follow immediately after major duct runs
+5. **Domestic plumbing mains**: Cold and hot water mains along service routes
+6. **Electrical conduit and secondary containment**: Runs alongside plumbing before ceiling void closes
+7. **Small bore pipework and flex connections**: Last in the void before ceiling grid
+8. **Ceiling grid and tiles**: Installed only after all services are complete, tested, and signed off
+
+**3. Real Project Lens**
+On a hotel corridor project, the electrical contractor starts running conduit before the HVAC duct is installed. When the 600×300mm supply duct is installed the following week, the conduit runs are in the way and must be relocated — a delay and cost event that correct sequencing would have prevented. The BIM coordinator flags this in the coordination meeting as a sequencing conflict, not just a spatial clash.
+
+**4. BIM Check**
+- Check: Can you list the first three MEP systems typically installed in a ceiling void and explain why they come first?
+- Check: Can you explain why sprinkler mains are generally installed before small-bore pipework?
+- Check: Can you describe what "primary containment" means and give an example?
+
+**5. Common Mistake**
+Treating installation sequence as the contractor's problem alone. BIM coordinators who understand sequence can flag sequencing conflicts during coordination review — these are as costly as spatial clashes.
+
+**6. Today's Action**
+Draw a simple timeline (or numbered list) showing the MEP installation sequence for a typical office floor ceiling void — include at least six steps in order.
+
+---
+
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

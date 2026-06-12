@@ -1,0 +1,37 @@
+LUA BIM LABS Starter
+Day 62 - Pump Configuration and Piping Layout
+
+1. Why This Matters
+Pumps are the heart of any piping system. If the pump suction and discharge are piped incorrectly in the model, the installation will fail commissioning — and the piping contractor will have to re-route in the field.
+
+2. Core Concept
+- Each pump has two connectors: Suction (inlet) and Discharge (outlet)
+- Straight pipe before suction: minimum 5 × pipe diameter (to prevent turbulence at the impeller)
+- Straight pipe after discharge: minimum 2 × pipe diameter before the first fitting
+- Pump configuration types:
+  - Inline pump: installed directly in the pipe run — used for smaller systems
+  - End suction pump: floor-mounted, horizontal suction, vertical or horizontal discharge
+  - Double suction pump: large flow applications, balanced impeller
+- Accessories required at each pump: isolation valve (suction and discharge), check valve (discharge), flexible connector (both sides), pressure gauge (both sides), strainer (suction side)
+- In Revit: use correct pump family with accurate dimensions; connect all accessories before connecting to the main pipe
+
+Pump Piping Accessories Sequence (Suction to Discharge)
+Strainer → Flexible Connector → Isolation Valve → [PUMP] → Isolation Valve → Flexible Connector → Check Valve → Main Pipe
+
+3. Real Project Lens
+In the chiller room, two secondary chilled water pumps (duty/standby) are installed in parallel. Each pump has 150mm suction and discharge connections. The modeler connects the common suction header to each pump, ensures 750mm (5×DN150) of straight pipe before each pump, and connects the discharge to the common discharge header via check valves.
+
+4. BIM Check
+- Check: Straight pipe before suction meets minimum 5× diameter requirement
+- Check: All pump accessories (strainer, check valve, isolation valves, flexible connectors) are modeled
+- Check: Pump Mark matches the engineering schedule (e.g., P-CHW-01, P-CHW-02)
+
+5. Common Mistake
+Modeling an isolation valve on the suction side but forgetting the strainer — the commissioning team will install the strainer on site but its location will clash with a wall bracket that was never coordinated.
+
+6. Today's Action
+In Revit, place one pump family. Add an isolation valve on each side. Add a check valve on the discharge side. Add a flexible connector on each side. Measure the total length of the pump assembly and confirm it fits in the allocated plant room space.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

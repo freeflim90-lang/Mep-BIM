@@ -1,0 +1,42 @@
+LUA BIM LABS Starter
+Day 61 - Chilled Water System Overview — Supply and Return
+
+1. Why This Matters
+Chilled water systems carry cold water from chillers to air handling units and fan coil units throughout a building. A modeler who does not understand the supply-and-return loop will route pipes in the wrong direction, assign the wrong system type, and produce a model that confuses the mechanical engineer and the piping contractor.
+
+2. Core Concept
+- Chilled water is produced at the chiller plant (typically basement or roof)
+- Chilled Water Supply (CHWS): Cold water (typically 6–7°C) flows from the chiller to cooling coils in AHUs and FCUs
+- Chilled Water Return (CHWR): Warm water (typically 12–13°C) flows from the coils back to the chiller
+- The temperature difference (Delta T) is 5–6°C — this is the system's heat exchange target
+- Primary-secondary systems: primary pumps move water around the chiller; secondary pumps push water to the building loads
+- In Revit: create two piping systems — "Chilled Water Supply" and "Chilled Water Return" — never mix them
+- Flow direction: always model flow arrows from chiller to load for supply, load to chiller for return
+
+Chilled Water System Key Parameters
+
+| Parameter | Typical Value |
+|---|---|
+| Supply temperature | 6–7°C |
+| Return temperature | 12–13°C |
+| Design Delta T | 5–6°C |
+| Max pipe velocity | 1.5–2.5 m/s |
+| Design pressure | 600–1000 kPa |
+
+3. Real Project Lens
+A commercial building has two chillers in the basement. From the chiller room, 200mm CHWS and CHWR pipes rise through a riser shaft to each floor. On each floor, branch pipes feed FCUs in the office zones. The BIM modeler creates the riser first — confirming pipe sizes match the engineer's schedule — then branches to each FCU.
+
+4. BIM Check
+- Check: Supply and return pipes are assigned separate piping systems in Revit — no pipe on both systems
+- Check: Flow direction arrows (if modeled) point from chiller toward load on supply, and from load toward chiller on return
+- Check: Pipe sizes at each branch match the schedule — larger at riser, smaller at each successive branch
+
+5. Common Mistake
+Placing supply and return pipes at the same elevation and same location — visually correct on plan but creating a hard clash with each other in the model, indicating they were placed as copies rather than independently routed.
+
+6. Today's Action
+Sketch (on paper or screen) the basic chilled water loop from chiller to one AHU and back. Label: CHWS, CHWR, primary pump, secondary pump, AHU coil. This diagram is your reference for the next 6 days.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

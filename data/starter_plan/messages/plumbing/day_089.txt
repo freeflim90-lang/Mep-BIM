@@ -1,0 +1,63 @@
+LUA BIM LABS Starter
+Day 89 - Plumbing Handover Data for FM
+
+1. Why This Matters
+The BIM model does not stop being useful when construction ends. Facilities management (FM) teams use the model for preventive maintenance, fault investigation, renovation planning, and asset management for the lifetime of the building. If the plumbing BIM data is not prepared for FM at handover, the FM team receives a model they cannot use effectively — and the building owner does not get the full value of the BIM investment. Preparing FM-ready data is a professional responsibility, not an optional extra.
+
+2. Core Concept
+FM handover data for plumbing must allow the FM team to:
+- Locate any fixture, valve, or access point in the building
+- Identify the service, system, and specification of any pipe or fitting
+- Plan maintenance access and shutdowns without opening walls or ceilings
+- Log and track replacements, repairs, and inspections over time
+
+Key data elements required for FM handover:
+
+For plumbing fixtures:
+- Mark number (unique asset tag)
+- Fixture type and manufacturer / model
+- Level and room location
+- System connected to
+- Installation date (added at handover)
+- Maintenance interval and specification reference
+
+For valves and isolation points:
+- Valve tag (matching P&ID)
+- Valve type and service
+- Location (level, zone, coordinates)
+- Whether an access panel is required and where it is
+- Normally open / normally closed status
+- Shutdown zone (which fixtures are isolated when this valve is closed)
+
+For pipes:
+- Material and nominal diameter
+- Insulation specification
+- System and flow direction
+
+For maintenance access:
+- Cleanout locations with coordinates and access type
+- Inspection chamber locations (below ground)
+- Access panel locations and dimensions
+
+How to prepare FM data in Revit:
+1. Confirm all FM-required parameters are loaded as shared parameters in the model
+2. Fill in all parameters that are now known at construction completion (manufacturer, installation date)
+3. Export the asset register to COBie format (Construction Operations Building Information Exchange) or client-specified format
+4. Link the model to the FM platform (CAFM system) if required by the employer's information requirements
+
+3. Real Project Lens
+On a public university project, the FM team received a plumbing Revit model at handover with complete geometry but only three data fields filled per element: Mark, Level, and System Name. The FM team needed manufacturer data, maintenance intervals, and valve shutdown zones. Retroactively gathering and entering that data for 680 plumbing assets took four months of administrative work after handover. The same data could have been structured into the shared parameters and filled progressively during construction for minimal extra effort.
+
+4. BIM Check
+- Check: All plumbing fixtures have Manufacturer, Model, and Installation Date parameters filled in the handover model
+- Check: All valves have Valve Tag, Service, Shutdown Zone, and Access Required parameters filled
+- Check: The COBie or FM data export has been tested against the client's FM platform to confirm the data format is compatible
+
+5. Common Mistake
+A common mistake is treating FM handover as a separate task at the end of the project. In practice, the FM data must be collected progressively — manufacturer data is available when equipment is procured, installation dates when fixtures are fixed. Building FM data retrospectively from construction records is time-consuming and often incomplete.
+
+6. Today's Action
+List five data fields that an FM team would need to locate and shut off the water supply to one toilet room in a building. For each field, identify which element carries that data (fixture, valve, or pipe) and whether that parameter is currently in your Revit model. Any missing parameter is a gap you can close before handover.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

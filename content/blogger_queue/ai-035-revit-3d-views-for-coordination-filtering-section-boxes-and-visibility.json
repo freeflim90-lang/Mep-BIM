@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "BIM",
+    "Revit",
+    "BIM Coordination",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "Revit 3D Views for Coordination: Filtering, Section Boxes, and Visibility",
+  "slug": "revit-3d-views-for-coordination-filtering-section-boxes-and-visibility",
+  "content": "<p>3D views in Revit are the primary tool for multi-discipline coordination review. A poorly configured 3D view — too many elements visible, no section box isolation, inconsistent colour coding — makes coordination inefficient. Well-configured coordination views transform team meeting productivity.</p>\n<h2>Why This Matters</h2>\n<p>Coordination meetings that rely on full-building 3D views with all disciplines visible simultaneously are visually overwhelming. Team members cannot quickly identify which elements belong to which discipline or locate the specific area under discussion. Targeted 3D views solve this.</p>\n<h2>Practical Guidance</h2>\n<p><strong>View Templates for Coordination:</strong> Create dedicated coordination view templates for each discipline combination: ARCH+STRUC, MEP+ARCH, ALL DISCIPLINES. Templates lock visibility settings so coordination views always show the correct discipline combination when opened.</p>\n<p><strong>Section Box Workflow:</strong> Use section boxes to isolate a floor or zone for a specific coordination meeting. Name section box views by zone: COORD_3D_L3_NORTH_CORE. Save and share these views with all discipline models linked, so any team member can open the same view independently.</p>\n<p><strong>Filter-Based Colour Coding:</strong> Apply Revit Filters to colour-code elements by discipline or system. Mechanical ducts in blue, electrical trays in yellow, sprinkler pipes in red. Consistent colour coding across all coordination views reduces cognitive load in meetings.</p>\n<p><strong>Workset Visibility:</strong> Use workset visibility to show only the worksets relevant to a specific coordination issue. A duct clash in a corridor only needs the mechanical, ceiling, and structural worksets visible — not the full model.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Create named view templates for each discipline coordination combination</li>\n<li>Name and save section box views by zone and floor</li>\n<li>Apply consistent colour-coded filter schemes to all coordination views</li>\n<li>Share named coordination views in the project BIM folder for all team members to use</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>A well-named, well-configured coordination view is worth an hour of meeting time — create them as project shared assets, not as throwaway personal views.</p>"
+}

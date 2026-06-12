@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 19 - Worksets and Model Sharing Discipline
+
+1. Why This Matters
+Worksets affect visibility, ownership, performance, and collaboration. Poor workset habits can slow down the whole BIM team.
+
+2. Core Concept
+A workset is a collaboration container in a Revit workshared model. It helps control who works on what and how linked or internal elements are organized.
+
+3. Real Project Lens
+If MEP elements are placed on the wrong workset, they may disappear in views, export incorrectly, or confuse coordination filters.
+
+4. BIM Check
+- Check the active workset before modeling.
+- Review whether linked models and MEP elements are on expected worksets.
+- Use worksets carefully with view templates and exports.
+
+5. Common Mistake
+Beginners often ignore the active workset and create cleanup work for others.
+
+6. Today's Action
+List the workset types you would expect in a simple MEP coordination model.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

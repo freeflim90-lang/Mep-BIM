@@ -1,0 +1,177 @@
+{
+  "nodes": [
+    {
+      "id": "moc",
+      "type": "file",
+      "file": "00_Home/Model Quality Auditor - Knowledge Map.md",
+      "x": 0,
+      "y": 0,
+      "width": 360,
+      "height": 220,
+      "color": "#2563eb"
+    },
+    {
+      "id": "project",
+      "type": "file",
+      "file": "01_Project/Project Overview.md",
+      "x": -480,
+      "y": -240,
+      "width": 320,
+      "height": 180,
+      "color": "#2563eb"
+    },
+    {
+      "id": "qwen",
+      "type": "file",
+      "file": "01_Project/Qwen Development Boundary.md",
+      "x": -480,
+      "y": 40,
+      "width": 320,
+      "height": 180,
+      "color": "#059669"
+    },
+    {
+      "id": "errors",
+      "type": "file",
+      "file": "03_Errors_Fixes/Error Fix Index.md",
+      "x": 460,
+      "y": -260,
+      "width": 320,
+      "height": 180,
+      "color": "#2563eb"
+    },
+    {
+      "id": "decisions",
+      "type": "file",
+      "file": "04_Decisions/Decision Log Index.md",
+      "x": 460,
+      "y": -20,
+      "width": 320,
+      "height": 180,
+      "color": "#2563eb"
+    },
+    {
+      "id": "gates",
+      "type": "file",
+      "file": "05_Revit_API_Gates/Revit API Test Gate Index.md",
+      "x": 460,
+      "y": 220,
+      "width": 320,
+      "height": 180,
+      "color": "#059669"
+    },
+    {
+      "id": "merge",
+      "type": "file",
+      "file": "01_Project/Addin Dashboard Merge Plan.md",
+      "x": -20,
+      "y": 340,
+      "width": 340,
+      "height": 180,
+      "color": "#059669"
+    },
+    {
+      "id": "taxonomy",
+      "type": "file",
+      "file": "08_Knowledge_Map/Semantic Node Edge Taxonomy.md",
+      "x": -40,
+      "y": -320,
+      "width": 360,
+      "height": 180,
+      "color": "#2563eb"
+    },
+    {
+      "id": "legend",
+      "type": "text",
+      "text": "# 범례\n\n## Node Type\n- concept `#2563eb`\n- procedure `#059669`\n- event `#f59e0b`\n- claim `#dc2626`\n- actor `#6b7280`\n\n## Edge Type\n- supports `#16a34a`\n- refutes `#dc2626`\n- premise_of `#7c3aed`\n- specifies `#2563eb`\n- expands `#0891b2`\n- refines `#d97706`\n- similar_to `#64748b`\n- triggers `#db2777`\n- about `#6b7280`\n- asserts `#4f46e5`\n\n관계 의미가 있으면 edge type 색상이 우선한다. 분류용 선은 대상 node_type 색상을 쓴다.",
+      "x": 860,
+      "y": -300,
+      "width": 360,
+      "height": 520,
+      "color": "#64748b"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "moc",
+      "fromSide": "left",
+      "toNode": "project",
+      "toSide": "right",
+      "label": "about",
+      "color": "#2563eb"
+    },
+    {
+      "id": "e2",
+      "fromNode": "moc",
+      "fromSide": "left",
+      "toNode": "qwen",
+      "toSide": "right",
+      "label": "about",
+      "color": "#059669"
+    },
+    {
+      "id": "e3",
+      "fromNode": "moc",
+      "fromSide": "right",
+      "toNode": "errors",
+      "toSide": "left",
+      "label": "about",
+      "color": "#2563eb"
+    },
+    {
+      "id": "e4",
+      "fromNode": "moc",
+      "fromSide": "right",
+      "toNode": "decisions",
+      "toSide": "left",
+      "label": "about",
+      "color": "#2563eb"
+    },
+    {
+      "id": "e5",
+      "fromNode": "moc",
+      "fromSide": "right",
+      "toNode": "gates",
+      "toSide": "left",
+      "label": "about",
+      "color": "#059669"
+    },
+    {
+      "id": "e6",
+      "fromNode": "gates",
+      "fromSide": "bottom",
+      "toNode": "merge",
+      "toSide": "right",
+      "label": "premise_of",
+      "color": "#7c3aed"
+    },
+    {
+      "id": "e7",
+      "fromNode": "qwen",
+      "fromSide": "bottom",
+      "toNode": "merge",
+      "toSide": "left",
+      "label": "supports",
+      "color": "#16a34a"
+    },
+    {
+      "id": "e8",
+      "fromNode": "moc",
+      "fromSide": "top",
+      "toNode": "taxonomy",
+      "toSide": "bottom",
+      "label": "about",
+      "color": "#2563eb"
+    },
+    {
+      "id": "e9",
+      "fromNode": "taxonomy",
+      "fromSide": "right",
+      "toNode": "legend",
+      "toSide": "left",
+      "label": "specifies",
+      "color": "#2563eb"
+    }
+  ]
+}

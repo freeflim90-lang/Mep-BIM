@@ -1,0 +1,43 @@
+---
+type: source-index
+generated: true
+category: Workspace Markdown
+source_path: "scripts/outbound_sales/.venv/lib/python3.14/site-packages/duckduckgo_search-8.1.1.dist-info/licenses/LICENSE.md"
+---
+
+# duckduckgo_search-8 1 1 dist-info - licenses - LICENSE
+
+## Source
+
+`scripts/outbound_sales/.venv/lib/python3.14/site-packages/duckduckgo_search-8.1.1.dist-info/licenses/LICENSE.md`
+
+Absolute path:
+
+`/Users/choejeong-yeon/LUA BIM LABS/scripts/outbound_sales/.venv/lib/python3.14/site-packages/duckduckgo_search-8.1.1.dist-info/licenses/LICENSE.md`
+
+## Category
+
+- [[MOC - Workspace Markdown]]
+
+## Summary
+
+MIT License Copyright (c) 2022 deedy5 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation t
+
+## Keywords
+
+duckduckgo_search-8.1.1.dist-info, lib, license.md, licenses, markdown, outbound_sales, python3.14, scripts, site-packages, venv, workspace
+
+## Related
+
+- [[_vendor - idna - _vendor - idna - _vendor - idna - LICENSE - d3ec1a]]
+- [[_vendor - idna - _vendor - idna - _vendor - idna - LICENSE - e07784]]
+- [[idna-3 16 dist-info - licenses - idna-3 16 dist-info - licenses - LICENSE]]
+- [[soupsieve-2 8 3 dist-info - licenses - soupsieve-2 8 3 dist-info - licenses - LICENSE]]
+- [[dragance106 - overhang-surrogates - dragance106 - overhang-surrogates - LICENSE]]
+- [[speckleifc - licenses - speckleifc - licenses - Third-Party Licenses]]
+- [[vicquick - ifc2quant - vicquick - ifc2quant - LICENSE]]
+- [[11034 - A1__Dashboard - 11034 - A1__Dashboard - A1 IFC Dashboard]]
+
+## Home
+
+- [[Global Knowledge Map]]

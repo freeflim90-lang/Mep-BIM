@@ -1,0 +1,29 @@
+LUA BIM LABS Starter
+Day 77 - Mechanical Room Quality Check Before Submission
+
+1. Why This Matters
+The mechanical room is the most complex piping zone on any project. A dedicated quality check before submission prevents the dense pipework from hiding errors that are expensive to find during construction.
+
+2. Core Concept
+- Mechanical room quality check covers 8 areas: equipment positioning, pipe connections, valve placement, insulation clearance, maintenance access, structural coordination, fire protection, and electrical connections
+- Equipment positioning: all equipment is positioned with correct maintenance clearances; lift access route is clear for the largest component
+- Pipe connections: all suction and discharge connections are to the correct face of each piece of equipment; supply and return are not reversed
+- Valve placement: isolation valves on both sides of every pump; commissioning valves at all terminal connections; no valve handle blocked by an adjacent pipe
+- Maintenance access: there is a 900mm access corridor in front of each pump; 600mm side access to valve stems
+- Structural coordination: a penetration schedule has been submitted for all slab penetrations; hanger points are on accessible structural members
+
+3. Real Project Lens
+On a hospital mechanical room, a quality check before submission identified 9 valve handles that would be blocked by adjacent pipework — the valves were physically modeled but not checked for operability. Relocating the pipes in the model took 4 hours. Relocating them after installation would have required cutting and rewelding 18 pipe joints.
+
+4. BIM Check
+- Check: all pump connections are verified against the manufacturer's connection face orientation (supply inlet on correct side)
+- Check: a maintenance access corridor of 900mm exists in front of each pump and 600mm on the valve side of each major component
+- Check: a penetration schedule has been submitted to the structural engineer for all slab and wall openings
+
+5. Common Mistake
+Beginners complete the mechanical room layout and submit without checking whether all valves can actually be operated in their modeled position.
+
+6. Today's Action
+Identify the 3 most critical items to check in a mechanical room BIM model before submission and explain why each matters.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

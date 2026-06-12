@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "ACC",
+    "Revit",
+    "Navisworks",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "Connecting Revit, Navisworks, and ACC for an Integrated BIM Workflow",
+  "slug": "connecting-revit-navisworks-and-acc-for-an-integrated-bim-workflow",
+  "content": "<p>Revit, Navisworks, and Autodesk Construction Cloud serve complementary roles in the BIM workflow. Understanding how they connect — and where each tool's responsibilities begin and end — prevents duplication of effort and ensures that coordination data flows efficiently between tools.</p>\n<h2>Why This Matters</h2>\n<p>Teams that use Revit, Navisworks, and ACC without a clear workflow integration strategy end up running clash detection twice (in Navisworks and ACC), managing issues in both tools simultaneously, and publishing models manually when Cloud Worksharing would automate this.</p>\n<h2>Practical Guidance</h2>\n<p><strong>Revit Role:</strong> Revit is the authoring tool. Design, parameter assignment, and model QA happen in Revit. Revit does not manage issues, coordination history, or multi-discipline clash detection at scale. Do not try to use Revit for what ACC and Navisworks do better.</p>\n<p><strong>Navisworks Role:</strong> Navisworks is the coordination analysis tool for complex multi-discipline clash analysis, 4D simulation, and quantity takeoff. Use Navisworks when ACC Model Coordination's automated detection is insufficient for the complexity or reporting requirements.</p>\n<p><strong>ACC Role:</strong> ACC is the project data platform — document management, issue tracking, model publication, and access management. All project parties (including site teams without Revit) access current model data and project issues through ACC.</p>\n<p><strong>Integration Points:</strong> Publish Revit models to ACC for automated coordination. Export Navisworks clash reports to ACC Issues for tracking. Use ACC document management for formal model issue and receipt. These three integration points create a closed loop without duplication.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Define clear tool responsibilities in BIM Execution Plan: Revit for authoring, Navisworks for complex analysis, ACC for platform</li>\n<li>Publish Revit models to ACC on coordination schedule</li>\n<li>Export Navisworks clashes to ACC Issues — do not maintain a separate issue tracker</li>\n<li>Use ACC document management for formal model issue</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>The Revit-Navisworks-ACC workflow works when each tool does its job — integration breaks when teams use one tool to substitute for another.</p>"
+}

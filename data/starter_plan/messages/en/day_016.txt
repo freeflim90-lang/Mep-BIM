@@ -1,0 +1,25 @@
+LUA BIM LABS Starter
+Day 16 - Parameters Are Coordination Data
+
+1. Why This Matters
+Parameters are not just optional text fields. They support schedules, filters, QA, exports, reports, and automation.
+
+2. Core Concept
+A parameter stores information about an element, such as system name, size, level, type, manufacturer, flow, or installation zone.
+
+3. Real Project Lens
+If equipment data is missing, a schedule may look incomplete even though the 3D model looks finished.
+
+4. BIM Check
+- Review which parameters are required for schedules.
+- Check whether filters depend on parameter values.
+- Look for empty or inconsistent values in key fields.
+
+5. Common Mistake
+Beginners often focus on geometry and leave data cleanup for later, making later QA harder.
+
+6. Today's Action
+Choose one element category and list five parameters that would matter for coordination or reporting.
+
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

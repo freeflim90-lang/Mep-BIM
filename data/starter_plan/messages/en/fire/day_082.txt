@@ -1,0 +1,44 @@
+LUA BIM LABS Starter
+Day 82 - Identifying Uncovered Zones — Finding and Fixing Dead Zones
+
+1. Why This Matters
+A dead zone — a floor area with no sprinkler coverage — is a life safety failure. Dead zones occur for predictable reasons and can be systematically found before construction begins. Knowing where dead zones tend to appear, and how to remediate them in the model, is an essential skill for any fire protection BIM practitioner.
+
+2. Core Concept
+Where Dead Zones Typically Occur:
+
+1. Corners and Recesses — The last head in a row is placed too far from the end wall, leaving the corner area beyond coverage radius. Rule: wall offset ≤ half of max head spacing.
+
+2. Post-Partition Areas — Architect adds partitions after the head layout is set. The new walls create enclosed spaces that were previously open and covered.
+
+3. Deep Beam Bays — A beam bay deeper than 300 mm creates a shadow zone (see Day 69). The area behind the beam from the head's perspective is not covered.
+
+4. Equipment Rooms and Plantrooms — Large equipment blocks spray. The modeler may have placed heads in the open floor area but missed zones blocked by large tanks, switchboards, or air handling units.
+
+5. Ceiling Height Changes — A lower suspended ceiling in a reception zone means existing heads (mounted at a higher ceiling) are now too far above the deflector limit. The heads are effectively "above the ceiling" and not functional in the lower zone.
+
+Remediation Process in the BIM Model:
+1. Identify the gap using circle plot or coverage tool (Day 81 methods)
+2. Determine the cause: wall offset error, new partition, obstruction shadow, or ceiling change
+3. Add a head at a location that covers the gap
+4. Extend the nearest branch line or add a new spur to supply the new head
+5. Flag to the fire engineer: location of new head, head type, pipe extension required
+6. Engineer confirms the hydraulic impact and approves or requests modification
+
+3. Real Project Lens
+A QA review on a commercial fit-out reveals a 14 m² dead zone in a server room behind a floor-to-ceiling equipment cabinet. The cabinet was not on the original drawing when the head layout was designed. The modeler adds one sidewall-mounted head (rather than pendant) on the wall behind the cabinet, connected by a new spur from the adjacent branch line. The fire engineer approves the addition as hydraulically acceptable.
+
+4. BIM Check
+- Check: All enclosed rooms and alcoves created by partitions have been individually checked for coverage — not assumed to be covered because the open-plan layout was verified earlier
+- Check: Dead zones caused by beam shadows have been remediated with supplemental heads or confirmed acceptable by the fire engineer
+- Check: Every new head added during remediation has a corresponding pipe connection modeled — not left as a floating element
+
+5. Common Mistake
+Adding a remediation head to the model but not extending the branch line to connect it — leaving the head as a standalone element with no supply pipe. In Revit, this creates an unconnected element that will show as an error in system checks and will be invisible in hydraulic calculations.
+
+6. Today's Action
+Find one dead zone or near-dead zone on your current or sample model using the method from Day 81. Design a remediation — identify which head to add, where to connect to the existing branch, and estimate the pipe extension length. Write a two-sentence RFI note to the fire engineer describing the gap and proposed fix.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

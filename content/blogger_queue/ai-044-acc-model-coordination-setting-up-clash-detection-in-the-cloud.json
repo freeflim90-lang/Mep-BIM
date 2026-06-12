@@ -1,0 +1,13 @@
+{
+  "blogUrl": "https://engineer250212.blogspot.com/",
+  "labels": [
+    "ACC",
+    "BIM Coordination",
+    "BIM",
+    "LUA BIM LABS"
+  ],
+  "draft": false,
+  "title": "ACC Model Coordination: Setting Up Clash Detection in the Cloud",
+  "slug": "acc-model-coordination-setting-up-clash-detection-in-the-cloud",
+  "content": "<p>Autodesk Construction Cloud's Model Coordination module provides automated, cloud-based clash detection between discipline models that have been published to ACC. Unlike Navisworks desktop workflows, ACC coordination runs automatically when new model versions are published, without a coordinator manually triggering a clash run.</p>\n<h2>Why This Matters</h2>\n<p>Manual coordination workflows depend on a coordinator remembering to run clash detection and distribute results. ACC automated coordination ensures that every new model publication triggers a coordination check, making it impossible for clashes to accumulate undetected between coordination cycles.</p>\n<h2>Practical Guidance</h2>\n<p><strong>Coordination Space Setup:</strong> Create a Coordination Space in the ACC Model Coordination module that includes all discipline model folders. Each folder maps to a coordination discipline. Clashes are detected between all discipline combinations defined in the space.</p>\n<p><strong>Tolerance Settings:</strong> Set clash tolerance per discipline pair. Structural-to-MEP clashes should use a tight tolerance (5mm). MEP-to-MEP coordination typically uses a larger clearance (50-100mm depending on system type and maintenance access requirements). Document tolerance settings in the BIM Execution Plan.</p>\n<p><strong>Issue Creation from Clashes:</strong> Convert clash groups to ACC Issues for tracking and resolution. Issues can be assigned to discipline teams, given due dates, and linked to specific model elements. This creates a traceable record from detection to resolution.</p>\n<p><strong>Model Update Cycle:</strong> Establish a regular model publication schedule so coordination results are current. Daily publication during active coordination periods, weekly during quieter periods. Teams that publish irregularly get coordination results that do not reflect current design.</p>\n<h2>Checklist</h2>\n<ul>\n<li>Define coordination spaces before publishing first discipline models</li>\n<li>Document tolerance settings per discipline pair in BIM Execution Plan</li>\n<li>Convert significant clash groups to ACC Issues for tracking</li>\n<li>Establish and communicate model publication schedule to all disciplines</li>\n</ul>\n<h2>LUA BIM LABS Insight</h2>\n<p>ACC automated coordination removes the trigger problem — but teams must still act on results. Automate detection, not resolution.</p>"
+}

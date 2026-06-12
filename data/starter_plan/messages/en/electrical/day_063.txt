@@ -1,0 +1,47 @@
+LUA BIM LABS Starter
+Day 63 - Distribution Board Modeling in Revit
+
+1. Why This Matters
+Distribution boards (DBs) are the local power distribution points on each floor. A DB modeled at the wrong location, wrong size, or wrong orientation cannot be installed as shown — and the electrical contractor will install it differently to what the BIM model shows, invalidating the coordination model.
+
+2. Core Concept
+- DB physical characteristics:
+  - Typical depth: 150–200mm (surface mount) or 100–150mm (flush mount)
+  - Typical width: 300–600mm depending on number of ways (circuits)
+  - Typical height: 600mm–1200mm depending on circuit count
+  - Front clearance required: minimum 600mm–1000mm (to open the door and work inside)
+  - Top clearance: 300mm above DB for cable entry
+- In Revit:
+  - Use an electrical panel family (not a generic box)
+  - Set the number of circuits/ways to match the engineer's panel schedule
+  - Assign circuits from each load device to the DB
+  - Set the installation height: typically 1500mm to the center of the DB (check local code)
+- Panel schedule: generated from Revit — lists each circuit breaker, connected load, and load (W or A). Compare to the engineer's schedule
+- Wall type matters: confirm the wall where the DB is located is thick enough for a flush mount, or confirm surface mount clearance in front
+
+DB Sizing Guide
+
+| Circuit Count | Typical Panel Width |
+|---|---|
+| Up to 12 | 250–300mm |
+| 12–24 | 300–400mm |
+| 24–48 | 400–600mm |
+| 48+ | Multiple panels or a sub-MSB |
+
+3. Real Project Lens
+Level 7 of a hotel has a DB with 36 circuits. The modeler places a 36-way panel family (550mm W × 900mm H × 175mm D) in the electrical cupboard near the riser shaft. A reference plane is created 800mm in front of the panel face — confirmed clear of any obstruction for access. The panel schedule from Revit is exported and checked against the engineer's circuit schedule.
+
+4. BIM Check
+- Check: DB dimensions match the manufacturer's datasheet (not a generic placeholder)
+- Check: 600mm minimum clearance in front of the DB is unobstructed — no pipe, duct, or fixture in this zone
+- Check: Panel schedule from Revit matches the engineer's schedule — circuit by circuit
+
+5. Common Mistake
+Placing a DB in a wall alcove where the wall finish makes the panel flush with the wall face — but the panel body extends 150mm deeper than the wall, requiring wall modification that was never coordinated.
+
+6. Today's Action
+In Revit, place a distribution board family on a wall. Set the number of circuits to 24. Check that a 600mm clearance zone in front of the panel is clear of all other elements. Export the panel schedule and compare it to a blank engineer's schedule template.
+
+---
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.

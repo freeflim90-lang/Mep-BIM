@@ -1,0 +1,28 @@
+LUA BIM LABS Starter
+Day 83 - HVAC and Ceiling Grid Coordination
+
+1. Why This Matters
+HVAC supply diffusers and return grilles must align with the architectural ceiling grid. Getting this wrong creates visible misalignment that the client notices immediately — and rework that is expensive to fix after ceiling tiles are installed.
+
+2. Core Concept
+- Standard ceiling tiles are 600×600mm or 1200×600mm — diffusers must be centered on a tile or span a tile joint cleanly
+- The ceiling grid is set out from an architectural origin point — confirm with the architect before placing diffusers
+- Coordination sequence: confirm ceiling grid layout, place HVAC diffusers on the grid, then route ductwork back to the VAV box
+- Common conflicts: diffuser location coincides with a light fitting, smoke detector, or sprinkler head in the same ceiling zone
+- The final diffuser layout must match the architectural reflected ceiling plan (RCP) before it is issued to site
+
+3. Real Project Lens
+On a hotel lobby with a custom ceiling pattern, HVAC diffusers were positioned for optimal airflow without reference to the ceiling tile grid. When the coordinated RCP was issued, 11 diffusers were in the wrong location. Repositioning them required re-routing 8 branch ducts and revising 3 VAV zone boundaries.
+
+4. BIM Check
+- Check: all supply diffusers are positioned at the center of a ceiling tile or at a defined grid-aligned location
+- Check: no diffuser location coincides with a light fitting, smoke detector, or sprinkler head in the coordinated ceiling model
+- Check: the HVAC diffuser layout has been shared with the architectural team for RCP coordination before the ceiling package is issued
+
+5. Common Mistake
+Beginners optimize diffuser placement for airflow first and check ceiling grid alignment later. In practice, the ceiling grid is fixed first and HVAC must work within it.
+
+6. Today's Action
+Draw a 3×3 grid of 600×600mm ceiling tiles. Place 4 supply diffusers and 1 return grille ensuring they align with tile centers and do not conflict with each other.
+Scope note:
+This is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval.
