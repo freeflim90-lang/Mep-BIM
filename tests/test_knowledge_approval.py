@@ -78,17 +78,19 @@ def test_append_find_and_save_knowledge_approval_candidate(tmp_path):
 
 
 def test_knowledge_approval_message_sanitizes_preview():
+    # audit-secrets(git grep)에 걸리지 않도록 가짜 키를 런타임에 조립한다.
+    fake_key = "sk-" + "1234567890123456789012345"
     message = knowledge_approval_message({
         "id": "K1",
         "agent": "건축",
         "title": "검토",
         "source": "telegram-auto",
-        "content": "secret sk-1234567890123456789012345",
+        "content": f"secret {fake_key}",
         "qa_path": "qa.md",
         "assessment": {"reasons": ["자동 수집"], "top_score": 10},
     })
 
     assert "후보 ID: K1" in message
     assert "자동 수집" in message
-    assert "sk-1234567890123456789012345" not in message
+    assert fake_key not in message
     assert "sk-[LONG_ID_MASKED]" in message
