@@ -10,7 +10,9 @@ SECTION 4 ── 지식 베이스 검색 · 점수화 · 답변 생성
 """
 from __future__ import annotations
 
+import bisect
 import datetime
+import json
 import os
 import re
 from collections import Counter
@@ -18,13 +20,19 @@ from pathlib import Path
 
 from backend.core.paths import (
     AGENT_KB_DIR as _AGENT_KB_DIR,
+    CATALOG_DIR as _CATALOG_DIR,
     CURATION_DIR as _CURATION_DIR,
     DOCS_DIR as _DOCS_DIR,
     OBSIDIAN_VAULTS_DIR as _OBSIDIAN_VAULTS_DIR,
     PROJECT_ROOT as _PROJECT_ROOT,
     QA_KB_DIR as _QA_KB_DIR,
 )
+from backend.knowledge_store import ORGANIZATION as _ORGANIZATION
 from backend.web_search import _search_web_for_knowledge
+
+_AGENT_TO_TEAM = {
+    agent: team for team, agents in _ORGANIZATION.items() for agent in agents
+}
 
 # ---------------------------------------------------------------------------
 # 운영 파일 제외 목록 (지식 검색 대상에서 제외)
@@ -35,6 +43,57 @@ def _st():
     """server_total 지연 임포트 헬퍼 — 순환 참조 방지."""
     import backend.server_total as _mod
     return _mod
+
+
+# ---------------------------------------------------------------------------
+# 지식 카탈로그 (scripts/build_knowledge_catalog.py 가 매일 생성)
+#   - 키워드 역색인으로 후보 파일을 줄여 전체 read_text 풀스캔을 회피한다.
+#   - 카탈로그가 없거나 손상되면 기존 풀스캔으로 폴백한다.
+# ---------------------------------------------------------------------------
+_FILE_MAP_PATH = _CATALOG_DIR / "FILE_MAP.json"
+_catalog_state: dict = {"mtime": None, "data": None, "tokens": []}
+
+
+def _load_catalog() -> dict | None:
+    try:
+        mtime = _FILE_MAP_PATH.stat().st_mtime
+    except OSError:
+        return None
+    if _catalog_state["mtime"] != mtime:
+        try:
+            data = json.loads(_FILE_MAP_PATH.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            return None
+        _catalog_state["mtime"] = mtime
+        _catalog_state["data"] = data
+        _catalog_state["tokens"] = sorted(data.get("keyword_to_files", {}))
+    return _catalog_state["data"]
+
+
+def _catalog_candidates(catalog: dict, terms: list[str]) -> tuple[set[str], set[str]]:
+    """(후보 rel 경로, 카탈로그가 아는 전체 rel 경로) 반환.
+
+    매칭은 정확 일치 + 접두 일치(한국어 조사/어미 대응). 후보가 비면 호출부가
+    풀스캔으로 폴백한다.
+    """
+    keyword_map = catalog.get("keyword_to_files") or {}
+    tokens = _catalog_state["tokens"]
+    files = catalog.get("files") or []
+    indices: set[int] = set()
+    for term in terms:
+        for hit in keyword_map.get(term, ()):
+            indices.add(hit)
+        pos = bisect.bisect_left(tokens, term)
+        while pos < len(tokens) and tokens[pos].startswith(term):
+            indices.update(keyword_map[tokens[pos]])
+            pos += 1
+    candidates = {files[i]["path"] for i in indices if i < len(files)}
+    known = {meta["path"] for meta in files}
+    return candidates, known
+
+
+def _catalog_team_lookup(catalog: dict) -> dict[str, str]:
+    return {meta["path"]: meta.get("team", "") for meta in catalog.get("files") or []}
 
 
 def knowledge_search_files() -> list[Path]:
@@ -186,17 +245,37 @@ def search_local_knowledge(query: str, limit: int = 4) -> list[dict]:
     if not terms:
         return []
     inferred_agent = infer_knowledge_agent_from_query(query)
+    inferred_team = _AGENT_TO_TEAM.get(inferred_agent, "")
+
+    catalog = _load_catalog()
+    candidate_rel: set[str] = set()
+    known_rel: set[str] = set()
+    team_by_rel: dict[str, str] = {}
+    if catalog:
+        candidate_rel, known_rel = _catalog_candidates(catalog, terms)
+        team_by_rel = _catalog_team_lookup(catalog)
+
     matches = []
     for path in knowledge_search_files():
+        try:
+            rel = path.relative_to(_PROJECT_ROOT).as_posix()
+        except ValueError:
+            rel = path.as_posix()
+        # 카탈로그가 아는 파일인데 키워드 후보가 아니면 본문 스캔 생략
+        # (안전판: 파일명이 추론 에이전트/검색어와 닿아 있으면 항상 스캔)
+        if (
+            candidate_rel
+            and rel in known_rel
+            and rel not in candidate_rel
+            and inferred_agent not in path.stem
+            and not any(term in path.stem.lower() for term in terms)
+        ):
+            continue
         try:
             content = path.read_text(encoding="utf-8", errors="ignore")
         except OSError:
             continue
         score = score_knowledge_text(content, terms)
-        try:
-            rel = path.relative_to(_PROJECT_ROOT).as_posix()
-        except ValueError:
-            rel = path.as_posix()
         if path.is_relative_to(_AGENT_KB_DIR) or path.is_relative_to(_QA_KB_DIR):
             score += 8
         if path.stem == inferred_agent:
@@ -205,6 +284,8 @@ def search_local_knowledge(query: str, limit: int = 4) -> list[dict]:
             score += 10
         if any(term in path.stem.lower() for term in terms):
             score += 8
+        if inferred_team and team_by_rel.get(rel) == inferred_team:
+            score += 6
         if "curation" in rel.lower() or "daily_knowledge" in rel.lower():
             score -= 30
         if score <= 0:

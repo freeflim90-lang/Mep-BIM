@@ -133,6 +133,9 @@ EOF
   "$PYTHON" scripts/auto_enrich_knowledge_base.py
   echo "==== $(date '+%H:%M:%S') KB auto-enrich done ===="
 
+  # 지식 카탈로그(FILE_MAP) 재생성 — knowledge_engine 검색 인덱스
+  "$PYTHON" scripts/build_knowledge_catalog.py
+
   "$PYTHON" scripts/mqa_obsidian_tools.py graph
   "$PYTHON" scripts/build_global_obsidian_map.py
 

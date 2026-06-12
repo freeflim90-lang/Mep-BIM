@@ -57,3 +57,6 @@ node_modules/
 
 # 재구성 호환 심링크 (2주 후 제거 예정)
 data/knowledge_base
+
+# 자동 생성 지식 카탈로그 (build_knowledge_catalog.py)
+knowledge/00_catalog/
