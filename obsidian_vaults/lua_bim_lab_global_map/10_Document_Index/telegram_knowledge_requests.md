@@ -30,13 +30,13 @@ add-in, api, bim, cs, data, markdown, mep, qwen, team_requests, telegram_knowled
 ## Related
 
 - [[LUA BIM LABS 팀원 Telegram 1 1 이용 등록부]]
+- [[CFO Q A 지식]]
 - [[MEP BIM Coordination Console 개발 핸드오프]]
-- [[BIM Learning Path Next Steps]]
-- [[BIM Troubleshooting Decision Tree]]
-- [[BIM-Modeling]]
-- [[Bonsai BIM Comprehensive Pre-Research Document]]
-- [[Completeness Review Masterplan v2026-03-06]]
-- [[DEFINITIVE Masterplan Sverchok Claude Skill Package]]
+- [[Revit_Addin_QA]]
+- [[견적서담당 Q A 지식]]
+- [[고객지원CS Q A 지식]]
+- [[라이선스결제 Q A 지식]]
+- [[배포문서 Q A 지식]]
 
 ## Home
 

@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/AI_협업운영체계.md"
+source_path: "knowledge/10_agents/90_확장에이전트/AI_협업운영체계.md"
 ---
 
 # AI 협업운영체계 지식 베이스
 
 ## Source
 
-`data/knowledge_base/AI_협업운영체계.md`
+`knowledge/10_agents/90_확장에이전트/AI_협업운영체계.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/AI_협업운영체계.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/90_확장에이전트/AI_협업운영체계.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ LUA BIM LABS의 AI 담당자들이 의사소통, 추론, 반론, 합의, 실행 
 
 ## Keywords
 
-addin, ai, ai_, api, audit, base, bim, cs, data, knowledge, knowledge_base, kpi, model, navisworks, qa, quality, revit, 개발, 견적, 교육, 납품, 라이선스, 리스크, 보안, 빌드, 심사, 역할, 온보딩, 조직, 지식
+addin, agents, ai, ai_, api, audit, base, bim, cs, knowledge, kpi, model, navisworks, qa, quality, revit, 개발, 견적, 교육, 납품, 라이선스, 리스크, 보안, 빌드, 심사, 역할, 온보딩, 조직, 지식, 지원
 
 ## Related
 

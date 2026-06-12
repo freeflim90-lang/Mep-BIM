@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/R&D_개발지원그룹.md"
+source_path: "knowledge/10_agents/90_확장에이전트/R&D_개발지원그룹.md"
 ---
 
 # R D 개발지원그룹 지식 베이스
 
 ## Source
 
-`data/knowledge_base/R&D_개발지원그룹.md`
+`knowledge/10_agents/90_확장에이전트/R&D_개발지원그룹.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/R&D_개발지원그룹.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/90_확장에이전트/R&D_개발지원그룹.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, addin, ai, api, audit, autodesk, base, bim, clash, cs, data, knowledge, knowledge_base, model, navisworks, qa, quality, qwen, revit, store, 개발, 납품, 리스크, 변경, 보안, 빌드, 스토어, 심사, 역할, 지식
+add-in, addin, agents, ai, api, audit, autodesk, base, bim, clash, cs, knowledge, model, navisworks, qa, quality, qwen, revit, store, 개발, 납품, 리스크, 변경, 보안, 빌드, 스토어, 심사, 역할, 지식, 지원
 
 ## Related
 

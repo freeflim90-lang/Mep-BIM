@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: AI Knowledge Base
-source_path: "data/knowledge_base/qa/HR_인재분석관_QA.md"
+category: Workspace Markdown
+source_path: "knowledge/20_qa/HR_인재분석관_QA.md"
 ---
 
 # HR_인재분석관 Q A 지식
 
 ## Source
 
-`data/knowledge_base/qa/HR_인재분석관_QA.md`
+`knowledge/20_qa/HR_인재분석관_QA.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/qa/HR_인재분석관_QA.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/20_qa/HR_인재분석관_QA.md`
 
 ## Category
 
-- [[MOC - AI Knowledge Base]]
+- [[MOC - Workspace Markdown]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, ai, api, base, bim, data, hr_, knowledge, knowledge_base, qa, qa.md, revit, 간섭, 개발, 교육, 역할, 온보딩, 조직, 지식, 지원, 커리큘럼
+add-in, api, bim, hr_, knowledge, markdown, qa, qa.md, revit, workspace, 간섭, 개발, 교육, 역할, 온보딩, 조직, 지식, 지원, 커리큘럼
 
 ## Related
 

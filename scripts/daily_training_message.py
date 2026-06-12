@@ -16,7 +16,12 @@ import urllib.request
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-USERS_FILE = PROJECT_ROOT / "data" / "team_requests" / "team_telegram_users.json"
+import sys as _sys  # noqa: E402
+if str(PROJECT_ROOT) not in _sys.path:
+    _sys.path.insert(0, str(PROJECT_ROOT))
+from backend.core.paths import TEAM_REQUESTS_DIR  # noqa: E402
+
+USERS_FILE = TEAM_REQUESTS_DIR / "team_telegram_users.json"
 
 # ────────────────────────────────────────────────
 # 1년차 Foundation 과정 일별 커리큘럼

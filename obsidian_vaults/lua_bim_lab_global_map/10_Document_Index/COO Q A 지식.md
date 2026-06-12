@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: AI Knowledge Base
-source_path: "data/knowledge_base/qa/COO_QA.md"
+category: Workspace Markdown
+source_path: "knowledge/20_qa/COO_QA.md"
 ---
 
 # COO Q A 지식
 
 ## Source
 
-`data/knowledge_base/qa/COO_QA.md`
+`knowledge/20_qa/COO_QA.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/qa/COO_QA.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/20_qa/COO_QA.md`
 
 ## Category
 
-- [[MOC - AI Knowledge Base]]
+- [[MOC - Workspace Markdown]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-ai, api, base, bim, coo_qa.md, cs, data, knowledge, knowledge_base, kpi, qa, 개발, 납품, 빌드, 스토어, 심사, 지식, 지원
+api, bim, coo_qa.md, cs, knowledge, kpi, markdown, qa, workspace, 개발, 납품, 빌드, 스토어, 심사, 지식, 지원
 
 ## Related
 
@@ -35,8 +35,8 @@ ai, api, base, bim, coo_qa.md, cs, data, knowledge, knowledge_base, kpi, qa, 개
 - [[Navisworks_Addin Q A 지식]]
 - [[QA_테스터 Q A 지식]]
 - [[Revit_Addin_QA]]
-- [[간섭검토 Q A 지식]]
 - [[건축 Q A 지식]]
+- [[견적서담당 Q A 지식]]
 
 ## Home
 

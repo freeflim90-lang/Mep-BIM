@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: AI Knowledge Base
-source_path: "data/knowledge_base/qa/제품패키징_QA.md"
+category: Workspace Markdown
+source_path: "knowledge/20_qa/제품패키징_QA.md"
 ---
 
 # 제품패키징 Q A 지식
 
 ## Source
 
-`data/knowledge_base/qa/제품패키징_QA.md`
+`knowledge/20_qa/제품패키징_QA.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/qa/제품패키징_QA.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/20_qa/제품패키징_QA.md`
 
 ## Category
 
-- [[MOC - AI Knowledge Base]]
+- [[MOC - Workspace Markdown]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, addin, ai, autodesk, base, bim, cs, data, knowledge, knowledge_base, qa, qa.md, revit, store, 권한, 라이선스, 보안, 빌드, 지식, 지원, 테스트, 패키징
+add-in, addin, autodesk, bim, cs, knowledge, markdown, qa, qa.md, revit, store, workspace, 권한, 라이선스, 보안, 빌드, 지식, 지원, 테스트, 패키징
 
 ## Related
 

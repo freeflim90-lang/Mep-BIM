@@ -30,13 +30,13 @@ auto_knowledge_gap_log.md, autodesk, bim, data, knowledge_quality, markdown, nav
 ## Related
 
 - [[BIM automation plan]]
+- [[고객지원CS Q A 지식]]
+- [[교육컨설팅 Q A 지식]]
+- [[라이선스결제 Q A 지식]]
+- [[프로그램개발 Q A 지식]]
 - [[Advanced BIM Coordination]]
 - [[BIM Autpmatic Coordination System]]
 - [[BIM Command Center]]
-- [[BIM Coordination Automation Package Master Index]]
-- [[BIM Coordination Automation Toolkit]]
-- [[BIM Coordination Toolbar design doc]]
-- [[BIM Coordinator 101]]
 
 ## Home
 

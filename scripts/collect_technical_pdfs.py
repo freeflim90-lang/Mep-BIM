@@ -19,7 +19,12 @@ import requests
 from bs4 import BeautifulSoup
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-PDF_OUTPUT = PROJECT_ROOT / "data" / "technical_pdfs"
+import sys as _sys  # noqa: E402
+if str(PROJECT_ROOT) not in _sys.path:
+    _sys.path.insert(0, str(PROJECT_ROOT))
+from backend.core.paths import TECHNICAL_PDFS_DIR  # noqa: E402
+
+PDF_OUTPUT = TECHNICAL_PDFS_DIR
 PDF_OUTPUT.mkdir(parents=True, exist_ok=True)
 
 HEADERS = {
@@ -168,7 +173,7 @@ def collect_direct_pdfs() -> int:
 def generate_text_knowledge_docs() -> int:
     """PDF 대신 구조화된 텍스트 지식 문서를 생성한다."""
     print("\n=== 텍스트 기반 기술 지식 문서 생성 ===")
-    text_output = PROJECT_ROOT / "data" / "technical_pdfs" / "text_knowledge"
+    text_output = TECHNICAL_PDFS_DIR / "text_knowledge"
     text_output.mkdir(parents=True, exist_ok=True)
 
     # 국내 소방법 기준 요약 문서

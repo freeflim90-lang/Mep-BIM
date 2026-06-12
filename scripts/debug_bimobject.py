@@ -1,11 +1,17 @@
 #!/usr/bin/env python3
 """BIMobject API 엔드포인트 탐지 — 네트워크 요청 캡처"""
 
+import sys
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 import time, json
 
-DEBUG_DIR = Path(__file__).resolve().parents[1] / "data" / "bimobject" / "debug"
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+from backend.core.paths import BIMOBJECT_DIR  # noqa: E402
+
+DEBUG_DIR = BIMOBJECT_DIR / "debug"
 DEBUG_DIR.mkdir(parents=True, exist_ok=True)
 
 URL = "https://www.bimobject.com/ko/search?categories=mep&software=revit&sort=downloads"

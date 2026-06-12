@@ -17,7 +17,12 @@ from pathlib import Path
 import requests
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-SCRIPTS_OUTPUT = Path(os.environ.get("BIM_SCRIPTS_OUTPUT_DIR", PROJECT_ROOT / "data" / "bim_scripts")).expanduser()
+import sys as _sys  # noqa: E402
+if str(PROJECT_ROOT) not in _sys.path:
+    _sys.path.insert(0, str(PROJECT_ROOT))
+from backend.core.paths import BIM_SCRIPTS_DIR  # noqa: E402
+
+SCRIPTS_OUTPUT = Path(os.environ.get("BIM_SCRIPTS_OUTPUT_DIR", BIM_SCRIPTS_DIR)).expanduser()
 SCRIPTS_OUTPUT.mkdir(parents=True, exist_ok=True)
 
 

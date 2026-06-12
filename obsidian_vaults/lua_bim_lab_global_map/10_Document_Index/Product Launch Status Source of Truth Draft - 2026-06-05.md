@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/conflict_resolution/PRODUCT_LAUNCH_STATUS_SOURCE_OF_TRUTH_DRAFT_20260605.md"
+source_path: "knowledge/10_agents/conflict_resolution/PRODUCT_LAUNCH_STATUS_SOURCE_OF_TRUTH_DRAFT_20260605.md"
 ---
 
 # Product Launch Status Source of Truth Draft - 2026-06-05
 
 ## Source
 
-`data/knowledge_base/conflict_resolution/PRODUCT_LAUNCH_STATUS_SOURCE_OF_TRUTH_DRAFT_20260605.md`
+`knowledge/10_agents/conflict_resolution/PRODUCT_LAUNCH_STATUS_SOURCE_OF_TRUTH_DRAFT_20260605.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/conflict_resolution/PRODUCT_LAUNCH_STATUS_SOURCE_OF_TRUTH_DRAFT_20260605.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/conflict_resolution/PRODUCT_LAUNCH_STATUS_SOURCE_OF_TRUTH_DRAFT_20260605.md`
 
 ## Category
 
@@ -25,18 +25,18 @@ Absolute path:
 
 ## Keywords
 
-ai, base, bim, conflict_resolution, cs, data, knowledge, knowledge_base, mep, product_launch_status_source_of_truth_draft_20260605.md, store, 결제, 교육, 구독, 리스크, 지원, 커리큘럼
+agents, ai, base, bim, conflict_resolution, cs, knowledge, mep, product_launch_status_source_of_truth_draft_20260605.md, store, 결제, 교육, 구독, 리스크, 지원, 커리큘럼
 
 ## Related
 
-- [[AI Collaboration Automated Audit - 2026-06]]
 - [[AI Collaboration Daily Handoff - 2026-06-06]]
 - [[AI 간 판단 충돌 로그]]
 - [[AI 협업 세션 등록부 - 2026-06]]
 - [[AI 협업 프로세스 테스트 계획]]
 - [[ESCALATED Missing Evidence Matrix - 2026-06-06]]
-- [[ESCALATED Redecision Execution Playbook - 2026-06-06]]
 - [[ESCALATION SLA Tracker - 2026-06]]
+- [[KST04 Customer Response Promotion Source of Truth Draft - 2026-06-06]]
+- [[KST04 Promotion Missing Evidence Matrix - 2026-06-06]]
 
 ## Home
 

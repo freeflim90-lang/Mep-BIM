@@ -17,9 +17,14 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+import sys as _sys  # noqa: E402
+if str(ROOT) not in _sys.path:
+    _sys.path.insert(0, str(ROOT))
+from backend.core.paths import BIM_EDUCATION_DIR, STARTER_PLAN_DIR  # noqa: E402
+
 OUTBOUND_DB = ROOT / "scripts" / "outbound_sales" / "data" / "companies.db"
-CLIENTS_JSON    = ROOT / "data" / "starter_plan" / "clients.json"
-EDUCATION_JSON  = ROOT / "data" / "bim_education" / "progress.json"
+CLIENTS_JSON    = STARTER_PLAN_DIR / "clients.json"
+EDUCATION_JSON  = BIM_EDUCATION_DIR / "progress.json"
 BUDGET_JSON     = ROOT / "data" / "ai_usage" / "deepseek_monthly_budget.json"
 
 

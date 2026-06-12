@@ -19,6 +19,13 @@ import urllib.request
 
 from blogger_publish import load_credentials, resolve_blog_id
 
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+import sys as _sys  # noqa: E402
+if str(PROJECT_ROOT) not in _sys.path:
+    _sys.path.insert(0, str(PROJECT_ROOT))
+from backend.core.paths import BLOGGER_QUEUE_DIR  # noqa: E402
+
+_BLOGGER_QUEUE_REL = BLOGGER_QUEUE_DIR.relative_to(PROJECT_ROOT).as_posix()
 
 DEFAULT_BLOG_URL = "https://engineer250212.blogspot.com/"
 DEFAULT_LABELS = ["MEP BIM", "LUA BIM LABS", "Revit MEP", "BIM Training"]
@@ -241,7 +248,7 @@ def _check_queue_alert(queue_dir: Path, threshold: int = 5) -> None:
             f"큐 잔여 포스트: {remaining}개 (기준: {threshold}개 미만)\n\n"
             f"Claude Code에서 새 글을 생성해 큐를 보충해주세요.\n"
             f"목표: 10개 유지\n"
-            f"경로: content/blogger_queue/"
+            f"경로: {_BLOGGER_QUEUE_REL}/"
         )
         print(message)
         _send_telegram(message)
@@ -610,7 +617,7 @@ def enable_daily_agent(plist_path: Path) -> None:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Publish one queued LUA BIM LABS Blogger post.")
-    parser.add_argument("--queue-dir", default="content/blogger_queue")
+    parser.add_argument("--queue-dir", default=str(BLOGGER_QUEUE_DIR))
     parser.add_argument("--seed-topics", action="store_true")
     parser.add_argument("--client-secrets", default="config/blogger/client_secret.json")
     parser.add_argument("--client-id-env", default="BLOGGER_CLIENT_ID")

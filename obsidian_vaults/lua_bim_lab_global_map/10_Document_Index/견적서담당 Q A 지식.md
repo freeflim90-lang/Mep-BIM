@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: AI Knowledge Base
-source_path: "data/knowledge_base/qa/견적서담당_QA.md"
+category: Workspace Markdown
+source_path: "knowledge/20_qa/견적서담당_QA.md"
 ---
 
 # 견적서담당 Q A 지식
 
 ## Source
 
-`data/knowledge_base/qa/견적서담당_QA.md`
+`knowledge/20_qa/견적서담당_QA.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/qa/견적서담당_QA.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/20_qa/견적서담당_QA.md`
 
 ## Category
 
-- [[MOC - AI Knowledge Base]]
+- [[MOC - Workspace Markdown]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, ai, base, bim, data, knowledge, knowledge_base, mep, qa, qa.md, revit, store, 간섭, 개발, 견적, 라이선스, 물량, 변경, 스토어, 지식, 지원, 테스트, 패키징
+add-in, bim, knowledge, markdown, mep, qa, qa.md, revit, store, workspace, 간섭, 개발, 견적, 라이선스, 물량, 변경, 스토어, 지식, 지원, 테스트, 패키징
 
 ## Related
 

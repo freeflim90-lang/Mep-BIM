@@ -48,7 +48,7 @@ def test_bim_command_center_router_saves_and_lists_settings_profiles(tmp_path):
 
     assert saved.status_code == 200
     assert saved.json()["status"] == "saved"
-    assert saved.json()["path"] == "data/bim_command_center/settings_profiles/office/office-default.json"
+    assert saved.json()["path"] == "products/bim_command_center/settings_profiles/office/office-default.json"
     assert listed.json()["status"] == "ok"
     assert listed.json()["profiles"] == [
         {
@@ -56,7 +56,7 @@ def test_bim_command_center_router_saves_and_lists_settings_profiles(tmp_path):
             "scope": "office",
             "version": "1.0",
             "description": "Default office profile",
-            "path": str(tmp_path / "data" / "bim_command_center" / "settings_profiles" / "office" / "office-default.json"),
+            "path": str(tmp_path / "products" / "bim_command_center" / "settings_profiles" / "office" / "office-default.json"),
         }
     ]
 

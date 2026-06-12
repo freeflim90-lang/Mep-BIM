@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: AI Knowledge Base
-source_path: "data/knowledge_base/qa/고객지원CS_QA.md"
+category: Workspace Markdown
+source_path: "knowledge/20_qa/고객지원CS_QA.md"
 ---
 
 # 고객지원CS Q A 지식
 
 ## Source
 
-`data/knowledge_base/qa/고객지원CS_QA.md`
+`knowledge/20_qa/고객지원CS_QA.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/qa/고객지원CS_QA.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/20_qa/고객지원CS_QA.md`
 
 ## Category
 
-- [[MOC - AI Knowledge Base]]
+- [[MOC - Workspace Markdown]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, addin, ai, api, autodesk, base, bim, clash, cs, cs_qa.md, data, knowledge, knowledge_base, qa, revit, store, 견적, 결제, 구독, 납품, 라이선스, 보안, 지식, 지원, 품질
+add-in, addin, api, autodesk, bim, clash, cs, cs_qa.md, knowledge, markdown, qa, revit, store, workspace, 견적, 결제, 구독, 납품, 라이선스, 보안, 지식, 지원, 품질
 
 ## Related
 

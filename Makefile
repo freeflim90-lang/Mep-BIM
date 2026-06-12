@@ -14,7 +14,7 @@ test:
 	$(PYTHON) -m pytest -q
 
 audit-secrets:
-	@if git grep -n -E '(GOCSPX-|ya29\.|1//[A-Za-z0-9_-]{20,}|sk-[A-Za-z0-9]{20,})' -- ':!Makefile' ':!data/**' ':!dist/**' ':!obsidian_vaults/**' ':!config/*/token.json'; then \
+	@if git grep -n -E '(GOCSPX-|ya29\.|1//[A-Za-z0-9_-]{20,}|sk-[A-Za-z0-9]{20,})' -- ':!Makefile' ':!data/**' ':!knowledge/**' ':!products/**' ':!dist/**' ':!obsidian_vaults/**' ':!config/*/token.json'; then \
 		echo "Potential tracked secret patterns found."; \
 		exit 1; \
 	else \

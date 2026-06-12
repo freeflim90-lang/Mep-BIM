@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/conflict_resolution/cases/AITEST_20260605_008.md"
+source_path: "knowledge/10_agents/conflict_resolution/cases/AITEST_20260605_008.md"
 ---
 
 # AITEST_20260605_008 PRECEDENT 승격 및 재사용 테스트
 
 ## Source
 
-`data/knowledge_base/conflict_resolution/cases/AITEST_20260605_008.md`
+`knowledge/10_agents/conflict_resolution/cases/AITEST_20260605_008.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/conflict_resolution/cases/AITEST_20260605_008.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/conflict_resolution/cases/AITEST_20260605_008.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-ai, aitest_20260605_008.md, base, cases, clash, conflict_resolution, cs, data, knowledge, knowledge_base, qa, sow, 견적, 교육, 리스크, 변경, 심사, 역할, 지식, 지원, 테스트
+agents, ai, aitest_20260605_008.md, base, cases, clash, conflict_resolution, cs, knowledge, qa, sow, 견적, 교육, 리스크, 변경, 심사, 역할, 지식, 지원, 테스트
 
 ## Related
 

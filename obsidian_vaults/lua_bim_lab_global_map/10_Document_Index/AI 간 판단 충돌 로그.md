@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/conflict_resolution/CONFLICT_LOG.md"
+source_path: "knowledge/10_agents/conflict_resolution/CONFLICT_LOG.md"
 ---
 
 # AI 간 판단 충돌 로그
 
 ## Source
 
-`data/knowledge_base/conflict_resolution/CONFLICT_LOG.md`
+`knowledge/10_agents/conflict_resolution/CONFLICT_LOG.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/conflict_resolution/CONFLICT_LOG.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/conflict_resolution/CONFLICT_LOG.md`
 
 ## Category
 
@@ -25,11 +25,11 @@ Absolute path:
 
 ## Keywords
 
-ai, base, clash, conflict_log.md, conflict_resolution, cs, data, knowledge, knowledge_base, qa, sow, 견적, 납품, 라이선스, 리스크, 보안, 심사, 역할, 온보딩, 지식, 지원, 품질
+agents, ai, base, clash, conflict_log.md, conflict_resolution, cs, knowledge, qa, sow, 견적, 납품, 라이선스, 리스크, 보안, 심사, 역할, 온보딩, 지식, 지원, 품질
 
 ## Related
 
-- [[AI Collaboration Automated Audit - 2026-06]]
+- [[10_agents - conflict_resolution - 10_agents - conflict_resolution - AI 간 판단 충돌 해소 체계]]
 - [[AI Collaboration Daily Handoff - 2026-06-06]]
 - [[AI 협업 세션 등록부 - 2026-06]]
 - [[AI 협업 프로세스 테스트 계획]]

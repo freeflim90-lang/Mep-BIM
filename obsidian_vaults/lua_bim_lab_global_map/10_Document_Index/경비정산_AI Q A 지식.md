@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: AI Knowledge Base
-source_path: "data/knowledge_base/qa/경비정산_AI_QA.md"
+category: Workspace Markdown
+source_path: "knowledge/20_qa/경비정산_AI_QA.md"
 ---
 
 # 경비정산_AI Q A 지식
 
 ## Source
 
-`data/knowledge_base/qa/경비정산_AI_QA.md`
+`knowledge/20_qa/경비정산_AI_QA.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/qa/경비정산_AI_QA.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/20_qa/경비정산_AI_QA.md`
 
 ## Category
 
-- [[MOC - AI Knowledge Base]]
+- [[MOC - Workspace Markdown]]
 
 ## Summary
 
@@ -25,18 +25,18 @@ Absolute path:
 
 ## Keywords
 
-ai, ai_qa.md, base, bim, data, knowledge, knowledge_base, qa, 결제, 권한, 지식, 회의
+ai_qa.md, bim, knowledge, markdown, qa, workspace, 결제, 권한, 지식, 회의
 
 ## Related
 
+- [[라이선스결제 Q A 지식]]
 - [[CEO Q A 지식]]
 - [[CFO Q A 지식]]
-- [[COO Q A 지식]]
-- [[HR_인재분석관 Q A 지식]]
-- [[Navisworks_Addin Q A 지식]]
 - [[QA_테스터 Q A 지식]]
-- [[Revit_Addin_QA]]
-- [[간섭검토 Q A 지식]]
+- [[고객지원CS Q A 지식]]
+- [[제품패키징 Q A 지식]]
+- [[조율차장 Q A 지식]]
+- [[지식업데이트_QA]]
 
 ## Home
 

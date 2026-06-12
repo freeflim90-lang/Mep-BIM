@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/Dynamo.md"
+source_path: "knowledge/10_agents/90_확장에이전트/Dynamo.md"
 ---
 
 # Dynamo 지식 베이스
 
 ## Source
 
-`data/knowledge_base/Dynamo.md`
+`knowledge/10_agents/90_확장에이전트/Dynamo.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/Dynamo.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/90_확장에이전트/Dynamo.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, addin, ai, api, autodesk, base, bim, cs, data, dynamo.md, knowledge, knowledge_base, mep, model, okr, revit, store, 간섭, 개발, 변경, 지식
+add-in, addin, agents, ai, api, autodesk, base, bim, cs, dynamo.md, knowledge, mep, model, okr, revit, store, 간섭, 개발, 변경, 지식
 
 ## Related
 
@@ -36,7 +36,7 @@ add-in, addin, ai, api, autodesk, base, bim, cs, data, dynamo.md, knowledge, kno
 - [[AX 전략승격리뷰 지식 베이스]]
 - [[BEP 수행계획서 템플릿]]
 - [[BIM 납품검수 지식 베이스]]
-- [[BIM 등급별 투입일 기준표 마스터 스케줄 입력용]]
+- [[BIM 시방서 지식 베이스]]
 
 ## Home
 

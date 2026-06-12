@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/BIMobject_패밀리_인덱스.md"
+source_path: "knowledge/10_agents/90_확장에이전트/BIMobject_패밀리_인덱스.md"
 ---
 
 # BIMobject 패밀리 라이브러리 인덱스
 
 ## Source
 
-`data/knowledge_base/BIMobject_패밀리_인덱스.md`
+`knowledge/10_agents/90_확장에이전트/BIMobject_패밀리_인덱스.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/BIMobject_패밀리_인덱스.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/90_확장에이전트/BIMobject_패밀리_인덱스.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-ai, base, bim, bimobject_, cs, data, knowledge, knowledge_base, mep, model, revit, 보안
+agents, ai, base, bim, bimobject_, cs, knowledge, mep, model, revit, 보안
 
 ## Related
 
@@ -34,9 +34,9 @@ ai, base, bim, bimobject_, cs, data, knowledge, knowledge_base, mep, model, revi
 - [[AI 협업운영체계 지식 베이스]]
 - [[AX 시간별 신호모니터링 지식 베이스]]
 - [[AX 전략승격리뷰 지식 베이스]]
-- [[BEP 수행계획서 템플릿]]
-- [[BIM 납품검수 지식 베이스]]
 - [[BIM 시방서 지식 베이스]]
+- [[BIM 시장 규모 분석 지식 베이스]]
+- [[BIM 지침서 지식 베이스]]
 
 ## Home
 

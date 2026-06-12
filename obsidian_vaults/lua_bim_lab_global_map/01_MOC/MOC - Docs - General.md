@@ -2,7 +2,7 @@
 type: category-moc
 category: Docs - General
 generated: true
-count: 285
+count: 286
 ---
 
 # MOC - Docs - General
@@ -216,6 +216,7 @@ count: 285
 - [[2026-06-12 Daily Knowledge Update]] — `docs/knowledge_updates/daily/2026-06-12_DAILY_KNOWLEDGE_UPDATE.md`
 - [[2026-06-12 건설 설계 시공 BIM 데일리 브리핑]] — `docs/industry_intelligence/daily/2026-06-12_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md`
 - [[2026-06-13 00 00 LUA BIM LABS 추론 훈련 다이제스트]] — `docs/reasoning_training/2026-06-13/0000_LUA_REASONING_TRAINING_DIGEST.md`
+- [[2026-06-13 07 11 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-13/0711_AX_SIGNAL_MONITOR.md`
 - [[2026-06-13 Daily Knowledge Curation Review]] — `docs/knowledge_updates/curation/2026-06-13_DAILY_KNOWLEDGE_CURATION.md`
 - [[2026-06-13 Daily Knowledge Update]] — `docs/knowledge_updates/daily/2026-06-13_DAILY_KNOWLEDGE_UPDATE.md`
 - [[2026-06-13 건설 설계 시공 BIM 데일리 브리핑]] — `docs/industry_intelligence/daily/2026-06-13_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md`

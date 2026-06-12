@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: AI Knowledge Base
-source_path: "data/knowledge_base/qa/요구사항분석_QA.md"
+category: Workspace Markdown
+source_path: "knowledge/20_qa/요구사항분석_QA.md"
 ---
 
 # 요구사항분석 Q A 지식
 
 ## Source
 
-`data/knowledge_base/qa/요구사항분석_QA.md`
+`knowledge/20_qa/요구사항분석_QA.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/qa/요구사항분석_QA.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/20_qa/요구사항분석_QA.md`
 
 ## Category
 
-- [[MOC - AI Knowledge Base]]
+- [[MOC - Workspace Markdown]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-ai, api, base, bim, data, knowledge, knowledge_base, qa, qa.md, 개발, 견적, 라이선스, 변경, 보안, 심사, 지식
+api, bim, knowledge, markdown, qa, qa.md, workspace, 개발, 견적, 라이선스, 변경, 보안, 심사, 지식
 
 ## Related
 

@@ -23,7 +23,12 @@ except ImportError:
     sys.exit(1)
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-CARDS_DIR = PROJECT_ROOT / "data" / "starter_plan" / "reference_cards"
+import sys as _sys  # noqa: E402
+if str(PROJECT_ROOT) not in _sys.path:
+    _sys.path.insert(0, str(PROJECT_ROOT))
+from backend.core.paths import STARTER_PLAN_DIR  # noqa: E402
+
+CARDS_DIR = STARTER_PLAN_DIR / "reference_cards"
 
 # LUA BIM LABS brand colors (approximate in RGB)
 COLOR_BRAND_DARK = (15, 23, 42)       # slate-900

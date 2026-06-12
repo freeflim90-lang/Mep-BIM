@@ -22,6 +22,11 @@ import urllib.request
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
+import sys as _sys  # noqa: E402
+if str(PROJECT_ROOT) not in _sys.path:
+    _sys.path.insert(0, str(PROJECT_ROOT))
+from backend.core.paths import BIM_EDUCATION_DIR  # noqa: E402
+
 sys.path.insert(0, str(PROJECT_ROOT / "scripts" / "bim_education"))
 from topics import TOPICS_1YR, TOPICS_2YR
 from topics_extended import (
@@ -41,7 +46,7 @@ ALL_TRACKS = {
     "19yr": TOPICS_19YR, "20yr": TOPICS_20YR,
 }
 
-MESSAGES_DIR = PROJECT_ROOT / "data" / "bim_education" / "messages"
+MESSAGES_DIR = BIM_EDUCATION_DIR / "messages"
 OLLAMA_URL = "http://127.0.0.1:11434/api/generate"
 OLLAMA_MODEL = "qwen2.5:7b"
 

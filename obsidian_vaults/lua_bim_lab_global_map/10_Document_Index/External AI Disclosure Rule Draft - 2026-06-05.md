@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/conflict_resolution/EXTERNAL_AI_DISCLOSURE_RULE_DRAFT_20260605.md"
+source_path: "knowledge/10_agents/conflict_resolution/EXTERNAL_AI_DISCLOSURE_RULE_DRAFT_20260605.md"
 ---
 
 # External AI Disclosure Rule Draft - 2026-06-05
 
 ## Source
 
-`data/knowledge_base/conflict_resolution/EXTERNAL_AI_DISCLOSURE_RULE_DRAFT_20260605.md`
+`knowledge/10_agents/conflict_resolution/EXTERNAL_AI_DISCLOSURE_RULE_DRAFT_20260605.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/conflict_resolution/EXTERNAL_AI_DISCLOSURE_RULE_DRAFT_20260605.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/conflict_resolution/EXTERNAL_AI_DISCLOSURE_RULE_DRAFT_20260605.md`
 
 ## Category
 
@@ -25,18 +25,18 @@ Absolute path:
 
 ## Keywords
 
-ai, api, base, bim, conflict_resolution, cs, data, external_ai_disclosure_rule_draft_20260605.md, knowledge, knowledge_base, 라이선스, 보안
+agents, ai, api, base, bim, conflict_resolution, cs, external_ai_disclosure_rule_draft_20260605.md, knowledge, 라이선스, 보안
 
 ## Related
 
-- [[AI Collaboration Daily Handoff - 2026-06-06]]
+- [[10_agents - conflict_resolution - 10_agents - conflict_resolution - AI 간 판단 충돌 해소 체계]]
 - [[AI 간 판단 충돌 로그]]
 - [[AI 협업 세션 등록부 - 2026-06]]
 - [[AI 협업 프로세스 테스트 계획]]
 - [[ESCALATED Missing Evidence Matrix - 2026-06-06]]
+- [[AI Collaboration Daily Handoff - 2026-06-06]]
 - [[ESCALATED Redecision Execution Playbook - 2026-06-06]]
 - [[ESCALATION SLA Tracker - 2026-06]]
-- [[Product Launch Status Source of Truth Draft - 2026-06-05]]
 
 ## Home
 

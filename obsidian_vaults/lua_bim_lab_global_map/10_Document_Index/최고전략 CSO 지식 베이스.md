@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/최고전략CSO.md"
+source_path: "knowledge/10_agents/90_확장에이전트/최고전략CSO.md"
 ---
 
 # 최고전략 CSO 지식 베이스
 
 ## Source
 
-`data/knowledge_base/최고전략CSO.md`
+`knowledge/10_agents/90_확장에이전트/최고전략CSO.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/최고전략CSO.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/90_확장에이전트/최고전략CSO.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, ai, api, audit, autodesk, base, bim, cs, cso.md, data, knowledge, knowledge_base, mep, model, navisworks, okr, qa, quality, revit, store, 개발, 교육, 구독, 납품, 라이선스, 리스크, 변경, 스토어, 심사, 역할
+add-in, agents, ai, api, audit, autodesk, base, bim, cs, cso.md, knowledge, mep, model, navisworks, okr, qa, quality, revit, store, 개발, 교육, 구독, 납품, 라이선스, 리스크, 변경, 스토어, 심사, 역할, 자산
 
 ## Related
 

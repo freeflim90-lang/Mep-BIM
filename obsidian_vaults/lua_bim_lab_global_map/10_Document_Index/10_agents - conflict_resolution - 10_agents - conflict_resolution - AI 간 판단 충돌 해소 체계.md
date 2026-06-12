@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/conflict_resolution/README.md"
+source_path: "knowledge/10_agents/conflict_resolution/README.md"
 ---
 
-# knowledge_base - conflict_resolution - AI 간 판단 충돌 해소 체계
+# 10_agents - conflict_resolution - AI 간 판단 충돌 해소 체계
 
 ## Source
 
-`data/knowledge_base/conflict_resolution/README.md`
+`knowledge/10_agents/conflict_resolution/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/conflict_resolution/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/conflict_resolution/README.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-ai, base, bim, conflict_resolution, cs, data, knowledge, knowledge_base, readme.md, 납품, 보안, 역할, 지식, 테스트, 품질
+agents, ai, base, bim, conflict_resolution, cs, knowledge, readme.md, 납품, 보안, 역할, 지식, 테스트, 품질
 
 ## Related
 
@@ -33,10 +33,10 @@ ai, base, bim, conflict_resolution, cs, data, knowledge, knowledge_base, readme.
 - [[AI 협업 세션 등록부 - 2026-06]]
 - [[AI 협업 프로세스 테스트 계획]]
 - [[ESCALATED Missing Evidence Matrix - 2026-06-06]]
-- [[ESCALATED Redecision Execution Playbook - 2026-06-06]]
 - [[ESCALATION SLA Tracker - 2026-06]]
 - [[External AI Disclosure Rule Draft - 2026-06-05]]
-- [[KST04 Customer Response Promotion Source of Truth Draft - 2026-06-06]]
+- [[KST04 Promotion Missing Evidence Matrix - 2026-06-06]]
+- [[TEST_ROUND_20260605_001 AI 협업 프로세스 다방향 검증 요약]]
 
 ## Home
 

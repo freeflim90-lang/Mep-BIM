@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/BIM_인력파견_기준.md"
+source_path: "knowledge/10_agents/90_확장에이전트/BIM_인력파견_기준.md"
 ---
 
 # BIM 프로젝트 인력 파견 기준 내부 기준
 
 ## Source
 
-`data/knowledge_base/BIM_인력파견_기준.md`
+`knowledge/10_agents/90_확장에이전트/BIM_인력파견_기준.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/BIM_인력파견_기준.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/90_확장에이전트/BIM_인력파견_기준.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, ai, base, bim, bim_, data, knowledge, knowledge_base, mep, navisworks, revit, 간섭, 교육, 납품, 리스크, 물량, 변경, 역할, 지원, 품질, 회의
+add-in, agents, ai, base, bim, bim_, knowledge, mep, navisworks, revit, 간섭, 교육, 납품, 리스크, 물량, 변경, 역할, 지원, 품질, 회의
 
 ## Related
 

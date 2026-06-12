@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/BIM_시장_규모분석.md"
+source_path: "knowledge/10_agents/90_확장에이전트/BIM_시장_규모분석.md"
 ---
 
 # BIM 시장 규모 분석 지식 베이스
 
 ## Source
 
-`data/knowledge_base/BIM_시장_규모분석.md`
+`knowledge/10_agents/90_확장에이전트/BIM_시장_규모분석.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/BIM_시장_규모분석.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/90_확장에이전트/BIM_시장_규모분석.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, ai, api, audit, autodesk, base, bim, bim_, cs, data, knowledge, knowledge_base, mep, model, quality, revit, store, 개발, 견적, 교육, 구독, 납품, 변경, 지식, 지원, 커리큘럼, 품질
+add-in, agents, ai, api, audit, autodesk, base, bim, bim_, cs, knowledge, mep, model, quality, revit, store, 개발, 견적, 교육, 구독, 납품, 변경, 지식, 지원, 커리큘럼, 품질
 
 ## Related
 

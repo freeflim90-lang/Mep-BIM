@@ -7,7 +7,12 @@ import json
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-STARTER_DIR = PROJECT_ROOT / "data" / "starter_plan"
+import sys as _sys  # noqa: E402
+if str(PROJECT_ROOT) not in _sys.path:
+    _sys.path.insert(0, str(PROJECT_ROOT))
+from backend.core.paths import STARTER_PLAN_DIR  # noqa: E402
+
+STARTER_DIR = STARTER_PLAN_DIR
 MESSAGES_DIR = STARTER_DIR / "messages"
 CURRICULUM_FILE = STARTER_DIR / "starter_plan_curriculum.json"
 OBSIDIAN_INDEX = (

@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/conflict_resolution/cases/AITEST_20260606_027.md"
+source_path: "knowledge/10_agents/conflict_resolution/cases/AITEST_20260606_027.md"
 ---
 
 # AITEST_20260606_027 Decision Log Draft 필드 정합성 자동 감사
 
 ## Source
 
-`data/knowledge_base/conflict_resolution/cases/AITEST_20260606_027.md`
+`knowledge/10_agents/conflict_resolution/cases/AITEST_20260606_027.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/conflict_resolution/cases/AITEST_20260606_027.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/conflict_resolution/cases/AITEST_20260606_027.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-ai, aitest_20260606_027.md, audit, base, cases, conflict_resolution, data, knowledge, knowledge_base, qa, 변경, 테스트
+agents, ai, aitest_20260606_027.md, audit, base, cases, conflict_resolution, knowledge, qa, 변경, 테스트
 
 ## Related
 

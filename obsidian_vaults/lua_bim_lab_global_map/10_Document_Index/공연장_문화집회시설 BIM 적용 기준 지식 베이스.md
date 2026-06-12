@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/시설유형/공연장_문화집회시설_BIM.md"
+source_path: "knowledge/10_agents/시설유형/공연장_문화집회시설_BIM.md"
 ---
 
 # 공연장_문화집회시설 BIM 적용 기준 지식 베이스
 
 ## Source
 
-`data/knowledge_base/시설유형/공연장_문화집회시설_BIM.md`
+`knowledge/10_agents/시설유형/공연장_문화집회시설_BIM.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/시설유형/공연장_문화집회시설_BIM.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/시설유형/공연장_문화집회시설_BIM.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-ai, api, audit, base, bim, bim.md, cs, data, knowledge, knowledge_base, mep, 간섭, 교육, 지식
+agents, ai, api, audit, base, bim, bim.md, cs, knowledge, mep, 간섭, 교육, 지식
 
 ## Related
 

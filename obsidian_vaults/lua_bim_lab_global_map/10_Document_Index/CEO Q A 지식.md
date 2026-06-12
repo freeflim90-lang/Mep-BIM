@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: AI Knowledge Base
-source_path: "data/knowledge_base/qa/CEO_QA.md"
+category: Workspace Markdown
+source_path: "knowledge/20_qa/CEO_QA.md"
 ---
 
 # CEO Q A 지식
 
 ## Source
 
-`data/knowledge_base/qa/CEO_QA.md`
+`knowledge/20_qa/CEO_QA.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/qa/CEO_QA.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/20_qa/CEO_QA.md`
 
 ## Category
 
-- [[MOC - AI Knowledge Base]]
+- [[MOC - Workspace Markdown]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-ai, api, autodesk, base, bim, ceo_qa.md, data, knowledge, knowledge_base, qa, revit, roi, store, 개발, 결제, 구독, 라이선스, 스토어, 심사, 지식, 지원
+api, autodesk, bim, ceo_qa.md, knowledge, markdown, qa, revit, roi, store, workspace, 개발, 결제, 구독, 라이선스, 스토어, 심사, 지식, 지원
 
 ## Related
 
@@ -35,8 +35,8 @@ ai, api, autodesk, base, bim, ceo_qa.md, data, knowledge, knowledge_base, qa, re
 - [[Navisworks_Addin Q A 지식]]
 - [[QA_테스터 Q A 지식]]
 - [[Revit_Addin_QA]]
-- [[간섭검토 Q A 지식]]
 - [[건축 Q A 지식]]
+- [[견적서담당 Q A 지식]]
 
 ## Home
 

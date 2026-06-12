@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/ACC_BIM360.md"
+source_path: "knowledge/10_agents/90_확장에이전트/ACC_BIM360.md"
 ---
 
 # ACC BIM360 CDE 지식 베이스
 
 ## Source
 
-`data/knowledge_base/ACC_BIM360.md`
+`knowledge/10_agents/90_확장에이전트/ACC_BIM360.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/ACC_BIM360.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/90_확장에이전트/ACC_BIM360.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-acc_bim360.md, add-in, addin, ai, api, autodesk, base, bim, clash, cs, data, knowledge, knowledge_base, kpi, mep, model, navisworks, revit, 간섭, 개발, 권한, 납품, 물량, 변경, 지식, 지원, 품질
+acc_bim360.md, add-in, addin, agents, ai, api, autodesk, base, bim, clash, cs, knowledge, kpi, mep, model, navisworks, revit, 간섭, 개발, 권한, 납품, 물량, 변경, 지식, 지원, 품질
 
 ## Related
 

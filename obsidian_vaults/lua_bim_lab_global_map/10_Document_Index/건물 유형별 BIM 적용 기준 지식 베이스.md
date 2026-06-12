@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/건물유형별_BIM적용기준.md"
+source_path: "knowledge/10_agents/90_확장에이전트/건물유형별_BIM적용기준.md"
 ---
 
 # 건물 유형별 BIM 적용 기준 지식 베이스
 
 ## Source
 
-`data/knowledge_base/건물유형별_BIM적용기준.md`
+`knowledge/10_agents/90_확장에이전트/건물유형별_BIM적용기준.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/건물유형별_BIM적용기준.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/90_확장에이전트/건물유형별_BIM적용기준.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, ai, base, bim, cs, data, knowledge, knowledge_base, mep, model, revit, 개발, 교육, 납품, 변경, 지식
+add-in, agents, ai, base, bim, cs, knowledge, mep, model, revit, 개발, 교육, 납품, 변경, 지식
 
 ## Related
 

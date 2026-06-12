@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/BIM_납품검수.md"
+source_path: "knowledge/10_agents/90_확장에이전트/BIM_납품검수.md"
 ---
 
 # BIM 납품검수 지식 베이스
 
 ## Source
 
-`data/knowledge_base/BIM_납품검수.md`
+`knowledge/10_agents/90_확장에이전트/BIM_납품검수.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/BIM_납품검수.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/90_확장에이전트/BIM_납품검수.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-ai, api, audit, autodesk, base, bim, bim_, clash, cs, data, knowledge, knowledge_base, model, navisworks, qa, quality, 간섭, 개발, 견적, 납품, 리스크, 변경, 심사, 지식, 지원, 테스트, 품질, 회의
+agents, ai, api, audit, autodesk, base, bim, bim_, clash, cs, knowledge, model, navisworks, qa, quality, 간섭, 개발, 견적, 납품, 리스크, 변경, 심사, 지식, 지원, 테스트, 품질, 회의
 
 ## Related
 

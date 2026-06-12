@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/시설유형/병원_의료시설_BIM.md"
+source_path: "knowledge/10_agents/시설유형/병원_의료시설_BIM.md"
 ---
 
 # 병원 의료시설 BIM 적용 기준 지식 베이스
 
 ## Source
 
-`data/knowledge_base/시설유형/병원_의료시설_BIM.md`
+`knowledge/10_agents/시설유형/병원_의료시설_BIM.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/시설유형/병원_의료시설_BIM.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/시설유형/병원_의료시설_BIM.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-ai, base, bim, bim.md, cs, data, knowledge, knowledge_base, mep, model, 간섭, 지식
+agents, ai, base, bim, bim.md, cs, knowledge, mep, model, 간섭, 지식
 
 ## Related
 

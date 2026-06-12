@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/conflict_resolution/cases/AITEST_20260606_028.md"
+source_path: "knowledge/10_agents/conflict_resolution/cases/AITEST_20260606_028.md"
 ---
 
 # AITEST_20260606_028 ESCALATED 재판정 결과 적용 리허설
 
 ## Source
 
-`data/knowledge_base/conflict_resolution/cases/AITEST_20260606_028.md`
+`knowledge/10_agents/conflict_resolution/cases/AITEST_20260606_028.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/conflict_resolution/cases/AITEST_20260606_028.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/conflict_resolution/cases/AITEST_20260606_028.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-ai, aitest_20260606_028.md, base, cases, conflict_resolution, cs, data, knowledge, knowledge_base, qa, 라이선스, 보안, 지원, 테스트
+agents, ai, aitest_20260606_028.md, base, cases, conflict_resolution, cs, knowledge, qa, 라이선스, 보안, 지원, 테스트
 
 ## Related
 

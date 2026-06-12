@@ -12,9 +12,9 @@ import json
 import os
 from pathlib import Path
 
-from backend.core.paths import DATA_DIR, PROJECT_ROOT
+from backend.core.paths import PROJECT_ROOT, TEAM_REQUESTS_DIR
 
-_CSUITE_LOG_FILE = DATA_DIR / "team_requests" / "csuite_decisions.json"
+_CSUITE_LOG_FILE = TEAM_REQUESTS_DIR / "csuite_decisions.json"
 
 CSUITE_AGENTS = ["CEO", "COO", "CFO"]
 

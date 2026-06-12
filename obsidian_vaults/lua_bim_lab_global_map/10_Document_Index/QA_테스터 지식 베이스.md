@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/QA_테스터.md"
+source_path: "knowledge/10_agents/90_확장에이전트/QA_테스터.md"
 ---
 
 # QA_테스터 지식 베이스
 
 ## Source
 
-`data/knowledge_base/QA_테스터.md`
+`knowledge/10_agents/90_확장에이전트/QA_테스터.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/QA_테스터.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/90_확장에이전트/QA_테스터.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, addin, ai, api, autodesk, base, bim, clash, cs, data, knowledge, knowledge_base, mep, model, navisworks, qa, qa_, quality, revit, store, 간섭, 개발, 납품, 라이선스, 변경, 빌드, 스토어, 역할, 지식, 지원
+add-in, addin, agents, ai, api, autodesk, base, bim, clash, cs, knowledge, mep, model, navisworks, qa, qa_, quality, revit, store, 간섭, 개발, 납품, 라이선스, 변경, 빌드, 스토어, 역할, 지식, 지원, 테스트
 
 ## Related
 

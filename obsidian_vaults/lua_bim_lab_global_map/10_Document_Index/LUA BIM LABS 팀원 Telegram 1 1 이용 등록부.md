@@ -30,13 +30,13 @@ bim, data, markdown, team_requests, team_telegram_users.md, workspace, 개발, �
 ## Related
 
 - [[telegram_knowledge_requests]]
-- [[auto_knowledge_gap_log]]
-- [[11034 - A1__Dashboard - 11034 - A1__Dashboard - A1 IFC Dashboard]]
-- [[11034 - A2__Rules - 11034 - A2__Rules - A2 Rules]]
-- [[11034 - A3__Use_Case - 11034 - A3__Use_Case - 3 Use Case]]
-- [[11034 - A4__Future format - 11034 - A4__Future format - Assignment 4]]
-- [[11034 - A5__Custom tools - 11034 - A5__Custom tools - A5 Custom Tool]]
-- [[11034 Advanced BIM]]
+- [[라이선스결제 Q A 지식]]
+- [[CEO Q A 지식]]
+- [[CFO Q A 지식]]
+- [[COO Q A 지식]]
+- [[HR_인재분석관 Q A 지식]]
+- [[Navisworks_Addin Q A 지식]]
+- [[QA_테스터 Q A 지식]]
 
 ## Home
 

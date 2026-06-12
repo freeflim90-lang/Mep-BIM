@@ -20,9 +20,9 @@ import requests
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
-from backend.core.paths import AGENT_KB_DIR  # noqa: E402
+from backend.core.paths import AGENT_KB_DIR, BIM_SCRIPTS_DIR, QA_DATASET_DIR, TECHNICAL_PDFS_DIR  # noqa: E402
 
-DEFAULT_BIM_SCRIPTS_DIR = PROJECT_ROOT / "data" / "bim_scripts"
+DEFAULT_BIM_SCRIPTS_DIR = BIM_SCRIPTS_DIR
 
 # 텔레그램 설정
 def load_env() -> dict[str, str]:
@@ -67,8 +67,8 @@ def get_disk_info() -> dict:
 def get_knowledge_stats() -> dict:
     """지식 베이스 현황 통계를 반환한다."""
     kb_dir = AGENT_KB_DIR
-    qa_dir = PROJECT_ROOT / "data" / "qa_dataset"
-    pdf_dir = PROJECT_ROOT / "data" / "technical_pdfs"
+    qa_dir = QA_DATASET_DIR
+    pdf_dir = TECHNICAL_PDFS_DIR
     scripts_dir = Path(os.environ.get("BIM_SCRIPTS_OUTPUT_DIR", DEFAULT_BIM_SCRIPTS_DIR)).expanduser()
 
     def dir_size_mb(path: Path) -> float:

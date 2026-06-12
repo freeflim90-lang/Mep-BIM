@@ -12,6 +12,11 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+import sys as _sys  # noqa: E402
+if str(PROJECT_ROOT) not in _sys.path:
+    _sys.path.insert(0, str(PROJECT_ROOT))
+from backend.core.paths import BIMOBJECT_DIR, BIM_EDUCATION_DIR  # noqa: E402
+
 LOG_DIR = PROJECT_ROOT / "logs"
 
 CALENDAR_TOKEN = PROJECT_ROOT / "config" / "calendar" / "token.json"
@@ -101,7 +106,7 @@ def log_has_today(log_path: Path, today_str: str) -> tuple[bool, str]:
 
 def bimobject_crawled_recently(today: date) -> tuple[bool, str]:
     """오늘 또는 어제(일요일) BIMobject JSON이 있는지 확인."""
-    data_dir = PROJECT_ROOT / "data" / "bimobject"
+    data_dir = BIMOBJECT_DIR
     # 오늘
     pattern_today = f"bimobject_{today.strftime('%Y%m%d')}_*.json"
     files_today = sorted(data_dir.glob(pattern_today))
@@ -302,7 +307,7 @@ def build_checklist(today: date, now: datetime) -> tuple[str, dict[str, bool]]:
         missed.append("지식 동기화")
 
     # BIM 교육 텔레그램
-    edu_progress = PROJECT_ROOT / "data" / "bim_education" / "progress.json"
+    edu_progress = BIM_EDUCATION_DIR / "progress.json"
     edu_ok = False
     edu_label = "미실행 (Mac 수면)"
     if edu_progress.exists():

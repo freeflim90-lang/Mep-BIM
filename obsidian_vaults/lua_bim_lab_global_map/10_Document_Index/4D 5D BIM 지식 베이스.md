@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/4D5D_BIM.md"
+source_path: "knowledge/10_agents/90_확장에이전트/4D5D_BIM.md"
 ---
 
 # 4D 5D BIM 지식 베이스
 
 ## Source
 
-`data/knowledge_base/4D5D_BIM.md`
+`knowledge/10_agents/90_확장에이전트/4D5D_BIM.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/4D5D_BIM.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/90_확장에이전트/4D5D_BIM.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, addin, ai, api, autodesk, base, bim, clash, cs, d5d_bim.md, data, knowledge, knowledge_base, mep, navisworks, revit, 간섭, 개발, 견적, 납품, 리스크, 물량, 변경, 역할, 지식, 품질
+add-in, addin, agents, ai, api, autodesk, base, bim, clash, cs, d5d_bim.md, knowledge, mep, navisworks, revit, 간섭, 개발, 견적, 납품, 리스크, 물량, 변경, 역할, 지식, 품질
 
 ## Related
 

@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/간섭검토.md"
+source_path: "knowledge/10_agents/90_확장에이전트/간섭검토.md"
 ---
 
 # 간섭검토 Clash Detection Interference Review 지식 베이스
 
 ## Source
 
-`data/knowledge_base/간섭검토.md`
+`knowledge/10_agents/90_확장에이전트/간섭검토.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/간섭검토.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/90_확장에이전트/간섭검토.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-ai, base, bim, clash, cs, data, knowledge, knowledge_base, mep, model, navisworks, revit, 간섭, 납품, 변경, 지식, 테스트, 품질, 회의
+agents, ai, base, bim, clash, cs, knowledge, mep, model, navisworks, revit, 간섭, 납품, 변경, 지식, 테스트, 품질, 회의
 
 ## Related
 

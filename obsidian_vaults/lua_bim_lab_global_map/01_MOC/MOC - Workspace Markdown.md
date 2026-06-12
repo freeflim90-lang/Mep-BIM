@@ -2,7 +2,7 @@
 type: category-moc
 category: Workspace Markdown
 generated: true
-count: 406
+count: 441
 ---
 
 # MOC - Workspace Markdown
@@ -71,6 +71,9 @@ count: 406
 - [[BuildingMetrics-DEER-Energy-Plus-Utilities - commercial - BuildingMetrics-DEER-Energy-Plus-Utilities - commerc]] — `data/bim_scripts/BuildingMetrics/BuildingMetrics-DEER-Energy-Plus-Utilities/commercial/README.md`
 - [[C-BSS - ESTtoolBar - C-BSS - ESTtoolBar - ESTtoolBar]] — `data/bim_scripts/C-BSS/ESTtoolBar/README.md`
 - [[C-Claus - IfcScripts - C-Claus - IfcScripts - IfcScripts]] — `data/bim_scripts/C-Claus/IfcScripts/README.md`
+- [[CEO Q A 지식]] — `knowledge/20_qa/CEO_QA.md`
+- [[CFO Q A 지식]] — `knowledge/20_qa/CFO_QA.md`
+- [[COO Q A 지식]] — `knowledge/20_qa/COO_QA.md`
 - [[Chrisvandr - parametric-simulation-energyplus - Chrisvandr - parametric-simulation-energyplus - parametric-sim]] — `data/bim_scripts/Chrisvandr/parametric-simulation-energyplus/README.md`
 - [[Clash Types Priority Matrix]] — `data/starter_plan/reference_cards/card_05_clash_types_priority.md`
 - [[Codex Workflow]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/workflows/codex.md`
@@ -116,6 +119,7 @@ count: 406
 - [[GerhardPaw - RevitPythonDocs - index]] — `data/bim_scripts/GerhardPaw/RevitPythonDocs/index.md`
 - [[Grid Coordinate finder]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/Grid Coordinate finder.md`
 - [[Group 01]] — `data/bim_scripts/kfjordt/11034-advanced-bim/Assignment 5/Group01_Assignment5.md`
+- [[HR_인재분석관 Q A 지식]] — `knowledge/20_qa/HR_인재분석관_QA.md`
 - [[IFC Schema Version Comparison for IfcOpenShell Python Programming]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/topic-research/ifcos-schema-version-comparison.md`
 - [[IFC Schema Versions Entity Hierarchy IfcOpenShell Research]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/ifcos-schema-versions.md`
 - [[IFC_analysis_with_IfcOpenShell - 01_Initial_instructions - IFC_analysis_with_IfcOpenShell - 01_Initial_instruc]] — `data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/01_Initial_instructions/README.md`
@@ -162,6 +166,7 @@ count: 406
 - [[Model Write Tools]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/tools/model-write.md`
 - [[Modeling Simulation Troubleshooting]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/troubleshooting/simulation.md`
 - [[Multi-Agent Patterns]] — `data/bim_scripts/idfkit/idfkit-mcp/docs/workflows/multi-agent-patterns.md`
+- [[Navisworks_Addin Q A 지식]] — `knowledge/20_qa/Navisworks_Addin_QA.md`
 - [[Open-Agents oa-cli Improvements Report]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/oa-improvements-report.md`
 - [[OpenAEC Foundation Code Repository Research]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/ecosystem-openaec-code.md`
 - [[OpenAEC Foundation IFC Infrastructure Ecosystem Research]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/ecosystem-openaec-ifc.md`
@@ -184,6 +189,7 @@ count: 406
 - [[Python - Read_excel_file - Python - Read_excel_file - Read Excel file]] — `data/bim_scripts/DTU-Byg/11034/Example files/Python/Read_excel_file/readme.md`
 - [[Python - Working with excel - Python - Working with excel - readme]] — `data/bim_scripts/DTU-Byg/11034/Example files/Python/Working with excel/readme.md`
 - [[Python Automation Pipeline]] — `data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/06-pipeline.md`
+- [[QA_테스터 Q A 지식]] — `knowledge/20_qa/QA_테스터_QA.md`
 - [[Quick Start]] — `data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/QUICKSTART.md`
 - [[R-Rijnbeek - IFCManipulations - R-Rijnbeek - IFCManipulations - IFCManipulations]] — `data/bim_scripts/R-Rijnbeek/IFCManipulations/README.md`
 - [[R-Rijnbeek - IFC_WebViewer - R-Rijnbeek - IFC_WebViewer - IFC_WebViewer]] — `data/bim_scripts/R-Rijnbeek/IFC_WebViewer/README.md`
@@ -201,6 +207,7 @@ count: 406
 - [[Review Masterplan Quality Consistency Check]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/masterplan/review-quality.md`
 - [[Review Research Coverage Verification]] — `data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/masterplan/review-research-coverage.md`
 - [[Revit MEP Setup Checklist]] — `data/starter_plan/reference_cards/card_02_revit_mep_setup.md`
+- [[Revit_Addin_QA]] — `knowledge/20_qa/Revit_Addin_QA.md`
 - [[Revit_Auto_Audit - AutoAudit pushbutton - Revit_Auto_Audit - AutoAudit pushbutton - Revit AutoAudit Tool]] — `data/bim_scripts/BenLin-UC/Revit_Auto_Audit/AutoAudit.pushbutton/README.md`
 - [[Revit_Auto_Audit - DocumentAudit pushbutton - Revit_Auto_Audit - DocumentAudit pushbutton - Revit Document Aud]] — `data/bim_scripts/BenLin-UC/Revit_Auto_Audit/DocumentAudit.pushbutton/README.md`
 - [[Revit_Auto_Audit - ParametersExport pushbutton - Revit_Auto_Audit - ParametersExport pushbutton - Revit Docume]] — `data/bim_scripts/BenLin-UC/Revit_Auto_Audit/ParametersExport.pushbutton/README.md`
@@ -412,6 +419,34 @@ count: 406
 - [[Кодекс поведения]] — `data/bim_scripts/fesworkscience/pyrevit_rocket/CODE_OF_CONDUCT.md`
 - [[Политика безопасности]] — `data/bim_scripts/fesworkscience/pyrevit_rocket/SECURITY.md`
 - [[Руководство по участию в проекте]] — `data/bim_scripts/fesworkscience/pyrevit_rocket/CONTRIBUTING.md`
+- [[간섭검토 Q A 지식]] — `knowledge/20_qa/간섭검토_QA.md`
+- [[건축 Q A 지식]] — `knowledge/20_qa/건축_QA.md`
+- [[견적서담당 Q A 지식]] — `knowledge/20_qa/견적서담당_QA.md`
+- [[경비정산_AI Q A 지식]] — `knowledge/20_qa/경비정산_AI_QA.md`
+- [[경영지원 Q A 지식]] — `knowledge/20_qa/경영지원_QA.md`
+- [[고객지원CS Q A 지식]] — `knowledge/20_qa/고객지원CS_QA.md`
+- [[공조덕트 Q A 지식]] — `knowledge/20_qa/공조덕트_QA.md`
+- [[공조배관 Q A 지식]] — `knowledge/20_qa/공조배관_QA.md`
+- [[교육컨설팅 Q A 지식]] — `knowledge/20_qa/교육컨설팅_QA.md`
+- [[구조 Q A 지식]] — `knowledge/20_qa/구조_QA.md`
+- [[라이선스결제 Q A 지식]] — `knowledge/20_qa/라이선스결제_QA.md`
+- [[러닝콘텐츠디자이너 Q A 지식]] — `knowledge/20_qa/러닝콘텐츠디자이너_QA.md`
+- [[배포문서 Q A 지식]] — `knowledge/20_qa/배포문서_QA.md`
+- [[빌드검증 Q A 지식]] — `knowledge/20_qa/빌드검증_QA.md`
+- [[소방기계 Q A 지식]] — `knowledge/20_qa/소방기계_QA.md`
+- [[소방전기 Q A 지식]] — `knowledge/20_qa/소방전기_QA.md`
+- [[스토어심사 Q A 지식]] — `knowledge/20_qa/스토어심사_QA.md`
+- [[엑셀자동화 Q A 지식]] — `knowledge/20_qa/엑셀자동화_QA.md`
+- [[요구사항분석 Q A 지식]] — `knowledge/20_qa/요구사항분석_QA.md`
+- [[위생 Q A 지식]] — `knowledge/20_qa/위생_QA.md`
+- [[전기 Q A 지식]] — `knowledge/20_qa/전기_QA.md`
+- [[제품패키징 Q A 지식]] — `knowledge/20_qa/제품패키징_QA.md`
+- [[조율차장 Q A 지식]] — `knowledge/20_qa/조율차장_QA.md`
+- [[지식업데이트_QA]] — `knowledge/20_qa/지식업데이트_QA.md`
+- [[지식큐레이터 Q A 지식]] — `knowledge/20_qa/지식큐레이터_QA.md`
+- [[토목 Q A 지식]] — `knowledge/20_qa/토목_QA.md`
+- [[통신 Q A 지식]] — `knowledge/20_qa/통신_QA.md`
+- [[프로그램개발 Q A 지식]] — `knowledge/20_qa/프로그램개발_QA.md`
 - [[화재안전기술기준 NFTC 핵심 요약]] — `data/technical_pdfs/text_knowledge/nftc_fire_safety_standards_summary.md`
 
 ## 상위

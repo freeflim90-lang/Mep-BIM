@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/conflict_resolution/cases/AITEST_20260606_036.md"
+source_path: "knowledge/10_agents/conflict_resolution/cases/AITEST_20260606_036.md"
 ---
 
 # AITEST_20260606_036 Decision Log 최종화 자동 감사
 
 ## Source
 
-`data/knowledge_base/conflict_resolution/cases/AITEST_20260606_036.md`
+`knowledge/10_agents/conflict_resolution/cases/AITEST_20260606_036.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/conflict_resolution/cases/AITEST_20260606_036.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/conflict_resolution/cases/AITEST_20260606_036.md`
 
 ## Category
 
@@ -25,11 +25,10 @@ Absolute path:
 
 ## Keywords
 
-ai, aitest_20260606_036.md, audit, base, cases, conflict_resolution, data, knowledge, knowledge_base, qa, 지식
+agents, ai, aitest_20260606_036.md, audit, base, cases, conflict_resolution, knowledge, qa, 지식
 
 ## Related
 
-- [[AITEST_20260605_001 AI 협업 프로세스 6개 상황 드라이런]]
 - [[AITEST_20260605_002 긴급 고객 납품 지연 추가 요구 협업 테스트]]
 - [[AITEST_20260605_003 고객 모델 로그 외부 AI 전송 보안 협업 테스트]]
 - [[AITEST_20260605_004 AI 간 견적 판단 충돌 협업 테스트]]
@@ -37,6 +36,7 @@ ai, aitest_20260606_036.md, audit, base, cases, conflict_resolution, data, knowl
 - [[AITEST_20260605_006 개인정보 외부 AI 정책 문서 충돌 테스트]]
 - [[AITEST_20260605_007 상업 가격 source of truth 충돌 테스트]]
 - [[AITEST_20260605_008 PRECEDENT 승격 및 재사용 테스트]]
+- [[AITEST_20260606_016 협업 등록부 자동 감사 후보 테스트]]
 
 ## Home
 

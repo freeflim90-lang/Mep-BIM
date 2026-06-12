@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: AI Knowledge Base
-source_path: "data/knowledge_base/qa/간섭검토_QA.md"
+category: Workspace Markdown
+source_path: "knowledge/20_qa/간섭검토_QA.md"
 ---
 
 # 간섭검토 Q A 지식
 
 ## Source
 
-`data/knowledge_base/qa/간섭검토_QA.md`
+`knowledge/20_qa/간섭검토_QA.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/qa/간섭검토_QA.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/20_qa/간섭검토_QA.md`
 
 ## Category
 
-- [[MOC - AI Knowledge Base]]
+- [[MOC - Workspace Markdown]]
 
 ## Summary
 
@@ -25,18 +25,18 @@ Absolute path:
 
 ## Keywords
 
-ai, base, bim, clash, cs, data, knowledge, knowledge_base, mep, navisworks, qa, qa.md, revit, 간섭, 변경, 지식, 테스트
+bim, clash, cs, knowledge, markdown, mep, navisworks, qa, qa.md, revit, workspace, 간섭, 변경, 지식, 테스트
 
 ## Related
 
-- [[CEO Q A 지식]]
-- [[CFO Q A 지식]]
-- [[COO Q A 지식]]
 - [[HR_인재분석관 Q A 지식]]
 - [[Navisworks_Addin Q A 지식]]
 - [[QA_테스터 Q A 지식]]
 - [[Revit_Addin_QA]]
 - [[건축 Q A 지식]]
+- [[견적서담당 Q A 지식]]
+- [[고객지원CS Q A 지식]]
+- [[공조덕트 Q A 지식]]
 
 ## Home
 

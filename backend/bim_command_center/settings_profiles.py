@@ -127,6 +127,9 @@ class SettingsProfileStore:
         return rows
 
 
-def default_profile_store(root: str | Path = "data/bim_command_center/settings_profiles") -> SettingsProfileStore:
+def default_profile_store(root: str | Path | None = None) -> SettingsProfileStore:
+    if root is None:
+        from backend.core.paths import BIM_COMMAND_CENTER_DIR
+        root = BIM_COMMAND_CENTER_DIR / "settings_profiles"
     return SettingsProfileStore(Path(root))
 

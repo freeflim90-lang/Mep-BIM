@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/BIM_템플릿기획관.md"
+source_path: "knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md"
 ---
 
 # BIM_템플릿기획관 지식 베이스
 
 ## Source
 
-`data/knowledge_base/BIM_템플릿기획관.md`
+`knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/BIM_템플릿기획관.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, addin, ai, autodesk, base, bim, bim_, cs, data, knowledge, knowledge_base, mep, revit, 개발, 납품, 변경, 자산, 지식, 품질
+add-in, addin, agents, ai, autodesk, base, bim, bim_, cs, knowledge, mep, revit, 개발, 납품, 변경, 자산, 지식, 품질
 
 ## Related
 

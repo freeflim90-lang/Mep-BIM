@@ -31,12 +31,12 @@ bim, logs, markdown, mep, navisworks, qa, qa_simulation, qa_simulation_2026-06-0
 
 - [[logs - qa_simulation - qa_simulation_2026-06-06 - LUA BIM LABS Q A 품질 시뮬레이션 리포트]]
 - [[logs - qa_simulation - qa_simulation_2026-06-07 - LUA BIM LABS Q A 품질 시뮬레이션 리포트]]
-- [[BIM Autpmatic Coordination System]]
-- [[BIM Learning Path Next Steps]]
-- [[MEP BIM Key Roles LOD Reference]]
-- [[MEP BIM 조율 실무 기준 문서]]
-- [[Advanced BIM Coordination]]
-- [[BIM Command Center]]
+- [[Revit_Addin_QA]]
+- [[간섭검토 Q A 지식]]
+- [[견적서담당 Q A 지식]]
+- [[교육컨설팅 Q A 지식]]
+- [[라이선스결제 Q A 지식]]
+- [[배포문서 Q A 지식]]
 
 ## Home
 

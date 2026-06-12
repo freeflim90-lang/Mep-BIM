@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: AI Knowledge Base
-source_path: "data/knowledge_base/qa/교육컨설팅_QA.md"
+category: Workspace Markdown
+source_path: "knowledge/20_qa/교육컨설팅_QA.md"
 ---
 
 # 교육컨설팅 Q A 지식
 
 ## Source
 
-`data/knowledge_base/qa/교육컨설팅_QA.md`
+`knowledge/20_qa/교육컨설팅_QA.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/qa/교육컨설팅_QA.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/20_qa/교육컨설팅_QA.md`
 
 ## Category
 
-- [[MOC - AI Knowledge Base]]
+- [[MOC - Workspace Markdown]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-ai, base, bim, data, knowledge, knowledge_base, mep, navisworks, qa, qa.md, revit, 간섭, 개발, 교육, 납품, 온보딩, 지식, 지원, 커리큘럼, 품질
+bim, knowledge, markdown, mep, navisworks, qa, qa.md, revit, workspace, 간섭, 개발, 교육, 납품, 온보딩, 지식, 지원, 커리큘럼, 품질
 
 ## Related
 

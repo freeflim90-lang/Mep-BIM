@@ -25,7 +25,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 import sys  # noqa: E402
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
-from backend.core.paths import AGENT_KB_DIR, QA_KB_DIR, TEAM_REQUESTS_DIR  # noqa: E402
+from backend.core.paths import AGENT_KB_DIR, KNOWLEDGE_UPDATES_DIR, QA_KB_DIR, TEAM_REQUESTS_DIR  # noqa: E402
 from backend.knowledge_store import knowledge_file_path  # noqa: E402
 
 REPORT_DIR = PROJECT_ROOT / "docs" / "reasoning_training"
@@ -40,13 +40,14 @@ MIN_DEEPSEEK_QUESTION_NOVELTY = 0.42
 _KB_REL = AGENT_KB_DIR.relative_to(PROJECT_ROOT).as_posix()
 _QA_REL = QA_KB_DIR.relative_to(PROJECT_ROOT).as_posix()
 _TEAM_REQ_REL = TEAM_REQUESTS_DIR.relative_to(PROJECT_ROOT).as_posix()
+_UPDATES_REL = KNOWLEDGE_UPDATES_DIR.relative_to(PROJECT_ROOT).as_posix()
 
 SOURCE_GLOBS = [
     f"{_KB_REL}/**/*.md",
     f"{_QA_REL}/*.md",
     f"{_TEAM_REQ_REL}/*.md",
     "docs/internal_growth/**/*.md",
-    "docs/knowledge_updates/daily/*.md",
+    f"{_UPDATES_REL}/daily/*.md",
     "docs/industry_intelligence/daily/*.md",
     "obsidian_vaults/model_quality_auditor/03_Errors_Fixes/*.md",
     "obsidian_vaults/model_quality_auditor/04_Decisions/*.md",

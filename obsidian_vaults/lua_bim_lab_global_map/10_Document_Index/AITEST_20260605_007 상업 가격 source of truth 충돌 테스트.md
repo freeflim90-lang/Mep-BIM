@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/conflict_resolution/cases/AITEST_20260605_007.md"
+source_path: "knowledge/10_agents/conflict_resolution/cases/AITEST_20260605_007.md"
 ---
 
 # AITEST_20260605_007 상업 가격 source of truth 충돌 테스트
 
 ## Source
 
-`data/knowledge_base/conflict_resolution/cases/AITEST_20260605_007.md`
+`knowledge/10_agents/conflict_resolution/cases/AITEST_20260605_007.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/conflict_resolution/cases/AITEST_20260605_007.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/conflict_resolution/cases/AITEST_20260605_007.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-ai, aitest_20260605_007.md, base, bim, cases, conflict_resolution, cs, data, knowledge, knowledge_base, mep, qa, 견적, 결제, 교육, 리스크, 보안, 스토어, 심사, 역할, 자산, 지식, 지원, 테스트, 품질
+agents, ai, aitest_20260605_007.md, base, bim, cases, conflict_resolution, cs, knowledge, mep, qa, 견적, 결제, 교육, 리스크, 보안, 스토어, 심사, 역할, 자산, 지식, 지원, 테스트, 품질
 
 ## Related
 

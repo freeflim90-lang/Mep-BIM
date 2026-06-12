@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/conflict_resolution/ESCALATED_REDECISION_EXECUTION_PLAYBOOK_20260606.md"
+source_path: "knowledge/10_agents/conflict_resolution/ESCALATED_REDECISION_EXECUTION_PLAYBOOK_20260606.md"
 ---
 
 # ESCALATED Redecision Execution Playbook - 2026-06-06
 
 ## Source
 
-`data/knowledge_base/conflict_resolution/ESCALATED_REDECISION_EXECUTION_PLAYBOOK_20260606.md`
+`knowledge/10_agents/conflict_resolution/ESCALATED_REDECISION_EXECUTION_PLAYBOOK_20260606.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/conflict_resolution/ESCALATED_REDECISION_EXECUTION_PLAYBOOK_20260606.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/conflict_resolution/ESCALATED_REDECISION_EXECUTION_PLAYBOOK_20260606.md`
 
 ## Category
 
@@ -25,18 +25,18 @@ Absolute path:
 
 ## Keywords
 
-ai, audit, base, conflict_resolution, cs, data, escalated_redecision_execution_playbook_20260606.md, knowledge, knowledge_base, qa, 결제, 보안
+agents, ai, audit, base, conflict_resolution, cs, escalated_redecision_execution_playbook_20260606.md, knowledge, qa, 결제, 보안
 
 ## Related
 
-- [[AI Collaboration Automated Audit - 2026-06]]
-- [[AI Collaboration Daily Handoff - 2026-06-06]]
 - [[AI 간 판단 충돌 로그]]
 - [[AI 협업 세션 등록부 - 2026-06]]
 - [[AI 협업 프로세스 테스트 계획]]
 - [[ESCALATED Missing Evidence Matrix - 2026-06-06]]
 - [[ESCALATION SLA Tracker - 2026-06]]
-- [[External AI Disclosure Rule Draft - 2026-06-05]]
+- [[Redecision Branch Simulation - 2026-06-06]]
+- [[10_agents - conflict_resolution - 10_agents - conflict_resolution - AI 간 판단 충돌 해소 체계]]
+- [[AI Collaboration Automated Audit - 2026-06]]
 
 ## Home
 

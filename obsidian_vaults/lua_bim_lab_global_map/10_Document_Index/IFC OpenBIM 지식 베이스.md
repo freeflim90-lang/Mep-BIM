@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/IFC_OpenBIM.md"
+source_path: "knowledge/10_agents/90_확장에이전트/IFC_OpenBIM.md"
 ---
 
 # IFC OpenBIM 지식 베이스
 
 ## Source
 
-`data/knowledge_base/IFC_OpenBIM.md`
+`knowledge/10_agents/90_확장에이전트/IFC_OpenBIM.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/IFC_OpenBIM.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/90_확장에이전트/IFC_OpenBIM.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-addin, ai, base, bim, cs, data, ifc_openbim.md, knowledge, knowledge_base, mep, model, navisworks, quality, revit, store, 간섭, 개발, 교육, 납품, 변경, 자산, 지식, 지원, 품질
+addin, agents, ai, base, bim, cs, ifc_openbim.md, knowledge, mep, model, navisworks, quality, revit, store, 간섭, 개발, 교육, 납품, 변경, 자산, 지식, 지원, 품질
 
 ## Related
 

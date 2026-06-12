@@ -1,0 +1,9 @@
+{
+  "name": "office-default",
+  "scope": "office",
+  "version": "1.0",
+  "description": "Default office profile",
+  "settings": {
+    "collision_policy": "skip"
+  }
+}

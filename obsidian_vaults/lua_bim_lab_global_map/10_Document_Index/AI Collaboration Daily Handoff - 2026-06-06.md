@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/conflict_resolution/DAILY_HANDOFF_20260606.md"
+source_path: "knowledge/10_agents/conflict_resolution/DAILY_HANDOFF_20260606.md"
 ---
 
 # AI Collaboration Daily Handoff - 2026-06-06
 
 ## Source
 
-`data/knowledge_base/conflict_resolution/DAILY_HANDOFF_20260606.md`
+`knowledge/10_agents/conflict_resolution/DAILY_HANDOFF_20260606.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/conflict_resolution/DAILY_HANDOFF_20260606.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/conflict_resolution/DAILY_HANDOFF_20260606.md`
 
 ## Category
 
@@ -25,18 +25,18 @@ Absolute path:
 
 ## Keywords
 
-ai, base, conflict_resolution, daily_handoff_20260606.md, data, knowledge, knowledge_base, 결제, 교육, 라이선스, 리스크, 변경, 보안, 온보딩
+agents, ai, base, conflict_resolution, daily_handoff_20260606.md, knowledge, 결제, 교육, 라이선스, 리스크, 변경, 보안, 온보딩
 
 ## Related
 
-- [[AI Collaboration Automated Audit - 2026-06]]
 - [[AI 간 판단 충돌 로그]]
 - [[AI 협업 세션 등록부 - 2026-06]]
 - [[AI 협업 프로세스 테스트 계획]]
 - [[ESCALATED Missing Evidence Matrix - 2026-06-06]]
-- [[ESCALATED Redecision Execution Playbook - 2026-06-06]]
 - [[ESCALATION SLA Tracker - 2026-06]]
-- [[External AI Disclosure Rule Draft - 2026-06-05]]
+- [[Product Launch Status Source of Truth Draft - 2026-06-05]]
+- [[TEST_ROUND_20260605_001 AI 협업 프로세스 다방향 검증 요약]]
+- [[AI Collaboration Automated Audit - 2026-06]]
 
 ## Home
 

@@ -35,8 +35,8 @@ bim, clash, logs, markdown, mep, navisworks, qa, qa_simulation, qa_simulation_20
 - [[BIM Learning Path Next Steps]]
 - [[MEP BIM Key Roles LOD Reference]]
 - [[MEP BIM 조율 실무 기준 문서]]
-- [[Advanced BIM Coordination]]
-- [[BIM Command Center]]
+- [[Navisworks_Addin Q A 지식]]
+- [[Revit_Addin_QA]]
 
 ## Home
 

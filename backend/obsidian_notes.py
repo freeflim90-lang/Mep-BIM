@@ -15,11 +15,15 @@ from pathlib import Path
 
 from telegram import Update
 
-from backend.core.paths import DATA_DIR as _DATA_DIR, GLOBAL_OBSIDIAN_VAULT as _GLOBAL_OBSIDIAN_VAULT, PROJECT_ROOT as _PROJECT_ROOT
+from backend.core.paths import (
+    GLOBAL_OBSIDIAN_VAULT as _GLOBAL_OBSIDIAN_VAULT,
+    PROJECT_ROOT as _PROJECT_ROOT,
+    TEAM_REQUESTS_DIR as _TEAM_REQUESTS_DIR,
+)
 from backend.models import RevitAssistantChatRequest
 from backend.text_utils import sanitize_outbound_text, telegram_user_label
 
-TEAM_REQUEST_LOG = _DATA_DIR / "team_requests" / "telegram_knowledge_requests.md"
+TEAM_REQUEST_LOG = _TEAM_REQUESTS_DIR / "telegram_knowledge_requests.md"
 TEAM_QA_OBSIDIAN_DIR = _GLOBAL_OBSIDIAN_VAULT / "NAS_Knowledge" / "Team_Telegram_QA"
 TEAM_QA_MOC = TEAM_QA_OBSIDIAN_DIR / "MOC - Team Telegram QA.md"
 REVIT_QA_OBSIDIAN_DIR = _GLOBAL_OBSIDIAN_VAULT / "NAS_Knowledge" / "Revit_Assistant_QA"

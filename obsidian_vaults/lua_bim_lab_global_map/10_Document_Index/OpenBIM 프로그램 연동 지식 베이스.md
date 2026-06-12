@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/OpenBIM_프로그램연동.md"
+source_path: "knowledge/10_agents/90_확장에이전트/OpenBIM_프로그램연동.md"
 ---
 
 # OpenBIM 프로그램 연동 지식 베이스
 
 ## Source
 
-`data/knowledge_base/OpenBIM_프로그램연동.md`
+`knowledge/10_agents/90_확장에이전트/OpenBIM_프로그램연동.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/OpenBIM_프로그램연동.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/90_확장에이전트/OpenBIM_프로그램연동.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-addin, ai, autodesk, base, bim, clash, cs, data, knowledge, knowledge_base, mep, model, navisworks, openbim_, revit, 간섭, 납품, 물량, 변경, 역할, 지식, 지원, 품질
+addin, agents, ai, autodesk, base, bim, clash, cs, knowledge, mep, model, navisworks, openbim_, revit, 간섭, 납품, 물량, 변경, 역할, 지식, 지원, 품질
 
 ## Related
 

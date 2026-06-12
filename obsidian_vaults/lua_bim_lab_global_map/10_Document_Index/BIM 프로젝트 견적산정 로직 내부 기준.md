@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/BIM_프로젝트_견적산정.md"
+source_path: "knowledge/10_agents/90_확장에이전트/BIM_프로젝트_견적산정.md"
 ---
 
 # BIM 프로젝트 견적산정 로직 내부 기준
 
 ## Source
 
-`data/knowledge_base/BIM_프로젝트_견적산정.md`
+`knowledge/10_agents/90_확장에이전트/BIM_프로젝트_견적산정.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/BIM_프로젝트_견적산정.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/90_확장에이전트/BIM_프로젝트_견적산정.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, ai, api, base, bim, bim_, cs, data, knowledge, knowledge_base, mep, navisworks, revit, 간섭, 견적, 교육, 구독, 납품, 라이선스, 리스크, 물량, 변경, 지원
+add-in, agents, ai, api, base, bim, bim_, cs, knowledge, mep, navisworks, revit, 간섭, 견적, 교육, 구독, 납품, 라이선스, 리스크, 물량, 변경, 지원
 
 ## Related
 

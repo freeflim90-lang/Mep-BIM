@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/FM_자산관리.md"
+source_path: "knowledge/10_agents/90_확장에이전트/FM_자산관리.md"
 ---
 
 # FM 시설관리 자산관리 BIM 지식 베이스
 
 ## Source
 
-`data/knowledge_base/FM_자산관리.md`
+`knowledge/10_agents/90_확장에이전트/FM_자산관리.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/FM_자산관리.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/90_확장에이전트/FM_자산관리.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, ai, api, autodesk, base, bim, cs, data, fm_, knowledge, knowledge_base, kpi, model, revit, 개발, 변경, 자산, 지식, 품질
+add-in, agents, ai, api, autodesk, base, bim, cs, fm_, knowledge, kpi, model, revit, 개발, 변경, 자산, 지식, 품질
 
 ## Related
 

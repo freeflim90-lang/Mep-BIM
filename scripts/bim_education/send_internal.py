@@ -15,7 +15,12 @@ from datetime import date
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-EDU_DIR = PROJECT_ROOT / "data" / "bim_education"
+import sys as _sys  # noqa: E402
+if str(PROJECT_ROOT) not in _sys.path:
+    _sys.path.insert(0, str(PROJECT_ROOT))
+from backend.core.paths import BIM_EDUCATION_DIR  # noqa: E402
+
+EDU_DIR = BIM_EDUCATION_DIR
 MESSAGES_DIR = EDU_DIR / "messages"
 PROGRESS_FILE = EDU_DIR / "progress.json"
 

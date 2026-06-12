@@ -32,9 +32,9 @@ import urllib.error
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
-from backend.core.paths import AGENT_KB_DIR  # noqa: E402
+from backend.core.paths import AGENT_KB_DIR, BIMOBJECT_DIR  # noqa: E402
 
-DATA_DIR     = PROJECT_ROOT / "data" / "bimobject"
+DATA_DIR     = BIMOBJECT_DIR
 VAULT_DIR    = PROJECT_ROOT / "obsidian_vaults" / "lua_bim_lab_global_map" / "NAS_Knowledge" / "BIMobject"
 KB_DIR       = AGENT_KB_DIR
 

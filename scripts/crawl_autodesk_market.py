@@ -30,7 +30,12 @@ from pathlib import Path
 
 # ─────────────── 경로 ───────────────────────────────────────────
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR     = PROJECT_ROOT / "data" / "autodesk_market"
+import sys as _sys  # noqa: E402
+if str(PROJECT_ROOT) not in _sys.path:
+    _sys.path.insert(0, str(PROJECT_ROOT))
+from backend.core.paths import AUTODESK_MARKET_DIR  # noqa: E402
+
+DATA_DIR     = AUTODESK_MARKET_DIR
 REPORT_DIR   = PROJECT_ROOT / "docs" / "autodesk_market"
 BACKLOG_FILE = DATA_DIR / "priority_backlog.json"
 ADDINS_DIR   = PROJECT_ROOT / "commercial_addins"
@@ -373,7 +378,7 @@ def build_crawl_done_message(apps: list[dict], new_apps: list[dict], ts: str) ->
         "",
         "<b>📋 분석 체크리스트</b>",
         "☐ 1. Claude에서 갭 분석 실행",
-        f"    파일: data/autodesk_market/market_{ts}.json",
+        f"    파일: {AUTODESK_MARKET_DIR.name}/market_{ts}.json",
         "☐ 2. 분석 완료 후 Telegram 발송:",
         "    python3 scripts/send_market_analysis_telegram.py",
     ]
@@ -416,7 +421,7 @@ def run(dry_run: bool = False, no_telegram: bool = False) -> None:
         print("  telegram=skipped (--no-telegram)")
 
     print(f"\n=== 완료: {len(apps):,}개 수집, 신규 {len(new_apps)}개 ===")
-    print(f"  분석 준비: data/autodesk_market/analysis_prompt_latest.txt")
+    print(f"  분석 준비: {AUTODESK_MARKET_DIR}/analysis_prompt_latest.txt")
 
 
 if __name__ == "__main__":

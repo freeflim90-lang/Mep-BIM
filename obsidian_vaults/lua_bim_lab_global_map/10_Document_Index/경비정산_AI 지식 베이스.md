@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/경비정산_AI.md"
+source_path: "knowledge/10_agents/07_경영지원팀/경비정산_AI.md"
 ---
 
 # 경비정산_AI 지식 베이스
 
 ## Source
 
-`data/knowledge_base/경비정산_AI.md`
+`knowledge/10_agents/07_경영지원팀/경비정산_AI.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/경비정산_AI.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/07_경영지원팀/경비정산_AI.md`
 
 ## Category
 
@@ -25,18 +25,18 @@ Absolute path:
 
 ## Keywords
 
-ai, ai.md, api, autodesk, base, bim, data, knowledge, knowledge_base, navisworks, revit, 결제, 교육, 구독, 라이선스, 리스크, 보안, 지식, 지원, 회의
+agents, ai, ai.md, api, autodesk, base, bim, knowledge, navisworks, revit, 결제, 교육, 구독, 라이선스, 리스크, 보안, 지식, 지원, 회의
 
 ## Related
 
+- [[경영지원 지식 베이스]]
 - [[4D 5D BIM 지식 베이스]]
 - [[ACC BIM360 CDE 지식 베이스]]
+- [[AI Collaboration Daily Handoff - 2026-06-06]]
+- [[AI 간 판단 충돌 로그]]
+- [[AI 협업 세션 등록부 - 2026-06]]
+- [[AI 협업 프로세스 테스트 계획]]
 - [[AI 협업운영체계 지식 베이스]]
-- [[AX 시간별 신호모니터링 지식 베이스]]
-- [[AX 전략승격리뷰 지식 베이스]]
-- [[BEP 수행계획서 템플릿]]
-- [[BIM 납품검수 지식 베이스]]
-- [[BIM 시방서 지식 베이스]]
 
 ## Home
 

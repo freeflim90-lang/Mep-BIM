@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/BIM_건물유형_공사구분_산정로직.md"
+source_path: "knowledge/10_agents/90_확장에이전트/BIM_건물유형_공사구분_산정로직.md"
 ---
 
 # BIM 업무량 견적 산정 상세 로직 건물 유형 공사 구분
 
 ## Source
 
-`data/knowledge_base/BIM_건물유형_공사구분_산정로직.md`
+`knowledge/10_agents/90_확장에이전트/BIM_건물유형_공사구분_산정로직.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/BIM_건물유형_공사구분_산정로직.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/90_확장에이전트/BIM_건물유형_공사구분_산정로직.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-ai, api, base, bim, bim_, data, knowledge, knowledge_base, mep, 간섭, 견적, 교육, 리스크, 변경, 보안
+agents, ai, api, base, bim, bim_, knowledge, mep, 간섭, 견적, 교육, 리스크, 변경, 보안
 
 ## Related
 

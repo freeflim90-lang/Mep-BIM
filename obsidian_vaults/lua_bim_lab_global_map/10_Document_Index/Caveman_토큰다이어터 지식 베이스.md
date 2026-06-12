@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/Caveman_토큰다이어터.md"
+source_path: "knowledge/10_agents/90_확장에이전트/Caveman_토큰다이어터.md"
 ---
 
 # Caveman_토큰다이어터 지식 베이스
 
 ## Source
 
-`data/knowledge_base/Caveman_토큰다이어터.md`
+`knowledge/10_agents/90_확장에이전트/Caveman_토큰다이어터.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/Caveman_토큰다이어터.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/90_확장에이전트/Caveman_토큰다이어터.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-ai, api, autodesk, base, bim, caveman_, cs, data, knowledge, knowledge_base, revit, 견적, 지식, 테스트, 품질
+agents, ai, api, autodesk, base, bim, caveman_, cs, knowledge, revit, 견적, 지식, 테스트, 품질
 
 ## Related
 

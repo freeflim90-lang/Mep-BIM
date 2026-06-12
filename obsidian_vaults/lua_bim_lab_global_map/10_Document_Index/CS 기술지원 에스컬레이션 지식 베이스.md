@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/CS_기술지원관.md"
+source_path: "knowledge/10_agents/90_확장에이전트/CS_기술지원관.md"
 ---
 
 # CS 기술지원 에스컬레이션 지식 베이스
 
 ## Source
 
-`data/knowledge_base/CS_기술지원관.md`
+`knowledge/10_agents/90_확장에이전트/CS_기술지원관.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/CS_기술지원관.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/90_확장에이전트/CS_기술지원관.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, addin, ai, api, autodesk, base, bim, cs, cs_, data, knowledge, knowledge_base, qa, revit, store, 개발, 납품, 라이선스, 변경, 빌드, 역할, 조직, 지식, 지원, 진단
+add-in, addin, agents, ai, api, autodesk, base, bim, cs, cs_, knowledge, qa, revit, store, 개발, 납품, 라이선스, 변경, 빌드, 역할, 조직, 지식, 지원, 진단
 
 ## Related
 

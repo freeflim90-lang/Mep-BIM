@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: AI Knowledge Base
-source_path: "data/knowledge_base/qa/경영지원_QA.md"
+category: Workspace Markdown
+source_path: "knowledge/20_qa/경영지원_QA.md"
 ---
 
 # 경영지원 Q A 지식
 
 ## Source
 
-`data/knowledge_base/qa/경영지원_QA.md`
+`knowledge/20_qa/경영지원_QA.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/qa/경영지원_QA.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/20_qa/경영지원_QA.md`
 
 ## Category
 
-- [[MOC - AI Knowledge Base]]
+- [[MOC - Workspace Markdown]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-ai, base, bim, data, knowledge, knowledge_base, qa, qa.md, 개발, 납품, 리스크, 역할, 지식, 지원, 품질
+bim, knowledge, markdown, qa, qa.md, workspace, 개발, 납품, 리스크, 역할, 지식, 지원, 품질
 
 ## Related
 
@@ -35,8 +35,8 @@ ai, base, bim, data, knowledge, knowledge_base, qa, qa.md, 개발, 납품, 리�
 - [[HR_인재분석관 Q A 지식]]
 - [[Navisworks_Addin Q A 지식]]
 - [[QA_테스터 Q A 지식]]
-- [[Revit_Addin_QA]]
-- [[간섭검토 Q A 지식]]
+- [[건축 Q A 지식]]
+- [[견적서담당 Q A 지식]]
 
 ## Home
 

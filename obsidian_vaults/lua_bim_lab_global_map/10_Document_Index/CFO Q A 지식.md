@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: AI Knowledge Base
-source_path: "data/knowledge_base/qa/CFO_QA.md"
+category: Workspace Markdown
+source_path: "knowledge/20_qa/CFO_QA.md"
 ---
 
 # CFO Q A 지식
 
 ## Source
 
-`data/knowledge_base/qa/CFO_QA.md`
+`knowledge/20_qa/CFO_QA.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/qa/CFO_QA.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/20_qa/CFO_QA.md`
 
 ## Category
 
-- [[MOC - AI Knowledge Base]]
+- [[MOC - Workspace Markdown]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-ai, autodesk, base, bim, cfo_qa.md, cs, data, knowledge, knowledge_base, qa, store, 개발, 결제, 구독, 라이선스, 보안, 지식, 지원
+autodesk, bim, cfo_qa.md, cs, knowledge, markdown, qa, store, workspace, 개발, 결제, 구독, 라이선스, 보안, 지식, 지원
 
 ## Related
 
@@ -35,8 +35,8 @@ ai, autodesk, base, bim, cfo_qa.md, cs, data, knowledge, knowledge_base, qa, sto
 - [[Navisworks_Addin Q A 지식]]
 - [[QA_테스터 Q A 지식]]
 - [[Revit_Addin_QA]]
-- [[간섭검토 Q A 지식]]
 - [[건축 Q A 지식]]
+- [[견적서담당 Q A 지식]]
 
 ## Home
 

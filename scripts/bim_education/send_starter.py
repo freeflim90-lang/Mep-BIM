@@ -21,13 +21,18 @@ from datetime import date
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-EDU_DIR = PROJECT_ROOT / "data" / "bim_education"
+import sys as _sys  # noqa: E402
+if str(PROJECT_ROOT) not in _sys.path:
+    _sys.path.insert(0, str(PROJECT_ROOT))
+from backend.core.paths import BIM_EDUCATION_DIR, STARTER_PLAN_DIR  # noqa: E402
+
+EDU_DIR = BIM_EDUCATION_DIR
 PROGRESS_FILE = EDU_DIR / "progress.json"
-STARTER_CLIENTS_FILE = PROJECT_ROOT / "data" / "starter_plan" / "clients.json"
-STARTER_MESSAGES_DIR = PROJECT_ROOT / "data" / "starter_plan" / "messages"
-STARTER_FRIDAY_DIR = PROJECT_ROOT / "data" / "starter_plan" / "friday_quiz"
-STARTER_MILESTONE_DIR = PROJECT_ROOT / "data" / "starter_plan" / "milestone_messages"
-STARTER_CARDS_DIR = PROJECT_ROOT / "data" / "starter_plan" / "reference_cards"
+STARTER_CLIENTS_FILE = STARTER_PLAN_DIR / "clients.json"
+STARTER_MESSAGES_DIR = STARTER_PLAN_DIR / "messages"
+STARTER_FRIDAY_DIR = STARTER_PLAN_DIR / "friday_quiz"
+STARTER_MILESTONE_DIR = STARTER_PLAN_DIR / "milestone_messages"
+STARTER_CARDS_DIR = STARTER_PLAN_DIR / "reference_cards"
 
 BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 

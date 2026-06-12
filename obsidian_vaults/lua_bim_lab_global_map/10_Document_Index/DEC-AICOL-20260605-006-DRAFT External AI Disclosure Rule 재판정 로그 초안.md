@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/conflict_resolution/decision_logs/DEC-AICOL-20260605-006-DRAFT.md"
+source_path: "knowledge/10_agents/conflict_resolution/decision_logs/DEC-AICOL-20260605-006-DRAFT.md"
 ---
 
 # DEC-AICOL-20260605-006-DRAFT External AI Disclosure Rule 재판정 로그 초안
 
 ## Source
 
-`data/knowledge_base/conflict_resolution/decision_logs/DEC-AICOL-20260605-006-DRAFT.md`
+`knowledge/10_agents/conflict_resolution/decision_logs/DEC-AICOL-20260605-006-DRAFT.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/conflict_resolution/decision_logs/DEC-AICOL-20260605-006-DRAFT.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/conflict_resolution/decision_logs/DEC-AICOL-20260605-006-DRAFT.md`
 
 ## Category
 
@@ -25,15 +25,15 @@ Absolute path:
 
 ## Keywords
 
-ai, base, conflict_resolution, cs, data, dec-aicol-20260605-006-draft.md, decision_logs, knowledge, knowledge_base, qa, 라이선스, 리스크, 변경, 보안, 지식, 지원
+agents, ai, base, conflict_resolution, cs, dec-aicol-20260605-006-draft.md, decision_logs, knowledge, qa, 라이선스, 리스크, 변경, 보안, 지식, 지원
 
 ## Related
 
 - [[DEC-AICOL-20260605-007-DRAFT Product Launch Status 재판정 로그 초안]]
 - [[DEC-AICOL-20260606-030-DRAFT KST04 고객 응답 승격 재판정 로그 초안]]
+- [[10_agents - conflict_resolution - 10_agents - conflict_resolution - AI 간 판단 충돌 해소 체계]]
 - [[4D 5D BIM 지식 베이스]]
 - [[ACC BIM360 CDE 지식 베이스]]
-- [[AI Collaboration Automated Audit - 2026-06]]
 - [[AI Collaboration Daily Handoff - 2026-06-06]]
 - [[AI 간 판단 충돌 로그]]
 - [[AI 협업 세션 등록부 - 2026-06]]

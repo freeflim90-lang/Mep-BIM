@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/conflict_resolution/AUTOMATED_COLLABORATION_AUDIT_202606.md"
+source_path: "knowledge/10_agents/conflict_resolution/AUTOMATED_COLLABORATION_AUDIT_202606.md"
 ---
 
 # AI Collaboration Automated Audit - 2026-06
 
 ## Source
 
-`data/knowledge_base/conflict_resolution/AUTOMATED_COLLABORATION_AUDIT_202606.md`
+`knowledge/10_agents/conflict_resolution/AUTOMATED_COLLABORATION_AUDIT_202606.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/conflict_resolution/AUTOMATED_COLLABORATION_AUDIT_202606.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/conflict_resolution/AUTOMATED_COLLABORATION_AUDIT_202606.md`
 
 ## Category
 
@@ -25,18 +25,18 @@ Absolute path:
 
 ## Keywords
 
-ai, audit, automated_collaboration_audit_202606.md, base, conflict_resolution, data, knowledge, knowledge_base, qa, 교육, 리스크, 테스트
+agents, ai, audit, automated_collaboration_audit_202606.md, base, conflict_resolution, knowledge, qa, 교육, 리스크, 테스트
 
 ## Related
 
-- [[AI Collaboration Daily Handoff - 2026-06-06]]
-- [[AI 간 판단 충돌 로그]]
 - [[AI 협업 세션 등록부 - 2026-06]]
 - [[AI 협업 프로세스 테스트 계획]]
+- [[KST04 Promotion Missing Evidence Matrix - 2026-06-06]]
+- [[TEST_ROUND_20260605_001 AI 협업 프로세스 다방향 검증 요약]]
+- [[AI Collaboration Daily Handoff - 2026-06-06]]
+- [[AI 간 판단 충돌 로그]]
 - [[ESCALATED Redecision Execution Playbook - 2026-06-06]]
 - [[ESCALATION SLA Tracker - 2026-06]]
-- [[KST04 Customer Response Promotion Source of Truth Draft - 2026-06-06]]
-- [[KST04 Promotion Missing Evidence Matrix - 2026-06-06]]
 
 ## Home
 

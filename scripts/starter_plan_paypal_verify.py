@@ -35,7 +35,12 @@ except ImportError:
     httpx = None  # type: ignore
 
 ROOT = Path(__file__).resolve().parents[1]
-CLIENTS_JSON  = ROOT / "data" / "starter_plan" / "clients.json"
+import sys as _sys  # noqa: E402
+if str(ROOT) not in _sys.path:
+    _sys.path.insert(0, str(ROOT))
+from backend.core.paths import STARTER_PLAN_DIR  # noqa: E402
+
+CLIENTS_JSON  = STARTER_PLAN_DIR / "clients.json"
 ENV_FILE      = ROOT / ".env"
 
 PAYPAL_LIVE_URL    = "https://api-m.paypal.com"

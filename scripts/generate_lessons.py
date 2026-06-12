@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
 """Generate missing Starter Plan lesson files for Days 68-90 across all disciplines."""
+import sys
 from pathlib import Path
 
-BASE = Path(__file__).resolve().parents[1] / "data" / "starter_plan" / "messages"
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+from backend.core.paths import STARTER_PLAN_DIR  # noqa: E402
+
+BASE = STARTER_PLAN_DIR / "messages"
 SCOPE = "\nScope note:\nThis is general educational content, not project review, engineering verification, code compliance confirmation, or construction approval."
 
 def w(disc, day, title, matters, concept_lines, lens, checks, mistake, action):

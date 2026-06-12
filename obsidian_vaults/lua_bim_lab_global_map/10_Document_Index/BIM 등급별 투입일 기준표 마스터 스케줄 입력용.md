@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/BIM_등급별_투입일_기준표.md"
+source_path: "knowledge/10_agents/90_확장에이전트/BIM_등급별_투입일_기준표.md"
 ---
 
 # BIM 등급별 투입일 기준표 마스터 스케줄 입력용
 
 ## Source
 
-`data/knowledge_base/BIM_등급별_투입일_기준표.md`
+`knowledge/10_agents/90_확장에이전트/BIM_등급별_투입일_기준표.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/BIM_등급별_투입일_기준표.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/90_확장에이전트/BIM_등급별_투입일_기준표.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-ai, base, bim, bim_, data, knowledge, knowledge_base, mep, 간섭, 견적, 교육, 납품, 물량
+agents, ai, base, bim, bim_, knowledge, mep, 간섭, 견적, 교육, 납품, 물량
 
 ## Related
 

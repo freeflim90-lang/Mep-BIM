@@ -43,28 +43,30 @@ QA_KB_DIR = Path(os.environ.get("KNOWLEDGE_QA_DIR", str(KNOWLEDGE_ROOT / "20_qa"
 AGENT_KB_LAYOUT = "teams"
 CATALOG_DIR = KNOWLEDGE_ROOT / "00_catalog"
 
-INTAKE_DIR = DOCS_DIR / "knowledge_intake"
-TEAM_REQUESTS_DIR = DATA_DIR / "team_requests"
-CURATION_DIR = DATA_DIR / "knowledge_quality"
-KNOWLEDGE_UPDATES_DIR = DOCS_DIR / "knowledge_updates"
+INTAKE_DIR = KNOWLEDGE_ROOT / "30_intake"
+TEAM_REQUESTS_DIR = INTAKE_DIR / "team_requests"
+CURATION_DIR = KNOWLEDGE_ROOT / "40_curation" / "quality"
+KNOWLEDGE_UPDATES_DIR = KNOWLEDGE_ROOT / "40_curation" / "updates"
 
-TECHNICAL_PDFS_DIR = DATA_DIR / "technical_pdfs"
-BIM_SCRIPTS_DIR = DATA_DIR / "bim_scripts"
-BIMOBJECT_DIR = DATA_DIR / "bimobject"
-QA_DATASET_DIR = DATA_DIR / "qa_dataset"
-BIM_EDUCATION_DIR = DATA_DIR / "bim_education"
+DOMAIN_DIR = KNOWLEDGE_ROOT / "50_domain"
+TECHNICAL_PDFS_DIR = DOMAIN_DIR / "technical_pdfs"
+BIM_SCRIPTS_DIR = DOMAIN_DIR / "bim_scripts"
+BIMOBJECT_DIR = DOMAIN_DIR / "bimobject"
+QA_DATASET_DIR = DOMAIN_DIR / "qa_dataset"
+BIM_EDUCATION_DIR = DOMAIN_DIR / "bim_education"
 
-BLOGGER_QUEUE_DIR = PROJECT_ROOT / "content" / "blogger_queue"
-TRAINING_CURRICULUM_DIR = DOCS_DIR / "training_curriculum"
+PUBLIC_DIR = KNOWLEDGE_ROOT / "60_public"
+BLOGGER_QUEUE_DIR = PUBLIC_DIR / "blogger_queue"
+TRAINING_CURRICULUM_DIR = PUBLIC_DIR / "training_curriculum"
 
 # ---------------------------------------------------------------------------
 # 제품 트리 (products/)
 # ---------------------------------------------------------------------------
 PRODUCTS_DIR = PROJECT_ROOT / "products"
-STARTER_PLAN_DIR = DATA_DIR / "starter_plan"
-BIM_LAND_DIR = DATA_DIR / "bim_land"
-BIM_COMMAND_CENTER_DIR = DATA_DIR / "bim_command_center"
-AUTODESK_MARKET_DIR = DATA_DIR / "autodesk_market"
+STARTER_PLAN_DIR = PRODUCTS_DIR / "starter_plan"
+BIM_LAND_DIR = PRODUCTS_DIR / "bim_land"
+BIM_COMMAND_CENTER_DIR = PRODUCTS_DIR / "bim_command_center"
+AUTODESK_MARKET_DIR = PRODUCTS_DIR / "autodesk_market"
 
 # ---------------------------------------------------------------------------
 # 에이전트 팀 → knowledge/10_agents/ 하위 폴더명

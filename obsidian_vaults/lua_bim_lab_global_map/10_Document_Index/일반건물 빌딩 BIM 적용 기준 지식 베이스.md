@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/시설유형/일반건물_빌딩_BIM.md"
+source_path: "knowledge/10_agents/시설유형/일반건물_빌딩_BIM.md"
 ---
 
 # 일반건물 빌딩 BIM 적용 기준 지식 베이스
 
 ## Source
 
-`data/knowledge_base/시설유형/일반건물_빌딩_BIM.md`
+`knowledge/10_agents/시설유형/일반건물_빌딩_BIM.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/시설유형/일반건물_빌딩_BIM.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/시설유형/일반건물_빌딩_BIM.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-ai, api, autodesk, base, bim, bim.md, cs, data, knowledge, knowledge_base, kpi, mep, navisworks, revit, 간섭, 교육, 납품, 지식, 품질
+agents, ai, api, autodesk, base, bim, bim.md, cs, knowledge, kpi, mep, navisworks, revit, 간섭, 교육, 납품, 지식, 품질
 
 ## Related
 

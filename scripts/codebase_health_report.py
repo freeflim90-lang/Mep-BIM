@@ -11,6 +11,11 @@ from typing import Iterable
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+import sys as _sys  # noqa: E402
+if str(PROJECT_ROOT) not in _sys.path:
+    _sys.path.insert(0, str(PROJECT_ROOT))
+from backend.core.paths import BIM_SCRIPTS_DIR  # noqa: E402
+
 DEFAULT_IGNORE_DIRS = {
     ".git",
     ".dev-venv",
@@ -24,7 +29,7 @@ DEFAULT_IGNORE_DIRS = {
     ".wrangler",
 }
 DEFAULT_IGNORE_PATH_PREFIXES = {
-    "data/bim_scripts/",
+    BIM_SCRIPTS_DIR.relative_to(PROJECT_ROOT).as_posix() + "/",
 }
 CODE_SUFFIXES = {".py", ".js", ".ts", ".tsx", ".cs", ".html", ".css"}
 DOC_SUFFIXES = {".md", ".txt", ".rst"}

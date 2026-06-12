@@ -20,7 +20,12 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-CLIENTS_FILE = PROJECT_ROOT / "data" / "starter_plan" / "clients.json"
+import sys as _sys  # noqa: E402
+if str(PROJECT_ROOT) not in _sys.path:
+    _sys.path.insert(0, str(PROJECT_ROOT))
+from backend.core.paths import STARTER_PLAN_DIR  # noqa: E402
+
+CLIENTS_FILE = STARTER_PLAN_DIR / "clients.json"
 OBSIDIAN_CLIENT_DIR = (
     PROJECT_ROOT
     / "obsidian_vaults"

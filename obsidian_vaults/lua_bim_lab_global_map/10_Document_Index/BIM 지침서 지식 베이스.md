@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/BIM_지침서.md"
+source_path: "knowledge/10_agents/90_확장에이전트/BIM_지침서.md"
 ---
 
 # BIM 지침서 지식 베이스
 
 ## Source
 
-`data/knowledge_base/BIM_지침서.md`
+`knowledge/10_agents/90_확장에이전트/BIM_지침서.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/BIM_지침서.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/90_확장에이전트/BIM_지침서.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-ai, autodesk, base, bim, bim_, data, knowledge, knowledge_base, mep, model, revit, 간섭, 견적, 납품, 물량, 변경, 조직, 지식, 품질
+agents, ai, autodesk, base, bim, bim_, knowledge, mep, model, revit, 간섭, 견적, 납품, 물량, 변경, 조직, 지식, 품질
 
 ## Related
 

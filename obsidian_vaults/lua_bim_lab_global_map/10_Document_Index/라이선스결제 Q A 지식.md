@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: AI Knowledge Base
-source_path: "data/knowledge_base/qa/라이선스결제_QA.md"
+category: Workspace Markdown
+source_path: "knowledge/20_qa/라이선스결제_QA.md"
 ---
 
 # 라이선스결제 Q A 지식
 
 ## Source
 
-`data/knowledge_base/qa/라이선스결제_QA.md`
+`knowledge/20_qa/라이선스결제_QA.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/qa/라이선스결제_QA.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/20_qa/라이선스결제_QA.md`
 
 ## Category
 
-- [[MOC - AI Knowledge Base]]
+- [[MOC - Workspace Markdown]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, ai, api, autodesk, base, bim, data, knowledge, knowledge_base, mep, navisworks, qa, qa.md, revit, store, 개발, 견적, 결제, 구독, 권한, 라이선스, 지식, 지원
+add-in, api, autodesk, bim, knowledge, markdown, mep, navisworks, qa, qa.md, revit, store, workspace, 개발, 견적, 결제, 구독, 권한, 라이선스, 지식, 지원
 
 ## Related
 

@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/BEP_수행계획서.md"
+source_path: "knowledge/10_agents/90_확장에이전트/BEP_수행계획서.md"
 ---
 
 # BEP 수행계획서 템플릿
 
 ## Source
 
-`data/knowledge_base/BEP_수행계획서.md`
+`knowledge/10_agents/90_확장에이전트/BEP_수행계획서.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/BEP_수행계획서.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/90_확장에이전트/BEP_수행계획서.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, ai, autodesk, base, bep_, bim, clash, data, knowledge, knowledge_base, mep, navisworks, revit, 간섭, 권한, 납품, 물량, 변경, 역할, 자산, 조직, 품질, 회의
+add-in, agents, ai, autodesk, base, bep_, bim, clash, knowledge, mep, navisworks, revit, 간섭, 권한, 납품, 물량, 변경, 역할, 자산, 조직, 품질, 회의
 
 ## Related
 

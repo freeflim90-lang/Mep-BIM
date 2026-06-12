@@ -17,10 +17,10 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
-from backend.core.paths import AGENT_KB_DIR  # noqa: E402
+from backend.core.paths import AGENT_KB_DIR, QA_DATASET_DIR  # noqa: E402
 
 KNOWLEDGE_BASE = AGENT_KB_DIR
-QA_OUTPUT = PROJECT_ROOT / "data" / "qa_dataset"
+QA_OUTPUT = QA_DATASET_DIR
 QA_OUTPUT.mkdir(parents=True, exist_ok=True)
 
 

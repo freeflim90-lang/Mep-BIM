@@ -31,12 +31,12 @@ add-in, addin, bim, cs, folder_index.md, markdown, mep, navisworks, revit, works
 
 - [[MEP BIM Coordination Console 개발 핸드오프]]
 - [[README - README - Mep-BIM]]
+- [[Revit_Addin_QA]]
+- [[배포문서 Q A 지식]]
+- [[엑셀자동화 Q A 지식]]
 - [[BIM Autpmatic Coordination System]]
 - [[BIM Coordination Automation Package Master Index]]
 - [[BIM Learning Path Next Steps]]
-- [[BIM Troubleshooting Decision Tree]]
-- [[Coordination Panel]]
-- [[Kennystruct - Clash-Detection-Matrix-Automation - Kennystruct - Clash-Detection-Matrix-Automation - DATA SCIEN]]
 
 ## Home
 

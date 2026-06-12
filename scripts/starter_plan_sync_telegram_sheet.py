@@ -26,8 +26,13 @@ from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+import sys as _sys  # noqa: E402
+if str(PROJECT_ROOT) not in _sys.path:
+    _sys.path.insert(0, str(PROJECT_ROOT))
+from backend.core.paths import STARTER_PLAN_DIR  # noqa: E402
+
 SERVICE_ACCOUNT_FILE = PROJECT_ROOT / "scripts" / "outbound_sales" / "data" / "service_account.json"
-CLIENTS_FILE = PROJECT_ROOT / "data" / "starter_plan" / "clients.json"
+CLIENTS_FILE = STARTER_PLAN_DIR / "clients.json"
 DEFAULT_SPREADSHEET_ID = "1v1t5k76mAhKSBx-x19fEw3Kmi7c6heFKMrkIbK_qcFk"
 
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]

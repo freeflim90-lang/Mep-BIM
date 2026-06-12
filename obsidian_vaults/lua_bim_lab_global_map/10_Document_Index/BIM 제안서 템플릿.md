@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/BIM_제안서.md"
+source_path: "knowledge/10_agents/90_확장에이전트/BIM_제안서.md"
 ---
 
 # BIM 제안서 템플릿
 
 ## Source
 
-`data/knowledge_base/BIM_제안서.md`
+`knowledge/10_agents/90_확장에이전트/BIM_제안서.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/BIM_제안서.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/90_확장에이전트/BIM_제안서.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, ai, autodesk, base, bim, bim_, clash, data, knowledge, knowledge_base, mep, navisworks, revit, 간섭, 교육, 권한, 납품, 물량, 변경, 역할, 조직, 지원, 품질, 회의
+add-in, agents, ai, autodesk, base, bim, bim_, clash, knowledge, mep, navisworks, revit, 간섭, 교육, 권한, 납품, 물량, 변경, 역할, 조직, 지원, 품질, 회의
 
 ## Related
 

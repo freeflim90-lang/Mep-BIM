@@ -24,6 +24,7 @@ from backend.core.paths import (  # noqa: E402
     KNOWLEDGE_UPDATES_DIR,
     OBSIDIAN_VAULTS_DIR,
     TEAM_REQUESTS_DIR,
+    TRAINING_CURRICULUM_DIR,
 )
 
 REPORT_DIR = KNOWLEDGE_UPDATES_DIR / "curation"
@@ -48,6 +49,7 @@ SOURCE_ROOTS = [
 
 _KB_PREFIX = AGENT_KB_DIR.relative_to(PROJECT_ROOT).as_posix() + "/"
 _TEAM_REQ_PREFIX = TEAM_REQUESTS_DIR.relative_to(PROJECT_ROOT).as_posix() + "/"
+_TRAINING_PREFIX = TRAINING_CURRICULUM_DIR.relative_to(PROJECT_ROOT).as_posix() + "/"
 
 PURPOSE_RULES = [
     ("MEP BIM 실무 품질", ["mep", "bim", "공조", "덕트", "배관", "소방", "전기", "통신", "위생", "간섭", "품질", "납품", "검수"]),
@@ -136,7 +138,7 @@ def category_for(rel: str) -> str:
         return "조직운영문서"
     if rel.startswith("docs/revenue_products/"):
         return "상품문서"
-    if rel.startswith("docs/training_curriculum/"):
+    if rel.startswith(_TRAINING_PREFIX):
         return "교육자료"
     if rel.startswith("obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Team_Telegram_QA/"):
         return "팀 Q&A"

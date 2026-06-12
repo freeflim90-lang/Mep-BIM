@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: AI Knowledge Base
-source_path: "data/knowledge_base/qa/엑셀자동화_QA.md"
+category: Workspace Markdown
+source_path: "knowledge/20_qa/엑셀자동화_QA.md"
 ---
 
 # 엑셀자동화 Q A 지식
 
 ## Source
 
-`data/knowledge_base/qa/엑셀자동화_QA.md`
+`knowledge/20_qa/엑셀자동화_QA.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/qa/엑셀자동화_QA.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/20_qa/엑셀자동화_QA.md`
 
 ## Category
 
-- [[MOC - AI Knowledge Base]]
+- [[MOC - Workspace Markdown]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, addin, ai, api, base, bim, clash, cs, data, knowledge, knowledge_base, navisworks, qa, qa.md, revit, 간섭, 개발, 납품, 리스크, 지식
+add-in, addin, api, bim, clash, cs, knowledge, markdown, navisworks, qa, qa.md, revit, workspace, 간섭, 개발, 납품, 리스크, 지식
 
 ## Related
 

@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/conflict_resolution/REDECISION_BRANCH_SIMULATION_20260606.md"
+source_path: "knowledge/10_agents/conflict_resolution/REDECISION_BRANCH_SIMULATION_20260606.md"
 ---
 
 # Redecision Branch Simulation - 2026-06-06
 
 ## Source
 
-`data/knowledge_base/conflict_resolution/REDECISION_BRANCH_SIMULATION_20260606.md`
+`knowledge/10_agents/conflict_resolution/REDECISION_BRANCH_SIMULATION_20260606.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/conflict_resolution/REDECISION_BRANCH_SIMULATION_20260606.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/conflict_resolution/REDECISION_BRANCH_SIMULATION_20260606.md`
 
 ## Category
 
@@ -25,18 +25,18 @@ Absolute path:
 
 ## Keywords
 
-ai, base, conflict_resolution, cs, data, knowledge, knowledge_base, qa, redecision_branch_simulation_20260606.md, 변경, 보안
+agents, ai, base, conflict_resolution, cs, knowledge, qa, redecision_branch_simulation_20260606.md, 변경, 보안
 
 ## Related
 
-- [[AI Collaboration Daily Handoff - 2026-06-06]]
 - [[AI 간 판단 충돌 로그]]
 - [[AI 협업 세션 등록부 - 2026-06]]
 - [[AI 협업 프로세스 테스트 계획]]
 - [[ESCALATED Missing Evidence Matrix - 2026-06-06]]
 - [[ESCALATED Redecision Execution Playbook - 2026-06-06]]
 - [[ESCALATION SLA Tracker - 2026-06]]
-- [[External AI Disclosure Rule Draft - 2026-06-05]]
+- [[10_agents - conflict_resolution - 10_agents - conflict_resolution - AI 간 판단 충돌 해소 체계]]
+- [[AI Collaboration Daily Handoff - 2026-06-06]]
 
 ## Home
 

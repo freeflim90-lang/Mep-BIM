@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/EIRBEP_심사원.md"
+source_path: "knowledge/10_agents/90_확장에이전트/EIRBEP_심사원.md"
 ---
 
 # EIR BEP_심사원 지식 베이스
 
 ## Source
 
-`data/knowledge_base/EIRBEP_심사원.md`
+`knowledge/10_agents/90_확장에이전트/EIRBEP_심사원.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/EIRBEP_심사원.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/90_확장에이전트/EIRBEP_심사원.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, ai, api, audit, autodesk, base, bim, clash, cs, data, eirbep_, knowledge, knowledge_base, model, quality, revit, 간섭, 개발, 견적, 교육, 권한, 납품, 변경, 심사, 역할, 지식, 품질, 회의
+add-in, agents, ai, api, audit, autodesk, base, bim, clash, cs, eirbep_, knowledge, model, quality, revit, 간섭, 개발, 견적, 교육, 권한, 납품, 변경, 심사, 역할, 지식, 품질, 회의
 
 ## Related
 

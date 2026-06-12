@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: AI Knowledge Base
-source_path: "data/knowledge_base/qa/프로그램개발_QA.md"
+category: Workspace Markdown
+source_path: "knowledge/20_qa/프로그램개발_QA.md"
 ---
 
 # 프로그램개발 Q A 지식
 
 ## Source
 
-`data/knowledge_base/qa/프로그램개발_QA.md`
+`knowledge/20_qa/프로그램개발_QA.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/qa/프로그램개발_QA.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/20_qa/프로그램개발_QA.md`
 
 ## Category
 
-- [[MOC - AI Knowledge Base]]
+- [[MOC - Workspace Markdown]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, ai, api, autodesk, base, bim, cs, data, knowledge, knowledge_base, navisworks, qa, qa.md, qwen, revit, 개발, 라이선스, 변경, 보안, 빌드, 지식, 지원
+add-in, api, autodesk, bim, cs, knowledge, markdown, navisworks, qa, qa.md, qwen, revit, workspace, 개발, 라이선스, 변경, 보안, 빌드, 지식, 지원
 
 ## Related
 

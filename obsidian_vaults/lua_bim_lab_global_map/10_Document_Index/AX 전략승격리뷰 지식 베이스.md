@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/AX_전략승격리뷰.md"
+source_path: "knowledge/10_agents/90_확장에이전트/AX_전략승격리뷰.md"
 ---
 
 # AX 전략승격리뷰 지식 베이스
 
 ## Source
 
-`data/knowledge_base/AX_전략승격리뷰.md`
+`knowledge/10_agents/90_확장에이전트/AX_전략승격리뷰.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/AX_전략승격리뷰.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/90_확장에이전트/AX_전략승격리뷰.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, ai, api, audit, autodesk, ax_, base, bim, cs, data, knowledge, knowledge_base, mep, model, okr, qa, quality, revit, store, 간섭, 개발, 견적, 교육, 납품, 라이선스, 변경, 빌드, 지식, 지원, 커리큘럼
+add-in, agents, ai, api, audit, autodesk, ax_, base, bim, cs, knowledge, mep, model, okr, qa, quality, revit, store, 간섭, 개발, 견적, 교육, 납품, 라이선스, 변경, 빌드, 지식, 지원, 커리큘럼, 패키징
 
 ## Related
 

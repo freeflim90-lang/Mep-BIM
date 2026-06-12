@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/conflict_resolution/cases/AITEST_20260606_031.md"
+source_path: "knowledge/10_agents/conflict_resolution/cases/AITEST_20260606_031.md"
 ---
 
 # AITEST_20260606_031 KST04 승격 Source of Truth 및 Missing 증거 큐
 
 ## Source
 
-`data/knowledge_base/conflict_resolution/cases/AITEST_20260606_031.md`
+`knowledge/10_agents/conflict_resolution/cases/AITEST_20260606_031.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/conflict_resolution/cases/AITEST_20260606_031.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/conflict_resolution/cases/AITEST_20260606_031.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-ai, aitest_20260606_031.md, base, cases, conflict_resolution, cs, data, knowledge, knowledge_base, qa, 교육, 역할, 지식, 지원
+agents, ai, aitest_20260606_031.md, base, cases, conflict_resolution, cs, knowledge, qa, 교육, 역할, 지식, 지원
 
 ## Related
 

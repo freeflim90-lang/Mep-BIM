@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: AI Knowledge Base
-source_path: "data/knowledge_base/qa/빌드검증_QA.md"
+category: Workspace Markdown
+source_path: "knowledge/20_qa/빌드검증_QA.md"
 ---
 
 # 빌드검증 Q A 지식
 
 ## Source
 
-`data/knowledge_base/qa/빌드검증_QA.md`
+`knowledge/20_qa/빌드검증_QA.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/qa/빌드검증_QA.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/20_qa/빌드검증_QA.md`
 
 ## Category
 
-- [[MOC - AI Knowledge Base]]
+- [[MOC - Workspace Markdown]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, addin, ai, api, autodesk, base, bim, data, knowledge, knowledge_base, qa, qa.md, revit, 라이선스, 변경, 빌드, 지식, 지원, 테스트
+add-in, addin, api, autodesk, bim, knowledge, markdown, qa, qa.md, revit, workspace, 라이선스, 변경, 빌드, 지식, 지원, 테스트
 
 ## Related
 

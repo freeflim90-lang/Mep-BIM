@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/Revit_Family제작.md"
+source_path: "knowledge/10_agents/90_확장에이전트/Revit_Family제작.md"
 ---
 
 # Revit 패밀리 제작 지식 베이스
 
 ## Source
 
-`data/knowledge_base/Revit_Family제작.md`
+`knowledge/10_agents/90_확장에이전트/Revit_Family제작.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/Revit_Family제작.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/90_확장에이전트/Revit_Family제작.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, addin, ai, api, base, bim, cs, data, knowledge, knowledge_base, mep, model, revit, revit_family, 변경, 지식, 진단, 테스트, 품질
+add-in, addin, agents, ai, api, base, bim, cs, knowledge, mep, model, revit, revit_family, 변경, 지식, 진단, 테스트, 품질
 
 ## Related
 

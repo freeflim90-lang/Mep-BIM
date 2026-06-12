@@ -16,7 +16,12 @@ from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-REPORT_DIR = PROJECT_ROOT / "docs" / "knowledge_intake" / "external_sources"
+import sys as _sys  # noqa: E402
+if str(PROJECT_ROOT) not in _sys.path:
+    _sys.path.insert(0, str(PROJECT_ROOT))
+from backend.core.paths import INTAKE_DIR  # noqa: E402
+
+REPORT_DIR = INTAKE_DIR / "external_sources"
 
 KNOWLEDGE_EXTENSIONS = {
     ".md", ".txt", ".log", ".pdf", ".docx", ".pptx", ".xlsx", ".xls", ".csv",
@@ -245,7 +250,7 @@ def render_report(roots: list[Path], rows: list[dict], max_examples: int) -> str
         "2. 고객명/프로젝트명이 포함된 자료는 원문 흡수 전 익명화 가능성을 먼저 판단한다.",
         "3. `blocked_sensitive`는 자동 흡수하지 않고 보안/법무 검토 후 제외 또는 익명화한다.",
         "4. 설치파일, 압축파일, 이미지 원본은 지식 DB가 아니라 별도 자산 인벤토리로 관리한다.",
-        "5. 승인된 자료만 요약본을 `docs/knowledge_intake/curated` 또는 관련 표준문서로 승격한다.",
+        "5. 승인된 자료만 요약본을 intake `curated` 폴더 또는 관련 표준문서로 승격한다.",
         "",
         "## 4. 관련 문서",
         "",

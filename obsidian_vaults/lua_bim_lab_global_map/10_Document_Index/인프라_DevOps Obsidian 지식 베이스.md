@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: AI Knowledge Base
-source_path: "data/knowledge_base/인프라_DevOpsObsidian.md"
+source_path: "knowledge/10_agents/90_확장에이전트/인프라_DevOpsObsidian.md"
 ---
 
 # 인프라_DevOps Obsidian 지식 베이스
 
 ## Source
 
-`data/knowledge_base/인프라_DevOpsObsidian.md`
+`knowledge/10_agents/90_확장에이전트/인프라_DevOpsObsidian.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/인프라_DevOpsObsidian.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/90_확장에이전트/인프라_DevOpsObsidian.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-addin, ai, api, audit, autodesk, base, bim, cs, data, devopsobsidian.md, knowledge, knowledge_base, model, qa, quality, qwen, revit, 개발, 교육, 권한, 변경, 빌드, 역할, 조직, 지식, 커리큘럼, 테스트, 품질
+addin, agents, ai, api, audit, autodesk, base, bim, cs, devopsobsidian.md, knowledge, model, qa, quality, qwen, revit, 개발, 교육, 권한, 변경, 빌드, 역할, 조직, 지식, 커리큘럼, 테스트, 품질
 
 ## Related
 

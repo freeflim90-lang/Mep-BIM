@@ -11,7 +11,11 @@ from backend.bim_command_center.settings_profiles import (
     SettingsProfileError,
     default_profile_store,
 )
+from backend.core.paths import BIM_COMMAND_CENTER_DIR, PROJECT_ROOT
 from backend.models import SettingsProfileSaveRequest
+
+# project_root 주입(테스트 tmp_path 포함)에도 동일한 상대 구조를 쓴다
+_BCC_REL = BIM_COMMAND_CENTER_DIR.relative_to(PROJECT_ROOT)
 
 
 PRODUCT_NAME = "BIM Command Center for Revit"
@@ -23,7 +27,7 @@ def create_bim_command_center_router(*, project_root: Path) -> APIRouter:
     router = APIRouter(prefix="/api/bim-command-center", tags=["bim-command-center"])
 
     def profile_store():
-        return default_profile_store(project_root / "data" / "bim_command_center" / "settings_profiles")
+        return default_profile_store(project_root / _BCC_REL / "settings_profiles")
 
     @router.get("/features")
     async def bim_command_center_features():
