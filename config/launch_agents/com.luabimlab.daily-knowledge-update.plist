@@ -14,12 +14,13 @@
   <key>WorkingDirectory</key>
   <string>/Users/choejeong-yeon/LUA BIM LABS</string>
 
+  <!-- 매일 자정(00:00) 실행. 스크립트 내부에서 오늘 이미 완료됐으면 즉시 종료.
+       Mac이 자정에 잠자기 상태였다면 깨어난 직후 RunAtLoad 없이 다음 자정에 실행.
+       수동 즉시 실행: launchctl kickstart -k gui/$(id -u)/com.luabimlab.daily-knowledge-update -->
   <key>StartCalendarInterval</key>
   <dict>
-    <key>Hour</key>
-    <integer>7</integer>
-    <key>Minute</key>
-    <integer>0</integer>
+    <key>Hour</key><integer>0</integer>
+    <key>Minute</key><integer>0</integer>
   </dict>
 
   <key>StandardOutPath</key>
@@ -28,7 +29,8 @@
   <key>StandardErrorPath</key>
   <string>/Users/choejeong-yeon/LUA BIM LABS/logs/daily_knowledge_update.launchd.err.log</string>
 
+  <!-- 맥 부팅/재로그인 시에도 오늘 완료 여부를 확인 후 실행 -->
   <key>RunAtLoad</key>
-  <false/>
+  <true/>
 </dict>
 </plist>

@@ -10,7 +10,6 @@
   <array>
     <string>/Users/choejeong-yeon/LUA BIM LABS/.dev-venv/bin/python</string>
     <string>/Users/choejeong-yeon/LUA BIM LABS/scripts/daily_blogger_queue_publish.py</string>
-    <string>--generate-when-empty</string>
   </array>
 
   <key>WorkingDirectory</key>
