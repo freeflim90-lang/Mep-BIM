@@ -18,8 +18,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTBOUND_DB = ROOT / "scripts" / "outbound_sales" / "data" / "companies.db"
-CLIENTS_JSON = ROOT / "data" / "starter_plan" / "clients.json"
-BUDGET_JSON  = ROOT / "data" / "ai_usage" / "deepseek_monthly_budget.json"
+CLIENTS_JSON    = ROOT / "data" / "starter_plan" / "clients.json"
+EDUCATION_JSON  = ROOT / "data" / "bim_education" / "progress.json"
+BUDGET_JSON     = ROOT / "data" / "ai_usage" / "deepseek_monthly_budget.json"
 
 
 # ── 헬퍼 ───────────────────────────────────────────────────────────
@@ -99,6 +100,21 @@ def ai_cost_stats() -> dict:
     }
 
 
+def education_stats() -> dict:
+    data = _load_json(EDUCATION_JSON)
+    users = data.get("users", {}) if isinstance(data, dict) else {}
+    today = datetime.now().strftime("%Y-%m-%d")
+    active_today = [u for u in users.values() if u.get("last_sent") == today]
+    return {
+        "total_users": len(users),
+        "active_today": len(active_today),
+        "users": [
+            {"name": u.get("name", k), "day": u.get("day", 0), "track": u.get("track", "")}
+            for k, u in users.items()
+        ],
+    }
+
+
 def bcc_addin_status() -> dict:
     """BCC Add-in 스토어 출시 상태 (하드코딩 — PRODUCT_RECORD.md 기준)."""
     return {
@@ -156,6 +172,16 @@ def print_dashboard(data: dict) -> None:
     if mrr == 0:
         print(_color("     ⚠  아직 유료 클라이언트 0명. 첫 결제 유입이 최우선 과제.", YELLOW))
 
+    # ── 내부 교육 ──
+    edu = data["education"]
+    edu_color = GREEN if edu["active_today"] > 0 else GRAY
+    print()
+    print(_color("  🎓 내부 BIM 교육 현황", BOLD))
+    print(f"     등록 인원   : {edu['total_users']}명")
+    print(f"     오늘 발송   : {_color(str(edu['active_today']), edu_color)}명")
+    for u in edu["users"]:
+        print(f"       - {u['name']}: Day {u['day']} ({u['track']} 트랙)")
+
     # ── 아웃바운드 영업 ──
     ob = data["outbound_sales"]
     sent = ob["email_sent"]
@@ -169,9 +195,7 @@ def print_dashboard(data: dict) -> None:
     print(f"     팔로업 예정 : {_color(str(ob['followup_due_now']), YELLOW if ob['followup_due_now'] > 0 else GRAY)}개")
     print(f"     최근 7일 발송: {ob['emails_sent_last_7d']}건")
     if ob["new"] > 0 and sent == 0:
-        print(_color(f"     ⚠  {ob['with_email']}개 이메일 확보됐으나 발송 0건. 즉시 실행 필요.", RED))
-        print(_color("         → python3 scripts/outbound_sales/main.py send --limit 20 --dry-run", GRAY))
-        print(_color("         → (확인 후) python3 scripts/outbound_sales/main.py send --limit 20", GRAY))
+        print(_color(f"     📋  {ob['with_email']}개 이메일 확보 완료. 발송 시점은 별도 결정 예정.", GRAY))
     if ob["followup_due_now"] > 0:
         print(_color(f"     ⚠  팔로업 대기 {ob['followup_due_now']}개. 즉시 실행:", YELLOW))
         print(_color("         → python3 scripts/outbound_sales/main.py followup --dry-run", GRAY))
@@ -211,8 +235,6 @@ def print_dashboard(data: dict) -> None:
     print()
     print(_color("  🎯 지금 당장 해야 할 액션 (우선순위 순)", BOLD))
     actions = []
-    if ob["new"] > 0 and sent == 0:
-        actions.append(("HIGH", "아웃바운드 이메일 즉시 발송 (--limit 20 으로 소규모 테스트 먼저)"))
     if ob["followup_due_now"] > 0:
         actions.append(("HIGH", f"팔로업 이메일 발송 ({ob['followup_due_now']}개 대기 중)"))
     if mrr == 0:
@@ -240,6 +262,7 @@ def main():
     data = {
         "generated_at": datetime.now().isoformat(),
         "starter_plan": starter_plan_stats(),
+        "education": education_stats(),
         "outbound_sales": outbound_sales_stats(),
         "bcc_addin": bcc_addin_status(),
         "ai_cost": ai_cost_stats(),

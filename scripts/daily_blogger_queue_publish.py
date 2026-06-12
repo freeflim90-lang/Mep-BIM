@@ -232,6 +232,21 @@ def _send_telegram(message: str) -> None:
         print(f"Telegram notification failed: {exc}")
 
 
+def _check_queue_alert(queue_dir: Path, threshold: int = 5) -> None:
+    remaining = len(list(queue_dir.glob("*.json")))
+    print(f"Queue remaining: {remaining} posts.")
+    if remaining < threshold:
+        message = (
+            f"📝 [LUA BIM LABS 블로그 알림]\n"
+            f"큐 잔여 포스트: {remaining}개 (기준: {threshold}개 미만)\n\n"
+            f"Claude Code에서 새 글을 생성해 큐를 보충해주세요.\n"
+            f"목표: 10개 유지\n"
+            f"경로: content/blogger_queue/"
+        )
+        print(message)
+        _send_telegram(message)
+
+
 def _check_duplicate_warning(next_index: int, warn_days: int) -> None:
     cycle = _topic_cycle_length()
     position = (next_index - 1) % cycle
@@ -320,18 +335,19 @@ def render_service_cta(args: argparse.Namespace) -> str:
     contact_email = html.escape(links.get("contact_email", ""))
 
     lines = [
-        "<h2>Personalized MEP BIM Tutor</h2>",
-        "<p>LUA BIM LABS is launching the Starter plan for Personal MEP BIM Tutor through Telegram. The first public offer is simple: one practical MEP BIM lesson every day, written for beginners and early-stage BIM learners who want a steady learning habit.</p>",
-        "<p><strong>Starter Plan:</strong> USD 39/month. Personal Tutor, Coordinator Mentor, and Project Mentor are planned as Coming Soon services.</p>",
-        "<p>The application form includes the PayPal payment link and onboarding questions. Please complete payment and submit the form with the email used for PayPal payment.</p>",
+        "<hr>",
+        "<h2>LUA BIM LABS — Products &amp; Services</h2>",
+        "<h3>Personalized MEP BIM Tutor (Starter Plan)</h3>",
+        "<p>One practical MEP BIM lesson every day via Telegram. Written for beginners and early-stage BIM learners who want a steady learning habit.</p>",
+        "<p><strong>Starter Plan:</strong> USD 39/month.</p>",
     ]
 
     if application_form or paypal_link or subscription_link:
         lines.append("<ul>")
-        if application_form:
-            lines.append(f'  <li><a href="{application_form}">Apply for the Starter Plan</a></li>')
         if paypal_link:
-            lines.append(f'  <li><a href="{paypal_link}">Pay with PayPal</a></li>')
+            lines.append(f'  <li><a href="{paypal_link}"><strong>Start now — Pay with PayPal (USD 39/month)</strong></a></li>')
+        if application_form:
+            lines.append(f'  <li><a href="{application_form}">Fill in the application form</a></li>')
         if subscription_link:
             lines.append(f'  <li><a href="{subscription_link}">Subscribe with PayPal</a></li>')
         if telegram_contact:
@@ -340,19 +356,29 @@ def render_service_cta(args: argparse.Namespace) -> str:
     else:
         lines.append("<p>The Starter application and PayPal payment link will be announced soon. Follow this blog for the opening notice.</p>")
 
+    lines += [
+        "<h3>BIM Command Center for Revit (Add-in)</h3>",
+        "<p>A Revit Add-in with 30+ automation features for MEP BIM — clash filtering, tag batch, space validation, COBie export, and more. Compatible with Revit 2019–2027.</p>",
+        '<p><a href="https://luabimlabs.com/manual/">View feature overview →</a></p>',
+    ]
+
     if contact_email:
-        lines.append(f"<p>Contact: {contact_email}</p>")
+        lines.append(f"<p>Questions? Contact us: {contact_email}</p>")
 
     return "\n".join(lines)
 
 
 def render_post(topic: dict[str, Any], args: argparse.Namespace | None = None) -> str:
+    service_cta = render_service_cta(args) if args else ""
+
+    if topic.get("content"):
+        return topic["content"] + ("\n" + service_cta if service_cta else "")
+
     title = html.escape(topic["title"])
-    focus = html.escape(topic["focus"])
-    case_example = html.escape(topic["case_example"])
+    focus = html.escape(topic.get("focus", ""))
+    case_example = html.escape(topic.get("case_example", ""))
     checklist = topic.get("checklist", [])
     checklist_html = "\n".join(f"  <li>{html.escape(item)}</li>" for item in checklist)
-    service_cta = render_service_cta(args) if args else ""
 
     return f"""<p><strong>{title}</strong></p>
 
@@ -605,6 +631,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--lock-file", default=DEFAULT_LOCK_FILE)
     parser.add_argument("--generate-when-empty", action="store_true")
     parser.add_argument("--state-file", default=DEFAULT_STATE_FILE)
+    parser.add_argument("--queue-alert-threshold", type=int, default=5)
     parser.add_argument("--enable-daily-agent-on-empty", action="store_true")
     parser.add_argument("--daily-agent-plist", default=DEFAULT_DAILY_AGENT_PLIST)
     parser.add_argument("--service-config", default=DEFAULT_SERVICE_CONFIG)
@@ -655,6 +682,7 @@ def main() -> None:
 
             url = publish_topic(args, topic_file)
             print(f"Published: {url}")
+            _check_queue_alert(queue_dir, args.queue_alert_threshold)
     except FileExistsError:
         print(f"Another Blogger queue publisher is already running: {args.lock_file}")
 
