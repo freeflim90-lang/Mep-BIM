@@ -96,6 +96,21 @@ def _catalog_team_lookup(catalog: dict) -> dict[str, str]:
     return {meta["path"]: meta.get("team", "") for meta in catalog.get("files") or []}
 
 
+def _catalog_domain_lookup(catalog: dict) -> dict[str, str]:
+    return {meta["path"]: meta.get("domain", "") for meta in catalog.get("files") or []}
+
+
+def _catalog_agent_domain(catalog: dict, agent: str) -> str:
+    """추론된 에이전트의 KB 파일 도메인 — 쿼리의 도메인 축 추정에 사용."""
+    rel = (catalog.get("agent_to_file") or {}).get(agent, "")
+    if not rel:
+        return ""
+    for meta in catalog.get("files") or []:
+        if meta["path"] == rel:
+            return meta.get("domain", "")
+    return ""
+
+
 def knowledge_search_files() -> list[Path]:
     roots = [
         _AGENT_KB_DIR,
@@ -251,9 +266,13 @@ def search_local_knowledge(query: str, limit: int = 4) -> list[dict]:
     candidate_rel: set[str] = set()
     known_rel: set[str] = set()
     team_by_rel: dict[str, str] = {}
+    domain_by_rel: dict[str, str] = {}
+    inferred_domain = ""
     if catalog:
         candidate_rel, known_rel = _catalog_candidates(catalog, terms)
         team_by_rel = _catalog_team_lookup(catalog)
+        domain_by_rel = _catalog_domain_lookup(catalog)
+        inferred_domain = _catalog_agent_domain(catalog, inferred_agent)
 
     matches = []
     for path in knowledge_search_files():
@@ -286,6 +305,8 @@ def search_local_knowledge(query: str, limit: int = 4) -> list[dict]:
             score += 8
         if inferred_team and team_by_rel.get(rel) == inferred_team:
             score += 6
+        if inferred_domain and inferred_domain != "기타" and domain_by_rel.get(rel) == inferred_domain:
+            score += 4
         if "curation" in rel.lower() or "daily_knowledge" in rel.lower():
             score -= 30
         if score <= 0:

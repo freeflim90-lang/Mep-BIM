@@ -24,6 +24,7 @@ if str(PROJECT_ROOT) not in sys.path:
 from backend.core.paths import (  # noqa: E402
     AGENT_KB_DIR,
     CATALOG_DIR,
+    CONFIG_DIR,
     KNOWLEDGE_ROOT,
     PROJECT_ROOT as _ROOT,
     QA_KB_DIR,
@@ -35,6 +36,35 @@ from backend.knowledge_store import ORGANIZATION  # noqa: E402
 _AGENT_TO_TEAM_KEY = {
     agent: team for team, agents in ORGANIZATION.items() for agent in agents
 }
+
+# ── 도메인 축 (config/knowledge_domains.json) ────────────────────────────────
+_DOMAIN_CONFIG = json.loads(
+    (CONFIG_DIR / "knowledge_domains.json").read_text(encoding="utf-8")
+)
+_STEM_TO_DOMAIN: dict[str, str] = {}
+for _domain, _spec in _DOMAIN_CONFIG.get("domains", {}).items():
+    for _stem in _spec.get("stems", []):
+        _STEM_TO_DOMAIN[_stem] = _domain
+_FOLDER_DOMAINS: dict[str, str] = {
+    k: v for k, v in _DOMAIN_CONFIG.get("folder_domains", {}).items()
+    if not k.startswith("_")
+}
+_DEFAULT_DOMAIN = _DOMAIN_CONFIG.get("default_domain", "기타")
+
+
+def domain_for(path: Path, agent: str) -> str:
+    """폴더 규칙 우선, 다음 stem(에이전트명) 매핑, 없으면 기본값."""
+    for part in path.parts:
+        if part in _FOLDER_DOMAINS:
+            return _FOLDER_DOMAINS[part]
+    stem = agent or path.stem
+    if stem in _STEM_TO_DOMAIN:
+        return _STEM_TO_DOMAIN[stem]
+    if path.stem in _STEM_TO_DOMAIN:
+        return _STEM_TO_DOMAIN[path.stem]
+    if path.is_relative_to(AGENT_KB_DIR) or path.is_relative_to(QA_KB_DIR):
+        return _DEFAULT_DOMAIN
+    return ""
 
 _TOKEN_RE = re.compile(r"[A-Za-z0-9_#+.\-가-힣]{2,30}")
 _HEADING_RE = re.compile(r"^(#{1,3})\s+(.+)$", re.MULTILINE)
@@ -68,6 +98,7 @@ def main() -> int:
     files_meta: list[dict] = []
     agent_to_file: dict[str, str] = {}
     team_to_files: dict[str, list[int]] = {}
+    domain_to_files: dict[str, list[int]] = {}
     keyword_to_files: dict[str, list[int]] = {}
 
     for path in sorted(knowledge_search_files()):
@@ -88,10 +119,12 @@ def main() -> int:
         for token in tokens:
             keyword_to_files.setdefault(token, []).append(idx)
 
+        domain = domain_for(path, agent)
         files_meta.append({
             "path": rel,
             "agent": agent,
             "team": team,
+            "domain": domain,
             "layer": layer_for(path),
             "title": title,
             "headings": headings[:10],
@@ -102,6 +135,8 @@ def main() -> int:
             agent_to_file[agent] = rel
         if team:
             team_to_files.setdefault(team, []).append(idx)
+        if domain:
+            domain_to_files.setdefault(domain, []).append(idx)
 
     CATALOG_DIR.mkdir(parents=True, exist_ok=True)
     file_map = {
@@ -110,6 +145,7 @@ def main() -> int:
         "files": files_meta,
         "agent_to_file": agent_to_file,
         "team_to_files": team_to_files,
+        "domain_to_files": domain_to_files,
         "keyword_to_files": keyword_to_files,
     }
     (CATALOG_DIR / "FILE_MAP.json").write_text(
@@ -148,9 +184,22 @@ def main() -> int:
             by_team.setdefault(team_dir, []).append(meta)
         for team_dir in sorted(by_team):
             lines.append(f"### {team_dir}")
-            for meta in sorted(by_team[team_dir], key=lambda m: m["path"]):
-                lines.append(f"- [{Path(meta['path']).stem}]({meta['path']}) — {meta['title'][:60]}")
-            lines.append("")
+            metas = sorted(by_team[team_dir], key=lambda m: (m.get("domain", ""), m["path"]))
+            if team_dir == "90_확장에이전트":
+                # 확장 에이전트는 도메인 축으로 묶어 표시
+                by_domain: dict[str, list[dict]] = {}
+                for meta in metas:
+                    by_domain.setdefault(meta.get("domain") or "기타", []).append(meta)
+                for domain in sorted(by_domain):
+                    lines.append(f"#### {domain}")
+                    for meta in by_domain[domain]:
+                        lines.append(f"- [{Path(meta['path']).stem}]({meta['path']}) — {meta['title'][:60]}")
+                    lines.append("")
+            else:
+                for meta in metas:
+                    domain_tag = f" `{meta['domain']}`" if meta.get("domain") else ""
+                    lines.append(f"- [{Path(meta['path']).stem}]({meta['path']}) — {meta['title'][:60]}{domain_tag}")
+                lines.append("")
 
     for layer, label in [("20_qa", "QA 지식 (20_qa)"), ("docs", "회사 문서 (docs)"), ("obsidian", "MQA Obsidian")]:
         metas = by_layer.get(layer)
