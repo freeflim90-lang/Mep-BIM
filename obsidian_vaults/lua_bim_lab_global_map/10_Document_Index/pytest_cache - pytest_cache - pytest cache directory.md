@@ -29,14 +29,14 @@ cs, markdown, pytest_cache, readme.md, workspace
 
 ## Related
 
-- [[11034 - A2__Rules - 11034 - A2__Rules - A2 Rules]]
-- [[11034-advanced-bim - Assignment 3 - 11034-advanced-bim - Assignment 3 - Assignment 3]]
-- [[AI-POWERED-ENERGY-CONSUMPTION-FORECASTING - data - AI-POWERED-ENERGY-CONSUMPTION-FORECASTING - data - Data Fol]]
-- [[AI-POWERED-ENERGY-CONSUMPTION-FORECASTING - docs - AI-POWERED-ENERGY-CONSUMPTION-FORECASTING - docs - Document]]
-- [[ASSET-Lab - BuildingEnergy - ASSET-Lab - BuildingEnergy - BuildingEnergy]]
-- [[BETALAB-team - EUReCA - BETALAB-team - EUReCA - EUReCA]]
-- [[BIM panel - HealthScore pushbutton - BIM panel - HealthScore pushbutton - README]]
-- [[BIM_Automation - data - BIM_Automation - data - README]]
+- [[LUA BIM LABS 폴더 인덱스]]
+- [[MEP BIM Coordination Console 개발 핸드오프]]
+- [[Mep-BIM - Mep-BIM - Mep-BIM]]
+- [[README - README - Mep-BIM]]
+- [[_vendor - idna - _vendor - idna - _vendor - idna - LICENSE - d3ec1a]]
+- [[_vendor - idna - _vendor - idna - _vendor - idna - LICENSE - e07784]]
+- [[duckduckgo_search-8 1 1 dist-info - licenses - duckduckgo_search-8 1 1 dist-info - licenses - LICENSE]]
+- [[idna-3 16 dist-info - licenses - idna-3 16 dist-info - licenses - LICENSE]]
 
 ## Home
 

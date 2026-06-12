@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/Dujltqzv/Some-Many-Books/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/Dujltqzv/Some-Many-Books/README.md"
 ---
 
 # Dujltqzv - Some-Many-Books - Preface
 
 ## Source
 
-`data/bim_scripts/Dujltqzv/Some-Many-Books/README.md`
+`knowledge/50_domain/bim_scripts/Dujltqzv/Some-Many-Books/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/Dujltqzv/Some-Many-Books/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/Dujltqzv/Some-Many-Books/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-api, bim, bim_scripts, data, dujltqzv, markdown, readme.md, some-many-books, workspace
+api, bim, bim_scripts, domain, dujltqzv, knowledge, readme.md, some-many-books, sources
 
 ## Related
 

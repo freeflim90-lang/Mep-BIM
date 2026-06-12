@@ -20,7 +20,7 @@ AI 간 협업은 `Intake -> Role Framing -> Evidence Pass -> Challenge Pass -> C
 4. 중요한 결정은 최소 1개 이상의 반론 또는 실패 조건을 포함한다.
 5. 최종 합의 상태는 `CONSENSUS`, `CONSENSUS_WITH_GUARDRAILS`, `SPLIT_DECISION`, `ESCALATE` 중 하나로만 기록한다.
 6. 대표 또는 소유 AI의 첨언이 없으면 확정이 아니라 가설 상태로 둔다.
-7. 반복되는 합의와 충돌은 `data/knowledge_base/conflict_resolution` 선례로 승격한다.
+7. 반복되는 합의와 충돌은 `knowledge/10_agents/conflict_resolution` 선례로 승격한다.
 
 ## AI 간 메시지 형식
 
@@ -78,10 +78,10 @@ KST 등급:
 
 | 결과 유형 | 저장 위치 |
 |---|---|
-| 판단 선례 | `data/knowledge_base/conflict_resolution/CONFLICT_LOG.md` |
-| 업무 기준 | `data/knowledge_base/*.md` |
-| QA/체크리스트 | `data/knowledge_base/qa/*.md` 또는 `docs/internal_organization_documents/16_INTERNAL_QUALITY_AUDIT_CHECKLIST.md` |
-| 교육 필요 | `docs/training_curriculum/` |
+| 판단 선례 | `knowledge/10_agents/conflict_resolution/CONFLICT_LOG.md` |
+| 업무 기준 | `knowledge/10_agents/90_확장에이전트/*.md` |
+| QA/체크리스트 | `knowledge/20_qa/*.md` 또는 `docs/internal_organization_documents/16_INTERNAL_QUALITY_AUDIT_CHECKLIST.md` |
+| 교육 필요 | `knowledge/60_public/training_curriculum/` |
 | 표준문서 | `docs/standard_documents/` |
 | 자동화 후보 | `docs/internal_growth/AX_INTERNAL_GROWTH_BACKLOG.md` |
 | 조직 운영 기준 | `docs/internal_organization_documents/` |
@@ -129,7 +129,7 @@ KST 등급:
 
 ## 신규 AI 역할 온보딩
 
-신규 AI 역할은 실제 협업 세션에 들어가기 전에 `docs/training_curriculum/team_distribution/samples/2026-06-05_AI_COLLABORATION_ONBOARDING_CARD_SAMPLE.md`로 15분 실습을 수행한다.
+신규 AI 역할은 실제 협업 세션에 들어가기 전에 `knowledge/60_public/training_curriculum/team_distribution/samples/2026-06-05_AI_COLLABORATION_ONBOARDING_CARD_SAMPLE.md`로 15분 실습을 수행한다.
 
 온보딩 통과 기준:
 - 자기 역할이 주관, 검토, 반론, 결정권자 중 무엇인지 구분한다.

@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination 101.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination 101.md"
 ---
 
 # BIM Coordinator 101
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination 101.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination 101.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination 101.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination 101.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Below is a **professional BIM Coordinator 101 training package** expanded into: 
 
 ## Keywords
 
-audit, autodesk, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, coordination, cs, data, health, markdown, model, navisworks, revit, workspace
+audit, autodesk, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, coordination, cs, domain, health, knowledge, model, navisworks, revit, sources
 
 ## Related
 

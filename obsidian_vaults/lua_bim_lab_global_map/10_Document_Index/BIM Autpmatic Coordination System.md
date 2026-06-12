@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Autpmatic Coordination System.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Autpmatic Coordination System.md"
 ---
 
 # BIM Autpmatic Coordination System
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Autpmatic Coordination System.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Autpmatic Coordination System.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Autpmatic Coordination System.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Autpmatic Coordination System.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ If your goal is to build one of the most advanced BIM coordination teams in the 
 
 ## Keywords
 
-audit, autodesk, autpmatic, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, coordination, cs, data, health, markdown, mep, model, navisworks, qa, revit, system.md, workspace
+audit, autodesk, autpmatic, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, coordination, cs, domain, health, knowledge, mep, model, navisworks, qa, revit, sources, system.md
 
 ## Related
 

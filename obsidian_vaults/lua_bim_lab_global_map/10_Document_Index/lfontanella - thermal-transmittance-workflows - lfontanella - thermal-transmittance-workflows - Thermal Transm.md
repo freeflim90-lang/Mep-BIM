@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/lfontanella/thermal-transmittance-workflows/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/lfontanella/thermal-transmittance-workflows/README.md"
 ---
 
 # lfontanella - thermal-transmittance-workflows - Thermal Transmittance Workflows
 
 ## Source
 
-`data/bim_scripts/lfontanella/thermal-transmittance-workflows/README.md`
+`knowledge/50_domain/bim_scripts/lfontanella/thermal-transmittance-workflows/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/lfontanella/thermal-transmittance-workflows/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/lfontanella/thermal-transmittance-workflows/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This repository contains proprietary and open-source workflows developed as part
 
 ## Keywords
 
-autodesk, bim, bim_scripts, data, lfontanella, markdown, model, readme.md, revit, store, thermal-transmittance-workflows, workspace
+autodesk, bim, bim_scripts, domain, knowledge, lfontanella, model, readme.md, revit, sources, store, thermal-transmittance-workflows
 
 ## Related
 

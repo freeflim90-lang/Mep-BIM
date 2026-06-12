@@ -57,9 +57,9 @@
 
 | 목적지 | 정확한 파일/경로 | 담당 | 기한 | 생성/수정 링크 | 검증자 | 상태 |
 |---|---|---|---|---|---|---|
-| 024 Case | `data/knowledge_base/conflict_resolution/cases/AITEST_20260606_024.md` | 조율차장 | 2026-06-06 | Missing Evidence Matrix | QA_테스터 | Created |
-| SLA Tracker | `data/knowledge_base/conflict_resolution/ESCALATION_SLA_TRACKER_202606.md` | 조율차장 | 2026-06-06 | 재판정 전 보완 큐 | QA_테스터 | Updated |
-| Session Register | `data/knowledge_base/conflict_resolution/SESSION_REGISTER_202606.md` | 조율차장 | 2026-06-06 | AICOL-20260606-024 | 조율차장 | Updated |
+| 024 Case | `knowledge/10_agents/conflict_resolution/cases/AITEST_20260606_024.md` | 조율차장 | 2026-06-06 | Missing Evidence Matrix | QA_테스터 | Created |
+| SLA Tracker | `knowledge/10_agents/conflict_resolution/ESCALATION_SLA_TRACKER_202606.md` | 조율차장 | 2026-06-06 | 재판정 전 보완 큐 | QA_테스터 | Updated |
+| Session Register | `knowledge/10_agents/conflict_resolution/SESSION_REGISTER_202606.md` | 조율차장 | 2026-06-06 | AICOL-20260606-024 | 조율차장 | Updated |
 
 ## 6. 결론
 

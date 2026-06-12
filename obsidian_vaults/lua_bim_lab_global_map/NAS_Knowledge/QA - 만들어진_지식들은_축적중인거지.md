@@ -26,7 +26,7 @@ tags:
 - 이전 세션(Iteration 1~9): 20개 시설유형 파일 포함 누적
 
 **저장 위치 (이중 보관)**
-1. **로컬 NAS 지식베이스**: `/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/` — 옵시디언에서 바로 열람 가능
+1. **로컬 NAS 지식베이스**: `/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/` — 옵시디언에서 바로 열람 가능
 2. **GitHub 원격 저장소**: `freeflim90-lang/Mep-BIM` — 어디서든 접근 가능, 버전 이력 보존
 
 **축적 방식**
@@ -62,7 +62,7 @@ tags:
 - 이전 세션(Iteration 1~9): 20개 시설유형 파일 포함 누적
 
 **저장 위치 (이중 보관)**
-1. **로컬 NAS 지식베이스**: `/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_base/` — 옵시디언에서 바로 열람 가능
+1. **로컬 NAS 지식베이스**: `/Users/choejeong-yeon/LUA BIM LABS/knowledge/10_agents/` — 옵시디언에서 바로 열람 가능
 2. **GitHub 원격 저장소**: `freeflim90-lang/Mep-BIM` — 어디서든 접근 가능, 버전 이력 보존
 
 **축적 방식**

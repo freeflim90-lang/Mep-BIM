@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/CLAUDE.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/CLAUDE.md"
 ---
 
 # colinBSI - bim-coord-auto-package - BIM Coord Auto Package
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/CLAUDE.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/CLAUDE.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/CLAUDE.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/CLAUDE.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Documentation-only package — no code tests, no git. Verification = read files 
 
 ## Keywords
 
-api, bim, bim-coord-auto-package, bim_scripts, clash, claude.md, colinbsi, cs, data, health, markdown, mep, model, navisworks, revit, workspace
+api, bim, bim-coord-auto-package, bim_scripts, clash, claude.md, colinbsi, cs, domain, health, knowledge, mep, model, navisworks, revit, sources
 
 ## Related
 

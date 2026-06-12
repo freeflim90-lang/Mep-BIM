@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-07-pyrevit-health-scorer-design.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-07-pyrevit-health-scorer-design.md"
 ---
 
 # pyRevit 150-Point Model Health Scorer Design Document
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-07-pyrevit-health-scorer-design.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-07-pyrevit-health-scorer-design.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-07-pyrevit-health-scorer-design.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-07-pyrevit-health-scorer-design.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-api, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, data, docs, health, markdown, model, plans, pyrevit-health-scorer-design.md, revit, store, workspace
+api, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, docs, domain, health, knowledge, model, plans, pyrevit-health-scorer-design.md, revit, sources, store
 
 ## Related
 

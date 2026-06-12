@@ -65,10 +65,10 @@ footer{padding:32px 60px;border-top:1px solid var(--rule);display:flex;justify-c
   <div class="page-header">
     <div class="label">§ AI 조직 / Agent Directory</div>
     <h1>AI 에이전트<br><em>전체 목록.</em></h1>
-    <p class="subtitle">4계층 구조로 운영되는 LUA BIM LABS의 가상 기업 AI 에이전트 디렉토리입니다.</p>
+    <p class="subtitle">9개 팀 구조로 운영되는 LUA BIM LABS의 가상 기업 AI 에이전트 디렉토리입니다. 각 팀의 지식은 팀별 지식베이스로 축적됩니다.</p>
     <div class="meta-row">
       <div class="meta-item"><span class="v" id="totalCount">—</span><span class="k">Total Agents</span></div>
-      <div class="meta-item"><span class="v">4</span><span class="k">Tiers</span></div>
+      <div class="meta-item"><span class="v">9</span><span class="k">Teams</span></div>
       <div class="meta-item"><span class="v">24×7</span><span class="k">운영</span></div>
     </div>
   </div>
@@ -83,21 +83,19 @@ footer{padding:32px 60px;border-top:1px solid var(--rule);display:flex;justify-c
 </footer>
 
 <script>
-const TIER_MAP = {
-  'CEO': 1, 'COO': 1, 'CFO': 1,
-  '조율차장': 2,
-  'Revit_Addin': 3, 'Navisworks_Addin': 3, '프로그램개발': 3, 'QA_테스터': 3,
-  '빌드검증': 3, '배포문서': 3, '스토어심사': 3, '라이선스결제': 3,
-  '고객지원 CS': 3, '경영지원': 3, '전략기획': 3, '브랜드마케팅': 3,
-  'Qwen_Coder_8B': 3, '지식업데이트': 3, '지식큐레이터': 3,
-};
-const TIER_LABELS = {
-  1: {label:'T/01 — Strategic Control', cls:'t1'},
-  2: {label:'T/02 — Total PM · Intent Router', cls:'t2'},
-  3: {label:'T/03 — Operation Matrix', cls:'t3'},
-  4: {label:'T/04 — MEP Core · 공종별 본부', cls:'t4'},
-};
-const MEP_AGENTS = ['건축','구조','토목','공조배관','공조덕트','소방기계','소방전기','전기','위생','통신'];
+// 팀 구성 — backend/knowledge_store.py ORGANIZATION 과 동일하게 유지
+const TEAMS = [
+  {key:'01', label:'Team/01 — 경영진', cls:'t1', members:['CEO','COO','CFO','조율차장']},
+  {key:'02', label:'Team/02 — 견적팀', cls:'t2', members:['건축','구조','토목']},
+  {key:'03', label:'Team/03 — 엔지니어링팀', cls:'t4', members:['공조배관','공조덕트','소방기계','소방전기','전기']},
+  {key:'04', label:'Team/04 — 리포팅팀', cls:'t4', members:['위생','통신']},
+  {key:'05', label:'Team/05 — 애드인개발팀', cls:'t3', members:['요구사항분석','Revit_Addin','Navisworks_Addin','빌드검증','배포문서']},
+  {key:'06', label:'Team/06 — 스토어상용화팀', cls:'t3', members:['제품패키징','스토어심사','라이선스결제','고객지원 CS']},
+  {key:'07', label:'Team/07 — 경영지원팀', cls:'t1', members:['경영지원','경비정산_AI']},
+  {key:'08', label:'Team/08 — 인재육성팀', cls:'t2', members:['HR_인재분석관','교육컨설팅','러닝콘텐츠디자이너']},
+  {key:'09', label:'Team/09 — 지식팀', cls:'t2', members:['지식업데이트','지식큐레이터']},
+];
+const EXTRA_TEAM = {key:'90', label:'Team/90 — 확장 에이전트 · 도메인 지식', cls:'t3', members:[]};
 
 async function load() {
   try {
@@ -107,29 +105,26 @@ async function load() {
     document.getElementById('totalCount').textContent = agents.length;
     document.getElementById('updatedAt').textContent = new Date().toLocaleString('ko-KR');
 
-    const tiers = {1:[],2:[],3:[],4:[]};
-    agents.forEach(name => {
-      if (MEP_AGENTS.includes(name)) tiers[4].push(name);
-      else if (TIER_MAP[name]) tiers[TIER_MAP[name]].push(name);
-      else tiers[3].push(name);
-    });
+    const assigned = new Set(TEAMS.flatMap(t => t.members));
+    const groups = TEAMS.map(t => ({...t, list: t.members.filter(m => agents.includes(m))}));
+    groups.push({...EXTRA_TEAM, list: agents.filter(name => !assigned.has(name))});
 
     const content = document.getElementById('content');
     content.innerHTML = '';
-    [1,2,3,4].forEach(t => {
-      if (!tiers[t].length) return;
+    groups.forEach(team => {
+      if (!team.list.length) return;
       const sec = document.createElement('div');
       sec.className = 'tier-section';
-      sec.innerHTML = `<div class="tier-label">${TIER_LABELS[t].label} · ${tiers[t].length}명</div><div class="agents-grid" id="tier${t}"></div>`;
+      sec.innerHTML = `<div class="tier-label">${team.label} · ${team.list.length}명</div><div class="agents-grid" id="team${team.key}"></div>`;
       content.appendChild(sec);
-      const grid = sec.querySelector(`#tier${t}`);
-      tiers[t].forEach((name, i) => {
+      const grid = sec.querySelector(`#team${team.key}`);
+      team.list.forEach((name, i) => {
         const isEn = /^[A-Za-z0-9_\/ ]+$/.test(name);
         grid.innerHTML += `
           <div class="agent-card">
             <span class="agent-no">${String(i+1).padStart(2,'0')}</span>
             <span class="agent-name ${isEn?'en':''}">${name}</span>
-            <span class="agent-tier ${TIER_LABELS[t].cls}">${TIER_LABELS[t].label.split('—')[0].trim()}</span>
+            <span class="agent-tier ${team.cls}">${team.label.split('—')[0].trim()}</span>
           </div>`;
       });
     });

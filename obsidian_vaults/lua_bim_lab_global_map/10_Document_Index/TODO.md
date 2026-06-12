@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/brean/python-ifc-blender/TODO.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/brean/python-ifc-blender/TODO.md"
 ---
 
 # TODO
 
 ## Source
 
-`data/bim_scripts/brean/python-ifc-blender/TODO.md`
+`knowledge/50_domain/bim_scripts/brean/python-ifc-blender/TODO.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/brean/python-ifc-blender/TODO.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/brean/python-ifc-blender/TODO.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, bim_scripts, brean, data, markdown, python-ifc-blender, todo.md, workspace
+bim, bim_scripts, brean, domain, knowledge, python-ifc-blender, sources, todo.md
 
 ## Related
 

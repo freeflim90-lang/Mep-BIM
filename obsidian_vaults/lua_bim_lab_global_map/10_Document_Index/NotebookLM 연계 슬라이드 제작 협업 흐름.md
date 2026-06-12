@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/team_distribution/07_NOTEBOOKLM_SLIDE_PRODUCTION_WORKFLOW.md"
+source_path: "knowledge/60_public/training_curriculum/team_distribution/07_NOTEBOOKLM_SLIDE_PRODUCTION_WORKFLOW.md"
 ---
 
 # NotebookLM 연계 슬라이드 제작 협업 흐름
 
 ## Source
 
-`docs/training_curriculum/team_distribution/07_NOTEBOOKLM_SLIDE_PRODUCTION_WORKFLOW.md`
+`knowledge/60_public/training_curriculum/team_distribution/07_NOTEBOOKLM_SLIDE_PRODUCTION_WORKFLOW.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/team_distribution/07_NOTEBOOKLM_SLIDE_PRODUCTION_WORKFLOW.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/team_distribution/07_NOTEBOOKLM_SLIDE_PRODUCTION_WORKFLOW.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, cs, curriculum, docs, mep, notebooklm, notebooklm_slide_production_workflow.md, qa, team_distribution, training, training_curriculum, 교육, 보안, 슬라이드, 역할, 지식, 커리큘럼
+bim, curriculum, knowledge, mep, notebooklm, notebooklm_slide_production_workflow.md, public, qa, team_distribution, training, training_curriculum, 교육, 보안, 슬라이드, 역할, 지식, 커리큘럼
 
 ## Related
 

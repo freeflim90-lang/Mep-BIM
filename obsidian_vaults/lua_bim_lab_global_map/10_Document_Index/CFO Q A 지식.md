@@ -1,7 +1,7 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
+category: AI Knowledge Base - QA
 source_path: "knowledge/20_qa/CFO_QA.md"
 ---
 
@@ -17,7 +17,7 @@ Absolute path:
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - AI Knowledge Base - QA]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-autodesk, bim, cfo_qa.md, cs, knowledge, markdown, qa, store, workspace, 개발, 결제, 구독, 라이선스, 보안, 지식, 지원
+ai, autodesk, base, bim, cfo_qa.md, cs, knowledge, qa, store, 개발, 결제, 구독, 라이선스, 보안, 지식, 지원
 
 ## Related
 

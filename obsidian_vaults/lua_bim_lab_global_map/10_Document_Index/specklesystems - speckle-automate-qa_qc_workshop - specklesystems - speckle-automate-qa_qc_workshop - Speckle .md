@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/README.md"
 ---
 
 # specklesystems - speckle-automate-qa_qc_workshop - Speckle Automate Workshop Tutorial
 
 ## Source
 
-`data/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/README.md`
+`knowledge/50_domain/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,18 +25,18 @@ Quality Assurance and Quality Control (QAQC) in Building Information Modeling (B
 
 ## Keywords
 
-bim, bim_scripts, data, markdown, model, qa, quality, readme.md, revit, speckle-automate-qa_qc_workshop, specklesystems, workspace
+bim, bim_scripts, domain, knowledge, model, qa, quality, readme.md, revit, sources, speckle-automate-qa_qc_workshop, specklesystems
 
 ## Related
 
 - [[BIM Autpmatic Coordination System]]
 - [[BIM Coordination Automation Package Master Index]]
 - [[BIM Coordination Toolbar design doc]]
-- [[BIM Learning Path Next Steps]]
 - [[BIM Portfolio Governance Exporter Phase 5 Advanced Tier]]
 - [[BIM Revit model setup automation]]
 - [[BIM automation plan]]
 - [[BIM panel - HealthScore pushbutton - BIM panel - HealthScore pushbutton - README]]
+- [[BIM scoring system]]
 
 ## Home
 

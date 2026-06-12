@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Docs - General
-source_path: "docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_PRIVACY_AI_DATA_GOVERNANCE_UPDATE.md"
+category: Knowledge Curation
+source_path: "knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_PRIVACY_AI_DATA_GOVERNANCE_UPDATE.md"
 ---
 
 # 2026-06-04 LUA BIM LABS Privacy AI Data Governance Update
 
 ## Source
 
-`docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_PRIVACY_AI_DATA_GOVERNANCE_UPDATE.md`
+`knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_PRIVACY_AI_DATA_GOVERNANCE_UPDATE.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_PRIVACY_AI_DATA_GOVERNANCE_UPDATE.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_PRIVACY_AI_DATA_GOVERNANCE_UPDATE.md`
 
 ## Category
 
-- [[MOC - Docs - General]]
+- [[MOC - Knowledge Curation]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-api, bim, cs, daily, docs, general, knowledge_updates, lua_bim_labs_privacy_ai_data_governance_update.md, 개발, 교육, 권한, 라이선스, 리스크, 보안, 역할, 조직, 지식, 지원
+api, bim, cs, curation, daily, knowledge, lua_bim_labs_privacy_ai_data_governance_update.md, updates, 개발, 교육, 권한, 라이선스, 리스크, 보안, 역할, 조직, 지식, 지원
 
 ## Related
 

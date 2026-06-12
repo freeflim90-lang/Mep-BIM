@@ -31,8 +31,8 @@ Collect public-safe beginner MEP BIM learning patterns from blog posts, Telegram
 
 Local files:
 
-- `data/starter_plan/starter_plan_curriculum.json`
-- `data/starter_plan/messages/day_001.txt` to `day_030.txt`
+- `products/starter_plan/starter_plan_curriculum.json`
+- `products/starter_plan/messages/day_001.txt` to `day_030.txt`
 
 ## Boundary
 

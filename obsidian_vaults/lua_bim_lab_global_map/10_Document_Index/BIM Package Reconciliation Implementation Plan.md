@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-07-bim-package-reconciliation.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-07-bim-package-reconciliation.md"
 ---
 
 # BIM Package Reconciliation Implementation Plan
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-07-bim-package-reconciliation.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-07-bim-package-reconciliation.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-07-bim-package-reconciliation.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-07-bim-package-reconciliation.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-api, bim, bim-coord-auto-package, bim-package-reconciliation.md, bim_scripts, clash, colinbsi, cs, data, docs, health, markdown, model, navisworks, plans, revit, workspace
+api, bim, bim-coord-auto-package, bim-package-reconciliation.md, bim_scripts, clash, colinbsi, cs, docs, domain, health, knowledge, model, navisworks, plans, revit, sources
 
 ## Related
 

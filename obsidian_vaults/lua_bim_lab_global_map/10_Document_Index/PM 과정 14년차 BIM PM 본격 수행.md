@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/mep_bim_ai/05b_PM_14_YEAR.md"
+source_path: "knowledge/60_public/training_curriculum/mep_bim_ai/05b_PM_14_YEAR.md"
 ---
 
 # PM 과정 14년차 BIM PM 본격 수행
 
 ## Source
 
-`docs/training_curriculum/mep_bim_ai/05b_PM_14_YEAR.md`
+`knowledge/60_public/training_curriculum/mep_bim_ai/05b_PM_14_YEAR.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/mep_bim_ai/05b_PM_14_YEAR.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/mep_bim_ai/05b_PM_14_YEAR.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-b_pm_14_year.md, bim, cs, curriculum, docs, mep, mep_bim_ai, qa, roi, sow, training, training_curriculum, 간섭, 개발, 견적, 교육, 권한, 납품, 리스크, 변경, 보안, 심사, 역할, 지원, 진단, 품질, 회의
+b_pm_14_year.md, bim, curriculum, knowledge, mep, mep_bim_ai, public, qa, roi, sow, training, training_curriculum, 간섭, 개발, 견적, 교육, 권한, 납품, 리스크, 변경, 보안, 심사, 역할, 지원, 진단, 품질, 회의
 
 ## Related
 

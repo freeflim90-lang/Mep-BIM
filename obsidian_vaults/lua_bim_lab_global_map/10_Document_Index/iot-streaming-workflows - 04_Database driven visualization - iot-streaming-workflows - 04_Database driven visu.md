@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/lfontanella/iot-streaming-workflows/04_Database driven visualization/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/lfontanella/iot-streaming-workflows/04_Database driven visualization/README.md"
 ---
 
 # iot-streaming-workflows - 04_Database driven visualization - Database-Driven Visualization Workflow
 
 ## Source
 
-`data/bim_scripts/lfontanella/iot-streaming-workflows/04_Database driven visualization/README.md`
+`knowledge/50_domain/bim_scripts/lfontanella/iot-streaming-workflows/04_Database driven visualization/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/lfontanella/iot-streaming-workflows/04_Database driven visualization/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/lfontanella/iot-streaming-workflows/04_Database driven visualization/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This folder documents a database-driven workflow developed to extract environmen
 
 ## Keywords
 
-bim, bim_scripts, data, database, driven, iot-streaming-workflows, lfontanella, markdown, model, readme.md, store, visualization, workspace
+bim, bim_scripts, database, domain, driven, iot-streaming-workflows, knowledge, lfontanella, model, readme.md, sources, store, visualization
 
 ## Related
 

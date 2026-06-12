@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-08-readme-and-tool-docs.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-08-readme-and-tool-docs.md"
 ---
 
 # README Tool Documentation Implementation Plan
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-08-readme-and-tool-docs.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-08-readme-and-tool-docs.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-08-readme-and-tool-docs.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-08-readme-and-tool-docs.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-autodesk, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, data, docs, health, markdown, model, navisworks, plans, readme-and-tool-docs.md, revit, workspace
+autodesk, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, docs, domain, health, knowledge, model, navisworks, plans, readme-and-tool-docs.md, revit, sources
 
 ## Related
 

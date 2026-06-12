@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/SOURCES.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/SOURCES.md"
 ---
 
 # SOURCES
 
 ## Source
 
-`data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/SOURCES.md`
+`knowledge/50_domain/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/SOURCES.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/SOURCES.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/SOURCES.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Official documentation, repositories, and reference materials used in this proje
 
 ## Keywords
 
-api, bim, bim_scripts, blender-bonsai-ifcopenshell-sverchok-claude-skill-package, cs, data, impertio-studio, markdown, sources.md, workspace
+api, bim, bim_scripts, blender-bonsai-ifcopenshell-sverchok-claude-skill-package, cs, domain, impertio-studio, knowledge, sources, sources.md
 
 ## Related
 

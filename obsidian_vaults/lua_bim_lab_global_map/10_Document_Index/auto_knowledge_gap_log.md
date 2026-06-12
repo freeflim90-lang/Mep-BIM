@@ -1,42 +1,42 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/knowledge_quality/auto_knowledge_gap_log.md"
+category: Knowledge Curation
+source_path: "knowledge/40_curation/quality/auto_knowledge_gap_log.md"
 ---
 
 # auto_knowledge_gap_log
 
 ## Source
 
-`data/knowledge_quality/auto_knowledge_gap_log.md`
+`knowledge/40_curation/quality/auto_knowledge_gap_log.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/knowledge_quality/auto_knowledge_gap_log.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/40_curation/quality/auto_knowledge_gap_log.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Knowledge Curation]]
 
 ## Summary
 
-- Agent: 지식업데이트 - Query: 인천공항 제1터미널 면적이얼마야 - Reasons: operational-doc-ranked:지식업데이트 - Top: data/knowledge_base/지식업데이트.md / score 28 - Tags: auto-quality,knowledge-gap,self-healing • [Tavily] 해결됨: Revit Maximum Distance Limit 관련 사항 - Autodesk Community
+- Agent: 지식업데이트 - Query: 인천공항 제1터미널 면적이얼마야 - Reasons: operational-doc-ranked:지식업데이트 - Top: knowledge/10_agents/09_지식팀/지식업데이트.md / score 28 - Tags: auto-quality,knowledge-gap,self-healing • [Tavily] 해결됨: Revit Maximum Distance Limit 관련 사항 - Autodesk Community
 
 ## Keywords
 
-auto_knowledge_gap_log.md, autodesk, bim, data, knowledge_quality, markdown, navisworks, quality, revit, workspace, 물량, 자산, 지식, 지원, 품질
+auto_knowledge_gap_log.md, autodesk, bim, curation, knowledge, navisworks, quality, revit, 물량, 자산, 지식, 지원, 품질
 
 ## Related
 
-- [[BIM automation plan]]
-- [[고객지원CS Q A 지식]]
-- [[교육컨설팅 Q A 지식]]
-- [[라이선스결제 Q A 지식]]
-- [[프로그램개발 Q A 지식]]
-- [[Advanced BIM Coordination]]
-- [[BIM Autpmatic Coordination System]]
-- [[BIM Command Center]]
+- [[2026-05-21 Daily Knowledge Update]]
+- [[2026-05-22 Daily Knowledge Update]]
+- [[2026-05-23 Daily Knowledge Curation Review]]
+- [[2026-05-23 Daily Knowledge Update]]
+- [[2026-05-24 Daily Knowledge Update]]
+- [[2026-05-27 Daily Knowledge Curation Review]]
+- [[2026-05-27 Daily Knowledge Update]]
+- [[2026-05-28 Daily Knowledge Curation Review]]
 
 ## Home
 

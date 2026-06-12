@@ -54,7 +54,7 @@ python3 scripts/starter_plan_onboarding.py --email [클라이언트이메일]
 ```
 
 스크립트 완료 후 확인:
-- [ ] `data/starter_plan/clients.json` 에 클라이언트 등록됨
+- [ ] `products/starter_plan/clients.json` 에 클라이언트 등록됨
 - [ ] Telegram chat_id 연결 대기 상태 확인
 
 ### 1.5 클라이언트에게 Bot 시작 안내 메시지 발송
@@ -301,13 +301,13 @@ Thank you for learning with LUA BIM LABS.
 | 도구/파일 | 경로/URL |
 |---|---|
 | 신청서 Google Sheet | `https://docs.google.com/spreadsheets/d/1v1t5k76mAhKSBx-x19fEw3Kmi7c6heFKMrkIbK_qcFk/` |
-| 클라이언트 JSON | `data/starter_plan/clients.json` |
+| 클라이언트 JSON | `products/starter_plan/clients.json` |
 | 레슨 전달 스크립트 | `scripts/bim_education/send_daily.py` |
 | 온보딩 스크립트 | `scripts/starter_plan_onboarding.py` |
 | Telegram 동기화 | `scripts/starter_plan_sync_telegram_sheet.py` |
-| 레퍼런스 카드 PDF | `docs/training_curriculum/public_products/launch_packages/starter/reference_cards/` |
-| 인증서 PDF | `docs/training_curriculum/public_products/launch_packages/starter/certificates/` |
-| BIM Check Friday | `docs/training_curriculum/public_products/launch_packages/starter/STARTER_SUPPORT_MATERIALS.md` |
+| 레퍼런스 카드 PDF | `knowledge/60_public/training_curriculum/public_products/launch_packages/starter/reference_cards/` |
+| 인증서 PDF | `knowledge/60_public/training_curriculum/public_products/launch_packages/starter/certificates/` |
+| BIM Check Friday | `knowledge/60_public/training_curriculum/public_products/launch_packages/starter/STARTER_SUPPORT_MATERIALS.md` |
 | 배달 오류 로그 | `logs/starter_delivery_errors.log` |
 
 ---

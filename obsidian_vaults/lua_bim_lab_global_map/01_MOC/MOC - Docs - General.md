@@ -2,24 +2,15 @@
 type: category-moc
 category: Docs - General
 generated: true
-count: 286
+count: 226
 ---
 
 # MOC - Docs - General
 
-- [[2026-05-21 Daily Knowledge Update]] — `docs/knowledge_updates/daily/2026-05-21_DAILY_KNOWLEDGE_UPDATE.md`
 - [[2026-05-21 건설 설계 시공 BIM 데일리 브리핑]] — `docs/industry_intelligence/daily/2026-05-21_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md`
-- [[2026-05-22 Daily Knowledge Curation Review]] — `docs/knowledge_updates/curation/2026-05-22_DAILY_KNOWLEDGE_CURATION.md`
-- [[2026-05-22 Daily Knowledge Update]] — `docs/knowledge_updates/daily/2026-05-22_DAILY_KNOWLEDGE_UPDATE.md`
 - [[2026-05-22 건설 설계 시공 BIM 데일리 브리핑]] — `docs/industry_intelligence/daily/2026-05-22_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md`
-- [[2026-05-23 Daily Knowledge Curation Review]] — `docs/knowledge_updates/curation/2026-05-23_DAILY_KNOWLEDGE_CURATION.md`
-- [[2026-05-23 Daily Knowledge Update]] — `docs/knowledge_updates/daily/2026-05-23_DAILY_KNOWLEDGE_UPDATE.md`
 - [[2026-05-23 건설 설계 시공 BIM 데일리 브리핑]] — `docs/industry_intelligence/daily/2026-05-23_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md`
-- [[2026-05-24 Daily Knowledge Curation Review]] — `docs/knowledge_updates/curation/2026-05-24_DAILY_KNOWLEDGE_CURATION.md`
-- [[2026-05-24 Daily Knowledge Update]] — `docs/knowledge_updates/daily/2026-05-24_DAILY_KNOWLEDGE_UPDATE.md`
 - [[2026-05-24 건설 설계 시공 BIM 데일리 브리핑]] — `docs/industry_intelligence/daily/2026-05-24_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md`
-- [[2026-05-27 Daily Knowledge Curation Review]] — `docs/knowledge_updates/curation/2026-05-27_DAILY_KNOWLEDGE_CURATION.md`
-- [[2026-05-27 Daily Knowledge Update]] — `docs/knowledge_updates/daily/2026-05-27_DAILY_KNOWLEDGE_UPDATE.md`
 - [[2026-05-27 건설 설계 시공 BIM 데일리 브리핑]] — `docs/industry_intelligence/daily/2026-05-27_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md`
 - [[2026-05-28 09 54 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-05-28/0954_AX_SIGNAL_MONITOR.md`
 - [[2026-05-28 09 55 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-05-28/0955_AX_SIGNAL_MONITOR.md`
@@ -27,8 +18,6 @@ count: 286
 - [[2026-05-28 15 56 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-05-28/1556_AX_SIGNAL_MONITOR.md`
 - [[2026-05-28 21 05 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-05-28/2105_AX_SIGNAL_MONITOR.md`
 - [[2026-05-28 22 05 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-05-28/2205_AX_SIGNAL_MONITOR.md`
-- [[2026-05-28 Daily Knowledge Curation Review]] — `docs/knowledge_updates/curation/2026-05-28_DAILY_KNOWLEDGE_CURATION.md`
-- [[2026-05-28 Daily Knowledge Update]] — `docs/knowledge_updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md`
 - [[2026-05-28 건설 설계 시공 BIM 데일리 브리핑]] — `docs/industry_intelligence/daily/2026-05-28_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md`
 - [[2026-05-29 04 57 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-05-29/0457_AX_SIGNAL_MONITOR.md`
 - [[2026-05-29 05 57 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-05-29/0557_AX_SIGNAL_MONITOR.md`
@@ -39,8 +28,6 @@ count: 286
 - [[2026-05-29 16 05 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-05-29/1605_AX_SIGNAL_MONITOR.md`
 - [[2026-05-29 17 05 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-05-29/1705_AX_SIGNAL_MONITOR.md`
 - [[2026-05-29 18 28 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-05-29/1828_AX_SIGNAL_MONITOR.md`
-- [[2026-05-29 Daily Knowledge Curation Review]] — `docs/knowledge_updates/curation/2026-05-29_DAILY_KNOWLEDGE_CURATION.md`
-- [[2026-05-29 Daily Knowledge Update]] — `docs/knowledge_updates/daily/2026-05-29_DAILY_KNOWLEDGE_UPDATE.md`
 - [[2026-05-29 건설 설계 시공 BIM 데일리 브리핑]] — `docs/industry_intelligence/daily/2026-05-29_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md`
 - [[2026-05-30 09 37 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-05-30/0937_AX_SIGNAL_MONITOR.md`
 - [[2026-05-30 10 37 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-05-30/1037_AX_SIGNAL_MONITOR.md`
@@ -60,8 +47,6 @@ count: 286
 - [[2026-05-30 21 18 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-05-30/2118_AX_SIGNAL_MONITOR.md`
 - [[2026-05-30 22 18 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-05-30/2218_AX_SIGNAL_MONITOR.md`
 - [[2026-05-30 23 19 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-05-30/2319_AX_SIGNAL_MONITOR.md`
-- [[2026-05-30 Daily Knowledge Curation Review]] — `docs/knowledge_updates/curation/2026-05-30_DAILY_KNOWLEDGE_CURATION.md`
-- [[2026-05-30 Daily Knowledge Update]] — `docs/knowledge_updates/daily/2026-05-30_DAILY_KNOWLEDGE_UPDATE.md`
 - [[2026-05-30 건설 설계 시공 BIM 데일리 브리핑]] — `docs/industry_intelligence/daily/2026-05-30_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md`
 - [[2026-05-31 13 40 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-05-31/1340_AX_SIGNAL_MONITOR.md`
 - [[2026-05-31 13 40 LUA BIM LABS 추론 훈련 다이제스트]] — `docs/reasoning_training/2026-05-31/1340_LUA_REASONING_TRAINING_DIGEST.md`
@@ -73,8 +58,6 @@ count: 286
 - [[2026-05-31 18 54 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-05-31/1854_AX_SIGNAL_MONITOR.md`
 - [[2026-05-31 19 55 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-05-31/1955_AX_SIGNAL_MONITOR.md`
 - [[2026-05-31 20 55 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-05-31/2055_AX_SIGNAL_MONITOR.md`
-- [[2026-05-31 Daily Knowledge Curation Review]] — `docs/knowledge_updates/curation/2026-05-31_DAILY_KNOWLEDGE_CURATION.md`
-- [[2026-05-31 Daily Knowledge Update]] — `docs/knowledge_updates/daily/2026-05-31_DAILY_KNOWLEDGE_UPDATE.md`
 - [[2026-05-31 건설 설계 시공 BIM 데일리 브리핑]] — `docs/industry_intelligence/daily/2026-05-31_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md`
 - [[2026-06-01 07 52 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-01/0752_AX_SIGNAL_MONITOR.md`
 - [[2026-06-01 08 00 LUA BIM LABS 내부 성장 펄스]] — `docs/internal_growth/2026-06-01/0800_INTERNAL_SELF_GROWTH_PULSE.md`
@@ -84,16 +67,12 @@ count: 286
 - [[2026-06-01 08 21 추론 첨언]] — `docs/reasoning_training/feedback/20260601-082120_reasoning_feedback.md`
 - [[2026-06-01 09 57 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-01/0957_AX_SIGNAL_MONITOR.md`
 - [[2026-06-01 17 30 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-01/1730_AX_SIGNAL_MONITOR.md`
-- [[2026-06-01 Daily Knowledge Curation Review]] — `docs/knowledge_updates/curation/2026-06-01_DAILY_KNOWLEDGE_CURATION.md`
-- [[2026-06-01 Daily Knowledge Update]] — `docs/knowledge_updates/daily/2026-06-01_DAILY_KNOWLEDGE_UPDATE.md`
 - [[2026-06-01 건설 설계 시공 BIM 데일리 브리핑]] — `docs/industry_intelligence/daily/2026-06-01_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md`
 - [[2026-06-02 00 08 LUA BIM LABS 추론 훈련 다이제스트]] — `docs/reasoning_training/2026-06-02/0008_LUA_REASONING_TRAINING_DIGEST.md`
 - [[2026-06-02 04 01 추론 첨언]] — `docs/reasoning_training/feedback/20260602-040129_reasoning_feedback.md`
 - [[2026-06-02 07 00 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-02/0700_AX_SIGNAL_MONITOR.md`
 - [[2026-06-02 08 14 LUA BIM LABS 내부 성장 펄스]] — `docs/internal_growth/2026-06-02/0814_INTERNAL_SELF_GROWTH_PULSE.md`
 - [[2026-06-02 17 27 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-02/1727_AX_SIGNAL_MONITOR.md`
-- [[2026-06-02 Daily Knowledge Curation Review]] — `docs/knowledge_updates/curation/2026-06-02_DAILY_KNOWLEDGE_CURATION.md`
-- [[2026-06-02 Daily Knowledge Update]] — `docs/knowledge_updates/daily/2026-06-02_DAILY_KNOWLEDGE_UPDATE.md`
 - [[2026-06-02 건설 설계 시공 BIM 데일리 브리핑]] — `docs/industry_intelligence/daily/2026-06-02_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md`
 - [[2026-06-03 10 42 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-03/1042_AX_SIGNAL_MONITOR.md`
 - [[2026-06-03 10 42 LUA BIM LABS 추론 훈련 다이제스트]] — `docs/reasoning_training/2026-06-03/1042_LUA_REASONING_TRAINING_DIGEST.md`
@@ -106,8 +85,6 @@ count: 286
 - [[2026-06-03 19 14 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-03/1914_AX_SIGNAL_MONITOR.md`
 - [[2026-06-03 20 15 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-03/2015_AX_SIGNAL_MONITOR.md`
 - [[2026-06-03 21 15 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-03/2115_AX_SIGNAL_MONITOR.md`
-- [[2026-06-03 Daily Knowledge Curation Review]] — `docs/knowledge_updates/curation/2026-06-03_DAILY_KNOWLEDGE_CURATION.md`
-- [[2026-06-03 Daily Knowledge Update]] — `docs/knowledge_updates/daily/2026-06-03_DAILY_KNOWLEDGE_UPDATE.md`
 - [[2026-06-03 건설 설계 시공 BIM 데일리 브리핑]] — `docs/industry_intelligence/daily/2026-06-03_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md`
 - [[2026-06-04 08 42 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-04/0842_AX_SIGNAL_MONITOR.md`
 - [[2026-06-04 08 47 LUA BIM LABS 내부 성장 펄스]] — `docs/internal_growth/2026-06-04/0847_INTERNAL_SELF_GROWTH_PULSE.md`
@@ -118,21 +95,6 @@ count: 286
 - [[2026-06-04 17 35 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-04/1735_AX_SIGNAL_MONITOR.md`
 - [[2026-06-04 22 42 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-04/2242_AX_SIGNAL_MONITOR.md`
 - [[2026-06-04 23 43 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-04/2343_AX_SIGNAL_MONITOR.md`
-- [[2026-06-04 Daily Knowledge Curation Review]] — `docs/knowledge_updates/curation/2026-06-04_DAILY_KNOWLEDGE_CURATION.md`
-- [[2026-06-04 Daily Knowledge Update]] — `docs/knowledge_updates/daily/2026-06-04_DAILY_KNOWLEDGE_UPDATE.md`
-- [[2026-06-04 Knowledge Update Queue]] — `docs/knowledge_updates/curation/2026-06-04_KNOWLEDGE_UPDATE_QUEUE.md`
-- [[2026-06-04 LUA BIM LABS BF Accessibility Standard Update]] — `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_BF_ACCESSIBILITY_STANDARD_UPDATE.md`
-- [[2026-06-04 LUA BIM LABS Energy ZEB Standard Update]] — `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_ENERGY_ZEB_STANDARD_UPDATE.md`
-- [[2026-06-04 LUA BIM LABS ISO 19650 CDE Information Management Update]] — `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_ISO19650_CDE_INFORMATION_MANAGEMENT_UPDATE.md`
-- [[2026-06-04 LUA BIM LABS KDS KCS Construction Standard Update]] — `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_KDS_KCS_CONSTRUCTION_STANDARD_UPDATE.md`
-- [[2026-06-04 LUA BIM LABS KEC Electrical Standard Update]] — `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_KEC_ELECTRICAL_STANDARD_UPDATE.md`
-- [[2026-06-04 LUA BIM LABS Korea Public BIM Guideline Update]] — `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_KOREA_PUBLIC_BIM_GUIDELINE_UPDATE.md`
-- [[2026-06-04 LUA BIM LABS Mechanical Equipment Maintenance Law Update]] — `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_MECHANICAL_EQUIPMENT_MAINTENANCE_LAW_UPDATE.md`
-- [[2026-06-04 LUA BIM LABS NFTC NFPC Fire Standard Update]] — `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_NFTC_NFPC_FIRE_STANDARD_UPDATE.md`
-- [[2026-06-04 LUA BIM LABS Official Autodesk Signal Update]] — `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_OFFICIAL_AUTODESK_SIGNAL_UPDATE.md`
-- [[2026-06-04 LUA BIM LABS OpenBIM IDS BCF Update]] — `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_OPENBIM_IDS_BCF_UPDATE.md`
-- [[2026-06-04 LUA BIM LABS Plumbing Water Tank Drainage Standard Update]] — `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_PLUMBING_WATER_TANK_DRAINAGE_STANDARD_UPDATE.md`
-- [[2026-06-04 LUA BIM LABS Privacy AI Data Governance Update]] — `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_PRIVACY_AI_DATA_GOVERNANCE_UPDATE.md`
 - [[2026-06-04 건설 설계 시공 BIM 데일리 브리핑]] — `docs/industry_intelligence/daily/2026-06-04_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md`
 - [[2026-06-05 00 00 LUA BIM LABS 추론 훈련 다이제스트]] — `docs/reasoning_training/2026-06-05/0000_LUA_REASONING_TRAINING_DIGEST.md`
 - [[2026-06-05 00 00 다이제스트 추론 첨언]] — `docs/reasoning_training/feedback/20260605-manual_digest_0000_reasoning_feedback.md`
@@ -145,8 +107,6 @@ count: 286
 - [[2026-06-05 21 13 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-05/2113_AX_SIGNAL_MONITOR.md`
 - [[2026-06-05 22 13 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-05/2213_AX_SIGNAL_MONITOR.md`
 - [[2026-06-05 23 14 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-05/2314_AX_SIGNAL_MONITOR.md`
-- [[2026-06-05 Daily Knowledge Curation Review]] — `docs/knowledge_updates/curation/2026-06-05_DAILY_KNOWLEDGE_CURATION.md`
-- [[2026-06-05 Daily Knowledge Update]] — `docs/knowledge_updates/daily/2026-06-05_DAILY_KNOWLEDGE_UPDATE.md`
 - [[2026-06-05 건설 설계 시공 BIM 데일리 브리핑]] — `docs/industry_intelligence/daily/2026-06-05_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md`
 - [[2026-06-06 00 07 LUA BIM LABS 추론 훈련 다이제스트]] — `docs/reasoning_training/2026-06-06/0007_LUA_REASONING_TRAINING_DIGEST.md`
 - [[2026-06-06 00 23 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-06/0023_AX_SIGNAL_MONITOR.md`
@@ -165,17 +125,12 @@ count: 286
 - [[2026-06-06 20 46 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-06/2046_AX_SIGNAL_MONITOR.md`
 - [[2026-06-06 21 47 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-06/2147_AX_SIGNAL_MONITOR.md`
 - [[2026-06-06 22 47 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-06/2247_AX_SIGNAL_MONITOR.md`
-- [[2026-06-06 Daily Knowledge Curation Review]] — `docs/knowledge_updates/curation/2026-06-06_DAILY_KNOWLEDGE_CURATION.md`
-- [[2026-06-06 Daily Knowledge Update]] — `docs/knowledge_updates/daily/2026-06-06_DAILY_KNOWLEDGE_UPDATE.md`
 - [[2026-06-06 건설 설계 시공 BIM 데일리 브리핑]] — `docs/industry_intelligence/daily/2026-06-06_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md`
 - [[2026-06-07 17 28 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-07/1728_AX_SIGNAL_MONITOR.md`
 - [[2026-06-07 17 29 LUA BIM LABS 추론 훈련 다이제스트]] — `docs/reasoning_training/2026-06-07/1729_LUA_REASONING_TRAINING_DIGEST.md`
-- [[2026-06-07 Daily Knowledge Curation Review]] — `docs/knowledge_updates/curation/2026-06-07_DAILY_KNOWLEDGE_CURATION.md`
-- [[2026-06-07 Daily Knowledge Update]] — `docs/knowledge_updates/daily/2026-06-07_DAILY_KNOWLEDGE_UPDATE.md`
 - [[2026-06-07 건설 설계 시공 BIM 데일리 브리핑]] — `docs/industry_intelligence/daily/2026-06-07_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md`
 - [[2026-06-08 08 26 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-08/0826_AX_SIGNAL_MONITOR.md`
 - [[2026-06-08 15 44 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-08/1544_AX_SIGNAL_MONITOR.md`
-- [[2026-06-08 Daily Knowledge Update]] — `docs/knowledge_updates/daily/2026-06-08_DAILY_KNOWLEDGE_UPDATE.md`
 - [[2026-06-08 건설 설계 시공 BIM 데일리 브리핑]] — `docs/industry_intelligence/daily/2026-06-08_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md`
 - [[2026-06-09 00 13 LUA BIM LABS 추론 훈련 다이제스트]] — `docs/reasoning_training/2026-06-09/0013_LUA_REASONING_TRAINING_DIGEST.md`
 - [[2026-06-09 05 06 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-09/0506_AX_SIGNAL_MONITOR.md`
@@ -183,8 +138,6 @@ count: 286
 - [[2026-06-09 08 00 LUA BIM LABS 내부 성장 펄스]] — `docs/internal_growth/2026-06-09/0800_INTERNAL_SELF_GROWTH_PULSE.md`
 - [[2026-06-09 08 59 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-09/0859_AX_SIGNAL_MONITOR.md`
 - [[2026-06-09 20 11 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-09/2011_AX_SIGNAL_MONITOR.md`
-- [[2026-06-09 Daily Knowledge Curation Review]] — `docs/knowledge_updates/curation/2026-06-09_DAILY_KNOWLEDGE_CURATION.md`
-- [[2026-06-09 Daily Knowledge Update]] — `docs/knowledge_updates/daily/2026-06-09_DAILY_KNOWLEDGE_UPDATE.md`
 - [[2026-06-09 건설 설계 시공 BIM 데일리 브리핑]] — `docs/industry_intelligence/daily/2026-06-09_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md`
 - [[2026-06-10 00 08 LUA BIM LABS 추론 훈련 다이제스트]] — `docs/reasoning_training/2026-06-10/0008_LUA_REASONING_TRAINING_DIGEST.md`
 - [[2026-06-10 08 01 LUA BIM LABS 내부 성장 펄스]] — `docs/internal_growth/2026-06-10/0801_INTERNAL_SELF_GROWTH_PULSE.md`
@@ -192,15 +145,11 @@ count: 286
 - [[2026-06-10 12 44 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-10/1244_AX_SIGNAL_MONITOR.md`
 - [[2026-06-10 14 05 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-10/1405_AX_SIGNAL_MONITOR.md`
 - [[2026-06-10 21 12 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-10/2112_AX_SIGNAL_MONITOR.md`
-- [[2026-06-10 Daily Knowledge Curation Review]] — `docs/knowledge_updates/curation/2026-06-10_DAILY_KNOWLEDGE_CURATION.md`
-- [[2026-06-10 Daily Knowledge Update]] — `docs/knowledge_updates/daily/2026-06-10_DAILY_KNOWLEDGE_UPDATE.md`
 - [[2026-06-10 건설 설계 시공 BIM 데일리 브리핑]] — `docs/industry_intelligence/daily/2026-06-10_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md`
 - [[2026-06-11 00 02 LUA BIM LABS 추론 훈련 다이제스트]] — `docs/reasoning_training/2026-06-11/0002_LUA_REASONING_TRAINING_DIGEST.md`
 - [[2026-06-11 08 12 LUA BIM LABS 내부 성장 펄스]] — `docs/internal_growth/2026-06-11/0812_INTERNAL_SELF_GROWTH_PULSE.md`
 - [[2026-06-11 10 24 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-11/1024_AX_SIGNAL_MONITOR.md`
 - [[2026-06-11 17 05 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-11/1705_AX_SIGNAL_MONITOR.md`
-- [[2026-06-11 Daily Knowledge Curation Review]] — `docs/knowledge_updates/curation/2026-06-11_DAILY_KNOWLEDGE_CURATION.md`
-- [[2026-06-11 Daily Knowledge Update]] — `docs/knowledge_updates/daily/2026-06-11_DAILY_KNOWLEDGE_UPDATE.md`
 - [[2026-06-11 건설 설계 시공 BIM 데일리 브리핑]] — `docs/industry_intelligence/daily/2026-06-11_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md`
 - [[2026-06-12 00 06 LUA BIM LABS 추론 훈련 다이제스트]] — `docs/reasoning_training/2026-06-12/0006_LUA_REASONING_TRAINING_DIGEST.md`
 - [[2026-06-12 05 05 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-12/0505_AX_SIGNAL_MONITOR.md`
@@ -212,17 +161,10 @@ count: 286
 - [[2026-06-12 21 54 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-12/2154_AX_SIGNAL_MONITOR.md`
 - [[2026-06-12 22 55 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-12/2255_AX_SIGNAL_MONITOR.md`
 - [[2026-06-12 23 55 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-12/2355_AX_SIGNAL_MONITOR.md`
-- [[2026-06-12 Daily Knowledge Curation Review]] — `docs/knowledge_updates/curation/2026-06-12_DAILY_KNOWLEDGE_CURATION.md`
-- [[2026-06-12 Daily Knowledge Update]] — `docs/knowledge_updates/daily/2026-06-12_DAILY_KNOWLEDGE_UPDATE.md`
 - [[2026-06-12 건설 설계 시공 BIM 데일리 브리핑]] — `docs/industry_intelligence/daily/2026-06-12_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md`
 - [[2026-06-13 00 00 LUA BIM LABS 추론 훈련 다이제스트]] — `docs/reasoning_training/2026-06-13/0000_LUA_REASONING_TRAINING_DIGEST.md`
 - [[2026-06-13 07 11 AX 시간별 신호 모니터]] — `docs/industry_intelligence/hourly/2026-06-13/0711_AX_SIGNAL_MONITOR.md`
-- [[2026-06-13 Daily Knowledge Curation Review]] — `docs/knowledge_updates/curation/2026-06-13_DAILY_KNOWLEDGE_CURATION.md`
-- [[2026-06-13 Daily Knowledge Update]] — `docs/knowledge_updates/daily/2026-06-13_DAILY_KNOWLEDGE_UPDATE.md`
 - [[2026-06-13 건설 설계 시공 BIM 데일리 브리핑]] — `docs/industry_intelligence/daily/2026-06-13_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md`
-- [[2026-W22 AX 전략 승격 리뷰]] — `docs/knowledge_updates/weekly/2026-W22_AX_STRATEGY_REVIEW.md`
-- [[2026-W23 AX 전략 승격 리뷰]] — `docs/knowledge_updates/weekly/2026-W23_AX_STRATEGY_REVIEW.md`
-- [[2026-W23 Knowledge Curation Weekly Review]] — `docs/knowledge_updates/weekly/2026-W23_KNOWLEDGE_CURATION_WEEKLY_REVIEW.md`
 - [[AX Internal Growth Backlog]] — `docs/internal_growth/AX_INTERNAL_GROWTH_BACKLOG.md`
 - [[Autodesk Marketplace 분석 2026-05-31 15 04]] — `docs/autodesk_market/20260531_market_analysis.md`
 - [[Autodesk Marketplace 분석 2026-06-02 08 14]] — `docs/autodesk_market/20260602_market_analysis.md`
@@ -233,7 +175,6 @@ count: 286
 - [[Blogger Auto Publish]] — `docs/blogger_auto_publish.md`
 - [[Daily Blogger Queue]] — `docs/daily_blogger_queue.md`
 - [[Google Form Update Guide 90-Day Curriculum Revision]] — `docs/starter_plan_google_form_update_guide.md`
-- [[HVAC 부하계산과 공조시스템 선정 PDF 지식 수집 기록]] — `docs/knowledge_intake/2026-05-22_HVAC_LOAD_SYSTEM_SELECTION_PDF_INTAKE.md`
 - [[LUA BIM LABS Add-in Development Mission]] — `docs/ADDIN_DEVELOPMENT_PLAN.md`
 - [[LUA BIM LABS Codebase Health Report]] — `docs/CODEBASE_HEALTH_LATEST.md`
 - [[LUA BIM LABS Codebase Maintenance Runbook - 2026-06-12]] — `docs/CODEBASE_MAINTENANCE_RUNBOOK_20260612.md`
@@ -292,7 +233,6 @@ count: 286
 - [[docs - product_ideation - 2026-05-28_IDEA_TO_PRODUCT_PRIORITY_REPORT - docs - product_ideation - LUA BIM LAB]] — `docs/product_ideation/2026-05-28_IDEA_TO_PRODUCT_PRIORITY_REPORT.md`
 - [[generated_contracts - 2026 - LBL-CT-20260603-1141_최정연-kcim_제2철도-관제동 - generated_contracts - 2026 - LUA BIM LAB]] — `docs/generated_contracts/2026/LBL-CT-20260603-1141_최정연-kcim_제2철도-관제동.md`
 - [[generated_contracts - 2026 - LBL-CT-20260603-1850_최정연-kcim_제2철도-관제동 - generated_contracts - 2026 - LUA BIM LAB]] — `docs/generated_contracts/2026/LBL-CT-20260603-1850_최정연-kcim_제2철도-관제동.md`
-- [[knowledge_intake - external_sources - LUA BIM LAB]] — `docs/knowledge_intake/external_sources/2026-05-21_EXTERNAL_DRIVE_KNOWLEDGE_INTAKE.md`
 
 ## 상위
 

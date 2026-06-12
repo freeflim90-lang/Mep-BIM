@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/masterplan/sverchok-masterplan-raw.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/masterplan/sverchok-masterplan-raw.md"
 ---
 
 # RAW Masterplan Sverchok Claude Skill Package
 
 ## Source
 
-`data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/masterplan/sverchok-masterplan-raw.md`
+`knowledge/50_domain/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/masterplan/sverchok-masterplan-raw.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/masterplan/sverchok-masterplan-raw.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/masterplan/sverchok-masterplan-raw.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-api, bim, bim_scripts, blender-bonsai-ifcopenshell-sverchok-claude-skill-package, cs, data, docs, impertio-studio, markdown, masterplan, quality, store, sverchok-masterplan-raw.md, workspace
+api, bim, bim_scripts, blender-bonsai-ifcopenshell-sverchok-claude-skill-package, cs, docs, domain, impertio-studio, knowledge, masterplan, quality, sources, store, sverchok-masterplan-raw.md
 
 ## Related
 

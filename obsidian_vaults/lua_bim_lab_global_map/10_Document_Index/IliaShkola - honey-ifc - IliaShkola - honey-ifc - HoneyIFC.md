@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/IliaShkola/honey-ifc/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/IliaShkola/honey-ifc/README.md"
 ---
 
 # IliaShkola - honey-ifc - HoneyIFC
 
 ## Source
 
-`data/bim_scripts/IliaShkola/honey-ifc/README.md`
+`knowledge/50_domain/bim_scripts/IliaShkola/honey-ifc/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/IliaShkola/honey-ifc/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/IliaShkola/honey-ifc/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, bim_scripts, data, honey-ifc, iliashkola, markdown, model, readme.md, store, workspace
+bim, bim_scripts, domain, honey-ifc, iliashkola, knowledge, model, readme.md, sources, store
 
 ## Related
 

@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, addin, autodesk, bim, knowledge, lua_bim_lab_global_map, nas, nas_knowledge, navisworks, obsidian_vaults, qa, revit, 물량, 자산, 지식, 지원
+add-in, addin, autodesk, bim, knowledge, lua_bim_lab_global_map, nas, nas_knowledge, navisworks, obsidian_vaults, qa, revit, 개발, 물량, 자산, 지식, 지원
 
 ## Related
 
@@ -36,7 +36,7 @@ add-in, addin, autodesk, bim, knowledge, lua_bim_lab_global_map, nas, nas_knowle
 - [[2026-06-02 뉴스 트렌드 18항목 지식 업데이트]]
 - [[2026-06-03 뉴스 트렌드 18항목 지식 업데이트]]
 - [[2026-06-04 뉴스 트렌드 18항목 지식 업데이트]]
-- [[2026-06-05 AI 지식 고도화 12차 업데이트]]
+- [[2026-06-05 AI 지식 고도화 11차 업데이트]]
 
 ## Home
 

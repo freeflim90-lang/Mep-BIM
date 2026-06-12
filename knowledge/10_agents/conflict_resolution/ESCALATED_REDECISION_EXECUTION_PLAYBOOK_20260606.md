@@ -83,10 +83,10 @@
 
 | 목적지 | 정확한 파일/경로 | 담당 | 기한 | 생성/수정 링크 | 검증자 | 상태 |
 |---|---|---|---|---|---|---|
-| 028 Case | `data/knowledge_base/conflict_resolution/cases/AITEST_20260606_028.md` | 조율차장 | 2026-06-06 | Redecision Execution Playbook | QA_테스터 | Created |
-| 029 Simulation | `data/knowledge_base/conflict_resolution/REDECISION_BRANCH_SIMULATION_20260606.md` | 조율차장 | 2026-06-06 | Branch invariant simulation | QA_테스터 | Created |
-| SLA Tracker | `data/knowledge_base/conflict_resolution/ESCALATION_SLA_TRACKER_202606.md` | 조율차장 | 2026-06-06 | 실행 순서 링크 | QA_테스터 | Updated |
-| Session Register | `data/knowledge_base/conflict_resolution/SESSION_REGISTER_202606.md` | 조율차장 | 2026-06-06 | AICOL-20260606-028 | 조율차장 | Updated |
+| 028 Case | `knowledge/10_agents/conflict_resolution/cases/AITEST_20260606_028.md` | 조율차장 | 2026-06-06 | Redecision Execution Playbook | QA_테스터 | Created |
+| 029 Simulation | `knowledge/10_agents/conflict_resolution/REDECISION_BRANCH_SIMULATION_20260606.md` | 조율차장 | 2026-06-06 | Branch invariant simulation | QA_테스터 | Created |
+| SLA Tracker | `knowledge/10_agents/conflict_resolution/ESCALATION_SLA_TRACKER_202606.md` | 조율차장 | 2026-06-06 | 실행 순서 링크 | QA_테스터 | Updated |
+| Session Register | `knowledge/10_agents/conflict_resolution/SESSION_REGISTER_202606.md` | 조율차장 | 2026-06-06 | AICOL-20260606-028 | 조율차장 | Updated |
 
 ## 6. 결론
 

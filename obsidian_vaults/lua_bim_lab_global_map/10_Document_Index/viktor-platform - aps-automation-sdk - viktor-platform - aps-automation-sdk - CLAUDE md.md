@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/viktor-platform/aps-automation-sdk/CLAUDE.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/viktor-platform/aps-automation-sdk/CLAUDE.md"
 ---
 
 # viktor-platform - aps-automation-sdk - CLAUDE md
 
 ## Source
 
-`data/bim_scripts/viktor-platform/aps-automation-sdk/CLAUDE.md`
+`knowledge/50_domain/bim_scripts/viktor-platform/aps-automation-sdk/CLAUDE.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/viktor-platform/aps-automation-sdk/CLAUDE.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/viktor-platform/aps-automation-sdk/CLAUDE.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-aps-automation-sdk, bim, bim_scripts, claude.md, data, markdown, viktor-platform, workspace
+aps-automation-sdk, bim, bim_scripts, claude.md, domain, knowledge, sources, viktor-platform
 
 ## Related
 

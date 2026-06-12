@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/sharathramkumar/energyplus-python-basic/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/sharathramkumar/energyplus-python-basic/README.md"
 ---
 
 # sharathramkumar - energyplus-python-basic - energyplus-python-basic
 
 ## Source
 
-`data/bim_scripts/sharathramkumar/energyplus-python-basic/README.md`
+`knowledge/50_domain/bim_scripts/sharathramkumar/energyplus-python-basic/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/sharathramkumar/energyplus-python-basic/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/sharathramkumar/energyplus-python-basic/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ In this notebook, we demonstrate how EnergyPlus can be used as a library within 
 
 ## Keywords
 
-api, bim, bim_scripts, data, energyplus-python-basic, markdown, readme.md, sharathramkumar, workspace
+api, bim, bim_scripts, domain, energyplus-python-basic, knowledge, readme.md, sharathramkumar, sources
 
 ## Related
 

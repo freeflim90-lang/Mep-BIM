@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Docs - General
-source_path: "docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_MECHANICAL_EQUIPMENT_MAINTENANCE_LAW_UPDATE.md"
+category: Knowledge Curation
+source_path: "knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_MECHANICAL_EQUIPMENT_MAINTENANCE_LAW_UPDATE.md"
 ---
 
 # 2026-06-04 LUA BIM LABS Mechanical Equipment Maintenance Law Update
 
 ## Source
 
-`docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_MECHANICAL_EQUIPMENT_MAINTENANCE_LAW_UPDATE.md`
+`knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_MECHANICAL_EQUIPMENT_MAINTENANCE_LAW_UPDATE.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_MECHANICAL_EQUIPMENT_MAINTENANCE_LAW_UPDATE.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_MECHANICAL_EQUIPMENT_MAINTENANCE_LAW_UPDATE.md`
 
 ## Category
 
-- [[MOC - Docs - General]]
+- [[MOC - Knowledge Curation]]
 
 ## Summary
 
@@ -25,11 +25,10 @@ Absolute path:
 
 ## Keywords
 
-bim, clash, cs, daily, docs, general, knowledge_updates, lua_bim_labs_mechanical_equipment_maintenance_law_update.md, 견적, 납품, 변경, 심사, 자산, 조직, 지식
+bim, clash, curation, daily, knowledge, lua_bim_labs_mechanical_equipment_maintenance_law_update.md, updates, 견적, 납품, 변경, 심사, 자산, 조직, 지식
 
 ## Related
 
-- [[2026-05-21 Daily Knowledge Update]]
 - [[2026-05-22 Daily Knowledge Update]]
 - [[2026-05-23 Daily Knowledge Update]]
 - [[2026-05-24 Daily Knowledge Update]]
@@ -37,6 +36,7 @@ bim, clash, cs, daily, docs, general, knowledge_updates, lua_bim_labs_mechanical
 - [[2026-05-28 Daily Knowledge Update]]
 - [[2026-05-29 Daily Knowledge Update]]
 - [[2026-05-30 Daily Knowledge Update]]
+- [[2026-05-31 Daily Knowledge Update]]
 
 ## Home
 

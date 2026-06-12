@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-agents, ai, aitest_20260605_008.md, base, cases, clash, conflict_resolution, cs, knowledge, qa, sow, 견적, 교육, 리스크, 변경, 심사, 역할, 지식, 지원, 테스트
+agents, ai, aitest_20260605_008.md, base, cases, clash, conflict_resolution, cs, knowledge, qa, sow, 견적, 교육, 리스크, 변경, 스토어, 심사, 역할, 지식, 지원, 테스트
 
 ## Related
 

@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/Vasile-Corjan/Applepy/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/Vasile-Corjan/Applepy/README.md"
 ---
 
 # Vasile-Corjan - Applepy - sparkles Applepy - pyRevit tools for Revit sparkles
 
 ## Source
 
-`data/bim_scripts/Vasile-Corjan/Applepy/README.md`
+`knowledge/50_domain/bim_scripts/Vasile-Corjan/Applepy/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/Vasile-Corjan/Applepy/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/Vasile-Corjan/Applepy/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-applepy, autodesk, bim, bim_scripts, data, markdown, readme.md, revit, vasile-corjan, workspace
+applepy, autodesk, bim, bim_scripts, domain, knowledge, readme.md, revit, sources, vasile-corjan
 
 ## Related
 

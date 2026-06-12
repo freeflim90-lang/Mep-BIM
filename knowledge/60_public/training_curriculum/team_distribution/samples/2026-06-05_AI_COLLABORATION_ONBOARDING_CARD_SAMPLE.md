@@ -14,8 +14,8 @@
 |---|---|
 | `docs/internal_organization_documents/30_AI_TO_AI_COLLABORATION_SOP.md` | 협업 프로세스와 게이트 이해 |
 | `docs/internal_organization_documents/31_AI_COLLABORATION_RUNBOOK_TEMPLATES.md` | T01~T07 템플릿 사용 |
-| `data/knowledge_base/AI_협업운영체계.md` | 빠른 운영 지식 확인 |
-| `data/knowledge_base/conflict_resolution/CONFLICT_LOG.md` | 선례와 에스컬레이션 상태 확인 |
+| `knowledge/10_agents/90_확장에이전트/AI_협업운영체계.md` | 빠른 운영 지식 확인 |
+| `knowledge/10_agents/conflict_resolution/CONFLICT_LOG.md` | 선례와 에스컬레이션 상태 확인 |
 
 ## 3. 15분 실습
 

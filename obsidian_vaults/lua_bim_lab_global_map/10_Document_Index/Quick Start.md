@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/QUICKSTART.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/QUICKSTART.md"
 ---
 
 # Quick Start
 
 ## Source
 
-`data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/QUICKSTART.md`
+`knowledge/50_domain/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/QUICKSTART.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/QUICKSTART.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/QUICKSTART.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Use this guide to install dependencies and run the forecasting pipeline quickly.
 
 ## Keywords
 
-ai-powered-energy-consumption-forecasting, api, bim, bim_scripts, cs, data, markdown, model, quickstart.md, shri694-rawal, workspace
+ai-powered-energy-consumption-forecasting, api, bim, bim_scripts, cs, domain, knowledge, model, quickstart.md, shri694-rawal, sources
 
 ## Related
 

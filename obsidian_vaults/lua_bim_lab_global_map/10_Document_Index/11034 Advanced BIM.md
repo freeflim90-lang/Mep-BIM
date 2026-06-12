@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/kfjordt/11034-advanced-bim/Assignment 2/change.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/kfjordt/11034-advanced-bim/Assignment 2/change.md"
 ---
 
 # 11034 Advanced BIM
 
 ## Source
 
-`data/bim_scripts/kfjordt/11034-advanced-bim/Assignment 2/change.md`
+`knowledge/50_domain/bim_scripts/kfjordt/11034-advanced-bim/Assignment 2/change.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/kfjordt/11034-advanced-bim/Assignment 2/change.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/kfjordt/11034-advanced-bim/Assignment 2/change.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-advanced-bim, assignment, bim, bim_scripts, change.md, data, kfjordt, markdown, workspace
+advanced-bim, assignment, bim, bim_scripts, change.md, domain, kfjordt, knowledge, sources
 
 ## Related
 

@@ -21,11 +21,11 @@ Absolute path:
 
 ## Summary
 
-> 요청자: @FreeFilmer ([LONG_ID_MASKED]) > 수집일: 2026-05-24 13:09:56 > 담당 지식: 건축 성수 k project 면적이 얼마야? 성수 K 프로젝트의 연면적은 21만 8093㎡입니다. - `data/knowledge_base/건축.md` · score `31` - `data/knowledge_base/qa/건축_QA.md` · score `28` - `data/knowledge_base/전기.md` · score `
+> 요청자: @FreeFilmer ([LONG_ID_MASKED]) > 수집일: 2026-05-24 13:09:56 > 담당 지식: 건축 성수 k project 면적이 얼마야? 성수 K 프로젝트의 연면적은 21만 8093㎡입니다. - `knowledge/10_agents/02_견적팀/건축.md` · score `31` - `knowledge/20_qa/건축_QA.md` · score `28` - `knowledge/10_agents/03_엔지니어링팀/전기.md`
 
 ## Keywords
 
-bim, k_project_, knowledge, lua_bim_lab_global_map, nas, nas_knowledge, obsidian_vaults, qa, team_telegram_qa, 교육, 지식
+bim, k_project_, knowledge, lua_bim_lab_global_map, nas, nas_knowledge, obsidian_vaults, qa, team_telegram_qa, 견적, 교육, 지식
 
 ## Related
 

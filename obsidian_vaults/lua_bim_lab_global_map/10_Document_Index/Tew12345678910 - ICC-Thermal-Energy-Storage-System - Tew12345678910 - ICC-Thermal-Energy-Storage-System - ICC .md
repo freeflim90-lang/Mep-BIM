@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/Tew12345678910/ICC-Thermal-Energy-Storage-System/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/Tew12345678910/ICC-Thermal-Energy-Storage-System/README.md"
 ---
 
 # Tew12345678910 - ICC-Thermal-Energy-Storage-System - ICC Heat Energy Calculation
 
 ## Source
 
-`data/bim_scripts/Tew12345678910/ICC-Thermal-Energy-Storage-System/README.md`
+`knowledge/50_domain/bim_scripts/Tew12345678910/ICC-Thermal-Energy-Storage-System/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/Tew12345678910/ICC-Thermal-Energy-Storage-System/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/Tew12345678910/ICC-Thermal-Energy-Storage-System/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ A Python-based simulation project for calculating heat energy transfer in the In
 
 ## Keywords
 
-bim, bim_scripts, cs, data, icc-thermal-energy-storage-system, markdown, model, readme.md, tew12345678910, workspace
+bim, bim_scripts, cs, domain, icc-thermal-energy-storage-system, knowledge, model, readme.md, sources, tew12345678910
 
 ## Related
 

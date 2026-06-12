@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/README.md"
 ---
 
 # ifc_analysis - IFC_analysis_with_IfcOpenShell - IFC analysis with IfcOpenShell
 
 ## Source
 
-`data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/README.md`
+`knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ IfcOpenShell is an open source software library for working with the Industry Fo
 
 ## Keywords
 
-bim, bim_scripts, cs, data, data-science-for-architecture, ifc_analysis, ifc_analysis_with_ifcopenshell, markdown, readme.md, renatogcruz, workspace
+bim, bim_scripts, cs, data-science-for-architecture, domain, ifc_analysis, ifc_analysis_with_ifcopenshell, knowledge, readme.md, renatogcruz, sources
 
 ## Related
 

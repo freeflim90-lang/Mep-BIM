@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/mep_bim_ai/06c_PRINCIPAL_19_YEAR.md"
+source_path: "knowledge/60_public/training_curriculum/mep_bim_ai/06c_PRINCIPAL_19_YEAR.md"
 ---
 
 # Principal 과정 19년차 지식 자산화 외부 영향력 확대
 
 ## Source
 
-`docs/training_curriculum/mep_bim_ai/06c_PRINCIPAL_19_YEAR.md`
+`knowledge/60_public/training_curriculum/mep_bim_ai/06c_PRINCIPAL_19_YEAR.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/mep_bim_ai/06c_PRINCIPAL_19_YEAR.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/mep_bim_ai/06c_PRINCIPAL_19_YEAR.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, bim, c_principal_19_year.md, cs, curriculum, docs, kpi, mep, mep_bim_ai, qa, training, training_curriculum, 간섭, 교육, 구독, 납품, 리스크, 변경, 역할, 자산, 조직, 지식, 지원, 진단, 품질, 회의
+add-in, bim, c_principal_19_year.md, curriculum, knowledge, kpi, mep, mep_bim_ai, public, qa, training, training_curriculum, 간섭, 교육, 구독, 납품, 리스크, 변경, 역할, 자산, 조직, 지식, 지원, 진단, 품질, 회의
 
 ## Related
 

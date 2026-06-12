@@ -34,9 +34,9 @@ add-in, api, autodesk, autodesk_market, bim, cs, docs, general, market_analysis.
 - [[Autodesk Marketplace 분석 2026-06-12 08 15]]
 - [[BIM Command Center 개발 분류표]]
 - [[BIM Command Center 기능 통합 로드맵]]
-- [[2026-05-21 Daily Knowledge Update]]
 - [[2026-05-21 건설 설계 시공 BIM 데일리 브리핑]]
-- [[2026-05-22 Daily Knowledge Update]]
+- [[2026-05-22 건설 설계 시공 BIM 데일리 브리핑]]
+- [[2026-05-23 건설 설계 시공 BIM 데일리 브리핑]]
 
 ## Home
 

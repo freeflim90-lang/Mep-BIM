@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/data/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/data/README.md"
 ---
 
 # AI-POWERED-ENERGY-CONSUMPTION-FORECASTING - data - Data Folder
 
 ## Source
 
-`data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/data/README.md`
+`knowledge/50_domain/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/data/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/data/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/data/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Place your dataset here as `energy.csv` if you want to use external data. Expect
 
 ## Keywords
 
-ai-powered-energy-consumption-forecasting, bim, bim_scripts, cs, data, markdown, readme.md, shri694-rawal, workspace
+ai-powered-energy-consumption-forecasting, bim, bim_scripts, cs, data, domain, knowledge, readme.md, shri694-rawal, sources
 
 ## Related
 
@@ -33,10 +33,10 @@ ai-powered-energy-consumption-forecasting, bim, bim_scripts, cs, data, markdown,
 - [[AI-POWERED-ENERGY-CONSUMPTION-FORECASTING - docs - AI-POWERED-ENERGY-CONSUMPTION-FORECASTING - docs - Document]]
 - [[AI-POWERED-ENERGY-CONSUMPTION-FORECASTING - docs - System Architecture]]
 - [[AI-POWERED-ENERGY-CONSUMPTION-FORECASTING - notebooks - AI-POWERED-ENERGY-CONSUMPTION-FORECASTING - notebooks ]]
+- [[BIM_Automation - data - BIM_Automation - data - README]]
 - [[Final Proof Checklist]]
 - [[Full Implementation Plan Phase-Wise]]
 - [[Quick Start]]
-- [[shri694-Rawal - AI-POWERED-ENERGY-CONSUMPTION-FORECASTING - shri694-Rawal - AI-POWERED-ENERGY-CONSUMPTION-FORE 2]]
 
 ## Home
 

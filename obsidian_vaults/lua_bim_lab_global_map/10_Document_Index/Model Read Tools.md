@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/idfkit/idfkit-mcp/docs/tools/model-read.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/tools/model-read.md"
 ---
 
 # Model Read Tools
 
 ## Source
 
-`data/bim_scripts/idfkit/idfkit-mcp/docs/tools/model-read.md`
+`knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/tools/model-read.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/idfkit/idfkit-mcp/docs/tools/model-read.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/tools/model-read.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Read tools expose current model content, typed zone summaries, session history, 
 
 ## Keywords
 
-bim, bim_scripts, cs, data, docs, idfkit, idfkit-mcp, markdown, model, model-read.md, store, tools, workspace
+bim, bim_scripts, cs, docs, domain, idfkit, idfkit-mcp, knowledge, model, model-read.md, sources, store, tools
 
 ## Related
 

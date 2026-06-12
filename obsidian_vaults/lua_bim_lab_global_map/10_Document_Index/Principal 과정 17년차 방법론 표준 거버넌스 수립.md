@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/mep_bim_ai/06a_PRINCIPAL_17_YEAR.md"
+source_path: "knowledge/60_public/training_curriculum/mep_bim_ai/06a_PRINCIPAL_17_YEAR.md"
 ---
 
 # Principal 과정 17년차 방법론 표준 거버넌스 수립
 
 ## Source
 
-`docs/training_curriculum/mep_bim_ai/06a_PRINCIPAL_17_YEAR.md`
+`knowledge/60_public/training_curriculum/mep_bim_ai/06a_PRINCIPAL_17_YEAR.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/mep_bim_ai/06a_PRINCIPAL_17_YEAR.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/mep_bim_ai/06a_PRINCIPAL_17_YEAR.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-a_principal_17_year.md, add-in, bim, cs, curriculum, docs, kpi, mep, mep_bim_ai, qa, roi, training, training_curriculum, 간섭, 교육, 권한, 납품, 리스크, 변경, 보안, 심사, 역할, 자산, 조직, 지식, 커리큘럼, 품질
+a_principal_17_year.md, add-in, bim, curriculum, knowledge, kpi, mep, mep_bim_ai, public, qa, roi, training, training_curriculum, 간섭, 교육, 권한, 납품, 리스크, 변경, 보안, 심사, 역할, 자산, 조직, 지식, 커리큘럼, 품질
 
 ## Related
 

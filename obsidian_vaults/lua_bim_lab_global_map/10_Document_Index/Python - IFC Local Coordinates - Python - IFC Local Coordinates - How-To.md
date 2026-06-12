@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/DTU-Byg/11034/Example files/Python/IFC Local Coordinates/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/DTU-Byg/11034/Example files/Python/IFC Local Coordinates/README.md"
 ---
 
 # Python - IFC Local Coordinates - How-To
 
 ## Source
 
-`data/bim_scripts/DTU-Byg/11034/Example files/Python/IFC Local Coordinates/README.md`
+`knowledge/50_domain/bim_scripts/DTU-Byg/11034/Example files/Python/IFC Local Coordinates/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/DTU-Byg/11034/Example files/Python/IFC Local Coordinates/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/DTU-Byg/11034/Example files/Python/IFC Local Coordinates/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, bim_scripts, coordinates, data, dtu-byg, example, files, ifc, local, markdown, model, python, readme.md, workspace
+bim, bim_scripts, coordinates, domain, dtu-byg, example, files, ifc, knowledge, local, model, python, readme.md, sources
 
 ## Related
 

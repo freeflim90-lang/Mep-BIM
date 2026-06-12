@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/fesworkscience/pyrevit_rocket/.github/ISSUE_TEMPLATE/feature_request.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/fesworkscience/pyrevit_rocket/.github/ISSUE_TEMPLATE/feature_request.md"
 ---
 
-# github - ISSUE_TEMPLATE - feature_request - c2450b
+# github - ISSUE_TEMPLATE - feature_request - 3e4d30
 
 ## Source
 
-`data/bim_scripts/fesworkscience/pyrevit_rocket/.github/ISSUE_TEMPLATE/feature_request.md`
+`knowledge/50_domain/bim_scripts/fesworkscience/pyrevit_rocket/.github/ISSUE_TEMPLATE/feature_request.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/fesworkscience/pyrevit_rocket/.github/ISSUE_TEMPLATE/feature_request.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/fesworkscience/pyrevit_rocket/.github/ISSUE_TEMPLATE/feature_request.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,17 +25,17 @@ Absolute path:
 
 ## Keywords
 
-bim, bim_scripts, data, feature_request.md, fesworkscience, github, issue_template, markdown, pyrevit_rocket, revit, workspace
+bim, bim_scripts, domain, feature_request.md, fesworkscience, github, issue_template, knowledge, pyrevit_rocket, revit, sources
 
 ## Related
 
-- [[github - ISSUE_TEMPLATE - github - ISSUE_TEMPLATE - github - ISSUE_TEMPLATE - bug_report - df0e81]]
+- [[github - ISSUE_TEMPLATE - github - ISSUE_TEMPLATE - github - ISSUE_TEMPLATE - bug_report - 4eda09]]
 - [[PULL_REQUEST_TEMPLATE]]
 - [[Smart Openings - Умные отверстия в плитах]]
 - [[fesworkscience - pyrevit_rocket - fesworkscience - pyrevit_rocket - CPSK Tools]]
 - [[fesworkscience - pyrevit_rocket - fesworkscience - pyrevit_rocket - CPSK Tools - pyRevit Extension]]
-- [[github - ISSUE_TEMPLATE - feature_request - c2d159]]
-- [[github - ISSUE_TEMPLATE - github - ISSUE_TEMPLATE - github - ISSUE_TEMPLATE - bug_report - 58e044]]
+- [[github - ISSUE_TEMPLATE - feature_request - ecfd74]]
+- [[github - ISSUE_TEMPLATE - github - ISSUE_TEMPLATE - github - ISSUE_TEMPLATE - bug_report - fe0bff]]
 - [[pyrevit_rocket - ifc_checker - pyrevit_rocket - ifc_checker - ifc_checker]]
 
 ## Home

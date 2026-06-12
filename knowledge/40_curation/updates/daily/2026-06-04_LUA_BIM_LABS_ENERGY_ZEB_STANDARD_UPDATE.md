@@ -105,16 +105,16 @@ sources:
 
 ## 반영 파일
 
-- `data/knowledge_base/건축.md`
-- `data/knowledge_base/공조배관.md`
-- `data/knowledge_base/공조덕트.md`
-- `data/knowledge_base/설비자동제어.md`
-- `data/knowledge_base/FM_자산관리.md`
-- `data/knowledge_base/패시브하우스_PHIKO.md`
-- `data/knowledge_base/BIM_납품검수.md`
-- `data/knowledge_base/견적심사원.md`
-- `data/knowledge_base/법규변경모니터링.md`
-- `data/knowledge_base/지식업데이트.md`
+- `knowledge/10_agents/02_견적팀/건축.md`
+- `knowledge/10_agents/03_엔지니어링팀/공조배관.md`
+- `knowledge/10_agents/03_엔지니어링팀/공조덕트.md`
+- `knowledge/10_agents/90_확장에이전트/설비자동제어.md`
+- `knowledge/10_agents/90_확장에이전트/FM_자산관리.md`
+- `knowledge/10_agents/90_확장에이전트/패시브하우스_PHIKO.md`
+- `knowledge/10_agents/90_확장에이전트/BIM_납품검수.md`
+- `knowledge/10_agents/90_확장에이전트/견적심사원.md`
+- `knowledge/10_agents/90_확장에이전트/법규변경모니터링.md`
+- `knowledge/10_agents/09_지식팀/지식업데이트.md`
 - `obsidian_vaults/lua_bim_lab_global_map/10_Document_Index/2026-06-04 LUA BIM LABS Energy ZEB Standard Update.md`
 
 ## 다음 감사 예약

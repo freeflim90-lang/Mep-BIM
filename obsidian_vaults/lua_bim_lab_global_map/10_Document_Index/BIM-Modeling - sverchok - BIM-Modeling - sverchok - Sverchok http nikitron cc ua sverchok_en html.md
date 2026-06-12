@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/renatogcruz/BIM-Modeling/sverchok/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/renatogcruz/BIM-Modeling/sverchok/README.md"
 ---
 
 # BIM-Modeling - sverchok - Sverchok http nikitron cc ua sverchok_en html
 
 ## Source
 
-`data/bim_scripts/renatogcruz/BIM-Modeling/sverchok/README.md`
+`knowledge/50_domain/bim_scripts/renatogcruz/BIM-Modeling/sverchok/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/renatogcruz/BIM-Modeling/sverchok/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/renatogcruz/BIM-Modeling/sverchok/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Sverchok é uma ferramenta paramétrica para arquitetos e designers para Blender
 
 ## Keywords
 
-bim, bim-modeling, bim_scripts, data, markdown, model, readme.md, renatogcruz, sverchok, workspace
+bim, bim-modeling, bim_scripts, domain, knowledge, model, readme.md, renatogcruz, sources, sverchok
 
 ## Related
 

@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/Chrisvandr/parametric-simulation-energyplus/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/Chrisvandr/parametric-simulation-energyplus/README.md"
 ---
 
 # Chrisvandr - parametric-simulation-energyplus - parametric-simulation-energyplus
 
 ## Source
 
-`data/bim_scripts/Chrisvandr/parametric-simulation-energyplus/README.md`
+`knowledge/50_domain/bim_scripts/Chrisvandr/parametric-simulation-energyplus/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/Chrisvandr/parametric-simulation-energyplus/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/Chrisvandr/parametric-simulation-energyplus/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Parametric building performance simulation using Python for EnergyPlus Copies an
 
 ## Keywords
 
-bim, bim_scripts, chrisvandr, cs, data, markdown, parametric-simulation-energyplus, readme.md, store, workspace
+bim, bim_scripts, chrisvandr, cs, domain, knowledge, parametric-simulation-energyplus, readme.md, sources, store
 
 ## Related
 

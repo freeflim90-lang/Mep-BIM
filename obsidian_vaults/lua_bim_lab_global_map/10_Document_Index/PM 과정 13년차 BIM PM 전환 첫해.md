@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/mep_bim_ai/05a_PM_13_YEAR.md"
+source_path: "knowledge/60_public/training_curriculum/mep_bim_ai/05a_PM_13_YEAR.md"
 ---
 
 # PM 과정 13년차 BIM PM 전환 첫해
 
 ## Source
 
-`docs/training_curriculum/mep_bim_ai/05a_PM_13_YEAR.md`
+`knowledge/60_public/training_curriculum/mep_bim_ai/05a_PM_13_YEAR.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/mep_bim_ai/05a_PM_13_YEAR.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/mep_bim_ai/05a_PM_13_YEAR.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-a_pm_13_year.md, bim, cs, curriculum, docs, mep, mep_bim_ai, qa, roi, sow, training, training_curriculum, 간섭, 개발, 견적, 교육, 구독, 납품, 라이선스, 리스크, 변경, 보안, 역할, 조직, 지원, 품질, 회의
+a_pm_13_year.md, bim, curriculum, knowledge, mep, mep_bim_ai, public, qa, roi, sow, training, training_curriculum, 간섭, 개발, 견적, 교육, 구독, 납품, 라이선스, 리스크, 변경, 보안, 역할, 조직, 지원, 품질, 회의
 
 ## Related
 

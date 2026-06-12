@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/fesworkscience/pyrevit_rocket/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/fesworkscience/pyrevit_rocket/README.md"
 ---
 
 # fesworkscience - pyrevit_rocket - CPSK Tools
 
 ## Source
 
-`data/bim_scripts/fesworkscience/pyrevit_rocket/README.md`
+`knowledge/50_domain/bim_scripts/fesworkscience/pyrevit_rocket/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/fesworkscience/pyrevit_rocket/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/fesworkscience/pyrevit_rocket/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-autodesk, bim, bim_scripts, cs, data, fesworkscience, markdown, pyrevit_rocket, qa, readme.md, revit, roi, workspace
+autodesk, bim, bim_scripts, cs, domain, fesworkscience, knowledge, pyrevit_rocket, qa, readme.md, revit, roi, sources
 
 ## Related
 

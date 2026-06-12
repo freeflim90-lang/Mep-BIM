@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/lfontanella/iot-streaming-workflows/05_Case study HBIM - Gallerie Accademia Venezia/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/lfontanella/iot-streaming-workflows/05_Case study HBIM - Gallerie Accademia Venezia/README.md"
 ---
 
 # iot-streaming-workflows - 05_Case study HBIM - Gallerie Accademia Venezia - HBIM Case Study Gallerie dell Accademia di Venezia
 
 ## Source
 
-`data/bim_scripts/lfontanella/iot-streaming-workflows/05_Case study HBIM - Gallerie Accademia Venezia/README.md`
+`knowledge/50_domain/bim_scripts/lfontanella/iot-streaming-workflows/05_Case study HBIM - Gallerie Accademia Venezia/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/lfontanella/iot-streaming-workflows/05_Case study HBIM - Gallerie Accademia Venezia/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/lfontanella/iot-streaming-workflows/05_Case study HBIM - Gallerie Accademia Venezia/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This folder documents a case-study application of the IoT/openBIM workflow in an
 
 ## Keywords
 
-accademia, bim, bim_scripts, case, cs, data, gallerie, hbim, iot-streaming-workflows, lfontanella, markdown, model, readme.md, study, venezia, workspace
+accademia, bim, bim_scripts, case, cs, domain, gallerie, hbim, iot-streaming-workflows, knowledge, lfontanella, model, readme.md, sources, study, venezia
 
 ## Related
 

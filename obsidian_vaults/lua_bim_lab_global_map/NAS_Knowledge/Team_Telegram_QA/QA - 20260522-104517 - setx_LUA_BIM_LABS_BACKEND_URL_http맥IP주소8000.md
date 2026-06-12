@@ -36,7 +36,7 @@ setx LUA_BIM_LABS_BACKEND_URL "http://맥IP주소:8000"
 - docs/industry_intelligence/daily/2026-05-22_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md (score 6)
 - docs/industry_intelligence/daily/2026-05-21_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md (score 6)
 - docs/autodesk_store/SUBSCRIPTION_ACCOUNT_PAYMENT_RISK.md (score 6)
-- data/knowledge_base/공조덕트.md (score 5)
+- knowledge/10_agents/03_엔지니어링팀/공조덕트.md (score 5)
 
 이 답변이 충분하면 /ok, 부족하면 /more 를 보내주세요.
 
@@ -45,7 +45,7 @@ setx LUA_BIM_LABS_BACKEND_URL "http://맥IP주소:8000"
 - `docs/industry_intelligence/daily/2026-05-22_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md` · score `6`
 - `docs/industry_intelligence/daily/2026-05-21_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md` · score `6`
 - `docs/autodesk_store/SUBSCRIPTION_ACCOUNT_PAYMENT_RISK.md` · score `6`
-- `data/knowledge_base/공조덕트.md` · score `5`
+- `knowledge/10_agents/03_엔지니어링팀/공조덕트.md` · score `5`
 
 ## 지식화 판단
 

@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/idfkit/idfkit-mcp/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/README.md"
 ---
 
 # idfkit - idfkit-mcp - idfkit-mcp
 
 ## Source
 
-`data/bim_scripts/idfkit/idfkit-mcp/README.md`
+`knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/idfkit/idfkit-mcp/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, bim_scripts, cs, data, idfkit, idfkit-mcp, markdown, model, readme.md, workspace
+bim, bim_scripts, cs, domain, idfkit, idfkit-mcp, knowledge, model, readme.md, sources
 
 ## Related
 

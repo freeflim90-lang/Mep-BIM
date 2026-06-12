@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-08-powerbi-command-center.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-08-powerbi-command-center.md"
 ---
 
 # Power BI Command Center Implementation Plan
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-08-powerbi-command-center.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-08-powerbi-command-center.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-08-powerbi-command-center.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-08-powerbi-command-center.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-api, autodesk, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, data, docs, markdown, model, navisworks, plans, powerbi-command-center.md, revit, workspace
+api, autodesk, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, docs, domain, knowledge, model, navisworks, plans, powerbi-command-center.md, revit, sources
 
 ## Related
 

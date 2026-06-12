@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/ifcos-core-operations.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/ifcos-core-operations.md"
 ---
 
 # IfcOpenShell Core Operations - File I O
 
 ## Source
 
-`data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/ifcos-core-operations.md`
+`knowledge/50_domain/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/ifcos-core-operations.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/ifcos-core-operations.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/ifcos-core-operations.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-api, bim, bim_scripts, blender-bonsai-ifcopenshell-sverchok-claude-skill-package, cs, data, docs, fragments, ifcos-core-operations.md, impertio-studio, markdown, model, research, store, workspace
+api, bim, bim_scripts, blender-bonsai-ifcopenshell-sverchok-claude-skill-package, cs, docs, domain, fragments, ifcos-core-operations.md, impertio-studio, knowledge, model, research, sources, store
 
 ## Related
 

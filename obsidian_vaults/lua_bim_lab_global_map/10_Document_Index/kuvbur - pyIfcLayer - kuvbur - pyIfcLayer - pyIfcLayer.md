@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/kuvbur/pyIfcLayer/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/kuvbur/pyIfcLayer/README.md"
 ---
 
 # kuvbur - pyIfcLayer - pyIfcLayer
 
 ## Source
 
-`data/bim_scripts/kuvbur/pyIfcLayer/README.md`
+`knowledge/50_domain/bim_scripts/kuvbur/pyIfcLayer/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/kuvbur/pyIfcLayer/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/kuvbur/pyIfcLayer/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Python scrip for IFC ***pyifclayer.py*** Небольшой скрипт для 
 
 ## Keywords
 
-bim, bim_scripts, cs, data, kuvbur, markdown, pyifclayer, readme.md, workspace
+bim, bim_scripts, cs, domain, knowledge, kuvbur, pyifclayer, readme.md, sources
 
 ## Related
 

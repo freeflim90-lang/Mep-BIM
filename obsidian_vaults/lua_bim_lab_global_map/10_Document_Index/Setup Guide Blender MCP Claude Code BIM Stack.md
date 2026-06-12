@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/SETUP.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/SETUP.md"
 ---
 
 # Setup Guide Blender MCP Claude Code BIM Stack
 
 ## Source
 
-`data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/SETUP.md`
+`knowledge/50_domain/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/SETUP.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/SETUP.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/SETUP.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Complete setup instructions for connecting Claude Code to Blender via MCP, with 
 
 ## Keywords
 
-api, bim, bim_scripts, blender-bonsai-ifcopenshell-sverchok-claude-skill-package, data, impertio-studio, markdown, setup.md, workspace
+api, bim, bim_scripts, blender-bonsai-ifcopenshell-sverchok-claude-skill-package, domain, impertio-studio, knowledge, setup.md, sources
 
 ## Related
 

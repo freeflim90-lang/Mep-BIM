@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/BuildingMetrics/BuildingMetrics-DEER-Energy-Plus-Utilities/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/BuildingMetrics/BuildingMetrics-DEER-Energy-Plus-Utilities/README.md"
 ---
 
 # BuildingMetrics - BuildingMetrics-DEER-Energy-Plus-Utilities - Helper and Post Processing scripts
 
 ## Source
 
-`data/bim_scripts/BuildingMetrics/BuildingMetrics-DEER-Energy-Plus-Utilities/README.md`
+`knowledge/50_domain/bim_scripts/BuildingMetrics/BuildingMetrics-DEER-Energy-Plus-Utilities/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/BuildingMetrics/BuildingMetrics-DEER-Energy-Plus-Utilities/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/BuildingMetrics/BuildingMetrics-DEER-Energy-Plus-Utilities/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ See the README.md in the commercial folder Scripts used with the residential mea
 
 ## Keywords
 
-bim, bim_scripts, buildingmetrics, buildingmetrics-deer-energy-plus-utilities, cs, data, markdown, readme.md, workspace
+bim, bim_scripts, buildingmetrics, buildingmetrics-deer-energy-plus-utilities, cs, domain, knowledge, readme.md, sources
 
 ## Related
 

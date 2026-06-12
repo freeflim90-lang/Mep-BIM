@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/team_distribution/02_YEAR_LEVEL_ROADMAP.md"
+source_path: "knowledge/60_public/training_curriculum/team_distribution/02_YEAR_LEVEL_ROADMAP.md"
 ---
 
 # 연차별 MEP BIM 교육 로드맵
 
 ## Source
 
-`docs/training_curriculum/team_distribution/02_YEAR_LEVEL_ROADMAP.md`
+`knowledge/60_public/training_curriculum/team_distribution/02_YEAR_LEVEL_ROADMAP.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/team_distribution/02_YEAR_LEVEL_ROADMAP.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/team_distribution/02_YEAR_LEVEL_ROADMAP.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, bim, clash, cs, curriculum, docs, mep, qa, revit, roi, sow, team_distribution, training, training_curriculum, year_level_roadmap.md, 간섭, 교육, 납품, 리스크, 물량, 변경, 보안, 역할, 온보딩, 조직, 테스트, 품질, 회의
+add-in, bim, clash, curriculum, knowledge, mep, public, qa, revit, roi, sow, team_distribution, training, training_curriculum, year_level_roadmap.md, 간섭, 교육, 납품, 리스크, 물량, 변경, 보안, 역할, 온보딩, 조직, 테스트, 품질, 회의
 
 ## Related
 

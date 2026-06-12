@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/specklesystems/specklepy/SECURITY.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/specklesystems/specklepy/SECURITY.md"
 ---
 
 # specklesystems - specklepy - Security Policy
 
 ## Source
 
-`data/bim_scripts/specklesystems/specklepy/SECURITY.md`
+`knowledge/50_domain/bim_scripts/specklesystems/specklepy/SECURITY.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/specklesystems/specklepy/SECURITY.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/specklesystems/specklepy/SECURITY.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Hi! If you've found something off, we'd be more than happy if you would report i
 
 ## Keywords
 
-bim, bim_scripts, data, markdown, security.md, specklepy, specklesystems, workspace
+bim, bim_scripts, domain, knowledge, security.md, sources, specklepy, specklesystems
 
 ## Related
 

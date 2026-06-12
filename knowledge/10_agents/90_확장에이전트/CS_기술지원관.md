@@ -35,7 +35,7 @@ Level 4 — 외부 기관 안내:
 | 법령 해석 | Level 4 | 안내만 |
 
 ## 2026-06-04 근거기반 기술 응답 에스컬레이션 기준
-- Source: `docs/training_curriculum/team_distribution/samples/2026-06-04_CS_TECHNICAL_EVIDENCE_RESPONSE_SAMPLE.md`
+- Source: `knowledge/60_public/training_curriculum/team_distribution/samples/2026-06-04_CS_TECHNICAL_EVIDENCE_RESPONSE_SAMPLE.md`
 - Tags: technical-support,evidence-response,KST,escalation
 
 기준, 법규, 납품검수, 제품 오류가 함께 걸린 고객 문의는 CS 1차 응답에서 결론, 근거, 적용 범위, 주의, 다음 액션을 분리한다. CS가 고객에게 안내할 수 있는 범위는 현재 확인된 사실, 요청할 자료, 후속 검토 절차까지이며, 설계 변경·시공 승인·인허가 적합성 판단은 PM/RFI 또는 전문가 확인으로 에스컬레이션한다.

@@ -1,7 +1,7 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
+category: AI Knowledge Base - QA
 source_path: "knowledge/20_qa/빌드검증_QA.md"
 ---
 
@@ -17,7 +17,7 @@ Absolute path:
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - AI Knowledge Base - QA]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, addin, api, autodesk, bim, knowledge, markdown, qa, qa.md, revit, workspace, 라이선스, 변경, 빌드, 지식, 지원, 테스트
+add-in, addin, ai, api, autodesk, base, bim, knowledge, qa, qa.md, revit, 라이선스, 변경, 빌드, 지식, 지원, 테스트
 
 ## Related
 

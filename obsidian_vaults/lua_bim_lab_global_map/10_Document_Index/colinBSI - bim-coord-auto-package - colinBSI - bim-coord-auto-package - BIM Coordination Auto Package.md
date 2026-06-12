@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/README.md"
 ---
 
 # colinBSI - bim-coord-auto-package - BIM Coordination Auto Package
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/README.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ A complete BIM coordination system for Revit and Navisworks projects. Includes a
 
 ## Keywords
 
-autodesk, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, data, health, markdown, model, navisworks, readme.md, revit, workspace
+autodesk, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, domain, health, knowledge, model, navisworks, readme.md, revit, sources
 
 ## Related
 

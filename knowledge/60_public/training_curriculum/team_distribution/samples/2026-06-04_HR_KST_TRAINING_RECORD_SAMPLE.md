@@ -2,7 +2,7 @@
 
 문서상태: 내부 교육 샘플  
 작성일: 2026-06-04  
-연결 스프린트: `docs/training_curriculum/team_distribution/08_WEEKLY_ROLE_BASED_KNOWLEDGE_LEARNING_SPRINT_2026-06-04.md`  
+연결 스프린트: `knowledge/60_public/training_curriculum/team_distribution/08_WEEKLY_ROLE_BASED_KNOWLEDGE_LEARNING_SPRINT_2026-06-04.md`  
 연결 매트릭스: `docs/internal_organization_documents/19_TRAINING_RECORD_COMPETENCY_MATRIX.md`  
 역할: HR/경영지원, 교육컨설팅, 지식큐레이터  
 

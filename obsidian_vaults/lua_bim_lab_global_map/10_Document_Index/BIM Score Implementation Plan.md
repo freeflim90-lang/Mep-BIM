@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Score implementation Plan.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Score implementation Plan.md"
 ---
 
 # BIM Score Implementation Plan
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Score implementation Plan.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Score implementation Plan.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Score implementation Plan.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Score implementation Plan.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This document describes the 150-point pyRevit model health scoring system. The p
 
 ## Keywords
 
-audit, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, data, health, implementation, markdown, model, plan.md, revit, score, workspace
+audit, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, domain, health, implementation, knowledge, model, plan.md, revit, score, sources
 
 ## Related
 

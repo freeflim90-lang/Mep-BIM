@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/specklesystems/specklepy/.github/CODE_OF_CONDUCT.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/specklesystems/specklepy/.github/CODE_OF_CONDUCT.md"
 ---
 
 # Contributor Covenant Code of Conduct
 
 ## Source
 
-`data/bim_scripts/specklesystems/specklepy/.github/CODE_OF_CONDUCT.md`
+`knowledge/50_domain/bim_scripts/specklesystems/specklepy/.github/CODE_OF_CONDUCT.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/specklesystems/specklepy/.github/CODE_OF_CONDUCT.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/specklesystems/specklepy/.github/CODE_OF_CONDUCT.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ In the interest of fostering an open and welcoming environment, we as contributo
 
 ## Keywords
 
-bim, bim_scripts, code_of_conduct.md, cs, data, github, markdown, mep, specklepy, specklesystems, workspace
+bim, bim_scripts, code_of_conduct.md, cs, domain, github, knowledge, mep, sources, specklepy, specklesystems
 
 ## Related
 

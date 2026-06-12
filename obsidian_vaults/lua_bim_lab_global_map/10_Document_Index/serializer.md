@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/specklesystems/specklepy/docs/specklepy/serialization/serializer.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/specklesystems/specklepy/docs/specklepy/serialization/serializer.md"
 ---
 
 # serializer
 
 ## Source
 
-`data/bim_scripts/specklesystems/specklepy/docs/specklepy/serialization/serializer.md`
+`knowledge/50_domain/bim_scripts/specklesystems/specklepy/docs/specklepy/serialization/serializer.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/specklesystems/specklepy/docs/specklepy/serialization/serializer.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/specklesystems/specklepy/docs/specklepy/serialization/serializer.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, bim_scripts, cs, data, docs, markdown, serialization, serializer.md, specklepy, specklesystems, workspace
+bim, bim_scripts, cs, docs, domain, knowledge, serialization, serializer.md, sources, specklepy, specklesystems
 
 ## Related
 
@@ -36,7 +36,7 @@ bim, bim_scripts, cs, data, docs, markdown, serialization, serializer.md, speckl
 - [[credentials]]
 - [[data_objects]]
 - [[exceptions]]
-- [[github - ISSUE_TEMPLATE - feature_request - c2d159]]
+- [[github - ISSUE_TEMPLATE - feature_request - ecfd74]]
 
 ## Home
 

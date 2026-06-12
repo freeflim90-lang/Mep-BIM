@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/duytran-git/ifcOpenShell-python/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/duytran-git/ifcOpenShell-python/README.md"
 ---
 
 # duytran-git - ifcOpenShell-python - IfcOpenShell Python
 
 ## Source
 
-`data/bim_scripts/duytran-git/ifcOpenShell-python/README.md`
+`knowledge/50_domain/bim_scripts/duytran-git/ifcOpenShell-python/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/duytran-git/ifcOpenShell-python/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/duytran-git/ifcOpenShell-python/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ From an IFC file (BIM4EEB-TUD-2x3.ifc), make a dictionary of all walls (IfcWallS
 
 ## Keywords
 
-bim, bim_scripts, data, duytran-git, ifcopenshell-python, markdown, model, readme.md, store, workspace
+bim, bim_scripts, domain, duytran-git, ifcopenshell-python, knowledge, model, readme.md, sources, store
 
 ## Related
 

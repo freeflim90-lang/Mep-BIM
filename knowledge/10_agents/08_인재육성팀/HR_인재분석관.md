@@ -24,7 +24,7 @@
 - 자기주도 학습: 매주 Starter Plan 콘텐츠 이수 여부
 
 ## 2026-06-04 KST 기반 학습 기록 운영 기준
-- Source: `docs/training_curriculum/team_distribution/samples/2026-06-04_HR_KST_TRAINING_RECORD_SAMPLE.md`
+- Source: `knowledge/60_public/training_curriculum/team_distribution/samples/2026-06-04_HR_KST_TRAINING_RECORD_SAMPLE.md`
 - Tags: hr,training-record,KST,competency,evidence-response
 
 HR_인재분석관은 지식학습을 단순 이수로 보지 않고, 역할별 산출물과 근거 포함 여부를 기록한다. KST 기반 학습 기록은 개인 평가 점수 확정용이 아니라 교육 적용률, 부족 역량, 다음 교육 설계의 근거로 사용한다.
@@ -296,7 +296,7 @@ HR_인재분석관은 역량을 소프트웨어 숙련도만으로 보지 않는
 
 
 ## 2026-06-04 역할별 주간 학습 성과 기록 기준
-- Source: `docs/training_curriculum/team_distribution/08_WEEKLY_ROLE_BASED_KNOWLEDGE_LEARNING_SPRINT_2026-06-04.md`
+- Source: `knowledge/60_public/training_curriculum/team_distribution/08_WEEKLY_ROLE_BASED_KNOWLEDGE_LEARNING_SPRINT_2026-06-04.md`
 - Tags: hr,competency,KST,role-based-learning,evidence-response
 
 HR_인재분석관은 역할별 지식학습 주간 스프린트 결과를 교육 이수 기록이 아니라 역량 증빙으로 기록한다. 같은 공식 기준 업데이트라도 역할별 산출물이 다르므로 산출물 링크와 사용한 `KST` 코드를 함께 저장한다.

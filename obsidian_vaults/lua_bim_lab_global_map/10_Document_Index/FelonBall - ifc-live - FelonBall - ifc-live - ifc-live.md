@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/FelonBall/ifc-live/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/FelonBall/ifc-live/README.md"
 ---
 
 # FelonBall - ifc-live - ifc-live
 
 ## Source
 
-`data/bim_scripts/FelonBall/ifc-live/README.md`
+`knowledge/50_domain/bim_scripts/FelonBall/ifc-live/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/FelonBall/ifc-live/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/FelonBall/ifc-live/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-api, audit, bim, bim_scripts, cs, data, felonball, ifc-live, markdown, model, readme.md, revit, store, workspace
+api, audit, bim, bim_scripts, cs, domain, felonball, ifc-live, knowledge, model, readme.md, revit, sources, store
 
 ## Related
 

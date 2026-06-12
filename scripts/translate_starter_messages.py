@@ -2,10 +2,10 @@
 """Translate Starter Plan messages from English to target languages using Claude API.
 
 Translates:
-  - data/starter_plan/messages/en/day_001.txt ~ day_060.txt
-  - data/starter_plan/messages/en/{discipline}/day_061.txt ~ day_090.txt
-  - data/starter_plan/friday_quiz/en/week_01.txt ~ week_13.txt
-  - data/starter_plan/milestone_messages/en/day_030.txt, day_060.txt, day_090.txt
+  - products/starter_plan/messages/en/day_001.txt ~ day_060.txt
+  - products/starter_plan/messages/en/{discipline}/day_061.txt ~ day_090.txt
+  - products/starter_plan/friday_quiz/en/week_01.txt ~ week_13.txt
+  - products/starter_plan/milestone_messages/en/day_030.txt, day_060.txt, day_090.txt
 
 Usage:
   python scripts/translate_starter_messages.py --lang ja

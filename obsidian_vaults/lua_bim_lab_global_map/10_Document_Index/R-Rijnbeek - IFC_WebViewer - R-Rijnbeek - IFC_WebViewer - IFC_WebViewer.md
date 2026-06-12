@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/R-Rijnbeek/IFC_WebViewer/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/R-Rijnbeek/IFC_WebViewer/README.md"
 ---
 
 # R-Rijnbeek - IFC_WebViewer - IFC_WebViewer
 
 ## Source
 
-`data/bim_scripts/R-Rijnbeek/IFC_WebViewer/README.md`
+`knowledge/50_domain/bim_scripts/R-Rijnbeek/IFC_WebViewer/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/R-Rijnbeek/IFC_WebViewer/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/R-Rijnbeek/IFC_WebViewer/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ A webViewer application that visualize IFC content of a file on web browser. Tes
 
 ## Keywords
 
-bim, bim_scripts, data, ifc_webviewer, markdown, r-rijnbeek, readme.md, store, workspace
+bim, bim_scripts, domain, ifc_webviewer, knowledge, r-rijnbeek, readme.md, sources, store
 
 ## Related
 

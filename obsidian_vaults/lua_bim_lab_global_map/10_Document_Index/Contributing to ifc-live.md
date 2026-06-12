@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/FelonBall/ifc-live/CONTRIBUTING.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/FelonBall/ifc-live/CONTRIBUTING.md"
 ---
 
 # Contributing to ifc-live
 
 ## Source
 
-`data/bim_scripts/FelonBall/ifc-live/CONTRIBUTING.md`
+`knowledge/50_domain/bim_scripts/FelonBall/ifc-live/CONTRIBUTING.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/FelonBall/ifc-live/CONTRIBUTING.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/FelonBall/ifc-live/CONTRIBUTING.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Thanks for your interest. The project is pre-alpha and the architecture is still
 
 ## Keywords
 
-addin, api, bim, bim_scripts, contributing.md, cs, data, felonball, ifc-live, markdown, model, workspace
+addin, api, bim, bim_scripts, contributing.md, cs, domain, felonball, ifc-live, knowledge, model, sources
 
 ## Related
 

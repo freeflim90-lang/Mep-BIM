@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/renatogcruz/Data-science-for-architecture/california_housing/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/california_housing/README.md"
 ---
 
 # Data-science-for-architecture - california_housing - California Housing
 
 ## Source
 
-`data/bim_scripts/renatogcruz/Data-science-for-architecture/california_housing/README.md`
+`knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/california_housing/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/renatogcruz/Data-science-for-architecture/california_housing/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/california_housing/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This dataset is a modified version of the California Housing dataset available f
 
 ## Keywords
 
-bim, bim_scripts, california_housing, cs, data, data-science-for-architecture, markdown, readme.md, renatogcruz, workspace
+bim, bim_scripts, california_housing, cs, data-science-for-architecture, domain, knowledge, readme.md, renatogcruz, sources
 
 ## Related
 

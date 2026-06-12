@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/public_products/launch_packages/coordinator_mentor/templates/TEMPLATE_PACK_CONTENT.md"
+source_path: "knowledge/60_public/training_curriculum/public_products/launch_packages/coordinator_mentor/templates/TEMPLATE_PACK_CONTENT.md"
 ---
 
 # Coordinator Mentor Template Pack Content
 
 ## Source
 
-`docs/training_curriculum/public_products/launch_packages/coordinator_mentor/templates/TEMPLATE_PACK_CONTENT.md`
+`knowledge/60_public/training_curriculum/public_products/launch_packages/coordinator_mentor/templates/TEMPLATE_PACK_CONTENT.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/public_products/launch_packages/coordinator_mentor/templates/TEMPLATE_PACK_CONTENT.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/public_products/launch_packages/coordinator_mentor/templates/TEMPLATE_PACK_CONTENT.md`
 
 ## Category
 
@@ -25,18 +25,18 @@ Absolute path:
 
 ## Keywords
 
-bim, clash, coordinator_mentor, cs, curriculum, docs, launch_packages, model, public_products, template_pack_content.md, templates, training, training_curriculum
+bim, clash, coordinator_mentor, cs, curriculum, knowledge, launch_packages, model, public, public_products, template_pack_content.md, templates, training, training_curriculum
 
 ## Related
 
+- [[2026-06-04 CEO CSO BF 품질진단 상품화 판단 메모 샘플]]
+- [[2026-06-04 CS BF 근거기반 고객 응답 샘플]]
+- [[2026-06-04 HR KST 기반 학습 기록 샘플]]
+- [[2026-06-04 PM BF RFI 회의 안건 샘플]]
+- [[2026-06-04 개발 R D BF 자동검수 티켓 샘플]]
+- [[2026-06-04 개발 R D 로그 마스킹 보안 티켓 샘플]]
+- [[2026-06-04 역할별 지식학습 주간 스프린트]]
 - [[BIM Execution Plan BEP Template]]
-- [[BIM Model QA QC Checklists HVAC and Electrical]]
-- [[Coordinator Mentor Case Studies]]
-- [[Coordinator Mentor Delivery SOP]]
-- [[Coordinator Mentor Intake Form Specification]]
-- [[Coordinator Mentor Monthly Session Agenda Template]]
-- [[Coordinator Mentor Scenario Challenge 1]]
-- [[LUA BIM LABS Coordinator Mentor Curriculum v2]]
 
 ## Home
 

@@ -303,7 +303,7 @@ Revit 버전별 Breaking Change 대응: Revit 2025에서 ElementId가 Int32 → 
 
 
 ## 2026-06-04 Autodesk 공식 신호 기반 Add-in 업데이트 후보
-- Source: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_OFFICIAL_AUTODESK_SIGNAL_UPDATE.md`
+- Source: `knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_OFFICIAL_AUTODESK_SIGNAL_UPDATE.md`
 - Tags: revit,addin,autodesk,aps,needs-review
 
 Autodesk 공식 Revit 2026 What's New와 APS 공식 블로그 기준으로 Add-in 운영 지식을 보강한다. 이 섹션은 확정 개발 지시가 아니라 `needs-review` 후보이며, Store 문구·QA 매트릭스·보안 기준에 반영하기 전 공식 문서와 테스트 증빙을 다시 확인한다.

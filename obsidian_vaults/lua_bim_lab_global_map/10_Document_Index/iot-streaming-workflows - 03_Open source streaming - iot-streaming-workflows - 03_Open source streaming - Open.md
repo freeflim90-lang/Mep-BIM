@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/lfontanella/iot-streaming-workflows/03_Open source streaming/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/lfontanella/iot-streaming-workflows/03_Open source streaming/README.md"
 ---
 
 # iot-streaming-workflows - 03_Open source streaming - Open Source Streaming Workflow
 
 ## Source
 
-`data/bim_scripts/lfontanella/iot-streaming-workflows/03_Open source streaming/README.md`
+`knowledge/50_domain/bim_scripts/lfontanella/iot-streaming-workflows/03_Open source streaming/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/lfontanella/iot-streaming-workflows/03_Open source streaming/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/lfontanella/iot-streaming-workflows/03_Open source streaming/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This folder documents an open-source workflow developed to test the real-time vi
 
 ## Keywords
 
-bim, bim_scripts, cs, data, iot-streaming-workflows, lfontanella, markdown, model, open, readme.md, source, streaming, workspace
+bim, bim_scripts, cs, domain, iot-streaming-workflows, knowledge, lfontanella, model, open, readme.md, source, sources, streaming
 
 ## Related
 

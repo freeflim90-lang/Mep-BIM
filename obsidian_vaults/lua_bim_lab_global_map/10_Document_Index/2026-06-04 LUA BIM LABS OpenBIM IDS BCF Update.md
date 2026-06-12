@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Docs - General
-source_path: "docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_OPENBIM_IDS_BCF_UPDATE.md"
+category: Knowledge Curation
+source_path: "knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_OPENBIM_IDS_BCF_UPDATE.md"
 ---
 
 # 2026-06-04 LUA BIM LABS OpenBIM IDS BCF Update
 
 ## Source
 
-`docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_OPENBIM_IDS_BCF_UPDATE.md`
+`knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_OPENBIM_IDS_BCF_UPDATE.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_OPENBIM_IDS_BCF_UPDATE.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_OPENBIM_IDS_BCF_UPDATE.md`
 
 ## Category
 
-- [[MOC - Docs - General]]
+- [[MOC - Knowledge Curation]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ buildingSMART 공식 문서 기준으로 LUA BIM LABS 납품검수, Model Qualit
 
 ## Keywords
 
-audit, bim, cs, daily, docs, general, knowledge_updates, lua_bim_labs_openbim_ids_bcf_update.md, mep, model, navisworks, qa, quality, revit, 간섭, 교육, 납품, 지식, 지원
+audit, bim, curation, daily, knowledge, lua_bim_labs_openbim_ids_bcf_update.md, mep, model, navisworks, qa, quality, revit, updates, 간섭, 교육, 납품, 지식, 지원
 
 ## Related
 

@@ -105,7 +105,7 @@
 
 ## 누적 현황 (Iteration 21 기준)
 - QA 커버리지: 31개 도메인 질문 100% 통과
-- 지식베이스 대상 파일: data/knowledge_base/ 내 25+ MD 파일
+- 지식베이스 대상 파일: knowledge/10_agents/ 내 25+ MD 파일
 - 전문 지식 보강 누적: 구조·공조덕트·전기·건축·BIM_납품검수·Revit_Addin·BIM 견적·인력파견 등
 
 ## 다음 보강 후보

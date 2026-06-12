@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/07_Challenge_Solution_Calculating_Coordinates_for_hangers/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/07_Challenge_Solution_Calculating_Coordinates_for_hangers/README.md"
 ---
 
 # IFC_analysis_with_IfcOpenShell - 07_Challenge_Solution_Calculating_Coordinates_for_hangers - How to change from a IfcBuildingElementProxy to IfcWall
 
 ## Source
 
-`data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/07_Challenge_Solution_Calculating_Coordinates_for_hangers/README.md`
+`knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/07_Challenge_Solution_Calculating_Coordinates_for_hangers/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/07_Challenge_Solution_Calculating_Coordinates_for_hangers/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/07_Challenge_Solution_Calculating_Coordinates_for_hangers/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Here is some code that changes all elements of type IfcBuildingElementProxy, to 
 
 ## Keywords
 
-bim, bim_scripts, challenge_solution_calculating_coordinates_for_hangers, data, data-science-for-architecture, ifc_analysis, ifc_analysis_with_ifcopenshell, markdown, readme.md, renatogcruz, workspace
+bim, bim_scripts, challenge_solution_calculating_coordinates_for_hangers, data-science-for-architecture, domain, ifc_analysis, ifc_analysis_with_ifcopenshell, knowledge, readme.md, renatogcruz, sources
 
 ## Related
 

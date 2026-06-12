@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/specklesystems/specklepy/docs/specklepy/api/operations.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/specklesystems/specklepy/docs/specklepy/api/operations.md"
 ---
 
 # operations
 
 ## Source
 
-`data/bim_scripts/specklesystems/specklepy/docs/specklepy/api/operations.md`
+`knowledge/50_domain/bim_scripts/specklesystems/specklepy/docs/specklepy/api/operations.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/specklesystems/specklepy/docs/specklepy/api/operations.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/specklesystems/specklepy/docs/specklepy/api/operations.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-api, bim, bim_scripts, cs, data, docs, markdown, operations.md, specklepy, specklesystems, workspace
+api, bim, bim_scripts, cs, docs, domain, knowledge, operations.md, sources, specklepy, specklesystems
 
 ## Related
 

@@ -96,8 +96,8 @@ The first productized Starter launch runs as a 30-day customer-facing curriculum
 The curriculum is stored here:
 
 ```text
-data/starter_plan/starter_plan_curriculum.json
-data/starter_plan/messages/day_001.txt ... day_030.txt
+products/starter_plan/starter_plan_curriculum.json
+products/starter_plan/messages/day_001.txt ... day_030.txt
 ```
 
 Recommended 30-day launch structure:

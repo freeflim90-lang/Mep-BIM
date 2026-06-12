@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, cs, knowledge, lua_bim_lab_global_map, nas, nas_knowledge, obsidian_vaults, qa
+bim, knowledge, lua_bim_lab_global_map, nas, nas_knowledge, obsidian_vaults, qa
 
 ## Related
 
@@ -34,9 +34,9 @@ bim, cs, knowledge, lua_bim_lab_global_map, nas, nas_knowledge, obsidian_vaults,
 - [[2026-06-01 뉴스 트렌드 18항목 지식 업데이트]]
 - [[2026-06-03 뉴스 트렌드 18항목 지식 업데이트]]
 - [[2026-06-04 뉴스 트렌드 18항목 지식 업데이트]]
-- [[2026-06-05 AI 지식 고도화 21차 업데이트]]
-- [[2026-06-05 AI 지식 고도화 36차 업데이트]]
-- [[2026-06-05 내부 지식베이스 업데이트]]
+- [[2026-06-05 AI 지식 고도화 16차 업데이트]]
+- [[2026-06-05 AI 지식 고도화 19차 업데이트]]
+- [[2026-06-05 AI 지식 고도화 20차 업데이트]]
 
 ## Home
 

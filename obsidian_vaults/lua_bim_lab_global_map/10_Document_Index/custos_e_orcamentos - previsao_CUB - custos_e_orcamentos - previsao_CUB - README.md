@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/renatogcruz/Data-science-for-architecture/custos_e_orcamentos/previsao_CUB/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/custos_e_orcamentos/previsao_CUB/README.md"
 ---
 
 # custos_e_orcamentos - previsao_CUB - README
 
 ## Source
 
-`data/bim_scripts/renatogcruz/Data-science-for-architecture/custos_e_orcamentos/previsao_CUB/README.md`
+`knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/custos_e_orcamentos/previsao_CUB/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/renatogcruz/Data-science-for-architecture/custos_e_orcamentos/previsao_CUB/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/custos_e_orcamentos/previsao_CUB/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Data - https://sindusconsp.com.br/sdm_downloads/cub-serie-historica/ From 2007 t
 
 ## Keywords
 
-bim, bim_scripts, custos_e_orcamentos, data, data-science-for-architecture, markdown, previsao_cub, readme.md, renatogcruz, workspace
+bim, bim_scripts, custos_e_orcamentos, data-science-for-architecture, domain, knowledge, previsao_cub, readme.md, renatogcruz, sources
 
 ## Related
 

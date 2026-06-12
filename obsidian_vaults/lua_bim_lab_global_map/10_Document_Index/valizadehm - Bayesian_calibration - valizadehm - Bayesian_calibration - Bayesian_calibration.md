@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/valizadehm/Bayesian_calibration/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/valizadehm/Bayesian_calibration/README.md"
 ---
 
 # valizadehm - Bayesian_calibration - Bayesian_calibration
 
 ## Source
 
-`data/bim_scripts/valizadehm/Bayesian_calibration/README.md`
+`knowledge/50_domain/bim_scripts/valizadehm/Bayesian_calibration/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/valizadehm/Bayesian_calibration/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/valizadehm/Bayesian_calibration/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Before anything, if we want to run a sensivity analysis using Sobol method, we n
 
 ## Keywords
 
-bayesian_calibration, bim, bim_scripts, data, markdown, model, readme.md, valizadehm, workspace
+bayesian_calibration, bim, bim_scripts, domain, knowledge, model, readme.md, sources, valizadehm
 
 ## Related
 

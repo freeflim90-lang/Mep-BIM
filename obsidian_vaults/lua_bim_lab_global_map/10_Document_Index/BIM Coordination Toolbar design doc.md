@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination Toolbar design doc.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination Toolbar design doc.md"
 ---
 
 # BIM Coordination Toolbar design doc
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination Toolbar design doc.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination Toolbar design doc.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination Toolbar design doc.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination Toolbar design doc.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ All 21 scripts built and deployed under `BIMTools.extension/`. See implementatio
 
 ## Keywords
 
-autodesk, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, coordination, cs, data, design, doc.md, health, markdown, model, navisworks, qa, revit, toolbar, workspace
+autodesk, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, coordination, cs, design, doc.md, domain, health, knowledge, model, navisworks, qa, revit, sources, toolbar
 
 ## Related
 

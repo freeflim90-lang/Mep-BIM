@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/idfkit/idfkit-mcp/CONTRIBUTING.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/CONTRIBUTING.md"
 ---
 
 # Contributing to idfkit-mcp
 
 ## Source
 
-`data/bim_scripts/idfkit/idfkit-mcp/CONTRIBUTING.md`
+`knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/CONTRIBUTING.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/idfkit/idfkit-mcp/CONTRIBUTING.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/CONTRIBUTING.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Contributions are welcome, and they are greatly appreciated! Every little bit he
 
 ## Keywords
 
-bim, bim_scripts, contributing.md, cs, data, idfkit, idfkit-mcp, markdown, workspace
+bim, bim_scripts, contributing.md, cs, domain, idfkit, idfkit-mcp, knowledge, sources
 
 ## Related
 

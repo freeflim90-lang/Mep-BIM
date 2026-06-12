@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/aothms/IfcOpenShell_PythonWrapper/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/aothms/IfcOpenShell_PythonWrapper/README.md"
 ---
 
 # aothms - IfcOpenShell_PythonWrapper - README
 
 ## Source
 
-`data/bim_scripts/aothms/IfcOpenShell_PythonWrapper/README.md`
+`knowledge/50_domain/bim_scripts/aothms/IfcOpenShell_PythonWrapper/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/aothms/IfcOpenShell_PythonWrapper/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/aothms/IfcOpenShell_PythonWrapper/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ IfcOpenShell ============ open source (LGPL) software library for working with t
 
 ## Keywords
 
-aothms, bim, bim_scripts, data, ifcopenshell_pythonwrapper, markdown, readme.md, workspace
+aothms, bim, bim_scripts, domain, ifcopenshell_pythonwrapper, knowledge, readme.md, sources
 
 ## Related
 

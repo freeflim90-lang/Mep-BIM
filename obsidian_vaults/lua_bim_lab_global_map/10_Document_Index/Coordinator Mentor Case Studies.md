@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/public_products/launch_packages/coordinator_mentor/case_studies/CASE_STUDY_01_02.md"
+source_path: "knowledge/60_public/training_curriculum/public_products/launch_packages/coordinator_mentor/case_studies/CASE_STUDY_01_02.md"
 ---
 
 # Coordinator Mentor Case Studies
 
 ## Source
 
-`docs/training_curriculum/public_products/launch_packages/coordinator_mentor/case_studies/CASE_STUDY_01_02.md`
+`knowledge/60_public/training_curriculum/public_products/launch_packages/coordinator_mentor/case_studies/CASE_STUDY_01_02.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/public_products/launch_packages/coordinator_mentor/case_studies/CASE_STUDY_01_02.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/public_products/launch_packages/coordinator_mentor/case_studies/CASE_STUDY_01_02.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-audit, autodesk, bim, case_studies, case_study_01_02.md, clash, coordinator_mentor, cs, curriculum, docs, launch_packages, mep, model, navisworks, public_products, training, training_curriculum
+audit, autodesk, bim, case_studies, case_study_01_02.md, clash, coordinator_mentor, curriculum, knowledge, launch_packages, mep, model, navisworks, public, public_products, training, training_curriculum
 
 ## Related
 

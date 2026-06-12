@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/README.md"
 ---
 
 # Data-science-for-architecture - ifc_analysis - IFC analysis
 
 ## Source
 
-`data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/README.md`
+`knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Repository on data analysis in Architecture, Engineering, Construction (AEC) and
 
 ## Keywords
 
-bim, bim_scripts, data, data-science-for-architecture, ifc_analysis, markdown, model, readme.md, renatogcruz, workspace
+bim, bim_scripts, data-science-for-architecture, domain, ifc_analysis, knowledge, model, readme.md, renatogcruz, sources
 
 ## Related
 

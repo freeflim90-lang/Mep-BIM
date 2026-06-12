@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/DTU-Byg/11034/A3__Use_Case/readme.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/DTU-Byg/11034/A3__Use_Case/readme.md"
 ---
 
 # 11034 - A3__Use_Case - 3 Use Case
 
 ## Source
 
-`data/bim_scripts/DTU-Byg/11034/A3__Use_Case/readme.md`
+`knowledge/50_domain/bim_scripts/DTU-Byg/11034/A3__Use_Case/readme.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/DTU-Byg/11034/A3__Use_Case/readme.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/DTU-Byg/11034/A3__Use_Case/readme.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-a3__use_case, bim, bim_scripts, data, dtu-byg, markdown, model, readme.md, workspace
+a3__use_case, bim, bim_scripts, domain, dtu-byg, knowledge, model, readme.md, sources
 
 ## Related
 

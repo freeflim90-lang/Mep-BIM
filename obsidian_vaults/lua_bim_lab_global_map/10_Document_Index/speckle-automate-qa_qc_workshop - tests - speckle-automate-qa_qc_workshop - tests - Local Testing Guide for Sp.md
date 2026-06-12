@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/tests/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/tests/README.md"
 ---
 
 # speckle-automate-qa_qc_workshop - tests - Local Testing Guide for Speckle Automate Functions
 
 ## Source
 
-`data/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/tests/README.md`
+`knowledge/50_domain/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/tests/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/tests/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/tests/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This guide explains how to set up and run local tests for your Speckle Automate 
 
 ## Keywords
 
-bim, bim_scripts, data, markdown, qa, readme.md, speckle-automate-qa_qc_workshop, specklesystems, tests, workspace
+bim, bim_scripts, domain, knowledge, qa, readme.md, sources, speckle-automate-qa_qc_workshop, specklesystems, tests
 
 ## Related
 

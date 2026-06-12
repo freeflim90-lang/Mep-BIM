@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/KTH-UrbanT/mubes-ubem/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/KTH-UrbanT/mubes-ubem/README.md"
 ---
 
 # KTH-UrbanT - mubes-ubem - MUBES_UBEM
 
 ## Source
 
-`data/bim_scripts/KTH-UrbanT/mubes-ubem/README.md`
+`knowledge/50_domain/bim_scripts/KTH-UrbanT/mubes-ubem/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/KTH-UrbanT/mubes-ubem/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/KTH-UrbanT/mubes-ubem/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ MUBES_UBEM propose a workflow that creates automatic building energy models for 
 
 ## Keywords
 
-bim, bim_scripts, cs, data, kth-urbant, markdown, mep, model, mubes-ubem, readme.md, workspace
+bim, bim_scripts, cs, domain, knowledge, kth-urbant, mep, model, mubes-ubem, readme.md, sources
 
 ## Related
 

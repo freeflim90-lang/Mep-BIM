@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/vicquick/ifc2quant/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/vicquick/ifc2quant/README.md"
 ---
 
 # vicquick - ifc2quant - ifc2quant
 
 ## Source
 
-`data/bim_scripts/vicquick/ifc2quant/README.md`
+`knowledge/50_domain/bim_scripts/vicquick/ifc2quant/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/vicquick/ifc2quant/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/vicquick/ifc2quant/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-audit, bim, bim_scripts, cs, data, ifc2quant, markdown, model, quality, readme.md, vicquick, workspace
+audit, bim, bim_scripts, cs, domain, ifc2quant, knowledge, model, quality, readme.md, sources, vicquick
 
 ## Related
 

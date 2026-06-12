@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/starter_plan/reference_cards/card_07_site_readiness_guide.md"
+category: Products
+source_path: "products/starter_plan/reference_cards/card_07_site_readiness_guide.md"
 ---
 
 # Site-Readiness Check Guide
 
 ## Source
 
-`data/starter_plan/reference_cards/card_07_site_readiness_guide.md`
+`products/starter_plan/reference_cards/card_07_site_readiness_guide.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/starter_plan/reference_cards/card_07_site_readiness_guide.md`
+`/Users/choejeong-yeon/LUA BIM LABS/products/starter_plan/reference_cards/card_07_site_readiness_guide.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Products]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-autodesk, bim, card_07_site_readiness_guide.md, clash, cs, data, markdown, mep, model, reference_cards, starter_plan, workspace
+autodesk, bim, card_07_site_readiness_guide.md, clash, cs, mep, model, products, reference_cards, starter_plan
 
 ## Related
 
@@ -36,7 +36,7 @@ autodesk, bim, card_07_site_readiness_guide.md, clash, cs, data, markdown, mep, 
 - [[MEP Drawing Reading Guide]]
 - [[Model Quality Self-Review Checklist]]
 - [[Revit MEP Setup Checklist]]
-- [[Advanced BIM Coordination]]
+- [[starter_lesson_template]]
 
 ## Home
 

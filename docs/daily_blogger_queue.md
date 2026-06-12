@@ -2,7 +2,7 @@
 
 Daily flow:
 
-1. Read the first JSON topic from `content/blogger_queue/`.
+1. Read the first JSON topic from `knowledge/60_public/blogger_queue/`.
 2. Render it into an English MEP BIM blog post.
 3. Publish it to Blogger.
 4. Delete the JSON topic file after successful publishing.

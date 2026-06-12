@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/mep_bim_ai/04c_LEAD_11_YEAR.md"
+source_path: "knowledge/60_public/training_curriculum/mep_bim_ai/04c_LEAD_11_YEAR.md"
 ---
 
 # Lead 과정 11년차 Discipline BIM Lead 복수 프로젝트
 
 ## Source
 
-`docs/training_curriculum/mep_bim_ai/04c_LEAD_11_YEAR.md`
+`knowledge/60_public/training_curriculum/mep_bim_ai/04c_LEAD_11_YEAR.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/mep_bim_ai/04c_LEAD_11_YEAR.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/mep_bim_ai/04c_LEAD_11_YEAR.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, api, bim, c_lead_11_year.md, cs, curriculum, docs, mep, mep_bim_ai, qa, revit, sow, training, training_curriculum, 간섭, 개발, 견적, 교육, 납품, 리스크, 변경, 보안, 슬라이드, 역할, 지원, 커리큘럼, 품질, 회의
+add-in, api, bim, c_lead_11_year.md, curriculum, knowledge, mep, mep_bim_ai, public, qa, revit, sow, training, training_curriculum, 간섭, 개발, 견적, 교육, 납품, 리스크, 변경, 보안, 슬라이드, 역할, 지원, 커리큘럼, 품질, 회의
 
 ## Related
 

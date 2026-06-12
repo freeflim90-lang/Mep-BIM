@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/viktor-platform/aps-automation-sdk/docs/ssa-acc-hub-setup.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/viktor-platform/aps-automation-sdk/docs/ssa-acc-hub-setup.md"
 ---
 
 # SSA ACC Hub Setup Guide
 
 ## Source
 
-`data/bim_scripts/viktor-platform/aps-automation-sdk/docs/ssa-acc-hub-setup.md`
+`knowledge/50_domain/bim_scripts/viktor-platform/aps-automation-sdk/docs/ssa-acc-hub-setup.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/viktor-platform/aps-automation-sdk/docs/ssa-acc-hub-setup.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/viktor-platform/aps-automation-sdk/docs/ssa-acc-hub-setup.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This guide sets up a Secure Service Account (SSA) robot user so the SDK can mint
 
 ## Keywords
 
-api, aps-automation-sdk, autodesk, bim, bim_scripts, cs, data, docs, markdown, ssa-acc-hub-setup.md, store, viktor-platform, workspace
+api, aps-automation-sdk, autodesk, bim, bim_scripts, cs, docs, domain, knowledge, sources, ssa-acc-hub-setup.md, store, viktor-platform
 
 ## Related
 

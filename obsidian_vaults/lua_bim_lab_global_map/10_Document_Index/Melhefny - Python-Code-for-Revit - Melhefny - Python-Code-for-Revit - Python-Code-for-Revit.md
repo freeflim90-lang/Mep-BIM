@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/Melhefny/Python-Code-for-Revit/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/Melhefny/Python-Code-for-Revit/README.md"
 ---
 
 # Melhefny - Python-Code-for-Revit - Python-Code-for-Revit
 
 ## Source
 
-`data/bim_scripts/Melhefny/Python-Code-for-Revit/README.md`
+`knowledge/50_domain/bim_scripts/Melhefny/Python-Code-for-Revit/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/Melhefny/Python-Code-for-Revit/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/Melhefny/Python-Code-for-Revit/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Custom Python Scripts and pyRevit buttons for Autodesk Revit Workflows
 
 ## Keywords
 
-autodesk, bim, bim_scripts, data, markdown, melhefny, python-code-for-revit, readme.md, revit, workspace
+autodesk, bim, bim_scripts, domain, knowledge, melhefny, python-code-for-revit, readme.md, revit, sources
 
 ## Related
 

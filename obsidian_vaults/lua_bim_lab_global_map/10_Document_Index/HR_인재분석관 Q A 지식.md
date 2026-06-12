@@ -1,7 +1,7 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
+category: AI Knowledge Base - QA
 source_path: "knowledge/20_qa/HR_인재분석관_QA.md"
 ---
 
@@ -17,7 +17,7 @@ Absolute path:
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - AI Knowledge Base - QA]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, api, bim, hr_, knowledge, markdown, qa, qa.md, revit, workspace, 간섭, 개발, 교육, 역할, 온보딩, 조직, 지식, 지원, 커리큘럼
+add-in, ai, api, base, bim, hr_, knowledge, qa, qa.md, revit, 간섭, 개발, 교육, 역할, 온보딩, 조직, 지식, 지원, 커리큘럼
 
 ## Related
 

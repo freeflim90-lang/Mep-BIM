@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/mep_bim_ai/04d_LEAD_12_YEAR.md"
+source_path: "knowledge/60_public/training_curriculum/mep_bim_ai/04d_LEAD_12_YEAR.md"
 ---
 
 # Lead 과정 12년차 Discipline BIM Lead PM 전환 준비
 
 ## Source
 
-`docs/training_curriculum/mep_bim_ai/04d_LEAD_12_YEAR.md`
+`knowledge/60_public/training_curriculum/mep_bim_ai/04d_LEAD_12_YEAR.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/mep_bim_ai/04d_LEAD_12_YEAR.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/mep_bim_ai/04d_LEAD_12_YEAR.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, bim, cs, curriculum, d_lead_12_year.md, docs, mep, mep_bim_ai, qa, revit, roi, sow, training, training_curriculum, 간섭, 개발, 견적, 교육, 권한, 납품, 라이선스, 리스크, 변경, 보안, 심사, 역할, 온보딩, 지식, 지원, 품질
+add-in, bim, curriculum, d_lead_12_year.md, knowledge, mep, mep_bim_ai, public, qa, revit, roi, sow, training, training_curriculum, 간섭, 개발, 견적, 교육, 권한, 납품, 라이선스, 리스크, 변경, 보안, 심사, 역할, 온보딩, 지식, 지원, 품질
 
 ## Related
 

@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/shekharkandpal/revit-python-tools/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/shekharkandpal/revit-python-tools/README.md"
 ---
 
 # shekharkandpal - revit-python-tools - revit-python-tools
 
 ## Source
 
-`data/bim_scripts/shekharkandpal/revit-python-tools/README.md`
+`knowledge/50_domain/bim_scripts/shekharkandpal/revit-python-tools/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/shekharkandpal/revit-python-tools/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/shekharkandpal/revit-python-tools/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Collection of Python scripts for Autodesk Revit automation using pyRevit.
 
 ## Keywords
 
-autodesk, bim, bim_scripts, data, markdown, readme.md, revit, revit-python-tools, shekharkandpal, workspace
+autodesk, bim, bim_scripts, domain, knowledge, readme.md, revit, revit-python-tools, shekharkandpal, sources
 
 ## Related
 

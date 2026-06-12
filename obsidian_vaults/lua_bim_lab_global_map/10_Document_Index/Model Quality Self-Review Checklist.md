@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/starter_plan/reference_cards/card_04_model_quality_checklist.md"
+category: Products
+source_path: "products/starter_plan/reference_cards/card_04_model_quality_checklist.md"
 ---
 
 # Model Quality Self-Review Checklist
 
 ## Source
 
-`data/starter_plan/reference_cards/card_04_model_quality_checklist.md`
+`products/starter_plan/reference_cards/card_04_model_quality_checklist.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/starter_plan/reference_cards/card_04_model_quality_checklist.md`
+`/Users/choejeong-yeon/LUA BIM LABS/products/starter_plan/reference_cards/card_04_model_quality_checklist.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Products]]
 
 ## Summary
 
@@ -25,18 +25,18 @@ Absolute path:
 
 ## Keywords
 
-bim, card_04_model_quality_checklist.md, clash, data, markdown, mep, model, quality, reference_cards, revit, starter_plan, workspace
+bim, card_04_model_quality_checklist.md, clash, mep, model, products, quality, reference_cards, revit, starter_plan
 
 ## Related
 
 - [[BIM Learning Path Next Steps]]
-- [[Clash Types Priority Matrix]]
 - [[MEP BIM Key Roles LOD Reference]]
+- [[Clash Types Priority Matrix]]
 - [[MEP Data Schedule Reference]]
 - [[MEP Drawing Reading Guide]]
 - [[Revit MEP Setup Checklist]]
 - [[Site-Readiness Check Guide]]
-- [[Advanced BIM Coordination]]
+- [[starter_lesson_template]]
 
 ## Home
 

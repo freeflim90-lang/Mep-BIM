@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/bayoBpas/bpasAutomationInstalls/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/bayoBpas/bpasAutomationInstalls/README.md"
 ---
 
 # bayoBpas - bpasAutomationInstalls - NewRepo2
 
 ## Source
 
-`data/bim_scripts/bayoBpas/bpasAutomationInstalls/README.md`
+`knowledge/50_domain/bim_scripts/bayoBpas/bpasAutomationInstalls/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/bayoBpas/bpasAutomationInstalls/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/bayoBpas/bpasAutomationInstalls/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bayobpas, bim, bim_scripts, bpasautomationinstalls, data, markdown, readme.md, workspace
+bayobpas, bim, bim_scripts, bpasautomationinstalls, domain, knowledge, readme.md, sources
 
 ## Related
 

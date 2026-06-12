@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/MAT.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/MAT.md"
 ---
 
 # MAT
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/MAT.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/MAT.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/MAT.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/MAT.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Model Alignment Tool design the Model Alignment Tool so a coordinator can press 
 
 ## Keywords
 
-alignment, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, data, markdown, mat.md, mep, model, revit, tool, universal, workspace
+alignment, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, domain, knowledge, mat.md, mep, model, revit, sources, tool, universal
 
 ## Related
 

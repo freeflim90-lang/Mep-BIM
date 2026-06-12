@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/Kennystruct/Clash-Detection-Matrix-Automation/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/Kennystruct/Clash-Detection-Matrix-Automation/README.md"
 ---
 
 # Kennystruct - Clash-Detection-Matrix-Automation - DATA SCIENCE Revit to Navisworks Clash-Detection-Matrix-Automation
 
 ## Source
 
-`data/bim_scripts/Kennystruct/Clash-Detection-Matrix-Automation/README.md`
+`knowledge/50_domain/bim_scripts/Kennystruct/Clash-Detection-Matrix-Automation/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/Kennystruct/Clash-Detection-Matrix-Automation/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/Kennystruct/Clash-Detection-Matrix-Automation/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Automating Clash Detection through a workflow from Revit, Dynamo and ending in N
 
 ## Keywords
 
-autodesk, bim, bim_scripts, clash, clash-detection-matrix-automation, cs, data, kennystruct, markdown, mep, model, navisworks, readme.md, revit, workspace
+autodesk, bim, bim_scripts, clash, clash-detection-matrix-automation, cs, domain, kennystruct, knowledge, mep, model, navisworks, readme.md, revit, sources
 
 ## Related
 

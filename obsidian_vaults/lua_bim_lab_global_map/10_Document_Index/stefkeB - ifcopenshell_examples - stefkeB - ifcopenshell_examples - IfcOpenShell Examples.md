@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/stefkeB/ifcopenshell_examples/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/stefkeB/ifcopenshell_examples/README.md"
 ---
 
 # stefkeB - ifcopenshell_examples - IfcOpenShell Examples
 
 ## Source
 
-`data/bim_scripts/stefkeB/ifcopenshell_examples/README.md`
+`knowledge/50_domain/bim_scripts/stefkeB/ifcopenshell_examples/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/stefkeB/ifcopenshell_examples/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/stefkeB/ifcopenshell_examples/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Series of examples on how to use IfcOpenShell https://github.com/IfcOpenShell/If
 
 ## Keywords
 
-bim, bim_scripts, data, ifcopenshell_examples, markdown, readme.md, stefkeb, workspace
+bim, bim_scripts, domain, ifcopenshell_examples, knowledge, readme.md, sources, stefkeb
 
 ## Related
 

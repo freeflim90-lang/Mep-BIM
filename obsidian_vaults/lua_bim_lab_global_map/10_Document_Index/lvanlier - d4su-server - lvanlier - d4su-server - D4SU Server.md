@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/lvanlier/d4su-server/readme.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/lvanlier/d4su-server/readme.md"
 ---
 
 # lvanlier - d4su-server - D4SU Server
 
 ## Source
 
-`data/bim_scripts/lvanlier/d4su-server/readme.md`
+`knowledge/50_domain/bim_scripts/lvanlier/d4su-server/readme.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/lvanlier/d4su-server/readme.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/lvanlier/d4su-server/readme.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This project aims to exemplify a reliable and maintainable server solution to br
 
 ## Keywords
 
-api, bim, bim_scripts, cs, d4su-server, data, lvanlier, markdown, model, readme.md, workspace
+api, bim, bim_scripts, cs, d4su-server, domain, knowledge, lvanlier, model, readme.md, sources
 
 ## Related
 

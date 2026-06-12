@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/06-pipeline.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/06-pipeline.md"
 ---
 
 # Python Automation Pipeline
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/06-pipeline.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/06-pipeline.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/06-pipeline.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/06-pipeline.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ The `BIM_Automation` pipeline is a Python script that runs automatically every W
 
 ## Keywords
 
-api, autodesk, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, data, docs, markdown, navisworks, pipeline.md, revit, tools, workspace
+api, autodesk, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, docs, domain, knowledge, navisworks, pipeline.md, revit, sources, tools
 
 ## Related
 

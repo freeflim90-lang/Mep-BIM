@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/renatogcruz/Data-science-for-architecture/Data_science_for_AEC/1 - Python Fundamentals/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/Data_science_for_AEC/1 - Python Fundamentals/README.md"
 ---
 
 # Data_science_for_AEC - 1 - Python Fundamentals - Introduction to computing with Python for engineering and scientific applications
 
 ## Source
 
-`data/bim_scripts/renatogcruz/Data-science-for-architecture/Data_science_for_AEC/1 - Python Fundamentals/README.md`
+`knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/Data_science_for_AEC/1 - Python Fundamentals/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/renatogcruz/Data-science-for-architecture/Data_science_for_AEC/1 - Python Fundamentals/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/Data_science_for_AEC/1 - Python Fundamentals/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ These Jupyter notebooks provide a self-study introduction to computing with Pyth
 
 ## Keywords
 
-bim, bim_scripts, data, data-science-for-architecture, data_science_for_aec, fundamentals, markdown, model, python, readme.md, renatogcruz, workspace
+bim, bim_scripts, data-science-for-architecture, data_science_for_aec, domain, fundamentals, knowledge, model, python, readme.md, renatogcruz, sources
 
 ## Related
 

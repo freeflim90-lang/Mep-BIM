@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/idfkit/idfkit-mcp/docs/tools/docs.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/tools/docs.md"
 ---
 
 # Documentation Tools
 
 ## Source
 
-`data/bim_scripts/idfkit/idfkit-mcp/docs/tools/docs.md`
+`knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/tools/docs.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/idfkit/idfkit-mcp/docs/tools/docs.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/tools/docs.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Documentation tools provide full-text search and section retrieval for the Energ
 
 ## Keywords
 
-bim, bim_scripts, cs, data, docs, docs.md, idfkit, idfkit-mcp, markdown, tools, workspace
+bim, bim_scripts, cs, docs, docs.md, domain, idfkit, idfkit-mcp, knowledge, sources, tools
 
 ## Related
 

@@ -105,7 +105,7 @@ AX 지식 축적은 아래 시간 단위로 운영한다.
 |---|---|---|---|
 | 매시간 | 노이즈가 많은 최신 신호를 가볍게 감지 | `com.luabimlab.hourly-ax-signal-monitor` | `docs/industry_intelligence/hourly/`, `AX_시간별_신호모니터링` |
 | 매일 07:00 | 신호를 큐레이션하고 지식베이스/Obsidian에 정식 반영 | `com.luabimlab.daily-knowledge-update` | 일일 브리핑, 일일 지식 업데이트, Obsidian 그래프 |
-| 매주 월요일 07:30 | 반복 신호를 전략/제품/교육/자동화 후보로 승격 | `com.luabimlab.weekly-ax-strategy-review` | `docs/knowledge_updates/weekly/`, `AX_전략승격리뷰` |
+| 매주 월요일 07:30 | 반복 신호를 전략/제품/교육/자동화 후보로 승격 | `com.luabimlab.weekly-ax-strategy-review` | `knowledge/40_curation/updates/weekly/`, `AX_전략승격리뷰` |
 
 매시간 수집은 판단을 확정하지 않는다. 매일은 정리하고, 매주는 승격한다. 이 구조를 통해 빠른 시장 감지와 과도한 지식 노이즈를 동시에 관리한다.
 

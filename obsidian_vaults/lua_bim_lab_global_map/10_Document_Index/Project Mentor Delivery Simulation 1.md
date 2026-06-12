@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/public_products/launch_packages/project_mentor/delivery_simulations/SIMULATION_01.md"
+source_path: "knowledge/60_public/training_curriculum/public_products/launch_packages/project_mentor/delivery_simulations/SIMULATION_01.md"
 ---
 
 # Project Mentor Delivery Simulation 1
 
 ## Source
 
-`docs/training_curriculum/public_products/launch_packages/project_mentor/delivery_simulations/SIMULATION_01.md`
+`knowledge/60_public/training_curriculum/public_products/launch_packages/project_mentor/delivery_simulations/SIMULATION_01.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/public_products/launch_packages/project_mentor/delivery_simulations/SIMULATION_01.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/public_products/launch_packages/project_mentor/delivery_simulations/SIMULATION_01.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-autodesk, bim, clash, cs, curriculum, delivery_simulations, docs, health, launch_packages, mep, model, navisworks, project_mentor, public_products, qa, quality, revit, simulation_01.md, training, training_curriculum
+autodesk, bim, clash, curriculum, delivery_simulations, health, knowledge, launch_packages, mep, model, navisworks, project_mentor, public, public_products, qa, quality, revit, simulation_01.md, training, training_curriculum
 
 ## Related
 

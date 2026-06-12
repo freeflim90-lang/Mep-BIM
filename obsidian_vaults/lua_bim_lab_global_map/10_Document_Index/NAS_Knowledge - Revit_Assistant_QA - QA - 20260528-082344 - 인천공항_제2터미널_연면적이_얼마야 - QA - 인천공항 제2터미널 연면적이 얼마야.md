@@ -21,11 +21,11 @@ Absolute path:
 
 ## Summary
 
-> 요청자: codex_test > 수집일: 2026-05-28 08:23:44 > 클라이언트: LUAChat > 담당 지식: 건축 인천공항 제2터미널 연면적이 얼마야 ```text 선택 요소 없음 ``` [📚 지식 베이스 (score 28) + 🔍 웹 검색 보강] 인천공항 제2터미널(T2)의 연면적은 약 38만 7000㎡입니다. 이는 서울 여의도공원 면적(21만㎡)의 약 20배 규모입니다. - `data/knowledge_base/건축.md` · score `
+> 요청자: codex_test > 수집일: 2026-05-28 08:23:44 > 클라이언트: LUAChat > 담당 지식: 건축 인천공항 제2터미널 연면적이 얼마야 ```text 선택 요소 없음 ``` [📚 지식 베이스 (score 28) + 🔍 웹 검색 보강] 인천공항 제2터미널(T2)의 연면적은 약 38만 7000㎡입니다. 이는 서울 여의도공원 면적(21만㎡)의 약 20배 규모입니다. - `knowledge/10_agents/02_견적팀/건축.md` · 
 
 ## Keywords
 
-add-in, addin, bim, knowledge, lua_bim_lab_global_map, mep, nas, nas_knowledge, obsidian_vaults, qa, revit, revit_assistant_qa, 교육, 지식
+add-in, addin, bim, knowledge, lua_bim_lab_global_map, mep, nas, nas_knowledge, obsidian_vaults, qa, revit, revit_assistant_qa, 견적, 교육, 지식
 
 ## Related
 

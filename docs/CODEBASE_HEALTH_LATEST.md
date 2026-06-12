@@ -14,7 +14,7 @@
 
 ## Excluded Reference Paths
 
-- `data/bim_scripts/`
+- `knowledge/50_domain/bim_scripts/`
 
 ## Largest Files
 

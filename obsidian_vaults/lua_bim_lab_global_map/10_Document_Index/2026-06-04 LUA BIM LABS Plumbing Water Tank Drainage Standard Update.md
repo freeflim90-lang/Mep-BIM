@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Docs - General
-source_path: "docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_PLUMBING_WATER_TANK_DRAINAGE_STANDARD_UPDATE.md"
+category: Knowledge Curation
+source_path: "knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_PLUMBING_WATER_TANK_DRAINAGE_STANDARD_UPDATE.md"
 ---
 
 # 2026-06-04 LUA BIM LABS Plumbing Water Tank Drainage Standard Update
 
 ## Source
 
-`docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_PLUMBING_WATER_TANK_DRAINAGE_STANDARD_UPDATE.md`
+`knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_PLUMBING_WATER_TANK_DRAINAGE_STANDARD_UPDATE.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_PLUMBING_WATER_TANK_DRAINAGE_STANDARD_UPDATE.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_PLUMBING_WATER_TANK_DRAINAGE_STANDARD_UPDATE.md`
 
 ## Category
 
-- [[MOC - Docs - General]]
+- [[MOC - Knowledge Curation]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, cs, daily, docs, general, knowledge_updates, lua_bim_labs_plumbing_water_tank_drainage_standard_update.md, 견적, 납품, 리스크, 변경, 심사, 자산, 조직, 지식
+bim, cs, curation, daily, knowledge, lua_bim_labs_plumbing_water_tank_drainage_standard_update.md, updates, 견적, 납품, 리스크, 변경, 심사, 자산, 조직, 지식
 
 ## Related
 

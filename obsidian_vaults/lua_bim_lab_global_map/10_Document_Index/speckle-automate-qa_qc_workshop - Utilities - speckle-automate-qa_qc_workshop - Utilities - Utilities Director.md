@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/Utilities/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/Utilities/README.md"
 ---
 
 # speckle-automate-qa_qc_workshop - Utilities - Utilities Directory
 
 ## Source
 
-`data/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/Utilities/README.md`
+`knowledge/50_domain/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/Utilities/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/Utilities/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/Utilities/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ A collection of helper functions used across all workshop exercises. These utili
 
 ## Keywords
 
-bim, bim_scripts, data, markdown, qa, readme.md, revit, speckle-automate-qa_qc_workshop, specklesystems, utilities, workspace
+bim, bim_scripts, domain, knowledge, qa, readme.md, revit, sources, speckle-automate-qa_qc_workshop, specklesystems, utilities
 
 ## Related
 

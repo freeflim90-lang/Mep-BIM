@@ -4,7 +4,7 @@
 - Agent: 지식업데이트
 - Query: 인천공항 제1터미널 면적이얼마야
 - Reasons: operational-doc-ranked:지식업데이트
-- Top: data/knowledge_base/지식업데이트.md / score 28
+- Top: knowledge/10_agents/09_지식팀/지식업데이트.md / score 28
 - Tags: auto-quality,knowledge-gap,self-healing
 
 ### 자동 수집 결과
@@ -33,7 +33,7 @@
 - Agent: 지식업데이트
 - Query: 인천공항 제1터미널 면적이얼마야
 - Reasons: operational-doc-ranked:지식업데이트
-- Top: data/knowledge_base/지식업데이트.md / score 41
+- Top: knowledge/10_agents/09_지식팀/지식업데이트.md / score 41
 - Tags: auto-quality,knowledge-gap,self-healing
 
 ### 자동 수집 결과
@@ -62,7 +62,7 @@
 - Agent: 지식업데이트
 - Query: 인천공항 제1터미널 면적이얼마야
 - Reasons: operational-doc-ranked:지식업데이트
-- Top: data/knowledge_base/지식업데이트.md / score 46
+- Top: knowledge/10_agents/09_지식팀/지식업데이트.md / score 46
 - Tags: auto-quality,knowledge-gap,self-healing
 
 ### 자동 수집 결과
@@ -91,7 +91,7 @@
 - Agent: 지식업데이트
 - Query: 인천공항 제1터미널 면적이얼마야
 - Reasons: operational-doc-ranked:지식업데이트
-- Top: data/knowledge_base/지식업데이트.md / score 46
+- Top: knowledge/10_agents/09_지식팀/지식업데이트.md / score 46
 - Tags: auto-quality,knowledge-gap,self-healing
 
 ### 자동 수집 결과
@@ -120,7 +120,7 @@
 - Agent: 지식업데이트
 - Query: 인천공항 제1터미널 면적이얼마야
 - Reasons: operational-doc-ranked:지식업데이트
-- Top: data/knowledge_base/지식업데이트.md / score 46
+- Top: knowledge/10_agents/09_지식팀/지식업데이트.md / score 46
 - Tags: auto-quality,knowledge-gap,self-healing
 
 ### 자동 수집 결과
@@ -149,7 +149,7 @@
 - Agent: 지식업데이트
 - Query: 인천공항 제1터미널 면적이얼마야
 - Reasons: operational-doc-ranked:지식업데이트
-- Top: data/knowledge_base/지식업데이트.md / score 46
+- Top: knowledge/10_agents/09_지식팀/지식업데이트.md / score 46
 - Tags: auto-quality,knowledge-gap,self-healing
 
 ### 자동 수집 결과
@@ -178,7 +178,7 @@
 - Agent: 지식업데이트
 - Query: 인천공항 제1터미널 면적이얼마야
 - Reasons: operational-doc-ranked:지식업데이트
-- Top: data/knowledge_base/지식업데이트.md / score 46
+- Top: knowledge/10_agents/09_지식팀/지식업데이트.md / score 46
 - Tags: auto-quality,knowledge-gap,self-healing
 
 ### 자동 수집 결과
@@ -207,7 +207,7 @@
 - Agent: 지식업데이트
 - Query: 인천공항 제1터미널 면적이얼마야
 - Reasons: operational-doc-ranked:지식업데이트
-- Top: data/knowledge_base/지식업데이트.md / score 46
+- Top: knowledge/10_agents/09_지식팀/지식업데이트.md / score 46
 - Tags: auto-quality,knowledge-gap,self-healing
 
 ### 자동 수집 결과
@@ -236,7 +236,7 @@
 - Agent: 지식업데이트
 - Query: 인천공항 제1터미널 면적이얼마야
 - Reasons: operational-doc-ranked:지식업데이트
-- Top: data/knowledge_base/지식업데이트.md / score 46
+- Top: knowledge/10_agents/09_지식팀/지식업데이트.md / score 46
 - Tags: auto-quality,knowledge-gap,self-healing
 
 ### 자동 수집 결과
@@ -265,7 +265,7 @@
 - Agent: 지식업데이트
 - Query: 인천공항 제1터미널 면적이얼마야
 - Reasons: operational-doc-ranked:지식업데이트
-- Top: data/knowledge_base/지식업데이트.md / score 46
+- Top: knowledge/10_agents/09_지식팀/지식업데이트.md / score 46
 - Tags: auto-quality,knowledge-gap,self-healing
 
 ### 자동 수집 결과
@@ -294,7 +294,7 @@
 - Agent: 건축
 - Query: 인천공항 제1터미널 면적이 얼마야?
 - Reasons: operational-doc-ranked:지식업데이트, operational-doc-ranked:지식업데이트
-- Top: data/knowledge_base/지식업데이트.md / score 32
+- Top: knowledge/10_agents/09_지식팀/지식업데이트.md / score 32
 - Tags: auto-quality,knowledge-gap,self-healing
 
 ### 자동 수집 결과

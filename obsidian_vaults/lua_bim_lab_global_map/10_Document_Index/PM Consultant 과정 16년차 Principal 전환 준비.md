@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/mep_bim_ai/05d_CONSULTANT_16_YEAR.md"
+source_path: "knowledge/60_public/training_curriculum/mep_bim_ai/05d_CONSULTANT_16_YEAR.md"
 ---
 
 # PM Consultant 과정 16년차 Principal 전환 준비
 
 ## Source
 
-`docs/training_curriculum/mep_bim_ai/05d_CONSULTANT_16_YEAR.md`
+`knowledge/60_public/training_curriculum/mep_bim_ai/05d_CONSULTANT_16_YEAR.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/mep_bim_ai/05d_CONSULTANT_16_YEAR.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/mep_bim_ai/05d_CONSULTANT_16_YEAR.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, cs, curriculum, d_consultant_16_year.md, docs, kpi, mep, mep_bim_ai, model, qa, training, training_curriculum, 간섭, 개발, 교육, 권한, 납품, 리스크, 보안, 역할, 조직, 지식, 커리큘럼, 품질
+bim, curriculum, d_consultant_16_year.md, knowledge, kpi, mep, mep_bim_ai, model, public, qa, training, training_curriculum, 간섭, 개발, 교육, 권한, 납품, 리스크, 보안, 역할, 조직, 지식, 커리큘럼, 품질
 
 ## Related
 

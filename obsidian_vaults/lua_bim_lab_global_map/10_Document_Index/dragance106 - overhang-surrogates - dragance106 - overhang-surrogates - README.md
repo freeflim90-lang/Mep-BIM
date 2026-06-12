@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/dragance106/overhang-surrogates/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/dragance106/overhang-surrogates/README.md"
 ---
 
 # dragance106 - overhang-surrogates - README
 
 ## Source
 
-`data/bim_scripts/dragance106/overhang-surrogates/README.md`
+`knowledge/50_domain/bim_scripts/dragance106/overhang-surrogates/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/dragance106/overhang-surrogates/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/dragance106/overhang-surrogates/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ The package, which can be installed by `pip install overhang_surrogates`, contai
 
 ## Keywords
 
-bim, bim_scripts, data, dragance106, markdown, model, overhang-surrogates, readme.md, workspace
+bim, bim_scripts, domain, dragance106, knowledge, model, overhang-surrogates, readme.md, sources
 
 ## Related
 

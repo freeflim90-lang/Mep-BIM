@@ -21,7 +21,7 @@ Absolute path:
 
 ## Summary
 
-- Source: `data/knowledge_base/conflict_resolution/PRODUCT_LAUNCH_STATUS_SOURCE_OF_TRUTH_DRAFT_20260605.md` - Tags: cs,pricing,launch-status,coming-soon,consultation-only,draft 고객이 교육/멘토링 상품 가격이나 결제 링크를 문의하면 CS는 상품별 Launch Status를 먼저 확인한다. CEO/CFO 승인 전 확정 판매 문
+- Source: `knowledge/10_agents/conflict_resolution/PRODUCT_LAUNCH_STATUS_SOURCE_OF_TRUTH_DRAFT_20260605.md` - Tags: cs,pricing,launch-status,coming-soon,consultation-only,draft 고객이 교육/멘토링 상품 가격이나 결제 링크를 문의하면 CS는 상품별 Launch Status를 먼저 확인한다. CEO/CFO 승인 전 확정 판매 문
 
 ## Keywords
 

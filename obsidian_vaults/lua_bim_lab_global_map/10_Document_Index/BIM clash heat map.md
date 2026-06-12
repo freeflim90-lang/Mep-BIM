@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/BIM clash heat map.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM clash heat map.md"
 ---
 
 # BIM clash heat map
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/BIM clash heat map.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM clash heat map.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/BIM clash heat map.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM clash heat map.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Next we will build the Automated Clash Heat Map System. This converts Navisworks
 
 ## Keywords
 
-bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, data, health, heat, map.md, markdown, model, navisworks, workspace
+bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, domain, health, heat, knowledge, map.md, model, navisworks, sources
 
 ## Related
 

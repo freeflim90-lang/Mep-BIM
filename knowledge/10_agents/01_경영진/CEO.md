@@ -35,7 +35,7 @@ LUA BIM LABS 수익 모델 (2026년 기준):
 4. Model Quality Auditor IDS 기능 추가 착수
 
 ## 2026-06-04 BF 품질진단 상품화 판단 기준
-- Source: `docs/training_curriculum/team_distribution/samples/2026-06-04_CEO_CSO_BF_PRODUCTIZATION_DECISION_MEMO_SAMPLE.md`
+- Source: `knowledge/60_public/training_curriculum/team_distribution/samples/2026-06-04_CEO_CSO_BF_PRODUCTIZATION_DECISION_MEMO_SAMPLE.md`
 - Tags: ceo,strategy,BF,productization,quality-diagnosis,KST
 
 CEO는 BF/편의시설 지식을 인증 통과 보장 상품이 아니라 `품질진단 + 교육 + 컨설팅` 묶음의 파일럿 후보로 판단한다. 첫 MVP는 `BF BIM 품질진단 라이트`로 제한하고, 자동검수 결과를 BF 적합·법규 적합·인증 통과로 판매하지 않는다.

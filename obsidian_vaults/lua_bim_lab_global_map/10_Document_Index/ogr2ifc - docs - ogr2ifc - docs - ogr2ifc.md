@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/Robinini/ogr2ifc/docs/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/Robinini/ogr2ifc/docs/README.md"
 ---
 
 # ogr2ifc - docs - ogr2ifc
 
 ## Source
 
-`data/bim_scripts/Robinini/ogr2ifc/docs/README.md`
+`knowledge/50_domain/bim_scripts/Robinini/ogr2ifc/docs/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/Robinini/ogr2ifc/docs/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/Robinini/ogr2ifc/docs/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ ogr2ifc converts GIS data to BIM models using GDAL/OGR (read) and IfcOpenShell-p
 
 ## Keywords
 
-bim, bim_scripts, cs, data, docs, markdown, model, ogr2ifc, readme.md, robinini, workspace
+bim, bim_scripts, cs, docs, domain, knowledge, model, ogr2ifc, readme.md, robinini, sources
 
 ## Related
 

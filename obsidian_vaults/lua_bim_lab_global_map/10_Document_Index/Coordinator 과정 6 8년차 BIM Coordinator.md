@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/mep_bim_ai/03_COORDINATOR_6_8_YEAR.md"
+source_path: "knowledge/60_public/training_curriculum/mep_bim_ai/03_COORDINATOR_6_8_YEAR.md"
 ---
 
 # Coordinator 과정 6 8년차 BIM Coordinator
 
 ## Source
 
-`docs/training_curriculum/mep_bim_ai/03_COORDINATOR_6_8_YEAR.md`
+`knowledge/60_public/training_curriculum/mep_bim_ai/03_COORDINATOR_6_8_YEAR.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/mep_bim_ai/03_COORDINATOR_6_8_YEAR.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/mep_bim_ai/03_COORDINATOR_6_8_YEAR.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-api, bim, clash, coordinator_6_8_year.md, cs, curriculum, docs, mep, mep_bim_ai, qa, revit, training, training_curriculum, 간섭, 개발, 교육, 납품, 리스크, 변경, 역할, 품질, 회의
+api, bim, clash, coordinator_6_8_year.md, cs, curriculum, knowledge, mep, mep_bim_ai, public, qa, revit, training, training_curriculum, 간섭, 개발, 교육, 납품, 리스크, 변경, 역할, 품질, 회의
 
 ## Related
 

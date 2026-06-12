@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/02-model-health.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/02-model-health.md"
 ---
 
 # Model Health Panel
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/02-model-health.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/02-model-health.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/02-model-health.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/02-model-health.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ The Model Health panel provides read-only diagnostic tools. Use these tools to a
 
 ## Keywords
 
-audit, bim, bim-coord-auto-package, bim_scripts, colinbsi, cs, data, docs, health, markdown, model, model-health.md, revit, tools, workspace
+audit, bim, bim-coord-auto-package, bim_scripts, colinbsi, cs, docs, domain, health, knowledge, model, model-health.md, revit, sources, tools
 
 ## Related
 

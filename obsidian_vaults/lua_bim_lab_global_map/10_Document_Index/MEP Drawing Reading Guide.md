@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/starter_plan/reference_cards/card_03_mep_drawing_reading.md"
+category: Products
+source_path: "products/starter_plan/reference_cards/card_03_mep_drawing_reading.md"
 ---
 
 # MEP Drawing Reading Guide
 
 ## Source
 
-`data/starter_plan/reference_cards/card_03_mep_drawing_reading.md`
+`products/starter_plan/reference_cards/card_03_mep_drawing_reading.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/starter_plan/reference_cards/card_03_mep_drawing_reading.md`
+`/Users/choejeong-yeon/LUA BIM LABS/products/starter_plan/reference_cards/card_03_mep_drawing_reading.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Products]]
 
 ## Summary
 
@@ -25,18 +25,18 @@ Absolute path:
 
 ## Keywords
 
-bim, card_03_mep_drawing_reading.md, clash, data, markdown, mep, model, qa, reference_cards, starter_plan, workspace
+bim, card_03_mep_drawing_reading.md, clash, mep, model, products, qa, reference_cards, starter_plan
 
 ## Related
 
 - [[BIM Learning Path Next Steps]]
 - [[Clash Types Priority Matrix]]
 - [[MEP BIM Key Roles LOD Reference]]
-- [[MEP Data Schedule Reference]]
 - [[Model Quality Self-Review Checklist]]
-- [[Revit MEP Setup Checklist]]
 - [[Site-Readiness Check Guide]]
-- [[BIM Autpmatic Coordination System]]
+- [[MEP Data Schedule Reference]]
+- [[Revit MEP Setup Checklist]]
+- [[starter_lesson_template]]
 
 ## Home
 

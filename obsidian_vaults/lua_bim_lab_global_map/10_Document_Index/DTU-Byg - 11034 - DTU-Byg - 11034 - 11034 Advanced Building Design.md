@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/DTU-Byg/11034/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/DTU-Byg/11034/README.md"
 ---
 
 # DTU-Byg - 11034 - 11034 Advanced Building Design
 
 ## Source
 
-`data/bim_scripts/DTU-Byg/11034/README.md`
+`knowledge/50_domain/bim_scripts/DTU-Byg/11034/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/DTU-Byg/11034/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/DTU-Byg/11034/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ The course is divided into 5 modules, each module builds on the previous one to 
 
 ## Keywords
 
-bim, bim_scripts, cs, data, dtu-byg, markdown, model, readme.md, workspace
+bim, bim_scripts, cs, domain, dtu-byg, knowledge, model, readme.md, sources
 
 ## Related
 

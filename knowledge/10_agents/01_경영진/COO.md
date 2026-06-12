@@ -24,7 +24,7 @@
 - 납품 검수: BF 적합 판정은 PM/RFI/인증기관 확인 후 확정
 
 ## 2026-06-04 BF RFI 회의 안건 전환 기준
-- Source: `docs/training_curriculum/team_distribution/samples/2026-06-04_PM_BF_RFI_MEETING_AGENDA_SAMPLE.md`
+- Source: `knowledge/60_public/training_curriculum/team_distribution/samples/2026-06-04_PM_BF_RFI_MEETING_AGENDA_SAMPLE.md`
 - Tags: operations,PM,BF,RFI,meeting,KST
 
 COO/PM은 CS가 받은 BF 자동검수 문의를 고객 답변으로 닫지 않고, 발주처·설계자·인증기관 확인이 필요한 RFI 또는 회의 안건으로 전환한다. 자동검수 후보는 모델 수정 지시가 아니라 확인 요청 목록으로 먼저 관리한다.

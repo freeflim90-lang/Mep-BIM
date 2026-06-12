@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Command Center.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Command Center.md"
 ---
 
 # BIM Command Center
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Command Center.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Command Center.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Command Center.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Command Center.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Below is a complete design for a BIM Command Center that elite VDC teams use to 
 
 ## Keywords
 
-api, autodesk, bim, bim-coord-auto-package, bim_scripts, center.md, clash, colinbsi, command, cs, data, health, markdown, model, navisworks, revit, store, workspace
+api, autodesk, bim, bim-coord-auto-package, bim_scripts, center.md, clash, colinbsi, command, cs, domain, health, knowledge, model, navisworks, revit, sources, store
 
 ## Related
 

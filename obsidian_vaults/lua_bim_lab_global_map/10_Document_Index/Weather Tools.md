@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/idfkit/idfkit-mcp/docs/tools/weather.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/tools/weather.md"
 ---
 
 # Weather Tools
 
 ## Source
 
-`data/bim_scripts/idfkit/idfkit-mcp/docs/tools/weather.md`
+`knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/tools/weather.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/idfkit/idfkit-mcp/docs/tools/weather.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/tools/weather.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Weather tools provide station discovery and EPW/DDY retrieval for simulation. Tw
 
 ## Keywords
 
-bim, bim_scripts, cs, data, docs, idfkit, idfkit-mcp, markdown, store, tools, weather.md, workspace
+bim, bim_scripts, cs, docs, domain, idfkit, idfkit-mcp, knowledge, sources, store, tools, weather.md
 
 ## Related
 

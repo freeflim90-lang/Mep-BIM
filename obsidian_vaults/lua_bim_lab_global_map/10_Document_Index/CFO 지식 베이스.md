@@ -21,7 +21,7 @@ Absolute path:
 
 ## Summary
 
-- Source: `data/knowledge_base/conflict_resolution/PRODUCT_LAUNCH_STATUS_SOURCE_OF_TRUTH_DRAFT_20260605.md` - Tags: cfo,pricing,launch-status,source-of-truth,draft CEO/CFO 최종 승인 전 고객 공개 판매 기준은 Starter만 SALE_READY로 본다. Personal Tutor와 Coordinator Mentor는 COMING
+- Source: `knowledge/10_agents/conflict_resolution/PRODUCT_LAUNCH_STATUS_SOURCE_OF_TRUTH_DRAFT_20260605.md` - Tags: cfo,pricing,launch-status,source-of-truth,draft CEO/CFO 최종 승인 전 고객 공개 판매 기준은 Starter만 SALE_READY로 본다. Personal Tutor와 Coordinator Mentor는 COMING
 
 ## Keywords
 

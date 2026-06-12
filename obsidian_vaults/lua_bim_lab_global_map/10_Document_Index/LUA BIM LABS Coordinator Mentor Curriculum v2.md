@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/public_products/03_COORDINATOR_MENTOR_CURRICULUM.md"
+source_path: "knowledge/60_public/training_curriculum/public_products/03_COORDINATOR_MENTOR_CURRICULUM.md"
 ---
 
 # LUA BIM LABS Coordinator Mentor Curriculum v2
 
 ## Source
 
-`docs/training_curriculum/public_products/03_COORDINATOR_MENTOR_CURRICULUM.md`
+`knowledge/60_public/training_curriculum/public_products/03_COORDINATOR_MENTOR_CURRICULUM.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/public_products/03_COORDINATOR_MENTOR_CURRICULUM.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/public_products/03_COORDINATOR_MENTOR_CURRICULUM.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, clash, coordinator_mentor_curriculum.md, cs, curriculum, docs, mep, model, navisworks, public_products, revit, training, training_curriculum, 간섭, 개발, 구독, 납품, 변경, 역할, 커리큘럼, 회의
+bim, clash, coordinator_mentor_curriculum.md, curriculum, knowledge, mep, model, navisworks, public, public_products, revit, training, training_curriculum, 간섭, 개발, 구독, 납품, 변경, 역할, 커리큘럼, 회의
 
 ## Related
 

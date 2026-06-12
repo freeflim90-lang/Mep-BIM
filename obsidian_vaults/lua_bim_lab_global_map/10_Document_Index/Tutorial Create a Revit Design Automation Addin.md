@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/viktor-platform/aps-automation-sdk/examples/Addins/example_create_revit_addin.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/viktor-platform/aps-automation-sdk/examples/Addins/example_create_revit_addin.md"
 ---
 
 # Tutorial Create a Revit Design Automation Addin
 
 ## Source
 
-`data/bim_scripts/viktor-platform/aps-automation-sdk/examples/Addins/example_create_revit_addin.md`
+`knowledge/50_domain/bim_scripts/viktor-platform/aps-automation-sdk/examples/Addins/example_create_revit_addin.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/viktor-platform/aps-automation-sdk/examples/Addins/example_create_revit_addin.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/viktor-platform/aps-automation-sdk/examples/Addins/example_create_revit_addin.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-addin, addins, api, aps-automation-sdk, autodesk, bim, bim_scripts, cs, data, example_create_revit_addin.md, examples, markdown, model, revit, viktor-platform, workspace
+addin, addins, api, aps-automation-sdk, autodesk, bim, bim_scripts, cs, domain, example_create_revit_addin.md, examples, knowledge, model, revit, sources, viktor-platform
 
 ## Related
 

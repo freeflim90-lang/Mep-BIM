@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/technical_pdfs/text_knowledge/mep_bim_coordination_guide.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/technical_pdfs/text_knowledge/mep_bim_coordination_guide.md"
 ---
 
 # MEP BIM 조율 실무 기준 문서
 
 ## Source
 
-`data/technical_pdfs/text_knowledge/mep_bim_coordination_guide.md`
+`knowledge/50_domain/technical_pdfs/text_knowledge/mep_bim_coordination_guide.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/technical_pdfs/text_knowledge/mep_bim_coordination_guide.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/technical_pdfs/text_knowledge/mep_bim_coordination_guide.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, clash, data, markdown, mep, mep_bim_coordination_guide.md, navisworks, revit, technical_pdfs, text_knowledge, workspace, 간섭, 회의
+bim, clash, domain, knowledge, mep, mep_bim_coordination_guide.md, navisworks, revit, sources, technical_pdfs, text_knowledge, 간섭, 회의
 
 ## Related
 
@@ -34,9 +34,9 @@ bim, clash, data, markdown, mep, mep_bim_coordination_guide.md, navisworks, revi
 - [[Advanced BIM Coordination]]
 - [[BIM Autpmatic Coordination System]]
 - [[BIM Coordination Automation Package Master Index]]
-- [[BIM Learning Path Next Steps]]
 - [[BIM Troubleshooting Decision Tree]]
 - [[Coordination Panel]]
+- [[Kennystruct - Clash-Detection-Matrix-Automation - Kennystruct - Clash-Detection-Matrix-Automation - DATA SCIEN]]
 
 ## Home
 

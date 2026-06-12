@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/ASSET-Lab/BuildingEnergy/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/ASSET-Lab/BuildingEnergy/README.md"
 ---
 
 # ASSET-Lab - BuildingEnergy - BuildingEnergy
 
 ## Source
 
-`data/bim_scripts/ASSET-Lab/BuildingEnergy/README.md`
+`knowledge/50_domain/bim_scripts/ASSET-Lab/BuildingEnergy/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/ASSET-Lab/BuildingEnergy/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/ASSET-Lab/BuildingEnergy/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Python implementation of building energy modeling with EnergyPlus. For usage, pl
 
 ## Keywords
 
-asset-lab, bim, bim_scripts, buildingenergy, cs, data, markdown, model, readme.md, workspace
+asset-lab, bim, bim_scripts, buildingenergy, cs, domain, knowledge, model, readme.md, sources
 
 ## Related
 

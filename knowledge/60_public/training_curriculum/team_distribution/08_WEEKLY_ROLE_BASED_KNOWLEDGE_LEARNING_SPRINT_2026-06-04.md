@@ -4,8 +4,8 @@
 작성일: 2026-06-04  
 상위 기준:
 - `docs/internal_organization_documents/29_ORGANIZATIONAL_KNOWLEDGE_LEARNING_AND_EVIDENCE_RESPONSE_STANDARD.md`
-- `docs/training_curriculum/team_distribution/00_TEAM_DISTRIBUTION_INDEX.md`
-- `docs/training_curriculum/team_distribution/05_FIRST_4_WEEK_ROLLOUT_PLAN.md`
+- `knowledge/60_public/training_curriculum/team_distribution/00_TEAM_DISTRIBUTION_INDEX.md`
+- `knowledge/60_public/training_curriculum/team_distribution/05_FIRST_4_WEEK_ROLLOUT_PLAN.md`
 
 ---
 

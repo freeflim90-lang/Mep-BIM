@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/sverchok-python-integration.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/sverchok-python-integration.md"
 ---
 
 # Sverchok Python Integration -- Comprehensive Research Document
 
 ## Source
 
-`data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/sverchok-python-integration.md`
+`knowledge/50_domain/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/sverchok-python-integration.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/sverchok-python-integration.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/Impertio-Studio/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package/docs/research/fragments/sverchok-python-integration.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-addin, api, bim, bim_scripts, blender-bonsai-ifcopenshell-sverchok-claude-skill-package, cs, data, docs, fragments, impertio-studio, markdown, research, store, sverchok-python-integration.md, workspace
+addin, api, bim, bim_scripts, blender-bonsai-ifcopenshell-sverchok-claude-skill-package, cs, docs, domain, fragments, impertio-studio, knowledge, research, sources, store, sverchok-python-integration.md
 
 ## Related
 

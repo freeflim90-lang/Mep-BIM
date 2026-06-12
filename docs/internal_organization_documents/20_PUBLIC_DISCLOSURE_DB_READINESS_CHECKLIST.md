@@ -72,4 +72,4 @@
 - `16_INTERNAL_QUALITY_AUDIT_CHECKLIST.md`
 - `18_INCIDENT_RESPONSE_PLAYBOOK.md`
 - `docs/revenue_products/model_quality_audit/14_OBSIDIAN_KNOWLEDGE_SYSTEM.md`
-- `data/knowledge_base/인프라_DevOpsObsidian.md`
+- `knowledge/10_agents/90_확장에이전트/인프라_DevOpsObsidian.md`

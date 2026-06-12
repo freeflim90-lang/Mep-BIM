@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/ASSET-Lab/BuildingEnergy/local/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/ASSET-Lab/BuildingEnergy/local/README.md"
 ---
 
 # BuildingEnergy - local - E Python Local Environment
 
 ## Source
 
-`data/bim_scripts/ASSET-Lab/BuildingEnergy/local/README.md`
+`knowledge/50_domain/bim_scripts/ASSET-Lab/BuildingEnergy/local/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/ASSET-Lab/BuildingEnergy/local/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/ASSET-Lab/BuildingEnergy/local/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-asset-lab, bim, bim_scripts, buildingenergy, data, local, markdown, readme.md, workspace
+asset-lab, bim, bim_scripts, buildingenergy, domain, knowledge, local, readme.md, sources
 
 ## Related
 

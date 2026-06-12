@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination Package - Index.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination Package - Index.md"
 ---
 
 # BIM Coordination Automation Package Master Index
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination Package - Index.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination Package - Index.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination Package - Index.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination Package - Index.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This index defines the reading order, implementation phases, and purpose of each
 
 ## Keywords
 
-bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, coordination, cs, data, health, index.md, markdown, mep, model, navisworks, package, quality, revit, workspace
+bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, coordination, cs, domain, health, index.md, knowledge, mep, model, navisworks, package, quality, revit, sources
 
 ## Related
 

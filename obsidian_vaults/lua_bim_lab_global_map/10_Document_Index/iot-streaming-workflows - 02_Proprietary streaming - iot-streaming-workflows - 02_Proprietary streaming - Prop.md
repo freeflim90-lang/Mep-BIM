@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/lfontanella/iot-streaming-workflows/02_Proprietary streaming/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/lfontanella/iot-streaming-workflows/02_Proprietary streaming/README.md"
 ---
 
 # iot-streaming-workflows - 02_Proprietary streaming - Proprietary Streaming Workflow
 
 ## Source
 
-`data/bim_scripts/lfontanella/iot-streaming-workflows/02_Proprietary streaming/README.md`
+`knowledge/50_domain/bim_scripts/lfontanella/iot-streaming-workflows/02_Proprietary streaming/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/lfontanella/iot-streaming-workflows/02_Proprietary streaming/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/lfontanella/iot-streaming-workflows/02_Proprietary streaming/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This folder documents a proprietary cloud-based workflow developed to test the t
 
 ## Keywords
 
-autodesk, bim, bim_scripts, cs, data, iot-streaming-workflows, lfontanella, markdown, model, proprietary, readme.md, store, streaming, workspace
+autodesk, bim, bim_scripts, cs, domain, iot-streaming-workflows, knowledge, lfontanella, model, proprietary, readme.md, sources, store, streaming
 
 ## Related
 

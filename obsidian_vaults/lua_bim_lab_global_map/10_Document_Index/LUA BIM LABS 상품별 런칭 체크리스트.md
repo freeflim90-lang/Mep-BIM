@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/public_products/launch_packages/LAUNCH_CHECKLIST.md"
+source_path: "knowledge/60_public/training_curriculum/public_products/launch_packages/LAUNCH_CHECKLIST.md"
 ---
 
 # LUA BIM LABS 상품별 런칭 체크리스트
 
 ## Source
 
-`docs/training_curriculum/public_products/launch_packages/LAUNCH_CHECKLIST.md`
+`knowledge/60_public/training_curriculum/public_products/launch_packages/LAUNCH_CHECKLIST.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/public_products/launch_packages/LAUNCH_CHECKLIST.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/public_products/launch_packages/LAUNCH_CHECKLIST.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, clash, cs, curriculum, docs, launch_checklist.md, launch_packages, mep, model, public_products, qa, quality, revit, training, training_curriculum, 결제, 구독, 납품, 온보딩, 지원, 진단, 커리큘럼, 테스트
+bim, clash, cs, curriculum, knowledge, launch_checklist.md, launch_packages, mep, model, public, public_products, qa, quality, revit, training, training_curriculum, 결제, 구독, 납품, 온보딩, 지원, 진단, 커리큘럼, 테스트
 
 ## Related
 
@@ -36,7 +36,7 @@ bim, clash, cs, curriculum, docs, launch_checklist.md, launch_packages, mep, mod
 - [[2026-06-04 CS 기술지원 근거기반 응답 샘플]]
 - [[2026-06-04 HR KST 기반 학습 기록 샘플]]
 - [[2026-06-04 PM BF RFI 회의 안건 샘플]]
-- [[2026-06-04 QA_테스터 BF 자동검수 룰 후보 샘플]]
+- [[2026-06-04 PM RFI 근거기반 응답 샘플]]
 
 ## Home
 

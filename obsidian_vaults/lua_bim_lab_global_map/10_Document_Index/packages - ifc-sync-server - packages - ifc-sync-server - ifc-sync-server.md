@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/FelonBall/ifc-live/packages/ifc-sync-server/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/FelonBall/ifc-live/packages/ifc-sync-server/README.md"
 ---
 
 # packages - ifc-sync-server - ifc-sync-server
 
 ## Source
 
-`data/bim_scripts/FelonBall/ifc-live/packages/ifc-sync-server/README.md`
+`knowledge/50_domain/bim_scripts/FelonBall/ifc-live/packages/ifc-sync-server/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/FelonBall/ifc-live/packages/ifc-sync-server/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/FelonBall/ifc-live/packages/ifc-sync-server/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ The WebSocket relay and op-log server for `ifc-live`. Starts a FastAPI app expos
 
 ## Keywords
 
-api, bim, bim_scripts, cs, data, felonball, ifc-live, ifc-sync-server, markdown, packages, readme.md, workspace
+api, bim, bim_scripts, cs, domain, felonball, ifc-live, ifc-sync-server, knowledge, packages, readme.md, sources
 
 ## Related
 

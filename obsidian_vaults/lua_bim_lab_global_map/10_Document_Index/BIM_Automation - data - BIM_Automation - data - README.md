@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/BIM_Automation/data/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM_Automation/data/README.md"
 ---
 
 # BIM_Automation - data - README
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/BIM_Automation/data/README.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM_Automation/data/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/BIM_Automation/data/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM_Automation/data/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,10 +25,11 @@ input/   — drop Navisworks CSV exports here before each run output/  — pipel
 
 ## Keywords
 
-bim, bim-coord-auto-package, bim_automation, bim_scripts, colinbsi, cs, data, markdown, navisworks, readme.md, workspace
+bim, bim-coord-auto-package, bim_automation, bim_scripts, colinbsi, cs, data, domain, knowledge, navisworks, readme.md, sources
 
 ## Related
 
+- [[AI-POWERED-ENERGY-CONSUMPTION-FORECASTING - data - AI-POWERED-ENERGY-CONSUMPTION-FORECASTING - data - Data Fol]]
 - [[Advanced BIM Coordination]]
 - [[BIM Automation Toolkit Expansion Design Document]]
 - [[BIM Automation Toolkit Expansion Implementation Plan]]
@@ -36,7 +37,6 @@ bim, bim-coord-auto-package, bim_automation, bim_scripts, colinbsi, cs, data, ma
 - [[BIM Command Center]]
 - [[BIM Command Center Power BI Setup Guide]]
 - [[BIM Coordinates Panel Design Document]]
-- [[BIM Coordinates Panel Implementation Plan]]
 
 ## Home
 

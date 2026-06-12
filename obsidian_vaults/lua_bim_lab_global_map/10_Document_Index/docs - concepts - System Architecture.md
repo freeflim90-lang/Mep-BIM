@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/idfkit/idfkit-mcp/docs/concepts/architecture.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/concepts/architecture.md"
 ---
 
 # docs - concepts - System Architecture
 
 ## Source
 
-`data/bim_scripts/idfkit/idfkit-mcp/docs/concepts/architecture.md`
+`knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/concepts/architecture.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/idfkit/idfkit-mcp/docs/concepts/architecture.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/concepts/architecture.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This page describes how idfkit-mcp is structured, where data lives, and what cro
 
 ## Keywords
 
-architecture.md, bim, bim_scripts, concepts, cs, data, docs, idfkit, idfkit-mcp, markdown, model, store, workspace
+architecture.md, bim, bim_scripts, concepts, cs, docs, domain, idfkit, idfkit-mcp, knowledge, model, sources, store
 
 ## Related
 

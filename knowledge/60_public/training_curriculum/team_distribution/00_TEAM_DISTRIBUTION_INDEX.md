@@ -34,13 +34,13 @@
 
 | 원본 문서 | 활용 |
 |---|---|
-| `docs/training_curriculum/mep_bim_ai/00_CURRICULUM_INDEX.md` | 전체 커리큘럼 원본 |
-| `docs/training_curriculum/mep_bim_ai/01_FOUNDATION_1_2_YEAR.md` | 1~2년차 과정 |
-| `docs/training_curriculum/mep_bim_ai/02_PRACTITIONER_3_5_YEAR.md` | 3~5년차 과정 |
-| `docs/training_curriculum/mep_bim_ai/03_COORDINATOR_6_8_YEAR.md` | 6~8년차 과정 |
-| `docs/training_curriculum/mep_bim_ai/04_LEAD_9_12_YEAR.md` | 9~12년차 과정 |
-| `docs/training_curriculum/mep_bim_ai/05_PM_CONSULTANT_13_16_YEAR.md` | 13~16년차 과정 |
-| `docs/training_curriculum/mep_bim_ai/06_PRINCIPAL_17_20_YEAR.md` | 17~20년차 과정 |
+| `knowledge/60_public/training_curriculum/mep_bim_ai/00_CURRICULUM_INDEX.md` | 전체 커리큘럼 원본 |
+| `knowledge/60_public/training_curriculum/mep_bim_ai/01_FOUNDATION_1_2_YEAR.md` | 1~2년차 과정 |
+| `knowledge/60_public/training_curriculum/mep_bim_ai/02_PRACTITIONER_3_5_YEAR.md` | 3~5년차 과정 |
+| `knowledge/60_public/training_curriculum/mep_bim_ai/03_COORDINATOR_6_8_YEAR.md` | 6~8년차 과정 |
+| `knowledge/60_public/training_curriculum/mep_bim_ai/04_LEAD_9_12_YEAR.md` | 9~12년차 과정 |
+| `knowledge/60_public/training_curriculum/mep_bim_ai/05_PM_CONSULTANT_13_16_YEAR.md` | 13~16년차 과정 |
+| `knowledge/60_public/training_curriculum/mep_bim_ai/06_PRINCIPAL_17_20_YEAR.md` | 17~20년차 과정 |
 
 ---
 

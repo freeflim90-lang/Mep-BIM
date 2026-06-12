@@ -21,7 +21,7 @@
     {
       "id": "cat1",
       "type": "file",
-      "file": "01_MOC/MOC - Autodesk Store.md",
+      "file": "01_MOC/MOC - AI Knowledge Base - QA.md",
       "x": -120,
       "y": -360,
       "width": 320,
@@ -30,7 +30,7 @@
     {
       "id": "cat2",
       "type": "file",
-      "file": "01_MOC/MOC - Commercial Addins.md",
+      "file": "01_MOC/MOC - Autodesk Store.md",
       "x": 300,
       "y": -330,
       "width": 320,
@@ -39,7 +39,7 @@
     {
       "id": "cat3",
       "type": "file",
-      "file": "01_MOC/MOC - Docs - General.md",
+      "file": "01_MOC/MOC - Commercial Addins.md",
       "x": 620,
       "y": -120,
       "width": 320,
@@ -48,7 +48,7 @@
     {
       "id": "cat4",
       "type": "file",
-      "file": "01_MOC/MOC - Internal Organization.md",
+      "file": "01_MOC/MOC - Docs - General.md",
       "x": 560,
       "y": 240,
       "width": 320,
@@ -57,7 +57,7 @@
     {
       "id": "cat5",
       "type": "file",
-      "file": "01_MOC/MOC - NAS Knowledge.md",
+      "file": "01_MOC/MOC - Domain Sources.md",
       "x": 140,
       "y": 380,
       "width": 320,
@@ -66,7 +66,7 @@
     {
       "id": "cat6",
       "type": "file",
-      "file": "01_MOC/MOC - Obsidian - Model Quality Auditor.md",
+      "file": "01_MOC/MOC - Internal Organization.md",
       "x": -320,
       "y": 330,
       "width": 320,
@@ -75,7 +75,7 @@
     {
       "id": "cat7",
       "type": "file",
-      "file": "01_MOC/MOC - Official External Documents.md",
+      "file": "01_MOC/MOC - Knowledge Catalog.md",
       "x": -660,
       "y": 80,
       "width": 320,
@@ -84,7 +84,7 @@
     {
       "id": "cat8",
       "type": "file",
-      "file": "01_MOC/MOC - Revenue Product - Model Quality Auditor.md",
+      "file": "01_MOC/MOC - Knowledge Curation.md",
       "x": -780,
       "y": -210,
       "width": 320,
@@ -93,7 +93,7 @@
     {
       "id": "cat9",
       "type": "file",
-      "file": "01_MOC/MOC - Standard Documents.md",
+      "file": "01_MOC/MOC - Knowledge Intake.md",
       "x": 780,
       "y": -330,
       "width": 320,
@@ -102,7 +102,7 @@
     {
       "id": "cat10",
       "type": "file",
-      "file": "01_MOC/MOC - Training Curriculum.md",
+      "file": "01_MOC/MOC - NAS Knowledge.md",
       "x": 800,
       "y": 260,
       "width": 320,
@@ -111,9 +111,63 @@
     {
       "id": "cat11",
       "type": "file",
-      "file": "01_MOC/MOC - Workspace Markdown.md",
+      "file": "01_MOC/MOC - Obsidian - Model Quality Auditor.md",
       "x": -760,
       "y": 360,
+      "width": 320,
+      "height": 180
+    },
+    {
+      "id": "cat12",
+      "type": "file",
+      "file": "01_MOC/MOC - Official External Documents.md",
+      "x": -520,
+      "y": -300,
+      "width": 320,
+      "height": 180
+    },
+    {
+      "id": "cat13",
+      "type": "file",
+      "file": "01_MOC/MOC - Products.md",
+      "x": -120,
+      "y": -360,
+      "width": 320,
+      "height": 180
+    },
+    {
+      "id": "cat14",
+      "type": "file",
+      "file": "01_MOC/MOC - Revenue Product - Model Quality Auditor.md",
+      "x": 300,
+      "y": -330,
+      "width": 320,
+      "height": 180
+    },
+    {
+      "id": "cat15",
+      "type": "file",
+      "file": "01_MOC/MOC - Standard Documents.md",
+      "x": 620,
+      "y": -120,
+      "width": 320,
+      "height": 180
+    },
+    {
+      "id": "cat16",
+      "type": "file",
+      "file": "01_MOC/MOC - Training Curriculum.md",
+      "x": 560,
+      "y": 240,
+      "width": 320,
+      "height": 180
+    },
+    {
+      "id": "cat17",
+      "type": "file",
+      "file": "01_MOC/MOC - Workspace Markdown.md",
+      "x": 140,
+      "y": 380,
       "width": 320,
       "height": 180
     }
@@ -202,6 +256,48 @@
       "fromSide": "left",
       "toNode": "cat11",
       "toSide": "right"
+    },
+    {
+      "id": "e12",
+      "fromNode": "global",
+      "fromSide": "left",
+      "toNode": "cat12",
+      "toSide": "right"
+    },
+    {
+      "id": "e13",
+      "fromNode": "global",
+      "fromSide": "left",
+      "toNode": "cat13",
+      "toSide": "right"
+    },
+    {
+      "id": "e14",
+      "fromNode": "global",
+      "fromSide": "right",
+      "toNode": "cat14",
+      "toSide": "left"
+    },
+    {
+      "id": "e15",
+      "fromNode": "global",
+      "fromSide": "right",
+      "toNode": "cat15",
+      "toSide": "left"
+    },
+    {
+      "id": "e16",
+      "fromNode": "global",
+      "fromSide": "right",
+      "toNode": "cat16",
+      "toSide": "left"
+    },
+    {
+      "id": "e17",
+      "fromNode": "global",
+      "fromSide": "right",
+      "toNode": "cat17",
+      "toSide": "left"
     }
   ]
 }

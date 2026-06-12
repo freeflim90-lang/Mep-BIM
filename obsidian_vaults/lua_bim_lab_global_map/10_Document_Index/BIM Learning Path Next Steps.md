@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/starter_plan/reference_cards/card_08_bim_learning_path.md"
+category: Products
+source_path: "products/starter_plan/reference_cards/card_08_bim_learning_path.md"
 ---
 
 # BIM Learning Path Next Steps
 
 ## Source
 
-`data/starter_plan/reference_cards/card_08_bim_learning_path.md`
+`products/starter_plan/reference_cards/card_08_bim_learning_path.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/starter_plan/reference_cards/card_08_bim_learning_path.md`
+`/Users/choejeong-yeon/LUA BIM LABS/products/starter_plan/reference_cards/card_08_bim_learning_path.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Products]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-api, bim, card_08_bim_learning_path.md, clash, cs, data, markdown, mep, model, navisworks, qa, quality, reference_cards, revit, starter_plan, workspace
+api, bim, card_08_bim_learning_path.md, clash, cs, mep, model, navisworks, products, qa, quality, reference_cards, revit, starter_plan
 
 ## Related
 
@@ -34,9 +34,9 @@ api, bim, card_08_bim_learning_path.md, clash, cs, data, markdown, mep, model, n
 - [[MEP Data Schedule Reference]]
 - [[MEP Drawing Reading Guide]]
 - [[Model Quality Self-Review Checklist]]
-- [[Revit MEP Setup Checklist]]
 - [[Site-Readiness Check Guide]]
-- [[Advanced BIM Coordination]]
+- [[Revit MEP Setup Checklist]]
+- [[2026-05-22 건설 설계 시공 BIM 데일리 브리핑]]
 
 ## Home
 

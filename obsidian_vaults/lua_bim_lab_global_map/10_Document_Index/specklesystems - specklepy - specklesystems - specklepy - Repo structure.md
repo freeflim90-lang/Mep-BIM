@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/specklesystems/specklepy/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/specklesystems/specklepy/README.md"
 ---
 
 # specklesystems - specklepy - Repo structure
 
 ## Source
 
-`data/bim_scripts/specklesystems/specklepy/README.md`
+`knowledge/50_domain/bim_scripts/specklesystems/specklepy/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/specklesystems/specklepy/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/specklesystems/specklepy/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-api, bim, bim_scripts, cs, data, markdown, readme.md, specklepy, specklesystems, store, workspace
+api, bim, bim_scripts, cs, domain, knowledge, readme.md, sources, specklepy, specklesystems, store
 
 ## Related
 

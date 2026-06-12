@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-agents, ai, base, bim, conflict_resolution, cs, knowledge, mep, product_launch_status_source_of_truth_draft_20260605.md, store, 결제, 교육, 구독, 리스크, 지원, 커리큘럼
+agents, ai, base, bim, conflict_resolution, cs, knowledge, mep, product_launch_status_source_of_truth_draft_20260605.md, store, 결제, 교육, 구독, 리스크, 스토어, 지원, 커리큘럼
 
 ## Related
 

@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/BIM automation plan.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM automation plan.md"
 ---
 
 # BIM automation plan
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/BIM automation plan.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM automation plan.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/BIM automation plan.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM automation plan.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Below are three production-ready automation templates your team can implement: 1
 
 ## Keywords
 
-api, audit, autodesk, automation, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, data, health, markdown, model, navisworks, plan.md, quality, revit, workspace
+api, audit, autodesk, automation, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, domain, health, knowledge, model, navisworks, plan.md, quality, revit, sources
 
 ## Related
 

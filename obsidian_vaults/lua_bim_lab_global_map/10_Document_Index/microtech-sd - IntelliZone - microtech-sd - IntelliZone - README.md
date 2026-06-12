@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/microtech-sd/IntelliZone/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/microtech-sd/IntelliZone/README.md"
 ---
 
 # microtech-sd - IntelliZone - README
 
 ## Source
 
-`data/bim_scripts/microtech-sd/IntelliZone/README.md`
+`knowledge/50_domain/bim_scripts/microtech-sd/IntelliZone/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/microtech-sd/IntelliZone/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/microtech-sd/IntelliZone/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-addin, autodesk, bim, bim_scripts, cs, data, intellizone, markdown, microtech-sd, model, readme.md, revit, roi, workspace
+addin, autodesk, bim, bim_scripts, cs, domain, intellizone, knowledge, microtech-sd, model, readme.md, revit, roi, sources
 
 ## Related
 

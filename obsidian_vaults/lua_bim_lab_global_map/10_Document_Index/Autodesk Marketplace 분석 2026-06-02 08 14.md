@@ -36,7 +36,7 @@ add-in, autodesk, autodesk_market, bim, cs, docs, general, market_analysis.md, n
 - [[BIM Command Center 기능 통합 로드맵]]
 - [[2026-05-28 09 59 LUA BIM LABS 내부 성장 펄스]]
 - [[2026-05-29 08 00 LUA BIM LABS 내부 성장 펄스]]
-- [[2026-05-30 11 33 LUA BIM LABS 내부 성장 펄스]]
+- [[2026-05-30 15 07 LUA BIM LABS 추론 훈련 다이제스트]]
 
 ## Home
 

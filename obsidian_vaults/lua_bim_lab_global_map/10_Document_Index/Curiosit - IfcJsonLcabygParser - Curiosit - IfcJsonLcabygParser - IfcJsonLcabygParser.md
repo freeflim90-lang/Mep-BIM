@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/Curiosit/IfcJsonLcabygParser/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/Curiosit/IfcJsonLcabygParser/README.md"
 ---
 
 # Curiosit - IfcJsonLcabygParser - IfcJsonLcabygParser
 
 ## Source
 
-`data/bim_scripts/Curiosit/IfcJsonLcabygParser/README.md`
+`knowledge/50_domain/bim_scripts/Curiosit/IfcJsonLcabygParser/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/Curiosit/IfcJsonLcabygParser/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/Curiosit/IfcJsonLcabygParser/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ IfcJsonLcabygParser is a Python script for automatical creating material takeoff
 
 ## Keywords
 
-bim, bim_scripts, cs, curiosit, data, ifcjsonlcabygparser, markdown, readme.md, revit, workspace
+bim, bim_scripts, cs, curiosit, domain, ifcjsonlcabygparser, knowledge, readme.md, revit, sources
 
 ## Related
 

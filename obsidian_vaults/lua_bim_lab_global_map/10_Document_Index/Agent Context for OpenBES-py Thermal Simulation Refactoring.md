@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/openBES-ecosystem/OpenBES-py/AGENTS.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/openBES-ecosystem/OpenBES-py/AGENTS.md"
 ---
 
 # Agent Context for OpenBES-py Thermal Simulation Refactoring
 
 ## Source
 
-`data/bim_scripts/openBES-ecosystem/OpenBES-py/AGENTS.md`
+`knowledge/50_domain/bim_scripts/openBES-ecosystem/OpenBES-py/AGENTS.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/openBES-ecosystem/OpenBES-py/AGENTS.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/openBES-ecosystem/OpenBES-py/AGENTS.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ OpenBES-py is a building energy simulation framework in Python that models hourl
 
 ## Keywords
 
-agents.md, bim, bim_scripts, cs, data, markdown, model, openbes-ecosystem, openbes-py, workspace
+agents.md, bim, bim_scripts, cs, domain, knowledge, model, openbes-ecosystem, openbes-py, sources
 
 ## Related
 

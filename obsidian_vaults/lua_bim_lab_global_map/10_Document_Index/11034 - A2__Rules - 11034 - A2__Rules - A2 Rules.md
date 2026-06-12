@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/DTU-Byg/11034/A2__Rules/readme.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/DTU-Byg/11034/A2__Rules/readme.md"
 ---
 
 # 11034 - A2__Rules - A2 Rules
 
 ## Source
 
-`data/bim_scripts/DTU-Byg/11034/A2__Rules/readme.md`
+`knowledge/50_domain/bim_scripts/DTU-Byg/11034/A2__Rules/readme.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/DTU-Byg/11034/A2__Rules/readme.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/DTU-Byg/11034/A2__Rules/readme.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ In this assignment you will: design and write an IFC rule in Python for each of 
 
 ## Keywords
 
-a2__rules, bim, bim_scripts, cs, data, dtu-byg, markdown, model, readme.md, workspace
+a2__rules, bim, bim_scripts, cs, domain, dtu-byg, knowledge, model, readme.md, sources
 
 ## Related
 

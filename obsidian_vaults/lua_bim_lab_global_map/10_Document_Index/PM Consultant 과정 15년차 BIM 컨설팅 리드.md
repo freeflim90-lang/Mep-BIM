@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/mep_bim_ai/05c_CONSULTANT_15_YEAR.md"
+source_path: "knowledge/60_public/training_curriculum/mep_bim_ai/05c_CONSULTANT_15_YEAR.md"
 ---
 
 # PM Consultant 과정 15년차 BIM 컨설팅 리드
 
 ## Source
 
-`docs/training_curriculum/mep_bim_ai/05c_CONSULTANT_15_YEAR.md`
+`knowledge/60_public/training_curriculum/mep_bim_ai/05c_CONSULTANT_15_YEAR.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/mep_bim_ai/05c_CONSULTANT_15_YEAR.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/mep_bim_ai/05c_CONSULTANT_15_YEAR.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, c_consultant_15_year.md, cs, curriculum, docs, kpi, mep, mep_bim_ai, qa, roi, training, training_curriculum, 간섭, 개발, 견적, 교육, 납품, 라이선스, 물량, 변경, 보안, 역할, 온보딩, 자산, 조직, 지식, 지원, 진단, 품질
+bim, c_consultant_15_year.md, curriculum, knowledge, kpi, mep, mep_bim_ai, public, qa, roi, training, training_curriculum, 간섭, 개발, 견적, 교육, 납품, 라이선스, 물량, 변경, 보안, 역할, 온보딩, 자산, 조직, 지식, 지원, 진단, 품질
 
 ## Related
 

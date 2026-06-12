@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/public_products/launch_packages/project_mentor/INTAKE_FORM_SPEC.md"
+source_path: "knowledge/60_public/training_curriculum/public_products/launch_packages/project_mentor/INTAKE_FORM_SPEC.md"
 ---
 
 # Project Mentor Intake Form Specification
 
 ## Source
 
-`docs/training_curriculum/public_products/launch_packages/project_mentor/INTAKE_FORM_SPEC.md`
+`knowledge/60_public/training_curriculum/public_products/launch_packages/project_mentor/INTAKE_FORM_SPEC.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/public_products/launch_packages/project_mentor/INTAKE_FORM_SPEC.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/public_products/launch_packages/project_mentor/INTAKE_FORM_SPEC.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, cs, curriculum, docs, health, intake_form_spec.md, launch_packages, mep, project_mentor, public_products, training, training_curriculum
+bim, cs, curriculum, health, intake_form_spec.md, knowledge, launch_packages, mep, project_mentor, public, public_products, training, training_curriculum
 
 ## Related
 
@@ -34,9 +34,9 @@ bim, cs, curriculum, docs, health, intake_form_spec.md, launch_packages, mep, pr
 - [[Project Mentor Monthly Session Agenda Template]]
 - [[Project Mentor Quarterly Career Assessment Form]]
 - [[BIM Model QA QC Checklists HVAC and Electrical]]
+- [[BIM 팀 AI 활용 가이드]]
 - [[Coordinator Mentor Case Studies]]
 - [[Coordinator Mentor Delivery SOP]]
-- [[Coordinator Mentor Intake Form Specification]]
 
 ## Home
 

@@ -5,7 +5,7 @@ LUA BIM LAND — 서버 사이드 게임 엔진
   - BIM 밀도(D_BIM) → 영토 등급
   - XP 산정 (연면적 × 기여도 × 등급 승수 × Shadow Strike 승수)
   - Shadow Strike 감지 (이직 후 동일 프로젝트 재참여)
-  - 동기화 로그 영속화 (data/bim_land/territory_logs.json)
+  - 동기화 로그 영속화 (products/bim_land/territory_logs.json)
 """
 
 from __future__ import annotations

@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/DTU-Byg/11034/Example files/Python/Read_excel_file/readme.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/DTU-Byg/11034/Example files/Python/Read_excel_file/readme.md"
 ---
 
 # Python - Read_excel_file - Read Excel file
 
 ## Source
 
-`data/bim_scripts/DTU-Byg/11034/Example files/Python/Read_excel_file/readme.md`
+`knowledge/50_domain/bim_scripts/DTU-Byg/11034/Example files/Python/Read_excel_file/readme.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/DTU-Byg/11034/Example files/Python/Read_excel_file/readme.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/DTU-Byg/11034/Example files/Python/Read_excel_file/readme.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ To install the module, run the following command in the command prompt: ```pytho
 
 ## Keywords
 
-bim, bim_scripts, data, dtu-byg, example, files, markdown, python, read_excel_file, readme.md, workspace
+bim, bim_scripts, domain, dtu-byg, example, files, knowledge, python, read_excel_file, readme.md, sources
 
 ## Related
 

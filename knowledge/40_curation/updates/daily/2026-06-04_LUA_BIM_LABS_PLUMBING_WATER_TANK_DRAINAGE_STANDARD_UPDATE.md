@@ -105,13 +105,13 @@ sources:
 
 ## 반영 파일
 
-- `data/knowledge_base/위생.md`
-- `data/knowledge_base/설비장비.md`
-- `data/knowledge_base/FM_자산관리.md`
-- `data/knowledge_base/BIM_납품검수.md`
-- `data/knowledge_base/견적심사원.md`
-- `data/knowledge_base/법규변경모니터링.md`
-- `data/knowledge_base/지식업데이트.md`
+- `knowledge/10_agents/04_리포팅팀/위생.md`
+- `knowledge/10_agents/90_확장에이전트/설비장비.md`
+- `knowledge/10_agents/90_확장에이전트/FM_자산관리.md`
+- `knowledge/10_agents/90_확장에이전트/BIM_납품검수.md`
+- `knowledge/10_agents/90_확장에이전트/견적심사원.md`
+- `knowledge/10_agents/90_확장에이전트/법규변경모니터링.md`
+- `knowledge/10_agents/09_지식팀/지식업데이트.md`
 - `obsidian_vaults/lua_bim_lab_global_map/10_Document_Index/2026-06-04 LUA BIM LABS Plumbing Water Tank Drainage Standard Update.md`
 
 ## 다음 감사 예약

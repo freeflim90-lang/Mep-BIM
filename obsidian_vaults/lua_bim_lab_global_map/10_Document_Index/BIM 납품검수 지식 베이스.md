@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-agents, ai, api, audit, autodesk, base, bim, bim_, clash, cs, knowledge, model, navisworks, qa, quality, 간섭, 개발, 견적, 납품, 리스크, 변경, 심사, 지식, 지원, 테스트, 품질, 회의
+agents, ai, api, audit, autodesk, base, bim, bim_, cs, knowledge, model, navisworks, qa, quality, 간섭, 개발, 견적, 납품, 리스크, 변경, 심사, 지식, 지원, 테스트, 품질, 회의
 
 ## Related
 

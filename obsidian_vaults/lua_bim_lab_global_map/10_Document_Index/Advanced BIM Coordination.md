@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination Advanced.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination Advanced.md"
 ---
 
 # Advanced BIM Coordination
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination Advanced.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination Advanced.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination Advanced.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination Advanced.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This includes **clash tolerances, model limits, clearances, and performance benc
 
 ## Keywords
 
-advanced.md, audit, autodesk, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, coordination, data, markdown, mep, model, navisworks, revit, workspace
+advanced.md, audit, autodesk, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, coordination, domain, knowledge, mep, model, navisworks, revit, sources
 
 ## Related
 

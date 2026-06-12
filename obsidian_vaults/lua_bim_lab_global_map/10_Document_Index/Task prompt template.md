@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/FelonBall/ifc-live/docs/task-template.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/FelonBall/ifc-live/docs/task-template.md"
 ---
 
 # Task prompt template
 
 ## Source
 
-`data/bim_scripts/FelonBall/ifc-live/docs/task-template.md`
+`knowledge/50_domain/bim_scripts/FelonBall/ifc-live/docs/task-template.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/FelonBall/ifc-live/docs/task-template.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/FelonBall/ifc-live/docs/task-template.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This file is the template the user follows when giving Claude Code a milestone t
 
 ## Keywords
 
-bim, bim_scripts, cs, data, docs, felonball, ifc-live, markdown, task-template.md, workspace
+bim, bim_scripts, cs, docs, domain, felonball, ifc-live, knowledge, sources, task-template.md
 
 ## Related
 

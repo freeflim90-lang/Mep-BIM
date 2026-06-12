@@ -16,7 +16,7 @@ tags:
 
 ## 1. 추론 후보: 자동화, 사업화
 
-- 내부 근거: `data/team_requests/telegram_knowledge_requests.md`
+- 내부 근거: `knowledge/30_intake/team_requests/telegram_knowledge_requests.md`
 - 관찰 신호: LUA BIM LABS가 텔레그램을 통해 MEP BIM 교육 서비스를 시작했습니다. 이 서비스는 연차별 교육을 중심으로 MEP BIM의 코어 지식을 강조합니다. 1년차와 2년차 직원들은 Revit MEP, Navisworks, CDE 등 기본 도구와 LOD, 파라미터 등을 배우며, 설계 및 시공 판단력을 키웁니다. AI 활용은 문서 초안 작성과 학습 보조에 초점을 맞추고, 3년차 이상의 직원들은 Python, Dynamo/pyRevit 등을 이용한 자동화 기술을
 - 1차 추론: 자동화·사업화 신호다. 반복되는 판단을 규칙, 체크리스트, 스크립트 후보로 바꾸면 다음 프로젝트의 처리 속도가 올라간다.
 - 해결 방향 초안: 관련 내부 근거를 1개 더 연결하고, 체크리스트 항목 또는 자동화 백로그 후보로 승격할지 판단한다.
@@ -32,7 +32,7 @@ tags:
 
 ## 2. 추론 후보: 지식공백, 자동화, 품질
 
-- 내부 근거: `data/team_requests/telegram_knowledge_requests.md`
+- 내부 근거: `knowledge/30_intake/team_requests/telegram_knowledge_requests.md`
 - 관찰 신호: Obsidian Q&A 기록: obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Team_Telegram_QA/QA - 20260606-150747 - revit에서의_간섭검토에_대한_질문이야.md
 - 1차 추론: 지식공백·자동화·품질 신호다. 지금 단계에서는 결론보다 검증 질문을 먼저 남겨야 하며, 대표님의 실무 판단을 붙이면 조직 지식의 깊이가 커진다.
 - 해결 방향 초안: 관련 내부 근거를 1개 더 연결하고, 체크리스트 항목 또는 자동화 백로그 후보로 승격할지 판단한다.
@@ -49,7 +49,7 @@ tags:
 
 ## 3. 추론 후보: 실무문제, 자동화, 품질, 사업화
 
-- 내부 근거: `data/knowledge_base/설비시공조율.md`
+- 내부 근거: `knowledge/10_agents/90_확장에이전트/설비시공조율.md`
 - 관찰 신호: 재발 방지: 체크리스트, 템플릿, Revit 파라미터, Navisworks 룰, 교육자료 반영.
 - 1차 추론: 실무문제·자동화·품질·사업화 신호다. 반복되는 판단을 규칙, 체크리스트, 스크립트 후보로 바꾸면 다음 프로젝트의 처리 속도가 올라간다.
 - 해결 방향 초안: 관련 내부 근거를 1개 더 연결하고, 체크리스트 항목 또는 자동화 백로그 후보로 승격할지 판단한다.

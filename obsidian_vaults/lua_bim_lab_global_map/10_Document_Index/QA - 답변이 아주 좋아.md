@@ -21,7 +21,7 @@ Absolute path:
 
 ## Summary
 
-> 요청자: @FreeFilmer ([LONG_ID_MASKED]) > 수집일: 2026-05-22 14:09:53 > 담당 지식: 지식업데이트 답변이 아주 좋아 📚 [Obsidian 기준 1차 답변] 팀원이 기존 Obsidian 답변이 부족하다고 회신했다. 팀원이 기존 Obsidian 답변이 부족하다고 회신했다. 근거 문서: - data/knowledge_base/공조덕트.md (score 2)
+> 요청자: @FreeFilmer ([LONG_ID_MASKED]) > 수집일: 2026-05-22 14:09:53 > 담당 지식: 지식업데이트 답변이 아주 좋아 📚 [Obsidian 기준 1차 답변] 팀원이 기존 Obsidian 답변이 부족하다고 회신했다. 팀원이 기존 Obsidian 답변이 부족하다고 회신했다. 근거 문서: - knowledge/10_agents/03_엔지니어링팀/공조덕트.md (score 2)
 
 ## Keywords
 

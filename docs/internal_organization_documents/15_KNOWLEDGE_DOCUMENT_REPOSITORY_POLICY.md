@@ -85,7 +85,7 @@ source .dev-venv/bin/activate && python scripts/build_global_obsidian_map.py
 | 실행 시간 | 매일 07:00 |
 | 실행 로그 | `logs/daily_knowledge_update.log` |
 | launchd 로그 | `logs/daily_knowledge_update.launchd.out.log`, `logs/daily_knowledge_update.launchd.err.log` |
-| 일일 리포트 | `docs/knowledge_updates/daily/` |
+| 일일 리포트 | `knowledge/40_curation/updates/daily/` |
 | 산업 브리핑 | `docs/industry_intelligence/daily/` |
 
 자동 실행 작업:
@@ -118,7 +118,7 @@ scripts/daily_knowledge_update.sh
 | 실행 스크립트 | `scripts/daily_industry_briefing.py` |
 | 소스 설정 | `config/daily_industry_briefing_sources.json` |
 | 일일 보고서 | `docs/industry_intelligence/daily/YYYY-MM-DD_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md` |
-| 누적 지식베이스 | `data/knowledge_base/산업동향_데일리브리핑.md` |
+| 누적 지식베이스 | `knowledge/10_agents/90_확장에이전트/산업동향_데일리브리핑.md` |
 | Telegram 전송 | `.env` 또는 환경변수의 `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID` 사용 |
 
 브리핑은 단순 뉴스 모음이 아니라 다음 항목으로 승격 가능성을 판단한다.

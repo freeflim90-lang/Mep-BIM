@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/mep_bim_ai/06_PRINCIPAL_17_20_YEAR.md"
+source_path: "knowledge/60_public/training_curriculum/mep_bim_ai/06_PRINCIPAL_17_20_YEAR.md"
 ---
 
 # Principal 과정 17 20년차 Principal 교육 전략 리더
 
 ## Source
 
-`docs/training_curriculum/mep_bim_ai/06_PRINCIPAL_17_20_YEAR.md`
+`knowledge/60_public/training_curriculum/mep_bim_ai/06_PRINCIPAL_17_20_YEAR.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/mep_bim_ai/06_PRINCIPAL_17_20_YEAR.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/mep_bim_ai/06_PRINCIPAL_17_20_YEAR.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, api, bim, clash, cs, curriculum, docs, kpi, mep, mep_bim_ai, principal_17_20_year.md, qa, roi, training, training_curriculum, 개발, 교육, 납품, 리스크, 보안, 자산, 조직, 지식, 지원, 커리큘럼, 품질
+add-in, api, bim, clash, curriculum, knowledge, kpi, mep, mep_bim_ai, principal_17_20_year.md, public, qa, roi, training, training_curriculum, 개발, 교육, 납품, 리스크, 보안, 자산, 조직, 지식, 지원, 커리큘럼, 품질
 
 ## Related
 

@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/BIM_Automation/acc_integration/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM_Automation/acc_integration/README.md"
 ---
 
 # BIM_Automation - acc_integration - README
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/BIM_Automation/acc_integration/README.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM_Automation/acc_integration/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/BIM_Automation/acc_integration/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM_Automation/acc_integration/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ ACC issue integration stub. Phase 2: replace with live Autodesk API calls.
 
 ## Keywords
 
-acc_integration, api, autodesk, bim, bim-coord-auto-package, bim_automation, bim_scripts, colinbsi, data, markdown, readme.md, workspace
+acc_integration, api, autodesk, bim, bim-coord-auto-package, bim_automation, bim_scripts, colinbsi, domain, knowledge, readme.md, sources
 
 ## Related
 

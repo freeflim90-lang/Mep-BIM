@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/aiamkovoi/QAcheck/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/aiamkovoi/QAcheck/README.md"
 ---
 
 # aiamkovoi - QAcheck - SmartCheck Rule-Based Model Checking in Revit
 
 ## Source
 
-`data/bim_scripts/aiamkovoi/QAcheck/README.md`
+`knowledge/50_domain/bim_scripts/aiamkovoi/QAcheck/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/aiamkovoi/QAcheck/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/aiamkovoi/QAcheck/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ A pyRevit extension that brings Smart Views-style QA checks into the Revit autho
 
 ## Keywords
 
-addin, aiamkovoi, api, bim, bim_scripts, cs, data, markdown, model, qa, qacheck, readme.md, revit, workspace
+addin, aiamkovoi, api, bim, bim_scripts, cs, domain, knowledge, model, qa, qacheck, readme.md, revit, sources
 
 ## Related
 

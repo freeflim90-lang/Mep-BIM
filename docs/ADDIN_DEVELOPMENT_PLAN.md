@@ -43,7 +43,7 @@ The final PM report must preserve these discipline opinions as product requireme
 
 ## Knowledge Update Loop
 
-Each discipline agent has a local markdown knowledge base under `data/knowledge_base/`.
+Each discipline agent has a local markdown knowledge base under `knowledge/10_agents/`.
 
 The intended loop is:
 

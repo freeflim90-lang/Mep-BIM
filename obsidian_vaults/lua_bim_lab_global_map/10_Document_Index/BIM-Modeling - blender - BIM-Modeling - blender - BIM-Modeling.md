@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/renatogcruz/BIM-Modeling/blender/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/renatogcruz/BIM-Modeling/blender/README.md"
 ---
 
 # BIM-Modeling - blender - BIM-Modeling
 
 ## Source
 
-`data/bim_scripts/renatogcruz/BIM-Modeling/blender/README.md`
+`knowledge/50_domain/bim_scripts/renatogcruz/BIM-Modeling/blender/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/renatogcruz/BIM-Modeling/blender/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/renatogcruz/BIM-Modeling/blender/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Modelagem 3D e ferramentas de software BIM para arquitetura - Tutoriais 1 - [Ble
 
 ## Keywords
 
-bim, bim-modeling, bim_scripts, blender, data, markdown, model, readme.md, renatogcruz, workspace
+bim, bim-modeling, bim_scripts, blender, domain, knowledge, model, readme.md, renatogcruz, sources
 
 ## Related
 

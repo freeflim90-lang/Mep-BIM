@@ -10,7 +10,7 @@
 |---|---|
 | 주기 | 월 1회 정기 리허설, 주요 조직 변경 시 수시 리허설 |
 | 주관 | 조율차장 |
-| 기록 위치 | `data/knowledge_base/conflict_resolution/CONFLICT_LOG.md` 또는 별도 케이스 파일 |
+| 기록 위치 | `knowledge/10_agents/conflict_resolution/CONFLICT_LOG.md` 또는 별도 케이스 파일 |
 | 통과 기준 | 6개 평가 항목 중 5개 이상 PASS |
 | 실패 처리 | 실패 항목을 SOP, KB, 체크리스트, 자동화 후보 중 하나로 개선 등록 |
 | 실행 템플릿 | `docs/internal_organization_documents/31_AI_COLLABORATION_RUNBOOK_TEMPLATES.md` |
@@ -212,7 +212,7 @@
 | 액션 | 담당 | 기한 | 저장 위치 |
 |---|---|---|---|
 | AI 협업 SOP를 내부 조직 문서 인덱스에 추가 | 조율차장 | 2026-06-05 | `00_INTERNAL_ORG_DOCUMENT_INDEX.md` |
-| AI 협업운영체계 KB 생성 | 지식큐레이터 | 2026-06-05 | `data/knowledge_base/AI_협업운영체계.md` |
+| AI 협업운영체계 KB 생성 | 지식큐레이터 | 2026-06-05 | `knowledge/10_agents/90_확장에이전트/AI_협업운영체계.md` |
 | 충돌 해소 README에 협업 테스트 계획 링크 추가 | 조율차장 | 2026-06-05 | `conflict_resolution/README.md` |
 | 월간 리허설 결과를 CONFLICT_LOG 또는 케이스 파일에 누적 | 조율차장 | 매월 | `conflict_resolution/` |
 | ESCALATED 후속 SLA를 다음 라운드의 최우선 검증으로 지정 | 조율차장 | 2026-06-12 | `AITEST_20260605_006`, `AITEST_20260605_007` |

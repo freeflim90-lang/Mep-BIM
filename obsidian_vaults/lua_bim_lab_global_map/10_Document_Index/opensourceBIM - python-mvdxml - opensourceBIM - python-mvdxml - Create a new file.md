@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/opensourceBIM/python-mvdxml/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/opensourceBIM/python-mvdxml/README.md"
 ---
 
 # opensourceBIM - python-mvdxml - Create a new file
 
 ## Source
 
-`data/bim_scripts/opensourceBIM/python-mvdxml/README.md`
+`knowledge/50_domain/bim_scripts/opensourceBIM/python-mvdxml/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/opensourceBIM/python-mvdxml/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/opensourceBIM/python-mvdxml/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ A mvdXML checker and w3c SPARQL converter, as an IfcOpenShell submodule or stand
 
 ## Keywords
 
-bim, bim_scripts, data, markdown, opensourcebim, python-mvdxml, readme.md, workspace
+bim, bim_scripts, domain, knowledge, opensourcebim, python-mvdxml, readme.md, sources
 
 ## Related
 

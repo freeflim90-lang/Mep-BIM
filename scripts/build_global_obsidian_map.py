@@ -24,12 +24,31 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 import sys  # noqa: E402
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
-from backend.core.paths import AGENT_KB_DIR, TRAINING_CURRICULUM_DIR  # noqa: E402
+from backend.core.paths import (  # noqa: E402
+    AGENT_KB_DIR,
+    BLOGGER_QUEUE_DIR,
+    INTAKE_DIR,
+    KNOWLEDGE_ROOT,
+    PRODUCTS_DIR,
+    QA_KB_DIR,
+    TRAINING_CURRICULUM_DIR,
+)
 
 VAULT = PROJECT_ROOT / "obsidian_vaults" / "lua_bim_lab_global_map"
 
-_KB_PREFIX = AGENT_KB_DIR.relative_to(PROJECT_ROOT).as_posix() + "/"
-_TRAINING_PREFIX = TRAINING_CURRICULUM_DIR.relative_to(PROJECT_ROOT).as_posix() + "/"
+
+def _rel_prefix(path) -> str:
+    return path.relative_to(PROJECT_ROOT).as_posix() + "/"
+
+
+_KB_PREFIX = _rel_prefix(AGENT_KB_DIR)
+_QA_PREFIX = _rel_prefix(QA_KB_DIR)
+_INTAKE_PREFIX = _rel_prefix(INTAKE_DIR)
+_CURATION_PREFIX = _rel_prefix(KNOWLEDGE_ROOT / "40_curation")
+_DOMAIN_PREFIX = _rel_prefix(KNOWLEDGE_ROOT / "50_domain")
+_BLOGGER_PREFIX = _rel_prefix(BLOGGER_QUEUE_DIR)
+_TRAINING_PREFIX = _rel_prefix(TRAINING_CURRICULUM_DIR)
+_PRODUCTS_PREFIX = _rel_prefix(PRODUCTS_DIR)
 
 EXCLUDE_PARTS = {
     ".git",
@@ -89,6 +108,20 @@ def category_for(rel: str) -> str:
         return "NAS Knowledge"
     if rel.startswith(_KB_PREFIX):
         return "AI Knowledge Base"
+    if rel.startswith(_QA_PREFIX):
+        return "AI Knowledge Base - QA"
+    if rel.startswith(_INTAKE_PREFIX):
+        return "Knowledge Intake"
+    if rel.startswith(_CURATION_PREFIX):
+        return "Knowledge Curation"
+    if rel.startswith(_BLOGGER_PREFIX):
+        return "Public Content - Blogger"
+    if rel.startswith(_DOMAIN_PREFIX):
+        return "Domain Sources"
+    if rel.startswith(_PRODUCTS_PREFIX):
+        return "Products"
+    if rel.startswith("knowledge/00_catalog/"):
+        return "Knowledge Catalog"
     if rel.startswith("docs/standard_documents/"):
         return "Standard Documents"
     if rel.startswith("docs/internal_organization_documents/"):

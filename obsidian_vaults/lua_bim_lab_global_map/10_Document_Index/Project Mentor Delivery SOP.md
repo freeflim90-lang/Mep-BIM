@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/public_products/launch_packages/project_mentor/DELIVERY_SOP.md"
+source_path: "knowledge/60_public/training_curriculum/public_products/launch_packages/project_mentor/DELIVERY_SOP.md"
 ---
 
 # Project Mentor Delivery SOP
 
 ## Source
 
-`docs/training_curriculum/public_products/launch_packages/project_mentor/DELIVERY_SOP.md`
+`knowledge/60_public/training_curriculum/public_products/launch_packages/project_mentor/DELIVERY_SOP.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/public_products/launch_packages/project_mentor/DELIVERY_SOP.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/public_products/launch_packages/project_mentor/DELIVERY_SOP.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, cs, curriculum, delivery_sop.md, docs, health, launch_packages, model, project_mentor, public_products, qa, quality, training, training_curriculum
+bim, curriculum, delivery_sop.md, health, knowledge, launch_packages, model, project_mentor, public, public_products, qa, quality, training, training_curriculum
 
 ## Related
 

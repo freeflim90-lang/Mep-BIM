@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/Universal BIM Coordinate Tool (v1) Implementation.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/Universal BIM Coordinate Tool (v1) Implementation.md"
 ---
 
 # Universal BIM Coordinate Tool v1 Implementation
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/Universal BIM Coordinate Tool (v1) Implementation.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/Universal BIM Coordinate Tool (v1) Implementation.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/Universal BIM Coordinate Tool (v1) Implementation.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/Universal BIM Coordinate Tool (v1) Implementation.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Let’s turn the coordinate math engine into a real production BIM tool your coo
 
 ## Keywords
 
-alignment, bim, bim-coord-auto-package, bim_scripts, colinbsi, coordinate, cs, data, implementation.md, markdown, model, revit, tool, universal, workspace
+alignment, bim, bim-coord-auto-package, bim_scripts, colinbsi, coordinate, cs, domain, implementation.md, knowledge, model, revit, sources, tool, universal
 
 ## Related
 

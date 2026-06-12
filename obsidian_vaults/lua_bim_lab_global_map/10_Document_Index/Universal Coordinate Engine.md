@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/Universal Coordinate Engine.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/Universal Coordinate Engine.md"
 ---
 
 # Universal Coordinate Engine
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/Universal Coordinate Engine.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/Universal Coordinate Engine.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/Universal Coordinate Engine.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/Universal Coordinate Engine.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ A Shared Coordinate System Generator that outputs values for: - Revit - Project 
 
 ## Keywords
 
-alignment, bim, bim-coord-auto-package, bim_scripts, colinbsi, coordinate, cs, data, engine.md, markdown, model, revit, store, tool, universal, workspace
+alignment, bim, bim-coord-auto-package, bim_scripts, colinbsi, coordinate, cs, domain, engine.md, knowledge, model, revit, sources, store, tool, universal
 
 ## Related
 

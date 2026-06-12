@@ -1,7 +1,7 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
+category: AI Knowledge Base - QA
 source_path: "knowledge/20_qa/러닝콘텐츠디자이너_QA.md"
 ---
 
@@ -17,7 +17,7 @@ Absolute path:
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - AI Knowledge Base - QA]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-autodesk, bim, knowledge, markdown, qa, qa.md, revit, workspace, 교육, 변경, 지식, 커리큘럼, 테스트, 품질
+ai, autodesk, base, bim, knowledge, qa, qa.md, revit, 교육, 변경, 지식, 커리큘럼, 테스트, 품질
 
 ## Related
 

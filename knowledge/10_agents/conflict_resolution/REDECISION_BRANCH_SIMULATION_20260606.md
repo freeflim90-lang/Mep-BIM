@@ -69,9 +69,9 @@
 
 | 목적지 | 정확한 파일/경로 | 담당 | 기한 | 생성/수정 링크 | 검증자 | 상태 |
 |---|---|---|---|---|---|---|
-| 029 Case | `data/knowledge_base/conflict_resolution/cases/AITEST_20260606_029.md` | 조율차장 | 2026-06-06 | Branch Simulation | QA_테스터 | Created |
-| Execution Playbook | `data/knowledge_base/conflict_resolution/ESCALATED_REDECISION_EXECUTION_PLAYBOOK_20260606.md` | 조율차장 | 2026-06-06 | Branch invariants 반영 | QA_테스터 | Updated |
-| Session Register | `data/knowledge_base/conflict_resolution/SESSION_REGISTER_202606.md` | 조율차장 | 2026-06-06 | AICOL-20260606-029 | 조율차장 | Updated |
+| 029 Case | `knowledge/10_agents/conflict_resolution/cases/AITEST_20260606_029.md` | 조율차장 | 2026-06-06 | Branch Simulation | QA_테스터 | Created |
+| Execution Playbook | `knowledge/10_agents/conflict_resolution/ESCALATED_REDECISION_EXECUTION_PLAYBOOK_20260606.md` | 조율차장 | 2026-06-06 | Branch invariants 반영 | QA_테스터 | Updated |
+| Session Register | `knowledge/10_agents/conflict_resolution/SESSION_REGISTER_202606.md` | 조율차장 | 2026-06-06 | AICOL-20260606-029 | 조율차장 | Updated |
 
 ## 8. 결론
 

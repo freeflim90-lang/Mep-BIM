@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/3P-DanSan/Revit-Dynamo-Python---add-shared-Parameter-to-Family/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/3P-DanSan/Revit-Dynamo-Python---add-shared-Parameter-to-Family/README.md"
 ---
 
 # 3P-DanSan - Revit-Dynamo-Python---add-shared-Parameter-to-Family - Revit-Dynamo-Python---add-shared-Parameter-to-Family
 
 ## Source
 
-`data/bim_scripts/3P-DanSan/Revit-Dynamo-Python---add-shared-Parameter-to-Family/README.md`
+`knowledge/50_domain/bim_scripts/3P-DanSan/Revit-Dynamo-Python---add-shared-Parameter-to-Family/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/3P-DanSan/Revit-Dynamo-Python---add-shared-Parameter-to-Family/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/3P-DanSan/Revit-Dynamo-Python---add-shared-Parameter-to-Family/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ I used following packages to build a Dynamo file that adds new shared parameters
 
 ## Keywords
 
-bim, bim_scripts, data, markdown, p-dansan, readme.md, revit, revit-dynamo-python---add-shared-parameter-to-family, workspace
+bim, bim_scripts, domain, knowledge, p-dansan, readme.md, revit, revit-dynamo-python---add-shared-parameter-to-family, sources
 
 ## Related
 

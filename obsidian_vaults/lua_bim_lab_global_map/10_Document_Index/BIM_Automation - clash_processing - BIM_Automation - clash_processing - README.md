@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/BIM_Automation/clash_processing/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM_Automation/clash_processing/README.md"
 ---
 
 # BIM_Automation - clash_processing - README
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/BIM_Automation/clash_processing/README.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM_Automation/clash_processing/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/BIM_Automation/clash_processing/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM_Automation/clash_processing/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Clash grouping and prioritization modules.
 
 ## Keywords
 
-bim, bim-coord-auto-package, bim_automation, bim_scripts, clash, clash_processing, colinbsi, data, markdown, readme.md, workspace
+bim, bim-coord-auto-package, bim_automation, bim_scripts, clash, clash_processing, colinbsi, domain, knowledge, readme.md, sources
 
 ## Related
 

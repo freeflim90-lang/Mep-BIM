@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/idfkit/idfkit-mcp/docs/tools/simulation.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/tools/simulation.md"
 ---
 
 # Simulation Tools
 
 ## Source
 
-`data/bim_scripts/idfkit/idfkit-mcp/docs/tools/simulation.md`
+`knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/tools/simulation.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/idfkit/idfkit-mcp/docs/tools/simulation.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/tools/simulation.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Simulation tools execute EnergyPlus, expose structured QA diagnostics, and provi
 
 ## Keywords
 
-bim, bim_scripts, cs, data, docs, idfkit, idfkit-mcp, markdown, model, qa, simulation.md, store, tools, workspace
+bim, bim_scripts, cs, docs, domain, idfkit, idfkit-mcp, knowledge, model, qa, simulation.md, sources, store, tools
 
 ## Related
 

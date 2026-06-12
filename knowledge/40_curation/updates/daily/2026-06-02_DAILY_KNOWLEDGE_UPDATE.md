@@ -74,7 +74,7 @@ tags:
 ## 자동 큐레이션 검수
 
 - [x] 최근 변경 지식 자동 분류 실행
-- 검수 리포트: `docs/knowledge_updates/curation/2026-06-02_DAILY_KNOWLEDGE_CURATION.md`
+- 검수 리포트: `knowledge/40_curation/updates/curation/2026-06-02_DAILY_KNOWLEDGE_CURATION.md`
 - 보안검토: 94
 - 보강필요: 0
 - 승격후보: 60

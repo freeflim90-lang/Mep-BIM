@@ -28,7 +28,7 @@ tags:
 | KB 파일 업데이트 | **75개 / 75개 완료** (스킵 0, 오류 0) |
 | Obsidian 그래프 | 노드 926개, 엣지 4,549개 갱신 |
 | 완료 마커 | `.daily_knowledge_update_done_2026-05-28` 생성 |
-| 일일 리포트 | `docs/knowledge_updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
+| 일일 리포트 | `knowledge/40_curation/updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
 
 4개 검색엔진(Naver+Tavily+Google+DDG) + Ollama 기반으로 75개 전 파일이 오류 없이 업데이트됐다.
 
@@ -59,7 +59,7 @@ tags:
 | KB 파일 업데이트 | **75개 / 75개 완료** (스킵 0, 오류 0) |
 | Obsidian 그래프 | 노드 926개, 엣지 4,549개 갱신 |
 | 완료 마커 | `.daily_knowledge_update_done_2026-05-28` 생성 |
-| 일일 리포트 | `docs/knowledge_updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
+| 일일 리포트 | `knowledge/40_curation/updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
 
 4개 검색엔진(Naver+Tavily+Google+DDG) + Ollama 기반으로 75개 전 파일이 오류 없이 업데이트됐다.
 
@@ -82,7 +82,7 @@ tags:
 | KB 파일 업데이트 | **75개 / 75개 완료** (스킵 0, 오류 0) |
 | Obsidian 그래프 | 노드 926개, 엣지 4,549개 갱신 |
 | 완료 마커 | `.daily_knowledge_update_done_2026-05-28` 생성 |
-| 일일 리포트 | `docs/knowledge_updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
+| 일일 리포트 | `knowledge/40_curation/updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
 
 4개 검색엔진(Naver+Tavily+Google+DDG) + Ollama 기반으로 75개 전 파일이 오류 없이 업데이트됐다.
 
@@ -105,7 +105,7 @@ tags:
 | KB 파일 업데이트 | **75개 / 75개 완료** (스킵 0, 오류 0) |
 | Obsidian 그래프 | 노드 926개, 엣지 4,549개 갱신 |
 | 완료 마커 | `.daily_knowledge_update_done_2026-05-28` 생성 |
-| 일일 리포트 | `docs/knowledge_updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
+| 일일 리포트 | `knowledge/40_curation/updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
 
 4개 검색엔진(Naver+Tavily+Google+DDG) + Ollama 기반으로 75개 전 파일이 오류 없이 업데이트됐다.
 
@@ -128,7 +128,7 @@ tags:
 | KB 파일 업데이트 | **75개 / 75개 완료** (스킵 0, 오류 0) |
 | Obsidian 그래프 | 노드 926개, 엣지 4,549개 갱신 |
 | 완료 마커 | `.daily_knowledge_update_done_2026-05-28` 생성 |
-| 일일 리포트 | `docs/knowledge_updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
+| 일일 리포트 | `knowledge/40_curation/updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
 
 4개 검색엔진(Naver+Tavily+Google+DDG) + Ollama 기반으로 75개 전 파일이 오류 없이 업데이트됐다.
 
@@ -151,7 +151,7 @@ tags:
 | KB 파일 업데이트 | **75개 / 75개 완료** (스킵 0, 오류 0) |
 | Obsidian 그래프 | 노드 926개, 엣지 4,549개 갱신 |
 | 완료 마커 | `.daily_knowledge_update_done_2026-05-28` 생성 |
-| 일일 리포트 | `docs/knowledge_updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
+| 일일 리포트 | `knowledge/40_curation/updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
 
 4개 검색엔진(Naver+Tavily+Google+DDG) + Ollama 기반으로 75개 전 파일이 오류 없이 업데이트됐다.
 
@@ -174,7 +174,7 @@ tags:
 | KB 파일 업데이트 | **75개 / 75개 완료** (스킵 0, 오류 0) |
 | Obsidian 그래프 | 노드 926개, 엣지 4,549개 갱신 |
 | 완료 마커 | `.daily_knowledge_update_done_2026-05-28` 생성 |
-| 일일 리포트 | `docs/knowledge_updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
+| 일일 리포트 | `knowledge/40_curation/updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
 
 4개 검색엔진(Naver+Tavily+Google+DDG) + Ollama 기반으로 75개 전 파일이 오류 없이 업데이트됐다.
 
@@ -197,7 +197,7 @@ tags:
 | KB 파일 업데이트 | **75개 / 75개 완료** (스킵 0, 오류 0) |
 | Obsidian 그래프 | 노드 926개, 엣지 4,549개 갱신 |
 | 완료 마커 | `.daily_knowledge_update_done_2026-05-28` 생성 |
-| 일일 리포트 | `docs/knowledge_updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
+| 일일 리포트 | `knowledge/40_curation/updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
 
 4개 검색엔진(Naver+Tavily+Google+DDG) + Ollama 기반으로 75개 전 파일이 오류 없이 업데이트됐다.
 
@@ -220,7 +220,7 @@ tags:
 | KB 파일 업데이트 | **75개 / 75개 완료** (스킵 0, 오류 0) |
 | Obsidian 그래프 | 노드 926개, 엣지 4,549개 갱신 |
 | 완료 마커 | `.daily_knowledge_update_done_2026-05-28` 생성 |
-| 일일 리포트 | `docs/knowledge_updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
+| 일일 리포트 | `knowledge/40_curation/updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
 
 4개 검색엔진(Naver+Tavily+Google+DDG) + Ollama 기반으로 75개 전 파일이 오류 없이 업데이트됐다.
 
@@ -243,7 +243,7 @@ tags:
 | KB 파일 업데이트 | **75개 / 75개 완료** (스킵 0, 오류 0) |
 | Obsidian 그래프 | 노드 926개, 엣지 4,549개 갱신 |
 | 완료 마커 | `.daily_knowledge_update_done_2026-05-28` 생성 |
-| 일일 리포트 | `docs/knowledge_updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
+| 일일 리포트 | `knowledge/40_curation/updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
 
 4개 검색엔진(Naver+Tavily+Google+DDG) + Ollama 기반으로 75개 전 파일이 오류 없이 업데이트됐다.
 
@@ -266,7 +266,7 @@ tags:
 | KB 파일 업데이트 | **75개 / 75개 완료** (스킵 0, 오류 0) |
 | Obsidian 그래프 | 노드 926개, 엣지 4,549개 갱신 |
 | 완료 마커 | `.daily_knowledge_update_done_2026-05-28` 생성 |
-| 일일 리포트 | `docs/knowledge_updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
+| 일일 리포트 | `knowledge/40_curation/updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
 
 4개 검색엔진(Naver+Tavily+Google+DDG) + Ollama 기반으로 75개 전 파일이 오류 없이 업데이트됐다.
 
@@ -289,7 +289,7 @@ tags:
 | KB 파일 업데이트 | **75개 / 75개 완료** (스킵 0, 오류 0) |
 | Obsidian 그래프 | 노드 926개, 엣지 4,549개 갱신 |
 | 완료 마커 | `.daily_knowledge_update_done_2026-05-28` 생성 |
-| 일일 리포트 | `docs/knowledge_updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
+| 일일 리포트 | `knowledge/40_curation/updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
 
 4개 검색엔진(Naver+Tavily+Google+DDG) + Ollama 기반으로 75개 전 파일이 오류 없이 업데이트됐다.
 
@@ -312,7 +312,7 @@ tags:
 | KB 파일 업데이트 | **75개 / 75개 완료** (스킵 0, 오류 0) |
 | Obsidian 그래프 | 노드 926개, 엣지 4,549개 갱신 |
 | 완료 마커 | `.daily_knowledge_update_done_2026-05-28` 생성 |
-| 일일 리포트 | `docs/knowledge_updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
+| 일일 리포트 | `knowledge/40_curation/updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
 
 4개 검색엔진(Naver+Tavily+Google+DDG) + Ollama 기반으로 75개 전 파일이 오류 없이 업데이트됐다.
 
@@ -335,7 +335,7 @@ tags:
 | KB 파일 업데이트 | **75개 / 75개 완료** (스킵 0, 오류 0) |
 | Obsidian 그래프 | 노드 926개, 엣지 4,549개 갱신 |
 | 완료 마커 | `.daily_knowledge_update_done_2026-05-28` 생성 |
-| 일일 리포트 | `docs/knowledge_updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
+| 일일 리포트 | `knowledge/40_curation/updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
 
 4개 검색엔진(Naver+Tavily+Google+DDG) + Ollama 기반으로 75개 전 파일이 오류 없이 업데이트됐다.
 
@@ -358,7 +358,7 @@ tags:
 | KB 파일 업데이트 | **75개 / 75개 완료** (스킵 0, 오류 0) |
 | Obsidian 그래프 | 노드 926개, 엣지 4,549개 갱신 |
 | 완료 마커 | `.daily_knowledge_update_done_2026-05-28` 생성 |
-| 일일 리포트 | `docs/knowledge_updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
+| 일일 리포트 | `knowledge/40_curation/updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
 
 4개 검색엔진(Naver+Tavily+Google+DDG) + Ollama 기반으로 75개 전 파일이 오류 없이 업데이트됐다.
 
@@ -381,7 +381,7 @@ tags:
 | KB 파일 업데이트 | **75개 / 75개 완료** (스킵 0, 오류 0) |
 | Obsidian 그래프 | 노드 926개, 엣지 4,549개 갱신 |
 | 완료 마커 | `.daily_knowledge_update_done_2026-05-28` 생성 |
-| 일일 리포트 | `docs/knowledge_updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
+| 일일 리포트 | `knowledge/40_curation/updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
 
 4개 검색엔진(Naver+Tavily+Google+DDG) + Ollama 기반으로 75개 전 파일이 오류 없이 업데이트됐다.
 
@@ -404,6 +404,6 @@ tags:
 | KB 파일 업데이트 | **75개 / 75개 완료** (스킵 0, 오류 0) |
 | Obsidian 그래프 | 노드 926개, 엣지 4,549개 갱신 |
 | 완료 마커 | `.daily_knowledge_update_done_2026-05-28` 생성 |
-| 일일 리포트 | `docs/knowledge_updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
+| 일일 리포트 | `knowledge/40_curation/updates/daily/2026-05-28_DAILY_KNOWLEDGE_UPDATE.md` |
 
 4개 검색엔진(Naver+Tavily+Google+DDG) + Ollama 기반으로 75개 전 파일이 오류 없이 업데이트됐다.

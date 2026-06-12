@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/tbrus/install-ifcopenshell-python/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/tbrus/install-ifcopenshell-python/README.md"
 ---
 
 # tbrus - install-ifcopenshell-python - install-ifcopenshell-python
 
 ## Source
 
-`data/bim_scripts/tbrus/install-ifcopenshell-python/README.md`
+`knowledge/50_domain/bim_scripts/tbrus/install-ifcopenshell-python/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/tbrus/install-ifcopenshell-python/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/tbrus/install-ifcopenshell-python/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, bim_scripts, data, install-ifcopenshell-python, markdown, qa, readme.md, tbrus, workspace
+bim, bim_scripts, domain, install-ifcopenshell-python, knowledge, qa, readme.md, sources, tbrus
 
 ## Related
 

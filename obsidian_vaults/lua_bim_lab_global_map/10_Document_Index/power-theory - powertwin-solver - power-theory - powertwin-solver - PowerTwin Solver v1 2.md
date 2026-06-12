@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/power-theory/powertwin-solver/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/power-theory/powertwin-solver/README.md"
 ---
 
 # power-theory - powertwin-solver - PowerTwin Solver v1 2
 
 ## Source
 
-`data/bim_scripts/power-theory/powertwin-solver/README.md`
+`knowledge/50_domain/bim_scripts/power-theory/powertwin-solver/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/power-theory/powertwin-solver/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/power-theory/powertwin-solver/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, bim_scripts, cs, data, markdown, mep, power-theory, powertwin-solver, readme.md, workspace
+bim, bim_scripts, cs, domain, knowledge, mep, power-theory, powertwin-solver, readme.md, sources
 
 ## Related
 

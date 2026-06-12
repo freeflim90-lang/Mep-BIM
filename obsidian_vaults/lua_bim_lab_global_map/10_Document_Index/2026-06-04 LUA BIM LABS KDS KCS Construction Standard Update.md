@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Docs - General
-source_path: "docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_KDS_KCS_CONSTRUCTION_STANDARD_UPDATE.md"
+category: Knowledge Curation
+source_path: "knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_KDS_KCS_CONSTRUCTION_STANDARD_UPDATE.md"
 ---
 
 # 2026-06-04 LUA BIM LABS KDS KCS Construction Standard Update
 
 ## Source
 
-`docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_KDS_KCS_CONSTRUCTION_STANDARD_UPDATE.md`
+`knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_KDS_KCS_CONSTRUCTION_STANDARD_UPDATE.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_KDS_KCS_CONSTRUCTION_STANDARD_UPDATE.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_KDS_KCS_CONSTRUCTION_STANDARD_UPDATE.md`
 
 ## Category
 
-- [[MOC - Docs - General]]
+- [[MOC - Knowledge Curation]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, cs, daily, docs, general, knowledge_updates, lua_bim_labs_kds_kcs_construction_standard_update.md, mep, quality, 개발, 견적, 납품, 변경, 심사, 역할, 조직, 지식, 품질, 회의
+bim, cs, curation, daily, knowledge, lua_bim_labs_kds_kcs_construction_standard_update.md, mep, quality, updates, 개발, 견적, 납품, 변경, 심사, 역할, 조직, 지식, 품질, 회의
 
 ## Related
 

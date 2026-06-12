@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-08-powerbi-auto-push-design.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-08-powerbi-auto-push-design.md"
 ---
 
 # Power BI Auto-Push Design
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-08-powerbi-auto-push-design.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-08-powerbi-auto-push-design.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-08-powerbi-auto-push-design.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-08-powerbi-auto-push-design.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, data, docs, markdown, plans, powerbi-auto-push-design.md, workspace
+bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, docs, domain, knowledge, plans, powerbi-auto-push-design.md, sources
 
 ## Related
 

@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/lfontanella/thermal-transmittance-workflows/01_Proprietary workflow/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/lfontanella/thermal-transmittance-workflows/01_Proprietary workflow/README.md"
 ---
 
 # thermal-transmittance-workflows - 01_Proprietary workflow - Proprietary Workflow
 
 ## Source
 
-`data/bim_scripts/lfontanella/thermal-transmittance-workflows/01_Proprietary workflow/README.md`
+`knowledge/50_domain/bim_scripts/lfontanella/thermal-transmittance-workflows/01_Proprietary workflow/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/lfontanella/thermal-transmittance-workflows/01_Proprietary workflow/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/lfontanella/thermal-transmittance-workflows/01_Proprietary workflow/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This folder documents a proprietary workflow for thermal transmittance analysis 
 
 ## Keywords
 
-autodesk, bim, bim_scripts, data, lfontanella, markdown, model, proprietary, readme.md, revit, thermal-transmittance-workflows, workflow, workspace
+autodesk, bim, bim_scripts, domain, knowledge, lfontanella, model, proprietary, readme.md, revit, sources, thermal-transmittance-workflows, workflow
 
 ## Related
 

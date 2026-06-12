@@ -27,7 +27,7 @@
 - 장기: 글로벌 시장 (영어 버전 + 해외 파트너)
 
 ## 2026-06-04 BF 품질진단 파일럿 전략
-- Source: `docs/training_curriculum/team_distribution/samples/2026-06-04_CEO_CSO_BF_PRODUCTIZATION_DECISION_MEMO_SAMPLE.md`
+- Source: `knowledge/60_public/training_curriculum/team_distribution/samples/2026-06-04_CEO_CSO_BF_PRODUCTIZATION_DECISION_MEMO_SAMPLE.md`
 - Tags: cso,strategy,BF,portfolio,productization,KST
 
 CSO는 BF/편의시설 대응을 단일 자동검수 기능이 아니라 포트폴리오형 파일럿으로 본다. `BF BIM 품질진단 라이트`는 단기 컨설팅 매출, QA 룰 후보는 중기 Add-in 제품, 15분 교육 카드는 교육 상품으로 연결할 수 있다.

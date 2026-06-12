@@ -1,7 +1,7 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
+category: AI Knowledge Base - QA
 source_path: "knowledge/20_qa/엑셀자동화_QA.md"
 ---
 
@@ -17,7 +17,7 @@ Absolute path:
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - AI Knowledge Base - QA]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, addin, api, bim, clash, cs, knowledge, markdown, navisworks, qa, qa.md, revit, workspace, 간섭, 개발, 납품, 리스크, 지식
+add-in, addin, ai, api, base, bim, clash, cs, knowledge, navisworks, qa, qa.md, revit, 간섭, 개발, 납품, 리스크, 지식
 
 ## Related
 

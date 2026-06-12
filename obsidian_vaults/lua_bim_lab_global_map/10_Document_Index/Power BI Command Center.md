@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/07-power-bi.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/07-power-bi.md"
 ---
 
 # Power BI Command Center
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/07-power-bi.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/07-power-bi.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/07-power-bi.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/07-power-bi.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ The Power BI Command Center connects to the pipeline output CSVs and provides fo
 
 ## Keywords
 
-bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, data, docs, health, markdown, model, power-bi.md, tools, workspace
+bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, docs, domain, health, knowledge, model, power-bi.md, sources, tools
 
 ## Related
 

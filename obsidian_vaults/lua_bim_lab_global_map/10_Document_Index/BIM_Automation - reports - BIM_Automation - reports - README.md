@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/BIM_Automation/reports/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM_Automation/reports/README.md"
 ---
 
 # BIM_Automation - reports - README
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/BIM_Automation/reports/README.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM_Automation/reports/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/BIM_Automation/reports/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM_Automation/reports/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Weekly report generator — outputs CSV, Excel, and PDF.
 
 ## Keywords
 
-bim, bim-coord-auto-package, bim_automation, bim_scripts, colinbsi, cs, data, markdown, readme.md, reports, workspace
+bim, bim-coord-auto-package, bim_automation, bim_scripts, colinbsi, cs, domain, knowledge, readme.md, reports, sources
 
 ## Related
 

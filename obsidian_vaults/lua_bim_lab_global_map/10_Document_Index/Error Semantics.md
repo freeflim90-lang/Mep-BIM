@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/idfkit/idfkit-mcp/docs/concepts/error-semantics.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/concepts/error-semantics.md"
 ---
 
 # Error Semantics
 
 ## Source
 
-`data/bim_scripts/idfkit/idfkit-mcp/docs/concepts/error-semantics.md`
+`knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/concepts/error-semantics.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/idfkit/idfkit-mcp/docs/concepts/error-semantics.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/concepts/error-semantics.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Tools return structured dictionaries for both success and failure paths. Typical
 
 ## Keywords
 
-bim, bim_scripts, concepts, cs, data, docs, error-semantics.md, idfkit, idfkit-mcp, markdown, model, workspace
+bim, bim_scripts, concepts, cs, docs, domain, error-semantics.md, idfkit, idfkit-mcp, knowledge, model, sources
 
 ## Related
 

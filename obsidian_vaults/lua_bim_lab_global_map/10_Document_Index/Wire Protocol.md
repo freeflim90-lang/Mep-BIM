@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/FelonBall/ifc-live/docs/PROTOCOL.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/FelonBall/ifc-live/docs/PROTOCOL.md"
 ---
 
 # Wire Protocol
 
 ## Source
 
-`data/bim_scripts/FelonBall/ifc-live/docs/PROTOCOL.md`
+`knowledge/50_domain/bim_scripts/FelonBall/ifc-live/docs/PROTOCOL.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/FelonBall/ifc-live/docs/PROTOCOL.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/FelonBall/ifc-live/docs/PROTOCOL.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-audit, bim, bim_scripts, cs, data, docs, felonball, health, ifc-live, markdown, model, protocol.md, store, workspace
+audit, bim, bim_scripts, cs, docs, domain, felonball, health, ifc-live, knowledge, model, protocol.md, sources, store
 
 ## Related
 

@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/openBES-ecosystem/OpenBES-py/dev-wishlist.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/openBES-ecosystem/OpenBES-py/dev-wishlist.md"
 ---
 
 # OpenBES-py Development Wishlist Post-Excel
 
 ## Source
 
-`data/bim_scripts/openBES-ecosystem/OpenBES-py/dev-wishlist.md`
+`knowledge/50_domain/bim_scripts/openBES-ecosystem/OpenBES-py/dev-wishlist.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/openBES-ecosystem/OpenBES-py/dev-wishlist.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/openBES-ecosystem/OpenBES-py/dev-wishlist.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Remove fields that no longer have meaning, and tighten units/descriptions so the
 
 ## Keywords
 
-bim, bim_scripts, cs, data, dev-wishlist.md, markdown, openbes-ecosystem, openbes-py, workspace
+bim, bim_scripts, cs, dev-wishlist.md, domain, knowledge, openbes-ecosystem, openbes-py, sources
 
 ## Related
 

@@ -1,7 +1,7 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
+category: AI Knowledge Base - QA
 source_path: "knowledge/20_qa/라이선스결제_QA.md"
 ---
 
@@ -17,7 +17,7 @@ Absolute path:
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - AI Knowledge Base - QA]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, api, autodesk, bim, knowledge, markdown, mep, navisworks, qa, qa.md, revit, store, workspace, 개발, 견적, 결제, 구독, 권한, 라이선스, 지식, 지원
+add-in, ai, api, autodesk, base, bim, knowledge, mep, navisworks, qa, qa.md, revit, store, 개발, 견적, 결제, 구독, 권한, 라이선스, 지식, 지원
 
 ## Related
 

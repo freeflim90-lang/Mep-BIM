@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/mep_bim_ai/06b_PRINCIPAL_18_YEAR.md"
+source_path: "knowledge/60_public/training_curriculum/mep_bim_ai/06b_PRINCIPAL_18_YEAR.md"
 ---
 
 # Principal 과정 18년차 조직 표준화 제품화 전략
 
 ## Source
 
-`docs/training_curriculum/mep_bim_ai/06b_PRINCIPAL_18_YEAR.md`
+`knowledge/60_public/training_curriculum/mep_bim_ai/06b_PRINCIPAL_18_YEAR.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/mep_bim_ai/06b_PRINCIPAL_18_YEAR.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/mep_bim_ai/06b_PRINCIPAL_18_YEAR.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, b_principal_18_year.md, bim, cs, curriculum, docs, kpi, mep, mep_bim_ai, qa, revit, training, training_curriculum, 개발, 교육, 구독, 납품, 라이선스, 보안, 심사, 자산, 조직, 지식, 지원, 테스트, 품질
+add-in, b_principal_18_year.md, bim, curriculum, knowledge, kpi, mep, mep_bim_ai, public, qa, revit, training, training_curriculum, 개발, 교육, 구독, 납품, 라이선스, 보안, 심사, 자산, 조직, 지식, 지원, 테스트, 품질
 
 ## Related
 

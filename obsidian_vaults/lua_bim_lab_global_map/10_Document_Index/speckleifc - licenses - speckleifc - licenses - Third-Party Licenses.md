@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/specklesystems/specklepy/src/speckleifc/licenses/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/specklesystems/specklepy/src/speckleifc/licenses/README.md"
 ---
 
 # speckleifc - licenses - Third-Party Licenses
 
 ## Source
 
-`data/bim_scripts/specklesystems/specklepy/src/speckleifc/licenses/README.md`
+`knowledge/50_domain/bim_scripts/specklesystems/specklepy/src/speckleifc/licenses/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/specklesystems/specklepy/src/speckleifc/licenses/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/specklesystems/specklepy/src/speckleifc/licenses/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This directory contains license files for third-party dependencies used by speck
 
 ## Keywords
 
-bim, bim_scripts, cs, data, licenses, markdown, readme.md, speckleifc, specklepy, specklesystems, src, workspace
+bim, bim_scripts, cs, domain, knowledge, licenses, readme.md, sources, speckleifc, specklepy, specklesystems, src
 
 ## Related
 
@@ -36,7 +36,7 @@ bim, bim_scripts, cs, data, licenses, markdown, readme.md, speckleifc, specklepy
 - [[credentials]]
 - [[data_objects]]
 - [[exceptions]]
-- [[github - ISSUE_TEMPLATE - feature_request - c2d159]]
+- [[github - ISSUE_TEMPLATE - feature_request - ecfd74]]
 
 ## Home
 

@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/technical_pdfs/text_knowledge/ashrae_hvac_standards_summary.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/technical_pdfs/text_knowledge/ashrae_hvac_standards_summary.md"
 ---
 
 # ASHRAE 핵심 기준 요약 설계 참고
 
 ## Source
 
-`data/technical_pdfs/text_knowledge/ashrae_hvac_standards_summary.md`
+`knowledge/50_domain/technical_pdfs/text_knowledge/ashrae_hvac_standards_summary.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/technical_pdfs/text_knowledge/ashrae_hvac_standards_summary.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/technical_pdfs/text_knowledge/ashrae_hvac_standards_summary.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-ashrae_hvac_standards_summary.md, bim, data, markdown, technical_pdfs, text_knowledge, workspace, 회의
+ashrae_hvac_standards_summary.md, bim, domain, knowledge, sources, technical_pdfs, text_knowledge, 회의
 
 ## Related
 

@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/technical_pdfs/text_knowledge/nftc_fire_safety_standards_summary.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/technical_pdfs/text_knowledge/nftc_fire_safety_standards_summary.md"
 ---
 
 # 화재안전기술기준 NFTC 핵심 요약
 
 ## Source
 
-`data/technical_pdfs/text_knowledge/nftc_fire_safety_standards_summary.md`
+`knowledge/50_domain/technical_pdfs/text_knowledge/nftc_fire_safety_standards_summary.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/technical_pdfs/text_knowledge/nftc_fire_safety_standards_summary.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/technical_pdfs/text_knowledge/nftc_fire_safety_standards_summary.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, data, markdown, nftc_fire_safety_standards_summary.md, technical_pdfs, text_knowledge, workspace
+bim, domain, knowledge, nftc_fire_safety_standards_summary.md, sources, technical_pdfs, text_knowledge
 
 ## Related
 

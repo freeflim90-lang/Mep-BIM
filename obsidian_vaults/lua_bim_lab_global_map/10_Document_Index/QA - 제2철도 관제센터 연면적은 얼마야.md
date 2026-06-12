@@ -21,11 +21,11 @@ Absolute path:
 
 ## Summary
 
-> 요청자: @FreeFilmer ([LONG_ID_MASKED]) > 수집일: 2026-05-24 13:09:38 > 담당 지식: 건축 제2철도 관제센터 연면적은 얼마야? 제2철도교통관제센터의 연면적 정보는 제공된 참고 지식에서 언급되지 않았습니다. 연면적과 관련된 자세한 정보가 필요하다면 건축 설계 문서나 공사 계획서 등을 확인해보세요. - `data/knowledge_base/건축.md` · score `28`
+> 요청자: @FreeFilmer ([LONG_ID_MASKED]) > 수집일: 2026-05-24 13:09:38 > 담당 지식: 건축 제2철도 관제센터 연면적은 얼마야? 제2철도교통관제센터의 연면적 정보는 제공된 참고 지식에서 언급되지 않았습니다. 연면적과 관련된 자세한 정보가 필요하다면 건축 설계 문서나 공사 계획서 등을 확인해보세요. - `knowledge/10_agents/02_견적팀/건축.md` · score `28`
 
 ## Keywords
 
-bim, knowledge, lua_bim_lab_global_map, nas, nas_knowledge, obsidian_vaults, qa, team_telegram_qa, 교육, 지식
+bim, knowledge, lua_bim_lab_global_map, nas, nas_knowledge, obsidian_vaults, qa, team_telegram_qa, 견적, 교육, 지식
 
 ## Related
 

@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/DTU-Byg/11034/A5__Custom tools/readme.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/DTU-Byg/11034/A5__Custom tools/readme.md"
 ---
 
 # 11034 - A5__Custom tools - A5 Custom Tool
 
 ## Source
 
-`data/bim_scripts/DTU-Byg/11034/A5__Custom tools/readme.md`
+`knowledge/50_domain/bim_scripts/DTU-Byg/11034/A5__Custom tools/readme.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/DTU-Byg/11034/A5__Custom tools/readme.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/DTU-Byg/11034/A5__Custom tools/readme.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ In this assignment we will develop a tool based on one of the use cases you iden
 
 ## Keywords
 
-a5__custom, bim, bim_scripts, data, dtu-byg, markdown, model, readme.md, tools, workspace
+a5__custom, bim, bim_scripts, domain, dtu-byg, knowledge, model, readme.md, sources, tools
 
 ## Related
 

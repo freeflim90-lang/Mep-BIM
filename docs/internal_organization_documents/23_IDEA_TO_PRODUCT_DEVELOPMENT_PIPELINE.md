@@ -92,9 +92,9 @@ source .dev-venv/bin/activate && python scripts/idea_to_product_pipeline.py --fo
 
 ## 8. 관련 문서
 
-- `data/knowledge_base/아이디어발굴.md`
-- `data/knowledge_base/전략기획.md`
-- `data/knowledge_base/프로그램개발.md`
-- `data/knowledge_base/제품패키징.md`
+- `knowledge/10_agents/90_확장에이전트/아이디어발굴.md`
+- `knowledge/10_agents/90_확장에이전트/전략기획.md`
+- `knowledge/10_agents/90_확장에이전트/프로그램개발.md`
+- `knowledge/10_agents/06_스토어상용화팀/제품패키징.md`
 - `config/qwen_product_draft_queue.json`
 - `scripts/qwen_product_draft_runner.py`

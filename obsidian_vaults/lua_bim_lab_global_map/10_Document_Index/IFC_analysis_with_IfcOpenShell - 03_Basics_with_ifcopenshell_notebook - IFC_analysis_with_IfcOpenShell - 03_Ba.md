@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/03_Basics_with_ifcopenshell_notebook/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/03_Basics_with_ifcopenshell_notebook/README.md"
 ---
 
 # IFC_analysis_with_IfcOpenShell - 03_Basics_with_ifcopenshell_notebook - Basics with ifcopenshell notebook
 
 ## Source
 
-`data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/03_Basics_with_ifcopenshell_notebook/README.md`
+`knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/03_Basics_with_ifcopenshell_notebook/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/03_Basics_with_ifcopenshell_notebook/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/03_Basics_with_ifcopenshell_notebook/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Intro to some key functions in ifcopenshell and IFC documentation Ifcopenshell i
 
 ## Keywords
 
-basics_with_ifcopenshell_notebook, bim, bim_scripts, cs, data, data-science-for-architecture, ifc_analysis, ifc_analysis_with_ifcopenshell, markdown, model, readme.md, renatogcruz, workspace
+basics_with_ifcopenshell_notebook, bim, bim_scripts, cs, data-science-for-architecture, domain, ifc_analysis, ifc_analysis_with_ifcopenshell, knowledge, model, readme.md, renatogcruz, sources
 
 ## Related
 

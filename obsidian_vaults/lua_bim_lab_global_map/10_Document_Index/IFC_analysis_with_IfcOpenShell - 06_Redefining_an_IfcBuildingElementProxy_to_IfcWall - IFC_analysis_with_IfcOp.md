@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/06_Redefining_an_IfcBuildingElementProxy_to_IfcWall/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/06_Redefining_an_IfcBuildingElementProxy_to_IfcWall/README.md"
 ---
 
 # IFC_analysis_with_IfcOpenShell - 06_Redefining_an_IfcBuildingElementProxy_to_IfcWall - How to change from a IfcBuildingElementProxy to IfcWall
 
 ## Source
 
-`data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/06_Redefining_an_IfcBuildingElementProxy_to_IfcWall/README.md`
+`knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/06_Redefining_an_IfcBuildingElementProxy_to_IfcWall/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/06_Redefining_an_IfcBuildingElementProxy_to_IfcWall/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/06_Redefining_an_IfcBuildingElementProxy_to_IfcWall/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Here is some code that changes all elements of type IfcBuildingElementProxy, to 
 
 ## Keywords
 
-bim, bim_scripts, data, data-science-for-architecture, ifc_analysis, ifc_analysis_with_ifcopenshell, markdown, readme.md, redefining_an_ifcbuildingelementproxy_to_ifcwall, renatogcruz, workspace
+bim, bim_scripts, data-science-for-architecture, domain, ifc_analysis, ifc_analysis_with_ifcopenshell, knowledge, readme.md, redefining_an_ifcbuildingelementproxy_to_ifcwall, renatogcruz, sources
 
 ## Related
 

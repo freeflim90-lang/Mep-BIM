@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/agnes-schroeder-bim/ifc-ids-prevalidator/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/agnes-schroeder-bim/ifc-ids-prevalidator/README.md"
 ---
 
 # agnes-schroeder-bim - ifc-ids-prevalidator - IFC IDS Pre-Validator
 
 ## Source
 
-`data/bim_scripts/agnes-schroeder-bim/ifc-ids-prevalidator/README.md`
+`knowledge/50_domain/bim_scripts/agnes-schroeder-bim/ifc-ids-prevalidator/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/agnes-schroeder-bim/ifc-ids-prevalidator/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/agnes-schroeder-bim/ifc-ids-prevalidator/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ A lightweight command-line tool for pre-validating IFC models against IDS (Infor
 
 ## Keywords
 
-agnes-schroeder-bim, api, bim, bim_scripts, cs, data, ifc-ids-prevalidator, markdown, model, qa, quality, readme.md, workspace
+agnes-schroeder-bim, api, bim, bim_scripts, cs, domain, ifc-ids-prevalidator, knowledge, model, qa, quality, readme.md, sources
 
 ## Related
 

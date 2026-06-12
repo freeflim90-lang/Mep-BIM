@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, bim, cs, knowledge, lua_bim_lab_global_map, mep, nas, nas_knowledge, obsidian_vaults, qa, sa_ra_, team_telegram_qa, 간섭, 교육, 변경, 지식
+add-in, bim, knowledge, lua_bim_lab_global_map, mep, nas, nas_knowledge, obsidian_vaults, qa, sa_ra_, team_telegram_qa, 간섭, 교육, 변경, 지식
 
 ## Related
 

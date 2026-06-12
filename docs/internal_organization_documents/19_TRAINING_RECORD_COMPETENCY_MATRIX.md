@@ -56,7 +56,7 @@
 
 | 샘플 | 용도 |
 |---|---|
-| `docs/training_curriculum/team_distribution/samples/2026-06-04_HR_KST_TRAINING_RECORD_SAMPLE.md` | 역할별 지식학습 주간 스프린트의 KST 기반 교육 기록 예시 |
+| `knowledge/60_public/training_curriculum/team_distribution/samples/2026-06-04_HR_KST_TRAINING_RECORD_SAMPLE.md` | 역할별 지식학습 주간 스프린트의 KST 기반 교육 기록 예시 |
 
 운영 기준:
 - 이 샘플은 개인 평가 점수 확정용이 아니라 학습 적용률, 역할별 부족 역량, 다음 교육 설계의 근거로 사용한다.
@@ -85,7 +85,7 @@ AI 협업 역량은 `30_AI_TO_AI_COLLABORATION_SOP.md`와 `31_AI_COLLABORATION_R
 
 | 샘플 | 용도 |
 |---|---|
-| `docs/training_curriculum/team_distribution/samples/2026-06-05_AI_COLLABORATION_ONBOARDING_CARD_SAMPLE.md` | 신규 AI 역할의 Intake, Evidence, Challenge, Consensus, Handoff, Reuse Closure 실습 |
+| `knowledge/60_public/training_curriculum/team_distribution/samples/2026-06-05_AI_COLLABORATION_ONBOARDING_CARD_SAMPLE.md` | 신규 AI 역할의 Intake, Evidence, Challenge, Consensus, Handoff, Reuse Closure 실습 |
 
 운영 기준:
 - 샘플 카드는 교육 이수 증거가 아니라 첫 실습 템플릿이다.

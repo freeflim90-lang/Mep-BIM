@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/FelonBall/ifc-live/tools/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/FelonBall/ifc-live/tools/README.md"
 ---
 
 # ifc-live - tools - ifc-live-dev
 
 ## Source
 
-`data/bim_scripts/FelonBall/ifc-live/tools/README.md`
+`knowledge/50_domain/bim_scripts/FelonBall/ifc-live/tools/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/FelonBall/ifc-live/tools/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/FelonBall/ifc-live/tools/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Internal dev tooling for the `ifc-live` workspace. This is not a published packa
 
 ## Keywords
 
-bim, bim_scripts, data, felonball, ifc-live, markdown, readme.md, tools, workspace
+bim, bim_scripts, domain, felonball, ifc-live, knowledge, readme.md, sources, tools
 
 ## Related
 

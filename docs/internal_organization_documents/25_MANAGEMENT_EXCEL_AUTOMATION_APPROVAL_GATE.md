@@ -60,8 +60,8 @@
 
 | 기록 | 위치 |
 |---|---|
-| 팀원 Telegram 요청 로그 | `data/team_requests/telegram_knowledge_requests.md` |
-| 엑셀 자동화 기준 | `data/knowledge_base/엑셀자동화.md` |
+| 팀원 Telegram 요청 로그 | `knowledge/30_intake/team_requests/telegram_knowledge_requests.md` |
+| 엑셀 자동화 기준 | `knowledge/10_agents/90_확장에이전트/엑셀자동화.md` |
 
 ## 7. 실행 제한
 

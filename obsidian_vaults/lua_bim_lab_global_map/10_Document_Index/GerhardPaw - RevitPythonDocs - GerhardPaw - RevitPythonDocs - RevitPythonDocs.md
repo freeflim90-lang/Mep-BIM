@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/GerhardPaw/RevitPythonDocs/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/GerhardPaw/RevitPythonDocs/README.md"
 ---
 
 # GerhardPaw - RevitPythonDocs - RevitPythonDocs
 
 ## Source
 
-`data/bim_scripts/GerhardPaw/RevitPythonDocs/README.md`
+`knowledge/50_domain/bim_scripts/GerhardPaw/RevitPythonDocs/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/GerhardPaw/RevitPythonDocs/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/GerhardPaw/RevitPythonDocs/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Collection of Python Scripts for Dynamo and pyRevit. **Welcome** to the revitpyt
 
 ## Keywords
 
-api, autodesk, bim, bim_scripts, cs, data, gerhardpaw, markdown, model, quality, readme.md, revit, revitpythondocs, workspace
+api, autodesk, bim, bim_scripts, cs, domain, gerhardpaw, knowledge, model, quality, readme.md, revit, revitpythondocs, sources
 
 ## Related
 

@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/DTU-Byg/11034/Sessions/W6/readme.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/DTU-Byg/11034/Sessions/W6/readme.md"
 ---
 
 # Sessions - W6 - readme
 
 ## Source
 
-`data/bim_scripts/DTU-Byg/11034/Sessions/W6/readme.md`
+`knowledge/50_domain/bim_scripts/DTU-Byg/11034/Sessions/W6/readme.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/DTU-Byg/11034/Sessions/W6/readme.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/DTU-Byg/11034/Sessions/W6/readme.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ In this session we look at the BIM Use cases, we start to think what BIM is - of
 
 ## Keywords
 
-bim, bim_scripts, data, dtu-byg, markdown, readme.md, sessions, workspace
+bim, bim_scripts, domain, dtu-byg, knowledge, readme.md, sessions, sources
 
 ## Related
 

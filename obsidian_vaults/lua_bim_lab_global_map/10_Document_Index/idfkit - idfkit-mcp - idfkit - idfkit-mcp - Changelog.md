@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/idfkit/idfkit-mcp/CHANGELOG.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/CHANGELOG.md"
 ---
 
 # idfkit - idfkit-mcp - Changelog
 
 ## Source
 
-`data/bim_scripts/idfkit/idfkit-mcp/CHANGELOG.md`
+`knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/CHANGELOG.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/idfkit/idfkit-mcp/CHANGELOG.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/CHANGELOG.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ All notable changes to this project will be documented in this file. The format 
 
 ## Keywords
 
-api, bim, bim_scripts, changelog.md, cs, data, health, idfkit, idfkit-mcp, markdown, model, qa, workspace
+api, bim, bim_scripts, changelog.md, cs, domain, health, idfkit, idfkit-mcp, knowledge, model, qa, sources
 
 ## Related
 

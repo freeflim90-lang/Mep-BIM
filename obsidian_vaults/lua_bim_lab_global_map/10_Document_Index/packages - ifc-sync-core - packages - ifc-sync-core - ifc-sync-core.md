@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/FelonBall/ifc-live/packages/ifc-sync-core/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/FelonBall/ifc-live/packages/ifc-sync-core/README.md"
 ---
 
 # packages - ifc-sync-core - ifc-sync-core
 
 ## Source
 
-`data/bim_scripts/FelonBall/ifc-live/packages/ifc-sync-core/README.md`
+`knowledge/50_domain/bim_scripts/FelonBall/ifc-live/packages/ifc-sync-core/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/FelonBall/ifc-live/packages/ifc-sync-core/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/FelonBall/ifc-live/packages/ifc-sync-core/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ The bridge between IfcOpenShell and the `ifc-live` wire format. This package con
 
 ## Keywords
 
-bim, bim_scripts, cs, data, felonball, ifc-live, ifc-sync-core, markdown, model, packages, readme.md, workspace
+bim, bim_scripts, cs, domain, felonball, ifc-live, ifc-sync-core, knowledge, model, packages, readme.md, sources
 
 ## Related
 

@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/renatogcruz/BIM-Modeling/README (Conflicted copy from DESKTOP-BKHADKA on 2021-05-31).md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/renatogcruz/BIM-Modeling/README (Conflicted copy from DESKTOP-BKHADKA on 2021-05-31).md"
 ---
 
 # BIM-Modeling
 
 ## Source
 
-`data/bim_scripts/renatogcruz/BIM-Modeling/README (Conflicted copy from DESKTOP-BKHADKA on 2021-05-31).md`
+`knowledge/50_domain/bim_scripts/renatogcruz/BIM-Modeling/README (Conflicted copy from DESKTOP-BKHADKA on 2021-05-31).md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/renatogcruz/BIM-Modeling/README (Conflicted copy from DESKTOP-BKHADKA on 2021-05-31).md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/renatogcruz/BIM-Modeling/README (Conflicted copy from DESKTOP-BKHADKA on 2021-05-31).md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Modelagem 3D e ferramentas de software BIM para arquitetura Modelagem 3D e ferra
 
 ## Keywords
 
-api, autodesk, bim, bim-modeling, bim_scripts, conflicted, copy, cs, data, desktop-bkhadka, from, markdown, mep, model, qa, readme, renatogcruz, revit, workspace
+api, autodesk, bim, bim-modeling, bim_scripts, conflicted, copy, cs, desktop-bkhadka, domain, from, knowledge, mep, model, qa, readme, renatogcruz, revit, sources
 
 ## Related
 

@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/renatogcruz/BIM-Modeling/blender/blender_bim/breve-introducao-blender-bim/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/renatogcruz/BIM-Modeling/blender/blender_bim/breve-introducao-blender-bim/README.md"
 ---
 
 # blender_bim - breve-introducao-blender-bim - README
 
 ## Source
 
-`data/bim_scripts/renatogcruz/BIM-Modeling/blender/blender_bim/breve-introducao-blender-bim/README.md`
+`knowledge/50_domain/bim_scripts/renatogcruz/BIM-Modeling/blender/blender_bim/breve-introducao-blender-bim/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/renatogcruz/BIM-Modeling/blender/blender_bim/breve-introducao-blender-bim/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/renatogcruz/BIM-Modeling/blender/blender_bim/breve-introducao-blender-bim/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-api, bim, bim-modeling, bim_scripts, blender, blender_bim, breve-introducao-blender-bim, cs, data, markdown, model, readme.md, renatogcruz, store, workspace
+api, bim, bim-modeling, bim_scripts, blender, blender_bim, breve-introducao-blender-bim, cs, domain, knowledge, model, readme.md, renatogcruz, sources, store
 
 ## Related
 

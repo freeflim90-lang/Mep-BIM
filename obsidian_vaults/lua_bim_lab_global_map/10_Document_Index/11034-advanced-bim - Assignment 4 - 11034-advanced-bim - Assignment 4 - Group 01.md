@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/kfjordt/11034-advanced-bim/Assignment 4/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/kfjordt/11034-advanced-bim/Assignment 4/README.md"
 ---
 
 # 11034-advanced-bim - Assignment 4 - Group 01
 
 ## Source
 
-`data/bim_scripts/kfjordt/11034-advanced-bim/Assignment 4/README.md`
+`knowledge/50_domain/bim_scripts/kfjordt/11034-advanced-bim/Assignment 4/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/kfjordt/11034-advanced-bim/Assignment 4/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/kfjordt/11034-advanced-bim/Assignment 4/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ The Python modules `shapely` and `ifcopenshell` are used to parse the IFC model.
 
 ## Keywords
 
-advanced-bim, api, assignment, bim, bim_scripts, data, kfjordt, markdown, model, readme.md, workspace
+advanced-bim, api, assignment, bim, bim_scripts, domain, kfjordt, knowledge, model, readme.md, sources
 
 ## Related
 

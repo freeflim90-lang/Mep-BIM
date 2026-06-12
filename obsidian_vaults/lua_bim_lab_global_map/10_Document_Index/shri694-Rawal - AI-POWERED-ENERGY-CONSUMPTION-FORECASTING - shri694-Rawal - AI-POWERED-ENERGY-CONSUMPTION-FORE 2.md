@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/README.md"
 ---
 
 # shri694-Rawal - AI-POWERED-ENERGY-CONSUMPTION-FORECASTING - AI-Powered Energy Consumption Forecasting
 
 ## Source
 
-`data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/README.md`
+`knowledge/50_domain/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Forecast hourly electricity consumption using a production-inspired Python pipel
 
 ## Keywords
 
-ai-powered-energy-consumption-forecasting, api, bim, bim_scripts, cs, data, markdown, model, readme.md, shri694-rawal, workspace
+ai-powered-energy-consumption-forecasting, api, bim, bim_scripts, cs, domain, knowledge, model, readme.md, shri694-rawal, sources
 
 ## Related
 

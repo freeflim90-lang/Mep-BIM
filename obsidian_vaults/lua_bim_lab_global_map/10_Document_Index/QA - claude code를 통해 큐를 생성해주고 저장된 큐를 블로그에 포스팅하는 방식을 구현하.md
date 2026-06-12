@@ -21,7 +21,7 @@ Absolute path:
 
 ## Summary
 
-> **카테고리:** Claude대화 | **날짜:** 2026-06-09 > **출처:** Claude Code 세션 claude code를 통해 큐를 생성해주고 저장된 큐를 블로그에 포스팅하는 방식을 구현하려고해 이해했어요. 구조가 명확하네요: - **큐 생성**: 사용자가 나(Claude Code)에게 주제 주면 → 내가 글 생성 + `content/blogger_queue/` 에 JSON 저장
+> **카테고리:** Claude대화 | **날짜:** 2026-06-09 > **출처:** Claude Code 세션 claude code를 통해 큐를 생성해주고 저장된 큐를 블로그에 포스팅하는 방식을 구현하려고해 이해했어요. 구조가 명확하네요: - **큐 생성**: 사용자가 나(Claude Code)에게 주제 주면 → 내가 글 생성 + `knowledge/60_public/blogger_queue/` 에 JSON 저장
 
 ## Keywords
 

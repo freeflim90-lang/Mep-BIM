@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/lfontanella/iot-streaming-workflows/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/lfontanella/iot-streaming-workflows/README.md"
 ---
 
 # lfontanella - iot-streaming-workflows - IoT Streaming Workflows
 
 ## Source
 
-`data/bim_scripts/lfontanella/iot-streaming-workflows/README.md`
+`knowledge/50_domain/bim_scripts/lfontanella/iot-streaming-workflows/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/lfontanella/iot-streaming-workflows/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/lfontanella/iot-streaming-workflows/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This repository contains research prototypes and methodological workflows develo
 
 ## Keywords
 
-api, bim, bim_scripts, data, iot-streaming-workflows, lfontanella, markdown, model, readme.md, workspace
+api, bim, bim_scripts, domain, iot-streaming-workflows, knowledge, lfontanella, model, readme.md, sources
 
 ## Related
 

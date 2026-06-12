@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/CHANGELOG.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/CHANGELOG.md"
 ---
 
 # shri694-Rawal - AI-POWERED-ENERGY-CONSUMPTION-FORECASTING - Changelog
 
 ## Source
 
-`data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/CHANGELOG.md`
+`knowledge/50_domain/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/CHANGELOG.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/CHANGELOG.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/CHANGELOG.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ All notable changes to this project are documented in this file. - Polished repo
 
 ## Keywords
 
-ai-powered-energy-consumption-forecasting, api, bim, bim_scripts, changelog.md, cs, data, markdown, model, shri694-rawal, workspace
+ai-powered-energy-consumption-forecasting, api, bim, bim_scripts, changelog.md, cs, domain, knowledge, model, shri694-rawal, sources
 
 ## Related
 

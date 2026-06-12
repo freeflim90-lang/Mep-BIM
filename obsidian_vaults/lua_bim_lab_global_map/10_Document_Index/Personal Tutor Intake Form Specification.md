@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/public_products/launch_packages/personal_tutor/INTAKE_FORM_SPEC.md"
+source_path: "knowledge/60_public/training_curriculum/public_products/launch_packages/personal_tutor/INTAKE_FORM_SPEC.md"
 ---
 
 # Personal Tutor Intake Form Specification
 
 ## Source
 
-`docs/training_curriculum/public_products/launch_packages/personal_tutor/INTAKE_FORM_SPEC.md`
+`knowledge/60_public/training_curriculum/public_products/launch_packages/personal_tutor/INTAKE_FORM_SPEC.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/public_products/launch_packages/personal_tutor/INTAKE_FORM_SPEC.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/public_products/launch_packages/personal_tutor/INTAKE_FORM_SPEC.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-api, bim, cs, curriculum, docs, intake_form_spec.md, launch_packages, mep, model, navisworks, personal_tutor, public_products, qa, revit, training, training_curriculum, 결제, 납품, 역할, 진단, 커리큘럼, 테스트
+api, bim, curriculum, intake_form_spec.md, knowledge, launch_packages, mep, model, navisworks, personal_tutor, public, public_products, qa, revit, training, training_curriculum, 결제, 납품, 역할, 진단, 커리큘럼, 테스트
 
 ## Related
 

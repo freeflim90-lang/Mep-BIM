@@ -1,7 +1,7 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
+category: AI Knowledge Base - QA
 source_path: "knowledge/20_qa/Revit_Addin_QA.md"
 ---
 
@@ -17,7 +17,7 @@ Absolute path:
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - AI Knowledge Base - QA]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, addin, api, autodesk, bim, cs, knowledge, markdown, mep, qa, revit, revit_addin_qa.md, store, workspace, 간섭, 교육, 보안, 지식
+add-in, addin, ai, api, autodesk, base, bim, cs, knowledge, mep, qa, revit, revit_addin_qa.md, store, 간섭, 교육, 보안, 지식
 
 ## Related
 

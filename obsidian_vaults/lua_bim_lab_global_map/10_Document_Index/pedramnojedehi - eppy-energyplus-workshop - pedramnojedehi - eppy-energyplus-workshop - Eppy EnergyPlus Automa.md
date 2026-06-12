@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/pedramnojedehi/eppy-energyplus-workshop/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/pedramnojedehi/eppy-energyplus-workshop/README.md"
 ---
 
 # pedramnojedehi - eppy-energyplus-workshop - Eppy EnergyPlus Automation Workshop
 
 ## Source
 
-`data/bim_scripts/pedramnojedehi/eppy-energyplus-workshop/README.md`
+`knowledge/50_domain/bim_scripts/pedramnojedehi/eppy-energyplus-workshop/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/pedramnojedehi/eppy-energyplus-workshop/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/pedramnojedehi/eppy-energyplus-workshop/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This repository contains all materials used in the hands-on workshop titled: **A
 
 ## Keywords
 
-api, bim, bim_scripts, data, eppy-energyplus-workshop, markdown, model, pedramnojedehi, readme.md, workspace
+api, bim, bim_scripts, domain, eppy-energyplus-workshop, knowledge, model, pedramnojedehi, readme.md, sources
 
 ## Related
 

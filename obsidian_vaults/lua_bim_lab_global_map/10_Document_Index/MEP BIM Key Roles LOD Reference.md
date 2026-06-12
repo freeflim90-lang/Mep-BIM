@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/starter_plan/reference_cards/card_01_mep_bim_roles_lod.md"
+category: Products
+source_path: "products/starter_plan/reference_cards/card_01_mep_bim_roles_lod.md"
 ---
 
 # MEP BIM Key Roles LOD Reference
 
 ## Source
 
-`data/starter_plan/reference_cards/card_01_mep_bim_roles_lod.md`
+`products/starter_plan/reference_cards/card_01_mep_bim_roles_lod.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/starter_plan/reference_cards/card_01_mep_bim_roles_lod.md`
+`/Users/choejeong-yeon/LUA BIM LABS/products/starter_plan/reference_cards/card_01_mep_bim_roles_lod.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Products]]
 
 ## Summary
 
@@ -25,18 +25,18 @@ Absolute path:
 
 ## Keywords
 
-bim, card_01_mep_bim_roles_lod.md, clash, data, markdown, mep, model, navisworks, quality, reference_cards, revit, starter_plan, store, workspace
+bim, card_01_mep_bim_roles_lod.md, clash, mep, model, navisworks, products, quality, reference_cards, revit, starter_plan, store
 
 ## Related
 
 - [[BIM Learning Path Next Steps]]
 - [[Clash Types Priority Matrix]]
+- [[Model Quality Self-Review Checklist]]
 - [[MEP Data Schedule Reference]]
 - [[MEP Drawing Reading Guide]]
-- [[Model Quality Self-Review Checklist]]
 - [[Revit MEP Setup Checklist]]
 - [[Site-Readiness Check Guide]]
-- [[Advanced BIM Coordination]]
+- [[QA_테스터 지식 베이스]]
 
 ## Home
 

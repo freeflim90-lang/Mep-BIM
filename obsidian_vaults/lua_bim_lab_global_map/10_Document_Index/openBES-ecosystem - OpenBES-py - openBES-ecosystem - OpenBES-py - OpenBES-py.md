@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/openBES-ecosystem/OpenBES-py/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/openBES-ecosystem/OpenBES-py/README.md"
 ---
 
 # openBES-ecosystem - OpenBES-py - OpenBES-py
 
 ## Source
 
-`data/bim_scripts/openBES-ecosystem/OpenBES-py/README.md`
+`knowledge/50_domain/bim_scripts/openBES-ecosystem/OpenBES-py/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/openBES-ecosystem/OpenBES-py/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/openBES-ecosystem/OpenBES-py/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, bim_scripts, data, markdown, model, openbes-ecosystem, openbes-py, readme.md, workspace
+bim, bim_scripts, domain, knowledge, model, openbes-ecosystem, openbes-py, readme.md, sources
 
 ## Related
 

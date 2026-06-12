@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/stefkeB/ifcopenshell_examples/Console/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/stefkeB/ifcopenshell_examples/Console/README.md"
 ---
 
 # ifcopenshell_examples - Console - Console Examples
 
 ## Source
 
-`data/bim_scripts/stefkeB/ifcopenshell_examples/Console/README.md`
+`knowledge/50_domain/bim_scripts/stefkeB/ifcopenshell_examples/Console/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/stefkeB/ifcopenshell_examples/Console/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/stefkeB/ifcopenshell_examples/Console/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This is a very basic example of a minimal console IFC application, written in Py
 
 ## Keywords
 
-bim, bim_scripts, console, data, ifcopenshell_examples, markdown, readme.md, stefkeb, workspace
+bim, bim_scripts, console, domain, ifcopenshell_examples, knowledge, readme.md, sources, stefkeb
 
 ## Related
 

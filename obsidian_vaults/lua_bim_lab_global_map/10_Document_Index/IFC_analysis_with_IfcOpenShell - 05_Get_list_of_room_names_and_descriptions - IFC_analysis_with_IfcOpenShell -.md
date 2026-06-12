@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/05_Get_list_of_room_names_and_descriptions/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/05_Get_list_of_room_names_and_descriptions/README.md"
 ---
 
 # IFC_analysis_with_IfcOpenShell - 05_Get_list_of_room_names_and_descriptions - Updating the names of rooms in a model
 
 ## Source
 
-`data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/05_Get_list_of_room_names_and_descriptions/README.md`
+`knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/05_Get_list_of_room_names_and_descriptions/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/05_Get_list_of_room_names_and_descriptions/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/05_Get_list_of_room_names_and_descriptions/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ There are many situations one would like to update information in an IFC file. O
 
 ## Keywords
 
-addin, bim, bim_scripts, cs, data, data-science-for-architecture, get_list_of_room_names_and_descriptions, ifc_analysis, ifc_analysis_with_ifcopenshell, markdown, model, readme.md, renatogcruz, workspace
+addin, bim, bim_scripts, cs, data-science-for-architecture, domain, get_list_of_room_names_and_descriptions, ifc_analysis, ifc_analysis_with_ifcopenshell, knowledge, model, readme.md, renatogcruz, sources
 
 ## Related
 

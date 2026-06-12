@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/Captura_Analise_e_Visualizacao_de_Dados_na_Construcao/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/Captura_Analise_e_Visualizacao_de_Dados_na_Construcao/README.md"
 ---
 
 # ifc_analysis - Captura_Analise_e_Visualizacao_de_Dados_na_Construcao - Captura Análise e Visualização de Dados na Construção
 
 ## Source
 
-`data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/Captura_Analise_e_Visualizacao_de_Dados_na_Construcao/README.md`
+`knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/Captura_Analise_e_Visualizacao_de_Dados_na_Construcao/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/Captura_Analise_e_Visualizacao_de_Dados_na_Construcao/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/Captura_Analise_e_Visualizacao_de_Dados_na_Construcao/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, bim_scripts, captura_analise_e_visualizacao_de_dados_na_construcao, data, data-science-for-architecture, ifc_analysis, markdown, readme.md, renatogcruz, workspace
+bim, bim_scripts, captura_analise_e_visualizacao_de_dados_na_construcao, data-science-for-architecture, domain, ifc_analysis, knowledge, readme.md, renatogcruz, sources
 
 ## Related
 

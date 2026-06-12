@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/brean/python-ifc-model/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/brean/python-ifc-model/README.md"
 ---
 
 # brean - python-ifc-model - IFC model
 
 ## Source
 
-`data/bim_scripts/brean/python-ifc-model/README.md`
+`knowledge/50_domain/bim_scripts/brean/python-ifc-model/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/brean/python-ifc-model/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/brean/python-ifc-model/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ wrapper around [IfcOpenShell](http://ifcopenshell.org/) to load and store data f
 
 ## Keywords
 
-bim, bim_scripts, brean, data, markdown, model, python-ifc-model, readme.md, store, workspace
+bim, bim_scripts, brean, domain, knowledge, model, python-ifc-model, readme.md, sources, store
 
 ## Related
 

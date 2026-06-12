@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/jpstaub/Revit-Dynamo-MEP/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/jpstaub/Revit-Dynamo-MEP/README.md"
 ---
 
 # jpstaub - Revit-Dynamo-MEP - Revit-Dynamo-MEP
 
 ## Source
 
-`data/bim_scripts/jpstaub/Revit-Dynamo-MEP/README.md`
+`knowledge/50_domain/bim_scripts/jpstaub/Revit-Dynamo-MEP/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/jpstaub/Revit-Dynamo-MEP/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/jpstaub/Revit-Dynamo-MEP/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Ripcord Engineering developed utilities to improve the automation of MEP enginee
 
 ## Keywords
 
-autodesk, bim, bim_scripts, cs, data, jpstaub, markdown, mep, model, readme.md, revit, revit-dynamo-mep, workspace
+autodesk, bim, bim_scripts, cs, domain, jpstaub, knowledge, mep, model, readme.md, revit, revit-dynamo-mep, sources
 
 ## Related
 

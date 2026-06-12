@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/lfontanella/iot-streaming-workflows/01_Arduino IDE prototypes/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/lfontanella/iot-streaming-workflows/01_Arduino IDE prototypes/README.md"
 ---
 
 # iot-streaming-workflows - 01_Arduino IDE prototypes - Arduino IDE Arduino IoT Cloud Prototype
 
 ## Source
 
-`data/bim_scripts/lfontanella/iot-streaming-workflows/01_Arduino IDE prototypes/README.md`
+`knowledge/50_domain/bim_scripts/lfontanella/iot-streaming-workflows/01_Arduino IDE prototypes/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/lfontanella/iot-streaming-workflows/01_Arduino IDE prototypes/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/lfontanella/iot-streaming-workflows/01_Arduino IDE prototypes/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This folder documents the first prototype developed for the acquisition and visu
 
 ## Keywords
 
-arduino, bim, bim_scripts, data, ide, iot-streaming-workflows, lfontanella, markdown, model, prototypes, readme.md, workspace
+arduino, bim, bim_scripts, domain, ide, iot-streaming-workflows, knowledge, lfontanella, model, prototypes, readme.md, sources
 
 ## Related
 

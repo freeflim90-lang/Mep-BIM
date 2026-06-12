@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/starter_plan/reference_cards/card_05_clash_types_priority.md"
+category: Products
+source_path: "products/starter_plan/reference_cards/card_05_clash_types_priority.md"
 ---
 
 # Clash Types Priority Matrix
 
 ## Source
 
-`data/starter_plan/reference_cards/card_05_clash_types_priority.md`
+`products/starter_plan/reference_cards/card_05_clash_types_priority.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/starter_plan/reference_cards/card_05_clash_types_priority.md`
+`/Users/choejeong-yeon/LUA BIM LABS/products/starter_plan/reference_cards/card_05_clash_types_priority.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Products]]
 
 ## Summary
 
@@ -25,18 +25,18 @@ Absolute path:
 
 ## Keywords
 
-bim, card_05_clash_types_priority.md, clash, data, markdown, mep, model, navisworks, reference_cards, starter_plan, workspace
+bim, card_05_clash_types_priority.md, clash, mep, model, navisworks, products, reference_cards, starter_plan
 
 ## Related
 
 - [[BIM Learning Path Next Steps]]
 - [[MEP BIM Key Roles LOD Reference]]
-- [[MEP Data Schedule Reference]]
 - [[MEP Drawing Reading Guide]]
 - [[Model Quality Self-Review Checklist]]
-- [[Revit MEP Setup Checklist]]
 - [[Site-Readiness Check Guide]]
-- [[Advanced BIM Coordination]]
+- [[MEP Data Schedule Reference]]
+- [[Revit MEP Setup Checklist]]
+- [[starter_lesson_template]]
 
 ## Home
 

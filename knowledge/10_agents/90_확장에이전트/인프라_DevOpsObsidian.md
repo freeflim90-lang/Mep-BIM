@@ -9,7 +9,7 @@
 |---------|------|------|
 | 백엔드 서버 | FastAPI + Uvicorn (port 8000) | API·텔레그램 봇 |
 | 원격 접속 | Cloudflare Tunnel + Tailscale | 외부 접근 |
-| 지식베이스 | data/knowledge_base/ (140개 파일) | AI 답변 소스 |
+| 지식베이스 | knowledge/10_agents/ (140개 파일) | AI 답변 소스 |
 | Obsidian | lua_bim_lab_global_map 볼트 | 지식 시각화 |
 | 자동화 | LaunchAgent (15개 에이전트) | 스케줄 실행 |
 | 동기화 | sync_knowledge.sh → GitHub | 코드 백업 |
@@ -39,7 +39,7 @@
 - Tags: devops,local,obsidian
 
 환경 변수 관리: .env 파일에 저장, .gitignore에 반드시 포함. 절대 저장소 커밋 금지.
-지식 베이스 백업: data/knowledge_base/ 폴더를 주 1회 외부 저장소(Git 또는 클라우드) 백업.
+지식 베이스 백업: knowledge/10_agents/ 폴더를 주 1회 외부 저장소(Git 또는 클라우드) 백업.
 로그 관리: logs/ 폴더 90일 이상 로그 자동 삭제 (launchd 또는 cron 설정).
 서버 모니터링: uvicorn 프로세스 죽으면 자동 재시작 (launchd plist 설정).
 Obsidian Vault 동기화: iCloud 또는 Obsidian Sync로 Mac 간 동기화.
@@ -98,9 +98,9 @@ source .dev-venv/bin/activate && python scripts/build_global_obsidian_map.py
 지식 수집 및 Obsidian 업데이트는 매일 오전 7시에 macOS LaunchAgent로 실행한다. 실행 목적은 신규 문서, 오류 오답노트, 의사결정, Revit API 검증 게이트를 누락 없이 전역 지식 DB에 반영하는 것이다.
 
 실행 항목:
-1. `docs/knowledge_updates/daily`에 일일 지식 업데이트 리포트를 생성한다.
+1. `knowledge/40_curation/updates/daily`에 일일 지식 업데이트 리포트를 생성한다.
 2. 건설, 설계, 시공, BIM 데일리 브리핑을 생성하고 Telegram 요약을 전송한다.
-3. 브리핑 결과를 `data/knowledge_base/산업동향_데일리브리핑.md`에 누적한다.
+3. 브리핑 결과를 `knowledge/10_agents/90_확장에이전트/산업동향_데일리브리핑.md`에 누적한다.
 4. `Model Quality Auditor` 프로젝트 vault의 HTML 그래프를 재생성한다.
 5. LUA BIM LAB 전역 Obsidian vault를 재생성한다.
 6. 실행 로그를 `logs/daily_knowledge_update.log`에 남긴다.

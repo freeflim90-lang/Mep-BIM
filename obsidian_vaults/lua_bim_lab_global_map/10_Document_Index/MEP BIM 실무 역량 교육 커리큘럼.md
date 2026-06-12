@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/team_distribution/00_TEAM_DISTRIBUTION_INDEX.md"
+source_path: "knowledge/60_public/training_curriculum/team_distribution/00_TEAM_DISTRIBUTION_INDEX.md"
 ---
 
 # MEP BIM 실무 역량 교육 커리큘럼
 
 ## Source
 
-`docs/training_curriculum/team_distribution/00_TEAM_DISTRIBUTION_INDEX.md`
+`knowledge/60_public/training_curriculum/team_distribution/00_TEAM_DISTRIBUTION_INDEX.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/team_distribution/00_TEAM_DISTRIBUTION_INDEX.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/team_distribution/00_TEAM_DISTRIBUTION_INDEX.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, cs, curriculum, docs, mep, notebooklm, team_distribution, team_distribution_index.md, training, training_curriculum, 간섭, 교육, 납품, 보안, 슬라이드, 역할, 지식, 커리큘럼, 품질
+bim, curriculum, knowledge, mep, notebooklm, public, team_distribution, team_distribution_index.md, training, training_curriculum, 간섭, 교육, 납품, 보안, 슬라이드, 역할, 지식, 커리큘럼, 품질
 
 ## Related
 

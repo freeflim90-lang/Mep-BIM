@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/01-project-setup.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/01-project-setup.md"
 ---
 
 # Project Setup Panel
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/01-project-setup.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/01-project-setup.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/01-project-setup.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/01-project-setup.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ The Project Setup panel initializes a new Revit model with standard worksets, sh
 
 ## Keywords
 
-bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, data, docs, markdown, model, navisworks, project-setup.md, qa, quality, revit, tools, workspace
+bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, docs, domain, knowledge, model, navisworks, project-setup.md, qa, quality, revit, sources, tools
 
 ## Related
 

@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/renatogcruz/Data-science-for-architecture/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/README.md"
 ---
 
 # renatogcruz - Data-science-for-architecture - Data Science for Architecture Construction and Urbanism
 
 ## Source
 
-`data/bim_scripts/renatogcruz/Data-science-for-architecture/README.md`
+`knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/renatogcruz/Data-science-for-architecture/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Repository on data analysis in Architecture, Engineering, Construction (AEC) and
 
 ## Keywords
 
-bim, bim_scripts, cs, data, data-science-for-architecture, health, markdown, model, readme.md, renatogcruz, workspace
+bim, bim_scripts, cs, data-science-for-architecture, domain, health, knowledge, model, readme.md, renatogcruz, sources
 
 ## Related
 

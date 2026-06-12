@@ -1,7 +1,7 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
+category: AI Knowledge Base - QA
 source_path: "knowledge/20_qa/COO_QA.md"
 ---
 
@@ -17,7 +17,7 @@ Absolute path:
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - AI Knowledge Base - QA]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-api, bim, coo_qa.md, cs, knowledge, kpi, markdown, qa, workspace, 개발, 납품, 빌드, 스토어, 심사, 지식, 지원
+ai, api, base, bim, coo_qa.md, cs, knowledge, kpi, qa, 개발, 납품, 빌드, 스토어, 심사, 지식, 지원
 
 ## Related
 

@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/idfkit/idfkit-mcp/docs/tools/model-write.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/tools/model-write.md"
 ---
 
 # Model Write Tools
 
 ## Source
 
-`data/bim_scripts/idfkit/idfkit-mcp/docs/tools/model-write.md`
+`knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/tools/model-write.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/idfkit/idfkit-mcp/docs/tools/model-write.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/tools/model-write.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Write tools mutate the active model. Creates a new empty model, optionally pinne
 
 ## Keywords
 
-audit, bim, bim_scripts, cs, data, docs, idfkit, idfkit-mcp, markdown, model, model-write.md, store, tools, workspace
+audit, bim, bim_scripts, cs, docs, domain, idfkit, idfkit-mcp, knowledge, model, model-write.md, sources, store, tools
 
 ## Related
 

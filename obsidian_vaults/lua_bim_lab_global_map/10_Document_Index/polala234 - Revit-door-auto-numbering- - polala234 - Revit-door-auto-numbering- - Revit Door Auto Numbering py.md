@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/polala234/Revit-door-auto-numbering-/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/polala234/Revit-door-auto-numbering-/README.md"
 ---
 
 # polala234 - Revit-door-auto-numbering- - Revit Door Auto Numbering pyRevit
 
 ## Source
 
-`data/bim_scripts/polala234/Revit-door-auto-numbering-/README.md`
+`knowledge/50_domain/bim_scripts/polala234/Revit-door-auto-numbering-/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/polala234/Revit-door-auto-numbering-/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/polala234/Revit-door-auto-numbering-/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Skrypt do automatycznego numerowania drzwi w Autodesk Revit na podstawie paramet
 
 ## Keywords
 
-api, autodesk, bim, bim_scripts, cs, data, markdown, model, polala234, readme.md, revit, revit-door-auto-numbering-, sow, workspace
+api, autodesk, bim, bim_scripts, cs, domain, knowledge, model, polala234, readme.md, revit, revit-door-auto-numbering-, sources, sow
 
 ## Related
 

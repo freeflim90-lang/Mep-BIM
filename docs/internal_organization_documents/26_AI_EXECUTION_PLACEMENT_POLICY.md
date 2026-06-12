@@ -148,5 +148,5 @@ AI가 2개 이상 참여하는 협업 세션은 `30_AI_TO_AI_COLLABORATION_SOP.m
 - `31_AI_COLLABORATION_RUNBOOK_TEMPLATES.md`
 - `24_TEAM_TELEGRAM_KNOWLEDGE_REQUEST_LOOP.md`
 - `25_MANAGEMENT_EXCEL_AUTOMATION_APPROVAL_GATE.md`
-- `data/knowledge_base/지식큐레이터.md`
-- `data/knowledge_base/엑셀자동화.md`
+- `knowledge/10_agents/09_지식팀/지식큐레이터.md`
+- `knowledge/10_agents/90_확장에이전트/엑셀자동화.md`

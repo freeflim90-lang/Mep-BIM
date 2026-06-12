@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/fuadbaba/Calibration-BEM/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/fuadbaba/Calibration-BEM/README.md"
 ---
 
 # fuadbaba - Calibration-BEM - Calibration-BEM
 
 ## Source
 
-`data/bim_scripts/fuadbaba/Calibration-BEM/README.md`
+`knowledge/50_domain/bim_scripts/fuadbaba/Calibration-BEM/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/fuadbaba/Calibration-BEM/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/fuadbaba/Calibration-BEM/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Codes of RVX, RVI and Python to calibrate building simulation model based on ind
 
 ## Keywords
 
-bim, bim_scripts, calibration-bem, data, fuadbaba, markdown, model, readme.md, workspace
+bim, bim_scripts, calibration-bem, domain, fuadbaba, knowledge, model, readme.md, sources
 
 ## Related
 

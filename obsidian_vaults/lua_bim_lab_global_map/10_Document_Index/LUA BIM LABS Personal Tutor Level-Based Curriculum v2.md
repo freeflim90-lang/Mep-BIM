@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/public_products/02_PERSONAL_TUTOR_CURRICULUM.md"
+source_path: "knowledge/60_public/training_curriculum/public_products/02_PERSONAL_TUTOR_CURRICULUM.md"
 ---
 
 # LUA BIM LABS Personal Tutor Level-Based Curriculum v2
 
 ## Source
 
-`docs/training_curriculum/public_products/02_PERSONAL_TUTOR_CURRICULUM.md`
+`knowledge/60_public/training_curriculum/public_products/02_PERSONAL_TUTOR_CURRICULUM.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/public_products/02_PERSONAL_TUTOR_CURRICULUM.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/public_products/02_PERSONAL_TUTOR_CURRICULUM.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-api, bim, cs, curriculum, docs, mep, model, navisworks, personal_tutor_curriculum.md, public_products, qa, revit, roi, training, training_curriculum, 간섭, 개발, 교육, 납품, 변경, 역할, 진단, 커리큘럼, 품질, 회의
+api, bim, cs, curriculum, knowledge, mep, model, navisworks, personal_tutor_curriculum.md, public, public_products, qa, revit, roi, training, training_curriculum, 간섭, 개발, 교육, 납품, 변경, 역할, 진단, 커리큘럼, 품질, 회의
 
 ## Related
 

@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-agents, ai, aitest_20260605_013.md, base, cases, conflict_resolution, cs, knowledge, 라이선스, 리스크, 보안, 역할, 지식, 지원, 테스트
+agents, ai, aitest_20260605_013.md, base, cases, conflict_resolution, cs, knowledge, 라이선스, 리스크, 보안, 스토어, 역할, 지식, 지원, 테스트
 
 ## Related
 

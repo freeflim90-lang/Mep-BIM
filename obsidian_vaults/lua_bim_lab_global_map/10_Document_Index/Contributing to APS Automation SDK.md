@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/viktor-platform/aps-automation-sdk/CONTRIBUTING.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/viktor-platform/aps-automation-sdk/CONTRIBUTING.md"
 ---
 
 # Contributing to APS Automation SDK
 
 ## Source
 
-`data/bim_scripts/viktor-platform/aps-automation-sdk/CONTRIBUTING.md`
+`knowledge/50_domain/bim_scripts/viktor-platform/aps-automation-sdk/CONTRIBUTING.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/viktor-platform/aps-automation-sdk/CONTRIBUTING.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/viktor-platform/aps-automation-sdk/CONTRIBUTING.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-aps-automation-sdk, autodesk, bim, bim_scripts, contributing.md, cs, data, markdown, viktor-platform, workspace
+aps-automation-sdk, autodesk, bim, bim_scripts, contributing.md, cs, domain, knowledge, sources, viktor-platform
 
 ## Related
 

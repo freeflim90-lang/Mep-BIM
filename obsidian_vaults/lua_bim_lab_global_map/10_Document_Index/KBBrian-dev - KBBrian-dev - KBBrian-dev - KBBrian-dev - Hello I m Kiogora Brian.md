@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/KBBrian-dev/KBBrian-dev/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/KBBrian-dev/KBBrian-dev/README.md"
 ---
 
 # KBBrian-dev - KBBrian-dev - Hello I m Kiogora Brian
 
 ## Source
 
-`data/bim_scripts/KBBrian-dev/KBBrian-dev/README.md`
+`knowledge/50_domain/bim_scripts/KBBrian-dev/KBBrian-dev/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/KBBrian-dev/KBBrian-dev/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/KBBrian-dev/KBBrian-dev/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ I am a dedicated developer with a Diploma in Computer Science and a passion for 
 
 ## Keywords
 
-bim, bim_scripts, cs, data, kbbrian-dev, markdown, readme.md, workspace
+bim, bim_scripts, cs, domain, kbbrian-dev, knowledge, readme.md, sources
 
 ## Related
 

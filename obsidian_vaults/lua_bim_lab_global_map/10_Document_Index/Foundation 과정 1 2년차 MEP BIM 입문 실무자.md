@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/mep_bim_ai/01_FOUNDATION_1_2_YEAR.md"
+source_path: "knowledge/60_public/training_curriculum/mep_bim_ai/01_FOUNDATION_1_2_YEAR.md"
 ---
 
 # Foundation 과정 1 2년차 MEP BIM 입문 실무자
 
 ## Source
 
-`docs/training_curriculum/mep_bim_ai/01_FOUNDATION_1_2_YEAR.md`
+`knowledge/60_public/training_curriculum/mep_bim_ai/01_FOUNDATION_1_2_YEAR.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/mep_bim_ai/01_FOUNDATION_1_2_YEAR.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/mep_bim_ai/01_FOUNDATION_1_2_YEAR.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, clash, cs, curriculum, docs, foundation_1_2_year.md, mep, mep_bim_ai, navisworks, revit, training, training_curriculum, 개발, 교육, 보안, 조직, 지식, 품질, 회의
+bim, clash, cs, curriculum, foundation_1_2_year.md, knowledge, mep, mep_bim_ai, navisworks, public, revit, training, training_curriculum, 개발, 교육, 보안, 조직, 지식, 품질, 회의
 
 ## Related
 

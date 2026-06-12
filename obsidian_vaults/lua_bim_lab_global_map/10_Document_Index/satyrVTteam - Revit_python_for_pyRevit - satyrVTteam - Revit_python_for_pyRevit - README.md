@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/satyrVTteam/Revit_python_for_pyRevit/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/satyrVTteam/Revit_python_for_pyRevit/README.md"
 ---
 
 # satyrVTteam - Revit_python_for_pyRevit - README
 
 ## Source
 
-`data/bim_scripts/satyrVTteam/Revit_python_for_pyRevit/README.md`
+`knowledge/50_domain/bim_scripts/satyrVTteam/Revit_python_for_pyRevit/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/satyrVTteam/Revit_python_for_pyRevit/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/satyrVTteam/Revit_python_for_pyRevit/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Tested with Revit 2025 and pyRevit v5.0.1 All the python script nodes are switch
 
 ## Keywords
 
-bim, bim_scripts, data, markdown, readme.md, revit, revit_python_for_pyrevit, satyrvtteam, workspace
+bim, bim_scripts, domain, knowledge, readme.md, revit, revit_python_for_pyrevit, satyrvtteam, sources
 
 ## Related
 

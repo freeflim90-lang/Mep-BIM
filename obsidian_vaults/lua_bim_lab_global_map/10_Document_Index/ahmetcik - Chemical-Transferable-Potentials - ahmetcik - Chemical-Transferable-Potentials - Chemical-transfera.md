@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/ahmetcik/Chemical-Transferable-Potentials/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/ahmetcik/Chemical-Transferable-Potentials/README.md"
 ---
 
 # ahmetcik - Chemical-Transferable-Potentials - Chemical-transferable-potentials
 
 ## Source
 
-`data/bim_scripts/ahmetcik/Chemical-Transferable-Potentials/README.md`
+`knowledge/50_domain/bim_scripts/ahmetcik/Chemical-Transferable-Potentials/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/ahmetcik/Chemical-Transferable-Potentials/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/ahmetcik/Chemical-Transferable-Potentials/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ A python module for building Chemical-tranferabel machine-learning potentials (C
 
 ## Keywords
 
-ahmetcik, bim, bim_scripts, chemical-transferable-potentials, data, markdown, model, readme.md, workspace
+ahmetcik, bim, bim_scripts, chemical-transferable-potentials, domain, knowledge, model, readme.md, sources
 
 ## Related
 

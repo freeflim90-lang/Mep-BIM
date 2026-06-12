@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/public_products/launch_packages/personal_tutor/scenario_lessons/DISCIPLINE_SCENARIOS.md"
+source_path: "knowledge/60_public/training_curriculum/public_products/launch_packages/personal_tutor/scenario_lessons/DISCIPLINE_SCENARIOS.md"
 ---
 
 # Personal Tutor Discipline Scenario Lessons
 
 ## Source
 
-`docs/training_curriculum/public_products/launch_packages/personal_tutor/scenario_lessons/DISCIPLINE_SCENARIOS.md`
+`knowledge/60_public/training_curriculum/public_products/launch_packages/personal_tutor/scenario_lessons/DISCIPLINE_SCENARIOS.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/public_products/launch_packages/personal_tutor/scenario_lessons/DISCIPLINE_SCENARIOS.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/public_products/launch_packages/personal_tutor/scenario_lessons/DISCIPLINE_SCENARIOS.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, clash, cs, curriculum, discipline_scenarios.md, docs, launch_packages, mep, navisworks, personal_tutor, public_products, revit, scenario_lessons, training, training_curriculum, 변경, 역할, 회의
+bim, clash, curriculum, discipline_scenarios.md, knowledge, launch_packages, mep, navisworks, personal_tutor, public, public_products, revit, scenario_lessons, training, training_curriculum, 변경, 역할, 회의
 
 ## Related
 

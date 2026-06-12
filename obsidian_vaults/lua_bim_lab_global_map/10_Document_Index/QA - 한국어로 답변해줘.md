@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-addin, bim, knowledge, lua_bim_lab_global_map, nas, nas_knowledge, navisworks, obsidian_vaults, qa, team_telegram_qa, 교육, 심사, 지식
+addin, bim, knowledge, lua_bim_lab_global_map, nas, nas_knowledge, navisworks, obsidian_vaults, qa, team_telegram_qa, 개발, 교육, 심사, 지식
 
 ## Related
 

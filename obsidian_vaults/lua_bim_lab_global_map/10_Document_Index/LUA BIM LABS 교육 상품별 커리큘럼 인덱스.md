@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/public_products/00_PRODUCT_CURRICULUM_INDEX.md"
+source_path: "knowledge/60_public/training_curriculum/public_products/00_PRODUCT_CURRICULUM_INDEX.md"
 ---
 
 # LUA BIM LABS 교육 상품별 커리큘럼 인덱스
 
 ## Source
 
-`docs/training_curriculum/public_products/00_PRODUCT_CURRICULUM_INDEX.md`
+`knowledge/60_public/training_curriculum/public_products/00_PRODUCT_CURRICULUM_INDEX.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/public_products/00_PRODUCT_CURRICULUM_INDEX.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/public_products/00_PRODUCT_CURRICULUM_INDEX.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-api, bim, cs, curriculum, docs, mep, product_curriculum_index.md, public_products, qa, quality, revit, training, training_curriculum, 간섭, 개발, 교육, 커리큘럼, 품질
+api, bim, curriculum, knowledge, mep, product_curriculum_index.md, public, public_products, qa, quality, revit, training, training_curriculum, 간섭, 개발, 교육, 커리큘럼, 품질
 
 ## Related
 

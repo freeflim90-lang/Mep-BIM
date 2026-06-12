@@ -62,8 +62,8 @@ CEO, 법무조항검토, 라이선스_보안관이 별도 승인하기 전까지
 |---|---|---|
 | `docs/lua_bim_lab_official_documents/26_PRIVACY_POLICY_TEMPLATE.md` | "외부 AI API 전송 시 개인정보 마스킹 처리"가 허용처럼 읽힐 수 있음 | 승인 전 원칙은 Local-only이며, 마스킹은 보호조치 후보라고 명시 |
 | `docs/internal_organization_documents/26_AI_EXECUTION_PLACEMENT_POLICY.md` | Local-only 원칙은 명확하나 disclosure rule 연결 부족 | 본 초안 링크와 승인 조건 연결 |
-| `data/knowledge_base/법무조항검토.md` | "제3자 제공 없음"과 "AI API 정책 준수" 표현 혼재 | 외부 AI 제공자 검토 전 고객 데이터 전송 금지로 통일 |
-| `data/knowledge_base/라이선스_보안관.md` | 보안 게이트는 강하지만 고객 응대 문구 연결 부족 | CS 문구와 Local-only 기준 연결 |
+| `knowledge/10_agents/90_확장에이전트/법무조항검토.md` | "제3자 제공 없음"과 "AI API 정책 준수" 표현 혼재 | 외부 AI 제공자 검토 전 고객 데이터 전송 금지로 통일 |
+| `knowledge/10_agents/90_확장에이전트/라이선스_보안관.md` | 보안 게이트는 강하지만 고객 응대 문구 연결 부족 | CS 문구와 Local-only 기준 연결 |
 
 ## 7. 판정
 

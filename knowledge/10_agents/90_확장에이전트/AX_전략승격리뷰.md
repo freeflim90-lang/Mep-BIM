@@ -44,7 +44,7 @@ LUA BIM LABS 적용: AX 바우처 + 건설사 컨소시엄형 참여 검토
 
 
 ## 2026-05-28 주간 AX 전략 리뷰
-- Source: `docs/knowledge_updates/weekly/2026-W22_AX_STRATEGY_REVIEW.md`
+- Source: `knowledge/40_curation/updates/weekly/2026-W22_AX_STRATEGY_REVIEW.md`
 - Tags: ax,weekly-review,strategy,bim
 
 분류 요약: 시공 BIM/스마트건설 16, AX 전략 신호 15, OpenBIM/납품검증 14, Model Quality Auditor 7, BIM 자동화/Add-in 5, 교육/확산 3
@@ -231,7 +231,7 @@ LUA BIM LABS 적용: AX 바우처 + 건설사 컨소시엄형 참여 검토
 - 이유: 친환경 건축은 인증 문구가 아니라 재료·수량·열성능·탄소계수 데이터 관리 문제로 바뀌고 있다.
 
 ## 2026-06-01 주간 AX 전략 리뷰
-- Source: `docs/knowledge_updates/weekly/2026-W23_AX_STRATEGY_REVIEW.md`
+- Source: `knowledge/40_curation/updates/weekly/2026-W23_AX_STRATEGY_REVIEW.md`
 - Tags: ax,weekly-review,strategy,bim
 
 분류 요약: AX 전략 신호 12, 시공 BIM/스마트건설 11, OpenBIM/납품검증 8, Model Quality Auditor 6, 교육/확산 2, BIM 자동화/Add-in 1
@@ -340,7 +340,7 @@ LUA BIM LABS 적용: AX 바우처 + 건설사 컨소시엄형 참여 검토
 
 
 ## 2026-06-04 Autodesk 공식 기술 신호 전략 반영
-- Source: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_OFFICIAL_AUTODESK_SIGNAL_UPDATE.md`
+- Source: `knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_OFFICIAL_AUTODESK_SIGNAL_UPDATE.md`
 - Tags: ax,strategy-review,autodesk,aps,revit
 
 Autodesk 공식 Revit 2026 문서와 APS 공식 블로그 기준으로, LUA BIM LABS의 Add-in 전략은 단독 Revit 버튼 기능에서 ACC/APS 데이터 연동, 보안 계정 운영, 비용 예측 가능한 API 사용 구조로 확장될 필요가 있다.
@@ -390,7 +390,7 @@ Autodesk 공식 Revit 2026 문서와 APS 공식 블로그 기준으로, LUA BIM 
 
 
 ## 2026-06-05 주간 AX 전략 리뷰
-- Source: `docs/knowledge_updates/weekly/2026-W23_AX_STRATEGY_REVIEW.md`
+- Source: `knowledge/40_curation/updates/weekly/2026-W23_AX_STRATEGY_REVIEW.md`
 - Tags: ax,weekly-review,strategy,bim
 
 분류 요약: AX 전략 신호 164, Model Quality Auditor 74, OpenBIM/납품검증 53, 시공 BIM/스마트건설 51, BIM 자동화/Add-in 15, 교육/확산 10

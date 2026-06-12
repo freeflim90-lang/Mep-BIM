@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/renatogcruz/BIM-Modeling/blender/blender_for_arch/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/renatogcruz/BIM-Modeling/blender/blender_for_arch/README.md"
 ---
 
 # blender - blender_for_arch - Intro to Blender for Architectural Design
 
 ## Source
 
-`data/bim_scripts/renatogcruz/BIM-Modeling/blender/blender_for_arch/README.md`
+`knowledge/50_domain/bim_scripts/renatogcruz/BIM-Modeling/blender/blender_for_arch/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/renatogcruz/BIM-Modeling/blender/blender_for_arch/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/renatogcruz/BIM-Modeling/blender/blender_for_arch/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, bim-modeling, bim_scripts, blender, blender_for_arch, data, markdown, model, readme.md, renatogcruz, workspace
+bim, bim-modeling, bim_scripts, blender, blender_for_arch, domain, knowledge, model, readme.md, renatogcruz, sources
 
 ## Related
 

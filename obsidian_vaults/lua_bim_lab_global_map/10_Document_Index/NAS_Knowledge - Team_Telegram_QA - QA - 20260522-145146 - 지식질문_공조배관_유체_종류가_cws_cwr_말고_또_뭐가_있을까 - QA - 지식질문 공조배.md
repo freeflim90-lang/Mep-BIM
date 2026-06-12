@@ -21,11 +21,11 @@ Absolute path:
 
 ## Summary
 
-> 요청자: @FreeFilmer ([LONG_ID_MASKED]) > 수집일: 2026-05-22 14:51:46 > 담당 지식: 공조배관 지식질문 공조배관 유체 종류가 cws cwr 말고 또 뭐가 있을까? 📚 [Obsidian 기준 1차 답변] 근거 문서: - docs/knowledge_updates/curation/2026-05-22_DAILY_KNOWLEDGE_CURATION.md (score 33)
+> 요청자: @FreeFilmer ([LONG_ID_MASKED]) > 수집일: 2026-05-22 14:51:46 > 담당 지식: 공조배관 지식질문 공조배관 유체 종류가 cws cwr 말고 또 뭐가 있을까? 📚 [Obsidian 기준 1차 답변] 근거 문서: - knowledge/40_curation/updates/curation/2026-05-22_DAILY_KNOWLEDGE_CURATION.md (score 33)
 
 ## Keywords
 
-add-in, addin, audit, bim, cs, cws_cwr_, knowledge, lua_bim_lab_global_map, mep, model, nas, nas_knowledge, obsidian_vaults, qa, quality, revit, team_telegram_qa, 교육, 리스크, 보안, 온보딩, 지식, 품질
+add-in, addin, audit, bim, cws_cwr_, knowledge, lua_bim_lab_global_map, mep, model, nas, nas_knowledge, obsidian_vaults, qa, quality, revit, team_telegram_qa, 개발, 교육, 리스크, 보안, 온보딩, 지식, 품질
 
 ## Related
 

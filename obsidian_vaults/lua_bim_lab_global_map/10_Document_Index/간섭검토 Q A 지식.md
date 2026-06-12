@@ -1,7 +1,7 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
+category: AI Knowledge Base - QA
 source_path: "knowledge/20_qa/간섭검토_QA.md"
 ---
 
@@ -17,7 +17,7 @@ Absolute path:
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - AI Knowledge Base - QA]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, clash, cs, knowledge, markdown, mep, navisworks, qa, qa.md, revit, workspace, 간섭, 변경, 지식, 테스트
+ai, base, bim, clash, cs, knowledge, mep, navisworks, qa, qa.md, revit, 간섭, 변경, 지식, 테스트
 
 ## Related
 

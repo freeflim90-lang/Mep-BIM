@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/Bekko-dev/Energy-trading-learning/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/Bekko-dev/Energy-trading-learning/README.md"
 ---
 
 # Bekko-dev - Energy-trading-learning - Energy Trading Learning
 
 ## Source
 
-`data/bim_scripts/Bekko-dev/Energy-trading-learning/README.md`
+`knowledge/50_domain/bim_scripts/Bekko-dev/Energy-trading-learning/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/Bekko-dev/Energy-trading-learning/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/Bekko-dev/Energy-trading-learning/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Weekly analysis of European power markets using Python and public data sources. 
 
 ## Keywords
 
-bekko-dev, bim, bim_scripts, data, energy-trading-learning, markdown, readme.md, workspace
+bekko-dev, bim, bim_scripts, domain, energy-trading-learning, knowledge, readme.md, sources
 
 ## Related
 

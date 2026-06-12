@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/Ber-Ilya/modelica_building_energy_system/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/Ber-Ilya/modelica_building_energy_system/README.md"
 ---
 
 # Ber-Ilya - modelica_building_energy_system - modelica_building_energy_system
 
 ## Source
 
-`data/bim_scripts/Ber-Ilya/modelica_building_energy_system/README.md`
+`knowledge/50_domain/bim_scripts/Ber-Ilya/modelica_building_energy_system/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/Ber-Ilya/modelica_building_energy_system/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/Ber-Ilya/modelica_building_energy_system/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This code models the power system of a 10,000 m2 building. The code is written i
 
 ## Keywords
 
-ber-ilya, bim, bim_scripts, data, markdown, model, modelica_building_energy_system, readme.md, workspace
+ber-ilya, bim, bim_scripts, domain, knowledge, model, modelica_building_energy_system, readme.md, sources
 
 ## Related
 

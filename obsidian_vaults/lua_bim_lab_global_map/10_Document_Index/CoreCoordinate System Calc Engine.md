@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/CoreCoordinate System Calc Engine.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/CoreCoordinate System Calc Engine.md"
 ---
 
 # CoreCoordinate System Calc Engine
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/CoreCoordinate System Calc Engine.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/CoreCoordinate System Calc Engine.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/CoreCoordinate System Calc Engine.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/CoreCoordinate System Calc Engine.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ design the core mathematical engine behind your coordinate tool. This is the sam
 
 ## Keywords
 
-alignment, bim, bim-coord-auto-package, bim_scripts, calc, clash, colinbsi, corecoordinate, cs, data, engine.md, markdown, model, revit, store, system, tool, universal, workspace
+alignment, bim, bim-coord-auto-package, bim_scripts, calc, clash, colinbsi, corecoordinate, cs, domain, engine.md, knowledge, model, revit, sources, store, system, tool, universal
 
 ## Related
 

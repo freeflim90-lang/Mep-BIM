@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/R-Rijnbeek/IFCManipulations/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/R-Rijnbeek/IFCManipulations/README.md"
 ---
 
 # R-Rijnbeek - IFCManipulations - IFCManipulations
 
 ## Source
 
-`data/bim_scripts/R-Rijnbeek/IFCManipulations/README.md`
+`knowledge/50_domain/bim_scripts/R-Rijnbeek/IFCManipulations/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/R-Rijnbeek/IFCManipulations/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/R-Rijnbeek/IFCManipulations/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Repository with the basic IFC manipulations for IFC files. And a IFC file viewer
 
 ## Keywords
 
-bim, bim_scripts, data, ifcmanipulations, markdown, r-rijnbeek, readme.md, workspace
+bim, bim_scripts, domain, ifcmanipulations, knowledge, r-rijnbeek, readme.md, sources
 
 ## Related
 

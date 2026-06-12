@@ -6,10 +6,10 @@
 
 | 대상 | 파일 |
 |---|---|
-| 세션 등록부 | `data/knowledge_base/conflict_resolution/SESSION_REGISTER_202606.md` |
-| SLA 추적표 | `data/knowledge_base/conflict_resolution/ESCALATION_SLA_TRACKER_202606.md` |
-| 케이스 파일 | `data/knowledge_base/conflict_resolution/cases/` |
-| 테스트 계획 | `data/knowledge_base/conflict_resolution/COLLABORATION_TEST_PLAN.md` |
+| 세션 등록부 | `knowledge/10_agents/conflict_resolution/SESSION_REGISTER_202606.md` |
+| SLA 추적표 | `knowledge/10_agents/conflict_resolution/ESCALATION_SLA_TRACKER_202606.md` |
+| 케이스 파일 | `knowledge/10_agents/conflict_resolution/cases/` |
+| 테스트 계획 | `knowledge/10_agents/conflict_resolution/COLLABORATION_TEST_PLAN.md` |
 
 ## 2. 불변조건
 
@@ -39,7 +39,7 @@
 ### 3.1 세션 등록부 상태 점검
 
 ```bash
-awk -F'|' '/^\| AICOL-202606(05|06)-[0-9]+ \| 2026-06-(05|06)/{total++; id=$2; status=$8; consensus=$9; risk=$10; decision=$11; casefile=$12; reuse=$13; review=$14; gsub(/^ +| +$/, "", id); gsub(/^ +| +$/, "", status); gsub(/^ +| +$/, "", consensus); gsub(/^ +| +$/, "", risk); gsub(/^ +| +$/, "", decision); gsub(/^ +| +$/, "", casefile); gsub(/^ +| +$/, "", reuse); gsub(/^ +| +$/, "", review); if (status !~ /^(CLOSED|ESCALATED)$/) {print "INVALID STATUS " id " -> " status; bad=1}; if (consensus !~ /^(CONSENSUS_WITH_GUARDRAILS|ESCALATE)$/) {print "INVALID CONSENSUS " id " -> " consensus; bad=1}; if (risk !~ /^(NOT_NEEDED|LOCAL_ONLY|REDACTED_REVIEW|APPROVED|APPROVED_WITH_HOLD|BLOCKED)$/) {print "INVALID RISK " id " -> " risk; bad=1}; if (decision !~ /^(Explicitly Deferred|Draft Created)$/) {print "INVALID DECISION " id " -> " decision; bad=1}; if (reuse !~ /^(Created|Updated|Explicitly Deferred|Missing)$/) {print "INVALID REUSE " id " -> " reuse; bad=1}; if (review !~ /^[0-9]{4}-[0-9]{2}-[0-9]{2}$/) {print "INVALID REVIEW " id " -> " review; bad=1}; if (status=="ESCALATED" && consensus!="ESCALATE") {print "ESCALATED WITHOUT ESCALATE " id; bad=1}; if (status=="CLOSED" && consensus=="ESCALATE") {print "CLOSED WITH ESCALATE " id; bad=1}; print "OK SESSION " id} END{print "TOTAL " total; exit bad}' data/knowledge_base/conflict_resolution/SESSION_REGISTER_202606.md
+awk -F'|' '/^\| AICOL-202606(05|06)-[0-9]+ \| 2026-06-(05|06)/{total++; id=$2; status=$8; consensus=$9; risk=$10; decision=$11; casefile=$12; reuse=$13; review=$14; gsub(/^ +| +$/, "", id); gsub(/^ +| +$/, "", status); gsub(/^ +| +$/, "", consensus); gsub(/^ +| +$/, "", risk); gsub(/^ +| +$/, "", decision); gsub(/^ +| +$/, "", casefile); gsub(/^ +| +$/, "", reuse); gsub(/^ +| +$/, "", review); if (status !~ /^(CLOSED|ESCALATED)$/) {print "INVALID STATUS " id " -> " status; bad=1}; if (consensus !~ /^(CONSENSUS_WITH_GUARDRAILS|ESCALATE)$/) {print "INVALID CONSENSUS " id " -> " consensus; bad=1}; if (risk !~ /^(NOT_NEEDED|LOCAL_ONLY|REDACTED_REVIEW|APPROVED|APPROVED_WITH_HOLD|BLOCKED)$/) {print "INVALID RISK " id " -> " risk; bad=1}; if (decision !~ /^(Explicitly Deferred|Draft Created)$/) {print "INVALID DECISION " id " -> " decision; bad=1}; if (reuse !~ /^(Created|Updated|Explicitly Deferred|Missing)$/) {print "INVALID REUSE " id " -> " reuse; bad=1}; if (review !~ /^[0-9]{4}-[0-9]{2}-[0-9]{2}$/) {print "INVALID REVIEW " id " -> " review; bad=1}; if (status=="ESCALATED" && consensus!="ESCALATE") {print "ESCALATED WITHOUT ESCALATE " id; bad=1}; if (status=="CLOSED" && consensus=="ESCALATE") {print "CLOSED WITH ESCALATE " id; bad=1}; print "OK SESSION " id} END{print "TOTAL " total; exit bad}' knowledge/10_agents/conflict_resolution/SESSION_REGISTER_202606.md
 ```
 
 2026-06-06 결과: PASS, 총 14건.
@@ -47,7 +47,7 @@ awk -F'|' '/^\| AICOL-202606(05|06)-[0-9]+ \| 2026-06-(05|06)/{total++; id=$2; s
 ### 3.2 케이스 파일 존재 점검
 
 ```bash
-awk -F'|' '/^\| AICOL-202606(05|06)-[0-9]+ \| 2026-06-(05|06)/{casefile=$12; gsub(/^ +| +$/, "", casefile); gsub(/`/, "", casefile); path="data/knowledge_base/conflict_resolution/" casefile; if (system("test -f \"" path "\"") != 0) {print "MISSING CASE " path; bad=1} else {print "OK CASE " path}} END{exit bad}' data/knowledge_base/conflict_resolution/SESSION_REGISTER_202606.md
+awk -F'|' '/^\| AICOL-202606(05|06)-[0-9]+ \| 2026-06-(05|06)/{casefile=$12; gsub(/^ +| +$/, "", casefile); gsub(/`/, "", casefile); path="knowledge/10_agents/conflict_resolution/" casefile; if (system("test -f \"" path "\"") != 0) {print "MISSING CASE " path; bad=1} else {print "OK CASE " path}} END{exit bad}' knowledge/10_agents/conflict_resolution/SESSION_REGISTER_202606.md
 ```
 
 2026-06-06 결과: PASS, 등록부 14건 모두 케이스 파일 존재.
@@ -55,7 +55,7 @@ awk -F'|' '/^\| AICOL-202606(05|06)-[0-9]+ \| 2026-06-(05|06)/{casefile=$12; gsu
 ### 3.3 ESCALATED SLA 점검
 
 ```bash
-awk -F'|' '/^\| `AITEST_20260605_00[67]` \| `AICOL-20260605-00[67]`/{caseid=$2; session=$3; owner=$4; due=$5; risk=$6; sla=$8; evidence=$9; gsub(/^[ `]+|[ `]+$/, "", caseid); gsub(/^[ `]+|[ `]+$/, "", session); gsub(/^ +| +$/, "", owner); gsub(/^ +| +$/, "", due); gsub(/^ +| +$/, "", risk); gsub(/^ +| +$/, "", sla); gsub(/^ +| +$/, "", evidence); if (owner=="" || due!="2026-06-12" || risk !~ /^(BLOCKED|APPROVED_WITH_HOLD)$/ || sla !~ /^(ON_TRACK|AT_RISK|BREACHED|CLOSED)$/ || evidence=="") {print "INVALID SLA " caseid; bad=1} else {print "OK SLA " caseid " -> " sla; total++}} END{print "TOTAL " total; exit bad}' data/knowledge_base/conflict_resolution/ESCALATION_SLA_TRACKER_202606.md
+awk -F'|' '/^\| `AITEST_20260605_00[67]` \| `AICOL-20260605-00[67]`/{caseid=$2; session=$3; owner=$4; due=$5; risk=$6; sla=$8; evidence=$9; gsub(/^[ `]+|[ `]+$/, "", caseid); gsub(/^[ `]+|[ `]+$/, "", session); gsub(/^ +| +$/, "", owner); gsub(/^ +| +$/, "", due); gsub(/^ +| +$/, "", risk); gsub(/^ +| +$/, "", sla); gsub(/^ +| +$/, "", evidence); if (owner=="" || due!="2026-06-12" || risk !~ /^(BLOCKED|APPROVED_WITH_HOLD)$/ || sla !~ /^(ON_TRACK|AT_RISK|BREACHED|CLOSED)$/ || evidence=="") {print "INVALID SLA " caseid; bad=1} else {print "OK SLA " caseid " -> " sla; total++}} END{print "TOTAL " total; exit bad}' knowledge/10_agents/conflict_resolution/ESCALATION_SLA_TRACKER_202606.md
 ```
 
 2026-06-06 결과: PASS, ESCALATED 2건 모두 `ON_TRACK`.
@@ -63,7 +63,7 @@ awk -F'|' '/^\| `AITEST_20260605_00[67]` \| `AICOL-20260605-00[67]`/{caseid=$2; 
 ### 3.4 Reuse Closure 강도 점검
 
 ```bash
-awk -F'|' '/^\| AICOL-202606(05|06)-[0-9]+ \| 2026-06-(05|06)/{total++; status=$8; reuse=$13; gsub(/^ +| +$/, "", status); gsub(/^ +| +$/, "", reuse); if (status=="CLOSED" && reuse!="Updated") {print "CLOSED REUSE NOT UPDATED " $2 " -> " reuse; bad=1}; if (status=="ESCALATED" && reuse !~ /^(Created|Updated)$/) {print "ESCALATED REUSE WEAK " $2 " -> " reuse; bad=1}} END{print "TOTAL " total; exit bad}' data/knowledge_base/conflict_resolution/SESSION_REGISTER_202606.md
+awk -F'|' '/^\| AICOL-202606(05|06)-[0-9]+ \| 2026-06-(05|06)/{total++; status=$8; reuse=$13; gsub(/^ +| +$/, "", status); gsub(/^ +| +$/, "", reuse); if (status=="CLOSED" && reuse!="Updated") {print "CLOSED REUSE NOT UPDATED " $2 " -> " reuse; bad=1}; if (status=="ESCALATED" && reuse !~ /^(Created|Updated)$/) {print "ESCALATED REUSE WEAK " $2 " -> " reuse; bad=1}} END{print "TOTAL " total; exit bad}' knowledge/10_agents/conflict_resolution/SESSION_REGISTER_202606.md
 ```
 
 2026-06-06 결과: PASS, 총 14건.

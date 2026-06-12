@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Docs - General
-source_path: "docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_OFFICIAL_AUTODESK_SIGNAL_UPDATE.md"
+category: Knowledge Curation
+source_path: "knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_OFFICIAL_AUTODESK_SIGNAL_UPDATE.md"
 ---
 
 # 2026-06-04 LUA BIM LABS Official Autodesk Signal Update
 
 ## Source
 
-`docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_OFFICIAL_AUTODESK_SIGNAL_UPDATE.md`
+`knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_OFFICIAL_AUTODESK_SIGNAL_UPDATE.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_OFFICIAL_AUTODESK_SIGNAL_UPDATE.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_OFFICIAL_AUTODESK_SIGNAL_UPDATE.md`
 
 ## Category
 
-- [[MOC - Docs - General]]
+- [[MOC - Knowledge Curation]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Autodesk 공식 문서와 APS 공식 블로그 기준으로 LUA BIM LABS에 필�
 
 ## Keywords
 
-add-in, addin, api, audit, autodesk, bim, cs, daily, docs, general, knowledge_updates, lua_bim_labs_official_autodesk_signal_update.md, mep, model, qa, quality, revit, store, 개발, 결제, 교육, 납품, 라이선스, 보안, 지식, 지원, 테스트, 패키징
+add-in, addin, api, audit, autodesk, bim, cs, curation, daily, knowledge, lua_bim_labs_official_autodesk_signal_update.md, mep, model, qa, quality, revit, store, updates, 개발, 결제, 교육, 납품, 라이선스, 보안, 지식, 지원, 테스트, 패키징
 
 ## Related
 

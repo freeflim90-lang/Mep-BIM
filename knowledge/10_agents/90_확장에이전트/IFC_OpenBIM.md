@@ -131,7 +131,7 @@ print(f"필수 파라미터 누락 기기: {len(missing)}개")
 
 
 ## 2026-06-04 buildingSMART 공식 OpenBIM 표준 업데이트
-- Source: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_OPENBIM_IDS_BCF_UPDATE.md`
+- Source: `knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_OPENBIM_IDS_BCF_UPDATE.md`
 - Tags: ifc,openbim,ids,bcf,buildingsmart,official-source
 
 buildingSMART 공식 문서 기준으로 IDS 1.0은 공식 표준이며, IFC 모델의 정보 요구사항을 컴퓨터가 해석 가능한 방식으로 정의하고 자동 적합성 검토에 활용한다. IDS 1.0 이전 버전은 공식 표준으로 보지 않는다.

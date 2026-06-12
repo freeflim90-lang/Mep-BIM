@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/stefkeB/ifcopenshell_examples/GUI/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/stefkeB/ifcopenshell_examples/GUI/README.md"
 ---
 
 # ifcopenshell_examples - GUI - GUI Treeviewer Example
 
 ## Source
 
-`data/bim_scripts/stefkeB/ifcopenshell_examples/GUI/README.md`
+`knowledge/50_domain/bim_scripts/stefkeB/ifcopenshell_examples/GUI/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/stefkeB/ifcopenshell_examples/GUI/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/stefkeB/ifcopenshell_examples/GUI/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ These are basic examples of GUI IFC applications, written in Python and using th
 
 ## Keywords
 
-bim, bim_scripts, data, gui, ifcopenshell_examples, markdown, readme.md, stefkeb, workspace
+bim, bim_scripts, domain, gui, ifcopenshell_examples, knowledge, readme.md, sources, stefkeb
 
 ## Related
 

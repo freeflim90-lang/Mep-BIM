@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/BIM compliance dashboard Requirements.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM compliance dashboard Requirements.md"
 ---
 
 # BIM Portfolio Governance Exporter Phase 5 Advanced Tier
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/BIM compliance dashboard Requirements.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM compliance dashboard Requirements.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/BIM compliance dashboard Requirements.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM compliance dashboard Requirements.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, compliance, cs, dashboard, data, health, markdown, model, qa, requirements.md, revit, workspace
+bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, compliance, cs, dashboard, domain, health, knowledge, model, qa, requirements.md, revit, sources
 
 ## Related
 

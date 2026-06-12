@@ -21,11 +21,11 @@ Absolute path:
 
 ## Summary
 
-> 요청자: @FreeFilmer ([LONG_ID_MASKED]) > 수집일: 2026-05-28 09:23:40 > 담당 지식: 건축 인천공항 제2터미널 연면적은 얼마야? [📚 지식 베이스 (score 36) + 🔍 웹 검색 보강] 인천공항 제2터미널의 연면적은 약 38만 7000㎡입니다. 이는 서울 여의도공원 면적의 약 20배 규모입니다. - `data/knowledge_base/qa/건축_QA.md` · score `36`
+> 요청자: @FreeFilmer ([LONG_ID_MASKED]) > 수집일: 2026-05-28 09:23:40 > 담당 지식: 건축 인천공항 제2터미널 연면적은 얼마야? [📚 지식 베이스 (score 36) + 🔍 웹 검색 보강] 인천공항 제2터미널의 연면적은 약 38만 7000㎡입니다. 이는 서울 여의도공원 면적의 약 20배 규모입니다. - `knowledge/20_qa/건축_QA.md` · score `36`
 
 ## Keywords
 
-bim, knowledge, lua_bim_lab_global_map, nas, nas_knowledge, obsidian_vaults, qa, team_telegram_qa, 교육, 지식
+bim, knowledge, lua_bim_lab_global_map, nas, nas_knowledge, obsidian_vaults, qa, team_telegram_qa, 견적, 교육, 지식
 
 ## Related
 

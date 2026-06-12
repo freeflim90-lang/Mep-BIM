@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/FelonBall/ifc-live/CLAUDE.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/FelonBall/ifc-live/CLAUDE.md"
 ---
 
 # FelonBall - ifc-live - CLAUDE md
 
 ## Source
 
-`data/bim_scripts/FelonBall/ifc-live/CLAUDE.md`
+`knowledge/50_domain/bim_scripts/FelonBall/ifc-live/CLAUDE.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/FelonBall/ifc-live/CLAUDE.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/FelonBall/ifc-live/CLAUDE.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Keywords
 
-api, bim, bim_scripts, claude.md, cs, data, felonball, ifc-live, markdown, model, store, workspace
+api, bim, bim_scripts, claude.md, cs, domain, felonball, ifc-live, knowledge, model, sources, store
 
 ## Related
 

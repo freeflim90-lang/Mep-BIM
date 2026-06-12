@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/viktor-platform/aps-automation-sdk/.agents/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/viktor-platform/aps-automation-sdk/.agents/README.md"
 ---
 
 # aps-automation-sdk - agents - Local Agent Skills
 
 ## Source
 
-`data/bim_scripts/viktor-platform/aps-automation-sdk/.agents/README.md`
+`knowledge/50_domain/bim_scripts/viktor-platform/aps-automation-sdk/.agents/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/viktor-platform/aps-automation-sdk/.agents/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/viktor-platform/aps-automation-sdk/.agents/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This repository stores local agent skills under `.agents/skills/`. Each skill di
 
 ## Keywords
 
-agents, aps-automation-sdk, bim, bim_scripts, data, markdown, readme.md, store, viktor-platform, workspace
+agents, aps-automation-sdk, bim, bim_scripts, domain, knowledge, readme.md, sources, store, viktor-platform
 
 ## Related
 

@@ -1,7 +1,7 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
+category: AI Knowledge Base - QA
 source_path: "knowledge/20_qa/교육컨설팅_QA.md"
 ---
 
@@ -17,7 +17,7 @@ Absolute path:
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - AI Knowledge Base - QA]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, knowledge, markdown, mep, navisworks, qa, qa.md, revit, workspace, 간섭, 개발, 교육, 납품, 온보딩, 지식, 지원, 커리큘럼, 품질
+ai, base, bim, knowledge, mep, navisworks, qa, qa.md, revit, 간섭, 개발, 교육, 납품, 온보딩, 지식, 지원, 커리큘럼, 품질
 
 ## Related
 

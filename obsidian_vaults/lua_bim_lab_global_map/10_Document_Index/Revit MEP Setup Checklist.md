@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/starter_plan/reference_cards/card_02_revit_mep_setup.md"
+category: Products
+source_path: "products/starter_plan/reference_cards/card_02_revit_mep_setup.md"
 ---
 
 # Revit MEP Setup Checklist
 
 ## Source
 
-`data/starter_plan/reference_cards/card_02_revit_mep_setup.md`
+`products/starter_plan/reference_cards/card_02_revit_mep_setup.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/starter_plan/reference_cards/card_02_revit_mep_setup.md`
+`/Users/choejeong-yeon/LUA BIM LABS/products/starter_plan/reference_cards/card_02_revit_mep_setup.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Products]]
 
 ## Summary
 
@@ -25,18 +25,18 @@ Absolute path:
 
 ## Keywords
 
-bim, card_02_revit_mep_setup.md, data, markdown, mep, model, reference_cards, revit, starter_plan, workspace
+bim, card_02_revit_mep_setup.md, mep, model, products, reference_cards, revit, starter_plan
 
 ## Related
 
 - [[BIM Learning Path Next Steps]]
-- [[Clash Types Priority Matrix]]
 - [[MEP BIM Key Roles LOD Reference]]
 - [[MEP Data Schedule Reference]]
-- [[MEP Drawing Reading Guide]]
 - [[Model Quality Self-Review Checklist]]
+- [[Clash Types Priority Matrix]]
+- [[MEP Drawing Reading Guide]]
 - [[Site-Readiness Check Guide]]
-- [[Advanced BIM Coordination]]
+- [[starter_lesson_template]]
 
 ## Home
 

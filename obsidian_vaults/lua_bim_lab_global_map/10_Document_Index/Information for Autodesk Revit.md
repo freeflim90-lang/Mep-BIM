@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/brean/python-ifc-blender/docs/revit.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/brean/python-ifc-blender/docs/revit.md"
 ---
 
 # Information for Autodesk Revit
 
 ## Source
 
-`data/bim_scripts/brean/python-ifc-blender/docs/revit.md`
+`knowledge/50_domain/bim_scripts/brean/python-ifc-blender/docs/revit.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/brean/python-ifc-blender/docs/revit.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/brean/python-ifc-blender/docs/revit.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ It is the easiest when we export the 3D-representation of spaces (space boundari
 
 ## Keywords
 
-autodesk, bim, bim_scripts, brean, cs, data, docs, markdown, model, python-ifc-blender, revit, revit.md, workspace
+autodesk, bim, bim_scripts, brean, cs, docs, domain, knowledge, model, python-ifc-blender, revit, revit.md, sources
 
 ## Related
 

@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Docs - General
-source_path: "docs/knowledge_updates/daily/2026-06-03_DAILY_KNOWLEDGE_UPDATE.md"
+category: Knowledge Curation
+source_path: "knowledge/40_curation/updates/daily/2026-06-03_DAILY_KNOWLEDGE_UPDATE.md"
 ---
 
 # 2026-06-03 Daily Knowledge Update
 
 ## Source
 
-`docs/knowledge_updates/daily/2026-06-03_DAILY_KNOWLEDGE_UPDATE.md`
+`knowledge/40_curation/updates/daily/2026-06-03_DAILY_KNOWLEDGE_UPDATE.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/knowledge_updates/daily/2026-06-03_DAILY_KNOWLEDGE_UPDATE.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/40_curation/updates/daily/2026-06-03_DAILY_KNOWLEDGE_UPDATE.md`
 
 ## Category
 
-- [[MOC - Docs - General]]
+- [[MOC - Knowledge Curation]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, api, audit, autodesk, bim, cs, daily, daily_knowledge_update.md, docs, general, knowledge_updates, mep, model, qa, quality, revit, store, 개발, 교육, 납품, 리스크, 변경, 보안, 지식, 커리큘럼, 품질
+add-in, api, audit, autodesk, bim, curation, daily, daily_knowledge_update.md, knowledge, mep, model, qa, quality, revit, store, updates, 개발, 교육, 납품, 리스크, 변경, 보안, 지식, 커리큘럼, 품질
 
 ## Related
 

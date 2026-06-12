@@ -43,10 +43,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -99,10 +99,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -147,10 +147,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -195,10 +195,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -243,10 +243,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -291,10 +291,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -339,10 +339,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -387,10 +387,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -435,10 +435,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -483,10 +483,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -531,10 +531,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -579,10 +579,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -627,10 +627,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -675,10 +675,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -723,10 +723,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -771,10 +771,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -819,10 +819,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -867,10 +867,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -915,10 +915,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -963,10 +963,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -1011,10 +1011,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -1059,10 +1059,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -1107,10 +1107,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -1155,10 +1155,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -1203,10 +1203,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -1251,10 +1251,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -1299,10 +1299,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -1347,10 +1347,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -1395,10 +1395,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -1443,10 +1443,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -1491,10 +1491,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -1539,10 +1539,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -1587,10 +1587,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -1635,10 +1635,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -1683,10 +1683,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -1731,10 +1731,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -1779,10 +1779,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -1827,10 +1827,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -1875,10 +1875,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -1923,10 +1923,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -1971,10 +1971,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -2019,10 +2019,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -2067,10 +2067,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -2115,10 +2115,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 
@@ -2163,10 +2163,10 @@ tags:
   출처: https://www.autodesk.com/products/revit/overview
 
 갱신 후 다시 확인된 내부 근거:
-- data/knowledge_base/지식업데이트.md (score 46)
-- data/knowledge_base/Navisworks_Addin.md (score 8)
-- data/knowledge_base/BIM_템플릿기획관.md (score 8)
-- data/knowledge_base/전기.md (score 8)
+- knowledge/10_agents/09_지식팀/지식업데이트.md (score 46)
+- knowledge/10_agents/05_애드인개발팀/Navisworks_Addin.md (score 8)
+- knowledge/10_agents/90_확장에이전트/BIM_템플릿기획관.md (score 8)
+- knowledge/10_agents/03_엔지니어링팀/전기.md (score 8)
 
 이 답변이 충분하면 /ok, 더 부족하면 구체적으로 부족한 부분을 적어서 `더 찾아줘`를 다시 보내주세요.
 

@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/kfjordt/11034-advanced-bim/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/kfjordt/11034-advanced-bim/README.md"
 ---
 
 # kfjordt - 11034-advanced-bim - 11034 Advanced BIM
 
 ## Source
 
-`data/bim_scripts/kfjordt/11034-advanced-bim/README.md`
+`knowledge/50_domain/bim_scripts/kfjordt/11034-advanced-bim/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/kfjordt/11034-advanced-bim/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/kfjordt/11034-advanced-bim/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-advanced-bim, bim, bim_scripts, data, kfjordt, markdown, model, readme.md, store, workspace
+advanced-bim, bim, bim_scripts, domain, kfjordt, knowledge, model, readme.md, sources, store
 
 ## Related
 

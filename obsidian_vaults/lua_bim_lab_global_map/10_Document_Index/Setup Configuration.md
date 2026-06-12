@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/idfkit/idfkit-mcp/docs/troubleshooting/setup.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/troubleshooting/setup.md"
 ---
 
 # Setup Configuration
 
 ## Source
 
-`data/bim_scripts/idfkit/idfkit-mcp/docs/troubleshooting/setup.md`
+`knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/troubleshooting/setup.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/idfkit/idfkit-mcp/docs/troubleshooting/setup.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/troubleshooting/setup.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ When troubleshooting any issue, start by enabling debug output: ```bash IDFKIT_M
 
 ## Keywords
 
-bim, bim_scripts, cs, data, docs, idfkit, idfkit-mcp, markdown, model, setup.md, troubleshooting, workspace
+bim, bim_scripts, cs, docs, domain, idfkit, idfkit-mcp, knowledge, model, setup.md, sources, troubleshooting
 
 ## Related
 

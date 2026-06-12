@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/idfkit/idfkit-mcp/docs/workflows/multi-agent-patterns.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/workflows/multi-agent-patterns.md"
 ---
 
 # Multi-Agent Patterns
 
 ## Source
 
-`data/bim_scripts/idfkit/idfkit-mcp/docs/workflows/multi-agent-patterns.md`
+`knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/workflows/multi-agent-patterns.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/idfkit/idfkit-mcp/docs/workflows/multi-agent-patterns.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/workflows/multi-agent-patterns.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This page describes team-style workflows where multiple agents collaborate on on
 
 ## Keywords
 
-bim, bim_scripts, cs, data, docs, idfkit, idfkit-mcp, markdown, model, multi-agent-patterns.md, workflows, workspace
+bim, bim_scripts, cs, docs, domain, idfkit, idfkit-mcp, knowledge, model, multi-agent-patterns.md, sources, workflows
 
 ## Related
 

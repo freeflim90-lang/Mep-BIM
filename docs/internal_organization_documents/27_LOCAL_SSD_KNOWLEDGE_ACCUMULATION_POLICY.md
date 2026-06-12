@@ -44,8 +44,8 @@
 
 | 계층 | 저장 대상 | 위치 | 보존 기준 |
 |---|---|---|---|
-| L1 확정 지식 | 답변에 직접 사용하는 정제 지식 | `data/knowledge_base` | 장기 보존 |
-| L2 큐레이션 | 일일 검수, 승격 후보, 반복 질문 | `docs/knowledge_updates` | 장기 보존 |
+| L1 확정 지식 | 답변에 직접 사용하는 정제 지식 | `knowledge/10_agents` | 장기 보존 |
+| L2 큐레이션 | 일일 검수, 승격 후보, 반복 질문 | `knowledge/40_curation/updates` | 장기 보존 |
 | L3 Obsidian Vault | 문서 간 연결, 그래프, MOC | `obsidian_vaults` | 장기 보존 |
 | L4 원본 자료 | PDF, DOCX, XLSX, 이미지, 외장하드 흡수 자료 | `data/raw_sources` 권장 | 원본성·권리 확인 후 보존 |
 | L5 검색 인덱스 | 임베딩, 키워드 인덱스, 캐시 | `data/search_index` 권장 | 재생성 가능하면 압축 또는 삭제 가능 |
@@ -68,7 +68,7 @@
 1. 신규 원본과 Q&A를 `intake` 상태로 저장한다.
 2. 개인정보, 계정, 토큰, 고객명, 프로젝트명, 내부 경로를 마스킹한다.
 3. 지식큐레이터가 분야를 분류한다.
-4. 답변 가능성이 있는 항목은 `data/knowledge_base`에 요약 승격한다.
+4. 답변 가능성이 있는 항목은 `knowledge/10_agents`에 요약 승격한다.
 5. 원본은 `data/raw_sources`에 보관하되 중복 파일은 해시 기준으로 제거한다.
 6. Obsidian Vault와 HTML 그래프를 재생성한다.
 7. 일일 큐레이션 리포트에 저장량, 승격량, 보류량을 기록한다.
@@ -99,7 +99,7 @@
 | 항목 | 명령 예시 |
 |---|---|
 | 전체 SSD 사용량 | `df -h /` |
-| 지식베이스 용량 | `du -sh data/knowledge_base` |
+| 지식베이스 용량 | `du -sh knowledge/10_agents` |
 | 문서 용량 | `du -sh docs` |
 | Obsidian Vault 용량 | `du -sh obsidian_vaults` |
 | 원본 자료 용량 | `du -sh data/raw_sources` |

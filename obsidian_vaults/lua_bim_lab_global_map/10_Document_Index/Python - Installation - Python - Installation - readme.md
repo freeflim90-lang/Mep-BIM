@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/DTU-Byg/11034/Example files/Python/Installation/readme.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/DTU-Byg/11034/Example files/Python/Installation/readme.md"
 ---
 
 # Python - Installation - readme
 
 ## Source
 
-`data/bim_scripts/DTU-Byg/11034/Example files/Python/Installation/readme.md`
+`knowledge/50_domain/bim_scripts/DTU-Byg/11034/Example files/Python/Installation/readme.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/DTU-Byg/11034/Example files/Python/Installation/readme.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/DTU-Byg/11034/Example files/Python/Installation/readme.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, bim_scripts, data, dtu-byg, example, files, installation, markdown, python, readme.md, workspace
+bim, bim_scripts, domain, dtu-byg, example, files, installation, knowledge, python, readme.md, sources
 
 ## Related
 

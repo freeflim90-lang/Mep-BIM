@@ -21,11 +21,11 @@ Absolute path:
 
 ## Summary
 
-> 요청자: @FreeFilmer ([LONG_ID_MASKED]) > 수집일: 2026-05-24 05:11:38 > 담당 지식: 지식업데이트 인천공항 제1터미널 면적이얼마야 시설규모 ; 여객터미널, 507천㎡ ; 탑승동, - ; 여객계류장, 60개소 ; 화물터미널, 129천㎡ 출처: https://www.airport.kr/co_ko/577/subview.do - `data/knowledge_base/지식업데이트.md` · score `46`
+> 요청자: @FreeFilmer ([LONG_ID_MASKED]) > 수집일: 2026-05-24 05:11:38 > 담당 지식: 지식업데이트 인천공항 제1터미널 면적이얼마야 시설규모 ; 여객터미널, 507천㎡ ; 탑승동, - ; 여객계류장, 60개소 ; 화물터미널, 129천㎡ 출처: https://www.airport.kr/co_ko/577/subview.do - `knowledge/10_agents/09_지식팀/지식업데이트.md` · score `46`
 
 ## Keywords
 
-addin, bim, knowledge, lua_bim_lab_global_map, nas, nas_knowledge, navisworks, obsidian_vaults, qa, team_telegram_qa, 교육, 지식
+addin, bim, knowledge, lua_bim_lab_global_map, nas, nas_knowledge, navisworks, obsidian_vaults, qa, team_telegram_qa, 개발, 교육, 지식
 
 ## Related
 

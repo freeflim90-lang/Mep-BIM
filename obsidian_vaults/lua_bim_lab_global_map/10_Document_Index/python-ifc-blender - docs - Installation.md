@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/brean/python-ifc-blender/docs/install.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/brean/python-ifc-blender/docs/install.md"
 ---
 
 # python-ifc-blender - docs - Installation
 
 ## Source
 
-`data/bim_scripts/brean/python-ifc-blender/docs/install.md`
+`knowledge/50_domain/bim_scripts/brean/python-ifc-blender/docs/install.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/brean/python-ifc-blender/docs/install.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/brean/python-ifc-blender/docs/install.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, bim_scripts, brean, cs, data, docs, install.md, markdown, model, python-ifc-blender, workspace
+bim, bim_scripts, brean, cs, docs, domain, install.md, knowledge, model, python-ifc-blender, sources
 
 ## Related
 

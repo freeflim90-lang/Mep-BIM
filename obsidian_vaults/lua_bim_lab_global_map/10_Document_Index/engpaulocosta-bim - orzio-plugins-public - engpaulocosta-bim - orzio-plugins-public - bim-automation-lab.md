@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/engpaulocosta-bim/orzio-plugins-public/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/engpaulocosta-bim/orzio-plugins-public/README.md"
 ---
 
 # engpaulocosta-bim - orzio-plugins-public - bim-automation-lab
 
 ## Source
 
-`data/bim_scripts/engpaulocosta-bim/orzio-plugins-public/README.md`
+`knowledge/50_domain/bim_scripts/engpaulocosta-bim/orzio-plugins-public/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/engpaulocosta-bim/orzio-plugins-public/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/engpaulocosta-bim/orzio-plugins-public/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Advanced pyRevit automation tools for BIM workflows, enabling efficient MEP mode
 
 ## Keywords
 
-api, autodesk, bim, bim_scripts, clash, cs, data, engpaulocosta-bim, markdown, mep, model, orzio-plugins-public, quality, readme.md, revit, workspace
+api, autodesk, bim, bim_scripts, clash, cs, domain, engpaulocosta-bim, knowledge, mep, model, orzio-plugins-public, quality, readme.md, revit, sources
 
 ## Related
 

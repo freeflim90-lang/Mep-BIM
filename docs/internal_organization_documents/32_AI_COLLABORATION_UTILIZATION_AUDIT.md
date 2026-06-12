@@ -16,10 +16,10 @@
 |---|---|
 | 협업 SOP | `30_AI_TO_AI_COLLABORATION_SOP.md` |
 | 실행 런북 | `31_AI_COLLABORATION_RUNBOOK_TEMPLATES.md` |
-| AI 협업 KB | `data/knowledge_base/AI_협업운영체계.md` |
-| 테스트 계획 | `data/knowledge_base/conflict_resolution/COLLABORATION_TEST_PLAN.md` |
-| 리허설 기록 | `data/knowledge_base/conflict_resolution/cases/AITEST_20260605_001.md` |
-| 충돌/리허설 색인 | `data/knowledge_base/conflict_resolution/CONFLICT_LOG.md` |
+| AI 협업 KB | `knowledge/10_agents/90_확장에이전트/AI_협업운영체계.md` |
+| 테스트 계획 | `knowledge/10_agents/conflict_resolution/COLLABORATION_TEST_PLAN.md` |
+| 리허설 기록 | `knowledge/10_agents/conflict_resolution/cases/AITEST_20260605_001.md` |
+| 충돌/리허설 색인 | `knowledge/10_agents/conflict_resolution/CONFLICT_LOG.md` |
 
 ## 2. 활용성 감사 기준
 
@@ -62,7 +62,7 @@
 1. AI가 2개 이상 참여하는 업무는 `30_AI_TO_AI_COLLABORATION_SOP.md`를 적용한다.
 2. 실행 기록은 `31_AI_COLLABORATION_RUNBOOK_TEMPLATES.md`의 T01~T06 중 필요한 템플릿을 사용한다.
 3. 의사결정이 발생하면 `12_DECISION_LOG_TEMPLATE.md`에 AI 협업 세션 ID와 합의 상태를 남긴다.
-4. 충돌 또는 리허설은 `data/knowledge_base/conflict_resolution`에 기록한다.
+4. 충돌 또는 리허설은 `knowledge/10_agents/conflict_resolution`에 기록한다.
 5. 반복 가능한 결과는 지식큐레이터가 KB, QA, 교육자료, 표준문서, 자동화 백로그 중 하나로 승격한다.
 6. 월간 품질 감사는 AI 협업 게이트 통과 여부를 확인한다.
 

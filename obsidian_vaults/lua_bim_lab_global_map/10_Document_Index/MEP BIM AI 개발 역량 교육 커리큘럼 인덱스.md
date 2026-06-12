@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/mep_bim_ai/00_CURRICULUM_INDEX.md"
+source_path: "knowledge/60_public/training_curriculum/mep_bim_ai/00_CURRICULUM_INDEX.md"
 ---
 
 # MEP BIM AI 개발 역량 교육 커리큘럼 인덱스
 
 ## Source
 
-`docs/training_curriculum/mep_bim_ai/00_CURRICULUM_INDEX.md`
+`knowledge/60_public/training_curriculum/mep_bim_ai/00_CURRICULUM_INDEX.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/mep_bim_ai/00_CURRICULUM_INDEX.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/mep_bim_ai/00_CURRICULUM_INDEX.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, cs, curriculum, curriculum_index.md, docs, kpi, mep, mep_bim_ai, navisworks, qa, revit, sow, training, training_curriculum, 간섭, 개발, 교육, 납품, 물량, 변경, 보안, 역할, 자산, 지식, 진단, 커리큘럼, 품질, 회의
+bim, curriculum, curriculum_index.md, knowledge, kpi, mep, mep_bim_ai, navisworks, public, qa, revit, sow, training, training_curriculum, 간섭, 개발, 교육, 납품, 물량, 변경, 보안, 역할, 자산, 지식, 진단, 커리큘럼, 품질, 회의
 
 ## Related
 

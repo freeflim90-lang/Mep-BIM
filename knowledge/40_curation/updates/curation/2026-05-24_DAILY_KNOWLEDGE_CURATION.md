@@ -27,15 +27,15 @@ tags:
 
 | 문서 | 유형 | 권고 | 목적성 연결 | 승격 후보 | 리스크 |
 |---|---|---|---|---|---|
-| `data/knowledge_base/Revit_Addin.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 계정/토큰 가능성, 고객/프로젝트 실명 가능성 |
-| `data/knowledge_base/공조덕트.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 고객/프로젝트 실명 가능성 |
-| `data/knowledge_base/교육컨설팅.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 계정/토큰 가능성 |
-| `data/knowledge_base/엑셀자동화.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 계정/토큰 가능성, 고객/프로젝트 실명 가능성 |
-| `data/knowledge_base/인프라_DevOpsObsidian.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 계정/토큰 가능성, 고객/프로젝트 실명 가능성 |
-| `data/knowledge_base/조율차장.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성 |
-| `data/knowledge_base/지식업데이트.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 고객/프로젝트 실명 가능성 |
-| `data/knowledge_base/지식큐레이터.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 계정/토큰 가능성, 고객/프로젝트 실명 가능성 |
-| `data/team_requests/telegram_knowledge_requests.md` | 팀 요청 로그 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 계정/토큰 가능성, 내부 경로 노출 |
+| `knowledge/10_agents/05_애드인개발팀/Revit_Addin.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 계정/토큰 가능성, 고객/프로젝트 실명 가능성 |
+| `knowledge/10_agents/03_엔지니어링팀/공조덕트.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 고객/프로젝트 실명 가능성 |
+| `knowledge/10_agents/08_인재육성팀/교육컨설팅.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 계정/토큰 가능성 |
+| `knowledge/10_agents/90_확장에이전트/엑셀자동화.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 계정/토큰 가능성, 고객/프로젝트 실명 가능성 |
+| `knowledge/10_agents/90_확장에이전트/인프라_DevOpsObsidian.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 계정/토큰 가능성, 고객/프로젝트 실명 가능성 |
+| `knowledge/10_agents/01_경영진/조율차장.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성 |
+| `knowledge/10_agents/09_지식팀/지식업데이트.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 고객/프로젝트 실명 가능성 |
+| `knowledge/10_agents/09_지식팀/지식큐레이터.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 계정/토큰 가능성, 고객/프로젝트 실명 가능성 |
+| `knowledge/30_intake/team_requests/telegram_knowledge_requests.md` | 팀 요청 로그 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 계정/토큰 가능성, 내부 경로 노출 |
 | `docs/internal_organization_documents/00_INTERNAL_ORG_DOCUMENT_INDEX.md` | 조직운영문서 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 계정/토큰 가능성 |
 | `docs/internal_organization_documents/01_ORGANIZATION_OPERATING_CHARTER.md` | 조직운영문서 | 보안검토 | MEP BIM 실무 품질, 교육/온보딩 재사용, AI/자동화 생산성 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성 |
 | `docs/internal_organization_documents/04_HIRING_ROLE_DEFINITION_STANDARD.md` | 조직운영문서 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 계정/토큰 가능성, 고객/프로젝트 실명 가능성 |
@@ -43,30 +43,30 @@ tags:
 | `docs/internal_organization_documents/24_TEAM_TELEGRAM_KNOWLEDGE_REQUEST_LOOP.md` | 조직운영문서 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 계정/토큰 가능성, 고객/프로젝트 실명 가능성 |
 | `docs/internal_organization_documents/26_AI_EXECUTION_PLACEMENT_POLICY.md` | 조직운영문서 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 계정/토큰 가능성, 내부 경로 노출, 고객/프로젝트 실명 가능성 |
 | `docs/internal_organization_documents/27_LOCAL_SSD_KNOWLEDGE_ACCUMULATION_POLICY.md` | 조직운영문서 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 계정/토큰 가능성, 고객/프로젝트 실명 가능성 |
-| `docs/knowledge_updates/curation/2026-05-22_DAILY_KNOWLEDGE_CURATION.md` | 기타 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 계정/토큰 가능성 |
-| `docs/knowledge_updates/curation/2026-05-23_DAILY_KNOWLEDGE_CURATION.md` | 기타 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 계정/토큰 가능성 |
+| `knowledge/40_curation/updates/curation/2026-05-22_DAILY_KNOWLEDGE_CURATION.md` | 기타 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 계정/토큰 가능성 |
+| `knowledge/40_curation/updates/curation/2026-05-23_DAILY_KNOWLEDGE_CURATION.md` | 기타 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 계정/토큰 가능성 |
 | `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Team_Telegram_QA/QA - 20260522-092831 - 덕트_사용하는_유체의_종류가_뭐가_있어.md` | 팀 Q&A | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 고객/프로젝트 실명 가능성 |
 | `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Team_Telegram_QA/QA - 20260522-104922 - 회사_소개해줘.md` | 팀 Q&A | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 고객/프로젝트 실명 가능성 |
 | `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Team_Telegram_QA/QA - 20260522-145146 - 지식질문_공조배관_유체_종류가_cws_cwr_말고_또_뭐가_있을까.md` | 팀 Q&A | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 계정/토큰 가능성, 고객/프로젝트 실명 가능성 |
 | `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Team_Telegram_QA/QA - 20260522-154034 - 원하는_카테고리의_객체를_일괄_선택하는_다이나모를_구현하고_싶은데_방법을_알려줘.md` | 팀 Q&A | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 고객/프로젝트 실명 가능성 |
 | `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Team_Telegram_QA/QA - 20260524-050144 - 인천공항_제1터미널_면적이얼마야.md` | 팀 Q&A | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 고객/프로젝트 실명 가능성 |
-| `data/knowledge_base/BIM_건물유형_공사구분_산정로직.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, 교육/온보딩 재사용, AI/자동화 생산성 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 고객/프로젝트 실명 가능성 |
-| `data/knowledge_base/BIM_제안서.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 고객/프로젝트 실명 가능성 |
-| `data/knowledge_base/CEO.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, AI/자동화 생산성 | 표준문서 후보, 상품자료 후보, QA 체크리스트 후보 | 개인정보 가능성 |
-| `data/knowledge_base/COO.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, AI/자동화 생산성 | 표준문서 후보, 상품자료 후보, QA 체크리스트 후보 | 개인정보 가능성 |
-| `data/knowledge_base/HR_인재분석관.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, 교육/온보딩 재사용, AI/자동화 생산성 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 고객/프로젝트 실명 가능성 |
-| `data/knowledge_base/견적서담당.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, AI/자동화 생산성 | 표준문서 후보, 상품자료 후보, QA 체크리스트 후보 | 개인정보 가능성 |
-| `data/knowledge_base/견적심사원.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, AI/자동화 생산성 | 표준문서 후보, 상품자료 후보, QA 체크리스트 후보 | 고객/프로젝트 실명 가능성 |
-| `data/knowledge_base/경영지원.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 계정/토큰 가능성, 고객/프로젝트 실명 가능성 |
-| `data/knowledge_base/고객지원CS.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, AI/자동화 생산성 | 표준문서 후보, 상품자료 후보, QA 체크리스트 후보 | 개인정보 가능성 |
-| `data/knowledge_base/고객지원운영.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, AI/자동화 생산성 | 표준문서 후보, 상품자료 후보, QA 체크리스트 후보 | 개인정보 가능성 |
-| `data/knowledge_base/구조.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, AI/자동화 생산성 | 표준문서 후보, 상품자료 후보, QA 체크리스트 후보 | 고객/프로젝트 실명 가능성 |
-| `data/knowledge_base/라이선스_보안관.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, AI/자동화 생산성 | 표준문서 후보, 상품자료 후보, QA 체크리스트 후보 | 개인정보 가능성, 계정/토큰 가능성 |
-| `data/knowledge_base/러닝콘텐츠디자이너.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 고객/프로젝트 실명 가능성 |
-| `data/knowledge_base/배포문서.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, AI/자동화 생산성 | 표준문서 후보, 상품자료 후보, QA 체크리스트 후보 | 개인정보 가능성 |
-| `data/knowledge_base/법무조항검토.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, AI/자동화 생산성 | 표준문서 후보, 상품자료 후보, QA 체크리스트 후보 | 개인정보 가능성, 계정/토큰 가능성 |
-| `data/knowledge_base/소방전기.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, AI/자동화 생산성 | 표준문서 후보, 상품자료 후보, QA 체크리스트 후보 | 고객/프로젝트 실명 가능성 |
-| `data/knowledge_base/스토어심사.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, AI/자동화 생산성 | 표준문서 후보, 상품자료 후보, QA 체크리스트 후보 | 개인정보 가능성 |
+| `knowledge/10_agents/90_확장에이전트/BIM_건물유형_공사구분_산정로직.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, 교육/온보딩 재사용, AI/자동화 생산성 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 고객/프로젝트 실명 가능성 |
+| `knowledge/10_agents/90_확장에이전트/BIM_제안서.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 고객/프로젝트 실명 가능성 |
+| `knowledge/10_agents/01_경영진/CEO.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, AI/자동화 생산성 | 표준문서 후보, 상품자료 후보, QA 체크리스트 후보 | 개인정보 가능성 |
+| `knowledge/10_agents/01_경영진/COO.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, AI/자동화 생산성 | 표준문서 후보, 상품자료 후보, QA 체크리스트 후보 | 개인정보 가능성 |
+| `knowledge/10_agents/08_인재육성팀/HR_인재분석관.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, 교육/온보딩 재사용, AI/자동화 생산성 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 고객/프로젝트 실명 가능성 |
+| `knowledge/10_agents/90_확장에이전트/견적서담당.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, AI/자동화 생산성 | 표준문서 후보, 상품자료 후보, QA 체크리스트 후보 | 개인정보 가능성 |
+| `knowledge/10_agents/90_확장에이전트/견적심사원.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, AI/자동화 생산성 | 표준문서 후보, 상품자료 후보, QA 체크리스트 후보 | 고객/프로젝트 실명 가능성 |
+| `knowledge/10_agents/07_경영지원팀/경영지원.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 계정/토큰 가능성, 고객/프로젝트 실명 가능성 |
+| `knowledge/10_agents/06_스토어상용화팀/고객지원CS.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, AI/자동화 생산성 | 표준문서 후보, 상품자료 후보, QA 체크리스트 후보 | 개인정보 가능성 |
+| `knowledge/10_agents/90_확장에이전트/고객지원운영.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, AI/자동화 생산성 | 표준문서 후보, 상품자료 후보, QA 체크리스트 후보 | 개인정보 가능성 |
+| `knowledge/10_agents/02_견적팀/구조.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, AI/자동화 생산성 | 표준문서 후보, 상품자료 후보, QA 체크리스트 후보 | 고객/프로젝트 실명 가능성 |
+| `knowledge/10_agents/90_확장에이전트/라이선스_보안관.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, AI/자동화 생산성 | 표준문서 후보, 상품자료 후보, QA 체크리스트 후보 | 개인정보 가능성, 계정/토큰 가능성 |
+| `knowledge/10_agents/08_인재육성팀/러닝콘텐츠디자이너.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 고객/프로젝트 실명 가능성 |
+| `knowledge/10_agents/05_애드인개발팀/배포문서.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, AI/자동화 생산성 | 표준문서 후보, 상품자료 후보, QA 체크리스트 후보 | 개인정보 가능성 |
+| `knowledge/10_agents/90_확장에이전트/법무조항검토.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, AI/자동화 생산성 | 표준문서 후보, 상품자료 후보, QA 체크리스트 후보 | 개인정보 가능성, 계정/토큰 가능성 |
+| `knowledge/10_agents/03_엔지니어링팀/소방전기.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, AI/자동화 생산성 | 표준문서 후보, 상품자료 후보, QA 체크리스트 후보 | 고객/프로젝트 실명 가능성 |
+| `knowledge/10_agents/06_스토어상용화팀/스토어심사.md` | 지식베이스 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, AI/자동화 생산성 | 표준문서 후보, 상품자료 후보, QA 체크리스트 후보 | 개인정보 가능성 |
 
 ## 분류별 상세
 
@@ -84,8 +84,8 @@ tags:
 | `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/지식맵 - Revit API 개발.md` | Obsidian Q&A | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, AI/자동화 생산성 | 표준문서 후보, 상품자료 후보, QA 체크리스트 후보 | 계정/토큰 가능성 |
 | `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/지식맵 - 상품화 전략.md` | Obsidian Q&A | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, AI/자동화 생산성 | 표준문서 후보, 상품자료 후보, QA 체크리스트 후보 | 개인정보 가능성 |
 | `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/지식맵 - 엑셀 자동화.md` | Obsidian Q&A | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, QA 체크리스트 후보 | 개인정보 가능성, 고객/프로젝트 실명 가능성 |
-| `docs/knowledge_updates/curation/2026-05-22_DAILY_KNOWLEDGE_CURATION.md` | 기타 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 계정/토큰 가능성 |
-| `docs/knowledge_updates/curation/2026-05-23_DAILY_KNOWLEDGE_CURATION.md` | 기타 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 계정/토큰 가능성 |
+| `knowledge/40_curation/updates/curation/2026-05-22_DAILY_KNOWLEDGE_CURATION.md` | 기타 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 계정/토큰 가능성 |
+| `knowledge/40_curation/updates/curation/2026-05-23_DAILY_KNOWLEDGE_CURATION.md` | 기타 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 계정/토큰 가능성 |
 | `docs/internal_organization_documents/00_INTERNAL_ORG_DOCUMENT_INDEX.md` | 조직운영문서 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 계정/토큰 가능성 |
 | `docs/internal_organization_documents/01_ORGANIZATION_OPERATING_CHARTER.md` | 조직운영문서 | 보안검토 | MEP BIM 실무 품질, 교육/온보딩 재사용, AI/자동화 생산성 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성 |
 | `docs/internal_organization_documents/04_HIRING_ROLE_DEFINITION_STANDARD.md` | 조직운영문서 | 보안검토 | MEP BIM 실무 품질, Model Quality Auditor / Add-in 상품화, 교육/온보딩 재사용 | 표준문서 후보, 교육자료 후보, 상품자료 후보 | 개인정보 가능성, 계정/토큰 가능성, 고객/프로젝트 실명 가능성 |

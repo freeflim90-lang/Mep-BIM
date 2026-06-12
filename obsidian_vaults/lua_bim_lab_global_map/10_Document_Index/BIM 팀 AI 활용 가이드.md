@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/team_distribution/06_AI_USAGE_GUIDE_FOR_BIM_TEAM.md"
+source_path: "knowledge/60_public/training_curriculum/team_distribution/06_AI_USAGE_GUIDE_FOR_BIM_TEAM.md"
 ---
 
 # BIM 팀 AI 활용 가이드
 
 ## Source
 
-`docs/training_curriculum/team_distribution/06_AI_USAGE_GUIDE_FOR_BIM_TEAM.md`
+`knowledge/60_public/training_curriculum/team_distribution/06_AI_USAGE_GUIDE_FOR_BIM_TEAM.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/team_distribution/06_AI_USAGE_GUIDE_FOR_BIM_TEAM.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/team_distribution/06_AI_USAGE_GUIDE_FOR_BIM_TEAM.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-ai_usage_guide_for_bim_team.md, bim, cs, curriculum, docs, mep, team_distribution, training, training_curriculum, 간섭, 교육, 납품, 리스크, 보안, 역할, 품질, 회의
+ai_usage_guide_for_bim_team.md, bim, cs, curriculum, knowledge, mep, public, team_distribution, training, training_curriculum, 간섭, 교육, 납품, 리스크, 보안, 역할, 품질, 회의
 
 ## Related
 

@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/FelonBall/ifc-live/docs/MILESTONE_1.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/FelonBall/ifc-live/docs/MILESTONE_1.md"
 ---
 
 # Milestone 1 Two Bonsai Instances Live Sync
 
 ## Source
 
-`data/bim_scripts/FelonBall/ifc-live/docs/MILESTONE_1.md`
+`knowledge/50_domain/bim_scripts/FelonBall/ifc-live/docs/MILESTONE_1.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/FelonBall/ifc-live/docs/MILESTONE_1.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/FelonBall/ifc-live/docs/MILESTONE_1.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-audit, bim, bim_scripts, cs, data, docs, felonball, ifc-live, markdown, milestone_1.md, model, quality, store, workspace
+audit, bim, bim_scripts, cs, docs, domain, felonball, ifc-live, knowledge, milestone_1.md, model, quality, sources, store
 
 ## Related
 

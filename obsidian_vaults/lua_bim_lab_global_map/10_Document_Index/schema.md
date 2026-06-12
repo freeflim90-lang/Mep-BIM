@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/specklesystems/specklepy/docs/speckle_automate/schema.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/specklesystems/specklepy/docs/speckle_automate/schema.md"
 ---
 
 # schema
 
 ## Source
 
-`data/bim_scripts/specklesystems/specklepy/docs/speckle_automate/schema.md`
+`knowledge/50_domain/bim_scripts/specklesystems/specklepy/docs/speckle_automate/schema.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/specklesystems/specklepy/docs/speckle_automate/schema.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/specklesystems/specklepy/docs/speckle_automate/schema.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, bim_scripts, cs, data, docs, markdown, schema.md, speckle_automate, specklepy, specklesystems, workspace
+bim, bim_scripts, cs, docs, domain, knowledge, schema.md, sources, speckle_automate, specklepy, specklesystems
 
 ## Related
 

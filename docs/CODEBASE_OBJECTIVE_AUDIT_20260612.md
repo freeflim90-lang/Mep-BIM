@@ -9,7 +9,7 @@ This audit covers the current workspace as an integrated organization repository
 - Primary runtime: FastAPI backend in `backend/server_total.py`.
 - API surface: dashboard, knowledge updates, local coder, GitHub integration, Qwen product drafts, BIM Command Center settings/features, LUAChat/Revit Assistant, visitor counting, BIM Land router.
 - Automation layer: `scripts/` contains scheduled crawlers, Blogger/Telegram/Calendar flows, market intelligence, knowledge curation, add-in packaging, and education delivery.
-- Knowledge layer: `data/knowledge_base`, `docs/knowledge_updates`, `obsidian_vaults`, and generated Q&A material.
+- Knowledge layer: `knowledge/10_agents`, `knowledge/40_curation/updates`, `obsidian_vaults`, and generated Q&A material.
 - Product layer: `commercial_addins/BIM_Command_Center_For_Revit` and BIM Command Center backend modules.
 - Deployment layer: Dockerfile, docker-compose, launch agents, Cloudflare tunnel config.
 
@@ -42,7 +42,7 @@ This audit covers the current workspace as an integrated organization repository
      - `backend/services/telegram_bot.py`
 
 4. Test discovery was unsafe for a mixed repository.
-   - Evidence: root `pytest` discovered external tests under `data/bim_scripts` and failed during collection.
+   - Evidence: root `pytest` discovered external tests under `knowledge/50_domain/bim_scripts` and failed during collection.
    - Action taken: `pytest.ini` limits test collection to first-party `tests/`.
    - Verification: `.dev-venv/bin/python -m pytest -q` passes.
 
@@ -107,8 +107,8 @@ This audit covers the current workspace as an integrated organization repository
 - Removed the untracked `260519` external development source folder from this operational repository.
 - Added `scripts/addin_dev_paths.py` and migrated BIM Command Center add-in automation to `BCC_ADDIN_DEV_SOURCE_ROOT`.
 - Updated commercial add-in release docs to treat development source as an external input instead of repo-local source.
-- Updated codebase health reporting to exclude `data/bim_scripts/` as reference archive material.
-- Stopped daily knowledge sync from auto-committing `data/bim_scripts/`; BIM script collection can now target `BIM_SCRIPTS_OUTPUT_DIR`.
+- Updated codebase health reporting to exclude `knowledge/50_domain/bim_scripts/` as reference archive material.
+- Stopped daily knowledge sync from auto-committing `knowledge/50_domain/bim_scripts/`; BIM script collection can now target `BIM_SCRIPTS_OUTPUT_DIR`.
 - Added TestClient coverage for search-assisted LUAChat answers persisting knowledge candidates and automatic gap logs.
 - Added structured Revit Assistant/LUAChat error responses for knowledge lookup, answer generation, knowledge persistence, and note persistence stages.
 - Added TestClient coverage for search failure, synthesis failure, and note persistence failure responses.

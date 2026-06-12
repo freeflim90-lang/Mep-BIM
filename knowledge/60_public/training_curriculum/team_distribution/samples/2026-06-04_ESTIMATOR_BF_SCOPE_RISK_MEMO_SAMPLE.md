@@ -3,7 +3,7 @@
 문서상태: 내부 교육 샘플  
 작성일: 2026-06-04  
 역할: 견적심사원, PM, BIM 납품검수, 건축 BIM  
-연결 지식: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_BF_ACCESSIBILITY_STANDARD_UPDATE.md`  
+연결 지식: `knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_BF_ACCESSIBILITY_STANDARD_UPDATE.md`  
 knowledge_state: `KST01 공식확인`, `KST03 적용주의`, `KST04 자동수집`
 
 ---
@@ -94,8 +94,8 @@ Revise:
 
 ## 9. 관련 문서
 
-- `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_BF_ACCESSIBILITY_STANDARD_UPDATE.md`
-- `docs/training_curriculum/team_distribution/samples/2026-06-04_BIM_MODELER_BF_QA_CHECKLIST_SAMPLE.md`
-- `data/knowledge_base/견적심사원.md`
-- `data/knowledge_base/건축.md`
-- `data/knowledge_base/BIM_납품검수.md`
+- `knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_BF_ACCESSIBILITY_STANDARD_UPDATE.md`
+- `knowledge/60_public/training_curriculum/team_distribution/samples/2026-06-04_BIM_MODELER_BF_QA_CHECKLIST_SAMPLE.md`
+- `knowledge/10_agents/90_확장에이전트/견적심사원.md`
+- `knowledge/10_agents/02_견적팀/건축.md`
+- `knowledge/10_agents/90_확장에이전트/BIM_납품검수.md`

@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/simon-un/ifc-processing/CONTRIBUTING.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/simon-un/ifc-processing/CONTRIBUTING.md"
 ---
 
 # Pautas de contribución
 
 ## Source
 
-`data/bim_scripts/simon-un/ifc-processing/CONTRIBUTING.md`
+`knowledge/50_domain/bim_scripts/simon-un/ifc-processing/CONTRIBUTING.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/simon-un/ifc-processing/CONTRIBUTING.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/simon-un/ifc-processing/CONTRIBUTING.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Primero que todo, muchas gracias por considerar contribuir con aportes valiosos.
 
 ## Keywords
 
-bim, bim_scripts, contributing.md, data, ifc-processing, markdown, simon-un, workspace
+bim, bim_scripts, contributing.md, domain, ifc-processing, knowledge, simon-un, sources
 
 ## Related
 

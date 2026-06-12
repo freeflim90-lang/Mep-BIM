@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/specklesystems/specklepy/docs/specklepy/api/credentials.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/specklesystems/specklepy/docs/specklepy/api/credentials.md"
 ---
 
 # credentials
 
 ## Source
 
-`data/bim_scripts/specklesystems/specklepy/docs/specklepy/api/credentials.md`
+`knowledge/50_domain/bim_scripts/specklesystems/specklepy/docs/specklepy/api/credentials.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/specklesystems/specklepy/docs/specklepy/api/credentials.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/specklesystems/specklepy/docs/specklepy/api/credentials.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-api, bim, bim_scripts, credentials.md, cs, data, docs, markdown, specklepy, specklesystems, workspace
+api, bim, bim_scripts, credentials.md, cs, docs, domain, knowledge, sources, specklepy, specklesystems
 
 ## Related
 

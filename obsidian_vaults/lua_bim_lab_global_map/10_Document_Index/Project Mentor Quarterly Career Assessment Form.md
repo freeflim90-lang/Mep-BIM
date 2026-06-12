@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/public_products/launch_packages/project_mentor/CAREER_ASSESSMENT_FORM.md"
+source_path: "knowledge/60_public/training_curriculum/public_products/launch_packages/project_mentor/CAREER_ASSESSMENT_FORM.md"
 ---
 
 # Project Mentor Quarterly Career Assessment Form
 
 ## Source
 
-`docs/training_curriculum/public_products/launch_packages/project_mentor/CAREER_ASSESSMENT_FORM.md`
+`knowledge/60_public/training_curriculum/public_products/launch_packages/project_mentor/CAREER_ASSESSMENT_FORM.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/public_products/launch_packages/project_mentor/CAREER_ASSESSMENT_FORM.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/public_products/launch_packages/project_mentor/CAREER_ASSESSMENT_FORM.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, career_assessment_form.md, clash, cs, curriculum, docs, health, launch_packages, mep, model, project_mentor, public_products, qa, quality, training, training_curriculum
+bim, career_assessment_form.md, clash, curriculum, health, knowledge, launch_packages, mep, model, project_mentor, public, public_products, qa, quality, training, training_curriculum
 
 ## Related
 

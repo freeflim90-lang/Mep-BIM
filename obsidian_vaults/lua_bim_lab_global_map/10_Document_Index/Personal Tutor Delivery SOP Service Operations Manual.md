@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/public_products/launch_packages/personal_tutor/DELIVERY_SOP.md"
+source_path: "knowledge/60_public/training_curriculum/public_products/launch_packages/personal_tutor/DELIVERY_SOP.md"
 ---
 
 # Personal Tutor Delivery SOP Service Operations Manual
 
 ## Source
 
-`docs/training_curriculum/public_products/launch_packages/personal_tutor/DELIVERY_SOP.md`
+`knowledge/60_public/training_curriculum/public_products/launch_packages/personal_tutor/DELIVERY_SOP.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/public_products/launch_packages/personal_tutor/DELIVERY_SOP.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/public_products/launch_packages/personal_tutor/DELIVERY_SOP.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, cs, curriculum, delivery_sop.md, docs, launch_packages, mep, navisworks, personal_tutor, public_products, qa, revit, training, training_curriculum, 진단, 테스트
+bim, curriculum, delivery_sop.md, knowledge, launch_packages, mep, navisworks, personal_tutor, public, public_products, qa, revit, training, training_curriculum, 진단, 테스트
 
 ## Related
 

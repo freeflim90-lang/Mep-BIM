@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/Freedomwithin/BuildingAutomationSimulator/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/Freedomwithin/BuildingAutomationSimulator/README.md"
 ---
 
 # Freedomwithin - BuildingAutomationSimulator - Building Energy Management Dashboard
 
 ## Source
 
-`data/bim_scripts/Freedomwithin/BuildingAutomationSimulator/README.md`
+`knowledge/50_domain/bim_scripts/Freedomwithin/BuildingAutomationSimulator/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/Freedomwithin/BuildingAutomationSimulator/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/Freedomwithin/BuildingAutomationSimulator/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This project is a simplified simulation of a Building Energy Management System (
 
 ## Keywords
 
-api, bim, bim_scripts, buildingautomationsimulator, cs, data, freedomwithin, markdown, model, readme.md, store, workspace
+api, bim, bim_scripts, buildingautomationsimulator, cs, domain, freedomwithin, knowledge, model, readme.md, sources, store
 
 ## Related
 

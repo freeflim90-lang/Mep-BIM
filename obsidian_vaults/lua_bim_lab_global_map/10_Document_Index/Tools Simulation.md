@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/idfkit/idfkit-mcp/docs/api/tools-simulation.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/api/tools-simulation.md"
 ---
 
 # Tools Simulation
 
 ## Source
 
-`data/bim_scripts/idfkit/idfkit-mcp/docs/api/tools-simulation.md`
+`knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/api/tools-simulation.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/idfkit/idfkit-mcp/docs/api/tools-simulation.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/api/tools-simulation.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-api, bim, bim_scripts, cs, data, docs, idfkit, idfkit-mcp, markdown, tools-simulation.md, workspace
+api, bim, bim_scripts, cs, docs, domain, idfkit, idfkit-mcp, knowledge, sources, tools-simulation.md
 
 ## Related
 

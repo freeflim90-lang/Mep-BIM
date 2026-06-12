@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/mep_bim_ai/04b_LEAD_10_YEAR.md"
+source_path: "knowledge/60_public/training_curriculum/mep_bim_ai/04b_LEAD_10_YEAR.md"
 ---
 
 # Lead 과정 10년차 Discipline BIM Lead 본격 수행
 
 ## Source
 
-`docs/training_curriculum/mep_bim_ai/04b_LEAD_10_YEAR.md`
+`knowledge/60_public/training_curriculum/mep_bim_ai/04b_LEAD_10_YEAR.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/mep_bim_ai/04b_LEAD_10_YEAR.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/mep_bim_ai/04b_LEAD_10_YEAR.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, api, b_lead_10_year.md, bim, cs, curriculum, docs, mep, mep_bim_ai, navisworks, qa, revit, roi, sow, training, training_curriculum, 간섭, 개발, 교육, 권한, 납품, 리스크, 물량, 변경, 보안, 역할, 온보딩, 조직, 테스트, 품질
+add-in, api, b_lead_10_year.md, bim, curriculum, knowledge, mep, mep_bim_ai, navisworks, public, qa, revit, roi, sow, training, training_curriculum, 간섭, 개발, 교육, 권한, 납품, 리스크, 물량, 변경, 보안, 역할, 온보딩, 조직, 테스트, 품질
 
 ## Related
 

@@ -31,12 +31,12 @@ bim, logs, markdown, mep, navisworks, qa, qa_simulation, qa_simulation_2026-06-0
 
 - [[logs - qa_simulation - qa_simulation_2026-06-06 - LUA BIM LABS Q A 품질 시뮬레이션 리포트]]
 - [[logs - qa_simulation - qa_simulation_2026-06-07 - LUA BIM LABS Q A 품질 시뮬레이션 리포트]]
-- [[Revit_Addin_QA]]
-- [[간섭검토 Q A 지식]]
-- [[견적서담당 Q A 지식]]
-- [[교육컨설팅 Q A 지식]]
-- [[라이선스결제 Q A 지식]]
-- [[배포문서 Q A 지식]]
+- [[LUA BIM LABS 폴더 인덱스]]
+- [[MEP BIM Coordination Console 개발 핸드오프]]
+- [[2026-05-22 건설 설계 시공 BIM 데일리 브리핑]]
+- [[2026-05-30 15 07 LUA BIM LABS 추론 훈련 다이제스트]]
+- [[2026-05-30 15 08 LUA BIM LABS 추론 훈련 다이제스트]]
+- [[2026-05-30 15 18 LUA BIM LABS 추론 훈련 다이제스트]]
 
 ## Home
 

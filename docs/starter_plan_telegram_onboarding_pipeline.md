@@ -8,7 +8,7 @@ Connect Google Form applications, PayPal payment confirmation, and Telegram less
 
 - Google Form / Sheet: application intake and learning profile
 - PayPal: payment confirmation
-- `data/starter_plan/clients.json`: local service delivery registry
+- `products/starter_plan/clients.json`: local service delivery registry
 - Telegram: daily education delivery channel
 - Obsidian: internal client learning and service notes
 
@@ -60,7 +60,7 @@ This updates the Google Sheet:
 - `Start Date` and `End Date` when payment is verified
 - `Next Action`
 
-If `Payment Verified` is `yes`, the client is also mirrored into `data/starter_plan/clients.json` for daily lesson delivery.
+If `Payment Verified` is `yes`, the client is also mirrored into `products/starter_plan/clients.json` for daily lesson delivery.
 
 Register a form submission:
 
@@ -148,7 +148,7 @@ When the local script prints a status, copy that status back to the Google Sheet
 The daily Telegram sender now reads:
 
 - internal education users from the existing script
-- active Starter clients from `data/starter_plan/clients.json`
+- active Starter clients from `products/starter_plan/clients.json`
 
 A Starter client receives daily lessons only when all are true:
 

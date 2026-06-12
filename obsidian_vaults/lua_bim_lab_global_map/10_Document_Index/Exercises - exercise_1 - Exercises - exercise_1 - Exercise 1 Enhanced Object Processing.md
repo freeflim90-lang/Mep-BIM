@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/Exercises/exercise_1/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/Exercises/exercise_1/README.md"
 ---
 
 # Exercises - exercise_1 - Exercise 1 Enhanced Object Processing
 
 ## Source
 
-`data/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/Exercises/exercise_1/README.md`
+`knowledge/50_domain/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/Exercises/exercise_1/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/Exercises/exercise_1/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/Exercises/exercise_1/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Building on Exercise 0, this exercise enhances the comment function with multi-o
 
 ## Keywords
 
-addin, bim, bim_scripts, data, exercise_1, exercises, markdown, qa, readme.md, speckle-automate-qa_qc_workshop, specklesystems, workspace
+addin, bim, bim_scripts, domain, exercise_1, exercises, knowledge, qa, readme.md, sources, speckle-automate-qa_qc_workshop, specklesystems
 
 ## Related
 

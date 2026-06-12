@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/Exercises/exercise_0/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/Exercises/exercise_0/README.md"
 ---
 
 # Exercises - exercise_0 - Exercise 0 Basic Automation
 
 ## Source
 
-`data/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/Exercises/exercise_0/README.md`
+`knowledge/50_domain/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/Exercises/exercise_0/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/Exercises/exercise_0/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/Exercises/exercise_0/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This exercise introduces the fundamental concepts of Speckle Automate by impleme
 
 ## Keywords
 
-bim, bim_scripts, data, exercise_0, exercises, markdown, model, qa, readme.md, speckle-automate-qa_qc_workshop, specklesystems, workspace
+bim, bim_scripts, domain, exercise_0, exercises, knowledge, model, qa, readme.md, sources, speckle-automate-qa_qc_workshop, specklesystems
 
 ## Related
 

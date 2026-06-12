@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination Automation Toolkit.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination Automation Toolkit.md"
 ---
 
 # BIM Coordination Automation Toolkit
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination Automation Toolkit.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination Automation Toolkit.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination Automation Toolkit.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Coordination Automation Toolkit.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This toolkit automates the most time-consuming BIM coordination tasks, reducing 
 
 ## Keywords
 
-api, autodesk, automation, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, coordination, cs, data, markdown, model, navisworks, revit, toolkit.md, workspace
+api, autodesk, automation, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, coordination, cs, domain, knowledge, model, navisworks, revit, sources, toolkit.md
 
 ## Related
 

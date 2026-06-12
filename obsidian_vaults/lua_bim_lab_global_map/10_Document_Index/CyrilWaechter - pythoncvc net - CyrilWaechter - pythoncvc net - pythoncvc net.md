@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/CyrilWaechter/pythoncvc.net/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/CyrilWaechter/pythoncvc.net/README.md"
 ---
 
 # CyrilWaechter - pythoncvc net - pythoncvc net
 
 ## Source
 
-`data/bim_scripts/CyrilWaechter/pythoncvc.net/README.md`
+`knowledge/50_domain/bim_scripts/CyrilWaechter/pythoncvc.net/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/CyrilWaechter/pythoncvc.net/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/CyrilWaechter/pythoncvc.net/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Dépôt de code du site [http://pythoncvc.net](http://pythoncvc.net) Get last ve
 
 ## Keywords
 
-bim, bim_scripts, cyrilwaechter, data, markdown, pythoncvc.net, readme.md, workspace
+bim, bim_scripts, cyrilwaechter, domain, knowledge, pythoncvc.net, readme.md, sources
 
 ## Related
 

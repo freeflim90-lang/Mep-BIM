@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/C-Claus/IfcScripts/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/C-Claus/IfcScripts/README.md"
 ---
 
 # C-Claus - IfcScripts - IfcScripts
 
 ## Source
 
-`data/bim_scripts/C-Claus/IfcScripts/README.md`
+`knowledge/50_domain/bim_scripts/C-Claus/IfcScripts/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/C-Claus/IfcScripts/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/C-Claus/IfcScripts/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Python scripts using IfcOpenShell
 
 ## Keywords
 
-bim, bim_scripts, c-claus, cs, data, ifcscripts, markdown, readme.md, workspace
+bim, bim_scripts, c-claus, cs, domain, ifcscripts, knowledge, readme.md, sources
 
 ## Related
 

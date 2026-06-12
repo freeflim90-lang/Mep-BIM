@@ -34,9 +34,9 @@ api, autodesk, autodesk_market, bim, bim_command_center_feature_roadmap.md, clas
 - [[Autodesk Marketplace 분석 2026-06-12 08 15]]
 - [[BIM Command Center 개발 분류표]]
 - [[Autodesk Marketplace 분석 2026-06-02 08 14]]
-- [[2026-05-21 Daily Knowledge Update]]
 - [[2026-05-21 건설 설계 시공 BIM 데일리 브리핑]]
-- [[2026-05-22 Daily Knowledge Curation Review]]
+- [[2026-05-22 건설 설계 시공 BIM 데일리 브리핑]]
+- [[2026-05-23 건설 설계 시공 BIM 데일리 브리핑]]
 
 ## Home
 

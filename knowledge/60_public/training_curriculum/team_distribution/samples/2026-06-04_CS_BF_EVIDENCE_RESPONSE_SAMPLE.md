@@ -3,7 +3,7 @@
 문서상태: 내부 교육 샘플  
 작성일: 2026-06-04  
 역할: CS/기술지원, PM, BIM 모델러, QA_테스터  
-연결 지식: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_BF_ACCESSIBILITY_STANDARD_UPDATE.md`  
+연결 지식: `knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_BF_ACCESSIBILITY_STANDARD_UPDATE.md`  
 사용 KST 코드: `KST01 공식확인`, `KST03 적용주의`, `KST04 자동수집`
 
 ---
@@ -96,9 +96,9 @@ LUA BIM LABS | [이메일]
 
 ## 8. 관련 문서
 
-- `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_BF_ACCESSIBILITY_STANDARD_UPDATE.md`
-- `docs/training_curriculum/team_distribution/samples/2026-06-04_QA_BF_AUTOCHECK_RULE_CANDIDATE_SAMPLE.md`
-- `docs/training_curriculum/team_distribution/samples/2026-06-04_BIM_MODELER_BF_QA_CHECKLIST_SAMPLE.md`
-- `data/knowledge_base/고객지원CS.md`
-- `data/knowledge_base/BIM_납품검수.md`
-- `data/knowledge_base/QA_테스터.md`
+- `knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_BF_ACCESSIBILITY_STANDARD_UPDATE.md`
+- `knowledge/60_public/training_curriculum/team_distribution/samples/2026-06-04_QA_BF_AUTOCHECK_RULE_CANDIDATE_SAMPLE.md`
+- `knowledge/60_public/training_curriculum/team_distribution/samples/2026-06-04_BIM_MODELER_BF_QA_CHECKLIST_SAMPLE.md`
+- `knowledge/10_agents/06_스토어상용화팀/고객지원CS.md`
+- `knowledge/10_agents/90_확장에이전트/BIM_납품검수.md`
+- `knowledge/10_agents/90_확장에이전트/QA_테스터.md`

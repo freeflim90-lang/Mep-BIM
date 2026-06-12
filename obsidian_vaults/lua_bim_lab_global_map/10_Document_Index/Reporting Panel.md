@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/04-reporting.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/04-reporting.md"
 ---
 
 # Reporting Panel
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/04-reporting.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/04-reporting.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/04-reporting.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/04-reporting.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ The Reporting panel generates coordination reports directly from Revit. For the 
 
 ## Keywords
 
-bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, data, docs, health, markdown, model, navisworks, reporting.md, revit, tools, workspace
+bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, docs, domain, health, knowledge, model, navisworks, reporting.md, revit, sources, tools
 
 ## Related
 

@@ -33,7 +33,7 @@
 |---:|---|---|
 | 1 | 팀원이 `📚 지식질문` 버튼 또는 자연어로 질문 | 팀원 |
 | 2 | 질문 의도와 담당 지식 분야 추정 | 지식업데이트 |
-| 3 | `data/knowledge_base`, `docs`, `obsidian_vaults` Markdown 검색 | 지식업데이트 |
+| 3 | `knowledge/10_agents`, `docs`, `obsidian_vaults` Markdown 검색 | 지식업데이트 |
 | 4 | 기존 Obsidian 기준 1차 답변 회신 | 담당 AI |
 | 5 | 질문과 1차 답변을 Obsidian Q&A 노트로 저장 | 지식업데이트 |
 | 6 | 팀원이 충분하면 확인, 부족하면 `🔎 더 찾아줘`로 회신 | 팀원 |
@@ -129,10 +129,10 @@ TELEGRAM_TEAM_CHAT_IDS=-100xxxxxxxxxx
 
 | 기록 | 위치 |
 |---|---|
-| 팀원 요청 로그 | `data/team_requests/telegram_knowledge_requests.md` |
+| 팀원 요청 로그 | `knowledge/30_intake/team_requests/telegram_knowledge_requests.md` |
 | 팀원 Q&A 지식 노트 | `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Team_Telegram_QA` |
 | 팀원 Q&A 인덱스 | `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Team_Telegram_QA/MOC - Team Telegram QA.md` |
-| 담당 지식 보강 | `data/knowledge_base/{담당분야}.md` |
+| 담당 지식 보강 | `knowledge/10_agents/90_확장에이전트/{담당분야}.md` |
 | Obsidian 그래프 | `obsidian_vaults/model_quality_auditor/Assets/mqa_knowledge_graph.html` |
 | 전역 지식맵 | `obsidian_vaults/lua_bim_lab_global_map` |
 

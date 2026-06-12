@@ -61,8 +61,8 @@ Project Mentor 문의:
 | `docs/personal_mep_bim_tutor_pricing_payment.md` | Starter-only와 다중 플랜 출시 문구 혼재 | 상품별 Launch Status 필드 추가 |
 | `docs/project_mentor_terms_and_disclaimers.md` | 가격/환불 조건이 공개 판매 약관처럼 읽힐 수 있음 | 배포 등급과 `CONSULTATION_ONLY` 상태 표시 |
 | `docs/external_service_setup_guide.md` | Project Mentor 결제 링크 생성 작업이 공개 준비로 오해될 수 있음 | CEO/CFO 승인 전 링크 생성/발송 금지 표시 |
-| `data/knowledge_base/CFO.md` | App Store 구독 가격과 교육 상품 가격 기준이 혼재 | 상품군별 source of truth 분리 |
-| `data/knowledge_base/고객지원CS.md` | 가격 문의 응대 시 상위 상품 확정 안내 위험 | Coming Soon/상담 후보 문구 추가 |
+| `knowledge/10_agents/01_경영진/CFO.md` | App Store 구독 가격과 교육 상품 가격 기준이 혼재 | 상품군별 source of truth 분리 |
+| `knowledge/10_agents/06_스토어상용화팀/고객지원CS.md` | 가격 문의 응대 시 상위 상품 확정 안내 위험 | Coming Soon/상담 후보 문구 추가 |
 
 ## 7. 판정
 

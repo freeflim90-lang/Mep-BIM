@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Docs - General
-source_path: "docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_ISO19650_CDE_INFORMATION_MANAGEMENT_UPDATE.md"
+category: Knowledge Curation
+source_path: "knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_ISO19650_CDE_INFORMATION_MANAGEMENT_UPDATE.md"
 ---
 
 # 2026-06-04 LUA BIM LABS ISO 19650 CDE Information Management Update
 
 ## Source
 
-`docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_ISO19650_CDE_INFORMATION_MANAGEMENT_UPDATE.md`
+`knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_ISO19650_CDE_INFORMATION_MANAGEMENT_UPDATE.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_ISO19650_CDE_INFORMATION_MANAGEMENT_UPDATE.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_ISO19650_CDE_INFORMATION_MANAGEMENT_UPDATE.md`
 
 ## Category
 
-- [[MOC - Docs - General]]
+- [[MOC - Knowledge Curation]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ ISO 공식 페이지와 UK BIM Framework/IMI guidance 기준으로 LUA BIM LABS 
 
 ## Keywords
 
-audit, bim, cs, daily, docs, general, knowledge_updates, lua_bim_labs_iso19650_cde_information_management_update.md, model, qa, quality, revit, sow, 간섭, 납품, 심사, 조직, 지식, 지원
+audit, bim, curation, daily, knowledge, lua_bim_labs_iso19650_cde_information_management_update.md, model, qa, quality, revit, sow, updates, 간섭, 납품, 심사, 조직, 지식, 지원
 
 ## Related
 

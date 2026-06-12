@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/C-BSS/ESTtoolBar/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/C-BSS/ESTtoolBar/README.md"
 ---
 
 # C-BSS - ESTtoolBar - ESTtoolBar
 
 ## Source
 
-`data/bim_scripts/C-BSS/ESTtoolBar/README.md`
+`knowledge/50_domain/bim_scripts/C-BSS/ESTtoolBar/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/C-BSS/ESTtoolBar/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/C-BSS/ESTtoolBar/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Conjunto de scripts creados en python y Dynamo para la disciplina de Estructuras
 
 ## Keywords
 
-bim, bim_scripts, c-bss, data, esttoolbar, markdown, readme.md, revit, workspace
+bim, bim_scripts, c-bss, domain, esttoolbar, knowledge, readme.md, revit, sources
 
 ## Related
 

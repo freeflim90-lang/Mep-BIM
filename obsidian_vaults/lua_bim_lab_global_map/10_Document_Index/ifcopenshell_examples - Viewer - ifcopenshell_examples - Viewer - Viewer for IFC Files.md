@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/stefkeB/ifcopenshell_examples/Viewer/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/stefkeB/ifcopenshell_examples/Viewer/README.md"
 ---
 
 # ifcopenshell_examples - Viewer - Viewer for IFC Files
 
 ## Source
 
-`data/bim_scripts/stefkeB/ifcopenshell_examples/Viewer/README.md`
+`knowledge/50_domain/bim_scripts/stefkeB/ifcopenshell_examples/Viewer/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/stefkeB/ifcopenshell_examples/Viewer/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/stefkeB/ifcopenshell_examples/Viewer/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ The main window of a basic IFC viewer. This collects all views, widgets and mana
 
 ## Keywords
 
-api, bim, bim_scripts, data, ifcopenshell_examples, markdown, model, readme.md, stefkeb, viewer, workspace
+api, bim, bim_scripts, domain, ifcopenshell_examples, knowledge, model, readme.md, sources, stefkeb, viewer
 
 ## Related
 

@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/idfkit/idfkit-mcp/docs/getting-started/first-session.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/getting-started/first-session.md"
 ---
 
 # First Session
 
 ## Source
 
-`data/bim_scripts/idfkit/idfkit-mcp/docs/getting-started/first-session.md`
+`knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/getting-started/first-session.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/idfkit/idfkit-mcp/docs/getting-started/first-session.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/getting-started/first-session.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This walkthrough demonstrates a complete first run in any MCP client. Create a m
 
 ## Keywords
 
-bim, bim_scripts, cs, data, docs, first-session.md, getting-started, idfkit, idfkit-mcp, markdown, model, workspace
+bim, bim_scripts, cs, docs, domain, first-session.md, getting-started, idfkit, idfkit-mcp, knowledge, model, sources
 
 ## Related
 

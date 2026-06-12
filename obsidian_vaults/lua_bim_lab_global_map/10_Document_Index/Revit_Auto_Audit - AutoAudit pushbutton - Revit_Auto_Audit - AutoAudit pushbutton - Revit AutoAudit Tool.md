@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/BenLin-UC/Revit_Auto_Audit/AutoAudit.pushbutton/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/BenLin-UC/Revit_Auto_Audit/AutoAudit.pushbutton/README.md"
 ---
 
 # Revit_Auto_Audit - AutoAudit pushbutton - Revit AutoAudit Tool
 
 ## Source
 
-`data/bim_scripts/BenLin-UC/Revit_Auto_Audit/AutoAudit.pushbutton/README.md`
+`knowledge/50_domain/bim_scripts/BenLin-UC/Revit_Auto_Audit/AutoAudit.pushbutton/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/BenLin-UC/Revit_Auto_Audit/AutoAudit.pushbutton/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/BenLin-UC/Revit_Auto_Audit/AutoAudit.pushbutton/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ A first generation Revit model auditing tool developed by Preformance that analy
 
 ## Keywords
 
-api, audit, autoaudit.pushbutton, autodesk, benlin-uc, bim, bim_scripts, cs, data, health, markdown, model, readme.md, revit, revit_auto_audit, store, workspace
+api, audit, autoaudit.pushbutton, autodesk, benlin-uc, bim, bim_scripts, cs, domain, health, knowledge, model, readme.md, revit, revit_auto_audit, sources, store
 
 ## Related
 

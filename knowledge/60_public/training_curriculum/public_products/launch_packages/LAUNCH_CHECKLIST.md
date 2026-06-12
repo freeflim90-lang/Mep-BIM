@@ -207,16 +207,16 @@
 
 ### 즉시 처리 (Starter 품질 완성)
 
-1. [ ] Reference Card PDF 실제 제작 (Canva 또는 Google Slides → PDF 8장) — 완료 후 `data/starter_plan/reference_cards/` 에 배치
+1. [ ] Reference Card PDF 실제 제작 (Canva 또는 Google Slides → PDF 8장) — 완료 후 `products/starter_plan/reference_cards/` 에 배치
 2. [ ] Certificate PDF 실제 제작 (60일/90일 템플릿 기반, 클라이언트별 이름 변수화)
 3. [x] `bim_education/send_daily.py` 90일 커리큘럼 기반으로 업데이트 완료 ✅
    - [x] Track 9 공종 배정 로직 (Day 61+ discipline별 분기) ✅
    - [x] BIM Check Friday 자동 발송 로직 (매주 금요일 자동 감지) ✅
-   - [x] BIM Check Friday 퀴즈 파일 13주분 생성 ✅ (`data/starter_plan/friday_quiz/week_01~13.txt`)
+   - [x] BIM Check Friday 퀴즈 파일 13주분 생성 ✅ (`products/starter_plan/friday_quiz/week_01~13.txt`)
    - [x] 마일스톤 메시지 자동 발송 (Day 30/60/90) ✅
    - [x] 레퍼런스 카드 파일 전송 자동화 (PDF 파일 배치 후 자동 발송) ✅
    - [ ] Track 5-8 레슨 파일 (`day_031.txt` ~ `day_060.txt`) 생성 — `TRACK_5_TO_8_COMPLETE.md` 기반 수동 변환 필요
-   - [ ] Track 9 레슨 파일 (`data/starter_plan/messages/{discipline}/day_061~090.txt`) 생성 — `STARTER_SUPPORT_MATERIALS.md` 기반 수동 변환 필요
+   - [ ] Track 9 레슨 파일 (`products/starter_plan/messages/{discipline}/day_061~090.txt`) 생성 — `STARTER_SUPPORT_MATERIALS.md` 기반 수동 변환 필요
 
 ### 런칭 준비 (Personal Tutor)
 

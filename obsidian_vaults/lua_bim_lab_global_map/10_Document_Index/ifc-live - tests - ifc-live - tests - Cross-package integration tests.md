@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/FelonBall/ifc-live/tests/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/FelonBall/ifc-live/tests/README.md"
 ---
 
 # ifc-live - tests - Cross-package integration tests
 
 ## Source
 
-`data/bim_scripts/FelonBall/ifc-live/tests/README.md`
+`knowledge/50_domain/bim_scripts/FelonBall/ifc-live/tests/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/FelonBall/ifc-live/tests/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/FelonBall/ifc-live/tests/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Tests in this directory exercise multiple packages together — e.g. a server pr
 
 ## Keywords
 
-bim, bim_scripts, cs, data, felonball, ifc-live, markdown, model, readme.md, tests, workspace
+bim, bim_scripts, cs, domain, felonball, ifc-live, knowledge, model, readme.md, sources, tests
 
 ## Related
 

@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/specklesystems/specklepy/docs/specklepy/logging/exceptions.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/specklesystems/specklepy/docs/specklepy/logging/exceptions.md"
 ---
 
 # exceptions
 
 ## Source
 
-`data/bim_scripts/specklesystems/specklepy/docs/specklepy/logging/exceptions.md`
+`knowledge/50_domain/bim_scripts/specklesystems/specklepy/docs/specklepy/logging/exceptions.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/specklesystems/specklepy/docs/specklepy/logging/exceptions.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/specklesystems/specklepy/docs/specklepy/logging/exceptions.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, bim_scripts, cs, data, docs, exceptions.md, logging, markdown, specklepy, specklesystems, workspace
+bim, bim_scripts, cs, docs, domain, exceptions.md, knowledge, logging, sources, specklepy, specklesystems
 
 ## Related
 
@@ -35,8 +35,8 @@ bim, bim_scripts, cs, data, docs, exceptions.md, logging, markdown, specklepy, s
 - [[client]]
 - [[credentials]]
 - [[data_objects]]
-- [[github - ISSUE_TEMPLATE - feature_request - c2d159]]
-- [[github - ISSUE_TEMPLATE - github - ISSUE_TEMPLATE - github - ISSUE_TEMPLATE - bug_report - 58e044]]
+- [[github - ISSUE_TEMPLATE - feature_request - ecfd74]]
+- [[github - ISSUE_TEMPLATE - github - ISSUE_TEMPLATE - github - ISSUE_TEMPLATE - bug_report - fe0bff]]
 
 ## Home
 

@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/docs/proof-checklist.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/docs/proof-checklist.md"
 ---
 
 # Final Proof Checklist
 
 ## Source
 
-`data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/docs/proof-checklist.md`
+`knowledge/50_domain/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/docs/proof-checklist.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/docs/proof-checklist.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/docs/proof-checklist.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Use this checklist before sharing your project: - [ ] `README.md` explains busin
 
 ## Keywords
 
-ai-powered-energy-consumption-forecasting, bim, bim_scripts, cs, data, docs, markdown, model, proof-checklist.md, shri694-rawal, workspace
+ai-powered-energy-consumption-forecasting, bim, bim_scripts, cs, docs, domain, knowledge, model, proof-checklist.md, shri694-rawal, sources
 
 ## Related
 

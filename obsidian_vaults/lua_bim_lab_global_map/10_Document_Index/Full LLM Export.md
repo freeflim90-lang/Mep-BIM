@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/viktor-platform/aps-automation-sdk/.agents/skills/full-llm-export/SKILL.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/viktor-platform/aps-automation-sdk/.agents/skills/full-llm-export/SKILL.md"
 ---
 
 # Full LLM Export
 
 ## Source
 
-`data/bim_scripts/viktor-platform/aps-automation-sdk/.agents/skills/full-llm-export/SKILL.md`
+`knowledge/50_domain/bim_scripts/viktor-platform/aps-automation-sdk/.agents/skills/full-llm-export/SKILL.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/viktor-platform/aps-automation-sdk/.agents/skills/full-llm-export/SKILL.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/viktor-platform/aps-automation-sdk/.agents/skills/full-llm-export/SKILL.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Generate `llms-full.txt` from repository source files with deterministic include
 
 ## Keywords
 
-agents, aps-automation-sdk, bim, bim_scripts, cs, data, full-llm-export, markdown, skill.md, skills, viktor-platform, workspace
+agents, aps-automation-sdk, bim, bim_scripts, cs, domain, full-llm-export, knowledge, skill.md, skills, sources, viktor-platform
 
 ## Related
 

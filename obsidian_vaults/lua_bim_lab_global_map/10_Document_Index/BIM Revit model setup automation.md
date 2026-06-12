@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Revit model setup automation.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Revit model setup automation.md"
 ---
 
 # BIM Revit model setup automation
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Revit model setup automation.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Revit model setup automation.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Revit model setup automation.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Revit model setup automation.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Automating Revit model setup is one of the highest-ROI automations a BIM team ca
 
 ## Keywords
 
-api, automation.md, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, data, health, markdown, model, navisworks, qa, revit, roi, setup, workspace
+api, automation.md, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, domain, health, knowledge, model, navisworks, qa, revit, roi, setup, sources
 
 ## Related
 

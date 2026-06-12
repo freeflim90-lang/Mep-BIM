@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/specklesystems/specklepy/docs/speckle_automate/runner.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/specklesystems/specklepy/docs/speckle_automate/runner.md"
 ---
 
 # runner
 
 ## Source
 
-`data/bim_scripts/specklesystems/specklepy/docs/speckle_automate/runner.md`
+`knowledge/50_domain/bim_scripts/specklesystems/specklepy/docs/speckle_automate/runner.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/specklesystems/specklepy/docs/speckle_automate/runner.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/specklesystems/specklepy/docs/speckle_automate/runner.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, bim_scripts, cs, data, docs, markdown, runner.md, speckle_automate, specklepy, specklesystems, workspace
+bim, bim_scripts, cs, docs, domain, knowledge, runner.md, sources, speckle_automate, specklepy, specklesystems
 
 ## Related
 

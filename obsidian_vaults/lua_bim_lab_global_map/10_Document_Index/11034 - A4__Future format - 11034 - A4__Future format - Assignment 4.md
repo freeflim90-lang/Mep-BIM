@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/DTU-Byg/11034/A4__Future format/readme.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/DTU-Byg/11034/A4__Future format/readme.md"
 ---
 
 # 11034 - A4__Future format - Assignment 4
 
 ## Source
 
-`data/bim_scripts/DTU-Byg/11034/A4__Future format/readme.md`
+`knowledge/50_domain/bim_scripts/DTU-Byg/11034/A4__Future format/readme.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/DTU-Byg/11034/A4__Future format/readme.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/DTU-Byg/11034/A4__Future format/readme.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ In this assignment we will focus on the input data that you need for your final 
 
 ## Keywords
 
-a4__future, bim, bim_scripts, data, dtu-byg, format, markdown, model, readme.md, workspace
+a4__future, bim, bim_scripts, domain, dtu-byg, format, knowledge, model, readme.md, sources
 
 ## Related
 

@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/OttomanAI/mep_automation_kit/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/OttomanAI/mep_automation_kit/README.md"
 ---
 
 # OttomanAI - mep_automation_kit - Drainage Processor
 
 ## Source
 
-`data/bim_scripts/OttomanAI/mep_automation_kit/README.md`
+`knowledge/50_domain/bim_scripts/OttomanAI/mep_automation_kit/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/OttomanAI/mep_automation_kit/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/OttomanAI/mep_automation_kit/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Automates the transfer of Civil 3D pipe network data (LandXML) into Autodesk Rev
 
 ## Keywords
 
-autodesk, bim, bim_scripts, cs, data, markdown, mep, mep_automation_kit, model, ottomanai, readme.md, revit, workspace
+autodesk, bim, bim_scripts, cs, domain, knowledge, mep, mep_automation_kit, model, ottomanai, readme.md, revit, sources
 
 ## Related
 

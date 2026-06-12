@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/public_products/launch_packages/coordinator_mentor/scenarios/SCENARIO_01.md"
+source_path: "knowledge/60_public/training_curriculum/public_products/launch_packages/coordinator_mentor/scenarios/SCENARIO_01.md"
 ---
 
 # Coordinator Mentor Scenario Challenge 1
 
 ## Source
 
-`docs/training_curriculum/public_products/launch_packages/coordinator_mentor/scenarios/SCENARIO_01.md`
+`knowledge/60_public/training_curriculum/public_products/launch_packages/coordinator_mentor/scenarios/SCENARIO_01.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/public_products/launch_packages/coordinator_mentor/scenarios/SCENARIO_01.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/public_products/launch_packages/coordinator_mentor/scenarios/SCENARIO_01.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, coordinator_mentor, cs, curriculum, docs, launch_packages, public_products, scenario_01.md, scenarios, training, training_curriculum
+bim, coordinator_mentor, curriculum, knowledge, launch_packages, public, public_products, scenario_01.md, scenarios, training, training_curriculum
 
 ## Related
 

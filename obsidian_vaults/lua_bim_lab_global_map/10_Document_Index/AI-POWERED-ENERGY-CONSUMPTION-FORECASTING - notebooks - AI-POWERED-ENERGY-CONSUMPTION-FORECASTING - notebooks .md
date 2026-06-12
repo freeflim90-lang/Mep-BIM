@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/notebooks/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/notebooks/README.md"
 ---
 
 # AI-POWERED-ENERGY-CONSUMPTION-FORECASTING - notebooks - Notebooks Folder
 
 ## Source
 
-`data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/notebooks/README.md`
+`knowledge/50_domain/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/notebooks/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/notebooks/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/shri694-Rawal/AI-POWERED-ENERGY-CONSUMPTION-FORECASTING/notebooks/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Use this folder for experiments and EDA notebooks. Suggested notebooks: - `01_da
 
 ## Keywords
 
-ai-powered-energy-consumption-forecasting, bim, bim_scripts, data, markdown, model, notebooks, readme.md, shri694-rawal, workspace
+ai-powered-energy-consumption-forecasting, bim, bim_scripts, domain, knowledge, model, notebooks, readme.md, shri694-rawal, sources
 
 ## Related
 

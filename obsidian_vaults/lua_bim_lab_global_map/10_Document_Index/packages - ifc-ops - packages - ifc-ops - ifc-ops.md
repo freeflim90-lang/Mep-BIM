@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/FelonBall/ifc-live/packages/ifc-ops/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/FelonBall/ifc-live/packages/ifc-ops/README.md"
 ---
 
 # packages - ifc-ops - ifc-ops
 
 ## Source
 
-`data/bim_scripts/FelonBall/ifc-live/packages/ifc-ops/README.md`
+`knowledge/50_domain/bim_scripts/FelonBall/ifc-live/packages/ifc-ops/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/FelonBall/ifc-live/packages/ifc-ops/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/FelonBall/ifc-live/packages/ifc-ops/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Pure-Python data model for IFC operations, used throughout `ifc-live`. This pack
 
 ## Keywords
 
-bim, bim_scripts, cs, data, felonball, ifc-live, ifc-ops, markdown, model, packages, readme.md, workspace
+bim, bim_scripts, cs, domain, felonball, ifc-live, ifc-ops, knowledge, model, packages, readme.md, sources
 
 ## Related
 

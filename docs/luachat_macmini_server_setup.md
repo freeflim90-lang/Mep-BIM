@@ -79,7 +79,7 @@ Content-Type: application/json
   "answer": "답변 내용",
   "sources": [
     {
-      "path": "data/knowledge_base/Revit_Addin.md",
+      "path": "knowledge/10_agents/05_애드인개발팀/Revit_Addin.md",
       "score": 80
     }
   ],

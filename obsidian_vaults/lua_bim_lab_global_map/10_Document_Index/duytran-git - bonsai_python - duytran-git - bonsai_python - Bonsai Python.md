@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/duytran-git/bonsai_python/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/duytran-git/bonsai_python/README.md"
 ---
 
 # duytran-git - bonsai_python - Bonsai Python
 
 ## Source
 
-`data/bim_scripts/duytran-git/bonsai_python/README.md`
+`knowledge/50_domain/bim_scripts/duytran-git/bonsai_python/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/duytran-git/bonsai_python/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/duytran-git/bonsai_python/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ My task was to create a Python script using IfcOpenShell in Bonsai/Blender. The 
 
 ## Keywords
 
-bim, bim_scripts, bonsai_python, cs, data, duytran-git, markdown, model, readme.md, store, workspace
+bim, bim_scripts, bonsai_python, cs, domain, duytran-git, knowledge, model, readme.md, sources, store
 
 ## Related
 

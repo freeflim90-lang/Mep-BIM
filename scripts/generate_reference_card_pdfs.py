@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate PDF reference cards from Markdown source files.
 
-Reads data/starter_plan/reference_cards/*.md and writes PDF files
+Reads products/starter_plan/reference_cards/*.md and writes PDF files
 to the same directory. Called once when reference cards are updated.
 
 Usage:

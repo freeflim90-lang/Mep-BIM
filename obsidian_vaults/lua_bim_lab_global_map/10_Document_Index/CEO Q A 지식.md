@@ -1,7 +1,7 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
+category: AI Knowledge Base - QA
 source_path: "knowledge/20_qa/CEO_QA.md"
 ---
 
@@ -17,7 +17,7 @@ Absolute path:
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - AI Knowledge Base - QA]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-api, autodesk, bim, ceo_qa.md, knowledge, markdown, qa, revit, roi, store, workspace, 개발, 결제, 구독, 라이선스, 스토어, 심사, 지식, 지원
+ai, api, autodesk, base, bim, ceo_qa.md, knowledge, qa, revit, roi, store, 개발, 결제, 구독, 라이선스, 스토어, 심사, 지식, 지원
 
 ## Related
 

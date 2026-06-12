@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/BuildingMetrics/BuildingMetrics-DEER-Energy-Plus-Utilities/commercial/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/BuildingMetrics/BuildingMetrics-DEER-Energy-Plus-Utilities/commercial/README.md"
 ---
 
 # BuildingMetrics-DEER-Energy-Plus-Utilities - commercial - SWHC062
 
 ## Source
 
-`data/bim_scripts/BuildingMetrics/BuildingMetrics-DEER-Energy-Plus-Utilities/commercial/README.md`
+`knowledge/50_domain/bim_scripts/BuildingMetrics/BuildingMetrics-DEER-Energy-Plus-Utilities/commercial/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/BuildingMetrics/BuildingMetrics-DEER-Energy-Plus-Utilities/commercial/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/BuildingMetrics/BuildingMetrics-DEER-Energy-Plus-Utilities/commercial/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Post processing scripts used to in support of the SWHC062 Measure Package Each p
 
 ## Keywords
 
-bim, bim_scripts, buildingmetrics, buildingmetrics-deer-energy-plus-utilities, commercial, cs, data, markdown, model, readme.md, workspace
+bim, bim_scripts, buildingmetrics, buildingmetrics-deer-energy-plus-utilities, commercial, cs, domain, knowledge, model, readme.md, sources
 
 ## Related
 

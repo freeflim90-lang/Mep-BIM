@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/johannesmichael/ifc-python/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/johannesmichael/ifc-python/README.md"
 ---
 
 # johannesmichael - ifc-python - ifc-python
 
 ## Source
 
-`data/bim_scripts/johannesmichael/ifc-python/README.md`
+`knowledge/50_domain/bim_scripts/johannesmichael/ifc-python/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/johannesmichael/ifc-python/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/johannesmichael/ifc-python/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Scripts and tools for analyzing ifc with ifcopenshell and python-occ They were d
 
 ## Keywords
 
-bim, bim_scripts, data, ifc-python, johannesmichael, markdown, readme.md, workspace
+bim, bim_scripts, domain, ifc-python, johannesmichael, knowledge, readme.md, sources
 
 ## Related
 

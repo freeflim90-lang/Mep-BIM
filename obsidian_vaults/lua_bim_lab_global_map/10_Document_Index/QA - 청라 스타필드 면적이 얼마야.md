@@ -21,11 +21,11 @@ Absolute path:
 
 ## Summary
 
-> 요청자: @FreeFilmer ([LONG_ID_MASKED]) > 수집일: 2026-05-24 13:18:28 > 담당 지식: 건축 청라 스타필드 면적이 얼마야? [📚 지식 베이스 (score 31) + 🔍 웹 검색 보강] 청라 스타필드의 연면적은 50만㎡입니다. 이 면적은 약 65개의 축구장 크기로, 대규모 프로젝트임을 알 수 있습니다. - `data/knowledge_base/건축.md` · score `31`
+> 요청자: @FreeFilmer ([LONG_ID_MASKED]) > 수집일: 2026-05-24 13:18:28 > 담당 지식: 건축 청라 스타필드 면적이 얼마야? [📚 지식 베이스 (score 31) + 🔍 웹 검색 보강] 청라 스타필드의 연면적은 50만㎡입니다. 이 면적은 약 65개의 축구장 크기로, 대규모 프로젝트임을 알 수 있습니다. - `knowledge/10_agents/02_견적팀/건축.md` · score `31`
 
 ## Keywords
 
-bim, knowledge, lua_bim_lab_global_map, nas, nas_knowledge, obsidian_vaults, qa, team_telegram_qa, 교육, 지식
+bim, knowledge, lua_bim_lab_global_map, nas, nas_knowledge, obsidian_vaults, qa, team_telegram_qa, 견적, 교육, 지식
 
 ## Related
 

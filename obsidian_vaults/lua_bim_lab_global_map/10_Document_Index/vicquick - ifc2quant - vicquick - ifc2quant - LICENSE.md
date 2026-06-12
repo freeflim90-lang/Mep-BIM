@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/vicquick/ifc2quant/LICENSE.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/vicquick/ifc2quant/LICENSE.md"
 ---
 
 # vicquick - ifc2quant - LICENSE
 
 ## Source
 
-`data/bim_scripts/vicquick/ifc2quant/LICENSE.md`
+`knowledge/50_domain/bim_scripts/vicquick/ifc2quant/LICENSE.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/vicquick/ifc2quant/LICENSE.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/vicquick/ifc2quant/LICENSE.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 Copyright © 2007 Free Softwa
 
 ## Keywords
 
-bim, bim_scripts, data, ifc2quant, license.md, markdown, vicquick, workspace
+bim, bim_scripts, domain, ifc2quant, knowledge, license.md, sources, vicquick
 
 ## Related
 

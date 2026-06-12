@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Troubleshooting Mega-Guide.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Troubleshooting Mega-Guide.md"
 ---
 
 # BIM Troubleshooting Decision Tree
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Troubleshooting Mega-Guide.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Troubleshooting Mega-Guide.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/BIM Troubleshooting Mega-Guide.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM Troubleshooting Mega-Guide.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Below is a **BIM Troubleshooting Decision Tree** designed for experienced BIM co
 
 ## Keywords
 
-api, audit, autodesk, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, data, health, markdown, mega-guide.md, mep, model, navisworks, revit, troubleshooting, workspace
+api, audit, autodesk, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, domain, health, knowledge, mega-guide.md, mep, model, navisworks, revit, sources, troubleshooting
 
 ## Related
 

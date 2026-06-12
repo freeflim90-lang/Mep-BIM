@@ -175,9 +175,9 @@ KST 등급이 낮은 의견은 확정 결론이 아니라 가설로 취급한다
 |---|---|
 | 의사결정 로그 | `docs/internal_organization_documents/12_DECISION_LOG_TEMPLATE.md` |
 | 리스크 등록 | `docs/internal_organization_documents/14_INTERNAL_RISK_ISSUE_REGISTER.md` |
-| 충돌 로그 | `data/knowledge_base/conflict_resolution/CONFLICT_LOG.md` |
-| 지식베이스 업데이트 | `data/knowledge_base/*.md` |
-| 교육자료 | `docs/training_curriculum/` |
+| 충돌 로그 | `knowledge/10_agents/conflict_resolution/CONFLICT_LOG.md` |
+| 지식베이스 업데이트 | `knowledge/10_agents/90_확장에이전트/*.md` |
+| 교육자료 | `knowledge/60_public/training_curriculum/` |
 | 자동화 백로그 | `docs/internal_growth/AX_INTERNAL_GROWTH_BACKLOG.md` |
 
 ### 4.7.1 Customer/Commercial Release Gate
@@ -247,7 +247,7 @@ AI 협업 프로세스는 매월 최소 6개 시나리오로 리허설한다.
 | 실행 인계 | 담당, 기한, 검증 방법이 기록됨 |
 | 지식화 | 반복 가능 항목이 KB, QA, 체크리스트, 백로그로 분류됨 |
 
-리허설 기록은 `data/knowledge_base/conflict_resolution/COLLABORATION_TEST_PLAN.md` 또는 케이스 파일에 남긴다.
+리허설 기록은 `knowledge/10_agents/conflict_resolution/COLLABORATION_TEST_PLAN.md` 또는 케이스 파일에 남긴다.
 실행 양식은 `31_AI_COLLABORATION_RUNBOOK_TEMPLATES.md`를 사용한다.
 
 ## 6.1 조직 내재화 절차
@@ -293,5 +293,5 @@ AI 협업 프로세스는 매월 최소 6개 시나리오로 리허설한다.
 - `21_KNOWLEDGE_CURATION_INTELLIGENCE_CELL.md`
 - `29_ORGANIZATIONAL_KNOWLEDGE_LEARNING_AND_EVIDENCE_RESPONSE_STANDARD.md`
 - `31_AI_COLLABORATION_RUNBOOK_TEMPLATES.md`
-- `data/knowledge_base/조율차장.md`
-- `data/knowledge_base/conflict_resolution/README.md`
+- `knowledge/10_agents/01_경영진/조율차장.md`
+- `knowledge/10_agents/conflict_resolution/README.md`

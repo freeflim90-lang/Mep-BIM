@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/infra-plan/ifc-material-qto/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/infra-plan/ifc-material-qto/README.md"
 ---
 
 # infra-plan - ifc-material-qto - IFC Material QTO
 
 ## Source
 
-`data/bim_scripts/infra-plan/ifc-material-qto/README.md`
+`knowledge/50_domain/bim_scripts/infra-plan/ifc-material-qto/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/infra-plan/ifc-material-qto/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/infra-plan/ifc-material-qto/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ IFC Material QTO is a Python CLI tool to extract material volumes from IFC files
 
 ## Keywords
 
-bim, bim_scripts, cs, data, ifc-material-qto, infra-plan, markdown, model, readme.md, workspace
+bim, bim_scripts, cs, domain, ifc-material-qto, infra-plan, knowledge, model, readme.md, sources
 
 ## Related
 

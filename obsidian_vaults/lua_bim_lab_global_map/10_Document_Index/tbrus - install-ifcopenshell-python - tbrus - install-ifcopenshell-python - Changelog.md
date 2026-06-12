@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/tbrus/install-ifcopenshell-python/CHANGELOG.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/tbrus/install-ifcopenshell-python/CHANGELOG.md"
 ---
 
 # tbrus - install-ifcopenshell-python - Changelog
 
 ## Source
 
-`data/bim_scripts/tbrus/install-ifcopenshell-python/CHANGELOG.md`
+`knowledge/50_domain/bim_scripts/tbrus/install-ifcopenshell-python/CHANGELOG.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/tbrus/install-ifcopenshell-python/CHANGELOG.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/tbrus/install-ifcopenshell-python/CHANGELOG.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ All notable changes to this project will be documented in this file. The format 
 
 ## Keywords
 
-bim, bim_scripts, changelog.md, data, install-ifcopenshell-python, markdown, tbrus, workspace
+bim, bim_scripts, changelog.md, domain, install-ifcopenshell-python, knowledge, sources, tbrus
 
 ## Related
 

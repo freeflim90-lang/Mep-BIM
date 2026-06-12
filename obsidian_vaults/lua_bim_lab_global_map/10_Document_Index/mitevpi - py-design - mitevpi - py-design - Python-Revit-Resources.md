@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/mitevpi/py-design/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/mitevpi/py-design/README.md"
 ---
 
 # mitevpi - py-design - Python-Revit-Resources
 
 ## Source
 
-`data/bim_scripts/mitevpi/py-design/README.md`
+`knowledge/50_domain/bim_scripts/mitevpi/py-design/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/mitevpi/py-design/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/mitevpi/py-design/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This is a list of resources relevant to the brave people who insist in using Pyt
 
 ## Keywords
 
-add-in, api, autodesk, bim, bim_scripts, cs, data, markdown, mitevpi, model, py-design, readme.md, revit, workspace
+add-in, api, autodesk, bim, bim_scripts, cs, domain, knowledge, mitevpi, model, py-design, readme.md, revit, sources
 
 ## Related
 

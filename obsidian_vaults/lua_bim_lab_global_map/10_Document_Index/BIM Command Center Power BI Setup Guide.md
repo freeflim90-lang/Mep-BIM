@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/docs/powerbi/command-center-setup.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/powerbi/command-center-setup.md"
 ---
 
 # BIM Command Center Power BI Setup Guide
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/docs/powerbi/command-center-setup.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/powerbi/command-center-setup.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/docs/powerbi/command-center-setup.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/powerbi/command-center-setup.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Build four dashboards in Power BI Desktop that connect to the CSV files produced
 
 ## Keywords
 
-bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, command-center-setup.md, cs, data, docs, health, kpi, markdown, model, powerbi, workspace
+bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, command-center-setup.md, cs, docs, domain, health, knowledge, kpi, model, powerbi, sources
 
 ## Related
 

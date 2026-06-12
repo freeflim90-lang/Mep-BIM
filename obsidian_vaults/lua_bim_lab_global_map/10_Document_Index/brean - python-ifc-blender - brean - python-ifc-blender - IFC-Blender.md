@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/brean/python-ifc-blender/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/brean/python-ifc-blender/README.md"
 ---
 
 # brean - python-ifc-blender - IFC-Blender
 
 ## Source
 
-`data/bim_scripts/brean/python-ifc-blender/README.md`
+`knowledge/50_domain/bim_scripts/brean/python-ifc-blender/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/brean/python-ifc-blender/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/brean/python-ifc-blender/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ import and manipulate an IFC in Blender based on IFCOpenShell A workflow could l
 
 ## Keywords
 
-autodesk, bim, bim_scripts, brean, cs, data, markdown, model, python-ifc-blender, readme.md, revit, store, workspace
+autodesk, bim, bim_scripts, brean, cs, domain, knowledge, model, python-ifc-blender, readme.md, revit, sources, store
 
 ## Related
 

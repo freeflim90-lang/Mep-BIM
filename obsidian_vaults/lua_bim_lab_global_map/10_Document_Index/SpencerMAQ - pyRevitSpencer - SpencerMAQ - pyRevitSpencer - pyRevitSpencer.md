@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/SpencerMAQ/pyRevitSpencer/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/SpencerMAQ/pyRevitSpencer/README.md"
 ---
 
 # SpencerMAQ - pyRevitSpencer - pyRevitSpencer
 
 ## Source
 
-`data/bim_scripts/SpencerMAQ/pyRevitSpencer/README.md`
+`knowledge/50_domain/bim_scripts/SpencerMAQ/pyRevitSpencer/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/SpencerMAQ/pyRevitSpencer/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/SpencerMAQ/pyRevitSpencer/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Collection of my python scripts for revit https://icons8.com/
 
 ## Keywords
 
-bim, bim_scripts, data, markdown, pyrevitspencer, readme.md, revit, spencermaq, workspace
+bim, bim_scripts, domain, knowledge, pyrevitspencer, readme.md, revit, sources, spencermaq
 
 ## Related
 

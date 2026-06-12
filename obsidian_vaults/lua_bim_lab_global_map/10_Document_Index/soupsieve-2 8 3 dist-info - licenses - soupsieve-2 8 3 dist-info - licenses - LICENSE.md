@@ -33,10 +33,10 @@ lib, license.md, licenses, markdown, outbound_sales, python3.14, scripts, site-p
 - [[_vendor - idna - _vendor - idna - _vendor - idna - LICENSE - e07784]]
 - [[duckduckgo_search-8 1 1 dist-info - licenses - duckduckgo_search-8 1 1 dist-info - licenses - LICENSE]]
 - [[idna-3 16 dist-info - licenses - idna-3 16 dist-info - licenses - LICENSE]]
-- [[dragance106 - overhang-surrogates - dragance106 - overhang-surrogates - LICENSE]]
-- [[speckleifc - licenses - speckleifc - licenses - Third-Party Licenses]]
-- [[vicquick - ifc2quant - vicquick - ifc2quant - LICENSE]]
-- [[11034 - A1__Dashboard - 11034 - A1__Dashboard - A1 IFC Dashboard]]
+- [[LUA BIM LABS 폴더 인덱스]]
+- [[MEP BIM Coordination Console 개발 핸드오프]]
+- [[Mep-BIM - Mep-BIM - Mep-BIM]]
+- [[README - README - Mep-BIM]]
 
 ## Home
 

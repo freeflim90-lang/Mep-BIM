@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/Jmanrique-bim/ManriqueToolsPyRevit/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/Jmanrique-bim/ManriqueToolsPyRevit/README.md"
 ---
 
 # Jmanrique-bim - ManriqueToolsPyRevit - README
 
 ## Source
 
-`data/bim_scripts/Jmanrique-bim/ManriqueToolsPyRevit/README.md`
+`knowledge/50_domain/bim_scripts/Jmanrique-bim/ManriqueToolsPyRevit/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/Jmanrique-bim/ManriqueToolsPyRevit/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/Jmanrique-bim/ManriqueToolsPyRevit/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ A set of BIM utilities built with C# and PyRevit to streamline and automate Revi
 
 ## Keywords
 
-add-in, autodesk, bim, bim_scripts, data, jmanrique-bim, manriquetoolspyrevit, markdown, model, readme.md, revit, workspace
+add-in, autodesk, bim, bim_scripts, domain, jmanrique-bim, knowledge, manriquetoolspyrevit, model, readme.md, revit, sources
 
 ## Related
 

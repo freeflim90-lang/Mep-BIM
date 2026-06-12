@@ -3,7 +3,7 @@
 문서상태: 내부 전략 학습 샘플  
 작성일: 2026-06-04  
 역할: CEO/CSO, 전략기획, 교육컨설팅, QA_테스터, 견적심사원  
-연결 지식: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_BF_ACCESSIBILITY_STANDARD_UPDATE.md`  
+연결 지식: `knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_BF_ACCESSIBILITY_STANDARD_UPDATE.md`  
 knowledge_state: `KST01 공식확인`, `KST03 적용주의`, `KST04 자동수집`
 
 ---
@@ -110,10 +110,10 @@ Revise:
 
 ## 10. 관련 문서
 
-- `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_BF_ACCESSIBILITY_STANDARD_UPDATE.md`
-- `docs/training_curriculum/team_distribution/samples/2026-06-04_BIM_MODELER_BF_QA_CHECKLIST_SAMPLE.md`
-- `docs/training_curriculum/team_distribution/samples/2026-06-04_QA_BF_AUTOCHECK_RULE_CANDIDATE_SAMPLE.md`
-- `docs/training_curriculum/team_distribution/samples/2026-06-04_ESTIMATOR_BF_SCOPE_RISK_MEMO_SAMPLE.md`
-- `data/knowledge_base/CEO.md`
-- `data/knowledge_base/최고전략CSO.md`
-- `data/knowledge_base/전략기획.md`
+- `knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_BF_ACCESSIBILITY_STANDARD_UPDATE.md`
+- `knowledge/60_public/training_curriculum/team_distribution/samples/2026-06-04_BIM_MODELER_BF_QA_CHECKLIST_SAMPLE.md`
+- `knowledge/60_public/training_curriculum/team_distribution/samples/2026-06-04_QA_BF_AUTOCHECK_RULE_CANDIDATE_SAMPLE.md`
+- `knowledge/60_public/training_curriculum/team_distribution/samples/2026-06-04_ESTIMATOR_BF_SCOPE_RISK_MEMO_SAMPLE.md`
+- `knowledge/10_agents/01_경영진/CEO.md`
+- `knowledge/10_agents/90_확장에이전트/최고전략CSO.md`
+- `knowledge/10_agents/90_확장에이전트/전략기획.md`

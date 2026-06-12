@@ -1,7 +1,7 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
+category: AI Knowledge Base - QA
 source_path: "knowledge/20_qa/경비정산_AI_QA.md"
 ---
 
@@ -17,7 +17,7 @@ Absolute path:
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - AI Knowledge Base - QA]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-ai_qa.md, bim, knowledge, markdown, qa, workspace, 결제, 권한, 지식, 회의
+ai, ai_qa.md, base, bim, knowledge, qa, 결제, 권한, 지식, 회의
 
 ## Related
 

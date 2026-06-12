@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Docs - General
-source_path: "docs/knowledge_intake/2026-05-22_HVAC_LOAD_SYSTEM_SELECTION_PDF_INTAKE.md"
+category: Knowledge Intake
+source_path: "knowledge/30_intake/2026-05-22_HVAC_LOAD_SYSTEM_SELECTION_PDF_INTAKE.md"
 ---
 
 # HVAC 부하계산과 공조시스템 선정 PDF 지식 수집 기록
 
 ## Source
 
-`docs/knowledge_intake/2026-05-22_HVAC_LOAD_SYSTEM_SELECTION_PDF_INTAKE.md`
+`knowledge/30_intake/2026-05-22_HVAC_LOAD_SYSTEM_SELECTION_PDF_INTAKE.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/knowledge_intake/2026-05-22_HVAC_LOAD_SYSTEM_SELECTION_PDF_INTAKE.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/30_intake/2026-05-22_HVAC_LOAD_SYSTEM_SELECTION_PDF_INTAKE.md`
 
 ## Category
 
-- [[MOC - Docs - General]]
+- [[MOC - Knowledge Intake]]
 
 ## Summary
 
@@ -25,18 +25,18 @@ Absolute path:
 
 ## Keywords
 
-bim, cs, docs, general, hvac_load_system_selection_pdf_intake.md, knowledge_intake, qa, revit, 교육, 역할, 지식, 진단, 품질
+bim, hvac_load_system_selection_pdf_intake.md, intake, knowledge, qa, revit, 교육, 역할, 지식, 진단, 품질
 
 ## Related
 
-- [[2026-05-21 Daily Knowledge Update]]
-- [[2026-05-21 건설 설계 시공 BIM 데일리 브리핑]]
-- [[2026-05-22 Daily Knowledge Curation Review]]
-- [[2026-05-22 Daily Knowledge Update]]
-- [[2026-05-22 건설 설계 시공 BIM 데일리 브리핑]]
-- [[2026-05-23 Daily Knowledge Curation Review]]
-- [[2026-05-23 Daily Knowledge Update]]
-- [[2026-05-23 건설 설계 시공 BIM 데일리 브리핑]]
+- [[2026-06-04 CEO CSO BF 품질진단 상품화 판단 메모 샘플]]
+- [[2026-06-04 HR KST 기반 학습 기록 샘플]]
+- [[2026-06-04 LUA BIM LABS BF Accessibility Standard Update]]
+- [[2026-06-04 뉴스 트렌드 18항목 지식 업데이트]]
+- [[2026-06-04 역할별 지식학습 주간 스프린트]]
+- [[30_intake - external_sources - LUA BIM LAB]]
+- [[AI 협업운영체계 지식 베이스]]
+- [[CEO 지식 베이스]]
 
 ## Home
 

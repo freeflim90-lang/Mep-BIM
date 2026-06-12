@@ -48,7 +48,7 @@ Admin Notes
 Use the local Starter Plan registry for Telegram delivery:
 
 ```text
-data/starter_plan/clients.json
+products/starter_plan/clients.json
 ```
 
 Detailed onboarding commands:

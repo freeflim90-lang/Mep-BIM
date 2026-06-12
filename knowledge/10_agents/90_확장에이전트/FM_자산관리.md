@@ -162,7 +162,7 @@ wb.save("COBie_Package.xlsx")
 
 
 ## 2026-06-04 기계설비법 기반 FM 이관 보강
-- Source: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_MECHANICAL_EQUIPMENT_MAINTENANCE_LAW_UPDATE.md`
+- Source: `knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_MECHANICAL_EQUIPMENT_MAINTENANCE_LAW_UPDATE.md`
 - Tags: fm,mechanical-equipment-law,maintenance,performance-check,cobie,official-source
 
 FM BIM 이관 시 기계설비법과 기계설비 유지관리기준 적용 여부를 확인한다. 장비대장, COBie, O&M 문서, 유지관리지침서, 성능점검 보고서 대응 데이터를 서로 연결해야 한다.
@@ -186,7 +186,7 @@ FM 추가 필드:
 
 
 ## 2026-06-04 에너지/ZEB 기반 FM 이관 보강
-- Source: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_ENERGY_ZEB_STANDARD_UPDATE.md`
+- Source: `knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_ENERGY_ZEB_STANDARD_UPDATE.md`
 - Tags: fm,energy-saving-design,ZEB,BEMS,COBie,official-source
 
 FM BIM 이관 시 에너지절약계획서, 에너지효율등급, ZEB 인증 결과와 운영 데이터가 끊기지 않아야 한다. 준공 모델은 인증 결과를 설명하는 모델이자, 운영 중 에너지 사용량을 추적하는 기준 모델로 사용될 수 있다.
@@ -209,7 +209,7 @@ FM 추가 필드:
 
 
 ## 2026-06-04 위생·저수조·배수설비 FM 이관 보강
-- Source: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_PLUMBING_WATER_TANK_DRAINAGE_STANDARD_UPDATE.md`
+- Source: `knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_PLUMBING_WATER_TANK_DRAINAGE_STANDARD_UPDATE.md`
 - Tags: fm,plumbing,water-tank,drainage,water-quality,official-source
 
 FM BIM 이관 시 저수조와 배수설비는 수질·위생·신고·유지관리 기록과 연결한다. 준공 모델에는 저수조 위생점검 대상, 청소 접근성, 급수 계통, 공공하수도 접속, 집수정/펌프 점검 정보를 남겨야 한다.

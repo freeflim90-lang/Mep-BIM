@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/starter_plan/lesson_templates/starter_lesson_template.md"
+category: Products
+source_path: "products/starter_plan/lesson_templates/starter_lesson_template.md"
 ---
 
 # starter_lesson_template
 
 ## Source
 
-`data/starter_plan/lesson_templates/starter_lesson_template.md`
+`products/starter_plan/lesson_templates/starter_lesson_template.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/starter_plan/lesson_templates/starter_lesson_template.md`
+`/Users/choejeong-yeon/LUA BIM LABS/products/starter_plan/lesson_templates/starter_lesson_template.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Products]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ LUA BIM LABS Starter Day {{day}} - {{topic}} 1. Why This Matters {{why_this_matt
 
 ## Keywords
 
-bim, data, lesson_templates, markdown, starter_lesson_template.md, starter_plan, workspace
+bim, lesson_templates, products, starter_lesson_template.md, starter_plan
 
 ## Related
 

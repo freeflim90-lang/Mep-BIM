@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/public_products/05_PRICING_EVOLUTION_ROADMAP.md"
+source_path: "knowledge/60_public/training_curriculum/public_products/05_PRICING_EVOLUTION_ROADMAP.md"
 ---
 
 # LUA BIM LABS 교육 상품 가격 진화 로드맵
 
 ## Source
 
-`docs/training_curriculum/public_products/05_PRICING_EVOLUTION_ROADMAP.md`
+`knowledge/60_public/training_curriculum/public_products/05_PRICING_EVOLUTION_ROADMAP.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/public_products/05_PRICING_EVOLUTION_ROADMAP.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/public_products/05_PRICING_EVOLUTION_ROADMAP.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, cs, curriculum, docs, pricing_evolution_roadmap.md, public_products, training, training_curriculum, 교육, 구독, 납품, 변경, 지원, 커리큘럼, 테스트, 품질
+bim, curriculum, knowledge, pricing_evolution_roadmap.md, public, public_products, training, training_curriculum, 교육, 구독, 납품, 변경, 지원, 커리큘럼, 테스트, 품질
 
 ## Related
 

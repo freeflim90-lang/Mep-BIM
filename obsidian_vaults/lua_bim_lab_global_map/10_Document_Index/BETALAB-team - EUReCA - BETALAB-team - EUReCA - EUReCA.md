@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/BETALAB-team/EUReCA/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/BETALAB-team/EUReCA/README.md"
 ---
 
 # BETALAB-team - EUReCA - EUReCA
 
 ## Source
 
-`data/bim_scripts/BETALAB-team/EUReCA/README.md`
+`knowledge/50_domain/bim_scripts/BETALAB-team/EUReCA/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/BETALAB-team/EUReCA/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/BETALAB-team/EUReCA/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-betalab-team, bim, bim_scripts, cs, data, eureca, markdown, model, readme.md, workspace
+betalab-team, bim, bim_scripts, cs, domain, eureca, knowledge, model, readme.md, sources
 
 ## Related
 

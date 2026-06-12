@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/Exercises/exercise_2/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/Exercises/exercise_2/README.md"
 ---
 
 # Exercises - exercise_2 - Exercise 2 Property Validation
 
 ## Source
 
-`data/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/Exercises/exercise_2/README.md`
+`knowledge/50_domain/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/Exercises/exercise_2/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/Exercises/exercise_2/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/specklesystems/speckle-automate-qa_qc_workshop/Exercises/exercise_2/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This exercise represents a significant shift from random comments to systematic 
 
 ## Keywords
 
-bim, bim_scripts, data, exercise_2, exercises, markdown, qa, readme.md, revit, speckle-automate-qa_qc_workshop, specklesystems, workspace
+bim, bim_scripts, domain, exercise_2, exercises, knowledge, qa, readme.md, revit, sources, speckle-automate-qa_qc_workshop, specklesystems
 
 ## Related
 

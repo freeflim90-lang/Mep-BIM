@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/public_products/launch_packages/starter/STARTER_SUPPORT_MATERIALS.md"
+source_path: "knowledge/60_public/training_curriculum/public_products/launch_packages/starter/STARTER_SUPPORT_MATERIALS.md"
 ---
 
 # Starter Plan Support Materials Pack
 
 ## Source
 
-`docs/training_curriculum/public_products/launch_packages/starter/STARTER_SUPPORT_MATERIALS.md`
+`knowledge/60_public/training_curriculum/public_products/launch_packages/starter/STARTER_SUPPORT_MATERIALS.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/public_products/launch_packages/starter/STARTER_SUPPORT_MATERIALS.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/public_products/launch_packages/starter/STARTER_SUPPORT_MATERIALS.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, clash, cs, curriculum, docs, launch_packages, mep, model, public_products, quality, revit, starter, starter_support_materials.md, training, training_curriculum
+bim, clash, curriculum, knowledge, launch_packages, mep, model, public, public_products, quality, revit, starter, starter_support_materials.md, training, training_curriculum
 
 ## Related
 

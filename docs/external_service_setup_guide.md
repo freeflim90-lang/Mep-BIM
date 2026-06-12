@@ -27,9 +27,9 @@
 | Description | Personalized daily MEP BIM education — USD 119/month | MEP BIM coordination mentoring + monthly Zoom — USD 229/month | High-intensity BIM mentoring + monthly Zoom + 24h response — USD 490/month | Project Mentor with 2 Zoom sessions/month — USD 790/month |
 
 3. 링크 생성 후 URL 복사 → 각 해당 SOP 문서에 업데이트:
-   - Personal Tutor: `docs/training_curriculum/public_products/launch_packages/personal_tutor/DELIVERY_SOP.md`
-   - Coordinator Mentor: `docs/training_curriculum/public_products/launch_packages/coordinator_mentor/DELIVERY_SOP.md`
-   - Project Mentor: `docs/training_curriculum/public_products/launch_packages/project_mentor/DELIVERY_SOP.md`
+   - Personal Tutor: `knowledge/60_public/training_curriculum/public_products/launch_packages/personal_tutor/DELIVERY_SOP.md`
+   - Coordinator Mentor: `knowledge/60_public/training_curriculum/public_products/launch_packages/coordinator_mentor/DELIVERY_SOP.md`
+   - Project Mentor: `knowledge/60_public/training_curriculum/public_products/launch_packages/project_mentor/DELIVERY_SOP.md`
 
 4. LAUNCH_CHECKLIST.md의 해당 PayPal 항목 체크
 
@@ -202,8 +202,8 @@ Q1 Assessment Sent | Q1 Report Sent | Status | Telegram chat_id | Notes
 4. **Project Mentor Coming Soon 페이지**
 
 포스트 내용 기준:
-- `docs/training_curriculum/public_products/00_PRODUCT_CURRICULUM_INDEX.md`의 핵심 가치 요약 참고
-- `docs/training_curriculum/public_products/06_PRICE_VALUE_GAP_ANALYSIS.md`의 소비자 심리 참고
+- `knowledge/60_public/training_curriculum/public_products/00_PRODUCT_CURRICULUM_INDEX.md`의 핵심 가치 요약 참고
+- `knowledge/60_public/training_curriculum/public_products/06_PRICE_VALUE_GAP_ANALYSIS.md`의 소비자 심리 참고
 
 ---
 

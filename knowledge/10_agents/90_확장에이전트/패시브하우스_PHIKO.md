@@ -351,7 +351,7 @@ var conductivity = thermalAsset?.get_Parameter(
 
 
 ## 2026-06-04 에너지절약설계기준/ZEB 공식 기준 대조 게이트
-- Source: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_ENERGY_ZEB_STANDARD_UPDATE.md`
+- Source: `knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_ENERGY_ZEB_STANDARD_UPDATE.md`
 - Tags: passive-house,ZEB,energy-saving-design,official-source,review-gate
 
 패시브하우스, PHIKO, ZEB, 녹색건축 인증은 서로 연결될 수 있지만 같은 제도는 아니다. PHPP/패시브 기준, 건축물의 에너지절약설계기준, 건축물 에너지효율등급, ZEB 인증 기준, G-SEED, 지자체 녹색건축 설계기준을 프로젝트별로 분리한다.

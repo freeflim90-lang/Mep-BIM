@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-07-automation-toolkit-expansion.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-07-automation-toolkit-expansion.md"
 ---
 
 # BIM Automation Toolkit Expansion Implementation Plan
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-07-automation-toolkit-expansion.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-07-automation-toolkit-expansion.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-07-automation-toolkit-expansion.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/plans/2026-03-07-automation-toolkit-expansion.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-api, autodesk, automation-toolkit-expansion.md, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, data, docs, markdown, navisworks, plans, workspace
+api, autodesk, automation-toolkit-expansion.md, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, docs, domain, knowledge, navisworks, plans, sources
 
 ## Related
 

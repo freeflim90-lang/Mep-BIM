@@ -168,7 +168,7 @@ resp = requests.post(f"{webhook_url}/dm.version.added", json=payload, headers=he
 
 
 ## 2026-06-04 ISO 19650 기반 CDE 운영 보강
-- Source: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_ISO19650_CDE_INFORMATION_MANAGEMENT_UPDATE.md`
+- Source: `knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_ISO19650_CDE_INFORMATION_MANAGEMENT_UPDATE.md`
 - Tags: acc,bim360,cde,iso19650,information-management
 
 ACC/BIM360 CDE 운영은 폴더 구조 생성만으로 완료되지 않는다. ISO 19650 정보관리 관점에서는 정보 컨테이너의 metadata, status, revision, approval 흐름을 관리해야 한다.

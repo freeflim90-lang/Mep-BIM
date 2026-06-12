@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/idfkit/idfkit-mcp/docs/concepts/server-state.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/concepts/server-state.md"
 ---
 
 # Server State
 
 ## Source
 
-`data/bim_scripts/idfkit/idfkit-mcp/docs/concepts/server-state.md`
+`knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/concepts/server-state.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/idfkit/idfkit-mcp/docs/concepts/server-state.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/concepts/server-state.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, bim_scripts, concepts, cs, data, docs, idfkit, idfkit-mcp, markdown, model, qa, server-state.md, store, workspace
+bim, bim_scripts, concepts, cs, docs, domain, idfkit, idfkit-mcp, knowledge, model, qa, server-state.md, sources, store
 
 ## Related
 

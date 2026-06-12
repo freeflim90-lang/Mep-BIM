@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/02_Introduction_to_Python_for_use_with_BIM/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/02_Introduction_to_Python_for_use_with_BIM/README.md"
 ---
 
 # IFC_analysis_with_IfcOpenShell - 02_Introduction_to_Python_for_use_with_BIM - Introduction to Python 3 in jupyter notebook
 
 ## Source
 
-`data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/02_Introduction_to_Python_for_use_with_BIM/README.md`
+`knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/02_Introduction_to_Python_for_use_with_BIM/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/02_Introduction_to_Python_for_use_with_BIM/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/renatogcruz/Data-science-for-architecture/ifc_analysis/IFC_analysis_with_IfcOpenShell/02_Introduction_to_Python_for_use_with_BIM/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This is an introduction to the Python programming language for Programming with 
 
 ## Keywords
 
-bim, bim_scripts, data, data-science-for-architecture, ifc_analysis, ifc_analysis_with_ifcopenshell, introduction_to_python_for_use_with_bim, markdown, model, readme.md, renatogcruz, workspace
+bim, bim_scripts, data-science-for-architecture, domain, ifc_analysis, ifc_analysis_with_ifcopenshell, introduction_to_python_for_use_with_bim, knowledge, model, readme.md, renatogcruz, sources
 
 ## Related
 

@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/idfkit/idfkit-mcp/docs/getting-started/client-setup.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/getting-started/client-setup.md"
 ---
 
 # MCP Client Setup
 
 ## Source
 
-`data/bim_scripts/idfkit/idfkit-mcp/docs/getting-started/client-setup.md`
+`knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/getting-started/client-setup.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/idfkit/idfkit-mcp/docs/getting-started/client-setup.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/idfkit/idfkit-mcp/docs/getting-started/client-setup.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ This page shows how to connect `idfkit-mcp` to every major MCP client. All clien
 
 ## Keywords
 
-bim, bim_scripts, client-setup.md, cs, data, docs, getting-started, idfkit, idfkit-mcp, markdown, model, workspace
+bim, bim_scripts, client-setup.md, cs, docs, domain, getting-started, idfkit, idfkit-mcp, knowledge, model, sources
 
 ## Related
 

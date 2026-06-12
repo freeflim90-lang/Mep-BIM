@@ -31,12 +31,12 @@ api, bim, clash, cs, docs, general, idea_to_product_priority_report.md, naviswor
 
 - [[Qwen Add-in Daily Idea Queue - 2026-06-03]]
 - [[docs - product_ideation - 2026-05-21_IDEA_TO_PRODUCT_PRIORITY_REPORT - docs - product_ideation - LUA BIM LAB]]
-- [[2026-05-21 Daily Knowledge Update]]
 - [[2026-05-21 건설 설계 시공 BIM 데일리 브리핑]]
-- [[2026-05-22 Daily Knowledge Update]]
 - [[2026-05-22 건설 설계 시공 BIM 데일리 브리핑]]
-- [[2026-05-23 Daily Knowledge Update]]
 - [[2026-05-23 건설 설계 시공 BIM 데일리 브리핑]]
+- [[2026-05-24 건설 설계 시공 BIM 데일리 브리핑]]
+- [[2026-05-27 건설 설계 시공 BIM 데일리 브리핑]]
+- [[2026-05-28 09 59 LUA BIM LABS 내부 성장 펄스]]
 
 ## Home
 

@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/03-coordination.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/03-coordination.md"
 ---
 
 # Coordination Panel
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/03-coordination.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/03-coordination.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/03-coordination.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/03-coordination.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ The Coordination panel supports active clash review workflows. Use these tools d
 
 ## Keywords
 
-bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, coordination.md, cs, data, docs, markdown, mep, model, navisworks, revit, tools, workspace
+bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, coordination.md, cs, docs, domain, knowledge, mep, model, navisworks, revit, sources, tools
 
 ## Related
 

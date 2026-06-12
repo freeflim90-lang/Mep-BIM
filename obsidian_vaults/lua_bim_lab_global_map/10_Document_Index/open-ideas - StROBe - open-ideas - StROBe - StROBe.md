@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/open-ideas/StROBe/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/open-ideas/StROBe/README.md"
 ---
 
 # open-ideas - StROBe - StROBe
 
 ## Source
 
-`data/bim_scripts/open-ideas/StROBe/README.md`
+`knowledge/50_domain/bim_scripts/open-ideas/StROBe/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/open-ideas/StROBe/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/open-ideas/StROBe/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Currently in beta. **StROBe** (Stochastic Residential Occupancy Behaviour) is an
 
 ## Keywords
 
-bim, bim_scripts, cs, data, markdown, model, open-ideas, readme.md, strobe, workspace
+bim, bim_scripts, cs, domain, knowledge, model, open-ideas, readme.md, sources, strobe
 
 ## Related
 

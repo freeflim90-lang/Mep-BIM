@@ -1,7 +1,7 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
+category: AI Knowledge Base - QA
 source_path: "knowledge/20_qa/Navisworks_Addin_QA.md"
 ---
 
@@ -17,7 +17,7 @@ Absolute path:
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - AI Knowledge Base - QA]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-add-in, addin, api, autodesk, bim, clash, knowledge, markdown, navisworks, navisworks_addin_qa.md, qa, workspace, 간섭, 개발, 빌드, 지식, 지원, 패키징
+add-in, addin, ai, api, autodesk, base, bim, clash, knowledge, navisworks, navisworks_addin_qa.md, qa, 간섭, 개발, 빌드, 지식, 지원, 패키징
 
 ## Related
 

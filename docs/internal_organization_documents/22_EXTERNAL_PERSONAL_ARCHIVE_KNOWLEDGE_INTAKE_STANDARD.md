@@ -52,7 +52,7 @@ source .dev-venv/bin/activate && python scripts/external_knowledge_intake.py "/V
 
 생성 위치:
 
-`docs/knowledge_intake/external_sources/`
+`knowledge/30_intake/external_sources/`
 
 ## 6. 큐레이션 절차
 
@@ -83,4 +83,4 @@ source .dev-venv/bin/activate && python scripts/external_knowledge_intake.py "/V
 - `20_PUBLIC_DISCLOSURE_DB_READINESS_CHECKLIST.md`
 - `21_KNOWLEDGE_CURATION_INTELLIGENCE_CELL.md`
 - `docs/standard_documents/00_DOCUMENT_STANDARD_INDEX.md`
-- `data/knowledge_base/지식업데이트.md`
+- `knowledge/10_agents/09_지식팀/지식업데이트.md`

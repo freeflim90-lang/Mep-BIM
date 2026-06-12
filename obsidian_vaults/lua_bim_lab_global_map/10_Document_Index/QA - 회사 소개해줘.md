@@ -21,7 +21,7 @@ Absolute path:
 
 ## Summary
 
-> 요청자: @FreeFilmer ([LONG_ID_MASKED]) > 수집일: 2026-05-22 10:49:22 > 담당 지식: 지식업데이트 회사 소개해줘 📚 [Obsidian 기준 1차 답변] 17~20년차는 개별 프로젝트 성과를 넘어 회사의 방법론, 교육 체계, 표준문서, 자동화 제품, 시장 포지셔닝을 설계해야 한다. 근거 문서: - docs/training_curriculum/mep_bim_ai/06_PRINCIPAL_17_20_YEAR.md (scor
+> 요청자: @FreeFilmer ([LONG_ID_MASKED]) > 수집일: 2026-05-22 10:49:22 > 담당 지식: 지식업데이트 회사 소개해줘 📚 [Obsidian 기준 1차 답변] 17~20년차는 개별 프로젝트 성과를 넘어 회사의 방법론, 교육 체계, 표준문서, 자동화 제품, 시장 포지셔닝을 설계해야 한다. 근거 문서: - knowledge/60_public/training_curriculum/mep_bim_ai/06_PRINCIPAL_17_2
 
 ## Keywords
 

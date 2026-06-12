@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/BIMTools.extension/BIM.panel/HealthScore.pushbutton/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIMTools.extension/BIM.panel/HealthScore.pushbutton/README.md"
 ---
 
 # BIM panel - HealthScore pushbutton - README
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/BIMTools.extension/BIM.panel/HealthScore.pushbutton/README.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIMTools.extension/BIM.panel/HealthScore.pushbutton/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/BIMTools.extension/BIM.panel/HealthScore.pushbutton/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIMTools.extension/BIM.panel/HealthScore.pushbutton/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ pyRevit Model Health Scorer — 150-point scale Button: BIM → Model Health Sco
 
 ## Keywords
 
-bim, bim-coord-auto-package, bim.panel, bim_scripts, bimtools.extension, colinbsi, cs, data, health, healthscore.pushbutton, markdown, model, readme.md, revit, workspace
+bim, bim-coord-auto-package, bim.panel, bim_scripts, bimtools.extension, colinbsi, cs, domain, health, healthscore.pushbutton, knowledge, model, readme.md, revit, sources
 
 ## Related
 

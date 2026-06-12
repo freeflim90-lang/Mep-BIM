@@ -393,7 +393,7 @@ ISO 19650-2 실무 적용에서 가장 많이 실패하는 3가지 패턴과 사
 
 
 ## 2026-06-04 국내 공공 BIM 지침 공식 출처 업데이트
-- Source: `docs/knowledge_updates/daily/2026-06-04_LUA_BIM_LABS_KOREA_PUBLIC_BIM_GUIDELINE_UPDATE.md`
+- Source: `knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_KOREA_PUBLIC_BIM_GUIDELINE_UPDATE.md`
 - Tags: BIM,guideline,molit,pps,public-procurement,official-source
 
 국토교통부와 조달청 공식 자료 기준으로 국내 BIM 지침은 계층 구조로 관리한다. 국토부 `건설산업 BIM 기본지침`은 기본원칙과 표준을 제시하는 최상위 공통 기준이며, 국토부 `건설산업 BIM 시행지침`은 BIM 성과품의 작성·납품·활용 절차를 발주자·설계자·시공자 편으로 제시한다. 조달청 `시설사업 BIM 적용지침서 v2.1`은 조달청 시설공사 맞춤형서비스 BIM 적용 공사의 설계공모 지침, 설계용역 과업지침서, 입찰안내서 대응에 직접 영향을 준다.

@@ -3,7 +3,7 @@
 문서상태: 내부 교육 샘플  
 작성일: 2026-06-04  
 역할: 개발/R&D, QA_테스터, BIM 모델러, PM, BIM 납품검수  
-연결 지식: `docs/training_curriculum/team_distribution/samples/2026-06-04_QA_BF_AUTOCHECK_RULE_CANDIDATE_SAMPLE.md`  
+연결 지식: `knowledge/60_public/training_curriculum/team_distribution/samples/2026-06-04_QA_BF_AUTOCHECK_RULE_CANDIDATE_SAMPLE.md`  
 사용 KST 코드: `KST01 공식확인`, `KST03 적용주의`, `KST04 자동수집`
 
 ---
@@ -139,9 +139,9 @@ Revise:
 
 ## 11. 관련 문서
 
-- `docs/training_curriculum/team_distribution/samples/2026-06-04_QA_BF_AUTOCHECK_RULE_CANDIDATE_SAMPLE.md`
-- `docs/training_curriculum/team_distribution/samples/2026-06-04_PM_BF_RFI_MEETING_AGENDA_SAMPLE.md`
-- `docs/training_curriculum/team_distribution/samples/2026-06-04_CS_BF_EVIDENCE_RESPONSE_SAMPLE.md`
-- `data/knowledge_base/프로그램개발.md`
-- `data/knowledge_base/R&D_개발지원그룹.md`
-- `data/knowledge_base/QA_테스터.md`
+- `knowledge/60_public/training_curriculum/team_distribution/samples/2026-06-04_QA_BF_AUTOCHECK_RULE_CANDIDATE_SAMPLE.md`
+- `knowledge/60_public/training_curriculum/team_distribution/samples/2026-06-04_PM_BF_RFI_MEETING_AGENDA_SAMPLE.md`
+- `knowledge/60_public/training_curriculum/team_distribution/samples/2026-06-04_CS_BF_EVIDENCE_RESPONSE_SAMPLE.md`
+- `knowledge/10_agents/90_확장에이전트/프로그램개발.md`
+- `knowledge/10_agents/90_확장에이전트/R&D_개발지원그룹.md`
+- `knowledge/10_agents/90_확장에이전트/QA_테스터.md`

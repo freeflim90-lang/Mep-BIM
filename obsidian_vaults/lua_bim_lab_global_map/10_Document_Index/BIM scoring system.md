@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/BIM scoring system.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM scoring system.md"
 ---
 
 # BIM scoring system
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/BIM scoring system.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM scoring system.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/BIM scoring system.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM scoring system.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Below is a production-grade 150-Point Revit Model Health Scoring System designed
 
 ## Keywords
 
-bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, data, health, markdown, model, quality, revit, scoring, system.md, workspace
+bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, domain, health, knowledge, model, quality, revit, scoring, sources, system.md
 
 ## Related
 

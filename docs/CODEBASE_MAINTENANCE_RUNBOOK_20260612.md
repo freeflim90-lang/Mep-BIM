@@ -75,7 +75,7 @@ When `LUA_CHAT_TOKEN` or `REVIT_ASSISTANT_API_KEYS` is set, clients must send ei
 - Runtime tokens and local credentials must stay under ignored paths such as `config/*/token.json` or local environment variables.
 - LUAChat operational metrics snapshots are runtime artifacts under `runtime/luachat_metrics_daily.json`.
 - External add-in development source must stay outside this operational repository; automation should use `BCC_ADDIN_DEV_SOURCE_ROOT`.
-- External BIM script archives are reference material, not product source; daily sync should not auto-commit `data/bim_scripts/`, and new collection can target an external path with `BIM_SCRIPTS_OUTPUT_DIR`.
+- External BIM script archives are reference material, not product source; daily sync should not auto-commit `knowledge/50_domain/bim_scripts/`, and new collection can target an external path with `BIM_SCRIPTS_OUTPUT_DIR`.
 - `make audit-secrets` checks tracked source for common Google/OpenAI-style token patterns before handoff.
 - `make codebase-health` turns repository sprawl, large modules, and test-ratio signals into a repeatable report.
 - `make luachat-support-backlog` turns LUAChat operational findings into support snippets, FAQ candidates, owners, and next actions.

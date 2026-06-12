@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/kavyajeetbora/IFC/readme.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/kavyajeetbora/IFC/readme.md"
 ---
 
 # kavyajeetbora - IFC - readme
 
 ## Source
 
-`data/bim_scripts/kavyajeetbora/IFC/readme.md`
+`knowledge/50_domain/bim_scripts/kavyajeetbora/IFC/readme.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/kavyajeetbora/IFC/readme.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/kavyajeetbora/IFC/readme.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ In this project we will extract all the relevant information from the <a href="I
 
 ## Keywords
 
-bim, bim_scripts, cs, data, ifc, kavyajeetbora, markdown, model, readme.md, store, workspace
+bim, bim_scripts, cs, domain, ifc, kavyajeetbora, knowledge, model, readme.md, sources, store
 
 ## Related
 

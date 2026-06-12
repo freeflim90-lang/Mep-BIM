@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/fesworkscience/pyrevit_rocket/CLAUDE.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/fesworkscience/pyrevit_rocket/CLAUDE.md"
 ---
 
 # fesworkscience - pyrevit_rocket - CPSK Tools - pyRevit Extension
 
 ## Source
 
-`data/bim_scripts/fesworkscience/pyrevit_rocket/CLAUDE.md`
+`knowledge/50_domain/bim_scripts/fesworkscience/pyrevit_rocket/CLAUDE.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/fesworkscience/pyrevit_rocket/CLAUDE.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/fesworkscience/pyrevit_rocket/CLAUDE.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ pyRevit extension for industrial building automation in Revit. Путь к gh: `
 
 ## Keywords
 
-api, bim, bim_scripts, claude.md, cs, data, fesworkscience, markdown, pyrevit_rocket, qa, revit, workspace
+api, bim, bim_scripts, claude.md, cs, domain, fesworkscience, knowledge, pyrevit_rocket, qa, revit, sources
 
 ## Related
 

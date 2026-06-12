@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/simon-un/ifc-processing/CODE_OF_CONDUCT.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/simon-un/ifc-processing/CODE_OF_CONDUCT.md"
 ---
 
 # Código de Conducta convenido para Contribuyentes
 
 ## Source
 
-`data/bim_scripts/simon-un/ifc-processing/CODE_OF_CONDUCT.md`
+`knowledge/50_domain/bim_scripts/simon-un/ifc-processing/CODE_OF_CONDUCT.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/simon-un/ifc-processing/CODE_OF_CONDUCT.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/simon-un/ifc-processing/CODE_OF_CONDUCT.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Nosotros, como miembros, contribuyentes y administradores nos comprometemos a ha
 
 ## Keywords
 
-bim, bim_scripts, code_of_conduct.md, data, ifc-processing, markdown, mep, simon-un, workspace
+bim, bim_scripts, code_of_conduct.md, domain, ifc-processing, knowledge, mep, simon-un, sources
 
 ## Related
 

@@ -2,7 +2,7 @@
 
 문서상태: 내부 교육 샘플  
 작성일: 2026-06-04  
-연결 스프린트: `docs/training_curriculum/team_distribution/08_WEEKLY_ROLE_BASED_KNOWLEDGE_LEARNING_SPRINT_2026-06-04.md`  
+연결 스프린트: `knowledge/60_public/training_curriculum/team_distribution/08_WEEKLY_ROLE_BASED_KNOWLEDGE_LEARNING_SPRINT_2026-06-04.md`  
 역할: 지식큐레이터, 라이선스_보안관, CS/기술지원  
 사용 KST 코드: `KST01 공식확인`, `KST02 내부검증`, `KST04 자동수집`, `KST06 보안제한`
 

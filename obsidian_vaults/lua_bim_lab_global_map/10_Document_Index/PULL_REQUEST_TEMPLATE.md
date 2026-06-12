@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/specklesystems/specklepy/.github/pull_request_template.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/specklesystems/specklepy/.github/pull_request_template.md"
 ---
 
 # pull_request_template
 
 ## Source
 
-`data/bim_scripts/specklesystems/specklepy/.github/pull_request_template.md`
+`knowledge/50_domain/bim_scripts/specklesystems/specklepy/.github/pull_request_template.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/specklesystems/specklepy/.github/pull_request_template.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/specklesystems/specklepy/.github/pull_request_template.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, bim_scripts, cs, data, github, markdown, pull_request_template.md, specklepy, specklesystems, workspace
+bim, bim_scripts, cs, domain, github, knowledge, pull_request_template.md, sources, specklepy, specklesystems
 
 ## Related
 

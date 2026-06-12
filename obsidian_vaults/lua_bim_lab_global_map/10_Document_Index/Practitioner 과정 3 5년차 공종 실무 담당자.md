@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/mep_bim_ai/02_PRACTITIONER_3_5_YEAR.md"
+source_path: "knowledge/60_public/training_curriculum/mep_bim_ai/02_PRACTITIONER_3_5_YEAR.md"
 ---
 
 # Practitioner 과정 3 5년차 공종 실무 담당자
 
 ## Source
 
-`docs/training_curriculum/mep_bim_ai/02_PRACTITIONER_3_5_YEAR.md`
+`knowledge/60_public/training_curriculum/mep_bim_ai/02_PRACTITIONER_3_5_YEAR.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/mep_bim_ai/02_PRACTITIONER_3_5_YEAR.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/mep_bim_ai/02_PRACTITIONER_3_5_YEAR.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, clash, cs, curriculum, docs, mep, mep_bim_ai, navisworks, practitioner_3_5_year.md, revit, training, training_curriculum, 간섭, 개발, 교육, 물량, 변경, 보안, 지식, 품질, 회의
+bim, clash, cs, curriculum, knowledge, mep, mep_bim_ai, navisworks, practitioner_3_5_year.md, public, revit, training, training_curriculum, 간섭, 개발, 교육, 물량, 변경, 보안, 지식, 품질, 회의
 
 ## Related
 

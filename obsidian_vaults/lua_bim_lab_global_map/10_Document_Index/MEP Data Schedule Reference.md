@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/starter_plan/reference_cards/card_06_mep_data_schedule.md"
+category: Products
+source_path: "products/starter_plan/reference_cards/card_06_mep_data_schedule.md"
 ---
 
 # MEP Data Schedule Reference
 
 ## Source
 
-`data/starter_plan/reference_cards/card_06_mep_data_schedule.md`
+`products/starter_plan/reference_cards/card_06_mep_data_schedule.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/starter_plan/reference_cards/card_06_mep_data_schedule.md`
+`/Users/choejeong-yeon/LUA BIM LABS/products/starter_plan/reference_cards/card_06_mep_data_schedule.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Products]]
 
 ## Summary
 
@@ -25,18 +25,18 @@ Absolute path:
 
 ## Keywords
 
-bim, card_06_mep_data_schedule.md, cs, data, markdown, mep, model, reference_cards, revit, starter_plan, workspace
+bim, card_06_mep_data_schedule.md, cs, mep, model, products, reference_cards, revit, starter_plan
 
 ## Related
 
 - [[BIM Learning Path Next Steps]]
-- [[Clash Types Priority Matrix]]
 - [[MEP BIM Key Roles LOD Reference]]
-- [[MEP Drawing Reading Guide]]
 - [[Model Quality Self-Review Checklist]]
 - [[Revit MEP Setup Checklist]]
 - [[Site-Readiness Check Guide]]
-- [[BIM Autpmatic Coordination System]]
+- [[Clash Types Priority Matrix]]
+- [[MEP Drawing Reading Guide]]
+- [[starter_lesson_template]]
 
 ## Home
 

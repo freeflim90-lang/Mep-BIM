@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/Tool architecture.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/Tool architecture.md"
 ---
 
 # Tool architecture
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/Tool architecture.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/Tool architecture.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/Tool architecture.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/BIM universal alignment tool/Tool architecture.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-alignment, architecture.md, bim, bim-coord-auto-package, bim_scripts, colinbsi, cs, data, markdown, model, revit, store, tool, universal, workspace
+alignment, architecture.md, bim, bim-coord-auto-package, bim_scripts, colinbsi, cs, domain, knowledge, model, revit, sources, store, tool, universal
 
 ## Related
 

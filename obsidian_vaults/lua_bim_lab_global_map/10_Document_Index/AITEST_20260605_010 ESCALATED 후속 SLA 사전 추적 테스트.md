@@ -21,7 +21,7 @@ Absolute path:
 
 ## Summary
 
-- 날짜: 2026-06-05 - 유형: 운영 추적 / 에스컬레이션 관리 - 주관: 조율차장 - 참여 AI: 법무조항검토, CFO, 라이선스_보안관, 고객지원CS - 상태: PASS - 관련 문서: `data/knowledge_base/conflict_resolution/ESCALATION_SLA_TRACKER_202606.md`, `data/knowledge_base/conflict_resolution/SESSION_REGISTER_202606.md`, `da
+- 날짜: 2026-06-05 - 유형: 운영 추적 / 에스컬레이션 관리 - 주관: 조율차장 - 참여 AI: 법무조항검토, CFO, 라이선스_보안관, 고객지원CS - 상태: PASS - 관련 문서: `knowledge/10_agents/conflict_resolution/ESCALATION_SLA_TRACKER_202606.md`, `knowledge/10_agents/conflict_resolution/SESSION_REGISTER_202606.md`, `kn
 
 ## Keywords
 

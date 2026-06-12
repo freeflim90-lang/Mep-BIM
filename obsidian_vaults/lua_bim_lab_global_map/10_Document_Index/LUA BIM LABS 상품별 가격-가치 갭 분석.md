@@ -2,18 +2,18 @@
 type: source-index
 generated: true
 category: Training Curriculum
-source_path: "docs/training_curriculum/public_products/06_PRICE_VALUE_GAP_ANALYSIS.md"
+source_path: "knowledge/60_public/training_curriculum/public_products/06_PRICE_VALUE_GAP_ANALYSIS.md"
 ---
 
 # LUA BIM LABS 상품별 가격-가치 갭 분석
 
 ## Source
 
-`docs/training_curriculum/public_products/06_PRICE_VALUE_GAP_ANALYSIS.md`
+`knowledge/60_public/training_curriculum/public_products/06_PRICE_VALUE_GAP_ANALYSIS.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/docs/training_curriculum/public_products/06_PRICE_VALUE_GAP_ANALYSIS.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/60_public/training_curriculum/public_products/06_PRICE_VALUE_GAP_ANALYSIS.md`
 
 ## Category
 
@@ -25,7 +25,7 @@ Absolute path:
 
 ## Keywords
 
-bim, cs, curriculum, docs, price_value_gap_analysis.md, public_products, qa, training, training_curriculum, 개발, 결제, 교육, 구독, 납품, 자산, 지원, 진단, 커리큘럼, 품질
+bim, curriculum, knowledge, price_value_gap_analysis.md, public, public_products, qa, training, training_curriculum, 개발, 결제, 교육, 구독, 납품, 자산, 지원, 진단, 커리큘럼, 품질
 
 ## Related
 

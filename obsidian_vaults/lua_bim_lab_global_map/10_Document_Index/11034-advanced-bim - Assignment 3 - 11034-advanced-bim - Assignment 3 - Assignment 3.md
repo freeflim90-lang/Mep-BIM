@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/kfjordt/11034-advanced-bim/Assignment 3/README.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/kfjordt/11034-advanced-bim/Assignment 3/README.md"
 ---
 
 # 11034-advanced-bim - Assignment 3 - Assignment 3
 
 ## Source
 
-`data/bim_scripts/kfjordt/11034-advanced-bim/Assignment 3/README.md`
+`knowledge/50_domain/bim_scripts/kfjordt/11034-advanced-bim/Assignment 3/README.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/kfjordt/11034-advanced-bim/Assignment 3/README.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/kfjordt/11034-advanced-bim/Assignment 3/README.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ To allow for automated load calculation as well as cost estimation based on a gi
 
 ## Keywords
 
-advanced-bim, assignment, bim, bim_scripts, cs, data, kfjordt, markdown, model, readme.md, workspace
+advanced-bim, assignment, bim, bim_scripts, cs, domain, kfjordt, knowledge, model, readme.md, sources
 
 ## Related
 

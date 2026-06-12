@@ -77,7 +77,7 @@
 
 ## 6.1 자동 큐레이션 분류 기준
 
-매일 지식 업데이트 루틴은 최근 변경된 Markdown 문서를 자동으로 검토하여 `docs/knowledge_updates/curation`에 일일 큐레이션 검수 리포트를 생성한다.
+매일 지식 업데이트 루틴은 최근 변경된 Markdown 문서를 자동으로 검토하여 `knowledge/40_curation/updates/curation`에 일일 큐레이션 검수 리포트를 생성한다.
 
 | 자동 권고 | 의미 | 후속 조치 |
 |---|---|---|
@@ -121,10 +121,10 @@ AI 협업 세션에서 나온 결과는 다음 기준으로 승격한다.
 
 | 산출물 | 승격 위치 | 담당 |
 |---|---|---|
-| 반복 판단 기준 | `data/knowledge_base/*.md` | 지식큐레이터 |
-| 의견 충돌 선례 | `data/knowledge_base/conflict_resolution/CONFLICT_LOG.md` | 조율차장 |
+| 반복 판단 기준 | `knowledge/10_agents/90_확장에이전트/*.md` | 지식큐레이터 |
+| 의견 충돌 선례 | `knowledge/10_agents/conflict_resolution/CONFLICT_LOG.md` | 조율차장 |
 | 업무 실행 양식 | `docs/internal_organization_documents/31_AI_COLLABORATION_RUNBOOK_TEMPLATES.md` | 테크니컬 라이터 |
-| 교육 필요 항목 | `docs/training_curriculum/` 또는 `19_TRAINING_RECORD_COMPETENCY_MATRIX.md` | 교육컨설팅 |
+| 교육 필요 항목 | `knowledge/60_public/training_curriculum/` 또는 `19_TRAINING_RECORD_COMPETENCY_MATRIX.md` | 교육컨설팅 |
 | 자동화 후보 | `docs/internal_growth/AX_INTERNAL_GROWTH_BACKLOG.md` | 내부성장루프 |
 | 고객 응대 문구 | `docs/lua_bim_lab_official_documents/27_CS_RESPONSE_SCRIPT.md` | 고객지원CS |
 
@@ -186,9 +186,9 @@ AI 협업 세션에서 나온 결과는 다음 기준으로 승격한다.
 - `docs/standard_documents/27_DYNAMO_AUTOMATION_NODE_CATALOG_TEMPLATE.md`
 - `docs/standard_documents/28_PROJECT_HANDOVER_KNOWLEDGE_TRANSFER_TEMPLATE.md`
 - `docs/revenue_products/model_quality_audit/14_OBSIDIAN_KNOWLEDGE_SYSTEM.md`
-- `data/knowledge_base/지식업데이트.md`
-- `data/knowledge_base/지식큐레이터.md`
-- `data/knowledge_base/최고전략CSO.md`
+- `knowledge/10_agents/09_지식팀/지식업데이트.md`
+- `knowledge/10_agents/09_지식팀/지식큐레이터.md`
+- `knowledge/10_agents/90_확장에이전트/최고전략CSO.md`
 - `obsidian_vaults/lua_bim_lab_global_map/00_Home/Global Knowledge Map.md`
 
 ## 12. 조직 학습 연계

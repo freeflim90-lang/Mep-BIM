@@ -24,13 +24,13 @@
 
 ## 3. 반영 문서
 
-- `data/knowledge_base/설비기초.md`
-- `data/knowledge_base/설비장비.md`
-- `data/knowledge_base/공조덕트.md`
-- `data/knowledge_base/공조배관.md`
-- `data/knowledge_base/설비자동제어.md`
-- `data/knowledge_base/설비도면해석.md`
-- `docs/training_curriculum/team_distribution/03_COMMON_TRAINING_MODULES.md`
+- `knowledge/10_agents/90_확장에이전트/설비기초.md`
+- `knowledge/10_agents/90_확장에이전트/설비장비.md`
+- `knowledge/10_agents/03_엔지니어링팀/공조덕트.md`
+- `knowledge/10_agents/03_엔지니어링팀/공조배관.md`
+- `knowledge/10_agents/90_확장에이전트/설비자동제어.md`
+- `knowledge/10_agents/90_확장에이전트/설비도면해석.md`
+- `knowledge/60_public/training_curriculum/team_distribution/03_COMMON_TRAINING_MODULES.md`
 
 운영 기준:
 - 공조부하계산과 공조시스템선정은 별도 운영 문서로 분리하지 않고 기존 설비 지식 문서에 흡수했다.

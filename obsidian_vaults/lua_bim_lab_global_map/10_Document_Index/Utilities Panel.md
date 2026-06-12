@@ -1,23 +1,23 @@
 ---
 type: source-index
 generated: true
-category: Workspace Markdown
-source_path: "data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/05-utilities.md"
+category: Domain Sources
+source_path: "knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/05-utilities.md"
 ---
 
 # Utilities Panel
 
 ## Source
 
-`data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/05-utilities.md`
+`knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/05-utilities.md`
 
 Absolute path:
 
-`/Users/choejeong-yeon/LUA BIM LABS/data/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/05-utilities.md`
+`/Users/choejeong-yeon/LUA BIM LABS/knowledge/50_domain/bim_scripts/colinBSI/bim-coord-auto-package/docs/tools/05-utilities.md`
 
 ## Category
 
-- [[MOC - Workspace Markdown]]
+- [[MOC - Domain Sources]]
 
 ## Summary
 
@@ -25,7 +25,7 @@ The Utilities panel contains infrastructure tools that support the broader autom
 
 ## Keywords
 
-api, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, data, docs, markdown, model, revit, tools, utilities.md, workspace
+api, bim, bim-coord-auto-package, bim_scripts, clash, colinbsi, cs, docs, domain, knowledge, model, revit, sources, tools, utilities.md
 
 ## Related
 
