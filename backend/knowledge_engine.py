@@ -22,6 +22,7 @@ from backend.core.paths import (
     DOCS_DIR as _DOCS_DIR,
     OBSIDIAN_VAULTS_DIR as _OBSIDIAN_VAULTS_DIR,
     PROJECT_ROOT as _PROJECT_ROOT,
+    QA_KB_DIR as _QA_KB_DIR,
 )
 from backend.web_search import _search_web_for_knowledge
 
@@ -39,6 +40,7 @@ def _st():
 def knowledge_search_files() -> list[Path]:
     roots = [
         _AGENT_KB_DIR,
+        _QA_KB_DIR,
         _DOCS_DIR,
         _OBSIDIAN_VAULTS_DIR / "model_quality_auditor",
     ]
@@ -195,7 +197,7 @@ def search_local_knowledge(query: str, limit: int = 4) -> list[dict]:
             rel = path.relative_to(_PROJECT_ROOT).as_posix()
         except ValueError:
             rel = path.as_posix()
-        if path.is_relative_to(_AGENT_KB_DIR):
+        if path.is_relative_to(_AGENT_KB_DIR) or path.is_relative_to(_QA_KB_DIR):
             score += 8
         if path.stem == inferred_agent:
             score += 20

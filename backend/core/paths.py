@@ -36,12 +36,11 @@ GLOBAL_OBSIDIAN_VAULT = OBSIDIAN_VAULTS_DIR / "lua_bim_lab_global_map"
 # ---------------------------------------------------------------------------
 KNOWLEDGE_ROOT = Path(os.environ.get("LUA_KNOWLEDGE_ROOT", str(PROJECT_ROOT / "knowledge")))
 
-AGENT_KB_DIR = Path(os.environ.get("KNOWLEDGE_BASE_DIR", str(DATA_DIR / "knowledge_base")))
-QA_KB_DIR = AGENT_KB_DIR / "qa"
+AGENT_KB_DIR = Path(os.environ.get("KNOWLEDGE_BASE_DIR", str(KNOWLEDGE_ROOT / "10_agents")))
+QA_KB_DIR = Path(os.environ.get("KNOWLEDGE_QA_DIR", str(KNOWLEDGE_ROOT / "20_qa")))
 
 # 에이전트 KB 파일 배치: "flat" = 루트 평면 배치, "teams" = 팀 폴더 하위 배치
-# (Phase 2 파일 이동과 함께 "teams" 로 전환)
-AGENT_KB_LAYOUT = "flat"
+AGENT_KB_LAYOUT = "teams"
 CATALOG_DIR = KNOWLEDGE_ROOT / "00_catalog"
 
 INTAKE_DIR = DOCS_DIR / "knowledge_intake"

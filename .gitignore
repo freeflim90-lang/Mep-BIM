@@ -54,3 +54,6 @@ node_modules/
 # Local tooling caches
 .wrangler/
 .claude/settings.local.json
+
+# 재구성 호환 심링크 (2주 후 제거 예정)
+data/knowledge_base

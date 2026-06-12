@@ -3,10 +3,10 @@
   "selected_item": "Navisworks 간섭 결과 책임자 배정 보드 MVP 상품화 후보",
   "source_documents": [
     "docs/internal_organization_documents/23_IDEA_TO_PRODUCT_DEVELOPMENT_PIPELINE.md",
-    "data/knowledge_base/아이디어발굴.md",
-    "data/knowledge_base/전략기획.md",
-    "data/knowledge_base/프로그램개발.md",
-    "data/knowledge_base/제품패키징.md"
+    "knowledge/10_agents/90_확장에이전트/아이디어발굴.md",
+    "knowledge/10_agents/90_확장에이전트/전략기획.md",
+    "knowledge/10_agents/90_확장에이전트/프로그램개발.md",
+    "knowledge/10_agents/06_스토어상용화팀/제품패키징.md"
   ],
   "tasks": [
     {
