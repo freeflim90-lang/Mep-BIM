@@ -20,7 +20,11 @@ from pathlib import Path
 from dataclasses import dataclass, field
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-KB_DIR = PROJECT_ROOT / "data" / "knowledge_base"
+import sys  # noqa: E402
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+from backend.knowledge_store import knowledge_file_path  # noqa: E402
+
 LOG_DIR = PROJECT_ROOT / "logs"
 LOG_DIR.mkdir(exist_ok=True)
 
@@ -303,8 +307,8 @@ def main() -> None:
     section = build_weekly_section(by_category, today)
 
     target_files = [
-        KB_DIR / "건설시장_트렌드.md",
-        KB_DIR / "산업동향_데일리브리핑.md",
+        Path(knowledge_file_path("건설시장_트렌드")),
+        Path(knowledge_file_path("산업동향_데일리브리핑")),
     ]
     for kb_file in target_files:
         append_to_kb(kb_file, section)

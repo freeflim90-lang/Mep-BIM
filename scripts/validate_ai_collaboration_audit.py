@@ -11,10 +11,14 @@ from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_REGISTER = PROJECT_ROOT / "data/knowledge_base/conflict_resolution/SESSION_REGISTER_202606.md"
-DEFAULT_SLA = PROJECT_ROOT / "data/knowledge_base/conflict_resolution/ESCALATION_SLA_TRACKER_202606.md"
-DEFAULT_CONFLICT_LOG = PROJECT_ROOT / "data/knowledge_base/conflict_resolution/CONFLICT_LOG.md"
-CASE_ROOT = PROJECT_ROOT / "data/knowledge_base/conflict_resolution"
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+from backend.core.paths import AGENT_KB_DIR  # noqa: E402
+
+CASE_ROOT = AGENT_KB_DIR / "conflict_resolution"
+DEFAULT_REGISTER = CASE_ROOT / "SESSION_REGISTER_202606.md"
+DEFAULT_SLA = CASE_ROOT / "ESCALATION_SLA_TRACKER_202606.md"
+DEFAULT_CONFLICT_LOG = CASE_ROOT / "CONFLICT_LOG.md"
 KST04_SOURCE_DRAFT = CASE_ROOT / "KST04_CUSTOMER_RESPONSE_PROMOTION_SOURCE_OF_TRUTH_DRAFT_20260606.md"
 KST04_MISSING_MATRIX = CASE_ROOT / "KST04_PROMOTION_MISSING_EVIDENCE_MATRIX_20260606.md"
 

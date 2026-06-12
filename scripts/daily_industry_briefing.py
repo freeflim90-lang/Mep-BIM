@@ -24,9 +24,14 @@ from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+import sys  # noqa: E402
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+from backend.knowledge_store import knowledge_file_path  # noqa: E402
+
 SOURCE_CONFIG = PROJECT_ROOT / "config" / "daily_industry_briefing_sources.json"
 REPORT_DIR = PROJECT_ROOT / "docs" / "industry_intelligence" / "daily"
-KB_FILE = PROJECT_ROOT / "data" / "knowledge_base" / "산업동향_데일리브리핑.md"
+KB_FILE = Path(knowledge_file_path("산업동향_데일리브리핑"))
 SENT_STATE_FILE = PROJECT_ROOT / "runtime" / "daily_industry_briefing_sent_state.json"
 USER_AGENT = "LUA-BIM-LAB-Daily-Briefing/1.0"
 

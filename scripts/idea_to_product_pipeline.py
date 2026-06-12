@@ -20,12 +20,17 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from backend.collaboration import build_daily_idea_report
+from backend.knowledge_store import knowledge_file_path
 
 
 ACTIVE_QUEUE = PROJECT_ROOT / "config" / "qwen_product_draft_queue.json"
 NEXT_QUEUE = PROJECT_ROOT / "config" / "qwen_next_product_draft_queue.json"
 IDEATION_DIR = PROJECT_ROOT / "docs" / "product_ideation"
-KB_FILE = PROJECT_ROOT / "data" / "knowledge_base" / "아이디어발굴.md"
+KB_FILE = Path(knowledge_file_path("아이디어발굴"))
+
+
+def _kb_rel(agent: str) -> str:
+    return Path(knowledge_file_path(agent)).relative_to(PROJECT_ROOT).as_posix()
 
 
 def state_file_for(queue_file: Path) -> Path:
@@ -78,10 +83,10 @@ def build_next_queue(top_idea: dict) -> dict:
     prefix = product_code(top_idea["title"])
     source_documents = [
         "docs/internal_organization_documents/23_IDEA_TO_PRODUCT_DEVELOPMENT_PIPELINE.md",
-        "data/knowledge_base/아이디어발굴.md",
-        "data/knowledge_base/전략기획.md",
-        "data/knowledge_base/프로그램개발.md",
-        "data/knowledge_base/제품패키징.md",
+        _kb_rel("아이디어발굴"),
+        _kb_rel("전략기획"),
+        _kb_rel("프로그램개발"),
+        _kb_rel("제품패키징"),
     ]
     return {
         "product": top_idea["title"],

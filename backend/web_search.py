@@ -251,7 +251,7 @@ def _save_search_result_to_knowledge(agent_name: str, query: str, content: str) 
 
     now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     if not os.path.exists(path):
-        os.makedirs(KNOWLEDGE_DIR, exist_ok=True)
+        os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, "w", encoding="utf-8") as f:
             f.write(f"# {agent_name} 지식 베이스\n")
     entry = (

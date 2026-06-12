@@ -1,7 +1,7 @@
 ---
 type: global-moc
 generated: true
-source_count: 2236
+source_count: 2247
 ---
 
 # Global Knowledge Map
@@ -13,9 +13,9 @@ source_count: 2236
 - [[MOC - AI Knowledge Base]] (212 files)
 - [[MOC - Autodesk Store]] (19 files)
 - [[MOC - Commercial Addins]] (48 files)
-- [[MOC - Docs - General]] (280 files)
+- [[MOC - Docs - General]] (285 files)
 - [[MOC - Internal Organization]] (33 files)
-- [[MOC - NAS Knowledge]] (1015 files)
+- [[MOC - NAS Knowledge]] (1021 files)
 - [[MOC - Obsidian - Model Quality Auditor]] (75 files)
 - [[MOC - Official External Documents]] (32 files)
 - [[MOC - Revenue Product - Model Quality Auditor]] (15 files)

@@ -24,19 +24,26 @@ from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+from backend.core.paths import AGENT_KB_DIR, KNOWLEDGE_UPDATES_DIR  # noqa: E402
+from backend.knowledge_store import knowledge_file_path  # noqa: E402
+
 GROWTH_DIR = PROJECT_ROOT / "docs" / "internal_growth"
-KB_FILE = PROJECT_ROOT / "data" / "knowledge_base" / "내부성장루프.md"
+KB_FILE = Path(knowledge_file_path("내부성장루프"))
 BACKLOG_FILE = PROJECT_ROOT / "docs" / "internal_growth" / "AX_INTERNAL_GROWTH_BACKLOG.md"
 
+_KB_REL = AGENT_KB_DIR.relative_to(PROJECT_ROOT).as_posix()
+_UPDATES_REL = KNOWLEDGE_UPDATES_DIR.relative_to(PROJECT_ROOT).as_posix()
 SOURCE_GLOBS = [
-    "docs/knowledge_updates/daily/*_DAILY_KNOWLEDGE_UPDATE.md",
-    "docs/knowledge_updates/weekly/*_AX_STRATEGY_REVIEW.md",
+    f"{_UPDATES_REL}/daily/*_DAILY_KNOWLEDGE_UPDATE.md",
+    f"{_UPDATES_REL}/weekly/*_AX_STRATEGY_REVIEW.md",
     "docs/industry_intelligence/hourly/**/*.md",
     "docs/industry_intelligence/daily/*_CONSTRUCTION_DESIGN_BIM_DAILY_BRIEFING.md",
-    "data/knowledge_base/AX_*.md",
-    "data/knowledge_base/최고전략CSO.md",
-    "data/knowledge_base/아이디어발굴.md",
-    "data/knowledge_base/지식업데이트.md",
+    f"{_KB_REL}/**/AX_*.md",
+    f"{_KB_REL}/**/최고전략CSO.md",
+    f"{_KB_REL}/**/아이디어발굴.md",
+    f"{_KB_REL}/**/지식업데이트.md",
 ]
 
 BUCKETS = {

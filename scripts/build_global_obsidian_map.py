@@ -21,7 +21,15 @@ WIKILINK_RE = re.compile(r"\[\[([^\]|#]+)(?:#[^\]|]+)?(?:\|[^\]]+)?\]\]")
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+import sys  # noqa: E402
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+from backend.core.paths import AGENT_KB_DIR, TRAINING_CURRICULUM_DIR  # noqa: E402
+
 VAULT = PROJECT_ROOT / "obsidian_vaults" / "lua_bim_lab_global_map"
+
+_KB_PREFIX = AGENT_KB_DIR.relative_to(PROJECT_ROOT).as_posix() + "/"
+_TRAINING_PREFIX = TRAINING_CURRICULUM_DIR.relative_to(PROJECT_ROOT).as_posix() + "/"
 
 EXCLUDE_PARTS = {
     ".git",
@@ -79,7 +87,7 @@ def should_skip(path: Path) -> bool:
 def category_for(rel: str) -> str:
     if rel.startswith("obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/"):
         return "NAS Knowledge"
-    if rel.startswith("data/knowledge_base/"):
+    if rel.startswith(_KB_PREFIX):
         return "AI Knowledge Base"
     if rel.startswith("docs/standard_documents/"):
         return "Standard Documents"
@@ -89,7 +97,7 @@ def category_for(rel: str) -> str:
         return "Official External Documents"
     if rel.startswith("docs/revenue_products/model_quality_audit/"):
         return "Revenue Product - Model Quality Auditor"
-    if rel.startswith("docs/training_curriculum/"):
+    if rel.startswith(_TRAINING_PREFIX):
         return "Training Curriculum"
     if rel.startswith("docs/autodesk_store/"):
         return "Autodesk Store"

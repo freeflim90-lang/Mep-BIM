@@ -6,13 +6,13 @@ from pathlib import Path
 
 from telegram import Update
 
-from backend.core.paths import DATA_DIR, PROJECT_ROOT
+from backend.core.paths import AGENT_KB_DIR, DOCS_DIR
 from backend.text_utils import sanitize_outbound_text, telegram_user_label
 
 
-REASONING_KB_FILE = DATA_DIR / "knowledge_base" / "추론훈련루프.md"
-REASONING_DIR = PROJECT_ROOT / "docs" / "reasoning_training"
-FEEDBACK_DIR = PROJECT_ROOT / "docs" / "reasoning_training" / "feedback"
+REASONING_KB_FILE = AGENT_KB_DIR / "추론훈련루프.md"
+REASONING_DIR = DOCS_DIR / "reasoning_training"
+FEEDBACK_DIR = DOCS_DIR / "reasoning_training" / "feedback"
 
 SENSITIVE_PATTERNS = [
     r"api[_ -]?key",

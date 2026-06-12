@@ -16,8 +16,10 @@ from pathlib import Path
 from typing import Optional
 from pydantic import BaseModel
 
+from backend.core.paths import BIM_LAND_DIR
+
 # ── 데이터 저장 경로 ────────────────────────────────────────────────────────────
-_DATA_DIR = Path(__file__).resolve().parents[1] / "data" / "bim_land"
+_DATA_DIR = BIM_LAND_DIR
 _LOGS_FILE              = _DATA_DIR / "territory_logs.json"
 _TERRITORIES_FILE       = _DATA_DIR / "territories.json"
 _PROJECTS_FILE          = _DATA_DIR / "projects.json"

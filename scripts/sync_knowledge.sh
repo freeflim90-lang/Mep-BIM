@@ -3,6 +3,7 @@
 # GitHub ↔ 로컬 동기화 (속도 영향 없음 - 로컬 캐시 방식)
 
 PROJECT_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+source "$PROJECT_ROOT/scripts/lib/paths.sh"
 LOG_FILE="$PROJECT_ROOT/logs/sync_knowledge.log"
 RUNNING_MARKER="$PROJECT_ROOT/logs/.daily_knowledge_update_running"
 mkdir -p "$PROJECT_ROOT/logs"
@@ -20,9 +21,10 @@ fi
 if ! git diff --quiet || ! git diff --cached --quiet; then
     git add \
         .gitignore \
-        data/knowledge_base/ \
-        data/qa_dataset/ \
-        data/technical_pdfs/ \
+        "$LUA_AGENT_KB_DIR/" \
+        "$LUA_QA_KB_DIR/" \
+        "$LUA_QA_DATASET_DIR/" \
+        "$LUA_TECHNICAL_PDFS_DIR/" \
         scripts/*.py \
         scripts/*.sh \
         scripts/requirements*.txt \

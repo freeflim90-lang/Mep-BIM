@@ -4,7 +4,15 @@ import datetime
 import os
 from pathlib import Path
 
-from backend.core.paths import DATA_DIR, PROJECT_ROOT
+from backend.core.paths import (
+    AGENT_KB_DIR,
+    AGENT_KB_LAYOUT,
+    DATA_DIR,
+    EXTRA_AGENTS_DIR_NAME,
+    PROJECT_ROOT,
+    QA_KB_DIR,
+    TEAM_DIR_NAMES,
+)
 from backend.models import KnowledgeUpdateRequest
 
 ORGANIZATION = {
@@ -63,8 +71,8 @@ DISCIPLINE_KEYWORDS = {
              "통신실", "서버실 온도", "통신 케이블 이격", "약전 이격", "mdf idf 온도"],
 }
 
-KNOWLEDGE_DIR = os.environ.get("KNOWLEDGE_BASE_DIR", str(DATA_DIR / "knowledge_base"))
-QA_KNOWLEDGE_DIR = str(DATA_DIR / "knowledge_base" / "qa")
+KNOWLEDGE_DIR = str(AGENT_KB_DIR)
+QA_KNOWLEDGE_DIR = str(QA_KB_DIR)
 
 EXTRA_KNOWLEDGE_AGENTS = {
     "최고전략 (CSO)", "파이프라인_오케스트레이터", "Caveman_토큰다이어터",
@@ -97,9 +105,24 @@ DEFAULT_KNOWLEDGE = {
 }
 
 
+# 에이전트 → knowledge/10_agents/ 하위 팀 폴더명 (teams 레이아웃 전용)
+AGENT_TEAM_DIR = {
+    agent: TEAM_DIR_NAMES[team]
+    for team, team_agents in ORGANIZATION.items()
+    for agent in team_agents
+}
+
+
+def agent_kb_dir(agent: str) -> str:
+    """레이아웃에 따른 에이전트 KB 파일의 디렉토리를 반환."""
+    if AGENT_KB_LAYOUT == "teams":
+        return os.path.join(KNOWLEDGE_DIR, AGENT_TEAM_DIR.get(agent, EXTRA_AGENTS_DIR_NAME))
+    return KNOWLEDGE_DIR
+
+
 def knowledge_file_path(agent: str) -> str:
     safe_name = "".join(ch for ch in agent if ch.isalnum() or ch in ("_", "-"))
-    return os.path.join(KNOWLEDGE_DIR, f"{safe_name}.md")
+    return os.path.join(agent_kb_dir(agent), f"{safe_name}.md")
 
 
 def qa_knowledge_file_path(agent: str) -> str:
@@ -112,6 +135,7 @@ def ensure_knowledge_base() -> None:
     os.makedirs(QA_KNOWLEDGE_DIR, exist_ok=True)
     for agent, seed in DEFAULT_KNOWLEDGE.items():
         path = knowledge_file_path(agent)
+        os.makedirs(os.path.dirname(path), exist_ok=True)
         if not os.path.exists(path):
             with open(path, "w", encoding="utf-8") as kb_file:
                 kb_file.write(f"# {agent} 지식 베이스\n\n## 초기 기준\n{seed}\n")
@@ -188,6 +212,7 @@ def append_knowledge_update(update: KnowledgeUpdateRequest) -> dict:
         f"- Tags: {update.tags.strip() or '-'}\n\n"
         f"{update.content.strip()}\n"
     )
+    os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "a", encoding="utf-8") as kb_file:
         kb_file.write(entry)
     return {"agent": update.agent, "path": path, "updated_at": now, "skipped": False}

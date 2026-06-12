@@ -490,3 +490,14 @@ Autodesk 공식 Revit 2026 What's New와 APS 공식 블로그 기준으로 Add-i
 - 시트 컬렉션과 명령 메뉴 항목 지원을 통해 API의 성능이 최적화되었습니다.
 - Autodesk Store에 올리기 위해 Add-in을 심사 통과시키려면, 사용자 인터페이스가 직관적이며 안정적이어야 하며, 데이터 보안 및 개인 정보 보호 기준을 준수해야 합니다.
 - 관련: [[간섭검토]] · [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]]
+
+
+## Revit Add-in 최신 동향 및 개발 팁 (2026-06-13)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-13
+- Tags: revit,addin,API,update
+
+- Autodesk Revit 2025 API는 .NET Core 기반으로 개발되어 새로운 클래스와 메서드가 추가되었습니다.
+- 이 버전에서는 분석, 전기설비, 시트 콜렉션 등에 대한 신규 기능이 도입되었으며, 특히 공사 관리에 중요한 경로 탐색과 파라미터화된 바support 세부사항을 포함한 주요 변경 사항이 있습니다.
+- 성능 최적화를 위해 코드 리팩토링과 효율적인 데이터 접근 방식을 적용하여 프레임워크의 전반적인 속도와 반응성을 향상시킬 수 있습니다.
+- Autodesk Store에 등록된 Add-in은 신중한 계획과 테스트가 필요하며, 사용자 경험과 안전성 검토를 통과해야 합니다. 특히 사용자 인터페이스의 직관성과 데이터 보안을 강조하여 심사에서 긍정적인 결과를 얻을 수 있도록 합니다.
+- 관련: [[간섭검토]] · [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]]

@@ -22,9 +22,13 @@ import daily_industry_briefing as briefing
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+from backend.knowledge_store import knowledge_file_path  # noqa: E402
+
 HOURLY_DIR = PROJECT_ROOT / "docs" / "industry_intelligence" / "hourly"
 STATE_FILE = PROJECT_ROOT / "logs" / "hourly_ax_signal_monitor_state.json"
-KB_FILE = PROJECT_ROOT / "data" / "knowledge_base" / "AX_시간별_신호모니터링.md"
+KB_FILE = Path(knowledge_file_path("AX_시간별_신호모니터링"))
 RUNNING_MARKER = PROJECT_ROOT / "logs" / ".hourly_ax_signal_monitor_running"
 
 

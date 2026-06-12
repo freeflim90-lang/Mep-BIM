@@ -5,12 +5,12 @@ import json
 from pathlib import Path
 from typing import Any
 
-from backend.core.paths import DATA_DIR, PROJECT_ROOT
+from backend.core.paths import CURATION_DIR, PROJECT_ROOT
 from backend.models import KnowledgeUpdateRequest
 from backend.text_utils import sanitize_outbound_text
 
 
-KNOWLEDGE_APPROVAL_FILE = DATA_DIR / "knowledge_quality" / "knowledge_approval_candidates.json"
+KNOWLEDGE_APPROVAL_FILE = CURATION_DIR / "knowledge_approval_candidates.json"
 
 
 def load_knowledge_approval_registry(path: Path = KNOWLEDGE_APPROVAL_FILE) -> dict[str, Any]:

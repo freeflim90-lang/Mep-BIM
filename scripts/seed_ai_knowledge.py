@@ -1,9 +1,14 @@
+import sys
 import datetime
 import os
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-KNOWLEDGE_DIR = PROJECT_ROOT / "data" / "knowledge_base"
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+from backend.core.paths import AGENT_KB_DIR  # noqa: E402
+
+KNOWLEDGE_DIR = AGENT_KB_DIR
 
 COMMON_SOURCE = "LUA BIM LABS curated baseline, Autodesk official docs checked 2026-05-19"
 

@@ -12,7 +12,7 @@ import requests
 from pathlib import Path
 from crawl4ai import AsyncWebCrawler
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
+from backend.core.paths import PROJECT_ROOT
 
 def load_local_env(path=None):
     """Load simple KEY=VALUE pairs for local development without adding a dependency."""

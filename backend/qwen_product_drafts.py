@@ -11,12 +11,12 @@ from pathlib import Path
 from typing import Any
 
 import backend.local_coder as local_coder
+from backend.core.paths import OBSIDIAN_VAULTS_DIR, PROJECT_ROOT
 from backend.email_notifications import send_gmail
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
 QUEUE_FILE = PROJECT_ROOT / os.environ.get("QWEN_PRODUCT_DRAFT_QUEUE", "config/qwen_product_draft_queue.json")
-DRAFT_DIR = PROJECT_ROOT / "obsidian_vaults" / "model_quality_auditor" / "06_Qwen_Drafts"
+DRAFT_DIR = OBSIDIAN_VAULTS_DIR / "model_quality_auditor" / "06_Qwen_Drafts"
 INDEX_FILE = DRAFT_DIR / "Qwen Draft Index.md"
 
 

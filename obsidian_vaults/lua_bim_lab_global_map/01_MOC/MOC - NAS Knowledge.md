@@ -2,7 +2,7 @@
 type: category-moc
 category: NAS Knowledge
 generated: true
-count: 1015
+count: 1021
 ---
 
 # MOC - NAS Knowledge
@@ -76,6 +76,7 @@ count: 1015
 - [[2026-06-10 뉴스 트렌드 18항목 지식 업데이트]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/2026-06-10 뉴스 트렌드 18항목 지식 업데이트.md`
 - [[2026-06-11 뉴스 트렌드 18항목 지식 업데이트]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/2026-06-11 뉴스 트렌드 18항목 지식 업데이트.md`
 - [[2026-06-12 뉴스 트렌드 18항목 지식 업데이트]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/2026-06-12 뉴스 트렌드 18항목 지식 업데이트.md`
+- [[2026-06-13 뉴스 트렌드 18항목 지식 업데이트]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/2026-06-13 뉴스 트렌드 18항목 지식 업데이트.md`
 - [[A Practical MEP Model QA Checklist Before Coordination]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Blog_MEP_BIM/2026-05-29 - a-practical-mep-model-qa-checklist-before-coordination.md`
 - [[A Simple Checklist for AHU Connection Logic in HVAC Duct BIM]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Blog_MEP_BIM/2026-05-30 - a-simple-checklist-for-ahu-connection-logic-in-hvac-duct-bim.md`
 - [[A Simple Checklist for BIM Review Notes in Daily BIM Career Training]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Blog_MEP_BIM/2026-05-30 - a-simple-checklist-for-bim-review-notes-in-daily-bim-career-training.md`
@@ -371,6 +372,7 @@ count: 1015
 - [[How Structural Engineers Use Revit for Rebar Modeling and QA]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Blog_MEP_BIM/2026-06-12 - how-structural-engineers-use-revit-for-rebar-modeling-and-qa.md`
 - [[How to Build a Daily MEP BIM Learning Habit]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Blog_MEP_BIM/2026-05-29 - how-to-build-a-daily-mep-bim-learning-habit.md`
 - [[How to Check Chilled Water Supply and Return Logic in Revit MEP]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Blog_MEP_BIM/2026-05-29 - how-to-check-chilled-water-supply-and-return-logic-in-revit-mep.md`
+- [[How to Configure IFC Export from Revit for Architectural Submissions]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Blog_MEP_BIM/2026-06-12 - how-to-configure-ifc-export-from-revit-for-architectural-submissions.md`
 - [[How to Group Navisworks Clashes for a Useful Coordination Meeting]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Blog_MEP_BIM/2026-05-29 - how-to-group-navisworks-clashes-for-a-useful-coordination-meeting.md`
 - [[How to Review Cable Tray Routing in Electrical BIM]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Blog_MEP_BIM/2026-06-06 - how-to-review-cable-tray-routing-in-electrical-bim.md`
 - [[How to Review Ceiling Device Conflicts in Fire Protection BIM]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Blog_MEP_BIM/2026-06-06 - how-to-review-ceiling-device-conflicts-in-fire-protection-bim.md`
@@ -400,6 +402,8 @@ count: 1015
 - [[How to Review Viewpoints in Navisworks Workflow]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Blog_MEP_BIM/2026-05-31 - how-to-review-viewpoints-in-navisworks-workflow.md`
 - [[How to Review Worksets in Revit MEP Workflow]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Blog_MEP_BIM/2026-05-29 - how-to-review-worksets-in-revit-mep-workflow.md`
 - [[IFC Export from Revit Architecture What Structural and MEP Need]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Blog_MEP_BIM/2026-06-12 - ifc-export-from-revit-architecture-what-structural-and-mep-need.md`
+- [[IFC Property Sets How to Define and Export BIM Data for Handover]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Blog_MEP_BIM/2026-06-12 - ifc-property-sets-how-to-define-and-export-bim-data-for-handover.md`
+- [[IFC for Fire Protection Exporting Sprinkler and Alarm Systems]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Blog_MEP_BIM/2026-06-12 - ifc-for-fire-protection-exporting-sprinkler-and-alarm-systems.md`
 - [[IFC for Structural BIM What Contractors and Fabricators Need]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Blog_MEP_BIM/2026-06-12 - ifc-for-structural-bim-what-contractors-and-fabricators-need.md`
 - [[IFC4 vs IFC2x3 What Changes for Revit Export and Coordination]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Blog_MEP_BIM/2026-06-12 - ifc4-vs-ifc2x3-what-changes-for-revit-export-and-coordination.md`
 - [[IT 장비 패밀리]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/BIMobject/전자_통신_보안/IT 장비 패밀리.md`
@@ -513,6 +517,7 @@ count: 1015
 - [[NAS_Knowledge - Team_Telegram_QA - QA - 20260528-092340 - 인천공항_제2터미널_연면적은_얼마야 - QA - 인천공항 제2터미널 연면적은 얼마야]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Team_Telegram_QA/QA - 20260528-092340 - 인천공항_제2터미널_연면적은_얼마야.md`
 - [[Natural Ventilation 패밀리]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/BIMobject/공조(HVAC)/Natural Ventilation 패밀리.md`
 - [[Natural 패밀리]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/BIMobject/조명/Natural 패밀리.md`
+- [[OpenBIM Coordination Using IFC Files in Navisworks]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Blog_MEP_BIM/2026-06-12 - openbim-coordination-using-ifc-files-in-navisworks.md`
 - [[Other 패밀리]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/BIMobject/건축자재/Other 패밀리.md`
 - [[Paint Varnishes Finishes 패밀리]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/BIMobject/건축자재/Paint, Varnishes & Finishes 패밀리.md`
 - [[Pavers Stones 패밀리]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/BIMobject/건축자재/Pavers & Stones 패밀리.md`
@@ -788,6 +793,7 @@ count: 1015
 - [[Toilet Seats 패밀리]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/BIMobject/위생/Toilet Seats 패밀리.md`
 - [[Transom Window 패밀리]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/BIMobject/창호/Transom Window 패밀리.md`
 - [[Using Revit Design Options for Early-Stage Architectural BIM]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Blog_MEP_BIM/2026-06-12 - using-revit-design-options-for-early-stage-architectural-bim.md`
+- [[Validating IFC Files Before Submission Tools and Checklist]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Blog_MEP_BIM/2026-06-12 - validating-ifc-files-before-submission-tools-and-checklist.md`
 - [[Valve Maintenance Space A Small BIM Detail With Big Site Impact]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/Blog_MEP_BIM/2026-05-29 - valve-maintenance-space-a-small-bim-detail-with-big-site-impact.md`
 - [[Vinyl 패밀리]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/BIMobject/바닥재/Vinyl 패밀리.md`
 - [[Washtops 패밀리]] — `obsidian_vaults/lua_bim_lab_global_map/NAS_Knowledge/BIMobject/위생/Washtops 패밀리.md`

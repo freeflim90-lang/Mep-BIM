@@ -1240,6 +1240,106 @@
       "report": "docs/reasoning_training/2026-06-12/0006_LUA_REASONING_TRAINING_DIGEST.md",
       "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=12/12 threshold=0.42",
       "created_at": "2026-06-12T00:06:35"
+    },
+    {
+      "key": "1eeb5b8acb9d7612",
+      "question": "`Model Quality Auditor는 별도 프로젝트로 개발하고 실제 Revit API 사용 가능 환경에서 빌드/테스트...`가 실제 현장 문제라면 재현 조건, 영향 범위, 임시 조치 중 무엇을 먼저 확인해야 하는가?",
+      "intent": "evidence",
+      "signal": "90a1f2e4bbc39f0b",
+      "source": "data/knowledge_base/인프라_DevOpsObsidian.md",
+      "report": "docs/reasoning_training/2026-06-13/0000_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=10/10 threshold=0.42",
+      "created_at": "2026-06-13T00:00:29"
+    },
+    {
+      "key": "e2c1bbc61425ff09",
+      "question": "`Model Quality Auditor는 별도 프로젝트로 개발하고 실제 Revit API 사용 가능 환경에서 빌드/테스트...`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "90a1f2e4bbc39f0b",
+      "source": "data/knowledge_base/인프라_DevOpsObsidian.md",
+      "report": "docs/reasoning_training/2026-06-13/0000_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=10/10 threshold=0.42",
+      "created_at": "2026-06-13T00:00:29"
+    },
+    {
+      "key": "13d13628a6ff63e1",
+      "question": "납품 전 품질 기준으로 바꾼다면 `Model Quality Auditor는 별도 프로젝트로 개발하고 실제 Revit API 사용 가능 환경에서 빌드/테스트...`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "90a1f2e4bbc39f0b",
+      "source": "data/knowledge_base/인프라_DevOpsObsidian.md",
+      "report": "docs/reasoning_training/2026-06-13/0000_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=10/10 threshold=0.42",
+      "created_at": "2026-06-13T00:00:29"
+    },
+    {
+      "key": "6f1c691ab9628221",
+      "question": "`상용 릴리스 DLL에는 활성화 비밀번호, HMAC 시크릿, API 토큰 같은 비밀값을 포함하지 않는다. 로컬 라이선스 파...`가 실제 현장 문제라면 재현 조건, 영향 범위, 임시 조치 중 무엇을 먼저 확인해야 하는가?",
+      "intent": "evidence",
+      "signal": "56d3176e11ddce07",
+      "source": "data/knowledge_base/라이선스_보안관.md",
+      "report": "docs/reasoning_training/2026-06-13/0000_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=10/10 threshold=0.42",
+      "created_at": "2026-06-13T00:00:29"
+    },
+    {
+      "key": "3dbdb0fd7cde8ed1",
+      "question": "`상용 릴리스 DLL에는 활성화 비밀번호, HMAC 시크릿, API 토큰 같은 비밀값을 포함하지 않는다. 로컬 라이선스 파...`에서 사람이 반복 판단하는 부분만 떼어내면 어떤 스크립트나 Add-in 후보가 되는가?",
+      "intent": "automation",
+      "signal": "56d3176e11ddce07",
+      "source": "data/knowledge_base/라이선스_보안관.md",
+      "report": "docs/reasoning_training/2026-06-13/0000_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=10/10 threshold=0.42",
+      "created_at": "2026-06-13T00:00:29"
+    },
+    {
+      "key": "e9c125ae89c0ba97",
+      "question": "납품 전 품질 기준으로 바꾼다면 `상용 릴리스 DLL에는 활성화 비밀번호, HMAC 시크릿, API 토큰 같은 비밀값을 포함하지 않는다. 로컬 라이선스 파...`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "56d3176e11ddce07",
+      "source": "data/knowledge_base/라이선스_보안관.md",
+      "report": "docs/reasoning_training/2026-06-13/0000_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=10/10 threshold=0.42",
+      "created_at": "2026-06-13T00:00:29"
+    },
+    {
+      "key": "b7e553bae8abb54b",
+      "question": "고객에게 설명할 때 `상용 릴리스 DLL에는 활성화 비밀번호, HMAC 시크릿, API 토큰 같은 비밀값을 포함하지 않는다. 로컬 라이선스 파...`는 시간 절감, 품질 안정, 리스크 감소 중 어디에 가장 가깝나?",
+      "intent": "business_language",
+      "signal": "56d3176e11ddce07",
+      "source": "data/knowledge_base/라이선스_보안관.md",
+      "report": "docs/reasoning_training/2026-06-13/0000_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=10/10 threshold=0.42",
+      "created_at": "2026-06-13T00:00:29"
+    },
+    {
+      "key": "bf087cb03bb1d9ab",
+      "question": "`고객지원 CS는 일반 고객 문의의 단일 통합 창구다. 설치 실패, 라이선스 인증, 기능 사용법, 호환성, 모델별 오류,...`가 실제 현장 문제라면 재현 조건, 영향 범위, 임시 조치 중 무엇을 먼저 확인해야 하는가?",
+      "intent": "evidence",
+      "signal": "3af8e192540b60c6",
+      "source": "data/knowledge_base/고객지원CS.md",
+      "report": "docs/reasoning_training/2026-06-13/0000_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=10/10 threshold=0.42",
+      "created_at": "2026-06-13T00:00:29"
+    },
+    {
+      "key": "78d965611fd67966",
+      "question": "납품 전 품질 기준으로 바꾼다면 `고객지원 CS는 일반 고객 문의의 단일 통합 창구다. 설치 실패, 라이선스 인증, 기능 사용법, 호환성, 모델별 오류,...`는 합격/불합격 조건을 어떻게 가져야 하는가?",
+      "intent": "quality_rule",
+      "signal": "3af8e192540b60c6",
+      "source": "data/knowledge_base/고객지원CS.md",
+      "report": "docs/reasoning_training/2026-06-13/0000_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=10/10 threshold=0.42",
+      "created_at": "2026-06-13T00:00:29"
+    },
+    {
+      "key": "c9d9e3c4cf2a1d1b",
+      "question": "고객에게 설명할 때 `고객지원 CS는 일반 고객 문의의 단일 통합 창구다. 설치 실패, 라이선스 인증, 기능 사용법, 호환성, 모델별 오류,...`는 시간 절감, 품질 안정, 리스크 감소 중 어디에 가장 가깝나?",
+      "intent": "business_language",
+      "signal": "3af8e192540b60c6",
+      "source": "data/knowledge_base/고객지원CS.md",
+      "report": "docs/reasoning_training/2026-06-13/0000_LUA_REASONING_TRAINING_DIGEST.md",
+      "novelty_reason": "low_question_novelty question_novelty=0.00 avg=0.00 repeated_intents=10/10 threshold=0.42",
+      "created_at": "2026-06-13T00:00:29"
     }
   ]
 }

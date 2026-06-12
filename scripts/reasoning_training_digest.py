@@ -22,8 +22,14 @@ from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+import sys  # noqa: E402
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+from backend.core.paths import AGENT_KB_DIR, QA_KB_DIR, TEAM_REQUESTS_DIR  # noqa: E402
+from backend.knowledge_store import knowledge_file_path  # noqa: E402
+
 REPORT_DIR = PROJECT_ROOT / "docs" / "reasoning_training"
-KB_FILE = PROJECT_ROOT / "data" / "knowledge_base" / "추론훈련루프.md"
+KB_FILE = Path(knowledge_file_path("추론훈련루프"))
 STATE_FILE = PROJECT_ROOT / "runtime" / "reasoning_training_digest_seen.txt"
 QUESTION_HISTORY_FILE = PROJECT_ROOT / "runtime" / "reasoning_training_question_history.json"
 DEEPSEEK_BUDGET_FILE = PROJECT_ROOT / "data" / "ai_usage" / "deepseek_monthly_budget.json"
@@ -31,10 +37,14 @@ DEEPSEEK_API_URL = "https://api.deepseek.com/chat/completions"
 DEEPSEEK_ESTIMATED_CALL_COST_USD = 0.35
 MIN_DEEPSEEK_QUESTION_NOVELTY = 0.42
 
+_KB_REL = AGENT_KB_DIR.relative_to(PROJECT_ROOT).as_posix()
+_QA_REL = QA_KB_DIR.relative_to(PROJECT_ROOT).as_posix()
+_TEAM_REQ_REL = TEAM_REQUESTS_DIR.relative_to(PROJECT_ROOT).as_posix()
+
 SOURCE_GLOBS = [
-    "data/knowledge_base/*.md",
-    "data/knowledge_base/qa/*.md",
-    "data/team_requests/*.md",
+    f"{_KB_REL}/**/*.md",
+    f"{_QA_REL}/*.md",
+    f"{_TEAM_REQ_REL}/*.md",
     "docs/internal_growth/**/*.md",
     "docs/knowledge_updates/daily/*.md",
     "docs/industry_intelligence/daily/*.md",

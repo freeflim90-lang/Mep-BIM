@@ -1,9 +1,14 @@
 """개발/QA/스토어/비즈니스 에이전트 지식 충전 - Part 2"""
+import sys
 import os, datetime
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-KB = PROJECT_ROOT / "data" / "knowledge_base"
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+from backend.core.paths import AGENT_KB_DIR  # noqa: E402
+
+KB = AGENT_KB_DIR
 KB.mkdir(parents=True, exist_ok=True)
 NOW = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 SRC = "LUA BIM LABS domain knowledge baseline 2026-05-19"

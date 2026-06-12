@@ -13,7 +13,11 @@ import sys
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-KB_DIR = PROJECT_ROOT / "data" / "knowledge_base"
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+from backend.core.paths import AGENT_KB_DIR  # noqa: E402
+
+KB_DIR = AGENT_KB_DIR
 
 # 핵심 공종 파일 (답변 품질에 직접 영향)
 TARGET_FILES = [

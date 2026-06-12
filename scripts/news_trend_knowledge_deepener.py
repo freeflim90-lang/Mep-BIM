@@ -8,6 +8,7 @@ updates the key strategy KB files with managed sections.
 
 from __future__ import annotations
 
+import sys
 import argparse
 import datetime as dt
 import re
@@ -16,9 +17,13 @@ from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+from backend.core.paths import AGENT_KB_DIR  # noqa: E402
+
 DAILY_DIR = PROJECT_ROOT / "docs" / "industry_intelligence" / "daily"
 NAS_DIR = PROJECT_ROOT / "obsidian_vaults" / "lua_bim_lab_global_map" / "NAS_Knowledge"
-KB_DIR = PROJECT_ROOT / "data" / "knowledge_base"
+KB_DIR = AGENT_KB_DIR
 MARKET_KB = KB_DIR / "건설시장_트렌드.md"
 AX_KB = KB_DIR / "AX_전략승격리뷰.md"
 KNOWLEDGE_UPDATE_KB = KB_DIR / "지식업데이트.md"

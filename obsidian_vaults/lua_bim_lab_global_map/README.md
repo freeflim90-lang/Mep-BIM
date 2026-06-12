@@ -1,6 +1,6 @@
 # LUA BIM LAB Global Obsidian Map
 
-이 vault는 원본 문서를 복사하지 않고, workspace의 `.md` 문서 2236개를 검색/그래프용 인덱스 노트로 미러링한다.
+이 vault는 원본 문서를 복사하지 않고, workspace의 `.md` 문서 2247개를 검색/그래프용 인덱스 노트로 미러링한다.
 
 시작 문서: [[Global Knowledge Map]]
 

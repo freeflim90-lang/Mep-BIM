@@ -2,8 +2,9 @@
 set -euo pipefail
 
 PROJECT_DIR="/Users/choejeong-yeon/LUA BIM LABS"
+source "$PROJECT_DIR/scripts/lib/paths.sh"
 LOG_DIR="$PROJECT_DIR/logs"
-REPORT_DIR="$PROJECT_DIR/docs/knowledge_updates/daily"
+REPORT_DIR="$LUA_KNOWLEDGE_UPDATES_DIR/daily"
 LOG_FILE="$LOG_DIR/daily_knowledge_update.log"
 TODAY="$(date '+%Y-%m-%d')"
 NOW="$(date '+%Y-%m-%d %H:%M:%S')"

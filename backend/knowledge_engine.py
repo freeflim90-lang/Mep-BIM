@@ -16,7 +16,13 @@ import re
 from collections import Counter
 from pathlib import Path
 
-from backend.core.paths import DATA_DIR as _DATA_DIR, PROJECT_ROOT as _PROJECT_ROOT
+from backend.core.paths import (
+    AGENT_KB_DIR as _AGENT_KB_DIR,
+    CURATION_DIR as _CURATION_DIR,
+    DOCS_DIR as _DOCS_DIR,
+    OBSIDIAN_VAULTS_DIR as _OBSIDIAN_VAULTS_DIR,
+    PROJECT_ROOT as _PROJECT_ROOT,
+)
 from backend.web_search import _search_web_for_knowledge
 
 # ---------------------------------------------------------------------------
@@ -32,9 +38,9 @@ def _st():
 
 def knowledge_search_files() -> list[Path]:
     roots = [
-        _DATA_DIR / "knowledge_base",
-        _PROJECT_ROOT / "docs",
-        _PROJECT_ROOT / "obsidian_vaults" / "model_quality_auditor",
+        _AGENT_KB_DIR,
+        _DOCS_DIR,
+        _OBSIDIAN_VAULTS_DIR / "model_quality_auditor",
     ]
     excluded_parts = {
         "knowledge_updates",
@@ -189,7 +195,7 @@ def search_local_knowledge(query: str, limit: int = 4) -> list[dict]:
             rel = path.relative_to(_PROJECT_ROOT).as_posix()
         except ValueError:
             rel = path.as_posix()
-        if rel.startswith("data/knowledge_base/"):
+        if path.is_relative_to(_AGENT_KB_DIR):
             score += 8
         if path.stem == inferred_agent:
             score += 20
@@ -388,7 +394,7 @@ def assess_knowledge_answer_quality(query: str, agent: str, matches: list[dict],
 
 def append_auto_knowledge_gap_log(*, query: str, agent: str, assessment: dict, search_result: str = "") -> None:
     st = _st()
-    auto_gap_log = _DATA_DIR / "knowledge_quality" / "auto_knowledge_gap_log.md"
+    auto_gap_log = _CURATION_DIR / "auto_knowledge_gap_log.md"
     auto_gap_log.parent.mkdir(parents=True, exist_ok=True)
     now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     entry = (
@@ -407,7 +413,7 @@ def append_auto_knowledge_gap_log(*, query: str, agent: str, assessment: dict, s
 
 def count_gap_occurrences(query: str) -> int:
     """갭 로그에서 동일 질문의 누적 등장 횟수를 반환."""
-    auto_gap_log = _DATA_DIR / "knowledge_quality" / "auto_knowledge_gap_log.md"
+    auto_gap_log = _CURATION_DIR / "auto_knowledge_gap_log.md"
     if not auto_gap_log.exists():
         return 0
     try:
@@ -426,7 +432,7 @@ def count_gap_occurrences(query: str) -> int:
 
 def get_persistent_gaps(min_count: int = 3) -> list[dict]:
     """min_count 이상 반복된 미해결 갭 질문 목록 반환."""
-    auto_gap_log = _DATA_DIR / "knowledge_quality" / "auto_knowledge_gap_log.md"
+    auto_gap_log = _CURATION_DIR / "auto_knowledge_gap_log.md"
     if not auto_gap_log.exists():
         return []
     try:

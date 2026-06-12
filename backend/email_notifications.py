@@ -5,8 +5,8 @@ import smtplib
 from email.message import EmailMessage
 from pathlib import Path
 
+from backend.core.paths import PROJECT_ROOT
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CODE_DEV_RECIPIENT = "jycompany90@naver.com"
 
 

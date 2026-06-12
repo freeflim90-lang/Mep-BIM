@@ -20,7 +20,14 @@ import backend.github_integration as github_integration
 import backend.local_coder as local_coder
 import backend.qwen_product_drafts as qwen_product_drafts
 from backend.email_notifications import gmail_settings, send_gmail
-from backend.core.paths import DATA_DIR, FRONTEND_DIR, GLOBAL_OBSIDIAN_VAULT, PROJECT_ROOT
+from backend.core.paths import (
+    CURATION_DIR,
+    DATA_DIR,
+    FRONTEND_DIR,
+    GLOBAL_OBSIDIAN_VAULT,
+    PROJECT_ROOT,
+    TEAM_REQUESTS_DIR,
+)
 from backend.dashboard_ws import (
     ConnectionManager,
     broadcast_json,
@@ -219,9 +226,9 @@ for _agent in KNOWLEDGE_AGENTS:
 def active_collaboration_workflows() -> list[dict]:
     return collaboration.load_collaboration_workflows(KNOWLEDGE_DIR)
 
-TEAM_REQUEST_LOG = DATA_DIR / "team_requests" / "telegram_knowledge_requests.md"
-TEAM_TELEGRAM_USERS_FILE = DATA_DIR / "team_requests" / "team_telegram_users.json"
-AUTO_KNOWLEDGE_GAP_LOG = DATA_DIR / "knowledge_quality" / "auto_knowledge_gap_log.md"
+TEAM_REQUEST_LOG = TEAM_REQUESTS_DIR / "telegram_knowledge_requests.md"
+TEAM_TELEGRAM_USERS_FILE = TEAM_REQUESTS_DIR / "team_telegram_users.json"
+AUTO_KNOWLEDGE_GAP_LOG = CURATION_DIR / "auto_knowledge_gap_log.md"
 TEAM_QA_OBSIDIAN_DIR = GLOBAL_OBSIDIAN_VAULT / "NAS_Knowledge" / "Team_Telegram_QA"
 TEAM_QA_MOC = TEAM_QA_OBSIDIAN_DIR / "MOC - Team Telegram QA.md"
 REVIT_QA_OBSIDIAN_DIR = GLOBAL_OBSIDIAN_VAULT / "NAS_Knowledge" / "Revit_Assistant_QA"

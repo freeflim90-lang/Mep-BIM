@@ -16,6 +16,11 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 import backend.server_total as server  # noqa: E402
+from backend.knowledge_store import knowledge_file_path  # noqa: E402
+
+
+def kb_rel(agent: str) -> str:
+    return Path(knowledge_file_path(agent)).relative_to(PROJECT_ROOT).as_posix()
 
 
 @dataclass
@@ -38,19 +43,19 @@ CASES = [
     QaCase(
         name="공조배관 유체 약어",
         query="공조배관 유체 종류가 cws cwr 말고 또 뭐가 있을까?",
-        expected_top="data/knowledge_base/공조배관.md",
+        expected_top=kb_rel("공조배관"),
         must_include=("CHWS/CHWR", "HWS/HWR", "REF", "STM", "Glycol"),
     ),
     QaCase(
         name="덕트 유체 종류",
         query="덕트 유체 종류가 SA RA 말고 또 뭐가 있을까?",
-        expected_top="data/knowledge_base/공조덕트.md",
+        expected_top=kb_rel("공조덕트"),
         must_include=("OA", "EA", "MA", "PS", "SE"),
     ),
     QaCase(
         name="위생배관 유체 종류",
         query="위생배관 유체 종류가 급수 급탕 말고 또 뭐가 있어?",
-        expected_top="data/knowledge_base/위생.md",
+        expected_top=kb_rel("위생"),
         must_include=("급탕환수", "오배수", "통기", "우수"),
         forbidden=(
             "| 문서 | 유형 | 권고 |",
@@ -66,49 +71,49 @@ CASES = [
     QaCase(
         name="전기 트레이 기본",
         query="전기 케이블 트레이에서 확인해야 하는 기본 기준 알려줘",
-        expected_top="data/knowledge_base/전기.md",
+        expected_top=kb_rel("전기"),
         must_include=("트레이", "강전", "이격"),
     ),
     QaCase(
         name="Revit Addin 라우팅",
         query="Revit addin에서 설비 질문 답변을 LUA BIM LABS가 하게 하는 구조 알려줘",
-        expected_top="data/knowledge_base/Revit_Addin.md",
+        expected_top=kb_rel("Revit_Addin"),
         must_include=("LUA BIM LABS", "Revit", "Obsidian"),
     ),
     QaCase(
         name="공조 약어 모호성",
         query="CWS가 급수야 냉각수야? 도면에서 어떻게 판단해?",
-        expected_top="data/knowledge_base/공조배관.md",
+        expected_top=kb_rel("공조배관"),
         must_include=("냉각수", "급수", "범례"),
     ),
     QaCase(
         name="소방기계 헤드",
         query="스프링클러 헤드 주변 BIM에서 뭘 확인해야 해?",
-        expected_top="data/knowledge_base/소방기계.md",
+        expected_top=kb_rel("소방기계"),
         must_include=("스프링클러", "헤드", "살수"),
     ),
     QaCase(
         name="자동제어 VAV",
         query="VAV 제어에서 확인해야 하는 포인트 알려줘",
-        expected_top="data/knowledge_base/설비자동제어.md",
+        expected_top=kb_rel("설비자동제어"),
         must_include=("VAV", "최소풍량", "덕트 정압"),
     ),
     QaCase(
         name="설비 도면 해석",
         query="도면에서 공조방식과 부하계산 관련해서 어떤 문서를 같이 봐야 해?",
-        expected_top="data/knowledge_base/설비도면해석.md",
+        expected_top=kb_rel("설비도면해석"),
         must_include=("부하계산서", "장비일람표", "계통도"),
     ),
     QaCase(
         name="Dynamo 카테고리 일괄 선택",
         query="원하는 카테고리의 객체를 일괄 선택하는 다이나모를 구현하고 싶은데 방법을 알려줘",
-        expected_top="data/knowledge_base/Dynamo.md",
+        expected_top=kb_rel("Dynamo"),
         must_include=("Categories", "All Elements of Category", "FilteredElementCollector", "SetElementIds"),
     ),
     QaCase(
         name="Dynamo 폴더 하위 패밀리 배치",
         query="다이나모로 폴더 하위에 있는 패밀리 배치하는 노드는 어떻게 구성해야되?",
-        expected_top="data/knowledge_base/Dynamo.md",
+        expected_top=kb_rel("Dynamo"),
         must_include=("Directory.Contents", "doc.LoadFamily", "NewFamilyInstance", ".rfa"),
         forbidden=(
             "| 문서 | 유형 | 권고 |",
@@ -185,7 +190,7 @@ def validate_quality_gate() -> list[str]:
     synthetic_bad = [
         {
             "score": 29,
-            "path": server.PROJECT_ROOT / "data" / "knowledge_base" / "지식업데이트.md",
+            "path": Path(knowledge_file_path("지식업데이트")),
             "excerpt": "지식 베이스 업데이트 운영 기준",
         }
     ]

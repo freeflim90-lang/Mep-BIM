@@ -26,7 +26,11 @@ from pathlib import Path
 from typing import NamedTuple
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-KB_DIR = PROJECT_ROOT / "data" / "knowledge_base"
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+from backend.core.paths import AGENT_KB_DIR  # noqa: E402
+
+KB_DIR = AGENT_KB_DIR
 QA_DIR = KB_DIR / "qa"
 LOG_DIR = PROJECT_ROOT / "logs" / "qa_simulation"
 LOG_DIR.mkdir(parents=True, exist_ok=True)

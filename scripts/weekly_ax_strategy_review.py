@@ -12,10 +12,15 @@ from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+from backend.core.paths import KNOWLEDGE_UPDATES_DIR  # noqa: E402
+from backend.knowledge_store import knowledge_file_path  # noqa: E402
+
 HOURLY_DIR = PROJECT_ROOT / "docs" / "industry_intelligence" / "hourly"
 DAILY_DIR = PROJECT_ROOT / "docs" / "industry_intelligence" / "daily"
-WEEKLY_DIR = PROJECT_ROOT / "docs" / "knowledge_updates" / "weekly"
-KB_FILE = PROJECT_ROOT / "data" / "knowledge_base" / "AX_전략승격리뷰.md"
+WEEKLY_DIR = KNOWLEDGE_UPDATES_DIR / "weekly"
+KB_FILE = Path(knowledge_file_path("AX_전략승격리뷰"))
 
 
 def week_start(today: dt.date) -> dt.date:

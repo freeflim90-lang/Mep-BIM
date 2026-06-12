@@ -202,8 +202,9 @@ def _extract_excerpt(content: str, terms: list[str], max_chars: int = 2400) -> s
 
 
 def run_qa(agent_filter: str | None = None, verbose: bool = False) -> dict:
-    kb_dir = PROJECT_ROOT / "data" / "knowledge_base"
-    docs_dir = PROJECT_ROOT / "docs"
+    from backend.core.paths import AGENT_KB_DIR, DOCS_DIR
+    kb_dir = AGENT_KB_DIR
+    docs_dir = DOCS_DIR
 
     all_files = list(kb_dir.rglob("*.md")) + list(docs_dir.rglob("*.md"))
     excluded = {"지식업데이트", "지식큐레이터"}
@@ -227,8 +228,8 @@ def run_qa(agent_filter: str | None = None, verbose: bool = False) -> dict:
             except OSError:
                 continue
             score = _score(content, terms)
-            # data/knowledge_base/ 파일 보너스
-            if "knowledge_base" in str(path):
+            # 에이전트 KB 파일 보너스
+            if path.is_relative_to(kb_dir):
                 score += 8
             # 파일명이 expected_stem이면 보너스 (agent 매칭)
             if path.stem == expected_stem:

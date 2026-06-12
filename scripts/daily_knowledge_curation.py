@@ -15,8 +15,19 @@ from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-REPORT_DIR = PROJECT_ROOT / "docs" / "knowledge_updates" / "curation"
-DAILY_REPORT_DIR = PROJECT_ROOT / "docs" / "knowledge_updates" / "daily"
+import sys  # noqa: E402
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+from backend.core.paths import (  # noqa: E402
+    AGENT_KB_DIR,
+    DOCS_DIR,
+    KNOWLEDGE_UPDATES_DIR,
+    OBSIDIAN_VAULTS_DIR,
+    TEAM_REQUESTS_DIR,
+)
+
+REPORT_DIR = KNOWLEDGE_UPDATES_DIR / "curation"
+DAILY_REPORT_DIR = KNOWLEDGE_UPDATES_DIR / "daily"
 
 EXCLUDE_PARTS = {
     ".git",
@@ -28,12 +39,15 @@ EXCLUDE_PARTS = {
 }
 
 SOURCE_ROOTS = [
-    PROJECT_ROOT / "data" / "knowledge_base",
-    PROJECT_ROOT / "data" / "team_requests",
-    PROJECT_ROOT / "docs",
-    PROJECT_ROOT / "obsidian_vaults" / "lua_bim_lab_global_map" / "NAS_Knowledge",
-    PROJECT_ROOT / "obsidian_vaults" / "model_quality_auditor",
+    AGENT_KB_DIR,
+    TEAM_REQUESTS_DIR,
+    DOCS_DIR,
+    OBSIDIAN_VAULTS_DIR / "lua_bim_lab_global_map" / "NAS_Knowledge",
+    OBSIDIAN_VAULTS_DIR / "model_quality_auditor",
 ]
+
+_KB_PREFIX = AGENT_KB_DIR.relative_to(PROJECT_ROOT).as_posix() + "/"
+_TEAM_REQ_PREFIX = TEAM_REQUESTS_DIR.relative_to(PROJECT_ROOT).as_posix() + "/"
 
 PURPOSE_RULES = [
     ("MEP BIM 실무 품질", ["mep", "bim", "공조", "덕트", "배관", "소방", "전기", "통신", "위생", "간섭", "품질", "납품", "검수"]),
@@ -110,9 +124,9 @@ def matched_risks(text: str) -> list[str]:
 
 
 def category_for(rel: str) -> str:
-    if rel.startswith("data/knowledge_base/"):
+    if rel.startswith(_KB_PREFIX):
         return "지식베이스"
-    if rel.startswith("data/team_requests/"):
+    if rel.startswith(_TEAM_REQ_PREFIX):
         return "팀 요청 로그"
     if rel.startswith("docs/industry_intelligence/"):
         return "산업동향"

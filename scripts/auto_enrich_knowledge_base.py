@@ -35,7 +35,10 @@ except ImportError:
 # 환경 초기화
 # ---------------------------------------------------------------------------
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-KB_DIR = PROJECT_ROOT / "data" / "knowledge_base"
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+from backend.knowledge_store import knowledge_file_path  # noqa: E402
+
 LOG_FILE = PROJECT_ROOT / "logs" / "auto_enrich_knowledge_base.log"
 ENV_FILE = PROJECT_ROOT / ".env"
 
@@ -1215,7 +1218,7 @@ def main() -> None:
 
     files_to_update = []
     for stem, topic in KB_TOPICS.items():
-        kb_file = KB_DIR / f"{stem}.md"
+        kb_file = Path(knowledge_file_path(stem))
         if needs_update(kb_file):
             files_to_update.append((stem, kb_file, topic))
 
