@@ -6,7 +6,7 @@ SECTION 2 ── Pydantic 요청/응답 스키마
 from __future__ import annotations
 
 from typing import Optional
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class AddinTaskRequest(BaseModel):
@@ -48,7 +48,7 @@ class SettingsProfileSaveRequest(BaseModel):
     name: str
     scope: str = "office"
     description: str = ""
-    settings: dict = {}
+    settings: dict = Field(default_factory=dict)
 
 
 class RevitAssistantChatRequest(BaseModel):
@@ -104,7 +104,7 @@ class ProjectRegisterRequest(BaseModel):
     latitude: float = 0.0
     longitude: float = 0.0
     gross_floor_area_m2: float = 0.0
-    disciplines: list[str] = []
+    disciplines: list[str] = Field(default_factory=list)
     start_date: str = ""
     end_date: str = ""
     description: str = ""
@@ -123,7 +123,7 @@ class ProjectUpdateRequest(BaseModel):
     latitude: float = 0.0
     longitude: float = 0.0
     gross_floor_area_m2: float = 0.0
-    disciplines: list[str] = []
+    disciplines: list[str] = Field(default_factory=list)
     start_date: str = ""
     end_date: str = ""
     description: str = ""

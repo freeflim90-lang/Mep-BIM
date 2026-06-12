@@ -8,7 +8,7 @@ from backend.core.paths import DATA_DIR, PROJECT_ROOT
 from backend.models import KnowledgeUpdateRequest
 
 ORGANIZATION = {
-    "MANAGEMENT": ["CEO", "조율차장"],
+    "MANAGEMENT": ["CEO", "COO", "CFO", "조율차장"],
     "ESTIMATION_TEAM": ["건축", "구조", "토목"],
     "ENGINEERING_TEAM": ["공조배관", "공조덕트", "소방기계", "소방전기", "전기"],
     "REPORTING_TEAM": ["위생", "통신"],
@@ -38,10 +38,19 @@ DISCIPLINE_GROUPS = {
 }
 
 DISCIPLINE_KEYWORDS = {
+    "간섭검토": ["간섭검토", "간섭 검토", "clash", "클래시", "clash detective", "interference check",
+                "공종 조율", "공종간 충돌", "공종별 우선순위", "간섭 우선순위", "navisworks 간섭",
+                "간섭 보고서", "clash report", "bcf", "mep 조율", "mep 충돌", "설비 조율",
+                "hard clash", "soft clash", "clearance clash", "lod 400 모델", "0 hard clash",
+                "nwc 버전", "clash 보고서", "간섭 등급", "critical major minor"],
     "건축": ["건축", "천장고", "방화구획", "마감", "실면적", "문짝", "문틀", "벽체",
              "면적", "연면적", "바닥면적", "건축면적", "층수", "층고", "공항", "터미널",
-             "여객터미널", "청사", "공공건물", "건물규모", "시설규모"],
-    "구조": ["구조", "구조보", "기둥", "슬래브", "전이보", "타공", "관통", "보강"],
+             "여객터미널", "청사", "공공건물", "건물규모", "시설규모",
+             "lod 300", "lod 350", "엘리베이터 샤프트", "피난경로", "방화구획 관통",
+             "건축 bim", "건축 lod", "건물 용도"],
+    "구조": ["구조", "구조보", "기둥", "슬래브", "전이보", "타공", "관통", "보강",
+             "pc보", "pc 보", "전이보 관통", "보 관통", "기둥 관통", "천공 가능",
+             "구조기술사", "내력벽", "전단벽"],
     "토목": ["토목", "대지", "외부 인입", "gl", "관로", "우수", "오수"],
     "위생": ["위생", "급수", "배수", "오배수", "구배", "펌프", "위생배관"],
     "공조배관": ["공조배관", "냉온수", "냉수", "온수", "냉각수", "냉매", "증기", "응축수", "브라인", "글리콜", "chw", "chws", "chwr", "hw", "hws", "hwr", "cw", "cws", "cwr", "ref", "stm", "cond", "배관", "밸브", "단열"],
@@ -50,7 +59,8 @@ DISCIPLINE_KEYWORDS = {
     "소방전기": ["소방전기", "감지기", "발신기", "수신기", "방재"],
     "전기": ["전기", "케이블", "트레이", "분전반", "전력", "강전"],
     "통신": ["통신", "약전", "네트워크", "cctv", "방송", "통신트레이",
-             "mdf", "idf", "lan", "광케이블", "utp", "cat6", "광선로", "배선반"],
+             "mdf", "idf", "lan", "광케이블", "utp", "cat6", "광선로", "배선반",
+             "통신실", "서버실 온도", "통신 케이블 이격", "약전 이격", "mdf idf 온도"],
 }
 
 KNOWLEDGE_DIR = os.environ.get("KNOWLEDGE_BASE_DIR", str(DATA_DIR / "knowledge_base"))
@@ -73,6 +83,7 @@ KNOWLEDGE_AGENTS = sorted(set(ALL_AGENTS) | EXTRA_KNOWLEDGE_AGENTS | set(DISCIPL
 })
 
 DEFAULT_KNOWLEDGE = {
+    "간섭검토": "공종별 간섭 우선순위(제연>소방>오배수>주덕트>전기트레이>통신트레이 순), 구조 관통 기준(기둥·전이보 불가, 일반보 조건부), 이격 기준(강전↔약전 300mm, 소화배관↔전기트레이 300mm), Revit Interference Check vs Navisworks Clash Detective 사용 시점 구분을 핵심 기준으로 둔다.",
     "건축": "천장고, 피난/방화구획, 실 사용성, 마감 두께, 유지관리 접근성을 Add-in 요구사항 검토 기준으로 둔다.",
     "구조": "보/기둥/슬래브 관통, 전이보, 개구부 보강 가능 여부와 구조 검토 승인 필요 여부를 우선 판단한다.",
     "토목": "외부 인입 레벨, 대지 경계, 우수/오수 관로, GL/FL 관계와 건축/MEP 접속 조건을 함께 검토한다.",

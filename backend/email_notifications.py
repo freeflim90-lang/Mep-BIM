@@ -10,7 +10,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CODE_DEV_RECIPIENT = "jycompany90@naver.com"
 
 
-def load_local_env() -> None:
+def _load_local_env_once() -> None:
     env_path = PROJECT_ROOT / ".env"
     if not env_path.exists():
         return
@@ -22,8 +22,10 @@ def load_local_env() -> None:
         os.environ.setdefault(key.strip(), value.strip().strip('"').strip("'"))
 
 
+_load_local_env_once()
+
+
 def gmail_settings() -> dict[str, str]:
-    load_local_env()
     sender = (
         os.environ.get("CODE_DEV_GMAIL_FROM")
         or os.environ.get("GMAIL_ADDRESS")
@@ -64,7 +66,7 @@ def can_send_gmail() -> tuple[bool, str]:
     return True, "ok"
 
 
-def send_gmail(subject: str, body: str, attachments: list[Path] | None = None) -> dict[str, str | bool]:
+def send_gmail(subject: str, body: str, attachments: list[Path] | None = None, recipient: str | None = None) -> dict[str, str | bool]:
     ok, reason = can_send_gmail()
     settings = gmail_settings()
     if not ok:
@@ -73,7 +75,7 @@ def send_gmail(subject: str, body: str, attachments: list[Path] | None = None) -
     msg = EmailMessage()
     msg["Subject"] = subject[:240]
     msg["From"] = settings["sender"]
-    msg["To"] = settings["recipient"]
+    msg["To"] = recipient or settings["recipient"]
     msg.set_content(body)
 
     for path in attachments or []:

@@ -3,6 +3,7 @@ from typing import Any
 
 import httpx
 
+from backend.model_routing import model_routing_status
 from backend.text_utils import append_korean_response_instruction, contains_likely_chinese_text
 
 
@@ -75,6 +76,7 @@ async def status() -> dict[str, Any]:
         "qa_model": qa_model(),
         "base_url": base_url(),
         "recommended_role": "local_first_pass_developer",
+        "routing": model_routing_status().get("local", {}),
         "rules": [
             "Autodesk API 의존이 없는 일반 개발은 로컬 1차 구현 초안 작성에 사용",
             "Revit/Navisworks API 의존 작업은 초안/정적 검토까지만 수행",
