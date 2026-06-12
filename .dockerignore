@@ -10,5 +10,7 @@ dist/
 .DS_Store
 node_modules/
 obsidian_vaults/
-data/bimobject/
+knowledge/50_domain/bimobject/
+knowledge/50_domain/technical_pdfs/
+knowledge/50_domain/bim_scripts/
 "260519 소스 폴더"/
