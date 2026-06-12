@@ -7,7 +7,7 @@
   <string>com.luabimlab.api-usage-alerts</string>
   <key>ProgramArguments</key>
   <array>
-    <string>/usr/bin/python3</string>
+    <string>/Users/choejeong-yeon/LUA BIM LABS/.dev-venv/bin/python</string>
     <string>/Users/choejeong-yeon/LUA BIM LABS/scripts/api_usage_10pct_alert.py</string>
   </array>
   <key>StartInterval</key>

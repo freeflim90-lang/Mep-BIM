@@ -27,7 +27,19 @@ scripts/outbound_sales/data/*.db
 scripts/outbound_sales/.venv/
 config/blogger/client_secret.json
 config/blogger/token.json
+config/calendar/client_secret.json
+config/calendar/token.json
+config/*/token.json
 runtime/daily_industry_briefing_sent_state.json
+runtime/codebase_health_latest.json
+runtime/luachat_metrics_daily.json
+runtime/org_growth_opportunities_latest.json
+runtime/revit_assistant_qa_fallback/
+
+# Generated / local runtime artifacts
+.pytest_cache/
+*.log
+260519*/
 
 # OS
 .DS_Store

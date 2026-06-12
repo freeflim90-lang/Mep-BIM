@@ -23,7 +23,6 @@ if ! git diff --quiet || ! git diff --cached --quiet; then
         data/knowledge_base/ \
         data/qa_dataset/ \
         data/technical_pdfs/ \
-        data/bim_scripts/ \
         scripts/*.py \
         scripts/*.sh \
         scripts/requirements*.txt \

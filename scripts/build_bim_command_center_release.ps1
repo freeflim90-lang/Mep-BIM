@@ -2,13 +2,18 @@ param(
     [Parameter(Mandatory = $true)]
     [string]$AutodeskAppId,
 
-    [string]$Configuration = "Release"
+    [string]$Configuration = "Release",
+
+    [string]$AddinSourceRoot = $env:BCC_ADDIN_DEV_SOURCE_ROOT
 )
 
 $ErrorActionPreference = "Stop"
 
-$RepoRoot = Split-Path -Parent $PSScriptRoot
-$ProjectDir = Join-Path $RepoRoot "260519 소스 폴더\01_Revit_Addins\Addin Dashboard"
+if ([string]::IsNullOrWhiteSpace($AddinSourceRoot)) {
+    throw "BCC_ADDIN_DEV_SOURCE_ROOT or -AddinSourceRoot is required."
+}
+
+$ProjectDir = Join-Path $AddinSourceRoot "01_Revit_Addins\Addin Dashboard"
 $ProjectFile = Join-Path $ProjectDir "BIMCommandCenter.csproj"
 $InstallerProject = Join-Path $ProjectDir "Installer\BIMCommandCenter.Installer.csproj"
 $SettingsFile = Join-Path $ProjectDir "license-settings.json"

@@ -521,17 +521,6 @@ def determine_bim_grade(building_type: str, area_m2: float,
 - 관련: [[프로젝트분석]] · [[건축]] · [[설계_지침서]] · [[시공_지침서]]
 
 
-## BIM 건물유형·공사구분 산정 기준 업데이트 (2026-06-02)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-02
-- Tags: BIM,building-type,cost,update
-
-- 2025년부터 국토부 고시에 따라 모든 대형 공공 인프라 프로젝트와 주요 민간 건설 프로젝트(고층건물, 대규모 상업 복합设施),包括但不限于高-rise建筑和大型商业综合体，均需采用BIM技术。这旨在提高项目效率与协作。
-- 根据国土部的基本指南及实施指南，单元区域土木部门的建设计划对象及其非对象BIM模型适用范围已明确（WBS Level 7标准）。
-- 国有土地房屋公司于2018年12月18日发布了“反映单元区域建设业务特性的BIM应用指南”，以提高技术标准，包括爆破法设计等。
-- BIM技术的社会需求促使国土海洋部自2013年起开始实施第五次相关计划。
-- 관련: [[프로젝트분석]] · [[건축]] · [[설계_지침서]] · [[시공_지침서]]
-
-
 ## BIM 건물유형·공사구분 산정 기준 업데이트 (2026-06-03)
 - Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-03
 - Tags: BIM,building-type,cost,update

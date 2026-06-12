@@ -27,6 +27,7 @@
   --ink-soft: rgba(240,235,225,.7);
   --ink-mute: rgba(240,235,225,.45);
   --rule:     rgba(240,235,225,.14);
+  --accent:   #c89a50;
   --accent:   oklch(0.72 0.12 50);
   --paper:    #fbf8f1;
   --f-display-en: "Instrument Serif","Noto Serif KR",serif;
@@ -60,8 +61,8 @@ body {
 .top-bar-inner:hover { background: rgba(240,235,225,.04); }
 .top-bar-dot {
   width: 7px; height: 7px; border-radius: 50%;
-  background: oklch(0.68 0.15 145); flex-shrink: 0;
-  box-shadow: 0 0 6px oklch(0.68 0.15 145);
+  background: #3ea855; background: oklch(0.68 0.15 145); flex-shrink: 0;
+  box-shadow: 0 0 6px #3ea855; box-shadow: 0 0 6px oklch(0.68 0.15 145);
 }
 .top-bar-text {
   font-family: var(--f-mono); font-size: 13px; letter-spacing: .08em;
@@ -448,6 +449,11 @@ section {
 .feat-list { list-style:none; display:flex; flex-direction:column; gap:2px; }
 .feat-list li { font-family:var(--f-mono); font-size:11px; color:var(--ink-soft); }
 
+/* BCC Pricing grid */
+.bcc-pricing-grid {
+  display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px;
+}
+
 /* Mock dashboard */
 .mock-dash {
   background:#1a1c20;
@@ -464,9 +470,9 @@ section {
 }
 .mock-dots { display:flex; gap:6px; margin-right:10px; }
 .mock-dots span { width:10px; height:10px; border-radius:50%; }
-.mock-dots span:nth-child(1) { background:oklch(0.65 0.18 25); }
-.mock-dots span:nth-child(2) { background:oklch(0.78 0.15 80); }
-.mock-dots span:nth-child(3) { background:oklch(0.68 0.15 145); }
+.mock-dots span:nth-child(1) { background:#d94f3a; background:oklch(0.65 0.18 25); }
+.mock-dots span:nth-child(2) { background:#d4a838; background:oklch(0.78 0.15 80); }
+.mock-dots span:nth-child(3) { background:#3ea855; background:oklch(0.68 0.15 145); }
 .mock-ribbon {
   background:#1e2024;
   border-bottom:1px solid rgba(240,235,225,.1);
@@ -795,6 +801,7 @@ footer {
   .stat:nth-child(2) { border-right:none; }
   .strength-row { grid-template-columns:1fr; gap:8px; }
   .feat-grid { grid-template-columns:1fr 1fr; }
+  .bcc-pricing-grid { grid-template-columns:1fr; }
   .tier { flex-wrap:wrap; }
   .dash-hero { flex-direction:column; }
   .dash-frame-wrap iframe { height:480px; }
@@ -949,7 +956,10 @@ footer {
       </ul>
     </div>
     <div style="padding:24px 20px; border-right:1px solid var(--rule); display:flex; flex-direction:column; gap:10px;">
-      <span style="font-family:var(--f-mono); font-size:11px; letter-spacing:.12em; color:var(--ink-mute);">[ 02 ]</span>
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span style="font-family:var(--f-mono); font-size:11px; letter-spacing:.12em; color:var(--ink-mute);">[ 02 ]</span>
+        <span style="font-family:var(--f-mono); font-size:10px; letter-spacing:.1em; text-transform:uppercase; padding:3px 10px; border:1px solid rgba(240,235,225,.25); color:var(--ink-mute);">Alliance</span>
+      </div>
       <span style="font-family:var(--f-display-en); font-style:italic; font-size:17px; color:var(--ink-soft);">Consulting & Audit</span>
       <h3 style="font-family:var(--f-display-kr); font-weight:500; font-size:26px; letter-spacing:-.02em; line-height:1.1; word-break:keep-all;">설비 컨설팅 · 감리</h3>
       <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:6px; margin-top:4px;">
@@ -1077,7 +1087,7 @@ footer {
 </section>
 
 <!-- BIM COMMAND CENTER -->
-<section id="bcc">
+<section id="bcc" style="min-height:auto; justify-content:flex-start;">
   <div class="bcc-layout">
     <div>
       <span class="bcc-badge">Flagship Product</span>
@@ -1126,6 +1136,16 @@ footer {
           <h4 class="feat-h">할 일 관리</h4>
           <ul class="feat-list"><li>BIM Todo + 요소 연결</li><li>담당자 · 우선순위</li><li>LUA BIM LAND 연동</li></ul>
         </div>
+        <div class="feat-item">
+          <span class="feat-no">[ 07 ] REQUEST</span>
+          <h4 class="feat-h">개발 요청</h4>
+          <ul class="feat-list"><li>현장 맞춤 기능 제안</li><li>반복 업무 자동화 상담</li><li>우선순위 검토 후 반영</li></ul>
+        </div>
+        <div class="feat-item">
+          <span class="feat-no">[ 08 ] SUPPORT</span>
+          <h4 class="feat-h">버그 신고</h4>
+          <ul class="feat-list"><li>오류 화면 · 로그 접수</li><li>Revit 버전별 재현 확인</li><li>수정 이력 공유</li></ul>
+        </div>
       </div>
       <!-- Mock dashboard -->
       <div class="mock-dash" style="margin-top:24px;">
@@ -1159,7 +1179,7 @@ footer {
   <!-- BCC PRICING -->
   <div style="margin-top:64px; padding-top:48px; border-top:1px solid var(--rule);">
     <div style="font-family:var(--f-mono); font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-mute); margin-bottom:28px;">Pricing</div>
-    <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px;">
+    <div class="bcc-pricing-grid">
       <!-- Individual Monthly -->
       <div style="border:1px solid var(--rule); border-radius:8px; padding:28px; background:var(--bg-2);">
         <div style="font-family:var(--f-mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-mute); margin-bottom:16px;">Individual</div>
@@ -1201,6 +1221,24 @@ footer {
                 color:var(--ink-soft); transition:color .15s, border-color .15s;">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
         기능 소개 보기
+      </a>
+      <a href="mailto:freeflim90@gmail.com?subject=BIM%20Command%20Center%20Development%20Request&body=안녕하세요%2C%20BIM%20Command%20Center%20개발%20요청을%20보냅니다.%0A%0A요청%20기능%3A%0A사용%20상황%3A%0A희망%20우선순위%3A"
+         style="display:inline-flex; align-items:center; gap:8px;
+                font-family:var(--f-mono); font-size:13px; letter-spacing:.08em; text-transform:uppercase;
+                text-decoration:none; padding:13px 24px;
+                border:1px solid rgba(202,154,80,.45); border-radius:999px;
+                color:var(--accent); background:rgba(202,154,80,.06);
+                transition:color .15s, border-color .15s, background .15s;">
+        개발 요청 →
+      </a>
+      <a href="mailto:freeflim90@gmail.com?subject=BIM%20Command%20Center%20Bug%20Report&body=안녕하세요%2C%20BIM%20Command%20Center%20버그를%20신고합니다.%0A%0A사용%20Revit%20버전%3A%0A문제%20상황%3A%0A재현%20순서%3A%0A첨부%20가능%20자료%3A"
+         style="display:inline-flex; align-items:center; gap:8px;
+                font-family:var(--f-mono); font-size:13px; letter-spacing:.08em; text-transform:uppercase;
+                text-decoration:none; padding:13px 24px;
+                border:1px solid var(--rule); border-radius:999px;
+                color:var(--ink-soft); background:rgba(240,235,225,.03);
+                transition:color .15s, border-color .15s, background .15s;">
+        버그 신고 →
       </a>
       <span style="font-family:var(--f-mono); font-size:11px; color:var(--ink-mute); letter-spacing:.06em;">Autodesk App Store에서도 구매 가능 · 30일 체험판 제공 예정</span>
     </div>
@@ -1540,6 +1578,8 @@ footer {
           <label class="cf-check"><input type="checkbox" name="discipline" value="통신·보안"/> 통신 · 보안</label>
           <label class="cf-check"><input type="checkbox" name="discipline" value="통합 코디네이션"/> 통합 코디네이션</label>
           <label class="cf-check"><input type="checkbox" name="discipline" value="샵드로잉 (기계·소방설비)"/> 샵드로잉 · 기계/소방</label>
+          <label class="cf-check"><input type="checkbox" name="discipline" value="설비 컨설팅"/> 설비 컨설팅 <span style="font-family:var(--f-mono); font-size:10px; color:var(--ink-mute); padding:1px 6px; border:1px solid rgba(240,235,225,.2); border-radius:3px; margin-left:4px;">Alliance</span></label>
+          <label class="cf-check"><input type="checkbox" name="discipline" value="감리"/> 감리 <span style="font-family:var(--f-mono); font-size:10px; color:var(--ink-mute); padding:1px 6px; border:1px solid rgba(240,235,225,.2); border-radius:3px; margin-left:4px;">Alliance</span></label>
         </div>
       </div>
       <div class="cf-row">
@@ -1795,6 +1835,8 @@ const I18N = {
       '데이터 관리': 'Data Management',
       '도면화 자동화': 'Drawing Automation',
       '할 일 관리': 'Task Management',
+      '개발 요청': 'Development Request',
+      '버그 신고': 'Bug Report',
       '단일 설정 · Family 변환': 'Single settings · Family conversion',
       '자동 태깅 · 번들 태깅': 'Auto tagging · Bundle tagging',
       'Point Marker 검출': 'Point Marker detection',
@@ -1809,6 +1851,14 @@ const I18N = {
       'BIM Todo + 요소 연결': 'BIM Todo + element links',
       '담당자 · 우선순위': 'Assignee · Priority',
       'LUA BIM LAND 연동': 'LUA BIM LAND integration',
+      '현장 맞춤 기능 제안': 'Field-specific feature suggestions',
+      '반복 업무 자동화 상담': 'Automation consultation for repetitive work',
+      '우선순위 검토 후 반영': 'Reviewed and prioritized for implementation',
+      '오류 화면 · 로그 접수': 'Submit screenshots and logs',
+      'Revit 버전별 재현 확인': 'Reproduction checks by Revit version',
+      '수정 이력 공유': 'Fix history shared after resolution',
+      '개발 요청 →': 'Development Request →',
+      '버그 신고 →': 'Bug Report →',
       '파일': 'File',
       '건축': 'Architecture',
       '시스템': 'Systems',
@@ -1852,6 +1902,8 @@ const I18N = {
       '위생 · 소방': 'Plumbing · Fire',
       '통신 · 보안': 'Telecom · Security',
       '통합 코디네이션': 'Integrated Coordination',
+      '설비 컨설팅': 'MEP Consulting',
+      '감리': 'Construction Supervision',
       'LOD 수준': 'LOD Level',
       '모델링 객체 범위': 'Modeling Object Scope',
       '예상 모델링 객체 수량': 'Estimated Modeling Object Quantity',
@@ -2123,6 +2175,8 @@ const PRETRANSLATED_I18N = {
     "위생 · 소방": "衛生・消防",
     "통신 · 보안": "通信・セキュリティ",
     "통합 코디네이션": "統合コーディネーション",
+    "설비 컨설팅": "設備コンサルティング",
+    "감리": "監理",
     "LOD 수준": "LODレベル",
     "LOD 100 (개념 설계)": "LOD 100(コンセプトデザイン)",
     "LOD 200 (기본 설계)": "LOD 200(基本設計)",
@@ -2502,6 +2556,8 @@ const PRETRANSLATED_I18N = {
     "위생 · 소방": "卫生和消防",
     "통신 · 보안": "通讯·安全",
     "통합 코디네이션": "综合协调",
+    "설비 컨설팅": "设备咨询",
+    "감리": "工程监理",
     "LOD 수준": "细节级别",
     "LOD 100 (개념 설계)": "LOD 100（概念设计）",
     "LOD 200 (기본 설계)": "LOD 200（基本设计）",
@@ -2881,6 +2937,8 @@ const PRETRANSLATED_I18N = {
     "위생 · 소방": "الصرف الصحي ومكافحة الحرائق",
     "통신 · 보안": "الاتصالات · الأمن",
     "통합 코디네이션": "التنسيق المتكامل",
+    "설비 컨설팅": "استشارات الأنظمة",
+    "감리": "الإشراف الإنشائي",
     "LOD 수준": "مستوى اللد",
     "LOD 100 (개념 설계)": "لود 100 (التصميم المفاهيمي)",
     "LOD 200 (기본 설계)": "لود 200 (التصميم الأساسي)",
@@ -3246,6 +3304,8 @@ const PRETRANSLATED_I18N = {
     "위생 · 소방": "Saneamiento y extinción de incendios.",
     "통신 · 보안": "Comunicación · Seguridad",
     "통합 코디네이션": "Coordinación integrada",
+    "설비 컨설팅": "Consultoría MEP",
+    "감리": "Supervisión de Obra",
     "LOD 수준": "Nivel LOD",
     "LOD 100 (개념 설계)": "LOD 100 (Diseño Conceptual)",
     "LOD 200 (기본 설계)": "LOD 200 (diseño básico)",
@@ -3611,6 +3671,8 @@ const PRETRANSLATED_I18N = {
     "위생 · 소방": "Assainissement et lutte contre les incendies",
     "통신 · 보안": "Communication · Sécurité",
     "통합 코디네이션": "Coordination intégrée",
+    "설비 컨설팅": "Conseil MEP",
+    "감리": "Maîtrise d'Œuvre",
     "LOD 수준": "Niveau de détail",
     "LOD 100 (개념 설계)": "LOD 100 (Conception conceptuelle)",
     "LOD 200 (기본 설계)": "LOD 200 (conception de base)",
@@ -3976,6 +4038,8 @@ const PRETRANSLATED_I18N = {
     "위생 · 소방": "Saneamento e combate a incêndios",
     "통신 · 보안": "Comunicação · Segurança",
     "통합 코디네이션": "Coordenação integrada",
+    "설비 컨설팅": "Consultoria MEP",
+    "감리": "Supervisão de Obras",
     "LOD 수준": "Nível de detalhe",
     "LOD 100 (개념 설계)": "LOD 100 (Projeto Conceitual)",
     "LOD 200 (기본 설계)": "LOD 200 (projeto básico)",

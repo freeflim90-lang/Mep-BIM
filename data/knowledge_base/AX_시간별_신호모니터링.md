@@ -397,3 +397,99 @@ def score_signal(text: str) -> float:
 - 경기도, 건설분야 AI·콘테크 육성 본격화… ‘스마트 건설 수도’ 도약 추진 - 내외뉴스통신 (BIM Automation)
 
 운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-08 15:44 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-08/1544_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- GS건설, AI 자율주행 로봇 건설현장 투입 검증 나선다 - 한국금융신문 (BIM Automation)
+- "자재 나르고 시공도 담당" 건설현장에 들어온 AI로봇 - 네이트 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-09 05:06 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-09/0506_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 직스테크놀로지·아주대, AI 설계 교육·연구 협력 확대…미래 인재 양성 나선다 - 한경매거진&북 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-09 08:59 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-09/0859_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- “자재 나르고 시공도 담당” 건설현장에 들어온 AI로봇 - 서울경제 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-09 20:11 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-09/2011_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- Procore’s CDE: a ‘proper common data environment’ (BIM Automation)
+- [기획] 건설업계, 오픈이노베이션 통해 AI 기술 도입 강화 - 매일일보 (BIM Automation)
+- [게시판] 호반건설, 한국건설연구원과 스마트건설 기술 협력 - 매일경제 마켓 (Smart Construction, BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-10 21:12 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-10/2112_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- United States Building Information Modeling (BIM) Market Gains - openPR.com (BIM Automation, Quality/Product)
+- Video | Reds10’s ambitious targets for industrialisation (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-11 10:24 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-11/1024_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- E8, 'BIM 디지털트윈 건물에너지' 국책과제 주관기관 선정 - 와이드경제 (BIM Automation)
+- 이에이트, ‘BIM 디지털트윈 건물에너지’ 국책과제 주관기관 선정 - IT비즈뉴스 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-11 17:05 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-11/1705_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 전북대에 AI 건설로봇 혁신센터 들어선다 - 연합뉴스 (BIM Automation)
+- 이에이트, ‘BIM 디지털트윈 건물에너지 관리’ 실증 과제 주관 - 데이터넷 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-12 05:05 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-12/0505_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 국토부, AI·BIM·건설로봇 육성 위한 혁신센터 설립 추진 - 기계설비신문 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-12 11:14 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-12/1114_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- [아유경제_부동산] 국토부, 전북대에 AI 건설ㆍ로봇 혁신센터 설립… 스마트건설 산업 육성 - 아유경제 (Smart Construction, BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-12 16:23 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-12/1623_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 전북대 내 ‘AI 건설로봇 혁신센터’ 들어선다…국토부·전북도 등 맞손 - 드론매거진 뉴스 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.

@@ -331,20 +331,6 @@ if issues := health_check():
 - LangChain 활용: LangChain은 모델과 하네시를 결합하여 사용자의 요구에 맞는 최적의 도구를 제공한다. 이는 Obsidian 플러그인 개발이나 CI/CD 자동화 과정에서 유용하게 활용될 수 있다.
 
 
-## DevOps·Obsidian 인프라 최신 동향 (2026-06-04)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-04
-- Tags: devops,obsidian,infrastructure,update
-
-- 최신 자동화 팁과 도구 동향 중 Obsidian 지식 인프라 담당자가 알아야 할 내용을 정리하면 다음과 같다.
-- PARA Method를 활용하여 프로젝트와 지속적인 관리를 위한 영역, 참고 용도의 정보를 체계적으로 정리하고 관리할 수 있다.
-- CI/CD 자동화는 ArgoCD와 Crossplane과 같은 도구를 활용하여 효율적인 워크플로우를 구축할 수 있으며, 이는 2025년 DevOpsAutomation의 핵심 요소 중 하나이다.
-- 지식베이스 품질 관리는 LangChain과 같은 기술을 활용해 모델과 하네 自动生成的回答可能不会符合您的要求，因此我将根据提供的信息以文本形式直接回答：
-
-- Obsidian 플러그인 활용: PARA Method를 적용하여 프로젝트, 영역, 자료를 체계적으로 관리하고 정리할 수 있다.
-- CI/CD 자동화: ArgoCD와 Crossplane을 사용하여 지속적 통합 및 배포의 효율성을 높일 수 있으며, 이는 2025년 DevOpsAutomation의 핵심 요소 중 하나이다.
-- 지식베이스 품질 관리: LangChain과 같은 기술을 활용해 모델과 하네로 구성된 호스트를 통해 프롬프트, 도구 및 미디엄웨어를 조합하여 사용 사례에 맞는 정확한 자동화 환경을 구축할 수 있다.
-
-
 ## DevOps·Obsidian 인프라 최신 동향 (2026-06-05)
 - Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-05
 - Tags: devops,obsidian,infrastructure,update

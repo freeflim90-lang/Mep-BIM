@@ -18,6 +18,7 @@ from pathlib import Path
 import requests
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_BIM_SCRIPTS_DIR = PROJECT_ROOT / "data" / "bim_scripts"
 
 # 텔레그램 설정
 def load_env() -> dict[str, str]:
@@ -64,7 +65,7 @@ def get_knowledge_stats() -> dict:
     kb_dir = PROJECT_ROOT / "data" / "knowledge_base"
     qa_dir = PROJECT_ROOT / "data" / "qa_dataset"
     pdf_dir = PROJECT_ROOT / "data" / "technical_pdfs"
-    scripts_dir = PROJECT_ROOT / "data" / "bim_scripts"
+    scripts_dir = Path(os.environ.get("BIM_SCRIPTS_OUTPUT_DIR", DEFAULT_BIM_SCRIPTS_DIR)).expanduser()
 
     def dir_size_mb(path: Path) -> float:
         if not path.exists():

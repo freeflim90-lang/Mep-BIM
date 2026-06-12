@@ -8,10 +8,12 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT))
 from backend.email_notifications import send_gmail, load_local_env
+from scripts.addin_dev_paths import addin_dev_source_root, require_addin_dev_source_root
 load_local_env()
 
-REVIT_ROOT = PROJECT_ROOT / "260519 소스 폴더" / "01_Revit_Addins"
-NAV_ROOT   = PROJECT_ROOT / "260519 소스 폴더" / "02_Navisworks_Tools"
+DEV_SOURCE_ROOT = addin_dev_source_root() or Path("__missing_BCC_ADDIN_DEV_SOURCE_ROOT__")
+REVIT_ROOT = DEV_SOURCE_ROOT / "01_Revit_Addins"
+NAV_ROOT = DEV_SOURCE_ROOT / "02_Navisworks_Tools"
 BLOCKED    = {".ps1", ".wxs", ".bat", ".sh"}
 
 def mail(item_id, display, kind, files):
@@ -1404,6 +1406,7 @@ async def update_commands_json() -> list[Path]:
 # 메인
 # ═════════════════════════════════════════════════════════════════
 async def main():
+    require_addin_dev_source_root()
     print(f"BCC 6차 — 승인 아이템 개발 (Revit API 제외, NW 전체)\n"
           f"{datetime.now().strftime('%Y-%m-%d %H:%M')}\n")
 

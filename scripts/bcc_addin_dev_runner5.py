@@ -8,11 +8,13 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT))
 from backend.email_notifications import send_gmail, load_local_env
+from scripts.addin_dev_paths import addin_dev_source_root, require_addin_dev_source_root
 load_local_env()
 
-REVIT_ROOT  = PROJECT_ROOT / "260519 소스 폴더" / "01_Revit_Addins"
-NAV_ROOT    = PROJECT_ROOT / "260519 소스 폴더" / "02_Navisworks_Tools"
-ADDIN_DASH  = REVIT_ROOT / "Addin Dashboard"
+DEV_SOURCE_ROOT = addin_dev_source_root() or Path("__missing_BCC_ADDIN_DEV_SOURCE_ROOT__")
+REVIT_ROOT = DEV_SOURCE_ROOT / "01_Revit_Addins"
+NAV_ROOT = DEV_SOURCE_ROOT / "02_Navisworks_Tools"
+ADDIN_DASH = REVIT_ROOT / "Addin Dashboard"
 
 
 BLOCKED_EXTS = {".ps1", ".wxs", ".bat", ".sh", ".vbs", ".cmd", ".js"}
@@ -578,8 +580,8 @@ async def build_nw_csproj() -> list[Path]:
 
   <!-- 공통 레이어 -->
   <ItemGroup>
-    <Compile Include="..\_Shared\\KoreanReport\\KoreanReportGenerator.cs" />
-    <Compile Include="..\_Shared\\KoreanReport\\NavisworksHelper.cs" />
+    <Compile Include="..\\_Shared\\KoreanReport\\KoreanReportGenerator.cs" />
+    <Compile Include="..\\_Shared\\KoreanReport\\NavisworksHelper.cs" />
   </ItemGroup>
 
   <!-- 소스 파일 -->
@@ -857,6 +859,7 @@ namespace BIMCommandCenter.Services
 # 메인
 # ═════════════════════════════════════════════════════════════════
 async def main():
+    require_addin_dev_source_root()
     print(f"BCC Add-in 5차 개발 러너 (인프라·빌드·통합) — {datetime.now().strftime('%Y-%m-%d %H:%M')}\n")
 
     batches = [

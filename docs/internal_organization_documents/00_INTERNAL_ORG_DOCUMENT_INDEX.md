@@ -50,25 +50,34 @@
 | 24 | 팀원 Telegram 지식 요청 응답 루프 운영 기준 | `24_TEAM_TELEGRAM_KNOWLEDGE_REQUEST_LOOP.md` |
 | 25 | 관리팀 Excel 자동화 Qwen 실행 운영 기준 | `25_MANAGEMENT_EXCEL_AUTOMATION_APPROVAL_GATE.md` |
 | 26 | AI 실행 배치 기준 | `26_AI_EXECUTION_PLACEMENT_POLICY.md` |
+| 27 | 로컬 SSD 지식 축적 운영 기준 | `27_LOCAL_SSD_KNOWLEDGE_ACCUMULATION_POLICY.md` |
 | 28 | 코드 개발 Gmail 보고 운영 기준 | `28_CODE_DEVELOPMENT_GMAIL_REPORTING.md` |
+| 29 | 조직 지식학습 및 근거기반 응답 운영 기준 | `29_ORGANIZATIONAL_KNOWLEDGE_LEARNING_AND_EVIDENCE_RESPONSE_STANDARD.md` |
+| 30 | AI 간 협업 의사소통 및 합의 운영 기준 | `30_AI_TO_AI_COLLABORATION_SOP.md` |
+| 31 | AI 협업 실행 런북 및 템플릿 | `31_AI_COLLABORATION_RUNBOOK_TEMPLATES.md` |
+| 32 | AI 협업 문서 활용성 감사 보고서 | `32_AI_COLLABORATION_UTILIZATION_AUDIT.md` |
 
 ## 3. 운영 단계별 사용 문서
 
 | 단계 | 사용 문서 |
 |---|---|
 | 조직 설계 | 01, 02, 03 |
+| 성장전략그룹 운영 | 01, 02, 03, 12, 13, 21, 23 |
+| R&D 개발지원그룹 운영 | 01, 02, 12, 14, 23, 26, 28 |
 | 채용/입사 | 04, 05, 09 |
 | 채용/이력서 분석 | 02, 04, 05, 09, 26 |
 | 근무/운영 | 07, 08, 10, 11 |
 | 경영지원/정산 자동화 | 02, 08, 25, 26 |
-| 성과/교육 | 06, 13, 19 |
+| 성과/교육 | 06, 13, 19, 29 |
 | 프로젝트 운영 지원 | 12, 14, 15, 16 |
-| 지식 DB 공개 준비 | 15, 16, 18, 20, 21, 22 |
+| 지식 DB 공개 준비 | 15, 16, 18, 20, 21, 22, 29 |
 | 상품화 파이프라인 | 12, 13, 14, 21, 23 |
-| 팀원 요청/Telegram | 15, 21, 24 |
+| 팀원 요청/Telegram | 15, 21, 24, 29 |
 | 관리팀 Excel 자동화 | 03, 12, 14, 24, 25 |
-| AI 실행 배치 | 21, 24, 25, 26 |
+| AI 실행 배치 | 21, 24, 25, 26, 29 |
 | 코드 개발 보고 | 23, 26, 28 |
+| AI 간 협업/합의 | 02, 03, 11, 12, 14, 21, 29, 30, 31 |
+| AI 협업 활용성 감사 | 11, 12, 16, 19, 21, 26, 29, 30, 31, 32 |
 | 협력사/외부 인력 | 09, 17 |
 | 사고/장애 | 18 |
 

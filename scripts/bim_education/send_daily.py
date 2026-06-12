@@ -139,13 +139,8 @@ Reply here if you're interested in continuing with Personal Tutor.
 Thank you for learning with LUA BIM LABS.""",
 }
 
-# 직원별 설정 (조서희 관리팀 제외)
-USERS = [
-    {"name": "최정연", "chat_id": "7899169126", "track": "1yr"},
-    {"name": "오수빈", "chat_id": "8579787318", "track": "1yr"},
-    {"name": "김선정", "chat_id": "8420202032", "track": "1yr"},
-    {"name": "허진석", "chat_id": "8721440825", "track": "1yr"},
-]
+# 내부 직원 교육은 send_internal.py (internal-education-daily LaunchAgent)가 전담.
+# 이 스크립트는 Starter 클라이언트 전용.
 
 
 # ---------------------------------------------------------------------------
@@ -436,51 +431,16 @@ def main() -> None:
     if is_friday_today:
         print("📅 오늘은 금요일 — BIM Check Friday 퀴즈 자동 발송")
 
-    users = [*USERS, *load_active_starter_clients()]
+    users = load_active_starter_clients()
 
     for user in users:
         name = user["name"]
-        chat_id = user["chat_id"]
         progress_key = user.get("progress_key", name)
 
         user_data = progress.get("users", {}).get(progress_key, {})
-        track = user_data.get("track", user["track"])
-        current_day = user_data.get("day", 1)
 
-        if track == "starter":
-            updated = process_starter_client(user, user_data, progress, today, is_friday_today)
-            progress.setdefault("users", {})[progress_key] = updated
-            continue
-
-        # 내부 직원 연간 커리큘럼
-        yr_num = track.replace("yr", "")
-        print(f"\n[{name}] {yr_num}년차 커리큘럼 Day {current_day}/365")
-
-        message = get_message(track, current_day)
-        if not message:
-            print(f"  ⚠️  {track}/day_{current_day:03d}.txt 없음 — generate.py 실행 필요")
-            continue
-
-        if send_telegram(chat_id, message):
-            if current_day >= 365:
-                nxt = next_track(track)
-                if nxt:
-                    new_track, new_day = nxt, 1
-                    print(f"  🎓 {yr_num}년차 완료 → {nxt.replace('yr', '')}년차 승급!")
-                else:
-                    new_track, new_day = track, current_day
-                    print("  🏆 10년차 완주! BIM 마스터 달성!")
-            else:
-                new_track, new_day = track, current_day + 1
-
-            progress.setdefault("users", {})[progress_key] = {
-                **user_data,
-                "name": name,
-                "chat_id": chat_id,
-                "track": new_track,
-                "day": new_day,
-                "last_sent": today,
-            }
+        updated = process_starter_client(user, user_data, progress, today, is_friday_today)
+        progress.setdefault("users", {})[progress_key] = updated
 
     save_progress(progress)
     print("\n✅ 발송 완료")

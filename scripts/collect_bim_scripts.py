@@ -17,7 +17,7 @@ from pathlib import Path
 import requests
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-SCRIPTS_OUTPUT = PROJECT_ROOT / "data" / "bim_scripts"
+SCRIPTS_OUTPUT = Path(os.environ.get("BIM_SCRIPTS_OUTPUT_DIR", PROJECT_ROOT / "data" / "bim_scripts")).expanduser()
 SCRIPTS_OUTPUT.mkdir(parents=True, exist_ok=True)
 
 

@@ -11,7 +11,7 @@
 
 > Mac에서는 완료할 수 없는 단계. Windows + Visual Studio 환경 필요.
 
-- [ ] **1-1.** `260519 소스 폴더/01_Revit_Addins/Addin Dashboard` 소스 Windows 환경으로 이동
+- [ ] **1-1.** 외부 개발 소스 루트 `$BCC_ADDIN_DEV_SOURCE_ROOT/01_Revit_Addins/Addin Dashboard`를 Windows 빌드 환경에 준비
 - [ ] **1-2.** Visual Studio 2022 (Community 이상) 설치 확인
 - [ ] **1-3.** Autodesk Revit 2024 / 2025 / 2026 설치 확인 (세 버전 각각)
 - [ ] **1-4.** RevitAPI.dll / RevitAPIUI.dll 참조 경로 확인 (설치 버전별 갱신)

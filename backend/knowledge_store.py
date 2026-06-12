@@ -144,6 +144,15 @@ def _extract_content_fingerprints(content: str) -> set[str]:
     return fingerprints
 
 
+import re as _re
+_CHINESE_RE = _re.compile(r"[一-鿿]{3,}")
+_CHAT_TOKEN_RE = _re.compile(r"<\|im_start\|[^|]*\|>|<\|im_end\|>|<\|endoftext\|>")
+
+
+def _has_contamination(text: str) -> bool:
+    return bool(_CHINESE_RE.search(text) or _CHAT_TOKEN_RE.search(text))
+
+
 def _is_duplicate_content(new_content: str, existing_text: str, threshold: float = 0.5) -> bool:
     new_fps = _extract_content_fingerprints(new_content)
     if not new_fps:
@@ -162,6 +171,9 @@ def append_knowledge_update(update: KnowledgeUpdateRequest) -> dict:
     ensure_knowledge_base()
     now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     path = qa_knowledge_file_path(update.agent) if _is_qa_update(update.source, update.tags) else knowledge_file_path(update.agent)
+
+    if _has_contamination(update.content):
+        return {"agent": update.agent, "path": path, "updated_at": now, "skipped": True, "reason": "contaminated"}
 
     try:
         existing_text = Path(path).read_text(encoding="utf-8") if Path(path).exists() else ""

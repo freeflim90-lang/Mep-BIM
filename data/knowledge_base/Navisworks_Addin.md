@@ -278,15 +278,36 @@ Navisworks API 선택 가이드 — COM API vs .NET Managed API: COM API(`Autode
 - 관련: [[Revit_Addin]] · [[BIM_납품검수]] · [[IFC_OpenBIM]] · [[ACC_BIM360]]
 
 
-## Navisworks Add-in 최신 동향 및 활용 팁 (2026-06-07)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-07
+## Navisworks Add-in 최신 동향 및 활용 팁 (2026-06-09)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-09
 - Tags: navisworks,addin,clash-detection,update
 
-- Navisworks 2025는 모델 조정 기능을 개선하고 새로운 API 어플리케이션 확장 기능을 추가하여 개발者的帮助你了吗？看来您需要关于Autodesk Navisworks 2025的最新功能和Add-in开发实战技巧的信息。以下是在.NET Framework 4.8及以上版本上进行API扩展时的一些关键点：
+- Navisworks 2025에서는 모델 조정 기능과 업데이트된 API가 도입되어 효율성을 높일 수 있다.
+- 최신 API는 .NET Framework 4.8을 지원하며, NuGet을 통해 설치할 수 있으므로 Add-in 개발 시 활용 가능하다.
+- 간섭 검토를 자동화하기 위해, 프로젝트 설정에서 관련 옵션을 활성화하여 작업 효율성을 향상시킬 수 있다.
+- 보고서 커스터마이징을 위해서는 API를 통해 필요한 정보만 선택적으로 포함하거나 제외할 수 있으므로, 사용자의 요구에 맞게 조정할 수 있다.
+- API 활용 시, NuGet 패키지를 설치한 후 코드에서 직접적인 접근이 가능하므로, 필요시 관련 문서를 참조하여 개발해보자.
+- 관련: [[간섭검토]] · [[Revit_Addin]]
 
-- 自动化干涉检查：Navisworks 2025引入了改进的模型协调功能，可以自动化干涉检查过程，提高项目管理效率。
-- 报告定制化：用户可以根据需要自定义报告格式和内容，以满足特定项目的文档需求。
-- API利用方法：开发人员可以通过API扩展Navisworks的功能。确保使用.NET Framework 4.8或更高版本进行开发，并充分利用新添加的API功能来增强应用程序。
 
-请注意，有报道称2025年版本的数据处理速度可能比2024年有所下降，因此在开发过程中需要密切关注性能问题。
+## Navisworks Add-in 최신 동향 및 활용 팁 (2026-06-10)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-10
+- Tags: navisworks,addin,clash-detection,update
+
+- Autodesk Navisworks 2025에서는 모델 조정 기능이 개선되었으나, 사용자들로부터 성능 저하 신고가 있어 주의 필요.
+- 간섭 검토 자동화를 위해 Add-in을 활용할 수 있으며, 이는 Chuongmep.Navis.Api.Autodesk.Navisworks.Api 패키지를 통해 API를 이용해 개발 가능.
+- 보고서 커스터마이징을 위해서는 Navisworks의 내장 기능과 함께 Add-in을 통해 더욱 세밀한 조작이 가능하다.
+- API 활용 시, 데이터 교환 모델 개발 및 BIM/GIS 플랫폼 구축과 같은 전문적인 기술도 고려할 수 있다.
+- 관련: [[간섭검토]] · [[Revit_Addin]]
+
+
+## Navisworks Add-in 최신 동향 및 활용 팁 (2026-06-11)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-11
+- Tags: navisworks,addin,clash-detection,update
+
+- Navisworks 2025에서는 모델 조정 기능이 개선되어 작업 효율성이 향상되었습니다.
+- API 업데이트는 2025년 3월에 이루어졌으며, 이로 인해 사용자들은 플러그인 성능에서 상당한 느림을 경험하고 있습니다.
+- 간섭 검토를 자동화하기 위해서는 Navisworks의 내장 기능과 함께 Tavily AI 요약 기술을 활용할 수 있습니다. 이를 통해 모델 간 간섭을 빠르고 정확하게 식별할 수 있습니다.
+- 보고서 커스터마이징은 Navisworks의 사용자 인터페이스를 통해 쉽게 설정할 수 있으며, 필요에 따라 다양한 형식과 내용으로 보고서를 맞춤화할 수 있습니다.
+- API를 활용하여 Add-in을 개발할 때는 Navisworks의 공통 기능 표준 프레임워크를 준수해야 합니다. 이를 통해 플랫폼과 연계된 분석 가능한 시스템을 구축할 수 있습니다.
 - 관련: [[간섭검토]] · [[Revit_Addin]]

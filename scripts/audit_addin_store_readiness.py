@@ -2,13 +2,24 @@ import csv
 import datetime
 import os
 import re
+import sys
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-SOURCE_ROOT = PROJECT_ROOT / "260519 소스 폴더"
+sys.path.insert(0, str(PROJECT_ROOT))
+from scripts.addin_dev_paths import addin_dev_source_root, require_addin_dev_source_root
+
+SOURCE_ROOT = addin_dev_source_root() or PROJECT_ROOT / "__missing_BCC_ADDIN_DEV_SOURCE_ROOT__"
 REPORT_DIR = PROJECT_ROOT / "docs" / "autodesk_store"
+
+
+def display_path(path: Path) -> str:
+    try:
+        return path.relative_to(PROJECT_ROOT).as_posix()
+    except ValueError:
+        return path.as_posix()
 
 
 def text_or_empty(path: Path) -> str:
@@ -164,7 +175,7 @@ def audit_product(platform: str, path: Path) -> dict:
     product = {
         "platform": platform,
         "name": path.name,
-        "path": str(path.relative_to(PROJECT_ROOT)),
+        "path": display_path(path),
         "sln_count": len(slns),
         "csproj_count": len(csprojs),
         "addin_count": len(addins),
@@ -261,6 +272,7 @@ def write_reports(products: list[dict]) -> None:
 
 
 def main():
+    require_addin_dev_source_root()
     products = [audit_product(platform, path) for platform, path in product_dirs()]
     write_reports(products)
     print(f"audited {len(products)} products")

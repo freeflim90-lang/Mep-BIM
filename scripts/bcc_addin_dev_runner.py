@@ -16,12 +16,14 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT_ROOT))
 from backend.email_notifications import send_gmail, load_local_env
+from scripts.addin_dev_paths import addin_dev_source_root, require_addin_dev_source_root
 load_local_env()
 
 OLLAMA_URL  = os.environ.get("LOCAL_CODER_BASE_URL", "http://127.0.0.1:11434")
 CODER_MODEL = os.environ.get("LOCAL_CODER_MODEL", "qwen2.5-coder:7b")
-REVIT_ROOT  = PROJECT_ROOT / "260519 소스 폴더" / "01_Revit_Addins"
-NAV_ROOT    = PROJECT_ROOT / "260519 소스 폴더" / "02_Navisworks_Tools"
+DEV_SOURCE_ROOT = addin_dev_source_root() or Path("__missing_BCC_ADDIN_DEV_SOURCE_ROOT__")
+REVIT_ROOT = DEV_SOURCE_ROOT / "01_Revit_Addins"
+NAV_ROOT = DEV_SOURCE_ROOT / "02_Navisworks_Tools"
 
 
 # ─────────────────────────────────────────────────────────────────
@@ -1746,6 +1748,7 @@ namespace NavisworksClashDefiner
 # 메인
 # ─────────────────────────────────────────────────────────────────
 async def main() -> None:
+    require_addin_dev_source_root()
     print(f"BCC Add-in 스캐폴드 생성 시작 ({datetime.now().strftime('%Y-%m-%d %H:%M')})")
     print(f"Qwen 모델: {CODER_MODEL} @ {OLLAMA_URL}\n")
 

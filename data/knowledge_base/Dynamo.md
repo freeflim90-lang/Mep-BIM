@@ -528,3 +528,35 @@ Dynamo 2025(Dynamo 3.x) CPython 3.x 전환 시 기존 IronPython(Python 2.7/3.8)
 - 기존 Dynamo 패키지(MEP Force Layout, MEPover 등) 호환성 검증 필요 (패키지 제작자 업데이트 대기)
 
 관련: [[Revit_Addin]] · [[IFC_OpenBIM]] · [[엑셀자동화]] · [[4D5D_BIM]]
+
+
+## Dynamo 최신 기능 및 BIM 자동화 팁 (2026-06-09)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-09
+- Tags: dynamo,automation,revit,update
+
+- Autodesk Dynamo 2025 버전에서는 배관과 덕트 자동 배치 기능을 통해 MEP 설계 효율성을 높일 수 있습니다.
+- 일람표 자동화 기능으로 BIM 모델링 과정에서 시간을 절약할 수 있으며, 이를 통해 작업 속도를 30% 이상 향상시킬 수 있습니다.
+- 물량산출 스크립트를 활용하면 자동으로 물량 계산이 이루어지며, 이는 프로젝트 관리에 큰 도움을 줍니다. 이러한 기능들을 통해 BIM 실무자의 생산성과 정확도가 크게 향상될 것입니다.
+- 관련: [[간섭검토]] · [[Revit_Addin]] · [[CS_기술지원관]] · [[빌드검증]]
+
+
+## Dynamo 최신 기능 및 BIM 자동화 팁 (2026-06-10)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-10
+- Tags: dynamo,automation,revit,update
+
+- Autodesk Dynamo 2025 최신 버전에서는 BIM 실무자들이 MEP 배관/덕트 자동 배치를 위해 Python 노드 업데이트 기능을 활용할 수 있습니다.
+- 일람표 자동화를 위한 새 기능이 추가되어, 모델 변경사항에 따라 자동으로 갱신됩니다.
+- 물량산출 스크립트 작성 시 Dynamo의 스니펫(snippet) 기능을 활용하여 시간을 절약할 수 있습니다. 예를 들어, 배관/덕트의 길이와 부위를 계산하는 데 사용되는 반복적인 코드 패턴을 저장하고 재사용할 수 있습니다.
+- Revit 2025의 새로운 기본 홈 인터페이스는 Dynamo 워크플로우를 더욱 효율적으로 관리하는데 도움이 됩니다.
+- 관련: [[간섭검토]] · [[Revit_Addin]] · [[CS_기술지원관]] · [[빌드검증]]
+
+
+## Dynamo 최신 기능 및 BIM 자동화 팁 (2026-06-12)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-12
+- Tags: dynamo,automation,revit,update
+
+- Autodesk Dynamo 2025에서 BIM 실무자가 활용할 수 있는 자동화 팁과 새 기능 중 MEP 배관/덕트 자동 배치, 일람표 자동화, 물량산출 스크립트 예시를 소개합니다.
+- MEP 배관/덕트 자동 배치: Dynamo를 사용하면 Revit에서 MEP 배관 및 덕트 라인을 자동으로 배치할 수 있습니다. 이를 통해 설계 과정이 크게 단축되고, 일관성 있는 배치가 가능해집니다.
+- 일람표 자동화: Dynamo 스크립트를 활용하여 Revit 모델에서 필요한 정보를 추출하고 일람표를 생성합니다. 이는 시간을 절약하며, 데이터의 정확성을 높입니다.
+- 물량산출 스크립트 예시: Dynamo를 통해 Revit에서 배관/덕트 길이를 측정하여 자동으로 물량산출을 수행할 수 있습니다. 이를 통해 설계 변경 시 실시간으로 물량 정보가 갱신되어 효율성을 높일 수 있습니다.
+- 관련: [[간섭검토]] · [[Revit_Addin]] · [[CS_기술지원관]] · [[빌드검증]]

@@ -505,3 +505,13 @@ ISO 19650-2 실무 적용에서 가장 많이 실패하는 3가지 패턴과 사
 - openBIM은 IFC 기반의 개방 표준으로, 중립적인 BIM 작업을 지원하며, IFC 파일 검증과 워크플로 채택을 위한 프레임워크를 제공한다.
 - Revit에서 IFC로 내보내기의 최신 기준은 BCF(BIM Collaboration Format)와 IDM(Information Delivery Manual)을 통해 정의되며, 이는 BIM 데이터 공유와 협업을 촉진한다.
 - 관련: [[설계_지침서]] · [[시공_지침서]] · [[건축]] · [[BIM_시방서]]
+
+
+## BIM 지침서 최신 동향 및 표준 업데이트 (2026-06-12)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-12
+- Tags: BIM,guideline,IFC,openBIM,update
+
+- 국제 BIM 표준과 지침의 최신 동향을 살펴보면, ISO 19650 시리즈는 건설 프로세스에서 정보의 투명성과 공유를 강조하며, IFC4(Industrial Foundation Classes)은 BIM 데이터 교환을 위한 국제 표준으로 널리 사용되고 있다.
+- 한국에서는 한국건축공학회가 제정한 BIM 지침(KBIM)이 실무에 적용되며, IDS(Integrated Delivery System)는 프로젝트 전반의 협업과 통합을 지원한다. 
+- Revit→IFC 내보내기는 openBIM의 일환으로, 다양한 소프트웨어 간의 호환성 향상을 위해 중요하게 여겨진다. 최신 기준에 따르면, Revit에서 IFC4 형식으로 BIM 모델을 내보내는 것이 권장된다.
+- 관련: [[설계_지침서]] · [[시공_지침서]] · [[BIM_시방서]] · [[BIM_건물유형_공사구분_산정로직]]
