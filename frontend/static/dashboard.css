@@ -800,3 +800,11 @@
 .org-contract .oc-hand { margin: 1px 0; line-height: 1.18; }
 .org-contract .oc-raci { font-size: 7.5px; }
 .orchestration-map { gap: 5px; }
+
+/* ── 협업계약 17개: 작은 화면까지 한 화면 유지 (조밀화) ── */
+.org-contracts { grid-template-columns: repeat(auto-fill, minmax(148px, 1fr)); gap: 3px; }
+.org-contract { padding: 3px 5px; font-size: 7.5px; }
+.org-contract .oc-route { font-size: 8px; }
+.org-contract .oc-hand { margin: 1px 0 0; line-height: 1.12; }
+.org-contract .oc-raci { font-size: 7px; }
+.org-division-grid { gap: 6px; }
