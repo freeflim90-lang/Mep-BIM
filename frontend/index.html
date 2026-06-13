@@ -442,7 +442,7 @@
       const contractsEl = document.getElementById('orgContracts');
       const matrixCount = document.getElementById('orgMatrixCount');
       if (!grid) return;
-      const TEAM_LABEL = {MANAGEMENT:'경영진',ADMIN_FINANCE_TEAM:'경영지원',REPORTING_TEAM:'리포팅',KNOWLEDGE_TEAM:'지식팀',ESTIMATION_TEAM:'견적팀',ENGINEERING_TEAM:'엔지니어링팀',ADDIN_DEVELOPMENT_TEAM:'애드인개발팀',STORE_COMMERCIALIZATION_TEAM:'스토어상용화팀',PEOPLE_ENABLEMENT_TEAM:'인재육성팀',GTM_MARKETING_TEAM:'마케팅GTM팀'};
+      const TEAM_LABEL = {MANAGEMENT:'경영진',ADMIN_FINANCE_TEAM:'경영지원',KNOWLEDGE_TEAM:'지식팀',ESTIMATION_TEAM:'견적팀',ENGINEERING_TEAM:'엔지니어링팀',ADDIN_DEVELOPMENT_TEAM:'애드인개발팀',STORE_COMMERCIALIZATION_TEAM:'스토어상용화팀',PEOPLE_ENABLEMENT_TEAM:'인재육성팀',GTM_MARKETING_TEAM:'마케팅GTM팀'};
       const node = (a) => {
         const sub = a.extra_alias ? '겸직' : (a.status==='inference_only' ? '라우팅' : (a.team ? (TEAM_LABEL[a.team]||a.team) : '확장'));
         return `<div class="node"><div class="tag">${sub}</div><div class="node-header"><div class="name">${a.id}</div></div><div class="tx">0 tx</div></div>`;

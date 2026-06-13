@@ -65,7 +65,7 @@ def build_organization_tree() -> dict:
         "collaboration_contracts": reg.collaboration_contracts(),
         "counts": {
             "divisions": len(divisions),
-            # 정의된 팀 수(현재 미배치 팀 포함) — 공개 메시지 '10팀' 의 출처.
+            # 정의된 팀 수(전 팀 active 배치 — 빈 팀 0개) — 공개 메시지 '9팀' 의 출처.
             "teams": len(org),
             # 헤드라인 운영 인원 = 팀 소속 active 에이전트(확장·겸직·라우팅 제외). '34명' 의 출처.
             "operating": len(reg.all_agents()),

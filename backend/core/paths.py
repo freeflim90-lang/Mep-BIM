@@ -78,7 +78,6 @@ TEAM_DIR_NAMES = {
     "MANAGEMENT": "01_경영진",
     "ESTIMATION_TEAM": "02_견적팀",
     "ENGINEERING_TEAM": "03_엔지니어링팀",
-    "REPORTING_TEAM": "04_리포팅팀",
     "ADDIN_DEVELOPMENT_TEAM": "05_애드인개발팀",
     "STORE_COMMERCIALIZATION_TEAM": "06_스토어상용화팀",
     "ADMIN_FINANCE_TEAM": "07_경영지원팀",

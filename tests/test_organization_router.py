@@ -32,7 +32,7 @@ def test_counts_present_and_consistent():
 
 
 def test_headline_counts_match_registry():
-    """공개 메시지 '10팀 34명' 의 출처가 레지스트리에서 파생됨을 강제한다."""
+    """공개 메시지 '9팀 34명' 의 출처가 레지스트리에서 파생됨을 강제한다."""
     counts = build_organization_tree()["counts"]
     # 팀 수 = 정의된 모든 팀(미배치 팀 포함)
     assert counts["teams"] == len(reg.organization())

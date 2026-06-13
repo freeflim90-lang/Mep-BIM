@@ -79,6 +79,18 @@ def test_every_division_has_operating_agents():
         )
 
 
+def test_every_division_feeds_knowledge_intake():
+    """학습조직 폐루프: 지식운영본부를 제외한 모든 본부는 지식운영본부로
+    인테이크 협업계약을 최소 1건 보유해야 한다(지식 내재화 회사의 핵심 불변식).
+    경영본부 인테이크 누락 회귀를 차단한다."""
+    KNOWLEDGE_DIV = "지식운영본부"
+    feeders = {c["from"] for c in reg.collaboration_contracts() if c["to"] == KNOWLEDGE_DIV}
+    for div in reg.divisions():
+        if div["key"] == KNOWLEDGE_DIV:
+            continue
+        assert div["key"] in feeders, f"본부 {div['key']} 가 지식운영본부로 인테이크하지 않음(학습 루프 단절)"
+
+
 def test_division_standalone_agents_registered():
     ids = reg.all_agent_ids()
     for div in reg.divisions():

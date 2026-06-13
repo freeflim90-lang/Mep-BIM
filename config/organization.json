@@ -16,10 +16,6 @@
       "order": 3
     },
     {
-      "key": "REPORTING_TEAM",
-      "order": 4
-    },
-    {
       "key": "ADDIN_DEVELOPMENT_TEAM",
       "order": 5
     },
@@ -49,8 +45,7 @@
       "key": "경영본부",
       "teams": [
         "MANAGEMENT",
-        "ADMIN_FINANCE_TEAM",
-        "REPORTING_TEAM"
+        "ADMIN_FINANCE_TEAM"
       ],
       "agents": []
     },
@@ -287,6 +282,16 @@
         "R": "교육컨설팅",
         "A": "지식큐레이터",
         "C": "러닝콘텐츠디자이너"
+      }
+    },
+    {
+      "from": "경영본부",
+      "to": "지식운영본부",
+      "handoff": "전략 의사결정·회고·실패 교훈 → 지식 인테이크(경영 학습 폐루프)",
+      "raci": {
+        "R": "조율차장",
+        "A": "지식큐레이터",
+        "C": "CEO"
       }
     },
     {
