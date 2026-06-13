@@ -27,6 +27,7 @@ from backend.core.paths import (
     PROJECT_ROOT as _PROJECT_ROOT,
     QA_KB_DIR as _QA_KB_DIR,
 )
+from backend import agent_registry as _registry
 from backend.knowledge_store import ORGANIZATION as _ORGANIZATION
 from backend.web_search import _search_web_for_knowledge
 
@@ -37,7 +38,10 @@ _AGENT_TO_TEAM = {
 # ---------------------------------------------------------------------------
 # 운영 파일 제외 목록 (지식 검색 대상에서 제외)
 # ---------------------------------------------------------------------------
-_EXCLUDED_KNOWLEDGE_STEMS = {"지식업데이트", "지식큐레이터", "지식업데이트md", "지식큐레이터md"}
+_EXCLUDED_KNOWLEDGE_STEMS = {
+    "지식업데이트", "지식큐레이터", "지식업데이트md", "지식큐레이터md",
+    "지식업데이트_QA", "지식큐레이터_QA",
+}
 
 def _st():
     """server_total 지연 임포트 헬퍼 — 순환 참조 방지."""
@@ -151,7 +155,7 @@ def query_terms(query: str) -> list[str]:
         if term in stopwords:
             continue
         normalized = term
-        for suffix in ("이야", "이에요", "이다", "에서", "에는", "으로", "가", "이", "을", "를", "은", "는", "야", "이랑", "도"):
+        for suffix in ("이야", "이에요", "이다", "에서", "에는", "으로", "가", "이", "을", "를", "은", "는", "야", "이랑", "도", "과", "와"):
             if normalized.endswith(suffix) and len(normalized) > len(suffix) + 1:
                 normalized = normalized[: -len(suffix)]
                 break
@@ -163,6 +167,26 @@ def query_terms(query: str) -> list[str]:
         terms.extend(["냉수", "chilled", "water"])
     if any(term in raw_terms for term in ["hws", "hwr", "hw"]):
         terms.extend(["온수", "난방", "hot", "water"])
+    if any("hwr" in term or "급탕환수" in term for term in raw_terms):
+        terms.extend(["급탕환수", "domestic hot water return", "순환", "온도", "레지오넬라"])
+    if any("통기" in term or "트랩" in term for term in raw_terms):
+        terms.extend(["통기", "통기관", "트랩", "봉수", "오배수", "vent", "trap"])
+    if any("냉매" in term for term in raw_terms):
+        terms.extend(["냉매", "refrigerant", "전기 트레이", "이격", "단열", "누설"])
+    if any("팽창탱크" in term or "팽창" in term for term in raw_terms):
+        terms.extend(["팽창탱크", "펌프", "흡입", "환수", "압력", "air vent"])
+    if any(term in raw_terms for term in ["mdf", "idf", "cctv", "광케이블", "통신실", "약전"]):
+        terms.extend(["mdf", "idf", "cctv", "광케이블", "통신", "약전", "emi", "이격"])
+    if any(term in raw_terms for term in ["분전반", "수배전반", "큐비클"]):
+        terms.extend(["분전반", "수배전반", "전면", "작업 공간", "누수", "배관"])
+    if any(term in raw_terms for term in ["방화셔터", "제연팬", "감지기", "수신기", "방재"]):
+        terms.extend(["방화셔터", "제연팬", "감지기", "수신기", "방재", "연동", "소방전기"])
+    if any(any(keyword in term for keyword in ["스프링클러", "헤드", "살수", "소화배관", "소방배관"]) for term in raw_terms):
+        terms.extend(["스프링클러", "헤드", "살수", "장애", "소방기계", "소화배관", "소방배관", "fire", "sprinkler"])
+    if any(term in raw_terms for term in ["vav", "정압", "bms", "bas", "ddc"]):
+        terms.extend(["vav", "정압", "센서", "팬", "인버터", "vfd", "최소풍량", "bms", "point list"])
+    if any(term in raw_terms for term in ["navisworks", "나비스웍스", "클래시", "clash"]):
+        terms.extend(["navisworks", "clash detective", "selection set", "search set", "rule", "공차", "bcf", "rfi", "간섭검토"])
     if "공조배관" in raw_terms:
         terms.extend(["냉수", "온수", "냉각수", "냉매", "증기", "응축수"])
     if any(term in raw_terms for term in ["위생배관", "위생"]):
@@ -298,7 +322,7 @@ def search_local_knowledge(query: str, limit: int = 4) -> list[dict]:
         if path.is_relative_to(_AGENT_KB_DIR) or path.is_relative_to(_QA_KB_DIR):
             score += 8
         if path.stem == inferred_agent:
-            score += 20
+            score += 80 if inferred_agent in {"간섭검토", "설비시공조율"} else 50
         elif inferred_agent in path.stem:
             score += 10
         if any(term in path.stem.lower() for term in terms):
@@ -332,128 +356,43 @@ def prioritize_agent_matches(matches: list[dict], agent: str) -> list[dict]:
     return sorted(matches, key=rank, reverse=True)
 
 
+def _inference_rule_matches(rule: dict, lower_text: str) -> bool:
+    """규칙 매처: all=모든 부분문자열, any=하나 이상, any_groups=각 그룹마다 하나 이상 (모두 AND)."""
+    if "all" in rule and not all(k in lower_text for k in rule["all"]):
+        return False
+    if "any" in rule and not any(k in lower_text for k in rule["any"]):
+        return False
+    if "any_groups" in rule:
+        for group in rule["any_groups"]:
+            if not any(k in lower_text for k in group):
+                return False
+    return True
+
+
 def infer_knowledge_agent_from_query(query: str) -> str:
+    """질의 → 담당 지식 에이전트. 규칙은 config/organization.json(SSOT)의
+    inference_rules 순서(=우선순위)대로 평가한다. 새 라우팅은 코드가 아니라 config 편집."""
     st = _st()
     lower_text = query.lower()
 
-    # ── 개발 도구 (최우선)
-    if any(keyword in lower_text for keyword in ["revit", "add-in", "addin", "애드인", ".net", "csproj", "transaction", "externalcommand"]):
-        return "Revit_Addin"
-    if any(keyword in lower_text for keyword in ["다이나모", "dynamo"]):
-        return "Dynamo"
-    if any(keyword in lower_text for keyword in ["navisworks", "나비스웍스", "clash", "클래시", "timeliner"]):
-        return "Navisworks_Addin"
+    for rule in _registry.inference_rules():
+        target = rule["target"]
+        if target == "@discipline_keywords":
+            # 공종 키워드 순회 (DISCIPLINE_KEYWORDS 순서대로 첫 매칭)
+            for agent, keywords in st.DISCIPLINE_KEYWORDS.items():
+                if any(keyword.lower() in lower_text for keyword in keywords):
+                    return agent
+            continue
+        if target == "@knowledge_agent_name":
+            # 에이전트명 직접 포함 여부
+            for agent in st.KNOWLEDGE_AGENTS:
+                if agent.lower() in lower_text:
+                    return agent
+            continue
+        if _inference_rule_matches(rule, lower_text):
+            return target
 
-    # ── 도면 해석 (공종 구분 포함)
-    if any(keyword in lower_text for keyword in ["도면", "계통도", "장비일람표", "부하계산서", "범례"]):
-        if any(keyword in lower_text for keyword in ["cws", "cwr", "냉각수", "냉수", "온수", "냉매", "공조배관"]):
-            return "공조배관"
-        return "설비도면해석"
-
-    # ── MEP 공조배관 (약어 우선)
-    if any(keyword in lower_text for keyword in ["cws", "cwr", "chws", "chwr", "hws", "hwr", "냉각수", "냉수", "냉매", "브라인", "글리콜"]):
-        return "공조배관"
-
-    # ── BIM 납품·검수·품질
-    if any(keyword in lower_text for keyword in [
-        "납품검수", "납품 검수", "ids", "bcf", "품질검수", "bim 검수", "모델검수",
-        "ifcpropertyset", "pset", "오류코드", "검수항목", "모델 오류", "bim 품질",
-    ]):
-        return "BIM_납품검수"
-
-    # ── IFC / OpenBIM
-    if any(keyword in lower_text for keyword in [
-        "ifc", "openbim", "buildingsmart", "ifc5", "ifc4", "ifc 4.3",
-        "ifcspace", "ifczone", "ifcwall", "ifcbeam", "ifccolumn",
-    ]):
-        return "IFC_OpenBIM"
-
-    # ── Scan-to-BIM / 포인트클라우드
-    if any(keyword in lower_text for keyword in [
-        "scan-to-bim", "스캔", "포인트클라우드", "point cloud", "lidar", "라이다",
-        "leica", "faro", "rcp", "e57", "현실캡처", "reality capture",
-    ]):
-        return "OpenBIM_프로그램연동"
-
-    # ── BIM 견적·단가
-    if any(keyword in lower_text for keyword in [
-        "견적", "단가", "표준시장단가", "원가", "공사비", "mm 산출", "투입공수",
-        "물량산출", "5d bim", "5d", "cost", "비용산정",
-    ]):
-        return "BIM_프로젝트_견적산정"
-
-    # ── BIM 인력·파견·자격
-    if any(keyword in lower_text for keyword in [
-        "인력파견", "파견", "bim 전문가 자격", "자격증", "bim 운용전문가",
-        "iso 19650-5", "보안관리", "파견 계약", "외주 인력",
-    ]):
-        return "BIM_인력파견_기준.md".replace(".md", "")
-
-    # ── BIM 제안서
-    if any(keyword in lower_text for keyword in ["제안서", "bim 제안", "rir", "제안 작성"]):
-        return "BIM_제안서"
-
-    # ── BEP / 수행계획서
-    if any(keyword in lower_text for keyword in ["bep", "수행계획서", "eir", "oir", "air"]):
-        return "BEP_수행계획서"
-
-    # ── 4D/5D BIM
-    if any(keyword in lower_text for keyword in [
-        "4d bim", "4d", "공정시뮬레이션", "wbs", "primavera", "ms project", "공정표",
-    ]):
-        return "4D5D_BIM"
-
-    # ── FM / 디지털트윈
-    if any(keyword in lower_text for keyword in [
-        "디지털트윈", "digital twin", "fm bim", "자산관리", "tandem", "autodesk tandem",
-        "시설관리", "유지관리 bim", "cobie",
-    ]):
-        return "FM_자산관리"
-
-    # ── 패시브하우스 / 탄소
-    if any(keyword in lower_text for keyword in [
-        "패시브하우스", "phiko", "내재탄소", "탄소발자국", "lca", "zeb", "제로에너지",
-    ]):
-        return "패시브하우스_PHIKO"
-
-    # ── Revit 패밀리 제작
-    if any(keyword in lower_text for keyword in [
-        "패밀리", "rfa", "family", "커넥터 설정", "공유 파라미터", "mep 패밀리",
-    ]):
-        return "Revit_Family제작"
-
-    # ── 시장·규모 (프로젝트 면적/연면적 포함)
-    if any(keyword in lower_text for keyword in [
-        "연면적", "바닥면적", "건축면적", "건물 면적", "시설 면적",
-        "공항 면적", "bim 시장", "시장규모", "의무화",
-    ]):
-        return "건축"
-
-    # ── BIM 시방서 / 지침서
-    if any(keyword in lower_text for keyword in ["시방서", "bim 지침", "bim 기준"]):
-        return "BIM_시방서"
-
-    # ── 엑셀 자동화
-    if any(keyword in lower_text for keyword in ["엑셀", "excel", "openpyxl", "xlsxwriter", "파이썬 자동화"]):
-        return "엑셀자동화"
-
-    # ── DISCIPLINE_KEYWORDS 순회 (공종 키워드)
-    for agent, keywords in st.DISCIPLINE_KEYWORDS.items():
-        if any(keyword.lower() in lower_text for keyword in keywords):
-            return agent
-
-    # ── agent명 직접 포함 여부
-    for agent in st.KNOWLEDGE_AGENTS:
-        if agent.lower() in lower_text:
-            return agent
-
-    # ── 기타 명시적 도메인
-    if any(keyword in lower_text for keyword in ["교육", "커리큘럼", "온보딩", "연차"]):
-        return "교육컨설팅"
-    if any(keyword in lower_text for keyword in ["개발", "코드", "qwen", "api"]):
-        return "프로그램개발"
-
-    return "지식업데이트"
+    return _registry.inference_default()
 
 
 def build_knowledge_answer(query: str, matches: list[dict]) -> str:
@@ -493,6 +432,35 @@ def assess_knowledge_answer_quality(query: str, agent: str, matches: list[dict],
         "reasons": reasons,
         "top_score": top_score,
         "top_path": str(top_path.relative_to(_PROJECT_ROOT)) if isinstance(top_path, Path) else "",
+    }
+
+
+def assess_team_telegram_answer_readiness(
+    query: str,
+    agent: str,
+    matches: list[dict],
+    answer: str = "",
+    *,
+    local_score_threshold: int = 40,
+) -> dict:
+    """팀 Telegram 1차 답변을 로컬 지식만으로 보낼 수 있는지 판단한다.
+
+    기존에는 top score 기준만으로 웹 검색 생략 여부를 결정했다. 이 함수는
+    score와 함께 운영문서 랭킹, 에이전트 불일치, 답변 노이즈를 같이 보아
+    연결된 지식이 실제 질문 답변 품질로 이어지는지 판단한다.
+    """
+    assessment = assess_knowledge_answer_quality(query, agent, matches, answer)
+    top_score = int(assessment.get("top_score", 0) or 0)
+    reasons = list(assessment.get("reasons", []))
+    if top_score < local_score_threshold:
+        reasons.append(f"below-local-threshold:{top_score}<{local_score_threshold}")
+    should_search = bool(reasons)
+    return {
+        **assessment,
+        "ok": not should_search,
+        "should_search": should_search,
+        "reasons": list(dict.fromkeys(reasons)),
+        "local_score_threshold": local_score_threshold,
     }
 
 

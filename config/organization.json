@@ -1,0 +1,1282 @@
+{
+  "version": 1,
+  "service": "LUA BIM LABS",
+  "_note": "에이전트 정체성 단일 출처(SSOT). backend/agent_registry.py 가 로드한다. 에이전트 추가/세분화는 여기만 편집.",
+  "teams": [
+    {
+      "key": "MANAGEMENT",
+      "order": 1
+    },
+    {
+      "key": "ESTIMATION_TEAM",
+      "order": 2
+    },
+    {
+      "key": "ENGINEERING_TEAM",
+      "order": 3
+    },
+    {
+      "key": "REPORTING_TEAM",
+      "order": 4
+    },
+    {
+      "key": "ADDIN_DEVELOPMENT_TEAM",
+      "order": 5
+    },
+    {
+      "key": "STORE_COMMERCIALIZATION_TEAM",
+      "order": 6
+    },
+    {
+      "key": "ADMIN_FINANCE_TEAM",
+      "order": 7
+    },
+    {
+      "key": "PEOPLE_ENABLEMENT_TEAM",
+      "order": 8
+    },
+    {
+      "key": "KNOWLEDGE_TEAM",
+      "order": 9
+    }
+  ],
+  "divisions": [
+    {
+      "key": "경영본부",
+      "teams": [
+        "MANAGEMENT",
+        "ADMIN_FINANCE_TEAM",
+        "REPORTING_TEAM"
+      ],
+      "agents": []
+    },
+    {
+      "key": "지식운영본부",
+      "teams": [
+        "KNOWLEDGE_TEAM"
+      ],
+      "agents": []
+    },
+    {
+      "key": "엔지니어링본부",
+      "teams": [
+        "ESTIMATION_TEAM",
+        "ENGINEERING_TEAM"
+      ],
+      "agents": [
+        "간섭검토"
+      ]
+    },
+    {
+      "key": "제품본부",
+      "teams": [
+        "ADDIN_DEVELOPMENT_TEAM",
+        "STORE_COMMERCIALIZATION_TEAM"
+      ],
+      "agents": []
+    },
+    {
+      "key": "교육본부",
+      "teams": [
+        "PEOPLE_ENABLEMENT_TEAM"
+      ],
+      "agents": []
+    },
+    {
+      "key": "마케팅GTM본부",
+      "teams": [],
+      "agents": [
+        "브랜드마케팅",
+        "글로벌_유통기획관",
+        "CS_기술지원관",
+        "글로벌_매출관리원"
+      ]
+    }
+  ],
+  "discipline_keyword_order": [
+    "간섭검토",
+    "건축",
+    "구조",
+    "토목",
+    "위생",
+    "공조배관",
+    "공조덕트",
+    "소방기계",
+    "소방전기",
+    "전기",
+    "통신"
+  ],
+  "discipline_groups": {
+    "MEP통합": [
+      "위생",
+      "공조배관",
+      "공조덕트",
+      "소방기계",
+      "소방전기",
+      "전기",
+      "통신"
+    ],
+    "전체공정": [
+      "건축",
+      "구조",
+      "토목",
+      "위생",
+      "공조배관",
+      "공조덕트",
+      "소방기계",
+      "소방전기",
+      "전기",
+      "통신"
+    ]
+  },
+  "collaboration_contracts": [
+    {
+      "from": "엔지니어링본부",
+      "to": "제품본부",
+      "handoff": "현장 요구사항·간섭 규칙 → 애드인 기능 명세",
+      "raci": {
+        "R": "요구사항분석",
+        "A": "제품패키징",
+        "C": "간섭검토",
+        "I": "스토어심사"
+      }
+    },
+    {
+      "from": "제품본부",
+      "to": "마케팅GTM본부",
+      "handoff": "출시 가능 빌드·기능 목록 → 스토어 리스팅·홍보",
+      "raci": {
+        "R": "스토어심사",
+        "A": "브랜드마케팅",
+        "C": "배포문서",
+        "I": "글로벌_유통기획관"
+      }
+    },
+    {
+      "from": "엔지니어링본부",
+      "to": "교육본부",
+      "handoff": "실무 사례·QA 패턴 → 커리큘럼·교육 콘텐츠",
+      "raci": {
+        "R": "교육컨설팅",
+        "A": "러닝콘텐츠디자이너",
+        "C": "간섭검토",
+        "I": "지식큐레이터"
+      }
+    },
+    {
+      "from": "지식운영본부",
+      "to": "전체",
+      "handoff": "승인된 지식 → 전 본부 KB 반영",
+      "raci": {
+        "R": "지식업데이트",
+        "A": "지식큐레이터"
+      }
+    },
+    {
+      "from": "경영본부",
+      "to": "전체",
+      "handoff": "전략·예산 우선순위 → 본부 실행",
+      "raci": {
+        "R": "CEO",
+        "A": "COO",
+        "C": "CFO"
+      }
+    }
+  ],
+  "inference_default": "지식업데이트",
+  "inference_rules": [
+    {
+      "all": [
+        "강전",
+        "약전",
+        "트레이",
+        "이격"
+      ],
+      "target": "간섭검토"
+    },
+    {
+      "any": [
+        "mdf",
+        "idf",
+        "cctv",
+        "광케이블",
+        "통신실",
+        "약전",
+        "nvr",
+        "poe"
+      ],
+      "target": "통신"
+    },
+    {
+      "any": [
+        "방화셔터",
+        "제연팬",
+        "감지기",
+        "수신기",
+        "발신기",
+        "방재 연동",
+        "내화배선"
+      ],
+      "target": "소방전기"
+    },
+    {
+      "all": [
+        "스프링클러",
+        "헤드 위",
+        "덕트"
+      ],
+      "target": "간섭검토"
+    },
+    {
+      "any": [
+        "소화배관",
+        "소방배관",
+        "fire protection pipe",
+        "sprinkler pipe"
+      ],
+      "target": "소방기계"
+    },
+    {
+      "any_groups": [
+        [
+          "강전 트레이",
+          "전기 트레이",
+          "케이블 트레이"
+        ],
+        [
+          "냉수",
+          "물 배관",
+          "배관",
+          "누수",
+          "결로"
+        ]
+      ],
+      "target": "전기"
+    },
+    {
+      "any": [
+        "분전반",
+        "수배전반",
+        "큐비클",
+        "전기실"
+      ],
+      "target": "전기"
+    },
+    {
+      "any": [
+        "냉매배관",
+        "냉매",
+        "팽창탱크",
+        "브라인",
+        "글리콜"
+      ],
+      "target": "공조배관"
+    },
+    {
+      "any": [
+        "nwc 파일",
+        "nwc 내보내",
+        "revit 버전 통일",
+        "좌표계 정합",
+        "공종 간 좌표"
+      ],
+      "target": "설비시공조율"
+    },
+    {
+      "all": [
+        "덕트"
+      ],
+      "any": [
+        "단열",
+        "insulation",
+        "외경"
+      ],
+      "target": "공조덕트"
+    },
+    {
+      "any": [
+        "제연덕트",
+        "제연 덕트",
+        "주덕트",
+        "디퓨저 풍량"
+      ],
+      "target": "공조덕트"
+    },
+    {
+      "any": [
+        "간섭",
+        "충돌",
+        "겹치",
+        "클래시",
+        "clash",
+        "navisworks",
+        "나비스웍스",
+        "bcf",
+        "rfi",
+        "all vs all",
+        "nwc"
+      ],
+      "target": "간섭검토"
+    },
+    {
+      "all": [
+        "구조 보",
+        "배관",
+        "관통"
+      ],
+      "target": "간섭검토"
+    },
+    {
+      "all": [
+        "오배수",
+        "덕트"
+      ],
+      "any": [
+        "충돌",
+        "움직",
+        "우선"
+      ],
+      "target": "간섭검토"
+    },
+    {
+      "all": [
+        "방화댐퍼"
+      ],
+      "any": [
+        "이격",
+        "벽체",
+        "설치"
+      ],
+      "target": "간섭검토"
+    },
+    {
+      "any": [
+        "통기관",
+        "통기",
+        "트랩",
+        "봉수",
+        "급탕환수",
+        "오배수",
+        "우수관",
+        "집수정"
+      ],
+      "target": "위생"
+    },
+    {
+      "any": [
+        "천장 안",
+        "천장속",
+        "천장 속",
+        "시공조율",
+        "공종 우선순위"
+      ],
+      "target": "설비시공조율"
+    },
+    {
+      "any": [
+        "revit api",
+        "add-in",
+        "addin",
+        "애드인",
+        ".net",
+        "csproj",
+        "transaction",
+        "externalcommand",
+        "externalevent",
+        "revitlinkinstance",
+        "getlinkdocument"
+      ],
+      "target": "Revit_Addin"
+    },
+    {
+      "any": [
+        "다이나모",
+        "dynamo"
+      ],
+      "target": "Dynamo"
+    },
+    {
+      "any": [
+        "navisworks api",
+        "navisworks addin",
+        "navisworks add-in",
+        "나비스웍스 api",
+        "나비스웍스 애드인"
+      ],
+      "target": "Navisworks_Addin"
+    },
+    {
+      "any_groups": [
+        [
+          "도면",
+          "계통도",
+          "장비일람표",
+          "부하계산서",
+          "범례"
+        ],
+        [
+          "cws",
+          "cwr",
+          "냉각수",
+          "냉수",
+          "온수",
+          "냉매",
+          "공조배관"
+        ]
+      ],
+      "target": "공조배관"
+    },
+    {
+      "any": [
+        "도면",
+        "계통도",
+        "장비일람표",
+        "부하계산서",
+        "범례"
+      ],
+      "target": "설비도면해석"
+    },
+    {
+      "any": [
+        "cws",
+        "cwr",
+        "chws",
+        "chwr",
+        "hws",
+        "hwr",
+        "냉각수",
+        "냉수",
+        "냉매",
+        "브라인",
+        "글리콜"
+      ],
+      "target": "공조배관"
+    },
+    {
+      "any": [
+        "스프링클러",
+        "sprinkler",
+        "살수",
+        "헤드"
+      ],
+      "target": "소방기계"
+    },
+    {
+      "any": [
+        "vav",
+        "정압 센서",
+        "덕트 정압",
+        "최소풍량",
+        "bms",
+        "bas",
+        "ddc",
+        "point list",
+        "sequence of operation"
+      ],
+      "target": "설비자동제어"
+    },
+    {
+      "any": [
+        "납품검수",
+        "납품 검수",
+        "ids",
+        "bcf",
+        "품질검수",
+        "bim 검수",
+        "모델검수",
+        "ifcpropertyset",
+        "pset",
+        "오류코드",
+        "검수항목",
+        "모델 오류",
+        "bim 품질"
+      ],
+      "target": "BIM_납품검수"
+    },
+    {
+      "any": [
+        "ifc",
+        "openbim",
+        "buildingsmart",
+        "ifc5",
+        "ifc4",
+        "ifc 4.3",
+        "ifcspace",
+        "ifczone",
+        "ifcwall",
+        "ifcbeam",
+        "ifccolumn"
+      ],
+      "target": "IFC_OpenBIM"
+    },
+    {
+      "any": [
+        "scan-to-bim",
+        "스캔",
+        "포인트클라우드",
+        "point cloud",
+        "lidar",
+        "라이다",
+        "leica",
+        "faro",
+        "rcp",
+        "e57",
+        "현실캡처",
+        "reality capture"
+      ],
+      "target": "OpenBIM_프로그램연동"
+    },
+    {
+      "any": [
+        "견적",
+        "단가",
+        "표준시장단가",
+        "원가",
+        "공사비",
+        "mm 산출",
+        "투입공수",
+        "물량산출",
+        "5d bim",
+        "5d",
+        "cost",
+        "비용산정"
+      ],
+      "target": "BIM_프로젝트_견적산정"
+    },
+    {
+      "any": [
+        "인력파견",
+        "파견",
+        "bim 전문가 자격",
+        "자격증",
+        "bim 운용전문가",
+        "iso 19650-5",
+        "보안관리",
+        "파견 계약",
+        "외주 인력"
+      ],
+      "target": "BIM_인력파견_기준"
+    },
+    {
+      "any": [
+        "제안서",
+        "bim 제안",
+        "rir",
+        "제안 작성"
+      ],
+      "target": "BIM_제안서"
+    },
+    {
+      "any": [
+        "bep",
+        "수행계획서",
+        "eir",
+        "oir",
+        "air"
+      ],
+      "target": "BEP_수행계획서"
+    },
+    {
+      "any": [
+        "4d bim",
+        "4d",
+        "공정시뮬레이션",
+        "wbs",
+        "primavera",
+        "ms project",
+        "공정표"
+      ],
+      "target": "4D5D_BIM"
+    },
+    {
+      "any": [
+        "디지털트윈",
+        "digital twin",
+        "fm bim",
+        "자산관리",
+        "tandem",
+        "autodesk tandem",
+        "시설관리",
+        "유지관리 bim",
+        "cobie"
+      ],
+      "target": "FM_자산관리"
+    },
+    {
+      "any": [
+        "패시브하우스",
+        "phiko",
+        "내재탄소",
+        "탄소발자국",
+        "lca",
+        "zeb",
+        "제로에너지"
+      ],
+      "target": "패시브하우스_PHIKO"
+    },
+    {
+      "any": [
+        "패밀리",
+        "rfa",
+        "family",
+        "커넥터 설정",
+        "공유 파라미터",
+        "mep 패밀리"
+      ],
+      "target": "Revit_Family제작"
+    },
+    {
+      "any": [
+        "연면적",
+        "바닥면적",
+        "건축면적",
+        "건물 면적",
+        "시설 면적",
+        "공항 면적",
+        "bim 시장",
+        "시장규모",
+        "의무화"
+      ],
+      "target": "건축"
+    },
+    {
+      "any": [
+        "시방서",
+        "bim 지침",
+        "bim 기준"
+      ],
+      "target": "BIM_시방서"
+    },
+    {
+      "any": [
+        "엑셀",
+        "excel",
+        "openpyxl",
+        "xlsxwriter",
+        "파이썬 자동화"
+      ],
+      "target": "엑셀자동화"
+    },
+    {
+      "target": "@discipline_keywords"
+    },
+    {
+      "target": "@knowledge_agent_name"
+    },
+    {
+      "any": [
+        "교육",
+        "커리큘럼",
+        "온보딩",
+        "연차"
+      ],
+      "target": "교육컨설팅"
+    },
+    {
+      "any": [
+        "개발",
+        "코드",
+        "qwen",
+        "api"
+      ],
+      "target": "프로그램개발"
+    }
+  ],
+  "agents": [
+    {
+      "id": "CEO",
+      "team": "MANAGEMENT",
+      "status": "active"
+    },
+    {
+      "id": "COO",
+      "team": "MANAGEMENT",
+      "status": "active",
+      "extra_alias": true
+    },
+    {
+      "id": "CFO",
+      "team": "MANAGEMENT",
+      "status": "active",
+      "extra_alias": true
+    },
+    {
+      "id": "조율차장",
+      "team": "MANAGEMENT",
+      "status": "active"
+    },
+    {
+      "id": "건축",
+      "team": "ESTIMATION_TEAM",
+      "status": "active",
+      "discipline_keywords": [
+        "건축",
+        "천장고",
+        "방화구획",
+        "마감",
+        "실면적",
+        "문짝",
+        "문틀",
+        "벽체",
+        "면적",
+        "연면적",
+        "바닥면적",
+        "건축면적",
+        "층수",
+        "층고",
+        "공항",
+        "터미널",
+        "여객터미널",
+        "청사",
+        "공공건물",
+        "건물규모",
+        "시설규모",
+        "lod 300",
+        "lod 350",
+        "엘리베이터 샤프트",
+        "피난경로",
+        "방화구획 관통",
+        "건축 bim",
+        "건축 lod",
+        "건물 용도"
+      ],
+      "default_knowledge_seed": "천장고, 피난/방화구획, 실 사용성, 마감 두께, 유지관리 접근성을 Add-in 요구사항 검토 기준으로 둔다.",
+      "discipline_group": "건축"
+    },
+    {
+      "id": "구조",
+      "team": "ESTIMATION_TEAM",
+      "status": "active",
+      "discipline_keywords": [
+        "구조",
+        "구조보",
+        "기둥",
+        "슬래브",
+        "전이보",
+        "타공",
+        "관통",
+        "보강",
+        "pc보",
+        "pc 보",
+        "전이보 관통",
+        "보 관통",
+        "기둥 관통",
+        "천공 가능",
+        "구조기술사",
+        "내력벽",
+        "전단벽"
+      ],
+      "default_knowledge_seed": "보/기둥/슬래브 관통, 전이보, 개구부 보강 가능 여부와 구조 검토 승인 필요 여부를 우선 판단한다.",
+      "discipline_group": "구조"
+    },
+    {
+      "id": "토목",
+      "team": "ESTIMATION_TEAM",
+      "status": "active",
+      "discipline_keywords": [
+        "토목",
+        "대지",
+        "외부 인입",
+        "gl",
+        "관로",
+        "우수",
+        "오수"
+      ],
+      "default_knowledge_seed": "외부 인입 레벨, 대지 경계, 우수/오수 관로, GL/FL 관계와 건축/MEP 접속 조건을 함께 검토한다.",
+      "discipline_group": "토목"
+    },
+    {
+      "id": "공조배관",
+      "team": "ENGINEERING_TEAM",
+      "status": "active",
+      "discipline_keywords": [
+        "공조배관",
+        "냉온수",
+        "냉수",
+        "온수",
+        "냉각수",
+        "냉매",
+        "증기",
+        "응축수",
+        "브라인",
+        "글리콜",
+        "chw",
+        "chws",
+        "chwr",
+        "hw",
+        "hws",
+        "hwr",
+        "cw",
+        "cws",
+        "cwr",
+        "ref",
+        "stm",
+        "cond",
+        "배관",
+        "밸브",
+        "단열"
+      ],
+      "default_knowledge_seed": "단열 포함 외경, 밸브 조작 공간, 플랜지/유니온 유지관리, 냉온수/냉매 배관의 레이어를 확인한다.",
+      "discipline_group": "공조배관"
+    },
+    {
+      "id": "공조덕트",
+      "team": "ENGINEERING_TEAM",
+      "status": "active",
+      "discipline_keywords": [
+        "공조덕트",
+        "덕트",
+        "풍량",
+        "정압",
+        "제연덕트"
+      ],
+      "default_knowledge_seed": "덕트 사이즈, 풍량/정압, 점검구, 소음/진동, 제연덕트 우선순위를 보고서 항목에 포함한다.",
+      "discipline_group": "공조덕트"
+    },
+    {
+      "id": "위생",
+      "team": "ENGINEERING_TEAM",
+      "status": "active",
+      "discipline_keywords": [
+        "위생",
+        "급수",
+        "배수",
+        "오배수",
+        "구배",
+        "펌프",
+        "위생배관"
+      ],
+      "default_knowledge_seed": "배수 구배, 통기관, 유지관리 공간, 펌프/집수정 연계와 관경별 간섭 우선순위를 반영한다.",
+      "discipline_group": "위생"
+    },
+    {
+      "id": "소방기계",
+      "team": "ENGINEERING_TEAM",
+      "status": "active",
+      "discipline_keywords": [
+        "소방기계",
+        "스프링클러",
+        "소화",
+        "소방배관",
+        "헤드",
+        "폐쇄형 헤드",
+        "헤드 간격",
+        "살수 장애",
+        "준비작동식",
+        "습식",
+        "preaction",
+        "fire protection pipe",
+        "sprinkler pipe",
+        "소화배관 이격"
+      ],
+      "default_knowledge_seed": "스프링클러 헤드 살수반경, 배관 레이어, 소방법 민감 구간, 알람밸브/펌프 연계 조건을 확인한다.",
+      "discipline_group": "소방기계"
+    },
+    {
+      "id": "소방전기",
+      "team": "ENGINEERING_TEAM",
+      "status": "active",
+      "discipline_keywords": [
+        "소방전기",
+        "감지기",
+        "발신기",
+        "수신기",
+        "방재"
+      ],
+      "default_knowledge_seed": "감지기 배치, 방재 신호, 방화셔터/제연 연동, 배선 경로와 유지관리 접근성을 검토한다.",
+      "discipline_group": "소방전기"
+    },
+    {
+      "id": "전기",
+      "team": "ENGINEERING_TEAM",
+      "status": "active",
+      "discipline_keywords": [
+        "전기",
+        "케이블",
+        "트레이",
+        "분전반",
+        "전력",
+        "강전"
+      ],
+      "default_knowledge_seed": "케이블 트레이 폭/높이, 곡률 반경, 누수 회피, 강전/약전 이격과 분전반 접근 공간을 우선한다.",
+      "discipline_group": "전기"
+    },
+    {
+      "id": "통신",
+      "team": "ENGINEERING_TEAM",
+      "status": "active",
+      "discipline_keywords": [
+        "통신",
+        "약전",
+        "네트워크",
+        "cctv",
+        "방송",
+        "통신트레이",
+        "mdf",
+        "idf",
+        "lan",
+        "광케이블",
+        "utp",
+        "cat6",
+        "광선로",
+        "배선반",
+        "통신실",
+        "서버실 온도",
+        "통신 케이블 이격",
+        "약전 이격",
+        "mdf idf 온도"
+      ],
+      "default_knowledge_seed": "약전 트레이, 네트워크/CCTV/방송 배선, 전력선 이격, MDF/IDF 접근성을 요구사항에 반영한다.",
+      "discipline_group": "통신"
+    },
+    {
+      "id": "요구사항분석",
+      "team": "ADDIN_DEVELOPMENT_TEAM",
+      "status": "active"
+    },
+    {
+      "id": "Revit_Addin",
+      "team": "ADDIN_DEVELOPMENT_TEAM",
+      "status": "active"
+    },
+    {
+      "id": "Navisworks_Addin",
+      "team": "ADDIN_DEVELOPMENT_TEAM",
+      "status": "active"
+    },
+    {
+      "id": "빌드검증",
+      "team": "ADDIN_DEVELOPMENT_TEAM",
+      "status": "active"
+    },
+    {
+      "id": "배포문서",
+      "team": "ADDIN_DEVELOPMENT_TEAM",
+      "status": "active"
+    },
+    {
+      "id": "제품패키징",
+      "team": "STORE_COMMERCIALIZATION_TEAM",
+      "status": "active"
+    },
+    {
+      "id": "스토어심사",
+      "team": "STORE_COMMERCIALIZATION_TEAM",
+      "status": "active"
+    },
+    {
+      "id": "라이선스결제",
+      "team": "STORE_COMMERCIALIZATION_TEAM",
+      "status": "active"
+    },
+    {
+      "id": "고객지원 CS",
+      "team": "STORE_COMMERCIALIZATION_TEAM",
+      "status": "active",
+      "extra_alias": true
+    },
+    {
+      "id": "경영지원",
+      "team": "ADMIN_FINANCE_TEAM",
+      "status": "active",
+      "extra_alias": true
+    },
+    {
+      "id": "경비정산_AI",
+      "team": "ADMIN_FINANCE_TEAM",
+      "status": "active"
+    },
+    {
+      "id": "HR_인재분석관",
+      "team": "PEOPLE_ENABLEMENT_TEAM",
+      "status": "active"
+    },
+    {
+      "id": "교육컨설팅",
+      "team": "PEOPLE_ENABLEMENT_TEAM",
+      "status": "active",
+      "extra_alias": true
+    },
+    {
+      "id": "러닝콘텐츠디자이너",
+      "team": "PEOPLE_ENABLEMENT_TEAM",
+      "status": "active",
+      "extra_alias": true
+    },
+    {
+      "id": "지식업데이트",
+      "team": "KNOWLEDGE_TEAM",
+      "status": "active"
+    },
+    {
+      "id": "지식큐레이터",
+      "team": "KNOWLEDGE_TEAM",
+      "status": "active",
+      "extra_alias": true
+    },
+    {
+      "id": "간섭검토",
+      "team": null,
+      "status": "active",
+      "discipline_keywords": [
+        "간섭검토",
+        "간섭 검토",
+        "clash",
+        "클래시",
+        "clash detective",
+        "interference check",
+        "공종 조율",
+        "공종간 충돌",
+        "공종별 우선순위",
+        "간섭 우선순위",
+        "navisworks 간섭",
+        "간섭 보고서",
+        "clash report",
+        "bcf",
+        "mep 조율",
+        "mep 충돌",
+        "설비 조율",
+        "hard clash",
+        "soft clash",
+        "clearance clash",
+        "lod 400 모델",
+        "0 hard clash",
+        "nwc 버전",
+        "clash 보고서",
+        "간섭 등급",
+        "critical major minor",
+        "구조 보 하단",
+        "구조보 하단",
+        "배관 겹침",
+        "보 하단고",
+        "링크 구조 모델"
+      ],
+      "default_knowledge_seed": "공종별 간섭 우선순위(제연>소방>오배수>주덕트>전기트레이>통신트레이 순), 구조 관통 기준(기둥·전이보 불가, 일반보 조건부), 이격 기준(강전↔약전 300mm, 소화배관↔전기트레이 300mm), Revit Interference Check vs Navisworks Clash Detective 사용 시점 구분을 핵심 기준으로 둔다."
+    },
+    {
+      "id": "BIM_템플릿기획관",
+      "team": null,
+      "status": "extra"
+    },
+    {
+      "id": "CS_기술지원관",
+      "team": null,
+      "status": "extra"
+    },
+    {
+      "id": "Caveman_토큰다이어터",
+      "team": null,
+      "status": "extra"
+    },
+    {
+      "id": "Dynamo",
+      "team": null,
+      "status": "extra"
+    },
+    {
+      "id": "EIR/BEP_심사원",
+      "team": null,
+      "status": "extra"
+    },
+    {
+      "id": "QA_테스터",
+      "team": null,
+      "status": "extra"
+    },
+    {
+      "id": "Qwen_Coder_8B",
+      "team": null,
+      "status": "extra"
+    },
+    {
+      "id": "견적서담당",
+      "team": null,
+      "status": "extra"
+    },
+    {
+      "id": "견적심사원",
+      "team": null,
+      "status": "extra"
+    },
+    {
+      "id": "글로벌_매출관리원",
+      "team": null,
+      "status": "extra"
+    },
+    {
+      "id": "글로벌_유통기획관",
+      "team": null,
+      "status": "extra"
+    },
+    {
+      "id": "라이선스_보안관",
+      "team": null,
+      "status": "extra"
+    },
+    {
+      "id": "법무조항검토",
+      "team": null,
+      "status": "extra"
+    },
+    {
+      "id": "브랜드마케팅",
+      "team": null,
+      "status": "extra"
+    },
+    {
+      "id": "아이디어발굴",
+      "team": null,
+      "status": "extra"
+    },
+    {
+      "id": "엑셀자동화",
+      "team": null,
+      "status": "extra"
+    },
+    {
+      "id": "엔지니어링계산서",
+      "team": null,
+      "status": "extra"
+    },
+    {
+      "id": "외주관리",
+      "team": null,
+      "status": "extra"
+    },
+    {
+      "id": "인프라_DevOps (Obsidian)",
+      "team": null,
+      "status": "extra"
+    },
+    {
+      "id": "전략기획",
+      "team": null,
+      "status": "extra"
+    },
+    {
+      "id": "최고전략 (CSO)",
+      "team": null,
+      "status": "extra"
+    },
+    {
+      "id": "테크니컬_라이터",
+      "team": null,
+      "status": "extra"
+    },
+    {
+      "id": "파이프라인_오케스트레이터",
+      "team": null,
+      "status": "extra"
+    },
+    {
+      "id": "프로그램개발",
+      "team": null,
+      "status": "extra"
+    },
+    {
+      "id": "프로젝트분석",
+      "team": null,
+      "status": "extra"
+    },
+    {
+      "id": "프롬프트엔지니어",
+      "team": null,
+      "status": "extra"
+    },
+    {
+      "id": "협력사안부",
+      "team": null,
+      "status": "extra"
+    },
+    {
+      "id": "설비시공조율",
+      "team": null,
+      "status": "inference_only",
+      "kb_dir": "90_확장에이전트"
+    },
+    {
+      "id": "설비도면해석",
+      "team": null,
+      "status": "inference_only",
+      "kb_dir": "90_확장에이전트"
+    },
+    {
+      "id": "설비자동제어",
+      "team": null,
+      "status": "inference_only",
+      "kb_dir": "90_확장에이전트"
+    },
+    {
+      "id": "BIM_납품검수",
+      "team": null,
+      "status": "inference_only",
+      "kb_dir": "90_확장에이전트"
+    },
+    {
+      "id": "IFC_OpenBIM",
+      "team": null,
+      "status": "inference_only",
+      "kb_dir": "90_확장에이전트"
+    },
+    {
+      "id": "OpenBIM_프로그램연동",
+      "team": null,
+      "status": "inference_only",
+      "kb_dir": "90_확장에이전트"
+    },
+    {
+      "id": "BIM_프로젝트_견적산정",
+      "team": null,
+      "status": "inference_only",
+      "kb_dir": "90_확장에이전트"
+    },
+    {
+      "id": "BIM_인력파견_기준",
+      "team": null,
+      "status": "inference_only",
+      "kb_dir": "90_확장에이전트"
+    },
+    {
+      "id": "BIM_제안서",
+      "team": null,
+      "status": "inference_only",
+      "kb_dir": "90_확장에이전트"
+    },
+    {
+      "id": "BEP_수행계획서",
+      "team": null,
+      "status": "inference_only",
+      "kb_dir": "90_확장에이전트"
+    },
+    {
+      "id": "4D5D_BIM",
+      "team": null,
+      "status": "inference_only",
+      "kb_dir": "90_확장에이전트"
+    },
+    {
+      "id": "FM_자산관리",
+      "team": null,
+      "status": "inference_only",
+      "kb_dir": "90_확장에이전트"
+    },
+    {
+      "id": "패시브하우스_PHIKO",
+      "team": null,
+      "status": "inference_only",
+      "kb_dir": "90_확장에이전트"
+    },
+    {
+      "id": "Revit_Family제작",
+      "team": null,
+      "status": "inference_only",
+      "kb_dir": "90_확장에이전트"
+    },
+    {
+      "id": "BIM_시방서",
+      "team": null,
+      "status": "inference_only",
+      "kb_dir": "90_확장에이전트"
+    }
+  ]
+}
