@@ -53,17 +53,24 @@ _PRODUCTS_PREFIX = _rel_prefix(PRODUCTS_DIR)
 EXCLUDE_PARTS = {
     ".git",
     ".dev-venv",
+    ".pytest_cache",
+    ".wrangler",
     "__pycache__",
     "node_modules",
     "bin",
     "obj",
     "dist",
+    "logs",
+    "runtime",
     ".bkit",
     ".claude",
     ".pdca-snapshots",
 }
 EXCLUDE_VAULTS = {
     "obsidian_vaults/lua_bim_lab_global_map",
+}
+EXCLUDE_PREFIXES = {
+    "commercial_addins/BIM_Command_Center_For_Revit/03_store_submission/autodesk_store_upload",
 }
 
 KEYWORDS = [
@@ -99,6 +106,8 @@ def should_skip(path: Path) -> bool:
     if any(rel.startswith(exc) for exc in _VAULT_EXCEPTIONS):
         return False  # NAS_Knowledge는 인덱싱 대상
     if any(rel.startswith(prefix) for prefix in EXCLUDE_VAULTS):
+        return True
+    if any(rel.startswith(prefix) for prefix in EXCLUDE_PREFIXES):
         return True
     return any(part in EXCLUDE_PARTS for part in path.parts)
 

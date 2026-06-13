@@ -35,8 +35,13 @@ trap 'rm -f "$RUNNING_MARKER"' EXIT
 
   MD_COUNT="$(find . -name '*.md' \
     -not -path './.dev-venv/*' \
+    -not -path './.pytest_cache/*' \
+    -not -path './.wrangler/*' \
     -not -path './obsidian_vaults/lua_bim_lab_global_map/*' \
     -not -path './dist/*' \
+    -not -path './logs/*' \
+    -not -path './runtime/*' \
+    -not -path './commercial_addins/*/03_store_submission/autodesk_store_upload*' \
     -not -path './node_modules/*' | wc -l | tr -d ' ')"
 
   ERROR_COUNT="$(find obsidian_vaults/model_quality_auditor/03_Errors_Fixes -name 'ERR-*.md' 2>/dev/null | wc -l | tr -d ' ')"

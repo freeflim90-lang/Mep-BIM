@@ -28,10 +28,8 @@ from typing import NamedTuple
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
-from backend.core.paths import AGENT_KB_DIR  # noqa: E402
+import backend.server_total as server  # noqa: E402
 
-KB_DIR = AGENT_KB_DIR
-QA_DIR = KB_DIR / "qa"
 LOG_DIR = PROJECT_ROOT / "logs" / "qa_simulation"
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -49,9 +47,79 @@ class TestCase(NamedTuple):
     required_keywords: list[str]
     quality_type: str  # numeric / regulation / conditional / general
     domain: str
+    customer_context: str = "일반 고객"
+    asker_seniority: int = 0
+    expert_panel_role: str = "도메인 QA 패널"
+    context_keywords: tuple[str, ...] = ()
 
 
-SIMULATION_CASES: list[TestCase] = [
+def _seniority_panel_cases() -> list[TestCase]:
+    """1년차부터 20년차 AI 조직원 전문가가 던지는 깊이별 검증 질문."""
+    return [
+        TestCase("CHWS와 CHWR의 차이를 초보 고객에게 한 문단으로 설명할 수 있나요?",
+                 "공조배관", ["chws", "chwr", "공급"], "general", "공조배관",
+                 "입문 학습자", 1, "공조배관 주니어", ("초보", "차이", "공급")),
+        TestCase("Revit에서 배관 계통명이 뒤바뀌었을 때 초급 모델러가 확인할 순서는?",
+                 "공조배관", ["revit", "계통", "방향"], "general", "공조배관",
+                 "초급 모델러", 2, "Revit MEP 주니어", ("순서", "확인", "revit")),
+        TestCase("덕트 풍속 기준을 설계 보조자가 도면 검토에 적용하려면 어떤 수치를 봐야 하나요?",
+                 "공조덕트", ["풍속", "m/s", "소음"], "numeric", "공조덕트",
+                 "설계 보조자", 3, "공조덕트 주니어", ("수치", "기준", "도면")),
+        TestCase("DN100 오배수 구배가 맞지 않을 때 현장 BIM 담당자는 어떤 리스크를 먼저 봐야 하나요?",
+                 "위생", ["dn100", "구배", "막힘"], "numeric", "위생",
+                 "현장 BIM 담당자", 4, "위생 BIM 실무자", ("리스크", "현장", "구배")),
+        TestCase("케이블 트레이 충전율 초과를 고객에게 설명할 때 비용보다 먼저 말해야 할 품질 리스크는?",
+                 "전기", ["50%", "발열", "증설"], "numeric", "전기",
+                 "전기 BIM 고객", 5, "전기 BIM 실무자", ("리스크", "발열", "품질")),
+        TestCase("제연 덕트와 일반 덕트가 충돌하면 조율회의에서 어떤 공종을 우선 보호해야 하나요?",
+                 "간섭검토", ["제연", "소방", "우선"], "conditional", "간섭검토",
+                 "조율회의 참석자", 6, "간섭검토 실무자", ("우선", "회의", "조율")),
+        TestCase("Navisworks 클래시가 수천 건일 때 실무 리더는 어떤 규칙으로 노이즈를 줄여야 하나요?",
+                 "간섭검토", ["navisworks", "rule", "공차"], "conditional", "Navisworks실무",
+                 "BIM 실무 리더", 7, "Navisworks 실무자", ("노이즈", "규칙", "우선순위")),
+        TestCase("방화구획 관통 MEP 이슈를 건축, 설비, 소방 관점에서 분리해 설명할 수 있나요?",
+                 "건축", ["방화구획", "내화채움", "슬리브"], "conditional", "건축",
+                 "복합 공종 고객", 8, "건축 조율 전문가", ("건축", "설비", "소방")),
+        TestCase("LOD 300과 LOD 350 차이를 납품 품질 기준으로 판단하면 어떤 증거가 필요하나요?",
+                 "건축", ["lod 300", "lod 350", "공종"], "conditional", "BIM프로세스",
+                 "납품 품질 관리자", 9, "BIM 품질 관리자", ("납품", "증거", "품질")),
+        TestCase("스프링클러 살수 장애를 단순 간섭이 아니라 생명안전 리스크로 설명하려면 무엇이 빠지면 안 되나요?",
+                 "소방기계", ["살수", "장애", "헤드"], "numeric", "소방기계",
+                 "소방 안전 고객", 10, "소방기계 전문가", ("생명안전", "리스크", "장애")),
+        TestCase("MEP 공종 우선순위를 프로젝트 표준으로 만들 때 예외 규칙은 어떻게 둬야 하나요?",
+                 "설비시공조율", ["제연", "소방", "오배수"], "conditional", "MEP조율",
+                 "프로젝트 BIM 매니저", 11, "시공조율 리더", ("예외", "표준", "프로젝트")),
+        TestCase("간섭 보고서가 발주처 의사결정 자료가 되려면 어떤 필드와 등급 체계가 필요하나요?",
+                 "간섭검토", ["클래시id", "bcf", "critical"], "conditional", "BIM프로세스",
+                 "발주처 보고 고객", 12, "BIM 프로세스 관리자", ("의사결정", "등급", "보고")),
+        TestCase("전기실 상부 배관 금지 원칙을 비용, 안전, 유지보수 관점에서 어떻게 설득해야 하나요?",
+                 "전기", ["전기실", "누수", "안전"], "conditional", "전기",
+                 "PM/공사관리 고객", 13, "전기 조율 책임자", ("비용", "안전", "유지보수")),
+        TestCase("Revit 간섭검토와 Navisworks 검토를 조직 표준으로 나누는 기준은 무엇인가요?",
+                 "간섭검토", ["revit", "navisworks", "hard clash"], "conditional", "Revit실무",
+                 "BIM 조직 운영자", 14, "BIM 표준 관리자", ("조직", "표준", "기준")),
+        TestCase("고객 질문이 법규 확인인지 실무 조율인지 구분하려면 답변 전에 어떤 맥락을 확인해야 하나요?",
+                 "요구사항분석", ["요구사항", "범위", "확인"], "conditional", "요구사항분석",
+                 "상담/영업 고객", 15, "요구사항 분석가", ("맥락", "범위", "확인")),
+        TestCase("모델 QA 상품에서 자동 검사와 전문가 검토의 경계를 고객에게 어떻게 설명해야 하나요?",
+                 "QA_테스터", ["기능", "재현", "케이스"], "conditional", "QA_테스터",
+                 "유료 QA 고객", 16, "QA 리드", ("자동", "전문가", "경계")),
+        TestCase("같은 간섭 질문에 대해 초보자, BIM 매니저, 발주처에게 답변 구조를 어떻게 다르게 잡아야 하나요?",
+                 "간섭검토", ["제연", "소방", "오배수"], "conditional", "간섭검토",
+                 "혼합 이해관계자", 17, "전략 조율 전문가", ("초보자", "매니저", "발주처")),
+        TestCase("QA 답변이 법적 확답처럼 오해되지 않게 하면서도 실무적으로 유용하려면 어떤 표현 원칙이 필요한가요?",
+                 "고객지원CS", ["범위", "안내", "확인"], "conditional", "고객지원CS",
+                 "리스크 민감 고객", 18, "고객지원 책임자", ("오해", "범위", "실무")),
+        TestCase("LUA BIM LABS의 지식 답변 품질을 제품화하려면 어떤 평가 축을 KPI로 삼아야 하나요?",
+                 "지식큐레이터", ["지식", "검토", "qa"], "conditional", "지식큐레이터",
+                 "내부 운영진", 19, "지식 품질 책임자", ("kpi", "평가", "품질")),
+        TestCase("20년차 전문가라면 이 답변 체계가 3년 뒤에도 유효하려면 어떤 지식 업데이트 루프가 필요하다고 보나요?",
+                 "지식업데이트", ["업데이트", "검토", "지식"], "conditional", "지식업데이트",
+                 "장기 전략 고객", 20, "지식 전략 책임자", ("장기", "업데이트", "루프")),
+    ]
+
+
+SIMULATION_CASES: list[TestCase] = _seniority_panel_cases() + [
 
     # ────────── 간섭검토 ──────────────────────────────────────────────────────
     TestCase("소화배관이 전기 케이블 트레이 위에 놓여 있으면 문제가 있나요?",
@@ -178,62 +246,14 @@ SIMULATION_CASES: list[TestCase] = [
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# 지식 검색 엔진 (validate_knowledge_qa.py 와 동일 로직 재사용)
+# 지식 검색 엔진
 # ─────────────────────────────────────────────────────────────────────────────
 
-_NOISE_LINES = ("- source:", "- tags:", "[tavily]", "[ddg]", "auto-enrich", "auto-quality",
-                "needs-review", "자동 수집", "auto-collect", "출처: http")
-
-
-def _query_terms(query: str) -> list[str]:
-    raw = re.findall(r"[A-Za-z0-9_#+.\-가-힣]{2,}", query.lower())
-    stopwords = {"으로","에서","대한","관련","정리","알려줘","기준","방법","어떻게","어떤",
-                 "있어","인지","뭐야","뭐임","하나요","해요","됩니까","됩니다","입니까","이나요"}
-    return [t for t in raw if t not in stopwords][:20]
-
-
-def _score(text: str, terms: list[str]) -> int:
-    lower = text.lower()
-    return sum(min(lower.count(t), 6) for t in terms)
-
-
-def _best_excerpt(content: str, terms: list[str], max_chars: int = 3000) -> str:
-    sections = [s.strip() for s in re.split(r"(?=^## )", content, flags=re.MULTILINE) if s.strip()]
-    if not sections:
-        return content[:max_chars]
-
-    def clean(s: str) -> str:
-        return "\n".join(l for l in s.splitlines() if not any(n in l.lower() for n in _NOISE_LINES)).strip()
-
-    scored = sorted(
-        [(_score(s, terms), i, clean(s)) for i, s in enumerate(sections)],
-        key=lambda x: (x[0], -x[1]), reverse=True
-    )
-    return scored[0][2][:max_chars] if scored else sections[0][:max_chars]
-
-
-def _load_kb_files() -> dict[str, str]:
-    """KB 파일과 QA 파일을 {stem: content} 로 모두 로드."""
-    files: dict[str, str] = {}
-    for path in KB_DIR.glob("*.md"):
-        files[path.stem] = path.read_text(encoding="utf-8")
-    for path in QA_DIR.glob("*_QA.md"):
-        stem = path.stem.replace("_QA", "")
-        existing = files.get(stem, "")
-        files[stem] = existing + "\n\n" + path.read_text(encoding="utf-8")
-    return files
-
-
-def _search(question: str, kb: dict[str, str]) -> list[tuple[int, str]]:
-    """질문에 가장 관련 있는 파일 top-5를 (score, stem) 형태로 반환."""
-    terms = _query_terms(question)
-    scored = []
-    for stem, content in kb.items():
-        s = _score(content, terms)
-        if s > 0:
-            scored.append((s, stem))
-    scored.sort(reverse=True)
-    return scored[:5]
+def _stem_for_match(match: dict) -> str:
+    path = match.get("path")
+    if isinstance(path, Path):
+        return path.stem.removesuffix("_QA")
+    return ""
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -308,6 +328,23 @@ def score_quality(excerpt: str, quality_type: str, required_keywords: list[str])
     }
 
 
+def score_customer_fit(excerpt: str, context_keywords: tuple[str, ...]) -> dict:
+    """고객 맥락, 질문 의도, 이해관계자 관점이 답변에 반영됐는지 채점한다."""
+    if not context_keywords:
+        return {"total": 10, "hit": 0, "total_keywords": 0, "missing": []}
+
+    excerpt_lower = excerpt.lower()
+    hits = [kw for kw in context_keywords if kw.lower() in excerpt_lower]
+    missing = [kw for kw in context_keywords if kw.lower() not in excerpt_lower]
+    score = int(len(hits) / len(context_keywords) * 10)
+    return {
+        "total": score,
+        "hit": len(hits),
+        "total_keywords": len(context_keywords),
+        "missing": missing,
+    }
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 # 시뮬레이션 실행
 # ─────────────────────────────────────────────────────────────────────────────
@@ -317,41 +354,46 @@ def run_simulation(
     verbose: bool = False,
     min_score: int = 60,
 ) -> dict:
-    kb = _load_kb_files()
-
     cases = SIMULATION_CASES
     if domain_filter:
         cases = [c for c in cases if c.domain == domain_filter or c.expected_stem == domain_filter]
 
     results = []
     domain_stats: dict[str, list[int]] = {}
+    customer_stats: dict[str, list[int]] = {}
+    seniority_stats: dict[str, list[int]] = {}
 
     for case in cases:
-        ranked = _search(case.question, kb)
-        top_stems = [s for _, s in ranked[:3]]
+        matches = server.search_local_knowledge(case.question, limit=5)
+        top_stems = [_stem_for_match(match) for match in matches[:3]]
         top_stem = top_stems[0] if top_stems else ""
         routing_ok = case.expected_stem in top_stems
 
-        # 답변 생성: 정답 파일 또는 실제 top1 파일에서 발췌
-        answer_stem = case.expected_stem if case.expected_stem in kb else top_stem
-        excerpt = _best_excerpt(kb.get(answer_stem, ""), _query_terms(case.question)) if answer_stem else ""
+        excerpt = server.build_knowledge_answer(case.question, matches) if matches else ""
 
         quality = score_quality(excerpt, case.quality_type, case.required_keywords)
+        customer_fit = score_customer_fit(excerpt, case.context_keywords)
         score = quality["total"]
         if not routing_ok:
             score = max(0, score - 20)  # 라우팅 실패 패널티
+        if case.context_keywords:
+            score = max(0, score - (10 - customer_fit["total"]))  # 고객 맥락 누락 패널티
 
         passed = score >= min_score
 
         result = {
             "question": case.question,
             "domain": case.domain,
+            "customer_context": case.customer_context,
+            "asker_seniority": case.asker_seniority,
+            "expert_panel_role": case.expert_panel_role,
             "expected": case.expected_stem,
             "top1": top_stem,
             "top3": top_stems,
             "routing_ok": routing_ok,
             "score": score,
             "quality": quality,
+            "customer_fit": customer_fit,
             "passed": passed,
             "quality_type": case.quality_type,
         }
@@ -361,13 +403,27 @@ def run_simulation(
             domain_stats[case.domain] = []
         domain_stats[case.domain].append(score)
 
+        if case.customer_context not in customer_stats:
+            customer_stats[case.customer_context] = []
+        customer_stats[case.customer_context].append(score)
+
+        if case.asker_seniority:
+            seniority_band = _seniority_band(case.asker_seniority)
+            if seniority_band not in seniority_stats:
+                seniority_stats[seniority_band] = []
+            seniority_stats[seniority_band].append(score)
+
         if verbose:
-            mark = "✅" if passed else "❌"
-            print(f"{mark} [{score:3d}점] [{case.domain:<12}] {case.question[:55]}")
+            mark = "OK" if passed else "NG"
+            seniority = f"{case.asker_seniority}년차 " if case.asker_seniority else ""
+            print(f"{mark} [{score:3d}점] [{case.domain:<12}] {seniority}{case.question[:55]}")
             if not passed:
                 print(f"     라우팅: {'OK' if routing_ok else f'FAIL (top1={top_stem}, 예상={case.expected_stem})'}")
                 print(f"     키워드: {quality['kw_hit']}/{quality['kw_total']} | "
                       f"수치:{quality['numeric']} 법규:{quality['regulation']} 조건:{quality['conditional']}")
+                if case.context_keywords:
+                    print(f"     고객맥락: {customer_fit['hit']}/{customer_fit['total_keywords']} | "
+                          f"누락:{', '.join(customer_fit['missing'])}")
 
     passed_count = sum(1 for r in results if r["passed"])
     total = len(results)
@@ -382,6 +438,9 @@ def run_simulation(
             "count": len(scores),
             "pass_count": sum(1 for s in scores if s >= min_score),
         }
+
+    customer_summary = _score_summary(customer_stats, min_score)
+    seniority_summary = _score_summary(seniority_stats, min_score)
 
     # 저품질 순으로 정렬 (개선 우선순위)
     low_quality = sorted(
@@ -398,8 +457,34 @@ def run_simulation(
         "min_score_threshold": min_score,
         "results": results,
         "domain_summary": domain_summary,
+        "customer_summary": customer_summary,
+        "seniority_summary": seniority_summary,
         "low_quality": low_quality,
     }
+
+
+def _seniority_band(year: int) -> str:
+    if year <= 3:
+        return "1-3년차 개념/기초"
+    if year <= 7:
+        return "4-7년차 실무/예외"
+    if year <= 12:
+        return "8-12년차 설계/품질"
+    if year <= 16:
+        return "13-16년차 조직/상품"
+    return "17-20년차 전략/미래"
+
+
+def _score_summary(stats: dict[str, list[int]], min_score: int) -> dict[str, dict]:
+    summary = {}
+    for key, scores in stats.items():
+        summary[key] = {
+            "avg": int(sum(scores) / len(scores)),
+            "min": min(scores),
+            "count": len(scores),
+            "pass_count": sum(1 for s in scores if s >= min_score),
+        }
+    return summary
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -440,6 +525,42 @@ def build_report(sim: dict) -> str:
             f"{stat['pass_count']}/{stat['count']} | {verdict} |"
         )
 
+    if sim.get("seniority_summary"):
+        lines += [
+            f"",
+            f"---",
+            f"",
+            f"## 연차별 AI 전문가 패널 결과",
+            f"",
+            f"| 연차 구간 | 평균점수 | 최저점수 | 통과/전체 | 진단 |",
+            f"|-----------|----------|----------|-----------|------|",
+        ]
+        for band, stat in sorted(sim["seniority_summary"].items()):
+            avg = stat["avg"]
+            verdict = "✅ 양호" if avg >= 75 else ("⚠️ 보강필요" if avg >= 55 else "❌ 갭심각")
+            lines.append(
+                f"| {band} | {avg}점 | {stat['min']}점 | "
+                f"{stat['pass_count']}/{stat['count']} | {verdict} |"
+            )
+
+    if sim.get("customer_summary"):
+        lines += [
+            f"",
+            f"---",
+            f"",
+            f"## 고객 맥락별 결과",
+            f"",
+            f"| 고객 맥락 | 평균점수 | 최저점수 | 통과/전체 | 진단 |",
+            f"|-----------|----------|----------|-----------|------|",
+        ]
+        for context, stat in sorted(sim["customer_summary"].items(), key=lambda x: x[1]["avg"]):
+            avg = stat["avg"]
+            verdict = "✅ 양호" if avg >= 75 else ("⚠️ 보강필요" if avg >= 55 else "❌ 갭심각")
+            lines.append(
+                f"| {context} | {avg}점 | {stat['min']}점 | "
+                f"{stat['pass_count']}/{stat['count']} | {verdict} |"
+            )
+
     if sim["low_quality"]:
         lines += [
             f"",
@@ -449,15 +570,16 @@ def build_report(sim: dict) -> str:
             f"",
         ]
         for r in sim["low_quality"][:15]:
-            q = score_icon = ""
             score_icon = "🔴" if r["score"] < 40 else "🟡"
+            seniority = f" | **질문자**: {r['asker_seniority']}년차 {r['expert_panel_role']}" if r["asker_seniority"] else ""
             lines += [
                 f"### {score_icon} [{r['score']}점] {r['question']}",
-                f"- **도메인**: {r['domain']} | **예상파일**: `{r['expected']}` | **실제top1**: `{r['top1']}`",
+                f"- **도메인**: {r['domain']} | **고객맥락**: {r['customer_context']}{seniority}",
+                f"- **예상파일**: `{r['expected']}` | **실제top1**: `{r['top1']}`",
                 f"- **라우팅**: {'✅ 정상' if r['routing_ok'] else '❌ 오류 — 키워드 매핑 확인 필요'}",
                 f"- **품질분석**: 키워드 {r['quality']['kw_hit']}/{r['quality']['kw_total']} | "
                 f"수치점수 {r['quality']['numeric']} | 법규점수 {r['quality']['regulation']} | "
-                f"조건점수 {r['quality']['conditional']}",
+                f"조건점수 {r['quality']['conditional']} | 고객맥락 {r['customer_fit']['hit']}/{r['customer_fit']['total_keywords']}",
                 f"- **개선방향**: " + _improvement_hint(r),
                 f"",
             ]
@@ -485,8 +607,11 @@ def _improvement_hint(result: dict) -> str:
     if q["regulation"] < 5:
         hints.append(f"`{result['expected']}.md` 에 관련 법규 조항(NFTC/KDS/KEC) 명시")
     if q["kw_hit"] < q["kw_total"] // 2:
-        missing = [kw for kw in result["quality_type"] if True]
         hints.append(f"`{result['expected']}.md` 지식 내용 자체 보강 필요")
+    customer_fit = result.get("customer_fit", {})
+    if customer_fit.get("total_keywords") and customer_fit.get("total", 10) < 7:
+        missing = ", ".join(customer_fit.get("missing", [])[:4])
+        hints.append(f"고객 맥락 반영 부족 — 누락 관점: {missing}")
     return " / ".join(hints) if hints else "지식 내용 심화 보강 필요"
 
 

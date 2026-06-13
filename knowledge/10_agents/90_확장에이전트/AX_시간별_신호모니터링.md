@@ -493,3 +493,12 @@ def score_signal(text: str) -> float:
 - 전북대 내 ‘AI 건설로봇 혁신센터’ 들어선다…국토부·전북도 등 맞손 - 드론매거진 뉴스 (BIM Automation)
 
 운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-13 16:17 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-13/1617_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- Lidar Drone Market To Reach New Heights by 2035 Amid Autonomous Vehicle and Digital Twin Expansion - News and Statistics - IndexBox (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.

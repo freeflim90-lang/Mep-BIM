@@ -35,11 +35,17 @@ runtime/codebase_health_latest.json
 runtime/luachat_metrics_daily.json
 runtime/org_growth_opportunities_latest.json
 runtime/revit_assistant_qa_fallback/
+runtime/*
+!runtime/README.md
+!runtime/.gitkeep
 
 # Generated / local runtime artifacts
 .pytest_cache/
 *.log
 260519*/
+dist/
+commercial_addins/**/03_store_submission/autodesk_store_upload*/
+commercial_addins/**/03_store_submission/*.zip
 
 # OS
 .DS_Store

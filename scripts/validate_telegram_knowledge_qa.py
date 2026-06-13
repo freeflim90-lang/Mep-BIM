@@ -93,10 +93,106 @@ CASES = [
         must_include=("스프링클러", "헤드", "살수"),
     ),
     QaCase(
+        name="소방기계 헤드 덕트 인접",
+        query="스프링클러 헤드가 덕트랑 가까울 때 뭘 판단해야 해?",
+        expected_top=kb_rel("소방기계"),
+        must_include=("스프링클러", "헤드", "살수", "덕트"),
+    ),
+    QaCase(
         name="자동제어 VAV",
         query="VAV 제어에서 확인해야 하는 포인트 알려줘",
         expected_top=kb_rel("설비자동제어"),
         must_include=("VAV", "최소풍량", "덕트 정압"),
+    ),
+    QaCase(
+        name="자동제어 VAV 덕트 정압 센서",
+        query="덕트 정압 센서는 VAV에서 어디에 두고 왜 필요해?",
+        expected_top=kb_rel("설비자동제어"),
+        must_include=("VAV", "정압", "센서", "팬"),
+    ),
+    QaCase(
+        name="소방전기 감지기 스프링클러 천장 조율",
+        query="감지기와 스프링클러 헤드가 천장에서 가까우면 뭘 조율해야 해?",
+        expected_top=kb_rel("소방전기"),
+        must_include=("감지기", "스프링클러", "소방"),
+    ),
+    QaCase(
+        name="소방전기 방화셔터 제연팬 연동",
+        query="방화셔터랑 제연팬 연동은 BIM에서 뭘 확인해야 해?",
+        expected_top=kb_rel("소방전기"),
+        must_include=("방화셔터", "제연", "연동"),
+    ),
+    QaCase(
+        name="통신 CCTV 전력 트레이 이격",
+        query="CCTV 배관이 전력 트레이랑 가까울 때 기준 알려줘",
+        expected_top=kb_rel("통신"),
+        must_include=("CCTV", "전력", "이격"),
+    ),
+    QaCase(
+        name="통신 MDF IDF 광케이블 경로",
+        query="MDF에서 IDF까지 광케이블 경로 검토할 때 뭘 봐?",
+        expected_top=kb_rel("통신"),
+        must_include=("MDF", "IDF", "광"),
+    ),
+    QaCase(
+        name="위생 통기관 트랩 Revit",
+        query="통기관이 없으면 어떤 문제가 생기고 Revit에서 어떻게 봐?",
+        expected_top=kb_rel("위생"),
+        must_include=("통기", "트랩", "Revit"),
+    ),
+    QaCase(
+        name="위생 급탕환수 HWR",
+        query="급탕환수 HWR은 왜 필요해?",
+        expected_top=kb_rel("위생"),
+        must_include=("급탕환수", "온도", "순환"),
+    ),
+    QaCase(
+        name="공조배관 냉매 전기트레이 이격",
+        query="냉매배관이 전기트레이랑 가까울 때 어떻게 봐?",
+        expected_top=kb_rel("공조배관"),
+        must_include=("냉매", "전기", "이격"),
+    ),
+    QaCase(
+        name="공조배관 팽창탱크 펌프 흡입",
+        query="팽창탱크는 왜 환수측 펌프 흡입에 둬?",
+        expected_top=kb_rel("공조배관"),
+        must_include=("팽창탱크", "펌프", "환수"),
+    ),
+    QaCase(
+        name="공조덕트 제연덕트 우선순위",
+        query="제연덕트는 일반 덕트랑 간섭 우선순위가 달라?",
+        expected_top=kb_rel("공조덕트"),
+        must_include=("제연", "우선순위", "소방"),
+    ),
+    QaCase(
+        name="전기 분전반 앞 배관",
+        query="분전반 앞에 배관이 지나가도 돼?",
+        expected_top=kb_rel("전기"),
+        must_include=("분전반", "공간", "배관"),
+    ),
+    QaCase(
+        name="자동제어 AHU 외기댐퍼 동파",
+        query="AHU 외기댐퍼 동파 방지 제어 설명해줘",
+        expected_top=kb_rel("설비자동제어"),
+        must_include=("외기댐퍼", "동파", "AHU"),
+    ),
+    QaCase(
+        name="설비시공조율 천장 설비 우선순위",
+        query="천장 안에서 덕트 배관 트레이 우선순위 어떻게 잡아?",
+        expected_top=kb_rel("설비시공조율"),
+        must_include=("덕트", "배관", "트레이"),
+    ),
+    QaCase(
+        name="간섭검토 hard soft clash",
+        query="hard clash랑 soft clash 차이 알려줘",
+        expected_top=kb_rel("간섭검토"),
+        must_include=("Hard", "Soft", "Clash"),
+    ),
+    QaCase(
+        name="Revit Addin 링크 모델 요소",
+        query="Revit API에서 링크 모델 요소를 가져오려면?",
+        expected_top=kb_rel("Revit_Addin"),
+        must_include=("RevitLinkInstance", "GetLinkDocument"),
     ),
     QaCase(
         name="설비 도면 해석",
@@ -186,6 +282,14 @@ def validate_quality_gate() -> list[str]:
     )
     if not assessment["ok"]:
         errors.append(f"quality-gate: known Dynamo case should be ok, got {assessment['reasons']}")
+    readiness = server.assess_team_telegram_answer_readiness(
+        bad_query,
+        server.infer_knowledge_agent_from_query(bad_query),
+        matches,
+        answer,
+    )
+    if readiness["should_search"]:
+        errors.append(f"telegram-readiness: known Dynamo case should not require search, got {readiness['reasons']}")
 
     synthetic_bad = [
         {
@@ -202,6 +306,14 @@ def validate_quality_gate() -> list[str]:
     )
     if bad_assessment["ok"]:
         errors.append("quality-gate: operational document should trigger auto supplementation")
+    bad_readiness = server.assess_team_telegram_answer_readiness(
+        bad_query,
+        "Dynamo",
+        synthetic_bad,
+        "지식 베이스 업데이트 운영 기준",
+    )
+    if not bad_readiness["should_search"]:
+        errors.append("telegram-readiness: weak operational answer should require search")
     return errors
 
 

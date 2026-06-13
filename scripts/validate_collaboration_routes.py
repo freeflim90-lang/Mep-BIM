@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate local collaboration routing without paid API calls."""
+"""Validate collaboration routing previews without invoking paid API calls."""
 
 from __future__ import annotations
 
@@ -58,16 +58,27 @@ CASES = [
     ("애매함", "모델 문제", None, None, True),
 ]
 
+EXPECTED_PAID_AI_BY_WORKFLOW = {
+    "pricing_revenue": True,
+    "store_release": True,
+    "idea_to_product_development_queue": True,
+}
+
 
 def main() -> int:
     failures = []
     for group, text, expected_workflow, expected_target, expected_confirm in CASES:
         preview = server.preview_collaboration_route(text)
+        expected_paid = (
+            EXPECTED_PAID_AI_BY_WORKFLOW.get(expected_workflow, False)
+            if not expected_confirm
+            else None
+        )
         ok = (
             preview.get("workflow_id") == expected_workflow
             and preview.get("target_agent") == expected_target
             and preview.get("requires_confirmation") == expected_confirm
-            and preview.get("use_paid_ai") in (False, None)
+            and preview.get("use_paid_ai") == expected_paid
         )
         status = "PASS" if ok else "FAIL"
         print(
