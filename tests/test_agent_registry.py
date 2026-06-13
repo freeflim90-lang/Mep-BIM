@@ -65,6 +65,20 @@ def test_division_coverage_exact():
     assert not missing, f"어느 본부에도 속하지 않은 팀: {missing}"
 
 
+def test_every_division_has_operating_agents():
+    """모든 본부는 실제 운영(active) 인력을 보유해야 한다 — 협업계약에만 등장하는
+    '껍데기 본부'(팀·active 0명)를 금지한다. 마케팅GTM본부가 standalone extra 만으로
+    구성됐던 회귀를 차단한다."""
+    org = reg.organization()  # team -> [active ids]
+    active_ids = {a["id"] for a in reg._agents() if a.get("status") == "active"}
+    for div in reg.divisions():
+        team_active = sum(len(org.get(t, [])) for t in div.get("teams", []))
+        standalone_active = sum(1 for a in div.get("agents", []) if a in active_ids)
+        assert team_active + standalone_active >= 1, (
+            f"본부 {div['key']} 에 active 운영 인력이 없음(껍데기 본부)"
+        )
+
+
 def test_division_standalone_agents_registered():
     ids = reg.all_agent_ids()
     for div in reg.divisions():

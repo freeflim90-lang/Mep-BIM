@@ -38,6 +38,10 @@
     {
       "key": "KNOWLEDGE_TEAM",
       "order": 9
+    },
+    {
+      "key": "GTM_MARKETING_TEAM",
+      "order": 10
     }
   ],
   "divisions": [
@@ -84,13 +88,10 @@
     },
     {
       "key": "마케팅GTM본부",
-      "teams": [],
-      "agents": [
-        "브랜드마케팅",
-        "글로벌_유통기획관",
-        "CS_기술지원관",
-        "글로벌_매출관리원"
-      ]
+      "teams": [
+        "GTM_MARKETING_TEAM"
+      ],
+      "agents": []
     }
   ],
   "discipline_keyword_order": [
@@ -1185,8 +1186,8 @@
     },
     {
       "id": "CS_기술지원관",
-      "team": null,
-      "status": "extra"
+      "team": "GTM_MARKETING_TEAM",
+      "status": "active"
     },
     {
       "id": "Caveman_토큰다이어터",
@@ -1225,13 +1226,13 @@
     },
     {
       "id": "글로벌_매출관리원",
-      "team": null,
-      "status": "extra"
+      "team": "GTM_MARKETING_TEAM",
+      "status": "active"
     },
     {
       "id": "글로벌_유통기획관",
-      "team": null,
-      "status": "extra"
+      "team": "GTM_MARKETING_TEAM",
+      "status": "active"
     },
     {
       "id": "라이선스_보안관",
@@ -1245,8 +1246,8 @@
     },
     {
       "id": "브랜드마케팅",
-      "team": null,
-      "status": "extra"
+      "team": "GTM_MARKETING_TEAM",
+      "status": "active"
     },
     {
       "id": "아이디어발굴",

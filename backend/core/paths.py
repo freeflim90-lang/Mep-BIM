@@ -84,6 +84,7 @@ TEAM_DIR_NAMES = {
     "ADMIN_FINANCE_TEAM": "07_경영지원팀",
     "PEOPLE_ENABLEMENT_TEAM": "08_인재육성팀",
     "KNOWLEDGE_TEAM": "09_지식팀",
+    "GTM_MARKETING_TEAM": "10_마케팅GTM팀",
 }
 EXTRA_AGENTS_DIR_NAME = "90_확장에이전트"
 
