@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "service": "LUA BIM LABS",
+  "_note": "수익 제품 단일 인덱스(SSOT). 그동안 products/ 폴더·docs/·config/product_knowledge_layers.json(교육 플랜) 3곳으로 파편화돼 있던 제품 분류를 한 곳에서 참조로 통합한다. 파일을 이동하지 않고 위치만 가리킨다.",
+  "revenue_paths": {
+    "education": "온라인 교육·멘토링 (Telegram 전달 / PayPal 결제)",
+    "service": "B2B 컨설팅 서비스 (MEP BIM 모델 품질 감리)",
+    "product": "Revit 애드인 (Autodesk Store 구독)"
+  },
+  "products": [
+    {
+      "id": "starter_plan",
+      "name": "Starter Plan",
+      "type": "education",
+      "revenue_path": "education",
+      "status": "public",
+      "active_revenue": true,
+      "products_dir": "products/starter_plan",
+      "knowledge_plan": "starter"
+    },
+    {
+      "id": "personal_tutor",
+      "name": "Personal Tutor",
+      "type": "education",
+      "revenue_path": "education",
+      "status": "coming_soon",
+      "active_revenue": false,
+      "knowledge_plan": "personal_tutor"
+    },
+    {
+      "id": "coordinator_mentor",
+      "name": "Coordinator Mentor",
+      "type": "education",
+      "revenue_path": "education",
+      "status": "coming_soon",
+      "active_revenue": false,
+      "knowledge_plan": "coordinator_mentor"
+    },
+    {
+      "id": "project_mentor",
+      "name": "Project Mentor",
+      "type": "education",
+      "revenue_path": "education",
+      "status": "coming_soon",
+      "active_revenue": false,
+      "knowledge_plan": "project_mentor"
+    },
+    {
+      "id": "model_quality_audit",
+      "name": "MEP BIM 모델 품질 감리",
+      "type": "service",
+      "revenue_path": "service",
+      "status": "ready_on_inbound",
+      "active_revenue": true,
+      "products_dir": "products/model_quality_audit",
+      "docs_dir": "docs/revenue_products/model_quality_audit",
+      "obsidian_vault": "obsidian_vaults/model_quality_auditor"
+    },
+    {
+      "id": "bim_command_center",
+      "name": "BIM Command Center for Revit",
+      "type": "addin",
+      "revenue_path": "product",
+      "status": "build_ready",
+      "active_revenue": true,
+      "products_dir": "products/bim_command_center",
+      "commercial_dir": "commercial_addins/BIM_Command_Center_For_Revit",
+      "store_docs_dir": "docs/autodesk_store",
+      "_status_note": "자체 테스트 + .exe 빌드 완료. 요청 시 즉시 발송 가능.",
+      "launch_blockers": [
+        "스토어 제출 자산(아이콘·스크린샷 5+·데모영상 60~120초)",
+        "Autodesk Publisher Center App ID",
+        "EULA·개인정보처리방침 공개 URL 게시"
+      ]
+    },
+    {
+      "id": "bim_land",
+      "name": "BIM Land",
+      "type": "marketplace",
+      "revenue_path": "product",
+      "status": "concept",
+      "active_revenue": false,
+      "products_dir": "products/bim_land"
+    }
+  ]
+}

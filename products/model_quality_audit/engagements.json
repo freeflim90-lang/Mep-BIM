@@ -1,0 +1,5 @@
+{
+  "_note": "MEP BIM 모델 품질 감리 서비스의 운영 상태(수임 건). 제품 정의·가격·SOP 문서는 docs/revenue_products/model_quality_audit/ 에 있다. config/products.json 의 model_quality_audit 항목이 두 위치를 연결한다.",
+  "updated_at": null,
+  "engagements": []
+}

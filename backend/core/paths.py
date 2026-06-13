@@ -67,6 +67,7 @@ STARTER_PLAN_DIR = PRODUCTS_DIR / "starter_plan"
 BIM_LAND_DIR = PRODUCTS_DIR / "bim_land"
 BIM_COMMAND_CENTER_DIR = PRODUCTS_DIR / "bim_command_center"
 AUTODESK_MARKET_DIR = PRODUCTS_DIR / "autodesk_market"
+MODEL_QUALITY_AUDIT_DIR = PRODUCTS_DIR / "model_quality_audit"
 
 # ---------------------------------------------------------------------------
 # 에이전트 팀 → knowledge/10_agents/ 하위 폴더명
