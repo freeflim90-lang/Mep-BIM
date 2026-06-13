@@ -792,3 +792,11 @@
 .org-contracts { grid-template-columns: repeat(auto-fill, minmax(215px, 1fr)); gap: 5px; }
 .org-contract { padding: 5px 7px; font-size: 9px; }
 .org-contract .oc-hand { margin: 2px 0; line-height: 1.25; }
+
+/* ── 협업계약 13개: 작은 화면(1440~1512)에서도 한 화면 유지 추가 압축 ── */
+.org-contracts { grid-template-columns: repeat(auto-fill, minmax(166px, 1fr)); gap: 4px; }
+.org-contract { padding: 4px 6px; font-size: 8px; }
+.org-contract .oc-route { font-size: 8.5px; }
+.org-contract .oc-hand { margin: 1px 0; line-height: 1.18; }
+.org-contract .oc-raci { font-size: 7.5px; }
+.orchestration-map { gap: 5px; }

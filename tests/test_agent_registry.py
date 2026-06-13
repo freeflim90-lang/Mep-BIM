@@ -83,7 +83,10 @@ def test_kb_dirs_exist_on_disk():
 
 def test_collaboration_contract_agents_registered():
     ids = reg.all_agent_ids()
+    div_keys = {d["key"] for d in reg.divisions()} | {"전체"}
     for contract in reg.collaboration_contracts():
+        assert contract["from"] in div_keys, f"협업계약 from 미존재 본부: {contract['from']}"
+        assert contract["to"] in div_keys, f"협업계약 to 미존재 본부: {contract['to']}"
         for role, agent in contract.get("raci", {}).items():
             assert agent in ids, f"협업계약 {contract['from']}→{contract['to']} 의 미등록 {role}: {agent}"
 
