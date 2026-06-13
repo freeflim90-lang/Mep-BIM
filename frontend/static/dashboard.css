@@ -766,3 +766,29 @@
 .bl-contact-chip.missing   { background: rgba(107,114,128,0.1); color: #6b7280; font-style: italic; }
 
 /* ═══════════════════════════════════════════════ BIM LAND VIEW END */
+
+/* ── 6본부 동적 조직도 (/api/organization · SSOT) ───────────────────── */
+.org-division-grid { width: 100%; display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; align-items: start; }
+.org-division { border: 1px solid #1e293b; border-radius: 6px; padding: 8px 10px; background: rgba(255,255,255,0.015); min-width: 0; }
+.org-division > h3 { font-size: 11px; margin: 0 0 6px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1e293b; padding-bottom: 4px; color: var(--accent-lua); }
+.org-division .org-team-label { font-size: 8px; color: #64748b; font-family: monospace; text-transform: uppercase; letter-spacing: 0.04em; margin: 6px 0 2px; }
+.org-contracts { width: 100%; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 8px; }
+.org-contract { border: 1px solid #1e293b; border-left: 3px solid var(--accent-lua); border-radius: 5px; padding: 7px 10px; font-size: 10px; background: rgba(255,255,255,0.01); }
+.org-contract .oc-route { font-weight: 600; color: #e2e8f0; }
+.org-contract .oc-hand { color: #94a3b8; margin: 3px 0; line-height: 1.35; }
+.org-contract .oc-raci { font-family: monospace; font-size: 9px; color: #64748b; }
+
+/* ── 6본부 조직도 한 화면 압축 (고밀도 칩) ─────────────────────────── */
+.org-division-grid { grid-template-columns: repeat(auto-fill, minmax(195px, 1fr)); gap: 7px; }
+.org-division { padding: 5px 7px; }
+.org-division > h3 { font-size: 10px; margin: 0 0 4px; padding-bottom: 3px; }
+.org-division .org-team-label { font-size: 7px; margin: 4px 0 1px; }
+#orgDivisionGrid .agent-sub-grid { grid-template-columns: repeat(auto-fill, minmax(76px, 1fr)); gap: 3px; }
+#orgDivisionGrid .node { min-height: 0; padding: 2px 4px; box-shadow: none; }
+#orgDivisionGrid .node .tag { display: none; }
+#orgDivisionGrid .node .name { font-size: 8.5px; line-height: 1.12; white-space: normal; font-weight: 600; }
+#orgDivisionGrid .node .tx,
+#orgDivisionGrid .node .model { display: none !important; }
+.org-contracts { grid-template-columns: repeat(auto-fill, minmax(215px, 1fr)); gap: 5px; }
+.org-contract { padding: 5px 7px; font-size: 9px; }
+.org-contract .oc-hand { margin: 2px 0; line-height: 1.25; }

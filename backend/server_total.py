@@ -79,6 +79,7 @@ from backend.reasoning_feedback import (
     latest_reasoning_digest_path,
 )
 from backend.model_routing import agent_model_map, deepseek_final_review_model, model_routing_status
+from backend.final_answer_review import review_final_answer_with_deepseek
 from backend.knowledge_approval import (
     append_knowledge_approval_candidate,
     find_knowledge_approval_candidate,
@@ -118,6 +119,7 @@ from backend.routers.dashboard_tasks import build_addin_task_prompt, create_dash
 from backend.routers.development_operations import create_development_operations_router
 from backend.routers.knowledge_operations import create_knowledge_operations_router
 from backend.routers.operations_status import create_operations_status_router
+from backend.routers.organization import router as organization_router
 from backend.routers.revit_assistant import create_revit_assistant_router
 
 revit_assistant_metrics = RevitAssistantMetrics()
@@ -385,7 +387,8 @@ from backend.knowledge_engine import (
     knowledge_search_files, query_terms, score_knowledge_text,
     extract_relevant_excerpt, search_local_knowledge,
     infer_knowledge_agent_from_query, build_knowledge_answer, build_combined_answer,
-    assess_knowledge_answer_quality, auto_supplement_knowledge_gap,
+    assess_knowledge_answer_quality, assess_team_telegram_answer_readiness,
+    auto_supplement_knowledge_gap,
     append_auto_knowledge_gap_log, build_more_research_answer,
     prioritize_agent_matches, count_gap_occurrences, get_persistent_gaps,
     _EXCLUDED_KNOWLEDGE_STEMS,
@@ -556,15 +559,26 @@ async def process_team_knowledge_question(update: Update, query: str):
 
     progress_msg = await update.message.reply_text("🔍 검색 중...", reply_markup=TEAM_REQUEST_KEYBOARD)
 
-    # 로컬 지식 먼저 조회
+    # 로컬 지식 먼저 조회하고, 점수뿐 아니라 답변 노이즈/에이전트 불일치까지 평가한다.
     local_matches = search_local_knowledge(query)
     top_score = local_matches[0]["score"] if local_matches else 0
+    local_answer_preview = build_knowledge_answer(query, local_matches)
+    readiness = assess_team_telegram_answer_readiness(
+        query,
+        agent,
+        local_matches,
+        local_answer_preview,
+    )
 
-    # 로컬 지식이 충분하면(score >= 40) 웹 검색 생략
-    if top_score >= 40:
+    # 로컬 지식이 충분하면 웹 검색 생략. 부족하면 자동 보강 검색으로 전환.
+    if not readiness["should_search"]:
         search_result = ""
         await log_to_dashboard("T4_TELEGRAM", f"📚 로컬 지식으로 답변 (score={top_score}): {query[:50]}")
     else:
+        await log_to_dashboard(
+            "T4_TELEGRAM",
+            f"🔎 로컬 답변 품질 보강 필요 ({', '.join(readiness['reasons'])}): {query[:50]}",
+        )
         web_task = asyncio.create_task(_search_web_for_knowledge(agent, query))
         search_result = await web_task
 
@@ -586,7 +600,18 @@ async def process_team_knowledge_question(update: Update, query: str):
         source_tag = "🔍 웹 검색"
     else:
         source_tag = "❓ 지식 없음 — 지식 베이스 보강 필요"
+    deepseek_review = await review_final_answer_with_deepseek(
+        query=query,
+        answer=answer,
+        agent=agent,
+        source_tag=source_tag,
+        client=deepseek_client,
+        api_key=DEEPSEEK_API_KEY,
+        workflow_id="team_telegram_final_answer_review",
+    )
+    answer = deepseek_review["answer"]
     answer = f"[{source_tag}]\n\n{answer}"
+    final_assessment = assess_knowledge_answer_quality(query, agent, local_matches, answer)
 
     # 수집된 지식을 도메인 파일에 저장 (운영 에이전트 제외)
     if search_result:
@@ -607,8 +632,15 @@ async def process_team_knowledge_question(update: Update, query: str):
         # 운영 로그는 별도 파일에만 기록
         append_auto_knowledge_gap_log(
             query=query, agent=agent,
-            assessment={"reasons": [], "top_score": 0, "top_path": ""},
+            assessment=readiness,
             search_result=search_result,
+        )
+    elif not final_assessment["ok"]:
+        append_auto_knowledge_gap_log(
+            query=query,
+            agent=agent,
+            assessment=final_assessment,
+            search_result="로컬 답변 품질 기준 미달. 외부 검색은 실행되지 않았으며 수동 지식 보강 필요.",
         )
 
     await update_reply_progress(progress_msg, answer)
@@ -631,6 +663,7 @@ async def process_team_knowledge_question(update: Update, query: str):
             for match in local_matches
         ],
         "answer": answer,
+        "quality": {**final_assessment, "deepseek_review": deepseek_review},
         "qa_note_path": str(qa_note_path),
         "created_at": datetime.datetime.now().isoformat(timespec="seconds"),
     }
@@ -1338,6 +1371,12 @@ async def revit_assistant_chat(
             refresh_knowledge=refresh_obsidian_after_knowledge_update,
             launch_background_task=launch_background_task,
             fallback_note_dir=PROJECT_ROOT / "runtime" / "revit_assistant_qa_fallback",
+            final_answer_review=lambda **kwargs: review_final_answer_with_deepseek(
+                **kwargs,
+                client=deepseek_client,
+                api_key=DEEPSEEK_API_KEY,
+                workflow_id="luachat_final_answer_review",
+            ),
         ),
     )
 
@@ -1449,6 +1488,7 @@ app.include_router(create_operations_status_router(
 # BIM LAND 게임 엔진 API (→ backend/routers/bim_land.py)
 # =============================================================================
 app.include_router(bim_land_router)
+app.include_router(organization_router)
 
 async def startup_event():
     print("🤖 [LUA BIM LABS 기업 체계] 통합 백엔드 가동 시작 (CEO 코어 활성화)")
