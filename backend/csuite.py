@@ -13,6 +13,7 @@ import os
 from pathlib import Path
 
 from backend.core.paths import PROJECT_ROOT, TEAM_REQUESTS_DIR
+from backend.model_routing import deepseek_final_review_model
 
 _CSUITE_LOG_FILE = TEAM_REQUESTS_DIR / "csuite_decisions.json"
 
@@ -130,7 +131,7 @@ async def csuite_deliberate_with_deepseek(user_text: str) -> dict:
         )
 
         response = await st.deepseek_client.chat.completions.create(
-            model="deepseek-chat",
+            model=deepseek_final_review_model(synthesis_prompt),
             messages=[
                 {
                     "role": "system",
@@ -332,7 +333,7 @@ async def redeliberate_after_rejection(decision: dict) -> dict:
                 "4. 즉시 실행 가능한 대안 (비용 없이 할 수 있는 것, 없으면 '없음')"
             )
             response = await st.deepseek_client.chat.completions.create(
-                model="deepseek-chat",
+                model=deepseek_final_review_model(prompt),
                 messages=[
                     {
                         "role": "system",

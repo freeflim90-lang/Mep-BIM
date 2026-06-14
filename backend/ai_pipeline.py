@@ -29,6 +29,7 @@ from backend.web_search import (
     _KNOWLEDGE_MIN_CHARS,
 )
 from backend.text_utils import append_korean_response_instruction, enforce_korean_answer
+from backend.model_routing import deepseek_final_review_model
 
 # ---------------------------------------------------------------------------
 # DeepSeek 예산 경로 상수 (server_total과 동일 계산)
@@ -508,7 +509,7 @@ async def process_corporate_pipeline(user_text, reply_msg, force_local_only: boo
         if not st.DEEPSEEK_API_KEY or st.DEEPSEEK_API_KEY == "sk-fake-key-for-test":
             raise RuntimeError("DEEPSEEK_API_KEY 미설정: 로컬 백업 스트리밍으로 전환")
         response = await st.deepseek_client.chat.completions.create(
-            model="deepseek-chat",
+            model=deepseek_final_review_model(user_text),
             messages=[
                 {"role": "system", "content": system_role},
                 {"role": "user", "content": user_text}

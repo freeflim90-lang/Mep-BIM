@@ -40,7 +40,7 @@
       "model_env": "DEEPSEEK_HIGH_STAKES_MODEL",
       "default_model": "deepseek-v4-pro",
       "enabled_env": "DEEPSEEK_HIGH_STAKES_REVIEW_ENABLED",
-      "default_enabled": false,
+      "default_enabled": true,
       "use_for": [
         "pricing_strategy",
         "investment_priority",

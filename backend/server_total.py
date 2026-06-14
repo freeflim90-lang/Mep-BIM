@@ -297,7 +297,7 @@ async def deepseek_resume_report(masked_text: str, file_name: str) -> str | None
     if not can_use_deepseek_budget():
         return None
     response = await deepseek_client.chat.completions.create(
-        model=os.environ.get("DEEPSEEK_MODEL", "deepseek-chat"),
+        model=os.environ.get("DEEPSEEK_RESUME_MODEL", "deepseek-v4-flash"),
         messages=[
             {
                 "role": "system",

@@ -125,13 +125,10 @@
         }
 
         function fallbackModelLabel(agentName) {
-            if (/프로그램개발|Qwen_Coder_8B|엑셀자동화|Revit_Addin|Navisworks_Addin|파이프라인|빌드검증|제품패키징/.test(agentName)) {
-                return "Coder: qwen2.5-coder:7b";
+            if (/CEO|COO|CFO|조율차장|최고전략|전략기획|아이디어발굴|프로젝트분석|요구사항|브랜드마케팅|견적심사원|스토어심사|글로벌_매출관리원|글로벌_유통기획관|Revit_Addin|Navisworks_Addin|제품패키징/.test(agentName)) {
+                return "DeepSeek V4 Pro: deepseek-v4-pro";
             }
-            if (/CEO|조율차장|최고전략|전략기획|아이디어발굴|프로젝트분석|요구사항|브랜드마케팅|견적심사원|스토어심사/.test(agentName)) {
-                return "Local + DeepSeek";
-            }
-            return "Local: qwen2.5:7b";
+            return "DeepSeek V4 Flash: deepseek-v4-flash";
         }
 
         function updateNodeModelBadge(node, agentName) {
@@ -186,12 +183,13 @@
                 aiAgentModelLabels = result.agent_models || result.routing?.agent_models || {};
                 const localModel = result.routing?.local?.knowledge_qa?.model || "qwen2.5:7b";
                 const coderModel = result.routing?.local?.coder?.model || "qwen2.5-coder:7b";
+                const proModel = result.routing?.deepseek?.high_stakes_strategy?.model || "deepseek-v4-pro";
                 const reviewModel = result.routing?.deepseek?.final_review?.model || "deepseek-v4-flash";
                 document.querySelectorAll('.node').forEach(node => {
                     const nameElement = node.querySelector('.name');
                     if (nameElement) updateNodeModelBadge(node, normalizeAgentName(nameElement.innerText));
                 });
-                addConsoleLog("AI_MODEL", `배치 로드: Local ${localModel} / Coder ${coderModel} / Review ${reviewModel}`);
+                addConsoleLog("AI_MODEL", `DeepSeek 배치 로드: Pro ${proModel} / Flash ${reviewModel} / Local backup ${localModel}, ${coderModel}`);
             } catch (error) {
                 addConsoleLog("WARN", "AI 모델 배치표를 불러오지 못해 기본 로컬 우선 표기를 사용합니다.");
                 document.querySelectorAll('.node').forEach(node => {
