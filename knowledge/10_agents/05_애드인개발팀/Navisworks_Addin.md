@@ -311,3 +311,15 @@ Navisworks API 선택 가이드 — COM API vs .NET Managed API: COM API(`Autode
 - 보고서 커스터마이징은 Navisworks의 사용자 인터페이스를 통해 쉽게 설정할 수 있으며, 필요에 따라 다양한 형식과 내용으로 보고서를 맞춤화할 수 있습니다.
 - API를 활용하여 Add-in을 개발할 때는 Navisworks의 공통 기능 표준 프레임워크를 준수해야 합니다. 이를 통해 플랫폼과 연계된 분석 가능한 시스템을 구축할 수 있습니다.
 - 관련: [[간섭검토]] · [[Revit_Addin]]
+
+
+## Navisworks Add-in 최신 동향 및 활용 팁 (2026-06-14)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-14
+- Tags: navisworks,addin,clash-detection,update
+
+- 최신 기능 중 하나인 간섭 검토 자동화는 작업 효율을 높이는 중요한 도구입니다. Navisworks 2025에서는 이 기능을 통해 프로젝트에서 발생할 수 있는 문제를 미리 파악하고 해결할 수 있습니다.
+- 보고서 커스터마이징 기능은 사용자가 필요한 정보만 포함된 맞춤형 보고서를 생성할 수 있게 해줍니다. 이를 통해 프로젝트 관리자나 설계자들은 중요한 부분에 집중할 수 있습니다.
+- Navisworks API 활용 방법을 배우면, 개발자는 다양한 도구와 시스템과의 통합을 쉽게 할 수 있습니다. .NET Framework 4.8용 NuGet 패키지를 통해 C# 등으로 Add-in을 개발하는 데 있어 큰 도움이 됩니다.
+
+이러한 기능들을 활용하면 Navisworks를 더욱 효과적으로 사용할 수 있으며, 프로젝트 관리와 협업 과정에서의 효율성을 향상시키는데 기여합니다.
+- 관련: [[간섭검토]] · [[Revit_Addin]]

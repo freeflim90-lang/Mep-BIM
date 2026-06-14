@@ -12,6 +12,7 @@ from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 QUEUE_FILE = PROJECT_ROOT / "config" / "qwen_product_draft_queue.json"
+LOG_DIR = PROJECT_ROOT / "logs"
 
 
 def load_dotenv() -> None:
@@ -81,16 +82,22 @@ def build_message(today: dt.date, tasks: list[dict]) -> str:
 def main() -> int:
     load_dotenv()
     today = dt.date.today()
+    sent_marker = LOG_DIR / f".qwen_draft_summary_sent_{today.isoformat()}"
     if not QUEUE_FILE.exists():
         print("queue=not_found")
         return 1
+    if sent_marker.exists():
+        print(f"telegram=skipped already_sent date={today.isoformat()}")
+        return 0
 
     queue = json.loads(QUEUE_FILE.read_text(encoding="utf-8"))
     tasks = queue.get("tasks", [])
     msg = build_message(today, tasks)
     print(msg)
     print("\nTelegram 발송 중...")
-    send_telegram(msg)
+    if send_telegram(msg):
+        LOG_DIR.mkdir(parents=True, exist_ok=True)
+        sent_marker.write_text(dt.datetime.now().isoformat(timespec="seconds"), encoding="utf-8")
     print("완료.")
     return 0
 

@@ -169,30 +169,42 @@ def _build_calendar_service():
         return None
 
 
-def _patch_event_color_today(service, event_id: str, color_id: str, today: date) -> None:
+def _patch_event_color_today(service, event_id: str, color_id: str, today: date) -> bool:
     """오늘 발생하는 반복 이벤트 인스턴스의 색상을 변경한다."""
     import datetime as _dt
     tz = _dt.timezone(_dt.timedelta(hours=9))
-    time_min = _dt.datetime(today.year, today.month, today.day, tzinfo=tz).isoformat()
-    time_max = _dt.datetime(today.year, today.month, today.day + 1, tzinfo=tz).isoformat()
+    start = _dt.datetime(today.year, today.month, today.day, tzinfo=tz)
+    time_min = start.isoformat()
+    time_max = (start + _dt.timedelta(days=1)).isoformat()
     try:
-        result = service.events().instances(
+        result = service.events().list(
             calendarId=CALENDAR_ID,
-            eventId=event_id,
             timeMin=time_min,
             timeMax=time_max,
-            maxResults=1,
+            singleEvents=True,
+            orderBy="startTime",
+            maxResults=50,
         ).execute()
-        items = result.get("items", [])
+        items = [
+            item for item in result.get("items", [])
+            if item.get("recurringEventId") == event_id or item.get("id") == event_id
+        ]
         if not items:
-            return
+            print(f"  [Calendar] 오늘 인스턴스 없음 ({event_id[:8]}…)")
+            return False
         service.events().patch(
             calendarId=CALENDAR_ID,
             eventId=items[0]["id"],
             body={"colorId": color_id},
         ).execute()
+        verified = service.events().get(
+            calendarId=CALENDAR_ID,
+            eventId=items[0]["id"],
+        ).execute()
+        return verified.get("colorId") == color_id
     except Exception as exc:
         print(f"  [Calendar] 색상 업데이트 실패 ({event_id[:8]}…): {exc}")
+        return False
 
 
 def update_calendar_events(statuses: dict[str, bool], today: date) -> None:
@@ -210,9 +222,10 @@ def update_calendar_events(statuses: dict[str, bool], today: date) -> None:
             continue
         event_id, orig_color = ROUTINE_EVENT_MAP[key]
         target_color = COLOR_DONE if is_done else orig_color
-        _patch_event_color_today(service, event_id, target_color, today)
+        patched = _patch_event_color_today(service, event_id, target_color, today)
         mark = "✅" if is_done else "❌"
-        print(f"  {mark} {key} → 색상 {'Sage(완료)' if is_done else f'원래({orig_color})'}")
+        verified = "확인" if patched else "미확인"
+        print(f"  {mark} {key} → 색상 {'Sage(완료)' if is_done else f'원래({orig_color})'} ({verified})")
     print("[Calendar] 완료")
 
 

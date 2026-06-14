@@ -1,0 +1,62 @@
+
+
+## 웹 보강: 상용 소프트웨어 EULA 책임 제한 면책 조항 작성 기준 (2026-06-14 08:50:20)
+- Source: system-auto-quality-search
+- Tags: auto-collect,needs-review
+
+질문: 상용 소프트웨어 EULA 책임 제한 면책 조항 작성 기준
+
+• [Naver] 최종 사용자 라이센스 계약(EULA)이란?
+  최종 사용자 라이센스 계약(EULA)은 법적 구속력이 있는 문서로, 특정 소프트웨어 제품 사용에 대한 사용자의 권리와 제한 사항을 정의합니다.
+  출처: https://www.servicenow.com/kr/products/it-asset-management/what-is-eula.html
+
+• [Naver] 소프트웨어 사용권 동의
+  일반적인 조항 한 연구에 따르면, 다양한 소프트웨어 서비스 간의 경제적 경쟁은 고객에게 더 유리한 EULA를 이끌어낸다. 재판매 미국 연방 법에 따르면 기업은 판매 대상을 제한할 수 있지만, 구매자가 제품을...
+  출처: https://ko.wikipedia.org/wiki/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%EC%82%AC%EC%9A%A9%EA%B6%8C_%EB%8F%99%EC%9D%98
+
+• [Naver] [IT 지식] 소프트웨어 라이선스 및 EULA는 무엇인가
+  상용소프트웨어: 금액을 지불하고 사용권을 구매 프리웨어... 등에 제한을 두는 소프트웨어 (ms office 30일 사용 버전) 공용 소프트웨어... 카피레프트 조항으로 GPL 프로그램은 어떤 목적으로도, 어떤 형태로든...
+  출처: https://blog.naver.com/lifeyun24/222732291952
+
+• [Naver] EULA - 최종 사용자 라이선스 계약
+  아래의 [Enter] 또는 [Accept] 아이콘을 클릭하거나, 소프트웨어를 설치, 복사 또는 사용함으로써 귀하는 이 라이선스의 조건, 특히 보증 면책 조항, 책임 제한 및 종료 규정에 구속됨에 동의하게 됩니다. 매우 중요 - 주의 깊게 읽으십시오: 본 소프트웨어 라이선스 계약(이하 &quot;라이선스&quot;)은 귀하(개인 또는 단일 법인)와 ExtendOffice(이하 &quot;저작권자&quot;), 그리고 소프트웨어 제품(이하 &quot;소프트...
+  출처: https://ko.extendoffice.com/support/end-user-license-agreement.html
+
+검토 기준: 공식 문서·최신성·프로젝트 적용성 확인 후 FAQ 승격.
+
+
+## 웹 보강: EULA 면책조항 책임제한 작성 기준 (2026-06-14 16:18:32)
+- Source: system-auto-quality-search
+- Tags: auto-collect,needs-review
+
+질문: EULA 면책조항 책임제한 작성 기준
+
+• [Naver] 최종 사용자 라이센스 계약(EULA)이란?
+  최종 사용자 라이센스 계약(EULA)은 법적 구속력이 있는 문서로, 특정 소프트웨어 제품 사용에 대한 사용자의 권리와 제한 사항을 정의합니다.
+  출처: https://www.servicenow.com/kr/products/it-asset-management/what-is-eula.html
+
+• [DDG] 최종 사용자 라이선스 계약: Eula: 소프트웨어 또는 서비스에 대한 효과적인 Eula 작성 방법
+  보증 면책조항: 개발자는 보증 (명시적 또는 묵시적)을 부인하는 경우가 많습니다. 책임 제한: 개발자의 책임을 제한합니다. 해지: 라이센스가 종료될 수 있는 시기 (예: 약관 위반)를 설명합니다. 준거법: 적용되는 법적 관할권을 결정합니다. 4. 예:
+  출처: https://fastercapital.com/ko/content/%EC%B5%9C%EC%A2%85-%EC%82%AC%EC%9A%A9%EC%9E%90-%EB%9D%BC%EC%9D%B4%EC%84%A0%EC%8A%A4-%EA%B3%84%EC%95%BD--EULA--%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4-%EB%98%90%EB%8A%94-%EC%84%9C%EB%B9%84%EC%8A%A4%EC%97%90-%EB%8C%80%ED%95%9C-%ED%9A%A8%EA%B3%BC%EC%A0%81%EC%9D%B8-EULA-%EC%9E%91%EC%84%B1-%EB%B0%A9%EB%B2%95.html
+
+• [Naver] 이용약관 - 니케
+  1. 중요 공지 사항 —중재, 환불, 손해 ; 본 EULA의 조항에 동의하지 않으시면 당사 서비스를 설치, 복사 또는 이용할 수 없습니다. 당사는 당사에 의해 명확히 권한이 주어진 경우이거나(환불이 가능한 예외에 관하여는 제10항을 참조 바랍니다) 현지 법에 따라 환불이 요구되는 경우가 아닌 한, 일반적으로는 환불을 하지 않습니다. 또한 당사의 EULA에는 사용자가 거주하는 국가를 기...
+  출처: https://nikke-kr.com/cbt/termsofservice/
+
+• [DDG] 면책 조항 및 책임 제한 샘플 조항 | Law Insider
+  면책 조항 및 책임 제한. ‌ (a) 본 조항 1.1 (면책 조항 및 책임 제한)은 서비스 제공자의 전체 책임 (직원, 대리인 및 하도급업체의 행위 또는 누락에 대한 책임을 포함)을 고객에게 다음과 같이 규정합니다: (I) 본 계약에 따라 또는 이와 관련하여 발생하는 것; (II) 플랫폼과 관련하여, (III) 고객 또는 ...
+  출처: https://www.lawinsider.com/ko/clause/%EB%A9%B4%EC%B1%85-%EC%A1%B0%ED%95%AD-%EB%B0%8F-%EC%B1%85%EC%9E%84-%EC%A0%9C%ED%95%9C
+
+• [Naver] 최종 사용자 라이선스 계약
+  또한, 본 EULA는 사용자가 서비스를 사용함으로써 발생할 수 있는 손해 중 당사로부터 회수할 수 있는 손해에 대한 제한을 포함합니다. 본 EULA에 동의하고 서비스를 이용함으로써, 사용자는 이들 조항에 동의합니다. 본 EULA의 조항에 동의하지 않으시면 당사 서비스를 설치, 복사 또는 이용할 수 없습니다. 당사는 당사에 의해 명확히 권한이 주어진 경우이거나(환불이 가능한 예외...
+  출처: https://arenabreakout.com/terms-ko.html
+
+• [DDG] [법률 번역] Limitation Of Liability - 책임 제한 조항 예문 및 해설 (II)
+  법률 번역 해설서 [법률 번역] Limitation Of Liability - 책임 제한 조항 예문 및 해설 (II) GenuineExpert 2025. 9. 24. 00:25 참고로, 영문 계약서에서는 특히 강조하고 싶은 중요 조항의 내용을 전부 대문자로 기재하는 경우가 많다. 책임 제한 조항도 그러한 경우 중 하나에 해당 ...
+  출처: https://legaltranslation.tistory.com/357
+
+• [Naver] 마켓플레이스 자산 EULA – Roll20 도움말 센터
+  롤20은 롤20 외부 출처에서 유래한 마켓플레이스의 어떤 자산에 대해서도 책임지지 않는 것에 동의합니다. 또한, 일부 자산은 무료로 제공될 수 있으며, 다른 자산은 요금을 지불하여 구매할 수 있습니다. 당신은 마켓플레이스에서 구매하는 데 관련된 모든 수수료에 대해 전적으로 책임을 진다는 것에 동의합니다. 마켓플레이스를 사용하기 위해서는 18세 이상이어야 합니다. 마켓...
+  출처: https://help.roll20.net/hc/ko/articles/360037254294
+
+검토 기준: 공식 문서·최신성·적용성 확인 후 FAQ 승격.

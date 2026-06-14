@@ -502,3 +502,40 @@ def score_signal(text: str) -> float:
 - Lidar Drone Market To Reach New Heights by 2035 Amid Autonomous Vehicle and Digital Twin Expansion - News and Statistics - IndexBox (BIM Automation)
 
 운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-13 17:18 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-13/1718_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- AIA26: Kestrel Labs — Native BIM Compliance Platform - Architosh (BIM Automation)
+- Jing'An Investment Center / Nikken Sekkei (BIM Automation, Quality/Product)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-13 18:18 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-13/1818_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- How BIM supports digital transformation in the AEC industry - Build Australia (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-14 16:42 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-14/1642_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- [칼럼] 건설 AX 촉진·지역경제 활성화, AI·로봇 활용한 스마트건설 전초기지로 - 케이에스피뉴스 (AX/AI Transformation, Smart Construction, BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-14 17:43 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-14/1743_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- [칼럼] 건설 AX 촉진·지역경제 활성화, AI·로봇 활용한 스마트건설 전초기지로 - 정필 (AX/AI Transformation, Smart Construction, BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.

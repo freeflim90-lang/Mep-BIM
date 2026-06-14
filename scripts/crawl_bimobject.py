@@ -213,8 +213,11 @@ def _safe_filename(name: str) -> str:
 
 
 # ──────────────────── 단일 카테고리 제품 수집 ────────────────────
-def fetch_all_products(cat: dict) -> list[dict]:
-    """소분류 하나의 Revit 패밀리 전량 수집"""
+def fetch_all_products(cat: dict, max_products: int | None = None) -> list[dict]:
+    """소분류 하나의 Revit 패밀리 수집.
+
+    max_products가 지정되면 운영 루틴용 샘플 수집으로 제한한다.
+    """
     uid  = cat["uid"]
     code = cat["code"]
     if not uid:
@@ -242,6 +245,8 @@ def fetch_all_products(cat: dict) -> list[dict]:
         items       = data.get("data", [])
 
         for item in items:
+            if max_products is not None and len(products) >= max_products:
+                break
             brand          = item.get("brand", {}) or {}
             brand_name     = brand.get("name", "")
             brand_link     = brand.get("permalink", "")
@@ -263,6 +268,9 @@ def fetch_all_products(cat: dict) -> list[dict]:
             f"    {code} p{page}/{total_pages}: "
             f"+{len(items)}개 (누적 {len(products):,})"
         )
+        if max_products is not None and len(products) >= max_products:
+            log.info(f"    {code}: max_products={max_products} 도달 — 중단")
+            break
         page += 1
         time.sleep(0.4)
 
@@ -273,18 +281,19 @@ def fetch_all_products(cat: dict) -> list[dict]:
 class BIMObjectCrawler:
     """대분류 → 소분류 단위 수집, 제품 ID 중복 제거"""
 
-    def __init__(self) -> None:
+    def __init__(self, max_products: int | None = None) -> None:
         self.tree:    dict[str, dict]          = {}
         # parent_code → {sub_code → [products]}
         self.results: dict[str, dict[str, list[dict]]] = {}
         self._seen:   set[str]                 = set()
+        self.max_products = max_products
 
     # ── 소분류 하나 수집 (중복 제거 포함) ──
     def _collect_sub(self, sub_code: str) -> list[dict]:
         cat = self.tree.get(sub_code)
         if not cat:
             return []
-        raw      = fetch_all_products(cat)
+        raw      = fetch_all_products(cat, max_products=self.max_products)
         unique   = []
         for p in raw:
             pid = p.get("id", "")
@@ -578,6 +587,12 @@ def main() -> None:
     parser.add_argument("--category", nargs="+", help="대분류 코드 (예: sanitary hvac)")
     parser.add_argument("--dry-run",  action="store_true", help="수집 계획만 출력")
     parser.add_argument("--json-only",action="store_true", help="JSON만 저장")
+    parser.add_argument(
+        "--max-products",
+        type=int,
+        default=None,
+        help="소분류별 최대 수집 개수. 운영 루틴에서는 150 권장.",
+    )
     args = parser.parse_args()
 
     log.info("=" * 60)
@@ -591,7 +606,7 @@ def main() -> None:
         dry_run(tree)
         return
 
-    crawler = BIMObjectCrawler()
+    crawler = BIMObjectCrawler(max_products=args.max_products)
     crawler.tree = tree
     targets = args.category or TARGET_PARENTS
     for code in targets:
