@@ -519,7 +519,7 @@ def deepseek_enabled_for_delegate() -> bool:
 
 def deepseek_delegate_model(text: str = "") -> str:
     lowered = text.lower()
-    high_enabled = os.environ.get("DEEPSEEK_HIGH_STAKES_REVIEW_ENABLED", "false").lower() in {"1", "true", "yes", "on"}
+    high_enabled = os.environ.get("DEEPSEEK_HIGH_STAKES_REVIEW_ENABLED", "true").lower() in {"1", "true", "yes", "on"}
     if high_enabled and any(keyword in lowered for keyword in ["가격", "투자", "손익분기", "mrr", "arr", "스토어", "로드맵", "상품화"]):
         return os.environ.get("DEEPSEEK_HIGH_STAKES_MODEL", "deepseek-v4-pro")
     return os.environ.get("DEEPSEEK_FINAL_REVIEW_MODEL", "deepseek-v4-flash")
