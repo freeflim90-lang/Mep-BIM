@@ -346,20 +346,30 @@ def build_checklist(today: date, now: datetime) -> tuple[str, dict[str, bool]]:
     # 블로거 포스트 발행
     blog_ok = False
     blog_label = "미실행"
-    for blog_log in [LOG_DIR / "daily_blogger_post.out.log", LOG_DIR / "blogger_catchup_today.out.log"]:
-        if not blog_log.exists():
-            continue
-        mtime = date.fromtimestamp(blog_log.stat().st_mtime)
-        if mtime >= today:
-            text = blog_log.read_text(encoding="utf-8", errors="ignore")
-            if "Published" in text or "발행" in text:
-                blog_ok = True
-                blog_label = "발행 완료"
-                break
-            elif "already running" in text or "rate limit" in text.lower():
-                blog_ok = True
-                blog_label = "실행 중 (rate limit 대기)"
-                break
+    publish_log = LOG_DIR / "blogger_daily_publish.jsonl"
+    if publish_log.exists():
+        try:
+            for raw in publish_log.read_text(encoding="utf-8", errors="ignore").splitlines():
+                if not raw.strip():
+                    continue
+                row = json.loads(raw)
+                if row.get("date") == today_str2 and row.get("url"):
+                    blog_ok = True
+                    blog_label = "발행 완료"
+        except Exception:
+            blog_ok = False
+
+    if not blog_ok:
+        lock_path = PROJECT_ROOT / "runtime" / "blogger_queue_publish.lock"
+        if lock_path.exists():
+            try:
+                pid = lock_path.read_text(encoding="utf-8", errors="ignore").strip()
+                if pid and subprocess.run(["ps", "-p", pid], capture_output=True).returncode == 0:
+                    blog_label = "실행 중"
+                else:
+                    blog_label = "미실행 (stale lock)"
+            except Exception:
+                blog_label = "미실행 (lock 확인 실패)"
     lines.append(f"{'✅' if blog_ok else '❌'} 블로거 포스트 발행 (08:00) — {blog_label}")
     statuses["blog"] = blog_ok
     if not blog_ok:
