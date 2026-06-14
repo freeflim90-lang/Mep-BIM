@@ -126,9 +126,15 @@
 
         function fallbackModelLabel(agentName) {
             if (/CEO|COO|CFO|조율차장|최고전략|전략기획|아이디어발굴|프로젝트분석|요구사항|브랜드마케팅|견적심사원|스토어심사|글로벌_매출관리원|글로벌_유통기획관|Revit_Addin|Navisworks_Addin|제품패키징/.test(agentName)) {
-                return "DeepSeek V4 Pro: deepseek-v4-pro";
+                if (/Revit_Addin|Navisworks_Addin|제품패키징/.test(agentName)) {
+                    return "Coder + DeepSeek V4 Pro: qwen2.5-coder:7b / deepseek-v4-pro";
+                }
+                return "Local + DeepSeek V4 Pro: qwen2.5:7b / deepseek-v4-pro";
             }
-            return "DeepSeek V4 Flash: deepseek-v4-flash";
+            if (/프로그램개발|Qwen_Coder_8B|엑셀자동화|파이프라인|빌드검증/.test(agentName)) {
+                return "Coder + DeepSeek V4 Flash: qwen2.5-coder:7b / deepseek-v4-flash";
+            }
+            return "Local + DeepSeek V4 Flash: qwen2.5:7b / deepseek-v4-flash";
         }
 
         function updateNodeModelBadge(node, agentName) {

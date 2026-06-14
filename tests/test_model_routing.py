@@ -9,13 +9,15 @@ def test_dashboard_agents_use_deepseek_v4_pro_or_flash(monkeypatch):
 
     labels = agent_model_map(model_routing_status())
 
-    assert labels["CEO"] == "DeepSeek V4 Pro: deepseek-v4-pro"
-    assert labels["스토어심사"] == "DeepSeek V4 Pro: deepseek-v4-pro"
-    assert labels["Revit_Addin"] == "DeepSeek V4 Pro: deepseek-v4-pro"
-    assert labels["지식업데이트"] == "DeepSeek V4 Flash: deepseek-v4-flash"
-    assert labels["고객지원 CS"] == "DeepSeek V4 Flash: deepseek-v4-flash"
+    assert labels["CEO"] == "Local + DeepSeek V4 Pro: qwen2.5:7b / deepseek-v4-pro"
+    assert labels["스토어심사"] == "Local + DeepSeek V4 Pro: qwen2.5:7b / deepseek-v4-pro"
+    assert labels["Revit_Addin"] == "Coder + DeepSeek V4 Pro: qwen2.5-coder:7b / deepseek-v4-pro"
+    assert labels["지식업데이트"] == "Local + DeepSeek V4 Flash: qwen2.5:7b / deepseek-v4-flash"
+    assert labels["고객지원 CS"] == "Local + DeepSeek V4 Flash: qwen2.5:7b / deepseek-v4-flash"
+    assert labels["빌드검증"] == "Coder + DeepSeek V4 Flash: qwen2.5-coder:7b / deepseek-v4-flash"
+    assert all(label.startswith(("Local + DeepSeek", "Coder + DeepSeek")) for label in labels.values())
     assert {
-        label.split(": ", 1)[1]
+        label.rsplit(" / ", 1)[1]
         for label in labels.values()
     } == {"deepseek-v4-pro", "deepseek-v4-flash"}
 
