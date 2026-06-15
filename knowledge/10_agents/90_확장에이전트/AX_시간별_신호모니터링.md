@@ -567,3 +567,30 @@ def score_signal(text: str) -> float:
 - AI·로봇기술로 건설현장 안전하게...국토부, 스마트건설 챌린지 개최 - 스마트투데이 (Smart Construction, BIM Automation)
 
 운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-15 17:07 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-15/1707_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- BAM digital twin helps world’s largest Passivhaus school exceed energy targets (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-15 20:30 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-15/2030_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 한국부동산신문 모바일 사이트, 인공지능(AI)·로봇으로 더 안전한 건설현장 만든다…스마트건설 챌린지 개최 - 통신일보 (Smart Construction, BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-16 07:30 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-16/0730_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- “건설 현장에 AI·로봇 입힌다”… 국토부, ‘2026 스마트건설 챌린지’ 개최 - 조선비즈 - Chosunbiz (Smart Construction, BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.

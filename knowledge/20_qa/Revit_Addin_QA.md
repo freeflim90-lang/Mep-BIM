@@ -83,3 +83,32 @@ BIM, REVIT, Revit 2022, 레빗, 레빗 2022
   출처: https://hwang-ya.tistory.com/entry/Revit%EA%B8%B0%EC%B4%88-12-%EA%B0%84%EC%84%AD-%EB%B3%B4%EA%B3%A0
 
 검토 기준: 공식 문서 여부, 최신성, 프로젝트 적용 가능성, 보안/개인정보 포함 여부를 확인한 뒤 표준/교육/FAQ 후보로 승격한다.
+
+
+## 웹 보강: Revit 뷰템플릿 일괄 적용 방법 (2026-06-16 07:53:05)
+- Source: system-auto-quality-search
+- Tags: auto-collect,needs-review
+
+질문: Revit 뷰템플릿 일괄 적용 방법
+
+• [DDG] External Commands - Autodesk Knowledge Network
+  External Applications that can be invoked. External Tools that can be added to the Revit External Tools menu-button. External Application session adds panels and content to the Add-ins tab. IExternalCommand You create an external command by creating an object that implements the IExternalCommand int
+  출처: https://help.autodesk.com/cloudhelp/2024/ENU/Revit-API/files/Revit_API_Developers_Guide/Introduction/Add_In_Integration/Revit_API_Revit_API_Developers_Guide_Introduction_Add_In_Integration_External_Commands_html.html
+
+• [DDG] Creating C# Plugins for Revit: A Complete Developer Guide
+  Step-by-step guide to building custom C# plugins for Autodesk Revit. Covers project setup, Revit API, external commands, ribbon UI, transactions, and deployment.
+  출처: https://archgyan.com/creating-csharp-plugins-for-revit/
+
+• [DDG] IExternalCommand Interface - revitapidocs.com
+  To add an external command to Autodesk Revit the developer should implement an object that supports the IExternalCommand interface.
+  출처: https://www.revitapidocs.com/2025/ad99887e-db50-bf8f-e4e6-2fb86082b5fb.htm
+
+• [DDG] Building Your First Structural Plugin for Revit: A C# Crash Course
+  Learn to build a Revit structural plugin in C# from scratch. Covers IExternalCommand, FilteredElementCollector, Transactions, .addin manifest setup, and a real beam span-to-depth ratio checker you can run today.
+  출처: https://civilmat.com/revit-plugin-csharp-crash-course/
+
+• [DDG] Create a Plugin in Revit 2026 with .NET8 — AYDrafting
+  1. Context / Introduction Overview: Revit Plugin Types External Commands - Commands invoked from Add-in Tab and implements - IExternalCommand interface External Applications - programmatically add or modify the UI (for instance, create custom ribbon tabs, panels, and buttons) and implements the IExt
+  출처: https://www.aydrafting.com/case/starting-a-project-in-revit-2026-net8-api
+
+검토: 공식문서·최신성·적용성 확인 후 FAQ 승격.

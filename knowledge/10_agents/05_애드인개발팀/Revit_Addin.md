@@ -544,3 +544,13 @@ Autodesk 공식 Revit 2026 What's New와 APS 공식 블로그 기준으로 Add-i
 - 성능 최적화를 위해, 불필요한 객체 생성을 줄이고, 필요한 데이터만 처리하도록 코드를 작성해야 합니다. 또한, 복잡한 계산이나 I/O 작업은 가능한 한 병렬로 수행하여 시간을 단축시킬 수 있습니다.
 - Autodesk Store 심사 통과를 위한 팁으로는 Add-in의 기능이 명확하고 사용자 친화적이어야 한다는 점을 강조합니다. 또한, 보안 정책 준수와 개인정보 보호 방침이 포함되어 있어야 합니다. 최신 버전의 API를 활용하여 안정성과 성능을 향상시키며, 사용자 경험을 개선하는 것이 중요합니다.
 - 관련: [[간섭검토]] · [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]]
+
+
+## Revit Add-in 최신 동향 및 개발 팁 (2026-06-16)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-16
+- Tags: revit,addin,API,update
+
+- Autodesk Revit 2025 API에서는 `LoadModelFromPath`와 `SaveModelAs` 메서드가 추가되어Revit 모델 파일의 로드 및 저장을 더욱 간편하게 할 수 있습니다.
+- 성능 최적화를 위해, 큰 프로젝트에서 자주 사용되는 객체에 대해 캐싱 기능이 개선되었습니다. 이는 데이터 접근 속도를 빠르게 만듭니다.
+- Autodesk Store 심사 통과를 위한 팁으로는 Add-in의 기능성, 안전성, 호환성을 확인하고, 사용자 경험을 최적화하는 것이 중요합니다. 특히, 사용자의 프라이버시와 데이터 보호가 준수되었는지 철저히 검토해야 합니다.
+- 관련: [[간섭검토]] · [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]]
