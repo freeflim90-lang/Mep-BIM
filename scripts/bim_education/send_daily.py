@@ -438,6 +438,14 @@ def main() -> None:
 
     users = load_active_starter_clients()
 
+    if not users:
+        # 내부 직원 교육은 send_internal.py 가 전담하므로, 활성 유료 Starter
+        # 클라이언트가 없으면 이 스크립트는 발송할 대상이 없다. 수동 실행 시
+        # "발송 완료"로 오인하지 않도록 명시한다.
+        print("ℹ️  활성 유료 Starter 클라이언트 없음 — 발송 대상 0명 "
+              "(내부 직원 교육은 send_internal.py 담당)")
+        return
+
     for user in users:
         name = user["name"]
         progress_key = user.get("progress_key", name)

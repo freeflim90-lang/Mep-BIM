@@ -364,7 +364,13 @@ def build_checklist(today: date, now: datetime) -> tuple[str, dict[str, bool]]:
         if lock_path.exists():
             try:
                 pid = lock_path.read_text(encoding="utf-8", errors="ignore").strip()
-                if pid and subprocess.run(["ps", "-p", pid], capture_output=True).returncode == 0:
+                # PID 재사용 오탐 방지: 해당 PID가 실제 블로거 발행 스크립트인지
+                # 커맨드라인까지 대조한다 (단순 ps -p 는 무관한 프로세스에 속음).
+                proc = subprocess.run(
+                    ["ps", "-p", pid, "-o", "command="],
+                    capture_output=True, text=True,
+                ) if pid else None
+                if proc and proc.returncode == 0 and "blogger_queue_publish" in proc.stdout:
                     blog_label = "실행 중"
                 else:
                     blog_label = "미실행 (stale lock)"

@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import fcntl
 import html
 import json
 import os
@@ -646,19 +647,34 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+class AlreadyRunningError(RuntimeError):
+    """Raised when another instance already holds the lock."""
+
+
 @contextmanager
 def single_instance(lock_file: Path):
+    # flock 기반 advisory lock: 프로세스가 죽으면 OS가 자동 해제하므로
+    # stale lock 파일이 남아도 막히지 않고, PID 재사용 오탐도 발생하지 않는다.
     lock_file.parent.mkdir(parents=True, exist_ok=True)
-    fd = os.open(str(lock_file), os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+    fd = os.open(str(lock_file), os.O_CREAT | os.O_RDWR, 0o644)
     try:
+        fcntl.flock(fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except OSError as exc:
+        os.close(fd)
+        raise AlreadyRunningError(str(lock_file)) from exc
+    try:
+        os.ftruncate(fd, 0)
         os.write(fd, str(os.getpid()).encode("utf-8"))
         yield
     finally:
-        os.close(fd)
         try:
-            lock_file.unlink()
-        except FileNotFoundError:
-            pass
+            fcntl.flock(fd, fcntl.LOCK_UN)
+        finally:
+            os.close(fd)
+            try:
+                lock_file.unlink()
+            except FileNotFoundError:
+                pass
 
 
 def main() -> None:
@@ -690,7 +706,7 @@ def main() -> None:
             url = publish_topic(args, topic_file)
             print(f"Published: {url}")
             _check_queue_alert(queue_dir, args.queue_alert_threshold)
-    except FileExistsError:
+    except AlreadyRunningError:
         print(f"Another Blogger queue publisher is already running: {args.lock_file}")
 
 
