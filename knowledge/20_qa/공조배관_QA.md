@@ -113,3 +113,61 @@ CWS/CWR 말고 다른 공조배관 유체를 물을 때:
 - 배관 공간: 터널 인접 구조물로 배관 경로 제약 큼 → BIM 조율 필수
 
 주의: 세부 설계 기준은 발주처 설계 지침서 우선 적용.
+
+
+## 웹 보강: 상수도 배관 관경 유속 기준 (2026-06-14 21:36:56)
+- Source: system-auto-quality-search
+- Tags: auto-collect,needs-review
+
+질문: 상수도 배관 관경 유속 기준
+
+• [DDG] Clash Detection in Revit MEP: Step-by-Step Guide
+  Learn how to run clash detection in Revit MEP. Step-by-step workflow to detect, resolve, and prevent design conflicts for better BIM coordination.
+  출처: https://www.outsourcedrafting.com/revit-bim-insights/clash-detection-revit-mep-guide
+
+• [DDG] MEP Clash Detection: Revit + Navisworks Workflow Guide (2026) | Archgyan
+  Step-by-step guide to MEP clash detection using Revit and Navisworks. Covers search sets, clash rules, noise filtering, and reporting.
+  출처: https://www.archgyan.com/optimizing-mep-clash-detection-revit-navisworks/
+
+• [DDG] Revit/Navisworks: A Clash-Proof MEPF Workflow - LinkedIn
+  A small clash of design between MEPF services (Mechanical, Electrical, Plumbing, and Fire Protection) within a construction project has the capability to delay project timetables, increase costs ...
+  출처: https://www.linkedin.com/pulse/plumbing-drawings-revitnavisworks-clash-proof-mepf-workflow-7ghnc
+
+• [DDG] Revit MEP Duct &amp; Pipe Modelling Best Practice: Routing, Slope, Clash ...
+  Revit MEP is the dominant BIM authoring tool for Indian commercial projects. Properly used, it delivers coordinated drawings, clash detection, BOQ extraction, and energy-model integration in one toolchain. Poorly used, it creates bloated models that crash on networked drives and fail to coordinate w
+  출처: https://mepvault.com/revit-mep-duct-pipe-modelling/
+
+• [DDG] MagiCAD for Revit Clash Detection - MagiCAD Group
+  MagiCAD clash detection evaluates MEP systems, such as ventilation, piping, or electrical distribution, against other model elements. It can remain active during design work, allowing potential clashes to be highlighted immediately as modelling progresses.
+  출처: https://www.magicad.com/resolve-mep-clashes-while-you-model-practical-coordination-in-magicad-for-revit/
+
+검토 기준: 공식문서·최신성·적용성 확인 후 FAQ 승격.
+
+
+## 웹 보강: 증기 응축수 스팀트랩 설치 기준 (2026-06-15 12:09:11)
+- Source: system-auto-quality-search
+- Tags: auto-collect,needs-review
+
+질문: 증기 응축수 배관 스팀 트랩 설치 기준 HVAC
+
+• [DDG] Clash Detection in Revit MEP: Step-by-Step Guide
+  Learn how to run clash detection in Revit MEP. Step-by-step workflow to detect, resolve, and prevent design conflicts for better BIM coordination.
+  출처: https://www.outsourcedrafting.com/revit-bim-insights/clash-detection-revit-mep-guide
+
+• [DDG] Performing Electrical and HVAC Model Clash Detection
+  Walk through running a Revit interference check between electrical and HVAC models—selecting categories, exporting reports, resolving clashes, and using Revit IDs.
+  출처: https://blog.nobledesktop.com/learn/revit-mep/performing-electrical-and-hvac-model-clash-detection
+
+• [DDG] HVAC BIM Modeling Using Revit | Global MEP BIM Best Practices
+  Discover how Revit-based MEP BIM for HVAC systems improves coordination, reduces clashes, and supports global construction best practices.
+  출처: https://builtinbim.com/blogs/mep-bim-for-hvac-systems-revit-modeling-coordination-worldwide-best-practices
+
+• [DDG] Step-by-Step Revit MEP Modeling for HVAC, Electrical &amp; Plumbing Systems
+  Learn the complete process of Revit MEP modeling for HVAC, electrical, and plumbing systems. Discover essential tools, workflows, and tips to enhance coordination and efficiency in your BIM projects.
+  출처: https://www.outsourcedrafting.com/revit-bim-insights/step-by-step-process-of-revit-mep-modeling-for-hvac-electrical-plumbing-systems
+
+• [DDG] Revit MEP Duct &amp; Pipe Modelling Best Practice: Routing, Slope, Clash ...
+  MEPVAULT // FIGURE Revit MEP Clash Detection — Count by Iteration (HVAC × Plumbing × Fire) Iter 0 Iter 1 Iter 2 Iter 3 Iter 4 Iter 5 Iter 6 0 50 100 150 200 250 HVAC × Plumbing HVAC × Structure Fire × Ceiling Clash count Coordination iteration After 6 BIM coordination iterations, hard clashes &lt;5.
+  출처: https://mepvault.com/revit-mep-duct-pipe-modelling/
+
+검토: 공식문서·최신성 확인 후 FAQ 승격.

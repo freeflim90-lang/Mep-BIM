@@ -539,3 +539,31 @@ def score_signal(text: str) -> float:
 - [칼럼] 건설 AX 촉진·지역경제 활성화, AI·로봇 활용한 스마트건설 전초기지로 - 정필 (AX/AI Transformation, Smart Construction, BIM Automation)
 
 운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-15 09:02 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-15/0902_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- AI·로봇으로 건설현장 사고 예방…스마트건설 챌린지 개최 - 네이트 (Smart Construction, BIM Automation)
+- 국토부, 스마트건설 챌린지 개최…AI·로봇 기술로 건설혁신 모색 - 서울뉴스통신 (Smart Construction, BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-15 14:05 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-15/1405_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- AI·로봇으로 건설현장 사고 예방… 스마트건설 챌린지 개최 - 데일리안 (Smart Construction, BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-15 15:06 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-15/1506_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- AI·로봇기술로 건설현장 안전하게...국토부, 스마트건설 챌린지 개최 - 스마트투데이 (Smart Construction, BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
