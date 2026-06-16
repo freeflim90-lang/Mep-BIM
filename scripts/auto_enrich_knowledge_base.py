@@ -38,6 +38,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 from backend.knowledge_store import knowledge_file_path  # noqa: E402
+from backend.text_utils import contains_likely_chinese_text  # noqa: E402
 
 LOG_FILE = PROJECT_ROOT / "logs" / "auto_enrich_knowledge_base.log"
 ENV_FILE = PROJECT_ROOT / ".env"
@@ -1143,32 +1144,45 @@ def _extract_trigrams(text: str) -> set[str]:
     return {text[i:i+3] for i in range(len(text) - 2) if text[i:i+3].strip()}
 
 
-def is_duplicate_content(body: str, kb_file: Path) -> tuple[bool, str]:
-    """생성된 body가 기존 파일 마지막 30줄 또는 전체와 너무 유사하면 True 반환."""
+def _is_duplicate_against(body: str, existing: str) -> tuple[bool, str]:
+    """body가 noise 문구를 포함하거나 existing 텍스트와 3-gram 유사도가 높으면 True."""
     # 1. 명시적 노이즈 문구 포함 여부 체크
     body_lower = body.lower()
     for phrase in _NOISE_PHRASES:
         if phrase in body_lower:
             return True, f"노이즈 문구 포함: '{phrase[:40]}...'"
 
-    if not kb_file.exists():
+    if not existing:
         return False, ""
 
-    existing = kb_file.read_text(encoding="utf-8")
-
-    # 2. 최근 auto-enrich 섹션들과 3-gram 유사도 비교 (마지막 2000자)
-    recent_content = existing[-2000:] if len(existing) > 2000 else existing
-    existing_grams = _extract_trigrams(recent_content)
+    # 2. 기존 콘텐츠와 3-gram 유사도 비교
+    existing_grams = _extract_trigrams(existing)
     body_grams = _extract_trigrams(body)
-
     if not body_grams:
         return False, ""
 
     overlap = len(existing_grams & body_grams) / len(body_grams)
     if overlap >= _SIMILARITY_THRESHOLD:
         return True, f"기존 콘텐츠와 {overlap:.0%} 유사 (임계값 {_SIMILARITY_THRESHOLD:.0%})"
-
     return False, ""
+
+
+def is_duplicate_content(body: str, kb_file: Path) -> tuple[bool, str]:
+    """생성된 body가 기존 파일(마지막 2000자)과 너무 유사하면 True 반환."""
+    if not kb_file.exists():
+        return _is_duplicate_against(body, "")
+    existing = kb_file.read_text(encoding="utf-8")
+    recent_content = existing[-2000:] if len(existing) > 2000 else existing
+    return _is_duplicate_against(body, recent_content)
+
+
+def _strip_sections_with_title(content: str, title: str) -> str:
+    """기존 '## {title} (날짜)' 섹션을 모두 제거한다(토픽당 1개 최신 섹션만 유지).
+    auto-enrich가 매일 같은 제목 섹션을 누적 append 하던 비대화를 차단."""
+    parts = re.split(r"(?m)^(?=## )", content)
+    prefix = f"## {title} ("
+    kept = [p for p in parts if not p.startswith(prefix)]
+    return "".join(kept)
 
 
 def needs_update(kb_file: Path) -> bool:
@@ -1183,8 +1197,18 @@ def needs_update(kb_file: Path) -> bool:
 # KB 파일에 섹션 append
 # ---------------------------------------------------------------------------
 def append_section(kb_file: Path, title: str, tags: str, body: str, stem: str) -> None:
-    # 중복/노이즈 콘텐츠 차단
-    is_dup, reason = is_duplicate_content(body, kb_file)
+    # 오염 가드 — 글로벌 웹 결과에 섞인 중국어 문장을 KB 에 들이지 않는다(c33 패턴).
+    if contains_likely_chinese_text(body):
+        log(f"    → 중국어 오염 차단 ({stem})")
+        return
+
+    # 같은 제목의 과거 auto-enrich 섹션을 먼저 제거(replace-in-place) → 토픽당 1개 최신본만.
+    existing = kb_file.read_text(encoding="utf-8") if kb_file.exists() else ""
+    stripped = _strip_sections_with_title(existing, title)
+
+    # 중복/노이즈 콘텐츠 차단(같은 제목 과거본 제외한 나머지와 비교 → 자기 자신과 비교 방지).
+    recent = stripped[-2000:] if len(stripped) > 2000 else stripped
+    is_dup, reason = _is_duplicate_against(body, recent)
     if is_dup:
         log(f"    → 중복 콘텐츠 차단 ({stem}): {reason}")
         return
@@ -1200,8 +1224,8 @@ def append_section(kb_file: Path, title: str, tags: str, body: str, stem: str) -
         f"- Tags: {tags}\n\n"
         f"{body}{related_line}\n"
     )
-    with kb_file.open("a", encoding="utf-8") as f:
-        f.write(section)
+    # 같은 제목 과거본을 제거한 콘텐츠 + 최신 섹션으로 재기록.
+    kb_file.write_text(stripped.rstrip() + section + "\n", encoding="utf-8")
 
 
 # ---------------------------------------------------------------------------

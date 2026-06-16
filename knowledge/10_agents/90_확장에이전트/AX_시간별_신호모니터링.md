@@ -594,3 +594,51 @@ def score_signal(text: str) -> float:
 - “건설 현장에 AI·로봇 입힌다”… 국토부, ‘2026 스마트건설 챌린지’ 개최 - 조선비즈 - Chosunbiz (Smart Construction, BIM Automation)
 
 운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-16 14:52 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-16/1452_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 국토부, AI·로봇 등 스마트건설 챌린지 개최 - 한국주택경제신문 (Smart Construction, BIM Automation)
+- 인공지능·로봇으로 더 안전한 건설현장 만든다...스마트건설 챌린지 개최, 총 3억원 상금 수여 - 인공지능신문 (Smart Construction, BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-16 15:53 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-16/1553_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- AIㆍIoTㆍ로봇 등 첨단기술 활용 '스마트건설 챌린지'... 안전ㆍ품질ㆍ서비스 혁신기술 발굴 - 서울STV뉴스 (Smart Construction, BIM Automation, Quality/Product)
+- 킨텍스, AI 국책과제 'BIM 디지털트윈 건물에너지 관리사업' 선정 - 컨슈머타임스 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-16 17:33 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-16/1733_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- BIM and GIS Integration in Model-Based Infrastructure Project (BIM Automation, Quality/Product)
+- 국토부, ‘AI·BIM 건설기술’ 공모 나선다… ‘2026 스마트건설 챌린지’ 개최 - 대한전문건설신문 (Smart Construction, BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-16 21:50 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-16/2150_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 킨텍스, AI 국책과제 'BIM 디지털트윈 건물에너지 관리사업' 선정 - 컨슈머타임스 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-17 04:06 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-17/0406_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- Building Design and Building Information Modeling (BIM) - openPR.com (BIM Automation, Quality/Product)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.

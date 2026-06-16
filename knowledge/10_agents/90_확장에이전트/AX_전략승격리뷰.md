@@ -620,3 +620,12 @@ Autodesk 공식 Revit 2026 문서와 APS 공식 블로그 기준으로, LUA BIM 
 분류 요약: AX 전략 신호 58, Model Quality Auditor 23, OpenBIM/납품검증 15, 시공 BIM/스마트건설 14, 교육/확산 3, BIM 자동화/Add-in 2
 
 운영 판단: 상위 반복 신호는 CSO, 제품패키징, Model Quality Auditor, 교육컨설팅 지식으로 연결한다.
+
+
+## 2026-06-17 주간 AX 전략 리뷰
+- Source: `knowledge/40_curation/updates/weekly/2026-W25_AX_STRATEGY_REVIEW.md`
+- Tags: ax,weekly-review,strategy,bim
+
+분류 요약: AX 전략 신호 128, Model Quality Auditor 55, 시공 BIM/스마트건설 40, OpenBIM/납품검증 38, 교육/확산 9, BIM 자동화/Add-in 6
+
+운영 판단: 상위 반복 신호는 CSO, 제품패키징, Model Quality Auditor, 교육컨설팅 지식으로 연결한다.

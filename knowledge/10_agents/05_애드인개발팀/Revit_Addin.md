@@ -212,16 +212,6 @@ LUAChat 또는 RevitLUAChat은 외부 AI API를 직접 호출하지 않고 LUA B
 - 법규, 제조사 수치, 과업별 확정 기준은 일반 답변으로 단정하지 않고 기준서 확인 항목으로 분리한다.
 
 
-## Revit Add-in 최신 동향 및 개발 팁 (2026-05-28)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-05-28
-- Tags: revit,addin,API,update
-
-- Autodesk Revit 2025 API는 .NET 8 기반으로 개발되었으며 C#만 지원합니다.
-- Deprecated enum 값이 제거되었습니다.
-- 신규 기능으로 확장 가능한 저장 데이터 필터링이 향상되었습니다.
-- 성능 최적화를 위해 복잡한 계산 과정을 줄이고 효율적인 메모리 관리를 권장합니다.
-- Autodesk Store 심사 통과를 위한 팁으로는 Add-in의 안전성, 사용자 경험, 호환성 등을 철저히 검토하고 테스트하는 것이 중요합니다.
-
 ## Revit Addin Claude Code 심화 업데이트 (2026-05-28)
 - Source: claude-code-enhanced 2026-05-28
 - Tags: RevitAPI, 애드인개발, 2025변경사항, AutodeskStore, MEP자동화
@@ -268,73 +258,6 @@ Revit 버전별 Breaking Change 대응: Revit 2025에서 ElementId가 Int32 → 
 - 관련: [[Dynamo]] · [[Navisworks_Addin]] · [[프로그램개발]] · [[빌드검증]]
 
 
-## Revit Add-in 최신 동향 및 개발 팁 (2026-05-29)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-05-29
-- Tags: revit,addin,API,update
-
-- Autodesk Revit 2025 API는 .NET 8 기반으로 개발되었으며, Add-in을 새로 만들거나 수정할 때 이에 맞게 다시 빌드해야 합니다.
-- 새 API 메서드 중 일부는 C# Enum 지원이 제한되었습니다. 이를 활용하여 더 유연하고 확장 가능한 솔루션을 설계할 수 있습니다.
-- Revit 2025의 성능 최적화를 위해, 불필요한 데이터 로딩과 반복적인 계산을 줄이는 것이 중요합니다.
-- Autodesk Store에 올리는 Add-in은 신중하게 테스트하고, 사용자 친화성과 안정성을 고려해야 합니다. 특히, 확장성과 보안 검토를 통과하기 위해 API와 UI의 일관성 확인이 필요합니다.
-- 관련: [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]] · [[빌드검증]]
-
-
-## Revit Add-in 최신 동향 및 개발 팁 (2026-05-31)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-05-31
-- Tags: revit,addin,API,update
-
-- Autodesk Revit 2025 API는 .NET 8 기반으로 업그레이드되어 C# 외 다른 언어 지원이 중단되었습니다.
-- 새 API 메서드로 성능 최적화가 이루어졌으며, Dynamo의 업데이트와 함께 Revit Home 기능도 추가되었습니다.
-- Add-in 개발 시 Autodesk Store 심사 통과를 위한 팁으로는 사용자 경험을 향상시키는 UI/UX 설계와 보안 및 데이터 프라이버시 관련 요구사항 준수를 꼽을 수 있습니다.
-- 관련: [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]] · [[빌드검증]]
-
-
-## Revit Add-in 최신 동향 및 개발 팁 (2026-06-01)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-01
-- Tags: revit,addin,API,update
-
-- Autodesk Revit 2025 API는 .NET 8 기반으로 업그레이드되어 C# 외의 언어 지원이 제한됨.
-- 새롭게 추가된 API 메서드와 성능 최적화를 통해 개발 효율성 향상 가능.
-- Add-in 개발 시 Autodesk Store 심사 통과를 위해 사용자 경험을 고려하고, 안전성과 보안성을 철저히 검토해야 함.
-- 관련: [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]] · [[빌드검증]]
-
-
-## Revit Add-in 최신 동향 및 개발 팁 (2026-06-03)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-03
-- Tags: revit,addin,API,update
-
-- Autodesk Revit 2025 API는 .NET 8 기반으로 개발되어 Add-in 개발 시 이 프레임워크를 사용해야 한다.
-- 새로운 API 메서드 중 일부는 C#에서만 Enum 지원을 제공한다.
-- 성능 최적화를 위해 복잡한 계산이나 대량 데이터 처리 작업은 별도 스레드로 분리하여 실행하는 것이 좋다.
-- Add-in 개발 시 Autodesk Store 심사 통과를 위한 팁으로는 사용자 경험(UX)을 고려한 인터페이스 설계와 보안 강화, 오류 관리 및 로그 기록이 필수적이다.
-- 관련: [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]] · [[빌드검증]]
-
-
-## Revit Add-in 최신 동향 및 개발 팁 (2026-06-03)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-03
-- Tags: revit,addin,API,update
-
-- Autodesk Revit 2025 API는 .NET 8 기반으로 개발되었으며, Add-in은 이 프레임워크에서 다시 빌드해야 합니다.
-- 새로운 Enum 지원은 C#에만 제한됩니다.
-- 최신 문서와 SDK가 업데이트된 기능을 위한 자료로 제공되고 있습니다.
-- 성능 최적화를 위해 코드 리뷰 시 주의해야 할 사항들을 확인하고, 필요한 부분에서 효율적인 알고리즘을 적용하세요.
-- Autodesk Store 심사 통과를 위해서는 Add-in이 사용자 프라이버시와 보안에 위배되지 않는지 철저히 검토해야 합니다.
-- 관련: [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]] · [[빌드검증]]
-
-
-## Revit Add-in 최신 동향 및 개발 팁 (2026-06-04)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-04
-- Tags: revit,addin,API,update
-
-- Autodesk Revit 2025 API는 .NET 8 기반으로 개발되어 성능이 향상되었습니다.
-- 새 API 메서드로 프로젝트 관리와 자동화 작업에 도움을 줍니다.
-- 새로운 네임스페이스를 통해 기능이 확장되었으며, 이를 통해 더 많은 기능을 활용할 수 있습니다.
-- 성능 최적화를 위해 코드 효율성을 높이는 것이 중요합니다. 불필요한 계산이나 반복 작업을 줄여야 합니다.
-- Autodesk Store에 Add-in을 등록하려면 철저한 문서 작성과 안전성 검토가 필요합니다. 사용자 가이드와 보안 점검을 포함시켜야 합니다.
-- 심사 통과를 위해 API의 기능과 성능, 호환성을 확인하고, 사용자 경험을 최적화하는 것이 중요합니다.
-- 관련: [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]] · [[빌드검증]]
-
-
 ## 2026-06-04 Autodesk 공식 신호 기반 Add-in 업데이트 후보
 - Source: `knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_OFFICIAL_AUTODESK_SIGNAL_UPDATE.md`
 - Tags: revit,addin,autodesk,aps,needs-review
@@ -354,27 +277,6 @@ Autodesk 공식 Revit 2026 What's New와 APS 공식 블로그 기준으로 Add-i
 
 관련: [[ACC BIM360 CDE 지식 베이스]] · [[라이선스_보안관]] · [[지식업데이트]] · [[2026-06-04 LUA BIM LABS Official Autodesk Signal Update]]
 
-
-## Revit Add-in 최신 동향 및 개발 팁 (2026-06-05)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-05
-- Tags: revit,addin,API,update
-
-- Autodesk Revit 2025 API는 .NET 8 기반으로 개발되어 Add-in을 C#으로 재구성해야 합니다.
-- 새로운 API 메서드와 성능 최적화 기능이 추가되었습니다, 특히 카본 분석과 MEP/구조 분석에 대한 새 기능들이 포함됩니다.
-- Autodesk Store 심사 통과를 위한 팁: Add-in의 호환성을 확인하고, 사용자 경험을 향상시키는 기능들을 강화하세요.
-- 관련: [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]] · [[빌드검증]]
-
-
-## Revit Add-in 최신 동향 및 개발 팁 (2026-06-06)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-06
-- Tags: revit,addin,API,update
-
-- Autodesk Revit 2025 API는 .NET 8 기반으로 개발되었으며, Add-in을 다시 빌드해야 합니다.
-- MacroLanguageType의 Enum 값은 지원되지 않으며, C#만 사용할 수 있습니다.
-- 새 API 메서드로 확장 가능한 저장 필터링 기능이 강화되었습니다.
-- 성능 최적화를 위해 코드 검토 시 복잡한 로직을 간소화하는 것이 중요합니다.
-- Autodesk Store에 등록하기 위해서는 Add-in의 호환성과 안전성을 철저히 검증해야 합니다.
-- 관련: [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]] · [[빌드검증]]
 
 ## 2026-06-06 Revit 2027 핵심 신기능 긴급 보강 (2026-04-07 출시)
 - Source: Autodesk 공식 Revit 2027 What's New, goto.archi, interscale.com.au, Autodesk Help 2027
@@ -489,68 +391,12 @@ Autodesk 공식 Revit 2026 What's New와 APS 공식 블로그 기준으로 Add-i
 
 관련: [[ACC_BIM360]] · [[IFC_OpenBIM]] · [[BIM_납품검수]] · [[빌드검증]] · [[스토어심사]] · [[Dynamo]]
 
-
-## Revit Add-in 최신 동향 및 개발 팁 (2026-06-07)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-07
+## Revit Add-in 최신 동향 및 개발 팁 (2026-06-17)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-17
 - Tags: revit,addin,API,update
 
-- Autodesk Revit 2025 API는 .NET 8 기반으로 업그레이드되어 .NET 4.8에서의 Add-in 개발을 재구성해야 합니다.
-- C#만 지원하며, 지속가능성 및 탄소 분석에 대한 새로운 기능이 추가되었습니다.
-- 성능 최적화를 위해 API 메서드 사용 시 복잡한 계산 과정을 줄이는 것이 중요합니다.
-- Autodesk Store 심사 통과를 위한 팁으로는 Add-in의 안전성, 보안 및 호환성을 확인하는 것이 필수입니다.
+- Autodesk Revit 2025 API 최신 변경 사항: API 버전 업데이트에 따라 기존 메서드의 호환성을 유지하면서 새롭게 추가된 API 메서드를 활용하여 더 효율적인 개발을 할 수 있습니다.
+- 성능 최적화 팁: 코드 최적화와 리소스 관리가 중요하며, 불필요한 객체 생성과 캐싱 기법을 적절히 사용하면 프로젝트의 실행 속도를 높일 수 있습니다.
+- Autodesk Store 심사 통과 팁: Add-in의 안전성과 보안성을 강조하고, 사용자 프라이버시와 데이터 보호에 대한 명확한 정책을 제시해야 합니다. 또한, Add-in의 기능성과 사용자 경험을 향상시키는 데 중점을 두어야 하며, 관련 문서와 가이드라인을 준수하여 심사 과정에서 유리한 위치를 차지할 수 있습니다.
 - 관련: [[간섭검토]] · [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]]
 
-
-## Revit Add-in 최신 동향 및 개발 팁 (2026-06-09)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-09
-- Tags: revit,addin,API,update
-
-- Autodesk Revit 2025 API는 .NET Core 기반으로 업데이트되어, 새로운 클래스와 메서드가 추가되어 분석, 전기 시스템, 사용자 인터페이스 개선 등에 활용할 수 있게 되었습니다.
-- CriticalPathIterator와 Revit.UI.ContextMenu 등의 새 메서드를 활용하여 프로젝트 관리 및 사용자 경험을 향상시킬 수 있습니다.
-- Revit 2025는 시트 컬렉션 지원을 통해 출력 작업을 효율화할 수 있는 기회가 제공됩니다.
-- 성능 최적화를 위해 메모리 관리를 철저히 하고, 불필요한 객체 생성을 줄이는 것이 중요합니다. 또한, 비동기 처리를 적절히 활용하여 응답성을 높일 수 있습니다.
-- Autodesk Store에 Add-in을 등록하려면 명확하고 간결한 설명과 함께 사용자 경험(UX)을 고려해야 합니다. 제품 스크린샷과 동영상은 심사 과정에서 중요한 역할을 하므로 미리 준비해두세요.
-- Add-in의 기능과 성능이 사용자를 위한 가치를 제공하는지 확인하고, 관련 표준 및 지침에 따라 설계된 것이어야 합니다.
-- 관련: [[간섭검토]] · [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]]
-
-
-## Revit Add-in 최신 동향 및 개발 팁 (2026-06-12)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-12
-- Tags: revit,addin,API,update
-
-- Autodesk Revit 2025 API는 .NET Core 기반으로 개발되어, 새로운 분석 클래스와 메서드가 추가되었습니다.
-- 전력, 전기 및 IFC 카테고리 템플릿에 대한 새 메서드가 도입되었으며, 사이트 설계, 탄소 분석, MEP 및 구조 분석 등 주요 기능이 개선되었습니다.
-- 시트 컬렉션과 명령 메뉴 항목 지원을 통해 API의 성능이 최적화되었습니다.
-- Autodesk Store에 올리기 위해 Add-in을 심사 통과시키려면, 사용자 인터페이스가 직관적이며 안정적이어야 하며, 데이터 보안 및 개인 정보 보호 기준을 준수해야 합니다.
-- 관련: [[간섭검토]] · [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]]
-
-
-## Revit Add-in 최신 동향 및 개발 팁 (2026-06-13)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-13
-- Tags: revit,addin,API,update
-
-- Autodesk Revit 2025 API는 .NET Core 기반으로 개발되어 새로운 클래스와 메서드가 추가되었습니다.
-- 이 버전에서는 분석, 전기설비, 시트 콜렉션 등에 대한 신규 기능이 도입되었으며, 특히 공사 관리에 중요한 경로 탐색과 파라미터화된 바support 세부사항을 포함한 주요 변경 사항이 있습니다.
-- 성능 최적화를 위해 코드 리팩토링과 효율적인 데이터 접근 방식을 적용하여 프레임워크의 전반적인 속도와 반응성을 향상시킬 수 있습니다.
-- Autodesk Store에 등록된 Add-in은 신중한 계획과 테스트가 필요하며, 사용자 경험과 안전성 검토를 통과해야 합니다. 특히 사용자 인터페이스의 직관성과 데이터 보안을 강조하여 심사에서 긍정적인 결과를 얻을 수 있도록 합니다.
-- 관련: [[간섭검토]] · [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]]
-
-
-## Revit Add-in 최신 동향 및 개발 팁 (2026-06-15)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-15
-- Tags: revit,addin,API,update
-
-- Autodesk Revit 2025 API 최신 버전에서 추가된 메서드 중 하나는 "GetElementParameterValues"입니다. 이 메서드는 원하는 요소의 파라미터 값을 가져올 수 있게 해줍니다.
-- 성능 최적화를 위해, 불필요한 객체 생성을 줄이고, 필요한 데이터만 처리하도록 코드를 작성해야 합니다. 또한, 복잡한 계산이나 I/O 작업은 가능한 한 병렬로 수행하여 시간을 단축시킬 수 있습니다.
-- Autodesk Store 심사 통과를 위한 팁으로는 Add-in의 기능이 명확하고 사용자 친화적이어야 한다는 점을 강조합니다. 또한, 보안 정책 준수와 개인정보 보호 방침이 포함되어 있어야 합니다. 최신 버전의 API를 활용하여 안정성과 성능을 향상시키며, 사용자 경험을 개선하는 것이 중요합니다.
-- 관련: [[간섭검토]] · [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]]
-
-
-## Revit Add-in 최신 동향 및 개발 팁 (2026-06-16)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-16
-- Tags: revit,addin,API,update
-
-- Autodesk Revit 2025 API에서는 `LoadModelFromPath`와 `SaveModelAs` 메서드가 추가되어Revit 모델 파일의 로드 및 저장을 더욱 간편하게 할 수 있습니다.
-- 성능 최적화를 위해, 큰 프로젝트에서 자주 사용되는 객체에 대해 캐싱 기능이 개선되었습니다. 이는 데이터 접근 속도를 빠르게 만듭니다.
-- Autodesk Store 심사 통과를 위한 팁으로는 Add-in의 기능성, 안전성, 호환성을 확인하고, 사용자 경험을 최적화하는 것이 중요합니다. 특히, 사용자의 프라이버시와 데이터 보호가 준수되었는지 철저히 검토해야 합니다.
-- 관련: [[간섭검토]] · [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]]

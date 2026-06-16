@@ -347,14 +347,6 @@ BIM 데이터 품질 지표 (KPI):
 - NCR 재발율: 동일 유형 NCR 재발 → 0건 목표 (재발 시 프로세스 개선 트리거).
 
 
-## BIM 지침서 최신 동향 및 표준 업데이트 (2026-05-28)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-05-28
-- Tags: BIM,guideline,IFC,openBIM,update
-
-- 국제 BIM 표준 ISO 19650와 IFC4, IDS가 최신 동향을 이끌고 있으며, 특히 한국에서는 BuildingSMART Korea BIM 지침의 업데이트에 따라 IDS 적용 실무가 활발히 진행되고 있다.
-- IDS는 IFC 모델에서 정보 요구사항을 정의하는 표준으로, 2025년 버전은 아직 검토 중이다.
-- openBIM은 buildingSMART가 주도하며, Revit→IFC 내보내기는 BIM 데이터의 개방성과 상호운용성을 높이는 중요한 기술로 자리 잡고 있다. 최신 기준에 따르면 Revit에서 IFC4 형식으로 파일을 내보내는 것이 권장된다.
-
 ## BIM 지침서 Claude Code 심화 업데이트 (2026-05-28)
 - Source: claude-code-enhanced 2026-05-28
 - Tags: openBIM, ISO19650, IFC4, IDS, buildingSMART, 국제표준
@@ -381,17 +373,6 @@ ISO 19650-2 실무 적용에서 가장 많이 실패하는 3가지 패턴과 사
 - 관련: [[설계_지침서]] · [[시공_지침서]] · [[BIM_시방서]] · [[BEP_수행계획서]]
 
 
-## BIM 지침서 최신 동향 및 표준 업데이트 (2026-05-29)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-05-29
-- Tags: BIM,guideline,IFC,openBIM,update
-
-- 최신 국제 BIM 표준 ISO 19650와 IFC4가 한국의 BIM 지침에 반영되고 있으며, openBIM과 IDS 적용 실무가 강조되고 있습니다.
-- 한국에서는 2025년 기준으로 BuildingSMART Korea BIM 지침이 업데이트되어, openBIM 및 IDS를 통해 데이터 공유와 협업을 높이는 방향으로 진행됩니다.
-- IFC4는 인프라 프로젝트에서의 상호운용성을 향상시키기 위한 최신 표준입니다.
-- Revit에서 IFC4 형식으로 내보내기는 BIM 데이터의 중립성과 상호 운용성을 높이는 중요한 과정이며, 최신 기준은 이 방향을 따르고 있습니다.
-- 관련: [[설계_지침서]] · [[시공_지침서]] · [[건축]] · [[BIM_시방서]]
-
-
 ## 2026-06-04 국내 공공 BIM 지침 공식 출처 업데이트
 - Source: `knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_KOREA_PUBLIC_BIM_GUIDELINE_UPDATE.md`
 - Tags: BIM,guideline,molit,pps,public-procurement,official-source
@@ -411,107 +392,13 @@ ISO 19650-2 실무 적용에서 가장 많이 실패하는 3가지 패턴과 사
 
 관련: [[EIR BEP_심사원 지식 베이스]] · [[BEP 수행계획서 템플릿]] · [[견적심사원 지식 베이스]] · [[2026-06-04 LUA BIM LABS Korea Public BIM Guideline Update]]
 
-
-## BIM 지침서 최신 동향 및 표준 업데이트 (2026-05-30)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-05-30
+## BIM 지침서 최신 동향 및 표준 업데이트 (2026-06-17)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-17
 - Tags: BIM,guideline,IFC,openBIM,update
 
-- 최신 국제 BIM 표준으로 ISO 19650과 IFC4가 채택되어 데이터 교류와 협업을 개선하고 있습니다.
-- IDS(Integrated Delivery Standard) 도입으로 한국의 BIM 지침이 업데이트되었습니다. 이는 openBIM 프레임워크를 강화하여 중립적인 BIM 작업 환경을 구축하는 데 기여합니다.
-- Revit에서 IFC로의 내보내기는 최신 기준으로, BuildingSMART Korea 2025 BIM 표준 업데이트에 따라 지원됩니다.
-- 관련: [[설계_지침서]] · [[시공_지침서]] · [[건축]] · [[BIM_시방서]]
-
-
-## BIM 지침서 최신 동향 및 표준 업데이트 (2026-05-31)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-05-31
-- Tags: BIM,guideline,IFC,openBIM,update
-
-- 국제 BIM 표준인 ISO 19650와 IFC4는 openBIM을 기반으로 하며, 정보 전달 지침 IDS(Intformation Delivery Specification)를 통해 건설 산업 간의 협력을 지원한다.
-- 한국에서는 2025 BIM 지침이 최신 동향을 반영하고 있으며, 이는 국제 openBIM 프레임워크와 일치한다.
-- Revit에서 IFC4로 내보내기의 최신 기준은 IFC4.3을 따르고 있어, BIM 데이터의 호환성을 높일 수 있다.
-- IDS 적용 실무에서는 BCF(BIM Collaboration Format)와 IDM(Information Delivery Manual)이 주요하게 활용되고 있으며, 이는 BIM 프로젝트에서 정보 공유를 용이하게 한다.
-- 관련: [[설계_지침서]] · [[시공_지침서]] · [[건축]] · [[BIM_시방서]]
-
-
-## BIM 지침서 최신 동향 및 표준 업데이트 (2026-06-01)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-01
-- Tags: BIM,guideline,IFC,openBIM,update
-
-- 국제 BIM 표준인 ISO 19650와 IFC4가 최근 업데이트되어 건설 프로젝트의 협업과 데이터 교환을 개선하고 있으며, 이는 openBIM의 일환으로 구현된다.
-- 한국에서는 BuildingSMART Korea의 제안에 따라 2025 BIM 표준이 ISO 19650와 연계되어 적용되며, IFC4 및 IDS(Integrated Delivery Standard)가 주요 기술로 자리잡고 있다.
-- Revit에서 IFC4 형식으로 내보내는 최신 기준은 IFC4.3을 따르며, 이는 BIM 데이터의 일관성과 효율성을 높이기 위한 중요한 단계이다.
-- IDS 적용 실무에서는 다양한 프로젝트 관리 시스템 간의 통합을 통해 작업 효율성을 향상시키고, 개발자와 건설업체가 중립적인 BIM 환경에서 협업할 수 있는 기반을 마련하고 있다.
-- 관련: [[설계_지침서]] · [[시공_지침서]] · [[건축]] · [[BIM_시방서]]
-
-
-## BIM 지침서 최신 동향 및 표준 업데이트 (2026-06-02)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-02
-- Tags: BIM,guideline,IFC,openBIM,update
-
-- 2025년 한국 BIM 지침 업데이트는 ISO 19650 및 IFC4 기반의 openBIM 표준을 도입하여 국제적 호환성을 높인다.
-- 이 지침은 디지털 워크플로우와 데이터 공유를 강화하며, Revit에서 IFC4 형식으로 내보내는 최신 기준을 따르고 있다.
-- 한국 건설 산업에서는 IDS(Integrated Delivery System) 적용 실무가 확대되고 있으며, BIM과 LCA(integrated delivery system)를 결합하여 환경적 책임성을 강화하고 있다.
-- 관련: [[설계_지침서]] · [[시공_지침서]] · [[건축]] · [[BIM_시방서]]
-
-
-## BIM 지침서 최신 동향 및 표준 업데이트 (2026-06-03)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-03
-- Tags: BIM,guideline,IFC,openBIM,update
-
-- 최신 국제 BIM 표준 ISO 19650와 IFC4는 BIM 관리에 중요하며, buildingSMART Korea는 2025년까지의 BIM 표준 업데이트를 지원하고 있습니다.
-- IDS(Information Delivery Specification)는 데이터 교환과 준수를 돕는 도구로, openBIM 원칙에 따라 사용됩니다.
-- Revit에서 IFC 파일로 내보내기 최신 기준은 IFC4를 따르며, 이는 BIM 시스템 간의 중립적이고 개방적인 데이터 교환을 가능하게 합니다.
-- 관련: [[설계_지침서]] · [[시공_지침서]] · [[건축]] · [[BIM_시방서]]
-
-
-## BIM 지침서 최신 동향 및 표준 업데이트 (2026-06-03)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-03
-- Tags: BIM,guideline,IFC,openBIM,update
-
-- 국제 BIM 표준인 ISO 19650는 BIM 관리에 있어 중요한 역할을 하고 있으며, 2025년까지의 BIM 지침 업데이트가 한국에서 이루어질 예정이다.
-- IFC4는 BIM 데이터 교환과 호환성을 높이기 위해 사용되며, IDS(Information Delivery Specification)는 데이터 공유를 지원한다.
-- openBIM은 buildingSMART에 의해 제안된 원칙으로, 중립적인 표준을 기반으로 하여 다양한 소프트웨어 간의 호환성을 증진시킨다.
-- Revit에서 IFC로의 내보내기는 최신 기준으로, BIM 데이터를 다른 시스템과 쉽게 공유할 수 있게 한다.
-- 관련: [[설계_지침서]] · [[시공_지침서]] · [[건축]] · [[BIM_시방서]]
-
-
-## BIM 지침서 최신 동향 및 표준 업데이트 (2026-06-04)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-04
-- Tags: BIM,guideline,IFC,openBIM,update
-
-- 국제 BIM 표준 ISO 19650와 IFC4는 건설 정보 관리를 위한 공통 기반을 제공하며, 2025년에 대한 최신 업데이트가 예정되어 있다.
-- IDS(Information Delivery Specification)는 IFC 모델의 정보 요구사항을 표준화하여 BIM 데이터 교류를 지원한다.
-- 한국에서는 2025년 BIM 지침이 ISO 19650에 맞춰 개선되며, openBIM mandates가 도입되어 인프라 프로젝트에서 원활한 데이터 교환이 가능해진다.
-- Revit에서 IFC 파일로 내보내기의 최신 기준은 IFC4를 따르며, 이를 통해 BIM 모델의 호환성을 높일 수 있다.
-- 관련: [[설계_지침서]] · [[시공_지침서]] · [[건축]] · [[BIM_시방서]]
-
-
-## BIM 지침서 최신 동향 및 표준 업데이트 (2026-06-05)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-05
-- Tags: BIM,guideline,IFC,openBIM,update
-
-- 최신 국제 BIM 표준 ISO 19650 및 IFC4가 한국의 BIM 지침에 반영되어 있으며, 이는 openBIM과 인프라 프로젝트에서의 협업과 데이터 교환을 강화하기 위한 목적으로 제정되었습니다.
-- IDS(Integrated Delivery Strategy) 적용 실무에서는 다양한 이해관계자 간의 효과적인 정보 공유와 협업이 가능해졌습니다.
-- Revit에서 IFC4.3으로 파일을 내보내는 최신 기준은 BIM 데이터의 호환성과 통합성을 높이는 중요한 단계입니다.
-- 관련: [[설계_지침서]] · [[시공_지침서]] · [[건축]] · [[BIM_시방서]]
-
-
-## BIM 지침서 최신 동향 및 표준 업데이트 (2026-06-06)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-06
-- Tags: BIM,guideline,IFC,openBIM,update
-
-- 국제 BIM 표준인 ISO 19650과 IFC4가 최신 동향을 이끌고 있으며, IDS(Information Delivery Specification)는 IFC 모델의 호환성을 위한 지침으로서 계속 개선되고 있다.
-- 한국에서는 BuildingSMART Korea가 2025 BIM 표준 업데이트를 통해 ISO 19650 프레임워크와 IDS 적용을 강조하고 있으며, IDS 최신 버전은 검토 중이다.
-- openBIM은 IFC 기반의 개방 표준으로, 중립적인 BIM 작업을 지원하며, IFC 파일 검증과 워크플로 채택을 위한 프레임워크를 제공한다.
-- Revit에서 IFC로 내보내기의 최신 기준은 BCF(BIM Collaboration Format)와 IDM(Information Delivery Manual)을 통해 정의되며, 이는 BIM 데이터 공유와 협업을 촉진한다.
-- 관련: [[설계_지침서]] · [[시공_지침서]] · [[건축]] · [[BIM_시방서]]
-
-
-## BIM 지침서 최신 동향 및 표준 업데이트 (2026-06-12)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-12
-- Tags: BIM,guideline,IFC,openBIM,update
-
-- 국제 BIM 표준과 지침의 최신 동향을 살펴보면, ISO 19650 시리즈는 건설 프로세스에서 정보의 투명성과 공유를 강조하며, IFC4(Industrial Foundation Classes)은 BIM 데이터 교환을 위한 국제 표준으로 널리 사용되고 있다.
-- 한국에서는 한국건축공학회가 제정한 BIM 지침(KBIM)이 실무에 적용되며, IDS(Integrated Delivery System)는 프로젝트 전반의 협업과 통합을 지원한다. 
-- Revit→IFC 내보내기는 openBIM의 일환으로, 다양한 소프트웨어 간의 호환성 향상을 위해 중요하게 여겨진다. 최신 기준에 따르면, Revit에서 IFC4 형식으로 BIM 모델을 내보내는 것이 권장된다.
+- 국제 BIM 표준 ISO 19650는 건설 프로젝트의 정보 관리를 위한 지침을 제공하며, IFC4(Industry Foundation Classes 4)는 다양한 소프트웨어 간의 interoperability를 위해 개발된 중립적 데이터 형식으로, BIM 데이터의 교환과 공유를 지원합니다.
+- 한국에서는 건설기술원이 제정한 IDS(Integrated Design Standards)가 BIM 지침을 정비하고 있으며, 2023년 현재 Revit에서 IFC4로 내보내는 최신 기준은 Rvt 2021 버전부터 적용됩니다. 
+- OpenBIM은 buildingSMART의 주도하에 진행되며, BCF(BIM Collaboration Format)와 IDM(Intelligent Data Management) 등을 통해 다양한 소프트웨어 간의 호환성을 높이는 역할을 합니다.
+- 최근 실무에서는 Revit에서 IFC4로 데이터를 내보내는 과정에서 파일 형식과 구조에 대한 이해가 중요하며, 이를 위해 BIM 교육과 함께 IFC4 표준 준수를 위한 지침들이 제시되고 있습니다.
 - 관련: [[설계_지침서]] · [[시공_지침서]] · [[BIM_시방서]] · [[BIM_건물유형_공사구분_산정로직]]
+

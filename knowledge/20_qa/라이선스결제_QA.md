@@ -24,10 +24,10 @@ A: Autodesk App Store 환불 정책에 따라 구매 후 30일 이내, 미사용
 - Tags: license,billing,faq,autodesk-store,subscription
 
 Autodesk App Store 구독 플랜을 물을 때:
-- Individual: USD 19/month 또는 USD 190/year (1인 라이선스)
-- Team 5-Pack: USD 79/month 또는 USD 790/year (5인)
-- Enterprise: 직접 판매 (10인 이상, 별도 견적)
-- 30일 무료 체험 제공 (Entitlement API 연동 필요)
+- Individual: USD 14/month 또는 USD 140/year (1인 라이선스, 연간 결제 시 월 환산 약 USD 11.67 · 약 17% 절감)
+- Team 5-Pack: USD 490/year (5 seats, 인당 약 USD 8.17/월 · 약 30% 절감)
+- Enterprise: 공개 가격 없음, 라이선스 문의(개별 견적)
+- 30일 무료 체험 제공 예정 (Entitlement API 연동 필요)
 
 구독 상태별 동작을 물을 때:
 - 유효 구독: 전체 기능 활성화

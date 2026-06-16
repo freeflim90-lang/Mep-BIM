@@ -7,7 +7,7 @@
 - Tags: cfo,finance,revenue,pricing,mrr,qa,2026
 
 **Q: BIM Command Center 가격은 어떻게 책정하나요?**
-A: CFO 가격 분석 기준: ① 경쟁 제품 가격대(Autodesk App Store 유사 플러그인 USD 10~50/월) ② 지원 비용 포함 손익분기(예상 지원 비용이 구독료의 20% 이하) ③ 목표 MRR 달성을 위한 유료 전환 필요 수(MRR 목표 ÷ 단가). 현재 기준가: USD 19/월 (Individual), USD 190/년. CFO가 분기별로 재검토한다. *(KST01)*
+A: CFO 가격 분석 기준: ① 경쟁 제품 가격대(Autodesk App Store 유사 플러그인 USD 10~50/월) ② 지원 비용 포함 손익분기(예상 지원 비용이 구독료의 20% 이하) ③ 목표 MRR 달성을 위한 유료 전환 필요 수(MRR 목표 ÷ 단가). 현재 기준가: USD 14/월 (Individual), USD 140/년, Team 5-Pack USD 490/년. CFO가 분기별로 재검토한다. *(KST01)*
 
 **Q: Autodesk App Store 수수료는 얼마인가요?**
 A: Autodesk App Store 수수료는 개발자 수취 70%, Autodesk 수취 30%다. PayPal/BlueSnap 등 결제 수수료(약 2~3%)는 별도다. CFO는 수익 계획 시 실수취율을 67~68%로 계산한다. *(KST01 — Autodesk 공식 파트너 수수료 기준)*
