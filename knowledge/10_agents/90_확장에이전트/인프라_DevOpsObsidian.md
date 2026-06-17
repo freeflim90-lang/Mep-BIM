@@ -251,13 +251,13 @@ if issues := health_check():
     send_telegram("⚠ 인프라 이상: " + ", ".join(issues))
 ```
 
-## DevOps·Obsidian 인프라 최신 동향 (2026-06-17)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-17
+## DevOps·Obsidian 인프라 최신 동향 (2026-06-18)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-18
 - Tags: devops,obsidian,infrastructure,update
 
-- PARA Method를 활용하여 지식베이스의 프로젝트, 영역, 자료를 명확하게 정의하고 관리합니다.
-- Obsidian 플러그인을 통해 자동화 작업을 수행할 수 있습니다. 예를 들어, Auto-Tags와 같이 노트에 태그를 자동으로 추가하여 효율적인 검색과 분류가 가능합니다.
-- CI/CD 자동화 도구를 활용해Obsidian에서 생성된 문서나 지식베이스의 업데이트를 자동화할 수 있습니다. 예를 들어, GitHub Actions와 같은 도구를 통해 변경 사항을 감지하고 자동으로 문서를 업데이트합니다.
-- Logseq과 LangChain과 같은 기술도 활용해 볼 만하며, 이들은 지식베이스의 품질 관리를 위한 새로운 방법을 제공할 수 있습니다. LangChain은 모델과 하위 시스템을 조합하여 사용자 정의 에이전트를 생성할 수 있게 해줍니다.
-- AI 기반 도구들(Notion, LangChain)도 활용해 볼 만하며, 이들은 지식베이스 관리와 자동화에 대한 새로운 접근 방식을 제시합니다.
+- PARA Method를 활용하여 지식베이스의 프로젝트, 영역, 자료를 명확하게 구분하고 관리하세요.
+- Obsidian 플러그인을 통해 자동화 기능을 강화합니다. 예를 들어, Quartz 플러그인은 일정 자동화와 알림 기능을 제공합니다.
+- CI/CD 프로세스에 Obsidian과 연동하여 문서화하고 자동화하세요. 이를 통해 지식베이스의 품질 관리와 유지보수를 효율적으로 수행할 수 있습니다.
+- LangChain과 같은 AI 기반 도구를 활용해 복잡한 작업을 자동화하고 생산성을 높일 수 있습니다.
+- Notion처럼 다양한 앱 간에 자동화된 검색과 작업 흐름 최적화를 통해 지식베이스 관리의 효율성을 개선하세요.
 

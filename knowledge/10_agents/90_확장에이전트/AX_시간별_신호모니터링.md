@@ -642,3 +642,31 @@ def score_signal(text: str) -> float:
 - Building Design and Building Information Modeling (BIM) - openPR.com (BIM Automation, Quality/Product)
 
 운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-17 18:45 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-17/1845_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- Laing O’Rourke: design phase collaboration is key to MMC success (Smart Construction, BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-17 20:47 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-17/2047_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- Rick Willmott awarded OBE in King’s Birthday Honours List (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-17 22:48 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-17/2248_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- Morgan Sindall’s new special needs school to be carbon net-zero in operation (BIM Automation)
+- 건설 AI·로봇 도입 잇따라···현장 적용 논의 구체화 - 대한전문건설신문 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.

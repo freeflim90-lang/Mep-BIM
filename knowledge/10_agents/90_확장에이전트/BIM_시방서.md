@@ -496,12 +496,12 @@ EIR 필수 포함 사항 (국토부 BIM 시행지침 발주자편 §3 기준):
 
 - 관련: [[BEP_수행계획서]] · [[BIM_납품검수]] · [[IFC_OpenBIM]] · [[FM_자산관리]]
 
-## BIM 시방서 최신 기준 업데이트 (2026-06-17)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-17
+## BIM 시방서 최신 기준 업데이트 (2026-06-18)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-18
 - Tags: BIM,specification,EIR,COBie,update
 
-- 최신 동향과 실무 적용 팁을 고려한 한국 BIM 시방서(EIR 기반)에서는 발주처별 BIM 요구 수준에 따라 제출되는 BIM 데이터의 적합성을 판단하는 방법론이 제시되고 있습니다 (발주처별 정보요구사항 EIR 기준, 2023).
-- COBie(Coordinating Information in Building Elements) 스키마 개발과 항만용 COBie 적용 가이드라인을 통해 건설 프로젝트의 디지털화가 진행되고 있습니다 (해양수산과학기술진흥원, 2023).
-- FM( Facility Management) 연동 데이터 기준으로 BIM 시스템과 FM 시스템 간의 정보 교류와 통합이 강조되어 있으며, 이를 통해 건물의 유지보수 및 관리 효율성이 향상될 것으로 예상됩니다 (발주처별 EIR 기준, 2023).
+- 최신 동향과 실무 적용 팁을 고려할 때, 발주처별 BIM 요구 수준(EIR)은 각 프로젝트의 특성에 따라 다르지만, 일반적으로 디지털 데이터의 적합성을 판단하는 방법론이 제시되고 있다.
+- COBie(Construction Operations Building Information Exchange) 기준을 준수하면 건설 현장에서의 정보 교류와 유지보수 관리(FM; Facility Management) 연동이 용이해진다. 예를 들어, 항만용 COBie 스키마는 국제표준화 규격(buildingSMART International)에 따라 개발되었으며, 이를 통해 BIM 데이터의 통합과 활용 가이드라인을 제공하고 있다.
+- BIM 시방서(EIR 기반)에서는 발주처별 요구 수준을 명확히 정의하여, 설계부터 건설까지의 모든 단계에서 일관된 정보를 생성하고 관리할 수 있도록 하는 것이 중요하다. 이를 통해 프로젝트의 효율성과 품질이 향상될 수 있다.
 - 관련: [[설비장비]] · [[설계_지침서]] · [[시공_지침서]] · [[BIM_지침서]]
 
