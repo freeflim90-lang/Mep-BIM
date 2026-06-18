@@ -392,14 +392,13 @@ ISO 19650-2 실무 적용에서 가장 많이 실패하는 3가지 패턴과 사
 
 관련: [[EIR BEP_심사원 지식 베이스]] · [[BEP 수행계획서 템플릿]] · [[견적심사원 지식 베이스]] · [[2026-06-04 LUA BIM LABS Korea Public BIM Guideline Update]]
 
-## BIM 지침서 최신 동향 및 표준 업데이트 (2026-06-18)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-18
+## BIM 지침서 최신 동향 및 표준 업데이트 (2026-06-19)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-19
 - Tags: BIM,guideline,IFC,openBIM,update
 
-- 국제 BIM 표준 및 지침의 최신 동향에서는 ISO 19650과 IFC4가 주요 기준으로 자리매김하고 있다.
-- ISO 19650은 건설 프로젝트에서 정보 관리에 대한 국제적인 지침을 제공하며, 특히 BIM 데이터의 생성, 교환, 관리를 위한 규칙을 명시한다.
-- IFC4는 Industry Foundation Classes의 최신 버전으로, 다양한 건축 소프트웨어 간의 데이터 공유와 interoperability를 위해 설계되었다. 
-- 한국에서는 BIM 지침이 정부 주도로 제정되며, IFC4와 openBIM을 기반으로 하는 IDS(Integrated Delivery System)가 적극적으로 활용되고 있다.
-- Revit에서 IFC4 파일로의 내보내기는 최신 기준으로, BIM 데이터의 국제화 및 공유를 위한 중요한 단계이다.
+- 국제 BIM 표준 ISO 19650는 건축 자산의 전체 수명 주기에 걸친 정보 관리를 위한 지침을 제공하며, 최신 버전은 2023년에 업데이트되었습니다.
+- IFC4(Industry Foundation Classes 4)는 BIM 데이터를 공유하고 교환하기 위한 국제 표준으로, Revit와 같은 BIM 소프트웨어에서 사용됩니다. 최신 기준에서는 Revit에서 IFC4 파일로 내보내기 기능이 개선되었습니다.
+- IDS(Integrated Delivery Standard)는 한국의 BIM 실무 적용을 위해 제정된 지침으로, 2025 국토교통기술교류회에서 공유된 Roadmap에 따르면, IFC와 IDS 데이터 구조를 이용한 정보 교환이 강조되었습니다.
+- OpenBIM은 buildingSMART가 주도하는 이니셔티브로, BIM 시스템 간의 개방형 표준과 상호 운용성을 촉진합니다. BCF(BIM Collaboration Format)와 IDM(Intelligent Data Management) 등 다양한 표준을 통해 BIM 데이터를 효과적으로 관리하고 공유할 수 있습니다.
 - 관련: [[설계_지침서]] · [[시공_지침서]] · [[BIM_시방서]] · [[BIM_건물유형_공사구분_산정로직]]
 

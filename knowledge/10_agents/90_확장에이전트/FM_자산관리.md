@@ -1,5 +1,35 @@
 # FM(시설관리) 자산관리 BIM 지식 베이스
 
+## 2026-06-18 국토부 기계설비 유지관리/성능점검 공식 출처 보강
+- Source: `knowledge/30_intake/external_sources/2026-06-18_mechanical_equipment_maintenance_fm_intake.md`
+- Tags: fm,mechanical-equipment,maintenance,performance-check,molit,cobie,handover
+
+FM BIM 이관은 장비 형상과 COBie 파일 제출만으로 끝나지 않는다. 국내 기계설비 유지관리기준과 성능점검 매뉴얼을 확인해 관리주체가 연간 유지관리 및 성능점검 계획을 세울 수 있는 데이터를 넘겨야 한다.
+
+필수 연결:
+| 항목 | FM BIM 반영 |
+|---|---|
+| 성능점검 대상 여부 | 장비별 파라미터 또는 COBie Component 확장 필드 |
+| 점검 주기/항목 | O&M 문서와 성능점검 매뉴얼 기준으로 링크 |
+| 관리주체/책임 | 인수인계 문서와 장비대장에 기록 |
+| 점검기록 | CDE Archive 또는 FM 시스템 링크 |
+| 정보체계 대응 | 법정 보고/민원/통계 제출 가능성을 고려해 원천 자료 보존 |
+
+## 2026-06-18 에너지/ZEB/BEMS 공식 출처 보강
+- Source: `knowledge/30_intake/external_sources/2026-06-18_energy_zeb_bems_bim_handover_intake.md`
+- Tags: fm,zeb,bems,energy,green-building,cobie,handover
+
+FM BIM 이관 시 에너지절약계획서, ZEB 인증, BEMS/원격검침 요구가 있으면 인증 제출값과 운영 실측값을 구분한다. BIM 모델은 에너지 인증 자체를 대체하지 않지만, 계통·장비·공간·미터·신재생 설비를 추적하는 기준 데이터가 될 수 있다.
+
+필수 연결:
+| 항목 | FM BIM 반영 |
+|---|---|
+| 에너지절약계획서 | 적용 여부, 참조 문서 ID, 제출 책임 |
+| ZEB 인증 | 인증등급, 에너지자립률, 1차에너지소요량 참조 ID |
+| BEMS/원격검침 | 미터 ID, 계량 구분, BEMS 포인트 ID |
+| 신재생 설비 | 태양광 등 설비 ID, 설치 위치, 용량, 계통 연결 |
+| 운영 데이터 | 설계/인증 수치와 운영 실측 수치를 별도 필드로 관리 |
+
 ## 2026-06-05 기계설비법 2026 성능점검 개정 긴급 업데이트 (심화 보강)
 - Source: 기계설비신문, 보고서넷 2026 기계설비법 개정 분석, 국토부 기계설비 성능점검 매뉴얼
 - Tags: fm,mechanical-equipment-law,performance-check,revision,2026

@@ -670,3 +670,12 @@ def score_signal(text: str) -> float:
 - 건설 AI·로봇 도입 잇따라···현장 적용 논의 구체화 - 대한전문건설신문 (BIM Automation)
 
 운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-19 01:05 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-19/0105_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- Digital twin identifies £22k/year savings for wholesaler (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.

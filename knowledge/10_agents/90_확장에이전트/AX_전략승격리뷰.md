@@ -1,5 +1,27 @@
 # AX 전략승격리뷰 지식 베이스
 
+## 2026-06-18 Autodesk/openBIM 최신 신호 전략 반영
+- Source: `knowledge/30_intake/external_sources/2026-06-18_autodesk_openbim_signal_intake.md`
+- Tags: ax,strategy-review,autodesk,openbim,ids,bcf,ifc,revit-addin
+
+오늘 확인한 외부 신호는 Add-in 호환성 리스크와 openBIM 검증형 납품이라는 두 축으로 승격한다.
+
+전략 판단:
+- Revit 2025/2026 .NET 10 preview testing은 BIM Command Center의 배포 리스크다. 신규 기능보다 호환성 smoke test와 고객지원 FAQ가 우선이다.
+- Revit 2027 Design Automation 지원은 서버 자동화/APS 연동 제품 후보를 다시 열 수 있는 신호다. 단, 로컬 Revit Add-in과 APS automation Add-in의 빌드 분기를 명확히 나눠야 한다.
+- IDS 1.0 공식 표준화와 BCF 이슈 교환 흐름은 Model Quality Auditor가 “검토 결과표”에서 “검증 가능한 납품 요구사항”으로 확장될 근거다.
+- BCF component 참조 한계와 IDS 검사 결과 그룹핑 문제는 대형 모델 리포트 export의 UX/성능 리스크다.
+- Autodesk Forma/ACC 명칭 전환은 교육자료와 고객 문서의 용어 최신화 항목으로 유지한다.
+
+승격 액션:
+| 신호 | 담당 지식 | 다음 산출물 |
+|---|---|---|
+| Revit .NET 10 preview | Revit_Addin | 버전별 호환성 QA 표 |
+| Revit 2027 Automation | 프로그램개발 / Revit_Addin | APS 자동화 PoC 후보 |
+| IDS 기반 검증 | BIM_납품검수 / Model Quality Auditor | IDS 요구사항 용어집 |
+| BCF 이슈 그룹핑 | Navisworks_Addin / 품질룰 | BCF export 규칙 초안 |
+| Forma/ACC 전환 | 교육컨설팅 / 브랜드마케팅 | 교육자료 용어 업데이트 |
+
 ## 2026-06-05 한국 AX 정책·건설 AI 전환 전략 보강
 - Source: 중소벤처기업부 AX 원스톱 바우처, 정책브리핑(M.AX 얼라이언스), DEC-W BIM 뉴스
 - Tags: ax,ai-transformation,government-support,construction-ai,bim-ax,2026

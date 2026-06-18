@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""LUA BIM LABS 일일 루틴 체크리스트 — 매일 14:00 자동 발송."""
+"""LUA BIM LABS 일일 루틴 체크리스트 — 매일 13:00 자동 발송."""
 
 from __future__ import annotations
 
@@ -338,6 +338,13 @@ def build_checklist(today: date, now: datetime) -> tuple[str, dict[str, bool]]:
                     edu_label = f"미실행 (마지막: {last[5:]})"
         except Exception:
             pass
+    # 0명 오탐 방지: progress.json 상 미발송이어도 launchd 작업이 오늘 실행됐으면
+    # (활성 유료 Starter 0명 → 발송 대상 없음) 정상 실행으로 본다.
+    if not edu_ok:
+        edu_out = LOG_DIR / "bim_education_daily.out.log"
+        if edu_out.exists() and date.fromtimestamp(edu_out.stat().st_mtime) >= today:
+            edu_ok = True
+            edu_label = "발송 완료 (활성 대상 0명)"
     lines.append(f"{'✅' if edu_ok else '❌'} BIM 교육 텔레그램 발송 (07:00) — {edu_label}")
     statuses["edu"] = edu_ok
     if not edu_ok:

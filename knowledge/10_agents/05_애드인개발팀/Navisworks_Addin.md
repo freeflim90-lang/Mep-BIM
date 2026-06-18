@@ -166,12 +166,12 @@ Navisworks API 선택 가이드 — COM API vs .NET Managed API: COM API(`Autode
 
 - 관련: [[Revit_Addin]] · [[BIM_납품검수]] · [[IFC_OpenBIM]] · [[ACC_BIM360]]
 
-## Navisworks Add-in 최신 동향 및 활용 팁 (2026-06-18)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-18
+## Navisworks Add-in 최신 동향 및 활용 팁 (2026-06-19)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-19
 - Tags: navisworks,addin,clash-detection,update
 
-- Autodesk Navisworks 2025에서는 간섭 검토 자동화 기능을 강화하여 프로젝트의 효율성을 높일 수 있습니다.
-- 보고서 커스터마이징 옵션을 통해 사용자는 원하는 형식과 내용으로 보고서를 생성할 수 있으며, 이를 통해 프로젝트 관리가 용이해집니다.
-- API 활용 방법을 통해 Navisworks와 다른 소프트웨어 시스템 간의 통합을 쉽게 할 수 있어, 데이터 공유와 협업 과정에서 유연성을 확보할 수 있습니다.
+- Autodesk Navisworks 2025에서는 간섭 검토 자동화 기능을 통해 프로젝트에서의 충돌과 간섭을 미리 파악하여 효율적인 작업 환경을 제공한다.
+- 보고서 커스터마이징 기능을 활용하면 사용자가 필요한 정보만 선택적으로 포함시켜 보고서를 생성할 수 있어, 프로젝트 관리의 투명성을 높일 수 있다.
+- API 활용 방법을 통해 Navisworks와 다른 소프트웨어 시스템을 연동하여 데이터를 자동으로 가져오거나 전송하는 등의 작업을 수행할 수 있다. 이를 통해 생산성 향상과 프로세스 최적화가 가능하다.
 - 관련: [[간섭검토]] · [[Revit_Addin]]
 

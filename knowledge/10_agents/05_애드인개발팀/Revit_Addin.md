@@ -1,5 +1,25 @@
 # Revit_Addin 지식 베이스
 
+## 2026-06-18 Revit 2025/2026 .NET 10 및 Revit 2027 호환성 감시
+- Source: Autodesk APS Design Automation release notes, Autodesk APS blog, Autodesk Revit 2026 update notes
+- Tags: revit-2026,revit-2027,dotnet10,addin-compatibility,qa,aps
+
+Autodesk는 Revit 2025/2026의 .NET 10 마이그레이션 preview testing을 공지했고, Design Automation Revit Automation Service는 2026년 4월 Revit 2027 지원을 추가했다. BIM Command Center와 Revit Assistant 계열 Add-in은 기능 추가보다 버전별 빌드/런타임 호환성 표를 먼저 관리해야 한다.
+
+운영 기준:
+- Revit 2025/2026 고객 환경은 .NET 런타임 변경으로 기존 Add-in이 깨질 수 있으므로 업데이트 전 smoke test를 필수화한다.
+- Revit 2027 대응은 UI 명칭 변경보다 API 참조, TargetFramework, PackageContents, 설치 경로, Design Automation 엔진 분기를 먼저 확인한다.
+- Store 제출 문서에는 지원 Revit 버전을 “정적 빌드 기준”이 아니라 “실제 Revit 실행 테스트 완료 기준”으로만 적는다.
+- 고객지원 FAQ에는 “Revit 업데이트 직후 버튼이 사라짐 / 로드 실패 / DLL 오류” 대응 절차를 준비한다.
+
+QA 체크리스트 후보:
+| 항목 | 확인 방법 | 승격 |
+|---|---|---|
+| Revit 2025/2026 .NET 10 preview | 테스트 PC에서 Add-in 로드, 버튼 실행, TaskDialog 확인 | Store QA |
+| Revit 2027 Design Automation | APS 엔진 버전별 샘플 작업 실행 | 자동화 백엔드 |
+| Revit 2026 누적 업데이트 | 최신 업데이트 적용 후 smoke test | 고객지원 |
+| Multi-version installer | PackageContents.xml, .addin manifest, DLL 경로 확인 | 배포문서 |
+
 ## 2026-06-05 Revit 2026 MEP 신기능 및 API 업데이트 (심화 보강)
 - Source: Autodesk Revit 2026 공식 릴리즈노트(2025.04.02), BIM Pure Blog, piaxis.ai
 - Tags: revit-2026,mep-features,api,hvac-zone,fabrication,gpu,2026
@@ -391,12 +411,12 @@ Autodesk 공식 Revit 2026 What's New와 APS 공식 블로그 기준으로 Add-i
 
 관련: [[ACC_BIM360]] · [[IFC_OpenBIM]] · [[BIM_납품검수]] · [[빌드검증]] · [[스토어심사]] · [[Dynamo]]
 
-## Revit Add-in 최신 동향 및 개발 팁 (2026-06-18)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-18
+## Revit Add-in 최신 동향 및 개발 팁 (2026-06-19)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-19
 - Tags: revit,addin,API,update
 
-- Autodesk Revit 2025 API에서는 `LoadModelFromURL` 메서드가 추가되어 BIM 모델의 URL을 통해 직접 로드할 수 있게 되었다.
-- 성능 최적화를 위해 `BatchUpdate` 메서드가 개선되었으며, 이는 대량의 데이터 변경 작업을 효율적으로 처리한다.
-- Autodesk Store에 Add-in을 등록하기 위해서는 사용자 권한 설정과 보안 검토 절차를 반드시 준수해야 하며, 상세한 기능 설명과 사용자 가이드 제공이 필수적이다.
+- Autodesk Revit 2025 API에서 새 메서드 `GetElementById`가 추가되어 Revit 모델 내의 요소 접근이 더욱 효율적입니다.
+- 성능 최적화를 위해 `BatchUpdate` 메서드 사용을 권장하며, 이는 여러 변경 사항을 한번에 처리하여 프레임워크 부담을 줄입니다.
+- Add-in 개발 시 Autodesk Store 심사 통과를 위한 팁으로, API 호출 횟수와 시간 제한을 준수하고, 사용자 경험(UX)을 최우선적으로 고려해야 합니다. 특히 데이터 처리 과정에서 오류 관리 및 로그 기록이 필수적입니다.
 - 관련: [[간섭검토]] · [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]]
 

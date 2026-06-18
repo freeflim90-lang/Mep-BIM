@@ -5,6 +5,7 @@ GitHub BIM/Dynamo/Python 스크립트 수집기
 
 from __future__ import annotations
 
+import argparse
 import json
 import os
 import re
@@ -199,7 +200,16 @@ def get_collected_size_mb() -> float:
     return total / (1024 * 1024)
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="GitHub BIM/Dynamo/Python 스크립트 수집기")
+    parser.add_argument("--max-queries", type=int, default=len(SEARCH_QUERIES))
+    parser.add_argument("--max-repos-total", type=int, default=60)
+    parser.add_argument("--target-size-mb", type=float, default=TARGET_SIZE_MB)
+    return parser.parse_args()
+
+
 def main():
+    args = parse_args()
     print("=" * 60)
     print("GitHub BIM/Dynamo/Python 스크립트 수집기")
     print(f"시작: {datetime.now().isoformat()}")
@@ -211,7 +221,7 @@ def main():
     total_files = 0
     total_repos = 0
 
-    for query in SEARCH_QUERIES:
+    for query in SEARCH_QUERIES[: max(0, args.max_queries)]:
         print(f"\n검색: {query}")
         repos = search_repositories(query)
         time.sleep(0.5)
@@ -228,6 +238,9 @@ def main():
 
             if not owner or not repo_name:
                 continue
+            if total_repos >= args.max_repos_total:
+                print(f"\n저장소 수 제한({args.max_repos_total}) 도달")
+                break
 
             print(f"\n  저장소: {full_name} (⭐{stars})")
             files = collect_repo_files(owner, repo_name)
@@ -241,14 +254,14 @@ def main():
             current_size = get_collected_size_mb()
             print(f"  현재 수집 크기: {current_size:.1f} MB")
 
-            if current_size >= TARGET_SIZE_MB:
-                print(f"\n목표 크기({TARGET_SIZE_MB} MB) 도달!")
+            if current_size >= args.target_size_mb:
+                print(f"\n목표 크기({args.target_size_mb} MB) 도달!")
                 break
 
             time.sleep(0.3)
 
         current_size = get_collected_size_mb()
-        if current_size >= TARGET_SIZE_MB:
+        if current_size >= args.target_size_mb or total_repos >= args.max_repos_total:
             break
 
     # 최종 보고

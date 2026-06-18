@@ -251,13 +251,11 @@ if issues := health_check():
     send_telegram("⚠ 인프라 이상: " + ", ".join(issues))
 ```
 
-## DevOps·Obsidian 인프라 최신 동향 (2026-06-18)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-18
+## DevOps·Obsidian 인프라 최신 동향 (2026-06-19)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-19
 - Tags: devops,obsidian,infrastructure,update
 
-- PARA Method를 활용하여 지식베이스의 프로젝트, 영역, 자료를 명확하게 구분하고 관리하세요.
-- Obsidian 플러그인을 통해 자동화 기능을 강화합니다. 예를 들어, Quartz 플러그인은 일정 자동화와 알림 기능을 제공합니다.
-- CI/CD 프로세스에 Obsidian과 연동하여 문서화하고 자동화하세요. 이를 통해 지식베이스의 품질 관리와 유지보수를 효율적으로 수행할 수 있습니다.
-- LangChain과 같은 AI 기반 도구를 활용해 복잡한 작업을 자동화하고 생산성을 높일 수 있습니다.
-- Notion처럼 다양한 앱 간에 자동화된 검색과 작업 흐름 최적화를 통해 지식베이스 관리의 효율성을 개선하세요.
+- 최신 자동화 팁 중 하나는 PARA Method를 활용하여 지식 인프라의 프로젝트, 영역, 자료 관리를 체계적으로 진행하는 것입니다.
+- Obsidian 플러그인을 통해 자동화 작업을 수행할 수 있으며, Notion과 같은 AI 기반 워크스페이스도 활용해 볼 만합니다.
+- CI/CD 자동화는 지속적인 개발 프로세스에서 중요한 역할을 하며, LangChain과 같은 도구를 통해 모델과 툴을 조합하여 사용 사례에 맞춘 자동화 솔루션을 구성할 수 있습니다.
 

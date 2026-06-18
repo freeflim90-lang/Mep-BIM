@@ -1,5 +1,39 @@
 # EIR/BEP_심사원 지식 베이스
 
+## 2026-06-18 문서 체계 기반 EIR/BEP 심사 기준
+- Source: `knowledge/30_intake/external_sources/2026-06-18_contract_proposal_bep_document_work_intake.md`
+- Tags: eir,bep,proposal,sow,contract,document-review,scope-risk
+
+EIR/BEP 심사는 기술 내용만 보지 않고 제안서, SOW, 계약서, BEP, 납품검수표가 같은 약속을 말하는지 확인한다. 특히 계약 전 BEP와 계약 후 BEP의 목적 차이를 구분해야 한다.
+
+심사 순서:
+1. 발주자 EIR/과업지시서가 무엇을 요구하는지 확인한다.
+2. 제안서가 그 요구를 어떻게 해석했는지 확인한다.
+3. SOW/계약서가 실제 포함 범위와 제외 범위를 어떻게 확정했는지 확인한다.
+4. BEP가 수행 방법, 책임, CDE, LOD/LOI, 납품 기준을 운영 절차로 바꿨는지 확인한다.
+5. 납품검수표가 SOW/BEP 기준과 일치하는지 확인한다.
+
+위험 신호:
+- EIR에는 없는데 BEP에 과도한 산출물이 추가됨
+- 제안서에는 포함, 계약서에는 누락
+- SOW 제외 업무를 고객이 납품물로 기대함
+- LOD/LOI가 문서마다 다름
+- 검토 횟수, 보완 횟수, 납품 형식이 확정되지 않음
+
+## 2026-06-18 ISO 19650 프로토콜 기반 심사 보강
+- Source: `knowledge/30_intake/external_sources/2026-06-18_iso19650_protocol_eir_bep_air_intake.md`
+- Tags: iso19650,information-protocol,eir,bep,air,handover,review
+
+심사 시 BEP만 보지 않고 정보관리 프로토콜 또는 계약 첨부 문서가 있는지 확인한다. 정보관리 프로토콜은 정보 생산, 정보 사용, 보안, CDE, 승인, 납품 기준을 계약문서와 연결하는 역할을 한다.
+
+추가 심사 항목:
+- EIR이 입찰/제안 문서에 포함되어 있는가
+- pre-appointment BEP와 계약 후 BEP가 구분되어 있는가
+- Information Exchange Requirements가 BIM Uses와 납품 마일스톤별로 정의되어 있는가
+- AIR 또는 handover 요구가 COBie/FM/O&M 산출물과 연결되어 있는가
+- 정보관리 프로토콜이 계약서/SOW/BEP의 문서 우선순위와 충돌하지 않는가
+- 법률 판단이 필요한 프로토콜 조항은 내부 체크가 아니라 전문가 검토 대상으로 표시되어 있는가
+
 ## 2026-06-05 EIR·BEP 심사 AI 즉시 답변 패턴 보강
 - Source: ISO 19650, 국토부 BIM 시행지침, 발주처 BIM 심사 실무
 - Tags: eir,bep,review,compliance,iso19650,2026
@@ -177,15 +211,12 @@ EIR/BEP 심사 시 국내 공공 BIM 기준은 국토부 기본지침, 국토부
 
 관련: [[BIM 지침서 지식 베이스]] · [[견적심사원 지식 베이스]] · [[법규변경모니터링]]
 
-## EIR·BEP 심사 최신 기준 업데이트 (2026-06-18)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-18
+## EIR·BEP 심사 최신 기준 업데이트 (2026-06-19)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-19
 - Tags: EIR,BEP,review,update
 
-- EIR·BEP 심사원은 국토부 BIM 지침 기준을 엄격히 따르도록 하여야 합니다.
-- 정보요구사항(EIR; Employer’s Information Requirement)에 따라 제출된 BIM 데이터의 적합성을 판단할 수 있는 방법론을 숙지해야 합니다. (BIM 데이터 디지털 전환 관련)
-- BIM 클러스터 운영 전략 로드맵과 연구기획을 이해하고, 이를 바탕으로 심사가 이루어져야 합니다.
-- 파리 올림픽 선수촌의 지속 가능한 건축 설계와 같은 사례를 참고하여, 실질적인 적용성을 고려해야 합니다. (국토부 R&D 이어달리기)
-- 해양수산과학기술진흥원의 연구개발과제 유형 및 특성에 대한 이해가 필요하며, 이를 통해 항만시설 BIM 실용화 방안을 모색해야 합니다.
-- 자주 발생하는 미비 사항으로는 BIM 데이터 정확성 확인, 정보 통합 과정에서의 불일치, 그리고 관련 기술 스킬 부족 등이 있습니다.
+- EIR·BEP 심사원은 국토부 BIM 지침 기준 2023년 버전을 체크해야 합니다.
+- 디지털 데이터 전환에 따른 정보요구사항(EIR)의 적합성 평가 기준을 염두에 두어야 하며, 이는 RK/OTKCRK220270/OTKCRK220270.pdf에서 확인 가능합니다.
+- BIM 데이터의 정확성과 상호 운용성을 검토할 때, 자주 발생하는 미비 사항을 주의해야 합니다. 특히, 모델 간 일관성, 정보 누락, 단위 오류 등을 철저히 점검해야 합니다.
 - 관련: [[BIM_시방서]] · [[BEP_수행계획서]] · [[스토어심사]]
 

@@ -1,5 +1,24 @@
 # BIM 납품검수 지식 베이스
 
+## 2026-06-18 SOW/BEP/계약 연계 납품검수 기준
+- Source: `knowledge/30_intake/external_sources/2026-06-18_contract_proposal_bep_document_work_intake.md`
+- Tags: delivery-acceptance,sow,bep,contract,qa,change-request
+
+납품검수는 모델만 보는 절차가 아니라 SOW, 계약서, BEP, EIR, 납품대장 사이의 정합성을 확인하는 절차다. 검수 기준은 “발주처가 기대한 것”이 아니라 문서로 합의된 산출물과 기준을 우선한다.
+
+검수 전 확인 순서:
+1. SOW의 포함 업무와 제외 업무
+2. 계약서 납품물, 검수 기간, 보완 절차
+3. BEP의 LOD/LOI, 파일명, CDE, 품질관리 계획
+4. EIR/과업지시서의 발주자 요구사항
+5. 실제 납품 파일, 버전, 제출대장
+
+운영 기준:
+- 품질체크는 수행자가 납품 전 수행하고, 품질검수는 발주자/관리자가 납품 시 수행한다.
+- 자동검수 리포트는 근거 자료이며 최종 승인 권한과 동일하지 않다.
+- 납품물 추가, 검토 횟수 초과, 형식 추가 변환은 Change Request 또는 별도 견적 후보로 분류한다.
+- 검수 결과는 `적합`, `조건부 적합`, `보완 요청`, `범위 외 요청`, `기준 미확정`으로 나눈다.
+
 ## 2026-06-05 AI 기반 IFC 자동검증 최신 연구 결과 심화 보강 (2차)
 - Source: 대한공간정보학회 - AI 기반 IFC 표준안 자동화(2026), 한국연구재단, n8n+AI+벡터DB
 - Tags: delivery-quality,ifc-validation,ai-automation,model-quality-auditor,research,2026

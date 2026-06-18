@@ -1,0 +1,400 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html id="html" lang="en">
+<head>
+    <title>CORENET X</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+
+    <!-- favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/CX-Favicon16px.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/CX-Favicon32px.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/images/CX-Faviconlarge.png">
+
+    <link rel="stylesheet" href="/assets/css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/assets/css/main.min.css" />
+    <link rel="stylesheet" href="/css/notification-bar.css" />
+    <link rel="stylesheet" href="/css/vica-chatbot.css" />
+    <link rel="stylesheet" href="https://webchat.vica.gov.sg/static/css/chat.css" referrerpolicy="origin">
+
+
+    <title>Page Not Found</title><meta property="og:title" content="Page Not Found"><link rel="canonical" href="https://info.corenet.gov.sg/errorpages/404" />
+
+
+<script type="text/javascript">!function(T,l,y){var S=T.location,k="script",D="instrumentationKey",C="ingestionendpoint",I="disableExceptionTracking",E="ai.device.",b="toLowerCase",w="crossOrigin",N="POST",e="appInsightsSDK",t=y.name||"appInsights";(y.name||T[e])&&(T[e]=t);var n=T[t]||function(d){var g=!1,f=!1,m={initialize:!0,queue:[],sv:"5",version:2,config:d};function v(e,t){var n={},a="Browser";return n[E+"id"]=a[b](),n[E+"type"]=a,n["ai.operation.name"]=S&&S.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(m.sv||m.version),{time:function(){var e=new Date;function t(e){var t=""+e;return 1===t.length&&(t="0"+t),t}return e.getUTCFullYear()+"-"+t(1+e.getUTCMonth())+"-"+t(e.getUTCDate())+"T"+t(e.getUTCHours())+":"+t(e.getUTCMinutes())+":"+t(e.getUTCSeconds())+"."+((e.getUTCMilliseconds()/1e3).toFixed(3)+"").slice(2,5)+"Z"}(),iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}}}}var h=d.url||y.src;if(h){function a(e){var t,n,a,i,r,o,s,c,u,p,l;g=!0,m.queue=[],f||(f=!0,t=h,s=function(){var e={},t=d.connectionString;if(t)for(var n=t.split(";"),a=0;a<n.length;a++){var i=n[a].split("=");2===i.length&&(e[i[0][b]()]=i[1])}if(!e[C]){var r=e.endpointsuffix,o=r?e.location:null;e[C]="https://"+(o?o+".":"")+"dc."+(r||"services.visualstudio.com")}return e}(),c=s[D]||d[D]||"",u=s[C],p=u?u+"/v2/track":d.endpointUrl,(l=[]).push((n="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",a=t,i=p,(o=(r=v(c,"Exception")).data).baseType="ExceptionData",o.baseData.exceptions=[{typeName:"SDKLoadFailed",message:n.replace(/\./g,"-"),hasFullStack:!1,stack:n+"\nSnippet failed to load ["+a+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(S&&S.pathname||"_unknown_")+"\nEndpoint: "+i,parsedStack:[]}],r)),l.push(function(e,t,n,a){var i=v(c,"Message"),r=i.data;r.baseType="MessageData";var o=r.baseData;return o.message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+n+")").replace(/\"/g,"")+'"',o.properties={endpoint:a},i}(0,0,t,p)),function(e,t){if(JSON){var n=T.fetch;if(n&&!y.useXhr)n(t,{method:N,body:JSON.stringify(e),mode:"cors"});else if(XMLHttpRequest){var a=new XMLHttpRequest;a.open(N,t),a.setRequestHeader("Content-type","application/json"),a.send(JSON.stringify(e))}}}(l,p))}function i(e,t){f||setTimeout(function(){!t&&m.core||a()},500)}var e=function(){var n=l.createElement(k);n.src=h;var e=y[w];return!e&&""!==e||"undefined"==n[w]||(n[w]=e),n.onload=i,n.onerror=a,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||i(0,t)},n}();y.ld<0?l.getElementsByTagName("head")[0].appendChild(e):setTimeout(function(){l.getElementsByTagName(k)[0].parentNode.appendChild(e)},y.ld||0)}try{m.cookie=l.cookie}catch(p){}function t(e){for(;e.length;)!function(t){m[t]=function(){var e=arguments;g||m.queue.push(function(){m[t].apply(m,e)})}}(e.pop())}var n="track",r="TrackPage",o="TrackEvent";t([n+"Event",n+"PageView",n+"Exception",n+"Trace",n+"DependencyData",n+"Metric",n+"PageViewPerformance","start"+r,"stop"+r,"start"+o,"stop"+o,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),m.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4};var s=(d.extensionConfig||{}).ApplicationInsightsAnalytics||{};if(!0!==d[I]&&!0!==s[I]){var c="onerror";t(["_"+c]);var u=T[c];T[c]=function(e,t,n,a,i){var r=u&&u(e,t,n,a,i);return!0!==r&&m["_"+c]({message:e,url:t,lineNumber:n,columnNumber:a,error:i}),r},d.autoExceptionInstrumented=!0}return m}(y.cfg);function a(){y.onInit&&y.onInit(n)}(T[t]=n).queue&&0===n.queue.length?(n.queue.push(a),n.trackPageView({})):a()}(window,document,{
+src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", // The SDK URL Source
+crossOrigin: "anonymous", 
+cfg: { // Application Insights Configuration
+    connectionString: 'InstrumentationKey=c4b2704f-7495-445d-9b71-f95fe387b3dc;IngestionEndpoint=https://southeastasia-1.in.applicationinsights.azure.com/;LiveEndpoint=https://southeastasia.livediagnostics.monitor.azure.com/;ApplicationId=0d08f2ba-5f90-4033-aa58-e4d298abb833'
+}});</script></head>
+
+<body><!-- Google tag (gtag.js) -->
+<script async src=https://www.googletagmanager.com/gtag/js?id=G-4LGK445NKV></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4LGK445NKV');
+</script><script
+  id="searchsg-config"
+  src="https://api.search.gov.sg/v1/searchconfig.js?clientId=82bf5523-6abd-4437-9c8f-b335674473c8"
+  defer
+></script><script src="https://assets.wogaa.sg/scripts/wogaa.js"></script><script type="module" src="https://cdn.jsdelivr.net/npm/@govtechsg/sgds-web-component/Masthead/index.js"></script>
+<sgds-masthead class="sgds-masthead-container"></sgds-masthead>
+    <div>
+
+
+
+
+    <div>
+        <nav class="navbar navbar-expand-xl">
+            <div class="navbar navbar-container">
+                <div class="container">
+                    <!-- Start Logo -->
+                        <a class="navbar-brand" href="/" title="CORENET X">
+                            <img src="/images/default-source/about-corenet-x/corenetx-logo" alt="CORENET X" title="CORENET X">
+                        </a>
+                    <!-- End Logo -->
+
+                    <a href="https://portal.corenet.gov.sg/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn btn-dark order-xl-last"
+                       aria-label="Search"
+                       type="button">Submission Portal</a>
+
+                    <button class="navbar-toggler collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav"
+                            aria-controls="navbarNav"
+                            aria-expanded="false"
+                            aria-label="Toggle Navigation">
+                        <em class="fa-solid fa-bars"></em>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                                    <li class="nav-item dropdown">
+
+
+                                            <button class="nav-link dropdown-toggle" role="button" aria-expanded="false">
+                                                    <span data-href="/overview" data-target="_self" rel="noopener noreferrer">Overview</span>
+                                            </button>
+
+<ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown@item.Id">
+    <!-- Render the child items (second level) -->
+        <li>
+                <div class="dropdown-submenu">
+                    <button class="dropdown-item dropdown-toggle" role="button" aria-expanded="false">
+                            <span data-href="/overview/about-corenet-x" data-target="_self" rel="noopener noreferrer">About CORENET X</span>
+
+                    </button>
+                    <ul class="dropdown-submenu-content">
+                        <!-- Render the child items (third level) -->
+                                <li><a class="dropdown-item" href="/overview/about-corenet-x/overview-of-corenet-x" target="" rel="noopener noreferrer">Overview of CORENET X</a></li>
+                                <li><a class="dropdown-item" href="/overview/about-corenet-x/implementation-timeline" target="" rel="noopener noreferrer">Implementation Timeline</a></li>
+                                <li><a class="dropdown-item" href="/overview/about-corenet-x/getting-ready-for-corenet-x" target="" rel="noopener noreferrer">Getting Ready for CORENET X</a></li>
+                                <li><a class="dropdown-item" href="/overview/about-corenet-x/corenet-x-code-of-practice" target="" rel="noopener noreferrer">CORENET X Code of Practice</a></li>
+                    </ul>
+                </div>
+        </li>
+</ul>                                    </li>
+                                    <li class="nav-item dropdown">
+
+
+                                            <button class="nav-link dropdown-toggle" role="button" aria-expanded="false">
+Regulatory Process                                            </button>
+
+<ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown@item.Id">
+    <!-- Render the child items (second level) -->
+        <li>
+                <div class="dropdown-submenu">
+                    <button class="dropdown-item dropdown-toggle" role="button" aria-expanded="false">
+                            <span data-href="/regulatory-process/about-the-new-submission-process" data-target="_self" rel="noopener noreferrer">About the New Submission Process</span>
+
+                    </button>
+                    <ul class="dropdown-submenu-content">
+                        <!-- Render the child items (third level) -->
+                                <li><a class="dropdown-item" href="/regulatory-process/about-the-new-submission-process/3-gateway-process" target="" rel="noopener noreferrer">3-Gateway Process</a></li>
+                                <li><a class="dropdown-item" href="/regulatory-process/about-the-new-submission-process/direct-submission-process-(dsp)" target="" rel="noopener noreferrer">Direct Submission Process (DSP)&#xD;</a></li>
+                                <li><a class="dropdown-item" href="/regulatory-process/about-the-new-submission-process/refinements-to-the-new-process" target="" rel="noopener noreferrer">Refinements to the New Process</a></li>
+                                <li><a class="dropdown-item" href="/regulatory-process/about-the-new-submission-process/submission-workflows" target="" rel="noopener noreferrer">Submission Workflows</a></li>
+                                <li><a class="dropdown-item" href="/regulatory-process/about-the-new-submission-process/typical-submission-package" target="" rel="noopener noreferrer">Typical Submission Package</a></li>
+                                <li><a class="dropdown-item" href="/regulatory-process/about-the-new-submission-process/other-processes-that-may-be-relevant-to-projects" target="" rel="noopener noreferrer">Other Processes that may be relevant to projects</a></li>
+                    </ul>
+                </div>
+        </li>
+        <li>
+                <div class="dropdown-submenu">
+                    <button class="dropdown-item dropdown-toggle" role="button" aria-expanded="false">
+                            <span data-href="/regulatory-process/by-regulatory-agencies" data-target="_self" rel="noopener noreferrer">By Regulatory Agencies</span>
+
+                    </button>
+                    <ul class="dropdown-submenu-content">
+                        <!-- Render the child items (third level) -->
+                                <li><a class="dropdown-item" href="/regulatory-process/by-regulatory-agencies?id=c3fc73ea-c4da-4c74-a246-64f50e12e81c">-</a></li>
+                                <li><a class="dropdown-item" href="/regulatory-process/by-regulatory-agencies?id=ed9cb050-9835-4968-8c59-e36f8dd5d5af">BCA</a></li>
+                                <li><a class="dropdown-item" href="/regulatory-process/by-regulatory-agencies?id=153d58ef-ef6d-4643-9896-22f5850f4218">LTA</a></li>
+                                <li><a class="dropdown-item" href="/regulatory-process/by-regulatory-agencies?id=7bf1c5f2-ac08-4754-93b0-b3e79c0fc249">NEA</a></li>
+                                <li><a class="dropdown-item" href="/regulatory-process/by-regulatory-agencies?id=05380fd5-f41e-4e1e-ad2a-fd74f68ae580">NParks</a></li>
+                                <li><a class="dropdown-item" href="/regulatory-process/by-regulatory-agencies?id=0ec52406-7989-4fae-8951-70e0eb4d962e">PUB</a></li>
+                                <li><a class="dropdown-item" href="/regulatory-process/by-regulatory-agencies?id=e964b039-0f6e-4970-ba04-92de62163bfe">SCDF</a></li>
+                                <li><a class="dropdown-item" href="/regulatory-process/by-regulatory-agencies?id=1917991a-1b0e-4d35-914d-842b25323943">URA</a></li>
+                    </ul>
+                </div>
+        </li>
+        <li>
+                <div class="dropdown-submenu">
+                    <button class="dropdown-item dropdown-toggle" role="button" aria-expanded="false">
+                            <span data-href="/regulatory-process/by-key-gateways" data-target="_self" rel="noopener noreferrer">By Key Gateways</span>
+
+                    </button>
+                    <ul class="dropdown-submenu-content">
+                        <!-- Render the child items (third level) -->
+                                <li><a class="dropdown-item" href="/regulatory-process/by-key-gateways?id=fc4a85ea-24d1-4b7a-b2f7-3ac619e6a63a"> Pre-Submission Consultation</a></li>
+                                <li><a class="dropdown-item" href="/regulatory-process/by-key-gateways?id=ed9b5cde-f80b-4f95-8090-b00f8478cc66"> Design Gateway</a></li>
+                                <li><a class="dropdown-item" href="/regulatory-process/by-key-gateways?id=d1b3a8a2-b5cc-4bd7-9a50-472166b44d4f"> Piling Gateway</a></li>
+                                <li><a class="dropdown-item" href="/regulatory-process/by-key-gateways?id=e74a4fed-ec5c-4aea-88d9-10b490d72ae6"> Construction Gateway</a></li>
+                                <li><a class="dropdown-item" href="/regulatory-process/by-key-gateways?id=01b74fac-ddae-4a2e-8cc3-c7a2b3feb9b4"> Independent Submissions</a></li>
+                                <li><a class="dropdown-item" href="/regulatory-process/by-key-gateways?id=f3c99113-2af5-4267-a894-167367a8b2ab"> Completion Gateway</a></li>
+                    </ul>
+                </div>
+        </li>
+        <li>
+                <div class="dropdown-submenu">
+                    <button class="dropdown-item dropdown-toggle" role="button" aria-expanded="false">
+Other Building Works
+                    </button>
+                    <ul class="dropdown-submenu-content">
+                        <!-- Render the child items (third level) -->
+                                <li><a class="dropdown-item" href="/regulatory-process/other-building-works/conservation" target="" rel="noopener noreferrer">Conservation</a></li>
+                                <li><a class="dropdown-item" href="/regulatory-process/other-building-works/external-works" target="" rel="noopener noreferrer">External Works</a></li>
+                                <li><a class="dropdown-item" href="/regulatory-process/other-building-works/part-st-submissions" target="" rel="noopener noreferrer">Part-ST Submissions</a></li>
+                                <li><a class="dropdown-item" href="/regulatory-process/other-building-works/infrastructure-works" target="" rel="noopener noreferrer">Infrastructure Works</a></li>
+                    </ul>
+                </div>
+        </li>
+</ul>                                    </li>
+                                    <li class="nav-item dropdown">
+
+
+                                            <button class="nav-link dropdown-toggle" role="button" aria-expanded="false">
+IFC&#x2B;SG                                            </button>
+
+<ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown@item.Id">
+    <!-- Render the child items (second level) -->
+        <li>
+                <div class="dropdown-submenu">
+                    <button class="dropdown-item dropdown-toggle" role="button" aria-expanded="false">
+Getting Started&#xA0;
+                    </button>
+                    <ul class="dropdown-submenu-content">
+                        <!-- Render the child items (third level) -->
+                                <li><a class="dropdown-item" href="/ifc-sg/bim-data-(ifc-sg)/ifc-sg-onboarding-checklist" target="" rel="noopener noreferrer">IFC&#x2B;SG Onboarding Checklist</a></li>
+                                <li><a class="dropdown-item" href="/ifc-sg/bim-data-(ifc-sg)/glossary-of-identified-components" target="" rel="noopener noreferrer">Glossary of Identified Components</a></li>
+                    </ul>
+                </div>
+        </li>
+        <li>
+                <div class="dropdown-submenu">
+                    <button class="dropdown-item dropdown-toggle" role="button" aria-expanded="false">
+IFC&#x2B;SG Toolkits and Resource Files
+                    </button>
+                    <ul class="dropdown-submenu-content">
+                        <!-- Render the child items (third level) -->
+                                <li><a class="dropdown-item" href="/ifc-sg/templates--apps-and-more/bim-software-resources" target="" rel="noopener noreferrer">Native BIM Software&#xD;</a></li>
+                                <li><a class="dropdown-item" href="/ifc-sg/templates--apps-and-more/3rd-party-apps" target="" rel="noopener noreferrer">3rd Party Apps</a></li>
+                                <li><a class="dropdown-item" href="/ifc-sg/templates--apps-and-more/ifc-sg-excel-mapping-file" target="" rel="noopener noreferrer">IFC&#x2B;SG Excel Mapping File</a></li>
+                    </ul>
+                </div>
+        </li>
+        <li>
+                <div class="dropdown-submenu">
+                    <button class="dropdown-item dropdown-toggle" role="button" aria-expanded="false">
+Model Submission Good Practices&#xA0;
+                    </button>
+                    <ul class="dropdown-submenu-content">
+                        <!-- Render the child items (third level) -->
+                                <li><a class="dropdown-item" href="/ifc-sg/model-setup-and-coordination/essential-points-for-model-quality" target="" rel="noopener noreferrer">Essential Points for Model Quality</a></li>
+                                <li><a class="dropdown-item" href="/ifc-sg/model-setup-and-coordination/checking-levels-(z-coordinates)" target="" rel="noopener noreferrer">Model Federation and Geo-referencing&#xA0;</a></li>
+                                <li><a class="dropdown-item" href="/ifc-sg/model-setup-and-coordination/multi-disciplinary-coordination" target="" rel="noopener noreferrer">Block and File Management</a></li>
+                                <li><a class="dropdown-item" href="/ifc-sg/model-setup-and-coordination/MEP-Systems" target="" rel="noopener noreferrer">MEP Systems and Right Level of M&amp;E Details&#xD;</a></li>
+                                <li><a class="dropdown-item" href="/ifc-sg/model-setup-and-coordination/good-practices" target="" rel="noopener noreferrer">Importance of Reviewing IFC Models before Submission</a></li>
+                    </ul>
+                </div>
+        </li>
+</ul>                                    </li>
+                                    <li class="nav-item dropdown">
+
+
+                                            <button class="nav-link dropdown-toggle" role="button" aria-expanded="false">
+Resources&#xD;                                            </button>
+
+<ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown@item.Id">
+    <!-- Render the child items (second level) -->
+        <li>
+                    <a class="dropdown-item" href="/resources/past--events" target="" rel="noopener noreferrer">CORENET X Past Events</a>
+        </li>
+        <li>
+                    <a class="dropdown-item" href="/resources/corenet-x-training---funding" target="" rel="noopener noreferrer">CORENET X Training &amp; Funding</a>
+        </li>
+        <li>
+                    <a class="dropdown-item" href="/resources/corenet-x-projects" target="" rel="noopener noreferrer">CORENET X Projects</a>
+        </li>
+        <li>
+                    <a class="dropdown-item" href="/resources/circulars" target="" rel="noopener noreferrer">Circulars</a>
+        </li>
+        <li>
+                    <a class="dropdown-item" href="/resources/events" target="" rel="noopener noreferrer">Events</a>
+        </li>
+        <li>
+                <div class="dropdown-submenu">
+                    <button class="dropdown-item dropdown-toggle" role="button" aria-expanded="false">
+                            <span data-href="/resources/subscription" data-target="_self" rel="noopener noreferrer">Subscription</span>
+
+                    </button>
+                    <ul class="dropdown-submenu-content">
+                        <!-- Render the child items (third level) -->
+                                <li><a class="dropdown-item" href="/resources/subscription/subscribe" target="" rel="noopener noreferrer">Subscribe</a></li>
+                                <li><a class="dropdown-item" href="/resources/subscription/unsubscribe" target="" rel="noopener noreferrer">Unsubscribe</a></li>
+                    </ul>
+                </div>
+        </li>
+        <li>
+                    <a class="dropdown-item" href="/resources/codes-and-regulations" target="" rel="noopener noreferrer">Codes and Regulations</a>
+        </li>
+        <li>
+                    <a class="dropdown-item" href="/resources/faq" target="_blank" rel="noopener noreferrer">FAQ</a>
+        </li>
+</ul>                                    </li>
+                                    <li class="nav-item dropdown">
+
+
+                                            <button class="nav-link dropdown-toggle" role="button" aria-expanded="false">
+                                                    <span data-href="/submission-portal-resource" data-target="_self" rel="noopener noreferrer">Submission Portal Resource</span>
+                                            </button>
+
+<ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown@item.Id">
+    <!-- Render the child items (second level) -->
+        <li>
+                    <a class="dropdown-item" href="/submission-portal-resource/corenet-x-submission-portal" target="" rel="noopener noreferrer">About Submission Portal</a>
+        </li>
+        <li>
+                    <a class="dropdown-item" href="/submission-portal-resource/user-manual" target="_blank" rel="noopener noreferrer">User Manual</a>
+        </li>
+        <li>
+                    <a class="dropdown-item" href="/submission-portal-resource/release-notes" target="" rel="noopener noreferrer">Release Notes</a>
+        </li>
+        <li>
+                <div class="dropdown-submenu">
+                    <button class="dropdown-item dropdown-toggle" role="button" aria-expanded="false">
+More
+                    </button>
+                    <ul class="dropdown-submenu-content">
+                        <!-- Render the child items (third level) -->
+                                <li><a class="dropdown-item" href="/submission-portal-resource/more/corenet-x-and-corenet-2.0--key-differences" target="" rel="noopener noreferrer">CORENET X vs CORENET 2.0</a></li>
+                                <li><a class="dropdown-item" href="/submission-portal-resource/more/login-method" target="" rel="noopener noreferrer">Login Method</a></li>
+                                <li><a class="dropdown-item" href="/submission-portal-resource/more/appointing-project-members" target="" rel="noopener noreferrer">Appointing Project Members</a></li>
+                                <li><a class="dropdown-item" href="/submission-portal-resource/more/model-checker" target="" rel="noopener noreferrer">Model Checker</a></li>
+                    </ul>
+                </div>
+        </li>
+</ul>                                    </li>
+                                    <li class="nav-item ">
+
+
+                                            <a href="/contact-us" target="" rel="noopener noreferrer">Contact Us</a>
+                                    </li>
+                            <!-- Search Icon -->
+                            <li class="nav-item">
+                                <button class="navbar-search btn-search" aria-label="Search" type="button" id="bSearch">
+                                    <span class="visually-hidden">Search</span>
+                                    <em class="fa-solid fa-magnifying-glass"></em>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </nav>
+    </div>
+</div>
+    <header>
+
+
+
+<div class="">
+
+<div class="form-search"><div class="container"><div id="searchsg-searchbar"></div></div></div></div>
+</header>
+    <main id="content">
+            <div>
+
+<div class="sub-banner-wrapper">
+    <div class="container">
+            <h1 class="h2">Page Not Found</h1>
+    </div>
+</div>
+</div>
+            <div></div>
+            <section>
+                <div class="container">
+
+
+
+<div class="">
+<div><div><h1><span style="background-color: rgba(0, 0, 0, 0); color: inherit; font-size: var(--font-size-h1); text-align: inherit; text-transform: inherit; word-spacing: normal; caret-color: auto; white-space: inherit">Sorry, the page you're looking for is no longer available!</span></h1></div><br></div><p>&nbsp;</p><p>We apologize for any inconvenience caused.</p><div class="links"><p>For all other enquiries and feedback, you may reach us <a href="/feedback" data-sf-ec-immutable="" target="_blank" rel="noopener noreferrer">here</a>
+ </p></div></div>
+</div>
+            </section>
+
+        <div></div>
+    </main>
+    <footer>
+
+
+
+<div class="">
+<div class="footer-content"><div class="container"><h2>CORENET X</h2><div class="row gy-3"><div class="col-12 col-md-6"><p>CORENET X is a co-creation effort between the public agencies and industry to transform the regulatory landscape and practices through process re-engineering and adoption of technologies, redefining the Government to Business interactions. Developed using an agile approach, it will be implemented progressively and made available to the industry in phases.</p></div></div><div class="pt-4"><div class="d-flex"><ul class="listing-inline"><li><a href="/contact-us" rel="noopener noreferrer" target="_blank">Contact us</a></li><li><a data-sf-ec-immutable="" target="_blank" href="https://support.corenet.gov.sg/hc/en-us">FAQ</a></li><li><a href="/feedback" rel="noopener noreferrer" target="_blank">Feedback</a></li></ul></div></div></div></div><div class="footer-content"><div class="container"><div class="row gy-3"><div class="col-12"><ul class="listing-inline"><li><a href="https://www.reach.gov.sg" data-sf-ec-immutable="" target="_blank">Reach <em class="fa-solid fa-arrow-up-right-from-square"></em></a></li><li><a href="/privacy-statement">Privacy Statement</a></li><li><a href="/terms-of-use">Terms of Use</a></li><li><a href="https://tech.gov.sg/report_vulnerability" target="_blank" rel="noopener noreferrer" data-sf-ec-immutable="">Report Vulnerability <em class="fa-solid fa-arrow-up-right-from-square"></em></a></li></ul></div><div class="col-12 text-lg-end"><p class="mb-0" id="copyRightYear">© 2024 Government of Singapore</p><span id="lastModifiedDate"><p>Last Updated 16 May 2024</p></span>
+ </div></div></div></div></div>
+
+
+
+
+<div class="">
+
+<div id="webchat" app-id="bca-ask-bca" app-name="AskBecca" app-color="#002D86" app-icon="/images/default-source/askbecca/askbecca.png" app-subtitle="" app-welcome-message="" app-base-font-size="16" app-position-right="40" app-position-bottom="40" app-enable-auto-complete="true" app-enable-recommendations="true" app-auto-launch="false" app-bot-response-trigger-event="true" app-quick-launch-event="welcome" app-foreground-color1="#FFFFFF" app-foreground-color-2="#2E2E2E" app-background-color2="#FFFFFF" app-canvas-background-color="#E0E4E8" app-button-border-color="#0B5CFF" app-quick-reply-button-background-color="#F2F4F8" app-auto-complete-background-color="#EEF4FF" app-auto-complete-foreground-color="#2E2E2E" app-auto-complete-hover-color="#D6E4FF" app-auto-complete-divider-color="#002D86" app-recommendations-background-color="#EEF4FF" app-recommendations-foreground-color="#2E2E2E" app-recommendations-hover-color="#D6E4FF" app-launcher-animation-iteration="0" app-orchestrator-timeout="8000" app-font-family="Lato, sans-serif"></div></div>
+</footer>
+    <div id="copy-right" class="d-none" style="display: none;">&#xA9; 2026 Government of Singapore</div>
+    <div id="last-modified" class="d-none" style="display: none;">19 May 2026</div>
+
+
+
+    <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="/assets/js/main.min.js"></script>
+    <script type="text/javascript" src="/js/site.js"></script>
+    <script type="text/javascript" src="https://webchat.vica.gov.sg/static/js/chat.js" referrerpolicy="origin"></script>
+
+    
+
+
+</body>
+</html>

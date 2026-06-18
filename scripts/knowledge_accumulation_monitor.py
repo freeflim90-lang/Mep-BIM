@@ -6,6 +6,7 @@ Q&A 생성, PDF 수집, 스크립트 수집을 순서대로 실행한다.
 
 from __future__ import annotations
 
+import argparse
 import json
 import os
 import shutil
@@ -183,7 +184,7 @@ def save_state(disk: dict, stats: dict, phase: str) -> None:
     STATE_FILE.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-def run_script(script_name: str) -> bool:
+def run_script(script_name: str, extra_args: list[str] | None = None) -> bool:
     """수집 스크립트를 실행한다."""
     script_path = PROJECT_ROOT / "scripts" / script_name
     if not script_path.exists():
@@ -191,8 +192,9 @@ def run_script(script_name: str) -> bool:
         return False
     print(f"\n▶ {script_name} 실행...")
     try:
+        command = [sys.executable, str(script_path), *(extra_args or [])]
         result = subprocess.run(
-            [sys.executable, str(script_path)],
+            command,
             timeout=3600,  # 1시간 타임아웃
             capture_output=False,
             cwd=str(PROJECT_ROOT),
@@ -206,7 +208,29 @@ def run_script(script_name: str) -> bool:
         return False
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="LUA BIM LABS 지식 축적 모니터")
+    parser.add_argument(
+        "--once",
+        action="store_true",
+        help="현재 루프를 1회만 실행한다. 목표 SSD 사용률 메시지만 출력하고 장기 대기를 하지 않는다.",
+    )
+    parser.add_argument(
+        "--skip-bim-scripts",
+        action="store_true",
+        help="GitHub BIM 스크립트 수집 단계를 건너뛴다.",
+    )
+    parser.add_argument(
+        "--bim-script-repos",
+        type=int,
+        default=12,
+        help="BIM 스크립트 수집 저장소 수 제한",
+    )
+    return parser.parse_args()
+
+
 def main():
+    args = parse_args()
     print("=" * 60)
     print("LUA BIM LABS 지식 축적 모니터")
     print(f"시작: {datetime.now().isoformat()}")
@@ -242,9 +266,13 @@ def main():
     save_state(disk, stats, "Phase 2 완료")
 
     # Phase 3: GitHub 스크립트 수집
-    print("\n[Phase 3] GitHub BIM 스크립트 수집...")
-    send_telegram("🔧 Phase 3: GitHub BIM 스크립트 수집 시작")
-    run_script("collect_bim_scripts.py")
+    if args.skip_bim_scripts:
+        print("\n[Phase 3] GitHub BIM 스크립트 수집 스킵")
+        send_telegram("⏭ Phase 3: GitHub BIM 스크립트 수집 스킵")
+    else:
+        print("\n[Phase 3] GitHub BIM 스크립트 수집...")
+        send_telegram("🔧 Phase 3: GitHub BIM 스크립트 수집 시작")
+        run_script("collect_bim_scripts.py", ["--max-repos-total", str(args.bim_script_repos)])
 
     disk = get_disk_info()
     stats = get_knowledge_stats()
@@ -272,6 +300,8 @@ def main():
         print("더 많은 데이터 수집을 위해 추가 스크립트 실행이 필요합니다.")
 
     save_state(disk, stats, "완료")
+    if args.once:
+        print("\nonce 모드: 1회 실행 후 종료")
     print("\n완료!")
 
 
