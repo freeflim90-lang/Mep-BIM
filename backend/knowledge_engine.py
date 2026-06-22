@@ -309,7 +309,7 @@ def query_terms(query: str) -> list[str]:
         "닥트": ["덕트"], "디퓨져": ["디퓨저"], "후렉시블": ["플렉시블"],
         "파라메터": ["파라미터"], "매개변수": ["파라미터", "parameter"],
         "발브": ["밸브"], "벨브": ["밸브"], "훼밀리": ["패밀리", "family"],
-        "레빗": ["revit"], "분전판": ["분전반"], "커텐월": ["커튼월"],
+        "레빗": ["revit"], "분전판": ["분전반"], "커텐월": ["커튼월"], "방화구회": ["방화구획"],
         # 한글 음역 약어 → 영문 약어(KB 표기). 한국 고객이 'LOD' 대신 '엘오디',
         # 'IFC' 대신 '아이에프씨'로 흔히 타이핑하는데 KB는 영문 약어라 미스코어→웹검색.
         # 모두 distinctive(타 한국어 substring 아님)·콘텐츠 풍부한 것만.
@@ -647,7 +647,7 @@ def infer_knowledge_agent_from_query(query: str) -> str:
     lower_text = (
         query.lower()
         .replace("컨텐츠", "콘텐츠").replace("후렉시블", "플렉시블")
-        .replace("분전판", "분전반").replace("커텐월", "커튼월")
+        .replace("분전판", "분전반").replace("커텐월", "커튼월").replace("방화구회", "방화구획")
     )
 
     for rule in _registry.inference_rules():
