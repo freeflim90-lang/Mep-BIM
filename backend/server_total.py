@@ -55,7 +55,7 @@ from backend.knowledge_store import (
     qa_knowledge_file_path,
 )
 from backend.text_utils import (
-    sanitize_outbound_text, sanitize_resume_text_for_ai,
+    sanitize_outbound_text, sanitize_resume_text_for_ai, clean_markdown_for_display,
     append_korean_response_instruction, enforce_korean_answer,
     normalize_query_text, normalize_team_button_text,
     launch_background_task, log_background_task_result,
@@ -80,6 +80,7 @@ from backend.reasoning_feedback import (
 )
 from backend.model_routing import agent_model_map, deepseek_final_review_model, model_routing_status
 from backend.final_answer_review import review_final_answer_with_deepseek
+from backend.deepseek_balance import fetch_deepseek_balance_status
 from backend.knowledge_approval import (
     append_knowledge_approval_candidate,
     find_knowledge_approval_candidate,
@@ -387,6 +388,7 @@ from backend.knowledge_engine import (
     knowledge_search_files, query_terms, score_knowledge_text,
     extract_relevant_excerpt, search_local_knowledge,
     infer_knowledge_agent_from_query, build_knowledge_answer, build_combined_answer,
+    identity_answer, extract_topic_terms, extract_attribute_terms,
     assess_knowledge_answer_quality, assess_team_telegram_answer_readiness,
     auto_supplement_knowledge_gap,
     append_auto_knowledge_gap_log, build_more_research_answer,
@@ -445,7 +447,8 @@ from backend.web_search import (
 from backend.ai_pipeline import (
     _extract_agent_name, _parse_sections, _score_and_pick, _compose_knowledge_response,
     current_budget_month, load_deepseek_budget_registry, save_deepseek_budget_registry,
-    can_use_deepseek_budget, deepseek_budget_remaining, record_deepseek_budget_use,
+    can_use_deepseek_budget, deepseek_budget_remaining, deepseek_month_usage,
+    deepseek_monthly_budget, record_deepseek_budget_use,
     stream_claude, infer_target_agent,
     should_use_paid_ai, ai_execution_policy_summary,
     process_corporate_pipeline,
@@ -537,7 +540,8 @@ async def _synthesize_with_qwen(query: str, context: str) -> str:
         ),
         system=(
             append_korean_response_instruction(
-                "당신은 LUA BIM LABS의 MEP BIM 전문 어시스턴트입니다. "
+                "당신은 LUA BIM LABS의 MEP BIM 전문 어시스턴트 'Lua'입니다. "
+                "이름을 물으면 'Lua'라고 답합니다. "
                 "제공된 지식 베이스를 참고해 질문에 실무적이고 자연스러운 한국어로 답변합니다. "
                 "불필요한 헤더, 태그, 위키 링크 없이 핵심 내용만 전달합니다."
             )
@@ -549,8 +553,60 @@ async def _synthesize_with_qwen(query: str, context: str) -> str:
     return ""
 
 
+def _recent_context_subject(update: Update) -> str:
+    """직전(최근 15분) 대화 주제(context_subject)를 반환한다(없으면 빈 문자열)."""
+    prev = TELEGRAM_KNOWLEDGE_SESSIONS.get(telegram_session_key(update))
+    if not prev:
+        return ""
+    subject = (prev.get("context_subject") or "").strip()
+    if not subject:
+        return ""
+    try:
+        age = datetime.datetime.now() - datetime.datetime.fromisoformat(prev.get("created_at", ""))
+        return subject if age.total_seconds() <= 900 else ""
+    except (ValueError, TypeError):
+        return ""
+
+
+def _carried_answer_covers_followup(query: str, carried_matches: list) -> bool:
+    """문맥 재시도 안전 게이트: carried(직전 주제+후속질의) 답변이 '주제'만 매칭돼
+    confident 가 된 게 아니라, 후속질의의 distinctive 용어를 실제 커버하는지 검사한다.
+    (그렇지 않으면 '김치찌개'+강한주제'냉동기'가 confident-오답이 된다.)"""
+    if not carried_matches:
+        return False
+    carried_excerpt = (carried_matches[0].get("excerpt", "") or "").lower()
+    q_topic = extract_topic_terms(query)
+    if q_topic:
+        return any(t.lower() in carried_excerpt for t in q_topic)
+    # 순수 속성 후속질의('간격은?'·'용량은?')는 토픽이 전부 속성어라 q_topic 이 빈다.
+    # 이때는 속성어가 carried 발췌에 실제 있으면 관련 후속으로 인정한다(속성질의는 본질적으로
+    # 직전 주제에 대한 것이라 'unrelated' 위험이 없음 — garbage 는 속성어가 없어 여전히 거부).
+    q_attrs = extract_attribute_terms(query)
+    return any(t in carried_excerpt for t in q_attrs)
+
+
+def _resolve_conversation_context(update: Update, query: str) -> tuple[str, str]:
+    """대화 문맥 상속. 현재 질의가 자체 주제(subject)를 가지면 그대로 쓰고 주제를 갱신한다.
+    주어 없는 후속질의(예: '연면적/시공사 자료 찾아줘')면 직전(최근 15분) 대화 주제를 앞에
+    붙여 검색·라우팅한다. 반환: (검색에 쓸 effective_query, 이번 턴의 context_subject)."""
+    cur_topic = extract_topic_terms(query)
+    # 명확한 조응(back-reference) 마커가 있으면 콘텐츠 명사가 있어도 직전 주제를 상속한다.
+    # 예: '그거 청소공간은?'(그거=직전 스트레이너/냉동기) → '청소공간'을 새 주제로 보지 않음.
+    _anaphora = ("그거", "이거", "그것", "이것", "저거", "그건", "이건", "그게", "이게",
+                 "해당", "방금", "아까")
+    has_anaphora = any(m in query for m in _anaphora)
+    if cur_topic and not has_anaphora:
+        return query, " ".join(cur_topic)
+    subject = _recent_context_subject(update)
+    if subject:
+        return f"{subject} {query}", subject
+    # 직전 주제가 없으면 자체 주제(있으면)로, 없으면 빈 문자열.
+    return query, " ".join(cur_topic)
+
+
 async def process_team_knowledge_question(update: Update, query: str):
-    agent = infer_knowledge_agent_from_query(query)
+    effective_query, context_subject = _resolve_conversation_context(update, query)
+    agent = infer_knowledge_agent_from_query(effective_query)
     await log_to_dashboard("T4_TELEGRAM", f"📥 질문 수신: {query[:80]}")
     ensure_agent_state("지식업데이트")
     agent_states["지식업데이트"]["status"] = "Active"
@@ -559,16 +615,48 @@ async def process_team_knowledge_question(update: Update, query: str):
 
     progress_msg = await update.message.reply_text("🔍 검색 중...", reply_markup=TEAM_REQUEST_KEYBOARD)
 
+    # 정체성/이름 질의는 검색 없이 결정적으로 'Lua' 소개를 반환한다.
+    identity = identity_answer(query)
+    if identity:
+        await update_reply_progress(progress_msg, f"[📚 Lua]\n\n{identity}")
+        agent_states["지식업데이트"]["status"] = "Idle"
+        await send_state_to_dashboard()
+        return
+
     # 로컬 지식 먼저 조회하고, 점수뿐 아니라 답변 노이즈/에이전트 불일치까지 평가한다.
-    local_matches = search_local_knowledge(query)
+    # effective_query: 주어 없는 후속질의면 직전 대화 주제가 앞에 붙은 형태(문맥 상속).
+    local_matches = search_local_knowledge(effective_query)
     top_score = local_matches[0]["score"] if local_matches else 0
-    local_answer_preview = build_knowledge_answer(query, local_matches)
+    local_answer_preview = build_knowledge_answer(effective_query, local_matches)
     readiness = assess_team_telegram_answer_readiness(
-        query,
+        effective_query,
         agent,
         local_matches,
         local_answer_preview,
     )
+
+    # 문맥 재시도: 조응 없는 콘텐츠명사 후속질의('이음 길이는?')는 _resolve 가 상속하지
+    # 않아 weak 일 수 있다. weak + 미상속 + 최근 주제 존재 시 직전 주제를 붙여 재검색하고,
+    # 그 결과가 confident 면 채택한다(직전 주제가 실제로 매칭될 때만 = 안전).
+    if readiness["should_search"] and effective_query == query:
+        subject = _recent_context_subject(update)
+        if subject and subject.lower() not in query.lower():
+            carried_q = f"{subject} {query}"
+            carried_matches = search_local_knowledge(carried_q)
+            carried_agent = infer_knowledge_agent_from_query(carried_q)
+            carried_ready = assess_team_telegram_answer_readiness(
+                carried_q, carried_agent, carried_matches,
+                build_knowledge_answer(carried_q, carried_matches),
+            )
+            # 안전: carried 가 '주제'만 매칭돼 confident 가 아니라 후속질의 내용도 실제
+            # 커버할 때만 채택('김치찌개'+'냉동기 밸브' 같은 confident-오답 차단).
+            if not carried_ready["should_search"] and _carried_answer_covers_followup(query, carried_matches):
+                effective_query, agent = carried_q, carried_agent
+                local_matches, readiness = carried_matches, carried_ready
+                top_score = carried_matches[0]["score"] if carried_matches else 0
+                # drill-down 대화의 앵커 보존: retry 로 직전 주제를 상속했으면 그 주제를
+                # 다음 턴 context_subject 로 유지한다(후속 노출 명사로 주제가 drift 하지 않게).
+                context_subject = subject
 
     # 로컬 지식이 충분하면 웹 검색 생략. 부족하면 자동 보강 검색으로 전환.
     if not readiness["should_search"]:
@@ -579,19 +667,25 @@ async def process_team_knowledge_question(update: Update, query: str):
             "T4_TELEGRAM",
             f"🔎 로컬 답변 품질 보강 필요 ({', '.join(readiness['reasons'])}): {query[:50]}",
         )
-        web_task = asyncio.create_task(_search_web_for_knowledge(agent, query))
+        web_task = asyncio.create_task(_search_web_for_knowledge(agent, effective_query))
         search_result = await web_task
 
-    # 웹 결과 + 로컬 지식을 컨텍스트로 조합
-    raw_context = build_combined_answer(query, search_result, local_matches)
+    # 웹 결과 + 로컬 지식을 컨텍스트로 조합 (effective_query: 후속질의면 직전 주제 포함)
+    raw_context = build_combined_answer(effective_query, search_result, local_matches)
 
-    # Qwen 로컬 모델로 자연어 합성 (가능한 경우)
-    answer = await _synthesize_with_qwen(query, raw_context) or raw_context
-    answer = enforce_korean_answer(answer, fallback_subject=query)
+    # Qwen 로컬 모델로 자연어 합성 (가능한 경우) — 합성도 문맥 상속된 질의를 받아야
+    # '무역센터 KITA' 후속질의가 '연면적'만 보고 엉뚱한 엔티티로 답하지 않는다.
+    answer = await _synthesize_with_qwen(effective_query, raw_context) or raw_context
+    answer = enforce_korean_answer(answer, fallback_subject=effective_query)
 
     # 답변 소스 표기 (로컬 지식 베이스 / 웹 검색 구분)
     has_local = bool(local_matches and top_score >= 10)
     has_web   = bool(search_result)
+    # named-entity 미커버면 build_combined_answer 가 로컬 발췌를 억제하므로(웹 다운 시
+    # '찾지 못함', 웹 성공 시 웹 본문만) 로컬이 실제로 기여하지 않는다 → '지식 베이스
+    # (score)' 오표기 방지(웹 다운→'지식 없음', 웹 성공→'웹 검색').
+    if "named-entity-not-covered" in readiness["reasons"]:
+        has_local = False
     if has_local and has_web:
         source_tag = f"📚 지식 베이스 (score {top_score}) + 🔍 웹 검색 보강"
     elif has_local:
@@ -665,6 +759,7 @@ async def process_team_knowledge_question(update: Update, query: str):
         "answer": answer,
         "quality": {**final_assessment, "deepseek_review": deepseek_review},
         "qa_note_path": str(qa_note_path),
+        "context_subject": context_subject,
         "created_at": datetime.datetime.now().isoformat(timespec="seconds"),
     }
     append_team_request_log(
@@ -697,6 +792,10 @@ async def process_team_more_request(update: Update, extra: str = ""):
 
     query = session["query"]
     agent = session["agent"]
+    # 직전 턴이 문맥 상속된 후속질의였다면 보강 검색에도 대화 주제를 유지한다.
+    subject = (session.get("context_subject") or "").strip()
+    if subject and subject not in query:
+        query = f"{subject} {query}"
     progress_msg = await update.message.reply_text(
         "🔎 [더 찾아줘 접수]\n\n"
         "기존 답변의 부족분을 기준으로 추가 지식을 수집하고 있습니다. "
@@ -1481,7 +1580,13 @@ app.include_router(create_operations_status_router(
     agent_model_map=agent_model_map,
     paid_ai_enabled=lambda: PAID_AI_ENABLED,
     deepseek_api_configured=lambda: bool(DEEPSEEK_API_KEY and DEEPSEEK_API_KEY != "sk-fake-key-for-test"),
+    deepseek_monthly_budget=deepseek_monthly_budget,
+    deepseek_month_usage=deepseek_month_usage,
     deepseek_budget_remaining=deepseek_budget_remaining,
+    deepseek_balance_status=lambda: fetch_deepseek_balance_status(
+        api_key=DEEPSEEK_API_KEY,
+        paid_ai_enabled=PAID_AI_ENABLED,
+    ),
 ))
 
 # =============================================================================
@@ -1516,7 +1621,11 @@ async def startup_event():
         # 이전 폴링/웹훅 세션 충돌 방지: 시작 전 webhook 제거
         await app.state.tg_app.bot.delete_webhook(drop_pending_updates=True)
         await app.state.tg_app.start()
-        await app.state.tg_app.updater.start_polling(drop_pending_updates=True)
+        # allowed_updates 를 명시하지 않으면 Telegram 이 마지막 설정값(과거 'callback_query'만)을
+        # 유지해 텍스트 메시지(message)가 전달되지 않는다 → 모든 업데이트 타입을 명시한다.
+        await app.state.tg_app.updater.start_polling(
+            drop_pending_updates=True, allowed_updates=Update.ALL_TYPES
+        )
         print("📡 [시스템] 텔레그램 엔터프라이즈 라우팅 폴링 채널 개방 완료.")
     except Exception as tg_err:
         app.state.tg_app = None

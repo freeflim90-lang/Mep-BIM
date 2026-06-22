@@ -56,6 +56,13 @@ _load_env()
 TODAY = datetime.date.today().isoformat()
 NOW = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
+# 자동수집 섹션은 고객 확정/납품/견적 기준이 아님을 본문에 명시(KST04 가드레일).
+# scripts/validate_auto_enrich_guardrails.py의 GUARDRAIL_LINE과 문구가 일치해야 검증 통과.
+GUARDRAIL_LINE = (
+    "- KST04 자동수집: 공식 출처/담당자 검증 전 고객 확정 답변, "
+    "납품 기준, 견적 기준으로 사용 금지."
+)
+
 LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
 
 def log(msg: str) -> None:
@@ -1221,6 +1228,7 @@ def append_section(kb_file: Path, title: str, tags: str, body: str, stem: str) -
     section = (
         f"\n\n## {title} ({TODAY})\n"
         f"- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama {TODAY}\n"
+        f"{GUARDRAIL_LINE}\n"
         f"- Tags: {tags}\n\n"
         f"{body}{related_line}\n"
     )
