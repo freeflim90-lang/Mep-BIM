@@ -1049,6 +1049,46 @@ def test_common_typo_variants_route_correctly():
         assert "찾지 못" not in build_combined_answer(q, "", matches), q
 
 
+@pytest.mark.parametrize("query,expect", [
+    ("안녕하세요", "Lua"), ("안녕", "Lua"), ("반갑습니다", "Lua"), ("수고하세요", "Lua"),
+    ("고맙습니다", "다행"), ("감사합니다", "다행"), ("고마워요", "다행"), ("땡큐", "다행"),
+])
+def test_greeting_and_thanks_get_social_reply(query, expect):
+    """인사/감사 같은 사회적 발화는 '찾지 못함' 대신 친근한 결정적 응답을 준다(고객 접점 UX)."""
+    ans = server.identity_answer(query)
+    assert ans is not None and expect in ans
+
+
+@pytest.mark.parametrize("query", [
+    "감사원 감사 절차", "감사 보고서 작성", "안녕 빌딩 BIM 자료", "반가워 프로젝트 연면적",
+])
+def test_social_reply_not_triggered_by_domain_queries(query):
+    """가드: '감사 보고서'·'안녕 빌딩' 처럼 사회어가 도메인 질의에 섞이면 사회응답 미발화."""
+    assert server.identity_answer(query) is None
+
+
+@pytest.mark.parametrize("query", [
+    "BIM이 뭐예요", "BIM 왜 써요", "BIM 처음인데 뭐부터 배워야 하나요", "BIM 도입 효과",
+])
+def test_bim_basics_onboarding_answered(query):
+    """신규 고객의 기초/온보딩 질의(BIM이란/왜/처음)는 BIM_지침서 입문 가이드로 연결돼
+    'BIM은 정보가 붙은 3D 모델' 수준의 답을 줘야 한다(이전엔 전부 '찾지 못함')."""
+    from backend.knowledge_engine import infer_knowledge_agent_from_query as inf, build_combined_answer
+    assert inf(query) == "BIM_지침서", query
+    a = build_combined_answer(query, "", server.search_local_knowledge(query, limit=4))
+    assert "찾지 못" not in a and "BIM" in a
+
+
+@pytest.mark.parametrize("query,expect_not", [
+    ("BIM 물량 산출", "BIM_지침서"),   # 엑셀자동화
+    ("스프링클러 BIM 간섭", "BIM_지침서"),  # 간섭검토
+])
+def test_bim_basics_rule_does_not_hijack_domain(query, expect_not):
+    """가드: 기초 라우팅이 도메인 BIM 질의(물량/간섭)를 가로채지 않는다."""
+    from backend.knowledge_engine import infer_knowledge_agent_from_query as inf
+    assert inf(query) != expect_not
+
+
 def test_privacy_routes_to_legal_agent():
     """개인정보 처리방침/GDPR 은 법무조항검토에 콘텐츠가 있다(처리방침 15회). 라우팅
     누락으로 default(지식업데이트)로 새던 것 → 법무 라우팅으로 confident 로컬 답변."""

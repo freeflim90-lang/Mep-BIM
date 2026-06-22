@@ -1,5 +1,27 @@
 # BIM 지침서 지식 베이스
 
+## BIM 기초 — BIM이란? 왜 쓰나? 어디서 시작? (입문 가이드)
+- Source: LUA BIM LABS 입문 큐레이션 (정의·효과·시작 안내, 신규 사용자용)
+- Tags: bim,basics,정의,개념,입문,온보딩,why,시작
+
+**BIM이란?** BIM(Building Information Modeling)은 건물의 형상과 속성 정보를 함께 담은 3D 디지털 모델을 만들고, 그 모델을 설계·시공·운영 전 과정에서 공유·활용하는 작업 방식이다. 단순 3D 그림이 아니라 부재마다 재질·규격·수량·시공 정보가 들어 있는 '정보가 붙은 모델'이다.
+
+**왜 쓰나(도입 효과)?**
+- 간섭검토: 시공 전 도면 단계에서 설비·구조·건축 충돌을 미리 발견해 현장 재시공·공기 지연을 줄인다.
+- 물량/견적: 모델에서 수량을 자동 산출해 견적·발주 정확도를 높인다.
+- 공정(4D)·원가(5D): 일정·비용을 모델과 연계해 시뮬레이션한다.
+- 유지관리(FM): 준공 모델을 시설 운영·자산관리에 연계한다.
+- 협업: 여러 공종이 하나의 모델/CDE에서 일해 도면 불일치를 줄인다.
+
+**BIM 처음이면 어디서 시작?**
+1. 저작 도구 학습: 건축·구조·설비는 보통 Autodesk Revit로 모델링한다.
+2. 템플릿·표준: 회사·발주처 BIM 지침과 템플릿(뷰·파라미터·분류체계)을 먼저 갖춘다.
+3. 모델링 → 간섭검토: 공종별 모델을 만들고 Navisworks로 통합 간섭검토를 한다.
+4. 협업 체계: ISO 19650 기반 정보관리와 CDE(공통 데이터 환경, 예: ACC·BIM360)로 공유한다.
+5. 용도 확장: 물량 산출, 4D·5D, IFC 개방형 교환(OpenBIM)으로 넓혀간다.
+
+**LOD(상세수준)**: 100(개념)→200(개략)→300(설계확정)→350(공종조율)→400(시공상세)→500(준공). 납품 요구 LOD를 먼저 확인한다.
+
 ## 2026-06-05 국내 주요 발주처별 BIM 지침 비교 AI 즉시 답변 패턴 보강
 - Source: 국토부 BIM 시행지침, LH BIM 적용지침(2024), 조달청 BIM 기본지침, buildingSMART Korea
 - Tags: bim-guideline,molit,lh,pps,design-standard,comparison,2026
@@ -392,12 +414,15 @@ ISO 19650-2 실무 적용에서 가장 많이 실패하는 3가지 패턴과 사
 
 관련: [[EIR BEP_심사원 지식 베이스]] · [[BEP 수행계획서 템플릿]] · [[견적심사원 지식 베이스]] · [[2026-06-04 LUA BIM LABS Korea Public BIM Guideline Update]]
 
-## BIM 지침서 최신 동향 및 표준 업데이트 (2026-06-22)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-22
+## BIM 지침서 최신 동향 및 표준 업데이트 (2026-06-23)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-23
 - KST04 자동수집: 공식 출처/담당자 검증 전 고객 확정 답변, 납품 기준, 견적 기준으로 사용 금지.
 - Tags: BIM,guideline,IFC,openBIM,update
 
-- 국제 BIM 표준 중 ISO 19650는 건축 자산의 전체 수명 주기에 걸친 정보 관리에 관한 지침을 제공하며, 최신 버전은 2023년에 업데이트되었습니다.
-- IFC4는 openBIM 기반으로 설계, 구매, 공사 등의 프로세스에서 중립적인 데이터 교환 형식을 정의하고 있으며, Revit→IFC 내보내기는 최신 기준으로 IFC 4.3 버전까지 지원합니다.
-- IDS(Integrated Delivery Standard)는 한국 BIM 지침의 핵심 요소로, 건설 프로젝트에서 다양한 이해관계자를 위한 통합 정보 관리를 강조하며, 최근에는 BCF(Building Smart Collaboration Format)와 함께 적용 실무에 활용됩니다.
+- 국제 BIM 표준 ISO 19650는 건축 자산의 전체 수명 주기에 걸친 정보 관리를 위한 지침을 제공하며, 최신 버전은 2023년에 업데이트되었습니다.
+- IFC4(Industry Foundation Classes)는 openBIM의 기반으로, BIM 데이터의 공유와 교환을 위한 국제 표준입니다. Revit에서 IFC4로 내보내기는 최신 기준으로, Revit 2023 버전에서는 IFC 4x1 및 IFC 4x2 형식 지원이 추가되었습니다.
+- IDS(Integrated Delivery Standard)는 한국의 BIM 지침을 정의하며, 2025년까지의 도로맵이 제시되어 있습니다. 이 지침은 BIM 데이터 교환 시 필요한 정보 구조를 명확히 정의하고 있습니다.
+- OpenBIM은 buildingSMART에 의해 추진되며, IFC 기반으로 다양한 소프트웨어 간의 호환성을 높이는 것을 목표로 합니다. 2021년 openBIM Awards Yearbook에서는 BCF, IDM, IFC 2x3 등이 사용된 프로젝트가 소개되었습니다.
+- Revit에서 IFC4로 내보내는 최신 기준은 Revit 2023 버전을 통해 IFC 4x1 및 IFC 4x2 형식 지원이 추가되었으며, 이를 통해 BIM 데이터의 국제적 공유와 협업이 가능해졌습니다.
 - 관련: [[설계_지침서]] · [[시공_지침서]] · [[BIM_시방서]] · [[BIM_건물유형_공사구분_산정로직]]
+

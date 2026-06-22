@@ -759,6 +759,22 @@ _LUA_INTRO = (
     "Revit·Navisworks·설비(MEP) BIM 실무와 지식 베이스 기반 질의응답을 돕습니다. "
     "무엇을 도와드릴까요?"
 )
+# 인사/감사 같은 사회적 발화는 '찾지 못함'이 아니라 친근한 결정적 응답을 준다(고객 접점 UX).
+_GREETING_REPLY = (
+    "안녕하세요! 저는 LUA BIM LABS의 BIM 어시스턴트 Lua입니다. "
+    "Revit·Navisworks·설비(MEP) BIM 실무나 지식이 궁금하시면 편하게 물어봐 주세요."
+)
+_THANKS_REPLY = "도움이 되었다니 다행입니다. 더 궁금한 점이 있으면 언제든 질문해 주세요."
+# 공백/물음표 제거 후 정확히 일치할 때만(실제 도메인 질의 hijack 방지). 짧은 단독 사회적 발화.
+_GREETING_EXACT = frozenset({
+    "안녕", "안녕하세요", "안녕하십니까", "안뇽", "하이", "헬로", "hi", "hello",
+    "반가워요", "반갑습니다", "반가워", "좋은아침", "좋은하루", "수고하세요", "수고하십니다",
+})
+_THANKS_EXACT = frozenset({
+    "고마워", "고마워요", "고맙습니다", "고마웠어요", "감사", "감사해", "감사해요",
+    "감사합니다", "감사드립니다", "감사드려요", "땡큐", "thanks", "thankyou", "thx",
+    "도움이됐어요", "도움됐어요", "잘봤습니다", "잘봤어요",
+})
 # 공백 제거 후 정확히 일치할 때만 정체성으로 보는 짧은 단독 표현
 _IDENTITY_EXACT = {
     "누구세요", "누구야", "누구신가요", "누구인가요", "누구니",
@@ -885,7 +901,12 @@ def identity_answer(query: str) -> str | None:
     if not query:
         return None
     q = query.strip().lower()
-    q_nospace = q.rstrip("?!. ").replace(" ", "")
+    q_nospace = q.rstrip("?!.~ ").replace(" ", "")
+    # 인사/감사 등 사회적 발화 — '찾지 못함' 대신 친근한 응답(exact 매칭이라 도메인 질의 무영향).
+    if q_nospace in _GREETING_EXACT:
+        return _GREETING_REPLY
+    if q_nospace in _THANKS_EXACT:
+        return _THANKS_REPLY
     if q_nospace in _IDENTITY_EXACT or q_nospace in _CAPABILITY_EXACT:
         return _LUA_INTRO
     has_self = any(token in q for token in _IDENTITY_SELFREF)
