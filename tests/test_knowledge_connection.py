@@ -1089,6 +1089,16 @@ def test_bim_basics_rule_does_not_hijack_domain(query, expect_not):
     assert inf(query) != expect_not
 
 
+def test_casual_pricing_with_product_name_and_context():
+    """캐주얼 가격 질의('얼마예요')도 제품명 게이트 안에서 라이선스결제로 연결돼야 한다.
+    제품명 직접('Command Center 얼마') 또는 대화 문맥(직전 주제=제품)에서 USD 14 답변.
+    가드: 제품명 없는 '공사비 얼마'는 라이선스결제로 새지 않는다(product gate)."""
+    from backend.knowledge_engine import infer_knowledge_agent_from_query as inf
+    assert inf("BIM Command Center 얼마예요") == "라이선스결제"
+    assert inf("공사비 얼마예요") != "라이선스결제"
+    assert inf("자재비 얼마") != "라이선스결제"
+
+
 def test_privacy_routes_to_legal_agent():
     """개인정보 처리방침/GDPR 은 법무조항검토에 콘텐츠가 있다(처리방침 15회). 라우팅
     누락으로 default(지식업데이트)로 새던 것 → 법무 라우팅으로 confident 로컬 답변."""
