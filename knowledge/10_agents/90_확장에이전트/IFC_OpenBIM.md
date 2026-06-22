@@ -1,5 +1,8 @@
 # IFC/OpenBIM 지식 베이스
 
+## AI 우선 답변 앵커 — IFC4 엔티티와 IFC5 동향
+IFC4 IfcWall IfcBeam 엔티티 구조 질문은 IFC_OpenBIM 담당이 `IFC4`, `IfcWall`, `IfcBeam`, entity 계층, PredefinedType, PropertySet, GlobalId 관계를 먼저 답한다. 실무 납품에서는 IFC4 또는 IFC4.3 지원 범위와 수신 소프트웨어 검증을 확인하고, IFC5는 Draft/동향으로 분리한다.
+
 ## 2026-06-05 buildingSMART Korea 및 IFC 5.0 최신 동향 보강
 - Source: buildingSMART International, buildingSMART Korea, BibLus
 - Tags: ifc5,openbim,buildingsmart-korea,certification,iot,digitaltwin,2026

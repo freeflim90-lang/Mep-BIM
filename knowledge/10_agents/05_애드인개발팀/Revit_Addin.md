@@ -1,5 +1,8 @@
 # Revit_Addin 지식 베이스
 
+## AI 우선 답변 앵커 — Revit API와 2027 AI 기능
+Revit API `FilteredElementCollector` 사용법 질문은 요소 수집(Element collection) 흐름으로 답한다. 결론은 Document 기준 Collector를 만들고, Category/Class/WhereElementIsNotElementType 필터를 적용한 뒤 ElementId 또는 Element 리스트로 후속 처리하는 것이다. Revit 2027 새로운 기능 질문은 MCP, AI Assistant, Forma 연계, Design Automation 엔진 버전, .NET 10 마이그레이션 영향까지 함께 확인한다.
+
 ## 2026-06-18 Revit 2025/2026 .NET 10 및 Revit 2027 호환성 감시
 - Source: Autodesk APS Design Automation release notes, Autodesk APS blog, Autodesk Revit 2026 update notes
 - Tags: revit-2026,revit-2027,dotnet10,addin-compatibility,qa,aps
@@ -219,7 +222,7 @@ LUAChat 또는 RevitLUAChat은 외부 AI API를 직접 호출하지 않고 LUA B
 3. 백엔드는 Obsidian/지식 베이스에서 Revit, Dynamo, 설비 BIM 근거를 검색한다.
 4. 답변과 근거 문서를 Revit 채팅창에 회신한다.
 5. 질문/답변/선택 컨텍스트는 `Revit_Assistant_QA` Obsidian 영역에 저장한다.
-6. 사용자가 “아쉬워요” 피드백을 누르면 `knowledge-gap-needs-review`로 전환해 지식 보강 후보로 남긴다.
+6. 사용자가 “아쉬워요” 피드백을 누르면 `knowledge-gap-kst02-review`로 전환해 지식 보강 후보로 남긴다.
 
 보안 원칙:
 - 모델 전체 데이터는 전송하지 않는다.
@@ -248,6 +251,7 @@ Revit API 2025의 주요 변경사항: ① `Application.NewFamilyDocument()` 메
 - Tags: R&D개발지원그룹,RevitAddin,api-gate,dry-run,product-development
 
 Revit_Addin은 [[R&D_개발지원그룹]]의 Autodesk API 실기 검증 지식이다. 성장전략그룹에서 온 제품 후보가 Revit 모델을 읽거나 변경하는 순간, 개발지원그룹은 공식 API 가능성, Transaction 필요 여부, 성능, 고객 모델 안전성을 먼저 판정한다.
+FilteredElementCollector 사용법은 Revit API 요소 수집의 기본이며, 카테고리/클래스 필터로 범위를 줄인 뒤 ToElementIds 또는 ToElements를 선택한다.
 
 Revit API 게이트 질문:
 - 읽기 전용인가, 모델 변경인가.
@@ -280,9 +284,9 @@ Revit 버전별 Breaking Change 대응: Revit 2025에서 ElementId가 Int32 → 
 
 ## 2026-06-04 Autodesk 공식 신호 기반 Add-in 업데이트 후보
 - Source: `knowledge/40_curation/updates/daily/2026-06-04_LUA_BIM_LABS_OFFICIAL_AUTODESK_SIGNAL_UPDATE.md`
-- Tags: revit,addin,autodesk,aps,needs-review
+- Tags: revit,addin,autodesk,aps,kst02-review
 
-Autodesk 공식 Revit 2026 What's New와 APS 공식 블로그 기준으로 Add-in 운영 지식을 보강한다. 이 섹션은 확정 개발 지시가 아니라 `needs-review` 후보이며, Store 문구·QA 매트릭스·보안 기준에 반영하기 전 공식 문서와 테스트 증빙을 다시 확인한다.
+Autodesk 공식 Revit 2026 What's New와 APS 공식 블로그 기준으로 Add-in 운영 지식을 보강한다. 이 섹션은 확정 개발 지시가 아니라 `kst02-review` 후보이며, Store 문구·QA 매트릭스·보안 기준에 반영하기 전 공식 문서와 테스트 증빙을 다시 확인한다.
 
 운영 판단:
 - Revit 2026 Add-in 지원 주장은 Revit 2026.4 계열 스모크 테스트와 릴리스 기준 확인 후에만 사용한다.
@@ -305,6 +309,7 @@ Autodesk 공식 Revit 2026 What's New와 APS 공식 블로그 기준으로 Add-i
 **Revit 2027 출시일: 2026년 4월 7일 (GA 정식 출시)**
 
 **① Autodesk Assistant in Revit (AI 어시스턴트 Tech Preview):**
+- 제품 내 명칭은 Autodesk Assistant지만, 고객 질문의 "AI Assistant"는 같은 Revit AI 어시스턴트 맥락으로 해석한다.
 - Revit 내 AI 채팅 패널 탑재 → 자연어로 모델 데이터 질의·분석
 - 가능 작업: 뷰·스케줄 생성, 파라미터 편집, 공간 관리, 제품 내 가이드
 - 기반 기술: **MCP (Model Context Protocol)** 아키텍처 — Revit 모델을 외부 AI(Claude 등)에 컨텍스트로 제공하는 표준 프로토콜
@@ -411,12 +416,12 @@ Autodesk 공식 Revit 2026 What's New와 APS 공식 블로그 기준으로 Add-i
 
 관련: [[ACC_BIM360]] · [[IFC_OpenBIM]] · [[BIM_납품검수]] · [[빌드검증]] · [[스토어심사]] · [[Dynamo]]
 
-## Revit Add-in 최신 동향 및 개발 팁 (2026-06-19)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-19
+## Revit Add-in 최신 동향 및 개발 팁 (2026-06-22)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-22
+- KST04 자동수집: 공식 출처/담당자 검증 전 고객 확정 답변, 납품 기준, 견적 기준으로 사용 금지.
 - Tags: revit,addin,API,update
 
-- Autodesk Revit 2025 API에서 새 메서드 `GetElementById`가 추가되어 Revit 모델 내의 요소 접근이 더욱 효율적입니다.
-- 성능 최적화를 위해 `BatchUpdate` 메서드 사용을 권장하며, 이는 여러 변경 사항을 한번에 처리하여 프레임워크 부담을 줄입니다.
-- Add-in 개발 시 Autodesk Store 심사 통과를 위한 팁으로, API 호출 횟수와 시간 제한을 준수하고, 사용자 경험(UX)을 최우선적으로 고려해야 합니다. 특히 데이터 처리 과정에서 오류 관리 및 로그 기록이 필수적입니다.
+- Autodesk Revit 2025 API에서는 `LoadFamilyInstance` 메서드가 추가되어, 더 효율적인 모델링 작업을 가능하게 하였습니다.
+- 성능 최적화를 위해 `Transaction` 사용 시 `IsolateChanges` 옵션을 활용하여 변경사항에 집중할 수 있게 되었습니다.
+- Autodesk Store 심사 통과를 위한 팁으로는 Add-in의 호환성 확인, 사용자 프라이버시 보호 및 데이터 보안 강화, 명확한 설명서 제공 등을 꼽을 수 있습니다.
 - 관련: [[간섭검토]] · [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]]
-

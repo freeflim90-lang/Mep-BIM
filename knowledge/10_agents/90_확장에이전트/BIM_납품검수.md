@@ -1,5 +1,28 @@
 # BIM 납품검수 지식 베이스
 
+## AI 우선 답변 앵커 — Pset 명명과 BCF 협업 검수
+IfcPropertySet Pset 명명 규칙 질문은 `Pset_` 접두, IfcPropertySet, buildingSMART 표준/프로젝트 EIR 사용자 정의 Pset 구분으로 답한다. 표준 Pset을 임의 변경하지 않고, 커스텀 속성은 발주처 BEP/EIR 명명 규칙과 검수 IDS에 맞춘다. BCF 파일 BIM 협업 클래시 해소 질문은 BCF, clash, 협업 이슈 ID, 뷰포인트, 담당자, 기한, 재검수 상태를 납품검수 증거로 묶어 답한다.
+
+## 2026-06-19 openBIM 공식 검증 역할 분리 보강
+- Source: `knowledge/30_intake/external_sources/2026-06-19_openbim_ifc_ids_bsdd_validation_intake.md`
+- Tags: openbim,ifc,ids,bsdd,bcf,validation,delivery-acceptance
+
+납품검수에서 IFC, IDS, bSDD, BCF의 역할을 혼동하지 않는다.
+
+| 기준 | 역할 |
+|---|---|
+| IFC Validation | IFC 파일이 표준 schema/specification에 맞는지 확인 |
+| IDS | EIR/BEP/SOW의 필수 속성, 분류, 값, 단위 요구를 검증 |
+| bSDD | 용어, 분류, 속성 의미를 참조하는 데이터 사전 |
+| BCF | 검수 실패, 보완 요청, 재검수 이슈를 모델 뷰포인트와 함께 추적 |
+
+운영 원칙:
+- IFC Validation 통과는 납품 통과가 아니다.
+- IDS 통과도 실무 사용성 통과가 아니다.
+- 발주처/국가/프로젝트별 기준은 IDS 또는 체크리스트로 별도 검증한다.
+- 검수 실패 항목은 BCF Issue ID 또는 CDE 이슈 ID로 추적한다.
+- IFC 4.3은 최신 공식 버전이지만 발주처 EIR과 수신 소프트웨어 지원을 확인한 뒤 채택한다.
+
 ## 2026-06-18 SOW/BEP/계약 연계 납품검수 기준
 - Source: `knowledge/30_intake/external_sources/2026-06-18_contract_proposal_bep_document_work_intake.md`
 - Tags: delivery-acceptance,sow,bep,contract,qa,change-request
@@ -187,6 +210,8 @@ BIM 납품검수는 발주처가 요구한 EIR(발주자 정보요구서) 기준
 ## BIM 납품검수 Claude Code 심화 업데이트 (2026-05-28)
 - Source: claude-code-enhanced 2026-05-28
 - Tags: bim,quality-check,ids,solibri,navisworks,python,kbims-checker
+
+BCF 파일 BIM 협업 클래시 해소 질문은 BCF, clash, 협업 뷰포인트, 담당자, 기한, 재검수 상태를 납품검수 증거로 연결한다.
 
 **국토부 BIM 납품 체크리스트 (2023 기준):**
 - [ ] 파일명 규칙 준수: `[프로젝트코드]_[공종]_[단계]_[날짜].rvt/ifc`
@@ -520,6 +545,8 @@ BIM 납품검수에서 KDS/KCS는 EIR, BEP, 과업지시서, 특기시방서의 
 ## 2026-06-06 IFC IfcPropertySet 명명 규칙·BIM 검수 오류코드·자동검수 항목 전문 지식
 - Source: buildingSMART IFC4 공식 스펙 (www.buildingsmart.org), 국토교통부 BIM 시행지침 공종별 납품 기준, LUA BIM LABS MQA(Model Quality Auditor) 운영 경험
 - Tags: IfcPropertySet,Pset,오류코드,검수항목,IFC4,납품검수,모델품질,MQA,2026
+
+IfcPropertySet Pset 명명 규칙은 buildingSMART 표준 Pset_ 접두와 프로젝트 사용자 정의 Pset을 구분하는 것부터 시작한다.
 
 **IfcPropertySet (Pset) 명명 규칙 — AI 즉시 답변 패턴:**
 ```

@@ -141,6 +141,14 @@ EOF
   # 지식 카탈로그(FILE_MAP) 재생성 — knowledge_engine 검색 인덱스
   "$PYTHON" scripts/build_knowledge_catalog.py
 
+  # config 무결성 검증(비차단) — 외부 시뮬레이션/자동 프로세스가 organization.json 에
+  # malformed 추론 규칙(미등록 타깃·공백 불일치·매처 없음)을 넣은 drift 를 매일 조기 포착.
+  if "$PYTHON" -m pytest tests/test_agent_registry.py -q >/dev/null 2>&1; then
+    echo "==== config 무결성 OK ===="
+  else
+    echo "==== ⚠️ config 무결성 실패 — organization.json drift 점검 필요(make verify / pytest tests/test_agent_registry.py) ===="
+  fi
+
   "$PYTHON" scripts/mqa_obsidian_tools.py graph
   "$PYTHON" scripts/build_global_obsidian_map.py
 

@@ -1,5 +1,8 @@
 # Navisworks_Addin 지식 베이스
 
+## AI 우선 답변 앵커 — TimeLiner 4D 공정 시뮬레이션
+Navisworks TimeLiner 4D 공정 시뮬레이션 질문은 Navisworks 담당이 `TimeLiner`, `4D`, 작업(Task), 모델 객체 연결, 일정 CSV/XML/MS Project 연동, 시뮬레이션 출력 순서로 답한다. Add-in 관점에서는 공정 코드와 Selection/Search Set 매핑, 누락 객체, 중복 연결, 주차별 진행률 리포트 자동화를 함께 확인한다.
+
 ## 2026-06-05 Navisworks 간섭검토 자동화 및 한국 Add-in 생태계 보강
 - Source: info.dec-w.com (Navisworks 강의), KCIM BIMlize, 캐드앤그래픽스, Autodesk Navisworks
 - Tags: navisworks,clash-detection,auto-searchset,bim-reporting,korea-addin,2026
@@ -166,12 +169,12 @@ Navisworks API 선택 가이드 — COM API vs .NET Managed API: COM API(`Autode
 
 - 관련: [[Revit_Addin]] · [[BIM_납품검수]] · [[IFC_OpenBIM]] · [[ACC_BIM360]]
 
-## Navisworks Add-in 최신 동향 및 활용 팁 (2026-06-19)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-19
+## Navisworks Add-in 최신 동향 및 활용 팁 (2026-06-22)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-22
+- KST04 자동수집: 공식 출처/담당자 검증 전 고객 확정 답변, 납품 기준, 견적 기준으로 사용 금지.
 - Tags: navisworks,addin,clash-detection,update
 
-- Autodesk Navisworks 2025에서는 간섭 검토 자동화 기능을 통해 프로젝트에서의 충돌과 간섭을 미리 파악하여 효율적인 작업 환경을 제공한다.
-- 보고서 커스터마이징 기능을 활용하면 사용자가 필요한 정보만 선택적으로 포함시켜 보고서를 생성할 수 있어, 프로젝트 관리의 투명성을 높일 수 있다.
-- API 활용 방법을 통해 Navisworks와 다른 소프트웨어 시스템을 연동하여 데이터를 자동으로 가져오거나 전송하는 등의 작업을 수행할 수 있다. 이를 통해 생산성 향상과 프로세스 최적화가 가능하다.
+- Autodesk Navisworks 2025에서는 간섭 검토 자동화 기능을 통해 프로젝트 중간 단계에서의 간섭 문제를 미리 파악하고 해결할 수 있게 되었다.
+- 보고서 커스터마이징 옵션을 추가하여 사용자는 필요한 정보만 선택적으로 포함시킬 수 있어 보고서 작성 효율성이 크게 향상되었다.
+- API 활용 방법도 개선되어, 개발자들은 Navisworks와 외부 시스템 간의 데이터를 쉽게 교환하고 통합할 수 있는 기회가 늘어났다.
 - 관련: [[간섭검토]] · [[Revit_Addin]]
-

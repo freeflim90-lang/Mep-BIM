@@ -84,6 +84,24 @@ REALISTIC_QUERIES: list[str] = [
     "IFC 내보내기 매핑셋",
     "클래시 그룹핑 규칙",
     "LOD 350 모델 상세",
+    # ── 2026-06 후반 답변읽기로 연결한 신규 카테고리(회귀 추적용 영구 편입).
+    #    시설유형 KB(미등록 orphan→inference_only 등록), 생명안전 법규(건축), 결제 FAQ,
+    #    경영(수익원/투자유치), 확장(프롬프트/투입공수), HVAC 장비, 토목 종단/가설.
+    "데이터센터 BIM 설계",
+    "병원 의료시설 BIM",
+    "물류센터 창고 BIM",
+    "호텔 숙박시설 BIM",
+    "피난 보행거리 기준",
+    "비상구 유효폭",
+    "장애인 화장실 회전반경",
+    "무료 체험 기간",
+    "구독 결제 방법",
+    "회사 주요 수익원",
+    "투자 유치 전략",
+    "프롬프트 엔지니어링 기법",
+    "BIM 투입 공수 산정",
+    "냉동기 어셈블리 밸브 순서",
+    "흙막이 가시설 공법",
 ]
 
 
@@ -110,6 +128,7 @@ def audit(queries: list[str]) -> dict:
         "local_ready": total - len(weak),
         "weak": len(weak),
         "local_ready_rate": round((total - len(weak)) / total, 3) if total else 0.0,
+        "min_top_score": min((r["top_score"] for r in rows), default=0),
         "rows": rows,
     }
 
@@ -120,6 +139,8 @@ def main() -> int:
     parser.add_argument("--verbose", action="store_true", help="weak 케이스 상세 출력")
     parser.add_argument("--min-rate", type=float, default=0.0,
                         help="로컬 즉답률 하한(미만이면 종료코드 1) — CI 게이트용")
+    parser.add_argument("--min-top-score", type=int, default=0,
+                        help="각 감사 질의의 top score 하한(미만이면 종료코드 1)")
     args = parser.parse_args()
 
     result = audit(REALISTIC_QUERIES)
@@ -139,6 +160,9 @@ def main() -> int:
 
     if result["local_ready_rate"] < args.min_rate:
         print(f"FAIL: 로컬 즉답률 {result['local_ready_rate']*100:.0f}% < 기준 {args.min_rate*100:.0f}%")
+        return 1
+    if result["min_top_score"] < args.min_top_score:
+        print(f"FAIL: 최저 top score {result['min_top_score']} < 기준 {args.min_top_score}")
         return 1
     return 0
 

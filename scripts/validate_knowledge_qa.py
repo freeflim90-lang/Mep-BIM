@@ -21,7 +21,7 @@ sys.path.insert(0, str(PROJECT_ROOT))
 
 # ──────────────────────────────────────────────
 # QA 데이터셋: (질문, 정답파일 stem, 정답 키워드 목록)
-# 정답 키워드는 최소 2개 이상 발췌문에 포함돼야 PASS
+# 정답 키워드는 모두 발췌문에 포함돼야 PASS
 # ──────────────────────────────────────────────
 QA_DATASET: list[tuple[str, str, list[str]]] = [
     # ── Revit Add-in
@@ -241,11 +241,12 @@ def run_qa(agent_filter: str | None = None, verbose: bool = False) -> dict:
         matches.sort(key=lambda x: x[0], reverse=True)
         top_match = matches[0] if matches else None
 
-        # 판정 1: 정답 파일이 top 3 안에 있는지
+        # 판정 1: 정답 파일이 top 1인지
         top3_stems = [m[1].stem for m in matches[:3]]
-        file_hit = expected_stem in top3_stems
+        top1_stem = top3_stems[0] if top3_stems else ""
+        file_hit = top1_stem == expected_stem
 
-        # 판정 2: 정답 파일의 발췌문에 정답 키워드 ≥ 2개 포함
+        # 판정 2: 정답 파일의 발췌문에 정답 키워드 모두 포함
         answer_file = next((m for m in matches if m[1].stem == expected_stem), None)
         keyword_hit = False
         keyword_found: list[str] = []
@@ -253,7 +254,7 @@ def run_qa(agent_filter: str | None = None, verbose: bool = False) -> dict:
             excerpt = _extract_excerpt(answer_file[2], terms)
             excerpt_lower = excerpt.lower()
             keyword_found = [k for k in answer_keywords if k.lower() in excerpt_lower]
-            keyword_hit = len(keyword_found) >= 2
+            keyword_hit = len(keyword_found) == len(answer_keywords)
 
         ok = file_hit and keyword_hit
         if ok:
@@ -262,6 +263,7 @@ def run_qa(agent_filter: str | None = None, verbose: bool = False) -> dict:
             failures.append({
                 "q": question,
                 "expected": expected_stem,
+                "top1": top1_stem,
                 "top3": top3_stems,
                 "file_hit": file_hit,
                 "keyword_hit": keyword_hit,
@@ -297,7 +299,7 @@ def main() -> None:
         print("\n[실패 항목 상세]")
         for f in result["failures"]:
             print(f"\n  ❌ {f['q']}")
-            print(f"     예상파일: {f['expected']}  /  top3: {f['top3']}")
+            print(f"     예상파일: {f['expected']}  /  top1: {f['top1']}  /  top3: {f['top3']}")
             print(f"     키워드 발견: {f['keywords_found']}  /  필요: {f['keywords_needed']}")
 
     print(f"\n{'─'*65}")

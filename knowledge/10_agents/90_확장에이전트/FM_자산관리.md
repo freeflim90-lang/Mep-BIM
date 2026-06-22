@@ -1,5 +1,54 @@
 # FM(시설관리) 자산관리 BIM 지식 베이스
 
+## AI 우선 답변 앵커 — Autodesk Tandem 디지털트윈 FM
+Autodesk Tandem 디지털트윈 FM BIM 질문은 Tandem, 디지털트윈, FM 자산관리, COBie/asset data, facility template/schema, 운영 데이터 연동 범위를 나눠 답한다. Globant 등 통합·운영 파트너 사례가 언급될 때도 제품 기능과 프로젝트 구축 책임을 분리하고, 정적 COBie 제출과 API/BEMS/work-order 운영 연동을 같은 납품물로 단정하지 않는다.
+
+## 2026-06-19 COBie to Tandem Schema Handover 보강
+- Source: `knowledge/30_intake/external_sources/2026-06-19_cobie_tandem_schema_handover_intake.md`
+- Tags: cobie,tandem,fm-handover,custom-schema,facility-template,asset-data
+
+COBie는 geometry 제출이 아니라 운영자가 유지관리할 자산정보를 마일스톤별로 수집해 handover하는 체계다. Tandem handover에서는 COBie/FM asset data를 facility template, classification, parameter, custom schema와 매핑하되, COBie 필드명이 운영 시스템 필드명과 항상 같다고 보지 않는다.
+
+| COBie/FM 영역 | Tandem/schema 대응 | 문서 작업 포인트 |
+|---|---|---|
+| Facility/Floor/Space | facility, level, room/space context | BEP 정보교환 및 납품검수 |
+| Type/Component | asset classification, asset instance, element key | asset ID, IFC GlobalId, Revit element ID 연결 |
+| System | MEP/system relationship | 계통, 장비, 공간 관계 검수 |
+| Document/Warranty | O&M, warranty, specification link | CDE link와 접근권한 확인 |
+| Sensor/BEMS/work-order | stream/API-updated operational data | 별도 운영계약 또는 시스템 통합 범위 |
+
+SOW 작성 시 `COBie/FM 파일 제출`, `Tandem template/schema 설정`, `API 연동`, `운영 데이터 갱신`을 같은 납품물로 묶지 않는다. 정적 납품 데이터와 운영 중 갱신되는 데이터의 책임, 보안, 보관, 비용을 분리한다.
+
+## 2026-06-19 FM/Tandem SOW Line Item 보강
+- Source: `knowledge/30_intake/external_sources/2026-06-19_fm_tandem_sow_line_item_intake.md`
+- Tags: sow,quotation,line-item,cobie,tandem,api,operational-data
+
+견적/SOW에서는 FM handover 업무를 line item으로 나눈다. `COBie/FM 데이터 패키지`, `O&M/Warranty 링크 정리`, `Tandem facility template/schema 설정`, `Tandem/API 연동 지원`, `Sensor/BEMS/IoT tag 매핑`, `Work-order/inspection 연동`은 산출물, 검수 기준, 고객 제공자료, 제외 범위가 다르다.
+
+| 항목 | SOW에서 분리할 이유 |
+|---|---|
+| COBie/FM 데이터 패키지 | 준공 납품 데이터이며 운영 중 갱신과 다름 |
+| O&M/Warranty 링크 | 원본 문서 생산 책임과 링크 정리 책임이 다름 |
+| Tandem schema | 고객 운영 분류체계와 필수 field 확정 필요 |
+| API 연동 | PoC, 상용 통합, 운영 서버 유지보수 범위가 다름 |
+| Sensor/BEMS/IoT | 실시간 운영 데이터 구축은 별도 시스템 통합 범위 |
+| Work-order/inspection | 장기 운영 기록 입력은 별도 유지관리 범위 |
+
+## 2026-06-19 Autodesk Tandem / Digital Twin Handover 공식 출처 보강
+- Source: `knowledge/30_intake/external_sources/2026-06-19_autodesk_tandem_digital_twin_handover_intake.md`
+- Tags: fm,digital-twin,tandem,asset-data,handover,iot,work-order
+
+Autodesk Tandem 기준 digital twin handover는 BIM geometry 납품만이 아니라 운영자가 쓰는 facility data를 모델 context에 연결하는 작업이다. O&M manuals, warranties, installation dates, asset management, preventive maintenance, performance modeling, sensor streams, work-order integration은 각각 범위와 책임이 다르다.
+
+필수 구분:
+| 항목 | 기준 |
+|---|---|
+| 정적 납품 데이터 | BIM geometry, COBie/FM 속성, O&M 링크, 보증, 설치일 |
+| 운영 갱신 데이터 | work-order, 점검기록, sensor stream, BEMS/IoT 값 |
+| custom schema | 고객별 자산/점검/성능 속성 확장 |
+| API 연동 | Tandem Data API read/write 범위, 책임자, 보안 조건 |
+| 계약 범위 | handover 납품인지 운영계약/유지관리 서비스인지 분리 |
+
 ## 2026-06-18 국토부 기계설비 유지관리/성능점검 공식 출처 보강
 - Source: `knowledge/30_intake/external_sources/2026-06-18_mechanical_equipment_maintenance_fm_intake.md`
 - Tags: fm,mechanical-equipment,maintenance,performance-check,molit,cobie,handover
@@ -264,6 +313,8 @@ FM 추가 필드:
 ## 2026-06-06 AI 예측 유지보수·Autodesk Tandem·디지털트윈 FM 보강
 - Source: Autodesk Tandem 공식 문서, ZDNet Korea CES 2026 디지털트윈, 스마트시티 디지털트윈 시장 전망
 - Tags: ai-fm,predictive-maintenance,digital-twin,autodesk-tandem,cobie,iso19650,2025,2026
+
+Autodesk Tandem 디지털트윈 FM 질문은 Tandem, 디지털트윈, Globant 등 통합 파트너 사례, COBie/asset data, 운영 API 연동 범위를 분리해 답한다.
 
 **Autodesk Tandem — BIM→운영 단계 디지털트윈 플랫폼 (2025~2026 핵심):**
 - 정의: AEC용 클라우드 기반 디지털트윈 소프트웨어 (Autodesk 공식 FM 솔루션)

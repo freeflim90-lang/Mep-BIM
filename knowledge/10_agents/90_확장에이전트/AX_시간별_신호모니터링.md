@@ -679,3 +679,132 @@ def score_signal(text: str) -> float:
 - Digital twin identifies £22k/year savings for wholesaler (BIM Automation)
 
 운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-19 03:07 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-19/0307_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 건설 AI 시대, 데이터는 쌓이는데 권리 규칙은 ‘공백’ - 전기신문 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-19 08:10 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-19/0810_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 건설 AI·로봇, 현장 적용 정지작업 잰걸음 - 대한전문건설신문 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-19 09:10 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-19/0910_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- Why Trimble Connect keeps quietly reshaping digital construction workflows - AD HOC NEWS (Smart Construction, BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-19 10:11 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-19/1011_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 국토부, '2026 스마트건설 챌린지' 공모 접수 - MSN (Smart Construction, BIM Automation)
+- Neural CAD AI foundational models - AEC Magazine (BIM Automation, Quality/Product)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-19 11:12 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-19/1112_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 건설사 AI 도입 붐인데 '데이터 소유권' 여전히 미궁 - 네이트 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-19 13:13 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-19/1313_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 건설사 AI 도입 붐인데 '데이터 소유권' 여전히 미궁 - 아이뉴스24 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-20 15:57 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-20/1557_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- Why many firms quietly rely on Autodesk Construction Cloud for daily site work - AD HOC NEWS (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-20 17:58 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-20/1758_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 롯데건설, 하나은행·신융보증기금과 '상생 금융지원' 업무협약 - 주간한국 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-20 22:45 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-20/2245_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 한국부동산신문 모바일 사이트, SH, ‘2026 스마트 건설기술 경진 대회’ 참가자 모집 - 통신일보 (BIM Automation)
+- "현장 안전도 디지털 전환"…인종합건설, 스마트 안전장비 도입 - 매일경제TV (BIM Automation)
+- AIA26: Graphisoft Advances Design Intelligence Strategy - Architosh (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-21 17:33 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-21/1733_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 김종훈 한미글로벌 회장 "AI·로봇 융합, 건설 PM도 실용화 단계" - 머니투데이 - 머니투데이 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-21 18:33 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-21/1833_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 텍스트 명령만으로 BIM 제작…건설사업관리도 AI 도입 바람 - 네이트 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-22 05:30 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-22/0530_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 텍스트 명령만으로 BIM 제작…건설사업관리도 AI 도입 바람 - 네이트 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-22 06:31 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-22/0631_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- AI가 바꾸는 건설 PM…“핵심은 인간 통찰과 데이터” - 이투데이 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-22 20:40 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-22/2040_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 텍스트 명령만으로 BIM 제작…건설사업관리도 AI 도입 바람 - 서울경제 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.

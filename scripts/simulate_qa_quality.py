@@ -12,6 +12,7 @@ simulate_qa_quality.py — LUA BIM LABS Q&A 품질 시뮬레이션
   python3 scripts/simulate_qa_quality.py --domain 간섭검토
   python3 scripts/simulate_qa_quality.py --verbose
   python3 scripts/simulate_qa_quality.py --min-score 70
+  python3 scripts/simulate_qa_quality.py --min-score 90 --min-pass-rate 100 --no-save
 """
 
 from __future__ import annotations
@@ -648,6 +649,10 @@ def _generate_actions(sim: dict) -> list[str]:
     return actions
 
 
+def exit_code_for_rate(pass_rate: int, min_pass_rate: int) -> int:
+    return 0 if pass_rate >= min_pass_rate else 1
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 # 메인
 # ─────────────────────────────────────────────────────────────────────────────
@@ -657,6 +662,7 @@ def main() -> None:
     parser.add_argument("--domain", help="특정 도메인만 테스트 (예: 간섭검토, 위생)")
     parser.add_argument("--verbose", "-v", action="store_true", help="질문별 상세 출력")
     parser.add_argument("--min-score", type=int, default=60, help="통과 기준 점수 (기본 60)")
+    parser.add_argument("--min-pass-rate", type=int, default=70, help="전체 통과율 하한 % (기본 70)")
     parser.add_argument("--no-save", action="store_true", help="리포트 파일 저장 안 함")
     args = parser.parse_args()
 
@@ -694,9 +700,11 @@ def main() -> None:
     print(f"\n{'─'*70}")
     print(f"결과: {sim['passed']}/{sim['total']} 통과  ({sim['rate']}%)  |  평균점수: {sim['avg_score']}점")
     print(f"판정: {_verdict(sim['rate'])}")
+    if sim["rate"] < args.min_pass_rate:
+        print(f"FAIL: 통과율 {sim['rate']}% < 기준 {args.min_pass_rate}%")
     print("=" * 70)
 
-    sys.exit(0 if sim["rate"] >= 70 else 1)
+    sys.exit(exit_code_for_rate(sim["rate"], args.min_pass_rate))
 
 
 if __name__ == "__main__":

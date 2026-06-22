@@ -496,12 +496,49 @@ EIR 필수 포함 사항 (국토부 BIM 시행지침 발주자편 §3 기준):
 
 - 관련: [[BEP_수행계획서]] · [[BIM_납품검수]] · [[IFC_OpenBIM]] · [[FM_자산관리]]
 
-## BIM 시방서 최신 기준 업데이트 (2026-06-19)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-19
+## Revit 워크셰어링(작업세트)·모델 분할 협업 기준 (2026-06-21)
+- Source: Autodesk Revit Worksharing·BIM 협업 실무 — curated baseline. 발주처 CDE·BEP 협업 요건으로 구체화.
+- Tags: bim,collaboration,worksharing,workset,central-model,model-split
+
+워크셰어링(Worksharing): 다수 사용자가 하나의 Revit 모델을 동시 작업하는 협업 방식.
+- 중앙 모델(Central Model): 원본. 통상 BIM 360/ACC 또는 네트워크 공유에 둔다.
+- 로컬 모델(Local Model): 사용자 PC 사본. 로컬 작업 후 중앙과 동기화(STC, Synchronize with Central)로 반영.
+- 워크셋(Workset): 편집 권한·가시성 단위 요소 묶음. 분담 기준: 공종별(건축/구조/MEP), 층별·영역별, Shared Levels and Grids, Linked Models 등.
+- 소유권: 요소 편집 시 자동 borrow 또는 워크셋 전체 소유. 충돌 시 편집 권한 요청(Editing Request).
+
+운영 기준:
+- 동기화 전 Reload Latest, 동기화 시 충돌 메시지 확인. 잦은 동기화로 충돌 최소화.
+- 워크셋 명명규칙(예: A-건축, S-구조, M-기계, E-전기) 표준화 → 가시성 제어·링크 관리 용이.
+- 링크 모델은 별도 워크셋으로 두어 필요 시 언로드(성능 확보).
+
+모델 분할(파일 단위)과 구분: 워크셋은 한 파일 내 권한 분담, 모델 분할은 파일 자체를 나누는 것. 분할 기준은 파일 크기(성능)·공종·동시작업성·납품 단위다. 분할 모델은 공유좌표(Shared Coordinates)로 정합하고 링크로 통합한다.
+
+BIM 적용: EIR/BEP에 중앙모델 위치(CDE), 워크셋 분담표(공종·담당), 동기화 주기, 워크셋·파일 명명규칙, 모델 분할 기준을 명시한다.
+
+## 공유좌표(Shared Coordinates)·기준점 정합 기준 (2026-06-21)
+- Source: Autodesk Revit 좌표계·BIM 협업 실무 — curated baseline. 측량 좌표·도엽 기준은 측량성과·발주처 기준으로 확인.
+- Tags: bim,coordinates,shared-coordinates,survey-point,alignment
+
+Revit 3대 기준점:
+- 내부 원점(Internal Origin): 파일 고정 원점. 모델은 내부원점 ±좌표 한계(약 10mile/16km) 내에 둔다.
+- 프로젝트 기준점(Project Base Point, PBP): 프로젝트 설계 기준(0,0). 도면 좌표 기준.
+- 측량점(Survey Point, SP): 실세계(측량) 좌표·진북 기준.
+
+공유좌표 정합(링크 모델 간):
+- 기준 모델(통상 건축)이 측량 좌표를 보유하고, 타 공종(구조/MEP) 모델이 공유좌표로 정합한다.
+- Acquire Coordinates(기준 링크에서 좌표 가져오기) / Publish Coordinates(내 좌표를 링크에 내보내기).
+- 링크 배치 시 Position: "By Shared Coordinates"(공유좌표 정합) vs "Origin to Origin"(원점 일치) 구분 — 정합은 공유좌표 사용.
+- 진북(True North) vs 도북(Project North) 설정으로 방위 정합.
+
+실무: 좌표·레벨·그리드 기준은 프로젝트 초기에 한 모델로 확정·배포한다. 공유좌표 불일치 시 전 공종 모델이 어긋나 간섭검토가 무의미해지므로, 좌표 정합을 BEP 착수 체크 항목으로 둔다.
+
+## BIM 시방서 최신 기준 업데이트 (2026-06-22)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-22
+- KST04 자동수집: 공식 출처/담당자 검증 전 고객 확정 답변, 납품 기준, 견적 기준으로 사용 금지.
 - Tags: BIM,specification,EIR,COBie,update
 
-- 최신 한국 BIM 시방서(EIR 기반)에서는 발주처별 요구 수준에 따라 BIM 데이터의 적합성을 판단할 수 있는 방법론이 제시되어 있다.
-- COBie(Construction Operations Building Information Exchange) 스키마는 건설 현장에서부터 유지보수까지의 전 과정에서 일관된 정보를 제공하기 위해 사용되며, 이 기준은 해양과학기술 분야에서도 활용되고 있다.
-- FM(Facility Management) 연동 데이터 기준을 준용하여 BIM 모델링 시 고려해야 하는 사항으로, 건물의 유지보수 및 운영에 필요한 정보가 포함되어 있어 실무 적용에서 중요한 역할을 한다.
+- 최신 BIM 시방서(EIR)에서는 발주처별 요구 수준을 명확히 정의하고 있으며, 이를 기반으로 BIM 데이터의 적합성을 판단할 수 있는 방법론이 제시되고 있습니다.
+- COBie(Coordinated Object-Based Information Exchange)는 건설물 내 부품 정보를 구조화하여 관리할 수 있게 하는 표준 스키마로, 발주처와 설계사 간의 정보 교류를 향상시키는데 도움을 줍니다.
+- FM(Facility Management) 연동 데이터 기준은 건물의 유지보수 및 운영 효율성을 높이기 위해 BIM 데이터와 FM 시스템 간의 통합을 지원합니다. 이는 발주처가 요구하는 BIM 데이터를 최적화시키는데 중요합니다.
+- 한국에서는 항만용 COBie 스키마 개발과 같은 프로젝트를 통해 건설산업 BIM 기본지침이 제정되고 있으며, 이를 바탕으로 발주처별 BIM 요구 수준을 정의하고 있습니다.
 - 관련: [[설비장비]] · [[설계_지침서]] · [[시공_지침서]] · [[BIM_지침서]]
-

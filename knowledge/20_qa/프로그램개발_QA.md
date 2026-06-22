@@ -9,51 +9,120 @@
 **Q: Revit API에서 Transaction은 어떻게 사용하나요?**
 A: 트랜잭션 사용 기본 규칙: ① `[Transaction(TransactionMode.Manual)]` 속성을 IExternalCommand 클래스에 붙인다 ② 모든 모델 수정은 `using (Transaction tx = new Transaction(doc, "작업명")) { tx.Start(); ... tx.Commit(); }` 블록 안에서만 수행한다 ③ 예외 발생 시 `tx.RollBack()`으로 복구한다 ④ 트랜잭션 중첩은 금지된다(SubTransaction 별도 사용). *(KST01 — Autodesk API 공식 문서)*
 
+
+실무 보강 (2026-06-20 답변 품질 보강):
+1. 기준 확인: `프로그램개발` 담당자는 이 질문을 단순 설명이 아니라 KST02 이상 운영 기준, 프로젝트 범위, 고객 영향도, 납품/계약 책임을 함께 확인하는 실무 판단 문제로 본다.
+2. 조건 분기: 확정 기준, 현장 예외, 고객 요청, 내부 승인 여부를 먼저 나눈다. 수치나 법규가 필요한 경우에는 시행일, 적용 대상, 원문 출처, LOD 300/350 같은 모델 상세 수준을 확인하기 전까지 단정하지 않는다.
+3. 다음 액션: 24시간 안에 현재 자료와 누락 자료를 정리하고, 7일 안에 담당자·기한·검증 방법이 있는 조치 항목으로 바꾼다. 반복 문의는 QA로 남기고 2회 이상 반복되면 KB 본문 승격 후보로 올린다.
+4. 리스크 경계: 비용, 일정, 안전, 개인정보, 법무, 고객 약속으로 번질 수 있는 내용은 즉답보다 확인 로그와 승인 경로를 우선한다. 불확실한 답은 '가능/불가'보다 확인 조건과 대안 2개를 함께 제시한다.
+5. 답변 형식: 결론 1문장, 근거 2개, 확인할 자료 3개, 다음 행동 1개 순서로 응답한다. Source: LUA BIM LABS agent QA quality baseline. Tags: qa,quality,field-case,kst02,risk,2026.
 **Q: Revit Add-in에서 설정값을 저장하는 방법은?**
 A: 권장 방법: `ExtensibleStorage` API 사용 (Revit 문서 내 저장). 대안: 사용자 AppData 폴더에 JSON/XML 파일로 저장. 절대 금지: Registry에 민감 데이터 저장, 프로젝트 파일 외부 경로에 의존하는 하드코딩. 라이선스 정보는 별도 Entitlement API를 통해 관리하고 DLL에 임베드하지 않는다.
 
+
+실무 보강 (2026-06-20 답변 품질 보강):
+1. 기준 확인: `프로그램개발` 담당자는 이 질문을 단순 설명이 아니라 KST02 이상 운영 기준, 프로젝트 범위, 고객 영향도, 납품/계약 책임을 함께 확인하는 실무 판단 문제로 본다.
+2. 조건 분기: 확정 기준, 현장 예외, 고객 요청, 내부 승인 여부를 먼저 나눈다. 수치나 법규가 필요한 경우에는 시행일, 적용 대상, 원문 출처, LOD 300/350 같은 모델 상세 수준을 확인하기 전까지 단정하지 않는다.
+3. 다음 액션: 24시간 안에 현재 자료와 누락 자료를 정리하고, 7일 안에 담당자·기한·검증 방법이 있는 조치 항목으로 바꾼다. 반복 문의는 QA로 남기고 2회 이상 반복되면 KB 본문 승격 후보로 올린다.
+4. 리스크 경계: 비용, 일정, 안전, 개인정보, 법무, 고객 약속으로 번질 수 있는 내용은 즉답보다 확인 로그와 승인 경로를 우선한다. 불확실한 답은 '가능/불가'보다 확인 조건과 대안 2개를 함께 제시한다.
+5. 답변 형식: 결론 1문장, 근거 2개, 확인할 자료 3개, 다음 행동 1개 순서로 응답한다. Source: LUA BIM LABS agent QA quality baseline. Tags: qa,quality,field-case,kst02,risk,2026.
 **Q: 코드 리뷰 시 주요 확인 항목은?**
 A: 프로그램개발 에이전트의 코드 리뷰 체크리스트: ① 트랜잭션 경계 명확성 ② 예외 처리 완비 (null 체크, API 버전 분기) ③ 민감 데이터 노출 없음 (API Key, 고객 정보 하드코딩 금지) ④ 메모리 해제 (Dispose 패턴 적용 여부) ⑤ 로깅 적절성 (디버그 로그가 릴리스 빌드에 과다하게 남지 않음) ⑥ Qwen 초안에서 Autodesk API 의존 코드가 확정 코드로 잘못 승격됐는지.
 
+
+실무 보강 (2026-06-20 답변 품질 보강):
+1. 기준 확인: `프로그램개발` 담당자는 이 질문을 단순 설명이 아니라 KST02 이상 운영 기준, 프로젝트 범위, 고객 영향도, 납품/계약 책임을 함께 확인하는 실무 판단 문제로 본다.
+2. 조건 분기: 확정 기준, 현장 예외, 고객 요청, 내부 승인 여부를 먼저 나눈다. 수치나 법규가 필요한 경우에는 시행일, 적용 대상, 원문 출처, LOD 300/350 같은 모델 상세 수준을 확인하기 전까지 단정하지 않는다.
+3. 다음 액션: 24시간 안에 현재 자료와 누락 자료를 정리하고, 7일 안에 담당자·기한·검증 방법이 있는 조치 항목으로 바꾼다. 반복 문의는 QA로 남기고 2회 이상 반복되면 KB 본문 승격 후보로 올린다.
+4. 리스크 경계: 비용, 일정, 안전, 개인정보, 법무, 고객 약속으로 번질 수 있는 내용은 즉답보다 확인 로그와 승인 경로를 우선한다. 불확실한 답은 '가능/불가'보다 확인 조건과 대안 2개를 함께 제시한다.
+5. 답변 형식: 결론 1문장, 근거 2개, 확인할 자료 3개, 다음 행동 1개 순서로 응답한다. Source: LUA BIM LABS agent QA quality baseline. Tags: qa,quality,field-case,kst02,risk,2026.
 **Q: Revit 버전별 API 차이는 어떻게 처리하나요?**
 A: `#if REVIT2025` 등 조건부 컴파일 또는 런타임 버전 체크 방식을 사용한다. 버전 분기가 많아지면 어댑터 패턴으로 분리한다. Autodesk는 매년 API 변경 사항을 "What's New" 문서로 제공하므로, 프로그램개발 에이전트는 신규 버전 지원 시 이 문서를 먼저 검토한다.
 
+
+실무 보강 (2026-06-20 답변 품질 보강):
+1. 기준 확인: `프로그램개발` 담당자는 이 질문을 단순 설명이 아니라 KST02 이상 운영 기준, 프로젝트 범위, 고객 영향도, 납품/계약 책임을 함께 확인하는 실무 판단 문제로 본다.
+2. 조건 분기: 확정 기준, 현장 예외, 고객 요청, 내부 승인 여부를 먼저 나눈다. 수치나 법규가 필요한 경우에는 시행일, 적용 대상, 원문 출처, LOD 300/350 같은 모델 상세 수준을 확인하기 전까지 단정하지 않는다.
+3. 다음 액션: 24시간 안에 현재 자료와 누락 자료를 정리하고, 7일 안에 담당자·기한·검증 방법이 있는 조치 항목으로 바꾼다. 반복 문의는 QA로 남기고 2회 이상 반복되면 KB 본문 승격 후보로 올린다.
+4. 리스크 경계: 비용, 일정, 안전, 개인정보, 법무, 고객 약속으로 번질 수 있는 내용은 즉답보다 확인 로그와 승인 경로를 우선한다. 불확실한 답은 '가능/불가'보다 확인 조건과 대안 2개를 함께 제시한다.
+5. 답변 형식: 결론 1문장, 근거 2개, 확인할 자료 3개, 다음 행동 1개 순서로 응답한다. Source: LUA BIM LABS agent QA quality baseline. Tags: qa,quality,field-case,kst02,risk,2026.
 **Q: Qwen_Coder_8B 초안과 실제 구현의 차이는 어떻게 관리하나요?**
 A: 프로그램개발이 Qwen 초안을 받으면: ① Autodesk API 의존 부분을 식별하고 실제 API 호출로 교체 ② 트랜잭션 경계를 추가 ③ 보안 취약점 제거 ④ 성능 이슈 수정. 수정 내용은 PR 설명에 명시한다. Qwen 초안은 검토용이며 직접 프로덕션 배포하지 않는다.
 
 
 ## 웹 보강: MSI 인스톨러 패키징 코드 서명 인증서 구성 (2026-06-14 16:18:31)
 - Source: system-auto-quality-search
-- Tags: auto-collect,needs-review
+- Tags: kst04-collected-review,kst02-review
 
 질문: MSI 인스톨러 패키징 코드 서명 인증서 구성
 
 • [Naver] Setup.exe 서명하고 MySetup.msi - Win32 apps
   웹 서버에 Setup.exe 배치하고 MySetup.msi 전에 SignTool 유틸리티를 사용하여 디지털 인증서 및 프라이빗 키 Mycert.cer 및 Mycert.pvk로 파일에 서명해야 합니다. SignTool 유틸리티 사용에 대한 자세한 내용은 Microsoft SDK(Windows 소프트웨어 개발 키트)의 CryptoAPI Tools 참조 참조하세요.
-  출처: https://learn.microsoft.com/ko-kr/windows/win32/msi/sign-setup-exe-and-mysetup-msi
+  source-url: https://learn.microsoft.com/ko-kr/windows/win32/msi/sign-setup-exe-and-mysetup-msi
 
-• [DDG] 디지털 서명 및 Windows Installer - Win32 apps | Microsoft Learn
+• DDG evidence 디지털 서명 및 Windows Installer - Win32 apps | Microsoft Learn
   Windows Installer는 디지털 서명을 사용하여 손상된 리소스를 검색할 수 있습니다. 서명자 인증서는 패키지에서 설치할 외부 리소스의 서명자 인증서와 비교할 수 있습니다. 디지털 서명, 디지털 인증서 및 WinVerifyTrust 사용에 대한 자세한 내용은 Microsoft Windows SDK (소프트웨어 개발 키트)의 보안 섹션을 ...
-  출처: https://learn.microsoft.com/ko-kr/windows/win32/msi/digital-signatures-and-windows-installer
+  source-url: https://learn.microsoft.com/ko-kr/windows/win32/msi/digital-signatures-and-windows-installer
 
 • [Naver] 드라이버 패키지 테스트 서명 방법 - Windows drivers
   테스트 서명은 테스트 인증서를 사용하여 테스트 컴퓨터에서 사용할 드라이버 패키지 시험판 버전에 서명하는 것을 의미합니다. 특히 이를 통해 개발자는 MakeCert 도구에서 생성하는 같은 자체 서명된 인증서를 사용하여 커널 모드 이진 파일에 서명할 수 있습니다. 이 기능을 사용하면 개발자가 드라이버 서명 확인을 사용하도록 설정된 Windows에서 커널 모드 이진 파일을 테스트...
-  출처: https://learn.microsoft.com/ko-kr/windows-hardware/drivers/install/how-to-test-sign-a-driver-package
+  source-url: https://learn.microsoft.com/ko-kr/windows-hardware/drivers/install/how-to-test-sign-a-driver-package
 
-• [DDG] Visual Studio .msi의 설치 파일에 서명하는 방법 : 네이버 블로그
+• DDG evidence Visual Studio .msi의 설치 파일에 서명하는 방법 : 네이버 블로그
   다른 옵션 (내가 하고 있는 것)은 먼저 .msi를 만든 다음 pfx (인증서)를 사용하여 서명합니다. (globalsign.com에서 구매한 코드 서명 인증서를 사용하고 있습니다.) CMD 열기: 실행 -&gt; 파워쉘 인증서가 있는 위치에서 지문을 실행하고 저장합니다. PS C:&#92;Windows&#92;system32&gt; Get-PfxCertificate -FilePath .&#92;CompanyCertificate.pfx ...
-  출처: https://blog.naver.com/PostView.naver?blogId=wetchop7437&amp;logNo=222677673231
+  source-url: https://blog.naver.com/PostView.naver?blogId=wetchop7437&amp;logNo=222677673231
 
 • [Naver] 테스트 서명을 지원하도록 테스트 컴퓨터 구성 - Windows drivers
   테스트 컴퓨터에 테스트 서명된 드라이버 패키지를 설치하기 전에 테스트 서명을 지원하도록 컴퓨터를 구성해야 합니다. 이 섹션에서는 컴퓨터에서 테스트 서명 지원을 사용하도록 설정하는 데 관련된 절차를 설명하고 다음 항목을 포함합니다.
-  출처: https://learn.microsoft.com/ko-kr/windows-hardware/drivers/install/configuring-the-test-computer-to-support-test-signing
+  source-url: https://learn.microsoft.com/ko-kr/windows-hardware/drivers/install/configuring-the-test-computer-to-support-test-signing
 
-• [DDG] 윈도우 응용 프로그램 코드 서명::::새로 쓰는 사용 설명서
+• DDG evidence 윈도우 응용 프로그램 코드 서명::::새로 쓰는 사용 설명서
   앞서 설명한 바와 같이, 코드 서명을 하기 위해서는 OV 또는 EV 인증서를 발급받아야 하며, 2023년 6월 이후부터는 개발자가 직접 개인 키를 생성하고, CA 기관에 CSR 파일을 제출하는 과정이 필요하다. 이번 글에서는 코드 서명 과정의 세부적인 단계를 설명하겠다. 1.
-  출처: https://manualbook.tistory.com/118
+  source-url: https://manualbook.tistory.com/118
 
 • [Naver] 드라이버 패키지를 릴리스-서명하는 방법 - Windows drivers
   이 섹션에서는 드라이버 패키지를 릴리스 서명할 때 따라야 하는 기본 단계를 제공합니다. 여기에는 다음과 같은 사항이 포함됩니다. 이 섹션의 각 항목에서는 릴리스 서명 프로세스의 별도 프로시저에 대해 설명하고 프로시저에 대해 이해해야 하는 일반적인 정보를 제공합니다. 또한 각 항목은 절차에 대한 자세한 정보를 제공하는 다른 항목을 가리킵니다. 참고 이 섹션에서는...
-  출처: https://learn.microsoft.com/ko-kr/windows-hardware/drivers/install/how-to-release-sign-a-driver-package
+  source-url: https://learn.microsoft.com/ko-kr/windows-hardware/drivers/install/how-to-release-sign-a-driver-package
 
 검토 기준: 공식 문서·최신성·적용성 확인 후 FAQ 승격.
+
+## 2026-06-20 기능 구현/운영 가능성 실무 케이스 Q&A
+- Source: `knowledge/40_curation/quality/2026-06-20_EXTENSION_AGENTS_PRACTICAL_CASE_LIBRARY.md`
+- Tags: development,field-case,operations,logging,rollback,qa,2026
+
+
+실무 보강 (2026-06-20 답변 품질 보강):
+1. 기준 확인: `프로그램개발` 담당자는 이 질문을 단순 설명이 아니라 KST02 이상 운영 기준, 프로젝트 범위, 고객 영향도, 납품/계약 책임을 함께 확인하는 실무 판단 문제로 본다.
+2. 조건 분기: 확정 기준, 현장 예외, 고객 요청, 내부 승인 여부를 먼저 나눈다. 수치나 법규가 필요한 경우에는 시행일, 적용 대상, 원문 출처, LOD 300/350 같은 모델 상세 수준을 확인하기 전까지 단정하지 않는다.
+3. 다음 액션: 24시간 안에 현재 자료와 누락 자료를 정리하고, 7일 안에 담당자·기한·검증 방법이 있는 조치 항목으로 바꾼다. 반복 문의는 QA로 남기고 2회 이상 반복되면 KB 본문 승격 후보로 올린다.
+4. 리스크 경계: 비용, 일정, 안전, 개인정보, 법무, 고객 약속으로 번질 수 있는 내용은 즉답보다 확인 로그와 승인 경로를 우선한다. 불확실한 답은 '가능/불가'보다 확인 조건과 대안 2개를 함께 제시한다.
+5. 답변 형식: 결론 1문장, 근거 2개, 확인할 자료 3개, 다음 행동 1개 순서로 응답한다. Source: LUA BIM LABS agent QA quality baseline. Tags: qa,quality,field-case,kst02,risk,2026.
+**Q: 기능은 개발됐지만 운영에서 깨질 수 있는지 어떻게 판단하나요?**
+A: 코드 동작만 보지 않는다. 설치, 권한, 로그, 오류 메시지, 롤백, 설정 마이그레이션, 고객지원 문서까지 완료 기준에 포함한다. 고객이 문제를 겪었을 때 CS와 개발팀이 원인을 추적할 수 있어야 운영 가능 기능이다.
+
+
+실무 보강 (2026-06-20 답변 품질 보강):
+1. 기준 확인: `프로그램개발` 담당자는 이 질문을 단순 설명이 아니라 KST02 이상 운영 기준, 프로젝트 범위, 고객 영향도, 납품/계약 책임을 함께 확인하는 실무 판단 문제로 본다.
+2. 조건 분기: 확정 기준, 현장 예외, 고객 요청, 내부 승인 여부를 먼저 나눈다. 수치나 법규가 필요한 경우에는 시행일, 적용 대상, 원문 출처, LOD 300/350 같은 모델 상세 수준을 확인하기 전까지 단정하지 않는다.
+3. 다음 액션: 24시간 안에 현재 자료와 누락 자료를 정리하고, 7일 안에 담당자·기한·검증 방법이 있는 조치 항목으로 바꾼다. 반복 문의는 QA로 남기고 2회 이상 반복되면 KB 본문 승격 후보로 올린다.
+4. 리스크 경계: 비용, 일정, 안전, 개인정보, 법무, 고객 약속으로 번질 수 있는 내용은 즉답보다 확인 로그와 승인 경로를 우선한다. 불확실한 답은 '가능/불가'보다 확인 조건과 대안 2개를 함께 제시한다.
+5. 답변 형식: 결론 1문장, 근거 2개, 확인할 자료 3개, 다음 행동 1개 순서로 응답한다. Source: LUA BIM LABS agent QA quality baseline. Tags: qa,quality,field-case,kst02,risk,2026.
+**Q: Qwen이나 외부 AI가 만든 코드가 그럴듯하면 바로 병합해도 되나요?**
+A: 안 된다. 빌드, 테스트, Revit/Navisworks API 경계, 보안, 라이선스, 예외 처리를 검증해야 한다. AI 초안은 구현 후보이며 프로덕션 코드는 사람이 책임지고 리뷰한다.
+
+
+실무 보강 (2026-06-20 답변 품질 보강):
+1. 기준 확인: `프로그램개발` 담당자는 이 질문을 단순 설명이 아니라 KST02 이상 운영 기준, 프로젝트 범위, 고객 영향도, 납품/계약 책임을 함께 확인하는 실무 판단 문제로 본다.
+2. 조건 분기: 확정 기준, 현장 예외, 고객 요청, 내부 승인 여부를 먼저 나눈다. 수치나 법규가 필요한 경우에는 시행일, 적용 대상, 원문 출처, LOD 300/350 같은 모델 상세 수준을 확인하기 전까지 단정하지 않는다.
+3. 다음 액션: 24시간 안에 현재 자료와 누락 자료를 정리하고, 7일 안에 담당자·기한·검증 방법이 있는 조치 항목으로 바꾼다. 반복 문의는 QA로 남기고 2회 이상 반복되면 KB 본문 승격 후보로 올린다.
+4. 리스크 경계: 비용, 일정, 안전, 개인정보, 법무, 고객 약속으로 번질 수 있는 내용은 즉답보다 확인 로그와 승인 경로를 우선한다. 불확실한 답은 '가능/불가'보다 확인 조건과 대안 2개를 함께 제시한다.
+5. 답변 형식: 결론 1문장, 근거 2개, 확인할 자료 3개, 다음 행동 1개 순서로 응답한다. Source: LUA BIM LABS agent QA quality baseline. Tags: qa,quality,field-case,kst02,risk,2026.
+**Q: 긴급 버그 수정에서 테스트를 어디까지 해야 하나요?**
+A: 수정 라인만 보지 말고 인접 기능과 릴리스 게이트를 확인한다. 최소한 재현 케이스, 회귀 케이스 1개, 설치/실행 smoke test, 로그 확인은 수행한다.
+
+실무 보강 (2026-06-20 답변 품질 보강):
+1. 기준 확인: `프로그램개발` 담당자는 이 질문을 단순 설명이 아니라 KST02 이상 운영 기준, 프로젝트 범위, 고객 영향도, 납품/계약 책임을 함께 확인하는 실무 판단 문제로 본다.
+2. 조건 분기: 확정 기준, 현장 예외, 고객 요청, 내부 승인 여부를 먼저 나눈다. 수치나 법규가 필요한 경우에는 시행일, 적용 대상, 원문 출처, LOD 300/350 같은 모델 상세 수준을 확인하기 전까지 단정하지 않는다.
+3. 다음 액션: 24시간 안에 현재 자료와 누락 자료를 정리하고, 7일 안에 담당자·기한·검증 방법이 있는 조치 항목으로 바꾼다. 반복 문의는 QA로 남기고 2회 이상 반복되면 KB 본문 승격 후보로 올린다.
+4. 리스크 경계: 비용, 일정, 안전, 개인정보, 법무, 고객 약속으로 번질 수 있는 내용은 즉답보다 확인 로그와 승인 경로를 우선한다. 불확실한 답은 '가능/불가'보다 확인 조건과 대안 2개를 함께 제시한다.
+5. 답변 형식: 결론 1문장, 근거 2개, 확인할 자료 3개, 다음 행동 1개 순서로 응답한다. Source: LUA BIM LABS agent QA quality baseline. Tags: qa,quality,field-case,kst02,risk,2026.

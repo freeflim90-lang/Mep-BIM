@@ -8,6 +8,7 @@ Usage:
   .dev-venv/bin/python scripts/validate_agent_qa_quality.py
   .dev-venv/bin/python scripts/validate_agent_qa_quality.py --agent 고객지원CS
   .dev-venv/bin/python scripts/validate_agent_qa_quality.py --verbose --no-save
+  .dev-venv/bin/python scripts/validate_agent_qa_quality.py --no-save --min-score 96 --min-pass-rate 100
 """
 from __future__ import annotations
 
@@ -51,6 +52,10 @@ ACTION_WORDS = (
 RISK_WORDS = (
     "위험", "리스크", "주의", "민감", "보안", "개인정보", "법적", "확정하지", "승인",
     "책임", "누수", "충돌", "오류", "차단",
+)
+TRACEABILITY_RE = re.compile(
+    r"(담당|기한|로그|승인|bcf|rfi|검토자|owner|due|status|상태|기록)",
+    re.IGNORECASE,
 )
 NOISE_WORDS = (
     "telegram-auto-search", "자동 수집 결과", "[tavily]", "[ddg]", "출처: http",
@@ -147,6 +152,8 @@ def score_pair(question: str, answer: str) -> dict:
     risk_hits = sum(1 for word in RISK_WORDS if word in combined_lower)
     risk_score = min(risk_hits * 4, 10)
 
+    traceability_score = 3 if TRACEABILITY_RE.search(a) else 0
+
     noise_penalty = min(sum(8 for word in NOISE_WORDS if word.lower() in combined_lower), 20)
     missing = []
     if question_score < 10:
@@ -163,6 +170,8 @@ def score_pair(question: str, answer: str) -> dict:
         missing.append("다음 액션")
     if risk_score < 4:
         missing.append("리스크/책임 경계")
+    if traceability_score < 3:
+        missing.append("담당자/기한/승인 로그 추적성")
     if noise_penalty:
         missing.append("자동수집 노이즈 제거")
 
@@ -174,6 +183,7 @@ def score_pair(question: str, answer: str) -> dict:
         + condition_score
         + action_score
         + risk_score
+        + traceability_score
         - noise_penalty
     )
     total = max(0, min(100, total))
@@ -187,6 +197,7 @@ def score_pair(question: str, answer: str) -> dict:
         "condition": condition_score,
         "action": action_score,
         "risk": risk_score,
+        "traceability": traceability_score,
         "noise_penalty": -noise_penalty,
         "missing": missing,
     }
@@ -309,15 +320,21 @@ def build_report(result: dict) -> str:
         "- 조건 분기 15점",
         "- 다음 액션 10점",
         "- 리스크/책임 경계 10점",
+        "- 담당자/기한/승인 로그 추적성 3점",
         "- 자동수집 노이즈 최대 -20점",
     ]
     return "\n".join(lines)
+
+
+def exit_code_for_rate(pass_rate: int, min_pass_rate: int) -> int:
+    return 0 if pass_rate >= min_pass_rate else 1
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Validate per-agent Q&A quality.")
     parser.add_argument("--agent", help="특정 agent만 검사합니다. 예: 고객지원CS")
     parser.add_argument("--min-score", type=int, default=70, help="Q&A 쌍 통과 기준 점수")
+    parser.add_argument("--min-pass-rate", type=int, default=70, help="전체 Q&A 통과율 하한 %")
     parser.add_argument("--no-save", action="store_true", help="리포트를 파일로 저장하지 않습니다.")
     parser.add_argument("--verbose", "-v", action="store_true", help="저품질 Q&A 세부 정보를 출력합니다.")
     args = parser.parse_args()
@@ -355,7 +372,10 @@ def main() -> None:
         print(f"report: {md_path}")
         print(f"json:   {json_path}")
 
-    sys.exit(0 if result["pass_rate"] >= 70 else 1)
+    if result["pass_rate"] < args.min_pass_rate:
+        print(f"FAIL: Q&A 통과율 {result['pass_rate']}% < 기준 {args.min_pass_rate}%")
+
+    sys.exit(exit_code_for_rate(result["pass_rate"], args.min_pass_rate))
 
 
 if __name__ == "__main__":

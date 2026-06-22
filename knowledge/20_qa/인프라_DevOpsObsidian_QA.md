@@ -2,36 +2,66 @@
 
 ## 웹 보강: Obsidian 지식그래프 볼트 자동 동기화 백업 (2026-06-14 16:18:36)
 - Source: system-auto-quality-search
-- Tags: auto-collect,needs-review
+- Tags: kst04-collected-review,kst02-review
 
 질문: Obsidian 지식그래프 볼트 자동 동기화 백업
 
 • [Naver] 백업 전략 - Obsidian Git으로 볼트 지키기
   그래서 GitHub에 자동 백업하는 시스템을 구축하기로 했다. GitHub에서 obsidian-vault-backup이라는 이름으로 Private 저장소를 만들었다. 내 노트가 공개되면 안 되니까 비공개 필수! 이제 30분마다 자동으로 GitHub에 백업된다! 백업 저장소: https://github.com/내이름😉/obsidian-vault-backup 1. 안심: 실수로 삭제해도 GitHub에서 복구 가능 2. 버전 관리: 언제 무엇을 바꿨는지 기록됨 3. 이중 백업: iCloud ...
-  출처: https://www.gpters.org/nocode/post/backup-strategy-protecting-your-s8tlUMUgqSCItxL
+  source-url: https://www.gpters.org/nocode/post/backup-strategy-protecting-your-s8tlUMUgqSCItxL
 
-• [DDG] 무료로 구축하는 옵시디언 동기화 및 자동 백업 워크플로우 (Github 활용)
+• DDG evidence 무료로 구축하는 옵시디언 동기화 및 자동 백업 워크플로우 (Github 활용)
   2026년 최신 기준, 유료 서비스 없이 Github을 활용해 옵시디언 동기화 및 자동 백업 환경을 완벽하게 구축하는 방법을 안내합니다. 모바일 동기화 충돌 해결법과 데이터 유실 방지를 위한 자동화 워크플로우 3단계를 지금 바로 적용해 보세요. 2026년 옵시디언 동기화, 왜 Github인가?옵시디언(Obsidian)의 ...
-  출처: https://learningflix.tistory.com/244
+  source-url: https://learningflix.tistory.com/244
 
 • [Naver] [Obsidian] 최강 노트 옵시디언 시작하기 | 소개, 설치, 요금제, 볼트
   하지만 옵시디언은 로컬 기반이므로 여러 기기에 백업을 해놓는다면 나중에 서비스 지원이 중단되어도 노트가 유실되거나 필요할 때 사용 못할 일이 없습니다. 로컬의 마크다운 파일이 있기 때문에 옵시디언에서 다른 노트 앱으로 전환하기도 용이하죠. 즉, 위험을 줄이는 측면에서 유리합니다.
-  출처: https://goldenrabbit.co.kr/articles/ERHPUz6NephkJczQ1wXT
+  source-url: https://goldenrabbit.co.kr/articles/ERHPUz6NephkJczQ1wXT
 
-• [DDG] 옵시디언과 깃허브 (GitHub) 연동으로 무료 동기화 및 백업 구축하기
+• DDG evidence 옵시디언과 깃허브 (GitHub) 연동으로 무료 동기화 및 백업 구축하기
   옵시디언(Obsidian) 기기 간 동기화와 백업을 무료로 해결하는 깃허브(GitHub) 연동 가이드. 구글 드라이브나 아이클라우드의 파일 충돌 문제를 피하고, 초보자도 쉽게 따라 할 수 있는 자동 백업(Obsidian Git) 설정 노하우를 소개합니다.
-  출처: https://www.reclinednerd.com/2026/05/obsidian-guide-09.html
+  source-url: https://www.reclinednerd.com/2026/05/obsidian-guide-09.html
 
 • [Naver] [Obsidian] 옵시디언 동기화 방법 | 무료, 유료, 협업, 깃, 구글 드라이브, 아이폰
   Standard 플랜 : 1개의 원격 볼트, 1GB 용량, 최대 5MB 파일 크기가 지원되며 월 요금은 $5입니다. 옵시디언에서 마크다운 파일만 사용한다면 Standard 플랜으로 충분할 것입니다. Plus 플랜 : 10개의 원격 볼트, 총 10GB 용량, 최대 200MB 파일 크기를 지원하며, 월 $10의 요금이 부과됩니다. 총 볼트 용량을 100GB로 사용하려면 비용은 월 $20입니다. 연간 결제하면 비용은 더 저렴해집니다. 대부분의...
-  출처: https://goldenrabbit.co.kr/articles/y24VlKfLyhZwygUe7IUm
+  source-url: https://goldenrabbit.co.kr/articles/y24VlKfLyhZwygUe7IUm
 
-• [DDG] Obsidian 생산성 셋업 완전 가이드 — 개발자·지식노동자를 위한 필수 플러그인과 워크플로우
+• DDG evidence Obsidian 생산성 셋업 완전 가이드 — 개발자·지식노동자를 위한 필수 플러그인과 워크플로우
   Obsidian은 로컬 마크다운 파일 기반 노트 앱이다. 개발자와 지식노동자에게 특히 유용한 이유는 단 하나—모든 데이터가 내 컴퓨터의 평범한 텍스트 파일이기 때문이다. 이 글은 처음 Obsidian을 세팅하거나 기존 셋업을 정비하려는 사람을 위해 코어 설정부터 실전 플러그인, 폴더 전략, 동기화까지 ...
-  출처: https://jalnanco.blogspot.com/2026/05/obsidian.html
+  source-url: https://jalnanco.blogspot.com/2026/05/obsidian.html
 
 • [Naver] Obsidian Sync 문제 해결 - Obsidian 도움말
   충돌은 두 개 이상의 기기에서 동기화되기 전에 같은 파일을 변경할 때 발생해요. 예를 들어 컴퓨터에서 노트를 편집한 후, 해당 변경 사항이 업로드되기 전에 휴대폰에서도 같은 노트를 변경하는 경우예요. 충돌은 오프라인으로 작업할 때 더 자주 발생해요. 변경 사항이 많아지고 동기화 간격이 길어져 충돌 가능성이 높아져요. Obsidian 설정(플러그인 설정 등)의 충돌의 경우, Ob...
-  출처: https://obsidian.md/ko/help/sync/troubleshoot
+  source-url: https://obsidian.md/ko/help/sync/troubleshoot
 
 검토 기준: 공식 문서·최신성·적용성 확인 후 FAQ 승격.
+
+## 2026-06-20 Obsidian/DevOps 동기화 실무 케이스 Q&A
+- Source: `knowledge/40_curation/quality/2026-06-20_EXTENSION_AGENTS_PRACTICAL_CASE_LIBRARY.md`
+- Tags: devops,obsidian,field-case,sync,knowledge-ops,qa,2026
+
+**Q: 파일은 동기화됐지만 지식 위치와 링크가 흐트러지면?**
+A: 결론: 파일 생성만 성공으로 보지 않고 링크, 태그, 소유자, KST 상태까지 검증해야 한다. 1. 담당자는 Obsidian 링크, 태그, 폴더 위치, Source, Tags, KST02 상태, 중복 여부를 24시간 안에 확인한다. 2. 조건상 Revit, BEP, LOD 300/350, 고객 프로젝트 지식이 섞이면 승격 위치와 접근 권한을 별도 로그로 기록한다. 반면 단순 메모 이동은 링크 점검으로 처리한다. 다만 충돌 파일, 보안, 개인정보, 법무 리스크가 있으면 예외 없이 자동 병합을 막고 승인 담당자와 7일 검토 기한을 공유한다.
+
+**Q: Obsidian 볼트 동기화 충돌이 생기면 어떤 파일부터 확인하나요?**
+A: 결론: 최근 수정 파일보다 고객 영향과 지식 중심성을 기준으로 우선순위를 정한다. 1. 담당자는 충돌 파일 경로, 수정 시각, 링크 수, Source, Tags, KST02/KST04 상태, 백업 여부를 24시간 안에 기록하고 복구 담당자에게 공유한다. 2. 조건상 QA, BEP, Revit 모델 기준, 법규, 고객 답변에 연결된 파일은 먼저 복구 후보로 지정하고 확인 요청을 남긴다. 반면 개인 메모나 중복 초안은 후순위로 둔다. 다만 데이터 손실, 보안, 법무 책임 리스크가 있으면 예외 없이 담당자 승인과 7일 복구 로그를 남기고 재발 방지 조치를 보고한다.
+
+**Q: 자동 백업은 성공했는데 지식 그래프 품질이 낮아지면 무엇을 점검하나요?**
+A: 결론: 백업 성공과 지식 품질은 별도 지표로 봐야 한다. 1. 담당자는 고아 노트, 깨진 링크, 중복 태그, 미승격 KST02 후보, Source 누락, Tags 누락을 24시간 안에 점검한다. 2. 조건상 고객지원, BIM 납품, LOD 300/350 기준, 법규 답변에 쓰이는 노트면 지식큐레이터에게 정리 요청을 공유한다. 반면 임시 수집 노트는 보류할 수 있다. 다만 개인정보, 보안 토큰, 고객 파일 리스크가 있으면 예외 없이 접근 권한과 승인 로그를 7일 안에 검토한다.
+
+## 2026-06-21 DevOps/Obsidian 운영 추가 Q&A
+- Source: LUA BIM LABS coverage expansion
+- Tags: devops,obsidian,backup,access-control,automation,2026
+
+**Q: 자동 동기화가 성공했는데 고객별 접근 권한이 섞였는지 의심되면 무엇을 하나요?**
+A: 결론: 동기화 성공을 신뢰하지 말고 권한, 경로, 고객 식별 정보를 즉시 분리 확인한다. 1. 담당자는 볼트 경로, 파일 소유자, 링크 대상, 고객명, 개인정보 포함 여부, Source/Tags, KST02 상태를 24시간 안에 점검한다. 2. 조건상 BIM360, Revit 모델, 계약 문서, 고객 답변 노트가 섞인 경우 자동 배포를 차단하고 보안 담당자 검토를 요청한다. 반면 내부 공개 노트면 링크 정리 로그로 처리한다. 방치하면 개인정보, 보안, 법무, 고객 신뢰 책임 리스크가 생긴다. 7일 내 승인자, 기한, 접근권한 수정 로그를 공유·보고한다.
+
+**Q: Obsidian 자동 수집 노트가 많아져서 검색 답변 품질이 떨어지면 어떻게 정리하나요?**
+A: 결론: 수집량보다 Source, Tags, KST 상태, 중복 제거 기준으로 승격 대상을 줄인다. 1. 담당자는 자동 수집 노트, 중복 URL, 깨진 링크, Source/Tags 누락, KST02/KST04 상태, 검색 실패 로그를 확인한다. 2. 조건상 고객지원, 법규, BEP, LOD 300/350 답변에 쓰이는 경우 24시간 내 큐레이션 담당자에게 검토를 요청하고, 반면 근거가 약한 노트는 보류한다. 노이즈 방치는 오류 답변, 법무, 브랜드, 비용 리스크를 만든다. 7일 내 승인자, 담당자, 기한, 삭제·승격 로그를 남긴다.
+
+실무 보강 (2026-06-20 답변 품질 보강):
+1. 기준 확인: `인프라_DevOpsObsidian` 담당자는 이 질문을 단순 설명이 아니라 KST02 이상 운영 기준, 프로젝트 범위, 고객 영향도, 납품/계약 책임을 함께 확인하는 실무 판단 문제로 본다.
+2. 조건 분기: 확정 기준, 현장 예외, 고객 요청, 내부 승인 여부를 먼저 나눈다. 수치나 법규가 필요한 경우에는 시행일, 적용 대상, 원문 출처, LOD 300/350 같은 모델 상세 수준을 확인하기 전까지 단정하지 않는다.
+3. 다음 액션: 24시간 안에 현재 자료와 누락 자료를 정리하고, 7일 안에 담당자·기한·검증 방법이 있는 조치 항목으로 바꾼다. 반복 문의는 QA로 남기고 2회 이상 반복되면 KB 본문 승격 후보로 올린다.
+4. 리스크 경계: 비용, 일정, 안전, 개인정보, 법무, 고객 약속으로 번질 수 있는 내용은 즉답보다 확인 로그와 승인 경로를 우선한다. 불확실한 답은 '가능/불가'보다 확인 조건과 대안 2개를 함께 제시한다.
+5. 답변 형식: 결론 1문장, 근거 2개, 확인할 자료 3개, 다음 행동 1개 순서로 응답한다. Source: LUA BIM LABS agent QA quality baseline. Tags: qa,quality,field-case,kst02,risk,2026.

@@ -174,16 +174,13 @@ def auto_approve(expense: dict) -> bool:
     return amount <= limit  # 한도 이하 자동 승인
 ```
 
-## AI 기반 경비 정산 최신 동향 (2026-06-19)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-19
+## AI 기반 경비 정산 최신 동향 (2026-06-22)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-22
+- KST04 자동수집: 공식 출처/담당자 검증 전 고객 확정 답변, 납품 기준, 견적 기준으로 사용 금지.
 - Tags: expense,ai,automation,update
 
-- OCR 영수증 인식 기술: AI 기반 경비 정산 담당자는 OCR(Optical Character Recognition)을 활용하여 전자화된 영수증 처리를 자동화할 수 있습니다. 이는 시간과 비용을 절약하며, 정확도 또한 향상시킵니다.
-
-- 회계 연동 도구: 회계 시스템과의 원활한 연동은 경비 정산 과정에서 데이터의 일관성과 정확성을 보장합니다. 이를 위해 ERP(Enterprise Resource Planning) 시스템이나 API(Application Programming Interface)를 활용할 수 있습니다.
-
-- 이상 지출 탐지 방법: AI와 머신러닝 기술을 통해 비정상적인 지출 패턴을 자동으로 감지하고 경고할 수 있는 시스템이 필요합니다. 이는 예측 모델을 학습시켜 정상적인 지출 범위를 설정한 후, 실제 지출과 비교하여 이상을 탐지하게 됩니다.
-
-- 최신 기술 동향: 2023년 현재 IoT(Internet of Things), 클라우드 컴퓨팅, 빅데이터 분석 등이 경비 정산 과정의 자동화와 효율성을 향상시키는 중요한 요소로 자리 잡고 있습니다.
+- OCR 영수증 인식 기술: AI 기반의 영수증 인식 시스템을 활용하면 자동으로 영수증을 스캔하여 금액과 정보를 추출하고 정산 과정을 자동화할 수 있습니다. 이는 시간 절약과 오류 감소에 효과적입니다.
+- 회계 연동 도구: ERP(Enterprise Resource Planning) 시스템이나 CFO(Corporate Financial Officer)와의 원활한 연동은 경비 데이터를 실시간으로 업데이트하고, 자동화된 보고 프로세스를 통해 효율성을 높일 수 있습니다.
+- 이상 지출 탐지 방법: AI 기반 이상 지출 탐지는 비정상적인 지출 패턴을 식별하여 비용 관리에 도움을 줍니다. 이는 머신러닝 모델을 통해 학습된 정상적인 지출 패턴과 비교하여 예외 사항을 자동으로 감지합니다.
+- 사용 가능한 기술: 2068126155(㈜에코셋)의 로타리 자동제진기는 AI와 연계되어 이상 지출 탐지를 지원할 수 있습니다.
 - 관련: [[Dynamo]] · [[엑셀자동화]] · [[파이프라인_오케스트레이터]]
-
