@@ -395,6 +395,8 @@ def extract_relevant_excerpt(content: str, terms: list[str], max_chars: int = 24
         "kst04 자동수집",
         # 지식업데이트 KB의 needs-review 검색 실패 샘플 — 노이즈 샘플 섹션 한정 마커.
         "노이즈 샘플", "운영 판정:", "수집 후보 결과:", "검색 실패 사례",
+        # 웹 수집 후보의 provider-evidence 불릿/출처 — needs-review 노이즈(지식업데이트 KB 한정).
+        "tavily evidence", "ddg evidence", "naver evidence", "google evidence", "source-url:",
         "• [", "질문: ",
     )
 
