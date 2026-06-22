@@ -2278,6 +2278,25 @@ def test_carried_retry_accepts_pure_attribute_followup():
         server.search_local_knowledge("냉동기 밸브 ㅋㅋ 알려줘", limit=4)) is False
 
 
+@pytest.mark.parametrize("follow", [
+    "더 자세히 알려주세요", "예시 들어줘", "쉽게 설명해줘", "자세하게 알려줘", "사례 보여줘",
+])
+def test_elaboration_followups_inherit_context(follow):
+    """엘라보레이션 요청('더 자세히'·'예시 들어줘'·'쉽게 설명')은 자체 주제가 없으므로
+    직전 대화 주제를 상속해야 한다(이전엔 '예시/쉽게/설명해줘'가 토픽으로 오인돼 미상속→웹)."""
+    import datetime as _dt
+    from types import SimpleNamespace
+    upd = SimpleNamespace(effective_chat=SimpleNamespace(id=556), effective_user=SimpleNamespace(id=445))
+    server.TELEGRAM_KNOWLEDGE_SESSIONS["556:445"] = {
+        "context_subject": "스프링클러 헤드 간격",
+        "created_at": _dt.datetime.now().isoformat(timespec="seconds"),
+    }
+    eff, _ = server._resolve_conversation_context(upd, follow)
+    assert eff.startswith("스프링클러 헤드 간격"), (follow, eff)
+    # 가드: 실제 토픽이 섞인 질의는 그 토픽을 유지(상속 아님).
+    assert server.extract_topic_terms("간섭 사례 알려줘") == ["간섭"]
+
+
 def test_conversation_context_inherits_subject_for_followup():
     """주어 없는 후속질의는 직전(최근 15분) 대화 주제를 상속한다(문맥기억).
     '무역센터 KITA' 후 '연면적/시공사 찾아줘'가 주어없어 인천공항으로 오매칭되던 것 방지."""
