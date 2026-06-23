@@ -1,0 +1,31 @@
+LUA BIM LABS Starter
+Day 63 - 급기 vs. 환기 vs. 배기 시스템 지정
+
+1. Why This Matters
+덕트를 잘못된 시스템 유형에 지정하는 경우 — 급기 덕트를 환기로 지정하거나, 배기를 잘못 지정하는 경우 — 공기유량 계산이 왜곡되고, 스케줄이 틀어지며, BIM 모델로 추적되는 시운전(Commissioning) 오류가 발생합니다.
+
+2. Core Concept
+- HVAC BIM의 세 가지 주요 공기 시스템 유형:
+  - 급기(Supply Air): AHU에서 실내로 공급되는 조화된 공기. 점유 공간 방향으로 흐름. Revit에서 "Supply Air"로 덕트 지정
+  - 환기(Return Air): 점유 공간에서 AHU로 되돌아오는 공기. 별도 덕트 또는 플레넘(Plenum). "Return Air"로 지정
+  - 배기(Exhaust Air): 외부로 배출되는 공기. 화장실, 주방, 주차장, 서버실. "Exhaust Air"로 지정 — 재순환되지 않음
+- Revit에서 시스템 유형은 덕트 레벨이 아닌 기계 시스템(Mechanical System) 레벨에서 설정됩니다
+- 커넥터 극성(Polarity)이 중요: AHU 급기 출구 커넥터는 급기 시스템에 연결되고, AHU 환기 입구 커넥터는 환기 시스템에 연결됩니다
+- 혼합 모드 오류: 환기 덕트가 실수로 급기 시스템에 연결되면, Revit의 시스템 분석에서 역류 또는 잘못된 압력이 표시됩니다
+
+3. Real Project Lens
+병원 프로젝트에서 수술실은 세 개의 별도 덕트 시스템을 갖습니다: HEPA 필터 급기(양압, Positive Pressure), 배기(음압, Negative Pressure, 외부 배출), 그리고 복도 환기 시스템. BIM 모델러는 Revit에서 유형별로 세 개의 별도 기계 시스템을 생성하고, 각 덕트 라인을 올바른 시스템에 연결해야 합니다. 이를 혼동하면 감염 관리 실패로 이어집니다.
+
+4. BIM Check
+- Check: Mechanical Systems Browser에서 각 시스템을 확장하여 내부의 모든 덕트가 올바른 유형인지 확인 (환기 시스템 내 급기 덕트 없음)
+- Check: 배기 덕트가 AHU 환기 입구로 다시 연결되지 않는지 확인 — 각 배기 덕트를 배기 팬 또는 루버(Louver) 종단점까지 추적
+- Check: AHU의 외기도입 덕트(Fresh Air Intake)가 배기 배출구와 분리되어 있는지 확인 — 단락(Short-circuiting) 없음
+
+5. Common Mistake
+급기 덕트를 복사한 후 물리적 경로만 변경하고 시스템 지정을 변경하지 않는 경우 — 새 덕트가 이제 환기 그릴(Return Grille)에 연결되었음에도 급기 시스템에 남아 있습니다. 이는 평면도에서 보이지 않지만 시스템 분석을 망가뜨립니다.
+
+6. Today's Action
+Revit에서 Mechanical Systems 대화상자를 엽니다. 최소 두 개의 기계 시스템이 포함된 프로젝트 또는 샘플 모델을 찾으십시오. 모델 내 각 덕트가 올바른 시스템에 속하는지 확인하십시오. 이름이 불명확한 시스템은 이름을 변경하십시오 (예: "Mechanical System 1" → "L3-AHU01-Supply").
+
+Scope note:
+본 내용은 일반 교육용 콘텐츠이며, 프로젝트 검토, 엔지니어링 검증, 코드 준수 확인 또는 시공 승인을 대체하지 않습니다.

@@ -1,0 +1,15 @@
+🎯 30-Day Milestone — 수고하셨습니다!
+
+MEP BIM Starter Program의 30일 과정을 성공적으로 완료하셨습니다.
+
+지금까지 학습한 내용은 다음과 같습니다:
+✓ MEP BIM 개요 및 역할 이해
+✓ Revit MEP 설정 및 모델링 기초
+✓ MEP 도면 및 시스템 판독
+✓ 모델 품질 기본 개념
+
+계속해서 학습해 주세요 — Foundation 커리큘럼의 3분의 1을 완료하셨습니다.
+
+Day 31부터는 간섭 조정(Clash Coordination) 모듈이 시작됩니다.
+
+LUA BIM LABS

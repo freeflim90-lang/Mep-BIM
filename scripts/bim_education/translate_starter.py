@@ -145,8 +145,12 @@ def _with_ollama(prompt: str) -> str:
 
 
 def _is_exhaustion(err: str) -> bool:
+    # 한도 소진뿐 아니라 인증 오류(무효 키)도 다음 백엔드로 강등시킨다.
+    # 키가 잘못돼 매 항목이 401로 죽고 폴백을 못 타는 사고를 방지.
     return any(k in err.lower() for k in
-              ("credit", "balance", "quota", "overloaded", "limit", "rate", "429", "402"))
+              ("credit", "balance", "quota", "overloaded", "limit", "rate",
+               "429", "402", "401", "authentication", "invalid x-api-key",
+               "permission"))
 
 
 def translate(prompt: str) -> tuple[str, str]:
