@@ -416,12 +416,13 @@ Autodesk 공식 Revit 2026 What's New와 APS 공식 블로그 기준으로 Add-i
 
 관련: [[ACC_BIM360]] · [[IFC_OpenBIM]] · [[BIM_납품검수]] · [[빌드검증]] · [[스토어심사]] · [[Dynamo]]
 
-## Revit Add-in 최신 동향 및 개발 팁 (2026-06-22)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-22
+## Revit Add-in 최신 동향 및 개발 팁 (2026-06-24)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-24
 - KST04 자동수집: 공식 출처/담당자 검증 전 고객 확정 답변, 납품 기준, 견적 기준으로 사용 금지.
 - Tags: revit,addin,API,update
 
-- Autodesk Revit 2025 API에서는 `LoadFamilyInstance` 메서드가 추가되어, 더 효율적인 모델링 작업을 가능하게 하였습니다.
-- 성능 최적화를 위해 `Transaction` 사용 시 `IsolateChanges` 옵션을 활용하여 변경사항에 집중할 수 있게 되었습니다.
-- Autodesk Store 심사 통과를 위한 팁으로는 Add-in의 호환성 확인, 사용자 프라이버시 보호 및 데이터 보안 강화, 명확한 설명서 제공 등을 꼽을 수 있습니다.
+- Autodesk Revit 2025 API에서는 새로운 `ModelInstanceAPI` 메서드가 추가되어, 모델 인스턴스 관리에 더 유연한 접근이 가능해졌습니다.
+- 성능 최적화 측면에서, API는 대규모 프로젝트에서도 빠른 응답을 위해 멀티 스레딩 기술이 적용되었습니다. 이는 복잡한 모델링 작업이나 데이터 처리 시에 특히 유용합니다.
+- Autodesk Store 심사를 통과하려면, Add-in의 안전성과 보안성을 체크해야 합니다. 이를 위해 사용자 정보 접근 권한을 최소화하고, 코드 내부에서 취약점을 제거하는 것이 중요합니다. 또한, 사용자 경험(UX) 향상을 위한 기능 추가와 함께 사용자 피드백을 적극적으로 수용하여 제품의 품질을 높이는 것이 도움이 됩니다.
 - 관련: [[간섭검토]] · [[Dynamo]] · [[Navisworks_Addin]] · [[CS_기술지원관]]
+

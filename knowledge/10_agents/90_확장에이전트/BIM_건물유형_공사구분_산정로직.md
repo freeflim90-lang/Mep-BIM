@@ -466,12 +466,13 @@ def determine_bim_grade(building_type: str, area_m2: float,
     }
 ```
 
-## BIM 건물유형·공사구분 산정 기준 업데이트 (2026-06-22)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-22
+## BIM 건물유형·공사구분 산정 기준 업데이트 (2026-06-24)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-24
 - KST04 자동수집: 공식 출처/담당자 검증 전 고객 확정 답변, 납품 기준, 견적 기준으로 사용 금지.
 - Tags: BIM,building-type,cost,update
 
-- 최신 국토부 고시에 따르면 BIM 의무 적용 대상 건물 유형 및 공사 구분 기준은 2025년까지 단계적으로 확대될 예정입니다.
-- 현재는 주택, 사무실, 병원 등 특정 유형의 건축공사를 대상으로 하고 있으며, WBS Level7 이상의 구조적 요소에 대해 BIM 모델을 의무적으로 적용해야 합니다.
-- 공공 발주 BIM 적용 범위가 확대되면서 2023년부터는 국토교통부 소관 공사 중 건축공사와 토목공사를 포함한 모든 공사에서 BIM을 의무화하였습니다.
+- 2023년 현재, 국토교통부 고시에 따르면 BIM( Building Information Modeling) 의무 적용 대상 건물 유형 및 공사 구분 기준은 주거용 건축물 중 10,000㎡ 이상 규모의 단지조성공사와 같은 대규모 건설사업이 포함된다.
+- 또한, 공공 발주 사업에 대한 BIM 적용 범위가 확대되고 있으며, 2025년까지 모든 공공 건설 프로젝트에서 BIM을 의무적으로 활용하도록 정책 방향성이 제시되어 있다.
+- 구체적인 공사 구분 기준으로는 WBS(Work Breakdown Structure) Level 7 이상의 단위 작업이 BIM 모델 대상으로 지정되며, 이는 건설 프로젝트에서 중요한 부분을 의미한다.
 - 관련: [[프로젝트분석]] · [[설계_지침서]] · [[시공_지침서]] · [[BIM_지침서]]
+

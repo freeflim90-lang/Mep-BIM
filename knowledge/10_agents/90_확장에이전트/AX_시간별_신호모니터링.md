@@ -808,3 +808,23 @@ def score_signal(text: str) -> float:
 - 텍스트 명령만으로 BIM 제작…건설사업관리도 AI 도입 바람 - 서울경제 (BIM Automation)
 
 운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-23 05:34 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-23/0534_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 한미글로벌, 창립 30주년 ‘글로벌 PM 서밋 2026’ 개최… AI 기반 건설사업관리 미래 전략 제시 - 나눔경제뉴스 (BIM Automation)
+- 한미글로벌, 창립 30주년 ‘글로벌 PM 서밋’ 개최…건설 AI 전략 모색 - 직썰 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-23 22:57 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-23/2257_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 에스엘즈, 도쿄 XR·메타버스 페어서 AR 기반 MEP 배관 경로 자동화 솔루션 'ROUTi-AR' 일본 첫선 - 디지틀조선TV (BIM Automation)
+- 한미글로벌, 독일 뮌헨공대·이스라엘 테크니온과 건설AI 공동연구 - 네이트 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
