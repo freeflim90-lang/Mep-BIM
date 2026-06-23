@@ -1710,6 +1710,29 @@ def test_cancellation_routes_to_billing(query):
     assert server.infer_knowledge_agent_from_query(query) == "라이선스결제"
 
 
+@pytest.mark.parametrize("query", [
+    "환불 정책 어떻게 돼요", "환불 되나요?", "구독 취소하고 싶어요",
+    "구독 해지 방법", "연간 구독 중간에 환불 가능해?",
+])
+def test_refund_query_surfaces_refund_section_not_pricing(query):
+    """환불·취소 콘텐츠가 '구독 가격 정책' 헤딩의 '정책/구독' 토큰에 가로채여
+    가격 발췌로 confident-오답이던 것 → '환불·구독 취소(해지) 정책' 전용 섹션으로 surface."""
+    matches = server.search_local_knowledge(query, limit=1)
+    assert matches and matches[0]["path"].stem == "라이선스결제"
+    ans = server.build_knowledge_answer(query, matches)
+    assert "환불" in ans and ("30일" in ans or "취소" in ans or "해지" in ans), ans[:120]
+    # 가격표(USD 14/month 등)만 답으로 새지 않아야 한다.
+    assert "USD 14/month" not in ans.split("환불")[0], ans[:120]
+
+
+def test_subscription_pricing_query_still_surfaces_pricing():
+    """가드: '구독 가격' 질의는 환불 섹션이 아니라 가격 정책 발췌를 유지해야 한다."""
+    ans = server.build_knowledge_answer(
+        "구독 가격 알려줘", server.search_local_knowledge("구독 가격 알려줘", limit=1)
+    )
+    assert "USD 14" in ans or "가격 정책" in ans, ans[:120]
+
+
 @pytest.mark.parametrize("query", ["스프링쿨러 설치 간격", "스프링쿨러 살수반경", "스프링쿨러 헤드"])
 def test_sprinkler_typo_routes_to_fire(query):
     """'스프링쿨러'는 '스프링클러'의 흔한 오타 — 소방기계로 라우팅되고 강하게 연결돼야 한다
