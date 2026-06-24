@@ -709,7 +709,13 @@ def infer_knowledge_agent_from_query(query: str) -> str:
             continue
         if target == "@knowledge_agent_name":
             # 에이전트명 직접 포함 여부
+            # 공종 에이전트(건축/구조/전기/위생/통신/토목 등)는 바로 위 @discipline_keywords
+            # 가 키워드로 처리하므로 여기서 bare-name 매칭에서 제외한다. 이름이 짧은 한글
+            # 일반어(2자 '구조'·'전기')라 부분문자열로 '조직 구조'·'전기차 충전' 등 무관
+            # 복합어까지 가로채는 오라우팅(c17 공유어 클래스)을 막는다.
             for agent in st.KNOWLEDGE_AGENTS:
+                if agent in st.DISCIPLINE_KEYWORDS:
+                    continue
                 name = agent.lower()
                 if name.isascii():
                     # 짧은 ASCII 명(COO/CEO/CFO 등)은 단어경계로만 매칭한다. 부분일치를
@@ -762,6 +768,11 @@ def _name_affinity_agent(query: str) -> str:
         score = len(matched) * 100 + sum(len(t) for t in matched)
         # 단일 약매칭(이름 부분만 1개)은 채택하지 않음 — 오라우팅 방지.
         if len(matched) < 2 and not any(t == stem for t in matched):
+            continue
+        # 2자 이하 일반어 이름(구조/건축/전기/위생/통신/토목)은 단일 정확매칭도
+        # 신뢰 불가 — '조직 구조'·'데이터 구조'처럼 일반어가 우연히 짧은 공종명과
+        # 일치한다. 2개 이상 매칭(=실제 그 도메인 신호)일 때만 채택(c17 공유어 클래스).
+        if len(matched) < 2 and len(stem) <= 2:
             continue
         if score > best_score:
             best_score = score
