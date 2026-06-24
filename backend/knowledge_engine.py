@@ -155,6 +155,29 @@ def knowledge_search_files() -> list[Path]:
     return files
 
 
+# 영문 BIM 용어 → 한글 KB 용어 매핑(글로벌 Autodesk Store 영문 고객용). 모듈 상수로 두어
+# scoring(query_terms)과 라우팅(infer_knowledge_agent_from_query) 양쪽이 공유한다.
+# 접두(startswith)로만 매칭해 'duct'∈'product' 류 부분문자열 오매칭을 막는다(cycle4 클래스).
+# 한글 토큰은 어떤 영문 키로도 startswith 되지 않으므로 한글 질의엔 영향이 없다(zero 회귀).
+_EN_KO_MAP = {
+    "fire": ["소방", "방화", "화재"], "sprinkler": ["스프링클러", "소방기계"],
+    "rebar": ["철근", "배근"], "reinforcement": ["철근", "배근"],
+    "duct": ["덕트"], "compartment": ["구획", "방화구획"], "penetration": ["관통"],
+    "drainage": ["오배수", "배수"], "vent": ["통기"], "insulation": ["단열", "보온"],
+    "panelboard": ["분전반"], "switchboard": ["수배전반", "분전반"],
+    "structural": ["구조"], "architectural": ["건축"], "plumbing": ["위생"],
+    "clearance": ["이격", "작업공간"], "clash": ["간섭", "간섭검토"],
+    "cable": ["케이블", "트레이"], "tray": ["트레이", "케이블"],
+    "hvac": ["공조", "공조배관", "공조덕트"], "telecom": ["통신", "약전"],
+    "hydrant": ["소화전", "옥내소화전"],
+    # 고객 결제 증빙 영문 — '인보이스'로만 확장(고객 전용 영단어, 내부 경비정산은 영수증/
+    # 세금계산서/카드전표 사용). bare '영수증' 확장 시 내부 경비정산_AI 규칙에 걸려 누출되므로
+    # 제외(46c69b56 누출패턴). trial/subscription/refund/license 는 inference_rules 에 영문
+    # 키워드가 이미 있어 미추가('subscription business model' 과포착 방지).
+    "invoice": ["인보이스"], "receipt": ["인보이스"],
+}
+
+
 def query_terms(query: str) -> list[str]:
     raw_terms = re.findall(r"[A-Za-z0-9_#+.\-가-힣]{2,}", query.lower())
     # 부정/제외: 'X 말고/빼고/제외하고 Y' 에서 제외 대상 X 를 검색어에서 뺀다. 그래야
@@ -282,21 +305,8 @@ def query_terms(query: str) -> list[str]:
                        "패밀리", "로드", "배치"])
     # 영문 BIM 용어 → 한글 동의어. 글로벌 제품(Autodesk Store) 영문 질의가 한글 KB 에
     # 매칭되도록 한다(기존 cws→냉각수 확장과 같은 패턴). 명확한 도메인 명사만 보수적으로.
-    _EN_KO = {
-        "fire": ["소방", "방화", "화재"], "sprinkler": ["스프링클러", "소방기계"],
-        "rebar": ["철근", "배근"], "reinforcement": ["철근", "배근"],
-        "duct": ["덕트"], "compartment": ["구획", "방화구획"], "penetration": ["관통"],
-        "drainage": ["오배수", "배수"], "vent": ["통기"], "insulation": ["단열", "보온"],
-        "panelboard": ["분전반"], "switchboard": ["수배전반", "분전반"],
-        "structural": ["구조"], "architectural": ["건축"], "plumbing": ["위생"],
-        "clearance": ["이격", "작업공간"], "clash": ["간섭", "간섭검토"],
-        "cable": ["케이블", "트레이"], "tray": ["트레이", "케이블"],
-        "hvac": ["공조", "공조배관", "공조덕트"], "telecom": ["통신", "약전"],
-        # 소방 영문 명사(콘텐츠 존재·startswith·단일 도메인이라 오라우팅 없음). 전기 영문어
-        # (grounding/conduit/transformer)는 '전기' 확장이 공조배관 '전기트레이'에 hijack
-        # 되거나 부족해 backlog 로 둔다(영문 엔지니어링 = 웹 폴백, cycle38/99 결정).
-        "hydrant": ["소화전", "옥내소화전"],
-    }
+    # 영문→한글 매핑은 모듈 상수 _EN_KO_MAP 공유(라우팅과 동일 소스).
+    _EN_KO = _EN_KO_MAP
     # 한글→영문(KB 헤딩/본문이 영문 기술용어를 쓰는 경우 — '트랜잭션' 질의가
     # 'Transaction 처리' 섹션을 찾도록). 접두매칭으로 무관 오매칭 방지.
     _KO_EN = {
@@ -698,6 +708,17 @@ def infer_knowledge_agent_from_query(query: str) -> str:
         .replace("컨텐츠", "콘텐츠").replace("후렉시블", "플렉시블")
         .replace("분전판", "분전반").replace("커텐월", "커튼월").replace("방화구회", "방화구획")
     )
+    # 글로벌 영문 질의: 고객 결제 증빙 영단어(invoice/receipt)만 한글 '인보이스'로 확장해
+    # lower_text 에 덧붙인다. 영문 'invoice/receipt'가 라이선스결제(고객 안내) 대신 catch-all로
+    # 빠지던(또는 bare '영수증' 확장 시 경비정산_AI로 새던) 문제를 해소한다.
+    # 공종 영문(duct/fire/hvac 등)은 name-affinity(점수 기반)가 이미 처리하고, lower_text 에
+    # 넣으면 @discipline_keywords 순서 first-match 가 잘못된 공종을 골라 backlog 로 둔다.
+    # subscription/refund/trial 등은 inference_rules 에 영문 키워드가 이미 있어 확장 불필요
+    # (bare 확장 시 'subscription business model' 같은 비결제 질의를 과포착하므로 제외).
+    # 접두 매칭이라 한글 질의엔 영향 0(한글 토큰은 영문 키로 startswith 안 됨, cycle4 가드).
+    _en_tokens = re.findall(r"[a-z]{3,}", lower_text)
+    if any(tok.startswith("invoice") or tok.startswith("receipt") for tok in _en_tokens):
+        lower_text = lower_text + " 인보이스"
 
     for rule in _registry.inference_rules():
         target = rule["target"]
