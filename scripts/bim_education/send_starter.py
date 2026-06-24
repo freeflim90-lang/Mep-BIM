@@ -307,6 +307,10 @@ def main() -> None:
     for client in clients:
         key = client["progress_key"]
         user_data = progress.get("users", {}).get(key, {})
+        # 같은 날 중복 발송 방지(다른 발송기/재실행과 progress.json 공유).
+        if user_data.get("last_sent") == today:
+            print(f"  ⏭  {client.get('name', key)}: 오늘 이미 발송됨 — 건너뜀")
+            continue
         updated = process_client(client, user_data, today, is_friday)
         progress.setdefault("users", {})[key] = updated
 

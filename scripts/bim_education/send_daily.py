@@ -257,6 +257,17 @@ def get_friday_quiz(current_day: int, language: str = "en") -> str | None:
     return None
 
 
+def get_card_path(filename: str, language: str = "en") -> Path:
+    """언어별 레퍼런스 카드 PDF 경로. reference_cards/<lang>/ 우선, 없으면 영어 원본."""
+    for lang in _lang_fallbacks(language):
+        if lang == "en":
+            break  # 영어는 루트(reference_cards/<file>)에 있음
+        localized = STARTER_CARDS_DIR / lang / filename
+        if localized.exists():
+            return localized
+    return STARTER_CARDS_DIR / filename
+
+
 def get_milestone_message(day: int, name: str, discipline: str, language: str = "en") -> str | None:
     """언어별 마일스톤 파일 로드, 없으면 영어 fallback."""
     discipline_name = DISCIPLINE_DISPLAY.get(discipline, "HVAC")
@@ -398,10 +409,10 @@ def process_starter_client(
         print(f"  🎯 Day {current_day} 마일스톤 메시지 발송")
         send_telegram(chat_id, milestone_msg)
 
-    # 레퍼런스 카드 발송
+    # 레퍼런스 카드 발송 (언어별 PDF 우선, 없으면 영어 폴백)
     if current_day in REFERENCE_CARDS:
         card_num, filename, card_title = REFERENCE_CARDS[current_day]
-        card_path = STARTER_CARDS_DIR / filename
+        card_path = get_card_path(filename, language)
         caption = f"📄 Quick Reference Card {card_num}: {card_title}"
         print(f"  📎 레퍼런스 카드 {card_num} 발송 시도")
         send_document(chat_id, card_path, caption)
@@ -451,6 +462,10 @@ def main() -> None:
         progress_key = user.get("progress_key", name)
 
         user_data = progress.get("users", {}).get(progress_key, {})
+        # 같은 날 중복 발송 방지(send_starter.py와 progress.json·키 공유).
+        if user_data.get("last_sent") == today:
+            print(f"  ⏭  {name}: 오늘 이미 발송됨 — 건너뜀")
+            continue
 
         updated = process_starter_client(user, user_data, progress, today, is_friday_today)
         progress.setdefault("users", {})[progress_key] = updated
