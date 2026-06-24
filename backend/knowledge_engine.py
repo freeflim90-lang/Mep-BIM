@@ -405,9 +405,20 @@ def extract_relevant_excerpt(content: str, terms: list[str], max_chars: int = 24
         kept = [l for l in lines if not any(n in l.lower() for n in line_noise)]
         return "\n".join(kept).strip()
 
-    curated_paragraphs = [clean_paragraph(p) for p in paragraphs]
-    curated_paragraphs = [p for p in curated_paragraphs if p]
-    paragraphs = curated_paragraphs or paragraphs
+    # 검증 전 자동수집(KST04 auto-enrich) 섹션 식별 — 클리닝 전 원문에서 판정해야
+    # 가드레일/Source 라인이 stripped 되기 전에 잡는다. 이 섹션은 curated 검증 섹션
+    # 아래로 강등하고(정독 결과 confident-오답의 주원인), 그래도 노출될 땐 면책을 붙인다.
+    def _is_autoenrich(paragraph: str) -> bool:
+        pl = paragraph.lower()
+        return "kst04 자동수집" in pl or "auto-enrich" in pl
+
+    _pairs = [(clean_paragraph(p), _is_autoenrich(p)) for p in paragraphs]
+    _pairs = [(c, f) for c, f in _pairs if c]
+    if _pairs:
+        paragraphs = [c for c, _ in _pairs]
+        autoenrich_set = {c for c, f in _pairs if f}
+    else:
+        autoenrich_set = set()
     if not paragraphs:
         return content[:max_chars]
     query_lower = query.lower()
@@ -454,6 +465,12 @@ def extract_relevant_excerpt(content: str, terms: list[str], max_chars: int = 24
             score += 8
         if "## " in paragraph[:12] or paragraph.startswith("# "):
             score += 3
+        # 검증 전 자동수집(auto-enrich) 섹션 강등: 질의가 명시적으로 '최신/동향/트렌드/
+        # 요즘/최근'을 묻지 않는 한 curated 검증 섹션이 항상 우선하도록 큰 페널티를 준다.
+        if paragraph in autoenrich_set and not any(
+            k in query_lower for k in ["최신", "동향", "트렌드", "요즘", "최근", "근황"]
+        ):
+            score -= 60
         if not wants_legal and any(keyword in lower for keyword in ["국내 법령", "국내 고시", "ks 규격", "국내 표준", "국제 기준", "법률 제", "시행규칙"]):
             score -= 22
         # 공항·대형시설 '연면적 데이터베이스'는 흔한 토큰 '면적'(⊂연면적)으로 무관 면적 질의
@@ -510,6 +527,14 @@ def extract_relevant_excerpt(content: str, terms: list[str], max_chars: int = 24
             if second is not None:
                 selected.append(second)
     excerpt = "\n\n".join(selected)
+    # auto-enrich 섹션이 답변에 포함되면(강등 후에도 유일 후보 등) 면책을 선두에 붙여
+    # 미검증 정보가 면책 없이 confident 답변으로 노출되지 않게 한다.
+    if any(p in autoenrich_set for p in selected):
+        excerpt = (
+            "⚠️ 아래는 검증 전 자동수집(auto-enrich) 참고 정보입니다. "
+            "공식 출처·담당자 확인 전에는 고객 확정 답변·견적·납품 기준으로 사용하지 마세요.\n\n"
+            + excerpt
+        )
     return _clean_truncate(excerpt, max_chars)
 
 
@@ -777,6 +802,13 @@ _THANKS_EXACT = frozenset({
     "감사합니다", "감사드립니다", "감사드려요", "땡큐", "thanks", "thankyou", "thx",
     "도움이됐어요", "도움됐어요", "잘봤습니다", "잘봤어요",
 })
+# 복합 감사 발화("고마워요 도움이 됐어요"·"정말 감사합니다") — exact 셋이 놓치는 케이스.
+# 명확한 감사 substring 만(짧은 발화 한정) 매칭해 도메인 질의 hijack 을 막는다.
+# bare "감사"는 'BIM 감사 기준'(audit) 충돌이라 제외하고 종결형(감사합니다/해/드)만 본다.
+_THANKS_CONTAINS = (
+    "고마워", "고맙", "감사합니다", "감사해", "감사드", "감사히", "땡큐", "thank",
+    "도움이됐", "도움됐", "도움이되었", "도움많이", "큰도움", "잘봤",
+)
 # 공백 제거 후 정확히 일치할 때만 정체성으로 보는 짧은 단독 표현
 _IDENTITY_EXACT = {
     "누구세요", "누구야", "누구신가요", "누구인가요", "누구니",
@@ -912,6 +944,9 @@ def identity_answer(query: str) -> str | None:
     if q_nospace in _GREETING_EXACT:
         return _GREETING_REPLY
     if q_nospace in _THANKS_EXACT:
+        return _THANKS_REPLY
+    # 복합 감사 발화: 짧고(도메인 문장 배제) 명확한 감사 표현을 포함하면 친근 응답.
+    if len(q_nospace) <= 24 and any(marker in q_nospace for marker in _THANKS_CONTAINS):
         return _THANKS_REPLY
     if q_nospace in _IDENTITY_EXACT or q_nospace in _CAPABILITY_EXACT:
         return _LUA_INTRO
