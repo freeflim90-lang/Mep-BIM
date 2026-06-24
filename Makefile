@@ -62,9 +62,11 @@ starter-localize:
 	$(PYTHON) scripts/bim_education/translate_reference_cards.py --lang ko
 	$(PYTHON) scripts/bim_education/translate_reference_cards.py --lang ja
 	$(PYTHON) scripts/bim_education/translate_reference_cards.py --lang zh
+	$(PYTHON) scripts/bim_education/translate_reference_cards.py --lang ar
 	$(PYTHON) scripts/generate_reference_card_pdfs.py --lang ko --force
 	$(PYTHON) scripts/generate_reference_card_pdfs.py --lang ja --force
 	$(PYTHON) scripts/generate_reference_card_pdfs.py --lang zh --force
+	$(PYTHON) scripts/generate_reference_card_pdfs.py --lang ar --force
 
 verify: compile test audit-secrets
 

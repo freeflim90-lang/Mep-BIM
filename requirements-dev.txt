@@ -2,3 +2,6 @@
 pytest==9.0.2
 # 레퍼런스 카드 PDF 생성(generate_reference_card_pdfs.py, make starter-localize)
 fpdf2==2.8.7
+# 아랍어(ar) 카드 RTL: 글자결합(reshape) + 양방향(bidi)
+arabic-reshaper
+python-bidi

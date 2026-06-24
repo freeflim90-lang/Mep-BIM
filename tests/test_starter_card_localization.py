@@ -26,7 +26,7 @@ def test_lang_fallbacks_order(mod):
 
 
 @pytest.mark.parametrize("mod", SENDERS)
-@pytest.mark.parametrize("lang", ["ko", "ja", "zh"])
+@pytest.mark.parametrize("lang", ["ko", "ja", "zh", "ar"])
 def test_localized_card_when_present(mod, lang):
     # 현지화 PDF가 실제로 존재하면 그 경로를 돌려준다.
     localized = mod.STARTER_CARDS_DIR / lang / SAMPLE_CARD
@@ -39,10 +39,10 @@ def test_localized_card_when_present(mod, lang):
 
 @pytest.mark.parametrize("mod", SENDERS)
 def test_english_and_unknown_fall_back_to_root(mod):
-    # 영어/미지원 언어(ar 등)는 reference_cards 루트의 영어 원본으로 폴백.
+    # 영어/미지원 언어(현지화 카드 없는 언어)는 reference_cards 루트 영어 원본으로 폴백.
     root = mod.STARTER_CARDS_DIR / SAMPLE_CARD
     assert mod.get_card_path(SAMPLE_CARD, "en") == root
-    assert mod.get_card_path(SAMPLE_CARD, "ar") == root  # ar 카드는 미지원(RTL)
+    assert mod.get_card_path(SAMPLE_CARD, "de") == root  # 독일어 카드는 미생성
 
 
 @pytest.mark.parametrize("mod", SENDERS)

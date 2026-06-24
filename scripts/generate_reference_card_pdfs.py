@@ -35,9 +35,8 @@ CARDS_DIR = STARTER_PLAN_DIR / "reference_cards"
 _FONT_FAMILY = "Helvetica"
 _FONT_PATH: str | None = None  # None이면 코어 폰트 사용(등록 불필요)
 
-# 언어별 CJK 폰트 후보 (존재하는 첫 번째 사용). Arial Unicode가 ja/zh/ko
-# 글리프를 모두 포함하므로 공통 폴백으로 둔다. (아랍어는 RTL+shaping이
-# 필요해 이 생성기로는 미지원 — arabic_reshaper/bidi 별도 작업 필요)
+# 언어별 폰트 후보 (존재하는 첫 번째 사용). Arial Unicode가 ja/zh/ko/ar
+# 글리프를 모두 포함하므로 공통 폴백으로 둔다.
 _ARIAL_UNICODE = "/Library/Fonts/Arial Unicode.ttf"
 _ARIAL_UNICODE_SYS = "/System/Library/Fonts/Supplemental/Arial Unicode.ttf"
 _CJK_FONT_CANDIDATES = {
@@ -49,7 +48,24 @@ _CJK_FONT_CANDIDATES = {
     "zh": ["/System/Library/Fonts/STHeiti Medium.ttc",
            "/System/Library/Fonts/Hiragino Sans GB.ttc",
            _ARIAL_UNICODE_SYS, _ARIAL_UNICODE],
+    # 아랍어: RTL + 글자결합(shaping)은 arabic_reshaper/python-bidi로 처리.
+    "ar": [_ARIAL_UNICODE_SYS, _ARIAL_UNICODE,
+           "/System/Library/Fonts/Supplemental/Baghdad.ttc"],
 }
+
+# RTL(아랍어 등) 모드. main()에서 언어에 따라 설정. 본문 텍스트는 _sanitize에서
+# reshape+bidi 처리하고, 정렬 기본값을 우→좌로 바꾼다.
+_RTL = False
+_TEXT_ALIGN = "L"  # RTL이면 "R"
+
+
+def _shape_rtl(text: str) -> str:
+    """아랍어 글자결합(reshape) + 양방향(bidi) 순서 적용. 비-RTL이면 원문 반환."""
+    if not _RTL or not text:
+        return text
+    import arabic_reshaper
+    from bidi.algorithm import get_display
+    return get_display(arabic_reshaper.reshape(text))
 
 # LUA BIM LABS brand colors (approximate in RGB)
 COLOR_BRAND_DARK = (15, 23, 42)       # slate-900
@@ -156,7 +172,7 @@ def _render_table(pdf: CardPDF, rows: list[list[str]]) -> None:
     pdf.set_text_color(*COLOR_WHITE)
     pdf.set_font(_FONT_FAMILY, "B", 8)
     for col in header:
-        pdf.cell(col_w, 6, _sanitize(col), border=0, align="L", fill=True)
+        pdf.cell(col_w, 6, _sanitize(col), border=0, align=_TEXT_ALIGN, fill=True)
     pdf.ln()
 
     # Body rows
@@ -168,7 +184,7 @@ def _render_table(pdf: CardPDF, rows: list[list[str]]) -> None:
         pdf.set_text_color(*COLOR_TEXT)
         for j, cell in enumerate(row):
             pdf.multi_cell(col_w, 5, _sanitize(cell), border=0,
-                           align="L", fill=fill, new_x="RIGHT" if j < n_cols - 1 else "LMARGIN",
+                           align=_TEXT_ALIGN, fill=fill, new_x="RIGHT" if j < n_cols - 1 else "LMARGIN",
                            new_y="TOP" if j < n_cols - 1 else "NEXT")
     pdf.ln(2)
 
@@ -180,7 +196,7 @@ def _render_checklist_item(pdf: CardPDF, text: str) -> None:
     pdf.cell(6, 5, "[v]", ln=False)
     pdf.set_font(_FONT_FAMILY, "", 8.5)
     pdf.set_text_color(*COLOR_TEXT)
-    pdf.multi_cell(174, 5, _sanitize(text))
+    pdf.multi_cell(174, 5, _sanitize(text), align=_TEXT_ALIGN)
 
 
 _UNICODE_REPLACEMENTS = [
@@ -205,7 +221,8 @@ _UNICODE_REPLACEMENTS = [
 def _sanitize(text: str) -> str:
     for src, dst in _UNICODE_REPLACEMENTS:
         text = text.replace(src, dst)
-    return text
+    # RTL(아랍어): 글자결합 + 양방향 순서. 영문 약어는 bidi가 LTR로 보존.
+    return _shape_rtl(text)
 
 
 def render_markdown(pdf: CardPDF, md_text: str) -> None:
@@ -236,7 +253,7 @@ def render_markdown(pdf: CardPDF, md_text: str) -> None:
             pdf.set_text_color(*COLOR_WHITE)
             pdf.set_font(_FONT_FAMILY, "B", 9)
             pdf.set_x(10)
-            pdf.cell(190, 6, "  " + _sanitize(heading), fill=True, ln=True)
+            pdf.cell(190, 6, "  " + _sanitize(heading), fill=True, ln=True, align=_TEXT_ALIGN)
             pdf.ln(1)
             i += 1
             continue
@@ -247,7 +264,7 @@ def render_markdown(pdf: CardPDF, md_text: str) -> None:
             pdf.set_font(_FONT_FAMILY, "B", 9)
             pdf.set_text_color(*COLOR_BRAND_DARK)
             pdf.set_x(10)
-            pdf.cell(0, 5, _sanitize(heading), ln=True)
+            pdf.cell(0, 5, _sanitize(heading), ln=True, align=_TEXT_ALIGN)
             i += 1
             continue
 
@@ -277,7 +294,7 @@ def render_markdown(pdf: CardPDF, md_text: str) -> None:
             pdf.set_x(13)
             pdf.cell(4, 5, "-", ln=False)
             pdf.set_x(17)
-            pdf.multi_cell(173, 5, _sanitize(bullet_text))
+            pdf.multi_cell(173, 5, _sanitize(bullet_text), align=_TEXT_ALIGN)
             i += 1
             continue
 
@@ -299,7 +316,7 @@ def render_markdown(pdf: CardPDF, md_text: str) -> None:
             pdf.set_font(_FONT_FAMILY, "", 8.5)
             pdf.set_text_color(*COLOR_TEXT)
             pdf.set_x(10)
-            pdf.multi_cell(190, 5, _sanitize(clean))
+            pdf.multi_cell(190, 5, _sanitize(clean), align=_TEXT_ALIGN)
         i += 1
 
 
@@ -311,13 +328,15 @@ def generate_pdf(src: Path, dst: Path) -> None:
     card_title = title_match.group(1) if title_match else src.stem.replace("_", " ").title()
 
     # Extract subtitle from **LUA BIM LABS Starter - ...** line
+    # 셰이핑(_sanitize)은 _draw_header에서 한 번만 — 여기서는 마크업만 제거.
+    # (RTL에서 이중 셰이핑되면 글자 순서가 두 번 뒤집히는 버그 방지)
     sub_match = re.search(r"\*\*LUA BIM LABS Starter[^*]+\*\*", md)
     sub_raw = sub_match.group(0) if sub_match else ""
-    subtitle = _sanitize(re.sub(r"\*+", "", sub_raw).strip())
+    subtitle = re.sub(r"\*+", "", sub_raw).strip()
 
     track_match = re.search(r"\*Track completion card[^*]+\*", md)
     if track_match:
-        track_note = _sanitize(re.sub(r"\*+", "", track_match.group(0)).strip())
+        track_note = re.sub(r"\*+", "", track_match.group(0)).strip()
         subtitle = f"{subtitle}  |  {track_note}" if subtitle else track_note
 
     pdf = CardPDF(card_title, subtitle)
@@ -330,26 +349,29 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Generate reference card PDFs from Markdown")
     parser.add_argument("--force", action="store_true", help="Overwrite existing PDFs")
     parser.add_argument("--lang", default="en",
-                        help="언어 코드. en=기본(라틴), ko=한국어(reference_cards/ko/ 에서 읽고 쓰며 CJK 폰트 사용)")
+                        help="언어 코드. en=기본(라틴), ko/ja/zh=CJK, ar=아랍어(RTL). "
+                             "reference_cards/<lang>/ 에서 읽고 쓰며 해당 폰트 사용")
     args = parser.parse_args()
 
-    global _FONT_FAMILY, _FONT_PATH
+    global _FONT_FAMILY, _FONT_PATH, _RTL, _TEXT_ALIGN
     src_dir = dst_dir = CARDS_DIR
     if args.lang != "en":
         src_dir = dst_dir = CARDS_DIR / args.lang
-        # CJK 폰트 탐색·등록
+        # 언어별 폰트 탐색·등록
         candidates = _CJK_FONT_CANDIDATES.get(args.lang)
         if not candidates:
-            print(f"  ✗ {args.lang}: 이 생성기는 ko/ja/zh만 지원합니다 "
-                  f"(아랍어 등 RTL은 미지원)")
+            print(f"  ✗ {args.lang}: 이 생성기는 ko/ja/zh/ar만 지원합니다")
             sys.exit(1)
         font = next((p for p in candidates if Path(p).exists()), None)
         if not font:
-            print(f"  ✗ {args.lang} 용 CJK 폰트를 찾지 못했습니다: {candidates}")
+            print(f"  ✗ {args.lang} 용 폰트를 찾지 못했습니다: {candidates}")
             sys.exit(1)
-        _FONT_FAMILY = f"CJK_{args.lang}"
+        _FONT_FAMILY = f"FONT_{args.lang}"
         _FONT_PATH = font
-        print(f"  ℹ️  {args.lang} CJK 폰트: {font}")
+        if args.lang == "ar":
+            _RTL = True
+            _TEXT_ALIGN = "R"
+        print(f"  ℹ️  {args.lang} 폰트: {font}{' (RTL)' if _RTL else ''}")
         if not src_dir.exists():
             print(f"  ✗ 원문 디렉터리 없음: {src_dir} (먼저 translate_reference_cards.py 실행)")
             sys.exit(1)
