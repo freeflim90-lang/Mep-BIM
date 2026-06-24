@@ -167,6 +167,17 @@ def get_friday_quiz(day: int, language: str) -> str | None:
     return None
 
 
+def get_card_path(filename: str, language: str) -> Path:
+    """언어별 레퍼런스 카드 PDF 경로. reference_cards/<lang>/ 우선, 없으면 영어 원본."""
+    for lang in _lang_fallbacks(language):
+        if lang == "en":
+            break  # 영어는 루트(reference_cards/<file>)에 있음
+        localized = STARTER_CARDS_DIR / lang / filename
+        if localized.exists():
+            return localized
+    return STARTER_CARDS_DIR / filename
+
+
 def get_milestone_message(day: int, name: str, discipline: str, language: str) -> str | None:
     discipline_name = DISCIPLINE_DISPLAY.get(discipline, "HVAC")
     for lang in _lang_fallbacks(language):
@@ -264,10 +275,10 @@ def process_client(client: dict, user_data: dict, today: str, is_friday: bool) -
         print(f"  🎯 Day {current_day} 마일스톤 발송")
         send_telegram(chat_id, milestone)
 
-    # 레퍼런스 카드
+    # 레퍼런스 카드 (언어별 PDF 우선, 없으면 영어 폴백)
     if current_day in REFERENCE_CARDS:
         card_num, filename, card_title = REFERENCE_CARDS[current_day]
-        send_document(chat_id, STARTER_CARDS_DIR / filename,
+        send_document(chat_id, get_card_path(filename, language),
                       f"📄 Reference Card {card_num}: {card_title}")
 
     new_day = current_day + 1 if current_day < 90 else 90
