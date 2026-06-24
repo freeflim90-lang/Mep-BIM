@@ -85,6 +85,8 @@ def send_telegram(chat_id: str, text: str) -> bool:
     if not BOT_TOKEN:
         print("  ⚠️  TELEGRAM_BOT_TOKEN 없음")
         return False
+    # 평문 발송(parse_mode 미사용)이라 마크다운 '**'가 글자 그대로 노출됨 → 제거.
+    text = text.replace("**", "")
     payload = urllib.parse.urlencode({"chat_id": chat_id, "text": text}).encode("utf-8")
     req = urllib.request.Request(
         f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage",
