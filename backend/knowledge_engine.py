@@ -415,13 +415,28 @@ def extract_relevant_excerpt(content: str, terms: list[str], max_chars: int = 24
         pl = paragraph.lower()
         return "kst04 자동수집" in pl or "auto-enrich via" in pl
 
-    _pairs = [(clean_paragraph(p), _is_autoenrich(p)) for p in paragraphs]
-    _pairs = [(c, f) for c, f in _pairs if c]
-    if _pairs:
-        paragraphs = [c for c, _ in _pairs]
-        autoenrich_set = {c for c, f in _pairs if f}
+    # 내부 전용 섹션(내부 전략·재무·마진·운영 노하우)은 고객/외부 답변에 노출 금지.
+    # 고객-라우팅 KB 파일에 내부 섹션이 섞여 있어 2번째 발췌로 새는 것을 차단한다.
+    # 의도적 가드 문구로만 판정(흔한 '내부 운영' 등은 오탐하므로 distinctive 문구만).
+    _INTERNAL_MARKERS = (
+        "대외 비공개", "고객 답변에 사용 금지", "고객 답변 사용 금지",
+        "내부 운영용", "내부 전용 섹션", "외부 답변 금지",
+    )
+    def _is_internal_only(paragraph: str) -> bool:
+        return any(m in paragraph for m in _INTERNAL_MARKERS)
+
+    _triples = [
+        (clean_paragraph(p), _is_autoenrich(p), _is_internal_only(p))
+        for p in paragraphs
+    ]
+    _triples = [(c, ae, io) for c, ae, io in _triples if c]
+    if _triples:
+        paragraphs = [c for c, _, _ in _triples]
+        autoenrich_set = {c for c, ae, _ in _triples if ae}
+        internal_set = {c for c, _, io in _triples if io}
     else:
         autoenrich_set = set()
+        internal_set = set()
     if not paragraphs:
         return content[:max_chars]
     query_lower = query.lower()
@@ -474,6 +489,10 @@ def extract_relevant_excerpt(content: str, terms: list[str], max_chars: int = 24
             k in query_lower for k in ["최신", "동향", "트렌드", "요즘", "최근", "근황"]
         ):
             score -= 60
+        # 내부 전용 섹션은 고객/외부 답변 발췌에서 사실상 제외(큰 페널티). 다른 섹션이
+        # 있으면 절대 선택되지 않고, 유일 섹션일 때만 폴백으로 남는다.
+        if paragraph in internal_set:
+            score -= 200
         if not wants_legal and any(keyword in lower for keyword in ["국내 법령", "국내 고시", "ks 규격", "국내 표준", "국제 기준", "법률 제", "시행규칙"]):
             score -= 22
         # 공항·대형시설 '연면적 데이터베이스'는 흔한 토큰 '면적'(⊂연면적)으로 무관 면적 질의
