@@ -46,6 +46,7 @@ HR_인재분석관은 지식학습을 단순 이수로 보지 않고, 역할별 
 관련: [[교육컨설팅]] · [[지식큐레이터]] · [[2026-06-04 HR KST 기반 학습 기록 샘플]]
 
 ## 이력서 분석 대시보드 운영 기준 (2026-05-23)
+- ⚠️ 내부 운영용 — 고객 답변에 사용 금지(이력서 처리 파이프라인·내부 환경설정 플래그 등 구현 detail).
 - Source: `docs/internal_organization_documents/04_HIRING_ROLE_DEFINITION_STANDARD.md`
 - Tags: hiring,resume,dashboard,people-enablement,local-only
 
