@@ -409,8 +409,11 @@ def extract_relevant_excerpt(content: str, terms: list[str], max_chars: int = 24
     # 가드레일/Source 라인이 stripped 되기 전에 잡는다. 이 섹션은 curated 검증 섹션
     # 아래로 강등하고(정독 결과 confident-오답의 주원인), 그래도 노출될 땐 면책을 붙인다.
     def _is_autoenrich(paragraph: str) -> bool:
+        # 출처/거버넌스 마커로만 판정한다. bare 'auto-enrich'는 본문에서 기능을
+        # 설명하는 정상 큐레이션 섹션('auto-enrich guardrail 결과를...')까지 오탐하므로
+        # 실제 자동수집 Source 라인 형식('auto-enrich via ...')과 KST04 마커로 한정.
         pl = paragraph.lower()
-        return "kst04 자동수집" in pl or "auto-enrich" in pl
+        return "kst04 자동수집" in pl or "auto-enrich via" in pl
 
     _pairs = [(clean_paragraph(p), _is_autoenrich(p)) for p in paragraphs]
     _pairs = [(c, f) for c, f in _pairs if c]
