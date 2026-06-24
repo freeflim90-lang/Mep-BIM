@@ -2,7 +2,7 @@
 """LUA BIM LABS Starter Plan 텔레그램 발송 — 매일 08:00 KST.
 
 대상: 유료 글로벌 클라이언트 (USD 39/월)
-언어: EN·JA·ZH·AR (clients.json의 language 필드 기준, EN fallback)
+언어: KO·EN·JA·ZH·AR (clients.json의 language 필드 기준, EN fallback)
 커리큘럼: 90일 구조화 프로그램
   - Day 01~60: 공통 기초 (MEP BIM 기초·Revit·조정·QA)
   - Day 61~90: 전공별 심화 (hvac·piping·plumbing·fire·electrical)
