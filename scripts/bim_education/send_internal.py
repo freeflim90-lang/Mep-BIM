@@ -116,6 +116,11 @@ def main() -> None:
         current_day = user_data.get("day", 1)
         yr_num = track.replace("yr", "")
 
+        # 같은 날 중복 발송 방지(부팅 catchup 재실행 등으로 하루 2회 도는 사고 차단).
+        if user_data.get("last_sent") == today:
+            print(f"[{name}] 오늘 이미 발송됨 — 건너뜀")
+            continue
+
         print(f"\n[{name}] {yr_num}년차 커리큘럼 Day {current_day}/365")
 
         message = get_message(track, current_day)
