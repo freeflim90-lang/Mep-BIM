@@ -42,16 +42,25 @@ CARD_MD_FILES = [
 ]
 
 
-def build_prompt(md_text: str) -> str:
-    return f"""You are a professional Korean technical translator specializing in MEP BIM (Building Information Modeling) for construction engineers.
+# 지원 언어: 코드 → (영문 언어명, 본문 문체 지침)
+LANG_NAMES = {
+    "ko": ("Korean", "존댓말/실무체 자연스러운 한국어"),
+    "ja": ("Japanese", "丁寧語(です・ます調)の自然な実務的日本語"),
+    "zh": ("Chinese (Simplified)", "自然、专业的简体中文实务文体"),
+}
 
-Translate the English Markdown reference card below into natural, professional Korean (존댓말/실무체) for a paid BIM education product.
+
+def build_prompt(md_text: str, lang: str) -> str:
+    lang_en, style = LANG_NAMES[lang]
+    return f"""You are a professional {lang_en} technical translator specializing in MEP BIM (Building Information Modeling) for construction engineers.
+
+Translate the English Markdown reference card below into natural, professional {lang_en} ({style}) for a paid BIM education product.
 
 STRICT RULES — follow exactly:
 - Preserve the EXACT Markdown structure: '#'/'##'/'###' headings, '|' table rows and the '|---|' separator rows, horizontal rules '---', '*italic*' lines, blank lines, and the order of everything.
 - Translate cell contents and body text, but keep table SHAPE identical (same number of columns and rows).
-- Keep these UNCHANGED, never translate: the brand "LUA BIM LABS", and these acronyms — BIM, MEP, HVAC, LOD, BEP, EIR, CDE, IFC, NWC, NWD, RFI, QA, RFI, Revit, Navisworks, AHU, VAV, COBie. You may add a short Korean gloss in parentheses on first use only if it reads naturally.
-- Keep the heading 'LOD Definitions', acronym codes (LOD 300, NWC...) and any English software/product names intact.
+- Keep these UNCHANGED, never translate: the brand "LUA BIM LABS", and these acronyms — BIM, MEP, HVAC, LOD, BEP, EIR, CDE, IFC, NWC, NWD, RFI, QA, Revit, Navisworks, AHU, VAV, COBie. You may add a short native-language gloss in parentheses on first use only if it reads naturally.
+- Keep the heading codes (LOD 300, NWC...) and any English software/product names intact.
 - The first line '# Title' : translate the title text.
 - The '**LUA BIM LABS Starter — ...**' and '*Track completion card — Day NN*' and the two italic footer lines must be translated faithfully (keep 'LUA BIM LABS', 'Day NN', and the em dash).
 - Output ONLY the translated Markdown. No preamble, no code fences, no commentary.
@@ -63,11 +72,13 @@ ENGLISH MARKDOWN:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="레퍼런스 카드 en→ko 번역")
+    parser = argparse.ArgumentParser(description="레퍼런스 카드 en→<lang> 번역")
+    parser.add_argument("--lang", default="ko", choices=sorted(LANG_NAMES),
+                        help="대상 언어 코드 (ko/ja/zh)")
     parser.add_argument("--force", action="store_true")
     args = parser.parse_args()
 
-    dst_dir = CARDS_DIR / DST_LANG
+    dst_dir = CARDS_DIR / args.lang
     dst_dir.mkdir(parents=True, exist_ok=True)
 
     pending = []
@@ -88,7 +99,7 @@ def main() -> None:
         english = src.read_text(encoding="utf-8").strip()
         print(f"[{i}/{len(pending)}] {name} ...", end=" ", flush=True)
         try:
-            out, backend = translate(build_prompt(english))
+            out, backend = translate(build_prompt(english, args.lang))
         except Exception as e:
             print(f"✗ ({e})")
             continue

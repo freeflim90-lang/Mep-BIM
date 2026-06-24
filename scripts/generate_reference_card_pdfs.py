@@ -35,12 +35,21 @@ CARDS_DIR = STARTER_PLAN_DIR / "reference_cards"
 _FONT_FAMILY = "Helvetica"
 _FONT_PATH: str | None = None  # None이면 코어 폰트 사용(등록 불필요)
 
-# 언어별 CJK 폰트 후보 (존재하는 첫 번째 사용)
-_CJK_FONT_CANDIDATES = [
-    "/System/Library/Fonts/AppleSDGothicNeo.ttc",
-    "/System/Library/Fonts/Supplemental/AppleGothic.ttf",
-    "/Library/Fonts/NanumGothic.ttf",
-]
+# 언어별 CJK 폰트 후보 (존재하는 첫 번째 사용). Arial Unicode가 ja/zh/ko
+# 글리프를 모두 포함하므로 공통 폴백으로 둔다. (아랍어는 RTL+shaping이
+# 필요해 이 생성기로는 미지원 — arabic_reshaper/bidi 별도 작업 필요)
+_ARIAL_UNICODE = "/Library/Fonts/Arial Unicode.ttf"
+_ARIAL_UNICODE_SYS = "/System/Library/Fonts/Supplemental/Arial Unicode.ttf"
+_CJK_FONT_CANDIDATES = {
+    "ko": ["/System/Library/Fonts/AppleSDGothicNeo.ttc",
+           _ARIAL_UNICODE_SYS, _ARIAL_UNICODE],
+    "ja": ["/System/Library/Fonts/ヒラギノ角ゴシック W3.ttc",
+           "/System/Library/Fonts/Hiragino Sans GB.ttc",
+           _ARIAL_UNICODE_SYS, _ARIAL_UNICODE],
+    "zh": ["/System/Library/Fonts/STHeiti Medium.ttc",
+           "/System/Library/Fonts/Hiragino Sans GB.ttc",
+           _ARIAL_UNICODE_SYS, _ARIAL_UNICODE],
+}
 
 # LUA BIM LABS brand colors (approximate in RGB)
 COLOR_BRAND_DARK = (15, 23, 42)       # slate-900
@@ -329,9 +338,14 @@ def main() -> None:
     if args.lang != "en":
         src_dir = dst_dir = CARDS_DIR / args.lang
         # CJK 폰트 탐색·등록
-        font = next((p for p in _CJK_FONT_CANDIDATES if Path(p).exists()), None)
+        candidates = _CJK_FONT_CANDIDATES.get(args.lang)
+        if not candidates:
+            print(f"  ✗ {args.lang}: 이 생성기는 ko/ja/zh만 지원합니다 "
+                  f"(아랍어 등 RTL은 미지원)")
+            sys.exit(1)
+        font = next((p for p in candidates if Path(p).exists()), None)
         if not font:
-            print(f"  ✗ {args.lang} 용 CJK 폰트를 찾지 못했습니다: {_CJK_FONT_CANDIDATES}")
+            print(f"  ✗ {args.lang} 용 CJK 폰트를 찾지 못했습니다: {candidates}")
             sys.exit(1)
         _FONT_FAMILY = f"CJK_{args.lang}"
         _FONT_PATH = font
