@@ -160,8 +160,12 @@ def translate_text(text: str, lang: str, api_key: str | None, max_retries: int =
                     result = _translate_with_claude(prompt, api_key)
                 except Exception as e:
                     err = str(e).lower()
-                    if any(k in err for k in ("credit", "balance", "quota", "overloaded", "limit", "too low")):
-                        print(f"\n  ⚠️  Claude 크레딧 부족 → Ollama({OLLAMA_MODEL})로 전환")
+                    # 한도 소진뿐 아니라 인증 오류(무효 키, 401)도 폴백시킨다.
+                    if any(k in err for k in ("credit", "balance", "quota", "overloaded",
+                                              "limit", "too low", "rate", "429", "402",
+                                              "401", "authentication", "invalid x-api-key",
+                                              "permission")):
+                        print(f"\n  ⚠️  Claude 한도/인증 오류 → Ollama({OLLAMA_MODEL})로 전환")
                         _claude_exhausted = True
                         result = _translate_with_ollama(prompt)
                     else:

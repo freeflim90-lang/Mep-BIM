@@ -137,8 +137,12 @@ def generate_message(prompt: str) -> tuple[str, str]:
             return generate_with_claude(prompt), "claude"
         except Exception as e:
             err = str(e).lower()
-            if any(k in err for k in ("credit", "balance", "quota", "overloaded", "limit")):
-                print(f"\n  ⚠️  Claude 한도 소진 감지 → Ollama로 전환합니다.")
+            # 한도 소진뿐 아니라 인증 오류(무효 키, 401)도 폴백시킨다.
+            # 키가 잘못돼 매 항목이 죽고 Ollama로 못 넘어가는 사고 방지.
+            if any(k in err for k in ("credit", "balance", "quota", "overloaded",
+                                      "limit", "rate", "429", "402", "401",
+                                      "authentication", "invalid x-api-key", "permission")):
+                print(f"\n  ⚠️  Claude 한도/인증 오류 감지 → Ollama로 전환합니다.")
                 _claude_exhausted = True
             else:
                 raise
