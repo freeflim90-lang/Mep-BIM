@@ -3,7 +3,8 @@
 
 우선순위:
   1. ANTHROPIC_API_KEY 설정 시 → Claude Haiku 사용
-  2. API 한도 소진 시 → 자동으로 Ollama qwen2.5:7b 전환
+  2. 한도 소진/인증 오류 시 → DeepSeek chat 전환
+  3. 그래도 안 되면 → Ollama qwen2.5:7b 전환
 
 실행:
   python scripts/bim_education/generate.py           # 미생성 항목만
@@ -54,16 +55,23 @@ OLLAMA_MODEL = "qwen2.5:7b"
 _claude_exhausted = False
 
 
-def _load_env_key() -> str | None:
+def _load_env_key(name: str) -> str | None:
+    if os.environ.get(name):
+        return os.environ[name]
     env_file = PROJECT_ROOT / ".env"
     if env_file.exists():
         for line in env_file.read_text().splitlines():
-            if line.startswith("ANTHROPIC_API_KEY="):
-                return line.split("=", 1)[1].strip()
+            if line.startswith(f"{name}="):
+                return line.split("=", 1)[1].strip().strip('"').strip("'")
     return None
 
 
-ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY") or _load_env_key()
+ANTHROPIC_API_KEY = _load_env_key("ANTHROPIC_API_KEY")
+DEEPSEEK_API_KEY = _load_env_key("DEEPSEEK_API_KEY")
+DEEPSEEK_URL = "https://api.deepseek.com/chat/completions"
+
+# DeepSeek 한도 소진 감지 플래그
+_deepseek_exhausted = False
 
 
 def build_prompt(track_label: str, day: int, phase: str, topic: str, next_topic: str) -> str:
@@ -112,6 +120,25 @@ def generate_with_claude(prompt: str) -> str:
     return msg.content[0].text.strip()
 
 
+def generate_with_deepseek(prompt: str) -> str:
+    payload = json.dumps({
+        "model": "deepseek-chat",
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": 0.7,
+        "max_tokens": 1024,
+    }).encode("utf-8")
+    req = urllib.request.Request(
+        DEEPSEEK_URL, data=payload, method="POST",
+        headers={
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {DEEPSEEK_API_KEY}",
+        },
+    )
+    with urllib.request.urlopen(req, timeout=120) as resp:
+        result = json.loads(resp.read().decode("utf-8"))
+    return result["choices"][0]["message"]["content"].strip()
+
+
 def generate_with_ollama(prompt: str) -> str:
     payload = json.dumps({
         "model": OLLAMA_MODEL,
@@ -128,22 +155,36 @@ def generate_with_ollama(prompt: str) -> str:
     return result.get("response", "").strip()
 
 
+_FALLBACK_KEYWORDS = ("credit", "balance", "quota", "overloaded", "limit",
+                      "rate", "429", "402", "401", "authentication",
+                      "invalid x-api-key", "permission")
+
+
 def generate_message(prompt: str) -> tuple[str, str]:
-    """메시지 생성. (content, backend) 반환."""
-    global _claude_exhausted
+    """메시지 생성. (content, backend) 반환.
+
+    우선순위: Claude Haiku → DeepSeek → Ollama. 한도 소진/인증 오류 시
+    다음 백엔드로 자동 강등(무효 키로 전 항목이 죽는 사고 방지).
+    """
+    global _claude_exhausted, _deepseek_exhausted
 
     if ANTHROPIC_API_KEY and not _claude_exhausted:
         try:
             return generate_with_claude(prompt), "claude"
         except Exception as e:
-            err = str(e).lower()
-            # 한도 소진뿐 아니라 인증 오류(무효 키, 401)도 폴백시킨다.
-            # 키가 잘못돼 매 항목이 죽고 Ollama로 못 넘어가는 사고 방지.
-            if any(k in err for k in ("credit", "balance", "quota", "overloaded",
-                                      "limit", "rate", "429", "402", "401",
-                                      "authentication", "invalid x-api-key", "permission")):
-                print(f"\n  ⚠️  Claude 한도/인증 오류 감지 → Ollama로 전환합니다.")
+            if any(k in str(e).lower() for k in _FALLBACK_KEYWORDS):
+                print(f"\n  ⚠️  Claude 한도/인증 오류 감지 → DeepSeek로 전환합니다.")
                 _claude_exhausted = True
+            else:
+                raise
+
+    if DEEPSEEK_API_KEY and not _deepseek_exhausted:
+        try:
+            return generate_with_deepseek(prompt), "deepseek"
+        except Exception as e:
+            if any(k in str(e).lower() for k in _FALLBACK_KEYWORDS):
+                print(f"\n  ⚠️  DeepSeek 한도/인증 오류 감지 → Ollama로 전환합니다.")
+                _deepseek_exhausted = True
             else:
                 raise
 
@@ -197,13 +238,15 @@ def main() -> None:
     args = parser.parse_args()
 
     if ANTHROPIC_API_KEY:
-        print("✅ Claude Haiku 사용 — 한도 소진 시 Ollama 자동 전환")
+        print("✅ Claude Haiku 우선 — 한도/인증 오류 시 DeepSeek → Ollama 자동 전환")
+    elif DEEPSEEK_API_KEY:
+        print("✅ DeepSeek 우선 — 한도 소진 시 Ollama 전환")
     else:
         try:
             urllib.request.urlopen("http://127.0.0.1:11434/api/tags", timeout=3)
             print(f"✅ Ollama({OLLAMA_MODEL}) 사용")
         except Exception:
-            print("❌ Claude API 키도 없고 Ollama도 연결 불가. 중단합니다.")
+            print("❌ API 키도 없고 Ollama도 연결 불가. 중단합니다.")
             sys.exit(1)
 
     if args.track:
