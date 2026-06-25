@@ -14,7 +14,12 @@ from __future__ import annotations
 import argparse
 import re
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
+
+# 재현 가능한 출력을 위한 고정 생성일(미설정 시 fpdf2가 현재 시각을 박아
+# 매 재생성마다 PDF 바이트가 달라져 불필요한 git diff 발생).
+_FIXED_CREATION_DATE = datetime(2026, 1, 1, tzinfo=timezone.utc)
 
 try:
     from fpdf import FPDF
@@ -340,6 +345,7 @@ def generate_pdf(src: Path, dst: Path) -> None:
         subtitle = f"{subtitle}  |  {track_note}" if subtitle else track_note
 
     pdf = CardPDF(card_title, subtitle)
+    pdf.set_creation_date(_FIXED_CREATION_DATE)  # 재현 가능한 바이트 출력
     render_markdown(pdf, md)
     dst.parent.mkdir(parents=True, exist_ok=True)
     pdf.output(str(dst))
