@@ -414,14 +414,13 @@ ISO 19650-2 실무 적용에서 가장 많이 실패하는 3가지 패턴과 사
 
 관련: [[EIR BEP_심사원 지식 베이스]] · [[BEP 수행계획서 템플릿]] · [[견적심사원 지식 베이스]] · [[2026-06-04 LUA BIM LABS Korea Public BIM Guideline Update]]
 
-## BIM 지침서 최신 동향 및 표준 업데이트 (2026-06-24)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-24
+## BIM 지침서 최신 동향 및 표준 업데이트 (2026-06-26)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-26
 - KST04 자동수집: 공식 출처/담당자 검증 전 고객 확정 답변, 납품 기준, 견적 기준으로 사용 금지.
 - Tags: BIM,guideline,IFC,openBIM,update
 
-- ISO 19650과 IFC4는 국제 BIM 표준으로, 건축 자산의 전체 수명 주기에 걸친 정보 교환을 지원한다.
-- openBIM은 buildingSMART가 주도하는 이니셔티브로, Revit→IFC 내보내기 등의 오픈 스탠다드를 통해 다양한 소프트웨어 간의 호환성을 높인다.
-- IDS(Intelligent Data Structure)는 한국 BIM 지침에서 강조하며, 실제 프로젝트에서는 BCF(BIM Collaboration Format), IDM(Intelligent Model Design)과 같은 기술이 활용된다.
-- 최신 기준으로 Revit에서 IFC4 형식으로 내보내는 방법은 BIM 소프트웨어 업데이트를 통해 지속적으로 개선되고 있으며, 이 과정에서는 openBIM의 표준을 준수해야 한다.
+- 국제 BIM 표준 ISO 19650는 건축 자산의 전체 수명 주기에 걸쳐 정보 교환을 위한 지침을 제공하며, IFC4와 IDS(Information Delivery Manual)가 그 핵심을 이루고 있습니다.
+- IFC4는 openBIM 기반으로, vendor-neutral BIM 표준으로서 다양한 소프트웨어 간의 호환성을 높이는 역할을 합니다. Revit→IFC 내보내기는 최신 기준으로 IFC 4x3을 따르게 됩니다.
+- 한국에서는 ISO 19650과 IFC4, IDS를 참고한 BIM 지침이 제정되며, openBIM과 같은 개방형 표준의 중요성이 강조됩니다.
 - 관련: [[설계_지침서]] · [[시공_지침서]] · [[BIM_시방서]] · [[BIM_건물유형_공사구분_산정로직]]
 

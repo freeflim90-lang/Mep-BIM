@@ -828,3 +828,62 @@ def score_signal(text: str) -> float:
 - 한미글로벌, 독일 뮌헨공대·이스라엘 테크니온과 건설AI 공동연구 - 네이트 (BIM Automation)
 
 운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-24 17:47 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-24/1747_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 국토부, ‘2026 스마트건설 챌린지’ 개최…AI·로봇 활용 건설기술 발굴 - 산학뉴스 (Smart Construction, BIM Automation)
+- [창간기획-건설의 미래]➁ “AI 없이는 못 짓는다”…‘생존 코드’ 된 인공지능 - 위키리크스한국 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-24 23:02 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-24/2302_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 건설업 인력난과 AI·BIM 대책: 2030년까지 8% 성장 전망 속 교육 혁신 시급 - 한국공공정책신문 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-25 05:43 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-25/0543_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- My CEnv career: ‘To solve problems, we have to be involved’ (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-25 15:38 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-25/1538_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 건설현장 파고든 AI…LH, 토공설계 자동화 기술 완성 - 더팩트 (BIM Automation)
+- LH, AI가 토공 설계한다…건설현장 생산성 높이는 BIM 자동화 기술 공개 - 이코노미사이언스 (BIM Automation)
+- 국토부, ‘2026 스마트건설 챌린지’ 개최…AI·로봇 활용 건설기술 발굴 - 산학뉴스 (Smart Construction, BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-25 23:05 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-25/2305_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- 건설현장 파고든 AI…LH, 토공설계 자동화 기술 완성 - v.daum.net (BIM Automation)
+- LH, AI가 토공 설계한다…건설현장 생산성 높이는 BIM 자동화 기술 공개 - 이코노미사이언스 (BIM Automation)
+- LH, AI 기반 BIM(건설정보모델링) 토공설계 자동화 소프트웨어 개발 완료 - 통신일보 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.
+
+
+## 2026-06-26 00:05 AX 시간별 고신호
+- Source: `docs/industry_intelligence/hourly/2026-06-26/0005_AX_SIGNAL_MONITOR.md`
+- Tags: ax,hourly-signal,construction,bim,ai
+
+- LH AI 기반 토공설계 자동화 프로그램 개발, 건설정보모델링 도입 속도 내 - 비즈니스포스트 (BIM Automation)
+
+운영 판단: 반복 노출되거나 제품/교육/품질검토와 연결되는 항목은 일일 큐레이션에서 승격한다.

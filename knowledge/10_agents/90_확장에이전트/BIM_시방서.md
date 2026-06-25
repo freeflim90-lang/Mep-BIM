@@ -532,13 +532,15 @@ Revit 3대 기준점:
 
 실무: 좌표·레벨·그리드 기준은 프로젝트 초기에 한 모델로 확정·배포한다. 공유좌표 불일치 시 전 공종 모델이 어긋나 간섭검토가 무의미해지므로, 좌표 정합을 BEP 착수 체크 항목으로 둔다.
 
-## BIM 시방서 최신 기준 업데이트 (2026-06-24)
-- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-24
+## BIM 시방서 최신 기준 업데이트 (2026-06-26)
+- Source: auto-enrich via Naver+Tavily+Google+DDG+Ollama 2026-06-26
 - KST04 자동수집: 공식 출처/담당자 검증 전 고객 확정 답변, 납품 기준, 견적 기준으로 사용 금지.
 - Tags: BIM,specification,EIR,COBie,update
 
-- 최신 한국 BIM 시방서(EIR 기반)에서는 발주처별 요구 수준을 명확히 정의하여 BIM 데이터의 적합성을 판단할 수 있도록 방법론이 제시되고 있습니다 (2023년 1월).
-- COBie(Construction Operations Building Information Exchange) 표준은 건설 프로세스에서의 정보 교환을 위한 중요한 기준으로, BIM 데이터와 FM(Facility Management) 시스템 간의 연동성을 높입니다 (해양수산과학기술진흥원 2018년 보고서).
-- 발주처별 BIM 요구 수준은 EIR(Employer's Information Requirement)를 통해 구체화되며, 이를 준수하는 것이 실무에서 중요한 부분입니다. BIM 데이터의 정확성과 일관성을 확보하기 위해 EIR을 철저히 따르는 것이 필요합니다 (2022/23년 KSP 정책자문보고서).
+- 최신 동향에 따르면 발주처별 BIM 요구 수준이 다양화되고 있으며, EIR(Employer’s Information Requirement) 기반의 BIM 시방서가 주요하게 활용되고 있습니다.
+- 발주처는 각 프로젝트 별로 필요한 정보를 명시하고 이를 바탕으로 제출되는 BIM 데이터의 적합성을 판단할 수 있는 방법론을 제시해야 합니다. 이는 BIM 데이터의 디지털화 및 전문성 향상에 기여합니다.
+- COBie(Coordinating Information for Building Elements) 표준은 건물 내 각 구성요소의 정보를 구조화하여 관리할 수 있게 도와줍니다. 발주처는 COBie 스키마를 활용해 BIM 데이터의 일관성과 통합성을 확보해야 합니다.
+- FM(Facility Management) 연동 데이터 기준은 건물의 유지보수 및 운영 효율성을 높이기 위해 중요합니다. 발주자는 BIM 데이터와 FM 시스템 간의 원활한 정보 교환을 위한 표준화된 프로세스를 마련해야 합니다.
+- 2023년 KSP 정책자문보고서에 따르면, 발주처는 건설 프로젝트 별로 적절한 BIM 요구사항을 설정하고 이를 통해 BIM 데이터의 품질과 활용성을 높여야 합니다.
 - 관련: [[설비장비]] · [[설계_지침서]] · [[시공_지침서]] · [[BIM_지침서]]
 
