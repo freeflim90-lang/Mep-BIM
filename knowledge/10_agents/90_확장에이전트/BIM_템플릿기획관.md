@@ -69,6 +69,27 @@ Add-in 보고서 뷰: 별도 3D 뷰 자동 생성 → 충돌 마커만 표시.
 - **자동 표준화**: 뷰 타입별 기본 템플릿을 지정하면 새 뷰 생성 시 자동 적용. 프로젝트 표준 템플릿은 `Transfer Project Standards`로 신규 프로젝트에 전파해 회사 표준을 통일한다.
 - **운영 팁**: 분야별·용도별(작업용/제출용/협의용) 템플릿 라이브러리를 구성하고, 명명 규칙으로 관리한다. 템플릿이 적용된 뷰는 해당 속성이 잠겨 임의 변경이 방지되므로 납품 도면 일관성이 올라간다.
 
+## BIM 객체 분류체계 (Classification) (2026-06-26)
+- Source: ISO 12006-2 기반 분류체계·KBIMS·Revit/IFC 표준 — curated baseline. 프로젝트 적용 분류체계와 코드 부여 규칙은 발주처 BIM 지침·BEP를 따른다.
+- Tags: bim-template,classification,OmniClass,UniClass,IFC,분류체계,객체분류
+
+BIM 객체 분류체계는 부재·공간·시스템에 표준 코드를 부여해 수량산출·원가·시설관리·검색을 일관되게 하는 체계다. 분류체계를 통일해야 분류별 집계(BOQ)와 모델 검색이 정확해진다.
+
+**주요 분류체계:**
+- **OmniClass(OCCS, 북미)**: 다중 테이블 체계(Table 21 Elements, Table 22 Work Results, Table 23 Products 등). Revit 객체에 `OmniClass Number` 파라미터로 부여.
+- **UniClass 2015(영국, ISO 19650 환경)**: Ss(시스템)·Pr(제품)·EF(요소/기능) 등 테이블. 국제 협업·IFC 기반 프로젝트에서 사용.
+- **Uniformat / MasterFormat**: Uniformat=부위(요소) 기반 분류(견적 초기·개산), MasterFormat=공종(작업결과) 기반(상세 시방·내역).
+- **KBIMS(국내)**: 국가 BIM 표준의 분류·속성 정책. 국내 공공 발주 BIM 사업에서 참조.
+
+**Revit 적용:**
+- `Assembly Code`(어셈블리 코드)는 Uniformat 기반 분류 코드를 부재에 부여한다(타입 속성). 분류 파일(.txt) 교체로 발주처 분류체계 적용 가능.
+- `OmniClass Number`(타입 속성)로 OmniClass 코드 부여. 공유 파라미터로 UniClass/사내 코드 컬럼을 추가해 병행 관리한다.
+- `Keynote`(키노트)는 분류 코드와 연계한 주석 표준화에 사용한다.
+
+**IFC 연계:** IFC 내보내기 시 분류 참조는 `IfcClassification`/`IfcClassificationReference`로 전달된다. 발주처가 요구하는 분류체계(예: UniClass Ss 코드)를 매핑셋에 포함해 검수 대상으로 관리한다.
+
+BIM 적용: 프로젝트 표준 분류체계를 BEP에서 확정하고, 부재 타입에 분류 코드를 일관 부여한다. 납품 검수 시 분류 코드 누락·오류(빈 Assembly Code, 잘못된 테이블)를 점검 항목으로 둔다. 분류는 수량산출·원가 집계·시설관리(FM) 자산 분류의 기준이 되므로, 객체 명명 규칙과 함께 표준으로 관리한다.
+
 
 ## BIM 템플릿기획관 Claude Code 심화 업데이트 (2026-05-28)
 - Source: claude-code-enhanced 2026-05-28
