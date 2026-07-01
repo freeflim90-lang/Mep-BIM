@@ -1100,9 +1100,8 @@ def generate_kb_section(file_stem: str, topic: dict, search_context: str) -> str
         )
     prompt_parts.append(
         "\n\n출력 형식: 순수 텍스트만. 마크다운 제목(#) 없이, "
-        "항목은 번호(1. 2. 3.) 또는 '- ' 불릿으로 구조화하고(품질 루브릭이 "
-        "번호/불릿 구조를 요구함 — 서술형 산문으로 풀어쓰지 말 것), "
-        "수치·기준·규격번호를 반드시 포함. 한국어로 작성."
+        "항목은 '- ' 불릿으로, 수치·기준·규격번호를 반드시 포함. "
+        "한국어로 작성."
     )
     full_prompt = "".join(prompt_parts)
 
