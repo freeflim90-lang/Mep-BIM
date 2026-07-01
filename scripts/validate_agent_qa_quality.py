@@ -45,9 +45,23 @@ CONDITION_WORDS = (
     "경우", "조건", "단,", "다만", "우선", "먼저", "반면", "예외", "불가", "가능",
     "확인", "구분", "분리", "필요", "최우선",
 )
+# 한국어 최빈 조건형(용언 어간 + '~면'). 명사형 '면'(반면·표면·화면·측면)과 구분하려
+# 흔한 용언 결합형만 명시 매칭한다(부분문자열 오검출 방지).
+CONDITION_SUFFIX_RE = re.compile(
+    r"(하면|되면|있으면|없으면|다르면|같으면|아니면|맞으면|틀리면|낮으면|높으면|"
+    r"초과하면|미만이면|이상이면|이하이면|명확하면|불명확하면|어긋나면|넘으면)"
+)
 ACTION_WORDS = (
     "확인", "요청", "기록", "공유", "전달", "검토", "분류", "추가", "재시도",
     "보고", "문의", "안내", "정리",
+    # 실무 답변에 흔한 액션 동사(누락분 보강) — 산문형 절차 답변 과소평가 교정.
+    "질의", "대조", "비교", "산정", "남기", "남긴", "제시", "표시", "반영",
+    "협의", "결정", "지정", "설정", "점검",
+)
+# 산문형 구조 마커: 번호·불릿이 없어도 논리 구획이 뚜렷한 답변을 인정한다.
+PROSE_STRUCTURE_MARKERS = (
+    "결론", "적용 범위", "적용범위", "반면", "다만", "먼저", "우선",
+    "후보로", "후보,", "→", "그다음", "이때", "단계", "기준은",
 )
 RISK_WORDS = (
     "위험", "리스크", "주의", "민감", "보안", "개인정보", "법적", "확정하지", "승인",
@@ -132,7 +146,10 @@ def score_pair(question: str, answer: str) -> dict:
         answer_score += 5
 
     structure_score = 0
-    if re.search(r"①|②|③|1\.|2\.|3\.|- ", a):
+    # 명시적 번호·불릿 리스트 또는 산문형 논리 구획(마커 2개 이상) 중 하나면 인정.
+    has_list = bool(re.search(r"①|②|③|1\.|2\.|3\.|- ", a))
+    prose_marker_hits = sum(1 for m in PROSE_STRUCTURE_MARKERS if m in a)
+    if has_list or prose_marker_hits >= 2:
         structure_score += 8
     if ":" in a or "—" in a or "->" in a:
         structure_score += 4
@@ -144,6 +161,7 @@ def score_pair(question: str, answer: str) -> dict:
         evidence_score += 8
 
     condition_hits = sum(1 for word in CONDITION_WORDS if word in answer_lower)
+    condition_hits += len(CONDITION_SUFFIX_RE.findall(a))
     condition_score = min(condition_hits * 4, 15)
 
     action_hits = sum(1 for word in ACTION_WORDS if word in answer_lower)
